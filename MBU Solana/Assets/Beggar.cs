@@ -29,7 +29,6 @@ public class Beggar : MonoBehaviour
             Interact();
         }
 
-
         //enables/disables the interact button depending on how close the player is to this object. Also removes all text from the dialogue subtitle if the player is far enough
         if (Vector2.Distance(player.position, transform.position) <= proximity)
         {

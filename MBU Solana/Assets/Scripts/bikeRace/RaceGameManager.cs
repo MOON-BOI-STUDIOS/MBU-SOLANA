@@ -54,7 +54,8 @@ public class RaceGameManager : MonoBehaviour
     {
         inst = this;
 
-        current = bikeDataArray[PlayerPrefs.GetInt("CurrentPlayBikeIndex", 0)];
+     
+     current = bikeDataArray[PlayerPrefs.GetInt("CurrentPlayBikeIndex", 0)];
         LivesCount = current.Health;
         BoostTime = current.Boost;
         sp.sprite = current.BikeImage;

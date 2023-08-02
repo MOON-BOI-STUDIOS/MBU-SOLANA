@@ -87,7 +87,11 @@ public class BikeController : MonoBehaviour
         // Ensure the fade is complete
         cg.alpha = end;
     }
+
+
     private float touchOffset;
+    private Vector3 touchStartBikePosition;
+
     void Update()
     {
         if (isKilled) return;
@@ -119,23 +123,21 @@ public class BikeController : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
             Vector3 touchWorldPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            touchWorldPosition.z = 0; // Ensuring that the z-coordinate doesn't interfere with the calculations
 
             switch (touch.phase)
             {
                 case TouchPhase.Began:
-                    initialPosition = transform.position;
-                    targetPosition = touchWorldPosition;
-                    // Record the offset between the touch position and the bike's position
-                    touchOffset = initialPosition.x - targetPosition.x;
+                    touchStartBikePosition = transform.position; // Capture the bike's position when the touch begins
+                                                                 // Record the offset between the touch position and the bike's position
+                    touchOffset = touchStartBikePosition.x - touchWorldPosition.x;
                     break;
 
                 case TouchPhase.Moved:
-                    targetPosition = touchWorldPosition;
-                    // Apply the offset to calculate the bike's new position
-                    float newXPosition = targetPosition.x + touchOffset;
-                    transform.position = new Vector3(newXPosition, transform.position.y, transform.position.z);
-                    // Ensure the vertical speed remains consistent
-                    rb.velocity = new Vector2(0, currentVerticalSpeed);
+                    float targetXPosition = touchWorldPosition.x + touchOffset;
+                    float deltaX = targetXPosition - transform.position.x;
+                    float newVelocityX = deltaX * horizontalSpeed; // Adjust the multiplier to control the sensitivity of movement
+                    rb.velocity = new Vector2(newVelocityX, currentVerticalSpeed);
                     break;
 
                 case TouchPhase.Ended:
@@ -150,7 +152,6 @@ public class BikeController : MonoBehaviour
 #endif
 
 
-
     }
 
     public float GetDistanceCovered()
@@ -160,6 +161,7 @@ public class BikeController : MonoBehaviour
 
     bool isColliding;
 
+    float reverseMagnitude = 4f;// You can adjust this value to control the magnitude of the reversed velocity
     void OnTriggerEnter2D(Collider2D other)
     {
         if (isColliding)
@@ -176,9 +178,11 @@ public class BikeController : MonoBehaviour
 
         if (other.gameObject.layer == 6)
         {
+             // Fixed magnitude for the reversed velocity
             Vector2 currentVelocity = rb.velocity;
-            rb.velocity = new Vector2(-currentVelocity.x, currentVelocity.y);
-            StartCoroutine(DisableInput(0.2f));
+            float newVelocityX = currentVelocity.x > 0 ? -reverseMagnitude : reverseMagnitude; // Set the reversed velocity, maintaining the sign
+            rb.velocity = new Vector2(newVelocityX, currentVelocity.y);
+            StartCoroutine(DisableInput(0.7f));
             raceAudioManager.Inst.PlayScreech();
 
             RaceGameManager.inst.ResetDifficulty();
@@ -202,6 +206,8 @@ public class BikeController : MonoBehaviour
                 }
             }
         }
+
+
 
         if (other.gameObject.layer == 7)
         {
@@ -230,6 +236,7 @@ public class BikeController : MonoBehaviour
         }
     }
 
+    
     private IEnumerator DisableInput(float duration)
     {
         inputEnabled = false;
