@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         moveDirection = context.ReadValue<Vector2>();
-        Debug.Log(moveDirection);
     }
 
     private void UpdateMoveDirection()

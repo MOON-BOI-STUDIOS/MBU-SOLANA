@@ -52,9 +52,11 @@ public class PlayerManager : MonoBehaviour
             _animator._heroAnimator.SetBool("isDead", true);
             StartCoroutine(deathSequence());
         }
-        
-        if(curSceneName == "BattleArena")
-        {
+
+
+        if (curSceneName == "BonkArcade")
+            return;
+
             //updates the health bar according to current health
             healthIndicator.localScale = new Vector3(health / maxHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
             // displays current health in a numerical form
@@ -63,7 +65,7 @@ public class PlayerManager : MonoBehaviour
             //displays number of coins the player has
             if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
             if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
-        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

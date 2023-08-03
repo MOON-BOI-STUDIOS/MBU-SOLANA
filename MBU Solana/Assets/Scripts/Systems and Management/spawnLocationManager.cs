@@ -20,6 +20,7 @@ public class spawnLocationManager : MonoBehaviour
     }
     public void telport()
     {
+       
         teleportDre.SetActive(true);
         player.GetComponent<PlayerController>().enabled = false;
         dreSprite.enabled = false;
@@ -30,6 +31,7 @@ public class spawnLocationManager : MonoBehaviour
     {
         //sets the player location at the start of the scene, according to where they were before
         player.position = spawnLocations[PlayerPrefs.GetInt("LastLocation")].position;
+        PlayerPrefs.SetInt("LastLocation", 0);
     }
 
     // Update is called once per frame

@@ -26,9 +26,11 @@ public class Fishing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(PlayerPrefs.GetInt("LastLocation")!=3)
+        Debug.Log(PlayerPrefs.GetInt("LastLocation"));
+        if (PlayerPrefs.GetInt("LastLocation")!=3)
         {
             PlayerPrefs.SetInt("LastLocation", 1);
+  
             backMecha.SetActive(true);
         }
         else

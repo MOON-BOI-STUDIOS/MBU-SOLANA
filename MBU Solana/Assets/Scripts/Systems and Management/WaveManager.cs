@@ -19,12 +19,13 @@ public class WaveManager : MonoBehaviour
     private void Awake()
     {
         nextRound();
+        StartCoroutine(delayLittleCoroutine());
     }
     void Start()
     {
         if (PlayerPrefs.GetInt("LastLocation") != 3)
         {
-            PlayerPrefs.SetInt("LastLocation", 1);
+            PlayerPrefs.SetInt("LastLocation", 2);
             foreach(GameObject g in BackMecha)
             {
                 g.SetActive(true);
@@ -39,10 +40,20 @@ public class WaveManager : MonoBehaviour
         }
     }
 
+
+    IEnumerator delayLittleCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
+        delayLittle = false;
+    }
+
+    bool delayLittle=true;
     // Update is called once per frame
     void Update()
     {
-        
+        if (delayLittle)
+            return;
+
         if (enemiesParent.childCount <= 0 && waveSwitch == false )
         {
            
@@ -101,5 +112,15 @@ public class WaveManager : MonoBehaviour
         {
             Instantiate(powerUp, spawnLocations[Random.Range(0, spawnLocations.Length - 1)].position, Quaternion.identity);
         }
+    }
+
+    public void kill()
+    {
+        PlayerPrefs.SetInt("Coins", 20);
+        PlayerPrefs.SetInt("MaxHealth", 500);
+        PlayerPrefs.SetInt("SwordPower", 0);
+        PlayerPrefs.SetInt("SpecialPower", 0);
+        PlayerPrefs.SetInt("Fishes", 0);
+        PlayerPrefs.SetInt("Round", 0);
     }
 }
