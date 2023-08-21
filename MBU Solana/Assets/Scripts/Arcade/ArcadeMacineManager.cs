@@ -35,7 +35,7 @@ public class ArcadeMacineManager : MonoBehaviour
     public static bool isUIopen = false;
 
     [Space]
-    public ulong requiredAmountForRacing = 2500000; // Define the required amount for the racing game
+    public ulong requiredAmount = 2500000; // Define the required amount for the racing game
 
     [Header("GameUI")]
     [SerializeField] GameObject RaceGameUI;
@@ -110,7 +110,7 @@ public class ArcadeMacineManager : MonoBehaviour
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the racing game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmountForRacing, RepairRacing, HandleTransactionFailure));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairRacing, HandleTransactionFailure));
     }
 
 
@@ -130,7 +130,7 @@ public class ArcadeMacineManager : MonoBehaviour
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the fishing game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmountForRacing, RepairFishing, HandleTransactionFailure));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairFishing, HandleTransactionFailure));
     }
 
     public void TryAndProcessTransactionShooting()
@@ -149,7 +149,7 @@ public class ArcadeMacineManager : MonoBehaviour
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmountForRacing, RepairShooting, HandleTransactionFailure));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairShooting, HandleTransactionFailure));
     }
 
     public void TryAndProcessTransactionDonate()
@@ -165,7 +165,7 @@ public class ArcadeMacineManager : MonoBehaviour
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmountForRacing, donated, HandleTransactionFailure, "donated"));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, donated, HandleTransactionFailure, "donated"));
     }
 
     public void donated()

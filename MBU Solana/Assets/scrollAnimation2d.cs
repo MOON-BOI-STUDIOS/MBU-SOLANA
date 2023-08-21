@@ -83,7 +83,7 @@ public class scrollAnimation2d : MonoBehaviour
 #endif
 
 #if UNITY_IOS || UNITY_ANDROID
-        transformTween = targetTransform.DOLocalMoveY(1300, 22f)//800for PC  110 forIOS
+        transformTween = targetTransform.DOLocalMoveY(1700, 15f)//800for PC  110 forIOS
             .OnComplete(() =>
             {
                  if (skipCalled) return;
