@@ -136,9 +136,9 @@ PlayerSettings:
     Others: 1
   bundleVersion: 1.2.0
   preloadedAssets:
-  - {fileID: 11400000, guid: a6e9b68d07b5cd24982c6610bfdae1de, type: 2}
-  - {fileID: -3167580198829259446, guid: 4a4770776bdf7b14a84228a59cf77774, type: 2}
   - {fileID: 11400000, guid: fca83694f88847148953a9f656a33fb8, type: 2}
+  - {fileID: -3167580198829259446, guid: 4a4770776bdf7b14a84228a59cf77774, type: 2}
+  - {fileID: 11400000, guid: a6e9b68d07b5cd24982c6610bfdae1de, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -253,15 +253,15 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: '{inproject}: Assets/Publishing/keystore.keystore'
+  AndroidKeyaliasName: keystore
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
