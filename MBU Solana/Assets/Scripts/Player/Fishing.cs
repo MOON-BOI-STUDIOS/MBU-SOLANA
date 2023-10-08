@@ -85,6 +85,7 @@ public class Fishing : MonoBehaviour
             if (fishMarkerCounter == 3)
             {
                 StartCoroutine(fishCaught());
+                
             }
         }
         //unsuccesful attempt

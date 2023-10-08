@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviour, IAddToInventory
 {
     // Start is called before the first frame update
     public PlayerController _controller;
@@ -27,6 +30,9 @@ public class PlayerManager : MonoBehaviour
     public bool isPoweredUp = false;
 
     string curSceneName;
+    
+    //Inventory Additions Array
+    private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
@@ -167,4 +173,26 @@ public class PlayerManager : MonoBehaviour
         SceneManager.LoadScene(3);
     }
     
+    // Adding to Inventory
+    public void AdditionToInventory(String invGameObject, int invItemNumber)
+    {
+        // Adding to Inventory
+        if (inv.ContainsKey(invItemNumber))
+        {
+            Inventory inventoryItem = inv[invItemNumber];
+            Debug.Log("Amount: " + inventoryItem.GetAmount());
+            inventoryItem.IncreaseAmount(inventoryItem.GetAmount() + 1);
+            inv[invItemNumber] = inventoryItem;
+            inventoryItem.DisplayInventoryItem();
+        }
+        else
+        {
+            Debug.Log("Added");
+            Inventory newItem = new Inventory(invGameObject,invItemNumber);
+            inv.Add(invItemNumber,newItem);
+            inv[invItemNumber].DisplayInventoryItem();
+        }
+        
+    }
+
 }
