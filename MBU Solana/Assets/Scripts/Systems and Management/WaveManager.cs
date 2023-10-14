@@ -11,7 +11,7 @@ public class WaveManager : MonoBehaviour
     public Transform enemiesParent;
     bool waveSwitch;
     public GameObject powerUp;
-    public GameObject endOfRoundScreen, controls;
+    public GameObject endOfRoundScreen, controls, slotAssets;
     // Start is called before the first frame update
 
     public GameObject[] BackMecha;
@@ -20,6 +20,7 @@ public class WaveManager : MonoBehaviour
     {
         nextRound();
         StartCoroutine(delayLittleCoroutine());
+        //PlayerPrefs.SetInt("Round", 1);
     }
     void Start()
     {
@@ -59,6 +60,10 @@ public class WaveManager : MonoBehaviour
            
                 PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1); 
                 endOfRoundScreen.SetActive(true);
+                // Activating the Slots Assets
+                //SlotMachineAppear();
+                //slotAssets.SetActive(true);
+                //
                 waveSwitch = true;
             Destroy(GameObject.FindGameObjectWithTag("PowerUp"));
 
@@ -74,11 +79,14 @@ public class WaveManager : MonoBehaviour
     public void spawnMixedVoids()
     {
         waveSwitch = false;
-        Instantiate(voids[Random.Range(0, 5)], spawnLocations[Random.Range(0, spawnLocations.Length - 1)].position, Quaternion.identity, enemiesParent);
+        Instantiate(voids[Random.Range(0, 4)], spawnLocations[Random.Range(0, spawnLocations.Length - 1)].position, Quaternion.identity, enemiesParent);
     }
 
     public void nextRound()
     {
+        //Disabling the Slots Assets
+        //SlotMachineAppear();
+        //
         endOfRoundScreen.SetActive(false);
 
         for (int i = 0; i < 2 + 2 * PlayerPrefs.GetInt("Round"); i++)
@@ -122,5 +130,14 @@ public class WaveManager : MonoBehaviour
         PlayerPrefs.SetInt("SpecialPower", 0);
         PlayerPrefs.SetInt("Fishes", 0);
         PlayerPrefs.SetInt("Round", 0);
+    }
+
+    private void SlotMachineAppear()
+    {
+        slotAssets.SetActive(true);
+        if (slotAssets == null) return;
+        Animator animator = slotAssets.GetComponent<Animator>();
+        if (animator == null) return;
+        animator.SetBool("appear", true);
     }
 }

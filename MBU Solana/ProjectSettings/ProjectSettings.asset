@@ -135,10 +135,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.2.0
-  preloadedAssets:
-  - {fileID: 11400000, guid: fca83694f88847148953a9f656a33fb8, type: 2}
-  - {fileID: -3167580198829259446, guid: 4a4770776bdf7b14a84228a59cf77774, type: 2}
-  - {fileID: 11400000, guid: a6e9b68d07b5cd24982c6610bfdae1de, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -160,6 +157,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.MoonBoiStudios.MoonBoiUniverse
     Standalone: com.DefaultCompany.2DProject
+    iPhone: com.Moon-Boi-Studios.Moon-Boi-Universe
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -249,12 +247,12 @@ PlayerSettings:
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 3
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: Assets/Publishing/keystore.keystore'
-  AndroidKeyaliasName: keystore
+  AndroidKeystoreName: /Volumes/ADATA_HD710/MoonBoiBuildResources/buildResources/KeystoreCredentials.keystore
+  AndroidKeyaliasName: moon boi universe
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
