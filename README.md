@@ -2,7 +2,9 @@
 
 Welcome to a unique top-down isometric 2D RPG, where players can explore a city map and engage in an immersive arcade room experience. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Bonk tokens.
 
-[[Watch the video]](https://youtu.be/YdAZjCU54I4)
+[[Demo Video]](https://youtu.be/YdAZjCU54I4)
+
+[[Moon Boi HYPERDRIVE APK]](https://youtu.be/YdAZjCU54I4)
 
 ## Table of Contents
 
