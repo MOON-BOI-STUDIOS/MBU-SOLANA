@@ -163,7 +163,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     }
   
     //death sequence
-    IEnumerator deathSequence()
+    IEnumerator  deathSequence()
     {
         _controller.enabled = false;
         _combat.enabled = false;

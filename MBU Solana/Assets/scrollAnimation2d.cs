@@ -25,7 +25,7 @@ public class scrollAnimation2d : MonoBehaviour
             transformTween.Kill(); // Kill the tween
         }
 #if UNITY_IOS || UNITY_ANDROID
-                        //Joystick.SetActive(true);
+                        Joystick.SetActive(true);
 #endif
         spawnLocationManager.Inst.dreSprite.enabled = false;
         targetImage.DOFade(0, 0.1f).OnComplete(() =>

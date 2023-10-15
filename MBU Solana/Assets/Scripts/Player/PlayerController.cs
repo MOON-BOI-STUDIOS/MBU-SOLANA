@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     private float currentSpeed;
     public bool isRunning;
     public PlayerInput inputs;
-    public IPlayerInput inputHandler;
-    //public CustomJoystick joystick;
+    //public IPlayerInput inputHandler;
+    public CustomJoystick joystick;
     private PlayerManager _manager;
 
     void Start()
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         _manager = GetComponent<PlayerManager>();
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = moveSpeed;
-        inputHandler = GetComponent<IPlayerInput>();
+        //inputHandler = GetComponent<IPlayerInput>();
 
         // Subscribe to the Move action events
         inputs.actions["Move"].performed += Move;
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private void UpdateMoveDirection()
     {
 #if !UNITY_STANDALONE && !UNITY_WEBGL
-        moveDirection = inputHandler.GetInputDirection(); //joystick.GetJoystickDirection();
+        moveDirection = joystick.GetJoystickDirection();//inputHandler.GetInputDirection(); //
 #endif
     }
 

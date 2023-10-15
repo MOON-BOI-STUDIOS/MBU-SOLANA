@@ -34,7 +34,7 @@ public class ArcadeMacineManager : MonoBehaviour
     public static arcadeCollisionDetection currentACD;
     public static bool isUIopen = false;
 
-    [Space] public ulong requiredAmount = 0;//2500000; // Define the required amount for the racing game
+    [Space] public ulong requiredAmount = 2500000; // Define the required amount for the racing game
 
     [Header("GameUI")]
     [SerializeField] GameObject RaceGameUI;

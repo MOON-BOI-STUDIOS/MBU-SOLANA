@@ -1863,7 +1863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &348749257
 Transform:
   m_ObjectHideFlags: 0
@@ -4894,7 +4894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &741275737
 Transform:
   m_ObjectHideFlags: 0
@@ -5454,7 +5454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &864245044
 Transform:
   m_ObjectHideFlags: 0
@@ -11461,6 +11461,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8977963899517756180, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
   m_PrefabInstance: {fileID: 2024007938}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2024007940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8977963898709357593, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
+  m_PrefabInstance: {fileID: 2024007938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c9674c586d23db4698f9d392c959052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2067709251
 GameObject:
   m_ObjectHideFlags: 0
@@ -21210,6 +21221,7 @@ MonoBehaviour:
   runSpeed: 5
   isRunning: 0
   inputs: {fileID: 1477700498}
+  joystick: {fileID: 2024007940}
 --- !u!82 &3685875997906252235
 AudioSource:
   m_ObjectHideFlags: 0
