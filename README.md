@@ -64,7 +64,7 @@ For more details, refer to the [architecture diagram](./docs/architecture.png).
    Explore the city and engage in the arcade room experience.
 
 ## How to Play
-
+- **Download APK for Android mobile**: Link: 
 - **Log In**: Use your Solana wallet with a minimum of 0.5 SOL and 10 million Bonk tokens.
 - **Explore**: Walk around the city and enter the arcade room.
 - **Upgrade**: Stand in front of an arcade machine to upgrade using Bonk tokens.
