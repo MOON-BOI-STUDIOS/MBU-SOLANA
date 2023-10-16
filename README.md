@@ -4,7 +4,7 @@ Welcome to a unique top-down isometric 2D RPG, where players can explore a city 
 
 [[Demo Video]](https://youtu.be/rHkDvgrDe8k)
 
-[[Moon Boi HYPERDRIVE APK]](https://youtu.be/YdAZjCU54I4)
+[[Moon Boi HYPERDRIVE APK d/l to play on android]](https://drive.google.com/file/d/1pe3KXjlHL_zJaLGkjHq_2sv0-1GDs9Af/view?usp=drive_link)
 
 ## Table of Contents
 
