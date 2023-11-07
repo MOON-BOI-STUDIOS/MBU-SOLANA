@@ -142,7 +142,7 @@ public class ArcadeMacineManager : MonoBehaviour
 
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
-        _TransferDetails.text = "Upgrade Shooting Game";
+        _TransferDetails.text = "Upgrade Battle Arena";
         wallet.SetActive(true);
         Background.SetActive(true);
         _SendButton.gameObject.SetActive(true);

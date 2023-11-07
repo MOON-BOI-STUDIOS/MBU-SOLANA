@@ -12,182 +12,97 @@ using Random = UnityEngine.Random;
 
 public class SlotManager : MonoBehaviour
 {
-    /*public GameObject slotMachine;
-    public Vector3 startPositionSlot;
-    public Vector3 positionToMoveTo;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //transform. = startPositionSlot;
-        StartCoroutine(LerpPosition(positionToMoveTo, 5));
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    [Header("Slots, Lever and Machine")]
+    public SlotRoll[] slots;
+    public GameObject _lever;
+    public SpritesAnimations[] _Animations;
     
-    IEnumerator LerpPosition(Vector3 targetPosition, float duration)
-    {
-        float time = 0;
-        Vector3 startPosition = slotMachine.transform.position;
-        while (time < duration)
-        {
-            slotMachine.transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-        slotMachine.transform.position = targetPosition;
-    }*/
-    public GameObject lever;
-    public Image m_Image;
-    public Image m_SlotOneImage;
-    public Image m_SlotTwoImage;
-    public Image m_SlotThreeImage;
-
-    public Sprite[] m_SpriteArray;
-    public Sprite[] m_SlotOneArray;
-    public Sprite[] m_SlotTwoArray;
-    public Sprite[] m_SlotThreeArray;
-    public Sprite[] m_SelectionSprite;
-    public float m_Speed = 1f;
+    [Header("Slot Speed")]
     public float s_slotOne;
     public float s_slotTwo;
     public float s_slotThree;
-    public float m_wait;
     public GameObject spinAgaintext;
-    //public Text Infotext;
-    public AudioSource audioData;
-    
+    public TMP_Text Infotext;
+    public int limit = 2;
+
     private int slotone;
     private int slotTwo;
+    private int slotThree;
     private Dictionary<int, int> slotNumbers = new Dictionary<int, int>();
     private int countCall;
     
     private int spinTimes = 0;
 
+    private IPaymentHandler _paymentHandler;
+    //private ICreditBalance _creditBalance;
+
+    private bool IsSpinning = false;
+
     private void Start()
     {
         //Infotext = spinAgaintext.GetComponent<TextMeshProUGUI>();
+        _paymentHandler = GetComponent<IPaymentHandler>();
+        //_creditBalance = GetComponent<ICreditBalance>();
+        Spin();
+
+    }
+
+    public void Spin()
+    {
+        if (spinTimes < limit && !IsSpinning)
+        {
+            //Debug.Log("spinTimes <= limit" + spinTimes);
+            spinTimes += 1;
+            IsSpinning = true;
+            _Animations[0].InvokeAnimation();
+            StartCoroutine(DelayStartingAnimation());
+        }
+        else
+        {
+            //Debug.Log("spinTimes > limit" + spinTimes);
+            _paymentHandler.TryAndProcessTransaction();
+        }
+    }
+
+    IEnumerator DelayStartingAnimation()
+    {
+        yield return new WaitForSeconds(2.0f);
+        _lever.SetActive(true);
+        _Animations[1].InvokeAnimation();
+        Func_PlayUIAnim();
     }
 
     public void Func_PlayUIAnim()
     {
-        if (spinTimes <= 5)
-        {
-            spinAgaintext.SetActive(false);
-            spinTimes += 1; // To stop second Spin
-            lever.SetActive(true);
-            StartCoroutine(Func_PlayAnimUI());
-            StartCoroutine(SlotOneSpin());
-            StartCoroutine(DelayBetweenSlots());
-        }
-        else
-        {
-            spinTimes += 1;
-        }
-
+        slotone =  Random.Range(0, 5);
+        slotTwo = Random.Range(slotone, 5);
+        slotThree = Random.Range(0, 5);
+        spinAgaintext.SetActive(false);
+        slots[0].InvokeSlotSpin(false,0.0f,slotone,s_slotOne);
+        AddtoDictionary(slotone);
+        slots[1].InvokeSlotSpin(true, 1.0f,slotTwo,s_slotTwo);
+        AddtoDictionary(slotTwo);
+        slots[2].InvokeSlotSpin(true,2.0f,slotThree,s_slotThree);
+        StartCoroutine(DelayRewards());
+        
+    }
+    
+    IEnumerator DelayRewards()
+    {
+        yield return new WaitForSeconds(10.0f);
+        AddtoDictionary(slotThree);
     }
 
     public void nextRound()
     {
         spinTimes = 0;
+        limit = 2;
         spinAgaintext.SetActive(false);
-        m_SlotOneImage.sprite = m_SlotOneArray[12];
-        m_SlotTwoImage.sprite = m_SlotTwoArray[14];
-        m_SlotThreeImage.sprite = m_SlotThreeArray[16];
-    }
-
-    IEnumerator Func_PlayAnimUI()
-    {
-        int m_IndexSprite = 0;
-        while (m_IndexSprite < m_SpriteArray.Length)
-        {
-            m_Image.sprite = m_SpriteArray[m_IndexSprite];
-            m_IndexSprite += 1;
-            yield return new WaitForSeconds(m_Speed);
-        }
-        
-        lever.SetActive(false);
-    }
-    IEnumerator SlotOneSpin()
-    {
-        slotone = Random.Range(0, 5);
-        
-        int m_IndexSprite = 0;
-        float speed = 0.0f;
-        audioData.Play(0);
-        while (m_IndexSprite < m_SlotOneArray.Length)
-        {
-            m_SlotOneImage.sprite = m_SlotOneArray[m_IndexSprite];
-            if(m_IndexSprite == slotone + 11)
-                break;
-            m_IndexSprite += 1;
-            //speed = m_IndexSprite / (m_IndexSprite + 1);
-            yield return new WaitForSeconds(m_IndexSprite/s_slotOne);
-        }
-
-        for (int i = (slotone * 4); i < (slotone * 4) + 4; i++)
-        {
-            m_SlotOneImage.sprite = m_SelectionSprite[i];
-            yield return new WaitForSeconds(0.5f);
-        }
-        //Debug.Log("SlotOne Added");
-        AddtoDictionary(slotone);
-        
-    }
-    IEnumerator SlotTwoSpin()
-    {
-        slotTwo = Random.Range(slotone, 5);
-        int m_IndexSprite = 0;
-        float speedTwo = 0.0f;
-        audioData.Play(0);
-        while (m_IndexSprite < m_SlotTwoArray.Length)
-        {
-            m_SlotTwoImage.sprite = m_SlotTwoArray[m_IndexSprite];
-            if(m_IndexSprite == slotTwo + 11)
-                break;
-            m_IndexSprite += 1;
-            //speedTwo = m_IndexSprite / (m_IndexSprite + 1);
-            yield return new WaitForSeconds(m_IndexSprite/s_slotTwo);
-        }
-        for (int i = (slotTwo * 4); i < (slotTwo * 4) + 4; i++)
-        {
-            m_SlotTwoImage.sprite = m_SelectionSprite[i];
-            yield return new WaitForSeconds(0.5f);
-        }
-        //Debug.Log("SlotTwo added");
-        AddtoDictionary(slotTwo);
-        
-    }
-    IEnumerator SlotThreeSpin()
-    {
-        int slotThree = Random.Range(0, 5);
-        int m_IndexSprite = 0;
-        float speedThree = 0.0f;
-        audioData.Play(0);
-        while (m_IndexSprite < m_SlotThreeArray.Length)
-        {
-            m_SlotThreeImage.sprite = m_SlotThreeArray[m_IndexSprite];
-            if(m_IndexSprite == slotThree + 11)
-                break;
-            m_IndexSprite += 1;
-            //speedThree = m_IndexSprite / (m_IndexSprite + 1);
-            yield return new WaitForSeconds(m_IndexSprite/s_slotThree);
-        }
-        for (int i = (slotThree * 4); i < (slotThree * 4) + 4; i++)
-        {
-            m_SlotThreeImage.sprite = m_SelectionSprite[i];
-            yield return new WaitForSeconds(0.5f);
-        }
-        //Debug.Log("SlotThree added");
-        AddtoDictionary(slotThree);
     }
 
     void AddtoDictionary(int key)
     {
+        //Debug.Log("Add to dictionary");
         countCall += 1;
         if (slotNumbers.ContainsKey(key))
         {
@@ -200,12 +115,14 @@ public class SlotManager : MonoBehaviour
 
         if (countCall == 3)
         {
-          RewardPlayer();  
+          RewardPlayer();
+          countCall = 0;
         }
     }
 
     void RewardPlayer()
     {
+        //Debug.Log("Reward Player");
         bool unique = true;
         //Debug.Log("Rewarding Player");
         foreach (int key in slotNumbers.Keys)
@@ -222,33 +139,34 @@ public class SlotManager : MonoBehaviour
 
         if (unique)
         {
-            spinAgaintext.SetActive(true);
+            ResetSlot();
         }
     }
 
     void StateOfReward(int key, int freq)
     {
+        //Debug.Log("Reached here state of reward");
         switch (key)
         {
             case 0:
-                //Infotext.text = "Sword Up!!";
+                //Infotext.text = "Sword PowerUp!!";
                 if (freq == 2)
                 {
                     PlayerPrefs.SetInt("SwordPower", PlayerPrefs.GetInt("SwordPower") + 7);
                 }
-                else if(freq == 3)
+                else 
                 {
                     PlayerPrefs.SetInt("SwordPower", PlayerPrefs.GetInt("SwordPower") + 14);
                 }
                 break;
             case 1:
-                //Infotext.text = "Spin Again!!";
+                //Infotext.text = "Health Power!!";
                 //Spin again
                 if (freq == 2)
                 {
                     PlayerPrefs.SetInt("MaxHealth", PlayerPrefs.GetInt("MaxHealth") - 50);
                 }
-                else if (freq == 3)
+                else
                 {
                     PlayerPrefs.SetInt("MaxHealth", PlayerPrefs.GetInt("MaxHealth") - 50);
                     PlayerPrefs.SetInt("SwordPower", PlayerPrefs.GetInt("SwordPower") - 4);
@@ -257,6 +175,8 @@ public class SlotManager : MonoBehaviour
             case 2:
                 //Bonk win
                 //Infotext.text = "BONK!!!";
+                //Debug.Log("Bonk Win");
+                //_creditBalance.TryCreditBalance();
                 break;
             case 3:
                 //Infotext.text = "Health UP!!";
@@ -264,8 +184,9 @@ public class SlotManager : MonoBehaviour
                 {
                     PlayerPrefs.SetInt("MaxHealth", PlayerPrefs.GetInt("MaxHealth") + 50);
                 }
-                else if( freq == 3)
+                else
                 {
+                    PlayerPrefs.SetInt("MaxHealth", PlayerPrefs.GetInt("MaxHealth") + 50);
                     PlayerPrefs.SetInt("SwordPower", PlayerPrefs.GetInt("SwordPower") + 100);
                 }
                 break;
@@ -275,7 +196,7 @@ public class SlotManager : MonoBehaviour
                 {
                     PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + 10);
                 }
-                else if (freq == 3)
+                else 
                 {
                     PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + 50);
                 }
@@ -286,36 +207,31 @@ public class SlotManager : MonoBehaviour
                 {
                     PlayerPrefs.SetInt("SpecialPower", PlayerPrefs.GetInt("SpecialPower") + 20);
                 }
-                else if(freq == 3)
+                else
                 {
                     PlayerPrefs.SetInt("SpecialPower", PlayerPrefs.GetInt("SpecialPower") + 30);
                 }
                 break;
         }
+        ResetSlot();
+    }
+
+     public void ResetSlot()
+    {
+        if (spinTimes < limit)
+        {
+            Infotext.text = Math.Abs(limit - spinTimes) + " spin(s) left";
+        }
+        else
+        {
+            Infotext.text = "0 spin(s) left";
+        }
+
         spinAgaintext.SetActive(true);
         slotNumbers.Clear();
+        IsSpinning = false;
+        Debug.Log("IsSpinning:" + IsSpinning);
     }
-
-    IEnumerator DelayBetweenSlots()
-    {
-        yield return new WaitForSeconds(m_wait);
-        SlotTwo();
-    }
-
-    IEnumerator DelayBetweenSlotsThree()
-    {
-        yield return new WaitForSeconds(m_wait);
-        SlotThree();
-    }
-
-    private void SlotTwo()
-    {
-        StartCoroutine(SlotTwoSpin());
-        StartCoroutine(DelayBetweenSlotsThree());
-    }
-
-    private void SlotThree()
-    {
-        StartCoroutine(SlotThreeSpin());
-    }
+     
+     
 }

@@ -1,0 +1,39 @@
+publisher:
+  name: Moon Boi Studios
+  address: 'London, United Kingdom'
+  website: https://moonboi.io/
+  email: ems@moonboi.io
+  media:
+    - purpose: icon
+      uri: Icon.jpg
+app:
+  name: Moon Boi Universe (Alpha)
+  address: 'London, United Kingdom'
+  android_package: com.moonboistudios.moonboiuniverse
+  urls:
+    license_url: https://moonboiuniverse.com/privacy-policy
+    copyright_url: https://moonboiuniverse.com/privacy-policy
+    privacy_policy_url: https://moonboiuniverse.com/privacy-policy
+    website: https://moonboi.io/
+  media:
+    - purpose: icon
+      uri: Icon.jpg
+release:
+  address: ''
+  media:
+    - purpose: icon
+      uri: Icon.jpg
+    - purpose: screenshot
+      uri: moonboiScreenShot.png
+  files:
+    - purpose: install
+      uri: MoonboiBonktest.apk
+  catalog:
+    en-US:
+      name: Moon Boi Universe (Alpha)
+      short_description: Cyber Fantasy RPG
+      long_description:  Unleash Fun in Moon Boi Universe! Engage in alien battles, climb leaderboards, and dive into the new retro arcade using BONK tokens. Experience an interstellar journey packed with excitement, challenges, and endless enjoyment!
+      new_in_version: BONK BARKADE! Interact with BONK’s custom retro arcade, unlock, upgrade and have fun!
+      saga_features: <<ANY_FEATURES_ONLY_AVAILBLE_WHEN_RUNNING_ON_SAGA>>
+solana_mobile_dapp_publisher_portal:
+  testing_instructions: <<TESTING_INSTRUCTIONS>>

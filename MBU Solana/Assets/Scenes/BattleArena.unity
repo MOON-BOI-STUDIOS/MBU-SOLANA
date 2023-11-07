@@ -820,81 +820,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab7c52a43f7a4277a8eca7425fe8f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lever: {fileID: 2048807128}
-  m_Image: {fileID: 2048807134}
-  m_SlotOneImage: {fileID: 649580424}
-  m_SlotTwoImage: {fileID: 412843563}
-  m_SlotThreeImage: {fileID: 685747376}
-  m_SpriteArray:
-  - {fileID: 1772870388, guid: ec9b2863fc59b4a26b34b80c8f81feb9, type: 3}
-  - {fileID: -883821227, guid: ec9b2863fc59b4a26b34b80c8f81feb9, type: 3}
-  - {fileID: -801242413, guid: ec9b2863fc59b4a26b34b80c8f81feb9, type: 3}
-  - {fileID: -2064073225, guid: ec9b2863fc59b4a26b34b80c8f81feb9, type: 3}
-  - {fileID: 1665445330, guid: ec9b2863fc59b4a26b34b80c8f81feb9, type: 3}
-  - {fileID: 667217834, guid: ec9b2863fc59b4a26b34b80c8f81feb9, type: 3}
-  - {fileID: -343566720, guid: ec9b2863fc59b4a26b34b80c8f81feb9, type: 3}
-  m_SlotOneArray:
-  - {fileID: 2075643384, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 1813634557, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: -1375217621, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: -574686414, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 1626159291, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 21300000, guid: 6b38b36319004431883c2ad47d9e5a05, type: 3}
-  - {fileID: 21300000, guid: 0abb6ffe6aeb14d3daf2dba561398138, type: 3}
-  - {fileID: 21300000, guid: c81a970bf008c4b558cf12661004840c, type: 3}
-  - {fileID: 21300000, guid: b61541b6ec4964354af86852b9c16cb1, type: 3}
-  - {fileID: 21300000, guid: b97f26e5dfe1f4a509aa80d455041831, type: 3}
-  - {fileID: 21300000, guid: 941b27982c5d34e6f9ddd6ea79b795b7, type: 3}
-  - {fileID: 21300000, guid: 36bf6c9969a094d7a84f29dd757f0943, type: 3}
-  - {fileID: 21300000, guid: 062b71fb2536a449b8e8b896fe09617d, type: 3}
-  - {fileID: 21300000, guid: 5b284c9c14da44a4f923139e07660d26, type: 3}
-  - {fileID: 21300000, guid: d81c6199a3e3947daa951f8011e6151a, type: 3}
-  - {fileID: 21300000, guid: 935f922bebb90455388577fd2d12fe11, type: 3}
-  - {fileID: 21300000, guid: c59d4bb21fc39464991eeacea35a711b, type: 3}
-  m_SlotTwoArray:
-  - {fileID: 2075643384, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 1813634557, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: -1375217621, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: -574686414, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 1626159291, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 21300000, guid: 6b38b36319004431883c2ad47d9e5a05, type: 3}
-  - {fileID: 21300000, guid: 0abb6ffe6aeb14d3daf2dba561398138, type: 3}
-  - {fileID: 21300000, guid: c81a970bf008c4b558cf12661004840c, type: 3}
-  - {fileID: 21300000, guid: b61541b6ec4964354af86852b9c16cb1, type: 3}
-  - {fileID: 21300000, guid: b97f26e5dfe1f4a509aa80d455041831, type: 3}
-  - {fileID: 21300000, guid: 941b27982c5d34e6f9ddd6ea79b795b7, type: 3}
-  - {fileID: 21300000, guid: 36bf6c9969a094d7a84f29dd757f0943, type: 3}
-  - {fileID: 21300000, guid: 062b71fb2536a449b8e8b896fe09617d, type: 3}
-  - {fileID: 21300000, guid: 5b284c9c14da44a4f923139e07660d26, type: 3}
-  - {fileID: 21300000, guid: d81c6199a3e3947daa951f8011e6151a, type: 3}
-  - {fileID: 21300000, guid: 935f922bebb90455388577fd2d12fe11, type: 3}
-  - {fileID: 21300000, guid: c59d4bb21fc39464991eeacea35a711b, type: 3}
-  m_SlotThreeArray:
-  - {fileID: 2075643384, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 1813634557, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: -1375217621, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: -574686414, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 1626159291, guid: 6814129d5e69c4180a1f700e9475010b, type: 3}
-  - {fileID: 21300000, guid: 6b38b36319004431883c2ad47d9e5a05, type: 3}
-  - {fileID: 21300000, guid: 0abb6ffe6aeb14d3daf2dba561398138, type: 3}
-  - {fileID: 21300000, guid: c81a970bf008c4b558cf12661004840c, type: 3}
-  - {fileID: 21300000, guid: b61541b6ec4964354af86852b9c16cb1, type: 3}
-  - {fileID: 21300000, guid: b97f26e5dfe1f4a509aa80d455041831, type: 3}
-  - {fileID: 21300000, guid: 941b27982c5d34e6f9ddd6ea79b795b7, type: 3}
-  - {fileID: 21300000, guid: 36bf6c9969a094d7a84f29dd757f0943, type: 3}
-  - {fileID: 21300000, guid: 062b71fb2536a449b8e8b896fe09617d, type: 3}
-  - {fileID: 21300000, guid: 5b284c9c14da44a4f923139e07660d26, type: 3}
-  - {fileID: 21300000, guid: d81c6199a3e3947daa951f8011e6151a, type: 3}
-  - {fileID: 21300000, guid: 935f922bebb90455388577fd2d12fe11, type: 3}
-  - {fileID: 21300000, guid: c59d4bb21fc39464991eeacea35a711b, type: 3}
-  m_SelectionSprite: []
-  m_Speed: 0.02
+  slots: []
+  _lever: {fileID: 0}
+  _Animations: []
   s_slotOne: 0
   s_slotTwo: 0
   s_slotThree: 0
-  m_wait: 0
   spinAgaintext: {fileID: 0}
-  audioData: {fileID: 0}
+  Infotext: {fileID: 0}
+  limit: 2
 --- !u!1001 &1138070299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4895,9 +4829,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.08467741
+    width: 2.7703805
+    height: 1.0887096
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -6273,9 +6207,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.08467741
+    width: 2.7703805
+    height: 1.0887096
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -10053,11 +9987,11 @@ RectTransform:
   m_Father: {fileID: 248699828764633067}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -512.9, y: 694.1}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -463, y: 29.609985}
   m_SizeDelta: {x: 160, y: 160}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &248699829376462448
 GameObject:
   m_ObjectHideFlags: 0
@@ -10871,7 +10805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -508, y: 374.90002}
+  m_AnchoredPosition: {x: -520, y: 577.39}
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &248699829438578852
@@ -15433,13 +15367,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6747773275470969537}
+  currentDirection: {x: 0, y: 0}
   moveDirection: {x: 0, y: 0}
   isMoving: 0
   moveSpeed: 4
   runSpeed: 5
   isRunning: 0
   inputs: {fileID: 248699829177208230}
-  joystick: {fileID: 248699829983360684}
 --- !u!4 &3482781816479680324
 Transform:
   m_ObjectHideFlags: 0

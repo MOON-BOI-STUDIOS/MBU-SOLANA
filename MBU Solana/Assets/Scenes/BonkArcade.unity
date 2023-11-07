@@ -17804,18 +17804,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798360582610041294}
   m_CullTransparentMesh: 1
---- !u!114 &2130693065970078760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5542246174279632464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd7daddfbeaa44729a122a269ac8fb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &2138701151822597530
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21215,13 +21203,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6834044380944469060}
+  currentDirection: {x: 0, y: 0}
   moveDirection: {x: 0, y: 0}
   isMoving: 0
   moveSpeed: 4
   runSpeed: 5
   isRunning: 0
   inputs: {fileID: 1477700498}
-  joystick: {fileID: 2024007940}
 --- !u!82 &3685875997906252235
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26144,79 +26132,17 @@ RectTransform:
   m_AnchoredPosition: {x: 515, y: -156}
   m_SizeDelta: {x: 479.7, y: 107.2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &5542246174279632464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5542246174279632466}
-  - component: {fileID: 2130693065970078760}
-  - component: {fileID: 5542246174279632468}
-  m_Layer: 5
-  m_Name: '[WalletController]'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5542246174279632466
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5542246174279632464}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 523.5468, y: 236.58034, z: -101.23383}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5542246174279632468
+--- !u!114 &5542246174279632468 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+  m_PrefabInstance: {fileID: 7714623488626405596}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5542246174279632464}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b75a4e92c14884ea6bf3e46d07a33eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rpcCluster: 1
-  customRpc: https://red-boldest-uranium.solana-mainnet.quiknode.pro/190d71a30ba3170f66df5e49c8c88870737cd5ce/
-  webSocketsRpc: 
-  autoConnectOnStartup: 1
-  web3AuthWalletOptions:
-    appName: Solana Unity SDK
-    logoLight: 
-    logoDark: 
-    defaultLanguage: en
-    dark: 1
-    themeName: primary
-    themeColor: '#123456'
-    redirectUrl: torusapp://com.torus.Web3AuthUnity/auth
-    clientId: BO4zGEzyV6DT1vHU46b6GEngOcg2jl5Pmd9Boi8dLdBpBZnS351ulHDz2k7XJ1dEm-DcvyyARivGCZDXrbZng-0
-    network: 0
-  solanaWalletAdapterOptions:
-    solanaMobileWalletAdapterOptions:
-      identityUri: https://solana.unity-sdk.gg/
-      iconUri: /favicon.ico
-      name: Solana.Unity-SDK
-      keepConnectionAlive: 1
-    solanaWalletAdapterWebGLOptions:
-      walletAdapterButtonPrefab: {fileID: 0}
-      walletAdapterUIPrefab: {fileID: 0}
-    phantomWalletOptions:
-      phantomApiVersion: v1
-      appMetaDataUrl: https://github.com/garbles-labs/Solana.Unity-SDK
-      deeplinkUrlScheme: unitydl
 --- !u!1 &5542246174284718546
 GameObject:
   m_ObjectHideFlags: 0
@@ -35738,6 +35664,63 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1001 &7714623488626405596
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2874944422779467404, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_Name
+      value: '[WalletController]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 523.5468
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 236.58034
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -101.23383
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467406, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
 --- !u!114 &7746135485399764703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39071,10 +39054,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3685875997906252221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 454d69fde9634eb1b8951e3c5a7e57fd, type: 3}
+  m_Script: {fileID: 11500000, guid: 273e95aa621e4116a9f4c7a50aeb6a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchMoveThreshold: 0.1
+  joystick: {fileID: 2024007940}
 --- !u!222 &8904588778913763806
 CanvasRenderer:
   m_ObjectHideFlags: 0
