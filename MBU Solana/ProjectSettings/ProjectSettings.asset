@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Moon Boi Studios
-  productName: Moon Boi Universe
+  companyName: MoonboiStudios
+  productName: MoonboiUniverse
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -134,8 +134,11 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.3.0
-  preloadedAssets: []
+  bundleVersion: 1.0.0
+  preloadedAssets:
+  - {fileID: -3167580198829259446, guid: 4a4770776bdf7b14a84228a59cf77774, type: 2}
+  - {fileID: 11400000, guid: fca83694f88847148953a9f656a33fb8, type: 2}
+  - {fileID: 11400000, guid: a6e9b68d07b5cd24982c6610bfdae1de, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -155,7 +158,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.MoonBoiStudios.MoonBoiUniverse
+    Android: com.MoonboiStudios.MoonboiUniverse
     Standalone: com.DefaultCompany.2DProject
     iPhone: com.Moon-Boi-Studios.Moon-Boi-Universe
   buildNumber:
@@ -251,8 +254,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Volumes/ADATA_HD710/MoonBoiBuildResources/buildResources/KeystoreCredentials.keystore
-  AndroidKeyaliasName: moon boi universe
+  AndroidKeystoreName: /Volumes/ADATA_HD710/Moonboi/Keys/MoonboiGame.keystore
+  AndroidKeyaliasName: moonboistudios
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
