@@ -1,0 +1,205 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="ArcadeMacineManager">
+			<method name="ClosePlayButton"/>
+			<method name="RepairShooting"/>
+			<method name="TryAndProcessTransactionFishing"/>
+			<method name="TryAndProcessTransactionRacing"/>
+			<method name="TryAndProcessTransactionShooting"/>
+		</type>
+		<type fullname="Beggar">
+			<method name="Interact"/>
+			<method name="tellJoke"/>
+		</type>
+		<type fullname="DropdownClusterSelector">
+			<method name="RpcNodeDropdownSelected"/>
+			<method name="RpcNodeDropdownSelected"/>
+		</type>
+		<type fullname="Fishing">
+			<method name="fish"/>
+			<method name="jolt"/>
+		</type>
+		<type fullname="GameManager">
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+			<method name="nextScene"/>
+		</type>
+		<type fullname="Leaderboard">
+			<method name="setLeaderboardEntry"/>
+			<method name="setLeaderboardEntry"/>
+			<method name="setLeaderboardEntryforrace"/>
+		</type>
+		<type fullname="MenuManaager">
+			<method name="startGame"/>
+		</type>
+		<type fullname="NPCDialogueManager">
+			<method name="interact"/>
+		</type>
+		<type fullname="PlayerCombat">
+			<method name="onAttack"/>
+			<method name="onAttack"/>
+		</type>
+		<type fullname="PlayerController">
+			<method name="Move"/>
+			<method name="Move"/>
+			<method name="Move"/>
+			<method name="Move"/>
+			<method name="Move"/>
+			<method name="Move"/>
+		</type>
+		<type fullname="RaceGameMenuManager">
+			<method name="MoveLeft"/>
+			<method name="MoveRight"/>
+			<method name="Play"/>
+			<method name="TryAndProcessTransactionBikeUpgrade"/>
+		</type>
+		<type fullname="ReceiveScreen">
+			<method name="CopyPublicKeyToClipboard"/>
+			<method name="CopyPublicKeyToClipboard"/>
+			<method name="CopyPublicKeyToClipboard"/>
+			<method name="CopyPublicKeyToClipboard"/>
+		</type>
+		<type fullname="scrollAnimation2d">
+			<method name="skip"/>
+		</type>
+		<type fullname="SlotManager">
+			<method name="Func_PlayUIAnim"/>
+			<method name="nextRound"/>
+			<method name="Spin"/>
+		</type>
+		<type fullname="Solana.Unity.SDK.Example.GenerateAccountScreen">
+			<method name="CopyMnemonicsToClipboard"/>
+			<method name="CopyMnemonicsToClipboard"/>
+		</type>
+		<type fullname="UIManager">
+			<method name="eatFish"/>
+			<method name="eatFish"/>
+			<method name="eatFish"/>
+			<method name="openPanel"/>
+			<method name="upgradeCoins"/>
+			<method name="upgradeHealth"/>
+			<method name="upgradeHealth"/>
+			<method name="upgradeHealth"/>
+			<method name="upgradeSpecial"/>
+			<method name="upgradeSpecial"/>
+			<method name="upgradeSpecial"/>
+			<method name="upgradeSword"/>
+			<method name="upgradeSword"/>
+			<method name="upgradeSword"/>
+		</type>
+		<type fullname="WaveManager">
+			<method name="kill"/>
+			<method name="kill"/>
+			<method name="kill"/>
+			<method name="nextRound"/>
+			<method name="nextRound"/>
+			<method name="nextRound"/>
+			<method name="spawnPowerUp"/>
+			<method name="spawnPowerUp"/>
+		</type>
+	</assembly>
+	<assembly fullname="com.solana.unity_sdk" ignoreIfMissing="1">
+		<type fullname="Solana.Unity.SDK.WalletAdapterButton">
+			<method name="OnSelected"/>
+		</type>
+		<type fullname="Solana.Unity.SDK.WalletAdapterScreen">
+			<method name="OnClose"/>
+		</type>
+		<type fullname="Solana.Unity.SDK.Web3">
+			<method name="Logout"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerPanel">
+			<method name="OnScrollbarClicked"/>
+			<method name="OnScrollbarClicked"/>
+			<method name="ResetDebugManager"/>
+		</type>
+		<type fullname="UnityEngine.Rendering.UI.DebugUIHandlerUIntField">
+			<method name="OnDecrement"/>
+			<method name="OnDecrement"/>
+			<method name="OnIncrement"/>
+			<method name="OnIncrement"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+</linker>

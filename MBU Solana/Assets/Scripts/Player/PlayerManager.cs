@@ -36,6 +36,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetInt("MaxHealth", 500);
     }
 
     // Update is called once per frame

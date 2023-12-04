@@ -64,12 +64,12 @@ namespace Solana.Unity.SDK.Example
             
             loginBtnXNFT.gameObject.SetActive(false);
 
-            if (Application.platform is RuntimePlatform.LinuxEditor or RuntimePlatform.WindowsEditor or RuntimePlatform.OSXEditor)
+            /*if (Application.platform is RuntimePlatform.LinuxEditor or RuntimePlatform.WindowsEditor or RuntimePlatform.OSXEditor)
             {
                 loginBtnWalletAdapter.onClick.RemoveListener(LoginCheckerWalletAdapter);
                 loginBtnWalletAdapter.onClick.AddListener(() =>
                     Debug.LogWarning("Wallet adapter login is not yet supported in the editor"));
-            }
+            }*/
 
             if(messageTxt != null)
                 messageTxt.gameObject.SetActive(false);

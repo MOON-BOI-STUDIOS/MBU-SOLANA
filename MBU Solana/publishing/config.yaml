@@ -9,7 +9,7 @@ publisher:
 app:
   name: Moon Boi Universe (Alpha)
   address: 'London, United Kingdom'
-  android_package: com.moonboistudios.moonboiuniverse
+  android_package: com.MoonboiStudios.MoonboiUniverse
   urls:
     license_url: https://moonboiuniverse.com/privacy-policy
     copyright_url: https://moonboiuniverse.com/privacy-policy
@@ -27,7 +27,7 @@ release:
       uri: moonboiScreenShot.png
   files:
     - purpose: install
-      uri: MoonboiBonktest.apk
+      uri: MoonboiGame.apk
   catalog:
     en-US:
       name: Moon Boi Universe (Alpha)
