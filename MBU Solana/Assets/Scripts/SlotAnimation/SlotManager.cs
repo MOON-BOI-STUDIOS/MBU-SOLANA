@@ -16,6 +16,7 @@ public class SlotManager : MonoBehaviour
     public SlotRoll[] slots;
     public GameObject _lever;
     public SpritesAnimations[] _Animations;
+    public GameObject _leverButton;
     
     [Header("Slot Speed")]
     public float s_slotOne;
@@ -35,16 +36,16 @@ public class SlotManager : MonoBehaviour
 
     private IPaymentHandler _paymentHandler;
     //private ICreditBalance _creditBalance;
-
+    private IToggleUI _toggleUI;
     private bool IsSpinning = false;
 
     private void Start()
     {
         //Infotext = spinAgaintext.GetComponent<TextMeshProUGUI>();
         _paymentHandler = GetComponent<IPaymentHandler>();
+        _toggleUI = GetComponent<IToggleUI>();
         //_creditBalance = GetComponent<ICreditBalance>();
         Spin();
-
     }
 
     public void Spin()
@@ -55,11 +56,14 @@ public class SlotManager : MonoBehaviour
             spinTimes += 1;
             IsSpinning = true;
             _Animations[0].InvokeAnimation();
+            _leverButton.SetActive(false);
             StartCoroutine(DelayStartingAnimation());
         }
         else
         {
             //Debug.Log("spinTimes > limit" + spinTimes);
+            _toggleUI.ToggleSlotsMachine(false);
+            _toggleUI.ToggleWalletUI(true);
             _paymentHandler.TryAndProcessTransaction();
         }
     }
@@ -218,6 +222,8 @@ public class SlotManager : MonoBehaviour
 
      public void ResetSlot()
     {
+        _toggleUI.ToggleWalletUI(false);
+        _toggleUI.ToggleSlotsMachine(true);
         if (spinTimes < limit)
         {
             Infotext.text = Math.Abs(limit - spinTimes) + " spin(s) left";
@@ -230,6 +236,7 @@ public class SlotManager : MonoBehaviour
         spinAgaintext.SetActive(true);
         slotNumbers.Clear();
         IsSpinning = false;
+        _leverButton.SetActive(true);
         Debug.Log("IsSpinning:" + IsSpinning);
     }
      

@@ -29,13 +29,13 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
     public SlotManager _SlotManager;
     public void TryAndProcessTransaction()
     {
-        if (!walletHolder.activeSelf)
+        /*if (!walletHolder.activeSelf)
         {
             walletHolder.SetActive(true);
             Background.SetActive(true);
-        }
-        else
-        {
+        }*/
+        //else
+        //{
             _buttonText.text = "2.5M BONKS";
             _TransferDetails.gameObject.SetActive(true);
             _TransferDetails.text = "Get one Extra Spin";
@@ -50,7 +50,7 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
             _SendButton.onClick.AddListener(() =>
                 _paytoPlay.TryPayToPlay(requiredAmount, TransactionSuccessful, HandleTransactionFailure));
             
-        }
+        //}
     }
 
     private void TransactionSuccessful()

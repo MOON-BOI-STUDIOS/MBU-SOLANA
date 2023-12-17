@@ -299,6 +299,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "NativeWebSocket.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "MainThreadUtil",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "MenuManaager",
@@ -675,6 +682,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "TogglingUI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "TransactionHandler",
             "moduleName": "",
             "usedInScenes": []
@@ -823,7 +837,6 @@
             "fullManagedTypeName": "UnityEngine.AI.NavMeshData",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scenes/BattleArena.unity",
                 "Assets/Scenes/BONKBattleArena.unity"
             ]
         },

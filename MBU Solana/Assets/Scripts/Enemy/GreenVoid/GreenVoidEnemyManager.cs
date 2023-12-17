@@ -45,6 +45,7 @@ public class GreenVoidEnemyManager : MonoBehaviour
                 }
 
                 health -= 30 + PlayerPrefs.GetInt("SwordPower");
+                // Spawn a new void
                 StartCoroutine(attacked());
                 
 

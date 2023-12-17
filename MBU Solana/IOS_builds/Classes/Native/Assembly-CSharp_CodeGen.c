@@ -242,8 +242,8 @@ extern void Loading__ctor_m31B31EDD4F300E61A5C50027AC65AB632B916DD6 (void);
 extern void WalletHolder_Start_m71EB677A6024290E25C9EDB4A6FCBC26BAD9AA2C (void);
 // 0x00000073 System.Void WalletHolder::.ctor()
 extern void WalletHolder__ctor_m4BE4FDFC58EED5268C4899E814B35CB8DD61B4FF (void);
-// 0x00000074 System.Void WalletHolder::<Start>b__4_0()
-extern void WalletHolder_U3CStartU3Eb__4_0_mEA52DAE731D46EEFA4D91C5003B9D2C12182252E (void);
+// 0x00000074 System.Void WalletHolder::<Start>b__5_0()
+extern void WalletHolder_U3CStartU3Eb__5_0_m72A625E1ED833DC79BE4592BC432258309F0CA57 (void);
 // 0x00000075 System.Void AnimationController::Start()
 extern void AnimationController_Start_mC2E6E251390BCB44555D1877E2866D31B49B1E06 (void);
 // 0x00000076 System.Void AnimationController::PlayIdle()
@@ -384,14 +384,14 @@ extern void ArcadeMacineManager_openPlayButton_m5E214F39D017310AED1040FE93ACA259
 extern void ArcadeMacineManager_ClosePlayButton_mA0115AC5101E6E91758585F8727E664F80D30DE2 (void);
 // 0x000000BA System.Void ArcadeMacineManager::.ctor()
 extern void ArcadeMacineManager__ctor_m814E42B20D9FCB75D40CF605F07476243AB25ADA (void);
-// 0x000000BB System.Void ArcadeMacineManager::<TryAndProcessTransactionRacing>b__24_0()
-extern void ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__24_0_m6666C7B4C086C4567D5C64CF6D51E058D38B4A95 (void);
-// 0x000000BC System.Void ArcadeMacineManager::<TryAndProcessTransactionFishing>b__25_0()
-extern void ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__25_0_mE1963E6754CAA5ACA71CFEAFD00CE7CA42FC85EF (void);
-// 0x000000BD System.Void ArcadeMacineManager::<TryAndProcessTransactionShooting>b__26_0()
-extern void ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__26_0_m121E0B60B22E518F328BE16CD2C51235F4A32505 (void);
-// 0x000000BE System.Void ArcadeMacineManager::<TryAndProcessTransactionDonate>b__27_0()
-extern void ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__27_0_mFD2D35622EF7AE25249496ACB95EB6E926AF5270 (void);
+// 0x000000BB System.Void ArcadeMacineManager::<TryAndProcessTransactionRacing>b__25_0()
+extern void ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__25_0_m9F4748FC604FC951B5C88537EC292C58EA21016F (void);
+// 0x000000BC System.Void ArcadeMacineManager::<TryAndProcessTransactionFishing>b__26_0()
+extern void ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__26_0_m5B4736E4F413D0DBA4D3140F12198BAC2A185DDE (void);
+// 0x000000BD System.Void ArcadeMacineManager::<TryAndProcessTransactionShooting>b__27_0()
+extern void ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__27_0_m508FAB7659722D4378DB20A988A87CC3147DD9B0 (void);
+// 0x000000BE System.Void ArcadeMacineManager::<TryAndProcessTransactionDonate>b__28_0()
+extern void ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__28_0_m2D00E04A2199511DDEB0F27E5875962BF42069C7 (void);
 // 0x000000BF System.Void Light2DIntensityController::Start()
 extern void Light2DIntensityController_Start_m994729BFD3478B8D462B49CF1E35F99BFB332300 (void);
 // 0x000000C0 System.Collections.IEnumerator Light2DIntensityController::FlickerLight()
@@ -1163,579 +1163,581 @@ extern void U3CGetTokenU3Ed__4_MoveNext_m4E32A26A1011777A9A2D818FC6689E9FBA81B24
 extern void U3CGetTokenU3Ed__4_SetStateMachine_mACEB77BDE8A8AFD8AB724C55183891CC0D8C1070 (void);
 // 0x00000245 System.Void ICreditBalance::TryCreditBalance()
 // 0x00000246 System.Void IPaymentHandler::TryAndProcessTransaction()
-// 0x00000247 System.Void SlotManager::Start()
+// 0x00000247 System.Void IToggleUI::ToggleSlotsMachine(System.Boolean)
+// 0x00000248 System.Void IToggleUI::ToggleWalletUI(System.Boolean)
+// 0x00000249 System.Void SlotManager::Start()
 extern void SlotManager_Start_mD62AACFCFFBF6B595987BA9B53BA21E52BFD4109 (void);
-// 0x00000248 System.Void SlotManager::Spin()
+// 0x0000024A System.Void SlotManager::Spin()
 extern void SlotManager_Spin_m2523F76E9AB54339CE5AE468B60EA6801D45398E (void);
-// 0x00000249 System.Collections.IEnumerator SlotManager::DelayStartingAnimation()
+// 0x0000024B System.Collections.IEnumerator SlotManager::DelayStartingAnimation()
 extern void SlotManager_DelayStartingAnimation_mEB9B54A4846DDD7827D1FE0B4A2B3F57EF7F87AA (void);
-// 0x0000024A System.Void SlotManager::Func_PlayUIAnim()
+// 0x0000024C System.Void SlotManager::Func_PlayUIAnim()
 extern void SlotManager_Func_PlayUIAnim_m42D931CE7F2F1881EDD835F273BE84B246189356 (void);
-// 0x0000024B System.Collections.IEnumerator SlotManager::DelayRewards()
+// 0x0000024D System.Collections.IEnumerator SlotManager::DelayRewards()
 extern void SlotManager_DelayRewards_mF2FF2797C0D28C27BA029528B0247C40BAF766C3 (void);
-// 0x0000024C System.Void SlotManager::nextRound()
+// 0x0000024E System.Void SlotManager::nextRound()
 extern void SlotManager_nextRound_mDD9DC872BEB2712BED838839A85C356F52E85A72 (void);
-// 0x0000024D System.Void SlotManager::AddtoDictionary(System.Int32)
+// 0x0000024F System.Void SlotManager::AddtoDictionary(System.Int32)
 extern void SlotManager_AddtoDictionary_mEA342D366E99E1D5EE7A77074E0A74B776345946 (void);
-// 0x0000024E System.Void SlotManager::RewardPlayer()
+// 0x00000250 System.Void SlotManager::RewardPlayer()
 extern void SlotManager_RewardPlayer_m191E5D7BC90571BF854B38A2DB160AA2EB6385AF (void);
-// 0x0000024F System.Void SlotManager::StateOfReward(System.Int32,System.Int32)
+// 0x00000251 System.Void SlotManager::StateOfReward(System.Int32,System.Int32)
 extern void SlotManager_StateOfReward_m8038559CA448C53314A18E0D1257E080655EA349 (void);
-// 0x00000250 System.Void SlotManager::ResetSlot()
+// 0x00000252 System.Void SlotManager::ResetSlot()
 extern void SlotManager_ResetSlot_m623083766917564772CCC32CDC2DD9D6D66C2CEC (void);
-// 0x00000251 System.Void SlotManager::.ctor()
+// 0x00000253 System.Void SlotManager::.ctor()
 extern void SlotManager__ctor_m8259B7550E280CD18954C76DC48A24E0744C15AA (void);
-// 0x00000252 System.Void SlotManager/<DelayStartingAnimation>d__19::.ctor(System.Int32)
-extern void U3CDelayStartingAnimationU3Ed__19__ctor_m4BB495AE8284DB3280E13297469024DB5B262F00 (void);
-// 0x00000253 System.Void SlotManager/<DelayStartingAnimation>d__19::System.IDisposable.Dispose()
-extern void U3CDelayStartingAnimationU3Ed__19_System_IDisposable_Dispose_mBDED4D2338F21BF0C3D2869D51E4C56205184AAA (void);
-// 0x00000254 System.Boolean SlotManager/<DelayStartingAnimation>d__19::MoveNext()
-extern void U3CDelayStartingAnimationU3Ed__19_MoveNext_m147B86C57BB8B120B44296E9367DB48292BBE9AA (void);
-// 0x00000255 System.Object SlotManager/<DelayStartingAnimation>d__19::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CDelayStartingAnimationU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBAED970130252C1B5DDDC0CF697905924AC960D3 (void);
-// 0x00000256 System.Void SlotManager/<DelayStartingAnimation>d__19::System.Collections.IEnumerator.Reset()
-extern void U3CDelayStartingAnimationU3Ed__19_System_Collections_IEnumerator_Reset_m38F8024EC70C3836DD703F6141D6E19C723EC552 (void);
-// 0x00000257 System.Object SlotManager/<DelayStartingAnimation>d__19::System.Collections.IEnumerator.get_Current()
-extern void U3CDelayStartingAnimationU3Ed__19_System_Collections_IEnumerator_get_Current_m88E5AAC7585AC2C1533E4E30C61F5B3BF8965912 (void);
-// 0x00000258 System.Void SlotManager/<DelayRewards>d__21::.ctor(System.Int32)
-extern void U3CDelayRewardsU3Ed__21__ctor_mC2ACF3E730BD1ED8128B2D7CD897BBC868219EF0 (void);
-// 0x00000259 System.Void SlotManager/<DelayRewards>d__21::System.IDisposable.Dispose()
-extern void U3CDelayRewardsU3Ed__21_System_IDisposable_Dispose_m7E6C4BF00C57A7C95E3696D5FE09FAACA017B955 (void);
-// 0x0000025A System.Boolean SlotManager/<DelayRewards>d__21::MoveNext()
-extern void U3CDelayRewardsU3Ed__21_MoveNext_m1454A7FF76BF5B79800CC0F0EFAB3F591A6EDA95 (void);
-// 0x0000025B System.Object SlotManager/<DelayRewards>d__21::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CDelayRewardsU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2564488A60F9B952A5496933BDE7121A6C0F3C3F (void);
-// 0x0000025C System.Void SlotManager/<DelayRewards>d__21::System.Collections.IEnumerator.Reset()
-extern void U3CDelayRewardsU3Ed__21_System_Collections_IEnumerator_Reset_mA6E50EACEAE055FD06480C9E8F686484F2E1A403 (void);
-// 0x0000025D System.Object SlotManager/<DelayRewards>d__21::System.Collections.IEnumerator.get_Current()
-extern void U3CDelayRewardsU3Ed__21_System_Collections_IEnumerator_get_Current_m05E136587B85715CCCD6F18F44E92B7D56248F64 (void);
-// 0x0000025E System.Void SlotRoll::InvokeSlotSpin(System.Boolean,System.Single,System.Int32,System.Single)
+// 0x00000254 System.Void SlotManager/<DelayStartingAnimation>d__21::.ctor(System.Int32)
+extern void U3CDelayStartingAnimationU3Ed__21__ctor_m0FD329659D953B5E0E5F8946BB29102209AE1405 (void);
+// 0x00000255 System.Void SlotManager/<DelayStartingAnimation>d__21::System.IDisposable.Dispose()
+extern void U3CDelayStartingAnimationU3Ed__21_System_IDisposable_Dispose_mE485494290BB961C10FCE505E535C072C05C8949 (void);
+// 0x00000256 System.Boolean SlotManager/<DelayStartingAnimation>d__21::MoveNext()
+extern void U3CDelayStartingAnimationU3Ed__21_MoveNext_m2C2444E9C980AA6B1F3AB8E5F6822011F7DE670C (void);
+// 0x00000257 System.Object SlotManager/<DelayStartingAnimation>d__21::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CDelayStartingAnimationU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEFD617160C21A9F5926D69C5DC605E443E038630 (void);
+// 0x00000258 System.Void SlotManager/<DelayStartingAnimation>d__21::System.Collections.IEnumerator.Reset()
+extern void U3CDelayStartingAnimationU3Ed__21_System_Collections_IEnumerator_Reset_m5CED6BD4F98DA48744E197F54A36838BB9B340E4 (void);
+// 0x00000259 System.Object SlotManager/<DelayStartingAnimation>d__21::System.Collections.IEnumerator.get_Current()
+extern void U3CDelayStartingAnimationU3Ed__21_System_Collections_IEnumerator_get_Current_m8F0B8A5B0464D9E13C64895075CC8359C37DE071 (void);
+// 0x0000025A System.Void SlotManager/<DelayRewards>d__23::.ctor(System.Int32)
+extern void U3CDelayRewardsU3Ed__23__ctor_m82887EB4F8A18CD5E7F197316DC6896E693C3A85 (void);
+// 0x0000025B System.Void SlotManager/<DelayRewards>d__23::System.IDisposable.Dispose()
+extern void U3CDelayRewardsU3Ed__23_System_IDisposable_Dispose_m4505B9A3FD0C15223CD04C8BC5C3C4F6B76916C3 (void);
+// 0x0000025C System.Boolean SlotManager/<DelayRewards>d__23::MoveNext()
+extern void U3CDelayRewardsU3Ed__23_MoveNext_m3F0D038BDFE0396C62CF5F7FF3633521AE6681A4 (void);
+// 0x0000025D System.Object SlotManager/<DelayRewards>d__23::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CDelayRewardsU3Ed__23_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m869B38853C1E9D727BBECBA9BD6C40B3250C3691 (void);
+// 0x0000025E System.Void SlotManager/<DelayRewards>d__23::System.Collections.IEnumerator.Reset()
+extern void U3CDelayRewardsU3Ed__23_System_Collections_IEnumerator_Reset_mE74EF810B6982F52FB46DA85630118CE28E293CA (void);
+// 0x0000025F System.Object SlotManager/<DelayRewards>d__23::System.Collections.IEnumerator.get_Current()
+extern void U3CDelayRewardsU3Ed__23_System_Collections_IEnumerator_get_Current_m538FE2933B9B386099D5F4262CD2831217D52A84 (void);
+// 0x00000260 System.Void SlotRoll::InvokeSlotSpin(System.Boolean,System.Single,System.Int32,System.Single)
 extern void SlotRoll_InvokeSlotSpin_m20DDC374DFB545AC98D7867AA3634804CEFF5740 (void);
-// 0x0000025F System.Collections.IEnumerator SlotRoll::DelaySpin(System.Single,System.Int32,System.Single)
+// 0x00000261 System.Collections.IEnumerator SlotRoll::DelaySpin(System.Single,System.Int32,System.Single)
 extern void SlotRoll_DelaySpin_m7EA5E76C401592F3CADC54E9D2C09204238F1575 (void);
-// 0x00000260 System.Collections.IEnumerator SlotRoll::SlotSpin(System.Int32,System.Single)
+// 0x00000262 System.Collections.IEnumerator SlotRoll::SlotSpin(System.Int32,System.Single)
 extern void SlotRoll_SlotSpin_m7B147554295696DC5A63028F593B48993F5C57D7 (void);
-// 0x00000261 System.Void SlotRoll::.ctor()
+// 0x00000263 System.Void SlotRoll::.ctor()
 extern void SlotRoll__ctor_mDA2E3B7426F8DBF6A7594DEA533EEFBF43B492D1 (void);
-// 0x00000262 System.Void SlotRoll/<DelaySpin>d__5::.ctor(System.Int32)
+// 0x00000264 System.Void SlotRoll/<DelaySpin>d__5::.ctor(System.Int32)
 extern void U3CDelaySpinU3Ed__5__ctor_m7BA1C8181080FA11844F8E8437C21B9AE8B847AC (void);
-// 0x00000263 System.Void SlotRoll/<DelaySpin>d__5::System.IDisposable.Dispose()
+// 0x00000265 System.Void SlotRoll/<DelaySpin>d__5::System.IDisposable.Dispose()
 extern void U3CDelaySpinU3Ed__5_System_IDisposable_Dispose_m44776D19833748A9A3462D8D45D0EFC70EF54B74 (void);
-// 0x00000264 System.Boolean SlotRoll/<DelaySpin>d__5::MoveNext()
+// 0x00000266 System.Boolean SlotRoll/<DelaySpin>d__5::MoveNext()
 extern void U3CDelaySpinU3Ed__5_MoveNext_m112099DE559A5CB1492350F811CACB5E620C092F (void);
-// 0x00000265 System.Object SlotRoll/<DelaySpin>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000267 System.Object SlotRoll/<DelaySpin>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDelaySpinU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7A93F1EFDD4A70C8F1AE7415950CCE6BB4E3810B (void);
-// 0x00000266 System.Void SlotRoll/<DelaySpin>d__5::System.Collections.IEnumerator.Reset()
+// 0x00000268 System.Void SlotRoll/<DelaySpin>d__5::System.Collections.IEnumerator.Reset()
 extern void U3CDelaySpinU3Ed__5_System_Collections_IEnumerator_Reset_mCAD5987A4E224A2AE8862F847AE5C02B051216ED (void);
-// 0x00000267 System.Object SlotRoll/<DelaySpin>d__5::System.Collections.IEnumerator.get_Current()
+// 0x00000269 System.Object SlotRoll/<DelaySpin>d__5::System.Collections.IEnumerator.get_Current()
 extern void U3CDelaySpinU3Ed__5_System_Collections_IEnumerator_get_Current_m08CF7DD3D55B9B2F3618DE6E975F22A7CB3D70E4 (void);
-// 0x00000268 System.Void SlotRoll/<SlotSpin>d__6::.ctor(System.Int32)
+// 0x0000026A System.Void SlotRoll/<SlotSpin>d__6::.ctor(System.Int32)
 extern void U3CSlotSpinU3Ed__6__ctor_m2054BD8D8F42E7D2C360D64E9A076AB66A841520 (void);
-// 0x00000269 System.Void SlotRoll/<SlotSpin>d__6::System.IDisposable.Dispose()
+// 0x0000026B System.Void SlotRoll/<SlotSpin>d__6::System.IDisposable.Dispose()
 extern void U3CSlotSpinU3Ed__6_System_IDisposable_Dispose_mB7DAF7A668FE74FCD2BE55A1886ABD195950B438 (void);
-// 0x0000026A System.Boolean SlotRoll/<SlotSpin>d__6::MoveNext()
+// 0x0000026C System.Boolean SlotRoll/<SlotSpin>d__6::MoveNext()
 extern void U3CSlotSpinU3Ed__6_MoveNext_m54B84F4097EC8A8FDDAAAB351573BD560D42A890 (void);
-// 0x0000026B System.Object SlotRoll/<SlotSpin>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000026D System.Object SlotRoll/<SlotSpin>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CSlotSpinU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5F83EB136B98E66F1445276F9F136AA8C6ABE17D (void);
-// 0x0000026C System.Void SlotRoll/<SlotSpin>d__6::System.Collections.IEnumerator.Reset()
+// 0x0000026E System.Void SlotRoll/<SlotSpin>d__6::System.Collections.IEnumerator.Reset()
 extern void U3CSlotSpinU3Ed__6_System_Collections_IEnumerator_Reset_mFA5F5EFCB90BCCCD4F01992C3AB6896BFE96F76C (void);
-// 0x0000026D System.Object SlotRoll/<SlotSpin>d__6::System.Collections.IEnumerator.get_Current()
+// 0x0000026F System.Object SlotRoll/<SlotSpin>d__6::System.Collections.IEnumerator.get_Current()
 extern void U3CSlotSpinU3Ed__6_System_Collections_IEnumerator_get_Current_mF8C6A5EA13560ECB5ED836577C049E2DF390FE1C (void);
-// 0x0000026E System.Void SpritesAnimations::Start()
+// 0x00000270 System.Void SpritesAnimations::Start()
 extern void SpritesAnimations_Start_mD5B04A0C0254B01B0C051F6D5CDA50AA0481B21A (void);
-// 0x0000026F System.Void SpritesAnimations::InvokeAnimation()
+// 0x00000271 System.Void SpritesAnimations::InvokeAnimation()
 extern void SpritesAnimations_InvokeAnimation_mAA7A986305549E353BBA7A5EEA67ECF124A40C76 (void);
-// 0x00000270 System.Void SpritesAnimations::Update()
+// 0x00000272 System.Void SpritesAnimations::Update()
 extern void SpritesAnimations_Update_m89B1B039467F8ABCFFC6BF2E3B0B35FC885BF46D (void);
-// 0x00000271 System.Collections.IEnumerator SpritesAnimations::DelayStartingAnimation()
+// 0x00000273 System.Collections.IEnumerator SpritesAnimations::DelayStartingAnimation()
 extern void SpritesAnimations_DelayStartingAnimation_mB6445EFA44EF78250B4E4EF63C61A222FAB92A2F (void);
-// 0x00000272 System.Collections.IEnumerator SpritesAnimations::spriteAnimationCoroutine()
+// 0x00000274 System.Collections.IEnumerator SpritesAnimations::spriteAnimationCoroutine()
 extern void SpritesAnimations_spriteAnimationCoroutine_mE3CF34D0EE5B296F213126A65BFE0260608B48ED (void);
-// 0x00000273 System.Void SpritesAnimations::.ctor()
+// 0x00000275 System.Void SpritesAnimations::.ctor()
 extern void SpritesAnimations__ctor_mCDA168EAA8434C6B888F8BE00D37BC57B6E99C90 (void);
-// 0x00000274 System.Void SpritesAnimations/<DelayStartingAnimation>d__8::.ctor(System.Int32)
+// 0x00000276 System.Void SpritesAnimations/<DelayStartingAnimation>d__8::.ctor(System.Int32)
 extern void U3CDelayStartingAnimationU3Ed__8__ctor_m12A0A66FA70FACF99778F03010534B9FE0D515A3 (void);
-// 0x00000275 System.Void SpritesAnimations/<DelayStartingAnimation>d__8::System.IDisposable.Dispose()
+// 0x00000277 System.Void SpritesAnimations/<DelayStartingAnimation>d__8::System.IDisposable.Dispose()
 extern void U3CDelayStartingAnimationU3Ed__8_System_IDisposable_Dispose_mFCB3FB40E0804600FA658951631355CA824D4AB4 (void);
-// 0x00000276 System.Boolean SpritesAnimations/<DelayStartingAnimation>d__8::MoveNext()
+// 0x00000278 System.Boolean SpritesAnimations/<DelayStartingAnimation>d__8::MoveNext()
 extern void U3CDelayStartingAnimationU3Ed__8_MoveNext_m0A181B89193DF8E241AC08F884644E537C02A769 (void);
-// 0x00000277 System.Object SpritesAnimations/<DelayStartingAnimation>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000279 System.Object SpritesAnimations/<DelayStartingAnimation>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDelayStartingAnimationU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m140A45AF79F06F998ED9F74A261424ADC3DE6D95 (void);
-// 0x00000278 System.Void SpritesAnimations/<DelayStartingAnimation>d__8::System.Collections.IEnumerator.Reset()
+// 0x0000027A System.Void SpritesAnimations/<DelayStartingAnimation>d__8::System.Collections.IEnumerator.Reset()
 extern void U3CDelayStartingAnimationU3Ed__8_System_Collections_IEnumerator_Reset_mE459F0B0776CA4EA4972067E64B4C8375C089F53 (void);
-// 0x00000279 System.Object SpritesAnimations/<DelayStartingAnimation>d__8::System.Collections.IEnumerator.get_Current()
+// 0x0000027B System.Object SpritesAnimations/<DelayStartingAnimation>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CDelayStartingAnimationU3Ed__8_System_Collections_IEnumerator_get_Current_m2A5CC99DD46DDF53A722E94CE74F05806EFE4D04 (void);
-// 0x0000027A System.Void SpritesAnimations/<spriteAnimationCoroutine>d__9::.ctor(System.Int32)
+// 0x0000027C System.Void SpritesAnimations/<spriteAnimationCoroutine>d__9::.ctor(System.Int32)
 extern void U3CspriteAnimationCoroutineU3Ed__9__ctor_mEF1ADD253C03B2C19DEF0E76F82FBD602FE56A7D (void);
-// 0x0000027B System.Void SpritesAnimations/<spriteAnimationCoroutine>d__9::System.IDisposable.Dispose()
+// 0x0000027D System.Void SpritesAnimations/<spriteAnimationCoroutine>d__9::System.IDisposable.Dispose()
 extern void U3CspriteAnimationCoroutineU3Ed__9_System_IDisposable_Dispose_m10A2902FCF46BCA2C94717FCA43B4B1AC0E9A592 (void);
-// 0x0000027C System.Boolean SpritesAnimations/<spriteAnimationCoroutine>d__9::MoveNext()
+// 0x0000027E System.Boolean SpritesAnimations/<spriteAnimationCoroutine>d__9::MoveNext()
 extern void U3CspriteAnimationCoroutineU3Ed__9_MoveNext_m99E5FF1A87D95C7F250F1E61CCDA76E316AE2BCB (void);
-// 0x0000027D System.Object SpritesAnimations/<spriteAnimationCoroutine>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000027F System.Object SpritesAnimations/<spriteAnimationCoroutine>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CspriteAnimationCoroutineU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC85C910C03C4856A1B65075EF733DEB4C28F4AB2 (void);
-// 0x0000027E System.Void SpritesAnimations/<spriteAnimationCoroutine>d__9::System.Collections.IEnumerator.Reset()
+// 0x00000280 System.Void SpritesAnimations/<spriteAnimationCoroutine>d__9::System.Collections.IEnumerator.Reset()
 extern void U3CspriteAnimationCoroutineU3Ed__9_System_Collections_IEnumerator_Reset_m3468FE0AB6D21B63263BAD0AF829EC2DB485E974 (void);
-// 0x0000027F System.Object SpritesAnimations/<spriteAnimationCoroutine>d__9::System.Collections.IEnumerator.get_Current()
+// 0x00000281 System.Object SpritesAnimations/<spriteAnimationCoroutine>d__9::System.Collections.IEnumerator.get_Current()
 extern void U3CspriteAnimationCoroutineU3Ed__9_System_Collections_IEnumerator_get_Current_m0752A86A849131ACA674ED99D5166C8FB106E66F (void);
-// 0x00000280 System.Void TransactionHandler::TryAndProcessTransaction()
+// 0x00000282 System.Void TogglingUI::ToggleSlotsMachine(System.Boolean)
+extern void TogglingUI_ToggleSlotsMachine_m87BC50A7EF4EABCCAD6F07DF08D8EF66C6042C03 (void);
+// 0x00000283 System.Void TogglingUI::ToggleWalletUI(System.Boolean)
+extern void TogglingUI_ToggleWalletUI_mE6AC64733B64620F3CF9388784447E7D665DAF66 (void);
+// 0x00000284 System.Void TogglingUI::.ctor()
+extern void TogglingUI__ctor_m8D96B67CB55ABD70521BBB9E617359F829B9C05F (void);
+// 0x00000285 System.Void TransactionHandler::TryAndProcessTransaction()
 extern void TransactionHandler_TryAndProcessTransaction_mC96C9F810FD015A25034A21E482DB930CDD524A5 (void);
-// 0x00000281 System.Void TransactionHandler::TransactionSuccessful()
+// 0x00000286 System.Void TransactionHandler::TransactionSuccessful()
 extern void TransactionHandler_TransactionSuccessful_m0ACB6739BE99D6E9BB5B77B656ADB4474DBEAAF0 (void);
-// 0x00000282 System.Void TransactionHandler::HandleTransactionFailure(System.String)
+// 0x00000287 System.Void TransactionHandler::HandleTransactionFailure(System.String)
 extern void TransactionHandler_HandleTransactionFailure_m594146A79372A95DC0350E4421F9B639706AEC38 (void);
-// 0x00000283 System.Void TransactionHandler::.ctor()
+// 0x00000288 System.Void TransactionHandler::.ctor()
 extern void TransactionHandler__ctor_m411FA3E3B983F82CCE1C605D424663DE2F7BC040 (void);
-// 0x00000284 System.Void TransactionHandler::<TryAndProcessTransaction>b__9_0()
+// 0x00000289 System.Void TransactionHandler::<TryAndProcessTransaction>b__9_0()
 extern void TransactionHandler_U3CTryAndProcessTransactionU3Eb__9_0_m1187801D474856E1D2F0E728B2E513EBC9611257 (void);
-// 0x00000285 System.Void DialogueSystem::Start()
+// 0x0000028A System.Void DialogueSystem::Start()
 extern void DialogueSystem_Start_m68309F60D4F2F25E1F28D84EA29B635B3EB45C85 (void);
-// 0x00000286 System.Void DialogueSystem::Update()
+// 0x0000028B System.Void DialogueSystem::Update()
 extern void DialogueSystem_Update_m382D996F553F521579EBA68DB4F7618082374BB3 (void);
-// 0x00000287 System.Void DialogueSystem::TriggerDialogue()
+// 0x0000028C System.Void DialogueSystem::TriggerDialogue()
 extern void DialogueSystem_TriggerDialogue_mDA95F1916AF7DDDA9CC214F845BB5D90B2CA52FB (void);
-// 0x00000288 System.Void DialogueSystem::.ctor()
+// 0x0000028D System.Void DialogueSystem::.ctor()
 extern void DialogueSystem__ctor_mA05D1FE824CBFB5CECC3AA972AD6F09965D48EBE (void);
-// 0x00000289 System.Void MenuManaager::Start()
+// 0x0000028E System.Void MenuManaager::Start()
 extern void MenuManaager_Start_m317730A214EBF5DF5FE6E6449EFAB25037070E3E (void);
-// 0x0000028A System.Void MenuManaager::Update()
+// 0x0000028F System.Void MenuManaager::Update()
 extern void MenuManaager_Update_mEDA4C4F340E6481CC0F854EEDAB3BC26CA536F1B (void);
-// 0x0000028B System.Void MenuManaager::startGame()
+// 0x00000290 System.Void MenuManaager::startGame()
 extern void MenuManaager_startGame_m3820B783F231F48A8EA70EEEE15236583598C137 (void);
-// 0x0000028C System.Void MenuManaager::loadLevel()
+// 0x00000291 System.Void MenuManaager::loadLevel()
 extern void MenuManaager_loadLevel_m499578B11A6C60325DA8FBCD0854DE56EA6C9F63 (void);
-// 0x0000028D System.Collections.IEnumerator MenuManaager::nextLevel()
+// 0x00000292 System.Collections.IEnumerator MenuManaager::nextLevel()
 extern void MenuManaager_nextLevel_mE35342E03A5994CA235E109B8E6B41578D53B57F (void);
-// 0x0000028E System.Collections.IEnumerator MenuManaager::loadMenu()
+// 0x00000293 System.Collections.IEnumerator MenuManaager::loadMenu()
 extern void MenuManaager_loadMenu_m12CF5F1FDDA6B495C052CCF5E9B4AD7F5AA573AE (void);
-// 0x0000028F System.Void MenuManaager::.ctor()
+// 0x00000294 System.Void MenuManaager::.ctor()
 extern void MenuManaager__ctor_mDF64FE66B7BD6C39A66357193607194FDF98BFFA (void);
-// 0x00000290 System.Void MenuManaager/<nextLevel>d__14::.ctor(System.Int32)
+// 0x00000295 System.Void MenuManaager/<nextLevel>d__14::.ctor(System.Int32)
 extern void U3CnextLevelU3Ed__14__ctor_mBE55E82F6E2226665A9781BD4247E5C9D844777E (void);
-// 0x00000291 System.Void MenuManaager/<nextLevel>d__14::System.IDisposable.Dispose()
+// 0x00000296 System.Void MenuManaager/<nextLevel>d__14::System.IDisposable.Dispose()
 extern void U3CnextLevelU3Ed__14_System_IDisposable_Dispose_mD594A2417F6BD0232E622E2F91E7FFEA8EFDF038 (void);
-// 0x00000292 System.Boolean MenuManaager/<nextLevel>d__14::MoveNext()
+// 0x00000297 System.Boolean MenuManaager/<nextLevel>d__14::MoveNext()
 extern void U3CnextLevelU3Ed__14_MoveNext_mAEE4F528B0A907D3A8A3858E27F920A53ABEA2CB (void);
-// 0x00000293 System.Object MenuManaager/<nextLevel>d__14::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000298 System.Object MenuManaager/<nextLevel>d__14::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CnextLevelU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB7241D6062D16E756AB8DEE11E1BA4812CB5643C (void);
-// 0x00000294 System.Void MenuManaager/<nextLevel>d__14::System.Collections.IEnumerator.Reset()
+// 0x00000299 System.Void MenuManaager/<nextLevel>d__14::System.Collections.IEnumerator.Reset()
 extern void U3CnextLevelU3Ed__14_System_Collections_IEnumerator_Reset_mD4E8DFDD10659F7CEF02BF5AB09EC2BC401FE38C (void);
-// 0x00000295 System.Object MenuManaager/<nextLevel>d__14::System.Collections.IEnumerator.get_Current()
+// 0x0000029A System.Object MenuManaager/<nextLevel>d__14::System.Collections.IEnumerator.get_Current()
 extern void U3CnextLevelU3Ed__14_System_Collections_IEnumerator_get_Current_mE1EA1E5358F0540F482ABC3C68C92CF49044472E (void);
-// 0x00000296 System.Void MenuManaager/<loadMenu>d__15::.ctor(System.Int32)
+// 0x0000029B System.Void MenuManaager/<loadMenu>d__15::.ctor(System.Int32)
 extern void U3CloadMenuU3Ed__15__ctor_m920B9600881010AC144FC0BA33AE5CC10A8A2206 (void);
-// 0x00000297 System.Void MenuManaager/<loadMenu>d__15::System.IDisposable.Dispose()
+// 0x0000029C System.Void MenuManaager/<loadMenu>d__15::System.IDisposable.Dispose()
 extern void U3CloadMenuU3Ed__15_System_IDisposable_Dispose_m7E3C6DA31476C2E25BCD8A77F9F39F4AACB04204 (void);
-// 0x00000298 System.Boolean MenuManaager/<loadMenu>d__15::MoveNext()
+// 0x0000029D System.Boolean MenuManaager/<loadMenu>d__15::MoveNext()
 extern void U3CloadMenuU3Ed__15_MoveNext_m422F9F81D731F71919E0BBF1FC0DA20DA20DFB08 (void);
-// 0x00000299 System.Object MenuManaager/<loadMenu>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000029E System.Object MenuManaager/<loadMenu>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CloadMenuU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8C0E93030EFEC08E8941B8ADF2534DB5BEA88676 (void);
-// 0x0000029A System.Void MenuManaager/<loadMenu>d__15::System.Collections.IEnumerator.Reset()
+// 0x0000029F System.Void MenuManaager/<loadMenu>d__15::System.Collections.IEnumerator.Reset()
 extern void U3CloadMenuU3Ed__15_System_Collections_IEnumerator_Reset_mCE5975CFE13C6578C7EA1FB28CCD5B3211A26F1F (void);
-// 0x0000029B System.Object MenuManaager/<loadMenu>d__15::System.Collections.IEnumerator.get_Current()
+// 0x000002A0 System.Object MenuManaager/<loadMenu>d__15::System.Collections.IEnumerator.get_Current()
 extern void U3CloadMenuU3Ed__15_System_Collections_IEnumerator_get_Current_m9E891D0953703134AA452D046256CC1A334DB38E (void);
-// 0x0000029C System.Void spawnLocationManager::Awake()
+// 0x000002A1 System.Void spawnLocationManager::Awake()
 extern void spawnLocationManager_Awake_mA6A1DF5D1A63E93CF4494CA11FA33554B2251EFA (void);
-// 0x0000029D System.Void spawnLocationManager::telport()
+// 0x000002A2 System.Void spawnLocationManager::telport()
 extern void spawnLocationManager_telport_m5D2BDF68A347792648FA62646164FED430EA9602 (void);
-// 0x0000029E System.Void spawnLocationManager::Start()
+// 0x000002A3 System.Void spawnLocationManager::Start()
 extern void spawnLocationManager_Start_m26B53CDEC5A6B007F5908241FF2AAAE16C906B72 (void);
-// 0x0000029F System.Void spawnLocationManager::Update()
+// 0x000002A4 System.Void spawnLocationManager::Update()
 extern void spawnLocationManager_Update_m98DBC4E4AF5110EF27334FA84A6F787D848F17BE (void);
-// 0x000002A0 System.Collections.IEnumerator spawnLocationManager::teleportDreSequence()
+// 0x000002A5 System.Collections.IEnumerator spawnLocationManager::teleportDreSequence()
 extern void spawnLocationManager_teleportDreSequence_m30985803A4C1BEBD44B77A52B1F4B84D2EFD3263 (void);
-// 0x000002A1 System.Void spawnLocationManager::.ctor()
+// 0x000002A6 System.Void spawnLocationManager::.ctor()
 extern void spawnLocationManager__ctor_mBB124A8E1AD151AEA567DFCD5051C73475C2E569 (void);
-// 0x000002A2 System.Void spawnLocationManager/<teleportDreSequence>d__9::.ctor(System.Int32)
+// 0x000002A7 System.Void spawnLocationManager/<teleportDreSequence>d__9::.ctor(System.Int32)
 extern void U3CteleportDreSequenceU3Ed__9__ctor_m08593683D2CACB038A3C437DDA8A4744BB85F160 (void);
-// 0x000002A3 System.Void spawnLocationManager/<teleportDreSequence>d__9::System.IDisposable.Dispose()
+// 0x000002A8 System.Void spawnLocationManager/<teleportDreSequence>d__9::System.IDisposable.Dispose()
 extern void U3CteleportDreSequenceU3Ed__9_System_IDisposable_Dispose_m9F479A2A5D0F60E03FFB7C3B24E531FAD84F1759 (void);
-// 0x000002A4 System.Boolean spawnLocationManager/<teleportDreSequence>d__9::MoveNext()
+// 0x000002A9 System.Boolean spawnLocationManager/<teleportDreSequence>d__9::MoveNext()
 extern void U3CteleportDreSequenceU3Ed__9_MoveNext_mAEF15C9A57A29367AD7E472DE30D1BFC0ADFEC1C (void);
-// 0x000002A5 System.Object spawnLocationManager/<teleportDreSequence>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002AA System.Object spawnLocationManager/<teleportDreSequence>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CteleportDreSequenceU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m50ABB30E7B1A066E45535BFCA18575A88F12E8E2 (void);
-// 0x000002A6 System.Void spawnLocationManager/<teleportDreSequence>d__9::System.Collections.IEnumerator.Reset()
+// 0x000002AB System.Void spawnLocationManager/<teleportDreSequence>d__9::System.Collections.IEnumerator.Reset()
 extern void U3CteleportDreSequenceU3Ed__9_System_Collections_IEnumerator_Reset_m6FEE931C7CE7495491D55414D6F50AA80C1EE6C7 (void);
-// 0x000002A7 System.Object spawnLocationManager/<teleportDreSequence>d__9::System.Collections.IEnumerator.get_Current()
+// 0x000002AC System.Object spawnLocationManager/<teleportDreSequence>d__9::System.Collections.IEnumerator.get_Current()
 extern void U3CteleportDreSequenceU3Ed__9_System_Collections_IEnumerator_get_Current_m931C86EA71B794929201E1A50A00AAE249EF2427 (void);
-// 0x000002A8 System.Void UIManager::Start()
+// 0x000002AD System.Void UIManager::Start()
 extern void UIManager_Start_m113F392674AB08A26877728CD36F06332E869080 (void);
-// 0x000002A9 System.Void UIManager::Update()
+// 0x000002AE System.Void UIManager::Update()
 extern void UIManager_Update_m95D2E80B8F461F15C1B9BD6DB0811F5CC18571AB (void);
-// 0x000002AA System.Void UIManager::upgradeSword()
+// 0x000002AF System.Void UIManager::upgradeSword()
 extern void UIManager_upgradeSword_m679E122890D5DFC69CC7EE5B88B7AC4B1E6BF64D (void);
-// 0x000002AB System.Void UIManager::upgradeSpecial()
+// 0x000002B0 System.Void UIManager::upgradeSpecial()
 extern void UIManager_upgradeSpecial_mBFFF98084B41981CFD4BEE0765FF54D0D2EFA36A (void);
-// 0x000002AC System.Void UIManager::eatFish()
+// 0x000002B1 System.Void UIManager::eatFish()
 extern void UIManager_eatFish_m5F3DDF13EB29FE2D33F8B9BE56B278DF553F8156 (void);
-// 0x000002AD System.Void UIManager::upgradeHealth()
+// 0x000002B2 System.Void UIManager::upgradeHealth()
 extern void UIManager_upgradeHealth_m28DC43AD9B3C0370BEF2BFA191499D8CFAD685E3 (void);
-// 0x000002AE System.Void UIManager::upgradeCoins()
+// 0x000002B3 System.Void UIManager::upgradeCoins()
 extern void UIManager_upgradeCoins_m4A20392DAFC53503D40A16EC48D127DE8B48A27E (void);
-// 0x000002AF System.Void UIManager::openPanel()
+// 0x000002B4 System.Void UIManager::openPanel()
 extern void UIManager_openPanel_mA4CC0FED3AA00020E0E63A76CBC2331FD4B1FEB3 (void);
-// 0x000002B0 System.Void UIManager::.ctor()
+// 0x000002B5 System.Void UIManager::.ctor()
 extern void UIManager__ctor_mC9DC2B8984E76F424E73C1860AD4BD3DEBF6573F (void);
-// 0x000002B1 System.Void WaveManager::Awake()
+// 0x000002B6 System.Void WaveManager::Awake()
 extern void WaveManager_Awake_m363058E10625EA62C65BBC74BFEA0A44FC89C9FE (void);
-// 0x000002B2 System.Void WaveManager::Start()
+// 0x000002B7 System.Void WaveManager::Start()
 extern void WaveManager_Start_m2801A7DCF87D48309CB1D43CAD502E43D800DA08 (void);
-// 0x000002B3 System.Collections.IEnumerator WaveManager::delayLittleCoroutine()
+// 0x000002B8 System.Collections.IEnumerator WaveManager::delayLittleCoroutine()
 extern void WaveManager_delayLittleCoroutine_mE68E3981509C4F7AC635B23B16FC4E8344B9969A (void);
-// 0x000002B4 System.Void WaveManager::Update()
+// 0x000002B9 System.Void WaveManager::Update()
 extern void WaveManager_Update_m3BF84AF10F62C8D277C65F319AF2D9C4F8B5A5F2 (void);
-// 0x000002B5 System.Void WaveManager::spawnNormalVoids()
+// 0x000002BA System.Void WaveManager::spawnNormalVoids()
 extern void WaveManager_spawnNormalVoids_mD03D4AB6429A1FFB42B4F3D034961ACFE187F88C (void);
-// 0x000002B6 System.Void WaveManager::spawnMixedVoids()
+// 0x000002BB System.Void WaveManager::spawnMixedVoids()
 extern void WaveManager_spawnMixedVoids_mF364D1C299855466A6B4866FB16264A595CC5478 (void);
-// 0x000002B7 System.Void WaveManager::nextRound()
+// 0x000002BC System.Void WaveManager::nextRound()
 extern void WaveManager_nextRound_m774F715511D42FD94541FD07194F85B7902B79B5 (void);
-// 0x000002B8 System.Void WaveManager::spawnPowerUp()
+// 0x000002BD System.Void WaveManager::spawnPowerUp()
 extern void WaveManager_spawnPowerUp_mDCB4E5C41F45867390088A64EC6FB8FD53EB6CBD (void);
-// 0x000002B9 System.Void WaveManager::kill()
+// 0x000002BE System.Void WaveManager::kill()
 extern void WaveManager_kill_mBFEEC1687FA4F07BDF40AD5D21F641DC3B89052B (void);
-// 0x000002BA System.Void WaveManager::SlotMachineAppear()
+// 0x000002BF System.Void WaveManager::SlotMachineAppear()
 extern void WaveManager_SlotMachineAppear_mD9A4C7003A1F884FDF9FCD9EAB9F38436559EAE1 (void);
-// 0x000002BB System.Void WaveManager::.ctor()
+// 0x000002C0 System.Void WaveManager::.ctor()
 extern void WaveManager__ctor_mC7F2AE5A0D1E145BCC19FFD4282EA48B2F3B3768 (void);
-// 0x000002BC System.Void WaveManager/<delayLittleCoroutine>d__12::.ctor(System.Int32)
+// 0x000002C1 System.Void WaveManager/<delayLittleCoroutine>d__12::.ctor(System.Int32)
 extern void U3CdelayLittleCoroutineU3Ed__12__ctor_mFC80EA0BFD2B6AF20F505FF3CF1C559D34B7F837 (void);
-// 0x000002BD System.Void WaveManager/<delayLittleCoroutine>d__12::System.IDisposable.Dispose()
+// 0x000002C2 System.Void WaveManager/<delayLittleCoroutine>d__12::System.IDisposable.Dispose()
 extern void U3CdelayLittleCoroutineU3Ed__12_System_IDisposable_Dispose_mE7ECBB493DDD1330E0FAF43A10222779D027D7E5 (void);
-// 0x000002BE System.Boolean WaveManager/<delayLittleCoroutine>d__12::MoveNext()
+// 0x000002C3 System.Boolean WaveManager/<delayLittleCoroutine>d__12::MoveNext()
 extern void U3CdelayLittleCoroutineU3Ed__12_MoveNext_m9CBBA8B9749A6FE6BAA5BC11526405CC81C5D6A1 (void);
-// 0x000002BF System.Object WaveManager/<delayLittleCoroutine>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002C4 System.Object WaveManager/<delayLittleCoroutine>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CdelayLittleCoroutineU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC193FFFFF06EE500984E425E9D123E41CC32017C (void);
-// 0x000002C0 System.Void WaveManager/<delayLittleCoroutine>d__12::System.Collections.IEnumerator.Reset()
+// 0x000002C5 System.Void WaveManager/<delayLittleCoroutine>d__12::System.Collections.IEnumerator.Reset()
 extern void U3CdelayLittleCoroutineU3Ed__12_System_Collections_IEnumerator_Reset_mE07BFD0F47737E27993F4180F5DD1681E1C9EF7D (void);
-// 0x000002C1 System.Object WaveManager/<delayLittleCoroutine>d__12::System.Collections.IEnumerator.get_Current()
+// 0x000002C6 System.Object WaveManager/<delayLittleCoroutine>d__12::System.Collections.IEnumerator.get_Current()
 extern void U3CdelayLittleCoroutineU3Ed__12_System_Collections_IEnumerator_get_Current_mD5A984448EF7CD4143702858A483944A045EAC2D (void);
-// 0x000002C2 System.Void scrollAnimation2d::skip()
+// 0x000002C7 System.Void scrollAnimation2d::skip()
 extern void scrollAnimation2d_skip_m2573A987802677C851F1A2A6AB45152E77328B6C (void);
-// 0x000002C3 System.Void scrollAnimation2d::Awake()
+// 0x000002C8 System.Void scrollAnimation2d::Awake()
 extern void scrollAnimation2d_Awake_mE93414E473EAEB66FAABB24CE138C86FBE1A297B (void);
-// 0x000002C4 System.Void scrollAnimation2d::Start()
+// 0x000002C9 System.Void scrollAnimation2d::Start()
 extern void scrollAnimation2d_Start_mFAE7656B57442BA1B205B8BCF01E950EC2C7E4E6 (void);
-// 0x000002C5 System.Void scrollAnimation2d::AnimateTransformAndImage()
+// 0x000002CA System.Void scrollAnimation2d::AnimateTransformAndImage()
 extern void scrollAnimation2d_AnimateTransformAndImage_mCC786FF81790A9996FAB3E59D723E94C0DC15CD5 (void);
-// 0x000002C6 System.Void scrollAnimation2d::.ctor()
+// 0x000002CB System.Void scrollAnimation2d::.ctor()
 extern void scrollAnimation2d__ctor_m3C3C08E6AB6A62CF58FBE30F5BEADE532C0EEE38 (void);
-// 0x000002C7 System.Void scrollAnimation2d::<skip>b__8_0()
+// 0x000002CC System.Void scrollAnimation2d::<skip>b__8_0()
 extern void scrollAnimation2d_U3CskipU3Eb__8_0_m423980CDE5D1F52FE807027A7170121D99AF4908 (void);
-// 0x000002C8 System.Void scrollAnimation2d::<AnimateTransformAndImage>b__11_0()
+// 0x000002CD System.Void scrollAnimation2d::<AnimateTransformAndImage>b__11_0()
 extern void scrollAnimation2d_U3CAnimateTransformAndImageU3Eb__11_0_mB0F60B2C5691D1C34A28763D225CCE503F727143 (void);
-// 0x000002C9 System.Void scrollAnimation2d::<AnimateTransformAndImage>b__11_1()
+// 0x000002CE System.Void scrollAnimation2d::<AnimateTransformAndImage>b__11_1()
 extern void scrollAnimation2d_U3CAnimateTransformAndImageU3Eb__11_1_m148285342A6C460E3CA5A82AA31775A9A432E619 (void);
-// 0x000002CA Solana.Unity.SDK.Example.KnownToken Solana.Unity.SDK.Example.KnownTokens::GetKnownToken(System.String)
+// 0x000002CF Solana.Unity.SDK.Example.KnownToken Solana.Unity.SDK.Example.KnownTokens::GetKnownToken(System.String)
 extern void KnownTokens_GetKnownToken_m3755CE11CB5AC7F8FB0123B49D07032020F87688 (void);
-// 0x000002CB System.Void Solana.Unity.SDK.Example.KnownTokens::.ctor()
+// 0x000002D0 System.Void Solana.Unity.SDK.Example.KnownTokens::.ctor()
 extern void KnownTokens__ctor_m4A0FB2D628EE15ACE83EC968F2E30B411D7C3A92 (void);
-// 0x000002CC System.Void Solana.Unity.SDK.Example.KnownTokens/<>c__DisplayClass1_0::.ctor()
+// 0x000002D1 System.Void Solana.Unity.SDK.Example.KnownTokens/<>c__DisplayClass1_0::.ctor()
 extern void U3CU3Ec__DisplayClass1_0__ctor_mA7AA7FAB9ED2DF69C1E6CDEA34CEF7C0DFEDAE9D (void);
-// 0x000002CD System.Boolean Solana.Unity.SDK.Example.KnownTokens/<>c__DisplayClass1_0::<GetKnownToken>b__0(Solana.Unity.SDK.Example.KnownToken)
+// 0x000002D2 System.Boolean Solana.Unity.SDK.Example.KnownTokens/<>c__DisplayClass1_0::<GetKnownToken>b__0(Solana.Unity.SDK.Example.KnownToken)
 extern void U3CU3Ec__DisplayClass1_0_U3CGetKnownTokenU3Eb__0_m629335D33EB55D6F4772BC289EE64C072FC56884 (void);
-// 0x000002CE System.Void Solana.Unity.SDK.Example.KnownToken::.ctor()
+// 0x000002D3 System.Void Solana.Unity.SDK.Example.KnownToken::.ctor()
 extern void KnownToken__ctor_m028E2702341A61F2BE02794B24773F561ED5FD98 (void);
-// 0x000002CF System.Collections.Generic.List`1<System.String> Solana.Unity.SDK.Example.MnemonicsModel::get_Mnemonics()
+// 0x000002D4 System.Collections.Generic.List`1<System.String> Solana.Unity.SDK.Example.MnemonicsModel::get_Mnemonics()
 extern void MnemonicsModel_get_Mnemonics_m95CF8582750F1893C458A43BCC083B9758BCFD6E (void);
-// 0x000002D0 System.Void Solana.Unity.SDK.Example.MnemonicsModel::set_Mnemonics(System.Collections.Generic.List`1<System.String>)
+// 0x000002D5 System.Void Solana.Unity.SDK.Example.MnemonicsModel::set_Mnemonics(System.Collections.Generic.List`1<System.String>)
 extern void MnemonicsModel_set_Mnemonics_mC47844F1E9615CC94306FFC63B02AFD1F5EA937D (void);
-// 0x000002D1 System.Void Solana.Unity.SDK.Example.MnemonicsModel::.ctor()
+// 0x000002D6 System.Void Solana.Unity.SDK.Example.MnemonicsModel::.ctor()
 extern void MnemonicsModel__ctor_mC0DAEDB51001AE457CEFF518ED53C2C4D4EDF0A1 (void);
-// 0x000002D2 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::Start()
+// 0x000002D7 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::Start()
 extern void GenerateAccountScreen_Start_m8CA892DC9DF7915DF8E3421EBF99AFDCC0B8DD6D (void);
-// 0x000002D3 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::OnEnable()
+// 0x000002D8 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::OnEnable()
 extern void GenerateAccountScreen_OnEnable_m706A437165C0DFB252BF5252EC8E0A53D7EA4C9A (void);
-// 0x000002D4 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::GenerateNewAccount()
+// 0x000002D9 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::GenerateNewAccount()
 extern void GenerateAccountScreen_GenerateNewAccount_m7A1EE1EFE0F6E803C022429F65855C2A2B39961C (void);
-// 0x000002D5 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::CopyMnemonicsToClipboard()
+// 0x000002DA System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::CopyMnemonicsToClipboard()
 extern void GenerateAccountScreen_CopyMnemonicsToClipboard_m26932CE14601CA30D941249E1623840FE082FB7D (void);
-// 0x000002D6 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::ShowScreen(System.Object)
+// 0x000002DB System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::ShowScreen(System.Object)
 extern void GenerateAccountScreen_ShowScreen_mCC6570E515E20E6AA408D3B4E3D4915BA4ADC424 (void);
-// 0x000002D7 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::HideScreen()
+// 0x000002DC System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::HideScreen()
 extern void GenerateAccountScreen_HideScreen_m95E476497C0C4E1A056CDB521F0F7914382212B9 (void);
-// 0x000002D8 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::OnClose()
+// 0x000002DD System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::OnClose()
 extern void GenerateAccountScreen_OnClose_mF3326BFED63642B4B017C9E2C22FDEAE8988FFBC (void);
-// 0x000002D9 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::.ctor()
+// 0x000002DE System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::.ctor()
 extern void GenerateAccountScreen__ctor_m135F90A523BA9F87ECD7C46D19E581AD081FCC7A (void);
-// 0x000002DA System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::<Start>b__7_0()
+// 0x000002DF System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::<Start>b__7_0()
 extern void GenerateAccountScreen_U3CStartU3Eb__7_0_m451C2BDAEECB8460DF67AD696C5A8E5B813D6ED6 (void);
-// 0x000002DB System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::<Start>b__7_1()
+// 0x000002E0 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::<Start>b__7_1()
 extern void GenerateAccountScreen_U3CStartU3Eb__7_1_m202EB936495507DF01672F6F278A22B6D84B60D8 (void);
-// 0x000002DC System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::<Start>b__7_2()
+// 0x000002E1 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen::<Start>b__7_2()
 extern void GenerateAccountScreen_U3CStartU3Eb__7_2_m0317449FD055782E874197E5E33C9119C24BDD11 (void);
-// 0x000002DD System.Void Solana.Unity.SDK.Example.GenerateAccountScreen/<GenerateNewAccount>d__9::MoveNext()
+// 0x000002E2 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen/<GenerateNewAccount>d__9::MoveNext()
 extern void U3CGenerateNewAccountU3Ed__9_MoveNext_mCF8ECF8A1E2428CA33DABD8085B7AE2C18A21A53 (void);
-// 0x000002DE System.Void Solana.Unity.SDK.Example.GenerateAccountScreen/<GenerateNewAccount>d__9::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000002E3 System.Void Solana.Unity.SDK.Example.GenerateAccountScreen/<GenerateNewAccount>d__9::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CGenerateNewAccountU3Ed__9_SetStateMachine_mC978584B201A5AC6A8578A13B31823A3CACCB71C (void);
-// 0x000002DF System.Void Solana.Unity.SDK.Example.LoginScreen::OnEnable()
+// 0x000002E4 System.Void Solana.Unity.SDK.Example.LoginScreen::OnEnable()
 extern void LoginScreen_OnEnable_m47C06CF93401B14C447CF348F0D99988E583E781 (void);
-// 0x000002E0 System.Void Solana.Unity.SDK.Example.LoginScreen::Start()
+// 0x000002E5 System.Void Solana.Unity.SDK.Example.LoginScreen::Start()
 extern void LoginScreen_Start_m09838219374C4B8DEDB69F02C00F8EACF4F869BC (void);
-// 0x000002E1 System.Void Solana.Unity.SDK.Example.LoginScreen::LoginChecker()
+// 0x000002E6 System.Void Solana.Unity.SDK.Example.LoginScreen::LoginChecker()
 extern void LoginScreen_LoginChecker_m918E80F3873C7EC8DF1C26961612A99C385E83CA (void);
-// 0x000002E2 System.Void Solana.Unity.SDK.Example.LoginScreen::LoginCheckerSms()
+// 0x000002E7 System.Void Solana.Unity.SDK.Example.LoginScreen::LoginCheckerSms()
 extern void LoginScreen_LoginCheckerSms_mBB4CBD961625681E79FAC060CAFE2E656D0FF14D (void);
-// 0x000002E3 System.Void Solana.Unity.SDK.Example.LoginScreen::LoginCheckerWeb3Auth(Provider)
+// 0x000002E8 System.Void Solana.Unity.SDK.Example.LoginScreen::LoginCheckerWeb3Auth(Provider)
 extern void LoginScreen_LoginCheckerWeb3Auth_m9AB89ED1024FE296E62DF62329CD131F2904C922 (void);
-// 0x000002E4 System.Void Solana.Unity.SDK.Example.LoginScreen::LoginCheckerWalletAdapter()
+// 0x000002E9 System.Void Solana.Unity.SDK.Example.LoginScreen::LoginCheckerWalletAdapter()
 extern void LoginScreen_LoginCheckerWalletAdapter_m0A0219D5F987D60456A16A88B4A573FAC4FD341E (void);
-// 0x000002E5 System.Void Solana.Unity.SDK.Example.LoginScreen::CheckAccount(Solana.Unity.Wallet.Account)
+// 0x000002EA System.Void Solana.Unity.SDK.Example.LoginScreen::CheckAccount(Solana.Unity.Wallet.Account)
 extern void LoginScreen_CheckAccount_m0F8EF937DBE7BBD54747399CBEEE0606B67B0FC2 (void);
-// 0x000002E6 System.Void Solana.Unity.SDK.Example.LoginScreen::OnClose()
+// 0x000002EB System.Void Solana.Unity.SDK.Example.LoginScreen::OnClose()
 extern void LoginScreen_OnClose_m2D41D2BC5FCE0C4ABB4D4190F2CA33277CB8098A (void);
-// 0x000002E7 System.Void Solana.Unity.SDK.Example.LoginScreen::.ctor()
+// 0x000002EC System.Void Solana.Unity.SDK.Example.LoginScreen::.ctor()
 extern void LoginScreen__ctor_m4734A262DB88DE6A7B463D059730B480A8AF5FF5 (void);
-// 0x000002E8 System.Void Solana.Unity.SDK.Example.LoginScreen::<Start>b__13_0(System.String)
+// 0x000002ED System.Void Solana.Unity.SDK.Example.LoginScreen::<Start>b__13_0(System.String)
 extern void LoginScreen_U3CStartU3Eb__13_0_mA8A988145A54399BF881BC5A3A2A79E6DF920EFC (void);
-// 0x000002E9 System.Void Solana.Unity.SDK.Example.LoginScreen::<Start>b__13_1()
+// 0x000002EE System.Void Solana.Unity.SDK.Example.LoginScreen::<Start>b__13_1()
 extern void LoginScreen_U3CStartU3Eb__13_1_m7301CDEB28AB8DFEA2A47E0192BD2272F09C2BD3 (void);
-// 0x000002EA System.Void Solana.Unity.SDK.Example.LoginScreen::<Start>b__13_2()
+// 0x000002EF System.Void Solana.Unity.SDK.Example.LoginScreen::<Start>b__13_2()
 extern void LoginScreen_U3CStartU3Eb__13_2_m085EF2FF83165FEEE46664343216AE611025AC4B (void);
-// 0x000002EB System.Void Solana.Unity.SDK.Example.LoginScreen/<>c::.cctor()
-extern void U3CU3Ec__cctor_m6CE5D12606E6B11F11029D89F343181AFB5B47C0 (void);
-// 0x000002EC System.Void Solana.Unity.SDK.Example.LoginScreen/<>c::.ctor()
-extern void U3CU3Ec__ctor_m7D2F1BDBC289E56428595AB0C72A356E7D1E3C04 (void);
-// 0x000002ED System.Void Solana.Unity.SDK.Example.LoginScreen/<>c::<Start>b__13_3()
-extern void U3CU3Ec_U3CStartU3Eb__13_3_m21C962FA3FD0DF928EFB4086667BCD36E05D7471 (void);
-// 0x000002EE System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginChecker>d__14::MoveNext()
+// 0x000002F0 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginChecker>d__14::MoveNext()
 extern void U3CLoginCheckerU3Ed__14_MoveNext_mEDD3756A926AAFC4470A7ABF79CBDC9453149DA6 (void);
-// 0x000002EF System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginChecker>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000002F1 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginChecker>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CLoginCheckerU3Ed__14_SetStateMachine_m4027A54ED8075619C94394B8E7D2E3574754F986 (void);
-// 0x000002F0 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerSms>d__15::MoveNext()
+// 0x000002F2 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerSms>d__15::MoveNext()
 extern void U3CLoginCheckerSmsU3Ed__15_MoveNext_mCD386E470185287820A187940A80D8F11F683888 (void);
-// 0x000002F1 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerSms>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000002F3 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerSms>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CLoginCheckerSmsU3Ed__15_SetStateMachine_mA3AA721F8849E7221939B6FE3F0EA82C4BE31927 (void);
-// 0x000002F2 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerWeb3Auth>d__16::MoveNext()
+// 0x000002F4 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerWeb3Auth>d__16::MoveNext()
 extern void U3CLoginCheckerWeb3AuthU3Ed__16_MoveNext_m7282872C4B8C8D070312DDD42075D8AA12598A41 (void);
-// 0x000002F3 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerWeb3Auth>d__16::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000002F5 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerWeb3Auth>d__16::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CLoginCheckerWeb3AuthU3Ed__16_SetStateMachine_mB3170EADEB15543B07A4F44AD5A65C65B0AFF717 (void);
-// 0x000002F4 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerWalletAdapter>d__17::MoveNext()
+// 0x000002F6 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerWalletAdapter>d__17::MoveNext()
 extern void U3CLoginCheckerWalletAdapterU3Ed__17_MoveNext_mA16625483E7D433B40053A7DCAB385D2F1DD0AEE (void);
-// 0x000002F5 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerWalletAdapter>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000002F7 System.Void Solana.Unity.SDK.Example.LoginScreen/<LoginCheckerWalletAdapter>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CLoginCheckerWalletAdapterU3Ed__17_SetStateMachine_m280AA294EFCC8804163AE127C8469B31D128AAF5 (void);
-// 0x000002F6 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::OnEnable()
+// 0x000002F8 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::OnEnable()
 extern void ReGenerateAccountScreen_OnEnable_mA611669B532DEA02382CD1BC1D4575D7A7CD4986 (void);
-// 0x000002F7 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::Start()
+// 0x000002F9 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::Start()
 extern void ReGenerateAccountScreen_Start_m1DB3367934227158C1D30BFEA0D8CBFC15A45C4D (void);
-// 0x000002F8 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::GenerateNewAccount()
+// 0x000002FA System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::GenerateNewAccount()
 extern void ReGenerateAccountScreen_GenerateNewAccount_mD214EF00C3AA3EC68D63429B242E1E744D928813 (void);
-// 0x000002F9 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::PasteMnemonicsClicked()
+// 0x000002FB System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::PasteMnemonicsClicked()
 extern void ReGenerateAccountScreen_PasteMnemonicsClicked_mE0AC0A60D2154B317B864F632491A9FEC3872B2A (void);
-// 0x000002FA System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::ShowScreen(System.Object)
+// 0x000002FC System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::ShowScreen(System.Object)
 extern void ReGenerateAccountScreen_ShowScreen_mD53EDBC2254FCC72A525FF243A3DF27883B2F08E (void);
-// 0x000002FB System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::HideScreen()
+// 0x000002FD System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::HideScreen()
 extern void ReGenerateAccountScreen_HideScreen_m54BD3ABDEFBCEE73A1F4A3BABE7275C2A24320D0 (void);
-// 0x000002FC System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::OnClose()
+// 0x000002FE System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::OnClose()
 extern void ReGenerateAccountScreen_OnClose_m4895AC775BA4B6136AF2380DE768CE1A44152D29 (void);
-// 0x000002FD System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::.ctor()
+// 0x000002FF System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::.ctor()
 extern void ReGenerateAccountScreen__ctor_m7CDAE0AE8C132DB760B25B4198FDDABB49E11EED (void);
-// 0x000002FE System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::<Start>b__9_0()
+// 0x00000300 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::<Start>b__9_0()
 extern void ReGenerateAccountScreen_U3CStartU3Eb__9_0_m18D69DB056B86809379682B34A46E6D9EEFD4570 (void);
-// 0x000002FF System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::<Start>b__9_1()
+// 0x00000301 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen::<Start>b__9_1()
 extern void ReGenerateAccountScreen_U3CStartU3Eb__9_1_mB36FBA9D9995E802BF15E32BA7A1E8682A0863C1 (void);
-// 0x00000300 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen/<GenerateNewAccount>d__10::MoveNext()
+// 0x00000302 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen/<GenerateNewAccount>d__10::MoveNext()
 extern void U3CGenerateNewAccountU3Ed__10_MoveNext_m4DF7E4E382CAD0B94015197A99F5C64E95086ECB (void);
-// 0x00000301 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen/<GenerateNewAccount>d__10::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000303 System.Void Solana.Unity.SDK.Example.ReGenerateAccountScreen/<GenerateNewAccount>d__10::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CGenerateNewAccountU3Ed__10_SetStateMachine_mBE5A893BD541F80F48A2B9812E84F59B2D72E74C (void);
-// 0x00000302 System.Void Solana.Unity.SDK.Example.SignScreen::Start()
+// 0x00000304 System.Void Solana.Unity.SDK.Example.SignScreen::Start()
 extern void SignScreen_Start_m0C3CA09D8F17CD7C56417F55AC4E7E5244FEC068 (void);
-// 0x00000303 System.Void Solana.Unity.SDK.Example.SignScreen::TrySign()
+// 0x00000305 System.Void Solana.Unity.SDK.Example.SignScreen::TrySign()
 extern void SignScreen_TrySign_m0384C30B4DF3F5822A63CCCD22B86088ECC82C4F (void);
-// 0x00000304 System.Void Solana.Unity.SDK.Example.SignScreen::.ctor()
+// 0x00000306 System.Void Solana.Unity.SDK.Example.SignScreen::.ctor()
 extern void SignScreen__ctor_m0E44E5F2C731F94DE1A3216C290353810AB939CB (void);
-// 0x00000305 System.Void Solana.Unity.SDK.Example.SignScreen::<Start>b__5_0()
+// 0x00000307 System.Void Solana.Unity.SDK.Example.SignScreen::<Start>b__5_0()
 extern void SignScreen_U3CStartU3Eb__5_0_mA34AFD6AB62EE3E2A1700EAB683A4F24202B94E3 (void);
-// 0x00000306 System.Void Solana.Unity.SDK.Example.SignScreen::<Start>b__5_1()
+// 0x00000308 System.Void Solana.Unity.SDK.Example.SignScreen::<Start>b__5_1()
 extern void SignScreen_U3CStartU3Eb__5_1_mAB175D59CE79C2B0180F1E2B857E2AB8C8C166A5 (void);
-// 0x00000307 System.Void Solana.Unity.SDK.Example.SignScreen/<TrySign>d__6::MoveNext()
+// 0x00000309 System.Void Solana.Unity.SDK.Example.SignScreen/<TrySign>d__6::MoveNext()
 extern void U3CTrySignU3Ed__6_MoveNext_mE2C2E440BDD820DD44F2A5C92C2B24F927B9A34A (void);
-// 0x00000308 System.Void Solana.Unity.SDK.Example.SignScreen/<TrySign>d__6::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000030A System.Void Solana.Unity.SDK.Example.SignScreen/<TrySign>d__6::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CTrySignU3Ed__6_SetStateMachine_m796B60B5A32D495E4F4F40AE19E3A8A5C66737B8 (void);
-// 0x00000309 System.Void Solana.Unity.SDK.Example.TransferScreen::Start()
+// 0x0000030B System.Void Solana.Unity.SDK.Example.TransferScreen::Start()
 extern void TransferScreen_Start_mD14D82225064C1755C309218FD9950E8FE3F8755 (void);
-// 0x0000030A System.Void Solana.Unity.SDK.Example.TransferScreen::TryTransfer()
+// 0x0000030C System.Void Solana.Unity.SDK.Example.TransferScreen::TryTransfer()
 extern void TransferScreen_TryTransfer_m4D7BDDBC7D5F67CA3DC054ACC73F1702E94E18A3 (void);
-// 0x0000030B System.Void Solana.Unity.SDK.Example.TransferScreen::TransferSol()
+// 0x0000030D System.Void Solana.Unity.SDK.Example.TransferScreen::TransferSol()
 extern void TransferScreen_TransferSol_m2F5840AD4420955619110E6FB067D2D381CC2A1A (void);
-// 0x0000030C System.Void Solana.Unity.SDK.Example.TransferScreen::TransferNft()
+// 0x0000030E System.Void Solana.Unity.SDK.Example.TransferScreen::TransferNft()
 extern void TransferScreen_TransferNft_mC221EDF61768B3FA422A372C5C05C345EA782A30 (void);
-// 0x0000030D System.Boolean Solana.Unity.SDK.Example.TransferScreen::CheckInput()
+// 0x0000030F System.Boolean Solana.Unity.SDK.Example.TransferScreen::CheckInput()
 extern void TransferScreen_CheckInput_m22786160F6EC6593057387E45E7BC0D0C84213BB (void);
-// 0x0000030E System.Void Solana.Unity.SDK.Example.TransferScreen::TransferToken()
+// 0x00000310 System.Void Solana.Unity.SDK.Example.TransferScreen::TransferToken()
 extern void TransferScreen_TransferToken_m98512FC72468CD9E25D726D1109A61B121BD3E27 (void);
-// 0x0000030F System.Void Solana.Unity.SDK.Example.TransferScreen::HandleResponse(Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>)
+// 0x00000311 System.Void Solana.Unity.SDK.Example.TransferScreen::HandleResponse(Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>)
 extern void TransferScreen_HandleResponse_m4CDDB4A09040BF0800CF32C3B50FBBAC3DC98F64 (void);
-// 0x00000310 System.Void Solana.Unity.SDK.Example.TransferScreen::ShowScreen(System.Object)
+// 0x00000312 System.Void Solana.Unity.SDK.Example.TransferScreen::ShowScreen(System.Object)
 extern void TransferScreen_ShowScreen_m01589B9C22A00B1C885D5C3C9899D083A8D0AD06 (void);
-// 0x00000311 System.Void Solana.Unity.SDK.Example.TransferScreen::OnClose()
+// 0x00000313 System.Void Solana.Unity.SDK.Example.TransferScreen::OnClose()
 extern void TransferScreen_OnClose_m05CA1773F1970006B83C7425B4435D554953671E (void);
-// 0x00000312 System.Threading.Tasks.Task Solana.Unity.SDK.Example.TransferScreen::PopulateInfoFields(System.Object)
+// 0x00000314 System.Threading.Tasks.Task Solana.Unity.SDK.Example.TransferScreen::PopulateInfoFields(System.Object)
 extern void TransferScreen_PopulateInfoFields_m5065F552B243E65A9ABBC39824F93CBF55B37895 (void);
-// 0x00000313 System.Void Solana.Unity.SDK.Example.TransferScreen::ResetInputFields()
+// 0x00000315 System.Void Solana.Unity.SDK.Example.TransferScreen::ResetInputFields()
 extern void TransferScreen_ResetInputFields_m418DE1CBBC6E53BD01D34B3802F74D8E692E01B4 (void);
-// 0x00000314 System.Void Solana.Unity.SDK.Example.TransferScreen::HideScreen()
+// 0x00000316 System.Void Solana.Unity.SDK.Example.TransferScreen::HideScreen()
 extern void TransferScreen_HideScreen_mFECF49882810EA65AB74C537AECB2AE7967A7FFC (void);
-// 0x00000315 System.Void Solana.Unity.SDK.Example.TransferScreen::.ctor()
+// 0x00000317 System.Void Solana.Unity.SDK.Example.TransferScreen::.ctor()
 extern void TransferScreen__ctor_m2E9BA95758DC3B95280BBE127FA5E65D94213E7D (void);
-// 0x00000316 System.Void Solana.Unity.SDK.Example.TransferScreen::<Start>b__12_0()
+// 0x00000318 System.Void Solana.Unity.SDK.Example.TransferScreen::<Start>b__12_0()
 extern void TransferScreen_U3CStartU3Eb__12_0_m95024242CC4462E558A5C93CD74778F83DB7759E (void);
-// 0x00000317 System.Void Solana.Unity.SDK.Example.TransferScreen::<>n__0(System.Object)
+// 0x00000319 System.Void Solana.Unity.SDK.Example.TransferScreen::<>n__0(System.Object)
 extern void TransferScreen_U3CU3En__0_m134C625193572AFD0D5FAAE94151396AD9300AE9 (void);
-// 0x00000318 System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferSol>d__14::MoveNext()
+// 0x0000031A System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferSol>d__14::MoveNext()
 extern void U3CTransferSolU3Ed__14_MoveNext_m5C73A7840CC3DBFF860D8DDB686605B42D1646EF (void);
-// 0x00000319 System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferSol>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000031B System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferSol>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CTransferSolU3Ed__14_SetStateMachine_m95C7C0BF0443A22C4021A67434C9FDDB031BF90B (void);
-// 0x0000031A System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferNft>d__15::MoveNext()
+// 0x0000031C System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferNft>d__15::MoveNext()
 extern void U3CTransferNftU3Ed__15_MoveNext_m6464602BA74C311FBA94A1AFE691804B97BAAC4F (void);
-// 0x0000031B System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferNft>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000031D System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferNft>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CTransferNftU3Ed__15_SetStateMachine_m175E862E5704159DBB38517E2BA62F10CED909C9 (void);
-// 0x0000031C System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferToken>d__17::MoveNext()
+// 0x0000031E System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferToken>d__17::MoveNext()
 extern void U3CTransferTokenU3Ed__17_MoveNext_m4BD1D0B1395972BCF233EEBB2BC681A03D51D38E (void);
-// 0x0000031D System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferToken>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000031F System.Void Solana.Unity.SDK.Example.TransferScreen/<TransferToken>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CTransferTokenU3Ed__17_SetStateMachine_m4371F54C0823A33C4FC245606F7F53A0CD50158E (void);
-// 0x0000031E System.Void Solana.Unity.SDK.Example.TransferScreen/<ShowScreen>d__19::MoveNext()
+// 0x00000320 System.Void Solana.Unity.SDK.Example.TransferScreen/<ShowScreen>d__19::MoveNext()
 extern void U3CShowScreenU3Ed__19_MoveNext_m897EF7728871B29A8A56BCFCB53EAD14EF7FBEBE (void);
-// 0x0000031F System.Void Solana.Unity.SDK.Example.TransferScreen/<ShowScreen>d__19::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000321 System.Void Solana.Unity.SDK.Example.TransferScreen/<ShowScreen>d__19::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CShowScreenU3Ed__19_SetStateMachine_m15B0BE8FB79BB2174CF6A5FE2335779BFAC240AF (void);
-// 0x00000320 System.Void Solana.Unity.SDK.Example.TransferScreen/<PopulateInfoFields>d__21::MoveNext()
+// 0x00000322 System.Void Solana.Unity.SDK.Example.TransferScreen/<PopulateInfoFields>d__21::MoveNext()
 extern void U3CPopulateInfoFieldsU3Ed__21_MoveNext_mB656B755BCCA5A364923110C4CC25E102283A6E8 (void);
-// 0x00000321 System.Void Solana.Unity.SDK.Example.TransferScreen/<PopulateInfoFields>d__21::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000323 System.Void Solana.Unity.SDK.Example.TransferScreen/<PopulateInfoFields>d__21::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CPopulateInfoFieldsU3Ed__21_SetStateMachine_m5F16E5E309AD2A5284D718004D697C58A92BC042 (void);
-// 0x00000322 System.Void Solana.Unity.SDK.Example.WalletScreen::Start()
+// 0x00000324 System.Void Solana.Unity.SDK.Example.WalletScreen::Start()
 extern void WalletScreen_Start_m3680FECE5CE57297108B46DBEAEA918760EEADFD (void);
-// 0x00000323 System.Void Solana.Unity.SDK.Example.WalletScreen::OnWalletChangeState()
+// 0x00000325 System.Void Solana.Unity.SDK.Example.WalletScreen::OnWalletChangeState()
 extern void WalletScreen_OnWalletChangeState_m7AB90F8B2519669F09985AE02235829509494623 (void);
-// 0x00000324 System.Void Solana.Unity.SDK.Example.WalletScreen::RefreshWallet()
+// 0x00000326 System.Void Solana.Unity.SDK.Example.WalletScreen::RefreshWallet()
 extern void WalletScreen_RefreshWallet_m106019932D753ABE80AAE5557763D3731A33E05F (void);
-// 0x00000325 System.Void Solana.Unity.SDK.Example.WalletScreen::OnEnable()
+// 0x00000327 System.Void Solana.Unity.SDK.Example.WalletScreen::OnEnable()
 extern void WalletScreen_OnEnable_mA8AEE0C6F32BECC227FAC6D495CB35D623DC38BA (void);
-// 0x00000326 System.Void Solana.Unity.SDK.Example.WalletScreen::OnBalanceChange(System.Double)
+// 0x00000328 System.Void Solana.Unity.SDK.Example.WalletScreen::OnBalanceChange(System.Double)
 extern void WalletScreen_OnBalanceChange_mC8F57ED717D43854EBC893863C5436DBE13DAC42 (void);
-// 0x00000327 System.Void Solana.Unity.SDK.Example.WalletScreen::OnDisable()
+// 0x00000329 System.Void Solana.Unity.SDK.Example.WalletScreen::OnDisable()
 extern void WalletScreen_OnDisable_m7CEAB8A0998B956B6FF3C96C978735DC778ADEE0 (void);
-// 0x00000328 System.Void Solana.Unity.SDK.Example.WalletScreen::SavePrivateKeyOnClick()
+// 0x0000032A System.Void Solana.Unity.SDK.Example.WalletScreen::SavePrivateKeyOnClick()
 extern void WalletScreen_SavePrivateKeyOnClick_m0A2697E9FD9D90F8462610559D052258B102AE9D (void);
-// 0x00000329 System.Void Solana.Unity.SDK.Example.WalletScreen::SaveMnemonicsOnClick()
+// 0x0000032B System.Void Solana.Unity.SDK.Example.WalletScreen::SaveMnemonicsOnClick()
 extern void WalletScreen_SaveMnemonicsOnClick_mD4D5D900124D5F3BA8AE0AC80A6EF06848040F80 (void);
-// 0x0000032A System.Void Solana.Unity.SDK.Example.WalletScreen::TransitionToTransfer(System.Object)
+// 0x0000032C System.Void Solana.Unity.SDK.Example.WalletScreen::TransitionToTransfer(System.Object)
 extern void WalletScreen_TransitionToTransfer_m661E80D87DCF5748E081966F1DBEB9C2FB6C0EDF (void);
-// 0x0000032B Cysharp.Threading.Tasks.UniTask Solana.Unity.SDK.Example.WalletScreen::GetOwnedTokenAccounts()
+// 0x0000032D Cysharp.Threading.Tasks.UniTask Solana.Unity.SDK.Example.WalletScreen::GetOwnedTokenAccounts()
 extern void WalletScreen_GetOwnedTokenAccounts_m4A189DB29BF565850395E77ED875A167852BFCC6 (void);
-// 0x0000032C Cysharp.Threading.Tasks.UniTask`1<Solana.Unity.Extensions.TokenMintResolver> Solana.Unity.SDK.Example.WalletScreen::GetTokenMintResolver()
+// 0x0000032E Cysharp.Threading.Tasks.UniTask`1<Solana.Unity.Extensions.TokenMintResolver> Solana.Unity.SDK.Example.WalletScreen::GetTokenMintResolver()
 extern void WalletScreen_GetTokenMintResolver_mE1059CC29E0A195D7835E947A172A62BDCF04AB5 (void);
-// 0x0000032D System.Void Solana.Unity.SDK.Example.WalletScreen::ShowScreen(System.Object)
+// 0x0000032F System.Void Solana.Unity.SDK.Example.WalletScreen::ShowScreen(System.Object)
 extern void WalletScreen_ShowScreen_mF15B9A31E6E6D3AD25F8D0F992213F16B72BFB1C (void);
-// 0x0000032E System.Void Solana.Unity.SDK.Example.WalletScreen::HideScreen()
+// 0x00000330 System.Void Solana.Unity.SDK.Example.WalletScreen::HideScreen()
 extern void WalletScreen_HideScreen_m404A090943F82635F9E8D4C0B84DD0EDDB8E96E8 (void);
-// 0x0000032F System.Void Solana.Unity.SDK.Example.WalletScreen::OnClose()
+// 0x00000331 System.Void Solana.Unity.SDK.Example.WalletScreen::OnClose()
 extern void WalletScreen_OnClose_m19BD6CCA07311C6E78A3F69A4756709AFDCC8315 (void);
-// 0x00000330 System.Void Solana.Unity.SDK.Example.WalletScreen::OnDestroy()
+// 0x00000332 System.Void Solana.Unity.SDK.Example.WalletScreen::OnDestroy()
 extern void WalletScreen_OnDestroy_mB10504AFD3C04730C2CA4386C85BE939051B9922 (void);
-// 0x00000331 System.Void Solana.Unity.SDK.Example.WalletScreen::.ctor()
+// 0x00000333 System.Void Solana.Unity.SDK.Example.WalletScreen::.ctor()
 extern void WalletScreen__ctor_mA51FCB64AAB96A3FB7C48A9C9731F8C7185912AA (void);
-// 0x00000332 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_0()
+// 0x00000334 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_0()
 extern void WalletScreen_U3CStartU3Eb__16_0_m67D6B4548DFA0714335D57918AC58227940987B7 (void);
-// 0x00000333 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_1()
+// 0x00000335 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_1()
 extern void WalletScreen_U3CStartU3Eb__16_1_mD00EF8BD38ABD51D08C9A2D3DED74915EF8CF583 (void);
-// 0x00000334 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_2()
+// 0x00000336 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_2()
 extern void WalletScreen_U3CStartU3Eb__16_2_m087158CEBF7527E54A4F4BFB31754866A97FEA8D (void);
-// 0x00000335 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_3()
+// 0x00000337 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_3()
 extern void WalletScreen_U3CStartU3Eb__16_3_m7055D52D2B5BD3380D042743843441BEC15C2C9D (void);
-// 0x00000336 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_4()
+// 0x00000338 System.Void Solana.Unity.SDK.Example.WalletScreen::<Start>b__16_4()
 extern void WalletScreen_U3CStartU3Eb__16_4_mDA4B868BD6D0B9D384A19F357CC3937C9D804330 (void);
-// 0x00000337 System.Void Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass20_0::.ctor()
+// 0x00000339 System.Void Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass20_0::.ctor()
 extern void U3CU3Ec__DisplayClass20_0__ctor_mC675332F59662C559760239A73C0DA5177C370E9 (void);
-// 0x00000338 System.Void Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass20_0::<OnBalanceChange>b__0()
+// 0x0000033A System.Void Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass20_0::<OnBalanceChange>b__0()
 extern void U3CU3Ec__DisplayClass20_0_U3COnBalanceChangeU3Eb__0_m2975E49BC01174BDF241B734A708D335B6D3D287 (void);
-// 0x00000339 System.Void Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass26_0::.ctor()
+// 0x0000033B System.Void Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass26_0::.ctor()
 extern void U3CU3Ec__DisplayClass26_0__ctor_m193BB484A243650F434F26ADC3F82C290F0995F5 (void);
-// 0x0000033A System.Boolean Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass26_0::<GetOwnedTokenAccounts>b__0(Solana.Unity.Rpc.Models.TokenAccount)
+// 0x0000033C System.Boolean Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass26_0::<GetOwnedTokenAccounts>b__0(Solana.Unity.Rpc.Models.TokenAccount)
 extern void U3CU3Ec__DisplayClass26_0_U3CGetOwnedTokenAccountsU3Eb__0_m1692C4695E4E05D35F4B50FAB8CFE881E4699831 (void);
-// 0x0000033B System.Void Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass26_0::<GetOwnedTokenAccounts>b__1()
+// 0x0000033D System.Void Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass26_0::<GetOwnedTokenAccounts>b__1()
 extern void U3CU3Ec__DisplayClass26_0_U3CGetOwnedTokenAccountsU3Eb__1_m5734E783192AA8DBB76129FDAE583BBC35067AAC (void);
-// 0x0000033C System.Void Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::MoveNext()
+// 0x0000033E System.Void Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::MoveNext()
 extern void U3CGetOwnedTokenAccountsU3Ed__26_MoveNext_m466DBDBF18AD17618F937C1A9BB1B216AE9BE5CD (void);
-// 0x0000033D System.Void Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000033F System.Void Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CGetOwnedTokenAccountsU3Ed__26_SetStateMachine_m2BF2CAD6875080B0CDBFDFCA022D06C309FF7AC3 (void);
-// 0x0000033E System.Void Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27::MoveNext()
+// 0x00000340 System.Void Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27::MoveNext()
 extern void U3CGetTokenMintResolverU3Ed__27_MoveNext_m176A63EF23B2E3982A49C86A16DA6E8DAFF7FF54 (void);
-// 0x0000033F System.Void Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000341 System.Void Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CGetTokenMintResolverU3Ed__27_SetStateMachine_m75A1BEA15132616AFA10F6384ADB09C36B7BCFF4 (void);
-// 0x00000340 Solana.Unity.SDK.Example.SimpleScreenManager Solana.Unity.SDK.Example.ISimpleScreen::get_manager()
-// 0x00000341 System.Void Solana.Unity.SDK.Example.ISimpleScreen::set_manager(Solana.Unity.SDK.Example.SimpleScreenManager)
-// 0x00000342 System.Void Solana.Unity.SDK.Example.ISimpleScreen::ShowScreen(System.Object)
-// 0x00000343 System.Void Solana.Unity.SDK.Example.ISimpleScreen::HideScreen()
-// 0x00000344 Solana.Unity.SDK.Example.SimpleScreenManager Solana.Unity.SDK.Example.SimpleScreen::get_manager()
+// 0x00000342 Solana.Unity.SDK.Example.SimpleScreenManager Solana.Unity.SDK.Example.ISimpleScreen::get_manager()
+// 0x00000343 System.Void Solana.Unity.SDK.Example.ISimpleScreen::set_manager(Solana.Unity.SDK.Example.SimpleScreenManager)
+// 0x00000344 System.Void Solana.Unity.SDK.Example.ISimpleScreen::ShowScreen(System.Object)
+// 0x00000345 System.Void Solana.Unity.SDK.Example.ISimpleScreen::HideScreen()
+// 0x00000346 Solana.Unity.SDK.Example.SimpleScreenManager Solana.Unity.SDK.Example.SimpleScreen::get_manager()
 extern void SimpleScreen_get_manager_m33C68A91F1A72A9A1CE56E737038675E5FC62A9B (void);
-// 0x00000345 System.Void Solana.Unity.SDK.Example.SimpleScreen::set_manager(Solana.Unity.SDK.Example.SimpleScreenManager)
+// 0x00000347 System.Void Solana.Unity.SDK.Example.SimpleScreen::set_manager(Solana.Unity.SDK.Example.SimpleScreenManager)
 extern void SimpleScreen_set_manager_mC36ECACB953E199E754549FD610DB5AFAE97CB02 (void);
-// 0x00000346 System.Void Solana.Unity.SDK.Example.SimpleScreen::HideScreen()
+// 0x00000348 System.Void Solana.Unity.SDK.Example.SimpleScreen::HideScreen()
 extern void SimpleScreen_HideScreen_mBB596C80EBF6BA87BCD325D957447AED7A95A999 (void);
-// 0x00000347 System.Void Solana.Unity.SDK.Example.SimpleScreen::ShowScreen(System.Object)
+// 0x00000349 System.Void Solana.Unity.SDK.Example.SimpleScreen::ShowScreen(System.Object)
 extern void SimpleScreen_ShowScreen_m160E176EE9486BDDB8A234F3BFB334059301A751 (void);
-// 0x00000348 System.Void Solana.Unity.SDK.Example.SimpleScreen::.ctor()
+// 0x0000034A System.Void Solana.Unity.SDK.Example.SimpleScreen::.ctor()
 extern void SimpleScreen__ctor_mE5D769D487305941F3EC30276EB6977E769A8829 (void);
-// 0x00000349 System.Void Solana.Unity.SDK.Example.SimpleScreenManager::Awake()
+// 0x0000034B System.Void Solana.Unity.SDK.Example.SimpleScreenManager::Awake()
 extern void SimpleScreenManager_Awake_m0A02FFFB3B8174CA0673DAF59D939E102AA41BD8 (void);
-// 0x0000034A System.Void Solana.Unity.SDK.Example.SimpleScreenManager::OnEnable()
+// 0x0000034C System.Void Solana.Unity.SDK.Example.SimpleScreenManager::OnEnable()
 extern void SimpleScreenManager_OnEnable_mD3FD697FDAF4ECB38D8D68BDD857F838D3651D20 (void);
-// 0x0000034B System.Void Solana.Unity.SDK.Example.SimpleScreenManager::PopulateDictionary()
+// 0x0000034D System.Void Solana.Unity.SDK.Example.SimpleScreenManager::PopulateDictionary()
 extern void SimpleScreenManager_PopulateDictionary_m3B00ABBC8EDA5232CAFE6434480DC27C2BB6D269 (void);
-// 0x0000034C System.Void Solana.Unity.SDK.Example.SimpleScreenManager::SetupScreen(Solana.Unity.SDK.Example.SimpleScreen)
+// 0x0000034E System.Void Solana.Unity.SDK.Example.SimpleScreenManager::SetupScreen(Solana.Unity.SDK.Example.SimpleScreen)
 extern void SimpleScreenManager_SetupScreen_mA94899E5EFB7ABF8BCB7B75CA7746E90FDE0AD51 (void);
-// 0x0000034D System.Void Solana.Unity.SDK.Example.SimpleScreenManager::ShowScreen(Solana.Unity.SDK.Example.SimpleScreen,Solana.Unity.SDK.Example.SimpleScreen)
+// 0x0000034F System.Void Solana.Unity.SDK.Example.SimpleScreenManager::ShowScreen(Solana.Unity.SDK.Example.SimpleScreen,Solana.Unity.SDK.Example.SimpleScreen)
 extern void SimpleScreenManager_ShowScreen_mB48280BB729EB0213EE6D8823EB73FB6FA751E02 (void);
-// 0x0000034E System.Void Solana.Unity.SDK.Example.SimpleScreenManager::ShowScreen(Solana.Unity.SDK.Example.SimpleScreen,System.Int32)
+// 0x00000350 System.Void Solana.Unity.SDK.Example.SimpleScreenManager::ShowScreen(Solana.Unity.SDK.Example.SimpleScreen,System.Int32)
 extern void SimpleScreenManager_ShowScreen_m9A79EC78EBBCF389676BB1DBAB81BAFE0A8EEE84 (void);
-// 0x0000034F System.Void Solana.Unity.SDK.Example.SimpleScreenManager::ShowScreen(Solana.Unity.SDK.Example.SimpleScreen,System.String,System.Object)
+// 0x00000351 System.Void Solana.Unity.SDK.Example.SimpleScreenManager::ShowScreen(Solana.Unity.SDK.Example.SimpleScreen,System.String,System.Object)
 extern void SimpleScreenManager_ShowScreen_m62413D9E337465BBDD91416C1762BFDEAF88160A (void);
-// 0x00000350 System.Void Solana.Unity.SDK.Example.SimpleScreenManager::.ctor()
+// 0x00000352 System.Void Solana.Unity.SDK.Example.SimpleScreenManager::.ctor()
 extern void SimpleScreenManager__ctor_m7BDA9BC236FEC51756202D9ACB69AAD5AD7F95AC (void);
-// 0x00000351 System.Void Solana.Unity.SDK.Example.TokenItem::Awake()
+// 0x00000353 System.Void Solana.Unity.SDK.Example.TokenItem::Awake()
 extern void TokenItem_Awake_m1189B6D537628D76241E2F5B5C9BFF4EC7C3157A (void);
-// 0x00000352 System.Void Solana.Unity.SDK.Example.TokenItem::Start()
+// 0x00000354 System.Void Solana.Unity.SDK.Example.TokenItem::Start()
 extern void TokenItem_Start_m7DA48631B1719AAB6ED3852DA7EBBDA5E469EB4E (void);
-// 0x00000353 Cysharp.Threading.Tasks.UniTask Solana.Unity.SDK.Example.TokenItem::InitializeData(Solana.Unity.Rpc.Models.TokenAccount,Solana.Unity.SDK.Example.SimpleScreen,Solana.Unity.SDK.Nft.Nft)
+// 0x00000355 Cysharp.Threading.Tasks.UniTask Solana.Unity.SDK.Example.TokenItem::InitializeData(Solana.Unity.Rpc.Models.TokenAccount,Solana.Unity.SDK.Example.SimpleScreen,Solana.Unity.SDK.Nft.Nft)
 extern void TokenItem_InitializeData_m8408CF3ECE06688793D9EF1AE2C63B81529E9FBB (void);
-// 0x00000354 System.Threading.Tasks.Task Solana.Unity.SDK.Example.TokenItem::LoadAndCacheTokenLogo(System.String,System.String)
+// 0x00000356 System.Threading.Tasks.Task Solana.Unity.SDK.Example.TokenItem::LoadAndCacheTokenLogo(System.String,System.String)
 extern void TokenItem_LoadAndCacheTokenLogo_m3BD289F6C0DE9900872CB08C6BCD3531AACDAB22 (void);
-// 0x00000355 System.Void Solana.Unity.SDK.Example.TokenItem::TransferAccount()
+// 0x00000357 System.Void Solana.Unity.SDK.Example.TokenItem::TransferAccount()
 extern void TokenItem_TransferAccount_m7016BC69AB15721C58C273E3F0F05AA351816CF7 (void);
-// 0x00000356 System.Void Solana.Unity.SDK.Example.TokenItem::UpdateAmount(System.String)
+// 0x00000358 System.Void Solana.Unity.SDK.Example.TokenItem::UpdateAmount(System.String)
 extern void TokenItem_UpdateAmount_m823827F3EA820EFBEA0A8C45B2243E38D659A318 (void);
-// 0x00000357 System.Void Solana.Unity.SDK.Example.TokenItem::.ctor()
+// 0x00000359 System.Void Solana.Unity.SDK.Example.TokenItem::.ctor()
 extern void TokenItem__ctor_mA5EA41C88DAC27EE883BAD99C82067D8B002A9A4 (void);
-// 0x00000358 System.Void Solana.Unity.SDK.Example.TokenItem/<InitializeData>d__10::MoveNext()
+// 0x0000035A System.Void Solana.Unity.SDK.Example.TokenItem/<InitializeData>d__10::MoveNext()
 extern void U3CInitializeDataU3Ed__10_MoveNext_m7E0FEB1B1997215081952C31CD12FFAB67C63005 (void);
-// 0x00000359 System.Void Solana.Unity.SDK.Example.TokenItem/<InitializeData>d__10::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000035B System.Void Solana.Unity.SDK.Example.TokenItem/<InitializeData>d__10::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CInitializeDataU3Ed__10_SetStateMachine_m438A7DE3BC44218B208F66811F27C54E3397A231 (void);
-// 0x0000035A System.Void Solana.Unity.SDK.Example.TokenItem/<LoadAndCacheTokenLogo>d__11::MoveNext()
+// 0x0000035C System.Void Solana.Unity.SDK.Example.TokenItem/<LoadAndCacheTokenLogo>d__11::MoveNext()
 extern void U3CLoadAndCacheTokenLogoU3Ed__11_MoveNext_m7F12591EC5E49A26CE781442E2CF27F6791CAFFD (void);
-// 0x0000035B System.Void Solana.Unity.SDK.Example.TokenItem/<LoadAndCacheTokenLogo>d__11::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000035D System.Void Solana.Unity.SDK.Example.TokenItem/<LoadAndCacheTokenLogo>d__11::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CLoadAndCacheTokenLogoU3Ed__11_SetStateMachine_m7D7A4A38AD7112A3A5BD9858B110AF4AD0BE7890 (void);
-// 0x0000035C System.Void Solana.Unity.SDK.Example.TokenItem/<>c__DisplayClass13_0::.ctor()
+// 0x0000035E System.Void Solana.Unity.SDK.Example.TokenItem/<>c__DisplayClass13_0::.ctor()
 extern void U3CU3Ec__DisplayClass13_0__ctor_m2009827573C026CC634A2DD6A5FD83C5BC69093E (void);
-// 0x0000035D System.Void Solana.Unity.SDK.Example.TokenItem/<>c__DisplayClass13_0::<UpdateAmount>b__0()
+// 0x0000035F System.Void Solana.Unity.SDK.Example.TokenItem/<>c__DisplayClass13_0::<UpdateAmount>b__0()
 extern void U3CU3Ec__DisplayClass13_0_U3CUpdateAmountU3Eb__0_m115F309E68A457163EFA1F684D035D5B23EA88DA (void);
-// 0x0000035E UnityEngine.Color32[] Solana.Unity.SDK.Example.QRGenerator::EncodeQRCode(System.String,System.Int32,System.Int32)
+// 0x00000360 UnityEngine.Color32[] Solana.Unity.SDK.Example.QRGenerator::EncodeQRCode(System.String,System.Int32,System.Int32)
 extern void QRGenerator_EncodeQRCode_mA5531335D884F1DFF9C3FFD1D8676D1E52ADF049 (void);
-// 0x0000035F UnityEngine.Texture2D Solana.Unity.SDK.Example.QRGenerator::GenerateQRTexture(System.String,System.Int32,System.Int32)
+// 0x00000361 UnityEngine.Texture2D Solana.Unity.SDK.Example.QRGenerator::GenerateQRTexture(System.String,System.Int32,System.Int32)
 extern void QRGenerator_GenerateQRTexture_m0468966DAAAB42124F8518C5358DDEF9A8D8CF50 (void);
-// 0x00000360 ZXing.Result Solana.Unity.SDK.Example.QRGenerator::ReadQR(UnityEngine.Color32[],System.Int32,System.Int32)
+// 0x00000362 ZXing.Result Solana.Unity.SDK.Example.QRGenerator::ReadQR(UnityEngine.Color32[],System.Int32,System.Int32)
 extern void QRGenerator_ReadQR_m57546203F07B853B9B6E518F522693140143E7D6 (void);
-// 0x00000361 System.Void Solana.Unity.SDK.Example.PayToPlay::Start()
+// 0x00000363 System.Void Solana.Unity.SDK.Example.PayToPlay::Start()
 extern void PayToPlay_Start_mBD56D1E4FA353950E490155926F4C6DC3D33F5F3 (void);
-// 0x00000362 System.Void Solana.Unity.SDK.Example.PayToPlay::TryPayToPlay(System.UInt64,System.Action,System.Action`1<System.String>,System.String)
+// 0x00000364 System.Void Solana.Unity.SDK.Example.PayToPlay::TryPayToPlay(System.UInt64,System.Action,System.Action`1<System.String>,System.String)
 extern void PayToPlay_TryPayToPlay_m65A60C72B2674A35527C59FB298F132F847FC9E5 (void);
-// 0x00000363 System.Void Solana.Unity.SDK.Example.PayToPlay::.ctor()
+// 0x00000365 System.Void Solana.Unity.SDK.Example.PayToPlay::.ctor()
 extern void PayToPlay__ctor_m0E5867B9CDFE2FC81D058682BA8F4306D1F104E4 (void);
-// 0x00000364 System.Boolean Solana.Unity.SDK.Example.PayToPlay::<TryPayToPlay>b__7_0(Solana.Unity.Rpc.Models.TokenAccount)
+// 0x00000366 System.Boolean Solana.Unity.SDK.Example.PayToPlay::<TryPayToPlay>b__7_0(Solana.Unity.Rpc.Models.TokenAccount)
 extern void PayToPlay_U3CTryPayToPlayU3Eb__7_0_m7BCB7B5D54DEB0EA720E61361C8C7B11380C3892 (void);
-// 0x00000365 System.Void Solana.Unity.SDK.Example.PayToPlay/<TryPayToPlay>d__7::MoveNext()
+// 0x00000367 System.Void Solana.Unity.SDK.Example.PayToPlay/<TryPayToPlay>d__7::MoveNext()
 extern void U3CTryPayToPlayU3Ed__7_MoveNext_m374AC4EAF062505850E81EE8953D30CB93B9451F (void);
-// 0x00000366 System.Void Solana.Unity.SDK.Example.PayToPlay/<TryPayToPlay>d__7::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000368 System.Void Solana.Unity.SDK.Example.PayToPlay/<TryPayToPlay>d__7::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CTryPayToPlayU3Ed__7_SetStateMachine_mCE43AD5CAAD25F2716007B1F633F58C965CE61AA (void);
-static Il2CppMethodPointer s_methodPointers[870] = 
+static Il2CppMethodPointer s_methodPointers[872] = 
 {
 	Beggar_Start_m4BA4D5763D81E297F55A1589EAA268A96A8E8A60,
 	Beggar_Update_m4E2D63B47AC5F4917FEDA8DF5F38A6FC6FE5E378,
@@ -1852,7 +1854,7 @@ static Il2CppMethodPointer s_methodPointers[870] =
 	Loading__ctor_m31B31EDD4F300E61A5C50027AC65AB632B916DD6,
 	WalletHolder_Start_m71EB677A6024290E25C9EDB4A6FCBC26BAD9AA2C,
 	WalletHolder__ctor_m4BE4FDFC58EED5268C4899E814B35CB8DD61B4FF,
-	WalletHolder_U3CStartU3Eb__4_0_mEA52DAE731D46EEFA4D91C5003B9D2C12182252E,
+	WalletHolder_U3CStartU3Eb__5_0_m72A625E1ED833DC79BE4592BC432258309F0CA57,
 	AnimationController_Start_mC2E6E251390BCB44555D1877E2866D31B49B1E06,
 	AnimationController_PlayIdle_mD713572E8E2F9E1631F638E420542D181AD2EABA,
 	AnimationController_OpenWindow_m6D2EED2B02720D1077B4AA21AC01E7900BEE5F68,
@@ -1923,10 +1925,10 @@ static Il2CppMethodPointer s_methodPointers[870] =
 	ArcadeMacineManager_openPlayButton_m5E214F39D017310AED1040FE93ACA2590E89C267,
 	ArcadeMacineManager_ClosePlayButton_mA0115AC5101E6E91758585F8727E664F80D30DE2,
 	ArcadeMacineManager__ctor_m814E42B20D9FCB75D40CF605F07476243AB25ADA,
-	ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__24_0_m6666C7B4C086C4567D5C64CF6D51E058D38B4A95,
-	ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__25_0_mE1963E6754CAA5ACA71CFEAFD00CE7CA42FC85EF,
-	ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__26_0_m121E0B60B22E518F328BE16CD2C51235F4A32505,
-	ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__27_0_mFD2D35622EF7AE25249496ACB95EB6E926AF5270,
+	ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__25_0_m9F4748FC604FC951B5C88537EC292C58EA21016F,
+	ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__26_0_m5B4736E4F413D0DBA4D3140F12198BAC2A185DDE,
+	ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__27_0_m508FAB7659722D4378DB20A988A87CC3147DD9B0,
+	ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__28_0_m2D00E04A2199511DDEB0F27E5875962BF42069C7,
 	Light2DIntensityController_Start_m994729BFD3478B8D462B49CF1E35F99BFB332300,
 	Light2DIntensityController_FlickerLight_m19D44F9F14683B044C172D7681BAA6E9D0169147,
 	Light2DIntensityController__ctor_mD749241A36D4BF9AFED0CEF5F83DC030EDB0FD5C,
@@ -2319,6 +2321,8 @@ static Il2CppMethodPointer s_methodPointers[870] =
 	U3CGetTokenU3Ed__4_SetStateMachine_mACEB77BDE8A8AFD8AB724C55183891CC0D8C1070,
 	NULL,
 	NULL,
+	NULL,
+	NULL,
 	SlotManager_Start_mD62AACFCFFBF6B595987BA9B53BA21E52BFD4109,
 	SlotManager_Spin_m2523F76E9AB54339CE5AE468B60EA6801D45398E,
 	SlotManager_DelayStartingAnimation_mEB9B54A4846DDD7827D1FE0B4A2B3F57EF7F87AA,
@@ -2330,18 +2334,18 @@ static Il2CppMethodPointer s_methodPointers[870] =
 	SlotManager_StateOfReward_m8038559CA448C53314A18E0D1257E080655EA349,
 	SlotManager_ResetSlot_m623083766917564772CCC32CDC2DD9D6D66C2CEC,
 	SlotManager__ctor_m8259B7550E280CD18954C76DC48A24E0744C15AA,
-	U3CDelayStartingAnimationU3Ed__19__ctor_m4BB495AE8284DB3280E13297469024DB5B262F00,
-	U3CDelayStartingAnimationU3Ed__19_System_IDisposable_Dispose_mBDED4D2338F21BF0C3D2869D51E4C56205184AAA,
-	U3CDelayStartingAnimationU3Ed__19_MoveNext_m147B86C57BB8B120B44296E9367DB48292BBE9AA,
-	U3CDelayStartingAnimationU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBAED970130252C1B5DDDC0CF697905924AC960D3,
-	U3CDelayStartingAnimationU3Ed__19_System_Collections_IEnumerator_Reset_m38F8024EC70C3836DD703F6141D6E19C723EC552,
-	U3CDelayStartingAnimationU3Ed__19_System_Collections_IEnumerator_get_Current_m88E5AAC7585AC2C1533E4E30C61F5B3BF8965912,
-	U3CDelayRewardsU3Ed__21__ctor_mC2ACF3E730BD1ED8128B2D7CD897BBC868219EF0,
-	U3CDelayRewardsU3Ed__21_System_IDisposable_Dispose_m7E6C4BF00C57A7C95E3696D5FE09FAACA017B955,
-	U3CDelayRewardsU3Ed__21_MoveNext_m1454A7FF76BF5B79800CC0F0EFAB3F591A6EDA95,
-	U3CDelayRewardsU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2564488A60F9B952A5496933BDE7121A6C0F3C3F,
-	U3CDelayRewardsU3Ed__21_System_Collections_IEnumerator_Reset_mA6E50EACEAE055FD06480C9E8F686484F2E1A403,
-	U3CDelayRewardsU3Ed__21_System_Collections_IEnumerator_get_Current_m05E136587B85715CCCD6F18F44E92B7D56248F64,
+	U3CDelayStartingAnimationU3Ed__21__ctor_m0FD329659D953B5E0E5F8946BB29102209AE1405,
+	U3CDelayStartingAnimationU3Ed__21_System_IDisposable_Dispose_mE485494290BB961C10FCE505E535C072C05C8949,
+	U3CDelayStartingAnimationU3Ed__21_MoveNext_m2C2444E9C980AA6B1F3AB8E5F6822011F7DE670C,
+	U3CDelayStartingAnimationU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mEFD617160C21A9F5926D69C5DC605E443E038630,
+	U3CDelayStartingAnimationU3Ed__21_System_Collections_IEnumerator_Reset_m5CED6BD4F98DA48744E197F54A36838BB9B340E4,
+	U3CDelayStartingAnimationU3Ed__21_System_Collections_IEnumerator_get_Current_m8F0B8A5B0464D9E13C64895075CC8359C37DE071,
+	U3CDelayRewardsU3Ed__23__ctor_m82887EB4F8A18CD5E7F197316DC6896E693C3A85,
+	U3CDelayRewardsU3Ed__23_System_IDisposable_Dispose_m4505B9A3FD0C15223CD04C8BC5C3C4F6B76916C3,
+	U3CDelayRewardsU3Ed__23_MoveNext_m3F0D038BDFE0396C62CF5F7FF3633521AE6681A4,
+	U3CDelayRewardsU3Ed__23_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m869B38853C1E9D727BBECBA9BD6C40B3250C3691,
+	U3CDelayRewardsU3Ed__23_System_Collections_IEnumerator_Reset_mE74EF810B6982F52FB46DA85630118CE28E293CA,
+	U3CDelayRewardsU3Ed__23_System_Collections_IEnumerator_get_Current_m538FE2933B9B386099D5F4262CD2831217D52A84,
 	SlotRoll_InvokeSlotSpin_m20DDC374DFB545AC98D7867AA3634804CEFF5740,
 	SlotRoll_DelaySpin_m7EA5E76C401592F3CADC54E9D2C09204238F1575,
 	SlotRoll_SlotSpin_m7B147554295696DC5A63028F593B48993F5C57D7,
@@ -2376,6 +2380,9 @@ static Il2CppMethodPointer s_methodPointers[870] =
 	U3CspriteAnimationCoroutineU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC85C910C03C4856A1B65075EF733DEB4C28F4AB2,
 	U3CspriteAnimationCoroutineU3Ed__9_System_Collections_IEnumerator_Reset_m3468FE0AB6D21B63263BAD0AF829EC2DB485E974,
 	U3CspriteAnimationCoroutineU3Ed__9_System_Collections_IEnumerator_get_Current_m0752A86A849131ACA674ED99D5166C8FB106E66F,
+	TogglingUI_ToggleSlotsMachine_m87BC50A7EF4EABCCAD6F07DF08D8EF66C6042C03,
+	TogglingUI_ToggleWalletUI_mE6AC64733B64620F3CF9388784447E7D665DAF66,
+	TogglingUI__ctor_m8D96B67CB55ABD70521BBB9E617359F829B9C05F,
 	TransactionHandler_TryAndProcessTransaction_mC96C9F810FD015A25034A21E482DB930CDD524A5,
 	TransactionHandler_TransactionSuccessful_m0ACB6739BE99D6E9BB5B77B656ADB4474DBEAAF0,
 	TransactionHandler_HandleTransactionFailure_m594146A79372A95DC0350E4421F9B639706AEC38,
@@ -2483,9 +2490,6 @@ static Il2CppMethodPointer s_methodPointers[870] =
 	LoginScreen_U3CStartU3Eb__13_0_mA8A988145A54399BF881BC5A3A2A79E6DF920EFC,
 	LoginScreen_U3CStartU3Eb__13_1_m7301CDEB28AB8DFEA2A47E0192BD2272F09C2BD3,
 	LoginScreen_U3CStartU3Eb__13_2_m085EF2FF83165FEEE46664343216AE611025AC4B,
-	U3CU3Ec__cctor_m6CE5D12606E6B11F11029D89F343181AFB5B47C0,
-	U3CU3Ec__ctor_m7D2F1BDBC289E56428595AB0C72A356E7D1E3C04,
-	U3CU3Ec_U3CStartU3Eb__13_3_m21C962FA3FD0DF928EFB4086667BCD36E05D7471,
 	U3CLoginCheckerU3Ed__14_MoveNext_mEDD3756A926AAFC4470A7ABF79CBDC9453149DA6,
 	U3CLoginCheckerU3Ed__14_SetStateMachine_m4027A54ED8075619C94394B8E7D2E3574754F986,
 	U3CLoginCheckerSmsU3Ed__15_MoveNext_mCD386E470185287820A187940A80D8F11F683888,
@@ -2680,42 +2684,42 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[52] =
 	{ 0x0600018E, Inventory_DisplayInventoryItem_m1EAF201D1B39F4B4854156E7792EAA8329E387DF_AdjustorThunk },
 	{ 0x06000243, U3CGetTokenU3Ed__4_MoveNext_m4E32A26A1011777A9A2D818FC6689E9FBA81B24B_AdjustorThunk },
 	{ 0x06000244, U3CGetTokenU3Ed__4_SetStateMachine_mACEB77BDE8A8AFD8AB724C55183891CC0D8C1070_AdjustorThunk },
-	{ 0x060002DD, U3CGenerateNewAccountU3Ed__9_MoveNext_mCF8ECF8A1E2428CA33DABD8085B7AE2C18A21A53_AdjustorThunk },
-	{ 0x060002DE, U3CGenerateNewAccountU3Ed__9_SetStateMachine_mC978584B201A5AC6A8578A13B31823A3CACCB71C_AdjustorThunk },
-	{ 0x060002EE, U3CLoginCheckerU3Ed__14_MoveNext_mEDD3756A926AAFC4470A7ABF79CBDC9453149DA6_AdjustorThunk },
-	{ 0x060002EF, U3CLoginCheckerU3Ed__14_SetStateMachine_m4027A54ED8075619C94394B8E7D2E3574754F986_AdjustorThunk },
-	{ 0x060002F0, U3CLoginCheckerSmsU3Ed__15_MoveNext_mCD386E470185287820A187940A80D8F11F683888_AdjustorThunk },
-	{ 0x060002F1, U3CLoginCheckerSmsU3Ed__15_SetStateMachine_mA3AA721F8849E7221939B6FE3F0EA82C4BE31927_AdjustorThunk },
-	{ 0x060002F2, U3CLoginCheckerWeb3AuthU3Ed__16_MoveNext_m7282872C4B8C8D070312DDD42075D8AA12598A41_AdjustorThunk },
-	{ 0x060002F3, U3CLoginCheckerWeb3AuthU3Ed__16_SetStateMachine_mB3170EADEB15543B07A4F44AD5A65C65B0AFF717_AdjustorThunk },
-	{ 0x060002F4, U3CLoginCheckerWalletAdapterU3Ed__17_MoveNext_mA16625483E7D433B40053A7DCAB385D2F1DD0AEE_AdjustorThunk },
-	{ 0x060002F5, U3CLoginCheckerWalletAdapterU3Ed__17_SetStateMachine_m280AA294EFCC8804163AE127C8469B31D128AAF5_AdjustorThunk },
-	{ 0x06000300, U3CGenerateNewAccountU3Ed__10_MoveNext_m4DF7E4E382CAD0B94015197A99F5C64E95086ECB_AdjustorThunk },
-	{ 0x06000301, U3CGenerateNewAccountU3Ed__10_SetStateMachine_mBE5A893BD541F80F48A2B9812E84F59B2D72E74C_AdjustorThunk },
-	{ 0x06000307, U3CTrySignU3Ed__6_MoveNext_mE2C2E440BDD820DD44F2A5C92C2B24F927B9A34A_AdjustorThunk },
-	{ 0x06000308, U3CTrySignU3Ed__6_SetStateMachine_m796B60B5A32D495E4F4F40AE19E3A8A5C66737B8_AdjustorThunk },
-	{ 0x06000318, U3CTransferSolU3Ed__14_MoveNext_m5C73A7840CC3DBFF860D8DDB686605B42D1646EF_AdjustorThunk },
-	{ 0x06000319, U3CTransferSolU3Ed__14_SetStateMachine_m95C7C0BF0443A22C4021A67434C9FDDB031BF90B_AdjustorThunk },
-	{ 0x0600031A, U3CTransferNftU3Ed__15_MoveNext_m6464602BA74C311FBA94A1AFE691804B97BAAC4F_AdjustorThunk },
-	{ 0x0600031B, U3CTransferNftU3Ed__15_SetStateMachine_m175E862E5704159DBB38517E2BA62F10CED909C9_AdjustorThunk },
-	{ 0x0600031C, U3CTransferTokenU3Ed__17_MoveNext_m4BD1D0B1395972BCF233EEBB2BC681A03D51D38E_AdjustorThunk },
-	{ 0x0600031D, U3CTransferTokenU3Ed__17_SetStateMachine_m4371F54C0823A33C4FC245606F7F53A0CD50158E_AdjustorThunk },
-	{ 0x0600031E, U3CShowScreenU3Ed__19_MoveNext_m897EF7728871B29A8A56BCFCB53EAD14EF7FBEBE_AdjustorThunk },
-	{ 0x0600031F, U3CShowScreenU3Ed__19_SetStateMachine_m15B0BE8FB79BB2174CF6A5FE2335779BFAC240AF_AdjustorThunk },
-	{ 0x06000320, U3CPopulateInfoFieldsU3Ed__21_MoveNext_mB656B755BCCA5A364923110C4CC25E102283A6E8_AdjustorThunk },
-	{ 0x06000321, U3CPopulateInfoFieldsU3Ed__21_SetStateMachine_m5F16E5E309AD2A5284D718004D697C58A92BC042_AdjustorThunk },
-	{ 0x0600033C, U3CGetOwnedTokenAccountsU3Ed__26_MoveNext_m466DBDBF18AD17618F937C1A9BB1B216AE9BE5CD_AdjustorThunk },
-	{ 0x0600033D, U3CGetOwnedTokenAccountsU3Ed__26_SetStateMachine_m2BF2CAD6875080B0CDBFDFCA022D06C309FF7AC3_AdjustorThunk },
-	{ 0x0600033E, U3CGetTokenMintResolverU3Ed__27_MoveNext_m176A63EF23B2E3982A49C86A16DA6E8DAFF7FF54_AdjustorThunk },
-	{ 0x0600033F, U3CGetTokenMintResolverU3Ed__27_SetStateMachine_m75A1BEA15132616AFA10F6384ADB09C36B7BCFF4_AdjustorThunk },
-	{ 0x06000358, U3CInitializeDataU3Ed__10_MoveNext_m7E0FEB1B1997215081952C31CD12FFAB67C63005_AdjustorThunk },
-	{ 0x06000359, U3CInitializeDataU3Ed__10_SetStateMachine_m438A7DE3BC44218B208F66811F27C54E3397A231_AdjustorThunk },
-	{ 0x0600035A, U3CLoadAndCacheTokenLogoU3Ed__11_MoveNext_m7F12591EC5E49A26CE781442E2CF27F6791CAFFD_AdjustorThunk },
-	{ 0x0600035B, U3CLoadAndCacheTokenLogoU3Ed__11_SetStateMachine_m7D7A4A38AD7112A3A5BD9858B110AF4AD0BE7890_AdjustorThunk },
-	{ 0x06000365, U3CTryPayToPlayU3Ed__7_MoveNext_m374AC4EAF062505850E81EE8953D30CB93B9451F_AdjustorThunk },
-	{ 0x06000366, U3CTryPayToPlayU3Ed__7_SetStateMachine_mCE43AD5CAAD25F2716007B1F633F58C965CE61AA_AdjustorThunk },
+	{ 0x060002E2, U3CGenerateNewAccountU3Ed__9_MoveNext_mCF8ECF8A1E2428CA33DABD8085B7AE2C18A21A53_AdjustorThunk },
+	{ 0x060002E3, U3CGenerateNewAccountU3Ed__9_SetStateMachine_mC978584B201A5AC6A8578A13B31823A3CACCB71C_AdjustorThunk },
+	{ 0x060002F0, U3CLoginCheckerU3Ed__14_MoveNext_mEDD3756A926AAFC4470A7ABF79CBDC9453149DA6_AdjustorThunk },
+	{ 0x060002F1, U3CLoginCheckerU3Ed__14_SetStateMachine_m4027A54ED8075619C94394B8E7D2E3574754F986_AdjustorThunk },
+	{ 0x060002F2, U3CLoginCheckerSmsU3Ed__15_MoveNext_mCD386E470185287820A187940A80D8F11F683888_AdjustorThunk },
+	{ 0x060002F3, U3CLoginCheckerSmsU3Ed__15_SetStateMachine_mA3AA721F8849E7221939B6FE3F0EA82C4BE31927_AdjustorThunk },
+	{ 0x060002F4, U3CLoginCheckerWeb3AuthU3Ed__16_MoveNext_m7282872C4B8C8D070312DDD42075D8AA12598A41_AdjustorThunk },
+	{ 0x060002F5, U3CLoginCheckerWeb3AuthU3Ed__16_SetStateMachine_mB3170EADEB15543B07A4F44AD5A65C65B0AFF717_AdjustorThunk },
+	{ 0x060002F6, U3CLoginCheckerWalletAdapterU3Ed__17_MoveNext_mA16625483E7D433B40053A7DCAB385D2F1DD0AEE_AdjustorThunk },
+	{ 0x060002F7, U3CLoginCheckerWalletAdapterU3Ed__17_SetStateMachine_m280AA294EFCC8804163AE127C8469B31D128AAF5_AdjustorThunk },
+	{ 0x06000302, U3CGenerateNewAccountU3Ed__10_MoveNext_m4DF7E4E382CAD0B94015197A99F5C64E95086ECB_AdjustorThunk },
+	{ 0x06000303, U3CGenerateNewAccountU3Ed__10_SetStateMachine_mBE5A893BD541F80F48A2B9812E84F59B2D72E74C_AdjustorThunk },
+	{ 0x06000309, U3CTrySignU3Ed__6_MoveNext_mE2C2E440BDD820DD44F2A5C92C2B24F927B9A34A_AdjustorThunk },
+	{ 0x0600030A, U3CTrySignU3Ed__6_SetStateMachine_m796B60B5A32D495E4F4F40AE19E3A8A5C66737B8_AdjustorThunk },
+	{ 0x0600031A, U3CTransferSolU3Ed__14_MoveNext_m5C73A7840CC3DBFF860D8DDB686605B42D1646EF_AdjustorThunk },
+	{ 0x0600031B, U3CTransferSolU3Ed__14_SetStateMachine_m95C7C0BF0443A22C4021A67434C9FDDB031BF90B_AdjustorThunk },
+	{ 0x0600031C, U3CTransferNftU3Ed__15_MoveNext_m6464602BA74C311FBA94A1AFE691804B97BAAC4F_AdjustorThunk },
+	{ 0x0600031D, U3CTransferNftU3Ed__15_SetStateMachine_m175E862E5704159DBB38517E2BA62F10CED909C9_AdjustorThunk },
+	{ 0x0600031E, U3CTransferTokenU3Ed__17_MoveNext_m4BD1D0B1395972BCF233EEBB2BC681A03D51D38E_AdjustorThunk },
+	{ 0x0600031F, U3CTransferTokenU3Ed__17_SetStateMachine_m4371F54C0823A33C4FC245606F7F53A0CD50158E_AdjustorThunk },
+	{ 0x06000320, U3CShowScreenU3Ed__19_MoveNext_m897EF7728871B29A8A56BCFCB53EAD14EF7FBEBE_AdjustorThunk },
+	{ 0x06000321, U3CShowScreenU3Ed__19_SetStateMachine_m15B0BE8FB79BB2174CF6A5FE2335779BFAC240AF_AdjustorThunk },
+	{ 0x06000322, U3CPopulateInfoFieldsU3Ed__21_MoveNext_mB656B755BCCA5A364923110C4CC25E102283A6E8_AdjustorThunk },
+	{ 0x06000323, U3CPopulateInfoFieldsU3Ed__21_SetStateMachine_m5F16E5E309AD2A5284D718004D697C58A92BC042_AdjustorThunk },
+	{ 0x0600033E, U3CGetOwnedTokenAccountsU3Ed__26_MoveNext_m466DBDBF18AD17618F937C1A9BB1B216AE9BE5CD_AdjustorThunk },
+	{ 0x0600033F, U3CGetOwnedTokenAccountsU3Ed__26_SetStateMachine_m2BF2CAD6875080B0CDBFDFCA022D06C309FF7AC3_AdjustorThunk },
+	{ 0x06000340, U3CGetTokenMintResolverU3Ed__27_MoveNext_m176A63EF23B2E3982A49C86A16DA6E8DAFF7FF54_AdjustorThunk },
+	{ 0x06000341, U3CGetTokenMintResolverU3Ed__27_SetStateMachine_m75A1BEA15132616AFA10F6384ADB09C36B7BCFF4_AdjustorThunk },
+	{ 0x0600035A, U3CInitializeDataU3Ed__10_MoveNext_m7E0FEB1B1997215081952C31CD12FFAB67C63005_AdjustorThunk },
+	{ 0x0600035B, U3CInitializeDataU3Ed__10_SetStateMachine_m438A7DE3BC44218B208F66811F27C54E3397A231_AdjustorThunk },
+	{ 0x0600035C, U3CLoadAndCacheTokenLogoU3Ed__11_MoveNext_m7F12591EC5E49A26CE781442E2CF27F6791CAFFD_AdjustorThunk },
+	{ 0x0600035D, U3CLoadAndCacheTokenLogoU3Ed__11_SetStateMachine_m7D7A4A38AD7112A3A5BD9858B110AF4AD0BE7890_AdjustorThunk },
+	{ 0x06000367, U3CTryPayToPlayU3Ed__7_MoveNext_m374AC4EAF062505850E81EE8953D30CB93B9451F_AdjustorThunk },
+	{ 0x06000368, U3CTryPayToPlayU3Ed__7_SetStateMachine_mCE43AD5CAAD25F2716007B1F633F58C965CE61AA_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[870] = 
+static const int32_t s_InvokerIndices[872] = 
 {
 	12659,
 	12659,
@@ -3299,6 +3303,8 @@ static const int32_t s_InvokerIndices[870] =
 	10099,
 	0,
 	0,
+	0,
+	0,
 	12659,
 	12659,
 	12499,
@@ -3356,6 +3362,9 @@ static const int32_t s_InvokerIndices[870] =
 	12499,
 	12659,
 	12499,
+	9970,
+	9970,
+	12659,
 	12659,
 	12659,
 	10099,
@@ -3461,9 +3470,6 @@ static const int32_t s_InvokerIndices[870] =
 	12659,
 	12659,
 	10099,
-	12659,
-	12659,
-	19958,
 	12659,
 	12659,
 	12659,
@@ -3592,7 +3598,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	870,
+	872,
 	s_methodPointers,
 	52,
 	s_adjustorThunks,

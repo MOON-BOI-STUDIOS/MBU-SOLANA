@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public Transform healthIndicator;
     public TextMeshProUGUI healthNumber;
     bool isDead;
+    bool isDeadRevive;
     public GameObject fadeOut;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
@@ -36,12 +37,13 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
-        PlayerPrefs.SetInt("MaxHealth", 500);
+        //PlayerPrefs.SetInt("MaxHealth", 500);
     }
 
     // Update is called once per frame
     void Update()
     {
+
         //max health taked from PlayerPrefs
         maxHealth = PlayerPrefs.GetInt("MaxHealth");
         
@@ -52,12 +54,22 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         }
 
         //triggers death sequence, death animation
-        if(health<= 0 && !isDead)
+        if(health<= 0)
         {
-            isDead = true;
-            _animator._heroAnimator.SetLayerWeight(2, 1);
-            _animator._heroAnimator.SetBool("isDead", true);
-            StartCoroutine(deathSequence());
+            if(curSceneName == "SolanaSpeedRunScene" && !isDeadRevive)
+            {
+                isDeadRevive = true;
+                _animator._heroAnimator.SetLayerWeight(5,1);
+                _animator._heroAnimator.SetBool("isDeadAndRevive",true);
+                StartCoroutine(deathAndRevive());
+            }
+            else if(!isDead && curSceneName != "SolanaSpeedRunScene")
+            {
+                isDead = true;
+                _animator._heroAnimator.SetLayerWeight(2, 1);
+                _animator._heroAnimator.SetBool("isDead", true);
+                StartCoroutine(deathSequence());
+            }
         }
 
 
@@ -129,6 +141,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
             Destroy(other.gameObject);
         }
+        if(other.tag == "PowerDown")
+        {
+            health = -20;
+        }
 
         
     }
@@ -168,10 +184,27 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     {
         _controller.enabled = false;
         _combat.enabled = false;
-        
-        fadeOut.SetActive(true);
+        if(fadeOut != null)
+            fadeOut.SetActive(true);
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(3);
+        //SceneManager.LoadScene(3);
+    }
+
+    //death and Revive Sequence
+    IEnumerator deathAndRevive()
+    {
+        Debug.Log("Execurion1");
+        _controller.enabled = false;
+        _combat.enabled = false;
+        yield return new WaitForSeconds(2);
+        Debug.Log("Execution after yield return");
+        _controller.enabled = true;
+        _combat.enabled = true;
+        isDeadRevive = false;
+        health = 400;
+        PlayerPrefs.SetInt("Health",400);
+        _animator._heroAnimator.SetBool("isDeadAndRevive",false);
+        _animator._heroAnimator.SetLayerWeight(0,1);
     }
     
     // Adding to Inventory

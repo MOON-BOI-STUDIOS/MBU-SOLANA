@@ -60,6 +60,7 @@
 		<type fullname="SpritesAnimations" preserve="nothing"/>
 		<type fullname="SwapScreen" preserve="nothing"/>
 		<type fullname="Toast" preserve="nothing"/>
+		<type fullname="TogglingUI" preserve="nothing"/>
 		<type fullname="TransactionHandler" preserve="nothing"/>
 		<type fullname="UIManager" preserve="nothing"/>
 		<type fullname="WalletHolder" preserve="nothing"/>
@@ -74,6 +75,9 @@
 	</assembly>
 	<assembly fullname="DOTween">
 		<type fullname="DG.Tweening.Core.DOTweenSettings" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="NativeWebSocket">
+		<type fullname="MainThreadUtil" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="NavMeshPlus">
 		<type fullname="NavMeshPlus.Components.NavMeshModifier" preserve="nothing"/>

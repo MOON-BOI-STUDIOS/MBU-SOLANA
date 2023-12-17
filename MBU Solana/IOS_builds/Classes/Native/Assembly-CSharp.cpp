@@ -1120,10 +1120,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_HandleTransactionFailur
 IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_RepairFishing_m1B66AC4F2A19206C93855157B7CB46D59F8C0E91_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_RepairRacing_m5A553B121717E410DD7B2B358DBE0C3C9C671D53_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_RepairShooting_mE6A283EC038CDF3D19589CB522CFC51DF03818EF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__27_0_mFD2D35622EF7AE25249496ACB95EB6E926AF5270_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__25_0_mE1963E6754CAA5ACA71CFEAFD00CE7CA42FC85EF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__24_0_m6666C7B4C086C4567D5C64CF6D51E058D38B4A95_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__26_0_m121E0B60B22E518F328BE16CD2C51235F4A32505_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__28_0_m2D00E04A2199511DDEB0F27E5875962BF42069C7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__26_0_m5B4736E4F413D0DBA4D3140F12198BAC2A185DDE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__25_0_m9F4748FC604FC951B5C88537EC292C58EA21016F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__27_0_m508FAB7659722D4378DB20A988A87CC3147DD9B0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ArcadeMacineManager_donated_mF06987A899F893250FDC83C25AC000AD4876C270_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_IndexOf_TisarcadeCollisionDetection_tBF77CAD14AC7501DC8816F45943C9FB1D05D1B62_m35FF8E7B69AADCE1B98CE2E9954B471CA89219FB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncUniTaskMethodBuilder_AwaitUnsafeOnCompleted_TisAwaiter_t52A3C448B419858C4C6755B60E6565AF33894F5F_TisU3CSwapU3Ed__12_tBFB99F83D259758902AC29089B41DD8810C04D27_m61C3101544D6993214B4D262A5BEC14FC25F42FC_RuntimeMethod_var;
@@ -1248,7 +1248,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CredVoidDamageU3Ed__25_System_Collections
 IL2CPP_EXTERN_C const RuntimeMethod* UniTaskExtensions_AsUniTask_TisAccount_t15F1801E39C4C126421D353BFA50F8BD35957596_m9354AD39C83E5EC473865852E5985C1EBA14765E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UniTaskExtensions_Forget_TisAccount_t15F1801E39C4C126421D353BFA50F8BD35957596_m9A48A4A28C65EA6FABCF4B473A8E567BD620AA7F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* WalletHolder_U3CStartU3Eb__4_0_mEA52DAE731D46EEFA4D91C5003B9D2C12182252E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WalletHolder_U3CStartU3Eb__5_0_m72A625E1ED833DC79BE4592BC432258309F0CA57_RuntimeMethod_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com;
@@ -5129,16 +5129,18 @@ struct ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88  : public M
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Background_15;
 	// Solana.Unity.SDK.Example.PayToPlay ArcadeMacineManager::_paytoPlay
 	PayToPlay_tFD31E3F7DBF351E9E06CB92418DD12164511E4AF* ____paytoPlay_16;
+	// UnityEngine.GameObject ArcadeMacineManager::Wallet
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Wallet_20;
 	// System.UInt64 ArcadeMacineManager::requiredAmount
-	uint64_t ___requiredAmount_20;
+	uint64_t ___requiredAmount_21;
 	// UnityEngine.GameObject ArcadeMacineManager::RaceGameUI
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___RaceGameUI_21;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___RaceGameUI_22;
 	// UnityEngine.GameObject ArcadeMacineManager::FishingGameUI
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FishingGameUI_22;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___FishingGameUI_23;
 	// UnityEngine.GameObject ArcadeMacineManager::BattleGameUI
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BattleGameUI_23;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BattleGameUI_24;
 	// UnityEngine.GameObject ArcadeMacineManager::ParentGameUI
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ParentGameUI_24;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ParentGameUI_25;
 };
 
 struct ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88_StaticFields
@@ -6048,6 +6050,12 @@ struct WalletHolder_tFF8CA7ECF933FF1CC9D0872F041F76F97754EF27  : public MonoBeha
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___subscription_txt_6;
 	// UnityEngine.GameObject WalletHolder::wallet
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___wallet_7;
+};
+
+struct WalletHolder_tFF8CA7ECF933FF1CC9D0872F041F76F97754EF27_StaticFields
+{
+	// WalletHolder WalletHolder::Instance
+	WalletHolder_tFF8CA7ECF933FF1CC9D0872F041F76F97754EF27* ___Instance_8;
 };
 
 // Solana.Unity.SDK.Web3
@@ -13892,7 +13900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WalletHolder_Start_m71EB677A6024290E25C9
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WalletHolder_U3CStartU3Eb__4_0_mEA52DAE731D46EEFA4D91C5003B9D2C12182252E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WalletHolder_U3CStartU3Eb__5_0_m72A625E1ED833DC79BE4592BC432258309F0CA57_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -13905,7 +13913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WalletHolder_Start_m71EB677A6024290E25C9
 		L_1 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_0, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_2 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_2, __this, (intptr_t)((void*)WalletHolder_U3CStartU3Eb__4_0_mEA52DAE731D46EEFA4D91C5003B9D2C12182252E_RuntimeMethod_var), NULL);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_2, __this, (intptr_t)((void*)WalletHolder_U3CStartU3Eb__5_0_m72A625E1ED833DC79BE4592BC432258309F0CA57_RuntimeMethod_var), NULL);
 		NullCheck(L_1);
 		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_1, L_2, NULL);
 		// }
@@ -13920,8 +13928,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WalletHolder__ctor_m4BE4FDFC58EED5268C48
 		return;
 	}
 }
-// System.Void WalletHolder::<Start>b__4_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WalletHolder_U3CStartU3Eb__4_0_mEA52DAE731D46EEFA4D91C5003B9D2C12182252E (WalletHolder_tFF8CA7ECF933FF1CC9D0872F041F76F97754EF27* __this, const RuntimeMethod* method) 
+// System.Void WalletHolder::<Start>b__5_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WalletHolder_U3CStartU3Eb__5_0_m72A625E1ED833DC79BE4592BC432258309F0CA57 (WalletHolder_tFF8CA7ECF933FF1CC9D0872F041F76F97754EF27* __this, const RuntimeMethod* method) 
 {
 	{
 		// wallet.SetActive(!wallet.activeSelf);
@@ -15329,7 +15337,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_TryAndProcessTransac
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__24_0_m6666C7B4C086C4567D5C64CF6D51E058D38B4A95_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__25_0_m9F4748FC604FC951B5C88537EC292C58EA21016F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
@@ -15355,53 +15363,74 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_TryAndProcessTransac
 
 IL_000e:
 	{
-		// _buttonText.text = "2.5M BONKS";
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->____buttonText_11;
-		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_2, _stringLiteral773FF30FA8A500FC83B5308DAEBC46C80EF2C64B);
-		// _TransferDetails.gameObject.SetActive(true);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->____TransferDetails_12;
-		NullCheck(L_3);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
-		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		// if (Wallet != null)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___Wallet_20;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		// Wallet.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___Wallet_20;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		// _TransferDetails.text = "Upgrade Racing Game";
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->____TransferDetails_12;
+		// return;
+		return;
+	}
+
+IL_0029:
+	{
+		// _buttonText.text = "2.5M BONKS";
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->____buttonText_11;
 		NullCheck(L_5);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteral00C0E8AB9EAA44E920A8E2EFF283F6AFA46EBC57);
-		// wallet.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___wallet_14;
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteral773FF30FA8A500FC83B5308DAEBC46C80EF2C64B);
+		// _TransferDetails.gameObject.SetActive(true);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->____TransferDetails_12;
 		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
-		// Background.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___Background_15;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
-		// _SendButton.gameObject.SetActive(true);
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_8 = __this->____SendButton_13;
+		// _TransferDetails.text = "Upgrade Racing Game";
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = __this->____TransferDetails_12;
 		NullCheck(L_8);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
-		L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_8, NULL);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_8, _stringLiteral00C0E8AB9EAA44E920A8E2EFF283F6AFA46EBC57);
+		// wallet.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___wallet_14;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)1, NULL);
-		// _SendButton.onClick.RemoveAllListeners();
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_10 = __this->____SendButton_13;
+		// Background.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___Background_15;
 		NullCheck(L_10);
-		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_11;
-		L_11 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_10, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
+		// _SendButton.gameObject.SetActive(true);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = __this->____SendButton_13;
 		NullCheck(L_11);
-		UnityEventBase_RemoveAllListeners_m6E68297189537543B0C72FE38804646CA204D076(L_11, NULL);
-		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairRacing, HandleTransactionFailure));
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->____SendButton_13;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
+		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
 		NullCheck(L_12);
-		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_13;
-		L_13 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_12, NULL);
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_14 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		NullCheck(L_14);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_14, __this, (intptr_t)((void*)ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__24_0_m6666C7B4C086C4567D5C64CF6D51E058D38B4A95_RuntimeMethod_var), NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)1, NULL);
+		// _SendButton.onClick.RemoveAllListeners();
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_13 = __this->____SendButton_13;
 		NullCheck(L_13);
-		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_13, L_14, NULL);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_14;
+		L_14 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_13, NULL);
+		NullCheck(L_14);
+		UnityEventBase_RemoveAllListeners_m6E68297189537543B0C72FE38804646CA204D076(L_14, NULL);
+		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairRacing, HandleTransactionFailure));
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_15 = __this->____SendButton_13;
+		NullCheck(L_15);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_16;
+		L_16 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_15, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_17 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_17);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_17, __this, (intptr_t)((void*)ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__25_0_m9F4748FC604FC951B5C88537EC292C58EA21016F_RuntimeMethod_var), NULL);
+		NullCheck(L_16);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_16, L_17, NULL);
 		// }
 		return;
 	}
@@ -15412,7 +15441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_TryAndProcessTransac
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__25_0_mE1963E6754CAA5ACA71CFEAFD00CE7CA42FC85EF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__26_0_m5B4736E4F413D0DBA4D3140F12198BAC2A185DDE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
@@ -15438,53 +15467,74 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_TryAndProcessTransac
 
 IL_000e:
 	{
-		// _buttonText.text = "2.5M BONKS";
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->____buttonText_11;
-		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_2, _stringLiteral773FF30FA8A500FC83B5308DAEBC46C80EF2C64B);
-		// _TransferDetails.gameObject.SetActive(true);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->____TransferDetails_12;
-		NullCheck(L_3);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
-		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		// if (Wallet != null)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___Wallet_20;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		// Wallet.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___Wallet_20;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		// _TransferDetails.text = "Upgrade Fishing Game";
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->____TransferDetails_12;
+		// return;
+		return;
+	}
+
+IL_0029:
+	{
+		// _buttonText.text = "2.5M BONKS";
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->____buttonText_11;
 		NullCheck(L_5);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteral2BD32A6F5F782388FC3EF36E7E673809F4E0A3BF);
-		// wallet.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___wallet_14;
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteral773FF30FA8A500FC83B5308DAEBC46C80EF2C64B);
+		// _TransferDetails.gameObject.SetActive(true);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->____TransferDetails_12;
 		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
-		// Background.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___Background_15;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
-		// _SendButton.gameObject.SetActive(true);
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_8 = __this->____SendButton_13;
+		// _TransferDetails.text = "Upgrade Fishing Game";
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = __this->____TransferDetails_12;
 		NullCheck(L_8);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
-		L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_8, NULL);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_8, _stringLiteral2BD32A6F5F782388FC3EF36E7E673809F4E0A3BF);
+		// wallet.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___wallet_14;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)1, NULL);
-		// _SendButton.onClick.RemoveAllListeners();
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_10 = __this->____SendButton_13;
+		// Background.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___Background_15;
 		NullCheck(L_10);
-		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_11;
-		L_11 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_10, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
+		// _SendButton.gameObject.SetActive(true);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = __this->____SendButton_13;
 		NullCheck(L_11);
-		UnityEventBase_RemoveAllListeners_m6E68297189537543B0C72FE38804646CA204D076(L_11, NULL);
-		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairFishing, HandleTransactionFailure));
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->____SendButton_13;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
+		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
 		NullCheck(L_12);
-		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_13;
-		L_13 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_12, NULL);
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_14 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		NullCheck(L_14);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_14, __this, (intptr_t)((void*)ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__25_0_mE1963E6754CAA5ACA71CFEAFD00CE7CA42FC85EF_RuntimeMethod_var), NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)1, NULL);
+		// _SendButton.onClick.RemoveAllListeners();
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_13 = __this->____SendButton_13;
 		NullCheck(L_13);
-		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_13, L_14, NULL);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_14;
+		L_14 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_13, NULL);
+		NullCheck(L_14);
+		UnityEventBase_RemoveAllListeners_m6E68297189537543B0C72FE38804646CA204D076(L_14, NULL);
+		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairFishing, HandleTransactionFailure));
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_15 = __this->____SendButton_13;
+		NullCheck(L_15);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_16;
+		L_16 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_15, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_17 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_17);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_17, __this, (intptr_t)((void*)ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__26_0_m5B4736E4F413D0DBA4D3140F12198BAC2A185DDE_RuntimeMethod_var), NULL);
+		NullCheck(L_16);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_16, L_17, NULL);
 		// }
 		return;
 	}
@@ -15495,7 +15545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_TryAndProcessTransac
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__26_0_m121E0B60B22E518F328BE16CD2C51235F4A32505_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__27_0_m508FAB7659722D4378DB20A988A87CC3147DD9B0_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
@@ -15521,53 +15571,74 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_TryAndProcessTransac
 
 IL_000e:
 	{
-		// _buttonText.text = "2.5M BONKS";
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_2 = __this->____buttonText_11;
-		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_2, _stringLiteral773FF30FA8A500FC83B5308DAEBC46C80EF2C64B);
-		// _TransferDetails.gameObject.SetActive(true);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_3 = __this->____TransferDetails_12;
-		NullCheck(L_3);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
-		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		// if (Wallet != null)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___Wallet_20;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		// Wallet.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___Wallet_20;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		// _TransferDetails.text = "Upgrade Battle Arena";
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->____TransferDetails_12;
+		// return;
+		return;
+	}
+
+IL_0029:
+	{
+		// _buttonText.text = "2.5M BONKS";
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->____buttonText_11;
 		NullCheck(L_5);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteralFA999DE4A093FED656495633CF7CF20AE5B5DC90);
-		// wallet.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___wallet_14;
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteral773FF30FA8A500FC83B5308DAEBC46C80EF2C64B);
+		// _TransferDetails.gameObject.SetActive(true);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->____TransferDetails_12;
 		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
-		// Background.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___Background_15;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_6, NULL);
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
-		// _SendButton.gameObject.SetActive(true);
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_8 = __this->____SendButton_13;
+		// _TransferDetails.text = "Upgrade Battle Arena";
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = __this->____TransferDetails_12;
 		NullCheck(L_8);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
-		L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_8, NULL);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_8, _stringLiteralFA999DE4A093FED656495633CF7CF20AE5B5DC90);
+		// wallet.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___wallet_14;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)1, NULL);
-		// _SendButton.onClick.RemoveAllListeners();
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_10 = __this->____SendButton_13;
+		// Background.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___Background_15;
 		NullCheck(L_10);
-		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_11;
-		L_11 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_10, NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
+		// _SendButton.gameObject.SetActive(true);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = __this->____SendButton_13;
 		NullCheck(L_11);
-		UnityEventBase_RemoveAllListeners_m6E68297189537543B0C72FE38804646CA204D076(L_11, NULL);
-		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairShooting, HandleTransactionFailure));
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->____SendButton_13;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12;
+		L_12 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_11, NULL);
 		NullCheck(L_12);
-		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_13;
-		L_13 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_12, NULL);
-		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_14 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
-		NullCheck(L_14);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_14, __this, (intptr_t)((void*)ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__26_0_m121E0B60B22E518F328BE16CD2C51235F4A32505_RuntimeMethod_var), NULL);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_12, (bool)1, NULL);
+		// _SendButton.onClick.RemoveAllListeners();
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_13 = __this->____SendButton_13;
 		NullCheck(L_13);
-		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_13, L_14, NULL);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_14;
+		L_14 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_13, NULL);
+		NullCheck(L_14);
+		UnityEventBase_RemoveAllListeners_m6E68297189537543B0C72FE38804646CA204D076(L_14, NULL);
+		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairShooting, HandleTransactionFailure));
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_15 = __this->____SendButton_13;
+		NullCheck(L_15);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_16;
+		L_16 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_15, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_17 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_17);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_17, __this, (intptr_t)((void*)ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__27_0_m508FAB7659722D4378DB20A988A87CC3147DD9B0_RuntimeMethod_var), NULL);
+		NullCheck(L_16);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_16, L_17, NULL);
 		// }
 		return;
 	}
@@ -15578,7 +15649,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_TryAndProcessTransac
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__27_0_mFD2D35622EF7AE25249496ACB95EB6E926AF5270_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__28_0_m2D00E04A2199511DDEB0F27E5875962BF42069C7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1F399032F341E67699B89BBE34F635E8833F76B3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA506920F27F8F7F13D01A7F18F9BF39BEFFD2FD1);
@@ -15629,7 +15700,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_TryAndProcessTransac
 		L_11 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_10, NULL);
 		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_12 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
 		NullCheck(L_12);
-		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_12, __this, (intptr_t)((void*)ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__27_0_mFD2D35622EF7AE25249496ACB95EB6E926AF5270_RuntimeMethod_var), NULL);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_12, __this, (intptr_t)((void*)ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__28_0_m2D00E04A2199511DDEB0F27E5875962BF42069C7_RuntimeMethod_var), NULL);
 		NullCheck(L_11);
 		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_11, L_12, NULL);
 		// }
@@ -16083,19 +16154,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_openPlayButton_m5E21
 	}
 	{
 		// RaceGameUI.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___RaceGameUI_21;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___RaceGameUI_22;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
 		// FishingGameUI.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___FishingGameUI_22;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___FishingGameUI_23;
 		NullCheck(L_1);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
 		// BattleGameUI.SetActive(false);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___BattleGameUI_23;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___BattleGameUI_24;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
 		// RaceGameUI.transform.localScale=new Vector3(0, 0, 0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___RaceGameUI_21;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___RaceGameUI_22;
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
 		L_4 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_3, NULL);
@@ -16105,7 +16176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_openPlayButton_m5E21
 		NullCheck(L_4);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_4, L_5, NULL);
 		// FishingGameUI.transform.localScale = new Vector3(0, 0, 0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___FishingGameUI_22;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___FishingGameUI_23;
 		NullCheck(L_6);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
 		L_7 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_6, NULL);
@@ -16115,7 +16186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_openPlayButton_m5E21
 		NullCheck(L_7);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_7, L_8, NULL);
 		// BattleGameUI.transform.localScale = new Vector3(0, 0, 0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___BattleGameUI_23;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___BattleGameUI_24;
 		NullCheck(L_9);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
 		L_10 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_9, NULL);
@@ -16125,7 +16196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_openPlayButton_m5E21
 		NullCheck(L_10);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_10, L_11, NULL);
 		// ParentGameUI.transform.localScale = new Vector3(1, 1, 1);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___ParentGameUI_24;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___ParentGameUI_25;
 		NullCheck(L_12);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_13;
 		L_13 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_12, NULL);
@@ -16135,7 +16206,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_openPlayButton_m5E21
 		NullCheck(L_13);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_13, L_14, NULL);
 		// ParentGameUI.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___ParentGameUI_24;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15 = __this->___ParentGameUI_25;
 		NullCheck(L_15);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_15, (bool)1, NULL);
 		int32_t L_16 = ___at0;
@@ -16162,11 +16233,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_openPlayButton_m5E21
 IL_00d7:
 	{
 		// RaceGameUI.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___RaceGameUI_21;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = __this->___RaceGameUI_22;
 		NullCheck(L_17);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)1, NULL);
 		// RaceGameUI.transform.DOScale(1, 0.3f).SetEase(Ease.InCirc);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___RaceGameUI_21;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = __this->___RaceGameUI_22;
 		NullCheck(L_18);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
 		L_19 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_18, NULL);
@@ -16181,11 +16252,11 @@ IL_00d7:
 IL_0107:
 	{
 		// FishingGameUI.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___FishingGameUI_22;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___FishingGameUI_23;
 		NullCheck(L_22);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_22, (bool)1, NULL);
 		// FishingGameUI.transform.DOScale(1, 0.3f).SetEase(Ease.InCirc);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___FishingGameUI_22;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23 = __this->___FishingGameUI_23;
 		NullCheck(L_23);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24;
 		L_24 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_23, NULL);
@@ -16200,11 +16271,11 @@ IL_0107:
 IL_0137:
 	{
 		// BattleGameUI.SetActive(true);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = __this->___BattleGameUI_23;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = __this->___BattleGameUI_24;
 		NullCheck(L_27);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_27, (bool)1, NULL);
 		// BattleGameUI.transform.DOScale(1, 0.3f).SetEase(Ease.InCirc);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___BattleGameUI_23;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_28 = __this->___BattleGameUI_24;
 		NullCheck(L_28);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
 		L_29 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_28, NULL);
@@ -16245,7 +16316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_ClosePlayButton_mA01
 		// isUIopen = false;
 		((ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88_StaticFields*)il2cpp_codegen_static_fields_for(ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88_il2cpp_TypeInfo_var))->___isUIopen_19 = (bool)0;
 		// ParentGameUI.transform.DOScale(0, 0.3f).SetEase(Ease.InCirc);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___ParentGameUI_24;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___ParentGameUI_25;
 		NullCheck(L_0);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
 		L_1 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_0, NULL);
@@ -16262,13 +16333,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager__ctor_m814E42B20D9FC
 {
 	{
 		// [Space] public ulong requiredAmount = 2500000; // Define the required amount for the racing game
-		__this->___requiredAmount_20 = ((int64_t)((int32_t)2500000));
+		__this->___requiredAmount_21 = ((int64_t)((int32_t)2500000));
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }
-// System.Void ArcadeMacineManager::<TryAndProcessTransactionRacing>b__24_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__24_0_m6666C7B4C086C4567D5C64CF6D51E058D38B4A95 (ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88* __this, const RuntimeMethod* method) 
+// System.Void ArcadeMacineManager::<TryAndProcessTransactionRacing>b__25_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTransactionRacingU3Eb__25_0_m9F4748FC604FC951B5C88537EC292C58EA21016F (ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16283,7 +16354,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTran
 	{
 		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairRacing, HandleTransactionFailure));
 		PayToPlay_tFD31E3F7DBF351E9E06CB92418DD12164511E4AF* L_0 = __this->____paytoPlay_16;
-		uint64_t L_1 = __this->___requiredAmount_20;
+		uint64_t L_1 = __this->___requiredAmount_21;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_2, __this, (intptr_t)((void*)ArcadeMacineManager_RepairRacing_m5A553B121717E410DD7B2B358DBE0C3C9C671D53_RuntimeMethod_var), NULL);
@@ -16295,8 +16366,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTran
 		return;
 	}
 }
-// System.Void ArcadeMacineManager::<TryAndProcessTransactionFishing>b__25_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__25_0_mE1963E6754CAA5ACA71CFEAFD00CE7CA42FC85EF (ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88* __this, const RuntimeMethod* method) 
+// System.Void ArcadeMacineManager::<TryAndProcessTransactionFishing>b__26_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTransactionFishingU3Eb__26_0_m5B4736E4F413D0DBA4D3140F12198BAC2A185DDE (ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16311,7 +16382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTran
 	{
 		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairFishing, HandleTransactionFailure));
 		PayToPlay_tFD31E3F7DBF351E9E06CB92418DD12164511E4AF* L_0 = __this->____paytoPlay_16;
-		uint64_t L_1 = __this->___requiredAmount_20;
+		uint64_t L_1 = __this->___requiredAmount_21;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_2, __this, (intptr_t)((void*)ArcadeMacineManager_RepairFishing_m1B66AC4F2A19206C93855157B7CB46D59F8C0E91_RuntimeMethod_var), NULL);
@@ -16323,8 +16394,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTran
 		return;
 	}
 }
-// System.Void ArcadeMacineManager::<TryAndProcessTransactionShooting>b__26_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__26_0_m121E0B60B22E518F328BE16CD2C51235F4A32505 (ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88* __this, const RuntimeMethod* method) 
+// System.Void ArcadeMacineManager::<TryAndProcessTransactionShooting>b__27_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTransactionShootingU3Eb__27_0_m508FAB7659722D4378DB20A988A87CC3147DD9B0 (ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16339,7 +16410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTran
 	{
 		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairShooting, HandleTransactionFailure));
 		PayToPlay_tFD31E3F7DBF351E9E06CB92418DD12164511E4AF* L_0 = __this->____paytoPlay_16;
-		uint64_t L_1 = __this->___requiredAmount_20;
+		uint64_t L_1 = __this->___requiredAmount_21;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_2, __this, (intptr_t)((void*)ArcadeMacineManager_RepairShooting_mE6A283EC038CDF3D19589CB522CFC51DF03818EF_RuntimeMethod_var), NULL);
@@ -16351,8 +16422,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTran
 		return;
 	}
 }
-// System.Void ArcadeMacineManager::<TryAndProcessTransactionDonate>b__27_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__27_0_mFD2D35622EF7AE25249496ACB95EB6E926AF5270 (ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88* __this, const RuntimeMethod* method) 
+// System.Void ArcadeMacineManager::<TryAndProcessTransactionDonate>b__28_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTransactionDonateU3Eb__28_0_m2D00E04A2199511DDEB0F27E5875962BF42069C7 (ArcadeMacineManager_tF2F01BEE14180D4A271D2C2E8B0AE01D5E1C3E88* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16367,7 +16438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArcadeMacineManager_U3CTryAndProcessTran
 	{
 		// _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, donated, HandleTransactionFailure, "donated"));
 		PayToPlay_tFD31E3F7DBF351E9E06CB92418DD12164511E4AF* L_0 = __this->____paytoPlay_16;
-		uint64_t L_1 = __this->___requiredAmount_20;
+		uint64_t L_1 = __this->___requiredAmount_21;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_2, __this, (intptr_t)((void*)ArcadeMacineManager_donated_mF06987A899F893250FDC83C25AC000AD4876C270_RuntimeMethod_var), NULL);

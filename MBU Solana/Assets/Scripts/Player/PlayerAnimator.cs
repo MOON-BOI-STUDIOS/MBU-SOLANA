@@ -77,7 +77,8 @@ public class PlayerAnimator : MonoBehaviour
     public void Death()
     {
         audioSource.PlayOneShot(deathSound);
-        EndUI.SetActive(true);
+        if(EndUI != null)
+            EndUI.SetActive(true);
     }
 
     //triggers through animation
@@ -156,14 +157,16 @@ public class PlayerAnimator : MonoBehaviour
         _heroAnimator.SetLayerWeight(4, 1);
         _heroAnimator.SetTrigger("Drink");
         yield return new WaitForSeconds(3f);
-        powerUpVolume.SetActive(true);
+        if(powerUpVolume != null)
+            powerUpVolume.SetActive(true);
         _heroAnimator.SetLayerWeight(4, 0);
         mainMusic.volume = 0;
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
         GetComponent<SpriteRenderer>().color = Color.yellow;
         yield return new WaitForSeconds(11f);
-        powerUpVolume.SetActive(false);
+        if(powerUpVolume != null)
+            powerUpVolume.SetActive(false);
         powerUpMuisc.enabled = false;
         mainMusic.volume = 0.676f;
         GetComponent<SpriteRenderer>().color = initialColor;

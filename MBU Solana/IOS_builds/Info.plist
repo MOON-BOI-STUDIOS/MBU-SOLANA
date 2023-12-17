@@ -32,7 +32,6 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>unitydl</string>
-          <string>unitydll</string>
         </array>
       </dict>
     </array>
