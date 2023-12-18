@@ -21,6 +21,8 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public TextMeshProUGUI healthNumber;
     bool isDead;
     bool isDeadRevive;
+
+    public int Revive;
     public GameObject fadeOut;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
@@ -34,10 +36,18 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     
     //Inventory Additions Array
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
+
+    private IPaymentHandler _paymentHandler;
+    public GameObject _walletParent;
+
+    public GameObject ReviveDialogBox;
+
+    public TextMeshProUGUI revive;
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
         //PlayerPrefs.SetInt("MaxHealth", 500);
+        _paymentHandler = GetComponent<IPaymentHandler>();
     }
 
     // Update is called once per frame
@@ -58,10 +68,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         {
             if(curSceneName == "SolanaSpeedRunScene" && !isDeadRevive)
             {
-                isDeadRevive = true;
-                _animator._heroAnimator.SetLayerWeight(5,1);
-                _animator._heroAnimator.SetBool("isDeadAndRevive",true);
-                StartCoroutine(deathAndRevive());
+                if(!ReviveDialogBox.activeSelf)
+                {
+                    ReviveDialogBox.SetActive(true);
+                }
             }
             else if(!isDead && curSceneName != "SolanaSpeedRunScene")
             {
@@ -85,6 +95,44 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
             if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
         
+    }
+
+    public void CharacterDeath()
+    {
+        Debug.Log("CharacterDeath");
+        ReviveDialogBox.SetActive(false);
+        isDead = true;
+        _animator._heroAnimator.SetLayerWeight(2, 1);
+        _animator._heroAnimator.SetBool("isDead", true);
+        StartCoroutine(deathSequence());
+    }
+
+    public void DeathAndRevive()
+    {
+        _animator._heroAnimator.SetLayerWeight(2, 1);
+        _animator._heroAnimator.SetBool("isDead", true);
+        StartCoroutine(reviveSequence());
+    }
+    IEnumerator reviveSequence()
+    {
+        yield return new WaitForSeconds(1);
+        if(!_walletParent.activeSelf)
+        {
+            Debug.Log("Inside Death and Revive");
+            ReviveDialogBox.SetActive(false);
+            _walletParent.SetActive(true);
+            _paymentHandler.TryAndProcessTransaction();
+        }
+    }
+
+    public void TransactionSuccessful()
+    {
+        Revive += 1;
+        revive.text = "Lives: "+ Revive;
+        isDeadRevive = true;
+        _animator._heroAnimator.SetLayerWeight(5,1);
+        _animator._heroAnimator.SetBool("isDeadAndRevive",true);
+        StartCoroutine(deathAndRevive());
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -187,7 +235,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if(fadeOut != null)
             fadeOut.SetActive(true);
         yield return new WaitForSeconds(1);
-        //SceneManager.LoadScene(3);
+        //SceneManager.LoadScene(0);
     }
 
     //death and Revive Sequence

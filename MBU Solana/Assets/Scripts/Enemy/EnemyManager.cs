@@ -49,10 +49,6 @@ public class EnemyManager : MonoBehaviour
 
                 health -= 30 + PlayerPrefs.GetInt("SwordPower");
                 //Spawn another void
-
-                _waveManager = GameObject.Find("WaveManager");
-                if(_waveManager != null)
-                    _waveManager.GetComponent<WaveManager>().spawnMixedVoids();
                 StartCoroutine(attacked());
                 
 

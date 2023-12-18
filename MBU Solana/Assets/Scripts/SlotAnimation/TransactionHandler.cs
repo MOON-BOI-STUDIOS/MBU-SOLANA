@@ -11,6 +11,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
 
 public class TransactionHandler : MonoBehaviour,IPaymentHandler
 {
@@ -22,11 +23,20 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
     public GameObject wallet;
     public GameObject Background;
     public PayToPlay _paytoPlay;
+    string curSceneName;
     
     [Space] public ulong requiredAmount = 2500000;
 
     //When using this interface for another script change the type of script underneath
     public SlotManager _SlotManager;
+
+    public PlayerManager _playerManager;
+
+    void Start()
+    {
+
+        curSceneName = SceneManager.GetActiveScene().name;
+    }
     public void TryAndProcessTransaction()
     {
         /*if (!walletHolder.activeSelf)
@@ -36,9 +46,18 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
         }*/
         //else
         //{
-            _buttonText.text = "2.5M BONKS";
+            if(curSceneName == "SolanaSpeedRunScene")
+            {
+                _buttonText.text = "25K BONKS";
+                _TransferDetails.text = "Revive";
+            }
+            else
+            {
+                _buttonText.text = "2.5M BONKS";
+                _TransferDetails.text = "Get one Extra Spin";
+            }
+            
             _TransferDetails.gameObject.SetActive(true);
-            _TransferDetails.text = "Get one Extra Spin";
             wallet.SetActive(true);
             Background.SetActive(true);
             _SendButton.gameObject.SetActive(true);
@@ -55,9 +74,15 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
 
     private void TransactionSuccessful()
     {
-        _SlotManager.limit += 1;
-        //_SlotManager.Spin();
-        _SlotManager.ResetSlot();
+        if(curSceneName != "SolanaSpeedRunScene")
+        {
+            _SlotManager.limit += 1;
+            //_SlotManager.Spin();
+            _SlotManager.ResetSlot();
+        }
+        else{
+            _playerManager.TransactionSuccessful();
+        }
     }
 
     private void HandleTransactionFailure(string reason)

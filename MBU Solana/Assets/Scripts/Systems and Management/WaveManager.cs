@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaveManager : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class WaveManager : MonoBehaviour
 
     public GameObject[] BackMecha;
     public GameObject[] BackArcade;
+
+    public bool executeOnce;
+    string curSceneName;
     private void Awake()
     {
         nextRound();
@@ -39,6 +43,7 @@ public class WaveManager : MonoBehaviour
                 g.SetActive(true);
             }
         }
+        curSceneName = SceneManager.GetActiveScene().name;
     }
 
 
@@ -88,6 +93,7 @@ public class WaveManager : MonoBehaviour
         //SlotMachineAppear();
         //
         endOfRoundScreen.SetActive(false);
+        executeOnce = false;
 
         for (int i = 0; i < 2 + 2 * PlayerPrefs.GetInt("Round"); i++)
         {
@@ -134,10 +140,36 @@ public class WaveManager : MonoBehaviour
 
     private void SlotMachineAppear()
     {
-        slotAssets.SetActive(true);
-        if (slotAssets == null) return;
-        Animator animator = slotAssets.GetComponent<Animator>();
-        if (animator == null) return;
-        animator.SetBool("appear", true);
+        
+        if(curSceneName != "SolanaSpeedRunScene")
+        {
+            slotAssets.SetActive(true);
+            if (slotAssets == null) return;
+            Animator animator = slotAssets.GetComponent<Animator>();
+            if (animator == null) return;
+            animator.SetBool("appear", true);
+        }
+        
+    }
+
+        public void spawnMixedVoids(Vector2 _vector2Pos)
+    {
+        if(!executeOnce)
+        {
+        for (int i = 0; i < 2 * PlayerPrefs.GetInt("Round"); i++)
+        {
+            if (PlayerPrefs.GetInt("Round") <= 2)
+            {
+                waveSwitch = false;
+                Instantiate(voids[Random.Range(0, 4)], _vector2Pos, Quaternion.identity, enemiesParent);
+            }
+            else
+            {
+                waveSwitch = false;
+                Instantiate(voids[Random.Range(0, 4)], _vector2Pos, Quaternion.identity, enemiesParent);
+            }
+
+        }
+        }
     }
 }
