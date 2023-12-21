@@ -58,10 +58,7 @@ public class EnemyAnimator : MonoBehaviour
     public void coinSpawn()
     {
         //spawns coin upon death
-        if(curSceneName != "SolanaSpeedRunScene")
-        {
-            GameObject coin = Instantiate(solanaCoin, transform.parent.position, Quaternion.identity);
-        }
+        GameObject coin = Instantiate(solanaCoin, transform.parent.position, Quaternion.identity);
 
         /*
         //Spawns the power up can, on rounds 3 and above (one in 20 chance)
@@ -78,9 +75,6 @@ public class EnemyAnimator : MonoBehaviour
     //triggered through an event in death animation
     public void Death()
     {
-        _waveManager = GameObject.Find("WaveManager");
-        if(_waveManager != null)
-            _waveManager.GetComponent<WaveManager>().spawnMixedVoids(transform.position);
         //destroys game object
         Destroy(transform.parent.gameObject);
     }

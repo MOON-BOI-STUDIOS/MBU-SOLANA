@@ -120,7 +120,7 @@ public class UIManager : MonoBehaviour
 
     public void openPanel()
     {
-        if (panel != null && !isPanelOpen)
+        /*if (panel != null && !isPanelOpen)
         {
             panel.SetActive(true);
             isPanelOpen = true;
@@ -129,6 +129,6 @@ public class UIManager : MonoBehaviour
         {
             panel.SetActive(false);
             isPanelOpen = false;
-        }
+        }*/
     }
 }

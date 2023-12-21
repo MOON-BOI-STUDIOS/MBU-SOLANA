@@ -1,5 +1,5 @@
 publisher:
-  name: Moon Boi Studios
+  name: moonboi
   address: 'London, United Kingdom'
   website: https://moonboi.io/
   email: ems@moonboi.io
@@ -7,9 +7,9 @@ publisher:
     - purpose: icon
       uri: Icon.jpg
 app:
-  name: Moon Boi Universe (Alpha)
+  name: moonboiuniverse
   address: 'London, United Kingdom'
-  android_package: com.MoonboiStudios.MoonboiUniverse
+  android_package: com.moonboi.moonboiuniverse
   urls:
     license_url: https://moonboiuniverse.com/privacy-policy
     copyright_url: https://moonboiuniverse.com/privacy-policy
@@ -27,7 +27,7 @@ release:
       uri: moonboiScreenShot.png
   files:
     - purpose: install
-      uri: MoonboiGame.apk
+      uri: Moonboi_Game.apk
   catalog:
     en-US:
       name: Moon Boi Universe (Alpha)

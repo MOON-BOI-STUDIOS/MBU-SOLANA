@@ -1323,6 +1323,7 @@ MonoBehaviour:
   _paytoPlay: {fileID: 1802931877}
   requiredAmount: 2500000
   _SlotManager: {fileID: 1011341706}
+  _playerManager: {fileID: 0}
 --- !u!114 &1011341708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5946,9 +5947,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.08
-    width: 2.1589205
-    height: 0.24
+    y: 1.3886011
+    width: 0.9265255
+    height: 0.746114
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -7158,7 +7159,7 @@ MonoBehaviour:
   specialLevel: {fileID: 1797068020}
   maxHealth: {fileID: 1797068022}
   fishesUI: {fileID: 1797068023}
-  roundIndicator: {fileID: 0}
+  roundIndicator: {fileID: 248699828748482887}
   panel: {fileID: 1797068025}
   debugger: 0
 --- !u!222 &248699828765284569
@@ -7324,9 +7325,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: -0.08
-    width: 2.1589205
-    height: 0.24
+    y: 1.3886011
+    width: 0.9265255
+    height: 0.746114
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8207,7 +8208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &248699829003283023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12037,7 +12038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &248699829450606805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15799,6 +15800,7 @@ MonoBehaviour:
   BackArcade:
   - {fileID: 6362439014595298536}
   - {fileID: 248699828718686753}
+  executeOnce: 0
 --- !u!1 &248699829948819793
 GameObject:
   m_ObjectHideFlags: 0
@@ -16464,7 +16466,7 @@ MonoBehaviour:
   coinsText: {fileID: 248699829856175439}
   healthIndicator: {fileID: 248699829738622241}
   healthNumber: {fileID: 248699828092729343}
-  fadeOut: {fileID: 0}
+  fadeOut: {fileID: 248699827893075081}
   coinSound1: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
   coinSound2: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
   attackButton: {fileID: 248699829438578855}

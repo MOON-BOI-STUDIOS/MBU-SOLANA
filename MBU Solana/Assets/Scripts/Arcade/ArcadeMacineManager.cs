@@ -1,9 +1,12 @@
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
 using TMPro;
 using DG.Tweening;
 using Solana.Unity.SDK.Example;
+using System.Linq;
+using System.Threading;
 public enum ArcadeType
 {
     Racing, Shooting, Fishing
@@ -33,7 +36,7 @@ public class ArcadeMacineManager : MonoBehaviour
     public static Animator CurrentAnimator;
     public static arcadeCollisionDetection currentACD;
     public static bool isUIopen = false;
-    public GameObject Wallet;
+    public GameObject Wallet_Screen;
 
     [Space] public ulong requiredAmount = 2500000; // Define the required amount for the racing game
 
@@ -100,7 +103,7 @@ public class ArcadeMacineManager : MonoBehaviour
         if (currentACD == null)
             return;
 
-        Wallet.SetActive(true);
+        //Wallet.SetActive(true);
         //Debug.Log("Repair Racing 5 ");
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
@@ -123,7 +126,7 @@ public class ArcadeMacineManager : MonoBehaviour
         if (currentACD == null)
             return;
         
-        Wallet.SetActive(true);
+        //Wallet.SetActive(true);
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
         _TransferDetails.text = "Upgrade Fishing Game";
@@ -143,10 +146,12 @@ public class ArcadeMacineManager : MonoBehaviour
         if (currentACD == null)
             return;
         
-        Wallet.SetActive(true);
+        Debug.Log("Received 2");
+        //Wallet.SetActive(true);
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
         _TransferDetails.text = "Upgrade Battle Arena";
+        wallet.SetActive(true);
         Background.SetActive(true);
         _SendButton.gameObject.SetActive(true);
 

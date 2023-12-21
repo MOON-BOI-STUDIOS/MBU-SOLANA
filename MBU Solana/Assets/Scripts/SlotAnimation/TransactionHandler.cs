@@ -46,16 +46,8 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
         }*/
         //else
         //{
-            if(curSceneName == "SolanaSpeedRunScene")
-            {
-                _buttonText.text = "25K BONKS";
-                _TransferDetails.text = "Revive";
-            }
-            else
-            {
-                _buttonText.text = "2.5M BONKS";
-                _TransferDetails.text = "Get one Extra Spin";
-            }
+            _buttonText.text = "2.5M BONKS";
+            _TransferDetails.text = "Get one Extra Spin";
             
             _TransferDetails.gameObject.SetActive(true);
             wallet.SetActive(true);
@@ -74,15 +66,9 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
 
     private void TransactionSuccessful()
     {
-        if(curSceneName != "SolanaSpeedRunScene")
-        {
-            _SlotManager.limit += 1;
-            //_SlotManager.Spin();
-            _SlotManager.ResetSlot();
-        }
-        else{
-            _playerManager.TransactionSuccessful();
-        }
+        _SlotManager.limit += 1;
+        //_SlotManager.Spin();
+        _SlotManager.ResetSlot();
     }
 
     private void HandleTransactionFailure(string reason)

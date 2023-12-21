@@ -22,7 +22,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     bool isDead;
     bool isDeadRevive;
 
-    public int Revive;
     public GameObject fadeOut;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
@@ -38,11 +37,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
 
     private IPaymentHandler _paymentHandler;
-    public GameObject _walletParent;
-
-    public GameObject ReviveDialogBox;
-
-    public TextMeshProUGUI revive;
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
@@ -58,28 +52,18 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         maxHealth = PlayerPrefs.GetInt("MaxHealth");
         
         //regenerates health slowly
-        if (health <= maxHealth)
+        if (health <= maxHealth && !isDead)
         {
             health += 10 * Time.deltaTime;
         }
 
         //triggers death sequence, death animation
-        if(health<= 0)
+        if(health <= 0 && !isDead)
         {
-            if(curSceneName == "SolanaSpeedRunScene" && !isDeadRevive)
-            {
-                if(!ReviveDialogBox.activeSelf)
-                {
-                    ReviveDialogBox.SetActive(true);
-                }
-            }
-            else if(!isDead && curSceneName != "SolanaSpeedRunScene")
-            {
-                isDead = true;
-                _animator._heroAnimator.SetLayerWeight(2, 1);
-                _animator._heroAnimator.SetBool("isDead", true);
-                StartCoroutine(deathSequence());
-            }
+            isDead = true;
+            _animator._heroAnimator.SetLayerWeight(2, 1);
+            _animator._heroAnimator.SetBool("isDead", true);
+            StartCoroutine(deathSequence());
         }
 
 
@@ -97,48 +81,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         
     }
 
-    public void CharacterDeath()
-    {
-        Debug.Log("CharacterDeath");
-        ReviveDialogBox.SetActive(false);
-        isDead = true;
-        _animator._heroAnimator.SetLayerWeight(2, 1);
-        _animator._heroAnimator.SetBool("isDead", true);
-        StartCoroutine(deathSequence());
-    }
-
-    public void DeathAndRevive()
-    {
-        _animator._heroAnimator.SetLayerWeight(2, 1);
-        _animator._heroAnimator.SetBool("isDead", true);
-        StartCoroutine(reviveSequence());
-    }
-    IEnumerator reviveSequence()
-    {
-        yield return new WaitForSeconds(1);
-        if(!_walletParent.activeSelf)
-        {
-            Debug.Log("Inside Death and Revive");
-            ReviveDialogBox.SetActive(false);
-            _walletParent.SetActive(true);
-            _paymentHandler.TryAndProcessTransaction();
-        }
-    }
-
-    public void TransactionSuccessful()
-    {
-        Revive += 1;
-        revive.text = "Lives: "+ Revive;
-        isDeadRevive = true;
-        _animator._heroAnimator.SetLayerWeight(5,1);
-        _animator._heroAnimator.SetBool("isDeadAndRevive",true);
-        StartCoroutine(deathAndRevive());
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         //takes damage from the normal void 
-        if (other.tag == "enemyAttackZone" && isPoweredUp == false)
+        if (other.tag == "enemyAttackZone" && isPoweredUp == false && !isDead)
         {
             StartCoroutine(_animator.CameraShake(0.3f));
             
@@ -146,7 +92,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         }
 
         //takes damage from the green void projectile
-        if (other.tag == "greenVoidProjectile" && isPoweredUp == false)
+        if (other.tag == "greenVoidProjectile" && isPoweredUp == false && !isDead)
         {
             Destroy(other.transform.parent.gameObject);
             StartCoroutine(_animator.CameraShake(0.3f));
@@ -157,7 +103,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         }
 
         //takes damage from the red void projectile
-        if (other.tag == "redVoidProjectile" && isPoweredUp == false)
+        if (other.tag == "redVoidProjectile" && isPoweredUp == false && !isDead)
         {
             Destroy(other.transform.parent.gameObject);
             StartCoroutine(_animator.CameraShake(0.3f));
@@ -166,14 +112,14 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         }
 
         //triggers the poweup through the animator
-        if(other.tag == "PowerUp")
+        if(other.tag == "PowerUp" &&!isDead)
         {
             Destroy(other.gameObject);
             StartCoroutine(_animator.powerUp());
         }
 
         // collects coin. inccreases in playerprefs, plays a random coin pickup sound, destroys coin
-        if (other.tag == "salanaCoin")
+        if (other.tag == "salanaCoin" && !isDead)
         {
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + 1);
             
@@ -189,12 +135,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
             Destroy(other.gameObject);
         }
-        if(other.tag == "PowerDown")
-        {
-            health = -20;
-        }
-
-        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -236,23 +176,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             fadeOut.SetActive(true);
         yield return new WaitForSeconds(1);
         //SceneManager.LoadScene(0);
-    }
-
-    //death and Revive Sequence
-    IEnumerator deathAndRevive()
-    {
-        Debug.Log("Execurion1");
-        _controller.enabled = false;
-        _combat.enabled = false;
-        yield return new WaitForSeconds(2);
-        Debug.Log("Execution after yield return");
-        _controller.enabled = true;
-        _combat.enabled = true;
-        isDeadRevive = false;
-        health = 400;
-        PlayerPrefs.SetInt("Health",400);
-        _animator._heroAnimator.SetBool("isDeadAndRevive",false);
-        _animator._heroAnimator.SetLayerWeight(0,1);
     }
     
     // Adding to Inventory

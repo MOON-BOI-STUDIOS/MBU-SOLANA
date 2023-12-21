@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private void UpdateMoveDirection()
     {
 #if !UNITY_STANDALONE && !UNITY_WEBGL 
-        moveDirection = inputHandler.GetInputDirection();
+        //moveDirection = inputHandler.GetInputDirection();
         //Debug.Log(moveDirection);//joystick.GetJoystickDirection();// //
 #endif
     }
