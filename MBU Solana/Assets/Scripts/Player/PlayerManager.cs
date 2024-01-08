@@ -13,7 +13,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public PlayerController _controller;
     public PlayerAnimator _animator;
     public PlayerCombat _combat;
-    public float maxHealth;
+    public float maxHealth = 500;
     public float health = 500;
     
     public TextMeshProUGUI coinsText;
@@ -40,7 +40,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
-        //PlayerPrefs.SetInt("MaxHealth", 500);
+        PlayerPrefs.SetInt("MaxHealth", 500);
         _paymentHandler = GetComponent<IPaymentHandler>();
     }
 
