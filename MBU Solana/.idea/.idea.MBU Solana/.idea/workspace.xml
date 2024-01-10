@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11fc99bf-15b7-4fc3-9671-aca2d98eea1d" name="Changes" comment="" />
+    <list default="true" id="11fc99bf-15b7-4fc3-9671-aca2d98eea1d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/ItemInventory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/ItemInventory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/ItemSlot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/ItemSlot.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MBU Solana/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MBU Solana/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dre/Shaders/Sprite Shadow.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dre/Shaders/Sprite Shadow.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BONKBattleArena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BONKBattleArena.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BattleArena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BattleArena.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu/MainMenuVolume.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu/MainMenuVolume.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Global Volume Profile 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Global Volume Profile 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/Global Volume Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Water.shadergraph.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Water.shadergraph.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +32,21 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2272f61be1464142baaf7b7177a8cd432f000/6e/ba3dada6/IRpcClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/c2/e27b8b26/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b6c543a8c59141a39aa5beee88891285157a00/18/91cf64e7/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/CraftingRecipe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/CraftingSlot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/DummyItemScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/InventoryToggle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/ItemInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/Itemdesc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/Items.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArmourAndCrafting/StatItems.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.solana.unity_sdk@07c73f0262/Runtime/codebase/WalletBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.solana.unity_sdk@07c73f0262/Runtime/codebase/Web3.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -32,6 +67,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -45,7 +81,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../UnityEngine/2021.3.10f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../UnityEngine/UE/2021.3.10f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -53,7 +89,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../UnityEngine/2021.3.10f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../UnityEngine/UE/2021.3.10f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -93,6 +129,36 @@
       <workItem from="1697324479000" duration="4892000" />
       <workItem from="1697356594567" duration="267000" />
       <workItem from="1697392997887" duration="4711000" />
+      <workItem from="1697817236692" duration="1424000" />
+      <workItem from="1697856941691" duration="4669000" />
+      <workItem from="1698242001393" duration="7255000" />
+      <workItem from="1698298939098" duration="15227000" />
+      <workItem from="1698333715627" duration="4345000" />
+      <workItem from="1698349196905" duration="3433000" />
+      <workItem from="1698383625315" duration="2027000" />
+      <workItem from="1698400478475" duration="5776000" />
+      <workItem from="1698420036646" duration="1820000" />
+      <workItem from="1698422176491" duration="3391000" />
+      <workItem from="1698429032536" duration="1472000" />
+      <workItem from="1698435911112" duration="1694000" />
+      <workItem from="1698461056012" duration="10141000" />
+      <workItem from="1698513938598" duration="2749000" />
+      <workItem from="1698545043948" duration="912000" />
+      <workItem from="1698594873183" duration="1418000" />
+      <workItem from="1698602448869" duration="1275000" />
+      <workItem from="1698661220635" duration="664000" />
+      <workItem from="1698926133875" duration="4374000" />
+      <workItem from="1698975387958" duration="399000" />
+      <workItem from="1699030858674" duration="1349000" />
+      <workItem from="1699150377508" duration="1278000" />
+      <workItem from="1699383317400" duration="21000" />
+      <workItem from="1699383348610" duration="20000" />
+      <workItem from="1699383380147" duration="649000" />
+      <workItem from="1699871261030" duration="8572000" />
+      <workItem from="1699935972402" duration="7435000" />
+      <workItem from="1699951661533" duration="2702000" />
+      <workItem from="1699958110656" duration="10804000" />
+      <workItem from="1700140065304" duration="1862000" />
     </task>
     <servers />
   </component>
