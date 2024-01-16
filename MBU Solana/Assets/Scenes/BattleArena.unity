@@ -4830,9 +4830,15 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 1.2020726
     width: 1.7488515
     height: 1.119171
+=======
+    y: 0.0013850415
+    width: 1
+    height: 0.9972299
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -6208,9 +6214,15 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 1.2020726
     width: 1.7488515
     height: 1.119171
+=======
+    y: 0.0013850415
+    width: 1
+    height: 0.9972299
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -7867,7 +7879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &248699829114859154
 Transform:
   m_ObjectHideFlags: 0
@@ -9892,7 +9904,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248699829376462448}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -9922,7 +9934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248699829376462448}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -9988,9 +10000,15 @@ RectTransform:
   m_Father: {fileID: 248699828764633067}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 377, y: -303}
+=======
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -393, y: 492}
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &248699829376462448
@@ -10806,7 +10824,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: -543, y: 344}
+=======
+  m_AnchoredPosition: {x: -508, y: 250}
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
   m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &248699829438578852
@@ -10921,7 +10943,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &248699829450606805
 MonoBehaviour:
   m_ObjectHideFlags: 0

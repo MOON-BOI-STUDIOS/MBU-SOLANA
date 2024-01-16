@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Top-Down Isometric 2D RPG with Solana Integration
 
 Welcome to a unique top-down isometric 2D RPG, where players can explore a city map and engage in an immersive arcade room experience. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Bonk tokens.
@@ -73,3 +74,6 @@ For more details, refer to the [architecture diagram](./docs/architecture.png).
 - **Enjoy**: Play the games and have fun!
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
+=======
+# For HYPERDRIVE submission please go to the game-dev branch! :) 
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
