@@ -19,11 +19,46 @@ public class ItemInventory: MonoBehaviour
 
     public delegate void OnItemChange();
     public OnItemChange onItemChange = delegate {  };
-
     public List<Items> inventoryItemList = new List<Items>();
+    public List<Items> hotbarItemList = new List<Items>();
+    public HotBarController hotBarController;
 
     private Queue<CraftingRecipe> craftingQueue = new Queue<CraftingRecipe>();
     private bool isCrafting = false;
+
+    public void SwitchHotInventory(Items item)
+    {
+        //Inventory to hotbar, CHECK if we have enough space
+        foreach(Items i in inventoryItemList)
+        {
+            if(i == item)
+            {
+                if(hotbarItemList.Count >= hotBarController.HotBarSlotSize)
+                {
+                    Debug.Log("No more slots available in hotBar");
+                }
+                else
+                {
+                    hotbarItemList.Add(item);
+                    inventoryItemList.Remove(item);
+                    onItemChange.Invoke();
+                }
+                return;
+            }
+        }
+
+        //Hotbar to Inventory
+        foreach(Items i in hotbarItemList)
+        {
+            if(i == item)
+            {
+                hotbarItemList.Remove(item);
+                inventoryItemList.Add(item);
+                onItemChange.Invoke();
+                return;
+            }
+        }
+    }
 
     public void AddItem(Items items)
     {
@@ -33,7 +68,14 @@ public class ItemInventory: MonoBehaviour
 
     public void RemoveItem(Items _items)
     {
-        inventoryItemList.Remove(_items);
+        if(inventoryItemList.Contains(_items))
+        {
+            inventoryItemList.Remove(_items);
+        }
+        else if(hotbarItemList.Contains(_items))
+        {
+            hotbarItemList.Remove(_items);
+        }
         onItemChange.Invoke();
     }
 

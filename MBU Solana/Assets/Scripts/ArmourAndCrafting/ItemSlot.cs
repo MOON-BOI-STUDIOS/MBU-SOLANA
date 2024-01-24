@@ -19,12 +19,24 @@ public class ItemSlot: MonoBehaviour
         _text.text = newitem.name;
     }
 
+    public void ClearSlot()
+    {
+        _items = null;
+        icon.sprite = null;
+    }
+
     public void UseItem()
     {
-        if (_items != null)
+        if (_items == null) return;
+        if(Input.GetKey(KeyCode.H))
+        {
+            ItemInventory.instance.SwitchHotInventory(_items);
+        }
+        else
         {
             _items.Use();
         }
+        
     }
 
     public void DestroySlot()
@@ -42,12 +54,14 @@ public class ItemSlot: MonoBehaviour
 
     public void OnCursorEnter()
     {
+        if(_items == null) return;
         //display Item Info
         DummyItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),transform.position);
     }
 
     public void OnCursorExit()
     {
+        if(_items == null) return;
         DummyItemScript.instance.DestroyItemInfo();
     }
 

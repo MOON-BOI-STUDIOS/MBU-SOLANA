@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: CSBaseWeapon
   m_EditorClassIdentifier: 
   name: CSBaseWeapon
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 3dc57d6d132ca7348b1218210400cb67, type: 3}
+  ItemDescription: The 0th Item in Inventory
