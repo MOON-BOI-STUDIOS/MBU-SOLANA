@@ -5,7 +5,9 @@ using UnityEngine;
 public class TutorialManager : MonoBehaviour
 {
     public GameObject[] popUps;
-    private int popUpIndex;
+    public int popUpIndex;
+    public PlayerController controller;
+    public NPCDialogueManager nPC;
  
     void Update()
     {
@@ -13,13 +15,31 @@ public class TutorialManager : MonoBehaviour
         {
             if(i == popUpIndex)
             {
-                popUps[popUpIndex].SetActive(true);
+                popUps[i].SetActive(true);
             }
             else
             {
-                popUps[popUpIndex].SetActive(false);
+                popUps[i].SetActive(false);
             }
-           // player input for tutorial
+          
         }
+
+        if(popUpIndex == 0)
+        {
+            if (controller.isMoving)
+            {
+                popUpIndex++;
+            }
+        }
+        else if(popUpIndex == 1)
+        {
+            if(nPC.Interact == true)
+            {
+                popUpIndex++;
+                Debug.Log("test end");
+            }
+ 
+        }
+        
     }
 }
