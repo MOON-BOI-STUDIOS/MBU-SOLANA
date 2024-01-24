@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: SteelBlade
   m_EditorClassIdentifier: 
   name: SteelBlade
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: dc055a2a6e897464eba6a831f52ed434, type: 3}
+  ItemDescription: The 4th Item in Inventory

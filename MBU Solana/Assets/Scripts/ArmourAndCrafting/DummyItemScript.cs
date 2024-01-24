@@ -35,7 +35,8 @@ public class DummyItemScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.X))
         {
-            ItemInventory.instance.AddItem(itemList[Random.Range(0, itemList.Count)]);
+            Items newItem = itemList[Random.Range(0,itemList.Count)];
+            ItemInventory.instance.AddItem(Instantiate(newItem));
         }
     }
 
