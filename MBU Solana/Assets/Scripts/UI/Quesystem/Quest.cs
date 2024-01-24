@@ -27,16 +27,14 @@ public class Quest : MonoBehaviour
     }
 
  
-
-    public void OntriggerEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.tag == "Player")
+        if(collision.tag == "Player")
         {
             FinishQuest();
             Destroy(gameObject);
         }
     }
-
 
     public void OnQuestClick() 
     {
