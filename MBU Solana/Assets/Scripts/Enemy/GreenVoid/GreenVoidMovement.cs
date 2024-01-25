@@ -15,6 +15,10 @@ public class GreenVoidMovement : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         _manager = GetComponent<GreenVoidEnemyManager>();
         agent = GetComponent<NavMeshAgent>();
+        if (agent == null)
+        {
+            Debug.Log("It is null");
+        }
     }
 
     // Update is called once per frame

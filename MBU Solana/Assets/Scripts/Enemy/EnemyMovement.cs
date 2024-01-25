@@ -15,15 +15,16 @@ public class EnemyMovement : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         _manager = GetComponent<EnemyManager>();
         agent = GetComponent<NavMeshAgent>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         //while(Vector3.Distance(transform.position, player.position) <= 1f)
-        {
-            //gent.destination = -player.position;
-        }
+        //{
+            //agent.destination = -player.position;
+        //}
         if(Vector3.Distance(transform.position, player.position) >= 1.5f  && Vector3.Distance(transform.position, player.position) <= maxSearchDistance)
         {
             agent.destination = player.position;

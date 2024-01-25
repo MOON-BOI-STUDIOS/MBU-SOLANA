@@ -1,0 +1,19 @@
+{
+  "assets": {
+    "moonboiIcon.jpg": {
+      "path": "moonboiIcon.jpg",
+      "sha256": "z04murWIvgseNFBdP5u08HfiOxUQ5pKcFJZMcoV45Dg=",
+      "uri": "https://arweave.net/xnmTBM4FSY2ARlMCqBHup90WbovyEpLECigyiQDgL58"
+    },
+    "moonboiScreenshot.png": {
+      "path": "moonboiScreenshot.png",
+      "sha256": "BahzzqlTi4TZRwzigaIlN6sJA8PSlBvK3CcbBUYW9HM=",
+      "uri": "https://arweave.net/eXBMyaiLm8u_qDnRxph3CU56PWlvkPjFRxq90Bm3oS4"
+    },
+    "moonboi.apk": {
+      "path": "moonboi.apk",
+      "sha256": "ekmm7b3r5j7AMKnryWSfJKZzgjRjxu65dDDQ0qNz5H4=",
+      "uri": "https://arweave.net/elp2Q4qvSUnMFsPYucPIHIIW8mTHre7L9qPDxq2D0Tc"
+    }
+  }
+}

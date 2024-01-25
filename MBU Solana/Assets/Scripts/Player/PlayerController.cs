@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public Vector2 currentDirection = Vector2.zero;
     public Vector2 moveDirection;
     public bool isMoving;
     public float moveSpeed;
@@ -11,7 +12,8 @@ public class PlayerController : MonoBehaviour
     private float currentSpeed;
     public bool isRunning;
     public PlayerInput inputs;
-    public CustomJoystick joystick;
+    public IPlayerInput inputHandler;
+    //public CustomJoystick joystick;
     private PlayerManager _manager;
 
     void Start()
@@ -19,10 +21,11 @@ public class PlayerController : MonoBehaviour
         _manager = GetComponent<PlayerManager>();
         rb = GetComponent<Rigidbody2D>();
         currentSpeed = moveSpeed;
+        inputHandler = GetComponent<IPlayerInput>();
 
-        // Subscribe to the Move action events
-        inputs.actions["Move"].performed += Move;
-        inputs.actions["Move"].canceled += Move;
+        //Subscribe to the Move action events only for PC release and WebGl release
+        //inputs.actions["Move"].performed += Move;
+        //inputs.actions["Move"].canceled += Move;
     }
 
     void FixedUpdate()
@@ -30,16 +33,16 @@ public class PlayerController : MonoBehaviour
         UpdateMoveDirection();
         HandleMovement();
     }
-
     public void Move(InputAction.CallbackContext context)
     {
-        moveDirection = context.ReadValue<Vector2>();
+        //moveDirection = context.ReadValue<Vector2>();
     }
 
     private void UpdateMoveDirection()
     {
-#if !UNITY_STANDALONE && !UNITY_WEBGL
-        moveDirection = joystick.GetJoystickDirection();
+#if !UNITY_STANDALONE && !UNITY_WEBGL 
+        moveDirection = inputHandler.GetInputDirection();
+        //Debug.Log(moveDirection);//joystick.GetJoystickDirection();// //
 #endif
     }
 

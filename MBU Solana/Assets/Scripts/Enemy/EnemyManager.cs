@@ -11,6 +11,8 @@ public class EnemyManager : MonoBehaviour
     public EnemyAnimator _animator;
     public EnemyMovement _movement;
     public Transform healthIndicator;
+
+    private GameObject _waveManager;
    
     // Start is called before the first frame update
     void Start()
@@ -46,6 +48,7 @@ public class EnemyManager : MonoBehaviour
                 }
 
                 health -= 30 + PlayerPrefs.GetInt("SwordPower");
+                //Spawn another void
                 StartCoroutine(attacked());
                 
 

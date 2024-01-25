@@ -10,10 +10,12 @@ public class WalletHolder : MonoBehaviour
     public Button subscriptionImage;
     public TextMeshProUGUI subscription_txt;
     public GameObject wallet;
+    public static WalletHolder Instance;
     void Start()
     {
         toggleWallet_btn.onClick.AddListener(() => {
             wallet.SetActive(!wallet.activeSelf);
         });
+        
     }
 }

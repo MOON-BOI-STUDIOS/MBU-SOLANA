@@ -1,9 +1,12 @@
 using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using System;
 using TMPro;
 using DG.Tweening;
 using Solana.Unity.SDK.Example;
+using System.Linq;
+using System.Threading;
 public enum ArcadeType
 {
     Racing, Shooting, Fishing
@@ -33,9 +36,9 @@ public class ArcadeMacineManager : MonoBehaviour
     public static Animator CurrentAnimator;
     public static arcadeCollisionDetection currentACD;
     public static bool isUIopen = false;
+    public GameObject Wallet_Screen;
 
-    [Space]
-    public ulong requiredAmountForRacing = 2500000; // Define the required amount for the racing game
+    [Space] public ulong requiredAmount = 2500000; // Define the required amount for the racing game
 
     [Header("GameUI")]
     [SerializeField] GameObject RaceGameUI;
@@ -96,21 +99,25 @@ public class ArcadeMacineManager : MonoBehaviour
 
     public void TryAndProcessTransactionRacing()
     {
+        //Debug.Log("Repair Racing 4 ");
         if (currentACD == null)
             return;
 
+        //Wallet.SetActive(true);
+        //Debug.Log("Repair Racing 5 ");
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
         _TransferDetails.text = "Upgrade Racing Game";
         wallet.SetActive(true);
         Background.SetActive(true);
         _SendButton.gameObject.SetActive(true);
-
+        //RepairRacing();
         // Remove all existing listeners from the _SendButton
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the racing game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmountForRacing, RepairRacing, HandleTransactionFailure));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairRacing, HandleTransactionFailure));
+        //Debug.Log("Repair Racing 6 ");
     }
 
 
@@ -118,7 +125,8 @@ public class ArcadeMacineManager : MonoBehaviour
     {
         if (currentACD == null)
             return;
-
+        
+        //Wallet.SetActive(true);
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
         _TransferDetails.text = "Upgrade Fishing Game";
@@ -130,17 +138,19 @@ public class ArcadeMacineManager : MonoBehaviour
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the fishing game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmountForRacing, RepairFishing, HandleTransactionFailure));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairFishing, HandleTransactionFailure));
     }
 
     public void TryAndProcessTransactionShooting()
     {
         if (currentACD == null)
             return;
-
+        
+        Debug.Log("Received 2");
+        //Wallet.SetActive(true);
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
-        _TransferDetails.text = "Upgrade Shooting Game";
+        _TransferDetails.text = "Upgrade Battle Arena";
         wallet.SetActive(true);
         Background.SetActive(true);
         _SendButton.gameObject.SetActive(true);
@@ -149,7 +159,7 @@ public class ArcadeMacineManager : MonoBehaviour
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmountForRacing, RepairShooting, HandleTransactionFailure));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairShooting, HandleTransactionFailure));
     }
 
     public void TryAndProcessTransactionDonate()
@@ -165,7 +175,7 @@ public class ArcadeMacineManager : MonoBehaviour
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmountForRacing, donated, HandleTransactionFailure, "donated"));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, donated, HandleTransactionFailure, "donated"));
     }
 
     public void donated()
@@ -174,9 +184,11 @@ public class ArcadeMacineManager : MonoBehaviour
     }
     public void RepairRacing()
     {
+        //Debug.Log("Repair Racing 1 ");
         if (currentACD == null)
             return;
-
+        
+        //Debug.Log("Repair Racing 2 ");
         CloseRepairUI();
         int index = Array.IndexOf(ACDlist, currentACD);
         PlayerPrefs.SetInt("arcade" + index, 0);
@@ -184,6 +196,7 @@ public class ArcadeMacineManager : MonoBehaviour
         button_racing.gameObject.SetActive(false);
         CheckButtonsState();
         LoadRacing(currentACD);
+        //Debug.Log("Repair Racing 3 ");
     }
 
     void LoadRacing(arcadeCollisionDetection ACD)

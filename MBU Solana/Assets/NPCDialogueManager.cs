@@ -7,6 +7,7 @@ public class NPCDialogueManager : MonoBehaviour
 {
     public AudioClip cursorSound;
     private AudioSource aSource;
+    public bool Interact;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class NPCDialogueManager : MonoBehaviour
     }
     public void interact()
     {
+        Interact = true;
         aSource.PlayOneShot(cursorSound);
         for (int i = 0; i < transform.childCount; i++)
         {

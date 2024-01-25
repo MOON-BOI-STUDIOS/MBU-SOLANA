@@ -1,0 +1,70 @@
+publisher:
+<<<<<<< HEAD
+  name: moonboi
+  address: 'London, United Kingdom'
+=======
+  name: moon boi studios
+  address: UTd8mE9nk2knWaH9dd2isd9aoL9V9giSo988v7Nzc1i
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
+  website: https://moonboi.io/
+  email: ems@moonboi.io
+  media:
+    - purpose: icon
+<<<<<<< HEAD
+      uri: Icon.jpg
+app:
+  name: moonboiuniverse
+  address: 'London, United Kingdom'
+  android_package: com.moonboi.moonboiuniverse
+=======
+      uri: moonboiIcon.jpg
+app:
+  name: Moon Boi Universe (Alpha)
+  address: Fv1QjzpGHDQdQ1ADoNeWujDzASx6AxBAPCV2RVg7djTy
+  android_package: com.moonboistudios.moonmoiuniverse
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
+  urls:
+    license_url: https://moonboiuniverse.com/privacy-policy
+    copyright_url: https://moonboiuniverse.com/privacy-policy
+    privacy_policy_url: https://moonboiuniverse.com/privacy-policy
+    website: https://moonboi.io/
+  media:
+    - purpose: icon
+<<<<<<< HEAD
+      uri: Icon.jpg
+release:
+  address: ''
+  media:
+    - purpose: icon
+      uri: Icon.jpg
+    - purpose: screenshot
+      uri: moonboiScreenShot.png
+  files:
+    - purpose: install
+      uri: Moonboi_Game.apk
+=======
+      uri: moonboiIcon.jpg
+release:
+  address: 4mrcvom3ryFNCAxx43xx1WEQrUgFg7SPSJqWHBKhPdvj
+  media:
+    - purpose: icon
+      uri: moonboiIcon.jpg
+    - purpose: screenshot
+      uri: moonboiScreenshot.png
+  files:
+    - purpose: install
+      uri: moonboi.apk
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
+  catalog:
+    en-US:
+      name: Moon Boi Universe (Alpha)
+      short_description: Cyber Fantasy RPG
+<<<<<<< HEAD
+      long_description:  Unleash Fun in Moon Boi Universe! Engage in alien battles, climb leaderboards, and dive into the new retro arcade using BONK tokens. Experience an interstellar journey packed with excitement, challenges, and endless enjoyment!
+=======
+      long_description: Unleash Fun in Moon Boi Universe! Engage in alien battles, climb leaderboards, and dive into the new retro arcade using BONK tokens. Experience an interstellar journey packed with excitement, challenges, and endless enjoyment!
+>>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
+      new_in_version: BONK BARKADE! Interact with BONK’s custom retro arcade, unlock, upgrade and have fun!
+      saga_features: <<ANY_FEATURES_ONLY_AVAILBLE_WHEN_RUNNING_ON_SAGA>>
+solana_mobile_dapp_publisher_portal:
+  testing_instructions: <<TESTING_INSTRUCTIONS>>

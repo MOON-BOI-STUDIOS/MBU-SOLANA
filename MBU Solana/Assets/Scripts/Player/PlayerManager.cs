@@ -1,22 +1,27 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : MonoBehaviour, IAddToInventory
 {
     // Start is called before the first frame update
     public PlayerController _controller;
     public PlayerAnimator _animator;
     public PlayerCombat _combat;
-    public float maxHealth;
+    public float maxHealth = 500;
     public float health = 500;
     
     public TextMeshProUGUI coinsText;
     public Transform healthIndicator;
     public TextMeshProUGUI healthNumber;
     bool isDead;
+    bool isDeadRevive;
+
     public GameObject fadeOut;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
@@ -27,25 +32,33 @@ public class PlayerManager : MonoBehaviour
     public bool isPoweredUp = false;
 
     string curSceneName;
+    
+    //Inventory Additions Array
+    private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
+
+    private IPaymentHandler _paymentHandler;
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetInt("MaxHealth", 500);
+        _paymentHandler = GetComponent<IPaymentHandler>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         //max health taked from PlayerPrefs
         maxHealth = PlayerPrefs.GetInt("MaxHealth");
         
         //regenerates health slowly
-        if (health <= maxHealth)
+        if (health <= maxHealth && !isDead)
         {
             health += 10 * Time.deltaTime;
         }
 
         //triggers death sequence, death animation
-        if(health<= 0 && !isDead)
+        if(health <= 0 && !isDead)
         {
             isDead = true;
             _animator._heroAnimator.SetLayerWeight(2, 1);
@@ -71,7 +84,7 @@ public class PlayerManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //takes damage from the normal void 
-        if (other.tag == "enemyAttackZone" && isPoweredUp == false)
+        if (other.tag == "enemyAttackZone" && isPoweredUp == false && !isDead)
         {
             StartCoroutine(_animator.CameraShake(0.3f));
             
@@ -79,7 +92,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         //takes damage from the green void projectile
-        if (other.tag == "greenVoidProjectile" && isPoweredUp == false)
+        if (other.tag == "greenVoidProjectile" && isPoweredUp == false && !isDead)
         {
             Destroy(other.transform.parent.gameObject);
             StartCoroutine(_animator.CameraShake(0.3f));
@@ -90,7 +103,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         //takes damage from the red void projectile
-        if (other.tag == "redVoidProjectile" && isPoweredUp == false)
+        if (other.tag == "redVoidProjectile" && isPoweredUp == false && !isDead)
         {
             Destroy(other.transform.parent.gameObject);
             StartCoroutine(_animator.CameraShake(0.3f));
@@ -99,14 +112,14 @@ public class PlayerManager : MonoBehaviour
         }
 
         //triggers the poweup through the animator
-        if(other.tag == "PowerUp")
+        if(other.tag == "PowerUp" &&!isDead)
         {
             Destroy(other.gameObject);
             StartCoroutine(_animator.powerUp());
         }
 
         // collects coin. inccreases in playerprefs, plays a random coin pickup sound, destroys coin
-        if (other.tag == "salanaCoin")
+        if (other.tag == "salanaCoin" && !isDead)
         {
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + 1);
             
@@ -122,8 +135,6 @@ public class PlayerManager : MonoBehaviour
 
             Destroy(other.gameObject);
         }
-
-        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -157,14 +168,36 @@ public class PlayerManager : MonoBehaviour
     }
   
     //death sequence
-    IEnumerator deathSequence()
+    IEnumerator  deathSequence()
     {
         _controller.enabled = false;
         _combat.enabled = false;
-        
-        fadeOut.SetActive(true);
+        if(fadeOut != null)
+            fadeOut.SetActive(true);
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(3);
+        //SceneManager.LoadScene(0);
     }
     
+    // Adding to Inventory
+    public void AdditionToInventory(String invGameObject, int invItemNumber)
+    {
+        // Adding to Inventory
+        if (inv.ContainsKey(invItemNumber))
+        {
+            Inventory inventoryItem = inv[invItemNumber];
+            Debug.Log("Amount: " + inventoryItem.GetAmount());
+            inventoryItem.IncreaseAmount(inventoryItem.GetAmount() + 1);
+            inv[invItemNumber] = inventoryItem;
+            inventoryItem.DisplayInventoryItem();
+        }
+        else
+        {
+            Debug.Log("Added");
+            Inventory newItem = new Inventory(invGameObject,invItemNumber);
+            inv.Add(invItemNumber,newItem);
+            inv[invItemNumber].DisplayInventoryItem();
+        }
+        
+    }
+
 }

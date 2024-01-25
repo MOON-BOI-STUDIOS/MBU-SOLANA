@@ -43,7 +43,7 @@ ParticleSystem:
   serializedVersion: 8
   lengthInSec: 5
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -4987,7 +4987,7 @@ GameObject:
   - component: {fileID: 4614449820940051728}
   - component: {fileID: 4614449820940051729}
   - component: {fileID: 6260196249028868663}
-  - component: {fileID: 77126255711027573}
+  - component: {fileID: 5149438498441395081}
   m_Layer: 0
   m_Name: SolanaCoin
   m_TagString: salanaCoin
@@ -5078,24 +5078,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.49999997
---- !u!50 &77126255711027573
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!114 &5149438498441395081
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4614449820940051731}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fd79c7cd4f73479c9f88d4919b3f545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemInfo: {fileID: 11400000, guid: b6b87c7da3aea4e9b99bec8c6f803429, type: 2}
+  _gameObject: {fileID: 4614449820940051731}
+  particleImpactPrefab: {fileID: 7592334809562221219}
