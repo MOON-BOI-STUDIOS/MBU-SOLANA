@@ -24,6 +24,7 @@ public class Quest : MonoBehaviour
         questItem.GetComponent<Button>().interactable = false;
         currentColor = completedColor;
         questItem.color = activeColor;
+        arrow.gameObject.SetActive(false);
     }
 
  
