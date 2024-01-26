@@ -13,6 +13,8 @@ public class DialogueSystem : MonoBehaviour
     bool triggeredDialogue;
     public GameObject interactButton;
     bool isClose;
+    public GameObject dialogueBox;
+
     
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,7 @@ public class DialogueSystem : MonoBehaviour
         else
             {
                 text.text = "";
+                dialogueBox.SetActive(false);
                 interactButton.SetActive(false);
             }
         }
@@ -69,9 +72,11 @@ public class DialogueSystem : MonoBehaviour
             if (currentDialogue> dialogues.Length - 1)
             {
                 text.text = "";
+                dialogueBox.SetActive(false);
             }
             else
             {
+                dialogueBox.SetActive(true);
                 triggeredDialogue = true;
                 text.text = dialogues[currentDialogue];
                 
