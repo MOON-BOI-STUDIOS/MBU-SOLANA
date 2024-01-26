@@ -6,6 +6,7 @@ public class TutorialManager_Fishing : MonoBehaviour
 {
     public GameObject[] popUps;
     private int popUpIndex;
+    public Fishing Fishing;
 
  
     void Update()
@@ -14,13 +15,35 @@ public class TutorialManager_Fishing : MonoBehaviour
         {
             if(i == popUpIndex)
             {
-                popUps[popUpIndex].SetActive(true);
+                popUps[i].SetActive(true);
             }
             else
             {
-                popUps[popUpIndex].SetActive(false);
+                popUps[i].SetActive(false);
             }
-           // player input for tutorial
+           
         }
+        if (popUpIndex == 0)
+        {
+            if (Fishing.buttonPressed == true)
+            {
+                popUpIndex++;
+            }
+        }
+        else if(popUpIndex == 1)
+        {
+            if(Fishing.fishingDone == true)
+            {
+                popUpIndex++;
+            }
+        }
+        else if(popUpIndex == 2)
+        {
+            if(Fishing.fishCaughts == true)
+            {
+                popUpIndex++;
+            }
+        }
+         
     }
 }
