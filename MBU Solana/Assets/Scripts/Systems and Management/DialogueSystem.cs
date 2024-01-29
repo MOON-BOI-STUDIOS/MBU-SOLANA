@@ -5,22 +5,20 @@ using TMPro;
 
 public class DialogueSystem : MonoBehaviour
 {
-    public TextMeshProUGUI text;
     public float proximity;
     public string[] dialogues;
     private Transform player;
-    private int currentDialogue;
-    bool triggeredDialogue;
     public GameObject interactButton;
     bool isClose;
-    public GameObject dialogueBox;
+    public Dialoguebase dialogue;
+
 
     
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        currentDialogue = -1;
+    
     }
 
     // Update is called once per frame
@@ -36,27 +34,26 @@ public class DialogueSystem : MonoBehaviour
             isClose = false;
         }
 
-        if(isClose)
+        if (isClose)
         {
             if (Vector2.Distance(player.position, transform.position) <= proximity)
-        {
+            {
                 interactButton.SetActive(true);
             }
-        else
+            else
             {
-                text.text = "";
-                dialogueBox.SetActive(false);
+                
                 interactButton.SetActive(false);
             }
         }
-        
 
 
 
-            if (Vector2.Distance(player.position, transform.position) > proximity)
-        {
-            currentDialogue = -1;
-        }
+
+        //    if (Vector2.Distance(player.position, transform.position) > proximity)
+        //{
+        //    currentDialogue = -1;
+        //}
     }
 
 
@@ -64,24 +61,26 @@ public class DialogueSystem : MonoBehaviour
     //triggers the current dialogue, depending on the current dialogue integer, which increases with every button press
     public void TriggerDialogue()
     {
-        if (Vector2.Distance(player.position, transform.position) <= proximity)
-        {
-            
-            currentDialogue++;
 
-            if (currentDialogue> dialogues.Length - 1)
-            {
-                text.text = "";
-                dialogueBox.SetActive(false);
-            }
-            else
-            {
-                dialogueBox.SetActive(true);
-                triggeredDialogue = true;
-                text.text = dialogues[currentDialogue];
+        DialogueManager.instance.EnqueueDialogue(dialogue);
+        //if (Vector2.Distance(player.position, transform.position) <= proximity)
+        //{
+            
+        //    currentDialogue++;
+
+        //    if (currentDialogue> dialogues.Length - 1)
+        //    {
+        //        text.text = "";
+        //        dialogueBox.SetActive(false);
+        //    }
+        //    else
+        //    {
+        //        dialogueBox.SetActive(true);
+        //        triggeredDialogue = true;
+        //        text.text = dialogues[currentDialogue];
                 
-            }
-        }
+        //    }
+        //}
         
     }
 }

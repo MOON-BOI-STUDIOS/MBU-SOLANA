@@ -13,7 +13,7 @@ public class Beggar : MonoBehaviour
     public float proximity;
     bool endConversation;
     public AudioClip cursorSound;
-
+    public GameObject box;
 
     private void Start()
     {
@@ -41,6 +41,7 @@ public class Beggar : MonoBehaviour
             buyJokesButton.SetActive(false);
             text.text = "";
             endConversation = false;
+            box.SetActive(false);
         }
     }
     public void Interact()
@@ -52,6 +53,7 @@ public class Beggar : MonoBehaviour
             text.text = "Excuse me, stranger. Could you spare some change for a hungry old geezer? I'll make you laugh in return. Just spare me 5 coins";
             buyJokesButton.SetActive(true);
             endConversation = true;
+            box.SetActive(true);
         }
         else
         {
@@ -59,6 +61,7 @@ public class Beggar : MonoBehaviour
             endConversation = false;
             buyJokesButton.SetActive(false);
             text.text = "";
+            box.SetActive(false);
         }
         
     }
@@ -81,6 +84,7 @@ public class Beggar : MonoBehaviour
             endConversation = false;
             buyJokesButton.SetActive(false);
             text.text = "";
+            box.SetActive(false);
         }
         
         
