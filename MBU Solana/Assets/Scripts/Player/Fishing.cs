@@ -20,6 +20,10 @@ public class Fishing : MonoBehaviour
     private AudioSource audioS;
     public AudioClip select, reject, fishCaughtAudio;
 
+    public bool buttonPressed;
+    public bool fishingDone;
+    public bool fishCaughts;
+
 
     public GameObject backMecha;
     public GameObject backarcade;
@@ -62,6 +66,7 @@ public class Fishing : MonoBehaviour
     //triggered through the button. starts the jolt animation
     public void jolt()
     {
+        buttonPressed = true;
         dreAnim.SetTrigger("Fish");
     }
 
@@ -76,7 +81,7 @@ public class Fishing : MonoBehaviour
     //fish button controls
     public void fish()
     {
-
+        fishingDone = true;
         //successful attempt        
         if(hook.GetChild(0).GetComponent<Hook>().isGreenArea == true)
         {
@@ -84,6 +89,7 @@ public class Fishing : MonoBehaviour
             fishMarkerCounter++;
             if (fishMarkerCounter == 3)
             {
+                fishCaughts = true;
                 StartCoroutine(fishCaught());
                 
             }
@@ -114,5 +120,6 @@ public class Fishing : MonoBehaviour
 
         joltButton.SetActive(true);
         fishButton.SetActive(false);
+       
     }
 }

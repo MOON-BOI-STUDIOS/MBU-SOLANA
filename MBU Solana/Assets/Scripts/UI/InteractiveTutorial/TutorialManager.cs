@@ -33,7 +33,7 @@ public class TutorialManager : MonoBehaviour
         }
         else if(popUpIndex == 1)
         {
-            if(nPC.Interact == true)
+            if(DialogueManager.instance.Interact == true)
             {
                 popUpIndex++;
                 Debug.Log("test end");
