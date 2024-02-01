@@ -42,6 +42,7 @@ public class TutorialManager_Fishing : MonoBehaviour
             if(Fishing.fishCaughts == true)
             {
                 popUpIndex++;
+                Destroy(this);
             }
         }
          

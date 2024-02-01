@@ -14,6 +14,11 @@ public class Quest : MonoBehaviour
     public QuestArrow arrow;
     public Quest[] allQuests;
 
+    
+   public bool buttonisPressed = false;
+    public bool Pressed = false;
+
+
     private void Start()
     {
         allQuests = FindObjectsOfType<Quest>();
@@ -25,6 +30,16 @@ public class Quest : MonoBehaviour
         currentColor = completedColor;
         questItem.color = activeColor;
         arrow.gameObject.SetActive(false);
+    }
+
+    public void ButtonPressed()
+    {
+        buttonisPressed = true;
+    }
+
+    public void PressedButton()
+    {
+        Pressed = true;
     }
 
  

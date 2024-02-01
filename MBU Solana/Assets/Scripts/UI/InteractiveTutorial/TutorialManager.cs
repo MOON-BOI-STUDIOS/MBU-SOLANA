@@ -8,6 +8,7 @@ public class TutorialManager : MonoBehaviour
     public int popUpIndex;
     public PlayerController controller;
     public NPCDialogueManager nPC;
+    public Quest quest;
  
     void Update()
     {
@@ -36,9 +37,26 @@ public class TutorialManager : MonoBehaviour
             if(DialogueManager.instance.Interact == true)
             {
                 popUpIndex++;
-                Debug.Log("test end");
+               
             }
  
+        }
+        else if(popUpIndex == 2)
+        {
+            if(quest.buttonisPressed == true)
+            {
+                popUpIndex++;
+              
+            }
+        }
+        else if( popUpIndex == 3)
+        {
+            if(quest.Pressed == true)
+            {
+                popUpIndex++;
+                Debug.Log("test end");
+                Destroy(this);
+            }
         }
         
     }
