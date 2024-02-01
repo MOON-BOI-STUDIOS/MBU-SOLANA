@@ -63,6 +63,7 @@ public class ItemInventory: MonoBehaviour
     public void AddItem(Items items)
     {
         inventoryItemList.Add(items);
+        // Code to Stack Items
         onItemChange.Invoke();
     }
 

@@ -6365,6 +6365,10 @@ GameObject:
   - component: {fileID: 1806507508}
   - component: {fileID: 1806507510}
   - component: {fileID: 1806507511}
+  - component: {fileID: 1806507516}
+  - component: {fileID: 1806507515}
+  - component: {fileID: 1806507513}
+  - component: {fileID: 1806507514}
   m_Layer: 0
   m_Name: DreFishing
   m_TagString: Untagged
@@ -6589,6 +6593,136 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1806507513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806507506}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c10a30e929eb3d4085758fd39ddba18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1806507514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806507506}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d21c6ef6c3a5f042be015bd0a2ae96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rodChances:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  baitLuckValues:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.69
+  - 0.5
+--- !u!114 &1806507515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806507506}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ff1c4c3b68d1e429a7bf759b375871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishData:
+  - name: Lumpsucker Fish
+    points: 1
+  - name: Tuna Fish
+    points: 2
+  - name: Wonderpus Fish
+    points: 3
+  - name: Bonk Fish
+    points: 6
+  - name: Royal Gramma
+    points: 8
+  - name: Dragon Fish
+    points: 88
+  rodData:
+  - name: Basic Fishing Rod
+    chance: 10
+  - name: Tuna Fork Fishing Rod
+    chance: 20
+  - name: Stewart Fishing Rod
+    chance: 30
+  - name: Bonk Fishing Rod
+    chance: 40
+  - name: Kingfisher Fishing Rod
+    chance: 50
+  baitData:
+  - name: Plastic Worm Bait
+    luck: 10
+  - name: Radiated Worm Bait
+    luck: 20
+  - name: Common Worm Bait
+    luck: 30
+  - name: 'Bonk Bait '
+    luck: 69
+  - name: Queen Swisher
+    luck: 50
+--- !u!114 &1806507516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806507506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3d77a9c7f582e40ad04f365bbff590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishData:
+  - name: Lumpsucker Fish
+    points: 1
+  - name: Tuna Fish
+    points: 2
+  - name: Wonderpus Fish
+    points: 3
+  - name: Bonk Fish
+    points: 6
+  - name: 'Royal Gramma '
+    points: 8
+  - name: Dragon Fish
+    points: 88
+  rodData:
+  - name: Basic Fishing Rod
+    chance: 10
+  - name: TunaFork Fishing Rod
+    chance: 20
+  - name: Stewart Fishing Rod
+    chance: 30
+  - name: Bonk Fishing Rod
+    chance: 40
+  - name: Kingfisher Fishing Rod
+    chance: 50
+  baitData:
+  - name: Plastic Worm Bait
+    luck: 10
+  - name: Radiated Worm Bait
+    luck: 20
+  - name: Common Worm Bait
+    luck: 30
+  - name: Bonk Bait
+    luck: 69
+  - name: Queen Swisher Bait
+    luck: 50
 --- !u!1 &1840134683
 GameObject:
   m_ObjectHideFlags: 0
