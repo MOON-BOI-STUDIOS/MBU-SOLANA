@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 public class FishingController5 : MonoBehaviour
 {
     [System.Serializable]
@@ -64,6 +65,9 @@ public class FishingController5 : MonoBehaviour
     [Header("Bait Data")]
     public BaitData[] baitData;
 
+    public TextMeshProUGUI Rodtxt;
+    public TextMeshProUGUI Baittxt;
+
     // Current state
     private FishingRodType currentRod;
     private BaitType currentBait;
@@ -85,16 +89,19 @@ public class FishingController5 : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.R))
         {
             SwitchRod();
-            CatchFish(); // Catch fish when switching rod
+            //CatchFish(); // Catch fish when switching rod
         }
         else if (Input.GetKeyDown(KeyCode.B))
         {
             SwitchBait();
-            CatchFish(); // Catch fish when switching bait
+            //CatchFish(); // Catch fish when switching bait
         }
+
+        Rodtxt.text = "Rod = " + currentRod.ToString();
+        Baittxt.text = "Bait = " + currentBait.ToString();
     }
 
-    private void CatchFish()
+    public void CatchFish()
     {
         float randomChance = Random.value;
 
@@ -123,7 +130,7 @@ public class FishingController5 : MonoBehaviour
     }
 
 
-    private void SwitchRod()
+    public void SwitchRod()
     {
         // Switch to the next fishing rod
         currentRod = (FishingRodType)(((int)currentRod + 1) % rodData.Length);
@@ -132,7 +139,7 @@ public class FishingController5 : MonoBehaviour
         DisplayText($"Switched to {currentRod.ToString()} fishing rod.");
     }
 
-    private void SwitchBait()
+    public void SwitchBait()
     {
         // Switch to the next bait
         currentBait = (BaitType)(((int)currentBait + 1) % baitData.Length);
