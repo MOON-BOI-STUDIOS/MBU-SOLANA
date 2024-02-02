@@ -10,6 +10,7 @@ public class ItemSlot: MonoBehaviour
     public Image icon;
     public TMP_Text _text;
     private Items _items;
+    private int ItemValue;
     
 
     public virtual void AddItem(Items newitem)
@@ -17,6 +18,7 @@ public class ItemSlot: MonoBehaviour
         _items = newitem;
         icon.sprite = newitem.icon;
         _text.text = newitem.name;
+        ItemValue = newitem.ItemValue;
     }
 
     public void ClearSlot()
@@ -56,7 +58,8 @@ public class ItemSlot: MonoBehaviour
     {
         if(_items == null) return;
         //display Item Info
-        DummyItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),transform.position);
+        DummyItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
+        _items.GetItemValue(),ItemInventory.instance.NumberOfItems(_items),transform.position);
     }
 
     public void OnCursorExit()

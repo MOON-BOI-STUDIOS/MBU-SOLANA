@@ -15,3 +15,4 @@ MonoBehaviour:
   name: leatherGlove
   icon: {fileID: 21300000, guid: ec764970f3b10fa4b85f00c24a77be3a, type: 3}
   ItemDescription: The 3rd Item in Inventory
+  ItemValue: 20
