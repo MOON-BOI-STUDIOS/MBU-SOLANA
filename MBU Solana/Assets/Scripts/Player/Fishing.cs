@@ -23,7 +23,7 @@ public class Fishing : MonoBehaviour
     public bool buttonPressed;
     public bool fishingDone;
     public bool fishCaughts;
-
+    public FishingController5 controller5;
 
     public GameObject backMecha;
     public GameObject backarcade;
@@ -90,6 +90,7 @@ public class Fishing : MonoBehaviour
             if (fishMarkerCounter == 3)
             {
                 fishCaughts = true;
+                controller5.CatchFish();
                 StartCoroutine(fishCaught());
                 
             }
