@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f789abad57a008148bfe8530a7cd3383, type: 3}
-  m_Name: EvilGuy
+  m_Script: {fileID: 11500000, guid: 10ab5a0590081c344b247f819578352e, type: 3}
+  m_Name: questdialogue3
   m_EditorClassIdentifier: 
-  myName: Evil Guy
-  myPortrait: {fileID: 21300000, guid: 26f636bc3f61efb48934c2885cf0f028, type: 3}
-  voice: {fileID: 0}
+  dialogueInfo:
+  - text: 'FISHERMAN
+
+      Aye, the thrill of the hunt, the camaraderie of the sea!
+      Few experience such moments. Well done!'
+  questionText: 
+  optionsinfo: []

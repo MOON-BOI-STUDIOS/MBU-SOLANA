@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Quest : MonoBehaviour
+public class QuestFishing : MonoBehaviour
+
 {
     public Image questItem;
     public Color completedColor;
@@ -14,7 +15,7 @@ public class Quest : MonoBehaviour
     public QuestArrow arrow;
     public Quest[] allQuests;
 
-
+    public Button nextQuest;
     
    public bool buttonisPressed = false;
     public bool Pressed = false;
@@ -31,7 +32,7 @@ public class Quest : MonoBehaviour
         currentColor = completedColor;
         questItem.color = activeColor;
         arrow.gameObject.SetActive(false);
-   
+        nextQuest.interactable = true;
     }
 
     public void ButtonPressed()
@@ -50,7 +51,7 @@ public class Quest : MonoBehaviour
         if(collision.tag == "Player")
         {
             FinishQuest();
-            Destroy(gameObject);
+            //Destroy(gameObject);
             this.gameObject.SetActive(false);
         }
     }

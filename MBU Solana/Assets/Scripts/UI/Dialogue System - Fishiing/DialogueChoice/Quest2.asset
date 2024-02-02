@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ab5a0590081c344b247f819578352e, type: 3}
+  m_Name: Quest2
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - text: 'FISHERMAN
+
+      By the seven seas! You''ve done it! The fish is yours
+      to claim.
+
+
+'
+  - text: "DR\xC9\r\nLet's do this!\r\n\n"
+  - text: 'FISHERMAN
+
+      Aye, let''s cast our lines and see what the water offers
+      us.
+
+
+'
+  - text: "FISHERMAN\r\nDifferent bait will attract different fish. Here, take this
+      and experiment to see what you\u2019ll find.\r\n\n\n"
+  questionText: "DR\xC9"
+  optionsinfo:
+  - buttonName: That was pretty cool! (1)
+    nextdialogue: {fileID: 11400000, guid: 16a4d74f5d3b47e48bcfbf80bec6b37d, type: 2}
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: What now? Is there a reward? (2)
+    nextdialogue: {fileID: 11400000, guid: 5e5e782d04fe678478c5d4c92c460af5, type: 2}
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Can I release it back into the waters? (3)
+    nextdialogue: {fileID: 11400000, guid: 97b65b04e7ea13b4e8be0669066d6cb0, type: 2}
+    Event:
+      m_PersistentCalls:
+        m_Calls: []

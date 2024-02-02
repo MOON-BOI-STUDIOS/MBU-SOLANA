@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-// scrip by oliver
-// sid 1901981
+using UnityEngine.Events;
+
 // https://www.youtube.com/watch?v=Yri0C-E7xG4&list=PL32dY9P_7YSpifhyXmDgi_Zn1fuuNKZ8V - by Bev!Bird - link is to whole playlist
 public class DialogueManagerFishing : MonoBehaviour
 {
@@ -32,8 +32,15 @@ public class DialogueManagerFishing : MonoBehaviour
     private DialoguebaseFishing.Info currentDialogue;
     public static DialogueManagerFishing instance;
 
-    public PlayerManager controller;
+    //public PlayerManager controller;
     public bool Interact;
+
+    public GameObject DialogueOptionUI;
+    public GameObject[] optionButtons;
+    private int OptionsAmount;
+    public TextMeshProUGUI questiontext;
+
+    public GameObject nextButton;
 
     private void Awake()
     {
@@ -52,6 +59,8 @@ public class DialogueManagerFishing : MonoBehaviour
     // new queue
     public Queue<DialoguebaseFishing.Info> dialogueInfo = new Queue<DialoguebaseFishing.Info>();
 
+    private bool isDialogueOption;
+
 
     public void OnEnable()
     {
@@ -68,9 +77,44 @@ public class DialogueManagerFishing : MonoBehaviour
         inDialogue = true;
         // if there is dialogue set box active
         dialogueBox.SetActive(true);
-        controller.enabled = false;
+        //controller.enabled = false;
         // old dialogue is clears
         dialogueInfo.Clear();
+
+        if(db is DialogueOptions)
+        {
+            isDialogueOption = true;
+            DialogueOptions dialogueOptions = db as DialogueOptions;
+            OptionsAmount = dialogueOptions.optionsinfo.Length;
+            questiontext.text = dialogueOptions.questionText;
+
+            for(int i = 0; i < optionButtons.Length; i++)
+            {
+                optionButtons[i].SetActive(false);
+            }
+
+            for(int i = 0; i< OptionsAmount; i++)
+            {
+                optionButtons[i].SetActive(true);
+                optionButtons[i].transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = dialogueOptions.optionsinfo[i].buttonName;
+                UnityEventHandler eventHandler = optionButtons[i].GetComponent<UnityEventHandler>();
+                eventHandler.eventHandler = dialogueOptions.optionsinfo[i].Event;
+                if(dialogueOptions.optionsinfo[i].nextdialogue != null)
+                {
+                    eventHandler.dialoguebase = dialogueOptions.optionsinfo[i].nextdialogue;
+                }
+                else
+                {
+                    eventHandler.dialoguebase = null;
+                }
+
+            }
+
+        }
+        else
+        {
+            isDialogueOption = false;
+        }
        
         foreach(DialoguebaseFishing.Info info in db.dialogueInfo)
         {
@@ -147,16 +191,22 @@ public class DialogueManagerFishing : MonoBehaviour
     /// </summary>
     public void endOfDialogue()
     {
-        dialogueBox.SetActive(false);
+        dialogueText.gameObject.SetActive(false);
         inDialogue = false;
-        controller.enabled = true;
+        nextButton.SetActive(false);
+        //controller.enabled = true;
         Interact = true;
+        OptionsLogic();
+        //if(isDialogueOption == true)
+        //{
+        //    DialogueOptionUI.SetActive(true);
+        //}
        
     //AudioManager.instance.Stop(currentDialogue.audioClip);
     ////Move to next Act in game
     //LevelController.Instance.playerControl.enabled = true;
     //LevelController.Instance.timer = LevelController.Instance.maxIntermissionTime;
-}
+    }
 
     /// <summary>
     /// Call every frame.
@@ -165,5 +215,22 @@ public class DialogueManagerFishing : MonoBehaviour
     {
         ////If enter pressed in dialogue, move to next box.
         //if (Input.GetKeyDown("return") && inDialogue && dialogueBox.activeSelf) DequeueDialog();
+    }
+
+    public void OptionsLogic()
+    {
+        if(isDialogueOption == true)
+        {
+            DialogueOptionUI.SetActive(true);
+         
+        }
+    }
+
+    public void CloseOptions()
+    {
+        DialogueOptionUI.SetActive(false);
+        dialogueText.gameObject.SetActive(true);
+        nextButton.SetActive(true);
+
     }
 }

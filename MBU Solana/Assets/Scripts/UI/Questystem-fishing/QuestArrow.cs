@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuestArrow : MonoBehaviour
+public class QuestArrowFishing : MonoBehaviour
+
 {
     public Transform target;
     public float buffer;
@@ -36,5 +37,8 @@ public class QuestArrow : MonoBehaviour
         return Mathf.Clamp01(Vector2.Distance(transform.position, target.position) / maxDistance);
     }
 
-  
+    public void button(Button button)
+    {
+        button.interactable = true;
+    }
 }
