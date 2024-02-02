@@ -14,6 +14,7 @@ TagManager:
   - greenArea
   - PowerUp
   - PowerDown
+  - FishingZone
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - RoadWall
   - Cars
   - Booster
-  - 
+  - Ground
   - 
   - 
   - 

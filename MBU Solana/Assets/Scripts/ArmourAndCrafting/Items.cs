@@ -10,6 +10,7 @@ public class Items : ScriptableObject
     new public string name = "default";
     public Sprite icon = null;
     public string ItemDescription;
+    public int ItemValue;
 
     public virtual void Use()
     {
@@ -19,5 +20,10 @@ public class Items : ScriptableObject
     public virtual string GetItemDescription()
     {
         return ItemDescription;
+    }
+
+    public virtual int GetItemValue()
+    {
+        return ItemValue;
     }
 }

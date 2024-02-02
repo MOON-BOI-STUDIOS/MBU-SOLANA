@@ -20,7 +20,9 @@ public class ItemInventory: MonoBehaviour
     public delegate void OnItemChange();
     public OnItemChange onItemChange = delegate {  };
     public List<Items> inventoryItemList = new List<Items>();
+    private Dictionary<Items,int> Slotitem = new Dictionary<Items, int>();
     public List<Items> hotbarItemList = new List<Items>();
+    public int sameitemNum = 0; // the number of similar items in the inventory
     public HotBarController hotBarController;
 
     private Queue<CraftingRecipe> craftingQueue = new Queue<CraftingRecipe>();
@@ -63,12 +65,31 @@ public class ItemInventory: MonoBehaviour
     public void AddItem(Items items)
     {
         inventoryItemList.Add(items);
-        // Code to Stack Items
+        // Add item to the Dictionary
+        AddItemToDict(items);
+        //Call On item change to show on screen UI
         onItemChange.Invoke();
+    }
+
+    private void AddItemToDict(Items itemtoAdd)
+    {
+        //check if item is present in dictionary
+        if(Slotitem.ContainsKey(itemtoAdd))
+        {
+            Debug.Log("Added old Item");
+            Slotitem.Add(itemtoAdd,Slotitem[itemtoAdd] + 1);
+        }
+        else
+        {
+            Debug.Log("Added new item");
+            Slotitem.Add(itemtoAdd,1);
+        }
     }
 
     public void RemoveItem(Items _items)
     {
+        //Remove items from dictionary
+        RemoveItemToDict(_items);
         if(inventoryItemList.Contains(_items))
         {
             inventoryItemList.Remove(_items);
@@ -78,6 +99,22 @@ public class ItemInventory: MonoBehaviour
             hotbarItemList.Remove(_items);
         }
         onItemChange.Invoke();
+    }
+    public int NumberOfItems(Items _items) // Getting the number of items in the dictionary
+    {
+        if(Slotitem.ContainsKey(_items))
+        {
+            return Slotitem[_items];
+        }
+        return -1;
+    }
+
+    private void RemoveItemToDict(Items itemToRemove)
+    {
+        if(Slotitem.ContainsKey(itemToRemove))
+        {
+            Slotitem.Remove(itemToRemove);
+        }
     }
 
     public bool ContainsItems(Items _items, int amount)

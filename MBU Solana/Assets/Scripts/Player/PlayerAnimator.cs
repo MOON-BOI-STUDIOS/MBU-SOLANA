@@ -23,7 +23,8 @@ public class PlayerAnimator : MonoBehaviour
 
     public AudioSource mainMusic, powerUpMuisc;
     int odds;
-
+    // fishing scene is no combat zone 
+    public bool isNoCombatZone = false;
 
 
     void Start()
@@ -49,27 +50,27 @@ public class PlayerAnimator : MonoBehaviour
         _heroAnimator.SetBool("isRunning", _controller.isRunning);
         _heroAnimator.SetBool("isMoving", _controller.isMoving);
 
-       
-
-        if (_manager._combat.comboCounter >= _manager._combat.numberOfComboHits)
+        if(!isNoCombatZone)
         {
-            //generates a random number and sets combo counter to zero
-            odds = Random.Range(0, 10);
-            _manager._combat.comboCounter = 0;
-
-            //there is a 50-50 chance of performing north star, or the orions belt. Sets layer weight to the respective layers
-            if(odds  < 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
-            {  
-                _heroAnimator.SetLayerWeight(1, 1);
-                _heroAnimator.SetTrigger("northStar");
-                
-            }
-            if (odds >= 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
+            if (_manager._combat.comboCounter >= _manager._combat.numberOfComboHits)
             {
-                _heroAnimator.SetLayerWeight(3, 1);
-                _heroAnimator.SetTrigger("OrionsBelt");
+                //generates a random number and sets combo counter to zero
+                odds = Random.Range(0, 10);
+                _manager._combat.comboCounter = 0;
+
+                //there is a 50-50 chance of performing north star, or the orions belt. Sets layer weight to the respective layers
+                if(odds  < 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
+                {  
+                    _heroAnimator.SetLayerWeight(1, 1);
+                    _heroAnimator.SetTrigger("northStar");
+                    
+                }
+                if (odds >= 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
+                {
+                    _heroAnimator.SetLayerWeight(3, 1);
+                    _heroAnimator.SetTrigger("OrionsBelt");
+                }
             }
-            
         }
     }
 

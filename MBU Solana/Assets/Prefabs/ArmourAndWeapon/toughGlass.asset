@@ -15,3 +15,4 @@ MonoBehaviour:
   name: toughGlass
   icon: {fileID: 21300000, guid: 8bcd0a39b4c2bb14c8de59ac41a2d7fe, type: 3}
   ItemDescription: The 5th Item in Inventory
+  ItemValue: 20

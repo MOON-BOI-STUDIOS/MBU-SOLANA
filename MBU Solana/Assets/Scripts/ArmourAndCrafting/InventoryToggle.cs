@@ -47,7 +47,6 @@ public class InventoryToggle : MonoBehaviour
             {
                 //update the current item in the slot
                 itemSlots[i].AddItem(ItemInventory.instance.inventoryItemList[i]);
-                
             }
             else
             {
@@ -56,6 +55,7 @@ public class InventoryToggle : MonoBehaviour
             }
         }
     }
+
 
     private void SetupCraftingRecipes()
     {

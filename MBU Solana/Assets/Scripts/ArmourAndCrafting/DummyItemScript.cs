@@ -45,7 +45,7 @@ public class DummyItemScript : MonoBehaviour
         Debug.Log("Consuming: " + _itemType + "Add amount: " + amount);
     }
     
-    public void DisplayItemInfo(string itemName, string itemDescription, Vector2 buttonPos)
+    public void DisplayItemInfo(string itemName, string itemDescription,int itemValue,int NumOfItems,Vector2 buttonPos)
     {
         if(currentItemInfo != null)
         {
@@ -56,7 +56,7 @@ public class DummyItemScript : MonoBehaviour
         buttonPos.y += 100;
 
         currentItemInfo = Instantiate(itemInfoPrefab, buttonPos, Quaternion.identity, canvas);
-        currentItemInfo.GetComponent<Itemdesc>().Setup(itemName, itemDescription);
+        currentItemInfo.GetComponent<Itemdesc>().Setup(itemName, itemDescription, itemValue, NumOfItems);
     }
 
     public void DestroyItemInfo()

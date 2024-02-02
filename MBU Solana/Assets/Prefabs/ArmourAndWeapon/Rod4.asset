@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Rod4
   icon: {fileID: 21300000, guid: dca184cd076994ebab1085001f548a16, type: 3}
   ItemDescription: FirstRod
+  ItemValue: 20
