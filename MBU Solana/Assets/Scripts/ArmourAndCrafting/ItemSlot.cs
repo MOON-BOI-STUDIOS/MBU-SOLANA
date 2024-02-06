@@ -58,14 +58,14 @@ public class ItemSlot: MonoBehaviour
     {
         if(_items == null) return;
         //display Item Info
-        DummyItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
+        AddInventoryItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
         _items.GetItemValue(),ItemInventory.instance.NumberOfItems(_items),transform.position);
     }
 
     public void OnCursorExit()
     {
         if(_items == null) return;
-        DummyItemScript.instance.DestroyItemInfo();
+        AddInventoryItemScript.instance.DestroyItemInfo();
     }
 
 }

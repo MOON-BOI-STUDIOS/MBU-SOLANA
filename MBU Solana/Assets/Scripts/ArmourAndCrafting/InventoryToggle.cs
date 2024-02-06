@@ -59,7 +59,7 @@ public class InventoryToggle : MonoBehaviour
 
     private void SetupCraftingRecipes()
     {
-        List<Items> craftingRecipes = DummyItemScript.instance.CraftingReceipes;
+        List<Items> craftingRecipes = AddInventoryItemScript.instance.CraftingReceipes;
 
         foreach(Items recipe in craftingRecipes)
         {

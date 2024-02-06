@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class DummyItemScript : MonoBehaviour
+public class AddInventoryItemScript : MonoBehaviour
 {
     public List<Items> itemList = new List<Items>();
 
@@ -20,7 +20,7 @@ public class DummyItemScript : MonoBehaviour
 
     #region Singleton
 
-    public static DummyItemScript instance;
+    public static AddInventoryItemScript instance;
     private void Awake()
     {
         if (instance == null)
@@ -37,6 +37,18 @@ public class DummyItemScript : MonoBehaviour
         {
             Items newItem = itemList[Random.Range(0,itemList.Count)];
             ItemInventory.instance.AddItem(Instantiate(newItem));
+        }
+    }
+
+    public void AddToInventory(int numberToAdd)
+    {
+        if(numberToAdd > 0 && numberToAdd < itemList.Count)
+        {
+            Items newItem = itemList[numberToAdd];
+            ItemInventory.instance.AddItem(Instantiate(newItem));
+        }
+        else{
+            Debug.Log("Added wrong number to add");
         }
     }
 

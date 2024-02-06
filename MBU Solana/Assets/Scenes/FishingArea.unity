@@ -876,9 +876,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.4652778
-    width: 0.28817567
-    height: 0.25
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2385,6 +2385,8 @@ GameObject:
   m_Component:
   - component: {fileID: 642462186}
   - component: {fileID: 642462185}
+  - component: {fileID: 642462187}
+  - component: {fileID: 642462188}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2423,6 +2425,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &642462187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642462184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c6579c208f44eb3a43f1aad4e909b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Walking: {fileID: 1157484487}
+  Fishing: {fileID: 1806507506}
+  Joystick: {fileID: 1849668821}
+--- !u!114 &642462188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642462184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d37fa8c73614cdfb59032237d3934a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemList:
+  - {fileID: 11400000, guid: cb085465db258403398b25df4d04d005, type: 2}
+  - {fileID: 11400000, guid: 68bf6ee4cdf9d4229bbb417e207f5734, type: 2}
+  - {fileID: 11400000, guid: b4462136f593349d6ac155c60ca9403a, type: 2}
+  - {fileID: 11400000, guid: bf7d2ae1792754f9881e58af163e5db9, type: 2}
+  - {fileID: 11400000, guid: f12127422840e4e4a874d851bfd3a16e, type: 2}
+  - {fileID: 11400000, guid: f12127422840e4e4a874d851bfd3a16e, type: 2}
+  - {fileID: 11400000, guid: 6d26b7a39e3a44ca9a7cc37d905cf71b, type: 2}
+  CraftingReceipes: []
+  canvas: {fileID: 0}
+  itemInfoPrefab: {fileID: 0}
+  movex: 0
+  movey: 0
 --- !u!1 &675398123
 GameObject:
   m_ObjectHideFlags: 0
@@ -5577,6 +5619,7 @@ GameObject:
   - component: {fileID: 1157484491}
   - component: {fileID: 1157484489}
   - component: {fileID: 1157484488}
+  - component: {fileID: 1157484500}
   m_Layer: 0
   m_Name: Dre
   m_TagString: Player
@@ -5850,6 +5893,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1157484500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157484487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf89fdf1ee9b40c7ab8c3b2b96f8f875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryItemList: []
+  hotbarItemList: []
+  sameitemNum: 0
+  hotBarController: {fileID: 0}
 --- !u!1 &1169131558
 GameObject:
   m_ObjectHideFlags: 0
@@ -10625,6 +10684,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9674c586d23db4698f9d392c959052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1849668821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
+  m_PrefabInstance: {fileID: 1849668818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1885258378
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,9 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     // Reference for UI
     private bool isTutorialOver = false;
 
+    public Transform GetGameObjectPosition {get { return gameObject.transform; }}
+
+
     public string GetTag()
     {
         return NameTag;

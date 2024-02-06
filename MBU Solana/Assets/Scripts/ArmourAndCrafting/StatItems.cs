@@ -13,7 +13,7 @@ public class StatItems : Items
     public override void Use()
     {
         base.Use();
-        DummyItemScript.instance.OnStatItemUse(itemType,amount);
+        AddInventoryItemScript.instance.OnStatItemUse(itemType,amount);
         ItemInventory.instance.RemoveItem(this);
     }
 

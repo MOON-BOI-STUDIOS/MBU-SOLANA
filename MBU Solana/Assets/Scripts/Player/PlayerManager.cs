@@ -135,6 +135,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
             Destroy(other.gameObject);
         }
+        if(other.TryGetComponent(out ICollisiontype fishSceneCollider))
+        {
+            fishSceneCollider.callUIFunctions();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)

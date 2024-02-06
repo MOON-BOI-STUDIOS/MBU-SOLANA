@@ -7,4 +7,6 @@ using UnityEngine;
 public interface ICollisiontype
 {
     string GetTag();
+    Transform GetGameObjectPosition{get;}
+    void callUIFunctions();
 }
