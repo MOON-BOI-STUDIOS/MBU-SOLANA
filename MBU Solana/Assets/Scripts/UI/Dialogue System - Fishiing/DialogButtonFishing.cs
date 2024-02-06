@@ -12,5 +12,7 @@ public class DialogButtonFishing : MonoBehaviour
     public void GetNextLine()
     {
         DialogueManagerFishing.instance.DequeueDialog();
+
+       
     }
 }

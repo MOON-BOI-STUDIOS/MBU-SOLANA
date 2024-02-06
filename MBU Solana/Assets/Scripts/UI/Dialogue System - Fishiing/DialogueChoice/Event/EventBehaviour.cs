@@ -14,4 +14,10 @@ public class EventBehaviour : ScriptableObject
     {
         Debug.Log("Test");
     }
+
+    public void Optionsoff()
+    {
+        DialogueManagerFishing.instance.CloseOptions();
+        DialogueManagerFishing.instance.isDialogueOption = false;
+    }
 }

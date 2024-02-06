@@ -59,7 +59,7 @@ public class DialogueManagerFishing : MonoBehaviour
     // new queue
     public Queue<DialoguebaseFishing.Info> dialogueInfo = new Queue<DialoguebaseFishing.Info>();
 
-    private bool isDialogueOption;
+    public bool isDialogueOption;
 
 
     public void OnEnable()
@@ -191,16 +191,11 @@ public class DialogueManagerFishing : MonoBehaviour
     /// </summary>
     public void endOfDialogue()
     {
-        dialogueText.gameObject.SetActive(false);
+        dialogueBox.SetActive(false);
         inDialogue = false;
-        nextButton.SetActive(false);
-        //controller.enabled = true;
         Interact = true;
         OptionsLogic();
-        //if(isDialogueOption == true)
-        //{
-        //    DialogueOptionUI.SetActive(true);
-        //}
+  
        
     //AudioManager.instance.Stop(currentDialogue.audioClip);
     ////Move to next Act in game
@@ -222,15 +217,16 @@ public class DialogueManagerFishing : MonoBehaviour
         if(isDialogueOption == true)
         {
             DialogueOptionUI.SetActive(true);
-         
+
+
         }
     }
 
     public void CloseOptions()
     {
         DialogueOptionUI.SetActive(false);
-        dialogueText.gameObject.SetActive(true);
-        nextButton.SetActive(true);
+        isDialogueOption = false;
+     
 
     }
 }

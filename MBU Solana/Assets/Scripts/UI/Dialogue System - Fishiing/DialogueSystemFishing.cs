@@ -18,7 +18,7 @@ public class DialogueSystemFishing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         DialogueManagerFishing.instance.EnqueueDialogue(dialogue);
 
     }
@@ -26,28 +26,28 @@ public class DialogueSystemFishing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ////checks if the player is close to the NPC
-        //if (Vector2.Distance(player.position, transform.position) <= proximity + 1f)
-        //{
-        //    isClose = true;
-        //}
-        //else
-        //{
-        //    isClose = false;
-        //}
+        //checks if the player is close to the NPC
+        if (Vector2.Distance(player.position, transform.position) <= proximity + 1f)
+        {
+            isClose = true;
+        }
+        else
+        {
+            isClose = false;
+        }
 
-        //if (isClose)
-        //{
-        //    if (Vector2.Distance(player.position, transform.position) <= proximity)
-        //    {
-        //        interactButton.SetActive(true);
-        //    }
-        //    else
-        //    {
-                
-        //        interactButton.SetActive(false);
-        //    }
-        //}
+        if (isClose)
+        {
+            if (Vector2.Distance(player.position, transform.position) <= proximity)
+            {
+                interactButton.SetActive(true);
+            }
+            else
+            {
+
+                interactButton.SetActive(false);
+            }
+        }
 
 
 
