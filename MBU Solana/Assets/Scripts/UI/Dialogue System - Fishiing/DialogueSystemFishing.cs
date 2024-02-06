@@ -19,7 +19,7 @@ public class DialogueSystemFishing : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        //DialogueManagerFishing.instance.EnqueueDialogue(dialogue);
+        DialogueManagerFishing.instance.EnqueueDialogue(dialogue);
 
     }
 
