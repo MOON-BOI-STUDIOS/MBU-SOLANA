@@ -33,6 +33,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
                 if(!isTutorialOver)
                 {
                     // Call the button here for dialog script
+                    DialogueManagerFishing.instance.EnqueueDialogue(db);
                 }
                 else
                 {
@@ -45,6 +46,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     public void DestroyFishingChoiceUI()
     {
         //Destroy the Dialog box which asks of whether you want to fish
+        
         //Choice 2
     }
 }
