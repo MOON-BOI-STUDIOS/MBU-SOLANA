@@ -18,6 +18,10 @@ public class EventBehaviour : ScriptableObject
     public void Optionsoff()
     {
         DialogueManagerFishing.instance.CloseOptions();
-        DialogueManagerFishing.instance.isDialogueOption = false;
     }
+
+    //public void Swap()
+    //{
+    //    WalkingandFishing.instance.IsFishingActive();
+    //}
 }

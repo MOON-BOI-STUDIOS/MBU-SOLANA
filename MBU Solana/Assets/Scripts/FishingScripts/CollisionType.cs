@@ -9,6 +9,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     public string NameTag;
     // Reference for UI
     private bool isTutorialOver = false;
+    public DialoguebaseFishing db;
 
     public Transform GetGameObjectPosition {get { return gameObject.transform; }}
 
@@ -24,6 +25,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
         {
             case "FishingZone":
                 // Call the function to open pop up menu
+                DialogueManagerFishing.instance.EnqueueDialogue(db);
                 break;
             
             case "FishermanSpot":

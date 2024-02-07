@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ab5a0590081c344b247f819578352e, type: 3}
-  m_Name: FisherMan2
+  m_Script: {fileID: 11500000, guid: 5b4c28c8c58bfff44bcf56c96cc59ad2, type: 3}
+  m_Name: Fishermanextt 2
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - text: 'FISHERMAN
-
-      Fair enough, not everyone''s cut out for such challenges.
-      If you change your mind, I''ll be here.'
-  questionText: 
-  optionsinfo: []
+  - text: Aye, if you wish. The choice is yours. The waters have their own way of
+      balancing things.

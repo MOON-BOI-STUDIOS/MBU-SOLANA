@@ -65,6 +65,7 @@ public class DialogueManagerFishing : MonoBehaviour
     public void OnEnable()
     {
         dialogueInfo = new Queue<DialoguebaseFishing.Info>(); // sets list
+
     }
 
     /// <summary>
@@ -77,7 +78,6 @@ public class DialogueManagerFishing : MonoBehaviour
         inDialogue = true;
         // if there is dialogue set box active
         dialogueBox.SetActive(true);
-        //controller.enabled = false;
         // old dialogue is clears
         dialogueInfo.Clear();
 
@@ -217,6 +217,8 @@ public class DialogueManagerFishing : MonoBehaviour
         if(isDialogueOption == true)
         {
             DialogueOptionUI.SetActive(true);
+            dialogueBox.SetActive(false);
+            isDialogueOption = false;
 
 
         }
@@ -225,7 +227,9 @@ public class DialogueManagerFishing : MonoBehaviour
     public void CloseOptions()
     {
         DialogueOptionUI.SetActive(false);
+        dialogueBox.SetActive(false);
         isDialogueOption = false;
+
      
 
     }

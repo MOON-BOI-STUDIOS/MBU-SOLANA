@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueInfo: []
   questionText: Do You Want To Fish
   optionsinfo:
-  - buttonName: Yes
+  - buttonName: Yes I would Like to
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
@@ -32,7 +32,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: No
+  - buttonName: No I do not
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
