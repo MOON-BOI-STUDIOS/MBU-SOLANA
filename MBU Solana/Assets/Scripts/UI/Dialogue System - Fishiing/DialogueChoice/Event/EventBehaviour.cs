@@ -24,4 +24,11 @@ public class EventBehaviour : ScriptableObject
     //{
     //    WalkingandFishing.instance.IsFishingActive();
     //}
+
+    public void OpenShop()
+    {
+        DialogueManagerFishing.instance.OPenShop();
+        DialogueManagerFishing.instance.CloseOptions();
+
+    }
 }

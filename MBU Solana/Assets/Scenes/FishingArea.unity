@@ -1921,7 +1921,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishingZone
+  isTutorialOver: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
+  dbshop: {fileID: 0}
 --- !u!1 &253638444
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,7 +2583,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishingZone
+  isTutorialOver: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
+  dbshop: {fileID: 0}
 --- !u!1 &286290060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,7 +2998,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishingZone
+  isTutorialOver: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
+  dbshop: {fileID: 0}
 --- !u!1 &328186260 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 401484577686048039, guid: 4bcbe538bc9a42e49b4135055b370b2c, type: 3}
@@ -3593,7 +3599,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishingZone
+  isTutorialOver: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
+  dbshop: {fileID: 0}
 --- !u!1 &428904214
 GameObject:
   m_ObjectHideFlags: 0
@@ -4347,6 +4355,7 @@ MonoBehaviour:
   - {fileID: 1382992286}
   questiontext: {fileID: 1574134175}
   nextButton: {fileID: 8438066725553678941}
+  shop: {fileID: 748713023}
   isDialogueOption: 0
 --- !u!4 &465295454
 Transform:
@@ -4864,7 +4873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishingZone
+  isTutorialOver: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
+  dbshop: {fileID: 0}
 --- !u!1001 &562248349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11319,7 +11330,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishingZone
+  isTutorialOver: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
+  dbshop: {fileID: 0}
 --- !u!1 &1145911419
 GameObject:
   m_ObjectHideFlags: 0
@@ -14884,7 +14897,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishermanSpot
+  isTutorialOver: 0
   db: {fileID: 11400000, guid: 92f5063a80745d844bdee621e5442866, type: 2}
+  dbshop: {fileID: 11400000, guid: 2cfce5fe16255044c80f541e0baa3b3a, type: 2}
 --- !u!4 &1383918246
 Transform:
   m_ObjectHideFlags: 0

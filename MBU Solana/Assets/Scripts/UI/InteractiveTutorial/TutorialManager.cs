@@ -11,11 +11,15 @@ public class TutorialManager : MonoBehaviour
     public NPCDialogueManager nPC;
     public Quest quest;
     public GameObject[] PCpopUps;
+    public GameObject tutorial;
 
     void Update()
+    {
 
-    { 
+        
 
+
+#if UNITY_IOS || UNITY_ANDROID
         for (int i = 0; i< popUps.Length; i++)
         {
             if(i == popUpIndex)
@@ -59,10 +63,60 @@ public class TutorialManager : MonoBehaviour
             {
                 popUpIndex++;
                 Debug.Log("test end");
-                Destroy(this);
+                Destroy(this.gameObject);
+                Destroy(tutorial);
+            }
+        }
+#else
+for (int i = 0; i < PCpopUps.Length; i++)
+        {
+            if (i == PCpopUpIndex)
+            {
+                PCpopUps[i].SetActive(true);
+            }
+            else
+            {
+                PCpopUps[i].SetActive(false);
+            }
+
+        }
+
+        if (PCpopUpIndex == 0)
+        {
+            if (controller.isMoving)
+            {
+                popUpIndex++;
+            }
+        }
+        else if (PCpopUpIndex == 1)
+        {
+            if (DialogueManager.instance.Interact == true)
+            {
+                popUpIndex++;
+
+            }
+
+        }
+        else if (PCpopUpIndex == 2)
+        {
+            if (quest.buttonisPressed == true)
+            {
+                popUpIndex++;
+
+            }
+        }
+        else if (PCpopUpIndex == 3)
+        {
+            if (quest.Pressed == true)
+            {
+                popUpIndex++;
+                Debug.Log("test end");
+                Destroy(this.gameObject);
+                Destroy(tutorial);
             }
         }
 
+#endif
 
 
 

@@ -8,8 +8,10 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     [Header("ObjectTag")]
     public string NameTag;
     // Reference for UI
-    private bool isTutorialOver = false;
+    public bool isTutorialOver = false;
     public DialoguebaseFishing db;
+    public DialoguebaseFishing dbshop;
+
 
     public Transform GetGameObjectPosition {get { return gameObject.transform; }}
 
@@ -38,6 +40,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
                 else
                 {
                     //Call fucntion to Shop // open the UI to Shop
+                    DialogueManagerFishing.instance.EnqueueDialogue(dbshop);
                 }
                 break;  
         }

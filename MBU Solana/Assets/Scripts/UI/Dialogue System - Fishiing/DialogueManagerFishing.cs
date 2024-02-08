@@ -41,6 +41,7 @@ public class DialogueManagerFishing : MonoBehaviour
     public TextMeshProUGUI questiontext;
 
     public GameObject nextButton;
+    public GameObject shop;
 
     private void Awake()
     {
@@ -56,6 +57,10 @@ public class DialogueManagerFishing : MonoBehaviour
     }
 
 
+    public void OPenShop()
+    {
+        shop.SetActive(true);
+    }
     // new queue
     public Queue<DialoguebaseFishing.Info> dialogueInfo = new Queue<DialoguebaseFishing.Info>();
 
