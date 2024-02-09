@@ -15,10 +15,6 @@ public class TutorialManager : MonoBehaviour
 
     void Update()
     {
-
-        
-
-
 #if UNITY_IOS || UNITY_ANDROID
         for (int i = 0; i< popUps.Length; i++)
         {
@@ -117,8 +113,5 @@ for (int i = 0; i < PCpopUps.Length; i++)
         }
 
 #endif
-
-
-
     }
 }
