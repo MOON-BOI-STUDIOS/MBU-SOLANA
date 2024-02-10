@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public IPlayerInput inputHandler;
     //public CustomJoystick joystick;
     private PlayerManager _manager;
+    public bool TutorialMove;
 
     void Start()
     {
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour
     {
 #if !UNITY_STANDALONE && !UNITY_WEBGL 
         moveDirection = inputHandler.GetInputDirection();
+        TutorialMove = true;
         //Debug.Log(moveDirection);//joystick.GetJoystickDirection();// //
 #endif
     }

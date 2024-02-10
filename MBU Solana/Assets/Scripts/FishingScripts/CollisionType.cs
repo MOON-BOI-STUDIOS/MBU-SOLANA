@@ -8,7 +8,10 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     [Header("ObjectTag")]
     public string NameTag;
     // Reference for UI
-    private bool isTutorialOver = false;
+    public bool isTutorialOver = false;
+    public DialoguebaseFishing db;
+    public DialoguebaseFishing dbshop;
+
 
     public Transform GetGameObjectPosition {get { return gameObject.transform; }}
 
@@ -24,6 +27,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
         {
             case "FishingZone":
                 // Call the function to open pop up menu
+                DialogueManagerFishing.instance.EnqueueDialogue(db);
                 break;
             
             case "FishermanSpot":
@@ -31,10 +35,12 @@ public class CollisionType : MonoBehaviour, ICollisiontype
                 if(!isTutorialOver)
                 {
                     // Call the button here for dialog script
+                    DialogueManagerFishing.instance.EnqueueDialogue(db);
                 }
                 else
                 {
                     //Call fucntion to Shop // open the UI to Shop
+                    DialogueManagerFishing.instance.EnqueueDialogue(dbshop);
                 }
                 break;  
         }
@@ -43,6 +49,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     public void DestroyFishingChoiceUI()
     {
         //Destroy the Dialog box which asks of whether you want to fish
+        
         //Choice 2
     }
 }

@@ -33,7 +33,7 @@ MonoBehaviour:
   questionText: "DR\xC9"
   optionsinfo:
   - buttonName: That was pretty cool! (1)
-    nextdialogue: {fileID: 11400000, guid: 16a4d74f5d3b47e48bcfbf80bec6b37d, type: 2}
+    nextdialogue: {fileID: 11400000, guid: 9a36a7471c10e9c42bdba5d028b0df7a, type: 2}
     Event:
       m_PersistentCalls:
         m_Calls: []
@@ -43,7 +43,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   - buttonName: Can I release it back into the waters? (3)
-    nextdialogue: {fileID: 11400000, guid: 97b65b04e7ea13b4e8be0669066d6cb0, type: 2}
+    nextdialogue: {fileID: 11400000, guid: a556a08a9d23d5447972b2a826fbf188, type: 2}
     Event:
       m_PersistentCalls:
         m_Calls: []
