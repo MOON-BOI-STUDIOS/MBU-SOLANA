@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Items", menuName = "Items/primary")]
 public class Items : ScriptableObject
 {
-    new public string name = "default";
+    public string name = "default";
     public Sprite icon = null;
     public string ItemDescription;
     public int ItemValue;

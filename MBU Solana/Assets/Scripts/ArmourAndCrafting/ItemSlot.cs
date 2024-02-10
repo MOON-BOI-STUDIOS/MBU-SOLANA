@@ -11,6 +11,9 @@ public class ItemSlot: MonoBehaviour
     public TMP_Text _text;
     private Items _items;
     private int ItemValue;
+    public bool isBeingDragged = false;
+
+    public Items Item => _items;
     
 
     public virtual void AddItem(Items newitem)
@@ -29,7 +32,7 @@ public class ItemSlot: MonoBehaviour
 
     public void UseItem()
     {
-        if (_items == null) return;
+        if (_items == null || isBeingDragged == true) return;
         if(Input.GetKey(KeyCode.H))
         {
             ItemInventory.instance.SwitchHotInventory(_items);
@@ -56,7 +59,7 @@ public class ItemSlot: MonoBehaviour
 
     public void OnCursorEnter()
     {
-        if(_items == null) return;
+        if(_items == null || isBeingDragged == true) return;
         //display Item Info
         AddInventoryItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
         _items.GetItemValue(),ItemInventory.instance.NumberOfItems(_items),transform.position);

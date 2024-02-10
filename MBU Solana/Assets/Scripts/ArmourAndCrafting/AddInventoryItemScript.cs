@@ -15,8 +15,9 @@ public class AddInventoryItemScript : MonoBehaviour
     public GameObject itemInfoPrefab;
     private GameObject currentItemInfo = null;
 
-    public float movex;
-    public float movey;
+    public Transform InventorymainCanvas;
+    public Transform HotbarTransform;
+    public Transform inventoryTransform;
 
     #region Singleton
 

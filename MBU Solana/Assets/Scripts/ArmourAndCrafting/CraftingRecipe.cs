@@ -21,7 +21,7 @@ public class CraftingRecipe : Items
     {
         foreach(Ingredients ingredient in _IngredientsArray)
         {
-            bool containsCurrentIngredient = ItemInventory.instance.ContainsItems(ingredient._Items, ingredient.amount);
+            bool containsCurrentIngredient = ItemInventory.instance.ContainsItems(ingredient._Items.name, ingredient.amount);
 
             if (!containsCurrentIngredient)
             {
@@ -36,7 +36,7 @@ public class CraftingRecipe : Items
     {
         foreach (Ingredients ingredient in _IngredientsArray)
         {
-            ItemInventory.instance.RemoveItems(ingredient._Items, ingredient.amount);
+            ItemInventory.instance.RemoveItems(ingredient._Items.name, ingredient.amount);
         }
     }
 

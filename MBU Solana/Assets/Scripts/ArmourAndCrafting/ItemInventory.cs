@@ -117,12 +117,20 @@ public class ItemInventory: MonoBehaviour
         }
     }
 
-    public bool ContainsItems(Items _items, int amount)
+    public bool ContainsItems(string itemName, int amount)
     {
         int itemCounter = 0;
         foreach (Items i in inventoryItemList)
         {
-            if (i == _items)
+            if (i.name == itemName)
+            {
+                itemCounter++;
+            }
+        }
+
+        foreach (Items i in hotbarItemList)
+        {
+            if (i.name == itemName)
             {
                 itemCounter++;
             }
@@ -136,11 +144,11 @@ public class ItemInventory: MonoBehaviour
         return false;
     }
 
-    public void RemoveItems(Items _items, int amount)
+    public void RemoveItems(string itemName, int amount)
     {
         for (int i = 0; i < amount; i++)
         {
-            RemoveItem(_items);
+            RemoveItemType(itemName);
         }
     }
 
@@ -188,6 +196,28 @@ public class ItemInventory: MonoBehaviour
         {
             isCrafting = false;
         }
+    }
+
+    public void RemoveItemType(string itemName)
+    {
+        foreach (Items i in inventoryItemList)
+        {
+            if (i.name == itemName)
+            {
+                inventoryItemList.Remove(i);
+                return;
+            }
+        }
+
+        foreach (Items i in hotbarItemList)
+        {
+            if (i.name == itemName)
+            {
+                hotbarItemList.Remove(i);
+                return;
+            }
+        }
+
     }
 
 }
