@@ -43,6 +43,9 @@ public class DialogueManagerFishing : MonoBehaviour
     public GameObject nextButton;
     public GameObject shop;
 
+
+
+
     private void Awake()
     {
         // creates singleton

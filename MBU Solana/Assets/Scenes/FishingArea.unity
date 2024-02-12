@@ -513,7 +513,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82064252}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &82064254
 Camera:
   m_ObjectHideFlags: 0
@@ -5785,6 +5785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 642462186}
   - component: {fileID: 642462185}
+  - component: {fileID: 642462187}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5823,6 +5824,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &642462187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642462184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c6579c208f44eb3a43f1aad4e909b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Walking: {fileID: 1157484487}
+  Fishing: {fileID: 1806507506}
+  Joystick: {fileID: 2130227474}
+  FishingPositions:
+  - {fileID: 282280420}
+  - {fileID: 1140502058}
+  - {fileID: 552024493}
+  - {fileID: 249830580}
+  - {fileID: 403064587}
+  - {fileID: 323392123}
+  jolt: {fileID: 832930720}
+  panel: {fileID: 95905464}
+  transitions: {fileID: 95905466}
 --- !u!1 &666019695
 GameObject:
   m_ObjectHideFlags: 0
@@ -24419,6 +24445,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2130227474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
+  m_PrefabInstance: {fileID: 1849668818}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2143831482
 GameObject:
   m_ObjectHideFlags: 0
