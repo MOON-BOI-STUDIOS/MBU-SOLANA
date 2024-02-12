@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 156a8f0b3d892bf4dab6bc36c06027e5, type: 3}
-  m_Name: Basic 4
+  m_Script: {fileID: 11500000, guid: 72c2fe4a567969d4facb44a819e7671a, type: 3}
+  m_Name: queen_swisher
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  ItemName: kingFisher
-  luck: 50
-  Minrarity: 70
-  Maxrarity: 10
-  price: 60
+  name: Queen Swisher
+  icon: {fileID: 0}
+  ItemDescription: 
+  ItemValue: 0
+  luck: 0
+  bait: 8
   isPurchased: 0

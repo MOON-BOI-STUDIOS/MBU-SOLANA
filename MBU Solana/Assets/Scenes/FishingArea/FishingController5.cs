@@ -121,6 +121,7 @@ public class FishingController5 : MonoBehaviour
 
             // Display catch information on the screen
             DisplayText($"Dre has caught a {fishName} using {rodName} and {baitName}! +{points} points (Rod Chance: {rodChance * 100}%, Bait Luck: {baitLuck * 100}%)");
+            // Add fish item here to add to the inventory
         }
         else
         {

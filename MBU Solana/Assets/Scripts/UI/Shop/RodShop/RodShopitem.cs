@@ -24,7 +24,11 @@ public class RodShopitem : MonoBehaviour
     //[SerializeField] Outline itemOutline;
 
    
-    public RodItemObj rdb;
+    public RodItemObj rdb = null;
+
+    public BaitItemObjj _bait = null;
+
+    public bool isbait = false;
 
     public int quantity;
 
@@ -50,24 +54,38 @@ public class RodShopitem : MonoBehaviour
         setRodPrice();
         setrodRarity();
 
-        if (quantity == 7 || currencyTemp.TempCurrency < rdb.ItemValue) 
+        /*if(isbait)
         {
-            RodPurchaseButton.interactable = false;
+            if (quantity == 7|| currencyTemp.TempCurrency < _bait.ItemValue) 
+            {
+                RodPurchaseButton.interactable = false;
+            }
+            else if(quantity < 7|| currencyTemp.TempCurrency < _bait.ItemValue)
+            {
+                RodPurchaseButton.interactable = true;
+            }
         }
-        else if(quantity < 7 || currencyTemp.TempCurrency > rdb.ItemValue)
+        else
         {
-            RodPurchaseButton.interactable = true;
-        }
+            if (quantity == 7 || currencyTemp.TempCurrency < rdb.ItemValue) 
+            {
+                RodPurchaseButton.interactable = false;
+            }
+            else if(quantity < 7 || currencyTemp.TempCurrency > rdb.ItemValue)
+            {
+                RodPurchaseButton.interactable = true;
+            }
+        }*/
     }
 
     public void setCharacterImage()
     {
-        RodImage.sprite = rdb.icon;
+        RodImage.sprite = isbait? _bait.icon:rdb.icon;
     }
 
     public void setCharacterName()
     {
-        Rodname.text = rdb.name;
+        Rodname.text = isbait? _bait.name: rdb.name;
     }
 
     public void adQuant()
@@ -77,18 +95,43 @@ public class RodShopitem : MonoBehaviour
 
     public void setRodLuck()
     {
-        RodLuck.text ="Luck" + rdb.luck.ToString() +"%";
+        string num = isbait? _bait.luck.ToString():rdb.luck.ToString();
+        RodLuck.text ="Luck" + num +"%";
     }
 
     public void setrodRarity()
     {
-        RodRarity.text = "Rarity" + rdb.Minrarity.ToString() + "-" + rdb.Maxrarity.ToString();
+        if(!isbait)
+        {
+            RodRarity.text = "Rarity" + rdb.Minrarity.ToString() + "-" + rdb.Maxrarity.ToString();
+        }
+        else{
+            RodRarity.text = "Rarity" + _bait.luck.ToString() + "%";
+        }
       
     }
 
     public void setRodPrice()
     {
-        RodPrice.text = rdb.ItemValue.ToString() + "Coins";
+        RodPrice.text = isbait ? _bait.ItemValue.ToString():rdb.ItemValue.ToString() + "Coins";
+    }
+
+    public void LooseCurrncy()
+    {
+        if(!isbait)
+        {
+            // Call to reduce gold coin of the player
+            //TempCurrency -= itemObject.GetItemValue();
+            Debug.Log("Value of the item is:" + rdb.GetItemValue());
+            // Write code to Add item to the inventory here
+            AddInventoryItemScript.instance.AddToInventory(rdb);
+        }
+        else
+        {
+            Debug.Log("Value of the item is:" + _bait.GetItemValue());
+            // Write code to Add item to the inventory here
+            AddInventoryItemScript.instance.AddToInventory(_bait);
+        }
     }
     //public void setrodasPurchased()
     //{

@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72c2fe4a567969d4facb44a819e7671a, type: 3}
-  m_Name: baititem 1
+  m_Name: plastic_worm
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  ItemName: 
+  name: Plastic Worm
+  icon: {fileID: 0}
+  ItemDescription: 
+  ItemValue: 0
   luck: 0
   bait: 8
-  price: 0
   isPurchased: 0

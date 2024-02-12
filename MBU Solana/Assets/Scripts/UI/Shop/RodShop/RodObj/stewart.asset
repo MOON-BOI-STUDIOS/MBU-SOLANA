@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 156a8f0b3d892bf4dab6bc36c06027e5, type: 3}
-  m_Name: Basic 1
+  m_Name: stewart
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  ItemName: Tuna Fork
-  luck: 20
-  Minrarity: 10
-  Maxrarity: 20
-  price: 20
+  name: Stewart
+  icon: {fileID: 0}
+  ItemDescription: 
+  ItemValue: 0
+  luck: 69
+  Minrarity: 40
+  Maxrarity: 69
   isPurchased: 0

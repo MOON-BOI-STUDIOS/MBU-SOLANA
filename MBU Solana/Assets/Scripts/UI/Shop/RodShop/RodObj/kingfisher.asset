@@ -9,12 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72c2fe4a567969d4facb44a819e7671a, type: 3}
-  m_Name: baititem 4
+  m_Script: {fileID: 11500000, guid: 156a8f0b3d892bf4dab6bc36c06027e5, type: 3}
+  m_Name: kingfisher
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  ItemName: 
-  luck: 0
-  bait: 8
-  price: 0
+  name: Kingfisher
+  icon: {fileID: 0}
+  ItemDescription: 
+  ItemValue: 0
+  luck: 10
+  Minrarity: 10
+  Maxrarity: 0
   isPurchased: 0
