@@ -41,16 +41,21 @@ public class AddInventoryItemScript : MonoBehaviour
         }
     }
 
-    public void AddToInventory(int numberToAdd)
+    public void AddToInventory(Items newItem)
     {
-        if(numberToAdd > 0 && numberToAdd < itemList.Count)
+        if(newItem != null)
         {
-            Items newItem = itemList[numberToAdd];
+            Debug.Log("Reached here");
+            ItemInventory.instance.AddItem(Instantiate(newItem));
+        }
+        /*if(numberToAdd > 0 && numberToAdd < itemList.Count)
+        {
+            //Items newItem = itemList[numberToAdd];
             ItemInventory.instance.AddItem(Instantiate(newItem));
         }
         else{
             Debug.Log("Added wrong number to add");
-        }
+        }*/
     }
 
     public void OnStatItemUse(StatItemType _itemType, int amount)

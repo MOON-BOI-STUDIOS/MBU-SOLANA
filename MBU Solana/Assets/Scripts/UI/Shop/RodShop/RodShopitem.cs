@@ -50,11 +50,11 @@ public class RodShopitem : MonoBehaviour
         setRodPrice();
         setrodRarity();
 
-        if (quantity == 7 || currencyTemp.TempCurrency < rdb.price) 
+        if (quantity == 7 || currencyTemp.TempCurrency < rdb.ItemValue) 
         {
             RodPurchaseButton.interactable = false;
         }
-        else if(quantity < 7 || currencyTemp.TempCurrency > rdb.price)
+        else if(quantity < 7 || currencyTemp.TempCurrency > rdb.ItemValue)
         {
             RodPurchaseButton.interactable = true;
         }
@@ -62,12 +62,12 @@ public class RodShopitem : MonoBehaviour
 
     public void setCharacterImage()
     {
-        RodImage.sprite = rdb.image;
+        RodImage.sprite = rdb.icon;
     }
 
     public void setCharacterName()
     {
-        Rodname.text = rdb.ItemName;
+        Rodname.text = rdb.name;
     }
 
     public void adQuant()
@@ -88,7 +88,7 @@ public class RodShopitem : MonoBehaviour
 
     public void setRodPrice()
     {
-        RodPrice.text = rdb.price.ToString() + "Coins";
+        RodPrice.text = rdb.ItemValue.ToString() + "Coins";
     }
     //public void setrodasPurchased()
     //{

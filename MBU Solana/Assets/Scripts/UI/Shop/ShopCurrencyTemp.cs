@@ -20,5 +20,6 @@ public class ShopCurrencyTemp : MonoBehaviour
     {
         TempCurrency -= amount;
         Debug.Log("Currency is:" + TempCurrency);
+        // Write code to Add item to the inventory here
     }
 }
