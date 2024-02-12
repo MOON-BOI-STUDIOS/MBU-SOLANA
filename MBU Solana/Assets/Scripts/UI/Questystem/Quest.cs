@@ -14,6 +14,8 @@ public class Quest : MonoBehaviour
     public QuestArrow arrow;
     public Quest[] allQuests;
 
+    public bool QuestCompleted;
+
 
     
    public bool buttonisPressed = false;
@@ -31,6 +33,7 @@ public class Quest : MonoBehaviour
         currentColor = completedColor;
         questItem.color = activeColor;
         arrow.gameObject.SetActive(false);
+        QuestCompleted = true;
    
     }
 
@@ -50,7 +53,7 @@ public class Quest : MonoBehaviour
         if(collision.tag == "Player")
         {
             FinishQuest();
-            Destroy(gameObject);
+            //Destroy(gameObject);
             this.gameObject.SetActive(false);
         }
     }

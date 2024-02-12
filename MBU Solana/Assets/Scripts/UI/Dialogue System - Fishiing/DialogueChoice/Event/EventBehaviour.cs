@@ -20,10 +20,10 @@ public class EventBehaviour : ScriptableObject
         DialogueManagerFishing.instance.CloseOptions();
     }
 
-    //public void Swap()
-    //{
-    //    WalkingandFishing.instance.IsFishingActive();
-    //}
+    public void Swap()
+    {
+        WalkingandFishing.instance.IsFishingActive();
+    }
 
     public void OpenShop()
     {
