@@ -23,9 +23,14 @@ public class WalkingandFishing : MonoBehaviour
     private bool IsFishing = false;
     public Transform[] FishingPositions;
     public GameObject jolt;
+    public GameObject Mecha;
     public GameObject panel;
 
     public Animator transitions;
+    public GameObject tutorial;
+    public GameObject fishingMec;
+    public Fishing fishing;
+    public DialoguebaseFishing DB;
     void Start()
     {
         
@@ -44,10 +49,12 @@ public class WalkingandFishing : MonoBehaviour
         {
             IsFishing = false;
             // Add Code for transition in coroutine
-            StartCoroutine(FishTransition());
+            StartCoroutine(FishTransitionw());
             Fishing.SetActive(false);
             Joystick.SetActive(true);
             Walking.SetActive(true);
+            Mecha.SetActive(false);
+            jolt.SetActive(false);
             
         }
     }
@@ -62,24 +69,80 @@ public class WalkingandFishing : MonoBehaviour
             // Equipping rods and bait
             IsFishing = true;
             // Add Code for transition in coroutine
-            StartCoroutine(FishTransition());
-            Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
-            Joystick.SetActive(false);
-            Walking.SetActive(false);
+            StartCoroutine(FishTransitionf());
+            //Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
             Fishing.SetActive(true);
             jolt.SetActive(true);
-            panel.SetActive(true);
+            fishingMec.SetActive(true);
+
+
             //Fishing.transform.position = fisingPosition.position;
         }
     }
 
-    public IEnumerator FishTransition()
+
+    public void IsFishingBeforeTutorial()
+    {
+        //Change of Sprite from walking to Fishing
+        if (!IsFishing)
+        {
+            IsFishing = true;
+            // Add Code for transition in coroutine
+            StartCoroutine(FishTransitionfo());
+            Joystick.SetActive(false);
+            fishing.enabled = false;
+            jolt.SetActive(false);
+            fishingMec.SetActive(false);
+
+            //Fishing.transform.position = fisingPosition.position;
+        }
+    }
+
+    
+
+    public IEnumerator FishTransitionf()
     {
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
+        Walking.SetActive(false);
+        Fishing.SetActive(true);
+        Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         panel.SetActive(false);
     }
 
-   
+
+    public IEnumerator FishTransitionfo()
+    {
+        panel.SetActive(true);
+        transitions.Play("fishingAnimations");
+        yield return new WaitForSeconds(1f);
+        Walking.SetActive(false);
+        Fishing.SetActive(true);
+        Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
+        DialogueManagerFishing.instance.EnqueueDialogue(DB);
+        panel.SetActive(false);
+    }
+
+    public IEnumerator FishTransitionw()
+    {
+        panel.SetActive(true);
+        transitions.Play("fishingAnimations");
+        yield return new WaitForSeconds(1f);
+        Joystick.SetActive(false);
+        Walking.SetActive(false);
+        Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
+        panel.SetActive(false);
+    }
+
+    public void TurnonTutorial()
+    {
+        tutorial.SetActive(true);
+        jolt.SetActive(true);
+        fishing.enabled = true;
+
+    }
+
+
+
 }

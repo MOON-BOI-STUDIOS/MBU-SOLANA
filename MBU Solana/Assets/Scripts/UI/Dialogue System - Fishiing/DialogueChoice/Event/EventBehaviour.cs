@@ -5,6 +5,8 @@ using UnityEngine;
 public class EventBehaviour : ScriptableObject
 {
     public GameObject OBJECT;
+
+    public DialoguebaseFishing db;
     public void turnoff()
     {
         DialogueManagerFishing.instance.dialogueBox.SetActive(false);
@@ -22,8 +24,14 @@ public class EventBehaviour : ScriptableObject
 
     public void Swap()
     {
+        WalkingandFishing.instance.IsFishingBeforeTutorial();
+    }
+
+    public void OtherSwap()
+    {
         WalkingandFishing.instance.IsFishingActive();
     }
+
 
     public void OpenShop()
     {
@@ -31,4 +39,15 @@ public class EventBehaviour : ScriptableObject
         DialogueManagerFishing.instance.CloseOptions();
 
     }
+
+    public void OpenTutorial()
+    {
+        WalkingandFishing.instance.TurnonTutorial();
+    }
+
+    public void startDialogue()
+    {
+        DialogueManagerFishing.instance.EnqueueDialogue(db);
+    }
+
 }

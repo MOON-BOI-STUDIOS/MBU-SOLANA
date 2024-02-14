@@ -13,13 +13,9 @@ MonoBehaviour:
   m_Name: Quest2
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - text: 'FISHERMAN
-
-      By the seven seas! You''ve done it! The fish is yours
-      to claim.
-
-
-'
+  - text: "FISHERMAN\r\nListen closely, boy. The waters are teeming with life. Like
+      the lottery, you never know what you\u2019ll get. We'll need to use special
+      bait and stay patient.\r\n\n"
   - text: "DR\xC9\r\nLet's do this!\r\n\n"
   - text: 'FISHERMAN
 
@@ -30,20 +26,22 @@ MonoBehaviour:
 '
   - text: "FISHERMAN\r\nDifferent bait will attract different fish. Here, take this
       and experiment to see what you\u2019ll find.\r\n\n\n"
-  questionText: "DR\xC9"
+  questionText: 
   optionsinfo:
-  - buttonName: That was pretty cool! (1)
-    nextdialogue: {fileID: 11400000, guid: 9a36a7471c10e9c42bdba5d028b0df7a, type: 2}
+  - buttonName: Start
+    nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
-        m_Calls: []
-  - buttonName: What now? Is there a reward? (2)
-    nextdialogue: {fileID: 11400000, guid: 5e5e782d04fe678478c5d4c92c460af5, type: 2}
-    Event:
-      m_PersistentCalls:
-        m_Calls: []
-  - buttonName: Can I release it back into the waters? (3)
-    nextdialogue: {fileID: 11400000, guid: a556a08a9d23d5447972b2a826fbf188, type: 2}
-    Event:
-      m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: OpenTutorial
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
