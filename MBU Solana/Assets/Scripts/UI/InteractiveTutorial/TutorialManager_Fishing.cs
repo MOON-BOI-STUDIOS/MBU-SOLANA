@@ -39,12 +39,16 @@ public class TutorialManager_Fishing : MonoBehaviour
         }
         else if(popUpIndex == 2)
         {
-            if(Fishing.fishCaughts == true)
+        
+            if (Fishing.fishCaughts == true)
             {
                 popUpIndex++;
-                Destroy(this);
+                //Destroy(this);
             }
+           
         }
          
     }
+
+  
 }

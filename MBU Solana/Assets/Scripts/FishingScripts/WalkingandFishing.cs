@@ -26,6 +26,7 @@ public class WalkingandFishing : MonoBehaviour
     public GameObject panel;
 
     public Animator transitions;
+    public GameObject tutorial;
     void Start()
     {
         
@@ -74,9 +75,15 @@ public class WalkingandFishing : MonoBehaviour
     {
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.4f);
         panel.SetActive(false);
     }
+
+    public void TurnonTutorial()
+    {
+        tutorial.SetActive(true);
+    }
+
 
    
 }

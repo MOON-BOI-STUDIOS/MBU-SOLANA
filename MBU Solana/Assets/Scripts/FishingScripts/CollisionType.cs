@@ -27,7 +27,11 @@ public class CollisionType : MonoBehaviour, ICollisiontype
         {
             case "FishingZone":
                 // Call the function to open pop up menu
-                DialogueManagerFishing.instance.EnqueueDialogue(db);
+                if (isTutorialOver)
+                {
+                    DialogueManagerFishing.instance.EnqueueDialogue(db);
+                }
+                
                 break;
             
             case "FishermanSpot":

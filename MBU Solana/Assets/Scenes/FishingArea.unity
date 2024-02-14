@@ -637,7 +637,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82064252}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b2c6e1d2032bdf04aa95115f6ec7afe4, type: 3}
@@ -1856,9 +1856,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.4652778
-    width: 0.2581081
-    height: 0.25
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -3708,6 +3708,10 @@ PrefabInstance:
     - target: {fileID: 3455272577795883624, guid: 9f811edb11ab94740b2614fe0f6100b6, type: 3}
       propertyPath: m_SizeDelta.y
       value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3455272578542734959, guid: 9f811edb11ab94740b2614fe0f6100b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 21.650879
       objectReference: {fileID: 0}
     - target: {fileID: 3455272578702677386, guid: 9f811edb11ab94740b2614fe0f6100b6, type: 3}
       propertyPath: m_Pivot.x
@@ -6434,6 +6438,7 @@ GameObject:
   - component: {fileID: 642462185}
   - component: {fileID: 642462187}
   - component: {fileID: 642462188}
+  - component: {fileID: 642462189}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6497,6 +6502,7 @@ MonoBehaviour:
   jolt: {fileID: 832930720}
   panel: {fileID: 95905464}
   transitions: {fileID: 95905466}
+  tutorial: {fileID: 0}
 --- !u!114 &642462188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6520,6 +6526,24 @@ MonoBehaviour:
   InventorymainCanvas: {fileID: 363669840}
   HotbarTransform: {fileID: 1683508953}
   inventoryTransform: {fileID: 363669840}
+--- !u!114 &642462189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642462184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21c57791dd25de7459f03d0c05132f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishQuests:
+  - {fileID: 995346453}
+  - {fileID: 1411911139}
+  panel: {fileID: 0}
+  Qbjective1: 0
+  Objective2: 0
 --- !u!1 &666019695
 GameObject:
   m_ObjectHideFlags: 0
@@ -11096,7 +11120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &995346451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11131,7 +11155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995346449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.74, y: 1.3951446, z: -0.22906062}
+  m_LocalPosition: {x: 14.04, y: 1.33, z: -0.22906062}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11157,6 +11181,7 @@ MonoBehaviour:
   arrow: {fileID: 2146670741}
   allQuests: []
   QuestCompleted: 0
+  collider2D: {fileID: 995346451}
   buttonisPressed: 0
   Pressed: 0
 --- !u!1 &999278661
@@ -11556,7 +11581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 94.83984, y: 252}
+  m_AnchoredPosition: {x: 80, y: 252}
   m_SizeDelta: {x: 486.8428, y: 80.938}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1034557105
@@ -11579,7 +11604,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: temp
+  m_text: The Lengendary Catch
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
   m_sharedMaterial: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
@@ -11606,8 +11631,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11642,7 +11667,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -17.299805, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -14094,7 +14119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297919, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
@@ -16149,7 +16174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishermanSpot
-  isTutorialOver: 0
+  isTutorialOver: 1
   db: {fileID: 11400000, guid: 92f5063a80745d844bdee621e5442866, type: 2}
   dbshop: {fileID: 11400000, guid: 2cfce5fe16255044c80f541e0baa3b3a, type: 2}
 --- !u!4 &1383918246
@@ -16370,7 +16395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 364.99985, y: -303.2}
+  m_AnchoredPosition: {x: 364.99985, y: -340}
   m_SizeDelta: {x: 354.473, y: 96.297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1407317449
@@ -16417,7 +16442,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1411911136}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: QuestFishing, Assembly-CSharp
         m_MethodName: OnQuestClick
         m_Mode: 1
@@ -16747,7 +16772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1411911138}
   - component: {fileID: 1411911137}
-  - component: {fileID: 1411911136}
+  - component: {fileID: 1411911139}
   m_Layer: 0
   m_Name: FishermanTrigger (1)
   m_TagString: Untagged
@@ -16755,18 +16780,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1411911136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411911135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e8bdbded843404e944f60377898ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1411911137
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16808,6 +16821,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1411911139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411911135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c881e1d7c5594cbf0b801121ff013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questItem: {fileID: 0}
+  completedColor: {r: 0, g: 0, b: 0, a: 0}
+  activeColor: {r: 0, g: 0, b: 0, a: 0}
+  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  arrow: {fileID: 0}
+  allQuests: []
+  QuestCompleted: 0
+  collider2D: {fileID: 0}
+  buttonisPressed: 0
+  Pressed: 0
 --- !u!1 &1428554292
 GameObject:
   m_ObjectHideFlags: 0
@@ -18782,10 +18817,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 642462185}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: nextScene
-        m_Mode: 3
+      - m_Target: {fileID: 642462187}
+        m_TargetAssemblyTypeName: WalkingandFishing, Assembly-CSharp
+        m_MethodName: IsWalkingActive
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21227,7 +21262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3380434374370135754, guid: 57e5b19893779484683564c408954ace, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -212.42
+      value: -249.21999
       objectReference: {fileID: 0}
     - target: {fileID: 3380434374762363335, guid: 57e5b19893779484683564c408954ace, type: 3}
       propertyPath: m_text
@@ -21441,7 +21476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 365, y: -394}
+  m_AnchoredPosition: {x: 365, y: -430.8}
   m_SizeDelta: {x: 354.473, y: 96.297}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1798593205
@@ -21488,7 +21523,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901280570}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: QuestFishing, Assembly-CSharp
         m_MethodName: OnQuestClick
         m_Mode: 1
@@ -22768,7 +22803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1901280572}
   - component: {fileID: 1901280571}
-  - component: {fileID: 1901280570}
+  - component: {fileID: 1901280573}
   m_Layer: 0
   m_Name: FishermanTrigger (2)
   m_TagString: Untagged
@@ -22776,18 +22811,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1901280570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901280569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90e8bdbded843404e944f60377898ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1901280571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22829,6 +22852,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1901280573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901280569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c881e1d7c5594cbf0b801121ff013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questItem: {fileID: 0}
+  completedColor: {r: 0, g: 0, b: 0, a: 0}
+  activeColor: {r: 0, g: 0, b: 0, a: 0}
+  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  arrow: {fileID: 0}
+  allQuests: []
+  QuestCompleted: 0
+  collider2D: {fileID: 0}
+  buttonisPressed: 0
+  Pressed: 0
 --- !u!1 &1903590538
 GameObject:
   m_ObjectHideFlags: 0
