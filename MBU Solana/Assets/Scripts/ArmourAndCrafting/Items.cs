@@ -12,9 +12,14 @@ public class Items : ScriptableObject
     public string ItemDescription;
     public int ItemValue;
 
+    public bool IsEquippable;
+
+    public ItemClass classOfItem;
+
     public virtual void Use()
     {
         Debug.Log("Using" + name);
+        AddInventoryItemScript.instance.OnItemUse(this);
     }
 
     public virtual string GetItemDescription()
@@ -25,5 +30,12 @@ public class Items : ScriptableObject
     public virtual int GetItemValue()
     {
         return ItemValue;
+    }
+
+    public enum ItemClass
+    {
+        rod,
+        bait,
+        fish
     }
 }

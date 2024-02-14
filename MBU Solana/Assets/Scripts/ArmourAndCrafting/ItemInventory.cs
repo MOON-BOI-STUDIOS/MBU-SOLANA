@@ -220,4 +220,29 @@ public class ItemInventory: MonoBehaviour
 
     }
 
+    public bool Checkcanfish()
+    {
+        int rodItem = 0;
+        int baitItem = 0;
+        foreach(Items i in hotbarItemList)
+        {
+            if(i.IsEquippable)
+            {
+                if(string.Equals(i.classOfItem.ToString(),"rod"))
+                {
+                    rodItem += 1;
+                }
+                else if(string.Equals(i.classOfItem.ToString(),"bait"))
+                {
+                    baitItem += 1;
+                }
+            }
+        }
+        if(rodItem > 0 && baitItem > 0)
+        {
+            return true;
+        }
+        return false;
+    }
+
 }

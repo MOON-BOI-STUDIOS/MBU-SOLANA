@@ -8,13 +8,13 @@ public class StatItems : Items
 {
     public StatItemType itemType;
 
-    public int amount;
+    public int points;
 
     public override void Use()
     {
         base.Use();
-        AddInventoryItemScript.instance.OnStatItemUse(itemType,amount);
-        ItemInventory.instance.RemoveItem(this);
+        //AddInventoryItemScript.instance.OnItemUse(this);
+        //ItemInventory.instance.RemoveItem(this);
     }
 
     // Start is called before the first frame update
@@ -32,5 +32,10 @@ public class StatItems : Items
 
 public enum StatItemType
 {
-    FishItem
+    Lumpsucker,
+    Tuna,
+    Wonderpus,
+    Bonk,
+    RoyalGramma,
+    Dragon
 }

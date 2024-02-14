@@ -114,10 +114,11 @@ public class InventoryToggle : MonoBehaviour
         }
     }
 
-    public void OpenInventory()
+    public void OpenInventory(bool IsSellingItems = false)
     {
         inventoryOpen = true;
         InevtoryParent.SetActive(true);
+        
         //Uncomment for WebGl Build
         //ChangeCursorState(false);
     }

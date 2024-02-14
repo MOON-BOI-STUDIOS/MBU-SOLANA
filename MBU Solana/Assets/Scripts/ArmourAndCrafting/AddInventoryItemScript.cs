@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 public class AddInventoryItemScript : MonoBehaviour
 {
+    
     public List<Items> itemList = new List<Items>();
 
     public List<Items> CraftingReceipes = new List<Items>();
@@ -18,8 +19,10 @@ public class AddInventoryItemScript : MonoBehaviour
     public Transform InventorymainCanvas;
     public Transform HotbarTransform;
     public Transform inventoryTransform;
+    public bool IsSelling;
 
     #region Singleton
+
 
     public static AddInventoryItemScript instance;
     private void Awake()
@@ -31,7 +34,6 @@ public class AddInventoryItemScript : MonoBehaviour
     }
 
     #endregion
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))
@@ -58,9 +60,18 @@ public class AddInventoryItemScript : MonoBehaviour
         }*/
     }
 
-    public void OnStatItemUse(StatItemType _itemType, int amount)
+    public void OnItemUse(Items item)
     {
-        Debug.Log("Consuming: " + _itemType + "Add amount: " + amount);
+        //Debug.Log("Consuming: " + _itemType + "Add amount: " + amount);
+        // Sell item to the fisherman
+        if(IsSelling)
+        {
+            //Add the amount of gold coins to the player from item.GetItemValue()
+            
+            // Delete item from inventory
+            ItemInventory.instance.RemoveItem(item);
+        }
+
     }
     
     public void DisplayItemInfo(string itemName, string itemDescription,int itemValue,int NumOfItems,Vector2 buttonPos)
