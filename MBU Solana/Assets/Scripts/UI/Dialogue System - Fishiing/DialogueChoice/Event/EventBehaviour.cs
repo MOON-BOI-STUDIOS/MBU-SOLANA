@@ -24,8 +24,14 @@ public class EventBehaviour : ScriptableObject
 
     public void Swap()
     {
+        WalkingandFishing.instance.IsFishingBeforeTutorial();
+    }
+
+    public void OtherSwap()
+    {
         WalkingandFishing.instance.IsFishingActive();
     }
+
 
     public void OpenShop()
     {

@@ -9,6 +9,8 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     public string NameTag;
     // Reference for UI
     public bool isTutorialOver = false;
+    public bool canFish = false;
+    public bool isShop = false;
     public DialoguebaseFishing db;
     public DialoguebaseFishing dbshop;
 
@@ -27,7 +29,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
         {
             case "FishingZone":
                 // Call the function to open pop up menu
-                if (isTutorialOver)
+                if (canFish)
                 {
                     DialogueManagerFishing.instance.EnqueueDialogue(db);
                 }
@@ -36,7 +38,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
             
             case "FishermanSpot":
                 // Get the bool for isTutorialOver
-                if(!isTutorialOver)
+                if(!isShop)
                 {
                     // Call the button here for dialog script
                     DialogueManagerFishing.instance.EnqueueDialogue(db);

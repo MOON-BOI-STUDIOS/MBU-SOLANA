@@ -2146,6 +2146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameTag: FishingZone
   isTutorialOver: 0
+  canFish: 0
+  isShop: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
   dbshop: {fileID: 0}
 --- !u!1 &253638444
@@ -2808,6 +2810,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameTag: FishingZone
   isTutorialOver: 0
+  canFish: 0
+  isShop: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
   dbshop: {fileID: 0}
 --- !u!1 &286290060
@@ -2961,7 +2965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &297569241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3223,6 +3227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameTag: FishingZone
   isTutorialOver: 0
+  canFish: 0
+  isShop: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
   dbshop: {fileID: 0}
 --- !u!1 &328186260 stripped
@@ -4216,6 +4222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameTag: FishingZone
   isTutorialOver: 0
+  canFish: 0
+  isShop: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
   dbshop: {fileID: 0}
 --- !u!1 &428904214
@@ -5490,6 +5498,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameTag: FishingZone
   isTutorialOver: 0
+  canFish: 0
+  isShop: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
   dbshop: {fileID: 0}
 --- !u!1001 &562248349
@@ -6500,9 +6510,13 @@ MonoBehaviour:
   - {fileID: 403064587}
   - {fileID: 323392123}
   jolt: {fileID: 832930720}
+  Mecha: {fileID: 1596572712}
   panel: {fileID: 95905464}
   transitions: {fileID: 95905466}
-  tutorial: {fileID: 0}
+  tutorial: {fileID: 2025916826}
+  fishingMec: {fileID: 297569240}
+  fishing: {fileID: 1806507510}
+  DB: {fileID: 11400000, guid: 510ffb98ceb65764d981c1d8ecf5da9d, type: 2}
 --- !u!114 &642462188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6925,8 +6939,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46, y: 244}
-  m_SizeDelta: {x: 1941.204, y: 552.402}
+  m_AnchoredPosition: {x: 449, y: 204}
+  m_SizeDelta: {x: 1049.2, y: 552.402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697635080
 MonoBehaviour:
@@ -6948,9 +6962,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Now comes the tricky part - \nreeling in the fish!\n Tap on the screen
-    in time with the bar to start reeling. You'll need patience and quick reflexes
-    to keep the fish from escaping."
+  m_text: Tap on the screen in time with the bar to start reeling. You'll need patience
+    and quick reflexes to keep the fish from escaping.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
   m_sharedMaterial: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
@@ -12476,6 +12489,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NameTag: FishingZone
   isTutorialOver: 0
+  canFish: 0
+  isShop: 0
   db: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
   dbshop: {fileID: 0}
 --- !u!1 &1145911419
@@ -16174,7 +16189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameTag: FishermanSpot
-  isTutorialOver: 1
+  isTutorialOver: 0
+  canFish: 0
+  isShop: 0
   db: {fileID: 11400000, guid: 92f5063a80745d844bdee621e5442866, type: 2}
   dbshop: {fileID: 11400000, guid: 2cfce5fe16255044c80f541e0baa3b3a, type: 2}
 --- !u!4 &1383918246
@@ -20513,7 +20530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -165, y: 159}
+  m_AnchoredPosition: {x: -165, y: 51}
   m_SizeDelta: {x: 964.539, y: 357.556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731702476
@@ -21715,6 +21732,15 @@ MonoBehaviour:
   fishingDone: 0
   fishCaughts: 0
   controller5: {fileID: 1806507516}
+  collisionType:
+  - {fileID: 282280422}
+  - {fileID: 1140502060}
+  - {fileID: 552024495}
+  - {fileID: 249830582}
+  - {fileID: 403064589}
+  - {fileID: 323392125}
+  - {fileID: 1383918244}
+  db: {fileID: 11400000, guid: a7294c51aa814ce4d9174b73f3797dfb, type: 2}
   backMecha: {fileID: 1596572712}
   backarcade: {fileID: 1848503665}
 --- !u!82 &1806507511
@@ -22793,87 +22819,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885258378}
   m_CullTransparentMesh: 1
---- !u!1 &1901280569
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1901280572}
-  - component: {fileID: 1901280571}
-  - component: {fileID: 1901280573}
-  m_Layer: 0
-  m_Name: FishermanTrigger (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!61 &1901280571
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901280569}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.73882866, y: -0.46792483}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.4776573, y: 1.9358497}
-  m_EdgeRadius: 0
---- !u!4 &1901280572
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901280569}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.2, y: -2.02, z: -0.22906062}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1901280573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901280569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc7c881e1d7c5594cbf0b801121ff013, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questItem: {fileID: 0}
-  completedColor: {r: 0, g: 0, b: 0, a: 0}
-  activeColor: {r: 0, g: 0, b: 0, a: 0}
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
-  arrow: {fileID: 0}
-  allQuests: []
-  QuestCompleted: 0
-  collider2D: {fileID: 0}
-  buttonisPressed: 0
-  Pressed: 0
 --- !u!1 &1903590538
 GameObject:
   m_ObjectHideFlags: 0
@@ -24346,7 +24291,6 @@ MonoBehaviour:
   popUps:
   - {fileID: 1747599978}
   - {fileID: 1219594742}
-  - {fileID: 1840134683}
   Fishing: {fileID: 1806507510}
 --- !u!4 &2025916828
 Transform:
@@ -24398,7 +24342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -165, y: 159}
+  m_AnchoredPosition: {x: 752, y: -80}
   m_SizeDelta: {x: 964.539, y: 357.556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027496465
