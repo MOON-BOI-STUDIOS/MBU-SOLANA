@@ -61,9 +61,12 @@ public class WalkingandFishing : MonoBehaviour
 
     public void IsFishingActive()
     {
+        // Check if there are equippable items in Hotbar 
+        //and there is one rod and a bait to fish with
         //Change of Sprite from walking to Fishing
-        if(!IsFishing)
+        if(!IsFishing && ItemInventory.instance.Checkcanfish())
         {
+            // Equipping rods and bait
             IsFishing = true;
             // Add Code for transition in coroutine
             StartCoroutine(FishTransitionf());

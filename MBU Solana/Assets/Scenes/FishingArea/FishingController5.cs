@@ -72,6 +72,8 @@ public class FishingController5 : MonoBehaviour
     private FishingRodType currentRod;
     private BaitType currentBait;
 
+    public StatItems[] fishItems;
+
     private void Start()
     {
         // Initial setup
@@ -112,16 +114,18 @@ public class FishingController5 : MonoBehaviour
 
         if (randomChance <= totalChance)
         {
+            // Add fish item here to add to the inventory
+            StatItems fishCaught = fishItems[Random.Range(0,fishItems.Length)];
+            AddInventoryItemScript.instance.AddToInventory(fishCaught);
             // Fish caught
-            FishType caughtFish = (FishType)Random.Range(0, fishData.Length);
-            int points = fishData[(int)caughtFish].points;
-            string fishName = fishData[(int)caughtFish].name;
-            string rodName = rodData[(int)currentRod].name;
-            string baitName = baitData[(int)currentBait].name;
+            //FishType caughtFish = (FishType)Random.Range(0, fishData.Length);
+            int points = fishCaught.points;
+            string fishName = fishCaught.name;
+            //string rodName = rodData[(int)currentRod].name;
+            //string baitName = baitData[(int)currentBait].name;
 
             // Display catch information on the screen
-            DisplayText($"Dre has caught a {fishName} using {rodName} and {baitName}! +{points} points (Rod Chance: {rodChance * 100}%, Bait Luck: {baitLuck * 100}%)");
-            // Add fish item here to add to the inventory
+            DisplayText($"Dre has caught a {fishName} of value {fishCaught.GetItemValue()}, scoring: {points}");
         }
         else
         {
