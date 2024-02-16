@@ -130,7 +130,7 @@ public class RodShopitem : MonoBehaviour
         {
             Debug.Log("Value of the item is:" + _bait.GetItemValue());
             // Write code to Add item to the inventory here
-            AddInventoryItemScript.instance.AddToInventory(_bait);
+            AddInventoryItemScript.instance.AddToInventory(_bait);      
         }
     }
     //public void setrodasPurchased()
