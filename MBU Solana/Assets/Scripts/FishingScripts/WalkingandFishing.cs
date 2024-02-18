@@ -18,7 +18,7 @@ public class WalkingandFishing : MonoBehaviour
     // Make this Script an Instance so that it can call the Fishing and Walking
     // Start is called before the first frame update
     public GameObject Walking;
-    public GameObject Fishing;
+    public GameObject FishingObj;
     public GameObject Joystick;
     private bool IsFishing = false;
     public Transform[] FishingPositions;
@@ -50,7 +50,7 @@ public class WalkingandFishing : MonoBehaviour
             IsFishing = false;
             // Add Code for transition in coroutine
             StartCoroutine(FishTransitionw());
-            Fishing.SetActive(false);
+            FishingObj.SetActive(false);
             Joystick.SetActive(true);
             Walking.SetActive(true);
             Mecha.SetActive(false);
@@ -61,22 +61,28 @@ public class WalkingandFishing : MonoBehaviour
 
     public void IsFishingActive()
     {
-        // Check if there are equippable items in Hotbar 
+        // Check if there are equippable items in Hotbar
+        Items[] equippedItems = ItemInventory.instance.Checkcanfish(); 
         //and there is one rod and a bait to fish with
         //Change of Sprite from walking to Fishing
-        if(!IsFishing && ItemInventory.instance.Checkcanfish())
+        if(!IsFishing && equippedItems[0] != null && equippedItems[1] != null)
         {
             // Equipping rods and bait
             IsFishing = true;
+            // Sending the items over to the Fishing Script
+            fishing.GetequippedItems(equippedItems);
+            //Choose Sprite for wide variety of Sprites with different rods
             // Add Code for transition in coroutine
             StartCoroutine(FishTransitionf());
             //Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
-            Fishing.SetActive(true);
+            FishingObj.SetActive(true);
             jolt.SetActive(true);
             fishingMec.SetActive(true);
-
-
             //Fishing.transform.position = fisingPosition.position;
+        }
+        else
+        {
+            Debug.Log("Cannot fish as one of the equipped items is null");
         }
     }
 
@@ -106,8 +112,8 @@ public class WalkingandFishing : MonoBehaviour
         transitions.Play("fishingAnimations");
         yield return new WaitForSeconds(1f);
         Walking.SetActive(false);
-        Fishing.SetActive(true);
-        Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
+        FishingObj.SetActive(true);
+        FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         panel.SetActive(false);
     }
 
@@ -118,8 +124,8 @@ public class WalkingandFishing : MonoBehaviour
         transitions.Play("fishingAnimations");
         yield return new WaitForSeconds(1f);
         Walking.SetActive(false);
-        Fishing.SetActive(true);
-        Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
+        FishingObj.SetActive(true);
+        FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         DialogueManagerFishing.instance.EnqueueDialogue(DB);
         panel.SetActive(false);
     }
@@ -131,7 +137,7 @@ public class WalkingandFishing : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Joystick.SetActive(false);
         Walking.SetActive(false);
-        Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
+        FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         panel.SetActive(false);
     }
 

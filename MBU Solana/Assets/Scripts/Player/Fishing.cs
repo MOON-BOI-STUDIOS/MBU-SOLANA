@@ -29,6 +29,8 @@ public class Fishing : MonoBehaviour
     public DialoguebaseFishing db;
     public GameObject backMecha;
     public GameObject backarcade;
+
+    private Items[] Itemsequipped;
     // Start is called before the first frame update
     void Start()
     {
@@ -72,11 +74,16 @@ public class Fishing : MonoBehaviour
                 joltButton.SetActive(false);
                 fishButton.SetActive(false);
                 finshingMechanic.SetActive(false);
-
             }
         }
       
     }
+    public void GetequippedItems(Items[] items)
+    {
+        Itemsequipped = items;
+        Debug.Log("Rod name:" + Itemsequipped[0].name + " bait name:" + Itemsequipped[1].name);
+    }
+    
 
     //triggered through the button. starts the jolt animation
     public void jolt()
