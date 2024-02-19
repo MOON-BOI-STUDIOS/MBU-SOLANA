@@ -101,10 +101,10 @@ public class WalkingandFishing : MonoBehaviour
             // Add Code for transition in coroutine
             StartCoroutine(FishTransitionf());
             Joystick.SetActive(false);
-          
             jolt.SetActive(true);
             fishingMec.SetActive(true);
             tutorial.SetActive(true);
+
             //Fishing.transform.position = fisingPosition.position;
         }
     }
@@ -118,6 +118,7 @@ public class WalkingandFishing : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Walking.SetActive(false);
         FishingObj.SetActive(true);
+        
         FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         panel.SetActive(false);
     }
@@ -127,8 +128,8 @@ public class WalkingandFishing : MonoBehaviour
     {
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
-        yield return new WaitForSeconds(1f);
         Walking.SetActive(false);
+        yield return new WaitForSeconds(1f);
         FishingObj.SetActive(true);
         FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         
@@ -139,7 +140,7 @@ public class WalkingandFishing : MonoBehaviour
     {
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         Joystick.SetActive(true);
         Walking.SetActive(true);
         FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;

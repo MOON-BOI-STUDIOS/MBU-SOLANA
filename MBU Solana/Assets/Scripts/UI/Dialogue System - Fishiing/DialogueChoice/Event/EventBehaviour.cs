@@ -57,6 +57,8 @@ public class EventBehaviour : ScriptableObject
     public void startrTutorial()
     {
         CollisionType.instance.isTutorialOver = true;
+        CollisionType.instance.isQuestions = false;
+        CollisionType.instance.isShop = true;
     }
 
 }

@@ -11,16 +11,16 @@ public class DialogueSystemFishing : MonoBehaviour
     public GameObject interactButton;
     bool isClose;
     public DialogueOptions dialogue;
-    //public DialoguebaseFishing bdf;
+    public DialoguebaseFishing bdf;
 
 
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        //DialogueManagerFishing.instance.EnqueueDialogue(bdf);
+        DialogueManagerFishing.instance.EnqueueDialogue(bdf);
 
     }
 

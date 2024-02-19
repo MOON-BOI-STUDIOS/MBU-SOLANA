@@ -2173,7 +2173,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.84000003, y: 0.76, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -2188,50 +2188,40 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451329522}
   m_Enabled: 1
-  m_Tiles:
-  - first: {x: -10, y: -2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+  m_Tiles: {}
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 01ec14350cdeebb428db864246368a3b, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -226604544, guid: 928fe31f30e57924c8b94c1ee780fa1a, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 1
+  - m_RefCount: 0
     m_Data:
-      e00: 1
+      e00: 0
       e01: 0
-      e02: 0
-      e03: 0
+      e02: 7.1481204e+19
+      e03: 7.1481204e+19
       e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
+      e11: 0
+      e12: 8.59e-43
+      e13: 8.59e-43
+      e20: -6.8748603e-35
+      e21: 1e-45
+      e22: -2.9563125e-19
+      e23: 4.7919e-10
+      e30: 4.5904e-41
       e31: 0
-      e32: 0
-      e33: 1
+      e32: 8.59e-43
+      e33: 8.63e-43
   m_TileColorArray:
-  - m_RefCount: 1
-    m_Data: {r: 1, g: 1, b: 1, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 5.6402e-41, g: 5.6402e-41, b: 5.6402e-41, a: 5.6402e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2273,7 +2263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &451441041
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2493,7 +2483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &550578020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2899,6 +2889,8 @@ MonoBehaviour:
   panel: {fileID: 0}
   Qbjective1: 0
   Objective2: 0
+  quest1: {fileID: 0}
+  quest2: {fileID: 0}
 --- !u!1 &675398123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6631,7 +6623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1252269264
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6824,7 +6816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1327283619
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13280,7 +13272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3961368043105817317, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3961368043105817322, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: joystick
@@ -13342,6 +13334,18 @@ PrefabInstance:
       propertyPath: hotBarController
       value: 
       objectReference: {fileID: 1493197722}
+    - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
 --- !u!1001 &4237692437458002565
@@ -13735,6 +13739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Image
       objectReference: {fileID: 0}
+    - target: {fileID: 4038589749370146719, guid: 879bc5863e1e33442b1b895a50ce2b01, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 879bc5863e1e33442b1b895a50ce2b01, type: 3}
 --- !u!114 &8190880756335092899 stripped
@@ -13803,7 +13811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &8458300472190162452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14000,7 +14008,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8458300472190162449}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1bad11389144554094234744ebfef5a, type: 3}
   m_Name: 
@@ -14009,6 +14017,7 @@ MonoBehaviour:
   dialogues: []
   interactButton: {fileID: 1221658562}
   dialogue: {fileID: 11400000, guid: 92f5063a80745d844bdee621e5442866, type: 2}
+  bdf: {fileID: 11400000, guid: a7294c51aa814ce4d9174b73f3797dfb, type: 2}
 --- !u!1001 &8669951630306007676
 PrefabInstance:
   m_ObjectHideFlags: 0

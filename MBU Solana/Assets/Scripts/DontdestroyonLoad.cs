@@ -7,6 +7,10 @@ public class DontdestroyonLoad : MonoBehaviour
     public static DontdestroyonLoad instance;
     [SerializeField]
     public static bool itutorialOver;
+    public static bool canshop;
+    public static bool isQuestion;
+
+    public static bool nextQuest;
 
     private void Awake()
     {
@@ -20,6 +24,8 @@ public class DontdestroyonLoad : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
         itutorialOver = CollisionType.instance.isTutorialOver;
+        canshop = CollisionType.instance.isShop;
+        isQuestion = CollisionType.instance.isQuestions;
 
     }
     public void Update()
@@ -27,7 +33,10 @@ public class DontdestroyonLoad : MonoBehaviour
         
        
         itutorialOver = CollisionType.instance.isTutorialOver;
-        Debug.Log(itutorialOver);
+        itutorialOver = CollisionType.instance.isTutorialOver;
+        canshop = CollisionType.instance.isShop;
+        isQuestion = CollisionType.instance.isQuestions;
+      
     }
 
 
