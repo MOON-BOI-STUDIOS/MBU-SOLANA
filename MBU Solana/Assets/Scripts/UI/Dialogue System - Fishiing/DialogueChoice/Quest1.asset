@@ -22,7 +22,7 @@ MonoBehaviour:
   questionText: "DR\xC9"
   optionsinfo:
   - buttonName: 'That was pretty cool! '
-    nextdialogue: {fileID: 11400000, guid: 5e5e782d04fe678478c5d4c92c460af5, type: 2}
+    nextdialogue: {fileID: 11400000, guid: 9a36a7471c10e9c42bdba5d028b0df7a, type: 2}
     Event:
       m_PersistentCalls:
         m_Calls:
@@ -33,6 +33,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: startDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 9a36a7471c10e9c42bdba5d028b0df7a, type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialoguebaseFishing, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -55,8 +67,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: startDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: DialoguebaseFishing, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - buttonName: Can I release it back into the waters?
-    nextdialogue: {fileID: 11400000, guid: 5e5e782d04fe678478c5d4c92c460af5, type: 2}
+    nextdialogue: {fileID: 11400000, guid: a556a08a9d23d5447972b2a826fbf188, type: 2}
     Event:
       m_PersistentCalls:
         m_Calls:
@@ -67,6 +91,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: startDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: a556a08a9d23d5447972b2a826fbf188, type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialoguebaseFishing, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
