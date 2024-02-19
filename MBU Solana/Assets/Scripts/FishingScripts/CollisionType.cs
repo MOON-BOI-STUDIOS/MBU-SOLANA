@@ -8,12 +8,25 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     [Header("ObjectTag")]
     public string NameTag;
     // Reference for UI
-    public bool isTutorialOver = false;
-    public bool canFish = false;
-    public bool isShop = false;
+    public bool isTutorialOver;
+    public bool canFish;
+    public bool isShop;
+    public bool isQuestions;
     public DialoguebaseFishing db;
     public DialoguebaseFishing dbshop;
+    public DialoguebaseFishing dbt;
+    public DialoguebaseFishing dqbt;
 
+    public static CollisionType instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        isTutorialOver = DontdestroyonLoad.itutorialOver;
+    }
 
     public Transform GetGameObjectPosition {get { return gameObject.transform; }}
 
@@ -21,6 +34,11 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     public string GetTag()
     {
         return NameTag;
+    }
+
+    public void Update()
+    {
+        Debug.Log(isTutorialOver);
     }
 
     public void callUIFunctions()
@@ -33,21 +51,35 @@ public class CollisionType : MonoBehaviour, ICollisiontype
                 {
                     DialogueManagerFishing.instance.EnqueueDialogue(db);
                 }
-                
+                else if( canFish == false &&isTutorialOver == true)
+                {
+                    DialogueManagerFishing.instance.EnqueueDialogue(dbt);
+                }
+   
                 break;
             
             case "FishermanSpot":
                 // Get the bool for isTutorialOver
                 if(!isShop)
                 {
+                    if (isQuestions)
+                    {
+                        DialogueManagerFishing.instance.EnqueueDialogue(dqbt);
+                    }
+                    else
+                    {
+                        DialogueManagerFishing.instance.EnqueueDialogue(db);
+                    }
                     // Call the button here for dialog script
-                    DialogueManagerFishing.instance.EnqueueDialogue(db);
+                   
                 }
                 else
                 {
                     //Call fucntion to Shop // open the UI to Shop
                     DialogueManagerFishing.instance.EnqueueDialogue(dbshop);
                 }
+              
+               
                 break;  
         }
     }

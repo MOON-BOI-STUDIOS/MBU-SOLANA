@@ -154,7 +154,15 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             {
                 enterButton.SetActive(true);
             }
-            
+            if (collision.name == "ShopEntrance")
+            {
+                fishButton.SetActive(true);
+            }
+            if (collision.name == "ShopExit")
+            {
+                fishButton.SetActive(true);
+            }
+
         }
     }
 
@@ -168,6 +176,14 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if (collision.name == "ArenaEntranceTrigger")
         {
             enterButton.SetActive(false);
+        }
+        if (collision.name == "ShopEntrance")
+        {
+            fishButton.SetActive(false);
+        }
+        if (collision.name == "ShopExit")
+        {
+            fishButton.SetActive(false);
         }
     }
   

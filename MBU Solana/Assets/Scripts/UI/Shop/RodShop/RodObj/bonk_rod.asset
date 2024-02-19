@@ -15,8 +15,10 @@ MonoBehaviour:
   name: Bonk Rod
   icon: {fileID: 0}
   ItemDescription: 
-  ItemValue: 0
-  luck: 50
-  Minrarity: 70
-  Maxrarity: 10
+  ItemValue: 40
+  IsEquippable: 0
+  classOfItem: 0
+  luck: 40
+  Minrarity: 40
+  Maxrarity: 69
   isPurchased: 0
