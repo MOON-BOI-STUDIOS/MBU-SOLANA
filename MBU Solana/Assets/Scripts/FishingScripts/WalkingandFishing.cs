@@ -31,6 +31,8 @@ public class WalkingandFishing : MonoBehaviour
     public GameObject fishingMec;
     public Fishing fishing;
     public DialoguebaseFishing DB;
+    public GameObject HUD1;
+    public GameObject HUD2;
     void Start()
     {
         
@@ -78,6 +80,9 @@ public class WalkingandFishing : MonoBehaviour
             FishingObj.SetActive(true);
             jolt.SetActive(true);
             fishingMec.SetActive(true);
+            HUD1.SetActive(false);
+            HUD2.SetActive(false);
+            tutorial.SetActive(true);
             //Fishing.transform.position = fisingPosition.position;
         }
         else
@@ -126,7 +131,7 @@ public class WalkingandFishing : MonoBehaviour
         Walking.SetActive(false);
         FishingObj.SetActive(true);
         FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
-        DialogueManagerFishing.instance.EnqueueDialogue(DB);
+        
         panel.SetActive(false);
     }
 

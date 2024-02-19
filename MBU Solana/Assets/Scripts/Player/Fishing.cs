@@ -13,6 +13,7 @@ public class Fishing : MonoBehaviour
     public GameObject[] fishUI;
     public Transform greenArea;
     Vector3 greenAreaScale;
+    private float[] greenscale = [0.2,0.10,0.05,0.32,0.25,0.08,0.03,0.15]
 
     public GameObject joltButton, fishButton;
     public TextMeshProUGUI fishesText;
@@ -61,12 +62,13 @@ public class Fishing : MonoBehaviour
 
         //Sets the width of the green area, according to number of successful attempts. This basically is the level design for the fishing part
         greenArea.localScale = greenAreaScale;
+
         if (fishMarkerCounter == 0) { fishUI[0].SetActive(false); fishUI[1].SetActive(false); fishUI[2].SetActive(false); greenAreaScale.x = 0.2f; }
         if (fishMarkerCounter == 1) { fishUI[0].SetActive(true); greenAreaScale.x = 0.10f; }
         if (fishMarkerCounter == 2) { fishUI[0].SetActive(true); fishUI[1].SetActive(true); greenAreaScale.x = 0.05f; }
         if (fishMarkerCounter == 3) { fishUI[0].SetActive(true); fishUI[1].SetActive(true); fishUI[2].SetActive(true); greenAreaScale.x = 0; }
 
-        for(int i = 0; i < collisionType.Length; i++)
+        /*for(int i = 0; i < collisionType.Length; i++)
         {
             if (collisionType[i].isTutorialOver == true)
             {
@@ -75,6 +77,14 @@ public class Fishing : MonoBehaviour
                 fishButton.SetActive(false);
                 finshingMechanic.SetActive(false);
             }
+        }*/
+
+        if(fishCaughts == true)
+        {
+            DialogueManagerFishing.instance.EnqueueDialogue(db);
+            joltButton.SetActive(false);
+            fishButton.SetActive(false);
+            finshingMechanic.SetActive(false);
         }
       
     }
@@ -98,48 +108,38 @@ public class Fishing : MonoBehaviour
         joltButton.SetActive(false);
         fishButton.SetActive(true);
         finshingMechanic.SetActive(true);
-        fishingDone = true;
+        //fishingDone = true;
     }
   
     //fish button controls
     public void fish()
     {
-        
-        //successful attempt        
+
+        //successful attempt
         if(hook.GetChild(0).GetComponent<Hook>().isGreenArea == true)
         {
-           
+
             audioS.PlayOneShot(select);
             fishMarkerCounter++;
-
+            fishingDone = true;
             if (fishMarkerCounter == 3)
             {
-                
-                controller5.CatchFish();
+
+                //controller5.CatchFish();
                 StartCoroutine(fishCaught());
-                for (int i = 0; i < collisionType.Length; i++)
-                {
-                    collisionType[i].isTutorialOver = false;
-                }
+                StartCoroutine(setBool());
+
             }
-            else
-            {
-                for (int i = 0; i < collisionType.Length; i++)
-                {
-                    collisionType[i].isTutorialOver = false;
-                }
-            }
+
+
         }
         //unsuccesful attempt
         else
         {
             audioS.PlayOneShot(reject);
             fishMarkerCounter = 0;
-            for (int i = 0; i < collisionType.Length; i++)
-            {
-                collisionType[i].isTutorialOver = false;
-            }
-               
+
+
         }
     }
 
@@ -148,12 +148,6 @@ public class Fishing : MonoBehaviour
     {
         audioS.PlayOneShot(fishCaughtAudio);
         PlayerPrefs.SetInt("Fishes", PlayerPrefs.GetInt("Fishes") + 1);
-        for (int i = 0; i < collisionType.Length; i++)
-        {
-            collisionType[i].isTutorialOver = true;
-            collisionType[i].isShop = true;
-            collisionType[i].canFish = true;
-        }
     }
 
     // on a succesfull attempt. triggers reel animation, resets fishcounter to 0.
@@ -168,8 +162,17 @@ public class Fishing : MonoBehaviour
 
         joltButton.SetActive(true);
         fishButton.SetActive(false);
-       
-           
+    }
+
+    public IEnumerator setBool()
+    {
+        fishCaughts = true;
+
+        yield return new WaitForSeconds(6f);
+
+        fishCaughts = false;
+
+        StopCoroutine(setBool());
 
     }
 }
