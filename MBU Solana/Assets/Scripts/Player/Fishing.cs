@@ -125,7 +125,7 @@ public class Fishing : MonoBehaviour
             if (fishMarkerCounter == 3)
             {
 
-                //controller5.CatchFish();
+                controller5.CatchFish();
                 StartCoroutine(fishCaught());
                 StartCoroutine(setBool());
 

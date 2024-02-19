@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 public class FishingController5 : MonoBehaviour
 {
     [System.Serializable]
@@ -73,6 +74,10 @@ public class FishingController5 : MonoBehaviour
     private BaitType currentBait;
 
     public StatItems[] fishItems;
+    public Image[] fishSprite;
+    public GameObject image;
+    public Image Fish_Image;
+    public FishType Type;
 
     private void Start()
     {
@@ -126,12 +131,43 @@ public class FishingController5 : MonoBehaviour
 
             // Display catch information on the screen
             DisplayText($"Dre has caught a {fishName} of value {fishCaught.GetItemValue()}, scoring: {points}");
+            image.SetActive(true);
+            switch (Type)
+            {
+                case FishType.Wonderpus:
+                    Fish_Image = fishSprite[0];
+
+                    break;
+                case FishType.Tuna:
+                    Fish_Image = fishSprite[2];
+                    break;
+                case FishType.RoyalGramma:
+                    Fish_Image = fishSprite[3];
+                    break;
+                case FishType.Lumpsucker:
+                    Fish_Image = fishSprite[4];
+                    break;
+                case FishType.Dragon:
+                    Fish_Image = fishSprite[5];
+                    break;
+                case FishType.Bonk:
+                    Fish_Image = fishSprite[6];
+                    break;
+            }
+
+
         }
         else
         {
             // No fish caught
             DisplayText("No fish caught this time.");
+            image.SetActive(false);
+
         }
+
+     
+
+
     }
 
 

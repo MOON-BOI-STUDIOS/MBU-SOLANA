@@ -11,6 +11,7 @@ public class DialogueSystemFishing : MonoBehaviour
     public GameObject interactButton;
     bool isClose;
     public DialogueOptions dialogue;
+    //public DialoguebaseFishing bdf;
 
 
 
@@ -19,7 +20,7 @@ public class DialogueSystemFishing : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        //DialogueManagerFishing.instance.EnqueueDialogue(dialogue);
+        //DialogueManagerFishing.instance.EnqueueDialogue(bdf);
 
     }
 
