@@ -15,8 +15,10 @@ MonoBehaviour:
   name: Basic Rod
   icon: {fileID: 0}
   ItemDescription: 
-  ItemValue: 0
-  luck: 20
+  ItemValue: 10
+  IsEquippable: 0
+  classOfItem: 0
+  luck: 10
   Minrarity: 10
-  Maxrarity: 20
+  Maxrarity: 0
   isPurchased: 0

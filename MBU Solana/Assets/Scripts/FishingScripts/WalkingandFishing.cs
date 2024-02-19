@@ -25,12 +25,14 @@ public class WalkingandFishing : MonoBehaviour
     public GameObject jolt;
     public GameObject Mecha;
     public GameObject panel;
+    public GameObject HUD1;
+    public GameObject HUD2;
 
     public Animator transitions;
     public GameObject tutorial;
     public GameObject fishingMec;
-    public Fishing fishing;
-    public DialoguebaseFishing DB;
+  
+
     void Start()
     {
         
@@ -55,7 +57,9 @@ public class WalkingandFishing : MonoBehaviour
             Walking.SetActive(true);
             Mecha.SetActive(false);
             jolt.SetActive(false);
-            
+            HUD1.SetActive(false);
+            HUD2.SetActive(false);
+
         }
     }
 
@@ -74,6 +78,8 @@ public class WalkingandFishing : MonoBehaviour
             Fishing.SetActive(true);
             jolt.SetActive(true);
             fishingMec.SetActive(true);
+            HUD1.SetActive(false);
+            HUD2.SetActive(false);
 
 
             //Fishing.transform.position = fisingPosition.position;
@@ -90,9 +96,12 @@ public class WalkingandFishing : MonoBehaviour
             // Add Code for transition in coroutine
             StartCoroutine(FishTransitionfo());
             Joystick.SetActive(false);
-            fishing.enabled = false;
-            jolt.SetActive(false);
-            fishingMec.SetActive(false);
+            
+            jolt.SetActive(true);
+            fishingMec.SetActive(true);
+            HUD1.SetActive(false);
+            HUD2.SetActive(false);
+            tutorial.SetActive(true);
 
             //Fishing.transform.position = fisingPosition.position;
         }
@@ -104,8 +113,8 @@ public class WalkingandFishing : MonoBehaviour
     {
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
-        yield return new WaitForSeconds(1f);
         Walking.SetActive(false);
+        yield return new WaitForSeconds(2f);
         Fishing.SetActive(true);
         Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         panel.SetActive(false);
@@ -116,12 +125,13 @@ public class WalkingandFishing : MonoBehaviour
     {
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
-        yield return new WaitForSeconds(1f);
         Walking.SetActive(false);
+        yield return new WaitForSeconds(1f);
         Fishing.SetActive(true);
-        Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
-        DialogueManagerFishing.instance.EnqueueDialogue(DB);
         panel.SetActive(false);
+        Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
+       
+       
     }
 
     public IEnumerator FishTransitionw()
@@ -139,7 +149,7 @@ public class WalkingandFishing : MonoBehaviour
     {
         tutorial.SetActive(true);
         jolt.SetActive(true);
-        fishing.enabled = true;
+       
 
     }
 

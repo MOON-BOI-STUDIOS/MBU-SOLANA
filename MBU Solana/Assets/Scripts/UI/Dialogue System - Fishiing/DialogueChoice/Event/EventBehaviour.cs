@@ -4,9 +4,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="New Event", menuName ="event")]
 public class EventBehaviour : ScriptableObject
 {
-    public GameObject OBJECT;
+   
 
-    public DialoguebaseFishing db;
     public void turnoff()
     {
         DialogueManagerFishing.instance.dialogueBox.SetActive(false);
@@ -45,9 +44,19 @@ public class EventBehaviour : ScriptableObject
         WalkingandFishing.instance.TurnonTutorial();
     }
 
-    public void startDialogue()
+    public void startDialogue(DialoguebaseFishing db)
     {
         DialogueManagerFishing.instance.EnqueueDialogue(db);
+    }
+
+    public void questionDialogue()
+    {
+        CollisionType.instance.isQuestions = true;
+    }
+
+    public void startrTutorial()
+    {
+        CollisionType.instance.isTutorialOver = true;
     }
 
 }

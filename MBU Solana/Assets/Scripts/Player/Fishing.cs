@@ -64,18 +64,16 @@ public class Fishing : MonoBehaviour
         if (fishMarkerCounter == 2) { fishUI[0].SetActive(true); fishUI[1].SetActive(true); greenAreaScale.x = 0.05f; }
         if (fishMarkerCounter == 3) { fishUI[0].SetActive(true); fishUI[1].SetActive(true); fishUI[2].SetActive(true); greenAreaScale.x = 0; }
 
-        for(int i = 0; i < collisionType.Length; i++)
-        {
-            if (collisionType[i].isTutorialOver == true)
-            {
-                DialogueManagerFishing.instance.EnqueueDialogue(db);
-                joltButton.SetActive(false);
-                fishButton.SetActive(false);
-                finshingMechanic.SetActive(false);
 
-            }
+
+        if(fishCaughts == true)
+        {
+            DialogueManagerFishing.instance.EnqueueDialogue(db);
+            joltButton.SetActive(false);
+            fishButton.SetActive(false);
+            finshingMechanic.SetActive(false);
         }
-      
+
     }
 
     //triggered through the button. starts the jolt animation
@@ -91,7 +89,7 @@ public class Fishing : MonoBehaviour
         joltButton.SetActive(false);
         fishButton.SetActive(true);
         finshingMechanic.SetActive(true);
-        fishingDone = true;
+    
     }
   
     //fish button controls
@@ -104,34 +102,24 @@ public class Fishing : MonoBehaviour
            
             audioS.PlayOneShot(select);
             fishMarkerCounter++;
-
+            fishingDone = true;
             if (fishMarkerCounter == 3)
             {
-                
-                controller5.CatchFish();
+
+                //controller5.CatchFish();
                 StartCoroutine(fishCaught());
-                for (int i = 0; i < collisionType.Length; i++)
-                {
-                    collisionType[i].isTutorialOver = false;
-                }
+                StartCoroutine(setBool());
+               
             }
-            else
-            {
-                for (int i = 0; i < collisionType.Length; i++)
-                {
-                    collisionType[i].isTutorialOver = false;
-                }
-            }
+            
+            
         }
         //unsuccesful attempt
         else
         {
             audioS.PlayOneShot(reject);
             fishMarkerCounter = 0;
-            for (int i = 0; i < collisionType.Length; i++)
-            {
-                collisionType[i].isTutorialOver = false;
-            }
+          
                
         }
     }
@@ -141,12 +129,7 @@ public class Fishing : MonoBehaviour
     {
         audioS.PlayOneShot(fishCaughtAudio);
         PlayerPrefs.SetInt("Fishes", PlayerPrefs.GetInt("Fishes") + 1);
-        for (int i = 0; i < collisionType.Length; i++)
-        {
-            collisionType[i].isTutorialOver = true;
-            collisionType[i].isShop = true;
-            collisionType[i].canFish = true;
-        }
+        
     }
 
     // on a succesfull attempt. triggers reel animation, resets fishcounter to 0.
@@ -163,6 +146,18 @@ public class Fishing : MonoBehaviour
         fishButton.SetActive(false);
        
            
+
+    }
+
+    public IEnumerator setBool()
+    {
+        fishCaughts = true;
+
+        yield return new WaitForSeconds(6f);
+
+        fishCaughts = false;
+
+        StopCoroutine(setBool());
 
     }
 }

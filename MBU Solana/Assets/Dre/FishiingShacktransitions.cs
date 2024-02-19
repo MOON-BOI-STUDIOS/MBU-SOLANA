@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class FishiingShacktransitions : MonoBehaviour
 {
-    public GameManager gameManager;
-    public int index;
+   public static FishiingShacktransitions instance;
+    public CollisionType[] collision;
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    private void Awake()
     {
-        if(collision.gameObject.tag == "Player")
+        if (instance == null)
         {
-            gameManager.nextScene(index);
+            instance = this;
         }
     }
+
+    public void Update()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    public void StartBool()
+    {
+        for (int i = 0; i > collision.Length; i++) 
+        {
+
+            collision[i].isTutorialOver = true;
+
+        }
+    }
+
+
 
 }

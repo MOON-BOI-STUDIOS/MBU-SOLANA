@@ -15,8 +15,10 @@ MonoBehaviour:
   name: Kingfisher
   icon: {fileID: 0}
   ItemDescription: 
-  ItemValue: 0
-  luck: 10
-  Minrarity: 10
-  Maxrarity: 0
+  ItemValue: 50
+  IsEquippable: 0
+  classOfItem: 0
+  luck: 50
+  Minrarity: 70
+  Maxrarity: 100
   isPurchased: 0

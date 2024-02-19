@@ -15,7 +15,9 @@ MonoBehaviour:
   name: Common Worm
   icon: {fileID: 0}
   ItemDescription: 
-  ItemValue: 0
-  luck: 0
+  ItemValue: 30
+  IsEquippable: 0
+  classOfItem: 0
+  luck: 30
   bait: 8
   isPurchased: 0
