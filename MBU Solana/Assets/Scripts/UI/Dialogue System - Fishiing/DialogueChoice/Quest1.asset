@@ -72,7 +72,7 @@ MonoBehaviour:
           m_MethodName: startDialogue
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgument: {fileID: 11400000, guid: 5e5e782d04fe678478c5d4c92c460af5, type: 2}
             m_ObjectArgumentAssemblyTypeName: DialoguebaseFishing, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0

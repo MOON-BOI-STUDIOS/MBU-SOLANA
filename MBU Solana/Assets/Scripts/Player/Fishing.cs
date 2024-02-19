@@ -13,7 +13,7 @@ public class Fishing : MonoBehaviour
     public GameObject[] fishUI;
     public Transform greenArea;
     Vector3 greenAreaScale;
-    private float[] greenscale = [0.2,0.10,0.05,0.32,0.25,0.08,0.03,0.15]
+    private float[] greenscale;
 
     public GameObject joltButton, fishButton;
     public TextMeshProUGUI fishesText;

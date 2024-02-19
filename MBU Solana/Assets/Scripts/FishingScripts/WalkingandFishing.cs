@@ -82,7 +82,7 @@ public class WalkingandFishing : MonoBehaviour
             fishingMec.SetActive(true);
             HUD1.SetActive(false);
             HUD2.SetActive(false);
-            tutorial.SetActive(true);
+          
             //Fishing.transform.position = fisingPosition.position;
         }
         else
@@ -99,12 +99,12 @@ public class WalkingandFishing : MonoBehaviour
         {
             IsFishing = true;
             // Add Code for transition in coroutine
-            StartCoroutine(FishTransitionfo());
+            StartCoroutine(FishTransitionf());
             Joystick.SetActive(false);
-            fishing.enabled = false;
-            jolt.SetActive(false);
-            fishingMec.SetActive(false);
-
+          
+            jolt.SetActive(true);
+            fishingMec.SetActive(true);
+            tutorial.SetActive(true);
             //Fishing.transform.position = fisingPosition.position;
         }
     }
@@ -140,8 +140,8 @@ public class WalkingandFishing : MonoBehaviour
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
         yield return new WaitForSeconds(1f);
-        Joystick.SetActive(false);
-        Walking.SetActive(false);
+        Joystick.SetActive(true);
+        Walking.SetActive(true);
         FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         panel.SetActive(false);
     }

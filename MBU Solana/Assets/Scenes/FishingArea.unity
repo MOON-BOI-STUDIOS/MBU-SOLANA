@@ -2838,7 +2838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Walking: {fileID: 1157484487}
-  Fishing: {fileID: 1806507506}
+  FishingObj: {fileID: 1806507506}
   Joystick: {fileID: 2130227474}
   FishingPositions:
   - {fileID: 282280420}
@@ -2850,11 +2850,13 @@ MonoBehaviour:
   jolt: {fileID: 832930720}
   Mecha: {fileID: 1596572712}
   panel: {fileID: 95905464}
-  HUD1: {fileID: 717213147}
-  HUD2: {fileID: 390297210}
   transitions: {fileID: 95905466}
   tutorial: {fileID: 2025916826}
   fishingMec: {fileID: 297569240}
+  fishing: {fileID: 1806507510}
+  DB: {fileID: 11400000, guid: a7294c51aa814ce4d9174b73f3797dfb, type: 2}
+  HUD1: {fileID: 717213147}
+  HUD2: {fileID: 390297210}
 --- !u!114 &642462188
 MonoBehaviour:
   m_ObjectHideFlags: 0
