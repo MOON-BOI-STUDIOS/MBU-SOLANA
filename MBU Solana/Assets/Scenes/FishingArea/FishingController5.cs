@@ -73,23 +73,44 @@ public class FishingController5 : MonoBehaviour
     private FishingRodType currentRod;
     private BaitType currentBait;
 
+    // Add taps and Stat Items
+    public Dictionary<int,StatItems[]> tapsToFish = new Dictionary<int, StatItems[]>();
+
     public StatItems[] fishItems;
+    public int[] tapsToCatchFish;
     public Image[] fishSprite;
     public GameObject image;
     public Image Fish_Image;
     public FishType Type;
+
+    public void AddToDictionary()
+    {
+        int j = 0;
+        for(int i = 0;i < tapsToCatchFish.Length;i++)
+        {
+            if(fishItems.Length >= j + 1)
+            {
+                StatItems[] temp = new StatItems[2];
+                temp[0] = fishItems[j];
+                temp[1] = fishItems[j+1];
+                tapsToFish.Add(tapsToCatchFish[i],temp);
+            }
+            j = j + 2;
+        }
+    }
 
     private void Start()
     {
         // Initial setup
         currentRod = FishingRodType.Basic;
         currentBait = BaitType.PlasticWorm;
+        AddToDictionary();
     }
 
     private void Update()
     {
         // Check for user input
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             CatchFish();
         }
@@ -105,10 +126,10 @@ public class FishingController5 : MonoBehaviour
         }
 
         Rodtxt.text = "Rod = " + currentRod.ToString();
-        Baittxt.text = "Bait = " + currentBait.ToString();
+        Baittxt.text = "Bait = " + currentBait.ToString();*/
     }
 
-    public void CatchFish()
+    public void CatchFish(int taps)
     {
         float randomChance = Random.value;
 
@@ -119,8 +140,11 @@ public class FishingController5 : MonoBehaviour
 
         if (randomChance <= totalChance)
         {
+            //Randomly choose between statItems based on taps from dictionary
+            int rand = Random.Range(0,2);
+            StatItems fishCaught = tapsToFish[taps][rand];
             // Add fish item here to add to the inventory
-            StatItems fishCaught = fishItems[Random.Range(0,fishItems.Length)];
+            //StatItems fishCaught = fishItems[Random.Range(0,fishItems.Length)];
             AddInventoryItemScript.instance.AddToInventory(fishCaught);
             // Fish caught
             //FishType caughtFish = (FishType)Random.Range(0, fishData.Length);

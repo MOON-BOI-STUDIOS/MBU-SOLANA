@@ -10,10 +10,12 @@ public class Fishing : MonoBehaviour
     public GameObject finshingMechanic;
 
     public int fishMarkerCounter = 0;
-    public GameObject[] fishUI;
+    public GameObject[] filledfishUI;
+    public GameObject[] unfilledfishUI;
     public Transform greenArea;
     Vector3 greenAreaScale;
-    private float[] greenscale;
+    private float[] greenscale = {0.2f, 0.10f, 0.05f, 0.35f, 0.25f, 0.05f, 0.08f, 0.15f};
+    private int numOfTaps;
 
     public GameObject joltButton, fishButton;
     public TextMeshProUGUI fishesText;
@@ -22,6 +24,7 @@ public class Fishing : MonoBehaviour
     public AudioClip select, reject, fishCaughtAudio;
 
     public bool buttonPressed;
+    public bool finished;
     public bool fishingDone;
     public bool fishCaughts;
     public FishingController5 controller5;
@@ -31,7 +34,19 @@ public class Fishing : MonoBehaviour
     public GameObject backMecha;
     public GameObject backarcade;
 
+    private RodItemObj currentRod;
+    private BaitItemObjj currentBait;
+
     private Items[] Itemsequipped;
+
+    public static Fishing instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +64,8 @@ public class Fishing : MonoBehaviour
 
         audioS = GetComponent<AudioSource>();
         greenAreaScale = new Vector3(greenArea.localScale.x, greenArea.localScale.y, greenArea.localScale.z);
+        // show number of unfilled fish underneath the bar
+        Numberofunfilledfishes();
     }
 
     // Update is called once per frame
@@ -62,13 +79,14 @@ public class Fishing : MonoBehaviour
 
         //Sets the width of the green area, according to number of successful attempts. This basically is the level design for the fishing part
         greenArea.localScale = greenAreaScale;
-
-        if (fishMarkerCounter == 0) { fishUI[0].SetActive(false); fishUI[1].SetActive(false); fishUI[2].SetActive(false); greenAreaScale.x = 0.2f; }
+        //Call to set filled fish image and the value of greenAreaScale
+        SetFishandGreenArea();
+        /*if (fishMarkerCounter == 0) { fishUI[0].SetActive(false); fishUI[1].SetActive(false); fishUI[2].SetActive(false); greenAreaScale.x = 0.2f; }
         if (fishMarkerCounter == 1) { fishUI[0].SetActive(true); greenAreaScale.x = 0.10f; }
         if (fishMarkerCounter == 2) { fishUI[0].SetActive(true); fishUI[1].SetActive(true); greenAreaScale.x = 0.05f; }
         if (fishMarkerCounter == 3) { fishUI[0].SetActive(true); fishUI[1].SetActive(true); fishUI[2].SetActive(true); greenAreaScale.x = 0; }
 
-        /*for(int i = 0; i < collisionType.Length; i++)
+        for(int i = 0; i < collisionType.Length; i++)
         {
             if (collisionType[i].isTutorialOver == true)
             {
@@ -88,10 +106,52 @@ public class Fishing : MonoBehaviour
         }
       
     }
+    private void Numberofunfilledfishes()
+    {
+        if(numOfTaps < unfilledfishUI.Length)
+        {
+            for(int i = 0;i < numOfTaps;i++)
+            {
+                unfilledfishUI[i].SetActive(true);
+            }
+        }
+    }
+    private void SetFishandGreenArea()
+    {
+        filledfishUI[fishMarkerCounter].SetActive(true);
+        greenAreaScale.x = greenscale[fishMarkerCounter];
+    }
     public void GetequippedItems(Items[] items)
     {
-        Itemsequipped = items;
         Debug.Log("Rod name:" + Itemsequipped[0].name + " bait name:" + Itemsequipped[1].name);
+        currentRod = (RodItemObj)Itemsequipped[0];
+        currentBait = (BaitItemObjj)Itemsequipped[1];
+        //Set num of Taps after calculation
+        CalculationOfFishOptions();
+    }
+    // Calculate the chance of cat
+    private void CalculationOfFishOptions()
+    {
+        // Rarity of the rod
+        float rarity = Random.Range(currentRod.Minrarity, currentRod.Maxrarity);
+        //Luck to catch the dragon fish with this particular bait
+        float luck = currentBait.luck;
+        //chance to catch the dragon fish 
+        float chance = currentRod.luck;
+        // The total chance to catch the dragon fish. Divided by 300 as there are three
+        // factors effecting the catching of dragonFish
+        float dragonFishChance = (rarity + luck + chance)/ 300;
+        //This randomnum is out of 100 so it perfectly defines chance of catching a type of fish
+        float randomnum = Random.Range(1,100);
+        if(randomnum <= dragonFishChance)
+        {
+            numOfTaps = 8;
+        }
+        else
+        {
+            int randomChoice = Random.Range(0,2);
+            numOfTaps = randomChoice == 0 ? currentRod.MinTaps: currentRod.MaxTaps;
+        }
     }
     
 
@@ -125,9 +185,16 @@ public class Fishing : MonoBehaviour
             if (fishMarkerCounter == 3)
             {
 
-                controller5.CatchFish();
+                controller5.CatchFish(numOfTaps);
+                if (!finished)
+                {
+                    StartCoroutine(setBool());
+                }
+                else
+                {
+                    StopCoroutine(setBool());
+                }
                 StartCoroutine(fishCaught());
-                StartCoroutine(setBool());
 
             }
 
@@ -136,10 +203,18 @@ public class Fishing : MonoBehaviour
         //unsuccesful attempt
         else
         {
+            //make all the images of the fish to unfilled
+            unfillFishUI();
             audioS.PlayOneShot(reject);
             fishMarkerCounter = 0;
 
-
+        }
+    }
+    private void unfillFishUI()
+    {
+        for(int i = 0;i < fishMarkerCounter;i++)
+        {
+            filledfishUI[i].SetActive(false);
         }
     }
 
@@ -168,11 +243,10 @@ public class Fishing : MonoBehaviour
     {
         fishCaughts = true;
 
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(11f);
 
         fishCaughts = false;
-
-        StopCoroutine(setBool());
+        finished = true;
 
     }
 }

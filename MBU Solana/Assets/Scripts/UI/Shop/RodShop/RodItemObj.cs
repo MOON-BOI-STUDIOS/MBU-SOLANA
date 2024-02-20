@@ -7,6 +7,8 @@ public class RodItemObj : Items
     [Range(0, 100)] public float luck;
     [Range(0, 100)] public float Minrarity;
     [Range(0, 100)] public float Maxrarity;
+    [Range(0,10)] public int MinTaps;
+    [Range(0,10)] public int MaxTaps;
     public bool isPurchased;
 
     public override void Use()
