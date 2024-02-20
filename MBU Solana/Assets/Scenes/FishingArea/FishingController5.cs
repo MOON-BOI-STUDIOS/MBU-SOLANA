@@ -126,6 +126,7 @@ public class FishingController5 : MonoBehaviour
             //FishType caughtFish = (FishType)Random.Range(0, fishData.Length);
             int points = fishCaught.points;
             string fishName = fishCaught.name;
+            
             //string rodName = rodData[(int)currentRod].name;
             //string baitName = baitData[(int)currentBait].name;
 

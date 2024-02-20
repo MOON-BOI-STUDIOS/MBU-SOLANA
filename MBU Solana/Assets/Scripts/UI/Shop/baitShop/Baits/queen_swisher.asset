@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: queen_swisher
   m_EditorClassIdentifier: 
   name: Queen Swisher
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: dac8e2f4340fe384c912bbdf4991fee6, type: 3}
   ItemDescription: 
   ItemValue: 50
   IsEquippable: 0
