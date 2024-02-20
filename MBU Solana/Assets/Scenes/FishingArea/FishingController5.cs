@@ -150,34 +150,43 @@ public class FishingController5 : MonoBehaviour
             //FishType caughtFish = (FishType)Random.Range(0, fishData.Length);
             int points = fishCaught.points;
             string fishName = fishCaught.name;
+            
             //string rodName = rodData[(int)currentRod].name;
             //string baitName = baitData[(int)currentBait].name;
 
             // Display catch information on the screen
             DisplayText($"Dre has caught a {fishName} of value {fishCaught.GetItemValue()}, scoring: {points}");
-            image.SetActive(true);
+           
             switch (Type)
             {
                 case FishType.Wonderpus:
+                    image.SetActive(true);
                     Fish_Image = fishSprite[0];
 
                     break;
                 case FishType.Tuna:
+                    image.SetActive(true);
                     Fish_Image = fishSprite[2];
                     break;
                 case FishType.RoyalGramma:
+                    image.SetActive(true);
                     Fish_Image = fishSprite[3];
                     break;
                 case FishType.Lumpsucker:
+                    image.SetActive(true);
                     Fish_Image = fishSprite[4];
                     break;
                 case FishType.Dragon:
+                    image.SetActive(true);
                     Fish_Image = fishSprite[5];
                     break;
                 case FishType.Bonk:
+                    image.SetActive(true);
                     Fish_Image = fishSprite[6];
                     break;
+                    
             }
+            image.SetActive(false);
 
 
         }

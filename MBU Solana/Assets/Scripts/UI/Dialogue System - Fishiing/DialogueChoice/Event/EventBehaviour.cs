@@ -39,9 +39,9 @@ public class EventBehaviour : ScriptableObject
 
     }
 
-    public void OpenTutorial()
+    public void closeTutoial ()
     {
-        WalkingandFishing.instance.TurnonTutorial();
+        WalkingandFishing.instance.TurnoffTutorial();
     }
 
     public void startDialogue(DialoguebaseFishing db)
@@ -59,6 +59,14 @@ public class EventBehaviour : ScriptableObject
         CollisionType.instance.isTutorialOver = true;
         CollisionType.instance.isQuestions = false;
         CollisionType.instance.isShop = true;
+    }
+
+    public void OffTutoral()
+    {
+        CollisionType.instance.isTutorialOver = false;
+        CollisionType.instance.isShop = true;
+        CollisionType.instance.canFish = true;
+
     }
 
 }

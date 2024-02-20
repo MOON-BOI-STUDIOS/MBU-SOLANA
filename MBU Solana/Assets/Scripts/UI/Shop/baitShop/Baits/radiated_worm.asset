@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: radiated_worm
   m_EditorClassIdentifier: 
   name: Radiated Worm
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 75b114386a28faf48b2e052114522871, type: 3}
   ItemDescription: 
   ItemValue: 20
   IsEquippable: 0
