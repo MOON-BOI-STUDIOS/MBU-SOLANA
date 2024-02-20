@@ -24,6 +24,7 @@ public class Fishing : MonoBehaviour
     public bool buttonPressed;
     public bool fishingDone;
     public bool fishCaughts;
+    public bool finished;
     public FishingController5 controller5;
 
     public CollisionType[] collisionType;
@@ -79,14 +80,17 @@ public class Fishing : MonoBehaviour
             }
         }*/
 
-        if(fishCaughts == true)
+        if (fishCaughts == true)
         {
             DialogueManagerFishing.instance.EnqueueDialogue(db);
             joltButton.SetActive(false);
             fishButton.SetActive(false);
             finshingMechanic.SetActive(false);
+          
         }
-      
+       
+
+
     }
     public void GetequippedItems(Items[] items)
     {
@@ -126,8 +130,19 @@ public class Fishing : MonoBehaviour
             {
 
                 controller5.CatchFish();
+
+                if (!finished)
+                {
+                    StartCoroutine(setBool());
+                }
+                else
+                {
+                    StopCoroutine(setBool());
+                }
                 StartCoroutine(fishCaught());
-                StartCoroutine(setBool());
+                
+                
+
 
             }
 
@@ -162,17 +177,19 @@ public class Fishing : MonoBehaviour
 
         joltButton.SetActive(true);
         fishButton.SetActive(false);
+        StopCoroutine(setBool());
     }
 
     public IEnumerator setBool()
     {
         fishCaughts = true;
 
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(11f);
 
         fishCaughts = false;
-
-        StopCoroutine(setBool());
+        finished = true;
+        
+        
 
     }
 }

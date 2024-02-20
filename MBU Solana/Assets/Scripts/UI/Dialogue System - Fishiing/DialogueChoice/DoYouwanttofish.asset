@@ -22,7 +22,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
           m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: Swap
+          m_MethodName: OtherSwap
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

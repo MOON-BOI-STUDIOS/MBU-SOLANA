@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Lookat : MonoBehaviour
 {
+    [SerializeField] GameObject _object;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class Lookat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.rotation = Quaternion.LookRotation(transform.position - _object.transform.position);
     }
 }

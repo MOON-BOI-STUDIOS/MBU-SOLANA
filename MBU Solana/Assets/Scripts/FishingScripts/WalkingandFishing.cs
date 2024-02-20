@@ -25,6 +25,8 @@ public class WalkingandFishing : MonoBehaviour
     public GameObject jolt;
     public GameObject Mecha;
     public GameObject panel;
+    public GameObject ArcMecha;
+
 
     public Animator transitions;
     public GameObject tutorial;
@@ -33,6 +35,8 @@ public class WalkingandFishing : MonoBehaviour
     public DialoguebaseFishing DB;
     public GameObject HUD1;
     public GameObject HUD2;
+
+    public Transform tutorialPos;
     void Start()
     {
         
@@ -82,6 +86,7 @@ public class WalkingandFishing : MonoBehaviour
             fishingMec.SetActive(true);
             HUD1.SetActive(false);
             HUD2.SetActive(false);
+            Mecha.SetActive(true);
           
             //Fishing.transform.position = fisingPosition.position;
         }
@@ -104,10 +109,17 @@ public class WalkingandFishing : MonoBehaviour
             jolt.SetActive(true);
             fishingMec.SetActive(true);
             tutorial.SetActive(true);
-
+            Mecha.SetActive(true);
+            ArcMecha.SetActive(false);
+            Walking.SetActive(false);
+            FishingObj.SetActive(true);
+            DialogueManagerFishing.instance.CloseOptions();
+            //FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
+            FishingObj.transform.position = tutorialPos.position;
             //Fishing.transform.position = fisingPosition.position;
         }
     }
+
 
     
 
@@ -115,11 +127,7 @@ public class WalkingandFishing : MonoBehaviour
     {
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
-        yield return new WaitForSeconds(1f);
-        Walking.SetActive(false);
-        FishingObj.SetActive(true);
-        
-        FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
+        yield return new WaitForSeconds(1.5f);
         panel.SetActive(false);
     }
 
@@ -147,11 +155,12 @@ public class WalkingandFishing : MonoBehaviour
         panel.SetActive(false);
     }
 
-    public void TurnonTutorial()
+    public void TurnoffTutorial()
     {
-        tutorial.SetActive(true);
+        
         jolt.SetActive(true);
-        fishing.enabled = true;
+        jolt.SetActive(true);
+       
 
     }
 

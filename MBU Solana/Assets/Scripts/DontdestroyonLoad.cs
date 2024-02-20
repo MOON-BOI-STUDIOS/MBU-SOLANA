@@ -30,13 +30,12 @@ public class DontdestroyonLoad : MonoBehaviour
     }
     public void Update()
     {
-        
-       
+
         itutorialOver = CollisionType.instance.isTutorialOver;
         itutorialOver = CollisionType.instance.isTutorialOver;
         canshop = CollisionType.instance.isShop;
         isQuestion = CollisionType.instance.isQuestions;
-      
+
     }
 
 
