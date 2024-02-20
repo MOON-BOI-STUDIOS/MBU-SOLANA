@@ -10870,10 +10870,8 @@ MonoBehaviour:
   hook: {fileID: 1844681999}
   finshingMechanic: {fileID: 297569240}
   fishMarkerCounter: 0
-  fishUI:
-  - {fileID: 84356398}
-  - {fileID: 253638444}
-  - {fileID: 2090585380}
+  filledfishUI: []
+  unfilledfishUI: []
   greenArea: {fileID: 255978519}
   joltButton: {fileID: 832930720}
   fishButton: {fileID: 1582099035}
@@ -10882,9 +10880,9 @@ MonoBehaviour:
   reject: {fileID: 8300000, guid: 0983d01113ae213408052804ce26a40f, type: 3}
   fishCaughtAudio: {fileID: 8300000, guid: 78d7db155a69b814cabad67e03ad7913, type: 3}
   buttonPressed: 0
+  finished: 0
   fishingDone: 0
   fishCaughts: 0
-  finished: 0
   controller5: {fileID: 1806507516}
   collisionType:
   - {fileID: 282280422}
@@ -11049,6 +11047,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c22683066118c4b1c8a6bec9838005fe, type: 2}
   - {fileID: 11400000, guid: 7479ba3e1ac994099a4893eb60c1cbd1, type: 2}
   - {fileID: 11400000, guid: c1ae86d47690440ebb685a3db0e61a1c, type: 2}
+  tapsToCatchFish: 
   fishSprite:
   - {fileID: 560293364708027998, guid: c0107dc9d0613f34e899856cca15b797, type: 3}
   - {fileID: 560293364708027998, guid: 205968454a781be42ab823a1ca728f3c, type: 3}
