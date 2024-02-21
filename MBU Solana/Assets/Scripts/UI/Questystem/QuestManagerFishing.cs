@@ -38,13 +38,17 @@ public class QuestManagerFishing : MonoBehaviour
     {
         if (Qbjective1 == true)
         {
-            quest1.interactable = false;
-            quest2.interactable = true;
+            quest1.gameObject.SetActive(false);
+            quest2.gameObject.SetActive(true);
+            fishQuests[1].collider2D.enabled = true;
+            fishQuests[0].collider2D.enabled = false;
         }
         else
         {
-            quest2.interactable = false;
-            quest1.interactable = true;
+            quest1.gameObject.SetActive(true);
+            quest2.gameObject.SetActive(false);
+            fishQuests[0].collider2D.enabled = true;
+            fishQuests[1].collider2D.enabled = false;
         }
     }
 
@@ -57,13 +61,17 @@ public class QuestManagerFishing : MonoBehaviour
 
         if (Qbjective1 == true)
         {
-            quest1.interactable = false;
-            quest2.interactable = true;
+            quest1.gameObject.SetActive(false);
+            quest2.gameObject.SetActive(true);
+            fishQuests[1].collider2D.enabled = true;
+            fishQuests[0].collider2D.enabled = false;
         }
         else
         {
-            quest2.interactable = false;
-            quest1.interactable = true;
+            quest1.gameObject.SetActive(true);
+            quest2.gameObject.SetActive(false);
+            fishQuests[0].collider2D.enabled = true;
+            fishQuests[1].collider2D.enabled = false;
         }
     }
 

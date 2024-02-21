@@ -168,7 +168,4 @@ public class WalkingandFishing : MonoBehaviour
        
 
     }
-
-
-
 }

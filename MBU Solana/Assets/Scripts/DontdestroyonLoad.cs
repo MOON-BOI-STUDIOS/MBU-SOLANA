@@ -30,6 +30,7 @@ public class DontdestroyonLoad : MonoBehaviour
         isQuestion = CollisionType.instance.isQuestions;
         noTutorial = TutorialManager_Fishing.instance.noTutorial;
         noTutorial2 = TutorialManager.instance.noTutorial;
+        this.enabled = true;
     }
     public void Update()
     {
