@@ -35,7 +35,6 @@ public class WalkingandFishing : MonoBehaviour
     public DialoguebaseFishing DB;
     public GameObject HUD1;
 
-
     public Transform tutorialPos;
     void Start()
     {
@@ -61,37 +60,35 @@ public class WalkingandFishing : MonoBehaviour
             Walking.SetActive(true);
             Mecha.SetActive(false);
             jolt.SetActive(false);
-            ArcMecha.SetActive(false);
             HUD1.SetActive(true);
-
+            
         }
     }
 
     public void IsFishingActive()
     {
         // Check if there are equippable items in Hotbar
-        Items[] equippedItems = ItemInventory.instance.Checkcanfish(); 
+        //Items[] equippedItems = ItemInventory.instance.Checkcanfish(); 
         //and there is one rod and a bait to fish with
         //Change of Sprite from walking to Fishing
-        if(!IsFishing && equippedItems[0] != null && equippedItems[1] != null)
+        if(!IsFishing && ItemInventory.instance.Checkcanfish())
         {
             Walking.SetActive(false);
             // Equipping rods and bait
             IsFishing = true;
             // Sending the items over to the Fishing Script
-            fishing.GetequippedItems(equippedItems);
+            //fishing.GetequippedItems(equippedItems);
             //Choose Sprite for wide variety of Sprites with different rods
             // Add Code for transition in coroutine
             StartCoroutine(FishTransitionf());
             //Fishing.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
             FishingObj.SetActive(true);
             jolt.SetActive(true);
-            fishingMec.SetActive(true);
-            HUD1.SetActive(false);
+            //fishingMec.SetActive(true);
             Mecha.SetActive(true);
             Joystick.SetActive(false);
             HUD1.SetActive(false);
-
+          
             //Fishing.transform.position = fisingPosition.position;
         }
         else
@@ -111,17 +108,17 @@ public class WalkingandFishing : MonoBehaviour
             StartCoroutine(FishTransitionf());
             Joystick.SetActive(false);
             jolt.SetActive(true);
-            fishingMec.SetActive(true);
+            //fishingMec.SetActive(true);
             tutorial.SetActive(true);
             Mecha.SetActive(true);
             ArcMecha.SetActive(false);
             Walking.SetActive(false);
             FishingObj.SetActive(true);
-            HUD1.SetActive(false);
             DialogueManagerFishing.instance.CloseOptions();
             //FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
             FishingObj.transform.position = tutorialPos.position;
             //Fishing.transform.position = fisingPosition.position;
+            HUD1.SetActive(false);
         }
     }
 

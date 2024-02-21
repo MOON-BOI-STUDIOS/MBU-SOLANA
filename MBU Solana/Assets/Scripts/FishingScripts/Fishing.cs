@@ -43,11 +43,12 @@ public class Fishing : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-        }
+        } 
     }
     // Start is called before the first frame update
     void Start()
     {
+        //fishing.GetequippedItems(equippedItems);
         //Debug.Log(PlayerPrefs.GetInt("LastLocation"));
         if (PlayerPrefs.GetInt("LastLocation")!=3)
         {
@@ -62,8 +63,6 @@ public class Fishing : MonoBehaviour
 
         audioS = GetComponent<AudioSource>();
         greenAreaScale = new Vector3(greenArea.localScale.x, greenArea.localScale.y, greenArea.localScale.z);
-        // show number of unfilled fish underneath the bar
-        Numberofunfilledfishes();
     }
 
     // Update is called once per frame
@@ -126,10 +125,22 @@ public class Fishing : MonoBehaviour
             greenAreaScale.x = greenscale[fishMarkerCounter];
         }
     }
-    public void GetequippedItems(Items[] items)
+    public void GetequippedItems()
     {
-        currentRod = (RodItemObj)items[0];
-        currentBait = (BaitItemObjj)items[1];
+        foreach(Items i in ItemInventory.instance.hotbarItemList)
+        {
+            if(i.IsEquippable)
+            {
+                if(string.Equals(i.classOfItem.ToString(),"rod"))
+                {
+                    currentRod = (RodItemObj)i;
+                }
+                else if(string.Equals(i.classOfItem.ToString(),"bait"))
+                {
+                    currentBait = (BaitItemObjj)i;
+                }
+            }
+        }
         Debug.Log("Rod name:" + currentRod.name + " bait name:" + currentBait.name);
         //Set num of Taps after calculation
         CalculationOfFishOptions();
@@ -169,8 +180,12 @@ public class Fishing : MonoBehaviour
     //triggered through the button. starts the jolt animation
     public void jolt()
     {
+        GetequippedItems();
+        // show number of unfilled fish underneath the bar
+        Numberofunfilledfishes();
         buttonPressed = true;
         dreAnim.SetTrigger("Fish");
+        finshingMechanic.SetActive(true);
     }
 
     //enables the fishing button, and hides the jolt button. triggered through animation
@@ -179,7 +194,7 @@ public class Fishing : MonoBehaviour
         joltButton.SetActive(false);
         fishButton.SetActive(true);
         finshingMechanic.SetActive(true);
-        //fishingDone = true;
+        fishingDone = true;
     }
   
     //fish button controls
@@ -192,7 +207,7 @@ public class Fishing : MonoBehaviour
 
             audioS.PlayOneShot(select);
             fishMarkerCounter++;
-            fishingDone = true;
+            //fishingDone = true;
             if (fishMarkerCounter == numOfTaps)
             {
 
@@ -252,7 +267,7 @@ public class Fishing : MonoBehaviour
     {
         fishCaughts = true;
 
-        yield return new WaitForSeconds(11f);
+        yield return new WaitForSeconds(5f);
 
         fishCaughts = false;
         finished = true;
