@@ -15,7 +15,24 @@ public class QuestManagerFishing : MonoBehaviour
         {
             instance = this;
         }
+        Qbjective1 = DontdestroyonLoad.nextQuest;
+        Objective2 = DontdestroyonLoad.nextQuest2;
         
+
+        if (Qbjective1 == true)
+        {
+            quest1.gameObject.SetActive(false);
+            quest2.gameObject.SetActive(true);
+            fishQuests[1].collider2D.enabled = true;
+            fishQuests[0].collider2D.enabled = false;
+        }
+        else
+        {
+            quest1.gameObject.SetActive(true);
+            quest2.gameObject.SetActive(false);
+            fishQuests[0].collider2D.enabled = true;
+            fishQuests[1].collider2D.enabled = false;
+        }
     }
 
     public Quest[] fishQuests;
@@ -34,46 +51,9 @@ public class QuestManagerFishing : MonoBehaviour
         None,
         TheLegendaryCatch
     }
-    public void Start()
-    {
-        if (Qbjective1 == true)
-        {
-            quest1.gameObject.SetActive(false);
-            quest2.gameObject.SetActive(true);
-            fishQuests[1].collider2D.enabled = true;
-            fishQuests[0].collider2D.enabled = false;
-        }
-        else
-        {
-            quest1.gameObject.SetActive(true);
-            quest2.gameObject.SetActive(false);
-            fishQuests[0].collider2D.enabled = true;
-            fishQuests[1].collider2D.enabled = false;
-        }
-    }
-
-    public void Update()
-    {
    
-        Qbjective1 = fishQuests[0].QuestCompleted;
-        Objective2 = fishQuests[1].QuestCompleted;
 
-
-        if (Qbjective1 == true)
-        {
-            quest1.gameObject.SetActive(false);
-            quest2.gameObject.SetActive(true);
-            fishQuests[1].collider2D.enabled = true;
-            fishQuests[0].collider2D.enabled = false;
-        }
-        else
-        {
-            quest1.gameObject.SetActive(true);
-            quest2.gameObject.SetActive(false);
-            fishQuests[0].collider2D.enabled = true;
-            fishQuests[1].collider2D.enabled = false;
-        }
-    }
+ 
 
 }
 

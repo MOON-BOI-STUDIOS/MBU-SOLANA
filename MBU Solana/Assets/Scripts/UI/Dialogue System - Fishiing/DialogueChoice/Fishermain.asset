@@ -41,6 +41,12 @@ MonoBehaviour:
   - text: "DR\xC9\r\nSure!\r\n\n\n"
   - text: "FISHERMAN\nThat's the spirit! Prepare your fishing rod and follow me.
       The fish here aren\u2019t an easy catch, but the thrill is worth it.\n\n"
+  - text: 'FISHERMAN
+
+      Once you''ve left my shop ,select the quest tab and pick
+      th fishing spot object and start the adventure!
+
+'
   questionText: ' Are you up for it?'
   optionsinfo:
   - buttonName: Lead the way(Head to Exit)
