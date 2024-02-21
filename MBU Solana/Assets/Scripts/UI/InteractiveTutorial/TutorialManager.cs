@@ -12,6 +12,29 @@ public class TutorialManager : MonoBehaviour
     public Quest quest;
     public GameObject[] PCpopUps;
     public GameObject tutorial;
+    public bool noTutorial;
+
+
+
+    public static TutorialManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+    }
+
+
+    public void Start()
+    {
+        if(noTutorial == true)
+        {
+            this.enabled = false;
+        }
+    }
 
     void Update()
     {
@@ -59,8 +82,8 @@ public class TutorialManager : MonoBehaviour
             {
                 popUpIndex++;
                 Debug.Log("test end");
-                Destroy(this.gameObject);
-                Destroy(tutorial);
+                noTutorial = true;
+              
             }
         }
 #else
@@ -107,8 +130,7 @@ for (int i = 0; i < PCpopUps.Length; i++)
             {
                 popUpIndex++;
                 Debug.Log("test end");
-                Destroy(this.gameObject);
-                Destroy(tutorial);
+                noTutorial = true;
             }
         }
 

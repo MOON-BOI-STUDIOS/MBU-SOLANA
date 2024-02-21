@@ -34,7 +34,7 @@ public class WalkingandFishing : MonoBehaviour
     public Fishing fishing;
     public DialoguebaseFishing DB;
     public GameObject HUD1;
-    public GameObject HUD2;
+
 
     public Transform tutorialPos;
     void Start()
@@ -61,7 +61,9 @@ public class WalkingandFishing : MonoBehaviour
             Walking.SetActive(true);
             Mecha.SetActive(false);
             jolt.SetActive(false);
-            
+            ArcMecha.SetActive(false);
+            HUD1.SetActive(true);
+
         }
     }
 
@@ -86,9 +88,10 @@ public class WalkingandFishing : MonoBehaviour
             jolt.SetActive(true);
             fishingMec.SetActive(true);
             HUD1.SetActive(false);
-            HUD2.SetActive(false);
             Mecha.SetActive(true);
-          
+            Joystick.SetActive(false);
+            HUD1.SetActive(false);
+
             //Fishing.transform.position = fisingPosition.position;
         }
         else
@@ -114,6 +117,7 @@ public class WalkingandFishing : MonoBehaviour
             ArcMecha.SetActive(false);
             Walking.SetActive(false);
             FishingObj.SetActive(true);
+            HUD1.SetActive(false);
             DialogueManagerFishing.instance.CloseOptions();
             //FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
             FishingObj.transform.position = tutorialPos.position;
