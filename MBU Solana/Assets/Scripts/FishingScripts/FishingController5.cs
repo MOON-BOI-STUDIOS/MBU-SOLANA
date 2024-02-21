@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 public class FishingController5 : MonoBehaviour
 {
-    [System.Serializable]
+    /*[System.Serializable]
     public class FishData
     {
         public string name;
@@ -71,7 +71,7 @@ public class FishingController5 : MonoBehaviour
 
     // Current state
     private FishingRodType currentRod;
-    private BaitType currentBait;
+    private BaitType currentBait;*/
 
     // Add taps and Stat Items
     public Dictionary<int,StatItems[]> tapsToFish = new Dictionary<int, StatItems[]>();
@@ -81,7 +81,7 @@ public class FishingController5 : MonoBehaviour
     public Image[] fishSprite;
     public GameObject image;
     public Image Fish_Image;
-    public FishType Type;
+    //public FishType Type;
 
     public void AddToDictionary()
     {
@@ -102,8 +102,8 @@ public class FishingController5 : MonoBehaviour
     private void Start()
     {
         // Initial setup
-        currentRod = FishingRodType.Basic;
-        currentBait = BaitType.PlasticWorm;
+        //currentRod = FishingRodType.Basic;
+        //currentBait = BaitType.PlasticWorm;
         AddToDictionary();
     }
 
@@ -131,7 +131,27 @@ public class FishingController5 : MonoBehaviour
 
     public void CatchFish(int taps)
     {
-        float randomChance = Random.value;
+            //Randomly choose between statItems based on taps from dictionary
+            int rand = Random.Range(0,2);
+            StatItems fishCaught = tapsToFish[taps][rand];
+            // Add fish item here to add to the inventory
+            //StatItems fishCaught = fishItems[Random.Range(0,fishItems.Length)];
+            AddInventoryItemScript.instance.AddToInventory(fishCaught);
+            // Fish caught
+            //FishType caughtFish = (FishType)Random.Range(0, fishData.Length);
+            int points = fishCaught.points;
+            string fishName = fishCaught.name;
+            image.SetActive(true);
+            Fish_Image.sprite = fishCaught.icon;
+            StartCoroutine(EraseImage());
+            
+            //string rodName = rodData[(int)currentRod].name;
+            //string baitName = baitData[(int)currentBait].name;
+
+            // Display catch information on the screen
+            //DisplayText($"Dre has caught a {fishName} of value {fishCaught.GetItemValue()}, scoring: {points}");
+
+        /*float randomChance = Random.value;
 
         // Calculate chance of catching a fish with the current rod and bait
         float rodChance = GetRodChance(currentRod);
@@ -196,15 +216,17 @@ public class FishingController5 : MonoBehaviour
             DisplayText("No fish caught this time.");
             image.SetActive(false);
 
-        }
+        }*/
+    }
 
-     
-
-
+    private IEnumerator EraseImage()
+    {
+        yield return new WaitForSeconds(2.0f);
+        image.SetActive(false);
     }
 
 
-    public void SwitchRod()
+    /*public void SwitchRod()
     {
         // Switch to the next fishing rod
         currentRod = (FishingRodType)(((int)currentRod + 1) % rodData.Length);
@@ -236,7 +258,7 @@ public class FishingController5 : MonoBehaviour
     private float GetBaitLuck(BaitType baitType)
     {
         return baitData[(int)baitType].luck;
-    }
+    }*/
 }
 
 

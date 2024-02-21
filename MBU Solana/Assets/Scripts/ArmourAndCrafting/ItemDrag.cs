@@ -20,7 +20,7 @@ public class ItemDrag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDrag
     {
         itemSlot = GetComponent<ItemSlot>();
         hotbarRect = AddInventoryItemScript.instance.HotbarTransform as RectTransform;
-        inventoryRect = AddInventoryItemScript.instance.HotbarTransform as RectTransform;
+        inventoryRect = AddInventoryItemScript.instance.inventoryTransform as RectTransform;
 
         image = GetComponent<Image>();
         baseColor = image.color;

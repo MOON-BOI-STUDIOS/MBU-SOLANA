@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class ItemSlot: MonoBehaviour
 {
     public Image icon;
-    public TMP_Text _text;
     private Items _items;
     private int ItemValue;
     public bool isBeingDragged = false;
@@ -20,7 +19,6 @@ public class ItemSlot: MonoBehaviour
     {
         _items = newitem;
         icon.sprite = newitem.icon;
-        _text.text = newitem.name;
         ItemValue = newitem.ItemValue;
     }
 

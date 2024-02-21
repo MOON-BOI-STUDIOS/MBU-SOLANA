@@ -38,7 +38,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
 
     public void Update()
     {
-        Debug.Log(isTutorialOver);
+        //Debug.Log(isTutorialOver);
     }
 
     public void callUIFunctions()

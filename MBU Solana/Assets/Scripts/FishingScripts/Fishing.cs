@@ -14,7 +14,7 @@ public class Fishing : MonoBehaviour
     public GameObject[] unfilledfishUI;
     public Transform greenArea;
     Vector3 greenAreaScale;
-    private float[] greenscale = {0.2f, 0.10f, 0.05f, 0.35f, 0.25f, 0.05f, 0.08f, 0.15f};
+    private float[] greenscale = {0.2f,0.2f,0.2f,0.2f,0.2f,0.2f,0.2f,0.2f,};//{0.2f, 0.10f, 0.05f, 0.35f, 0.25f, 0.05f, 0.08f, 0.15f};
     private int numOfTaps;
 
     public GameObject joltButton, fishButton;
@@ -37,8 +37,6 @@ public class Fishing : MonoBehaviour
     private RodItemObj currentRod;
     private BaitItemObjj currentBait;
 
-    private Items[] Itemsequipped;
-
     public static Fishing instance;
     private void Awake()
     {
@@ -50,7 +48,7 @@ public class Fishing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(PlayerPrefs.GetInt("LastLocation"));
+        //Debug.Log(PlayerPrefs.GetInt("LastLocation"));
         if (PlayerPrefs.GetInt("LastLocation")!=3)
         {
             PlayerPrefs.SetInt("LastLocation", 1);
@@ -75,7 +73,7 @@ public class Fishing : MonoBehaviour
         fishesText.text = "FISH: " + PlayerPrefs.GetInt("Fishes").ToString();
 
         //moves the hook from left to right
-        hook.transform.localPosition = new Vector3(Mathf.PingPong(Time.time * 0.5f, 0.37f), hook.transform.localPosition.y, hook.transform.localPosition.z);
+        hook.transform.localPosition = new Vector3(Mathf.PingPong(Time.time * 0.5f, 0.37f), 0f, 0f);
 
         //Sets the width of the green area, according to number of successful attempts. This basically is the level design for the fishing part
         greenArea.localScale = greenAreaScale;
@@ -108,24 +106,31 @@ public class Fishing : MonoBehaviour
     }
     private void Numberofunfilledfishes()
     {
-        if(numOfTaps < unfilledfishUI.Length)
+        for(int i = 0;i < unfilledfishUI.Length ;i++)
         {
-            for(int i = 0;i < numOfTaps;i++)
+            if(i < numOfTaps)
             {
                 unfilledfishUI[i].SetActive(true);
             }
+            else{
+                unfilledfishUI[i].SetActive(false);
+            }
+            filledfishUI[i].SetActive(false);
         }
     }
     private void SetFishandGreenArea()
     {
-        filledfishUI[fishMarkerCounter].SetActive(true);
-        greenAreaScale.x = greenscale[fishMarkerCounter];
+        if(fishMarkerCounter != 0)
+        {
+            filledfishUI[fishMarkerCounter].SetActive(true);
+            greenAreaScale.x = greenscale[fishMarkerCounter];
+        }
     }
     public void GetequippedItems(Items[] items)
     {
-        Debug.Log("Rod name:" + Itemsequipped[0].name + " bait name:" + Itemsequipped[1].name);
-        currentRod = (RodItemObj)Itemsequipped[0];
-        currentBait = (BaitItemObjj)Itemsequipped[1];
+        currentRod = (RodItemObj)items[0];
+        currentBait = (BaitItemObjj)items[1];
+        Debug.Log("Rod name:" + currentRod.name + " bait name:" + currentBait.name);
         //Set num of Taps after calculation
         CalculationOfFishOptions();
     }
@@ -134,15 +139,20 @@ public class Fishing : MonoBehaviour
     {
         // Rarity of the rod
         float rarity = Random.Range(currentRod.Minrarity, currentRod.Maxrarity);
+        Debug.Log("The chosen rarity is:" + rarity);
         //Luck to catch the dragon fish with this particular bait
         float luck = currentBait.luck;
+        Debug.Log("The luck factor is:" + luck);
         //chance to catch the dragon fish 
         float chance = currentRod.luck;
+        Debug.Log("The chance factor is:" + chance);
         // The total chance to catch the dragon fish. Divided by 300 as there are three
         // factors effecting the catching of dragonFish
-        float dragonFishChance = (rarity + luck + chance)/ 300;
+        int dragonFishChance = (int)(((rarity + luck + chance)/ 300) * 100);
+        Debug.Log("The dragon fish catching chance is:" + dragonFishChance);
         //This randomnum is out of 100 so it perfectly defines chance of catching a type of fish
-        float randomnum = Random.Range(1,100);
+        int randomnum = Random.Range(1,101);
+        Debug.Log("The random number:" + randomnum);
         if(randomnum <= dragonFishChance)
         {
             numOfTaps = 8;
@@ -152,6 +162,7 @@ public class Fishing : MonoBehaviour
             int randomChoice = Random.Range(0,2);
             numOfTaps = randomChoice == 0 ? currentRod.MinTaps: currentRod.MaxTaps;
         }
+        Debug.Log("The number of taps required:" + numOfTaps);
     }
     
 
@@ -182,7 +193,7 @@ public class Fishing : MonoBehaviour
             audioS.PlayOneShot(select);
             fishMarkerCounter++;
             fishingDone = true;
-            if (fishMarkerCounter == 3)
+            if (fishMarkerCounter == numOfTaps)
             {
 
                 controller5.CatchFish(numOfTaps);
@@ -197,8 +208,6 @@ public class Fishing : MonoBehaviour
                 StartCoroutine(fishCaught());
 
             }
-
-
         }
         //unsuccesful attempt
         else
@@ -207,12 +216,12 @@ public class Fishing : MonoBehaviour
             unfillFishUI();
             audioS.PlayOneShot(reject);
             fishMarkerCounter = 0;
-
+            greenAreaScale.x = greenscale[fishMarkerCounter];
         }
     }
     private void unfillFishUI()
     {
-        for(int i = 0;i < fishMarkerCounter;i++)
+        for(int i = 0;i < filledfishUI.Length;i++)
         {
             filledfishUI[i].SetActive(false);
         }

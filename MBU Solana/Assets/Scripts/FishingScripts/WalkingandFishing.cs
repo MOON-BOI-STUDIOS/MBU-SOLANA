@@ -73,6 +73,7 @@ public class WalkingandFishing : MonoBehaviour
         //Change of Sprite from walking to Fishing
         if(!IsFishing && equippedItems[0] != null && equippedItems[1] != null)
         {
+            Walking.SetActive(false);
             // Equipping rods and bait
             IsFishing = true;
             // Sending the items over to the Fishing Script

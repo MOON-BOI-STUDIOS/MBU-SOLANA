@@ -9,14 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 530f79eed9c8e40388b7ff0539fb069e, type: 3}
-  m_Name: wonderpus
+  m_Script: {fileID: 11500000, guid: 156a8f0b3d892bf4dab6bc36c06027e5, type: 3}
+  m_Name: Kingfisher
   m_EditorClassIdentifier: 
-  name: wonderpus
-  icon: {fileID: 21300000, guid: 74547c63bd21d4a2bbd338890e6be258, type: 3}
+  name: Kingfisher
+  icon: {fileID: 21300000, guid: bdad97b6c37b9e84884474b4538be18c, type: 3}
   ItemDescription: 
   ItemValue: 20
-  IsEquippable: 0
-  classOfItem: 2
-  itemType: 2
-  points: 3
+  IsEquippable: 1
+  classOfItem: 0
+  luck: 50
+  Minrarity: 70
+  Maxrarity: 100
+  MinTaps: 5
+  MaxTaps: 5
+  isPurchased: 0

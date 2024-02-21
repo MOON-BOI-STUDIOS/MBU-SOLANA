@@ -17,7 +17,7 @@ MonoBehaviour:
   ItemDescription: 
   ItemValue: 10
   IsEquippable: 0
-  classOfItem: 0
+  classOfItem: 1
   luck: 10
   bait: 8
   isPurchased: 0
