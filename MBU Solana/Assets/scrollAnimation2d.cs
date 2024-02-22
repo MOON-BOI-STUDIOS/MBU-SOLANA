@@ -111,7 +111,7 @@ public class scrollAnimation2d : MonoBehaviour
 
                         HealthUI.SetActive(true);
                         QuestButton.SetActive(true);
-                        InventoryButton.SetActive(true);
+                        //InventoryButton.SetActive(true);
                         pause.SetActive(true);
                         spawnLocationManager.Inst.telport();
                 scrollUI.gameObject.SetActive(false);
