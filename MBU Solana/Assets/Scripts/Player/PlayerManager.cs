@@ -67,7 +67,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         }
 
 
-        if (curSceneName == "BonkArcade" || curSceneName == "FishingArea")
+        if (curSceneName == "BonkArcade" || curSceneName == "FishingArea" || curSceneName == "ShopInterior")
             return;
 
             //updates the health bar according to current health
