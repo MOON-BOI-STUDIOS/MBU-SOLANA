@@ -132,6 +132,7 @@ for (int i = 0; i < PCpopUps.Length; i++)
                 popUpIndex++;
                 Debug.Log("test end");
                 noTutorial = true;
+                PlayerPrefs.SetInt("noTutorial", (noTutorial ? 1 : 0));
             }
         }
 
