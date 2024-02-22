@@ -77,7 +77,7 @@ public class TutorialManager_Fishing : MonoBehaviour
                 popUpIndex++;
             }
         }
-        else if (popUpIndex == 3)
+        else if (popUpIndex == 4)
         {
             if (Fishing.fishingDone == true)
             {
