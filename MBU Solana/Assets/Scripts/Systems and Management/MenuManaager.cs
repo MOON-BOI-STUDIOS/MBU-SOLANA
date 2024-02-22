@@ -13,11 +13,42 @@ public class MenuManaager : MonoBehaviour
     public AudioClip transitionOutSound;
     public AudioSource musicPlayer;
     bool isLevelLoading = false;
+    public GameObject videoOjbct;
+
+    public int number;
 
     public GameObject moonboiStudioLogo, moonboiUniverseLogo;
+
+    public static MenuManaager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        number = PlayerPrefs.GetInt("num");
+        
+
+    }
     // Start is called before the first frame update
     void Start()
     {
+
+        if(number == 0)
+        {
+            StartCoroutine(loadMenu());
+          
+
+        }
+        else
+        {
+            moonboiStudioLogo.SetActive(false);
+            moonboiUniverseLogo.SetActive(false);
+            videoOjbct.gameObject.SetActive(false);
+            Camera.main.transform.GetComponent<AudioSource>().enabled = true;
+            startButton.SetActive(true);
+        }
         PlayerPrefs.SetInt("firstLoad", 0);
         //sets the default values at the start of the game
         PlayerPrefs.SetInt("Coins", 20);
@@ -28,7 +59,7 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.SetInt("Round", 0);
         PlayerPrefs.SetInt("LastLocation", 0);
 
-        StartCoroutine(loadMenu());
+        
     }
 
     // Update is called once per frame
@@ -72,7 +103,7 @@ public class MenuManaager : MonoBehaviour
     //start funtion. triggers the studio logo off, after it is played through. enables background music, turns on the start buttons
     IEnumerator loadMenu()
     {
-        
+        videoOjbct.gameObject.SetActive(true);
         yield return new WaitForSeconds(5f);
         moonboiStudioLogo.SetActive(false);
         moonboiUniverseLogo.SetActive(true);

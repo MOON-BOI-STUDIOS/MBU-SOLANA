@@ -13,11 +13,19 @@ public class Pause : MonoBehaviour
 
     [Header("Game object references")]
     public GameObject pauseMenuUI;
+    public int num;
+
+    public static Pause instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
 
 
-
-
-
+    }
 
 
     /// <summary>
@@ -26,9 +34,14 @@ public class Pause : MonoBehaviour
     /// <param name="index"></param>
     public void LoadLevel(int index)
     {
+       
         SceneManager.LoadScene(index);
+        num = 1;
+        PlayerPrefs.SetInt("num", num);
 
     }
+
+    
     public void Update()
     {
         // pause and un pause function
