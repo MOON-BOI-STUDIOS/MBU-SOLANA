@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemInventory: MonoBehaviour
+public class ItemInventory: MonoBehaviour, IDataPersistanceScript
 {
     #region Singleton
     public static ItemInventory instance;
@@ -243,5 +243,46 @@ public class ItemInventory: MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public void LoadData(GameData data)
+    {
+
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        Debug.Log("Number of items in ythe inventoryItemList" + inventoryItemList.Count);
+        //Check index from the item list in AddInventoryItemList and if it is a rod object then save bait as well
+        for(int i = 0;i < inventoryItemList.Count;i++)
+        {
+            int idx = inventoryItemList[i].itemNumber;
+            int baitValue = -1;
+            Debug.Log("Index of the data being saved" + idx);
+            if(idx >= 0)
+            {
+                if(string.Equals(inventoryItemList[i].classOfItem.ToString(),"bait"))
+                {
+                    BaitItemObjj queryItem = (BaitItemObjj)inventoryItemList[i];
+                    baitValue = queryItem.GetbaitValue();
+                }
+                data.savedData.Add(new ItemData(idx,baitValue));
+            }
+        }
+        // Save hotbar items if any
+        for(int i = 0;i < hotbarItemList.Count;i++)
+        {
+            int idx = hotbarItemList[i].itemNumber;
+            int baitValue = -1;
+            if(idx >= 0)
+            {
+                if(string.Equals(hotbarItemList[i].classOfItem.ToString(),"bait"))
+                {
+                    BaitItemObjj queryItem = (BaitItemObjj)hotbarItemList[i];
+                    baitValue = queryItem.GetbaitValue();
+                }
+                data.savedData.Add(new ItemData(idx,baitValue));
+            }
+        }
     }
 }

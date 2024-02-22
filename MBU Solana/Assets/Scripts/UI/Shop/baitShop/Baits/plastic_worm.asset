@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72c2fe4a567969d4facb44a819e7671a, type: 3}
   m_Name: plastic_worm
   m_EditorClassIdentifier: 
+  itemNumber: 5
   name: Plastic Worm
   icon: {fileID: 21300000, guid: b83e70701439a4843a6411d1343be9af, type: 3}
   ItemDescription: 

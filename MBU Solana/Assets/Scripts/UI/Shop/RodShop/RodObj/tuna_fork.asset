@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156a8f0b3d892bf4dab6bc36c06027e5, type: 3}
   m_Name: tuna_fork
   m_EditorClassIdentifier: 
+  itemNumber: 1
   name: Tuna Fork
   icon: {fileID: 21300000, guid: a0041102d53689a4e81058cb32480e79, type: 3}
   ItemDescription: 

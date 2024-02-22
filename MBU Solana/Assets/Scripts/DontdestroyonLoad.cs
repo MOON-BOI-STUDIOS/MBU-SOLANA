@@ -42,9 +42,9 @@ public class DontdestroyonLoad : MonoBehaviour
         //nextQuest = QuestManagerFishing.instance.Qbjective1;
         //nextQuest2 = QuestManagerFishing.instance.Objective2;
         //canshop = CollisionType.instance.canFish;
-        Debug.Log(nextQuest);
-        Debug.Log(nextQuest2);
-        Debug.Log(canshop);
+        //Debug.Log(nextQuest);
+        //Debug.Log(nextQuest2);
+        //Debug.Log(canshop);
  
 
 

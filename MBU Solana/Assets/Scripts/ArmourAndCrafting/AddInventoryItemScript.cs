@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class AddInventoryItemScript : MonoBehaviour
+public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
 {
     
     public List<Items> itemList = new List<Items>();
@@ -102,9 +102,38 @@ public class AddInventoryItemScript : MonoBehaviour
         // 2x Basic rod and 2x plastic worm bait
         for(int i = 0;i < itemListIndex.Length;i++)
         {
-            Items awardItem = itemList[itemListIndex[i]];
-            AddToInventory(awardItem);
+            if(itemList.Count > itemListIndex[i])
+            {
+                Items awardItem = itemList[itemListIndex[i]];
+                AddToInventory(awardItem);
+            }
         }
+    }
+
+    public void LoadData(GameData data)
+    {
+        Debug.Log("Number of items in saved game data" + data.savedData.Count);
+        for(int i = 0;i < data.savedData.Count;i++)
+        {
+            if(itemList.Count > data.savedData[i].itemListIndex)
+            {
+                Items item = itemList[data.savedData[i].itemListIndex];
+                if(string.Equals(item.classOfItem.ToString(),"bait"))
+                {
+                    BaitItemObjj queryitem = (BaitItemObjj)item;
+                    queryitem.SetbaitValue(data.savedData[i].depletivebait);
+                    AddToInventory(queryitem);
+                }
+                else{
+                    AddToInventory(item);
+                }
+            }
+        }
+    }
+
+    public void SaveData(ref GameData data)
+    {
+
     }
 
 }

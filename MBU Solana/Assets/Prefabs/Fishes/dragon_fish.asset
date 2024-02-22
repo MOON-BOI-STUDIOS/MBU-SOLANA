@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 530f79eed9c8e40388b7ff0539fb069e, type: 3}
   m_Name: dragon_fish
   m_EditorClassIdentifier: 
+  itemNumber: 15
   name: Dragon Fish
   icon: {fileID: 21300000, guid: dce5cf10008bd467abf4447d3fce4bd1, type: 3}
   ItemDescription: 

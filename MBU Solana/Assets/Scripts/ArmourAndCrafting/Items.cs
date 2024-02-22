@@ -7,6 +7,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Items", menuName = "Items/primary")]
 public class Items : ScriptableObject
 {
+    //This item number should be the index of the item in the gameManeger item List
+    public int itemNumber;
     public string name = "default";
     public Sprite icon = null;
     public string ItemDescription;

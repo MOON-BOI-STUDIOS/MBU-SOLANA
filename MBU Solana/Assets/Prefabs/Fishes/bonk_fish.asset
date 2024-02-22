@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 530f79eed9c8e40388b7ff0539fb069e, type: 3}
   m_Name: bonk_fish
   m_EditorClassIdentifier: 
+  itemNumber: 13
   name: Bonk
   icon: {fileID: 21300000, guid: 275ecac02abb0433bb5760cae02c918d, type: 3}
   ItemDescription: 

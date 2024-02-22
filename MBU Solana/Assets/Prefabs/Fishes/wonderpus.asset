@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 530f79eed9c8e40388b7ff0539fb069e, type: 3}
   m_Name: wonderpus
   m_EditorClassIdentifier: 
+  itemNumber: 12
   name: wonderpus
   icon: {fileID: 21300000, guid: 74547c63bd21d4a2bbd338890e6be258, type: 3}
   ItemDescription: 

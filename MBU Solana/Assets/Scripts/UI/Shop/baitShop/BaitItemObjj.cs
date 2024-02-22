@@ -15,5 +15,14 @@ public class BaitItemObjj : Items
         //AddInventoryItemScript.instance.OnItemUse(this);
         //ItemInventory.instance.RemoveItem(this);
     }
+    public virtual int GetbaitValue()
+    {
+        return (int)bait;
+    }
+
+    public virtual void SetbaitValue(int value)
+    {
+        bait = (float)value;
+    }
 
 }
