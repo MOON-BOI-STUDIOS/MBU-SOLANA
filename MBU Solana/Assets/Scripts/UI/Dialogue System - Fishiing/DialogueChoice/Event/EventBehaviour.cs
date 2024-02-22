@@ -71,6 +71,7 @@ public class EventBehaviour : ScriptableObject
         CollisionType.instance.isTutorialOver = false;
         CollisionType.instance.isShop = true;
         CollisionType.instance.canFish = true;
+        WalkingandFishing.instance.IsWalkingActive();
         PlayerPrefs.SetInt("isTutorialOver", (CollisionType.instance.isTutorialOver ? 1 : 0));
         PlayerPrefs.SetInt("isShop", (CollisionType.instance.isShop ? 1 : 0));
         PlayerPrefs.SetInt("canFish", (CollisionType.instance.canFish ? 1 : 0));

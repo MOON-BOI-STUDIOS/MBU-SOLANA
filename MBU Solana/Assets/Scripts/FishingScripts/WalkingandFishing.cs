@@ -61,6 +61,8 @@ public class WalkingandFishing : MonoBehaviour
             Mecha.SetActive(false);
             jolt.SetActive(false);
             HUD1.SetActive(true);
+            CollisionType.instance.isTutorialOver = false;
+            PlayerPrefs.SetInt("isTutorialOver", (CollisionType.instance.isTutorialOver ? 1 : 0));
             
         }
     }

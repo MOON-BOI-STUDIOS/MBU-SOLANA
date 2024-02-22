@@ -127,6 +127,7 @@ public class Fishing : MonoBehaviour
     {
         if(fishMarkerCounter != 0)
         {
+            Debug.Log(fishMarkerCounter);
             filledfishUI[fishMarkerCounter].SetActive(true);
             greenAreaScale.x = greenscale[fishMarkerCounter];
         }
@@ -186,6 +187,11 @@ public class Fishing : MonoBehaviour
     //triggered through the button. starts the jolt animation
     public void jolt()
     {
+        if(!ItemInventory.instance.Checkcanfish())
+        {
+            return;
+        }
+        Debug.Log("Jolt working");
         GetequippedItems();
         // show number of unfilled fish underneath the bar
         Numberofunfilledfishes();
@@ -214,7 +220,7 @@ public class Fishing : MonoBehaviour
             audioS.PlayOneShot(select);
             fishMarkerCounter++;
             //fishingDone = true;
-            if (fishMarkerCounter == numOfTaps)
+            if (fishMarkerCounter >= numOfTaps)
             {
 
                 controller5.CatchFish(numOfTaps);
