@@ -26,6 +26,9 @@ public class CollisionType : MonoBehaviour, ICollisiontype
             instance = this;
         }
         isTutorialOver = DontdestroyonLoad.itutorialOver;
+        isShop = DontdestroyonLoad.canshop;
+        isQuestions = DontdestroyonLoad.isQuestion;
+        canFish = DontdestroyonLoad.canfish;
     }
 
     public Transform GetGameObjectPosition {get { return gameObject.transform; }}

@@ -19,7 +19,8 @@ public class TutorialManager_Fishing : MonoBehaviour
         {
             instance = this;
         }
-        
+
+
     }
 
 

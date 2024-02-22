@@ -9,10 +9,9 @@ public class DontdestroyonLoad : MonoBehaviour
     [SerializeField] public static bool itutorialOver;
     [SerializeField] public static bool canshop;
     [SerializeField] public static bool isQuestion;
-    [SerializeField] public static bool noTutorial;
-    [SerializeField] public static bool noTutorial2;
     [SerializeField] public static bool nextQuest;
     [SerializeField] public static bool nextQuest2;
+    [SerializeField] public static bool canfish;
 
     private void Awake()
     {
@@ -28,21 +27,26 @@ public class DontdestroyonLoad : MonoBehaviour
         itutorialOver = CollisionType.instance.isTutorialOver;
         canshop = CollisionType.instance.isShop;
         isQuestion = CollisionType.instance.isQuestions;
-        noTutorial = TutorialManager_Fishing.instance.noTutorial;
-        noTutorial2 = TutorialManager.instance.noTutorial;
-        this.enabled = true;
+        nextQuest = QuestManagerFishing.instance.Qbjective1;
+        nextQuest2 = QuestManagerFishing.instance.Objective2;
+        canfish = CollisionType.instance.canFish;
+
+
     }
     public void Update()
     {
 
-        itutorialOver = CollisionType.instance.isTutorialOver;
-        itutorialOver = CollisionType.instance.isTutorialOver;
-        canshop = CollisionType.instance.isShop;
-        isQuestion = CollisionType.instance.isQuestions;
-        noTutorial = TutorialManager_Fishing.instance.noTutorial;
-        noTutorial2 = TutorialManager.instance.noTutorial;
-        nextQuest = QuestManagerFishing.instance.Qbjective1;
-        nextQuest2 = QuestManagerFishing.instance.Objective2;
+        //itutorialOver = CollisionType.instance.isTutorialOver;
+        //canshop = CollisionType.instance.isShop;
+        //isQuestion = CollisionType.instance.isQuestions;
+        //nextQuest = QuestManagerFishing.instance.Qbjective1;
+        //nextQuest2 = QuestManagerFishing.instance.Objective2;
+        //canshop = CollisionType.instance.canFish;
+        Debug.Log(nextQuest);
+        Debug.Log(nextQuest2);
+        Debug.Log(canshop);
+ 
+
 
     }
 
