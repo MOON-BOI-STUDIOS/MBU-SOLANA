@@ -3189,7 +3189,7 @@ MonoBehaviour:
   myVideoPlayer: {fileID: 1001620414}
   videoObj: {fileID: 1001620413}
   panel: {fileID: 1746310557}
-  isFinished: 1
+  isFinished: 0
   music: {fileID: 1413088173}
 --- !u!114 &642462191
 MonoBehaviour:
