@@ -68,5 +68,9 @@ public class EventBehaviour : ScriptableObject
         CollisionType.instance.canFish = true;
 
     }
+    public void awardRodsandBait()
+    {
+        AddInventoryItemScript.instance.InitialAward();
+    }
 
 }

@@ -96,4 +96,15 @@ public class AddInventoryItemScript : MonoBehaviour
         }
     }
 
+    public void InitialAward()
+    {
+        int[] itemListIndex = {0,0,5,5};
+        // 2x Basic rod and 2x plastic worm bait
+        for(int i = 0;i < itemListIndex.Length;i++)
+        {
+            Items awardItem = itemList[itemListIndex[i]];
+            AddToInventory(awardItem);
+        }
+    }
+
 }
