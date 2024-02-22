@@ -10,7 +10,7 @@ public class VideoScript : MonoBehaviour
 
     public GameObject videoObj;
     public GameObject panel;
-    public bool isFinished;
+    public bool isFinished = false;
     public GameObject music;
 
     public static VideoScript instance;
@@ -19,6 +19,19 @@ public class VideoScript : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+           
+            
+
+        }
+        isFinished = (PlayerPrefs.GetInt("isFinished") != 0);
+    
+      
+
+        if (isFinished == true)
+        {
+            panel.SetActive(false);
+            videoObj.SetActive(false);
+            music.SetActive(true);
         }
     }
     // Start is called before the first frame update
@@ -39,5 +52,6 @@ public class VideoScript : MonoBehaviour
         panel.SetActive(false);
         videoObj.SetActive(false);
         music.SetActive(true);
+        PlayerPrefs.SetInt("isFinished", (isFinished ? 1 : 0));
     }
 }

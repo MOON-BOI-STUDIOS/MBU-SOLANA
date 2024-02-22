@@ -24,7 +24,7 @@ public class TutorialManager : MonoBehaviour
         {
             instance = this;
         }
-
+        noTutorial = (PlayerPrefs.GetInt("noTutorial") != 0);
     }
 
 
@@ -83,7 +83,8 @@ public class TutorialManager : MonoBehaviour
                 popUpIndex++;
                 Debug.Log("test end");
                 noTutorial = true;
-              
+                PlayerPrefs.SetInt("noTutorial", (noTutorial ? 1 : 0));
+
             }
         }
 #else

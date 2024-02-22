@@ -18,6 +18,7 @@ public class DontdestroyonLoad : MonoBehaviour
         if(instance != null)
         {
             Destroy(gameObject);
+        
         }
         else
         {
@@ -45,6 +46,7 @@ public class DontdestroyonLoad : MonoBehaviour
         //Debug.Log(nextQuest);
         //Debug.Log(nextQuest2);
         //Debug.Log(canshop);
+      
  
 
 

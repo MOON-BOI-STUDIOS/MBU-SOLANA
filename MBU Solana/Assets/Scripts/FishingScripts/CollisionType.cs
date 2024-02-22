@@ -24,11 +24,15 @@ public class CollisionType : MonoBehaviour, ICollisiontype
         if (instance == null)
         {
             instance = this;
+           
+
         }
-        isTutorialOver = DontdestroyonLoad.itutorialOver;
-        isShop = DontdestroyonLoad.canshop;
-        isQuestions = DontdestroyonLoad.isQuestion;
-        canFish = DontdestroyonLoad.canfish;
+     
+
+        isQuestions = (PlayerPrefs.GetInt("isQuestion") != 0);
+        isShop = (PlayerPrefs.GetInt("isShop") != 0);
+        isTutorialOver = (PlayerPrefs.GetInt("isTutorialOver") != 0);
+        canFish = (PlayerPrefs.GetInt("canFish") != 0);
     }
 
     public Transform GetGameObjectPosition {get { return gameObject.transform; }}

@@ -52,6 +52,7 @@ public class EventBehaviour : ScriptableObject
     public void questionDialogue()
     {
         CollisionType.instance.isQuestions = true;
+        PlayerPrefs.SetInt("isQuestions", (CollisionType.instance.isQuestions ? 1 : 0));
     }
 
     public void startrTutorial()
@@ -59,6 +60,10 @@ public class EventBehaviour : ScriptableObject
         CollisionType.instance.isTutorialOver = true;
         CollisionType.instance.isQuestions = false;
         CollisionType.instance.isShop = true;
+        PlayerPrefs.SetInt("isQuestions", (CollisionType.instance.isQuestions ? 1 : 0));
+        PlayerPrefs.SetInt("isTutorialOver", (CollisionType.instance.isTutorialOver ? 1 : 0));
+        PlayerPrefs.SetInt("isShop", (CollisionType.instance.isShop ? 1 : 0));
+
     }
 
     public void OffTutoral()
@@ -66,6 +71,9 @@ public class EventBehaviour : ScriptableObject
         CollisionType.instance.isTutorialOver = false;
         CollisionType.instance.isShop = true;
         CollisionType.instance.canFish = true;
+        PlayerPrefs.SetInt("isTutorialOver", (CollisionType.instance.isTutorialOver ? 1 : 0));
+        PlayerPrefs.SetInt("isShop", (CollisionType.instance.isShop ? 1 : 0));
+        PlayerPrefs.SetInt("canFish", (CollisionType.instance.canFish ? 1 : 0));
 
     }
     public void awardRodsandBait()

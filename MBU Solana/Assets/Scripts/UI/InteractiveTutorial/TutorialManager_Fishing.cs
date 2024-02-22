@@ -19,8 +19,8 @@ public class TutorialManager_Fishing : MonoBehaviour
         {
             instance = this;
         }
-
-
+    
+        noTutorial = (PlayerPrefs.GetInt("noTutorial") != 0);
     }
 
 
@@ -83,6 +83,8 @@ public class TutorialManager_Fishing : MonoBehaviour
             {
                 popUpIndex++;
                 noTutorial = true;
+                PlayerPrefs.SetInt("noTutorial", (noTutorial ? 1 : 0));
+
             }
         }
        

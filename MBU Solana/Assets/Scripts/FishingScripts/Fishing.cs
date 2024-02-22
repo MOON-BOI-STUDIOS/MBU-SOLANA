@@ -43,7 +43,13 @@ public class Fishing : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-        } 
+            PlayerPrefs.DeleteKey("finished");
+            PlayerPrefs.DeleteKey("fishCaughts");
+        }
+     
+
+        finished = (PlayerPrefs.GetInt("finished") != 0);
+        fishCaughts = (PlayerPrefs.GetInt("fishCaughts") != 0);
     }
     // Start is called before the first frame update
     void Start()
@@ -271,6 +277,8 @@ public class Fishing : MonoBehaviour
 
         fishCaughts = false;
         finished = true;
+        PlayerPrefs.SetInt("finished", (finished ? 1 : 0));
+        PlayerPrefs.SetInt("fishCaughts", (fishCaughts ? 1 : 0));
 
     }
 }
