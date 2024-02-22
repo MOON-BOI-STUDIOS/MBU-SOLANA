@@ -1361,6 +1361,8 @@ MonoBehaviour:
   startButtonSound: {fileID: 8300000, guid: 7b0006d02bb5ad3429ba06320d67c550, type: 3}
   transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
   musicPlayer: {fileID: 1624734551}
+  videoOjbct: {fileID: 1037467309}
+  number: 0
   moonboiStudioLogo: {fileID: 1479888381}
   moonboiUniverseLogo: {fileID: 329045840}
 --- !u!82 &697768432
@@ -3014,6 +3016,8 @@ MonoBehaviour:
   startButtonSound: {fileID: 0}
   transitionOutSound: {fileID: 0}
   musicPlayer: {fileID: 0}
+  videoOjbct: {fileID: 0}
+  number: 1
   moonboiStudioLogo: {fileID: 0}
   moonboiUniverseLogo: {fileID: 0}
 --- !u!4 &1720768583
