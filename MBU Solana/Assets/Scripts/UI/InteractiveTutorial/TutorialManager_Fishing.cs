@@ -56,21 +56,21 @@ public class TutorialManager_Fishing : MonoBehaviour
             }
            
         }
-        if(popUpIndex == 1)
+        if(popUpIndex == 0)
         {
             if(Openinventory == true)
             {
                 popUpIndex++;
             }
         }
-        else if(popUpIndex == 2)
+        else if(popUpIndex == 1)
         {
             if(closeinventory == true)
             {
                 popUpIndex++;
             }
         }
-        else if (popUpIndex == 3)
+        else if (popUpIndex == 2)
         {
             if (Fishing.buttonPressed == true)
             {
