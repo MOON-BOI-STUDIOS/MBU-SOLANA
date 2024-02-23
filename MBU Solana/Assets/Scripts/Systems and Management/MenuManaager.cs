@@ -28,7 +28,7 @@ public class MenuManaager : MonoBehaviour
             instance = this;
         }
         number = PlayerPrefs.GetInt("num");
-        
+        Time.timeScale = 1;
 
     }
     // Start is called before the first frame update

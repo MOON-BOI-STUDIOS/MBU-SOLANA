@@ -25,7 +25,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public GameObject fadeOut;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
-    public GameObject enterButton, fishButton;
+    public GameObject enterButton, fishButton, ExitButton;
 
     public Transform[] startLocation;
 
@@ -162,6 +162,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             {
                 fishButton.SetActive(true);
             }
+            if (collision.name == "FishingExit")
+            {
+                ExitButton.SetActive(true);
+            }
 
         }
     }
@@ -184,6 +188,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if (collision.name == "ShopExit")
         {
             fishButton.SetActive(false);
+        }
+        if (collision.name == "FishingExit")
+        {
+            ExitButton.SetActive(false);
         }
     }
   
