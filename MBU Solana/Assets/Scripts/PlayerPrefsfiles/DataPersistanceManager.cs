@@ -24,6 +24,7 @@ public class DataPersistanceManager : MonoBehaviour
             Debug.LogError("Found one or more data persistance script in the scene");
         }
         instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     private void Start()
