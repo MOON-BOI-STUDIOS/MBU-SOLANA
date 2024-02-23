@@ -11,7 +11,7 @@ public class BonkSceneLoader : MonoBehaviour
         {
             if(!isCalled)
             {
-                GameManager.Inst.nextScene(4);
+                GameManager.Inst.nextScene(3);
                 isCalled = true;
             }
 
