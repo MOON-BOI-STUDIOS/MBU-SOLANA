@@ -20,7 +20,7 @@ public class TutorialManager_Fishing : MonoBehaviour
             instance = this;
         }
     
-        noTutorial = (PlayerPrefs.GetInt("noTutorial") != 0);
+        noTutorial = (PlayerPrefs.GetInt("noTutorialFish") != 0);
     }
 
 
@@ -30,11 +30,16 @@ public class TutorialManager_Fishing : MonoBehaviour
         {
             this.enabled = false;
         }
+        else if (noTutorial == false)
+        {
+            this.enabled = true;
+        }
     }
 
     public void Opinv()
     {
         Openinventory = true;
+        StartCoroutine(wait());
     }
     public void cloinv()
     {
@@ -65,10 +70,9 @@ public class TutorialManager_Fishing : MonoBehaviour
         }
         else if(popUpIndex == 1)
         {
-            if(closeinventory == true)
-            {
-                popUpIndex++;
-            }
+            StartCoroutine(wait());
+            popUpIndex++;
+            
         }
         else if (popUpIndex == 2)
         {
@@ -83,7 +87,7 @@ public class TutorialManager_Fishing : MonoBehaviour
             {
                 popUpIndex++;
                 noTutorial = true;
-                PlayerPrefs.SetInt("noTutorial", (noTutorial ? 1 : 0));
+                PlayerPrefs.SetInt("noTutorialFish", (noTutorial ? 1 : 0));
 
             }
         }
@@ -92,5 +96,9 @@ public class TutorialManager_Fishing : MonoBehaviour
          
     }
 
+    public IEnumerator wait()
+    {
+        yield return new WaitForSeconds(5f);
+    }
   
 }
