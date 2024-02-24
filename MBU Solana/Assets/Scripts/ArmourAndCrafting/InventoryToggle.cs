@@ -141,6 +141,11 @@ public class InventoryToggle : MonoBehaviour
         //ChangeCursorState(true);
     }
 
+    public void TurnOfTutorial()
+    {
+        TutorialManager_Fishing.instance.cloinv();
+    }
+
     public void InventoryTabOpen()
     {
         InventoryTab.SetActive(true);

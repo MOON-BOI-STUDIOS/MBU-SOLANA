@@ -70,8 +70,11 @@ public class TutorialManager_Fishing : MonoBehaviour
         }
         else if(popUpIndex == 1)
         {
-            StartCoroutine(wait());
-            popUpIndex++;
+            if (closeinventory == true) 
+           {
+                popUpIndex++;
+           }
+           
             
         }
         else if (popUpIndex == 2)
@@ -98,7 +101,7 @@ public class TutorialManager_Fishing : MonoBehaviour
 
     public IEnumerator wait()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(26f);
     }
   
 }

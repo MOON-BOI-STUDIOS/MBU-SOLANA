@@ -34,6 +34,7 @@ public class WalkingandFishing : MonoBehaviour
     public Fishing fishing;
     public DialoguebaseFishing DB;
     public GameObject HUD1;
+    public GameObject txt;
 
     public Transform tutorialPos;
     void Start()
@@ -63,6 +64,7 @@ public class WalkingandFishing : MonoBehaviour
             HUD1.SetActive(true);
             CollisionType.instance.isTutorialOver = false;
             PlayerPrefs.SetInt("isTutorialOver", (CollisionType.instance.isTutorialOver ? 1 : 0));
+            txt.gameObject.SetActive(false);
             
         }
     }
@@ -90,7 +92,8 @@ public class WalkingandFishing : MonoBehaviour
             Mecha.SetActive(true);
             Joystick.SetActive(false);
             HUD1.SetActive(false);
-          
+            txt.gameObject.SetActive(true);
+
             //Fishing.transform.position = fisingPosition.position;
         }
         else
@@ -121,6 +124,7 @@ public class WalkingandFishing : MonoBehaviour
             FishingObj.transform.position = tutorialPos.position;
             //Fishing.transform.position = fisingPosition.position;
             HUD1.SetActive(false);
+            txt.gameObject.SetActive(true);
         }
     }
 

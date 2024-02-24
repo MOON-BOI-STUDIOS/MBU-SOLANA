@@ -206,15 +206,15 @@ public class Fishing : MonoBehaviour
         joltButton.SetActive(false);
         fishButton.SetActive(true);
         finshingMechanic.SetActive(true);
-        fishingDone = true;
+       
     }
   
     //fish button controls
     public void fish()
     {
-
+        fishingDone = true;
         //successful attempt
-        if(hook.GetChild(0).GetComponent<Hook>().isGreenArea == true)
+        if (hook.GetChild(0).GetComponent<Hook>().isGreenArea == true)
         {
 
             audioS.PlayOneShot(select);
