@@ -16,6 +16,7 @@ TagManager:
   - PowerDown
   - FishingZone
   - FishermanSpot
+  - InventoryObject
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Cars
   - Booster
   - Ground
-  - 
+  - InventoryObject
   - 
   - 
   - 

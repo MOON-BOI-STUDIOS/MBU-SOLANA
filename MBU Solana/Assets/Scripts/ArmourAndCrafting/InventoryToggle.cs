@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class InventoryToggle : MonoBehaviour
 {
+    private GameObject InventoryObjectParent;
+
+    public static InventoryToggle instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
 
     private bool inventoryOpen = false;
 
@@ -154,6 +164,17 @@ public class InventoryToggle : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+        }
+    }
+
+    public void SwitchParent()
+    {
+        InventoryObjectParent = GameObject.Find("InventoryBackground 1");
+        {
+            if(InventoryObjectParent != null)
+            {
+                InevtoryParent.transform.parent = InventoryObjectParent.transform;
+            }
         }
     }
 }

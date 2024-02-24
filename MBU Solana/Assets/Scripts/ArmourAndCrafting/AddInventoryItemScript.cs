@@ -7,7 +7,6 @@ using Random = UnityEngine.Random;
 
 public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
 {
-    
     public List<Items> itemList = new List<Items>();
 
     public List<Items> CraftingReceipes = new List<Items>();
@@ -31,6 +30,7 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
         {
             instance = this;
         }
+        DontDestroyOnLoad(this.gameObject);
     }
 
     #endregion
