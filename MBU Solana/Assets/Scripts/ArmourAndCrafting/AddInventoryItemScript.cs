@@ -64,7 +64,7 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     {
         //Debug.Log("Consuming: " + _itemType + "Add amount: " + amount);
         // Sell item to the fisherman
-        if(IsSelling)
+        if(ButtonScript.instance.GetSellingItems() && !item.IsEquippable)
         {
             //Add the amount of gold coins to the player from item.GetItemValue()
             

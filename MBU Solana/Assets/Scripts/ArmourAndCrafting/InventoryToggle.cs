@@ -176,5 +176,9 @@ public class InventoryToggle : MonoBehaviour
                 InevtoryParent.transform.parent = InventoryObjectParent.transform;
             }
         }
+        if(ButtonScript.instance.GetSellingItems())
+        {
+            ButtonScript.instance.SetSellingItems(false);
+        }
     }
 }

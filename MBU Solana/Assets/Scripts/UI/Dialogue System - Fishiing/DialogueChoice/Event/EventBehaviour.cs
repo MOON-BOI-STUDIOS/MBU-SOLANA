@@ -81,5 +81,10 @@ public class EventBehaviour : ScriptableObject
     {
         AddInventoryItemScript.instance.InitialAward();
     }
+    public void SellFish()
+    {
+        ButtonScript.instance.SwitchParent();
+        ButtonScript.instance.SetSellingItems(true);
+    }
 
 }

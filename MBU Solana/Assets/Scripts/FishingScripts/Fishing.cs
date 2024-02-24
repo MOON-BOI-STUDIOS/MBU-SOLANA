@@ -14,7 +14,7 @@ public class Fishing : MonoBehaviour
     public GameObject[] unfilledfishUI;
     public Transform greenArea;
     Vector3 greenAreaScale;
-    private float[] greenscale = {0.2f,0.2f,0.2f,0.2f,0.2f,0.2f,0.2f,0.2f,};//{0.2f, 0.10f, 0.05f, 0.35f, 0.25f, 0.05f, 0.08f, 0.15f};
+    private float[] greenscale = {0.2f, 0.10f, 0.05f, 0.35f, 0.25f, 0.05f, 0.08f, 0.15f};
     private int numOfTaps;
 
     public GameObject joltButton, fishButton;
