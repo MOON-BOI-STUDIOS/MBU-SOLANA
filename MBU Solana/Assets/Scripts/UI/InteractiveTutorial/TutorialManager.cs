@@ -9,7 +9,7 @@ public class TutorialManager : MonoBehaviour
     public int PCpopUpIndex;
     public PlayerController controller;
     public NPCDialogueManager nPC;
-    public Quest quest;
+    public QuestManinScene quest;
     public GameObject[] PCpopUps;
     public GameObject tutorial;
     public bool noTutorial;

@@ -4,32 +4,32 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Quest : MonoBehaviour
+public class QuestManinScene : MonoBehaviour
 {
     public Image questItem;
     public Color completedColor;
     public Color activeColor;
     public Color currentColor;
 
-    public QuestArrow arrow;
-    public Quest[] allQuests;
+    public QuestArrowMain arrow;
+    public QuestManinScene[] allQuests;
 
     public bool QuestCompleted;
 
     public BoxCollider2D collider2D;
 
-    public int questComplete;
+    public int questCompletemain;
 
     
-   public bool buttonisPressed = false;
-    public bool Pressed = false;
+   public bool buttonisPressed;
+    public bool Pressed;
 
 
     private void Start()
     {
-        allQuests = FindObjectsOfType<Quest>();
+        allQuests = FindObjectsOfType<QuestManinScene>();
         currentColor = questItem.color;
-        questComplete = PlayerPrefs.GetInt("questComplete");
+        QuestCompleted =  (PlayerPrefs.GetInt("Qbjective1main") != 0);
     }
     public void FinishQuest()
     {
@@ -37,20 +37,27 @@ public class Quest : MonoBehaviour
         currentColor = completedColor;
         questItem.color = activeColor;
         arrow.gameObject.SetActive(false);
-        questComplete++;
-        PlayerPrefs.SetInt("questComplete", questComplete);
+        questCompletemain++;
+        QuestCompleted = true;
+        PlayerPrefs.SetInt("questCompletemain", questCompletemain);
        
    
     }
 
+    public void Buttonpressed()
+    {
+        buttonisPressed = true;
+    }
+    public void pressed()
+    {
+        Pressed = true;
+    }
 
-
- 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
-            QuestCompleted = true;
+            
             FinishQuest();
             //Destroy(gameObject);
             //this.gameObject.SetActive(false);
@@ -62,7 +69,7 @@ public class Quest : MonoBehaviour
     {
         arrow.gameObject.SetActive(true);
         arrow.target = this.transform;
-        foreach(Quest quest in allQuests)
+        foreach(QuestManinScene quest in allQuests)
         {
             quest.questItem.color = quest.currentColor;
         }

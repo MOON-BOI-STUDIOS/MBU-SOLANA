@@ -2,12 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class QuestManagerFishing : MonoBehaviour
 {
 
 
     public static QuestManagerFishing instance;
+
+    public int questObjective;
+    public TextMeshProUGUI complted;
+    public GameObject txt;
+    public Button questbtn;
 
     private void Awake()
     {
@@ -18,35 +25,49 @@ public class QuestManagerFishing : MonoBehaviour
 
         Qbjective1 = (PlayerPrefs.GetInt("Qbjective1") != 0);
         Objective2 = (PlayerPrefs.GetInt("Objective2") != 0);
+        questObjective = PlayerPrefs.GetInt("questComplete");
 
-       
+
     }
 
 
     public void Start()
     {
-        //if (Qbjective1 == true)
-        //{
-        //    quest1.gameObject.SetActive(false);
-        //    quest2.gameObject.SetActive(true);
-        //    fishQuests[1].collider2D.enabled = true;
-        //    fishQuests[0].collider2D.enabled = false;
-        //}
-        //else
-        //{
-        //    quest1.gameObject.SetActive(true);
-        //    quest2.gameObject.SetActive(false);
-        //    fishQuests[0].collider2D.enabled = true;
-        //    fishQuests[1].collider2D.enabled = false;
-        //}
+        quest1.gameObject.SetActive(true);
+        quest2.gameObject.SetActive(false);
+        fishQuests[0].collider2D.enabled = true;
+        fishQuests[1].collider2D.enabled = false;
+        questbtn.GetComponent<Image>().color = Color.green;
+        if (questObjective == 2)
+        {
+            quest1.gameObject.SetActive(false);
+            quest2.gameObject.SetActive(true);
+            fishQuests[0].collider2D.enabled = false;
+            fishQuests[1].collider2D.enabled = true;
+        }
+        else if( questObjective == 3)
+        {
+            complted.text = "Quest Completed!".ToString();
+            questbtn.interactable = false;
+            questbtn.GetComponent<Image>().color = Color.red;
+            txt.SetActive(false);
+            complted.gameObject.SetActive(true);
+        }
+        else if (questObjective == 1)
+        {
+            quest1.gameObject.SetActive(false);
+            quest2.gameObject.SetActive(true);
+            fishQuests[0].collider2D.enabled = false;
+            fishQuests[1].collider2D.enabled = true;
+        }
+
+ 
+        
     }
     public Quest[] fishQuests;
 
-
-
     public bool Qbjective1;
     public bool Objective2;
-
 
     public Button quest1;
     public Button quest2;
@@ -62,24 +83,34 @@ public class QuestManagerFishing : MonoBehaviour
         Objective2 = fishQuests[1].QuestCompleted;
         PlayerPrefs.SetInt("Qbjective1", (Qbjective1 ? 1 : 0));
         PlayerPrefs.SetInt("Objective2", (Objective2 ? 1 : 0));
+        questObjective = PlayerPrefs.GetInt("questComplete");
 
-        //if (Qbjective1 == true)
-        //{
-        //    quest1.gameObject.SetActive(false);
-        //    quest2.gameObject.SetActive(true);
-        //    fishQuests[1].collider2D.enabled = true;
-        //    fishQuests[0].collider2D.enabled = false;
-           
-        //}
-        //else
-        //{
-        //    quest1.gameObject.SetActive(true);
-        //    quest2.gameObject.SetActive(false);
-        //    fishQuests[0].collider2D.enabled = true;
-        //    fishQuests[1].collider2D.enabled = false;
-        //    PlayerPrefs.SetInt("Qbjective1", (Qbjective1 ? 1 : 0));
-        //    PlayerPrefs.SetInt("Objective2", (Objective2 ? 1 : 0));
-        //}
+        if (questObjective == 2)
+        {
+            quest1.gameObject.SetActive(false);
+            quest2.gameObject.SetActive(true);
+            fishQuests[0].collider2D.enabled = false;
+            fishQuests[1].collider2D.enabled = true;
+        }
+        else if (questObjective == 3)
+        {
+            complted.text = "Quest Completed!".ToString();
+            questbtn.interactable = false;
+            questbtn.GetComponent<Image>().color = Color.red;
+            txt.SetActive(false);
+            complted.gameObject.SetActive(true);
+            quest1.gameObject.SetActive(false);
+            quest2.gameObject.SetActive(false);
+        }
+        else if(questObjective == 1)
+        {
+            quest1.gameObject.SetActive(false);
+            quest2.gameObject.SetActive(true);
+            fishQuests[0].collider2D.enabled = false;
+            fishQuests[1].collider2D.enabled = true;
+        }
+
+        
     }
 
 
