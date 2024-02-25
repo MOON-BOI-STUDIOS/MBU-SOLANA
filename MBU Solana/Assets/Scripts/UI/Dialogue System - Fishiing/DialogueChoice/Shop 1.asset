@@ -52,7 +52,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: Can I give you back my fish?
+  - buttonName: Can I sell you my Fish?
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
