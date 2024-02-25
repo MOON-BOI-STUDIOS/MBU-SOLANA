@@ -15,7 +15,7 @@ public class MenuManaager : MonoBehaviour
     bool isLevelLoading = false;
     public GameObject videoOjbct;
 
-    public int number;
+    public int number = 0;
 
     public GameObject moonboiStudioLogo, moonboiUniverseLogo;
 

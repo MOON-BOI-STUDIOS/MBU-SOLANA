@@ -4,69 +4,56 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-// script by Oliver Lancashire
-// sid 1901981
 
-// kap koder - https://www.youtube.com/watch?v=pbuJUaO-wpY&t=107s
 public class AudioOption : MonoBehaviour
 {
-    #region variables
+
     [Header("Mixer")]
     [SerializeField] AudioMixer mixer; // mixer reference
     [Header("Sliders")]
     [SerializeField] Slider musicSlider; //slider for main track
     [SerializeField] Slider SFX; // sound effects
-    [SerializeField] Slider Master; // sound effects
-    [Header("Strings ")]
-    public const string MusicVolume = "MusicVolume"; // music string
-   public const string MasterVolume = "MasterVolume"; // sft string
-    public const string SFXVolume = "SFXVolume"; // sft string
 
-    #endregion
-    #region awake
-    private void Awake()
-    {
-        musicSlider.onValueChanged.AddListener(setMusicVolume); // add lister
-        SFX.onValueChanged.AddListener(setSFXcVolume); // add lister
-        Master.onValueChanged.AddListener(setMastercVolume); // add lister
-    }
-    #endregion
-
-    #region start
     public void Start()
     {
-        //musicSlider.value = PlayerPrefs.GetFloat(Audiomanager.MUSIC_KEY, 1f); //load sound
-        //SFX.value = PlayerPrefs.GetFloat(Audiomanager.SFX_KEY, 1f); // load sound effects
+        if (PlayerPrefs.HasKey("MusicV"))
+        {
+            LoadVolume();
+        }
+        else
+        {
+            setMusic();
+            setSFX();
+        }
     }
-    #endregion
-    #region set music volume
-    /// <summary>
-    /// function yo change the main music volume
-    /// </summary>
-    /// <param name="value"></param>
-    public void setMusicVolume(float value)
+
+    public void setMusic()
     {
-        mixer.SetFloat(MusicVolume, Mathf.Log10(value) * 20);
+        float volume = musicSlider.value;
+        mixer.SetFloat("MusicVolume", Mathf.Log10(volume)*20);
+        PlayerPrefs.SetFloat("MusicV", volume);
     }
-    #endregion
-    #region set sfx
-    /// <summary>
-    /// function to change the sound effects
-    /// </summary>
-    /// <param name="value"></param>
-    public void setSFXcVolume(float value)
+
+    public void setSFX()
     {
-        mixer.SetFloat(SFXVolume, Mathf.Log10(value) * 20);
+        float volume = SFX.value;
+        mixer.SetFloat("SFXVolume", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("SFXV", volume);
     }
-    public void setMastercVolume(float value)
+
+    public void LoadVolume()
     {
-        mixer.SetFloat(MasterVolume, Mathf.Log10(value) * 20);
+        musicSlider.value = PlayerPrefs.GetFloat("MusicV");
+        SFX.value = PlayerPrefs.GetFloat("SFXV");
+        setMusic();
+        setSFX();
     }
-    #endregion
 
     public void OnApplicationQuit()
     {
         Application.Quit();
+        PlayerPrefs.DeleteKey("num");
+
     }
 
 }
