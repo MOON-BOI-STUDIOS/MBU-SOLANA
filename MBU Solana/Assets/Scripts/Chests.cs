@@ -27,11 +27,13 @@ public class Chests : MonoBehaviour
     public void Openchest()
     {
         chest.Play(animation);
+        
     }
 
     public void CoinGain()
     {
         Debug.Log("add something");
+        this.enabled = false;
     }
 
 
