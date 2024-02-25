@@ -143,7 +143,10 @@ public class InventoryToggle : MonoBehaviour
 
     public void TurnOfTutorial()
     {
-        TutorialManager_Fishing.instance.cloinv();
+        if(TutorialManager_Fishing.instance != null)
+        {
+            TutorialManager_Fishing.instance.cloinv();
+        }
     }
 
     public void InventoryTabOpen()
