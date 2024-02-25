@@ -3027,6 +3027,26 @@ PrefabInstance:
       propertyPath: m_text
       value: Leave Fishing Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 603055483426566429, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_text
+      value: The Lengendary Catch
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483426566429, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483426566429, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483426566430, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 432.8494
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483426566430, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -236.83417
+      objectReference: {fileID: 0}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
