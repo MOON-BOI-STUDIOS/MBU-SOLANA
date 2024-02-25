@@ -87,4 +87,9 @@ public class EventBehaviour : ScriptableObject
         ButtonScript.instance.SetSellingItems(true);
     }
 
+    public void TurnonQuest()
+    {
+        uestShop.instance.pressed();
+    }
+
 }

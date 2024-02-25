@@ -43,13 +43,12 @@ MonoBehaviour:
       The fish here aren\u2019t an easy catch, but the thrill is worth it.\n\n"
   - text: 'FISHERMAN
 
-      Once you''ve left my shop ,select the quest tab and pick
-      the fishing spot objective to start the adventure!
+      Once you''ve selected lead the way, press the quest tab.
 
 '
   questionText: ' Are you up for it?'
   optionsinfo:
-  - buttonName: Lead the way(Head to Exit)
+  - buttonName: Lead the way
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
@@ -69,6 +68,18 @@ MonoBehaviour:
         - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
           m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
           m_MethodName: startrTutorial
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: TurnonQuest
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
