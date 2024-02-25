@@ -15,6 +15,7 @@ public class QuestManagerFishing : MonoBehaviour
     public TextMeshProUGUI complted;
     public GameObject txt;
     public Button questbtn;
+    public bool turnon;
 
     private void Awake()
     {
@@ -29,7 +30,10 @@ public class QuestManagerFishing : MonoBehaviour
 
 
     }
-
+    public void pressed()
+    {
+        questbtn.GetComponent<Image>().color = Color.white;
+    }
 
     public void Start()
     {
@@ -38,6 +42,7 @@ public class QuestManagerFishing : MonoBehaviour
         fishQuests[0].collider2D.enabled = true;
         fishQuests[1].collider2D.enabled = false;
         questbtn.GetComponent<Image>().color = Color.green;
+
         if (questObjective == 2)
         {
             quest1.gameObject.SetActive(false);
