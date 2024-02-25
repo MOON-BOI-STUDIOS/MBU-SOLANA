@@ -36,7 +36,11 @@ public class QuestMainUI : MonoBehaviour
         questObjective = PlayerPrefs.GetInt("questCompletemain");
         
     }
-    
+
+    public void pressed()
+    {
+        questBtn.GetComponent<Image>().color = Color.white;
+    }
 
     public void Update()
     {
