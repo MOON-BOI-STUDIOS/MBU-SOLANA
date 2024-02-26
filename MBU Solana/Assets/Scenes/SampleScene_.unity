@@ -12126,7 +12126,10 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238980143}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 850918053606315de30e66123c94fcd3f6e3f095
 --- !u!43 &1261772114
 Mesh:
   m_ObjectHideFlags: 0
@@ -13230,6 +13233,7 @@ MonoBehaviour:
   - {x: 18.81947, y: 1.2201129, z: -0.00000040344554}
   - {x: -1.9082093, y: -9.285539, z: 0.000000069030314}
   m_ShapePathHash: 529370802
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_Mesh: {fileID: 1261772114}
   m_InstanceId: 162624
@@ -13237,6 +13241,10 @@ MonoBehaviour:
   m_Mesh: {fileID: 2032469764}
   m_InstanceId: 39202
 >>>>>>> Stashed changes
+=======
+  m_Mesh: {fileID: 1261772114}
+  m_InstanceId: 162624
+>>>>>>> 850918053606315de30e66123c94fcd3f6e3f095
 --- !u!114 &1329703809
 MonoBehaviour:
   m_ObjectHideFlags: 0
