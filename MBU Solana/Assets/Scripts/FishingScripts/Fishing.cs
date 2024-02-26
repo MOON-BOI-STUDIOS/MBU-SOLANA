@@ -69,6 +69,11 @@ public class Fishing : MonoBehaviour
 
         audioS = GetComponent<AudioSource>();
         greenAreaScale = new Vector3(greenArea.localScale.x, greenArea.localScale.y, greenArea.localScale.z);
+        finished = (PlayerPrefs.GetInt("finished") != 0);
+        if (finished)
+        {
+            StopCoroutine(setBool());
+        }
     }
 
     // Update is called once per frame
