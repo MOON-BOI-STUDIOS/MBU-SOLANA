@@ -3071,6 +3071,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 345792506}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Unpressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: uestShop, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 603055482675676748, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_text
       value: Leave Fishing Shop
