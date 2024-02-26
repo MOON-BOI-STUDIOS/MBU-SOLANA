@@ -14554,6 +14554,7 @@ MonoBehaviour:
   popUps:
   - {fileID: 1840134683}
   - {fileID: 1549558814}
+  - {fileID: 1747599978}
   - {fileID: 1219594742}
   Fishing: {fileID: 1806507510}
   noTutorial: 0
@@ -14655,7 +14656,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4279892223
   m_fontColor: {r: 1, g: 0.972549, b: 0.09803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
