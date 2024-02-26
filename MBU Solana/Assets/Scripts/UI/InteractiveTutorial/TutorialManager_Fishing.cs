@@ -39,7 +39,7 @@ public class TutorialManager_Fishing : MonoBehaviour
     public void Opinv()
     {
         Openinventory = true;
-        StartCoroutine(wait());
+        //StartCoroutine(wait());
     }
     public void cloinv()
     {
