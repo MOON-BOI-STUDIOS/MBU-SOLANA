@@ -8802,6 +8802,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1758799343}
     m_Modifications:
+    - target: {fileID: 603055482073900660, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -271
+      objectReference: {fileID: 0}
     - target: {fileID: 603055482073900661, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8928,7 +8932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638771, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -737.4
+      value: -708
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638771, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -8946,8 +8950,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2055234273}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: turnOffInventoryTab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ButtonScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+--- !u!1 &1259572818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 603055482073900661, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+  m_PrefabInstance: {fileID: 1259572817}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259669692
 GameObject:
   m_ObjectHideFlags: 0
@@ -13063,6 +13084,7 @@ MonoBehaviour:
   hook: {fileID: 1844681999}
   finshingMechanic: {fileID: 297569240}
   fishMarkerCounter: 0
+  prevfishMarkerCounter: 0
   filledfishUI:
   - {fileID: 2068973903}
   - {fileID: 1802265567}
@@ -15322,7 +15344,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -15337,6 +15359,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2025916827}
@@ -15349,11 +15375,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2025916829}
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1259572818}
+    - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
@@ -15369,6 +15403,10 @@ PrefabInstance:
       value: Next
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: TutorialManager_Fishing, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -15381,11 +15419,19 @@ PrefabInstance:
       value: ButtonClick, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881866883869297905, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297918, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
@@ -15454,7 +15500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297918, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -233
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297918, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16447,6 +16493,10 @@ PrefabInstance:
     - target: {fileID: 2922548778101971331, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922548778101971333, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
+      propertyPath: coin
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2922548778101971333, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
       propertyPath: button

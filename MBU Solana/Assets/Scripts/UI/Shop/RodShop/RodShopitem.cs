@@ -118,19 +118,28 @@ public class RodShopitem : MonoBehaviour
 
     public void LooseCurrncy()
     {
+        int currentNumOfCoins = PlayerPrefs.GetInt("Coins");
         if(!isbait)
         {
-            // Call to reduce gold coin of the player
-            //TempCurrency -= itemObject.GetItemValue();
-            Debug.Log("Value of the item is:" + rdb.GetItemValue());
-            // Write code to Add item to the inventory here
-            AddInventoryItemScript.instance.AddToInventory(rdb);
+            if(rdb.GetItemValue() < currentNumOfCoins)
+            {
+                // Call to reduce gold coin of the player
+                //TempCurrency -= itemObject.GetItemValue();
+                Debug.Log("Value of the item is:" + rdb.GetItemValue());
+                // Write code to Add item to the inventory here
+                AddInventoryItemScript.instance.AddToInventory(rdb);
+            }
+            else{return;}
         }
         else
         {
-            Debug.Log("Value of the item is:" + _bait.GetItemValue());
-            // Write code to Add item to the inventory here
-            AddInventoryItemScript.instance.AddToInventory(_bait);      
+            if(_bait.GetItemValue() < currentNumOfCoins)
+            {
+                Debug.Log("Value of the item is:" + _bait.GetItemValue());
+                // Write code to Add item to the inventory here
+                AddInventoryItemScript.instance.AddToInventory(_bait);  
+            }
+            else{return;}    
         }
     }
     //public void setrodasPurchased()

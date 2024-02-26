@@ -13,10 +13,11 @@ public class ButtonScript : MonoBehaviour
         }
     }
     private GameObject UIParent;
+    private GameObject InventoryTab;
     public bool IsSellingItems = false;
     public void SwitchParent()
     {
-        UIParent = GameObject.Find("UI");
+        UIParent = GameObject.Find("InventoryButton");
         if(UIParent != null)
         {
             InventoryToggle.instance.InevtoryParent.SetActive(true);
@@ -32,5 +33,14 @@ public class ButtonScript : MonoBehaviour
     public bool GetSellingItems()
     {
         return IsSellingItems;
+    }
+    public void turnOffInventoryTab()
+    {
+        InventoryTab = GameObject.Find("InventoryTab");
+        if(InventoryTab != null)
+        {
+            InventoryTab.SetActive(false);
+            InventoryToggle.instance.SwitchParent();
+        }
     }
 }

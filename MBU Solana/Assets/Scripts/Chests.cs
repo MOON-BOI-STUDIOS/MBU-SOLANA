@@ -32,7 +32,9 @@ public class Chests : MonoBehaviour
 
     public void CoinGain()
     {
-        Debug.Log("add something");
+        int currentcoins = PlayerPrefs.GetInt("Coins");
+        currentcoins = currentcoins + coin;
+        PlayerPrefs.SetInt("Coins",currentcoins);
         this.enabled = false;
     }
 

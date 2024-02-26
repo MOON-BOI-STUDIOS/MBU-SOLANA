@@ -21433,6 +21433,7 @@ MonoBehaviour:
   attackButton: {fileID: 0}
   enterButton: {fileID: 0}
   fishButton: {fileID: 0}
+  ExitButton: {fileID: 0}
   startLocation: []
   isPoweredUp: 0
 --- !u!114 &3685875997906252230
@@ -21455,6 +21456,7 @@ MonoBehaviour:
   runSpeed: 5
   isRunning: 0
   inputs: {fileID: 1477700498}
+  TutorialMove: 0
 --- !u!82 &3685875997906252235
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22038,6 +22040,7 @@ MonoBehaviour:
   powerUpVolume: {fileID: 0}
   mainMusic: {fileID: 0}
   powerUpMuisc: {fileID: 0}
+  isNoCombatZone: 0
 --- !u!224 &3691128348623204458
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39229,7 +39232,7 @@ MonoBehaviour:
   messageTxt: {fileID: 871128276115365391}
   dropdownRpcCluster: {fileID: 5542246175544185701}
   _background: {fileID: 5542246175969973020}
-  _LoginScreen: {fileID: 0}
+  _LoginScreen: {fileID: 1530103843661847459}
 --- !u!224 &8881889414474889244
 RectTransform:
   m_ObjectHideFlags: 0

@@ -58,7 +58,7 @@ public class QuestMainUI : MonoBehaviour
             txt.SetActive(false);
         }
 
-        Debug.Log(questObjective);
+        //Debug.Log(questObjective);
        
     }
 }
