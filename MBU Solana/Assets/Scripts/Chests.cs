@@ -8,6 +8,8 @@ public class Chests : MonoBehaviour
     public int coin;
     public GameObject button;
     public string animation;
+    public AudioSource asource;
+    public AudioClip chestOpen;
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
@@ -27,6 +29,7 @@ public class Chests : MonoBehaviour
     public void Openchest()
     {
         chest.Play(animation);
+        asource.PlayOneShot(chestOpen);
         
     }
 
