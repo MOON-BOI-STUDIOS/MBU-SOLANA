@@ -39,7 +39,7 @@ public class TutorialManager_Fishing : MonoBehaviour
     public void Opinv()
     {
         Openinventory = true;
-        //StartCoroutine(wait());
+        StartCoroutine(wait());
     }
     public void cloinv()
     {
@@ -84,7 +84,7 @@ public class TutorialManager_Fishing : MonoBehaviour
                 popUpIndex++;
             }
         }
-        else if (popUpIndex == 3)
+        else if (popUpIndex == 4)
         {
             if (Fishing.fishingDone == true)
             {

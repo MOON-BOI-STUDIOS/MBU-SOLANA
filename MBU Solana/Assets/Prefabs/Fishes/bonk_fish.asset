@@ -15,7 +15,7 @@ MonoBehaviour:
   itemNumber: 13
   name: Bonk
   icon: {fileID: 21300000, guid: 275ecac02abb0433bb5760cae02c918d, type: 3}
-  ItemDescription: Bonk Sponsored Fish
+  ItemDescription: 
   ItemValue: 20
   IsEquippable: 0
   classOfItem: 2
