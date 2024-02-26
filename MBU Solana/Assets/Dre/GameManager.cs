@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
         IsawardMoney = PlayerPrefs.GetInt("MoneyAward");
         if(IsawardMoney == 0)
         {
