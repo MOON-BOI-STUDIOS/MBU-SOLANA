@@ -3232,7 +3232,7 @@ MonoBehaviour:
   fishingMec: {fileID: 297569240}
   fishing: {fileID: 1806507510}
   DB: {fileID: 11400000, guid: a7294c51aa814ce4d9174b73f3797dfb, type: 2}
-  HUD1: {fileID: 0}
+  HUD1: {fileID: 1259572819}
   txt: {fileID: 550578019}
   tutorialPos: {fileID: 282280420}
 --- !u!114 &642462189
@@ -8252,6 +8252,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 603055482073900661, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
   m_PrefabInstance: {fileID: 1259572817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1259572819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7807258417314638770, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+  m_PrefabInstance: {fileID: 1259572817}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259669692
 GameObject:
   m_ObjectHideFlags: 0
@@ -9714,7 +9719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 152, y: 174}
+  m_AnchoredPosition: {x: -91, y: 174}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1550338870
@@ -10432,7 +10437,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
   m_PrefabInstance: {fileID: 1259572817}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1259572819}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
