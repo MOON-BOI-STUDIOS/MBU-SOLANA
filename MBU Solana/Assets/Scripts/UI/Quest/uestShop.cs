@@ -25,4 +25,8 @@ public class uestShop : MonoBehaviour
     {
         quxt.GetComponent<Image>().color = Color.green;
     }
+    public void Unpressed()
+    {
+        quxt.GetComponent<Image>().color = Color.white;
+    }
 }

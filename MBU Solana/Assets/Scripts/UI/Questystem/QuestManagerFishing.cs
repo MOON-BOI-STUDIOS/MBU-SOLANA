@@ -65,6 +65,10 @@ public class QuestManagerFishing : MonoBehaviour
             fishQuests[0].collider2D.enabled = false;
             fishQuests[1].collider2D.enabled = true;
         }
+        else if ( questObjective > 3)
+        {
+            questbtn.interactable = false;
+        }
 
  
         
@@ -114,8 +118,11 @@ public class QuestManagerFishing : MonoBehaviour
             fishQuests[0].collider2D.enabled = false;
             fishQuests[1].collider2D.enabled = true;
         }
+        else if (questObjective > 3)
+        {
+            questbtn.interactable = false;
+        }
 
-        
     }
 
 

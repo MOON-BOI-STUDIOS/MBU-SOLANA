@@ -10,6 +10,7 @@ public class Fishing : MonoBehaviour
     public GameObject finshingMechanic;
 
     public int fishMarkerCounter = 0;
+    public int prevfishMarkerCounter = 0;
     public GameObject[] filledfishUI;
     public GameObject[] unfilledfishUI;
     public Transform greenArea;
@@ -125,11 +126,12 @@ public class Fishing : MonoBehaviour
     }
     private void SetFishandGreenArea()
     {
-        if(fishMarkerCounter != 0)
+        if(prevfishMarkerCounter != fishMarkerCounter)
         {
             Debug.Log(fishMarkerCounter);
             filledfishUI[fishMarkerCounter].SetActive(true);
             greenAreaScale.x = greenscale[fishMarkerCounter];
+            prevfishMarkerCounter = fishMarkerCounter;
         }
     }
     public void GetequippedItems()

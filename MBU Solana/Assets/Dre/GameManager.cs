@@ -18,10 +18,17 @@ public class GameManager : MonoBehaviour
     
     public AudioClip transitionOutSound;
     bool isLevelSwitch = false;
+    int IsawardMoney;
     public AudioSource backgroundMusic;
     // Start is called before the first frame update
     void Start()
     {
+        IsawardMoney = PlayerPrefs.GetInt("MoneyAward");
+        if(IsawardMoney == 0)
+        {
+            PlayerPrefs.SetInt("Coins",500);
+            PlayerPrefs.SetInt("MoneyAward", 1);
+        }
 
     }
 

@@ -62,12 +62,16 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
 
     public void OnItemUse(Items item)
     {
+        int amount = 0;
+        int currentNumOfCoins = PlayerPrefs.GetInt("Coins");
         //Debug.Log("Consuming: " + _itemType + "Add amount: " + amount);
         // Sell item to the fisherman
         if(ButtonScript.instance.GetSellingItems() && !item.IsEquippable)
         {
             //Add the amount of gold coins to the player from item.GetItemValue()
-            
+            amount = item.GetItemValue();
+            currentNumOfCoins = currentNumOfCoins + amount;
+            PlayerPrefs.SetInt("Coins",currentNumOfCoins);
             // Delete item from inventory
             ItemInventory.instance.RemoveItem(item);
         }
