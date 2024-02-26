@@ -88,6 +88,8 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
         buttonPos.x -= 400;
         buttonPos.y += 100;
 
+        canvas = GameObject.Find("UI").transform;
+
         currentItemInfo = Instantiate(itemInfoPrefab, buttonPos, Quaternion.identity, canvas);
         currentItemInfo.GetComponent<Itemdesc>().Setup(itemName, itemDescription, itemValue, NumOfItems);
     }

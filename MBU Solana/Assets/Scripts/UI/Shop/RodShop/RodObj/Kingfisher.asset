@@ -15,7 +15,7 @@ MonoBehaviour:
   itemNumber: 4
   name: Kingfisher
   icon: {fileID: 21300000, guid: bdad97b6c37b9e84884474b4538be18c, type: 3}
-  ItemDescription: 
+  ItemDescription: This is a type of Fishing Rod
   ItemValue: 20
   IsEquippable: 1
   classOfItem: 0

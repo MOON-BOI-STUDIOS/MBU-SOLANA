@@ -15,7 +15,7 @@ MonoBehaviour:
   itemNumber: 3
   name: Bonk Rod
   icon: {fileID: 21300000, guid: 752abe3a02e28294eb55a09c5148ac42, type: 3}
-  ItemDescription: 
+  ItemDescription: Bonk Sponsored Fishing Rod
   ItemValue: 40
   IsEquippable: 1
   classOfItem: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemNumber: 5
   name: Plastic Worm
   icon: {fileID: 21300000, guid: b83e70701439a4843a6411d1343be9af, type: 3}
-  ItemDescription: 
+  ItemDescription: This is a type of Bait
   ItemValue: 30
   IsEquippable: 1
   classOfItem: 1

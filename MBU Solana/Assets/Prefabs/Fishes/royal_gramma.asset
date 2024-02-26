@@ -15,7 +15,7 @@ MonoBehaviour:
   itemNumber: 14
   name: royal_gramma
   icon: {fileID: 21300000, guid: 2f7928643c061405b982857805733b99, type: 3}
-  ItemDescription: 
+  ItemDescription: This is a type of Fish
   ItemValue: 20
   IsEquippable: 0
   classOfItem: 2

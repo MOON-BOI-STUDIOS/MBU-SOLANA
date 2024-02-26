@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156a8f0b3d892bf4dab6bc36c06027e5, type: 3}
   m_Name: Basic_rod
   m_EditorClassIdentifier: 
+  itemNumber: 0
   name: Basic Rod
   icon: {fileID: 21300000, guid: 40cbe8c66199abe4a9b5e100337189c7, type: 3}
-  ItemDescription: 
+  ItemDescription: This is a type of Fishing Rod
   ItemValue: 10
   IsEquippable: 1
   classOfItem: 0
