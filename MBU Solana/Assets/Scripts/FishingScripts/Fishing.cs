@@ -44,13 +44,12 @@ public class Fishing : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            PlayerPrefs.DeleteKey("finished");
-            PlayerPrefs.DeleteKey("fishCaughts");
+       
         }
      
 
         finished = (PlayerPrefs.GetInt("finished") != 0);
-        fishCaughts = (PlayerPrefs.GetInt("fishCaughts") != 0);
+       
     }
     // Start is called before the first frame update
     void Start()
@@ -70,6 +69,11 @@ public class Fishing : MonoBehaviour
 
         audioS = GetComponent<AudioSource>();
         greenAreaScale = new Vector3(greenArea.localScale.x, greenArea.localScale.y, greenArea.localScale.z);
+        finished = (PlayerPrefs.GetInt("finished") != 0);
+        if (finished)
+        {
+            StopCoroutine(setBool());
+        }
     }
 
     // Update is called once per frame
@@ -100,15 +104,14 @@ public class Fishing : MonoBehaviour
                 finshingMechanic.SetActive(false);
             }
         }*/
-
-        if(fishCaughts == true)
+        
+        finished = (PlayerPrefs.GetInt("finished") != 0);
+        if (finished)
         {
-            DialogueManagerFishing.instance.EnqueueDialogue(db);
-            joltButton.SetActive(false);
-            fishButton.SetActive(false);
-            finshingMechanic.SetActive(false);
+            StopCoroutine(setBool());
         }
-      
+
+
     }
     private void Numberofunfilledfishes()
     {
@@ -208,20 +211,20 @@ public class Fishing : MonoBehaviour
         joltButton.SetActive(false);
         fishButton.SetActive(true);
         finshingMechanic.SetActive(true);
-       
+        fishingDone = true;
     }
   
     //fish button controls
     public void fish()
     {
-        fishingDone = true;
+        //fishingDone = true;
         //successful attempt
         if (hook.GetChild(0).GetComponent<Hook>().isGreenArea == true)
         {
 
             audioS.PlayOneShot(select);
             fishMarkerCounter++;
-            //fishingDone = true;
+            
             if (fishMarkerCounter >= numOfTaps)
             {
 
@@ -230,9 +233,10 @@ public class Fishing : MonoBehaviour
                 {
                     StartCoroutine(setBool());
                 }
-                else
+                else if(finished)
                 {
                     StopCoroutine(setBool());
+                    finished = true;
                 }
                 StartCoroutine(fishCaught());
 
@@ -279,14 +283,17 @@ public class Fishing : MonoBehaviour
 
     public IEnumerator setBool()
     {
-        fishCaughts = true;
+        
+        DialogueManagerFishing.instance.EnqueueDialogue(db);
+        joltButton.SetActive(false);
+        fishButton.SetActive(false);
+        finshingMechanic.SetActive(false);
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
 
-        fishCaughts = false;
         finished = true;
         PlayerPrefs.SetInt("finished", (finished ? 1 : 0));
-        PlayerPrefs.SetInt("fishCaughts", (fishCaughts ? 1 : 0));
+     
 
     }
 }

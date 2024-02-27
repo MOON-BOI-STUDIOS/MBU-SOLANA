@@ -46,6 +46,10 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     public void Update()
     {
         //Debug.Log(isTutorialOver);
+        isQuestions = (PlayerPrefs.GetInt("isQuestion") != 0);
+        isShop = (PlayerPrefs.GetInt("isShop") != 0);
+        isTutorialOver = (PlayerPrefs.GetInt("isTutorialOver") != 0);
+        canFish = (PlayerPrefs.GetInt("canFish") != 0);
     }
 
     public void callUIFunctions()

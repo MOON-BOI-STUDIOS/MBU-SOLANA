@@ -65,7 +65,13 @@ public class WalkingandFishing : MonoBehaviour
             CollisionType.instance.isTutorialOver = false;
             PlayerPrefs.SetInt("isTutorialOver", (CollisionType.instance.isTutorialOver ? 1 : 0));
             txt.gameObject.SetActive(false);
-            
+            CollisionType.instance.isTutorialOver = false;
+            CollisionType.instance.isShop = true;
+            CollisionType.instance.canFish = true;
+            PlayerPrefs.SetInt("isTutorialOver", (CollisionType.instance.isTutorialOver ? 1 : 0));
+            PlayerPrefs.SetInt("isShop", (CollisionType.instance.isShop ? 1 : 0));
+            PlayerPrefs.SetInt("canFish", (CollisionType.instance.canFish ? 1 : 0));
+
         }
     }
 
@@ -125,6 +131,8 @@ public class WalkingandFishing : MonoBehaviour
             //Fishing.transform.position = fisingPosition.position;
             HUD1.SetActive(false);
             txt.gameObject.SetActive(true);
+          
+
         }
     }
 
