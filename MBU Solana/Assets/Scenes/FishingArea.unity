@@ -2009,8 +2009,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You can drag and drop a rod and a bait to the quick select bar  from the
-    inventory for fishing. Press Back button to resume. '
+  m_text: 'Drag and drop a rod and a bait to the quick select bar.
+
+    Press Back
+    button to resume. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
   m_sharedMaterial: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
@@ -3424,8 +3426,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tap on the screen in time with the bar to start reeling. You'll need patience
-    and quick reflexes to keep the fish from escaping.
+  m_text: "Tap on the screen in time with the bar to start reeling. \nYou'll need
+    quick reflexes to keep the fish from escaping."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
   m_sharedMaterial: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
@@ -3434,7 +3436,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4279892223
   m_fontColor: {r: 1, g: 0.972549, b: 0.09803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -11664,7 +11666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Firstly press the inventory Tab
+  m_text: ' Press the inventory Tab'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
   m_sharedMaterial: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
@@ -14646,8 +14648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Let''s start with the basics. To cast your line, simply press the fishing
-    icon on your gamepad. '
+  m_text: 'To cast your line, simply press the fishing icon on your screen. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
   m_sharedMaterial: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
@@ -17001,7 +17002,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8458300472190162449}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1bad11389144554094234744ebfef5a, type: 3}
   m_Name: 
@@ -17009,8 +17010,8 @@ MonoBehaviour:
   proximity: 1
   dialogues: []
   interactButton: {fileID: 1221658562}
-  dialogue: {fileID: 11400000, guid: 92f5063a80745d844bdee621e5442866, type: 2}
-  bdf: {fileID: 11400000, guid: a7294c51aa814ce4d9174b73f3797dfb, type: 2}
+  dialogue: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
+  bdf: {fileID: 11400000, guid: 2cfce5fe16255044c80f541e0baa3b3a, type: 2}
 --- !u!1001 &8669951630306007676
 PrefabInstance:
   m_ObjectHideFlags: 0
