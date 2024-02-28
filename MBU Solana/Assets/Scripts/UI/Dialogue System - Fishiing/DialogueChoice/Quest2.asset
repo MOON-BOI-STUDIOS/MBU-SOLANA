@@ -14,8 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueInfo:
   - text: "FISHERMAN\r\nListen closely, boy. The waters are teeming with life. Like
-      the lottery, you never know what you\u2019ll get. We'll need to use special
-      bait and stay patient.\r\n\n"
+      the lottery, you never know what you\u2019ll get. \n"
+  - text: 'FISHERMAN
+
+      We''ll need to use special bait and stay patient.
+
+
+
+
+'
   - text: "DR\xC9\r\nLet's do this!\r\n\n"
   - text: 'FISHERMAN
 

@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogueInfo:
   - text: 'FISHERMAN
 
-      AHOY THERE! WELCOME TO THE SHOP. TAKE A LOOK AT MY WARES'
-  questionText: PLEASE CHOOSE AN OPTION
+      AHOY THERE! Welcome to my shop. Take a look at my wares!'
+  questionText: Anything that catches your eye?
   optionsinfo:
   - buttonName: Look at shop
     nextdialogue: {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: I'll come Back later
+  - buttonName: I'll come back later
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
@@ -52,7 +52,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - buttonName: Can I sell you my Fish?
+  - buttonName: Can I sell you my fish?
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
