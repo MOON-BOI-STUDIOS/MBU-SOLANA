@@ -5,6 +5,17 @@ using UnityEngine;
 public class fishinjgscenespawn : MonoBehaviour
 {
     public GameObject player;
+
+    public static fishinjgscenespawn instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+
     public void Start()
     {
         if (PlayerPrefs.GetInt("Saved") == 1)
@@ -27,10 +38,17 @@ public class fishinjgscenespawn : MonoBehaviour
         PlayerPrefs.SetFloat("p_y", player.transform.position.y);
         PlayerPrefs.SetFloat("p_z", player.transform.position.z);
         PlayerPrefs.SetInt("Saved", 1);
-        playerPosSave();
+        //playerPosSave();
     }
 
    
+    public void DeletePosition()
+    {
+        PlayerPrefs.DeleteKey("p_x");
+        PlayerPrefs.DeleteKey("p_y");
+        PlayerPrefs.DeleteKey("p_z");
+        PlayerPrefs.DeleteKey("Saved");
 
+    }
 
 }

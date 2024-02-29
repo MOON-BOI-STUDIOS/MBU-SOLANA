@@ -29,7 +29,7 @@ public class Quest : MonoBehaviour
     {
         allQuests = FindObjectsOfType<Quest>();
         currentColor = questItem.color;
-        questComplete = PlayerPrefs.GetInt("questComplete");
+        questComplete = PlayerPrefs.GetInt("questCompletefish");
     }
     public void FinishQuest()
     {
@@ -38,7 +38,7 @@ public class Quest : MonoBehaviour
         questItem.color = activeColor;
         arrow.gameObject.SetActive(false);
         questComplete++;
-        PlayerPrefs.SetInt("questComplete", questComplete);
+        PlayerPrefs.SetInt("questCompletefish", questComplete);
        
    
     }

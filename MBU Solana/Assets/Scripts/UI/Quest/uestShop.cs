@@ -8,6 +8,7 @@ public class uestShop : MonoBehaviour
     public Button quxt;
     public static uestShop instance;
     public int objectiveindex;
+    public Collider2D collider;
 
     private void Awake()
     {
@@ -24,6 +25,7 @@ public class uestShop : MonoBehaviour
         {
             quxt.interactable = false;
         }
+        collider.enabled = false;
     }
 
     public void Update()
