@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuManaager : MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class MenuManaager : MonoBehaviour
 
     public GameObject moonboiStudioLogo, moonboiUniverseLogo;
 
+    public int gameNum = 0;
+
+    public Button LoadGamebtn;
+    public Button newGamebtn;
+
     public static MenuManaager instance;
 
     private void Awake()
@@ -28,7 +34,10 @@ public class MenuManaager : MonoBehaviour
             instance = this;
         }
         number = PlayerPrefs.GetInt("num");
+        gameNum = PlayerPrefs.GetInt("gameNum");
         Time.timeScale = 1;
+       
+        
 
     }
     // Start is called before the first frame update
@@ -49,17 +58,37 @@ public class MenuManaager : MonoBehaviour
             Camera.main.transform.GetComponent<AudioSource>().enabled = true;
             startButton.SetActive(true);
         }
-        PlayerPrefs.SetInt("firstLoad", 0);
-        //sets the default values at the start of the game
-        PlayerPrefs.SetInt("Coins", 20);
-        PlayerPrefs.SetInt("MaxHealth", 500);
-        PlayerPrefs.SetInt("SwordPower", 0);
-        PlayerPrefs.SetInt("SpecialPower", 0);
-        PlayerPrefs.SetInt("Fishes", 0);
-        PlayerPrefs.SetInt("Round", 0);
-        PlayerPrefs.SetInt("LastLocation", 0);
 
-        
+        //sets the default values at the start of the game
+        //PlayerPrefs.SetInt("Coins", 20);
+
+        if (gameNum == 0)
+        {
+            LoadGamebtn.interactable = false;
+            newGamebtn.interactable = true;
+            PlayerPrefs.DeleteKey("isTutorialOver");
+            PlayerPrefs.DeleteKey("isQuestions");
+            PlayerPrefs.DeleteKey("isShop");
+            PlayerPrefs.DeleteKey("canFish");
+            PlayerPrefs.DeleteKey("questCompletemain");
+            PlayerPrefs.DeleteKey("chestOpened");
+            PlayerPrefs.DeleteKey("ChestopenFish");
+            PlayerPrefs.DeleteKey("finished");
+            PlayerPrefs.DeleteKey("Qbjective1main");
+            PlayerPrefs.DeleteKey("Qbjective1");
+            PlayerPrefs.DeleteKey("Objective2");
+            PlayerPrefs.DeleteKey("questCompletefish");
+            PlayerPrefs.DeleteKey("isFinished");
+            PlayerPrefs.DeleteKey("noTutorialFish");
+            PlayerPrefs.DeleteKey("noTutorial");
+
+        }
+        else
+        {
+            LoadGamebtn.interactable = true;
+            newGamebtn.interactable = true;
+        }
+
     }
 
     // Update is called once per frame
@@ -76,12 +105,31 @@ public class MenuManaager : MonoBehaviour
     //triggers powerup animation, disables start menu buttons, plays select sound as well as powrup sound
     public void startGame()
     {
-        Destroy(startButton);
+        //Destroy(startButton);
+        startButton.SetActive(false);
         DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
         GetComponent<AudioSource>().PlayOneShot(powerUpSound);
         GetComponent<AudioSource>().PlayOneShot(startButtonSound);
     }
+    public void NewstartGame()
+    {
 
+        //Destroy(startButton);
+        startButton.SetActive(false);
+        DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
+        GetComponent<AudioSource>().PlayOneShot(powerUpSound);
+        GetComponent<AudioSource>().PlayOneShot(startButtonSound);
+        PlayerPrefs.SetInt("MaxHealth", 500);
+        PlayerPrefs.SetInt("SwordPower", 0);
+        PlayerPrefs.SetInt("SpecialPower", 0);
+        PlayerPrefs.SetInt("Fishes", 0);
+        PlayerPrefs.SetInt("Round", 0);
+        PlayerPrefs.SetInt("LastLocation", 0);
+        PlayerPrefs.SetInt("firstLoad", 0);
+
+
+
+    }
 
     //loads scene 1. triggers transition animation, plays transitionOut audio
     public void loadLevel()
@@ -91,7 +139,7 @@ public class MenuManaager : MonoBehaviour
         isLevelLoading = true;
     }
 
-    
+
     IEnumerator nextLevel()
     {
         transition.gameObject.SetActive(true);
@@ -113,4 +161,20 @@ public class MenuManaager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         startButton.SetActive(true);
     }
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+    
+

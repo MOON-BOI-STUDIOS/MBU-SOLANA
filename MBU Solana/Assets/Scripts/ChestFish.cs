@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chests : MonoBehaviour
+public class ChestFish : MonoBehaviour
 {
     public Animator chest;
     public int coin;
@@ -16,9 +16,10 @@ public class Chests : MonoBehaviour
     public Sprite chestc;
     public SpriteRenderer SpriteRenderer;
     public string chestsave;
+
     public void Start()
     {
-        chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
+        chestOpened = (PlayerPrefs.GetInt("ChestopenFish") != 0);
         if (chestOpened == true)
         {
             SpriteRenderer.sprite = chesto;
@@ -79,7 +80,7 @@ public class Chests : MonoBehaviour
         currentcoins = currentcoins + coin;
         PlayerPrefs.SetInt("Coins",currentcoins);
         chestOpened = true;
-        PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
+        PlayerPrefs.SetInt("ChestopenFish", (chestOpened ? 1 : 0));
 
     }
 

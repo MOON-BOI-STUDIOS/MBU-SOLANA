@@ -14,6 +14,7 @@ public class Pause : MonoBehaviour
     [Header("Game object references")]
     public GameObject pauseMenuUI;
     public int num;
+    public int gamenum;
 
     public static Pause instance;
 
@@ -37,7 +38,9 @@ public class Pause : MonoBehaviour
        
         SceneManager.LoadScene(index);
         num = 1;
+        gamenum = 1;
         PlayerPrefs.SetInt("num", num);
+        PlayerPrefs.SetInt("gameNum", gamenum);
 
     }
 

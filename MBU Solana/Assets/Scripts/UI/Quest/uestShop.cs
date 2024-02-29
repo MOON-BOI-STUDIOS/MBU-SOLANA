@@ -28,7 +28,7 @@ public class uestShop : MonoBehaviour
 
     public void Update()
     {
-        objectiveindex = PlayerPrefs.GetInt("questComplete");
+        objectiveindex = PlayerPrefs.GetInt("questCompletefish");
         if (objectiveindex > 1)
         {
             quxt.interactable = false;
