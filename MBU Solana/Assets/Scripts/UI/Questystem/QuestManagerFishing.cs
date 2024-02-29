@@ -26,7 +26,7 @@ public class QuestManagerFishing : MonoBehaviour
 
         Qbjective1 = (PlayerPrefs.GetInt("Qbjective1") != 0);
         Objective2 = (PlayerPrefs.GetInt("Objective2") != 0);
-        questObjective = PlayerPrefs.GetInt("questComplete");
+        questObjective = PlayerPrefs.GetInt("questCompletefish");
 
 
     }
@@ -92,7 +92,7 @@ public class QuestManagerFishing : MonoBehaviour
         Objective2 = fishQuests[1].QuestCompleted;
         PlayerPrefs.SetInt("Qbjective1", (Qbjective1 ? 1 : 0));
         PlayerPrefs.SetInt("Objective2", (Objective2 ? 1 : 0));
-        questObjective = PlayerPrefs.GetInt("questComplete");
+        questObjective = PlayerPrefs.GetInt("questCompletefish");
 
         if (questObjective == 2)
         {
