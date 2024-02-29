@@ -15,7 +15,7 @@ public class Fishing : MonoBehaviour
     public GameObject[] unfilledfishUI;
     public Transform greenArea;
     Vector3 greenAreaScale;
-    private float[] greenscale = {0.2f, 0.10f, 0.05f, 0.35f, 0.25f, 0.05f, 0.08f, 0.15f};
+    private float[] greenscale = {0.2f, 0.2f, 0.2f, 0.2f, 0.2f, 0.2f, 0.2f, 0.2f};//{0.2f, 0.10f, 0.05f, 0.35f, 0.25f, 0.05f, 0.08f, 0.15f};
     private int numOfTaps;
 
     public GameObject joltButton, fishButton;
@@ -131,6 +131,7 @@ public class Fishing : MonoBehaviour
     {
         if(prevfishMarkerCounter != fishMarkerCounter)
         {
+            Debug.Log(fishMarkerCounter);
             filledfishUI[fishMarkerCounter].SetActive(true);
             greenAreaScale.x = greenscale[fishMarkerCounter];
             prevfishMarkerCounter = fishMarkerCounter;
@@ -225,7 +226,7 @@ public class Fishing : MonoBehaviour
             fishMarkerCounter++;
             Debug.Log("Marker in Green Area:" + fishMarkerCounter);
             
-            if (fishMarkerCounter >= numOfTaps)
+            if (fishMarkerCounter >= numOfTaps - 1)
             {
 
                 controller5.CatchFish(numOfTaps);
@@ -278,6 +279,7 @@ public class Fishing : MonoBehaviour
        
         finshingMechanic.SetActive(false);
         fishMarkerCounter = -1;
+        prevfishMarkerCounter = -1;
 
         joltButton.SetActive(true);
         fishButton.SetActive(false);

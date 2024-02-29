@@ -34,6 +34,11 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     }
 
     #endregion
+
+    private void Start()
+    {
+        canvas = GameObject.Find("UI").transform;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))
@@ -63,15 +68,17 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     public void OnItemUse(Items item)
     {
         int amount = 0;
-        int currentNumOfCoins = PlayerPrefs.GetInt("Coins");
         //Debug.Log("Consuming: " + _itemType + "Add amount: " + amount);
         // Sell item to the fisherman
         if(ButtonScript.instance.GetSellingItems() && !item.IsEquippable)
         {
             //Add the amount of gold coins to the player from item.GetItemValue()
+            int currentNumOfCoins = PlayerPrefs.GetInt("Coins");
+            Debug.Log("Currency is:" + currentNumOfCoins);
             amount = item.GetItemValue();
             currentNumOfCoins = currentNumOfCoins + amount;
             PlayerPrefs.SetInt("Coins",currentNumOfCoins);
+            PlayerPrefs.Save();
             // Delete item from inventory
             ItemInventory.instance.RemoveItem(item);
         }
@@ -87,7 +94,8 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
 
         buttonPos.x -= 400;
         buttonPos.y += 100;
-
+        Debug.Log("Show"); 
+        canvas = GameObject.Find("UI").transform;
         currentItemInfo = Instantiate(itemInfoPrefab, buttonPos, Quaternion.identity, canvas);
         currentItemInfo.GetComponent<Itemdesc>().Setup(itemName, itemDescription, itemValue, NumOfItems);
     }

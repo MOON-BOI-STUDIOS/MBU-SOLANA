@@ -124,6 +124,9 @@ public class RodShopitem : MonoBehaviour
             if(rdb.GetItemValue() < currentNumOfCoins)
             {
                 // Call to reduce gold coin of the player
+                currentNumOfCoins = currentNumOfCoins - rdb.GetItemValue();
+                PlayerPrefs.SetInt("Coins",currentNumOfCoins);
+                PlayerPrefs.Save();
                 //TempCurrency -= itemObject.GetItemValue();
                 Debug.Log("Value of the item is:" + rdb.GetItemValue());
                 // Write code to Add item to the inventory here
@@ -135,6 +138,9 @@ public class RodShopitem : MonoBehaviour
         {
             if(_bait.GetItemValue() < currentNumOfCoins)
             {
+                currentNumOfCoins = currentNumOfCoins - _bait.GetItemValue();
+                PlayerPrefs.SetInt("Coins",currentNumOfCoins);
+                PlayerPrefs.Save();
                 Debug.Log("Value of the item is:" + _bait.GetItemValue());
                 // Write code to Add item to the inventory here
                 AddInventoryItemScript.instance.AddToInventory(_bait);  

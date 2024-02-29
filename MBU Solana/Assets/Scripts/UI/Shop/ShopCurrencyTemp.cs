@@ -18,8 +18,15 @@ public class ShopCurrencyTemp : MonoBehaviour
 
     public void LooseCurrncy(int amount)
     {
-        TempCurrency -= amount;
-        Debug.Log("Currency is:" + TempCurrency);
+        int currentNumOfCoins = PlayerPrefs.GetInt("Coins");
+        //TempCurrency -= amount;
+        if(currentNumOfCoins > amount)
+        {
+            Debug.Log("Currency is:" + currentNumOfCoins);
+            currentNumOfCoins = currentNumOfCoins - amount;
+            PlayerPrefs.SetInt("Coins",currentNumOfCoins);
+            PlayerPrefs.Save();
+        }
         // Write code to Add item to the inventory here
     }
 }
