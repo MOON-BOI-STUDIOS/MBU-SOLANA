@@ -14,12 +14,13 @@ public class GameManager : MonoBehaviour
     bool isPaused;
     public GameObject transitionIn;
     public int scene;
-    
+   
     
     public AudioClip transitionOutSound;
     bool isLevelSwitch = false;
     int IsawardMoney;
     public AudioSource backgroundMusic;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Coins",500);
             PlayerPrefs.SetInt("MoneyAward", 1);
         }
+
 
     }
 
@@ -57,6 +59,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(sceneNumber);
         
     }
+
+  
 
     
 }
