@@ -15,7 +15,7 @@ public class ChestFish : MonoBehaviour
     public Sprite chesto;
     public Sprite chestc;
     public SpriteRenderer SpriteRenderer;
-    public string chestsave;
+
 
     public void Start()
     {
@@ -32,6 +32,7 @@ public class ChestFish : MonoBehaviour
         {
             SpriteRenderer.sprite = chestc;
             GetComponent<SpriteRenderer>().sprite = chestc;
+            chest.enabled = true;
 
         }
     }
@@ -86,18 +87,20 @@ public class ChestFish : MonoBehaviour
 
     public void Update()
     {
-        chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
+        chestOpened = (PlayerPrefs.GetInt("ChestopenFish") != 0);
         if (chestOpened == true)
         {
             SpriteRenderer.sprite = chesto;
             GetComponent<SpriteRenderer>().sprite = chesto;
-            
+            chest.enabled = false;
+
 
         }
         else if(chestOpened == false)
         {
             SpriteRenderer.sprite = chestc;
             GetComponent<SpriteRenderer>().sprite = chestc;
+            chest.enabled = true;
 
         }
     }

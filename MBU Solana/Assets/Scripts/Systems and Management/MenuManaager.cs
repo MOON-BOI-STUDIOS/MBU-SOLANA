@@ -70,17 +70,28 @@ public class MenuManaager : MonoBehaviour
             PlayerPrefs.DeleteKey("isQuestions");
             PlayerPrefs.DeleteKey("isShop");
             PlayerPrefs.DeleteKey("canFish");
-            PlayerPrefs.DeleteKey("questCompletemain");
+            PlayerPrefs.SetInt("questCompletemain",0);
             PlayerPrefs.DeleteKey("chestOpened");
             PlayerPrefs.DeleteKey("ChestopenFish");
             PlayerPrefs.DeleteKey("finished");
             PlayerPrefs.DeleteKey("Qbjective1main");
             PlayerPrefs.DeleteKey("Qbjective1");
             PlayerPrefs.DeleteKey("Objective2");
-            PlayerPrefs.DeleteKey("questCompletefish");
+            PlayerPrefs.SetInt("questCompletefish",0);
             PlayerPrefs.DeleteKey("isFinished");
             PlayerPrefs.DeleteKey("noTutorialFish");
             PlayerPrefs.DeleteKey("noTutorial");
+            PlayerPrefs.DeleteKey("p_x");
+            PlayerPrefs.DeleteKey("p_y");
+            PlayerPrefs.DeleteKey("p_z");
+            PlayerPrefs.DeleteKey("Saved");
+            PlayerPrefs.SetInt("MaxHealth", 500);
+            PlayerPrefs.SetInt("SwordPower", 0);
+            PlayerPrefs.SetInt("SpecialPower", 0);
+            PlayerPrefs.SetInt("Fishes", 0);
+            PlayerPrefs.SetInt("Round", 0);
+            PlayerPrefs.SetInt("LastLocation", 0);
+            PlayerPrefs.SetInt("firstLoad", 0);
 
         }
         else
@@ -119,13 +130,7 @@ public class MenuManaager : MonoBehaviour
         DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
         GetComponent<AudioSource>().PlayOneShot(powerUpSound);
         GetComponent<AudioSource>().PlayOneShot(startButtonSound);
-        PlayerPrefs.SetInt("MaxHealth", 500);
-        PlayerPrefs.SetInt("SwordPower", 0);
-        PlayerPrefs.SetInt("SpecialPower", 0);
-        PlayerPrefs.SetInt("Fishes", 0);
-        PlayerPrefs.SetInt("Round", 0);
-        PlayerPrefs.SetInt("LastLocation", 0);
-        PlayerPrefs.SetInt("firstLoad", 0);
+       
 
 
 

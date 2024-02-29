@@ -15,7 +15,7 @@ public class Chests : MonoBehaviour
     public Sprite chesto;
     public Sprite chestc;
     public SpriteRenderer SpriteRenderer;
-    public string chestsave;
+  
     public void Start()
     {
         chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
@@ -31,6 +31,7 @@ public class Chests : MonoBehaviour
         {
             SpriteRenderer.sprite = chestc;
             GetComponent<SpriteRenderer>().sprite = chestc;
+            chest.enabled = true;
 
         }
     }
@@ -90,13 +91,14 @@ public class Chests : MonoBehaviour
         {
             SpriteRenderer.sprite = chesto;
             GetComponent<SpriteRenderer>().sprite = chesto;
-            
+            chest.enabled = false;
 
         }
         else if(chestOpened == false)
         {
             SpriteRenderer.sprite = chestc;
             GetComponent<SpriteRenderer>().sprite = chestc;
+            chest.enabled = true;
 
         }
     }
