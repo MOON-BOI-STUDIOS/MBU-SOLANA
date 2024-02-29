@@ -88,6 +88,7 @@ public class EventBehaviour : ScriptableObject
     public void TurnonQuest()
     {
         uestShop.instance.pressed();
+        uestShop.instance.collider.enabled = true;
     }
 
 }

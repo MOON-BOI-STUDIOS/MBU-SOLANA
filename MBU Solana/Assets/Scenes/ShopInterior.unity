@@ -897,6 +897,11 @@ PrefabInstance:
       objectReference: {fileID: 1372236063}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b0ad260ab02b14cac1adcc6f615281, type: 3}
+--- !u!61 &280350946 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4716890904652233699, guid: b6b0ad260ab02b14cac1adcc6f615281, type: 3}
+  m_PrefabInstance: {fileID: 280350945}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &284127247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1183,6 +1188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quxt: {fileID: 1856003157}
   objectiveindex: 0
+  collider: {fileID: 280350946}
 --- !u!114 &345792507
 MonoBehaviour:
   m_ObjectHideFlags: 0
