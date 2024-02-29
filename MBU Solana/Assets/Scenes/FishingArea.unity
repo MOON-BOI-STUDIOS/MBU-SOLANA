@@ -10965,6 +10965,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &1629247298 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2922548778101971329, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
+  m_PrefabInstance: {fileID: 2922548779719785793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1629247299 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2922548778101971328, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
+  m_PrefabInstance: {fileID: 2922548779719785793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1647502549
 GameObject:
   m_ObjectHideFlags: 0
@@ -15893,13 +15903,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1262444734}
     - target: {fileID: 2922548778101971333, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
+      propertyPath: chestc
+      value: 
+      objectReference: {fileID: 21300000, guid: 560565b5e43efac40b709a9a25bf3eb9, type: 3}
+    - target: {fileID: 2922548778101971333, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
+      propertyPath: chesto
+      value: 
+      objectReference: {fileID: 21300000, guid: 076c1c6f54111ea489ce292c0af8f537, type: 3}
+    - target: {fileID: 2922548778101971333, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
       propertyPath: asource
       value: 
       objectReference: {fileID: 1629247296}
     - target: {fileID: 2922548778101971333, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
+      propertyPath: Collider
+      value: 
+      objectReference: {fileID: 1629247298}
+    - target: {fileID: 2922548778101971333, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
       propertyPath: chestOpen
       value: 
       objectReference: {fileID: 8300000, guid: d0e5931266e674149ab719601fb72cdb, type: 3}
+    - target: {fileID: 2922548778101971333, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
+      propertyPath: SpriteRenderer
+      value: 
+      objectReference: {fileID: 1629247299}
     - target: {fileID: 2922548778101971454, guid: aa8c87c16e43d3941889f723a1bed5b2, type: 3}
       propertyPath: m_Name
       value: ChestB_Left_Closed
