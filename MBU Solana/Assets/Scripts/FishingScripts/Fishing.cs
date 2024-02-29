@@ -9,8 +9,8 @@ public class Fishing : MonoBehaviour
     public Transform hook;
     public GameObject finshingMechanic;
 
-    public int fishMarkerCounter = 0;
-    public int prevfishMarkerCounter = 0;
+    private int fishMarkerCounter = -1;
+    private int prevfishMarkerCounter = -1;
     public GameObject[] filledfishUI;
     public GameObject[] unfilledfishUI;
     public Transform greenArea;
@@ -131,7 +131,6 @@ public class Fishing : MonoBehaviour
     {
         if(prevfishMarkerCounter != fishMarkerCounter)
         {
-            Debug.Log(fishMarkerCounter);
             filledfishUI[fishMarkerCounter].SetActive(true);
             greenAreaScale.x = greenscale[fishMarkerCounter];
             prevfishMarkerCounter = fishMarkerCounter;
@@ -224,6 +223,7 @@ public class Fishing : MonoBehaviour
 
             audioS.PlayOneShot(select);
             fishMarkerCounter++;
+            Debug.Log("Marker in Green Area:" + fishMarkerCounter);
             
             if (fishMarkerCounter >= numOfTaps)
             {
@@ -248,8 +248,10 @@ public class Fishing : MonoBehaviour
             //make all the images of the fish to unfilled
             unfillFishUI();
             audioS.PlayOneShot(reject);
-            fishMarkerCounter = 0;
-            greenAreaScale.x = greenscale[fishMarkerCounter];
+            greenAreaScale.x = greenscale[0];
+            fishMarkerCounter = -1;
+            prevfishMarkerCounter = -1;
+            Debug.Log("Marker not in green Area:" + fishMarkerCounter);
         }
     }
     private void unfillFishUI()
@@ -275,7 +277,7 @@ public class Fishing : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
        
         finshingMechanic.SetActive(false);
-        fishMarkerCounter = 0;
+        fishMarkerCounter = -1;
 
         joltButton.SetActive(true);
         fishButton.SetActive(false);
