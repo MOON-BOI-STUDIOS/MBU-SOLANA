@@ -10,19 +10,59 @@ public class Chests : MonoBehaviour
     public string animation;
     public AudioSource asource;
     public AudioClip chestOpen;
+    public bool chestOpened;
+    public Collider2D Collider;
+    public Sprite chesto;
+    public Sprite chestc;
+    public SpriteRenderer SpriteRenderer;
 
+    public void Start()
+    {
+        chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
+        if (chestOpened == true)
+        {
+            SpriteRenderer.sprite = chesto;
+            GetComponent<SpriteRenderer>().sprite = chesto;
+            chest.enabled = false;
+
+
+        }
+        else if (chestOpened == false)
+        {
+            SpriteRenderer.sprite = chestc;
+            GetComponent<SpriteRenderer>().sprite = chestc;
+
+        }
+    }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            button.SetActive(true);
+            if(chestOpened == false)
+            {
+                button.SetActive(true);
+            }
+            else
+            {
+                button.SetActive(false);
+            }
+           
+
         }
     }
     public void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            button.SetActive(false);
+            if (chestOpened == false)
+            {
+                button.SetActive(false);
+            }
+            else
+            {
+                button.SetActive(false);
+            }
+                
         }
     }
 
@@ -38,7 +78,27 @@ public class Chests : MonoBehaviour
         int currentcoins = PlayerPrefs.GetInt("Coins");
         currentcoins = currentcoins + coin;
         PlayerPrefs.SetInt("Coins",currentcoins);
-        this.enabled = false;
+        chestOpened = true;
+        PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
+
+    }
+
+    public void Update()
+    {
+        chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
+        if (chestOpened == true)
+        {
+            SpriteRenderer.sprite = chesto;
+            GetComponent<SpriteRenderer>().sprite = chesto;
+            
+
+        }
+        else if(chestOpened == false)
+        {
+            SpriteRenderer.sprite = chestc;
+            GetComponent<SpriteRenderer>().sprite = chestc;
+
+        }
     }
 
 

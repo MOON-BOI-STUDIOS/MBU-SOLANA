@@ -22,14 +22,21 @@ MonoBehaviour:
   - text: 'FISHERMAN
 
       Aye, there are tales of a colossal fish, the Dragonfish,
-      that roams these waters. Its scales glow like a thousand gemstones, they say.
+      that roams these waters.
+
+'
+  - text: 'FISHERMANI
+
+      Its scales glow like a thousand gemstones, they say.
+
+
 
 '
   - text: "DR\xC9\r\nSounds intriguing. How do I catch it?\r\n"
   - text: "FISHERMAN\r\nI\u2019ve been fishing these waters for decades and not even
-      the sight of it has crossed my eyes. Alas, it is but a legend after all. Although
-      if you do see it, you\u2019ll have to be experienced enough to even attempt
-      to catch it!"
+      the sight of it has crossed my eyes."
+  - text: "FISHERMAN\n Alas, it is but a legend after all. Although if you do see
+      it, you\u2019ll have to be experienced enough to even attempt to catch it!\n"
   - text: "DR\xC9\r\nI\u2019ve never fished before\u2026\r\n"
   - text: 'FISHERMAN
 
@@ -41,12 +48,7 @@ MonoBehaviour:
   - text: "DR\xC9\r\nSure!\r\n\n\n"
   - text: "FISHERMAN\nThat's the spirit! Prepare your fishing rod and follow me.
       The fish here aren\u2019t an easy catch, but the thrill is worth it.\n\n"
-  - text: 'FISHERMAN
-
-      Once you''ve selected lead the way, press the quest tab.
-
-'
-  questionText: ' Are you up for it?'
+  questionText: 
   optionsinfo:
   - buttonName: Lead the way
     nextdialogue: {fileID: 0}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   dialogueInfo: []
-  questionText: Are You Up for it?
+  questionText: Are you up for it?
   optionsinfo:
-  - buttonName: Lead the way(Head to Exit)
+  - buttonName: Lead the way
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:

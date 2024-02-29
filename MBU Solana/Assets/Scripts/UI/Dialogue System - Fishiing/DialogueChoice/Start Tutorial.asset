@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueInfo: []
   questionText: Begin Tutorial
   optionsinfo:
-  - buttonName: Yes I would Like to
+  - buttonName: Yes I would like to
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
