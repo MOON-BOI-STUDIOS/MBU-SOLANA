@@ -105,7 +105,7 @@ public class MenuManaager : MonoBehaviour
     //triggers powerup animation, disables start menu buttons, plays select sound as well as powrup sound
     public void startGame()
     {
-        //Destroy(startButton);
+        Destroy(startButton);
         startButton.SetActive(false);
         DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
         GetComponent<AudioSource>().PlayOneShot(powerUpSound);
@@ -114,7 +114,7 @@ public class MenuManaager : MonoBehaviour
     public void NewstartGame()
     {
 
-        //Destroy(startButton);
+        Destroy(startButton);
         startButton.SetActive(false);
         DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
         GetComponent<AudioSource>().PlayOneShot(powerUpSound);
