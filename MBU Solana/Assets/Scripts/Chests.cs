@@ -71,7 +71,8 @@ public class Chests : MonoBehaviour
     {
         chest.Play(animation);
         asource.PlayOneShot(chestOpen);
-        
+        button.SetActive(false);
+
     }
 
     public void CoinGain()
@@ -79,6 +80,7 @@ public class Chests : MonoBehaviour
         int currentcoins = PlayerPrefs.GetInt("Coins");
         currentcoins = currentcoins + coin;
         PlayerPrefs.SetInt("Coins",currentcoins);
+    
         chestOpened = true;
         PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
 

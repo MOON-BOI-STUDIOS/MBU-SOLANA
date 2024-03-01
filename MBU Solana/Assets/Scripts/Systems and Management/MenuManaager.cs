@@ -92,6 +92,7 @@ public class MenuManaager : MonoBehaviour
             PlayerPrefs.SetInt("Round", 0);
             PlayerPrefs.SetInt("LastLocation", 0);
             PlayerPrefs.SetInt("firstLoad", 0);
+            PlayerPrefs.SetInt("Coins", 0);
 
         }
         else
