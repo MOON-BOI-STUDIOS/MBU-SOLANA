@@ -32,6 +32,7 @@ public class scrollAnimation2d : MonoBehaviour
         QuestButton.SetActive(true);
         InventoryButton.SetActive(true);
         pause.SetActive(true);
+
 #endif
         spawnLocationManager.Inst.dreSprite.enabled = false;
         targetImage.DOFade(0, 0.1f).OnComplete(() =>
@@ -96,9 +97,9 @@ public class scrollAnimation2d : MonoBehaviour
                         HealthUI.SetActive(true);
                         spawnLocationManager.Inst.telport();
                         scrollUI.gameObject.SetActive(false);
-                         QuestButton.SetActive(false);
-                     InventoryButton.SetActive(false);
-                        pause.SetActive(false);
+                         QuestButton.SetActive(true);
+                     InventoryButton.SetActive(true);
+                        pause.SetActive(true);
                     });
             });
 #endif
