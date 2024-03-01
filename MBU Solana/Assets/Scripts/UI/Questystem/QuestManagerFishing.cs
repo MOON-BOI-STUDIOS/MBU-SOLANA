@@ -54,7 +54,7 @@ public class QuestManagerFishing : MonoBehaviour
         {
             complted.text = "Quest Completed!".ToString();
             questbtn.interactable = false;
-            questbtn.GetComponent<Image>().color = Color.red;
+            questbtn.GetComponent<Image>().color = Color.white;
             txt.SetActive(false);
             complted.gameObject.SetActive(true);
         }
@@ -68,6 +68,7 @@ public class QuestManagerFishing : MonoBehaviour
         else if ( questObjective > 3)
         {
             questbtn.interactable = false;
+            questbtn.GetComponent<Image>().color = Color.white;
         }
 
  

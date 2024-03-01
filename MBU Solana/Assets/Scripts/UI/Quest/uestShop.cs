@@ -34,6 +34,7 @@ public class uestShop : MonoBehaviour
         if (objectiveindex > 1)
         {
             quxt.interactable = false;
+            quxt.GetComponent<Image>().color = Color.white;
         }
     }
     public void pressed()
