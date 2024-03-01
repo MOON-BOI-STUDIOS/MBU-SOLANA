@@ -93,6 +93,7 @@ public class MenuManaager : MonoBehaviour
             PlayerPrefs.SetInt("LastLocation", 0);
             PlayerPrefs.SetInt("firstLoad", 0);
             PlayerPrefs.SetInt("Coins", 0);
+            PlayerPrefs.SetInt("MoneyAward", 0);
 
         }
         else

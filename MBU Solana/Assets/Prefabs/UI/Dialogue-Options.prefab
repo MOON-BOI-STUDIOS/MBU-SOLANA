@@ -189,8 +189,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -85, y: -14}
-  m_SizeDelta: {x: 1093.0173, y: 364.084}
+  m_AnchoredPosition: {x: -75, y: -44}
+  m_SizeDelta: {x: 1093.0173, y: 319.8506}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8407305668806976942
 MonoBehaviour:
@@ -208,9 +208,9 @@ MonoBehaviour:
     m_Left: 139
     m_Right: -174
     m_Top: -73
-    m_Bottom: 4
+    m_Bottom: 1
   m_ChildAlignment: 6
-  m_Spacing: 23.23
+  m_Spacing: 33.68
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -905,8 +905,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 882.85, y: -163}
-  m_SizeDelta: {x: 514.1392, y: 120.8485}
+  m_AnchoredPosition: {x: 1015.5504, y: -153}
+  m_SizeDelta: {x: 1020.8132, y: 120.8485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5938790898596445530
 CanvasRenderer:
