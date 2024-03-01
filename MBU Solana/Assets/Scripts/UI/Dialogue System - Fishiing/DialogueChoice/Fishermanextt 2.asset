@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: Fishermanextt 2
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - text: Aye, if you wish. The choice is yours. The waters have their own way of
-      balancing things.
-  - text: You can now go and sell your fish at the shop by tapping the 'sell fish'
-      option.
-  - text: "As a bonus, you can fish to your heart's content.\_Good\_luck!"
+  - text: 'FISHERMAN
+
+      Aye, if you wish. The choice is yours. The waters have
+      their own way of balancing things.'
+  - text: 'FISHERMAN
+
+      You can now go and sell your fish at the shop by tapping
+      the ''sell fish'' option.'
+  - text: "FISHERMAN\nAs a bonus, you can fish to your heart's content.\_Good\_luck!"
