@@ -6886,7 +6886,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 338, y: -346}
-  m_SizeDelta: {x: 425.6831, y: 137.524}
+  m_SizeDelta: {x: 518.6925, y: 178.0666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995346453 stripped
 MonoBehaviour:
@@ -16587,6 +16587,10 @@ PrefabInstance:
       propertyPath: questItem
       value: 
       objectReference: {fileID: 884092021}
+    - target: {fileID: 4716890904652233701, guid: b6b0ad260ab02b14cac1adcc6f615281, type: 3}
+      propertyPath: completedColor.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b0ad260ab02b14cac1adcc6f615281, type: 3}
 --- !u!1001 &4812924086470110661
