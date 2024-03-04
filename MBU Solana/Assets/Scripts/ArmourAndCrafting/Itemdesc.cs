@@ -15,7 +15,7 @@ public class Itemdesc : MonoBehaviour
     {
         ItemName.text = _itemName;
         ItemDescription.text = _itemDescription;
-        ItemValue.text = _itemValue.ToString();
-        NumberOfItems.text = _numberOfItems.ToString();
+        ItemValue.text = "Value: " + _itemValue.ToString();
+        NumberOfItems.text = "Number of Bait: " + _numberOfItems.ToString();
     }
 }

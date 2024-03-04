@@ -59,8 +59,17 @@ public class ItemSlot: MonoBehaviour
     {
         if(_items == null || isBeingDragged == true) return;
         //display Item Info
-        AddInventoryItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
-        _items.GetItemValue(),ItemInventory.instance.NumberOfItems(_items),transform.position);
+        if(string.Equals(_items.classOfItem.ToString(),"bait"))
+        {
+            BaitItemObjj queryItem = (BaitItemObjj)_items;
+            int baitValue = queryItem.GetbaitValue();
+            AddInventoryItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
+            _items.GetItemValue(),baitValue,transform.position);
+        }
+        else{
+            AddInventoryItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
+            _items.GetItemValue(),0,transform.position);
+        }
     }
 
     public void OnCursorExit()

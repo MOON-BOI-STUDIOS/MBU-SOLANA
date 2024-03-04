@@ -219,7 +219,7 @@ public class Fishing : MonoBehaviour
     {
         //fishingDone = true;
         //successful attempt
-        if (hook.GetChild(0).GetComponent<Hook>().isGreenArea == true)
+        if (hook.GetChild(0).GetComponent<Hook>().isGreenArea == true && currentBait.GetbaitValue() > 0)
         {
 
             audioS.PlayOneShot(select);
@@ -246,6 +246,9 @@ public class Fishing : MonoBehaviour
         //unsuccesful attempt
         else
         {
+            //Make Player loose one bait
+            int numOfBait = currentBait.GetbaitValue();
+            currentBait.SetbaitValue(numOfBait - 1);
             //make all the images of the fish to unfilled
             unfillFishUI();
             audioS.PlayOneShot(reject);

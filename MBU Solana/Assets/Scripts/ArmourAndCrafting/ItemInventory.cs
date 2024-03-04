@@ -253,7 +253,8 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
     public void SaveData(ref GameData data)
     {
         Debug.Log("Number of items in ythe inventoryItemList" + inventoryItemList.Count);
-        //Check index from the item list in AddInventoryItemList and if it is a rod object then save bait as well
+        //Check index from the item list in AddInventoryItemList and if it is a rod object then save its index and bait number as -1 
+        // if it is a bait object save index and the bait number as well
         for(int i = 0;i < inventoryItemList.Count;i++)
         {
             int idx = inventoryItemList[i].itemNumber;
