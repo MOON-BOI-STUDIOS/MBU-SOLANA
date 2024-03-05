@@ -6,7 +6,7 @@ using UnityEngine;
 public class NPCDialogueManager : MonoBehaviour
 {
     public AudioClip cursorSound;
-    private AudioSource aSource;
+    public AudioSource aSource;
     
     // Start is called before the first frame update
     void Start()
