@@ -31,7 +31,7 @@ public class uestShop : MonoBehaviour
     public void Update()
     {
         objectiveindex = PlayerPrefs.GetInt("questCompletefish");
-        if (objectiveindex > 1)
+        if (objectiveindex > 2)
         {
             quxt.interactable = false;
             quxt.GetComponent<Image>().color = Color.white;
