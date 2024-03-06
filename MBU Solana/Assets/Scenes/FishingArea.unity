@@ -3513,6 +3513,7 @@ MonoBehaviour:
   txt: {fileID: 1005454470}
   questbtn: {fileID: 1586668001}
   turnon: 0
+  othertxt: {fileID: 1259572820}
   fishQuests:
   - {fileID: 995346453}
   - {fileID: 1411911139}
@@ -8106,8 +8107,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 386, y: -244}
-  m_SizeDelta: {x: 65.28, y: 100}
+  m_AnchoredPosition: {x: 0, y: -199}
+  m_SizeDelta: {x: 132.2758, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1221658562 stripped
 GameObject:
@@ -8432,6 +8433,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -346
       objectReference: {fileID: 0}
+    - target: {fileID: 5307670104172868391, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638770, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_Name
       value: InventoryButton (1) 2
@@ -8574,6 +8579,11 @@ GameObject:
 --- !u!1 &1259572819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7807258417314638770, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+  m_PrefabInstance: {fileID: 1259572817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1259572820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7017455478972712207, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
   m_PrefabInstance: {fileID: 1259572817}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259669692
@@ -10050,7 +10060,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: 174}
+  m_AnchoredPosition: {x: -456.82, y: -26.044}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1550338870
@@ -12310,7 +12320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1758799339
@@ -13357,7 +13367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -292, y: 122}
+  m_AnchoredPosition: {x: 124.58, y: -26.044}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1844681998

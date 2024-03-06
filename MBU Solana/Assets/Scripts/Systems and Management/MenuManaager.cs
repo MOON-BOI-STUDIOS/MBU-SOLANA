@@ -118,7 +118,7 @@ public class MenuManaager : MonoBehaviour
     //triggers powerup animation, disables start menu buttons, plays select sound as well as powrup sound
     public void startGame()
     {
-        Destroy(startButton);
+       
         startButton.SetActive(false);
         DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
         GetComponent<AudioSource>().PlayOneShot(powerUpSound);
@@ -127,12 +127,40 @@ public class MenuManaager : MonoBehaviour
     public void NewstartGame()
     {
 
-        Destroy(startButton);
+       
         startButton.SetActive(false);
         DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
         GetComponent<AudioSource>().PlayOneShot(powerUpSound);
         GetComponent<AudioSource>().PlayOneShot(startButtonSound);
-       
+
+        PlayerPrefs.DeleteKey("isTutorialOver");
+        PlayerPrefs.DeleteKey("isQuestions");
+        PlayerPrefs.DeleteKey("isShop");
+        PlayerPrefs.DeleteKey("canFish");
+        PlayerPrefs.SetInt("questCompletemain", 0);
+        PlayerPrefs.DeleteKey("chestOpened");
+        PlayerPrefs.DeleteKey("ChestopenFish");
+        PlayerPrefs.DeleteKey("finished");
+        PlayerPrefs.DeleteKey("Qbjective1main");
+        PlayerPrefs.DeleteKey("Qbjective1");
+        PlayerPrefs.DeleteKey("Objective2");
+        PlayerPrefs.SetInt("questCompletefish", 0);
+        PlayerPrefs.DeleteKey("isFinished");
+        PlayerPrefs.DeleteKey("noTutorialFish");
+        PlayerPrefs.DeleteKey("noTutorial");
+        PlayerPrefs.DeleteKey("p_x");
+        PlayerPrefs.DeleteKey("p_y");
+        PlayerPrefs.DeleteKey("p_z");
+        PlayerPrefs.DeleteKey("Saved");
+        PlayerPrefs.SetInt("MaxHealth", 500);
+        PlayerPrefs.SetInt("SwordPower", 0);
+        PlayerPrefs.SetInt("SpecialPower", 0);
+        PlayerPrefs.SetInt("Fishes", 0);
+        PlayerPrefs.SetInt("Round", 0);
+        PlayerPrefs.SetInt("LastLocation", 0);
+        PlayerPrefs.SetInt("firstLoad", 0);
+        PlayerPrefs.SetInt("Coins", 0);
+        PlayerPrefs.SetInt("MoneyAward", 0);
 
 
 

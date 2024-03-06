@@ -16,6 +16,7 @@ public class QuestManagerFishing : MonoBehaviour
     public GameObject txt;
     public Button questbtn;
     public bool turnon;
+    public GameObject othertxt;
 
     private void Awake()
     {
@@ -52,7 +53,7 @@ public class QuestManagerFishing : MonoBehaviour
         }
         else if( questObjective == 3)
         {
-            complted.text = "Quest Completed!".ToString();
+            //complted.text = "Quest Completed!".ToString();
             questbtn.interactable = false;
             questbtn.GetComponent<Image>().color = Color.white;
             txt.SetActive(false);
@@ -61,9 +62,11 @@ public class QuestManagerFishing : MonoBehaviour
         else if (questObjective == 1)
         {
             quest1.gameObject.SetActive(false);
-            quest2.gameObject.SetActive(true);
+            quest2.gameObject.SetActive(false);
             fishQuests[0].collider2D.enabled = false;
-            fishQuests[1].collider2D.enabled = true;
+            fishQuests[1].collider2D.enabled = false;
+            othertxt.SetActive(true);
+
         }
         else if ( questObjective > 3)
         {
@@ -104,7 +107,7 @@ public class QuestManagerFishing : MonoBehaviour
         }
         else if (questObjective == 3)
         {
-            complted.text = "Quest Completed!".ToString();
+            //complted.text = "Quest Completed!".ToString();
             questbtn.interactable = false;
             questbtn.GetComponent<Image>().color = Color.red;
             txt.SetActive(false);
@@ -115,9 +118,10 @@ public class QuestManagerFishing : MonoBehaviour
         else if(questObjective == 1)
         {
             quest1.gameObject.SetActive(false);
-            quest2.gameObject.SetActive(true);
+            quest2.gameObject.SetActive(false);
             fishQuests[0].collider2D.enabled = false;
-            fishQuests[1].collider2D.enabled = true;
+            fishQuests[1].collider2D.enabled = false;
+            othertxt.SetActive(true);
         }
         else if (questObjective > 3)
         {

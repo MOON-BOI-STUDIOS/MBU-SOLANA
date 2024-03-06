@@ -211,7 +211,7 @@ public class Fishing : MonoBehaviour
         joltButton.SetActive(false);
         fishButton.SetActive(true);
         finshingMechanic.SetActive(true);
-        fishingDone = true;
+        
     }
   
     //fish button controls
@@ -219,6 +219,7 @@ public class Fishing : MonoBehaviour
     {
         //fishingDone = true;
         //successful attempt
+        fishingDone = true;
         if (hook.GetChild(0).GetComponent<Hook>().isGreenArea == true && currentBait.GetbaitValue() > 0)
         {
 
