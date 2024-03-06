@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &603055482073900660
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279892223
+    rgba: 4280023295
   m_fontColor: {r: 1, g: 0.972549, b: 0.09803922, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1506,6 +1506,7 @@ GameObject:
   - component: {fileID: 7807258417314638782}
   - component: {fileID: 7807258417314638781}
   - component: {fileID: 7807258417314638780}
+  - component: {fileID: 2899767289075690494}
   m_Layer: 5
   m_Name: InventoryButton (1) 2
   m_TagString: Untagged
@@ -1641,3 +1642,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!95 &2899767289075690494
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7807258417314638770}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cfcfa8001471e98438f5d97ceaf4eeef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

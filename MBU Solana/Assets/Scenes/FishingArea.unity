@@ -3514,6 +3514,9 @@ MonoBehaviour:
   questbtn: {fileID: 1586668001}
   turnon: 0
   othertxt: {fileID: 1259572820}
+  flashTxt: {fileID: 1259572822}
+  qustxt: {fileID: 1259572821}
+  color: {r: 1, g: 0.972549, b: 0.09803922, a: 0}
   fishQuests:
   - {fileID: 995346453}
   - {fileID: 1411911139}
@@ -7028,6 +7031,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 465295455}
+        m_TargetAssemblyTypeName: NPCDialogueManager, Assembly-CSharp
+        m_MethodName: sound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 642462189}
         m_TargetAssemblyTypeName: QuestManagerFishing, Assembly-CSharp
         m_MethodName: pressed
@@ -8381,6 +8396,38 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 465295455}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: NPCDialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 603055482675676748, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_text
       value: Go  to Fishing Hut
@@ -8406,20 +8453,24 @@ PrefabInstance:
       value: -232.3349
       objectReference: {fileID: 0}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 995346453}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 642462189}
+      objectReference: {fileID: 465295455}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnQuestClick
       objectReference: {fileID: 0}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: pressed
+      value: sound
       objectReference: {fileID: 0}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -8427,11 +8478,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: QuestManagerFishing, Assembly-CSharp
+      value: NPCDialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 603055483700926830, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -346
+      objectReference: {fileID: 0}
+    - target: {fileID: 2899767289075690494, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5307670104172868391, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_RootOrder
@@ -8527,10 +8586,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
@@ -8542,7 +8605,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 465295455}
     - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 642462189}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
@@ -8554,6 +8625,10 @@ PrefabInstance:
       value: sound
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: pressed
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: ButtonScript, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -8562,11 +8637,23 @@ PrefabInstance:
       value: NPCDialogueManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: QuestManagerFishing, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7807258417314638780, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8584,6 +8671,22 @@ GameObject:
 --- !u!1 &1259572820 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7017455478972712207, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+  m_PrefabInstance: {fileID: 1259572817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1259572821 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7807258415918887179, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+  m_PrefabInstance: {fileID: 1259572817}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &1259572822 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2899767289075690494, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
   m_PrefabInstance: {fileID: 1259572817}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259669692

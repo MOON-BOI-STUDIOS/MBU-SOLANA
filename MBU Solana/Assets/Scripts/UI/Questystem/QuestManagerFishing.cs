@@ -17,6 +17,10 @@ public class QuestManagerFishing : MonoBehaviour
     public Button questbtn;
     public bool turnon;
     public GameObject othertxt;
+    public Animator flashTxt;
+    public TextMeshProUGUI qustxt;
+
+    public Color color;
 
     private void Awake()
     {
@@ -33,7 +37,10 @@ public class QuestManagerFishing : MonoBehaviour
     }
     public void pressed()
     {
-        questbtn.GetComponent<Image>().color = Color.white;
+        //questbtn.GetComponent<Image>().color = Color.white;
+        qustxt.color = color;
+            
+        flashTxt.enabled = false;
     }
 
     public void Start()
@@ -42,7 +49,9 @@ public class QuestManagerFishing : MonoBehaviour
         quest2.gameObject.SetActive(false);
         fishQuests[0].collider2D.enabled = true;
         fishQuests[1].collider2D.enabled = false;
-        questbtn.GetComponent<Image>().color = Color.green;
+        flashTxt.enabled = true;
+        //questbtn.GetComponent<Image>().color = Color.green;
+        flashTxt.enabled = true;
 
         if (questObjective == 2)
         {
@@ -55,7 +64,7 @@ public class QuestManagerFishing : MonoBehaviour
         {
             //complted.text = "Quest Completed!".ToString();
             questbtn.interactable = false;
-            questbtn.GetComponent<Image>().color = Color.white;
+            //questbtn.GetComponent<Image>().color = Color.white;
             txt.SetActive(false);
             complted.gameObject.SetActive(true);
         }
@@ -71,7 +80,7 @@ public class QuestManagerFishing : MonoBehaviour
         else if ( questObjective > 3)
         {
             questbtn.interactable = false;
-            questbtn.GetComponent<Image>().color = Color.white;
+            //questbtn.GetComponent<Image>().color = Color.white;
         }
 
  

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class uestShop : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class uestShop : MonoBehaviour
     public static uestShop instance;
     public int objectiveindex;
     public Collider2D collider;
+    public Animator txtflash;
+    public Color color;
+    public TextMeshProUGUI qusttxt;
 
     private void Awake()
     {
@@ -39,11 +43,14 @@ public class uestShop : MonoBehaviour
     }
     public void pressed()
     {
-        quxt.GetComponent<Image>().color = Color.green;
+        //quxt.GetComponent<Image>().color = Color.green;
+        txtflash.enabled = true;
     }
     public void Unpressed()
     {
-        quxt.GetComponent<Image>().color = Color.white;
+        //quxt.GetComponent<Image>().color = Color.white;
+        txtflash.enabled = false;
+        qusttxt.color = color;
     }
 
 }

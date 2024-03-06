@@ -10,6 +10,11 @@ public class QuestMainUI : MonoBehaviour
 
     public int questObjective;
 
+    public Animator txtFlash;
+    public Color color;
+
+    public TextMeshProUGUI qusttxt;
+
 
     private void Awake()
     {
@@ -32,14 +37,17 @@ public class QuestMainUI : MonoBehaviour
 
     public void Start()
     {
-        questBtn.GetComponent<Image>().color = Color.green;
+        //questBtn.GetComponent<Image>().color = Color.green;
+        txtFlash.enabled = true;
         questObjective = PlayerPrefs.GetInt("questCompletemain");
         
     }
 
     public void pressed()
     {
-        questBtn.GetComponent<Image>().color = Color.white;
+        //questBtn.GetComponent<Image>().color = Color.white;
+        txtFlash.enabled = false;
+        qusttxt.color = color;
     }
 
     public void Update()
