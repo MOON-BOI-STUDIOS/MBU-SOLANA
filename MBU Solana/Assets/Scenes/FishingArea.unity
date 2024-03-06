@@ -17262,8 +17262,12 @@ PrefabInstance:
       value: -170
       objectReference: {fileID: 0}
     - target: {fileID: 8407305668806976942, guid: 981fb83ed11c21143baf87fe445e9884, type: 3}
+      propertyPath: m_Spacing
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407305668806976942, guid: 981fb83ed11c21143baf87fe445e9884, type: 3}
       propertyPath: m_Padding.m_Bottom
-      value: 35
+      value: 38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981fb83ed11c21143baf87fe445e9884, type: 3}
@@ -17684,7 +17688,7 @@ MonoBehaviour:
   dialogues: []
   interactButton: {fileID: 1221658562}
   dialogue: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
-  bdf: {fileID: 11400000, guid: 92f5063a80745d844bdee621e5442866, type: 2}
+  bdf: {fileID: 11400000, guid: 444a3339c04e6f342a020b9879740d2b, type: 2}
 --- !u!1001 &8669951630306007676
 PrefabInstance:
   m_ObjectHideFlags: 0
