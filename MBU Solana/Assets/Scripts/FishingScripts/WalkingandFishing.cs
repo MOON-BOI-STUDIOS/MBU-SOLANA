@@ -57,7 +57,7 @@ public class WalkingandFishing : MonoBehaviour
             // Add Code for transition in coroutine
             StartCoroutine(FishTransitionw());
             FishingObj.SetActive(false);
-            Joystick.SetActive(true);
+            //Joystick.SetActive(true);
             Walking.SetActive(true);
             Mecha.SetActive(false);
             jolt.SetActive(false);

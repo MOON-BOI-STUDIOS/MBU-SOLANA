@@ -39,6 +39,8 @@ public class Fishing : MonoBehaviour
     private BaitItemObjj currentBait;
 
     public static Fishing instance;
+
+    public GameObject[] dragonFishAnim;
     private void Awake()
     {
         if (instance == null)
@@ -178,6 +180,7 @@ public class Fishing : MonoBehaviour
         Debug.Log("The random number:" + randomnum);
         if(randomnum <= dragonFishChance)
         {
+            StartCoroutine(showDragonFish());
             numOfTaps = 8;
         }
         else
@@ -229,7 +232,7 @@ public class Fishing : MonoBehaviour
             
             if (fishMarkerCounter >= numOfTaps - 1)
             {
-
+                StartCoroutine(fishCaught());
                 controller5.CatchFish(numOfTaps);
                 if (!finished)
                 {
@@ -240,8 +243,10 @@ public class Fishing : MonoBehaviour
                     StopCoroutine(setBool());
                     finished = true;
                 }
-                StartCoroutine(fishCaught());
-
+                if(numOfTaps == 8)
+                {
+                    dragonFishAnim[1].SetActive(false);
+                }
             }
         }
         //unsuccesful attempt
@@ -303,5 +308,26 @@ public class Fishing : MonoBehaviour
         PlayerPrefs.SetInt("finished", (finished ? 1 : 0));
      
 
+    }
+    public IEnumerator showDragonFish()
+    {
+        Debug.Log("Showing dragon fish");
+        dragonFishAnim[0].SetActive(true);
+        yield return new WaitForSeconds(0.05f);
+        dragonFishAnim[0].SetActive(false);
+        dragonFishAnim[1].SetActive(true);
+    }
+    public void DragonFishIn()
+    {
+        if(numOfTaps == 8)
+        {
+            StartCoroutine(DragonFishGoingIn());
+        }
+    }
+    public IEnumerator DragonFishGoingIn()
+    {
+        dragonFishAnim[2].SetActive(true);
+        yield return new WaitForSeconds(0.12f);
+        dragonFishAnim[2].SetActive(false);
     }
 }
