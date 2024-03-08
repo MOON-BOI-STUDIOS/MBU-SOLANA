@@ -1270,7 +1270,7 @@ MonoBehaviour:
   objectiveindex: 0
   collider: {fileID: 280350946}
   txtflash: {fileID: 1856003160}
-  color: {r: 1, g: 0.972549, b: 0.09803922, a: 0}
+  color: {r: 1, g: 0.972549, b: 0.09803922, a: 1}
   qusttxt: {fileID: 1856003159}
 --- !u!114 &345792507
 MonoBehaviour:

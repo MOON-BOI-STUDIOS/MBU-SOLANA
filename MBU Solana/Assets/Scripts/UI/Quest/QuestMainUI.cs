@@ -62,8 +62,9 @@ public class QuestMainUI : MonoBehaviour
             complted.gameObject.SetActive(true);
             complted.text = "Quest Completed!".ToString();
             questBtn.interactable = false;
-            questBtn.GetComponent<Image>().color = Color.red;
             txt.SetActive(false);
+            txtFlash.enabled = false;
+            qusttxt.color = color;
         }
 
         //Debug.Log(questObjective);

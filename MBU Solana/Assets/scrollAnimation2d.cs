@@ -38,7 +38,9 @@ public class scrollAnimation2d : MonoBehaviour
         targetImage.DOFade(0, 0.1f).OnComplete(() =>
         {
             spawnLocationManager.Inst.telport();
-            scrollUI.gameObject.SetActive(false); HealthUI.SetActive(true);
+            scrollUI.gameObject.SetActive(false); HealthUI.SetActive(true); QuestButton.SetActive(true);
+            InventoryButton.SetActive(true);
+            pause.SetActive(true);
         });
     }
 
@@ -70,6 +72,13 @@ public class scrollAnimation2d : MonoBehaviour
     void Start()
     {
         Invoke("AnimateTransformAndImage", 1f);
+        HealthUI.SetActive(false);
+        QuestButton.SetActive(false);
+        InventoryButton.SetActive(false);
+        pause.SetActive(false);
+#if UNITY_IOS || UNITY_ANDROID
+         Joystick.SetActive(true);
+#endif
     }
     private void AnimateTransformAndImage()
     {

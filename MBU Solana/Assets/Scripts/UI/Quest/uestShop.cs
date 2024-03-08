@@ -30,6 +30,8 @@ public class uestShop : MonoBehaviour
             quxt.interactable = false;
         }
         collider.enabled = false;
+        txtflash.enabled = false;
+        qusttxt.color = color;
     }
 
     public void Update()
