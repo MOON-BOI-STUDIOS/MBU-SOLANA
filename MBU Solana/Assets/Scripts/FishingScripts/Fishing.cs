@@ -8,6 +8,9 @@ public class Fishing : MonoBehaviour
     public Animator dreAnim;
     public Transform hook;
     public GameObject finshingMechanic;
+    public GameObject joltbt;
+    public GameObject fioshtb;
+
 
     private int fishMarkerCounter = -1;
     private int prevfishMarkerCounter = -1;
@@ -322,6 +325,10 @@ public class Fishing : MonoBehaviour
         if(numOfTaps == 8)
         {
             StartCoroutine(DragonFishGoingIn());
+            finshingMechanic.SetActive(false);
+            joltbt.SetActive(false);
+            fioshtb.SetActive(false);
+            
         }
     }
     public IEnumerator DragonFishGoingIn()

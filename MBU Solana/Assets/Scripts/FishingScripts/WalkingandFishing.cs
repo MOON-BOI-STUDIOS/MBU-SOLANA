@@ -62,6 +62,9 @@ public class WalkingandFishing : MonoBehaviour
             Mecha.SetActive(false);
             jolt.SetActive(false);
             HUD1.SetActive(true);
+#if UNITY_IOS || UNITY_ANDROID
+        Joystick.SetActive(true);
+#endif
             CollisionType.instance.isTutorialOver = false;
             PlayerPrefs.SetInt("isTutorialOver", (CollisionType.instance.isTutorialOver ? 1 : 0));
             txt.gameObject.SetActive(false);
@@ -96,7 +99,9 @@ public class WalkingandFishing : MonoBehaviour
             jolt.SetActive(true);
             //fishingMec.SetActive(true);
             Mecha.SetActive(true);
+         #if UNITY_IOS || UNITY_ANDROID
             Joystick.SetActive(false);
+#endif
             HUD1.SetActive(false);
             txt.gameObject.SetActive(true);
 
@@ -117,7 +122,9 @@ public class WalkingandFishing : MonoBehaviour
             IsFishing = true;
             // Add Code for transition in coroutine
             StartCoroutine(FishTransitionf());
+#if UNITY_IOS || UNITY_ANDROID
             Joystick.SetActive(false);
+#endif
             jolt.SetActive(true);
             //fishingMec.SetActive(true);
             tutorial.SetActive(true);
@@ -165,7 +172,6 @@ public class WalkingandFishing : MonoBehaviour
         panel.SetActive(true);
         transitions.Play("fishingAnimations");
         yield return new WaitForSeconds(1.5f);
-        Joystick.SetActive(true);
         Walking.SetActive(true);
         FishingObj.transform.position = FishingPositions[Random.Range(0, FishingPositions.Length - 1)].position;
         panel.SetActive(false);
