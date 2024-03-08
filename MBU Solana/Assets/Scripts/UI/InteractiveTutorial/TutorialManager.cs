@@ -88,7 +88,7 @@ public class TutorialManager : MonoBehaviour
             }
         }
 #else
-for (int i = 0; i < PCpopUps.Length; i++)
+        for (int i = 0; i < PCpopUps.Length; i++)
         {
             if (i == PCpopUpIndex)
             {
@@ -105,14 +105,14 @@ for (int i = 0; i < PCpopUps.Length; i++)
         {
             if (controller.isMoving)
             {
-                popUpIndex++;
+                PCpopUpIndex++;
             }
         }
         else if (PCpopUpIndex == 1)
         {
             if (DialogueManager.instance.Interact == true)
             {
-                popUpIndex++;
+                PCpopUpIndex++;
 
             }
 
@@ -121,7 +121,7 @@ for (int i = 0; i < PCpopUps.Length; i++)
         {
             if (quest.buttonisPressed == true)
             {
-                popUpIndex++;
+                PCpopUpIndex++;
 
             }
         }
@@ -129,7 +129,7 @@ for (int i = 0; i < PCpopUps.Length; i++)
         {
             if (quest.Pressed == true)
             {
-                popUpIndex++;
+                PCpopUpIndex++;
                 Debug.Log("test end");
                 noTutorial = true;
                 PlayerPrefs.SetInt("noTutorial", (noTutorial ? 1 : 0));

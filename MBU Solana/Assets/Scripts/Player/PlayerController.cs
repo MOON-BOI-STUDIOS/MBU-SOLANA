@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     {
 #if !UNITY_STANDALONE && !UNITY_WEBGL 
         moveDirection = inputHandler.GetInputDirection();
-        TutorialMove = true;
+        
         //Debug.Log(moveDirection);//joystick.GetJoystickDirection();// //
 #endif
     }
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(newPos);
 
         isMoving = moveDirection.magnitude > 0;
+        TutorialMove = true;
         UpdateRunningState();
     }
 
