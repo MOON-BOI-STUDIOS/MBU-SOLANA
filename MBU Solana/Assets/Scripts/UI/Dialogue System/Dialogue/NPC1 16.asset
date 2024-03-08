@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: NPC1 16
   m_EditorClassIdentifier: 
   dialogueInfo:
-  - text: 'Sorry the arena is closed today. Please come back another time.
+  - text: 'Sorry the arena is closed today. Please come back Late.
 
 '
