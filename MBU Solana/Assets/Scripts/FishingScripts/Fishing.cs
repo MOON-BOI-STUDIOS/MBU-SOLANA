@@ -8,9 +8,6 @@ public class Fishing : MonoBehaviour
     public Animator dreAnim;
     public Transform hook;
     public GameObject finshingMechanic;
-    public GameObject joltbt;
-    public GameObject fioshtb;
-
 
     private int fishMarkerCounter = -1;
     private int prevfishMarkerCounter = -1;
@@ -44,17 +41,15 @@ public class Fishing : MonoBehaviour
     public static Fishing instance;
 
     public GameObject[] dragonFishAnim;
+
+    public TextMeshProUGUI checkBaitValue;
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-       
         }
-     
-
         finished = (PlayerPrefs.GetInt("finished") != 0);
-       
     }
     // Start is called before the first frame update
     void Start()
@@ -252,12 +247,20 @@ public class Fishing : MonoBehaviour
                 }
             }
         }
+        else if(currentBait.GetbaitValue() <= 0)
+        {
+            checkBaitValue.gameObject.SetActive(true);
+            StartCoroutine(TurnOffText());
+        }
         //unsuccesful attempt
         else
         {
-            //Make Player loose one bait
-            int numOfBait = currentBait.GetbaitValue();
-            currentBait.SetbaitValue(numOfBait - 1);
+            if(fishMarkerCounter >= 1)
+            {
+                //Make Player loose one bait
+                int numOfBait = currentBait.GetbaitValue();
+                currentBait.SetbaitValue(numOfBait - 1);
+            }
             //make all the images of the fish to unfilled
             unfillFishUI();
             audioS.PlayOneShot(reject);
@@ -322,13 +325,15 @@ public class Fishing : MonoBehaviour
     }
     public void DragonFishIn()
     {
+        finshingMechanic.SetActive(false);
+        joltButton.SetActive(false);
+        fishButton.SetActive(false);
+        checkBaitValue.gameObject.SetActive(false);
         if(numOfTaps == 8)
         {
-            StartCoroutine(DragonFishGoingIn());
-            finshingMechanic.SetActive(false);
-            joltbt.SetActive(false);
-            fioshtb.SetActive(false);
-            
+            dragonFishAnim[0].SetActive(false);
+            dragonFishAnim[1].SetActive(false);
+            dragonFishAnim[2].SetActive(false);
         }
     }
     public IEnumerator DragonFishGoingIn()
@@ -337,4 +342,13 @@ public class Fishing : MonoBehaviour
         yield return new WaitForSeconds(0.12f);
         dragonFishAnim[2].SetActive(false);
     }
+    public IEnumerator TurnOffText()
+    {
+        finshingMechanic.SetActive(false);
+        fishButton.SetActive(false);
+        joltButton.SetActive(true);
+        yield return new WaitForSeconds(3.0f);
+        checkBaitValue.gameObject.SetActive(false);
+    }
+
 }

@@ -25,59 +25,62 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
     public PayToPlay _paytoPlay;
     string curSceneName;
     
-    [Space] public ulong requiredAmount = 2500000;
+    private ulong requiredAmount = 2500000;
 
     //When using this interface for another script change the type of script underneath
     public SlotManager _SlotManager;
 
-    public PlayerManager _playerManager;
+    public BuyCoinsScript bcScript;
+
+    //public PlayerManager _playerManager;
 
     void Start()
     {
-
         curSceneName = SceneManager.GetActiveScene().name;
     }
-    public void TryAndProcessTransaction()
+    public void TryAndProcessTransaction(ulong amount, string amountText, string transactionText)
     {
-        /*if (!walletHolder.activeSelf)
-        {
-            walletHolder.SetActive(true);
-            Background.SetActive(true);
-        }*/
-        //else
-        //{
-            _buttonText.text = "2.5M BONKS";
-            _TransferDetails.text = "Get one Extra Spin";
-            
-            _TransferDetails.gameObject.SetActive(true);
-            wallet.SetActive(true);
-            Background.SetActive(true);
-            _SendButton.gameObject.SetActive(true);
+        requiredAmount = amount;
+        _buttonText.text = amountText;
+        _TransferDetails.text = transactionText;
+        
+        _TransferDetails.gameObject.SetActive(true);
+        wallet.SetActive(true);
+        Background.SetActive(true);
+        _SendButton.gameObject.SetActive(true);
 
-            // Remove all existing listeners from the _SendButton
-            _SendButton.onClick.RemoveAllListeners();
+        // Remove all existing listeners from the _SendButton
+        _SendButton.onClick.RemoveAllListeners();
 
-            // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
-            _SendButton.onClick.AddListener(() =>
-                _paytoPlay.TryPayToPlay(requiredAmount, TransactionSuccessful, HandleTransactionFailure));
-            
-        //}
+        // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
+        _SendButton.onClick.AddListener(() =>
+            _paytoPlay.TryPayToPlay(requiredAmount, TransactionSuccessful, HandleTransactionFailure));
     }
 
     private void TransactionSuccessful()
     {
-        _SlotManager.limit += 1;
-        //_SlotManager.Spin();
-        _SlotManager.ResetSlot();
+        if(_SlotManager != null)
+        {
+            _SlotManager.limit += 1;
+            //_SlotManager.Spin();
+            _SlotManager.ResetSlot();
+        }
+        else if(bcScript != null)
+        {
+            bcScript.SuccessfulTransactionReward();
+        }
     }
 
     private void HandleTransactionFailure(string reason)
     {
-        _SlotManager.ResetSlot();
-        //wallet.SetActive(false);
-        //Background.SetActive(false);
-        //MessageBox.SetActive(true);
-        // _TextMessage.text = "Failed to transfer tokens. Cannot repair the racing game.";
+        if(_SlotManager != null)
+        {
+            _SlotManager.ResetSlot();
+        }
+        else if(bcScript != null)
+        {
+            bcScript.ResetTransaction();
+        }
         Debug.Log($"Failed to transfer tokens. Reason: {reason}");
     }
 }

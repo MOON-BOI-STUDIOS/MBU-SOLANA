@@ -16,7 +16,7 @@ MonoBehaviour:
   name: Tuna Fork
   icon: {fileID: 21300000, guid: a0041102d53689a4e81058cb32480e79, type: 3}
   ItemDescription: 
-  ItemValue: 20
+  ItemValue: 250
   IsEquippable: 1
   classOfItem: 0
   luck: 20

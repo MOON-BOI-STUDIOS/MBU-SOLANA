@@ -16,7 +16,7 @@ MonoBehaviour:
   name: Bonk Bait
   icon: {fileID: 21300000, guid: 83f96e4afd13db24db1aa9553c0235a5, type: 3}
   ItemDescription: 
-  ItemValue: 40
+  ItemValue: 150000
   IsEquippable: 1
   classOfItem: 1
   luck: 69

@@ -1,5 +1,5 @@
 using UnityEngine;
 public interface IPaymentHandler
 {
-    void TryAndProcessTransaction();
+    void TryAndProcessTransaction(ulong amount, string amountText, string transactionText);
 }

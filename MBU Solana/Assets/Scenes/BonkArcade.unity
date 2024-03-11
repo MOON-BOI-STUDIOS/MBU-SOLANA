@@ -4093,7 +4093,7 @@ MonoBehaviour:
   Background: {fileID: 5542246175969973020}
   _paytoPlay: {fileID: 5542246174197536707}
   Wallet_Screen: {fileID: 1998404885}
-  requiredAmount: 2500000
+  requiredAmount: 50000
   RaceGameUI: {fileID: 1554414687}
   FishingGameUI: {fileID: 506183864}
   BattleGameUI: {fileID: 178394357}

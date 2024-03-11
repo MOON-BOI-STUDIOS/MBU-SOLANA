@@ -16,7 +16,7 @@ MonoBehaviour:
   name: Dragon Fish
   icon: {fileID: 21300000, guid: dce5cf10008bd467abf4447d3fce4bd1, type: 3}
   ItemDescription: 
-  ItemValue: 100
+  ItemValue: 88
   IsEquippable: 0
   classOfItem: 2
   itemType: 5

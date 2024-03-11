@@ -1323,7 +1323,9 @@ MonoBehaviour:
   _paytoPlay: {fileID: 1802931877}
   requiredAmount: 2500000
   _SlotManager: {fileID: 1011341706}
-  _playerManager: {fileID: 0}
+  bcScript: {fileID: 0}
+  amountToBeShown: 2.5M Bonks
+  transactiontext: Get one extra spin.
 --- !u!114 &1011341708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5947,9 +5949,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.14814815
-    width: 0.99937934
-    height: 0.7017544
+    y: 0.017361112
+    width: 0.7138514
+    height: 0.375
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -7325,9 +7327,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.14814815
-    width: 0.99937934
-    height: 0.7017544
+    y: 0.017361112
+    width: 0.7138514
+    height: 0.375
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

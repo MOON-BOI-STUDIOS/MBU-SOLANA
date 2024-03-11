@@ -115,7 +115,17 @@ public class RodShopitem : MonoBehaviour
     {
         RodPrice.text = isbait ? _bait.ItemValue.ToString():rdb.ItemValue.ToString() + "Coins";
     }
-
+    public void BonkTransactionSuccessful()
+    {
+        if(!isbait)
+        {
+            AddInventoryItemScript.instance.AddToInventory(rdb);
+        }
+        else
+        {
+            AddInventoryItemScript.instance.AddToInventory(_bait); 
+        } 
+    }
     public void LooseCurrncy()
     {
         int currentNumOfCoins = PlayerPrefs.GetInt("Coins");
@@ -148,38 +158,6 @@ public class RodShopitem : MonoBehaviour
             else{return;}    
         }
     }
-    //public void setrodasPurchased()
-    //{
-    //    RodPurchaseButton.gameObject.SetActive(false);
-    //    // change item colour
-    //    itemButton.interactable = true;
-
-    //    itemImage.color = itemNotSelectedColor;
-    //}
-
-    //public void OnItemPurchase(int itemIndex, UnityAction<int> action)
-    //{
-    //    RodPurchaseButton.onClick.RemoveAllListeners();
-    //    RodPurchaseButton.onClick.AddListener(() => action.Invoke(itemIndex));
-    //}
-
-    //public void OnItemSelect(int itemIndex,UnityAction<int> action)
-    //{
-    //    itemButton.interactable = true;
-    //    RodPurchaseButton.onClick.RemoveAllListeners();
-    //    RodPurchaseButton.onClick.AddListener(() => action.Invoke(itemIndex));
-    //}
-
-    //public void selectItem()
-    //{
-    //    itemOutline.enabled = true;
-    //    itemImage.color = itemSelectedColor;
-    //    itemButton.interactable = false;
-    //}
-
-
-
-
 }
     
 

@@ -64,7 +64,7 @@ public class SlotManager : MonoBehaviour
             //Debug.Log("spinTimes > limit" + spinTimes);
             _toggleUI.ToggleSlotsMachine(false);
             _toggleUI.ToggleWalletUI(true);
-            _paymentHandler.TryAndProcessTransaction();
+            _paymentHandler.TryAndProcessTransaction(250000, "2.5 M Bonks", "Get one extra spin");
         }
     }
 

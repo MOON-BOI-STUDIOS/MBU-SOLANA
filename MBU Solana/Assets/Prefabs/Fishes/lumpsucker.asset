@@ -16,7 +16,7 @@ MonoBehaviour:
   name: Lumpsucker
   icon: {fileID: 21300000, guid: b4de6262460854e08a715779c6ac508d, type: 3}
   ItemDescription: 
-  ItemValue: 20
+  ItemValue: 1
   IsEquippable: 0
   classOfItem: 2
   itemType: 0
