@@ -2915,7 +2915,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go  to Fishing Spot
+  m_text: Go to fishing spot
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
   m_sharedMaterial: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
@@ -9083,7 +9083,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 603055482675676748, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_text
-      value: Go  to Fishing Hut
+      value: Go to fishing hut
       objectReference: {fileID: 0}
     - target: {fileID: 603055483426566429, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_text
