@@ -3893,15 +3893,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 206044416987092923, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21.390228
+      value: -21.390259
       objectReference: {fileID: 0}
     - target: {fileID: 388760985662476541, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21.390228
+      value: -21.390259
       objectReference: {fileID: 0}
     - target: {fileID: 443228122213997572, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21.390228
+      value: -21.390259
       objectReference: {fileID: 0}
     - target: {fileID: 1587855717112562484, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3933,19 +3933,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6800473564124272392, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21.390228
+      value: -21.390259
       objectReference: {fileID: 0}
     - target: {fileID: 7109229947847664245, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21.390228
+      value: -21.390259
       objectReference: {fileID: 0}
     - target: {fileID: 7630244329903836410, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21.390228
+      value: -21.390259
       objectReference: {fileID: 0}
     - target: {fileID: 8118462245231250133, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -21.390228
+      value: -21.390259
       objectReference: {fileID: 0}
     - target: {fileID: 8855962610707942388, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_Pivot.x
@@ -4320,6 +4320,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 603055482352026443, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_text
+      value: Quest completed!
+      objectReference: {fileID: 0}
     - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -4366,7 +4370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 603055482675676748, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_text
-      value: Leave Fishing Shop
+      value: Leave fishing shop
       objectReference: {fileID: 0}
     - target: {fileID: 603055483426566429, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_text
@@ -4419,6 +4423,10 @@ PrefabInstance:
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7664553603108587139, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_text
+      value: No ojectives available
       objectReference: {fileID: 0}
     - target: {fileID: 7807258417314638770, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_Name
