@@ -19,9 +19,6 @@ public class VideoScript : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-           
-            
-
         }
         isFinished = (PlayerPrefs.GetInt("isFinished") != 0);
     
