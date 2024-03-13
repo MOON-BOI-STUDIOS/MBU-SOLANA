@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2cd99c1608aaf334e8e2d12c5914e89c, type: 3}
-  m_Name: VideoClipName
+  m_Name: VideoClipName 1
   m_EditorClassIdentifier: 
-  selectedClipName: WhatsApp Video 2024-02-21 at 20.55.56_e687019a
-  selectedClipIndex: 1
+  selectedClipName: Moon_Boi_Studio (1)
+  selectedClipIndex: 0
