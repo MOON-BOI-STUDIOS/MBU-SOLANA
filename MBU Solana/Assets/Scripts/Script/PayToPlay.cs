@@ -18,20 +18,46 @@ namespace Solana.Unity.SDK.Example
         public Button payToPlayBtn;
         public GameObject MessageBox;
         public TMP_Text _TextMessage;
-        private string bonkMintAddress = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"; // BONK
+        private string[] bonkMintAddress = {"DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "So11111111111111111111111111111111111111112"}; // BONK, sol value, USDC value
+
+        private string MintAddress = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263";
         private string destinationAddress = "B2Vh4JS8Q5eQawJZUq7JbmNdnyDRvBmDsFHas7havGxu";
         private ulong requiredAmount = 20000;
+        // Check decimal limitations of BONK, SOL, USDC
 
         private void Start()
         {
            // payToPlayBtn.onClick.AddListener(TryPayToPlay);
         }
 
+        public void SelectMintAddress(int val)
+        {
+            if(val == 0)
+            {
+                MintAddress = bonkMintAddress[0];
+            }
+            else if(val == 1)
+            {
+                MintAddress = bonkMintAddress[1];
+            }
+            else{
+                MintAddress = bonkMintAddress[2];
+            }
+        }
+
+        public string getMintAddress()
+        {
+            return MintAddress;
+        }
+
         public async void TryPayToPlay(ulong requiredAmount, Action onSuccess, Action<string> onFailure, string actionType = "")
         {
             // Get the user's BONK token account
             var tokenAccounts = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
-            var bonkTokenAccount = tokenAccounts.FirstOrDefault(t => t.Account.Data.Parsed.Info.Mint == bonkMintAddress);
+            // USDC or BonkAddress , Sol  Do a dropdown
+            var bonkTokenAccount = tokenAccounts.FirstOrDefault(t => t.Account.Data.Parsed.Info.Mint == MintAddress);
             if (bonkTokenAccount == null)
             {
                 MessageBox.SetActive(true);
@@ -56,7 +82,7 @@ namespace Solana.Unity.SDK.Example
             // Transfer the BONK tokens
             RequestResult<string> result = await Web3.Instance.WalletBase.Transfer(
                 new PublicKey(destinationAddress),
-                new PublicKey(bonkMintAddress),
+                new PublicKey(MintAddress),
                 requiredAmount);
             if (result.Result != null)
             {
@@ -78,5 +104,6 @@ namespace Solana.Unity.SDK.Example
                 onFailure?.Invoke(result.Reason);
             }
         }
+
     }
 }

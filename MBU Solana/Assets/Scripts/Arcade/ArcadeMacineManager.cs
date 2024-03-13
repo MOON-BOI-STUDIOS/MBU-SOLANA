@@ -103,6 +103,7 @@ public class ArcadeMacineManager : MonoBehaviour
         if (currentACD == null)
             return;
 
+        Debug.Log("In Try and Process Transaction to repair Racing");
         //Wallet.SetActive(true);
         //Debug.Log("Repair Racing 5 ");
         _buttonText.text = "2.5M BONKS";
@@ -126,6 +127,7 @@ public class ArcadeMacineManager : MonoBehaviour
         if (currentACD == null)
             return;
         
+        Debug.Log("In Try and Process Transaction to repair Fishing");
         //Wallet.SetActive(true);
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
@@ -146,7 +148,7 @@ public class ArcadeMacineManager : MonoBehaviour
         if (currentACD == null)
             return;
         
-        Debug.Log("Received 2");
+        Debug.Log("In Try and Process Transaction to repair shooting");
         //Wallet.SetActive(true);
         _buttonText.text = "2.5M BONKS";
         _TransferDetails.gameObject.SetActive(true);
@@ -188,7 +190,7 @@ public class ArcadeMacineManager : MonoBehaviour
         if (currentACD == null)
             return;
         
-        //Debug.Log("Repair Racing 2 ");
+        Debug.Log("Repaired Racing ");
         CloseRepairUI();
         int index = Array.IndexOf(ACDlist, currentACD);
         PlayerPrefs.SetInt("arcade" + index, 0);
@@ -212,6 +214,8 @@ public class ArcadeMacineManager : MonoBehaviour
         if (currentACD == null)
             return;
 
+        Debug.Log("Repaired Shooting");
+
         CloseRepairUI();
         int index = Array.IndexOf(ACDlist, currentACD);
         PlayerPrefs.SetInt("arcade" + index, 1);
@@ -233,6 +237,8 @@ public class ArcadeMacineManager : MonoBehaviour
     {
         if (currentACD == null)
             return;
+
+        Debug.Log("Repaired Fishing");
 
         CloseRepairUI();
         int index = Array.IndexOf(ACDlist, currentACD);

@@ -39,6 +39,10 @@ public class BuyCoinsScript : MonoBehaviour
     }
     public void SuccessfulTransactionReward()
     {
+        Debug.Log("Transaction Successful");
+        transactionFailed.gameObject.SetActive(true);
+        transactionFailed.text = "Transaction Successful";
+        StartCoroutine(DisableText());
         _toggleUI.ToggleWalletUI(false);
         _toggleUI.ToggleSlotsMachine(true);
         int currentNumOfCoins = PlayerPrefs.GetInt("Coins"); 

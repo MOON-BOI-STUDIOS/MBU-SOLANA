@@ -40,12 +40,13 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
     }
     public void TryAndProcessTransaction(ulong amount, string amountText, string transactionText)
     {
+        Debug.Log("In Try and Process Transaction");
         requiredAmount = amount;
         _buttonText.text = amountText;
         _TransferDetails.text = transactionText;
         
         _TransferDetails.gameObject.SetActive(true);
-        wallet.SetActive(true);
+        //wallet.SetActive(true);
         Background.SetActive(true);
         _SendButton.gameObject.SetActive(true);
 
@@ -59,6 +60,7 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
 
     private void TransactionSuccessful()
     {
+        Debug.Log("Transaction Successful in Transaction Handler");
         if(_SlotManager != null)
         {
             _SlotManager.limit += 1;

@@ -106,6 +106,7 @@ namespace Solana.Unity.SDK.Example
         {
             if (account != null)
             {
+                Debug.Log("Account is not Null");
                 dropdownRpcCluster.interactable = false;
                 manager.ShowScreen(this, "wallet_screen");
                 messageTxt.gameObject.SetActive(false);

@@ -1318,14 +1318,11 @@ MonoBehaviour:
   _buttonText: {fileID: 1802931880}
   _TransferDetails: {fileID: 298373583}
   _SendButton: {fileID: 298373582}
-  wallet: {fileID: 1802931879}
+  wallet: {fileID: 1802931875}
   Background: {fileID: 1802931878}
   _paytoPlay: {fileID: 1802931877}
-  requiredAmount: 2500000
   _SlotManager: {fileID: 1011341706}
   bcScript: {fileID: 0}
-  amountToBeShown: 2.5M Bonks
-  transactiontext: Get one extra spin.
 --- !u!114 &1011341708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2391,6 +2388,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 248699829957622593}
     m_Modifications:
+    - target: {fileID: 2081162013, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081162013, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081162013, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2081162014, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -2399,11 +2408,35 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 26.001587
       objectReference: {fileID: 0}
+    - target: {fileID: 206044416987092923, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.390137
+      objectReference: {fileID: 0}
+    - target: {fileID: 388760985662476541, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.390137
+      objectReference: {fileID: 0}
+    - target: {fileID: 443228122213997572, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.390137
+      objectReference: {fileID: 0}
     - target: {fileID: 1587855717112562484, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 26.001831
       objectReference: {fileID: 0}
+    - target: {fileID: 1940446381068909326, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2758788989727948154, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3707916798655221063, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170103747133136606, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2415,9 +2448,49 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 26.001831
       objectReference: {fileID: 0}
+    - target: {fileID: 6039543170339950581, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039543170339950581, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039543170339950581, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039543170339950581, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039543170339950581, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 2960
+      objectReference: {fileID: 0}
+    - target: {fileID: 6039543170339950581, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1440
+      objectReference: {fileID: 0}
     - target: {fileID: 6427122491066865531, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 26.001587
+      objectReference: {fileID: 0}
+    - target: {fileID: 6800473564124272392, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.390137
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109229947847664245, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.390137
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630244329903836410, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.390137
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118462245231250133, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21.390137
       objectReference: {fileID: 0}
     - target: {fileID: 8855962610707942388, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_Pivot.x
@@ -2454,6 +2527,18 @@ PrefabInstance:
     - target: {fileID: 8855962610707942388, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8855962610707942388, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8855962610707942388, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8855962610707942388, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8855962610707942388, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2507,6 +2592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wallet_holder
       objectReference: {fileID: 0}
+    - target: {fileID: 8948985679362190585, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9012999103266018054, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 26.001343
@@ -2516,6 +2605,11 @@ PrefabInstance:
 --- !u!224 &1802931874 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8855962610707942388, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+  m_PrefabInstance: {fileID: 1802931873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1802931875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4170103747133136606, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
   m_PrefabInstance: {fileID: 1802931873}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1802931876 stripped
@@ -2537,11 +2631,6 @@ MonoBehaviour:
 --- !u!1 &1802931878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7684034250619078136, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
-  m_PrefabInstance: {fileID: 1802931873}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1802931879 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7712732713246053134, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
   m_PrefabInstance: {fileID: 1802931873}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1802931880 stripped
@@ -5949,8 +6038,8 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.017361112
-    width: 0.7138514
+    y: 0.00069444446
+    width: 0.7010135
     height: 0.375
   near clip plane: 0.3
   far clip plane: 1000
@@ -7327,8 +7416,8 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.017361112
-    width: 0.7138514
+    y: 0.00069444446
+    width: 0.7010135
     height: 0.375
   near clip plane: 0.3
   far clip plane: 1000
