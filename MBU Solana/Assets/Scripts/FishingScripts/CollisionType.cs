@@ -19,7 +19,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
 
     public static CollisionType instance;
 
-    public GameObject DialogueBox;
+    
 
     private void Awake()
     {
@@ -101,7 +101,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
     {
         if(collision.gameObject.tag == "Player")
         {
-            DialogueBox.SetActive(false);
+            DialogueManagerFishing.instance.CloseOptions();
         }
     }
 
