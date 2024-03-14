@@ -13467,7 +13467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1595, y: -136}
+  m_AnchoredPosition: {x: -1490, y: -276}
   m_SizeDelta: {x: 479, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2034374107
@@ -36250,6 +36250,7 @@ MonoBehaviour:
   savePrivateKeyBtn: {fileID: 4260163212584281146}
   tokenItem: {fileID: 6269036519149151341, guid: 4201b43b5062d459986aabe2ea566797, type: 3}
   tokenContainer: {fileID: 7309100347932770558}
+  _paytoPlay: {fileID: 0}
   parentManager: {fileID: 6261755169734808785}
 --- !u!114 &7074121050844274119
 MonoBehaviour:
@@ -37354,7 +37355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7506093832683340365
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10998,6 +10998,7 @@ MonoBehaviour:
   savePrivateKeyBtn: {fileID: 2113890435752866526}
   tokenItem: {fileID: 6269036519149151341, guid: 4201b43b5062d459986aabe2ea566797, type: 3}
   tokenContainer: {fileID: 4838567986154919450}
+  _paytoPlay: {fileID: 0}
   parentManager: {fileID: 0}
 --- !u!114 &8119733798274499125
 MonoBehaviour:
@@ -14290,7 +14291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2113108790766437907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17760,7 +17761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -792, y: -142}
+  m_AnchoredPosition: {x: -666, y: -306}
   m_SizeDelta: {x: 479.7, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4783151052303497099

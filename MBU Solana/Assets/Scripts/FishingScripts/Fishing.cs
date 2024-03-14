@@ -347,6 +347,12 @@ public class Fishing : MonoBehaviour
         finshingMechanic.SetActive(false);
         fishButton.SetActive(false);
         joltButton.SetActive(true);
+        if(numOfTaps == 8)
+        {
+            dragonFishAnim[0].SetActive(false);
+            dragonFishAnim[1].SetActive(false);
+            dragonFishAnim[2].SetActive(false);
+        }
         yield return new WaitForSeconds(3.0f);
         checkBaitValue.gameObject.SetActive(false);
     }

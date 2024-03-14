@@ -113,7 +113,7 @@ public class RodShopitem : MonoBehaviour
 
     public void setRodPrice()
     {
-        RodPrice.text = isbait ? _bait.ItemValue.ToString():rdb.ItemValue.ToString() + "Coins";
+        RodPrice.text = isbait ? _bait.ItemValue.ToString():rdb.ItemValue.ToString();
     }
     public void BonkTransactionSuccessful()
     {
