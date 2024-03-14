@@ -22,7 +22,7 @@ namespace MagicWebSolutions
 
         private void OnEnable()
         {
-            selectedVideoClip = AssetDatabase.LoadAssetAtPath<SelectedVideoClip>("Assets/VideoPlayerForWebGL/VideoClipName.asset");
+            selectedVideoClip = AssetDatabase.LoadAssetAtPath<SelectedVideoClip>("Assets/VideoPlayerForWebGL/ScriptableObjects/VideoClipName.asset");
 
             // Find all the video clips in the StreamingAssets folder
             string streamingAssetsPath = Application.streamingAssetsPath;
@@ -44,7 +44,7 @@ namespace MagicWebSolutions
         public override void OnInspectorGUI()
         {
             // Load the SelectedVideoClip asset
-            selectedVideoClip = AssetDatabase.LoadAssetAtPath<SelectedVideoClip>("Assets/VideoPlayerForWebGL/VideoClipName.asset");
+            selectedVideoClip = AssetDatabase.LoadAssetAtPath<SelectedVideoClip>("Assets/VideoPlayerForWebGL/ScriptableObjects/VideoClipName.asset");
 
             // Find all the video clips in the StreamingAssets folder
             string streamingAssetsPath = Application.streamingAssetsPath;

@@ -147,8 +147,15 @@ namespace MagicWebSolutions
                     videoURL = url;
                 });
             }
+            if(videoId == null || videoURL == null || rawImage.texture.GetNativeTexturePtr() == null|| loop == null)
+            {
+                Debug.Log("This is null");
+            }
 
-            MagicWebSolutions.VideoPlayer.createVideoFromSource(videoId, videoURL, rawImage.texture.GetNativeTexturePtr(), loop);
+            Debug.Log(videoId);
+            Debug.Log(videoURL);
+            Debug.Log(rawImage.texture.GetNativeTexturePtr());
+            //MagicWebSolutions.VideoPlayer.createVideoFromSource(videoId, videoURL, rawImage.texture.GetNativeTexturePtr(), loop);
 
             loadVideoFromURL();
 
@@ -248,7 +255,7 @@ namespace MagicWebSolutions
             while (true)
             {
                 yield return new WaitForSeconds(0.3f);
-                videoDurationText.text = FormatTime(MagicWebSolutions.VideoPlayer.getCurrentTime(videoId)) + " / " + FormatTime(MagicWebSolutions.VideoPlayer.getDuration(videoId));
+                //videoDurationText.text = FormatTime(MagicWebSolutions.VideoPlayer.getCurrentTime(videoId)) + " / " + FormatTime(MagicWebSolutions.VideoPlayer.getDuration(videoId));
 
                 if (MagicWebSolutions.VideoPlayer.getDuration(videoId) > 0 && !videoHasStarted)
                 {
