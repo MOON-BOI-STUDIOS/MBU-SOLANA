@@ -32,6 +32,7 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             isClose = false;
+            
         }
 
         if (isClose)
@@ -82,5 +83,13 @@ public class DialogueSystem : MonoBehaviour
         //    }
         //}
         
+    }
+
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            DialogueManager.instance.endOfDialogue();
+        }
     }
 }
