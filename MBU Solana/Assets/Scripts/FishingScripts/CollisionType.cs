@@ -19,6 +19,8 @@ public class CollisionType : MonoBehaviour, ICollisiontype
 
     public static CollisionType instance;
 
+    public GameObject DialogueBox;
+
     private void Awake()
     {
         if (instance == null)
@@ -92,6 +94,14 @@ public class CollisionType : MonoBehaviour, ICollisiontype
               
                
                 break;  
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            DialogueBox.SetActive(false);
         }
     }
 

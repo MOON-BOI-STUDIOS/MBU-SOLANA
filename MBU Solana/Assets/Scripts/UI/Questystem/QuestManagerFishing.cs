@@ -59,6 +59,7 @@ public class QuestManagerFishing : MonoBehaviour
             quest2.gameObject.SetActive(true);
             fishQuests[0].collider2D.enabled = false;
             fishQuests[1].collider2D.enabled = true;
+            flashTxt.enabled = true;
         }
         else if( questObjective == 3)
         {
@@ -67,6 +68,7 @@ public class QuestManagerFishing : MonoBehaviour
             //questbtn.GetComponent<Image>().color = Color.white;
             txt.SetActive(false);
             complted.gameObject.SetActive(true);
+            flashTxt.enabled = false;
         }
         else if (questObjective == 1)
         {
@@ -75,11 +77,13 @@ public class QuestManagerFishing : MonoBehaviour
             fishQuests[0].collider2D.enabled = false;
             fishQuests[1].collider2D.enabled = false;
             othertxt.SetActive(true);
+            flashTxt.enabled = false;
 
         }
         else if ( questObjective > 3)
         {
             questbtn.interactable = false;
+            flashTxt.enabled = false;
             //questbtn.GetComponent<Image>().color = Color.white;
         }
 
@@ -118,11 +122,11 @@ public class QuestManagerFishing : MonoBehaviour
         {
             //complted.text = "Quest Completed!".ToString();
             questbtn.interactable = false;
-            questbtn.GetComponent<Image>().color = Color.red;
             txt.SetActive(false);
             complted.gameObject.SetActive(true);
             quest1.gameObject.SetActive(false);
             quest2.gameObject.SetActive(false);
+            flashTxt.enabled = false;
         }
         else if(questObjective == 1)
         {
@@ -131,10 +135,12 @@ public class QuestManagerFishing : MonoBehaviour
             fishQuests[0].collider2D.enabled = false;
             fishQuests[1].collider2D.enabled = false;
             othertxt.SetActive(true);
+            flashTxt.enabled = false;
         }
         else if (questObjective > 3)
         {
             questbtn.interactable = false;
+            flashTxt.enabled = false;
         }
 
     }

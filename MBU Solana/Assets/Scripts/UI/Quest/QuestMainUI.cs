@@ -38,7 +38,15 @@ public class QuestMainUI : MonoBehaviour
     public void Start()
     {
         //questBtn.GetComponent<Image>().color = Color.green;
-        txtFlash.enabled = true;
+        if(Qbjective1main == true)
+        {
+            txtFlash.enabled = false;
+        }
+        else if (Qbjective1main == false)
+        {
+            txtFlash.enabled = true;
+        }
+        
         questObjective = PlayerPrefs.GetInt("questCompletemain");
         
     }

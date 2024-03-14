@@ -41,6 +41,7 @@ public class uestShop : MonoBehaviour
         {
             quxt.interactable = false;
             quxt.GetComponent<Image>().color = Color.white;
+            txtflash.enabled = false;
         }
     }
     public void pressed()

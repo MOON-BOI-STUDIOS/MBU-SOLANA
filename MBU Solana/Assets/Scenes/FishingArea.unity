@@ -17220,9 +17220,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1367895577999752688, guid: b647d72e092c34045a548d40b1bd477e, type: 3}
-      propertyPath: canFish
-      value: 0
+      propertyPath: isShop
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1367895577999752688, guid: b647d72e092c34045a548d40b1bd477e, type: 3}
+      propertyPath: canFish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367895577999752688, guid: b647d72e092c34045a548d40b1bd477e, type: 3}
+      propertyPath: DialogueBox
+      value: 
+      objectReference: {fileID: 392001571}
     - target: {fileID: 1367895577999752688, guid: b647d72e092c34045a548d40b1bd477e, type: 3}
       propertyPath: isTutorialOver
       value: 0
@@ -17297,9 +17305,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1822702557691886513, guid: 78a6b1753356ec0478a4f081bf6b8061, type: 3}
-      propertyPath: canFish
-      value: 0
+      propertyPath: isShop
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1822702557691886513, guid: 78a6b1753356ec0478a4f081bf6b8061, type: 3}
+      propertyPath: canFish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822702557691886513, guid: 78a6b1753356ec0478a4f081bf6b8061, type: 3}
+      propertyPath: DialogueBox
+      value: 
+      objectReference: {fileID: 392001571}
     - target: {fileID: 1822702557691886513, guid: 78a6b1753356ec0478a4f081bf6b8061, type: 3}
       propertyPath: isTutorialOver
       value: 0
@@ -17716,7 +17732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.06451613
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -17724,7 +17740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.87096775
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3961368043105817334, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
@@ -17749,9 +17765,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4237692437177151736, guid: 77a58b9fab7ae884a99884c59b9b8f71, type: 3}
-      propertyPath: canFish
-      value: 0
+      propertyPath: isShop
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4237692437177151736, guid: 77a58b9fab7ae884a99884c59b9b8f71, type: 3}
+      propertyPath: canFish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237692437177151736, guid: 77a58b9fab7ae884a99884c59b9b8f71, type: 3}
+      propertyPath: DialogueBox
+      value: 
+      objectReference: {fileID: 392001571}
     - target: {fileID: 4237692437177151736, guid: 77a58b9fab7ae884a99884c59b9b8f71, type: 3}
       propertyPath: isTutorialOver
       value: 0
@@ -17939,9 +17963,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4812924086725094435, guid: 468043c65688efa4b9cbed5ac6b6c3b2, type: 3}
-      propertyPath: canFish
-      value: 0
+      propertyPath: isShop
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4812924086725094435, guid: 468043c65688efa4b9cbed5ac6b6c3b2, type: 3}
+      propertyPath: canFish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812924086725094435, guid: 468043c65688efa4b9cbed5ac6b6c3b2, type: 3}
+      propertyPath: DialogueBox
+      value: 
+      objectReference: {fileID: 392001571}
     - target: {fileID: 4812924086725094435, guid: 468043c65688efa4b9cbed5ac6b6c3b2, type: 3}
       propertyPath: isTutorialOver
       value: 0
@@ -18679,9 +18711,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8669951630282671818, guid: a55922bb76c0c354cab0fd05e53e0250, type: 3}
-      propertyPath: canFish
-      value: 0
+      propertyPath: isShop
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8669951630282671818, guid: a55922bb76c0c354cab0fd05e53e0250, type: 3}
+      propertyPath: canFish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8669951630282671818, guid: a55922bb76c0c354cab0fd05e53e0250, type: 3}
+      propertyPath: DialogueBox
+      value: 
+      objectReference: {fileID: 392001571}
     - target: {fileID: 8669951630282671818, guid: a55922bb76c0c354cab0fd05e53e0250, type: 3}
       propertyPath: isTutorialOver
       value: 0
@@ -18760,9 +18800,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8870684641653009518, guid: ac447742f1fc93147b0262dee2ca0fa0, type: 3}
-      propertyPath: canFish
-      value: 0
+      propertyPath: isShop
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8870684641653009518, guid: ac447742f1fc93147b0262dee2ca0fa0, type: 3}
+      propertyPath: canFish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870684641653009518, guid: ac447742f1fc93147b0262dee2ca0fa0, type: 3}
+      propertyPath: DialogueBox
+      value: 
+      objectReference: {fileID: 392001571}
     - target: {fileID: 8870684641653009518, guid: ac447742f1fc93147b0262dee2ca0fa0, type: 3}
       propertyPath: isTutorialOver
       value: 0
