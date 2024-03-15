@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VideoPlayerForWebGL/Scenes/SingleVideo.unity
-    guid: 52066a3cee0af3d4a86a1a68f6460aff
+    path: Assets/Scenes/BonkArcade.unity
+    guid: a0a27c7eae1e0bf479d2385dc8826025
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 4a4770776bdf7b14a84228a59cf77774, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: a6e9b68d07b5cd24982c6610bfdae1de, type: 2}

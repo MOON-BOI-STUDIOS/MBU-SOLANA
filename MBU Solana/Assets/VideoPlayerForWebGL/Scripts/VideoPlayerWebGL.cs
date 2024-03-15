@@ -155,7 +155,7 @@ namespace MagicWebSolutions
             Debug.Log(videoId);
             Debug.Log(videoURL);
             Debug.Log(rawImage.texture.GetNativeTexturePtr());
-            //MagicWebSolutions.VideoPlayer.createVideoFromSource(videoId, videoURL, rawImage.texture.GetNativeTexturePtr(), loop);
+            MagicWebSolutions.VideoPlayer.createVideoFromSource(videoId, videoURL, rawImage.texture.GetNativeTexturePtr(), loop);
 
             loadVideoFromURL();
 

@@ -110,8 +110,8 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
 
     public void InitialAward()
     {
-        int[] itemListIndex = {0,0,5,5};
-        // 2x Basic rod and 2x plastic worm bait
+        int[] itemListIndex = {0,5,5};
+        // 1x Basic rod and 2x plastic worm bait
         for(int i = 0;i < itemListIndex.Length;i++)
         {
             if(itemList.Count > itemListIndex[i])
