@@ -4225,6 +4225,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 3707916798655221063, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4170103747133136606, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4930704951360113924, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: parentManager
       value: 
@@ -4248,6 +4256,10 @@ PrefabInstance:
     - target: {fileID: 5530874416379170581, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755594807386182017, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6055758333867253362, guid: 1f3771348828c41b39588ac4289c1389, type: 3}
       propertyPath: m_AnchoredPosition.x

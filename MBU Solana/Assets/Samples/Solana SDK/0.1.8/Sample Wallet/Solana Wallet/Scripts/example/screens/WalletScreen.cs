@@ -152,14 +152,14 @@ namespace Solana.Unity.SDK.Example
             manager.ShowScreen(this, "transfer_screen", data);
         }
 
-        //private string bonkMintAddress = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"; // BONK Mint address
+        private string bonkMintAddress = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"; // BONK Mint address
 
         private async UniTask GetOwnedTokenAccounts()
         {
             var tokens = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
             if (tokens == null) return;
 
-            string bonkMintAddress = _paytoPlay.getMintAddress();
+            //string bonkMintAddress = _paytoPlay.getMintAddress();
             // Find the BONK token account
             var bonkTokenAccount = tokens.FirstOrDefault(t => t.Account.Data.Parsed.Info.Mint == bonkMintAddress);
             if (bonkTokenAccount == null) return;

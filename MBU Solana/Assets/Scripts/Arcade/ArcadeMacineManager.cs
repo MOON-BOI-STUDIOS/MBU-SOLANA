@@ -106,7 +106,7 @@ public class ArcadeMacineManager : MonoBehaviour
         Debug.Log("In Try and Process Transaction to repair Racing");
         //Wallet.SetActive(true);
         //Debug.Log("Repair Racing 5 ");
-        _buttonText.text = "2.5M BONKS";
+        _buttonText.text = "50M BONKS";
         _TransferDetails.gameObject.SetActive(true);
         _TransferDetails.text = "Upgrade Racing Game";
         wallet.SetActive(true);
