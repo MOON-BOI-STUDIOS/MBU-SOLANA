@@ -1132,7 +1132,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.9950001, y: 5.65, z: 0}
   m_MaxChunkCount: 16
@@ -2131,7 +2131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - 'Fishing takes patience, reckon you have what it takes?  '
   - "Dr\xE9 : umm\u2026 I guess "
@@ -2152,7 +2152,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -2163,7 +2163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &268169566
 SpriteRenderer:
@@ -2205,7 +2205,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -584674171, guid: 0ac2e1825f69bb045aa188e3558e2d2a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -3194,7 +3194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - 'Welcome to Mecha Mecca!!   '
   - "Dr\xE9 : I live here though\u2026 "
@@ -3216,7 +3216,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.17658404}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -3227,7 +3227,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.35316807}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &435753009
 SpriteRenderer:
@@ -3269,7 +3269,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -250324006, guid: 14b5b28c0c79c614b897391480a274bc, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -3874,7 +3874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - Want to hear a joke? Why did the mechbot cross the road?
   - "Dr\xE9 : Why?"
@@ -3897,7 +3897,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -3908,7 +3908,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &507535289
 SpriteRenderer:
@@ -3950,7 +3950,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -584674171, guid: 0ac2e1825f69bb045aa188e3558e2d2a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -5439,7 +5439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - The Rust Runners are so cool!
   - I wish I could see them in action!
@@ -5458,7 +5458,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -5469,7 +5469,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &621192533
 SpriteRenderer:
@@ -5511,7 +5511,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 8
   m_Sprite: {fileID: -355802277, guid: 0ac2e1825f69bb045aa188e3558e2d2a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -6019,7 +6019,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 9
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.2018497, y: 5.65, z: 0}
   m_MaxChunkCount: 16
@@ -6746,7 +6746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - "Look kid, I\u2019m a busy man,"
   - Go bother someone else.
@@ -6765,7 +6765,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -6776,7 +6776,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &757255059
 SpriteRenderer:
@@ -6818,7 +6818,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -1028298243, guid: 14b5b28c0c79c614b897391480a274bc, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -6973,7 +6973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - Did you know mega-corporation FAANG dominates the city's skyline,
   - Controlling every aspect of our lives.
@@ -6992,7 +6992,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -7003,7 +7003,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &777232467
 SpriteRenderer:
@@ -7045,7 +7045,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: 361023813, guid: bfa4589ccd4886644a6fb1e8f6a6f52a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 1
@@ -7617,7 +7617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - I'm in search of a new hoverbike. Something that's fast, agile, and stylish.
   - Do you have any recommendations?
@@ -7636,7 +7636,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.175}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -7647,7 +7647,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19, y: 0.35}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &821274448
 SpriteRenderer:
@@ -7689,7 +7689,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -1292931099, guid: a373b16c0cdbd8c4396fedb6fe0c9f3f, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -8072,7 +8072,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 49
+  m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.83000004, y: 0.76, z: 0}
   m_MaxChunkCount: 16
@@ -8828,7 +8828,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 15
+  m_SortingOrder: 7
   m_Sprite: {fileID: -1096302642, guid: f080987d13bc3554ba8add0fcdc3eafe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9081,7 +9081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - 'What''s a robot''s favourite genre of music? '
   - Heavy metal!
@@ -9100,7 +9100,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -9111,7 +9111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &961227526
 SpriteRenderer:
@@ -9153,7 +9153,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -1218719514, guid: bfa4589ccd4886644a6fb1e8f6a6f52a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 1
@@ -9199,7 +9199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986488198}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.608, y: 7.067, z: 1.9927924}
+  m_LocalPosition: {x: 40.22, y: 6.78, z: 1.9927924}
   m_LocalScale: {x: 2.05, y: 2.05, z: 2.05}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -9266,7 +9266,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 17
+  m_SortingOrder: 8
   m_Sprite: {fileID: -2038122423, guid: 007b4335798def14292388d9e81afff3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9290,7 +9290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - Why do we tell secrets in the arcade?
   - ' Because the pinball machines have too many flippers! '
@@ -9317,7 +9317,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06807646, y: -0.034368962}
+  m_Offset: {x: -0.08045692, y: -0.0046515763}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9328,7 +9328,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.26310807, y: 0.6745009}
+  m_Size: {x: 0.15673755, y: 0.389679}
   m_EdgeRadius: 0
 --- !u!82 &986488204
 AudioSource:
@@ -10039,7 +10039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - 'If you''re looking for a challenge, '
   - 'You should head to the Battle Arena at the end of the road. '
@@ -10059,7 +10059,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -10070,7 +10070,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &1034940342
 SpriteRenderer:
@@ -10112,7 +10112,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -1449986903, guid: bfa4589ccd4886644a6fb1e8f6a6f52a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 1
@@ -10231,7 +10231,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 6
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.2250001, y: 6.034401, z: 0}
   m_MaxChunkCount: 16
@@ -12442,7 +12442,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 56
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 1.865, y: 4.85, z: 0}
   m_MaxChunkCount: 16
@@ -12820,7 +12820,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 9
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.2250001, y: 6.4346704, z: 0}
   m_MaxChunkCount: 16
@@ -13935,6 +13935,7 @@ GameObject:
   - component: {fileID: 1427962555}
   - component: {fileID: 1427962552}
   - component: {fileID: 1427962551}
+  - component: {fileID: 1427962558}
   m_Layer: 0
   m_Name: Beggar
   m_TagString: Untagged
@@ -14077,7 +14078,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.17658404}
+  m_Offset: {x: 0.0008278005, y: 0.18767278}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -14088,7 +14089,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.35316807}
+  m_Size: {x: 0.17396602, y: 0.4070287}
   m_EdgeRadius: 0
 --- !u!212 &1427962556
 SpriteRenderer:
@@ -14150,13 +14151,39 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427962550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.06, y: 7.16, z: 0}
+  m_LocalPosition: {x: 16.06, y: 7.155, z: 0}
   m_LocalScale: {x: 3.2670217, y: 3.2670212, z: 3.2670212}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1427962558
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427962550}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.004301399, y: 0.24}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.16, y: 0.36}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.10487907, y: 0.13563332}
+  m_EdgeRadius: 0
 --- !u!1 &1430383141
 GameObject:
   m_ObjectHideFlags: 0
@@ -15100,7 +15127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - Careful kid.
   - 'The Cyberian Caves are plagued by rogue drones. '
@@ -15120,7 +15147,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -15131,7 +15158,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &1557384694
 SpriteRenderer:
@@ -15173,7 +15200,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -1520116179, guid: a373b16c0cdbd8c4396fedb6fe0c9f3f, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -15328,7 +15355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - 'The megadomes are plagued by pollution and overpopulation. '
   - The struggle for resources and living space drives the divide between the rich
@@ -15348,7 +15375,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -15359,7 +15386,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &1566364733
 SpriteRenderer:
@@ -15401,7 +15428,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -1156798161, guid: bfa4589ccd4886644a6fb1e8f6a6f52a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 1
@@ -16498,7 +16525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.33, y: 3.09}
+  m_AnchoredPosition: {x: -11.95, y: 3.15}
   m_SizeDelta: {x: 35.417, y: 10.086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1709070478
@@ -16708,7 +16735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - 'Watch your step! '
   - 'Tremors down in the tunnels have been causing quite a commotion lately. '
@@ -16729,7 +16756,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -16740,7 +16767,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &1729500203
 SpriteRenderer:
@@ -16782,7 +16809,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: 1587208445, guid: 0ac2e1825f69bb045aa188e3558e2d2a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -18905,7 +18932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - Do you have any pills that enhance strength or agility?
   - "Dr\xE9: ..."
@@ -18925,7 +18952,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.175}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -18936,7 +18963,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.17, y: 0.35}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &1952771179
 SpriteRenderer:
@@ -18978,7 +19005,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -563927070, guid: a373b16c0cdbd8c4396fedb6fe0c9f3f, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -19570,7 +19597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - The Battle Arena is just down this road.
   - You should definitely give it a go!
@@ -19589,7 +19616,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -19600,7 +19627,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &1961659945
 SpriteRenderer:
@@ -19642,7 +19669,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: 1966770861, guid: bfa4589ccd4886644a6fb1e8f6a6f52a, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -19701,7 +19728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proximity: 1
+  proximity: 1.5
   dialogues:
   - 'Be cautious in the Outer Domes! '
   - The Sand Chee are running rampant, scavenging anything they can get their hands
@@ -19721,7 +19748,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0.004299164, y: 0.18683286}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -19732,7 +19759,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18, y: 0.36}
+  m_Size: {x: 0.08767794, y: 0.19505545}
   m_EdgeRadius: 0
 --- !u!212 &1968644370
 SpriteRenderer:
@@ -19774,7 +19801,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: -268197541, guid: a373b16c0cdbd8c4396fedb6fe0c9f3f, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -20682,7 +20709,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 2.3, y: 2.3, z: 0}
   m_MaxChunkCount: 16
@@ -32042,7 +32069,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.73, z: 0}
   m_MaxChunkCount: 16
@@ -32644,7 +32671,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.305, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -36285,7 +36312,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 3.2018497, y: 5.8199997, z: 0}
   m_MaxChunkCount: 16
@@ -37531,7 +37558,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: 1603116350, guid: 5e528003676bfee4384aa5b8f5a913f6, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
@@ -38140,6 +38167,50 @@ PrefabInstance:
     - target: {fileID: 8551306431402950713, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
       propertyPath: m_Name
       value: NPC (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.08767794
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.19505545
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.004299164
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.18683286
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950717, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551306431402950718, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+      propertyPath: proximity
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8551306431402950718, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
       propertyPath: interactButton
