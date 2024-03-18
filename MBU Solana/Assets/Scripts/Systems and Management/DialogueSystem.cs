@@ -12,6 +12,8 @@ public class DialogueSystem : MonoBehaviour
     bool isClose;
     public Dialoguebase dialogue;
 
+    public bool dialoguebegan;
+
 
     
     // Start is called before the first frame update
@@ -40,11 +42,21 @@ public class DialogueSystem : MonoBehaviour
             if (Vector2.Distance(player.position, transform.position) <= proximity)
             {
                 interactButton.SetActive(true);
+
+                if(dialoguebegan == true)
+                {
+                    interactButton.SetActive(false);
+                }
+                else if(dialoguebegan == false)
+                {
+                    interactButton.SetActive(true);
+                }
             }
             else
             {
                 
                 interactButton.SetActive(false);
+                dialoguebegan = false;
             }
         }
 
@@ -57,12 +69,16 @@ public class DialogueSystem : MonoBehaviour
         //}
     }
 
+    public void endOndDialogue()
+    {
+        dialoguebegan = false;
+    }
 
         
     //triggers the current dialogue, depending on the current dialogue integer, which increases with every button press
     public void TriggerDialogue()
     {
-
+        dialoguebegan = true;
         DialogueManager.instance.EnqueueDialogue(dialogue);
         //if (Vector2.Distance(player.position, transform.position) <= proximity)
         //{

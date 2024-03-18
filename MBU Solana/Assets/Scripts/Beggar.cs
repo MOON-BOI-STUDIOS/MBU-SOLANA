@@ -14,6 +14,7 @@ public class Beggar : MonoBehaviour
     bool endConversation;
     public AudioClip cursorSound;
     public GameObject box;
+    public bool started;
 
     private void Start()
     {
@@ -33,6 +34,14 @@ public class Beggar : MonoBehaviour
         if (Vector2.Distance(player.position, transform.position) <= proximity)
         {
             InteractButton.SetActive(true);
+            if(started == true)
+            {
+                InteractButton.SetActive(false);
+            }
+            else if( started == false)
+            {
+                InteractButton.SetActive(true);
+            }
             
         }
         else
@@ -42,11 +51,13 @@ public class Beggar : MonoBehaviour
             text.text = "";
             endConversation = false;
             box.SetActive(false);
+            started = false;
         }
     }
     public void Interact()
     {
         GetComponent<AudioSource>().PlayOneShot(cursorSound);
+        started = true;
         if (!endConversation)
         {
             //used to trigger first dialogue
@@ -85,6 +96,7 @@ public class Beggar : MonoBehaviour
             buyJokesButton.SetActive(false);
             text.text = "";
             box.SetActive(false);
+            started = false;
         }
         
         
