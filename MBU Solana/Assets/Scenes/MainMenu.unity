@@ -2433,7 +2433,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 1
+  m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -2489,7 +2489,7 @@ MonoBehaviour:
   isLooping: 0
   playbackSpeedAtStart: 1
   volumeAtStart: 1
-  selectedVideoClip: {fileID: 11400000, guid: 4a60c1ae69de7ed44b1fd745ba54e2d1, type: 2}
+  selectedVideoClip: {fileID: 11400000, guid: 91636cf6a9bf668489366225c49e7ed9, type: 2}
 --- !u!1 &1066217995
 GameObject:
   m_ObjectHideFlags: 0
