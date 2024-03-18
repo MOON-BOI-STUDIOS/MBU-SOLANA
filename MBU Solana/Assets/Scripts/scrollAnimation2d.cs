@@ -66,6 +66,7 @@ public class scrollAnimation2d : MonoBehaviour
             InventoryButton.SetActive(true);
             pause.SetActive(true);
             HealthUI.SetActive(true);
+            Joystick.SetActive(true);
         }
     }
 
@@ -77,7 +78,7 @@ public class scrollAnimation2d : MonoBehaviour
         InventoryButton.SetActive(false);
         pause.SetActive(false);
 #if UNITY_IOS || UNITY_ANDROID
-         Joystick.SetActive(true);
+         Joystick.SetActive(false);
 #endif
     }
     private void AnimateTransformAndImage()
