@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     bool isPaused;
     public GameObject transitionIn;
     public int scene;
+
    
     
     public AudioClip transitionOutSound;
@@ -60,7 +61,10 @@ public class GameManager : MonoBehaviour
         
     }
 
-  
+  public void SetLastLocation(int number)
+  {
+        PlayerPrefs.SetInt("LastLocation", number);
+  }
 
     
 }
