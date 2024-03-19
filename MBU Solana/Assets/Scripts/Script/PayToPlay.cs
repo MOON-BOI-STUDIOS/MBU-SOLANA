@@ -54,10 +54,18 @@ namespace Solana.Unity.SDK.Example
 
         public async void TryPayToPlay(ulong requiredAmount, Action onSuccess, Action<string> onFailure, string actionType = "")
         {
+            Debug.Log(requiredAmount);
             // Get the user's BONK token account
             var tokenAccounts = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
-            // USDC or BonkAddress , Sol  Do a dropdown
+            Debug.Log("Got Token Account in Trypaytoplay");
+            Debug.Log("The mint address is: " + MintAddress);
+            if (tokenAccounts == null)
+            {
+                Debug.Log("The token account is null");
+            }
+            // USDC or BonkAddress , Sol  Do a dropdown// The error is in the line 62
             var bonkTokenAccount = tokenAccounts.FirstOrDefault(t => t.Account.Data.Parsed.Info.Mint == MintAddress);
+            Debug.Log("Got bonkTokenAccount in Trypaytoplay");
             if (bonkTokenAccount == null)
             {
                 MessageBox.SetActive(true);
@@ -69,6 +77,7 @@ namespace Solana.Unity.SDK.Example
 
             // Check if the user has enough BONK tokens
             var userBonkAmount = bonkTokenAccount.Account.Data.Parsed.Info.TokenAmount.AmountUlong;
+            Debug.Log("Got UserBonkAmount in Trypaytoplay");
             if (userBonkAmount < requiredAmount)
             {
                 MessageBox.SetActive(true);
@@ -79,6 +88,7 @@ namespace Solana.Unity.SDK.Example
                 return;
             }
 
+            Debug.Log("Request to transfer in Trypaytoplay");
             // Transfer the BONK tokens
             RequestResult<string> result = await Web3.Instance.WalletBase.Transfer(
                 new PublicKey(destinationAddress),

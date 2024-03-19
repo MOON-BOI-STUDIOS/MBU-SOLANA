@@ -18,12 +18,12 @@ IL2CPP_EXTERN_C const Il2CppMethodPointer g_Il2CppGenericAdjustorThunks[];
 IL2CPP_EXTERN_C const InvokerMethod g_Il2CppInvokerPointers[];
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[];
 IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_BouncyCastle_Crypto_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Chaos_NaCl_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_DOTween_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Dan_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_MagicWebSolutions_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_NativeWebSocket_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_NavMeshPlus_CodeGenModule;
@@ -103,12 +103,12 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_zxing_unity_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
 const Il2CppCodeGenModule* g_CodeGenModules[82] = 
 {
-	(&g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule),
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_BouncyCastle_Crypto_CodeGenModule),
 	(&g_Chaos_NaCl_CodeGenModule),
 	(&g_DOTween_CodeGenModule),
 	(&g_Dan_CodeGenModule),
+	(&g_MagicWebSolutions_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
 	(&g_NativeWebSocket_CodeGenModule),
 	(&g_NavMeshPlus_CodeGenModule),
@@ -194,9 +194,9 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	97114,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	20088,
+	20089,
 	g_Il2CppInvokerPointers,
-	3340,
+	3341,
 	g_UnresolvedVirtualMethodPointers,
 	746,
 	g_Il2CppInteropData,

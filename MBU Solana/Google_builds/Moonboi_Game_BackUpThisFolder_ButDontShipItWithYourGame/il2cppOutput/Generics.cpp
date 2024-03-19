@@ -251,8 +251,8 @@ struct U3CU3Ec_tAD7BE1490C6042D1DE63373EEE3B2DB65D7CE01D;
 struct U3CU3Ec_t71AD3447578DE43CA90AA7D65D2FCCB9346729E5;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1/<>c<Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__9>
 struct U3CU3Ec_tA7FD4FEB5C14D380A19F0DA99242D7FBD7843A7A;
-// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>
-struct U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970;
+// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>
+struct U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Web3/<SubscribeToWalletEvents>d__82>
 struct U3CU3Ec_tEBAD864D6C8527667287B456CDB9009D375BC93F;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Web3/<UpdateBalance>d__79>
@@ -331,8 +331,8 @@ struct U3CU3Ec_t24CE44E972541D9A99CA8CBCD6E7778828C2D9BC;
 struct U3CU3Ec_tD2547A7958EA4AAC462CD740F057D625ACAF1EFD;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Cysharp.Threading.Tasks.UniTaskExtensions/<TimeoutWithoutException>d__14,System.Boolean>
 struct U3CU3Ec_t0D9B420638F171C3F2430FCFD69702911021193D;
-// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>
-struct U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400;
+// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>
+struct U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Web3/<LoadNFTs>d__81,System.Object>
 struct U3CU3Ec_tF47149655D8D989CFCC1B9B5F253ECE58419D923;
 // Unity.VisualScripting.GetGraphs`3/<>c<System.Object,System.Object,System.Object>
@@ -1245,8 +1245,8 @@ struct AsyncUniTask_1_t5450B9A8C73ED4488D702D0DABE18C358C7F91B4;
 struct AsyncUniTask_1_t5F6ED049B0B581E0D11ED31B1B87198352F02565;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Cysharp.Threading.Tasks.UnityAsyncExtensions/<WaitAsync>d__41>
 struct AsyncUniTask_1_tE1DFB65D5D0CA7F33F634700885F56695E196090;
-// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>
-struct AsyncUniTask_1_t3FE5A28E871BE3439D4901A030114BF01F01FAED;
+// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>
+struct AsyncUniTask_1_t53DA092DC12A604996C69BF9F7E9B5CAB42A2B42;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Web3/<SubscribeToWalletEvents>d__82>
 struct AsyncUniTask_1_tB3B982E79D63D7C87E05F61842EEE4B4C14D6804;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Web3/<UpdateBalance>d__79>
@@ -1291,8 +1291,8 @@ struct AsyncUniTask_2_tA24CC824617315597DA524494C86A542812D19E4;
 struct AsyncUniTask_2_t9DA40E1CAAD60A850BF76C6A3F2FF86DEECF7177;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Cysharp.Threading.Tasks.UniTaskExtensions/<TimeoutWithoutException>d__14,System.Boolean>
 struct AsyncUniTask_2_tD799DD3A7EEEB065F86198C4CF262B88B6DA125B;
-// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>
-struct AsyncUniTask_2_t0643B764F9022CFDF28AF661794D96C774314A66;
+// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>
+struct AsyncUniTask_2_tC834757318B45C1E7F6DDE94D4BC415902B8D052;
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Web3/<LoadNFTs>d__81,System.Object>
 struct AsyncUniTask_2_tC884F072D2C89154EFCD10932CECC3018B7EB66C;
 // UnityEngine.AdaptivePerformance.Samsung.Android.AsyncValue`1<System.Double>
@@ -2257,8 +2257,8 @@ struct ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540;
 struct AttachExternalCancellationSource_tF80E49FE8ECAA8B26433CC058F33621820D73682;
 // Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator
 struct ToCoroutineEnumerator_tC691A545CD1053E3E36117EDC66018B1740F0706;
-// Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass26_0
-struct U3CU3Ec__DisplayClass26_0_tE89F2E4B8EB5AABE923F194A17BE7B33200CF190;
+// Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass27_0
+struct U3CU3Ec__DisplayClass27_0_t540E61B470088C153A42BECC523E8F2366BF9E62;
 // Solana.Unity.SDK.Web3/<>c__DisplayClass81_0
 struct U3CU3Ec__DisplayClass81_0_tC12976B0EB3163B635867FC20459A6D38240CFDA;
 // Solana.Unity.SDK.Web3/<>c__DisplayClass81_3
@@ -3144,15 +3144,15 @@ struct U3CU3Ec_tA7FD4FEB5C14D380A19F0DA99242D7FBD7843A7A_StaticFields
 	U3CU3Ec_tA7FD4FEB5C14D380A19F0DA99242D7FBD7843A7A* ___U3CU3E9_0;
 };
 
-// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>
-struct U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970  : public RuntimeObject
+// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>
+struct U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF  : public RuntimeObject
 {
 };
 
-struct U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970_StaticFields
+struct U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF_StaticFields
 {
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<TStateMachine> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c::<>9
-	U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970* ___U3CU3E9_0;
+	U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF* ___U3CU3E9_0;
 };
 
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Web3/<SubscribeToWalletEvents>d__82>
@@ -3606,15 +3606,15 @@ struct U3CU3Ec_t0D9B420638F171C3F2430FCFD69702911021193D_StaticFields
 	U3CU3Ec_t0D9B420638F171C3F2430FCFD69702911021193D* ___U3CU3E9_0;
 };
 
-// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>
-struct U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400  : public RuntimeObject
+// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>
+struct U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01  : public RuntimeObject
 {
 };
 
-struct U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400_StaticFields
+struct U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01_StaticFields
 {
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<TStateMachine,T> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c::<>9
-	U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400* ___U3CU3E9_0;
+	U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01* ___U3CU3E9_0;
 };
 
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Web3/<LoadNFTs>d__81,System.Object>
@@ -9279,15 +9279,15 @@ struct TaskPool_1_tCC4E2B0DC9E511579254BF942C8DE7F4CE43AAD6
 	AsyncUniTask_1_tE1DFB65D5D0CA7F33F634700885F56695E196090* ___root_2;
 };
 
-// Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>>
-struct TaskPool_1_t9EA89467953C1BACD4EA61E1B06B51348E1820AC 
+// Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>>
+struct TaskPool_1_tFC4D0ED96A2C07C3631E0FD36E3591888C36157A 
 {
 	// System.Int32 Cysharp.Threading.Tasks.TaskPool`1::gate
 	int32_t ___gate_0;
 	// System.Int32 Cysharp.Threading.Tasks.TaskPool`1::size
 	int32_t ___size_1;
 	// T Cysharp.Threading.Tasks.TaskPool`1::root
-	AsyncUniTask_1_t3FE5A28E871BE3439D4901A030114BF01F01FAED* ___root_2;
+	AsyncUniTask_1_t53DA092DC12A604996C69BF9F7E9B5CAB42A2B42* ___root_2;
 };
 
 // Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Web3/<SubscribeToWalletEvents>d__82>>
@@ -9532,15 +9532,15 @@ struct TaskPool_1_t09B86EC0079F510EF495D70C2CDC55BA2C035D4F
 	AsyncUniTask_2_tD799DD3A7EEEB065F86198C4CF262B88B6DA125B* ___root_2;
 };
 
-// Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>>
-struct TaskPool_1_tF696F4EE45DA511EA9921A675AAD6222BE5C55D8 
+// Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>>
+struct TaskPool_1_tF0F4B72E6E76AD53313F1323692D7BB4F842F931 
 {
 	// System.Int32 Cysharp.Threading.Tasks.TaskPool`1::gate
 	int32_t ___gate_0;
 	// System.Int32 Cysharp.Threading.Tasks.TaskPool`1::size
 	int32_t ___size_1;
 	// T Cysharp.Threading.Tasks.TaskPool`1::root
-	AsyncUniTask_2_t0643B764F9022CFDF28AF661794D96C774314A66* ___root_2;
+	AsyncUniTask_2_tC834757318B45C1E7F6DDE94D4BC415902B8D052* ___root_2;
 };
 
 // Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Web3/<LoadNFTs>d__81,System.Object>>
@@ -13335,29 +13335,29 @@ struct Awaiter_tFACD37B3B2ACD03C61DB949FD0E4FAB189A1D956_marshaled_com
 	UniTask_t8E1453C1D8424B1FC22B0E51B017D3B028E17270 ___task_0;
 };
 
-// Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26
-struct U3CGetOwnedTokenAccountsU3Ed__26_tC15910C45F81A751C4402F98DD410C33638D9F2A 
+// Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27
+struct U3CGetOwnedTokenAccountsU3Ed__27_t5D7A2865934A0A0B6CC915E1902F89E7930061F2 
 {
-	// System.Int32 Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::<>1__state
+	// System.Int32 Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::<>t__builder
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27::<>t__builder
 	AsyncUniTaskMethodBuilder_t490751EC621C472E098B12103AF16BC549912BB0 ___U3CU3Et__builder_1;
-	// Solana.Unity.SDK.Example.WalletScreen Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::<>4__this
+	// Solana.Unity.SDK.Example.WalletScreen Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27::<>4__this
 	WalletScreen_t52A62D57A1EBB18B2E139E3FBAA392B4E8C82F99* ___U3CU3E4__this_2;
-	// Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass26_0 Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::<>8__1
-	U3CU3Ec__DisplayClass26_0_tE89F2E4B8EB5AABE923F194A17BE7B33200CF190* ___U3CU3E8__1_3;
-	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Models.TokenAccount[]> Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26::<>u__1
+	// Solana.Unity.SDK.Example.WalletScreen/<>c__DisplayClass27_0 Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27::<>8__1
+	U3CU3Ec__DisplayClass27_0_t540E61B470088C153A42BECC523E8F2366BF9E62* ___U3CU3E8__1_3;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Models.TokenAccount[]> Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27::<>u__1
 	TaskAwaiter_1_t2ACD7EE0BE86BB617FE263A65E8E6ACAEA2F66F6 ___U3CU3Eu__1_4;
 };
 
-// Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27
-struct U3CGetTokenMintResolverU3Ed__27_tA78F78D18B93639BB852F8FEAA987007029382F4 
+// Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28
+struct U3CGetTokenMintResolverU3Ed__28_t2E4BBB52F1D4F5F55C0BBA66B9CD293737D1EF0B 
 {
-	// System.Int32 Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27::<>1__state
+	// System.Int32 Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1<Solana.Unity.Extensions.TokenMintResolver> Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27::<>t__builder
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1<Solana.Unity.Extensions.TokenMintResolver> Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28::<>t__builder
 	AsyncUniTaskMethodBuilder_1_tD17E371D8B76DEC8ED910F3ADBF80309885B486A ___U3CU3Et__builder_1;
-	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Extensions.TokenMintResolver> Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27::<>u__1
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Extensions.TokenMintResolver> Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28::<>u__1
 	TaskAwaiter_1_t131A5ADE1F719A34F5B57F47E44E4AA95D292DFF ___U3CU3Eu__1_2;
 };
 
@@ -13867,25 +13867,25 @@ struct AsyncUniTask_1_t426C32CC4CF7FD56F2D0DBC16658EA072883B994_StaticFields
 	TaskPool_1_t1D2F4BF03F3A401AC14967C72164E9EDA5B20FBA ___pool_0;
 };
 
-// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>
-struct AsyncUniTask_1_t3FE5A28E871BE3439D4901A030114BF01F01FAED  : public RuntimeObject
+// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>
+struct AsyncUniTask_1_t53DA092DC12A604996C69BF9F7E9B5CAB42A2B42  : public RuntimeObject
 {
 	// System.Action Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::returnDelegate
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___returnDelegate_1;
 	// System.Action Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::<MoveNext>k__BackingField
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CMoveNextU3Ek__BackingField_2;
 	// TStateMachine Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::stateMachine
-	U3CGetOwnedTokenAccountsU3Ed__26_tC15910C45F81A751C4402F98DD410C33638D9F2A ___stateMachine_3;
+	U3CGetOwnedTokenAccountsU3Ed__27_t5D7A2865934A0A0B6CC915E1902F89E7930061F2 ___stateMachine_3;
 	// Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1<Cysharp.Threading.Tasks.AsyncUnit> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::core
 	UniTaskCompletionSourceCore_1_t98CC5EF20AEAD287E4BBB6D044C235C7DABCE269 ___core_4;
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<TStateMachine> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::nextNode
-	AsyncUniTask_1_t3FE5A28E871BE3439D4901A030114BF01F01FAED* ___nextNode_5;
+	AsyncUniTask_1_t53DA092DC12A604996C69BF9F7E9B5CAB42A2B42* ___nextNode_5;
 };
 
-struct AsyncUniTask_1_t3FE5A28E871BE3439D4901A030114BF01F01FAED_StaticFields
+struct AsyncUniTask_1_t53DA092DC12A604996C69BF9F7E9B5CAB42A2B42_StaticFields
 {
 	// Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<TStateMachine>> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::pool
-	TaskPool_1_t9EA89467953C1BACD4EA61E1B06B51348E1820AC ___pool_0;
+	TaskPool_1_tFC4D0ED96A2C07C3631E0FD36E3591888C36157A ___pool_0;
 };
 
 // Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Web3/<SubscribeToWalletEvents>d__82>
@@ -13993,25 +13993,25 @@ struct AsyncUniTask_2_tFAF1D86528DD1E46A411BAA930C68C7F218A2A0A_StaticFields
 	TaskPool_1_tCD34FF26A666BAEB8B1BCB4E69624554EEDCE955 ___pool_0;
 };
 
-// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>
-struct AsyncUniTask_2_t0643B764F9022CFDF28AF661794D96C774314A66  : public RuntimeObject
+// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>
+struct AsyncUniTask_2_tC834757318B45C1E7F6DDE94D4BC415902B8D052  : public RuntimeObject
 {
 	// System.Action Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::returnDelegate
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___returnDelegate_1;
 	// System.Action Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::<MoveNext>k__BackingField
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___U3CMoveNextU3Ek__BackingField_2;
 	// TStateMachine Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::stateMachine
-	U3CGetTokenMintResolverU3Ed__27_tA78F78D18B93639BB852F8FEAA987007029382F4 ___stateMachine_3;
+	U3CGetTokenMintResolverU3Ed__28_t2E4BBB52F1D4F5F55C0BBA66B9CD293737D1EF0B ___stateMachine_3;
 	// Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1<T> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::core
 	UniTaskCompletionSourceCore_1_t7B798F8CAD0AC66ED80DD1758CCC9DA59E091B4F ___core_4;
 	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<TStateMachine,T> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::nextNode
-	AsyncUniTask_2_t0643B764F9022CFDF28AF661794D96C774314A66* ___nextNode_5;
+	AsyncUniTask_2_tC834757318B45C1E7F6DDE94D4BC415902B8D052* ___nextNode_5;
 };
 
-struct AsyncUniTask_2_t0643B764F9022CFDF28AF661794D96C774314A66_StaticFields
+struct AsyncUniTask_2_tC834757318B45C1E7F6DDE94D4BC415902B8D052_StaticFields
 {
 	// Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<TStateMachine,T>> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::pool
-	TaskPool_1_tF696F4EE45DA511EA9921A675AAD6222BE5C55D8 ___pool_0;
+	TaskPool_1_tF0F4B72E6E76AD53313F1323692D7BB4F842F931 ___pool_0;
 };
 
 // Cysharp.Threading.Tasks.UniTask`1/Awaiter<Cysharp.Threading.Tasks.UniTask`1<System.Object>>
@@ -18390,10 +18390,10 @@ inline int32_t TaskPool_1_get_Size_m1B399D1E742246A9011767AB103ED68922D06E20_inl
 {
 	return ((  int32_t (*) (TaskPool_1_t09CBBEF2DB147EB754BCD0A3CAD60728051716B7*, const RuntimeMethod*))TaskPool_1_get_Size_mA6E840439A90DAC450C66102D1940FEC10734999_gshared_inline)(__this, method);
 }
-// System.Int32 Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>>::get_Size()
-inline int32_t TaskPool_1_get_Size_m3D7EC7F3B6009A6062BB66DC06EBE03A63ECE030_inline (TaskPool_1_t9EA89467953C1BACD4EA61E1B06B51348E1820AC* __this, const RuntimeMethod* method)
+// System.Int32 Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>>::get_Size()
+inline int32_t TaskPool_1_get_Size_mBB3D0F9A2D5BD5B7FADEA493DFE82E8CE4B9FA6D_inline (TaskPool_1_tFC4D0ED96A2C07C3631E0FD36E3591888C36157A* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (TaskPool_1_t9EA89467953C1BACD4EA61E1B06B51348E1820AC*, const RuntimeMethod*))TaskPool_1_get_Size_mA6E840439A90DAC450C66102D1940FEC10734999_gshared_inline)(__this, method);
+	return ((  int32_t (*) (TaskPool_1_tFC4D0ED96A2C07C3631E0FD36E3591888C36157A*, const RuntimeMethod*))TaskPool_1_get_Size_mA6E840439A90DAC450C66102D1940FEC10734999_gshared_inline)(__this, method);
 }
 // System.Int32 Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<Solana.Unity.SDK.Web3/<SubscribeToWalletEvents>d__82>>::get_Size()
 inline int32_t TaskPool_1_get_Size_mBFCC6FA61B16148303AB635E7B728EFA075DFA80_inline (TaskPool_1_t2FC8BD353822041327286F5000CDC4D28583E4FF* __this, const RuntimeMethod* method)
@@ -18539,10 +18539,10 @@ inline int32_t TaskPool_1_get_Size_m73DFCEEF0FB67D0F795D41F58CAD44CC26A6A2EA_inl
 {
 	return ((  int32_t (*) (TaskPool_1_t09B86EC0079F510EF495D70C2CDC55BA2C035D4F*, const RuntimeMethod*))TaskPool_1_get_Size_mA6E840439A90DAC450C66102D1940FEC10734999_gshared_inline)(__this, method);
 }
-// System.Int32 Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>>::get_Size()
-inline int32_t TaskPool_1_get_Size_mDCAFC2BD6EE745E5D33B902B08B0B4DA010B562B_inline (TaskPool_1_tF696F4EE45DA511EA9921A675AAD6222BE5C55D8* __this, const RuntimeMethod* method)
+// System.Int32 Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>>::get_Size()
+inline int32_t TaskPool_1_get_Size_mAFBF62325E2F4BD998F57B3BD18CECDDA266A1DF_inline (TaskPool_1_tF0F4B72E6E76AD53313F1323692D7BB4F842F931* __this, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (TaskPool_1_tF696F4EE45DA511EA9921A675AAD6222BE5C55D8*, const RuntimeMethod*))TaskPool_1_get_Size_mA6E840439A90DAC450C66102D1940FEC10734999_gshared_inline)(__this, method);
+	return ((  int32_t (*) (TaskPool_1_tF0F4B72E6E76AD53313F1323692D7BB4F842F931*, const RuntimeMethod*))TaskPool_1_get_Size_mA6E840439A90DAC450C66102D1940FEC10734999_gshared_inline)(__this, method);
 }
 // System.Int32 Cysharp.Threading.Tasks.TaskPool`1<Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<Solana.Unity.SDK.Web3/<LoadNFTs>d__81,System.Object>>::get_Size()
 inline int32_t TaskPool_1_get_Size_m44E487C00432A2E937DA664DDDEF131125DBA9A9_inline (TaskPool_1_t24BD9FCA66B87E1B7C64A700D64339DF95065E57* __this, const RuntimeMethod* method)
@@ -22177,34 +22177,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3C_cctorU3Eb__10_0_mDAEC0ADC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>::.cctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m4372C2F9FB9434AC84EB889299CA38590366D459_gshared (const RuntimeMethod* method) 
+// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mB87DF2C945A4BD946810042528FFE4F6E3DCA07A_gshared (const RuntimeMethod* method) 
 {
 	{
-		U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970* L_0 = (U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF* L_0 = (U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
 		NullCheck(L_0);
-		((  void (*) (U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
-		((U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9_0), (void*)L_0);
+		((  void (*) (U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		((U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9_0), (void*)L_0);
 		return;
 	}
 }
-// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mC7856BCD3D746F1ECEB037CE450BC33022A2EFF6_gshared (U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970* __this, const RuntimeMethod* method) 
+// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m68A1CAE21AA9C67E2282E56CD6BFCE781DFFEA1F_gshared (U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
 		return;
 	}
 }
-// System.Int32 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__26>::<.cctor>b__12_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3C_cctorU3Eb__12_0_m2F5FFD0815D1CD452F3AF257E83B9D626C50B8D9_gshared (U3CU3Ec_tF28ADD615DE1AB10DCFFBCB7D380F7BC2A0BE970* __this, const RuntimeMethod* method) 
+// System.Int32 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetOwnedTokenAccounts>d__27>::<.cctor>b__12_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3C_cctorU3Eb__12_0_m6B07F420AC0F7AB0E214515A4611478670209541_gshared (U3CU3Ec_t03701DAF0E414BCF5820A4EB78446A48B6987EAF* __this, const RuntimeMethod* method) 
 {
 	{
 		// TaskPool.RegisterSizeGetter(typeof(AsyncUniTask<TStateMachine>), () => pool.Size);
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 3));
 		int32_t L_0;
-		L_0 = TaskPool_1_get_Size_m3D7EC7F3B6009A6062BB66DC06EBE03A63ECE030_inline((&((AsyncUniTask_1_t3FE5A28E871BE3439D4901A030114BF01F01FAED_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 3)))->___pool_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		L_0 = TaskPool_1_get_Size_mBB3D0F9A2D5BD5B7FADEA493DFE82E8CE4B9FA6D_inline((&((AsyncUniTask_1_t53DA092DC12A604996C69BF9F7E9B5CAB42A2B42_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 3)))->___pool_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		return L_0;
 	}
 }
@@ -24314,34 +24314,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3C_cctorU3Eb__12_0_mD74128C5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>::.cctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m460CDF9D41BB34B127F2F4AD42BC145D422A8852_gshared (const RuntimeMethod* method) 
+// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m8B764E27721CEBC0D4C67C126BD7BC744B03ED72_gshared (const RuntimeMethod* method) 
 {
 	{
-		U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400* L_0 = (U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
+		U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01* L_0 = (U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
 		NullCheck(L_0);
-		((  void (*) (U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
-		((U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9_0), (void*)L_0);
+		((  void (*) (U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
+		((U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9_0), (void*)L_0);
 		return;
 	}
 }
-// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m3B5D1194E0955EA65F6769168FBA2C2FFEC53DC1_gshared (U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400* __this, const RuntimeMethod* method) 
+// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m70F075C1F89FD844A36D1F76790CD1DF08F4A0DB_gshared (U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
 		return;
 	}
 }
-// System.Int32 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__27,System.Object>::<.cctor>b__12_0()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3C_cctorU3Eb__12_0_m6D8EC854BD5C56D96B0FB6C0F011323E40C3F58E_gshared (U3CU3Ec_tEB17D2F3D6CDC831CB01D4DB6885A00F6878F400* __this, const RuntimeMethod* method) 
+// System.Int32 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c<Solana.Unity.SDK.Example.WalletScreen/<GetTokenMintResolver>d__28,System.Object>::<.cctor>b__12_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3C_cctorU3Eb__12_0_mDC46109DD6CBE95343EA768C986BB05D0441B7A1_gshared (U3CU3Ec_tCE61CC36F53A5F0D3519A679760A07F8FBF6DF01* __this, const RuntimeMethod* method) 
 {
 	{
 		// TaskPool.RegisterSizeGetter(typeof(AsyncUniTask<TStateMachine, T>), () => pool.Size);
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->klass->rgctx_data, 3));
 		int32_t L_0;
-		L_0 = TaskPool_1_get_Size_mDCAFC2BD6EE745E5D33B902B08B0B4DA010B562B_inline((&((AsyncUniTask_2_t0643B764F9022CFDF28AF661794D96C774314A66_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 3)))->___pool_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
+		L_0 = TaskPool_1_get_Size_mAFBF62325E2F4BD998F57B3BD18CECDDA266A1DF_inline((&((AsyncUniTask_2_tC834757318B45C1E7F6DDE94D4BC415902B8D052_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->klass->rgctx_data, 3)))->___pool_0), il2cpp_rgctx_method(method->klass->rgctx_data, 4));
 		return L_0;
 	}
 }

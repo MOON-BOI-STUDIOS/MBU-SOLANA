@@ -7684,7 +7684,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1001620415}
   - component: {fileID: 1001620414}
-  - component: {fileID: 1001620416}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -7742,19 +7741,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1001620416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001620413}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77dd08f5da4d74c43be011c65d8b5afd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  videoFileName: WhatsApp Video 2024-02-21 at 20.55.56_e687019a.mp4
 --- !u!1 &1005454470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 603055483369862850, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
