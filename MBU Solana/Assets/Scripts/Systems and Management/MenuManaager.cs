@@ -50,6 +50,17 @@ public class MenuManaager : MonoBehaviour
             newGamebtn.interactable = true;
         }
 
+        if(PlayerPrefs.GetInt("LastLocation") == 0)
+        {
+            LoadGamebtn.interactable = false;
+            newGamebtn.interactable = true;
+        }
+        else
+        {
+            LoadGamebtn.interactable = true;
+            newGamebtn.interactable = true;
+        }
+
     }
     // Start is called before the first frame update
     void Start()
