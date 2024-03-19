@@ -12,39 +12,42 @@ public class DialogueManagerFishing : MonoBehaviour
     [Header("bools")]
     public bool inDialogue;
     private bool isCurrentlyTyping;
+    public bool Interact;
+    public bool isDialogueOption;
+    [Space]
     // dialogue text reference
     [Header("texts")]
     public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI questiontext;
+    [Space]
     // dialogue image
     //[Header("images")]
     //public Image dialoguePortrait;
     // delay in typing
     [Header("Float")]
     public float delay;
+    [Space]
+    [Header("Ints")]
+    private int OptionsAmount;
     // game object for dialogue
+    [Space]
     [Header("game Objects")]
     public GameObject dialogueBox;
+    public GameObject DialogueOptionUI;
+    public GameObject[] optionButtons;
+    public GameObject nextButton;
+    public GameObject shop;
+    [Space]
     // string for dialogue
     [Header("string")]
     private string completeText;
     // references for dialgoue system
+    [Space]
     [Header("references")]
     private DialoguebaseFishing.Info currentDialogue;
     public static DialogueManagerFishing instance;
 
     //public PlayerManager controller;
-    public bool Interact;
-
-    public GameObject DialogueOptionUI;
-    public GameObject[] optionButtons;
-    private int OptionsAmount;
-    public TextMeshProUGUI questiontext;
-
-    public GameObject nextButton;
-    public GameObject shop;
-
-
-
 
     private void Awake()
     {
@@ -66,8 +69,6 @@ public class DialogueManagerFishing : MonoBehaviour
     }
     // new queue
     public Queue<DialoguebaseFishing.Info> dialogueInfo = new Queue<DialoguebaseFishing.Info>();
-
-    public bool isDialogueOption;
 
 
     public void OnEnable()
