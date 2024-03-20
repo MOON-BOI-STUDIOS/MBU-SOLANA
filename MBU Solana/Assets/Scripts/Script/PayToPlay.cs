@@ -55,6 +55,10 @@ namespace Solana.Unity.SDK.Example
         public async void TryPayToPlay(ulong requiredAmount, Action onSuccess, Action<string> onFailure, string actionType = "")
         {
             Debug.Log(requiredAmount);
+            if (Web3.Wallet == null)
+            {
+                Debug.Log("Wallet is null");
+            }
             // Get the user's BONK token account
             var tokenAccounts = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
             Debug.Log("Got Token Account in Trypaytoplay");
@@ -63,7 +67,7 @@ namespace Solana.Unity.SDK.Example
             {
                 Debug.Log("The token account is null");
             }
-            // USDC or BonkAddress , Sol  Do a dropdown// The error is in the line 62
+            // USDC or BonkAddress , Sol  Do a dropdown// 
             var bonkTokenAccount = tokenAccounts.FirstOrDefault(t => t.Account.Data.Parsed.Info.Mint == MintAddress);
             Debug.Log("Got bonkTokenAccount in Trypaytoplay");
             if (bonkTokenAccount == null)
