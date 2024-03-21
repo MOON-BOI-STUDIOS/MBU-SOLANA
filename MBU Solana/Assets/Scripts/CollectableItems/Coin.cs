@@ -18,7 +18,7 @@ public class Coin : Collectables
     {
         if (other != null)
         {
-            other.gameObject.GetComponent<IAddToInventory>().AdditionToInventory(_itemInfo.itemName,_itemInfo.itemNumber);
+            //other.gameObject.GetComponent<IAddToInventory>().AdditionToInventory(_itemInfo.itemName,_itemInfo.itemNumber);
             if (particleImpactPrefab != null)
             {
                 Debug.Log("ParticleEffect");

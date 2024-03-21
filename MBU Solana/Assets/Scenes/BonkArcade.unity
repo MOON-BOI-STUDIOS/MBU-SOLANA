@@ -37927,7 +37927,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
       propertyPath: customRpc
-      value: https://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923
+      value: https://red-boldest-uranium.solana-mainnet.quiknode.pro/190d71a30ba3170f66df5e49c8c88870737cd5ce/
       objectReference: {fileID: 0}
     - target: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
       propertyPath: rpcCluster
@@ -37935,7 +37935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
       propertyPath: webSocketsRpc
-      value: https://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
       propertyPath: web3AuthWalletOptions.network
