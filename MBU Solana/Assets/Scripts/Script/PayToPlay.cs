@@ -59,16 +59,29 @@ namespace Solana.Unity.SDK.Example
             {
                 Debug.Log("Wallet is null");
             }
+
             // Get the user's BONK token account
+            var tokenAccountsByAsync = Web3.Rpc.GetTokenAccountsByOwnerAsync(destinationAddress,MintAddress,null,Commitment.Confirmed);
+            if (tokenAccountsByAsync == null)
+            {
+                Debug.Log("TokenAccount by Async is null");
+            }
+            else {
+                Debug.Log(tokenAccountsByAsync);
+            }
+
             var tokenAccounts = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
+
             Debug.Log("Got Token Account in Trypaytoplay");
             Debug.Log("The mint address is: " + MintAddress);
             if (tokenAccounts == null)
             {
                 Debug.Log("The token account is null");
             }
+
             // USDC or BonkAddress , Sol  Do a dropdown// 
             var bonkTokenAccount = tokenAccounts.FirstOrDefault(t => t.Account.Data.Parsed.Info.Mint == MintAddress);
+
             Debug.Log("Got bonkTokenAccount in Trypaytoplay");
             if (bonkTokenAccount == null)
             {
