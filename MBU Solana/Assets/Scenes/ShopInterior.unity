@@ -3443,6 +3443,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
+      propertyPath: webSocketsRpc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
       propertyPath: solanaWalletAdapterOptions.phantomWalletOptions.appMetaDataUrl
       value: https://phantom.app/ul/v1/connect
       objectReference: {fileID: 0}

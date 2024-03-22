@@ -27,9 +27,9 @@ public class DropdownClusterSelector : MonoBehaviour
         };
         Web3.Instance.webSocketsRpc = value switch
         {
-            (int) RpcCluster.MainNet => "wss://red-boldest-uranium.solana-mainnet.quiknode.pro/190d71a30ba3170f66df5e49c8c88870737cd5ce/",//"wss://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923",//"wss://red-boldest-uranium.solana-mainnet.quiknode.pro/190d71a30ba3170f66df5e49c8c88870737cd5ce/",
-            (int) RpcCluster.TestNet => "wss://polished-omniscient-pond.solana-testnet.quiknode.pro/05d6e963dcc26cb1969f8c8e304dc49ed53324d9/",//"wss://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923",//"wss://polished-omniscient-pond.solana-testnet.quiknode.pro/05d6e963dcc26cb1969f8c8e304dc49ed53324d9/",
-            _ => "wss://late-wild-film.solana-devnet.quiknode.pro/8374da8d09b67ce47c9307c1863212e5710b7c69/"//"wss://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923"//"wss://late-wild-film.solana-devnet.quiknode.pro/8374da8d09b67ce47c9307c1863212e5710b7c69/"
+            (int) RpcCluster.MainNet => "wss://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923",//"wss://red-boldest-uranium.solana-mainnet.quiknode.pro/190d71a30ba3170f66df5e49c8c88870737cd5ce/",
+            (int) RpcCluster.TestNet => "wss://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923",//"wss://polished-omniscient-pond.solana-testnet.quiknode.pro/05d6e963dcc26cb1969f8c8e304dc49ed53324d9/",
+            _ => "wss://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923"//"wss://late-wild-film.solana-devnet.quiknode.pro/8374da8d09b67ce47c9307c1863212e5710b7c69/"
         };
         PlayerPrefs.SetInt("rpcCluster", value);
         PlayerPrefs.Save();
