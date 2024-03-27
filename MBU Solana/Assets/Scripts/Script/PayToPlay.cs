@@ -29,7 +29,7 @@ namespace Solana.Unity.SDK.Example
 
         private void Start()
         {
-           // payToPlayBtn.onClick.AddListener(TryPayToPlay);
+           //payToPlayBtn.onClick.AddListener(TryPayToPlay(requiredAmount));
         }
 
         public void SelectMintAddress(int val)
@@ -61,16 +61,16 @@ namespace Solana.Unity.SDK.Example
             }
 
             // Get the user's BONK token account
-            var tokenAccountsByAsync = Web3.Rpc.GetTokenAccountsByOwnerAsync(destinationAddress,MintAddress,null,Commitment.Confirmed);
-            if (tokenAccountsByAsync == null)
+            var res = await Web3.Rpc.GetTokenBalanceByOwnerAsync(Web3.Account.PublicKey.ToString(), MintAddress, Commitment.Confirmed);
+            if (res == null)
             {
                 Debug.Log("TokenAccount by Async is null");
             }
             else {
-                Debug.Log(tokenAccountsByAsync);
+                Debug.Log(res);
             }
 
-            var tokenAccounts = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
+            /*var tokenAccounts = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
 
             Debug.Log("Got Token Account in Trypaytoplay");
             Debug.Log("The mint address is: " + MintAddress);
@@ -91,10 +91,13 @@ namespace Solana.Unity.SDK.Example
                 onFailure?.Invoke("You do not own any BONK tokens.");
                 return;
             }
-
+            */
             // Check if the user has enough BONK tokens
-            var userBonkAmount = bonkTokenAccount.Account.Data.Parsed.Info.TokenAmount.AmountUlong;
+            Debug.Log("The Bonk Balance");
+            //Debug.Log("The Bonk value is" + res.Result.Value.UiAmountString);
+            var userBonkAmount = res.Result.Value.AmountUlong;//bonkTokenAccount.Account.Data.Parsed.Info.TokenAmount.AmountUlong;
             Debug.Log("Got UserBonkAmount in Trypaytoplay");
+            Debug.Log(userBonkAmount);
             if (userBonkAmount < requiredAmount)
             {
                 MessageBox.SetActive(true);
@@ -131,6 +134,5 @@ namespace Solana.Unity.SDK.Example
                 onFailure?.Invoke(result.Reason);
             }
         }
-
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3234,7 +3234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &491970092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7337,8 +7337,8 @@ MonoBehaviour:
 
     VIDEO'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d0bb7337f597634b94b9005947e8e28, type: 2}
+  m_sharedMaterial: {fileID: 7503143391497007800, guid: 4d0bb7337f597634b94b9005947e8e28, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7362,10 +7362,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 31.3
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -8930,13 +8930,13 @@ MonoBehaviour:
   volumeSlider: {fileID: 1317412214}
   playbackSpeedSlider: {fileID: 758494341}
   rawImage: {fileID: 1356805500}
-  source: 1
-  videoURL: https://res.cloudinary.com/drgjz25ot/video/upload/v1690296636/Video2_qlsgxq.mov
+  source: 0
+  videoURL: 
   playOnAwake: 0
   isLooping: 0
   playbackSpeedAtStart: 0.25
   volumeAtStart: 0
-  selectedVideoClip: {fileID: 0}
+  selectedVideoClip: {fileID: 11400000, guid: 953cd1b5a0fba4edc8cdaba91948b5fd, type: 2}
 --- !u!1 &1151814557
 GameObject:
   m_ObjectHideFlags: 0
@@ -15072,11 +15072,11 @@ MonoBehaviour:
   rawImage: {fileID: 1882705005}
   source: 0
   videoURL: 
-  playOnAwake: 1
-  isLooping: 1
+  playOnAwake: 0
+  isLooping: 0
   playbackSpeedAtStart: 1.25
   volumeAtStart: 0.3
-  selectedVideoClip: {fileID: 11400000, guid: 4a60c1ae69de7ed44b1fd745ba54e2d1, type: 2}
+  selectedVideoClip: {fileID: 11400000, guid: 953cd1b5a0fba4edc8cdaba91948b5fd, type: 2}
 --- !u!114 &1811774437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16221,8 +16221,8 @@ MonoBehaviour:
 
     VIDEO'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d0bb7337f597634b94b9005947e8e28, type: 2}
+  m_sharedMaterial: {fileID: 7503143391497007800, guid: 4d0bb7337f597634b94b9005947e8e28, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16246,10 +16246,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 31.3
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using MagicWebSolutions;
+using CodeMonkey;
 
 namespace MagicWebSolutions
 {
@@ -44,7 +45,7 @@ namespace MagicWebSolutions
         public override void OnInspectorGUI()
         {
             // Load the SelectedVideoClip asset
-            selectedVideoClip = AssetDatabase.LoadAssetAtPath<SelectedVideoClip>("Assets/VideoPlayerForWebGL/VideoClipName.asset");
+            selectedVideoClip = AssetDatabase.LoadAssetAtPath<SelectedVideoClip>("Assets/VideoPlayerForWebGL/ScriptableObjects/VideoClipName.asset");
 
             // Find all the video clips in the StreamingAssets folder
             string streamingAssetsPath = Application.streamingAssetsPath;

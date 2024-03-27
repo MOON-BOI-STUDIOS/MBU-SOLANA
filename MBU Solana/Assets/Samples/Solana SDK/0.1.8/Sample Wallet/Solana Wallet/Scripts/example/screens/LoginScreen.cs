@@ -106,6 +106,7 @@ namespace Solana.Unity.SDK.Example
         {
             if (account != null)
             {
+                Debug.Log(Web3.Account.PublicKey.ToString());
                 Debug.Log("Account is not Null");
                 dropdownRpcCluster.interactable = false;
                 manager.ShowScreen(this, "wallet_screen");

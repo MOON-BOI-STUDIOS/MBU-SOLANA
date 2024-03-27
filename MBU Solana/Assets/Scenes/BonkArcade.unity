@@ -17316,7 +17316,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 67.7
+  m_fontSize: 60.8
   m_fontSizeBase: 173
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -24456,7 +24456,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52.25
+  m_fontSize: 45.65
   m_fontSizeBase: 173
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -27821,7 +27821,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75.65
+  m_fontSize: 68.35
   m_fontSizeBase: 173
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -34209,7 +34209,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54.15
+  m_fontSize: 47.5
   m_fontSizeBase: 173
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -37100,7 +37100,7 @@ RectTransform:
   m_AnchorMin: {x: 0.3117121, y: 0.7438562}
   m_AnchorMax: {x: 0.69100004, y: 0.94400007}
   m_AnchoredPosition: {x: -1, y: 1.3300781}
-  m_SizeDelta: {x: -481.79156, y: 1.3999939}
+  m_SizeDelta: {x: -570.20557, y: 1.3999939}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &7329323173443356480
 GameObject:
@@ -37999,7 +37999,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
       propertyPath: customRpc
-      value: https://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923
+      value: wss://mainnet.helius-rpc.com/?api-key=95f4eb54-21ec-4c53-a32a-4002d9cea923
       objectReference: {fileID: 0}
     - target: {fileID: 2874944422779467400, guid: 62504033400bb424fbb5f6c3f2fb68c7, type: 3}
       propertyPath: rpcCluster
@@ -38529,7 +38529,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 67.2
+  m_fontSize: 60.65
   m_fontSizeBase: 173
   m_fontWeight: 400
   m_enableAutoSizing: 1
