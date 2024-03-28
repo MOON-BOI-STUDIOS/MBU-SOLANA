@@ -2252,6 +2252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1037467311}
   - component: {fileID: 1037467310}
+  - component: {fileID: 1037467312}
   m_Layer: 0
   m_Name: VideoPlayer
   m_TagString: Untagged
@@ -2266,7 +2267,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037467309}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: 6879e479739bb3b4ea0ff9c0bcb555cc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -2309,6 +2310,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1037467312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037467309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c675d1b6d3c4e478b838844eec9c251d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoId: Fasz
+  loadingCircle: {fileID: 0}
+  videoDurationText: {fileID: 0}
+  volumeSlider: {fileID: 0}
+  playbackSpeedSlider: {fileID: 0}
+  rawImage: {fileID: 1229039765}
+  source: 1
+  videoURL: 
+  playOnAwake: 1
+  isLooping: 0
+  playbackSpeedAtStart: 0.25
+  volumeAtStart: 1
+  selectedVideoClip: {fileID: 11400000, guid: 953cd1b5a0fba4edc8cdaba91948b5fd, type: 2}
 --- !u!1 &1066217995
 GameObject:
   m_ObjectHideFlags: 0
