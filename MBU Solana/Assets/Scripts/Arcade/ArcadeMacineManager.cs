@@ -12,7 +12,7 @@ public enum ArcadeType
     Racing, Shooting, Fishing
 }
 
-public class ArcadeMacineManager : MonoBehaviour
+public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
 {
     public static ArcadeMacineManager Inst;
     [Header("arcadeCollisionDetection")]
@@ -32,6 +32,8 @@ public class ArcadeMacineManager : MonoBehaviour
     public GameObject wallet;
     public GameObject Background;
     public PayToPlay _paytoPlay;
+    public GameObject walletHolder;
+    public GameObject walletBackground;
 
     public static Animator CurrentAnimator;
     public static arcadeCollisionDetection currentACD;
@@ -99,14 +101,21 @@ public class ArcadeMacineManager : MonoBehaviour
 
     public void TryAndProcessTransactionRacing()
     {
-        //Debug.Log("Repair Racing 4 ");
         if (currentACD == null)
             return;
+        // Setting The Wallet Holder GameObject as true so that the customer can login. Set the wallet background as true
+        walletHolder.SetActive(true);
+        walletBackground.SetActive(true);
+        // Let the customer login. After logging set the public key and amount according to required amount
+        // "50K to Repair"
+        PaymentInfo.requiredAmount = (requiredAmount * 0.000000148).ToString(); // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
+        // Once clicked on the button transfer screen will appear with prefilled public key and amount
+        //Setting the event as racing so that it the current event triggers if transaction is successful
+        PaymentInfo.queriedEvent = "racing";
+        // If trasfer is successful then success function will take over
 
-        Debug.Log("In Try and Process Transaction to repair Racing");
-        //Wallet.SetActive(true);
-        //Debug.Log("Repair Racing 5 ");
-        _buttonText.text = "50 Thousand BONKS";
+
+        /*_buttonText.text = "50 Thousand BONKS";
         _TransferDetails.gameObject.SetActive(true);
         _TransferDetails.text = "Upgrade Racing Game";
         wallet.SetActive(true);
@@ -118,7 +127,7 @@ public class ArcadeMacineManager : MonoBehaviour
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the racing game
         _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairRacing, HandleTransactionFailure));
-        //Debug.Log("Repair Racing 6 ");
+        //Debug.Log("Repair Racing 6 ");*/
     }
 
 
@@ -147,8 +156,8 @@ public class ArcadeMacineManager : MonoBehaviour
     {
         if (currentACD == null)
             return;
-        
-        Debug.Log("In Try and Process Transaction to repair shooting");
+
+        /*Debug.Log("In Try and Process Transaction to repair shooting");
         //Wallet.SetActive(true);
         _buttonText.text = "50 Thousand BONKS";
         _TransferDetails.gameObject.SetActive(true);
@@ -162,28 +171,22 @@ public class ArcadeMacineManager : MonoBehaviour
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
         _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairShooting, HandleTransactionFailure));
-    }
+        */
 
-    public void TryAndProcessTransactionDonate()
-    {
-        _buttonText.text = "50 Thousand BONKS";
-        _TransferDetails.gameObject.SetActive(true);
-        _TransferDetails.text = "Donate Builder";
-        wallet.SetActive(true);
-        Background.SetActive(true);
-        _SendButton.gameObject.SetActive(true);
 
-        // Remove all existing listeners from the _SendButton
-        _SendButton.onClick.RemoveAllListeners();
-
-        // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, donated, HandleTransactionFailure, "donated"));
-    }
-
-    public void donated()
-    {
+        // Setting The Wallet Holder GameObject as true so that the customer can login. Set the wallet background as true
+        walletHolder.SetActive(true);
+        walletBackground.SetActive(true);
+        // Let the customer login. After logging set the public key and amount according to required amount
+        // "50K to Repair"
+        PaymentInfo.requiredAmount = (requiredAmount * 0.000000148).ToString(); // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
+        // Once clicked on the button transfer screen will appear with prefilled public key and amount
+        //Setting the event as racing so that it the current event triggers if transaction is successful
+        PaymentInfo.queriedEvent = "bonkbattle";
+        // If trasfer is successful then success function will take over
 
     }
+
     public void RepairRacing()
     {
         //Debug.Log("Repair Racing 1 ");
@@ -326,5 +329,19 @@ public class ArcadeMacineManager : MonoBehaviour
     {
         isUIopen = false;
         ParentGameUI.transform.DOScale(0, 0.3f).SetEase(Ease.InCirc);
+    }
+
+    public void TransferSuccessful(string quried)
+    {
+        switch (quried)
+        {
+            case "racing":
+                Debug.Log(" Racing Transaction is successful, execution in Arcade Manager");
+                break;
+
+            case "bonkbattle":
+                Debug.Log(" bonk battle Transaction is successful, execution in Arcade Manager");
+                break;
+        }
     }
 }

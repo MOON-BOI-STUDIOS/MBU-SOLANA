@@ -1,14 +1,13 @@
 {
   "dependencies": {
     "com.solana.unity_sdk": {
-      "version": "https://github.com/magicblock-labs/Solana.Unity-SDK.git",
+      "version": "file:com.solana.unity_sdk",
       "depth": 0,
-      "source": "git",
+      "source": "embedded",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.0.2",
         "com.unity.textmeshpro": "3.0.6"
-      },
-      "hash": "2ba36dea10320dec3b64b458ae5f17914ada2e12"
+      }
     },
     "com.unity.2d.animation": {
       "version": "7.0.7",
