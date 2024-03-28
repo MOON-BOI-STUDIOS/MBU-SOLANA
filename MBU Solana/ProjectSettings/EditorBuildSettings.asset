@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: f523fe4354c7f5541b672c3ecb9b7b85
   - enabled: 0
@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ShopInterior.unity
     guid: 59576e44ded70bc4eb34ebbb0a98fa36
-  - enabled: 1
+  - enabled: 0
     path: Assets/VideoPlayerForWebGL/Scenes/MultipleVideos.unity
     guid: e9c6d8f036e63a44fa18a95c4677b944
   m_configObjects:
