@@ -2428,8 +2428,8 @@ MonoBehaviour:
 
     VIDEO'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d0bb7337f597634b94b9005947e8e28, type: 2}
+  m_sharedMaterial: {fileID: 7503143391497007800, guid: 4d0bb7337f597634b94b9005947e8e28, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3210,7 +3210,7 @@ MonoBehaviour:
   isLooping: 1
   playbackSpeedAtStart: 0.3
   volumeAtStart: 0.8
-  selectedVideoClip: {fileID: 11400000, guid: e5389f3123b21c64aa3b3de5785eb044, type: 2}
+  selectedVideoClip: {fileID: 11400000, guid: 953cd1b5a0fba4edc8cdaba91948b5fd, type: 2}
 --- !u!114 &5942009702798871985
 MonoBehaviour:
   m_ObjectHideFlags: 0

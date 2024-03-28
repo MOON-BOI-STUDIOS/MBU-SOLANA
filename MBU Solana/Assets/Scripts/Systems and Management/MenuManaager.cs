@@ -15,6 +15,7 @@ public class MenuManaager : MonoBehaviour
     public AudioSource musicPlayer;
     bool isLevelLoading = false;
     public GameObject videoOjbct;
+    public GameObject WebGlVideo;
 
     public int number = 0;
 
@@ -170,8 +171,15 @@ public class MenuManaager : MonoBehaviour
     //start funtion. triggers the studio logo off, after it is played through. enables background music, turns on the start buttons
     IEnumerator loadMenu()
     {
-        videoOjbct.gameObject.SetActive(true);
-        yield return new WaitForSeconds(5f);
+
+#if !UNITY_STANDALONE && !UNITY_WEBGL
+    videoOjbct.gameObject.SetActive(true);
+#else
+        WebGlVideo.SetActive(true);
+#endif
+
+        yield return new WaitForSeconds(8f);
+        WebGlVideo.SetActive(false);
         moonboiStudioLogo.SetActive(false);
         moonboiUniverseLogo.SetActive(true);
         Camera.main.transform.GetComponent<AudioSource>().enabled = true;
@@ -180,15 +188,6 @@ public class MenuManaager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         startButton.SetActive(true);
     }
-
-
-
-
-
-
-
-
-
 }
 
 

@@ -12,6 +12,7 @@ public class VideoScript : MonoBehaviour
     public GameObject panel;
     public bool isFinished = false;
     public GameObject music;
+    public GameObject WebGlVideo;
 
     public static VideoScript instance;
     private void Awake()
@@ -26,6 +27,9 @@ public class VideoScript : MonoBehaviour
 
         if (isFinished == true)
         {
+#if UNITY_WEBGL
+            WebGlVideo.SetActive(false);
+#endif
             panel.SetActive(false);
             videoObj.SetActive(false);
             music.SetActive(true);
@@ -34,7 +38,11 @@ public class VideoScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myVideoPlayer.loopPointReached += videoFinished;
+#if !UNITY_STANDALONE && !UNITY_WEBGL
+    myVideoPlayer.loopPointReached += videoFinished;
+#else
+        StartCoroutine(VideoPlayerFinished());
+#endif
     }
 
     // Update is called once per frame
@@ -43,12 +51,21 @@ public class VideoScript : MonoBehaviour
        
     }
 
-    public void videoFinished(VideoPlayer vp)
+    public void videoFinished(VideoPlayer vp = null)
     {
+#if UNITY_WEBGL
+        WebGlVideo.SetActive(false);
+#endif
         isFinished = true;
         panel.SetActive(false);
         videoObj.SetActive(false);
         music.SetActive(true);
         PlayerPrefs.SetInt("isFinished", (isFinished ? 1 : 0));
+    }
+
+    IEnumerator VideoPlayerFinished()
+    {
+        yield return new WaitForSeconds(171f);
+        videoFinished();
     }
 }
