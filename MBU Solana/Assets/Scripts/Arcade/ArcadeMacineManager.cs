@@ -7,6 +7,8 @@ using DG.Tweening;
 using Solana.Unity.SDK.Example;
 using System.Linq;
 using System.Threading;
+using System.Collections;
+
 public enum ArcadeType
 {
     Racing, Shooting, Fishing
@@ -26,19 +28,16 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
     [SerializeField] GameObject RepareUI;
 
     [Header("Wallet")]
-    public TMP_Text _buttonText;
-    public TMP_Text _TransferDetails;
-    public Button _SendButton;
-    public GameObject wallet;
-    public GameObject Background;
-    public PayToPlay _paytoPlay;
+    public TMP_Text toastMessage;
+    public Button walletBackButton;
+    public Button walletBGBackButton;
     public GameObject walletHolder;
     public GameObject walletBackground;
+
 
     public static Animator CurrentAnimator;
     public static arcadeCollisionDetection currentACD;
     public static bool isUIopen = false;
-    public GameObject Wallet_Screen;
 
     [Space] public ulong requiredAmount = 2500000; // Define the required amount for the racing game
 
@@ -114,26 +113,12 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
         PaymentInfo.queriedEvent = "racing";
         // If trasfer is successful then success function will take over
 
-
-        /*_buttonText.text = "50 Thousand BONKS";
-        _TransferDetails.gameObject.SetActive(true);
-        _TransferDetails.text = "Upgrade Racing Game";
-        wallet.SetActive(true);
-        Background.SetActive(true);
-        _SendButton.gameObject.SetActive(true);
-        //RepairRacing();
-        // Remove all existing listeners from the _SendButton
-        _SendButton.onClick.RemoveAllListeners();
-
-        // Add a new listener to the _SendButton to try to process the transaction for repairing the racing game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairRacing, HandleTransactionFailure));
-        //Debug.Log("Repair Racing 6 ");*/
     }
 
 
     public void TryAndProcessTransactionFishing()
     {
-        if (currentACD == null)
+        /*if (currentACD == null)
             return;
         
         Debug.Log("In Try and Process Transaction to repair Fishing");
@@ -149,30 +134,13 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
         _SendButton.onClick.RemoveAllListeners();
 
         // Add a new listener to the _SendButton to try to process the transaction for repairing the fishing game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairFishing, HandleTransactionFailure));
+        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairFishing, HandleTransactionFailure));*/
     }
 
     public void TryAndProcessTransactionShooting()
     {
         if (currentACD == null)
             return;
-
-        /*Debug.Log("In Try and Process Transaction to repair shooting");
-        //Wallet.SetActive(true);
-        _buttonText.text = "50 Thousand BONKS";
-        _TransferDetails.gameObject.SetActive(true);
-        _TransferDetails.text = "Upgrade Battle Arena";
-        wallet.SetActive(true);
-        Background.SetActive(true);
-        _SendButton.gameObject.SetActive(true);
-
-        // Remove all existing listeners from the _SendButton
-        _SendButton.onClick.RemoveAllListeners();
-
-        // Add a new listener to the _SendButton to try to process the transaction for repairing the shooting game
-        _SendButton.onClick.AddListener(() => _paytoPlay.TryPayToPlay(requiredAmount, RepairShooting, HandleTransactionFailure));
-        */
-
 
         // Setting The Wallet Holder GameObject as true so that the customer can login. Set the wallet background as true
         walletHolder.SetActive(true);
@@ -283,13 +251,6 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
         }
     }
 
-    private void HandleTransactionFailure(string reason)
-    {
-        //MessageBox.SetActive(true);
-        // _TextMessage.text = "Failed to transfer tokens. Cannot repair the racing game.";
-        Debug.Log($"Failed to transfer tokens. Reason: {reason}");
-    }
-
     public void openPlayButton(ArcadeType at)
     {
         // Deactivate all the UI elements first
@@ -333,15 +294,29 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
 
     public void TransferSuccessful(string quried)
     {
+        // Transaction Successful message and wait for 1 second
+        toastMessage.text = "Transfer Successful";
+        StartCoroutine(TransferSuccessfulEvent());
+        //Disable wallet screens
         switch (quried)
         {
             case "racing":
                 Debug.Log(" Racing Transaction is successful, execution in Arcade Manager");
+                RepairRacing();
                 break;
 
             case "bonkbattle":
                 Debug.Log(" bonk battle Transaction is successful, execution in Arcade Manager");
+                RepairShooting();
                 break;
         }
+    }
+
+    IEnumerator  TransferSuccessfulEvent()
+    {
+        yield return new WaitForSeconds(1f);
+        toastMessage.text = "";
+        walletBackButton.onClick.Invoke();
+        walletBGBackButton.onClick.Invoke();
     }
 }

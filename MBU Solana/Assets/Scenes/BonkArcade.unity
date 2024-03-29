@@ -3853,15 +3853,11 @@ MonoBehaviour:
   button_racing: {fileID: 7111244}
   button_donate: {fileID: 683356136}
   RepareUI: {fileID: 527996415}
-  _buttonText: {fileID: 0}
-  _TransferDetails: {fileID: 0}
-  _SendButton: {fileID: 0}
-  wallet: {fileID: 0}
-  Background: {fileID: 0}
-  _paytoPlay: {fileID: 0}
+  toastMessage: {fileID: 804196834}
+  walletBackButton: {fileID: 804196833}
+  walletBGBackButton: {fileID: 1300648747}
   walletHolder: {fileID: 1060478771}
   walletBackground: {fileID: 2140075651}
-  Wallet_Screen: {fileID: 0}
   requiredAmount: 50000
   RaceGameUI: {fileID: 1554414687}
   FishingGameUI: {fileID: 506183864}
@@ -5258,6 +5254,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1079658476316297125, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b4cd326bfb7b966428a75f6ec83be8d0, type: 2}
     - target: {fileID: 1121051582397954332, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5362,6 +5362,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1875723687}
+    - target: {fileID: 4313440848211816946, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5188324795780581457, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -5586,8 +5590,42 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1875723687}
+    - target: {fileID: 7259212683496269018, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b4cd326bfb7b966428a75f6ec83be8d0, type: 2}
+    - target: {fileID: 8985601833982600914, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985601833982600914, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_fontSize
+      value: 173
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+--- !u!114 &804196833 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1162762977844732808, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+  m_PrefabInstance: {fileID: 804196832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &804196834 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8985601833982600914, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+  m_PrefabInstance: {fileID: 804196832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &864245043
 GameObject:
   m_ObjectHideFlags: 0
@@ -6116,6 +6154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 2701667282038435724, guid: b7042534895e2704f9684a3087d84569, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d17d7421c70dd254486db63d17304eb3, type: 3}
     - target: {fileID: 2701667282038435725, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -7646,7 +7688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1238141689
 Animator:
   serializedVersion: 4

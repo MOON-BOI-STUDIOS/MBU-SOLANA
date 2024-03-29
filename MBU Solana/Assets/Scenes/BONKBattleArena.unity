@@ -2198,6 +2198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 2701667282038435724, guid: b7042534895e2704f9684a3087d84569, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d17d7421c70dd254486db63d17304eb3, type: 3}
     - target: {fileID: 2701667282038435725, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6516,9 +6520,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.06451613
-    width: 1
-    height: 0.87096775
+    y: 0.017361112
+    width: 0.6682433
+    height: 0.375
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -7897,9 +7901,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.06451613
-    width: 1
-    height: 0.87096775
+    y: 0.017361112
+    width: 0.6682433
+    height: 0.375
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -13985,8 +13989,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
+  m_sharedMaterial: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
