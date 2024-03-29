@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Solana.Unity.Wallet;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,7 +11,7 @@ using Random = UnityEngine.Random;
 // This is the Slot Machine Manager that will animate the machine as it appears on the screen 
 // It will also be responsible for spinning of the slots and animation of the lever 
 
-public class SlotManager : MonoBehaviour
+public class SlotManager : MonoBehaviour, ITransferInfo
 {
     [Header("Slots, Lever and Machine")]
     public SlotRoll[] slots;
@@ -34,6 +35,13 @@ public class SlotManager : MonoBehaviour
     
     private int spinTimes = 0;
 
+    [Header("Wallet")]
+    public GameObject walletHolder;
+    public GameObject walletBackground;
+    public TMP_Text toastMessage;
+    public Button walletBackButton;
+    public Button walletBGBackButton;
+
     private IPaymentHandler _paymentHandler;
     //private ICreditBalance _creditBalance;
     private IToggleUI _toggleUI;
@@ -42,8 +50,8 @@ public class SlotManager : MonoBehaviour
     private void Start()
     {
         //Infotext = spinAgaintext.GetComponent<TextMeshProUGUI>();
-        _paymentHandler = GetComponent<IPaymentHandler>();
-        _toggleUI = GetComponent<IToggleUI>();
+        //_paymentHandler = GetComponent<IPaymentHandler>();
+        //_toggleUI = GetComponent<IToggleUI>();
         //_creditBalance = GetComponent<ICreditBalance>();
         Spin();
     }
@@ -61,10 +69,18 @@ public class SlotManager : MonoBehaviour
         }
         else
         {
-            //Debug.Log("spinTimes > limit" + spinTimes);
-            _toggleUI.ToggleSlotsMachine(false);
-            _toggleUI.ToggleWalletUI(true);
-            _paymentHandler.TryAndProcessTransaction(250000, "2.5 M Bonks", "Get one extra spin");
+            // Sol money transfer starts here
+            // Setting The Wallet Holder GameObject as true so that the customer can login. Set the wallet background as true
+            walletHolder.SetActive(true);
+            walletBackground.SetActive(true);
+
+            // Let the customer login. After logging set the amount according to required amount
+            PaymentInfo.requiredAmount = (250000 * 0.000000148).ToString(); // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
+
+            // Once clicked on the button transfer screen will appear with prefilled public key and amount
+            //Setting the event so that it the current event triggers and if transaction is successful
+            PaymentInfo.queriedEvent = "wheelspin";
+            //then success function will take over
         }
     }
 
@@ -239,6 +255,9 @@ public class SlotManager : MonoBehaviour
         _leverButton.SetActive(true);
         Debug.Log("IsSpinning:" + IsSpinning);
     }
-     
-     
+
+    public void TransferSuccessful(string quried)
+    {
+        throw new NotImplementedException();
+    }
 }

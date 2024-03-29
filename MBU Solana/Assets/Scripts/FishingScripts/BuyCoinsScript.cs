@@ -4,36 +4,22 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class BuyCoinsScript : MonoBehaviour
+public class BuyCoinsScript : MonoBehaviour, ITransferInfo
 {
-    private IPaymentHandler _paymentHandler;
-    private IToggleUI _toggleUI;
-    private int NumofCoins;
-    public TextMeshProUGUI transactionFailed;
-    private int TransactionToChoose; // 0 -> buying gold coins 1st bundle
-    //1 -> buing gold coins 2nd bundle,2 -> buying gold coins 3rd bundle, 
-    //3 -> buying bonk rod, 4 -> buying bonk bait
     public RodShopitem[] queriedItems;
+
+    [Header("Wallet")]
     public GameObject walletHolder;
     public GameObject walletBackground;
     public TMP_Text toastMessage;
     public Button walletBackButton;
     public Button walletBGBackButton;
 
-    // Start is called before the first frame update
-    void Start()
+    // 25credz -> buying gold coins 1st bundle
+    //350credz -> buing gold coins 2nd bundle,1500credz -> buying gold coins 3rd bundle, 
+    //bonkrod -> buying bonk rod, bonkbait -> buying bonk bait
+    public void OpenWeb3Transaction(ulong amount,string transferEvent)
     {
-        //_paymentHandler = GetComponent<IPaymentHandler>();
-        //_toggleUI = GetComponent<IToggleUI>();
-    }
-    public void OpenWeb3Transaction(int transactionNumber, ulong amount,
-    string amountText, string transferEvent)
-    {
-        /*TransactionToChoose = transactionNumber;
-        _toggleUI.ToggleSlotsMachine(false);
-        _toggleUI.ToggleWalletUI(true);
-        _paymentHandler.TryAndProcessTransaction(amount,amountText,transactionText);*/
-
         // Setting The Wallet Holder GameObject as true so that the customer can login. Set the wallet background as true
         walletHolder.SetActive(true);
         walletBackground.SetActive(true);
@@ -46,46 +32,35 @@ public class BuyCoinsScript : MonoBehaviour
         PaymentInfo.queriedEvent = transferEvent;
         //then success function will take over
     }
-    public void ResetTransaction()
+    public void TransferSuccessful(string quried)
     {
-        _toggleUI.ToggleWalletUI(false);
-        _toggleUI.ToggleSlotsMachine(true);
-        // Transaction failed
-        transactionFailed.gameObject.SetActive(true);
-        transactionFailed.text = "Transaction Failed";
-        StartCoroutine(DisableText());
-    }
-    public void SuccessfulTransactionReward()
-    {
-        Debug.Log("Transaction Successful");
-        transactionFailed.gameObject.SetActive(true);
-        transactionFailed.text = "Transaction Successful";
-        StartCoroutine(DisableText());
-        _toggleUI.ToggleWalletUI(false);
-        _toggleUI.ToggleSlotsMachine(true);
-        int currentNumOfCoins = PlayerPrefs.GetInt("Coins"); 
-        switch(TransactionToChoose)
+        // Transaction Successful message and wait for 1 second
+        toastMessage.text = "Transfer Successful";
+        StartCoroutine(TransferSuccessfulEvent());
+        //Disable wallet screens
+        int currentNumOfCoins = PlayerPrefs.GetInt("Coins");
+        switch (quried)
         {
-            case 0:
+            case "25credz":
                 currentNumOfCoins = currentNumOfCoins + 25;
-                PlayerPrefs.SetInt("Coins",currentNumOfCoins);
+                PlayerPrefs.SetInt("Coins", currentNumOfCoins);
                 break;
-            case 1: 
+            case "350credz":
                 currentNumOfCoins = currentNumOfCoins + 350;
-                PlayerPrefs.SetInt("Coins",currentNumOfCoins);
+                PlayerPrefs.SetInt("Coins", currentNumOfCoins);
                 break;
-            case 2:
+            case "1500credz":
                 currentNumOfCoins = currentNumOfCoins + 1500;
-                PlayerPrefs.SetInt("Coins",currentNumOfCoins);
+                PlayerPrefs.SetInt("Coins", currentNumOfCoins);
                 break;
-            case 3:
-                if(queriedItems[0] != null)
+            case "bonkrod":
+                if (queriedItems[0] != null)
                 {
                     queriedItems[0].BonkTransactionSuccessful();
                 }
                 break;
-            case 4:
-                if(queriedItems[1] != null)
+            case "bonkbait":
+                if (queriedItems[1] != null)
                 {
                     queriedItems[1].BonkTransactionSuccessful();
                 }
@@ -93,9 +68,11 @@ public class BuyCoinsScript : MonoBehaviour
         }
         PlayerPrefs.Save();
     }
-    public IEnumerator DisableText()
+    IEnumerator TransferSuccessfulEvent()
     {
-        yield return new WaitForSeconds(3.0f);
-        transactionFailed.gameObject.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        toastMessage.text = "";
+        walletBackButton.onClick.Invoke();
+        walletBGBackButton.onClick.Invoke();
     }
 }

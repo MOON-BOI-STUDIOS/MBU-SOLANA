@@ -69,7 +69,7 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
         }
         else if(bcScript != null)
         {
-            bcScript.SuccessfulTransactionReward();
+            //bcScript.SuccessfulTransactionReward();
         }
     }
 
@@ -81,7 +81,7 @@ public class TransactionHandler : MonoBehaviour,IPaymentHandler
         }
         else if(bcScript != null)
         {
-            bcScript.ResetTransaction();
+            //bcScript.ResetTransaction();
         }
         Debug.Log($"Failed to transfer tokens. Reason: {reason}");
     }

@@ -375,7 +375,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 481725168399070247, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_text
-      value: Bonk/USDC/Sol
+      value: Bonk
       objectReference: {fileID: 0}
     - target: {fileID: 481725168399070247, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_fontSize
@@ -387,7 +387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481725168527372055, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_text
-      value: Bonk/USDC/Sol
+      value: Bonk
       objectReference: {fileID: 0}
     - target: {fileID: 481725168527372055, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_fontSize
@@ -399,9 +399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481725168848151265, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_text
-      value: 'Coins
-
-'
+      value: Credz
       objectReference: {fileID: 0}
     - target: {fileID: 481725168848151265, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_fontSize
@@ -413,7 +411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481725169281022485, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_text
-      value: Coins
+      value: Credz
       objectReference: {fileID: 0}
     - target: {fileID: 481725169281022485, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_fontSize
@@ -425,7 +423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481725169388078855, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_text
-      value: Coins
+      value: Credz
       objectReference: {fileID: 0}
     - target: {fileID: 481725169388078855, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_fontSize
@@ -437,9 +435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481725169780731424, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_text
-      value: 'Coins
-
-'
+      value: Credz
       objectReference: {fileID: 0}
     - target: {fileID: 481725169780731424, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_fontSize
@@ -451,9 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481725169925925892, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_text
-      value: 'Coins
-
-'
+      value: Credz
       objectReference: {fileID: 0}
     - target: {fileID: 481725169925925892, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_fontSize
@@ -465,7 +459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 481725170243470519, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_text
-      value: Coins
+      value: Credz
       objectReference: {fileID: 0}
     - target: {fileID: 481725170243470519, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_fontSize
@@ -885,7 +879,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3215919173333679522, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3215919173458121532, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_Name
@@ -1193,7 +1187,7 @@ PrefabInstance:
       objectReference: {fileID: -1514193110, guid: 7c2316f6695a46046a8985805087d3c1, type: 3}
     - target: {fileID: 9183424128793138829, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4858987cac28f7f4f8dc2cb203e44c72, type: 3}
@@ -1230,10 +1224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyCoins: {fileID: 345792509}
-  transactionNumber: 4
   amount: 150000
-  amountText: 1.5 M Bonks
-  transactionText: Get bonk bait
+  transactionText: bonkbait
 --- !u!114 &198150067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1247,10 +1239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyCoins: {fileID: 345792509}
-  transactionNumber: 3
   amount: 696969
-  amountText: 696969 Bonks
-  transactionText: Get a bonk rod
+  transactionText: bonkrod
 --- !u!1 &232034981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,9 +1706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyCoins: {fileID: 345792509}
-  transactionNumber: 2
   amount: 1500000
-  amountText: 1500000 Bonks
   transactionText: 1500credz
 --- !u!1001 &280350945
 PrefabInstance:
@@ -2147,7 +2135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e90ea72ea2b4426a02986046dd84d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transactionFailed: {fileID: 436116818}
   queriedItems:
   - {fileID: 370740516}
   - {fileID: 370740515}
@@ -2670,7 +2657,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1231841427}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2949,7 +2936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &935336170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3569,13 +3556,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2109203471251509947, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 232034981}
+    - target: {fileID: 2109203471251509947, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313440848211816946, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5359501488407022395, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_Name
       value: wallet_holder
       objectReference: {fileID: 0}
     - target: {fileID: 5359501488407022395, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5527986196015098934, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_Pivot.x
@@ -4036,6 +4035,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1520814861}
     m_Modifications:
+    - target: {fileID: 6634853444601746161, guid: a2b509704d1c9b74ba3b2f47c6d0f1f9, type: 3}
+      propertyPath: m_text
+      value: Credz
+      objectReference: {fileID: 0}
     - target: {fileID: 6634853444601746162, guid: a2b509704d1c9b74ba3b2f47c6d0f1f9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4393,9 +4396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyCoins: {fileID: 345792509}
-  transactionNumber: 1
   amount: 500000
-  amountText: 500000 Bonks
   transactionText: 350credz
 --- !u!1 &1699820682
 GameObject:
@@ -4952,9 +4953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buyCoins: {fileID: 345792509}
-  transactionNumber: 0
   amount: 50000
-  amountText: 50000 Bonks
   transactionText: 25credz
 --- !u!1001 &1965872754
 PrefabInstance:
