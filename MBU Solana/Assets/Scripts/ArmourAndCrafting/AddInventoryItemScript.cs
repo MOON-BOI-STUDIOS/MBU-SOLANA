@@ -29,8 +29,12 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     #endregion

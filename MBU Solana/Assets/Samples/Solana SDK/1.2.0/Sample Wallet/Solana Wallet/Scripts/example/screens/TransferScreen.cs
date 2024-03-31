@@ -133,7 +133,24 @@ namespace Solana.Unity.SDK.Example
             errorTxt.text = result.Result == null ? result.Reason : "";
             if (result.Result != null)
             {
+                Debug.Log(result.WasSuccessful.ToString());
+                Debug.Log("In Handle Response() function");
                 manager.ShowScreen(this, "wallet_screen");
+
+                //Calling if transaction is successful
+                Debug.Log("Transaction is successful");
+                foreach (ITransferInfo transferInfo in transferInfosImplementedScripts)
+                {
+                    transferInfo.TransferSuccessful(PaymentInfo.queriedEvent);
+                }
+            }
+            else
+            {
+                Debug.Log("Transaction is unsuccessful");
+                foreach (ITransferInfo transferInfo in transferInfosImplementedScripts)
+                {
+                    transferInfo.TransferUnsuccessful();
+                }
             }
         }
 
@@ -182,12 +199,6 @@ namespace Solana.Unity.SDK.Example
             {
                 _ownedSolAmount = await Web3.Instance.WalletBase.GetBalance();
                 ownedAmountTxt.text = $"{_ownedSolAmount}";
-            }
-            //Calling if transaction is successful
-            Debug.Log("Transaction is successful");
-            foreach (ITransferInfo transferInfo in transferInfosImplementedScripts)
-            {
-                transferInfo.TransferSuccessful(PaymentInfo.queriedEvent);
             }
         }
 

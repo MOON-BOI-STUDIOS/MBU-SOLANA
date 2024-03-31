@@ -36,12 +36,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     //Inventory Additions Array
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
 
-    private IPaymentHandler _paymentHandler;
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetInt("MaxHealth", 500);
-        _paymentHandler = GetComponent<IPaymentHandler>();
     }
 
     // Update is called once per frame

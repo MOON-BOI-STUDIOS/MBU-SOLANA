@@ -19,12 +19,15 @@ public class DataPersistanceManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance != null)
+        if (instance == null)
         {
-            Debug.LogError("Found one or more data persistance script in the scene");
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        else
+        { 
+            Destroy(gameObject);
+        }
     }
 
     private void Start()

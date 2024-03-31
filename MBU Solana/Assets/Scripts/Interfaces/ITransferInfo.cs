@@ -9,4 +9,5 @@ using UnityEngine;
 public interface ITransferInfo
 {
     public void TransferSuccessful(string quried);
+    public void TransferUnsuccessful();
 }

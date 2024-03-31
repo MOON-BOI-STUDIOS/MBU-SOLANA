@@ -314,9 +314,15 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
 
     IEnumerator  TransferSuccessfulEvent()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         toastMessage.text = "";
-        walletBackButton.onClick.Invoke();
-        walletBGBackButton.onClick.Invoke();
+        //walletBackButton.onClick.Invoke();
+        //walletBGBackButton.onClick.Invoke();
+    }
+
+    public void TransferUnsuccessful()
+    {
+        toastMessage.text = "Transfer Unsuccessful";
+        StartCoroutine(TransferSuccessfulEvent());
     }
 }

@@ -42,17 +42,10 @@ public class SlotManager : MonoBehaviour, ITransferInfo
     public Button walletBackButton;
     public Button walletBGBackButton;
 
-    private IPaymentHandler _paymentHandler;
-    //private ICreditBalance _creditBalance;
-    private IToggleUI _toggleUI;
     private bool IsSpinning = false;
 
     private void Start()
     {
-        //Infotext = spinAgaintext.GetComponent<TextMeshProUGUI>();
-        //_paymentHandler = GetComponent<IPaymentHandler>();
-        //_toggleUI = GetComponent<IToggleUI>();
-        //_creditBalance = GetComponent<ICreditBalance>();
         Spin();
     }
 
@@ -238,8 +231,6 @@ public class SlotManager : MonoBehaviour, ITransferInfo
 
      public void ResetSlot()
     {
-        _toggleUI.ToggleWalletUI(false);
-        _toggleUI.ToggleSlotsMachine(true);
         if (spinTimes < limit)
         {
             Infotext.text = Math.Abs(limit - spinTimes) + " spin(s) left";
@@ -248,7 +239,6 @@ public class SlotManager : MonoBehaviour, ITransferInfo
         {
             Infotext.text = "0 spin(s) left";
         }
-
         spinAgaintext.SetActive(true);
         slotNumbers.Clear();
         IsSpinning = false;
@@ -258,6 +248,31 @@ public class SlotManager : MonoBehaviour, ITransferInfo
 
     public void TransferSuccessful(string quried)
     {
-        throw new NotImplementedException();
+        // Transaction Successful message and wait for 1 second
+        toastMessage.text = "Transfer Successful";
+        StartCoroutine(TransferSuccessfulEvent());
+        //Disable wallet screens
+        switch (quried)
+        {
+            case "wheelspin":
+                Debug.Log("Transfer Successful, Execution in SlotManager");
+                limit += 1;
+                ResetSlot();
+                break;
+        }
+    }
+
+    public void TransferUnsuccessful()
+    {
+        Debug.Log("Transfer Unsuccessful, Execution in SlotManager");
+        ResetSlot();
+    }
+
+    IEnumerator TransferSuccessfulEvent()
+    {
+        yield return new WaitForSeconds(5f);
+        toastMessage.text = "";
+        //walletBackButton.onClick.Invoke();
+        //walletBGBackButton.onClick.Invoke();
     }
 }
