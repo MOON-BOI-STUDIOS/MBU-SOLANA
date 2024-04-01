@@ -105,9 +105,6 @@ namespace MagicWebSolutions
                     videoURL = Application.dataPath + "/StreamingAssets/" + nameOfSelectedVideoClip;
                 }
             }
-            // Playing on awake
-            LoadInVideo();
-            PlayOrStopVideo();
         }
 
         IEnumerator Start()

@@ -25,6 +25,8 @@ public class MenuManaager : MonoBehaviour
 
     public Button LoadGamebtn;
     public Button newGamebtn;
+    public Button LoadVideoButton;
+    public Button PlayButtonVideo;
 
     public static MenuManaager instance;
 
@@ -75,6 +77,7 @@ public class MenuManaager : MonoBehaviour
         }
         else
         {
+            WebGlVideo.SetActive(false);
             moonboiStudioLogo.SetActive(false);
             moonboiUniverseLogo.SetActive(false);
             videoOjbct.gameObject.SetActive(false);
@@ -176,6 +179,9 @@ public class MenuManaager : MonoBehaviour
     videoOjbct.gameObject.SetActive(true);
 #else
         WebGlVideo.SetActive(true);
+        LoadVideoButton.onClick.Invoke();
+        PlayButtonVideo.onClick.Invoke();
+        PlayButtonVideo.interactable = false;
 #endif
 
         yield return new WaitForSeconds(8f);
