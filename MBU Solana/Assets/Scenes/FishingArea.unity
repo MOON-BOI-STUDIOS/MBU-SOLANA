@@ -1000,7 +1000,31 @@ PrefabInstance:
       propertyPath: m_text
       value: 'SKIP
 
-        VIDEO'
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942009702730746803, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c297feb233a1224d8c9177299893024, type: 2}
+    - target: {fileID: 5942009702730746803, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.09803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942009702730746803, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.972549
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942009702730746803, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942009702730746803, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8696325171217840971, guid: 8c297feb233a1224d8c9177299893024, type: 2}
+    - target: {fileID: 5942009702730746803, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4279892223
       objectReference: {fileID: 0}
     - target: {fileID: 5942009702763474592, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
       propertyPath: m_Name
@@ -1194,6 +1218,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5942009703428141770, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942009703428141770, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e629c842cec0fc14da4f40e09ac34c1b, type: 3}
     - target: {fileID: 5942009703428141771, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -17612,6 +17644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transitions
       objectReference: {fileID: 0}
+    - target: {fileID: 2425944024039111231, guid: 5fa5fa5666205264384c0ac4ac48d1b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa5fa5666205264384c0ac4ac48d1b9, type: 3}
 --- !u!114 &2922548779719785795
@@ -17976,7 +18012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.06451613
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -17984,7 +18020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.87096775
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3961368043105817334, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
