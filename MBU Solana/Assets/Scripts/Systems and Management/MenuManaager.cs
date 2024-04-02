@@ -74,7 +74,7 @@ public class MenuManaager : MonoBehaviour
         }
         else
         {
-            WebGlVideo.SetActive(false);
+           
             moonboiStudioLogo.SetActive(false);
             moonboiUniverseLogo.SetActive(false);
             videoOjbct.gameObject.SetActive(false);
@@ -168,6 +168,7 @@ public class MenuManaager : MonoBehaviour
 
 #if !UNITY_STANDALONE && !UNITY_WEBGL
     videoOjbct.gameObject.SetActive(true);
+     moonboiStudioLogo.SetActive(true);
 #else
 #endif
 
