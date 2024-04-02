@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class MenuManaager : MonoBehaviour
 {
     public Transform DreAnimation;
@@ -25,8 +26,10 @@ public class MenuManaager : MonoBehaviour
 
     public Button LoadGamebtn;
     public Button newGamebtn;
-    public Button LoadVideoButton;
-    public Button PlayButtonVideo;
+    //public Button LoadVideoButton;
+    //public Button fullScreenButtonVideo;
+
+    [SerializeField] string videoFileName;
 
     public static MenuManaager instance;
 
@@ -72,8 +75,6 @@ public class MenuManaager : MonoBehaviour
         if(number == 0)
         {
             StartCoroutine(loadMenu());
-          
-
         }
         else
         {
@@ -178,14 +179,14 @@ public class MenuManaager : MonoBehaviour
 #if !UNITY_STANDALONE && !UNITY_WEBGL
     videoOjbct.gameObject.SetActive(true);
 #else
-        WebGlVideo.SetActive(true);
-        LoadVideoButton.onClick.Invoke();
-        PlayButtonVideo.onClick.Invoke();
-        PlayButtonVideo.interactable = false;
+        //WebGlVideo.SetActive(true);
+        //LoadVideoButton.onClick.Invoke();
+        //fullScreenButtonVideo.onClick.Invoke();
+        //fullScreenButtonVideo.interactable = false;
 #endif
 
-        yield return new WaitForSeconds(8f);
-        WebGlVideo.SetActive(false);
+        yield return new WaitForSeconds(5f);
+        //WebGlVideo.SetActive(false);
         moonboiStudioLogo.SetActive(false);
         moonboiUniverseLogo.SetActive(true);
         Camera.main.transform.GetComponent<AudioSource>().enabled = true;
