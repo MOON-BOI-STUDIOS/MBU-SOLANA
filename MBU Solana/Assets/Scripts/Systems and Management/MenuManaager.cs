@@ -171,10 +171,10 @@ public class MenuManaager : MonoBehaviour
 #else
 #endif
 
-        yield return new WaitForSeconds(5f);
-        //WebGlVideo.SetActive(false);
+        yield return new WaitForSeconds(6f);
         moonboiStudioLogo.SetActive(false);
         moonboiUniverseLogo.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
         Camera.main.transform.GetComponent<AudioSource>().enabled = true;
         yield return new WaitForSeconds(3.5f);
         moonboiUniverseLogo.SetActive(false);
