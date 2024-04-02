@@ -26,10 +26,6 @@ public class MenuManaager : MonoBehaviour
 
     public Button LoadGamebtn;
     public Button newGamebtn;
-    //public Button LoadVideoButton;
-    //public Button fullScreenButtonVideo;
-
-    [SerializeField] string videoFileName;
 
     public static MenuManaager instance;
 
@@ -85,12 +81,6 @@ public class MenuManaager : MonoBehaviour
             Camera.main.transform.GetComponent<AudioSource>().enabled = true;
             startButton.SetActive(true);
         }
-
-        //sets the default values at the start of the game
-        //PlayerPrefs.SetInt("Coins", 20);
-
-      
-
     }
 
     // Update is called once per frame
@@ -179,10 +169,6 @@ public class MenuManaager : MonoBehaviour
 #if !UNITY_STANDALONE && !UNITY_WEBGL
     videoOjbct.gameObject.SetActive(true);
 #else
-        //WebGlVideo.SetActive(true);
-        //LoadVideoButton.onClick.Invoke();
-        //fullScreenButtonVideo.onClick.Invoke();
-        //fullScreenButtonVideo.interactable = false;
 #endif
 
         yield return new WaitForSeconds(5f);

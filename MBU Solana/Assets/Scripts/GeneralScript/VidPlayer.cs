@@ -6,18 +6,24 @@ using UnityEngine.Video;
 public class VidPlayer : MonoBehaviour
 {
     [SerializeField] string videoFileName;
+    [SerializeField] GameObject rawImageVideo;
     // Start is called before the first frame update
     private VideoPlayer videoPlayer;
-    void Start()
+
+    private void Awake()
     {
         videoPlayer = GetComponent<VideoPlayer>();
         PlayVideo();
+    }
+    void Start()
+    {
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        videoPlayer.loopPointReached += EndVideo;
     }
 
     public void PlayVideo()
@@ -31,5 +37,8 @@ public class VidPlayer : MonoBehaviour
         }
     }
 
-
+    public void EndVideo(VideoPlayer vp = null)
+    {
+        rawImageVideo.gameObject.SetActive(false);
+    }
 }

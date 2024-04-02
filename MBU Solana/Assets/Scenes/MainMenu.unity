@@ -1417,8 +1417,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000029563904}
-  m_SizeDelta: {x: 512, y: 288}
+  m_AnchoredPosition: {x: -2.7263, y: 0.0000038147}
+  m_SizeDelta: {x: 512.94, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &697768428
 Animator:
@@ -1505,7 +1505,6 @@ MonoBehaviour:
   gameNum: 0
   LoadGamebtn: {fileID: 870493724}
   newGamebtn: {fileID: 1728244064}
-  videoFileName: 
 --- !u!82 &697768432
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2292,8 +2291,8 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 0
   m_Looping: 0
   m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
@@ -2326,6 +2325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoFileName: Moon_Boi_Studio.mp4
+  rawImageVideo: {fileID: 1478128175}
 --- !u!1 &1066217995
 GameObject:
   m_ObjectHideFlags: 0
