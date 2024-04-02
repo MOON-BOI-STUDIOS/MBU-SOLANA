@@ -12,7 +12,9 @@ public class VideoScript : MonoBehaviour
     public GameObject panel;
     public bool isFinished = false;
     public GameObject music;
-    public GameObject WebGlVideo;
+
+    [SerializeField] string videoFileName;
+   
 
     public static VideoScript instance;
     private void Awake()
@@ -27,22 +29,27 @@ public class VideoScript : MonoBehaviour
 
         if (isFinished == true)
         {
-#if UNITY_WEBGL
-            WebGlVideo.SetActive(false);
-#endif
+
             panel.SetActive(false);
             videoObj.SetActive(false);
             music.SetActive(true);
+            
         }
+
+#if UNITY_WEBGL || UNITY_STANDALONE
+        PlayVideo();
+#endif
     }
-    // Start is called before the first frame update
+ 
     void Start()
     {
-#if !UNITY_STANDALONE && !UNITY_WEBGL
-    myVideoPlayer.loopPointReached += videoFinished;
+#if UNITY_IOS || UNITY_ANDROID
+        myVideoPlayer.loopPointReached += videoFinished;
 #else
-        StartCoroutine(VideoPlayerFinished());
+        myVideoPlayer.loopPointReached += EndVideo;
 #endif
+
+
     }
 
     // Update is called once per frame
@@ -51,11 +58,20 @@ public class VideoScript : MonoBehaviour
        
     }
 
-    public void videoFinished(VideoPlayer vp = null)
+    public void PlayVideo()
     {
-#if UNITY_WEBGL
-        WebGlVideo.SetActive(false);
-#endif
+        if (myVideoPlayer)
+        {
+            string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, videoFileName);
+            Debug.Log(videoFileName);
+            myVideoPlayer.url = videoPath;
+            myVideoPlayer.Play();
+        }
+    }
+
+    public void videoFinished(VideoPlayer vp )
+    {
+
         isFinished = true;
         panel.SetActive(false);
         videoObj.SetActive(false);
@@ -63,9 +79,16 @@ public class VideoScript : MonoBehaviour
         PlayerPrefs.SetInt("isFinished", (isFinished ? 1 : 0));
     }
 
-    IEnumerator VideoPlayerFinished()
+
+    public void EndVideo(VideoPlayer vp )
     {
-        yield return new WaitForSeconds(171f);
-        videoFinished();
+        panel.SetActive(false);
+        isFinished = true;
+        panel.SetActive(false);
+        videoObj.SetActive(false);
+        music.SetActive(true);
+        PlayerPrefs.SetInt("isFinished", (isFinished ? 1 : 0));
     }
+
+
 }

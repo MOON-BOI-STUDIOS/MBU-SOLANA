@@ -14,6 +14,7 @@ public class VidPlayer : MonoBehaviour
     {
         videoPlayer = GetComponent<VideoPlayer>();
         PlayVideo();
+        Time.timeScale = 1;
     }
     void Start()
     {
