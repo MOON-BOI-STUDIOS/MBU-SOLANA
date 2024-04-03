@@ -1638,9 +1638,12 @@ MonoBehaviour:
   number: 0
   moonboiStudioLogo: {fileID: 1479888381}
   moonboiUniverseLogo: {fileID: 329045840}
+  rawImage: {fileID: 1939965096}
+  runGame: {fileID: 1893421635}
   gameNum: 0
   LoadGamebtn: {fileID: 870493724}
   newGamebtn: {fileID: 1728244064}
+  VidPlayer: {fileID: 1037467310}
 --- !u!82 &697768432
 AudioSource:
   m_ObjectHideFlags: 0
