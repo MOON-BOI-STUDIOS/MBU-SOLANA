@@ -82,7 +82,7 @@ public class VideoScript : MonoBehaviour
 
     public void EndVideo(VideoPlayer vp )
     {
-        panel.SetActive(false);
+      
         isFinished = true;
         panel.SetActive(false);
         videoObj.SetActive(false);
