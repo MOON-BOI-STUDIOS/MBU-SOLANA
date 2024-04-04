@@ -10,6 +10,7 @@ public class Chests : MonoBehaviour
     public string animation;
     public AudioSource asource;
     public AudioClip chestOpen;
+    public AudioClip minningSuccess;
     public bool chestOpened;
     public Collider2D Collider;
     public Sprite chesto;
@@ -77,17 +78,17 @@ public class Chests : MonoBehaviour
         chest.Play(animation);
         asource.PlayOneShot(chestOpen);
         button.SetActive(false);
+
+    }
+
+
+
+    public void finishanim()
+    {
         isPickingUP = true;
         dre.SetBool("isPickingUP", isPickingUP);
         chestOpened = true;
         PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
-
-    }
-
-    public void finishanim()
-    {
-        isPickingUP = false;
-        dre.SetBool("isPickingUP", isPickingUP);
     }
 
     //public void CoinGain()
@@ -118,7 +119,16 @@ public class Chests : MonoBehaviour
             chest.enabled = true;
 
         }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            isPickingUP = true;
+            dre.SetBool("isPickingUP", isPickingUP);
+            postion = player.lastDirection;
+        }
     }
 
+
+    
 
 }
