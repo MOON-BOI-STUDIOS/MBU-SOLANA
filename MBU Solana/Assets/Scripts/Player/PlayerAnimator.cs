@@ -26,6 +26,7 @@ public class PlayerAnimator : MonoBehaviour
     // fishing scene is no combat zone 
     public bool isNoCombatZone = false;
 
+    public Chests chests;
 
     void Start()
     {
@@ -72,6 +73,13 @@ public class PlayerAnimator : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void endofCollect()
+    {
+        chests.isPickingUP = false;
+        chests.dre.SetBool("isPickingUP", chests.isPickingUP);
+        chests.postion = lastDirection;
     }
 
     //plays death sound and enables end UI

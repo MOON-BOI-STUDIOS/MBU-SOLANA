@@ -15,6 +15,11 @@ public class Chests : MonoBehaviour
     public Sprite chesto;
     public Sprite chestc;
     public SpriteRenderer SpriteRenderer;
+    public bool isPickingUP;
+    public Animator dre;
+    public Vector3 postion;
+    public PlayerAnimator player;
+
   
     public void Start()
     {
@@ -72,19 +77,29 @@ public class Chests : MonoBehaviour
         chest.Play(animation);
         asource.PlayOneShot(chestOpen);
         button.SetActive(false);
-
-    }
-
-    public void CoinGain()
-    {
-        int currentcoins = PlayerPrefs.GetInt("Coins");
-        currentcoins = currentcoins + coin;
-        PlayerPrefs.SetInt("Coins",currentcoins);
-    
+        isPickingUP = true;
+        dre.SetBool("isPickingUP", isPickingUP);
         chestOpened = true;
         PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
 
     }
+
+    public void finishanim()
+    {
+        isPickingUP = false;
+        dre.SetBool("isPickingUP", isPickingUP);
+    }
+
+    //public void CoinGain()
+    //{
+    //    int currentcoins = PlayerPrefs.GetInt("Coins");
+    //    currentcoins = currentcoins + coin;
+    //    PlayerPrefs.SetInt("Coins",currentcoins);
+    
+    //    chestOpened = true;
+    //    PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
+
+    //}
 
     public void Update()
     {
