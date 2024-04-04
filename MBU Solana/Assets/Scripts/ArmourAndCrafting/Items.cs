@@ -8,7 +8,8 @@ using UnityEngine;
 public class Items : ScriptableObject
 {
     //This item number should be the index of the item in the gameManeger item List
-    public int itemNumber;
+    public int itemNumber; // Item Number is the Index in the ItemList attached to the InventoryBackground GameObject, its is ued to save items
+    // in the DataSaver Script
     public string name = "default";
     public Sprite icon = null;
     public string ItemDescription;
@@ -38,6 +39,7 @@ public class Items : ScriptableObject
     {
         rod,
         bait,
-        fish
+        fish,
+        collectable
     }
 }

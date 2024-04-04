@@ -20,7 +20,7 @@ public class Chests : MonoBehaviour
     public Animator dre;
     public Vector3 postion;
     public PlayerAnimator player;
-
+    public Items ChestItemObj;
   
     public void Start()
     {
@@ -78,7 +78,8 @@ public class Chests : MonoBehaviour
         chest.Play(animation);
         asource.PlayOneShot(chestOpen);
         button.SetActive(false);
-
+        // Add Image To the Inventory
+        AddInventoryItemScript.instance.AddToInventory(ChestItemObj);
     }
 
 
