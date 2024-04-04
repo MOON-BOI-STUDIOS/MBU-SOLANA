@@ -71,27 +71,31 @@ public class MenuManaager : MonoBehaviour
     void Start()
     {
 
-        if(number == 0)
+        if (number == 0)
         {
+#if UNITY_STANDALONE || UNITY_WEBGL
             rawImage.SetActive(true);
             runGame.SetActive(true);
+#endif
             StartCoroutine(loadMenu());
 
-          
+
         }
-        else
-        {
+       else if (number == 1)
+         {
            
             moonboiStudioLogo.SetActive(false);
             moonboiUniverseLogo.SetActive(false);
             videoOjbct.gameObject.SetActive(false);
             Camera.main.transform.GetComponent<AudioSource>().enabled = true;
             startButton.SetActive(true);
+#if UNITY_STANDALONE || UNITY_WEBGL
             rawImage.SetActive(false);
             runGame.SetActive(false);
+#endif
             Time.timeScale = 1;
 
-        }
+         }
     }
 
     // Update is called once per frame

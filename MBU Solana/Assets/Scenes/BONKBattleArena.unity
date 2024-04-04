@@ -1808,7 +1808,6 @@ MonoBehaviour:
   toastMessage: {fileID: 192421538}
   walletBackButton: {fileID: 192421539}
   walletBGBackButton: {fileID: 951890582}
-  roundOverObject: {fileID: 0}
 --- !u!1001 &1138070299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6714,9 +6713,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.017361112
-    width: 0.6614865
-    height: 0.375
+    y: 0.09806835
+    width: 1
+    height: 0.8023774
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8096,9 +8095,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.017361112
-    width: 0.6614865
-    height: 0.375
+    y: 0.09806835
+    width: 1
+    height: 0.8023774
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -9755,7 +9754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &248699829114859154
 Transform:
   m_ObjectHideFlags: 0
@@ -17790,6 +17789,7 @@ MonoBehaviour:
   mainMusic: {fileID: 248699829641253686}
   powerUpMuisc: {fileID: 248699829641253684}
   isNoCombatZone: 0
+  chests: {fileID: 0}
 --- !u!82 &3482781817784541075
 AudioSource:
   m_ObjectHideFlags: 0

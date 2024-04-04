@@ -79,7 +79,7 @@ public class PlayerAnimator : MonoBehaviour
     {
         chests.isPickingUP = false;
         chests.dre.SetBool("isPickingUP", chests.isPickingUP);
-        chests.postion = lastDirection;
+
     }
 
     //plays death sound and enables end UI
