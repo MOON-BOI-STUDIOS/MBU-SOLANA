@@ -40,7 +40,7 @@ public class MenuManaager : MonoBehaviour
         }
         number = PlayerPrefs.GetInt("num");
         gameNum = PlayerPrefs.GetInt("gameNum");
-        Time.timeScale = 1;
+       
 
         if (gameNum == 0)
         {
@@ -76,6 +76,7 @@ public class MenuManaager : MonoBehaviour
 #if UNITY_STANDALONE || UNITY_WEBGL
             rawImage.SetActive(true);
             runGame.SetActive(true);
+            
 #endif
             StartCoroutine(loadMenu());
 
