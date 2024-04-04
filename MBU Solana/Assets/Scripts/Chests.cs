@@ -20,8 +20,9 @@ public class Chests : MonoBehaviour
     public Animator dre;
     public Vector3 postion;
     public PlayerAnimator player;
-    public Items ChestItemObj;
-  
+    public Items ChestItemObj; 
+    public GameObject textobj;
+
     public void Start()
     {
         chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
@@ -90,6 +91,8 @@ public class Chests : MonoBehaviour
         dre.SetBool("isPickingUP", isPickingUP);
         chestOpened = true;
         PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
+        asource.PlayOneShot(minningSuccess);
+        StartCoroutine(textchange());
     }
 
     //public void CoinGain()
@@ -130,6 +133,11 @@ public class Chests : MonoBehaviour
     }
 
 
-    
+    IEnumerator textchange()
+    {
+        textobj.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        textobj.SetActive(false);
+    }
 
 }
