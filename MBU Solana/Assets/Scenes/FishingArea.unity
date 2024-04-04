@@ -1030,6 +1030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VideoCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5942009702763474592, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5942009702763474596, guid: 820edb4fb8c8b1143a9eb859493c3282, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4141,12 +4145,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d7d1eea5201324d8947b9ccbdfd81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myVideoPlayer: {fileID: 1001620414}
-  videoObj: {fileID: 1001620413}
+  myVideoPlayer: {fileID: 6210402978520942207}
+  videoObj: {fileID: 6210402978520942204}
   panel: {fileID: 1746310557}
   isFinished: 0
   music: {fileID: 1413088173}
-  WebGlVideo: {fileID: 170806474}
+  videoFileName: WhatsApp Video 2024-02-21 at 20.55.56_e687019a.mp4
 --- !u!114 &642462191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8106,73 +8110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc7c881e1d7c5594cbf0b801121ff013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1001620413
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1001620415}
-  - component: {fileID: 1001620414}
-  m_Layer: 0
-  m_Name: Video Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!328 &1001620414
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001620413}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: bb1372651e446e74b8c1af1f3c851d2b, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 794397905}
-  m_TargetTexture: {fileID: 8400000, guid: e67ab53f01f2b0b47a62ef292c3b8f2b, type: 2}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: <noninit>
-  m_RenderMode: 2
-  m_AspectRatio: 5
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
---- !u!4 &1001620415
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001620413}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2269.0022, y: 413.72394, z: -1.0092292}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1005454470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 603055483369862850, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
@@ -8215,7 +8152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -325, y: 185}
+  m_AnchoredPosition: {x: -325, y: 282}
   m_SizeDelta: {x: 306.81628, y: 275.3544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031496766
@@ -8264,10 +8201,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 642462190}
         m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: videoFinished
+        m_MethodName: EndVideo
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1001620414}
+          m_ObjectArgument: {fileID: 6210402978520942207}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -8306,7 +8243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7277d1e74048fd945ac44e84156bf8c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7df8ade3d367b2247a2ea9c5f5a93ddf, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13408,7 +13345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1746310558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13423,7 +13360,7 @@ RectTransform:
   m_Children:
   - {fileID: 1031496765}
   m_Father: {fileID: 1758799343}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13616,9 +13553,9 @@ RectTransform:
   - {fileID: 2055234269}
   - {fileID: 1926813472}
   - {fileID: 1072776930}
-  - {fileID: 1746310558}
-  - {fileID: 229709500}
   - {fileID: 1849668819}
+  - {fileID: 229709500}
+  - {fileID: 1746310558}
   - {fileID: 748713024}
   - {fileID: 1920172427}
   - {fileID: 1792840227}
@@ -14799,7 +14736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756180, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756180, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_AnchorMax.x
@@ -17646,7 +17583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2425944024039111231, guid: 5fa5fa5666205264384c0ac4ac48d1b9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa5fa5666205264384c0ac4ac48d1b9, type: 3}
@@ -18545,6 +18482,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981fb83ed11c21143baf87fe445e9884, type: 3}
+--- !u!1 &6210402978520942204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6210402978520942206}
+  - component: {fileID: 6210402978520942207}
+  m_Layer: 0
+  m_Name: VideoPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6210402978520942206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210402978520942204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.0619235, y: -0.062314197, z: 53.42126}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!328 &6210402978520942207
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6210402978520942204}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 6879e479739bb3b4ea0ff9c0bcb555cc, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: e67ab53f01f2b0b47a62ef292c3b8f2b, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 0
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1001 &6634853444709245795
 PrefabInstance:
   m_ObjectHideFlags: 0

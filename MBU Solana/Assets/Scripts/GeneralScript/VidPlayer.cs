@@ -12,13 +12,18 @@ public class VidPlayer : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 0;
         videoPlayer = GetComponent<VideoPlayer>();
-        PlayVideo();
-    }
-    void Start()
-    {
 
     }
+
+    public void pressed()
+    {
+        Time.timeScale = 1;
+        PlayVideo();
+    }
+
+    
 
     // Update is called once per frame
     void Update()

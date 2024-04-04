@@ -20,14 +20,17 @@ public class MenuManaager : MonoBehaviour
 
     public int number = 0;
 
-    public GameObject moonboiStudioLogo, moonboiUniverseLogo;
+    public GameObject moonboiStudioLogo, moonboiUniverseLogo,rawImage,runGame;
 
     public int gameNum = 0;
 
     public Button LoadGamebtn;
     public Button newGamebtn;
 
+    public VidPlayer VidPlayer;
+
     public static MenuManaager instance;
+
 
     private void Awake()
     {
@@ -70,16 +73,24 @@ public class MenuManaager : MonoBehaviour
 
         if(number == 0)
         {
+            rawImage.SetActive(true);
+            runGame.SetActive(true);
             StartCoroutine(loadMenu());
+
+          
         }
         else
         {
-            WebGlVideo.SetActive(false);
+           
             moonboiStudioLogo.SetActive(false);
             moonboiUniverseLogo.SetActive(false);
             videoOjbct.gameObject.SetActive(false);
             Camera.main.transform.GetComponent<AudioSource>().enabled = true;
             startButton.SetActive(true);
+            rawImage.SetActive(false);
+            runGame.SetActive(false);
+            Time.timeScale = 1;
+
         }
     }
 
@@ -111,7 +122,7 @@ public class MenuManaager : MonoBehaviour
         DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
         GetComponent<AudioSource>().PlayOneShot(powerUpSound);
         GetComponent<AudioSource>().PlayOneShot(startButtonSound);
-
+        // deletes any saved data
         PlayerPrefs.DeleteKey("isTutorialOver");
         PlayerPrefs.DeleteKey("isQuestions");
         PlayerPrefs.DeleteKey("isShop");
@@ -168,13 +179,18 @@ public class MenuManaager : MonoBehaviour
 
 #if !UNITY_STANDALONE && !UNITY_WEBGL
     videoOjbct.gameObject.SetActive(true);
+     moonboiStudioLogo.SetActive(true);
+      rawImage.SetActive(false);
+        runGame.SetActive(false);
+          VidPlayer.enabled = false;
+        
 #else
 #endif
 
-        yield return new WaitForSeconds(5f);
-        //WebGlVideo.SetActive(false);
+        yield return new WaitForSeconds(6f);
         moonboiStudioLogo.SetActive(false);
         moonboiUniverseLogo.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
         Camera.main.transform.GetComponent<AudioSource>().enabled = true;
         yield return new WaitForSeconds(3.5f);
         moonboiUniverseLogo.SetActive(false);
