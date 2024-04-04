@@ -8,6 +8,9 @@ using codebase.utility;
 using Cysharp.Threading.Tasks;
 using Solana.Unity.Extensions;
 using Solana.Unity.Rpc.Types;
+using Solana.Unity.Rpc.Models;
+using System;
+using Solana.Unity.Wallet;
 
 // ReSharper disable once CheckNamespace
 
@@ -21,6 +24,10 @@ namespace Solana.Unity.SDK.Example
         private Button refreshBtn;
         [SerializeField]
         private Button sendBtn;
+        [SerializeField]
+        private Button sendBonk;
+        [SerializeField]
+        private Button sendUSDC;
         [SerializeField]
         private Button signBtn;
         [SerializeField]
@@ -46,6 +53,14 @@ namespace Solana.Unity.SDK.Example
         private static TokenMintResolver _tokenResolver;
         private bool _isLoadingTokens = false;
 
+        //Hard Coded region as it is decided that transaction will happpen in BONK SOL USDC Added by Vaibhav
+        private TokenAccount bonkTokenAccount;
+        private TokenAccount usdcTokenAccount;
+        string BonkMintAddress = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263";
+        string USDCMintAddress = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
+        private Texture2D _texture;
+        //End of Region
+
         public void Start()
         {
             refreshBtn.onClick.AddListener(RefreshWallet);
@@ -54,7 +69,17 @@ namespace Solana.Unity.SDK.Example
             {
                 TransitionToTransfer();
             });
-            
+
+            sendBonk.onClick.AddListener(() =>
+            {
+                TransitionToTransferBonk();
+            });
+
+            sendUSDC.onClick.AddListener(() =>
+            {
+                TransitionToTransferUSDC();
+            });
+
             signBtn.onClick.AddListener(() =>
             {
                 manager.ShowScreen(this, "sign_screen");
@@ -145,6 +170,30 @@ namespace Solana.Unity.SDK.Example
         private void TransitionToTransfer(object data = null)
         {
             manager.ShowScreen(this, "transfer_screen", data);
+            // For transfer in Sol
+            PaymentInfo.requiredAmount = (ulong)(PaymentInfo.requiredAmount * 0.000000148);
+        }
+
+        private void TransitionToTransferBonk()
+        {
+            if (bonkTokenAccount == null)
+            {
+                Debug.Log("Please add Bonk into the wallet");
+                return;
+            }
+            manager.ShowScreen(this, "transfer_screen",Tuple.Create(bonkTokenAccount, BonkMintAddress, _texture));
+        }
+
+        private void TransitionToTransferUSDC()
+        {
+            if (usdcTokenAccount == null)
+            {
+                Debug.Log("Please add USDC into the wallet");
+                return;
+            }
+            //For Transfer in USDC
+            PaymentInfo.requiredAmount = (ulong)(PaymentInfo.requiredAmount * 0.000027);
+            manager.ShowScreen(this, "transfer_screen", Tuple.Create(usdcTokenAccount, USDCMintAddress, _texture));
         }
 
         private async UniTask GetOwnedTokenAccounts()
@@ -202,6 +251,14 @@ namespace Solana.Unity.SDK.Example
                                 tkInstance.InitializeData(item, this, nft).Forget();
                             }
                         }).Forget();
+                    }
+                    if (item.Account.Data.Parsed.Info.Mint == BonkMintAddress)
+                    {
+                        bonkTokenAccount = item;
+                    }
+                    if (item.Account.Data.Parsed.Info.Mint == USDCMintAddress)
+                    {
+                        usdcTokenAccount = item;
                     }
                 }
             }

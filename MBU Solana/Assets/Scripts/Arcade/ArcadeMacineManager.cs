@@ -107,7 +107,7 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
         walletBackground.SetActive(true);
         // Let the customer login. After logging set the public key and amount according to required amount
         // "50K to Repair"
-        PaymentInfo.requiredAmount = (requiredAmount * 0.000000148).ToString(); // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
+        PaymentInfo.requiredAmount = requiredAmount; // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
         // Once clicked on the button transfer screen will appear with prefilled public key and amount
         //Setting the event as racing so that it the current event triggers if transaction is successful
         PaymentInfo.queriedEvent = "racing";
@@ -147,7 +147,7 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
         walletBackground.SetActive(true);
         // Let the customer login. After logging set the public key and amount according to required amount
         // "50K to Repair"
-        PaymentInfo.requiredAmount = (requiredAmount * 0.000000148).ToString(); // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
+        PaymentInfo.requiredAmount = requiredAmount; // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
         // Once clicked on the button transfer screen will appear with prefilled public key and amount
         //Setting the event as racing so that it the current event triggers if transaction is successful
         PaymentInfo.queriedEvent = "bonkbattle";

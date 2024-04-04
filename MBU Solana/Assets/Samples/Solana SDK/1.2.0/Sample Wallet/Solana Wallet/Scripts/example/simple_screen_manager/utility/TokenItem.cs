@@ -49,6 +49,7 @@ namespace Solana.Unity.SDK.Example
                 _nft = nftData;
                 amount_txt.text = "";
                 pub_txt.text = nftData.metaplexData?.data?.offchainData?.name;
+               
 
                 if (logo != null)
                 {
@@ -76,6 +77,9 @@ namespace Solana.Unity.SDK.Example
                     TokenDef tokenDef = tokenMintResolver.Resolve(tokenAccount.Account.Data.Parsed.Info.Mint);
                     if(tokenDef.TokenName.IsNullOrEmpty() || tokenDef.Symbol.IsNullOrEmpty()) return;
                     pub_txt.text = $"{tokenDef.TokenName} ({tokenDef.Symbol})";
+                    Debug.Log(tokenDef.Symbol);
+                    Debug.Log(tokenDef.TokenLogoUrl);
+                    Debug.Log(tokenDef.ToString());
                     await LoadAndCacheTokenLogo(tokenDef.TokenLogoUrl, tokenDef.TokenMint);
                 }
             }

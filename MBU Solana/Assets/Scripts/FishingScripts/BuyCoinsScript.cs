@@ -25,7 +25,7 @@ public class BuyCoinsScript : MonoBehaviour, ITransferInfo
         walletBackground.SetActive(true);
 
         // Let the customer login. After logging set the amount according to required amount
-        PaymentInfo.requiredAmount = (amount * 0.000000148).ToString(); // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
+        PaymentInfo.requiredAmount = amount; // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
 
         // Once clicked on the button transfer screen will appear with prefilled public key and amount
         //Setting the event so that it the current event triggers and if transaction is successful

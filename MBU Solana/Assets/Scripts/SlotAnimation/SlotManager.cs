@@ -68,7 +68,7 @@ public class SlotManager : MonoBehaviour, ITransferInfo
             walletBackground.SetActive(true);
 
             // Let the customer login. After logging set the amount according to required amount
-            PaymentInfo.requiredAmount = (250000 * 0.000000148).ToString(); // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
+            PaymentInfo.requiredAmount = 250000; // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
 
             // Once clicked on the button transfer screen will appear with prefilled public key and amount
             //Setting the event so that it the current event triggers and if transaction is successful
