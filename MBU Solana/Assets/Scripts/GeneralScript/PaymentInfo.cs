@@ -7,4 +7,5 @@ public static class PaymentInfo
     public static string publicKey = "B2Vh4JS8Q5eQawJZUq7JbmNdnyDRvBmDsFHas7havGxu";
     public static double requiredAmount;
     public static string queriedEvent; // This variable stores which event to run if transaction is successful
+    public static bool UIActive = false;
 }

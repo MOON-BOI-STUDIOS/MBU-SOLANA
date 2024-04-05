@@ -33,7 +33,7 @@ public class PlayerCombat : MonoBehaviour
 
         //PC Controls
 #if UNITY_STANDALONE || UNITY_WEBGL
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !PaymentInfo.UIActive)
         {
             onAttack();
         }

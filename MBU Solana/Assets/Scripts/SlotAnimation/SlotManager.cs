@@ -108,6 +108,7 @@ public class SlotManager : MonoBehaviour, ITransferInfo
 
     public void nextRound()
     {
+        //Time.timeScale = 1f;
         spinTimes = 0;
         limit = 2;
         spinAgaintext.SetActive(false);
