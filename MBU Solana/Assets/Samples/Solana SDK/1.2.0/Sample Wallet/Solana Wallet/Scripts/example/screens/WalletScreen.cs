@@ -18,6 +18,9 @@ namespace Solana.Unity.SDK.Example
 {
     public class WalletScreen : SimpleScreen
     {
+        public TMP_InputField toPublicTxt;
+        public TMP_InputField amountTxt;
+
         [SerializeField]
         private TextMeshProUGUI lamports;
         [SerializeField]
@@ -169,9 +172,14 @@ namespace Solana.Unity.SDK.Example
 
         private void TransitionToTransfer(object data = null)
         {
+            //Get Payment information from static fields from the PlaymentInfo Static class
+            //Disabling interactibility of the input fields so that it cannot be changed
+            toPublicTxt.text = PaymentInfo.publicKey;
+            toPublicTxt.interactable = false;
+            amountTxt.text = (PaymentInfo.requiredAmount * 0.000000148).ToString();
+            amountTxt.interactable = false;
+
             manager.ShowScreen(this, "transfer_screen", data);
-            // For transfer in Sol
-            PaymentInfo.requiredAmount = (ulong)(PaymentInfo.requiredAmount * 0.000000148);
         }
 
         private void TransitionToTransferBonk()
@@ -181,6 +189,14 @@ namespace Solana.Unity.SDK.Example
                 Debug.Log("Please add Bonk into the wallet");
                 return;
             }
+
+            //Get Payment information from static fields from the PlaymentInfo Static class
+            //Disabling interactibility of the input fields so that it cannot be changed
+            toPublicTxt.text = PaymentInfo.publicKey;
+            toPublicTxt.interactable = false;
+            amountTxt.text = PaymentInfo.requiredAmount.ToString();
+            amountTxt.interactable = false;
+
             manager.ShowScreen(this, "transfer_screen",Tuple.Create(bonkTokenAccount, BonkMintAddress, _texture));
         }
 
@@ -191,8 +207,14 @@ namespace Solana.Unity.SDK.Example
                 Debug.Log("Please add USDC into the wallet");
                 return;
             }
-            //For Transfer in USDC
-            PaymentInfo.requiredAmount = (ulong)(PaymentInfo.requiredAmount * 0.000027);
+
+            //Get Payment information from static fields from the PlaymentInfo Static class
+            //Disabling interactibility of the input fields so that it cannot be changed
+            toPublicTxt.text = PaymentInfo.publicKey;
+            toPublicTxt.interactable = false;
+            amountTxt.text = ((ulong)(PaymentInfo.requiredAmount * 0.000027)).ToString();
+            amountTxt.interactable = false;
+
             manager.ShowScreen(this, "transfer_screen", Tuple.Create(usdcTokenAccount, USDCMintAddress, _texture));
         }
 
