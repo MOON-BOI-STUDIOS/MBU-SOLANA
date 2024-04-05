@@ -66,7 +66,9 @@ public class scrollAnimation2d : MonoBehaviour
             InventoryButton.SetActive(true);
             pause.SetActive(true);
             HealthUI.SetActive(true);
+            #if UNITY_IOS || UNITY_ANDROID
             Joystick.SetActive(true);
+#endif
         }
     }
 
