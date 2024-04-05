@@ -63,13 +63,15 @@ public class WaveManager : MonoBehaviour
         if (enemiesParent.childCount <= 0 && waveSwitch == false )
         {
            
-                PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1); 
-                endOfRoundScreen.SetActive(true);
-                // Activating the Slots Assets
-                //SlotMachineAppear();
-                //slotAssets.SetActive(true);
-                //
-                waveSwitch = true;
+            PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1); 
+            endOfRoundScreen.SetActive(true);
+            PaymentInfo.UIActive = true;
+            //Time.timeScale = 0f;
+            // Activating the Slots Assets
+            //SlotMachineAppear();
+            //slotAssets.SetActive(true);
+            //
+            waveSwitch = true;
             Destroy(GameObject.FindGameObjectWithTag("PowerUp"));
 
         }
@@ -92,8 +94,11 @@ public class WaveManager : MonoBehaviour
         //Disabling the Slots Assets
         //SlotMachineAppear();
         //
+        //Time.timeScale = 1f;
+        PaymentInfo.UIActive = false;
         endOfRoundScreen.SetActive(false);
         executeOnce = false;
+
 
         for (int i = 0; i < 2 + 2 * PlayerPrefs.GetInt("Round"); i++)
         {
