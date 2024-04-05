@@ -8096,7 +8096,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 338, y: -346}
+  m_AnchoredPosition: {x: 444.87, y: -448.32}
   m_SizeDelta: {x: 518.6925, y: 178.0666}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &995346453 stripped
@@ -9323,6 +9323,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876592, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e3634b22b14b8534cb14c2623d1a2e2b, type: 3}
     - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -9359,6 +9363,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Go to fishing hut
       objectReference: {fileID: 0}
+    - target: {fileID: 603055483369862849, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 339.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483369862849, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -398
+      objectReference: {fileID: 0}
     - target: {fileID: 603055483426566429, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_text
       value: The Lengendary Catch
@@ -9379,6 +9391,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -232.3349
       objectReference: {fileID: 0}
+    - target: {fileID: 603055483700926819, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e3634b22b14b8534cb14c2623d1a2e2b, type: 3}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -9412,8 +9428,12 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 603055483700926830, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 445.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483700926830, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -346
+      value: -448.32
       objectReference: {fileID: 0}
     - target: {fileID: 2899767289075690494, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_Enabled

@@ -4616,6 +4616,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Quest completed!
       objectReference: {fileID: 0}
+    - target: {fileID: 603055482467876592, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e3634b22b14b8534cb14c2623d1a2e2b, type: 3}
     - target: {fileID: 603055482467876593, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -4664,6 +4668,14 @@ PrefabInstance:
       propertyPath: m_text
       value: Leave fishing shop
       objectReference: {fileID: 0}
+    - target: {fileID: 603055483369862849, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 339.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 603055483369862849, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -396
+      objectReference: {fileID: 0}
     - target: {fileID: 603055483426566429, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_text
       value: The Lengendary Catch
@@ -4684,6 +4696,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -236.83417
       objectReference: {fileID: 0}
+    - target: {fileID: 603055483700926819, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e3634b22b14b8534cb14c2623d1a2e2b, type: 3}
     - target: {fileID: 603055483700926829, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
