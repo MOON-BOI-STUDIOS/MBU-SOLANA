@@ -20,6 +20,8 @@ public class WaveManager : MonoBehaviour
 
     public bool executeOnce;
     string curSceneName;
+    private List<GameObject> childenemies;
+    //private GameObject[] childenemies;
     private void Awake()
     {
         nextRound();
@@ -94,7 +96,7 @@ public class WaveManager : MonoBehaviour
         //Disabling the Slots Assets
         //SlotMachineAppear();
         //
-        //Time.timeScale = 1f;
+        Time.timeScale = 1f;
         PaymentInfo.UIActive = false;
         endOfRoundScreen.SetActive(false);
         executeOnce = false;

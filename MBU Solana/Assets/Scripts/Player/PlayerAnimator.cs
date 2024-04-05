@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAnimator : MonoBehaviour
 {
@@ -27,9 +28,13 @@ public class PlayerAnimator : MonoBehaviour
     public bool isNoCombatZone = false;
 
     public Chests chests;
+    string curSceneName;
+    public GameObject enemies;
+    private GameObject[] childenemies;
 
     void Start()
     {
+        curSceneName = SceneManager.GetActiveScene().name;
         initialColor = GetComponent<SpriteRenderer>().color;
         _controller = _manager._controller;
         _heroAnimator = GetComponent<Animator>();
@@ -86,8 +91,11 @@ public class PlayerAnimator : MonoBehaviour
     public void Death()
     {
         audioSource.PlayOneShot(deathSound);
-        if(EndUI != null)
+        if (EndUI != null)
+        {
+            Time.timeScale = 0f;
             EndUI.SetActive(true);
+        }
     }
 
     //triggers through animation

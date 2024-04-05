@@ -21,7 +21,9 @@ public class GameManager : MonoBehaviour
     bool isLevelSwitch = false;
     int IsawardMoney;
     public AudioSource backgroundMusic;
-    
+    public GameObject enemies;
+    private GameObject[] childenemies;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,8 @@ public class GameManager : MonoBehaviour
     //loads a given level. plays the transition animation
     public void nextScene(int sceneNumber)
     {
+        Time.timeScale = 1f;
+        PaymentInfo.UIActive = false;
         StartCoroutine(loadScene(sceneNumber));
     }
      IEnumerator loadScene(int sceneNumber)

@@ -1805,9 +1805,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.09806835
+    y: 0
     width: 1
-    height: 0.8023774
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2373,9 +2373,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.09806835
+    y: 0
     width: 1
-    height: 0.8023774
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -5265,6 +5265,7 @@ MonoBehaviour:
   scene: 0
   transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
   backgroundMusic: {fileID: 248699829641253686}
+  enemies: {fileID: 0}
 --- !u!114 &248699829710051872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6654,6 +6655,7 @@ MonoBehaviour:
   ExitButton: {fileID: 0}
   startLocation: []
   isPoweredUp: 0
+  enemies: {fileID: 248699829596960753}
 --- !u!114 &3482781816479680323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7155,6 +7157,7 @@ MonoBehaviour:
   powerUpMuisc: {fileID: 248699829641253684}
   isNoCombatZone: 0
   chests: {fileID: 0}
+  enemies: {fileID: 248699829596960753}
 --- !u!82 &3482781817784541075
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7974,13 +7977,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 248699829948819792}
+    - target: {fileID: 5098504904775712768, guid: 5963685b51636764990b7919155a6e03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5098504904775712769, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 3482781816479680325}
+    - target: {fileID: 5098504904973203105, guid: 5963685b51636764990b7919155a6e03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5098504905097600670, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905197117974, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: OutputAudioMixerGroup

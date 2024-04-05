@@ -6713,9 +6713,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.03268945
-    width: 1.3321234
-    height: 0.26745912
+    y: -0.083333336
+    width: 2.25
+    height: 0.25
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8095,9 +8095,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.03268945
-    width: 1.3321234
-    height: 0.26745912
+    y: -0.083333336
+    width: 2.25
+    height: 0.25
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -11898,7 +11898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &248699829392813316
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12820,7 +12820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &248699829450606805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14601,6 +14601,7 @@ MonoBehaviour:
   scene: 0
   transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
   backgroundMusic: {fileID: 248699829641253686}
+  enemies: {fileID: 0}
 --- !u!114 &248699829710051872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17289,6 +17290,7 @@ MonoBehaviour:
   ExitButton: {fileID: 0}
   startLocation: []
   isPoweredUp: 0
+  enemies: {fileID: 0}
 --- !u!114 &3482781816479680323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17790,6 +17792,7 @@ MonoBehaviour:
   powerUpMuisc: {fileID: 248699829641253684}
   isNoCombatZone: 0
   chests: {fileID: 0}
+  enemies: {fileID: 0}
 --- !u!82 &3482781817784541075
 AudioSource:
   m_ObjectHideFlags: 0

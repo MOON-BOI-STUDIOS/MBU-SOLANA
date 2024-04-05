@@ -32,7 +32,9 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public bool isPoweredUp = false;
 
     string curSceneName;
-    
+    public GameObject enemies;
+    private GameObject[] childenemies;
+
     //Inventory Additions Array
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
 
@@ -198,8 +200,11 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     {
         _controller.enabled = false;
         _combat.enabled = false;
-        if(fadeOut != null)
+        if (fadeOut != null)
+        {
+            Time.timeScale = 0f;
             fadeOut.SetActive(true);
+        }
         yield return new WaitForSeconds(1);
         //SceneManager.LoadScene(0);
     }
