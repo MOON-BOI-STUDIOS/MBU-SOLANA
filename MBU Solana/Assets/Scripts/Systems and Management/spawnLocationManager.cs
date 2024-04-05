@@ -16,6 +16,7 @@ public class spawnLocationManager : MonoBehaviour
         if(PlayerPrefs.GetInt("LastLocation",0) == 0)
         {
             telport();
+
         }
     }
     public void telport()
