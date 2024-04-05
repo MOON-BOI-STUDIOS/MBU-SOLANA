@@ -2444,7 +2444,7 @@ PrefabInstance:
     - target: {fileID: 2701667282038435724, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d17d7421c70dd254486db63d17304eb3, type: 3}
+      objectReference: {fileID: 21300000, guid: e36eb343190726140bc5a38cf6b03d45, type: 3}
     - target: {fileID: 2701667282038435725, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6713,9 +6713,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.03268945
-    width: 1.3321234
-    height: 0.26745912
+    y: 0.09806835
+    width: 1
+    height: 0.8023774
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8095,9 +8095,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.03268945
-    width: 1.3321234
-    height: 0.26745912
+    y: 0.09806835
+    width: 1
+    height: 0.8023774
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8978,7 +8978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &248699829003283023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11898,7 +11898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &248699829392813316
 CanvasRenderer:
   m_ObjectHideFlags: 0
