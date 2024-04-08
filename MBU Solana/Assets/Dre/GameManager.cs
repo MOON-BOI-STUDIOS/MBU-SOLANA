@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
         IsawardMoney = PlayerPrefs.GetInt("MoneyAward");
         if(IsawardMoney == 0)
         {
-            PlayerPrefs.SetInt("Coins",500);
+            PlayerPrefs.SetInt("Coins",250);
             PlayerPrefs.SetInt("MoneyAward", 1);
         }
 
