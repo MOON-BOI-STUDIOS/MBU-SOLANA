@@ -17,6 +17,11 @@ public class ChestFish : MonoBehaviour
     public SpriteRenderer SpriteRenderer;
 
 
+    private void Awake()
+    {
+        chestOpened = (PlayerPrefs.GetInt("ChestopenFish") != 0);
+    }
+
     public void Start()
     {
         chestOpened = (PlayerPrefs.GetInt("ChestopenFish") != 0);
@@ -73,7 +78,9 @@ public class ChestFish : MonoBehaviour
         chest.Play(animation);
         asource.PlayOneShot(chestOpen);
         button.SetActive(false);
-      
+        PlayerPrefs.SetInt("ChestopenFish", (chestOpened ? 1 : 0));
+        chestOpened = true;
+
 
     }
 
