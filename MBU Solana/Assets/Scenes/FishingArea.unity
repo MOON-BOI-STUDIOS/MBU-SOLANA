@@ -2663,6 +2663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialoguev2
       objectReference: {fileID: 0}
+    - target: {fileID: 8438066723934960837, guid: f128e239c07e8c947a7d956493fe0b41, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8438066724350671627, guid: f128e239c07e8c947a7d956493fe0b41, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
