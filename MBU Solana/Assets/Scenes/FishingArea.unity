@@ -3043,7 +3043,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5318438589350286803, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -17994,7 +17994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.09806835
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -18002,7 +18002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.8023774
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3961368043105817334, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
