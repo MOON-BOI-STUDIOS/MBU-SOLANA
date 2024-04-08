@@ -31,6 +31,11 @@ public class EventBehaviour : ScriptableObject
         WalkingandFishing.instance.IsFishingActive();
     }
 
+    public void finishQuest()
+    {
+        Quest.instance.QuestCompleted = true;
+    }
+
 
     public void OpenShop()
     {

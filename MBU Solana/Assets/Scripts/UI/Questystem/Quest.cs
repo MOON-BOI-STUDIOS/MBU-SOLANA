@@ -24,6 +24,19 @@ public class Quest : MonoBehaviour
    public bool buttonisPressed = false;
     public bool Pressed = false;
 
+    public static Quest instance;
+
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+        
+
+    }
 
     private void Start()
     {
@@ -50,11 +63,15 @@ public class Quest : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            QuestCompleted = true;
-            FinishQuest();
-            //Destroy(gameObject);
-            //this.gameObject.SetActive(false);
-            collider2D.enabled = false;
+            if(QuestCompleted == true)
+            {
+                FinishQuest();
+                //Destroy(gameObject);
+                //this.gameObject.SetActive(false);
+                collider2D.enabled = false;
+
+            }
+
         }
     }
 
@@ -67,6 +84,11 @@ public class Quest : MonoBehaviour
             quest.questItem.color = quest.currentColor;
         }
         questItem.color = activeColor;
+    }
+
+    public void QuestComplete()
+    {
+        QuestCompleted = true;
     }
 
 }

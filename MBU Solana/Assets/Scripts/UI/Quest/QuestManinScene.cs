@@ -57,11 +57,14 @@ public class QuestManinScene : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            
-            FinishQuest();
-            //Destroy(gameObject);
-            //this.gameObject.SetActive(false);
-            collider2D.enabled = false;
+            if(QuestCompleted == true)
+            {
+                FinishQuest();
+                //Destroy(gameObject);
+                //this.gameObject.SetActive(false);
+                collider2D.enabled = false;
+            }
+      
         }
     }
 
@@ -74,6 +77,11 @@ public class QuestManinScene : MonoBehaviour
             quest.questItem.color = quest.currentColor;
         }
         questItem.color = activeColor;
+    }
+
+    public void QuestComplete()
+    {
+        QuestCompleted = true;
     }
 
 }
