@@ -1,11 +1,11 @@
 <<<<<<< HEAD
-# Top-Down Isometric 2D RPG with Solana Integration
+# OPEN-WORLD CYBER-FANTASY RPG
 
-Welcome to a unique top-down isometric 2D RPG, where players can explore a city map and engage in an immersive arcade room experience. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Bonk tokens.
+Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in an immersive arcade room experience battle relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Bonk tokens as well as adventure, fish and battle.
 
 [[Demo Video]](https://youtu.be/rHkDvgrDe8k)
 
-[[Moon Boi HYPERDRIVE APK d/l to play on android]](https://drive.google.com/file/d/1pe3KXjlHL_zJaLGkjHq_2sv0-1GDs9Af/view?usp=drive_link)
+[[Download 'Moon Boi Universe' on the Solana dApp store or play in your browser  ]]
 
 ## Table of Contents
 
@@ -75,5 +75,5 @@ For more details, refer to the [architecture diagram](./docs/architecture.png).
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 =======
-# For HYPERDRIVE submission please go to the game-dev branch! :) 
+# For RENAISSANCE submission please go to the game-dev branch! :) 
 >>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
