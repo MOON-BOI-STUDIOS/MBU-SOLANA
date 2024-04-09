@@ -3,7 +3,7 @@
 
 Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in an immersive arcade room experience battle relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Bonk tokens as well as adventure, fish and battle.
 
-[[Demo Video]](https://youtu.be/rHkDvgrDe8k)
+[[Demo Video]](https://youtu.be/NxKE79FKw-Y?si=jLfsfezCPfHcadJg)
 
 [[Download 'Moon Boi Universe' on the Solana dApp store or play in your browser https://moon-boi-studios.github.io/mbubonkfish/ ]]
 
