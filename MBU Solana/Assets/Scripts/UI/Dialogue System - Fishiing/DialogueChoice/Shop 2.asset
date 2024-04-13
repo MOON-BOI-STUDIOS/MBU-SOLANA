@@ -10,47 +10,46 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10ab5a0590081c344b247f819578352e, type: 3}
-  m_Name: Fishermain
+  m_Name: Shop 2
   m_EditorClassIdentifier: 
-  dialogueInfo:
-  - text: 'FISHERMAN
-
-      Ahoy there! Fancy trying your hand at the legendary catch?
-
-'
-  - text: "DR\xC9\r\nLegendary catch?\r\n"
-  - text: 'FISHERMAN
-
-      Aye, there are tales of a colossal fish, the Dragonfish,
-      that roams these waters.
-
-'
-  - text: 'FISHERMAN
-
-      Its scales glow like a thousand gemstones, they say.
-
-
-
-'
-  - text: "DR\xC9\r\nSounds intriguing. How do I catch it?\r\n"
-  - text: "FISHERMAN\r\nI\u2019ve been fishing these waters for decades and not even
-      the sight of it has crossed my eyes."
-  - text: "FISHERMAN\n Alas, it is but a legend after all. Although if you do see
-      it, you\u2019ll have to be experienced enough to even attempt to catch it!\n"
-  - text: "DR\xC9\r\nI\u2019ve never fished before\u2026\r\n"
-  - text: 'FISHERMAN
-
-      Well fate must have bought you here. Today''s the day
-      you learn! Are you up for it?
-
-
-'
-  - text: "DR\xC9\r\nSure!\r\n\n\n"
-  - text: "FISHERMAN\nThat's the spirit! Prepare your fishing rod and follow me.
-      The fish here aren\u2019t an easy catch, but the thrill is worth it.\n\n"
-  questionText: 
+  dialogueInfo: []
+  questionText: Anything that catches your eye?
   optionsinfo:
-  - buttonName: Lead the way
+  - buttonName: Look at shop
+    nextdialogue: {fileID: 0}
+    Event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: OpenShop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - buttonName: I'll come back later
+    nextdialogue: {fileID: 0}
+    Event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
+          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
+          m_MethodName: Optionsoff
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - buttonName: Can I sell you my fish?
     nextdialogue: {fileID: 0}
     Event:
       m_PersistentCalls:
@@ -69,60 +68,7 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
           m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: startrTutorial
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
-          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: TurnonQuest
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - buttonName: 'Maybe later. I need to prepare. '
-    nextdialogue: {fileID: 11400000, guid: 709dbdd06ad79b846a82447b9ab96d14, type: 2}
-    Event:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
-          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: test
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
-          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: Optionsoff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 11400000, guid: ea78970a80607334c9c11d64c78d1c03, type: 2}
-          m_TargetAssemblyTypeName: EventBehaviour, Assembly-CSharp
-          m_MethodName: questionDialogue
+          m_MethodName: SellFish
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

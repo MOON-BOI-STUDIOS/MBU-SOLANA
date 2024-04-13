@@ -32,6 +32,8 @@ public class EventBehaviour : ScriptableObject
     }
 
 
+
+
     public void OpenShop()
     {
         DialogueManagerFishing.instance.OPenShop();

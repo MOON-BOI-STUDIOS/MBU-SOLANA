@@ -23,6 +23,11 @@ public class Chests : MonoBehaviour
     public Items ChestItemObj; 
     public GameObject textobj;
 
+
+    private void Awake()
+    {
+        chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
+    }
     public void Start()
     {
         chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
@@ -81,6 +86,8 @@ public class Chests : MonoBehaviour
         button.SetActive(false);
         // Add Image To the Inventory
         AddInventoryItemScript.instance.AddToInventory(ChestItemObj);
+        chestOpened = true;
+        PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
     }
 
 
@@ -89,8 +96,7 @@ public class Chests : MonoBehaviour
     {
         isPickingUP = true;
         dre.SetBool("isPickingUP", isPickingUP);
-        chestOpened = true;
-        PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
+
         asource.PlayOneShot(minningSuccess);
         StartCoroutine(textchange());
     }

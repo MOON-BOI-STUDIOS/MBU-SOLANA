@@ -14,6 +14,8 @@ public class uestShop : MonoBehaviour
     public Color color;
     public TextMeshProUGUI qusttxt;
 
+ 
+
     private void Awake()
     {
         if (instance == null)
@@ -55,5 +57,7 @@ public class uestShop : MonoBehaviour
         txtflash.enabled = false;
         qusttxt.color = color;
     }
+
+  
 
 }

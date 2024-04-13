@@ -67,6 +67,7 @@ public class CollisionType : MonoBehaviour, ICollisiontype
                 else if( canFish == false &&isTutorialOver == true)
                 {
                     DialogueManagerFishing.instance.EnqueueDialogue(dbt);
+                    Quest.instance.QuestComplete();
                 }
    
                 break;

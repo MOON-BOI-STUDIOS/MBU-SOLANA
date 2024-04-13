@@ -136,8 +136,10 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 3.4
-  preloadedAssets: []
+  bundleVersion: 3.3.9
+  preloadedAssets:
+  - {fileID: 11400000, guid: fca83694f88847148953a9f656a33fb8, type: 2}
+  - {fileID: 11400000, guid: a6e9b68d07b5cd24982c6610bfdae1de, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -251,7 +253,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Users/vaibhavkatturu/Documents/UnityProjects/Moonboi/Keys/MoonboiGame.keystore
+  AndroidKeystoreName: /Volumes/ADATA_HD710/Moonboi/Keys/MoonboiGame.keystore
   AndroidKeyaliasName: moonboistudios
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0

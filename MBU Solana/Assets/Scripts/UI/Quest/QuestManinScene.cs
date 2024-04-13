@@ -53,17 +53,20 @@ public class QuestManinScene : MonoBehaviour
         Pressed = true;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Player")
-        {
-            
-            FinishQuest();
-            //Destroy(gameObject);
-            //this.gameObject.SetActive(false);
-            collider2D.enabled = false;
-        }
-    }
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(collision.tag == "Player")
+    //    {
+    //        if(QuestCompleted == true)
+    //        {
+    //            FinishQuest();
+    //            //Destroy(gameObject);
+    //            //this.gameObject.SetActive(false);
+    //            collider2D.enabled = false;
+    //        }
+      
+    //    }
+    //}
 
     public void OnQuestClick() 
     {
@@ -74,6 +77,15 @@ public class QuestManinScene : MonoBehaviour
             quest.questItem.color = quest.currentColor;
         }
         questItem.color = activeColor;
+    }
+
+    public void QuestComplete()
+    {
+        QuestCompleted = true;
+        FinishQuest();
+        //Destroy(gameObject);
+        //this.gameObject.SetActive(false);
+        collider2D.enabled = false;
     }
 
 }

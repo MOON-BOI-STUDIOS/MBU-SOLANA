@@ -24,9 +24,28 @@ public class Quest : MonoBehaviour
    public bool buttonisPressed = false;
     public bool Pressed = false;
 
+    public static Quest instance;
+
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+
+
+        //QuestCompleted = (PlayerPrefs.GetInt("QuestCompleted") != 0);
+
+    }
 
     private void Start()
     {
+        //if(QuestCompleted == true)
+        //{
+        //    questComplete++;
+            
+        //}
         allQuests = FindObjectsOfType<Quest>();
         currentColor = questItem.color;
         questComplete = PlayerPrefs.GetInt("questCompletefish");
@@ -46,17 +65,22 @@ public class Quest : MonoBehaviour
 
 
  
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Player")
-        {
-            QuestCompleted = true;
-            FinishQuest();
-            //Destroy(gameObject);
-            //this.gameObject.SetActive(false);
-            collider2D.enabled = false;
-        }
-    }
+    //public void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(collision.tag == "Player" )
+    //    {
+    //        if(QuestCompleted == true)
+    //        {
+    //            FinishQuest();
+    //            //Destroy(gameObject);
+    //            //this.gameObject.SetActive(false);
+    //            collider2D.enabled = false;
+    //            PlayerPrefs.SetInt("QuestCompleted", (QuestCompleted ? 1 : 0));
+
+    //        }
+
+    //    }
+    //}
 
     public void OnQuestClick() 
     {
@@ -67,6 +91,13 @@ public class Quest : MonoBehaviour
             quest.questItem.color = quest.currentColor;
         }
         questItem.color = activeColor;
+    }
+
+    public void QuestComplete()
+    {
+        QuestCompleted = true;
+        collider2D.enabled = false;
+        FinishQuest();
     }
 
 }
