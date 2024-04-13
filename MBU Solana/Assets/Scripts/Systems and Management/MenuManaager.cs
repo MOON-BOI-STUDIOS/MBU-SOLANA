@@ -74,11 +74,11 @@ public class MenuManaager : MonoBehaviour
 
         if (number == 0)
         {
-#if UNITY_STANDALONE || UNITY_WEBGL
+//#if UNITY_STANDALONE || UNITY_WEBGL
             rawImage.SetActive(true);
             runGame.SetActive(true);
             
-#endif
+//#endif
             StartCoroutine(loadMenu());
 
 
@@ -91,10 +91,10 @@ public class MenuManaager : MonoBehaviour
             videoOjbct.gameObject.SetActive(false);
             Camera.main.transform.GetComponent<AudioSource>().enabled = true;
             startButton.SetActive(true);
-#if UNITY_STANDALONE || UNITY_WEBGL
+//#if UNITY_STANDALONE || UNITY_WEBGL
             rawImage.SetActive(false);
             runGame.SetActive(false);
-#endif
+//#endif
             Time.timeScale = 1;
 
          }
@@ -187,15 +187,13 @@ public class MenuManaager : MonoBehaviour
     IEnumerator loadMenu()
     {
 
-#if !UNITY_STANDALONE && !UNITY_WEBGL
+/*#if !UNITY_STANDALONE && !UNITY_WEBGL
     videoOjbct.gameObject.SetActive(true);
      moonboiStudioLogo.SetActive(true);
       rawImage.SetActive(false);
         runGame.SetActive(false);
           VidPlayer.enabled = false;
-        
-#else
-#endif
+#endif*/
 
         yield return new WaitForSeconds(4f);
         moonboiStudioLogo.SetActive(false);

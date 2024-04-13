@@ -136,7 +136,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 3.3.9
+  bundleVersion: 3.4
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -251,7 +251,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Volumes/ADATA_HD710/Moonboi/Keys/MoonboiGame.keystore
+  AndroidKeystoreName: /Users/vaibhavkatturu/Documents/UnityProjects/Moonboi/Keys/MoonboiGame.keystore
   AndroidKeyaliasName: moonboistudios
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0

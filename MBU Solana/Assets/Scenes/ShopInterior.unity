@@ -2045,6 +2045,7 @@ MonoBehaviour:
   scene: 0
   transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
   backgroundMusic: {fileID: 1371857951}
+  enemies: {fileID: 0}
 --- !u!4 &345792503
 Transform:
   m_ObjectHideFlags: 0
@@ -4588,7 +4589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
@@ -5976,6 +5977,7 @@ MonoBehaviour:
   powerUpMuisc: {fileID: 0}
   isNoCombatZone: 1
   chests: {fileID: 0}
+  enemies: {fileID: 0}
 --- !u!1 &8234105076002553338
 GameObject:
   m_ObjectHideFlags: 0
@@ -6060,6 +6062,7 @@ MonoBehaviour:
   ExitButton: {fileID: 0}
   startLocation: []
   isPoweredUp: 0
+  enemies: {fileID: 0}
 --- !u!23 &8234105076013939213
 MeshRenderer:
   m_ObjectHideFlags: 0

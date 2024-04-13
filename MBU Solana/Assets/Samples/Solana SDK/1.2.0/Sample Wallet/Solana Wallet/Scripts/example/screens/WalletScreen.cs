@@ -174,10 +174,10 @@ namespace Solana.Unity.SDK.Example
         {
             //Get Payment information from static fields from the PlaymentInfo Static class
             //Disabling interactibility of the input fields so that it cannot be changed
-            toPublicTxt.text = PaymentInfo.publicKey;
-            toPublicTxt.interactable = false;
-            amountTxt.text = (PaymentInfo.requiredAmount * 0.000000148).ToString();
-            amountTxt.interactable = false;
+            //toPublicTxt.text = PaymentInfo.publicKey;
+            //toPublicTxt.interactable = false;
+            PaymentInfo.requiredAmount = PaymentInfo.requiredAmount * 0.000000148;
+            //amountTxt.interactable = false;
 
             manager.ShowScreen(this, "transfer_screen", data);
         }
@@ -192,10 +192,10 @@ namespace Solana.Unity.SDK.Example
 
             //Get Payment information from static fields from the PlaymentInfo Static class
             //Disabling interactibility of the input fields so that it cannot be changed
-            toPublicTxt.text = PaymentInfo.publicKey;
-            toPublicTxt.interactable = false;
-            amountTxt.text = PaymentInfo.requiredAmount.ToString();
-            amountTxt.interactable = false;
+            //toPublicTxt.text = PaymentInfo.publicKey;
+            //toPublicTxt.interactable = false;
+            //PaymentInfo.requiredAmount = PaymentInfo.requiredAmount;
+            //amountTxt.interactable = false;
 
             manager.ShowScreen(this, "transfer_screen",Tuple.Create(bonkTokenAccount, BonkMintAddress, _texture));
         }
@@ -210,10 +210,10 @@ namespace Solana.Unity.SDK.Example
 
             //Get Payment information from static fields from the PlaymentInfo Static class
             //Disabling interactibility of the input fields so that it cannot be changed
-            toPublicTxt.text = PaymentInfo.publicKey;
-            toPublicTxt.interactable = false;
-            amountTxt.text = ((ulong)(PaymentInfo.requiredAmount * 0.000027)).ToString();
-            amountTxt.interactable = false;
+            //toPublicTxt.text = PaymentInfo.publicKey;
+            //toPublicTxt.interactable = false;
+            PaymentInfo.requiredAmount = PaymentInfo.requiredAmount * 0.000027;
+            //amountTxt.interactable = false;
 
             manager.ShowScreen(this, "transfer_screen", Tuple.Create(usdcTokenAccount, USDCMintAddress, _texture));
         }

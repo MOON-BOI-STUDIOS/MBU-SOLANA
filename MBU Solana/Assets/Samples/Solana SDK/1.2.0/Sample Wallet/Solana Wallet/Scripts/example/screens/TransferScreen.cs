@@ -35,6 +35,12 @@ namespace Solana.Unity.SDK.Example
         {
             // Get all the Scripts which implemented transferInfo in that scene
             this.transferInfosImplementedScripts = FindAllTransferInfoImplementedScript();
+            //Get Payment information from static fields from the PlaymentInfo Static class
+            //Disabling interactibility of the input fields so that it cannot be changed
+            toPublicTxt.text = PaymentInfo.publicKey;
+            toPublicTxt.interactable = false;
+            amountTxt.text = PaymentInfo.requiredAmount.ToString();
+            amountTxt.interactable = false;
 
             transferBtn.onClick.AddListener(TryTransfer);
 
@@ -43,7 +49,14 @@ namespace Solana.Unity.SDK.Example
                 manager.ShowScreen(this, "wallet_screen");
             });
         }
+        public void OnEnable()
+        {
+            toPublicTxt.text = PaymentInfo.publicKey;
+            toPublicTxt.interactable = false;
+            amountTxt.text = PaymentInfo.requiredAmount.ToString();
+            amountTxt.interactable = false;
 
+        }
         private void TryTransfer()
         {
             if (_nft != null)
