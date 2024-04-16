@@ -915,8 +915,13 @@ struct TypeDescriptionProvider_t9D673AE2CA056241BE2C294055B821D83D1AE664;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // System.Threading.WaitCallback
 struct WaitCallback_tFB2C7FD58D024BBC2B0333DC7A4CB63B8DEBD5D3;
+<<<<<<< HEAD
 // System.Net.WebSockets.WebSocketReceiveResult
 struct WebSocketReceiveResult_t31FCE9F2E53843C065CD57BE10581EE47D6FAD2C;
+=======
+// System.Net.WebSockets.WebSocketException
+struct WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263;
+>>>>>>> Game_Dev
 // System.ComponentModel.Win32Exception
 struct Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9;
 // System.Security.Cryptography.X509Certificates.X500DistinguishedName
@@ -1070,6 +1075,10 @@ IL2CPP_EXTERN_C RuntimeClass* List_1_tC6F988464EEDD8B37B6AA2E9D311D598FC07845D_i
 IL2CPP_EXTERN_C RuntimeClass* MailAddress_t543FDACEABCE85F9DE9586D333CF45D6259AB51F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MailBnfHelper_t2CDB7D0BC24474412570E5D88EB3DE72A847B316_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MarshalByValueComponent_t19E5966D1CE2F9ED341EB16C060BA573F63AEDAA_il2cpp_TypeInfo_var;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C RuntimeClass* Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MobileTlsProvider_tD60D82BEBF267F50F388A026DBB092C7188BB017_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MonoLocalCertificateSelectionCallback_t34F7772BA5ECE38E6CBD4C311F579DD1D4724DE3_il2cpp_TypeInfo_var;
@@ -1120,6 +1129,10 @@ IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t2A746C2CE96C006F02DFF9268F32EEF14A047D36_
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_tB9FAB1E6994B42B67246693CD6E523D26D4BCC45_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ValidationHelper_tA6AE681FCDFA9BE8E3EF31C28A624AADF973A25C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitCallback_tFB2C7FD58D024BBC2B0333DC7A4CB63B8DEBD5D3_il2cpp_TypeInfo_var;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C RuntimeClass* WebSocketError_tEC1353C241C6481FE77428ABEB57E39B8E6E7672_il2cpp_TypeInfo_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C RuntimeClass* X509Certificate2Collection_t703D5135E74BA606B564EF174E08964B9C3DADEB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* X509KeyUsageFlags_tA8507F67CB3F1DF68E2126C9D40A62CCF27065BA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* X509Store_t19E126FCB4003D01A2DE6CE2C35E9E71E97D08E6_il2cpp_TypeInfo_var;
@@ -1135,7 +1148,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral05B7AB3E30BCB8EF52C051785A169CFDD2543A02
 IL2CPP_EXTERN_C String_t* _stringLiteral06D6A06713CB85E830E4059C79FBF5A1346B0F4D;
 IL2CPP_EXTERN_C String_t* _stringLiteral071214783494311744C11F13208084CDCB478A49;
 IL2CPP_EXTERN_C String_t* _stringLiteral075D77AFFD3246AF47CFB45BCB913B2C7230865C;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C String_t* _stringLiteral07624473F417C06C74D59C64840A1532FCE2C626;
+=======
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C String_t* _stringLiteral07F16131F9636D0BF4AABDD601E6A3C3045B7ADC;
 IL2CPP_EXTERN_C String_t* _stringLiteral09825DB5ECDC49C88709E92B854BF3CC5EB6CA22;
 IL2CPP_EXTERN_C String_t* _stringLiteral09DBABCF47D177922630CF7626523A2E035CFB16;
@@ -1468,6 +1484,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral8609E0E2AE2791725A5753917F782BE01B29BF75
 IL2CPP_EXTERN_C String_t* _stringLiteral876686C333A653B76AD96A2C08D73C7A208175D3;
 IL2CPP_EXTERN_C String_t* _stringLiteral889617F414F07DE598E5054C49E4A8A4E623433E;
 IL2CPP_EXTERN_C String_t* _stringLiteral88E3C56A0A05CDCA8842AD92657A14FCD3B2B544;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C String_t* _stringLiteral8A09CD330FFB1377C86A2013D5C1E2F907AE1682;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C String_t* _stringLiteral8A577A5A6848BEDC7A1DBA1211A06E627EEF0057;
 IL2CPP_EXTERN_C String_t* _stringLiteral8ABA7ED82B5ACA1294A7B9A6A5647168BD9D7F0F;
 IL2CPP_EXTERN_C String_t* _stringLiteral8ACB7DA85AF8E3C9B31DA5B1C84FB5A78F9607FB;
@@ -1902,7 +1922,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass21_0_U3CSetAndVerifySe
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTask_1__ctor_m5DAD386E7F3D9AF7D2791C5EAAB5C0ECDDAE45C1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTask_1__ctor_m6164BE5A3BB19E083385C0C701140EA391B90071_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTask_1__ctor_m737FBE7069B3D09838DB9B9D254A830705A290A3_RuntimeMethod_var;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C const RuntimeMethod* WebSocketReceiveResult__ctor_m3B47B8C4F0CC1C96FF4B314BAAB9E67E1967E186_RuntimeMethod_var;
+=======
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C const RuntimeMethod* WhitespaceReader_ReadCfwsReverse_mCFBCDDAFE25CD70AC967C533B51C083A77B0D0CF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WhitespaceReader_ReadFwsReverse_m3C6E0D1A016AC14721DF86854805CC85BD15CCDA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_0_0_0_var;
@@ -3745,6 +3768,7 @@ struct Nullable_1_t9A98093485034F2B86BC66B725022122E0E5B2A4
 	int32_t ___value_1;
 };
 
+<<<<<<< HEAD
 // System.Nullable`1<System.Net.WebSockets.WebSocketCloseStatus>
 struct Nullable_1_t4936015D54B4E5C3191E452324F5F52BD55E1284 
 {
@@ -3754,6 +3778,8 @@ struct Nullable_1_t4936015D54B4E5C3191E452324F5F52BD55E1284
 	int32_t ___value_1;
 };
 
+=======
+>>>>>>> Game_Dev
 // System.ReadOnlyMemory`1<System.Byte>
 struct ReadOnlyMemory_1_t63F301BF893B0AB689953D86A641168CA66D2399 
 {
@@ -5227,6 +5253,7 @@ struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marshaled_com : publ
 	int32_t ___hasThreadAffinity_5;
 };
 
+<<<<<<< HEAD
 // System.Net.WebSockets.WebSocketReceiveResult
 struct WebSocketReceiveResult_t31FCE9F2E53843C065CD57BE10581EE47D6FAD2C  : public RuntimeObject
 {
@@ -5242,6 +5269,8 @@ struct WebSocketReceiveResult_t31FCE9F2E53843C065CD57BE10581EE47D6FAD2C  : publi
 	String_t* ___U3CCloseStatusDescriptionU3Ek__BackingField_4;
 };
 
+=======
+>>>>>>> Game_Dev
 // System.Security.Cryptography.X509Certificates.X509Certificate
 struct X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4  : public RuntimeObject
 {
@@ -5839,6 +5868,16 @@ struct SocketException_t6D10102A62EA871BD31748E026A372DB6804083B  : public Win32
 	// System.Net.EndPoint System.Net.Sockets.SocketException::m_EndPoint
 	EndPoint_t6233F4E2EB9F0F2D36E187F12BE050E6D8B73564* ___m_EndPoint_19;
 };
+<<<<<<< HEAD
+=======
+
+// System.Net.WebSockets.WebSocketException
+struct WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263  : public Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9
+{
+	// System.Net.WebSockets.WebSocketError System.Net.WebSockets.WebSocketException::_webSocketErrorCode
+	int32_t ____webSocketErrorCode_19;
+};
+>>>>>>> Game_Dev
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -7111,8 +7150,27 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void IOAsyncResult_set_CompletedS
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mAC11B6F52B2C5BA43E6B14CF8338841CAA0ABF26 (U3CU3Ec_tB9FAB1E6994B42B67246693CD6E523D26D4BCC45* __this, const RuntimeMethod* method) ;
 // System.Void System.AsyncCallback::Invoke(System.IAsyncResult)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncCallback_Invoke_mA85DEAE969B1D0FD97E934DC39439E89D7553910_inline (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___ar0, const RuntimeMethod* method) ;
+<<<<<<< HEAD
 // System.Void System.Net.WebSockets.WebSocketReceiveResult::.ctor(System.Int32,System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Nullable`1<System.Net.WebSockets.WebSocketCloseStatus>,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketReceiveResult__ctor_m3B47B8C4F0CC1C96FF4B314BAAB9E67E1967E186 (WebSocketReceiveResult_t31FCE9F2E53843C065CD57BE10581EE47D6FAD2C* __this, int32_t ___count0, int32_t ___messageType1, bool ___endOfMessage2, Nullable_1_t4936015D54B4E5C3191E452324F5F52BD55E1284 ___closeStatus3, String_t* ___closeStatusDescription4, const RuntimeMethod* method) ;
+=======
+// System.Int32 System.Runtime.InteropServices.Marshal::GetLastWin32Error()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Marshal_GetLastWin32Error_mCD7EBA7503BF36F46DB58D98E96101FB67684379 (const RuntimeMethod* method) ;
+// System.Void System.Net.WebSockets.WebSocketException::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketException__ctor_m9DE018FA255F69B31247D626CD46E906F81A2D01 (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, int32_t ___nativeError0, const RuntimeMethod* method) ;
+// System.Void System.ComponentModel.Win32Exception::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception__ctor_m1DC405E68F70450557C7D3919BF43BC4EC137EBA (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, String_t* ___message0, const RuntimeMethod* method) ;
+// System.Boolean System.Net.WebSockets.WebSocketException::Succeeded(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebSocketException_Succeeded_mD4CDEB2018F54CD1840820718516FD425EE6ED70 (int32_t ___hr0, const RuntimeMethod* method) ;
+// System.Void System.Net.WebSockets.WebSocketException::SetErrorCodeOnError(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketException_SetErrorCodeOnError_m886DDADA4F582383259E13847E5E85323917ACBA (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, int32_t ___nativeError0, const RuntimeMethod* method) ;
+// System.Void System.ComponentModel.Win32Exception::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception_GetObjectData_mB7993FD0BE12222D5518373EBAB84F89651D99D2 (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___info0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___context1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.Serialization.SerializationInfo::AddValue(System.String,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_m28FE9B110F21DDB8FF5F5E35A0EABD659DB22C2F (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Void System.Exception::set_HResult(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline (Exception_t* __this, int32_t ___value0, const RuntimeMethod* method) ;
+>>>>>>> Game_Dev
 // System.Void System.Security.Cryptography.X509Certificates.X509Store::.ctor(System.Security.Cryptography.X509Certificates.StoreName,System.Security.Cryptography.X509Certificates.StoreLocation)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void X509Store__ctor_m4BC006F268440F969A1E2550A4884AA9FB4FEB1E (X509Store_t19E126FCB4003D01A2DE6CE2C35E9E71E97D08E6* __this, int32_t ___storeName0, int32_t ___storeLocation1, const RuntimeMethod* method) ;
 // System.Void System.Security.Cryptography.X509Certificates.X509Store::Open(System.Security.Cryptography.X509Certificates.OpenFlags)
@@ -14486,6 +14544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CCompleteU3Eb__27_0_m267CAA8BC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+<<<<<<< HEAD
 // System.Void System.Net.WebSockets.WebSocketReceiveResult::.ctor(System.Int32,System.Net.WebSockets.WebSocketMessageType,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketReceiveResult__ctor_m67E99C6CF0702FA8BA419E86CFA14A929D3B8517 (WebSocketReceiveResult_t31FCE9F2E53843C065CD57BE10581EE47D6FAD2C* __this, int32_t ___count0, int32_t ___messageType1, bool ___endOfMessage2, const RuntimeMethod* method) 
 {
@@ -14557,6 +14616,147 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebSocketReceiveResult_get_MessageTyp
 	{
 		int32_t L_0 = __this->___U3CMessageTypeU3Ek__BackingField_2;
 		return L_0;
+=======
+// System.Void System.Net.WebSockets.WebSocketException::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketException__ctor_m9459919CC9E470BBFEB4803C5941475FCFD9A093 (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
+		int32_t L_0;
+		L_0 = Marshal_GetLastWin32Error_mCD7EBA7503BF36F46DB58D98E96101FB67684379(NULL);
+		WebSocketException__ctor_m9DE018FA255F69B31247D626CD46E906F81A2D01(__this, L_0, NULL);
+		return;
+	}
+}
+// System.Void System.Net.WebSockets.WebSocketException::.ctor(System.Net.WebSockets.WebSocketError,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketException__ctor_m7350F0E619B737BD230B8653A819B04394502058 (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, int32_t ___error0, String_t* ___message1, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___message1;
+		Win32Exception__ctor_m1DC405E68F70450557C7D3919BF43BC4EC137EBA(__this, L_0, NULL);
+		int32_t L_1 = ___error0;
+		__this->____webSocketErrorCode_19 = L_1;
+		return;
+	}
+}
+// System.Void System.Net.WebSockets.WebSocketException::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketException__ctor_m9DE018FA255F69B31247D626CD46E906F81A2D01 (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, int32_t ___nativeError0, const RuntimeMethod* method) 
+{
+	WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* G_B2_0 = NULL;
+	WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* G_B3_1 = NULL;
+	{
+		int32_t L_0 = ___nativeError0;
+		Win32Exception__ctor_mFC38F1C99031D227C6BB3CA07099866D39994281(__this, L_0, NULL);
+		int32_t L_1 = ___nativeError0;
+		bool L_2;
+		L_2 = WebSocketException_Succeeded_mD4CDEB2018F54CD1840820718516FD425EE6ED70(L_1, NULL);
+		G_B1_0 = __this;
+		if (!L_2)
+		{
+			G_B2_0 = __this;
+			goto IL_0013;
+		}
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		goto IL_0014;
+	}
+
+IL_0013:
+	{
+		G_B3_0 = 3;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0014:
+	{
+		NullCheck(G_B3_1);
+		G_B3_1->____webSocketErrorCode_19 = G_B3_0;
+		int32_t L_3 = ___nativeError0;
+		WebSocketException_SetErrorCodeOnError_m886DDADA4F582383259E13847E5E85323917ACBA(__this, L_3, NULL);
+		return;
+	}
+}
+// System.Void System.Net.WebSockets.WebSocketException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketException__ctor_m4F20A99C7B6D68EE3999492DE6CB15D40C5DC086 (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___serializationInfo0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___streamingContext1, const RuntimeMethod* method) 
+{
+	{
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = ___serializationInfo0;
+		StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 L_1 = ___streamingContext1;
+		Win32Exception__ctor_m1B3DF3F51BBF050C18F933B36027A8A4902668C4(__this, L_0, L_1, NULL);
+		return;
+	}
+}
+// System.Void System.Net.WebSockets.WebSocketException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketException_GetObjectData_mF818DFE58B1E953CA4361047CDDF16AFAEBFFCD6 (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___info0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___context1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WebSocketError_tEC1353C241C6481FE77428ABEB57E39B8E6E7672_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8A09CD330FFB1377C86A2013D5C1E2F907AE1682);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = ___info0;
+		StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 L_1 = ___context1;
+		Win32Exception_GetObjectData_mB7993FD0BE12222D5518373EBAB84F89651D99D2(__this, L_0, L_1, NULL);
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_2 = ___info0;
+		int32_t L_3 = __this->____webSocketErrorCode_19;
+		int32_t L_4 = L_3;
+		RuntimeObject* L_5 = Box(WebSocketError_tEC1353C241C6481FE77428ABEB57E39B8E6E7672_il2cpp_TypeInfo_var, &L_4);
+		NullCheck(L_2);
+		SerializationInfo_AddValue_m28FE9B110F21DDB8FF5F5E35A0EABD659DB22C2F(L_2, _stringLiteral8A09CD330FFB1377C86A2013D5C1E2F907AE1682, L_5, NULL);
+		return;
+	}
+}
+// System.Int32 System.Net.WebSockets.WebSocketException::get_ErrorCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebSocketException_get_ErrorCode_m2F4E28AEE08A2811EA9C927CB616263E524F4390 (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0;
+		L_0 = Win32Exception_get_NativeErrorCode_m33C1D176D9178C36DA32F8FEC251B923EE53CE5E_inline(__this, NULL);
+		return L_0;
+	}
+}
+// System.Void System.Net.WebSockets.WebSocketException::SetErrorCodeOnError(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketException_SetErrorCodeOnError_m886DDADA4F582383259E13847E5E85323917ACBA (WebSocketException_t7ED58EA50E372ED89E1469A44379C2FB097A6263* __this, int32_t ___nativeError0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___nativeError0;
+		bool L_1;
+		L_1 = WebSocketException_Succeeded_mD4CDEB2018F54CD1840820718516FD425EE6ED70(L_0, NULL);
+		if (L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		int32_t L_2 = ___nativeError0;
+		Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline(__this, L_2, NULL);
+	}
+
+IL_000f:
+	{
+		return;
+	}
+}
+// System.Boolean System.Net.WebSockets.WebSocketException::Succeeded(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebSocketException_Succeeded_mD4CDEB2018F54CD1840820718516FD425EE6ED70 (int32_t ___hr0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___hr0;
+		return (bool)((((int32_t)((((int32_t)L_0) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+>>>>>>> Game_Dev
 	}
 }
 #ifdef __clang__
@@ -22180,7 +22380,11 @@ IL_0120_1:
 				Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA* L_55 = V_10;
 				NullCheck(L_54);
 				bool L_56;
+<<<<<<< HEAD
 				L_56 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_54, L_55);
+=======
+				L_56 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_54, L_55);
+>>>>>>> Game_Dev
 				if (!L_56)
 				{
 					goto IL_014e_1;
@@ -22925,7 +23129,11 @@ IL_0015:
 		RuntimeObject* L_9 = ___value2;
 		NullCheck(L_8);
 		bool L_10;
+<<<<<<< HEAD
 		L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
+=======
+		L_10 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_8, L_9);
+>>>>>>> Game_Dev
 		if (!L_10)
 		{
 			goto IL_0062;
@@ -29822,7 +30030,11 @@ IL_0006:
 		L_13 = ExtenderProvidedPropertyAttribute_get_ReceiverType_m4CB132243DEED5094F04136886DA141250A7C14C_inline(__this, NULL);
 		NullCheck(L_12);
 		bool L_14;
+<<<<<<< HEAD
 		L_14 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(128 /* System.Boolean System.Type::Equals(System.Type) */, L_12, L_13);
+=======
+		L_14 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(129 /* System.Boolean System.Type::Equals(System.Type) */, L_12, L_13);
+>>>>>>> Game_Dev
 		return L_14;
 	}
 
@@ -31473,7 +31685,11 @@ IL_0015:
 		RuntimeObject* L_8 = ___value2;
 		NullCheck(L_7);
 		bool L_9;
+<<<<<<< HEAD
 		L_9 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_7, L_8);
+=======
+		L_9 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_7, L_8);
+>>>>>>> Game_Dev
 		if (!L_9)
 		{
 			goto IL_0037;
@@ -32246,6 +32462,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncCallback_Invoke_mA85DEA
 	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___ar0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
+<<<<<<< HEAD
+=======
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline (Exception_t* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->____HResult_11 = L_0;
+		return;
+	}
+}
+>>>>>>> Game_Dev
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MobileAuthenticatedStream_get_TargetHost_m572DA701CB3CE3FA4006D5745F9A3B9A52739CAB_inline (MobileAuthenticatedStream_tD0306DC2B0CDA3C7DB261C19FFA35CA8EE24309E* __this, const RuntimeMethod* method) 
 {
 	{

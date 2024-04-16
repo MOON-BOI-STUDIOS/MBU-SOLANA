@@ -8,13 +8,22 @@ public class StatItems : Items
 {
     public StatItemType itemType;
 
+<<<<<<< HEAD
     public int amount;
+=======
+    public int points;
+>>>>>>> Game_Dev
 
     public override void Use()
     {
         base.Use();
+<<<<<<< HEAD
         DummyItemScript.instance.OnStatItemUse(itemType,amount);
         ItemInventory.instance.RemoveItem(this);
+=======
+        //AddInventoryItemScript.instance.OnItemUse(this);
+        //ItemInventory.instance.RemoveItem(this);
+>>>>>>> Game_Dev
     }
 
     // Start is called before the first frame update
@@ -32,5 +41,14 @@ public class StatItems : Items
 
 public enum StatItemType
 {
+<<<<<<< HEAD
     FishItem
+=======
+    Lumpsucker,
+    Tuna,
+    Wonderpus,
+    Bonk,
+    RoyalGramma,
+    Dragon
+>>>>>>> Game_Dev
 }

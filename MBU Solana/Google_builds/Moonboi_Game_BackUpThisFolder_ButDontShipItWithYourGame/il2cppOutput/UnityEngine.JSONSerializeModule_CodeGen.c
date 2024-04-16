@@ -34,12 +34,21 @@ static Il2CppMethodPointer s_methodPointers[6] =
 };
 static const int32_t s_InvokerIndices[6] = 
 {
+<<<<<<< HEAD
 	16533,
 	15325,
 	18329,
 	16533,
 	0,
 	16545,
+=======
+	16685,
+	15464,
+	18486,
+	16685,
+	0,
+	16697,
+>>>>>>> Game_Dev
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {

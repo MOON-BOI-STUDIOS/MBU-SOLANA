@@ -157,6 +157,7 @@ static Il2CppMethodPointer s_methodPointers[52] =
 };
 static const int32_t s_InvokerIndices[52] = 
 {
+<<<<<<< HEAD
 	12616,
 	12616,
 	12420,
@@ -187,6 +188,38 @@ static const int32_t s_InvokerIndices[52] =
 	12616,
 	12616,
 	12616,
+=======
+	12673,
+	12673,
+	12475,
+	10075,
+	12475,
+	10075,
+	12475,
+	10075,
+	12383,
+	9983,
+	12383,
+	9983,
+	12383,
+	9983,
+	12383,
+	9983,
+	12383,
+	9983,
+	12475,
+	9332,
+	9152,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -203,12 +236,21 @@ static const int32_t s_InvokerIndices[52] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	10065,
 	12616,
 	12616,
 	5276,
 	2586,
 	9110,
+=======
+	10111,
+	12673,
+	12673,
+	5303,
+	2607,
+	9152,
+>>>>>>> Game_Dev
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Unity_2D_PixelPerfect_CodeGenModule;
 const Il2CppCodeGenModule g_Unity_2D_PixelPerfect_CodeGenModule = 

@@ -124,15 +124,24 @@ Library: lib_burst_generated
 --compilation-defines=CSHARP_7_OR_LATER
 --compilation-defines=CSHARP_7_3_OR_NEWER
 --compilation-defines=VISUAL_SCRIPTING_ENABLED
+<<<<<<< HEAD
+=======
+--compilation-defines=ENABLE_VR_MODULE
+--compilation-defines=ENABLE_XR_MODULE
+--compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
+>>>>>>> Game_Dev
 --compilation-defines=UNITASK_ASSETBUNDLE_SUPPORT
 --compilation-defines=UNITASK_PHYSICS_SUPPORT
 --compilation-defines=UNITASK_PHYSICS2D_SUPPORT
 --compilation-defines=UNITASK_PARTICLESYSTEM_SUPPORT
 --compilation-defines=UNITASK_UGUI_SUPPORT
 --compilation-defines=UNITASK_WEBREQUEST_SUPPORT
+<<<<<<< HEAD
 --compilation-defines=ENABLE_VR_MODULE
 --compilation-defines=ENABLE_XR_MODULE
 --compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
+=======
+>>>>>>> Game_Dev
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_VR
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_XR
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
@@ -160,13 +169,22 @@ Library: lib_burst_generated
 --output=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/tempburstlibs/armeabi-v7a/lib_burst_generated
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.AdaptivePerformance.dll
+<<<<<<< HEAD
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll
+=======
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Core.Runtime.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.dll
+>>>>>>> Game_Dev
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Telemetry.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.InputSystem.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.VisualScripting.State.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Flow.dll
+<<<<<<< HEAD
+=======
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.Linq.dll
+>>>>>>> Game_Dev
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Core.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.Internal.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.2D.Animation.Runtime.dll
@@ -174,14 +192,24 @@ Library: lib_burst_generated
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Burst.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UnityGifDecoder.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/com.solana.unity_sdk.dll
+<<<<<<< HEAD
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.Linq.dll
+=======
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Environments.dll
+>>>>>>> Game_Dev
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.2D.SpriteShape.Runtime.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Internal.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Timeline.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll
+<<<<<<< HEAD
+=======
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.DOTween.dll
+>>>>>>> Game_Dev
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Scheduler.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/NavMeshPlus.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.2D.PixelPerfect.dll
@@ -189,7 +217,11 @@ Library: lib_burst_generated
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Analytics.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.2D.IK.Runtime.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Recorder.dll
+<<<<<<< HEAD
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll
+=======
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/MagicWebSolutions.dll
+>>>>>>> Game_Dev
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.2D.Tilemap.Extras.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Dan.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Profiling.Core.dll
@@ -198,6 +230,7 @@ Library: lib_burst_generated
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Networking.dll
+<<<<<<< HEAD
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.TextMeshPro.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Registration.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
@@ -207,6 +240,16 @@ Library: lib_burst_generated
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Recorder.Base.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.DOTween.dll
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.Addressables.dll
+=======
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Services.Core.Registration.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.Addressables.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.AdaptivePerformance.Samsung.Android.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/UniTask.TextMeshPro.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.InternalAPIEngineBridge.001.dll
+--root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.Recorder.Base.dll
+>>>>>>> Game_Dev
 --root-assembly=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll
 --assembly-folder=/Volumes/ADATA_HD710/Moonboi/MBU-SOLANA/MBU Solana/Temp/StagingArea/Data/Managed/
 --pdb-search-paths=Temp/ManagedSymbols/

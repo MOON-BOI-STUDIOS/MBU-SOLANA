@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAnimator : MonoBehaviour
 {
@@ -23,11 +24,17 @@ public class PlayerAnimator : MonoBehaviour
 
     public AudioSource mainMusic, powerUpMuisc;
     int odds;
+    // fishing scene is no combat zone 
+    public bool isNoCombatZone = false;
 
-
+    public Chests chests;
+    string curSceneName;
+    public GameObject enemies;
+    private GameObject[] childenemies;
 
     void Start()
     {
+        curSceneName = SceneManager.GetActiveScene().name;
         initialColor = GetComponent<SpriteRenderer>().color;
         _controller = _manager._controller;
         _heroAnimator = GetComponent<Animator>();
@@ -49,36 +56,51 @@ public class PlayerAnimator : MonoBehaviour
         _heroAnimator.SetBool("isRunning", _controller.isRunning);
         _heroAnimator.SetBool("isMoving", _controller.isMoving);
 
-       
-
-        if (_manager._combat.comboCounter >= _manager._combat.numberOfComboHits)
+        if(!isNoCombatZone)
         {
-            //generates a random number and sets combo counter to zero
-            odds = Random.Range(0, 10);
-            _manager._combat.comboCounter = 0;
-
-            //there is a 50-50 chance of performing north star, or the orions belt. Sets layer weight to the respective layers
-            if(odds  < 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
-            {  
-                _heroAnimator.SetLayerWeight(1, 1);
-                _heroAnimator.SetTrigger("northStar");
-                
-            }
-            if (odds >= 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
+            if (_manager._combat.comboCounter >= _manager._combat.numberOfComboHits)
             {
-                _heroAnimator.SetLayerWeight(3, 1);
-                _heroAnimator.SetTrigger("OrionsBelt");
+                //generates a random number and sets combo counter to zero
+                odds = Random.Range(0, 10);
+                _manager._combat.comboCounter = 0;
+
+                //there is a 50-50 chance of performing north star, or the orions belt. Sets layer weight to the respective layers
+                if(odds  < 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
+                {  
+                    _heroAnimator.SetLayerWeight(1, 1);
+                    _heroAnimator.SetTrigger("northStar");
+                    
+                }
+                if (odds >= 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
+                {
+                    _heroAnimator.SetLayerWeight(3, 1);
+                    _heroAnimator.SetTrigger("OrionsBelt");
+                }
             }
-            
         }
+    }
+
+    public void endofCollect()
+    {
+        chests.isPickingUP = false;
+        chests.dre.SetBool("isPickingUP", chests.isPickingUP);
+
     }
 
     //plays death sound and enables end UI
     public void Death()
     {
         audioSource.PlayOneShot(deathSound);
+<<<<<<< HEAD
         if(EndUI != null)
             EndUI.SetActive(true);
+=======
+        if (EndUI != null)
+        {
+            Time.timeScale = 0f;
+            EndUI.SetActive(true);
+        }
+>>>>>>> Game_Dev
     }
 
     //triggers through animation

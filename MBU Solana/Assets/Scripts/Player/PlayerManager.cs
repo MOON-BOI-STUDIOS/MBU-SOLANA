@@ -25,23 +25,35 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public GameObject fadeOut;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
-    public GameObject enterButton, fishButton;
+    public GameObject enterButton, fishButton, ExitButton;
 
     public Transform[] startLocation;
 
     public bool isPoweredUp = false;
 
     string curSceneName;
+<<<<<<< HEAD
     
     //Inventory Additions Array
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
 
     private IPaymentHandler _paymentHandler;
+=======
+    public GameObject enemies;
+    private GameObject[] childenemies;
+
+    //Inventory Additions Array
+    private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
+
+>>>>>>> Game_Dev
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetInt("MaxHealth", 500);
+<<<<<<< HEAD
         _paymentHandler = GetComponent<IPaymentHandler>();
+=======
+>>>>>>> Game_Dev
     }
 
     // Update is called once per frame
@@ -67,7 +79,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         }
 
 
-        if (curSceneName == "BonkArcade")
+        if (curSceneName == "BonkArcade" || curSceneName == "FishingArea" || curSceneName == "ShopInterior")
             return;
 
             //updates the health bar according to current health
@@ -135,6 +147,13 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
             Destroy(other.gameObject);
         }
+<<<<<<< HEAD
+=======
+        if(other.TryGetComponent(out ICollisiontype fishSceneCollider))
+        {
+            fishSceneCollider.callUIFunctions();
+        }
+>>>>>>> Game_Dev
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -150,7 +169,19 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             {
                 enterButton.SetActive(true);
             }
-            
+            if (collision.name == "ShopEntrance")
+            {
+                fishButton.SetActive(true);
+            }
+            if (collision.name == "ShopExit")
+            {
+                fishButton.SetActive(true);
+            }
+            if (collision.name == "FishingExit")
+            {
+                ExitButton.SetActive(true);
+            }
+
         }
     }
 
@@ -165,6 +196,18 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         {
             enterButton.SetActive(false);
         }
+        if (collision.name == "ShopEntrance")
+        {
+            fishButton.SetActive(false);
+        }
+        if (collision.name == "ShopExit")
+        {
+            fishButton.SetActive(false);
+        }
+        if (collision.name == "FishingExit")
+        {
+            ExitButton.SetActive(false);
+        }
     }
   
     //death sequence
@@ -172,8 +215,16 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     {
         _controller.enabled = false;
         _combat.enabled = false;
+<<<<<<< HEAD
         if(fadeOut != null)
             fadeOut.SetActive(true);
+=======
+        if (fadeOut != null)
+        {
+            Time.timeScale = 0f;
+            fadeOut.SetActive(true);
+        }
+>>>>>>> Game_Dev
         yield return new WaitForSeconds(1);
         //SceneManager.LoadScene(0);
     }

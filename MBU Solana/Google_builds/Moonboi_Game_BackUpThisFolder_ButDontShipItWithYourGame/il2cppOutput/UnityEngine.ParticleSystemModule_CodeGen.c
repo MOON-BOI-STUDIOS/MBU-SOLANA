@@ -106,6 +106,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[10] =
 };
 static const int32_t s_InvokerIndices[22] = 
 {
+<<<<<<< HEAD
 	9938,
 	12616,
 	10030,
@@ -128,6 +129,30 @@ static const int32_t s_InvokerIndices[22] =
 	15177,
 	15177,
 	8599,
+=======
+	9983,
+	12673,
+	10075,
+	10075,
+	5830,
+	9967,
+	977,
+	10417,
+	4551,
+	10251,
+	10251,
+	10176,
+	10176,
+	9990,
+	10243,
+	10176,
+	10251,
+	10251,
+	10176,
+	15318,
+	15318,
+	8635,
+>>>>>>> Game_Dev
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule = 

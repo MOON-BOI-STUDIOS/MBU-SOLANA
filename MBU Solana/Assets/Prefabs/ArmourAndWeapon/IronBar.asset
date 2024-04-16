@@ -15,3 +15,4 @@ MonoBehaviour:
   name: IronBar
   icon: {fileID: 21300000, guid: bca3455aa945a9048b3af46cc0293856, type: 3}
   ItemDescription: The 2nd Item in inventory
+  ItemValue: 20

@@ -18,23 +18,37 @@ IL2CPP_EXTERN_C const Il2CppMethodPointer g_Il2CppGenericAdjustorThunks[];
 IL2CPP_EXTERN_C const InvokerMethod g_Il2CppInvokerPointers[];
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[];
 IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
+<<<<<<< HEAD
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule;
+=======
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_BouncyCastle_Crypto_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Chaos_NaCl_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_DOTween_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Dan_CodeGenModule;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_MagicWebSolutions_CodeGenModule;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_NativeWebSocket_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_NavMeshPlus_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Newtonsoft_Json_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_Dex_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_Extensions_CodeGenModule;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_Gum_CodeGenModule;
+=======
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_KeyStore_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_Metaplex_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_Programs_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_Rpc_CodeGenModule;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_SessionKeys_CodeGenModule;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Solana_Unity_Wallet_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Configuration_CodeGenModule;
@@ -53,7 +67,10 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AssetBundleModule_CodeGe
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_AudioModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_CoreModule_CodeGenModule;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_DirectorModule_CodeGenModule;
+=======
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_GridModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_IMGUIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_ImageConversionModule_CodeGenModule;
@@ -75,10 +92,15 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIElementsModule_CodeGen
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIElementsNativeModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UI_CodeGenModule;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityAnalyticsModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VFXModule_CodeGenModule;
+=======
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VideoModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
@@ -104,25 +126,41 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_websocketU2DsharpU2Dlatest_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_zxing_unity_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
+<<<<<<< HEAD
 const Il2CppCodeGenModule* g_CodeGenModules[85] = 
 {
 	(&g_AssemblyU2DCSharpU2Dfirstpass_CodeGenModule),
+=======
+const Il2CppCodeGenModule* g_CodeGenModules[82] = 
+{
+>>>>>>> Game_Dev
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_BouncyCastle_Crypto_CodeGenModule),
 	(&g_Chaos_NaCl_CodeGenModule),
 	(&g_DOTween_CodeGenModule),
 	(&g_Dan_CodeGenModule),
+<<<<<<< HEAD
+=======
+	(&g_MagicWebSolutions_CodeGenModule),
+>>>>>>> Game_Dev
 	(&g_Mono_Security_CodeGenModule),
 	(&g_NativeWebSocket_CodeGenModule),
 	(&g_NavMeshPlus_CodeGenModule),
 	(&g_Newtonsoft_Json_CodeGenModule),
 	(&g_Solana_Unity_Dex_CodeGenModule),
 	(&g_Solana_Unity_Extensions_CodeGenModule),
+<<<<<<< HEAD
 	(&g_Solana_Unity_Gum_CodeGenModule),
+=======
+>>>>>>> Game_Dev
 	(&g_Solana_Unity_KeyStore_CodeGenModule),
 	(&g_Solana_Unity_Metaplex_CodeGenModule),
 	(&g_Solana_Unity_Programs_CodeGenModule),
 	(&g_Solana_Unity_Rpc_CodeGenModule),
+<<<<<<< HEAD
+=======
+	(&g_Solana_Unity_SessionKeys_CodeGenModule),
+>>>>>>> Game_Dev
 	(&g_Solana_Unity_Wallet_CodeGenModule),
 	(&g_System_CodeGenModule),
 	(&g_System_Configuration_CodeGenModule),
@@ -141,7 +179,10 @@ const Il2CppCodeGenModule* g_CodeGenModules[85] =
 	(&g_UnityEngine_AudioModule_CodeGenModule),
 	(&g_UnityEngine_CodeGenModule),
 	(&g_UnityEngine_CoreModule_CodeGenModule),
+<<<<<<< HEAD
 	(&g_UnityEngine_DirectorModule_CodeGenModule),
+=======
+>>>>>>> Game_Dev
 	(&g_UnityEngine_GridModule_CodeGenModule),
 	(&g_UnityEngine_IMGUIModule_CodeGenModule),
 	(&g_UnityEngine_ImageConversionModule_CodeGenModule),
@@ -163,10 +204,15 @@ const Il2CppCodeGenModule* g_CodeGenModules[85] =
 	(&g_UnityEngine_UIElementsNativeModule_CodeGenModule),
 	(&g_UnityEngine_UIModule_CodeGenModule),
 	(&g_UnityEngine_UI_CodeGenModule),
+<<<<<<< HEAD
 	(&g_UnityEngine_UnityAnalyticsModule_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestModule_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule),
 	(&g_UnityEngine_VFXModule_CodeGenModule),
+=======
+	(&g_UnityEngine_UnityWebRequestModule_CodeGenModule),
+	(&g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule),
+>>>>>>> Game_Dev
 	(&g_UnityEngine_VRModule_CodeGenModule),
 	(&g_UnityEngine_VideoModule_CodeGenModule),
 	(&g_UnityEngine_XRModule_CodeGenModule),
@@ -197,6 +243,7 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	33,
 	g_ReversePInvokeWrapperPointers,
+<<<<<<< HEAD
 	97082,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
@@ -209,6 +256,20 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	0,
 	NULL,
 	85,
+=======
+	97114,
+	g_Il2CppGenericMethodPointers,
+	g_Il2CppGenericAdjustorThunks,
+	20089,
+	g_Il2CppInvokerPointers,
+	3341,
+	g_UnresolvedVirtualMethodPointers,
+	746,
+	g_Il2CppInteropData,
+	0,
+	NULL,
+	82,
+>>>>>>> Game_Dev
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

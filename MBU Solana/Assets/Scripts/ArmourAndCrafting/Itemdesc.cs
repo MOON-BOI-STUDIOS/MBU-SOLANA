@@ -8,10 +8,22 @@ public class Itemdesc : MonoBehaviour
 {
     public TMP_Text ItemName;
     public TMP_Text ItemDescription;
+<<<<<<< HEAD
 
     public void Setup(string _itemName, string _itemDescription)
     {
         ItemName.text = _itemName;
         ItemDescription.text = _itemDescription;
+=======
+    public TMP_Text ItemValue;
+    public TMP_Text NumberOfItems;
+
+    public void Setup(string _itemName, string _itemDescription,int _itemValue, int _numberOfItems)
+    {
+        ItemName.text = _itemName;
+        ItemDescription.text = _itemDescription;
+        ItemValue.text = "Value: " + _itemValue.ToString();
+        NumberOfItems.text = "Number of Bait: " + _numberOfItems.ToString();
+>>>>>>> Game_Dev
     }
 }

@@ -31740,7 +31740,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ParameterEnumerator_FindParameter_mB2688
 		RuntimeObject* L_3 = ___instance0;
 		NullCheck(L_2);
 		bool L_4;
+<<<<<<< HEAD
 		L_4 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_2, L_3);
+=======
+		L_4 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_2, L_3);
+>>>>>>> Game_Dev
 		if (L_4)
 		{
 			goto IL_001e;
@@ -34870,7 +34874,11 @@ IL_00ea_1:
 				InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_40 = V_6;
 				NullCheck(L_39);
 				bool L_41;
+<<<<<<< HEAD
 				L_41 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_39, L_40);
+=======
+				L_41 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_39, L_40);
+>>>>>>> Game_Dev
 				if (!L_41)
 				{
 					goto IL_02bf_1;

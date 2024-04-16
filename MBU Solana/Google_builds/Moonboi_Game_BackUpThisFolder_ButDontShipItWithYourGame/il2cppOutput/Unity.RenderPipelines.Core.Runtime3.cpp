@@ -25788,7 +25788,11 @@ IL_0021:
 		Type_t* L_7 = ___type0;
 		NullCheck(L_7);
 		Type_t* L_8;
+<<<<<<< HEAD
 		L_8 = VirtualFuncInvoker0< Type_t* >::Invoke(116 /* System.Type System.Type::get_BaseType() */, L_7);
+=======
+		L_8 = VirtualFuncInvoker0< Type_t* >::Invoke(117 /* System.Type System.Type::get_BaseType() */, L_7);
+>>>>>>> Game_Dev
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		bool L_9;
 		L_9 = Type_op_Inequality_m83209C7BB3C05DFBEA3B6199B0BEFE8037301172(L_8, (Type_t*)NULL, NULL);
@@ -25801,7 +25805,11 @@ IL_0021:
 		Type_t* L_10 = ___type0;
 		NullCheck(L_10);
 		Type_t* L_11;
+<<<<<<< HEAD
 		L_11 = VirtualFuncInvoker0< Type_t* >::Invoke(116 /* System.Type System.Type::get_BaseType() */, L_10);
+=======
+		L_11 = VirtualFuncInvoker0< Type_t* >::Invoke(117 /* System.Type System.Type::get_BaseType() */, L_10);
+>>>>>>> Game_Dev
 		bool L_12;
 		L_12 = VolumeParameter_IsObjectParameter_m76173F664C245D5F956B1F00535CF4CBFA422085(L_11, NULL);
 		return L_12;

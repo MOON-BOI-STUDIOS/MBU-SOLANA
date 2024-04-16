@@ -148,6 +148,11 @@ struct Dictionary_2_tEE29709209131A38690B97B6DD5BC743172DB7CF;
 struct Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710;
 // System.EventHandler`1<Newtonsoft.Json.Serialization.ErrorEventArgs>
 struct EventHandler_1_t69462DFC2F2C8D7576BEE9D1F5BB6C2E55B2C380;
+<<<<<<< HEAD
+=======
+// System.EventHandler`1<System.Int32Enum>
+struct EventHandler_1_t6F30DB27E0B3801817D5C807D1A8FEA806A59904;
+>>>>>>> Game_Dev
 // System.EventHandler`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionEvent>
 struct EventHandler_1_t9AC229760B9490681DC11804AD73AD6526CBD64B;
 // System.EventHandler`1<System.Net.WebSockets.WebSocketState>
@@ -588,6 +593,11 @@ struct RpcBatchReqRespItemU5BU5D_t307C155C2CFCADBDFD52497036572A9C9039D994;
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // System.String[]
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+<<<<<<< HEAD
+=======
+// Solana.Unity.Rpc.Core.Sockets.SubscriptionState[]
+struct SubscriptionStateU5BU5D_tD5642E160CB0480C4463FAAEF94CC54F3FD5F1F9;
+>>>>>>> Game_Dev
 // System.Type[]
 struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
 // Solana.Unity.Rpc.Models.AccountInfo
@@ -786,6 +796,11 @@ struct StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184;
 struct StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8;
 // Solana.Unity.Rpc.Core.Sockets.SubscriptionState
 struct SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8;
+<<<<<<< HEAD
+=======
+// System.Threading.SynchronizationContext
+struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0;
+>>>>>>> Game_Dev
 // System.Threading.Tasks.Task
 struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572;
 // System.Threading.Tasks.TaskFactory
@@ -876,6 +891,10 @@ IL2CPP_EXTERN_C RuntimeClass* Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_
 IL2CPP_EXTERN_C RuntimeClass* Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF_il2cpp_TypeInfo_var;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C RuntimeClass* EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367_il2cpp_TypeInfo_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Func_2_tD53C71872FEC0F6FE4BBE8E7C6EEC170F58FBE25_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Func_2_tE603543F66BDAF779A81A10AE951A644BD01EF47_il2cpp_TypeInfo_var;
@@ -918,6 +937,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral08599CD26BDB223CF7160B35110DAD1600D509C9
 IL2CPP_EXTERN_C String_t* _stringLiteral085DE133502B8D9E0EF8A3063B820E73DD165349;
 IL2CPP_EXTERN_C String_t* _stringLiteral0CA6AE92B119B326F09462BFAD4E9201A9DB3E2C;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D01CB6221815947B0E1252EF1C2FE98F52F1BBF;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C String_t* _stringLiteral0E28AC62D3F4A8A11B927360940A2CB6EAEB0670;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C String_t* _stringLiteral11D76B6245CE9FAD25E8C0CEEDA983CD89AEC3AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral1329FEF53F6ADAC307187ACB53EC8E48469D7736;
 IL2CPP_EXTERN_C String_t* _stringLiteral15B1AFAD1A27DAB9BB1803B27BA0389F11A20ADE;
@@ -949,6 +972,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral39EBB237EEE03A3A627F41EAECBBA8477114C15D
 IL2CPP_EXTERN_C String_t* _stringLiteral3CE613F2AC6EBBD3A11C32555FDDF0E8D4739BEA;
 IL2CPP_EXTERN_C String_t* _stringLiteral3ED954BB89B139078727E8C548F01DC4CB8E55DC;
 IL2CPP_EXTERN_C String_t* _stringLiteral3F51355629FCFFD1C4685921BBA4A34B9E69FDC3;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C String_t* _stringLiteral40FAF2AC24FCBD20EE154728F86623970EBC5AF2;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C String_t* _stringLiteral4225F85E209C40A08F3FEFFE1B7D2CF19DF7B321;
 IL2CPP_EXTERN_C String_t* _stringLiteral4266BBDF9118336AF48A89884F82212FAB8BDF7C;
 IL2CPP_EXTERN_C String_t* _stringLiteral43187C90BBB5DFB063A95733C9BD65ECD25A2E84;
@@ -968,6 +995,10 @@ IL2CPP_EXTERN_C String_t* _stringLiteral5601A0ED74C235668EBD9B6850B0C73C8B338118
 IL2CPP_EXTERN_C String_t* _stringLiteral5A72C71658002DD5F6A7ECF8B8537C651731580F;
 IL2CPP_EXTERN_C String_t* _stringLiteral5B3CEC039DB1FB8F016367E77F640598C6181595;
 IL2CPP_EXTERN_C String_t* _stringLiteral5C7156086DAFB6F9131443ADEC5237230492AAC2;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C String_t* _stringLiteral5C971D0A28CA2E959259FBB918378BDC51C3317F;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C String_t* _stringLiteral5C9771828DD65C6A4C0458D883FDC4C91CF2AF2D;
 IL2CPP_EXTERN_C String_t* _stringLiteral603D3C50BFCB5F997B4C2F42F4CEAFD65E97F8D7;
 IL2CPP_EXTERN_C String_t* _stringLiteral623B0D4260C55C0EBA35810CADAE2E3B9C68BD15;
@@ -1349,6 +1380,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSendTr
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSendTransactionAsyncU3Ed__128_tC13638C7783DA3B5EF3D1C5811168354A3B09F1D_m56DCA973BD05913A9732F966B907679BA5E1E063_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSimulateTransactionAsyncU3Ed__135_tE70F7773D246674544A768B60A95D3942DE3D2DD_mF064C4C96CD673B8EAC981CCCA9B4A8E1837CDD5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSimulateTransactionAsyncU3Ed__136_tA679BD8D7604C49DD2ACC56721C37B596A296537_m777401CF41F275A118A163662CF9CF0F61E25045_RuntimeMethod_var;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C_m8AB43D90D4DB108C2D2D198663FE77B385155043_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__17_t2014700B3C86C1FFF43D72EF78C0F1FE26EBECC7_mBF60557B20423C6050E96B8943E661ED3BC75ACC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__19_t8BCB70D0C925F29CAAA652E80F6B98A5EC2B7665_m295925690AAAAA14F21D221ED52A0E00C8698D14_RuntimeMethod_var;
@@ -1358,6 +1390,17 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscr
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__25_t9B3BA9D079D3BFA70F27807A7CC5E35F9D6CFD29_m21D659931A9BB9BAAA0C07E9EF4856D44F0EB8B4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__15_t36380276A14B8A53DFA76552B1362D4885F977ED_mB59D2A8D923A3B855FA02B1D04E55B5F92D5C264_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126_m33D52AA72FDD1A01D76679E3962945B03A49B173_RuntimeMethod_var;
+=======
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0_m0CFF194B670DD0FF3BD077E2C4DDCCCFA332E9BC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154_m64EEDC902F8D68CD2B0EE7CCDBCF0253FD1F280D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504_m4112119EE6555F6508E4DE96F67D0500DD78CA71_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383_m7A77D8EABA6A60B98053026D03848CF3030BDF07_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA_m266C338998913C0E014A98B0095A36B909359C11_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D_mEDB05BB6AC75A02080AFF3C4AE43D94535346CA4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908_mBC57A02A3C2BA6F9CE88321D9671F66F9E1FE66A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146_m0CF26A2BDBC91225A21C91E79064D29820D4F556_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846_m1958971BE9E949942D4B8AE68C77A86B57D77B6B_RuntimeMethod_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m02831A0C96C0A619D8EA03A47C1C216E905458F3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m0E8128E1367F584B3E8DFCE74D862DDD89E53927_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m0F594349B90DC9FEF89EE18E96ABE400A6E6CD5E_RuntimeMethod_var;
@@ -1400,7 +1443,12 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mDAB28704
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mEDE9EE24C5C9AF793B584DCB35B1A4F6696DDA1A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mFB6BEFE6ADE3CCE8C97702357008156ECDFF9C66_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mFDEA3A562933FD1423C8076DD07E08F8C214C5DC_RuntimeMethod_var;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41_mE2E607B7870B156443869B9C121FD794D176EE4B_RuntimeMethod_var;
+=======
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F_m977070F1B01231063B9D280E403A2A3F5BF86547_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncVoidMethodBuilder_Start_TisU3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF_mA783C0B92F98DA192134743A93F241447A48B459_RuntimeMethod_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m2C537D1394F1CE67DA2D1F9E7D900BFB6D8CC486_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_m94F343CB1BF817696D368306B39529BEBCC8552B_RuntimeMethod_var;
@@ -1513,6 +1561,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* SolanaRpcClient_SendRequestAsync_TisUInt64_
 IL2CPP_EXTERN_C const RuntimeMethod* SolanaRpcClient_SendRequestAsync_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_mA16C0ADE519DE2D6910F657743B1ACDC93DCE693_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SolanaRpcClient_SendRequestAsync_TisVoteAccounts_t5BDC5658FE50CF9FA67B70227DE61B07AB9E164D_m66EBF0F2E70ED96B69A83FF9194636DB071D7EE2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SolanaStreamingRpcClient_GetUnsubscribeMethodName_mE60F9A310E343292555DB5B00131D80B9D34AEDB_RuntimeMethod_var;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C const RuntimeMethod* SolanaStreamingRpcClient_U3C_ctorU3Eb__4_0_mD65F2BF7DBEE69B303B866E720520B6478F4C968_RuntimeMethod_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C const RuntimeMethod* Span_1_ToArray_mF415F39478D842BDA5A27003F3B9D3903DCE24BF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_GetResult_m07B69DA5865FD41C20FCF083929ABB721AFF06C8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_GetResult_m0B0F2B2481823B192E438D0EA32F04831DB6F4A9_RuntimeMethod_var;
@@ -3299,6 +3351,7 @@ struct SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8  : public Run
 	int32_t ___U3CChannelU3Ek__BackingField_2;
 	// Solana.Unity.Rpc.Core.Sockets.SubscriptionStatus Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<State>k__BackingField
 	int32_t ___U3CStateU3Ek__BackingField_3;
+<<<<<<< HEAD
 	// System.String Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<LastError>k__BackingField
 	String_t* ___U3CLastErrorU3Ek__BackingField_4;
 	// System.String Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<LastCode>k__BackingField
@@ -3307,6 +3360,18 @@ struct SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8  : public Run
 	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___U3CAdditionalParametersU3Ek__BackingField_6;
 	// System.EventHandler`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionEvent> Solana.Unity.Rpc.Core.Sockets.SubscriptionState::SubscriptionChanged
 	EventHandler_1_t9AC229760B9490681DC11804AD73AD6526CBD64B* ___SubscriptionChanged_7;
+=======
+	// Solana.Unity.Rpc.Messages.JsonRpcRequest Solana.Unity.Rpc.Core.Sockets.SubscriptionState::Request
+	JsonRpcRequest_t65BD1C3872CC7A9681196B11DFEE7018121E4E18* ___Request_4;
+	// System.String Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<LastError>k__BackingField
+	String_t* ___U3CLastErrorU3Ek__BackingField_5;
+	// System.String Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<LastCode>k__BackingField
+	String_t* ___U3CLastCodeU3Ek__BackingField_6;
+	// System.Collections.Generic.List`1<System.Object> Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<AdditionalParameters>k__BackingField
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___U3CAdditionalParametersU3Ek__BackingField_7;
+	// System.EventHandler`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionEvent> Solana.Unity.Rpc.Core.Sockets.SubscriptionState::SubscriptionChanged
+	EventHandler_1_t9AC229760B9490681DC11804AD73AD6526CBD64B* ___SubscriptionChanged_8;
+>>>>>>> Game_Dev
 };
 
 // System.Threading.Tasks.Task
@@ -4755,10 +4820,19 @@ struct SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512  : pub
 {
 	// Solana.Unity.Rpc.Core.IdGenerator Solana.Unity.Rpc.SolanaStreamingRpcClient::_idGenerator
 	IdGenerator_tA4BCDB7CE02BF33DF60A42BBFAA62F59FE740D6B* ____idGenerator_7;
+<<<<<<< HEAD
 	// System.Collections.Generic.Dictionary`2<System.Int32,Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::unconfirmedRequests
 	Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* ___unconfirmedRequests_8;
 	// System.Collections.Generic.Dictionary`2<System.Int32,Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::confirmedSubscriptions
 	Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* ___confirmedSubscriptions_9;
+=======
+	// System.Collections.Generic.Dictionary`2<System.Int32,Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::_unconfirmedRequests
+	Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* ____unconfirmedRequests_8;
+	// System.Collections.Generic.Dictionary`2<System.Int32,Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::_confirmedSubscriptions
+	Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* ____confirmedSubscriptions_9;
+	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaStreamingRpcClient::_defaultCommitment
+	int32_t ____defaultCommitment_10;
+>>>>>>> Game_Dev
 };
 
 // System.IO.Stream
@@ -4806,6 +4880,26 @@ struct StringEnumConverter_t7C66875DF7AB0719190AEEF8924A99F49C480184  : public J
 	bool ___U3CAllowIntegerValuesU3Ek__BackingField_1;
 };
 
+<<<<<<< HEAD
+=======
+// System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 
+{
+	// System.Threading.Tasks.Task System.Runtime.CompilerServices.TaskAwaiter::m_task
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_marshaled_pinvoke
+{
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_marshaled_com
+{
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
+};
+
+>>>>>>> Game_Dev
 // System.IO.TextReader
 struct TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7  : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE
 {
@@ -5599,6 +5693,34 @@ struct Nullable_1_tC3E8E254B9DCF808C08AFA1FC2151C2BC0040F3A
 	StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___value_1;
 };
 
+<<<<<<< HEAD
+=======
+// System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+struct AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D 
+{
+	// System.Threading.SynchronizationContext System.Runtime.CompilerServices.AsyncVoidMethodBuilder::m_synchronizationContext
+	SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0* ___m_synchronizationContext_0;
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncVoidMethodBuilder::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task System.Runtime.CompilerServices.AsyncVoidMethodBuilder::m_task
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_2;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+struct AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshaled_pinvoke
+{
+	SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0* ___m_synchronizationContext_0;
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_pinvoke ___m_coreState_1;
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_2;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.AsyncVoidMethodBuilder
+struct AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D_marshaled_com
+{
+	SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0* ___m_synchronizationContext_0;
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_com ___m_coreState_1;
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_2;
+};
+
+>>>>>>> Game_Dev
 // System.Delegate
 struct Delegate_t  : public RuntimeObject
 {
@@ -7167,8 +7289,15 @@ struct U3CGetTransactionAsyncU3Ed__41_tAE18BB404968E0A0C1544FDACFB431BD5012EC10
 	String_t* ___signature_3;
 	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaRpcClient/<GetTransactionAsync>d__41::commitment
 	int32_t ___commitment_4;
+<<<<<<< HEAD
 	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Models.TransactionMetaSlotInfo>> Solana.Unity.Rpc.SolanaRpcClient/<GetTransactionAsync>d__41::<>u__1
 	TaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9 ___U3CU3Eu__1_5;
+=======
+	// System.Int32 Solana.Unity.Rpc.SolanaRpcClient/<GetTransactionAsync>d__41::maxSupportedTransactionVersion
+	int32_t ___maxSupportedTransactionVersion_5;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Models.TransactionMetaSlotInfo>> Solana.Unity.Rpc.SolanaRpcClient/<GetTransactionAsync>d__41::<>u__1
+	TaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9 ___U3CU3Eu__1_6;
+>>>>>>> Game_Dev
 };
 
 // Solana.Unity.Rpc.SolanaRpcClient/<GetTransactionCountAsync>d__117
@@ -7363,6 +7492,7 @@ struct U3CSimulateTransactionAsyncU3Ed__136_tA679BD8D7604C49DD2ACC56721C37B596A2
 	TaskAwaiter_1_tC28BF2F2B211833AD322964D101EC1C7C3D53D1F ___U3CU3Eu__1_8;
 };
 
+<<<<<<< HEAD
 // Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__29
 struct U3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126 
 {
@@ -7524,6 +7654,188 @@ struct U3CSubscribeTokenAccountAsyncU3Ed__15_t36380276A14B8A53DFA76552B1362D4885
 	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_6;
 };
 
+=======
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33
+struct U3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.Messages.JsonRpcRequest Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33::msg
+	JsonRpcRequest_t65BD1C3872CC7A9681196B11DFEE7018121E4E18* ___msg_2;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_3;
+	// Solana.Unity.Rpc.Core.Sockets.SubscriptionState Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33::sub
+	SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* ___sub_4;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable/ConfiguredTaskAwaiter Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33::<>u__1
+	ConfiguredTaskAwaiter_t6D4C5E6B82017ED33DAFA1EFC33B0EFBE3137618 ___U3CU3Eu__1_5;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17
+struct U3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17::commitment
+	int32_t ___commitment_2;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_3;
+	// System.String Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17::pubkey
+	String_t* ___pubkey_4;
+	// System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17::callback
+	Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87* ___callback_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17::<>u__1
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_6;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21
+struct U3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21::commitment
+	int32_t ___commitment_2;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_3;
+	// System.String Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21::pubkey
+	String_t* ___pubkey_4;
+	// System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LogInfo>> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21::callback
+	Action_2_t653362422EE7F2FEEEEB70350112CEA9EEA62A4D* ___callback_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21::<>u__1
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_6;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23
+struct U3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23::commitment
+	int32_t ___commitment_2;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_3;
+	// Solana.Unity.Rpc.Types.LogsSubscriptionType Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23::subscriptionType
+	int32_t ___subscriptionType_4;
+	// System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LogInfo>> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23::callback
+	Action_2_t653362422EE7F2FEEEEB70350112CEA9EEA62A4D* ___callback_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23::<>u__1
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_6;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27
+struct U3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27::commitment
+	int32_t ___commitment_2;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_3;
+	// System.String Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27::programPubkey
+	String_t* ___programPubkey_4;
+	// System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountKeyPair>> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27::callback
+	Action_2_tC6F56918FF91C41456211B6D1CF527E7353FF116* ___callback_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27::<>u__1
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_6;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeRootAsync>d__31
+struct U3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeRootAsync>d__31::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeRootAsync>d__31::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeRootAsync>d__31::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_2;
+	// System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,System.Int32> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeRootAsync>d__31::callback
+	Action_2_tA1D48E4FA7C6170A4932F95A1FDDC22FA92309BD* ___callback_3;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeRootAsync>d__31::<>u__1
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_4;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25
+struct U3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25::commitment
+	int32_t ___commitment_2;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_3;
+	// System.String Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25::transactionSignature
+	String_t* ___transactionSignature_4;
+	// System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.ErrorResult>> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25::callback
+	Action_2_tDF11F4653CEA6C19DEA1A5FED8920E3358C4E28A* ___callback_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25::<>u__1
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_6;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSlotInfoAsync>d__29
+struct U3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSlotInfoAsync>d__29::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSlotInfoAsync>d__29::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSlotInfoAsync>d__29::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_2;
+	// System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Models.SlotInfo> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSlotInfoAsync>d__29::callback
+	Action_2_t0F9C98E8145687CDABF5E55E0104F3145B52A446* ___callback_3;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSlotInfoAsync>d__29::<>u__1
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_4;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19
+struct U3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19::<>t__builder
+	AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19::commitment
+	int32_t ___commitment_2;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_3;
+	// System.String Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19::pubkey
+	String_t* ___pubkey_4;
+	// System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.TokenAccountInfo>> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19::callback
+	Action_2_t7CDD50BC9CCD7EFE99205FCBE45F297C4C38DE3D* ___callback_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19::<>u__1
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_6;
+};
+
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5
+struct U3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncVoidMethodBuilder Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5::<>t__builder
+	AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_2;
+	// System.Runtime.CompilerServices.TaskAwaiter Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5::<>u__1
+	TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 ___U3CU3Eu__1_3;
+	// Solana.Unity.Rpc.Core.Sockets.SubscriptionState[] Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5::<>7__wrap1
+	SubscriptionStateU5BU5D_tD5642E160CB0480C4463FAAEF94CC54F3FD5F1F9* ___U3CU3E7__wrap1_4;
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5::<>7__wrap2
+	int32_t ___U3CU3E7__wrap2_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5::<>u__2
+	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__2_6;
+};
+
+>>>>>>> Game_Dev
 // System.Action`2<System.Collections.Generic.List`1<Solana.Unity.Rpc.Models.AccountKeyPair>,System.Exception>
 struct Action_2_t0899EDCE031454CDB8ECC5D0068242DED6A75A8B  : public MulticastDelegate_t
 {
@@ -7619,6 +7931,14 @@ struct Action_2_t57B1A47CABF72F4FED55A2850F32A9B36516C5A2  : public MulticastDel
 {
 };
 
+<<<<<<< HEAD
+=======
+// System.EventHandler`1<System.Net.WebSockets.WebSocketState>
+struct EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367  : public MulticastDelegate_t
+{
+};
+
+>>>>>>> Game_Dev
 // System.Func`2<Solana.Unity.Rpc.Models.MemCmp,System.Collections.Generic.Dictionary`2<System.String,System.Object>>
 struct Func_2_tD53C71872FEC0F6FE4BBE8E7C6EEC170F58FBE25  : public MulticastDelegate_t
 {
@@ -7643,6 +7963,7 @@ struct BatchRequestException_tFDC0797A90B2EFC1E3D8D408A0F420F889DA6D0E  : public
 	RequestResult_1_tD94131A28BFA59E0E30916D6FF0136623D3E618B* ___RpcResult_18;
 };
 
+<<<<<<< HEAD
 // Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__31
 struct U3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41 
 {
@@ -7655,6 +7976,20 @@ struct U3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41
 	// Solana.Unity.Rpc.Core.Sockets.SubscriptionState Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__31::subscription
 	SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* ___subscription_3;
 	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__31::<>u__1
+=======
+// Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__35
+struct U3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F 
+{
+	// System.Int32 Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__35::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__35::<>t__builder
+	AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06 ___U3CU3Et__builder_1;
+	// Solana.Unity.Rpc.SolanaStreamingRpcClient Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__35::<>4__this
+	SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* ___U3CU3E4__this_2;
+	// Solana.Unity.Rpc.Core.Sockets.SubscriptionState Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__35::subscription
+	SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* ___subscription_3;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__35::<>u__1
+>>>>>>> Game_Dev
 	ConfiguredTaskAwaiter_t80D3D0A87C805627FB62690A0D6CBB84CD35F0ED ___U3CU3Eu__1_4;
 };
 
@@ -8131,6 +8466,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCo
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CSimulateTransactionAsyncU3Ed__136_tA679BD8D7604C49DD2ACC56721C37B596A296537_m63B2660D86ABB0B5F94496CF9914F9FECCCC0B3A_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CSimulateTransactionAsyncU3Ed__136_tA679BD8D7604C49DD2ACC56721C37B596A296537* ___stateMachine1, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m92E9AB321FBD7147CA109C822D99C8B0610C27B7_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, const RuntimeMethod* method) ;
+<<<<<<< HEAD
+=======
+// System.Void System.EventHandler`1<System.Int32Enum>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventHandler_1__ctor_m12499096D6B81604F6935FFC1AE5E0C042385344_gshared (EventHandler_1_t6F30DB27E0B3801817D5C807D1A8FEA806A59904* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncVoidMethodBuilder_Start_TisU3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF_mA783C0B92F98DA192134743A93F241447A48B459_gshared (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, U3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF* ___stateMachine0, const RuntimeMethod* method) ;
+>>>>>>> Game_Dev
 // System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,System.Object>::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tE92C1AC40A104A179B94F8A013728FD9314CFBD3 Dictionary_2_GetEnumerator_m3F1620145BA0815B7C7CD648EF054558AA26556A_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.Int32,System.Object>::Dispose()
@@ -8165,6 +8507,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* JsonRpcStreamRespo
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t JsonRpcStreamResponse_1_get_Subscription_m815E95AFCF686A0A05DA41F1A61DC4B876DDC6E5_gshared_inline (JsonRpcStreamResponse_1_tC59D69BFC63CD74EBE7CD34D39C06046AAB72E8B* __this, const RuntimeMethod* method) ;
 // T Solana.Unity.Rpc.Messages.JsonRpcStreamResponse`1<System.Int32>::get_Result()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t JsonRpcStreamResponse_1_get_Result_mD9E475E8B2840332565276CD4546C0D7FB673DBE_gshared_inline (JsonRpcStreamResponse_1_t9EAC6254EB49C0313316AE59F5F64DF71AB11465* __this, const RuntimeMethod* method) ;
+<<<<<<< HEAD
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__13>(TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C_mC443645A86103807FE1691BA3FFAF1A782156D5F_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C* ___stateMachine0, const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__15>(TStateMachine&)
@@ -8185,6 +8528,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSub
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126_m8935BB61C3E4C6B147367ABC7B6D41D0F86A74DE_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126* ___stateMachine0, const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__31>(TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41_mE2E607B7870B156443869B9C121FD794D176EE4B_gshared (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, U3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41* ___stateMachine0, const RuntimeMethod* method) ;
+=======
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0_mA42EEEE534954CFDBD62811ADE7AB1079F2A3ED2_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146_m08EE161AF2063EC04DEFF9F88EEFE14200A81A84_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154_m64B765DA33B688101536A078E28925D578CA37CE_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504_m0F0E60FFE2235770DBD5C8CDB890EE42A53721BE_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D_mF2C2459F63181AAC59A6A8E4CA2B51CE861CBC83_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383_m8327C9AE14AE5D4E9DA6BDB3AB54F2E8A23E9060_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSlotInfoAsync>d__29>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908_mC990341CC77B5BED9AE656BB637EC50BC5F2CF7C_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeRootAsync>d__31>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA_mC1A9E92761D3C7823D7EA6B9EED42C8CF6C590F6_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846_m56C8E2B13B61A8CE9F726DF619991002AB59F57E_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__35>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F_m977070F1B01231063B9D280E403A2A3F5BF86547_gshared (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, U3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F* ___stateMachine0, const RuntimeMethod* method) ;
+>>>>>>> Game_Dev
 // System.Span`1<T> System.Span`1<System.Byte>::Slice(System.Int32,System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305 Span_1_Slice_m9D8BA8245B8DC9BFB4A4164759CBAAEAD1318CD6_gshared_inline (Span_1_tDADAC65069DFE6B57C458109115ECD795ED39305* __this, int32_t ___start0, int32_t ___length1, const RuntimeMethod* method) ;
 // System.Void System.Span`1<System.Byte>::.ctor(T&,System.Int32)
@@ -8891,8 +9256,13 @@ inline void AsyncTaskMethodBuilder_1_Start_TisU3CGetConfirmedTransactionAsyncU3E
 {
 	((  void (*) (AsyncTaskMethodBuilder_1_t1B869E91896D653BDF655F52B4EB76733EAE2B47*, U3CGetConfirmedTransactionAsyncU3Ed__42_tB0DE46DE2C51D415D2A3790CA92458009330018B*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CGetConfirmedTransactionAsyncU3Ed__42_tB0DE46DE2C51D415D2A3790CA92458009330018B_mCBB36C98B6984E0A4E508E9A37B7755DD9C10E66_gshared)(__this, ___stateMachine0, method);
 }
+<<<<<<< HEAD
 // System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Models.TransactionMetaSlotInfo>> Solana.Unity.Rpc.SolanaRpcClient::GetTransactionAsync(System.String,Solana.Unity.Rpc.Types.Commitment)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* SolanaRpcClient_GetTransactionAsync_m031450661BFDD82AAC3773A2F57D7F7559C830C2 (SolanaRpcClient_t60F714E76FF8B6FCC9B554A596FC12CAEBD25CD9* __this, String_t* ___signature0, int32_t ___commitment1, const RuntimeMethod* method) ;
+=======
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Models.TransactionMetaSlotInfo>> Solana.Unity.Rpc.SolanaRpcClient::GetTransactionAsync(System.String,Solana.Unity.Rpc.Types.Commitment,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* SolanaRpcClient_GetTransactionAsync_m261C574A588F6C97E1B90340B7EADF5B227CED60 (SolanaRpcClient_t60F714E76FF8B6FCC9B554A596FC12CAEBD25CD9* __this, String_t* ___signature0, int32_t ___commitment1, int32_t ___maxSupportedTransactionVersion2, const RuntimeMethod* method) ;
+>>>>>>> Game_Dev
 // TResult System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Models.TransactionMetaSlotInfo>>::get_Result()
 inline RequestResult_1_t12FCD7327E9DC7D57CFEDB628E29CE15755E702E* Task_1_get_Result_mE5C50132DA2D5642EC67C3FF5D5719FA800C4AED (Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* __this, const RuntimeMethod* method)
 {
@@ -11718,6 +12088,23 @@ inline void Dictionary_2__ctor_mF843E5EF4CE95C48BB228B67466B19C789636897 (Dictio
 }
 // System.Void Solana.Unity.Rpc.Core.Sockets.StreamingRpcClient::.ctor(System.String,System.Object,Solana.Unity.Rpc.Core.Sockets.IWebSocket,System.Net.WebSockets.ClientWebSocket)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamingRpcClient__ctor_m92334700F27C9E8E592254F836FEB31B333787CA (StreamingRpcClient_tF1AA53F9E1C8BE7E6C04867CC4ECB430BDC16A6C* __this, String_t* ___url0, RuntimeObject* ___logger1, RuntimeObject* ___socket2, ClientWebSocket_tCA318357FEA5850DFE2109A0139A57F152E0D71F* ___clientWebSocket3, const RuntimeMethod* method) ;
+<<<<<<< HEAD
+=======
+// System.Void System.EventHandler`1<System.Net.WebSockets.WebSocketState>::.ctor(System.Object,System.IntPtr)
+inline void EventHandler_1__ctor_mC7195F6764CA7F64DF609DD0F2291FCF084902A0 (EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	((  void (*) (EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367*, RuntimeObject*, intptr_t, const RuntimeMethod*))EventHandler_1__ctor_m12499096D6B81604F6935FFC1AE5E0C042385344_gshared)(__this, ___object0, ___method1, method);
+}
+// System.Void Solana.Unity.Rpc.Core.Sockets.StreamingRpcClient::add_ConnectionStateChangedEvent(System.EventHandler`1<System.Net.WebSockets.WebSocketState>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamingRpcClient_add_ConnectionStateChangedEvent_mABEF4D1BF8D0A59D11FC0A421FE26B1CE2FD359E (StreamingRpcClient_tF1AA53F9E1C8BE7E6C04867CC4ECB430BDC16A6C* __this, EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367* ___value0, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.AsyncVoidMethodBuilder System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D AsyncVoidMethodBuilder_Create_m13D0B23DD350C14035918384E10AF641E6B9EE67 (const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<TryReconnect>d__5>(TStateMachine&)
+inline void AsyncVoidMethodBuilder_Start_TisU3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF_mA783C0B92F98DA192134743A93F241447A48B459 (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* __this, U3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D*, U3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF*, const RuntimeMethod*))AsyncVoidMethodBuilder_Start_TisU3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF_mA783C0B92F98DA192134743A93F241447A48B459_gshared)(__this, ___stateMachine0, method);
+}
+>>>>>>> Game_Dev
 // System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Int32,Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::GetEnumerator()
 inline Enumerator_t20C45A6D6955343E82C0D182B4D1AB6B7ABFE1DB Dictionary_2_GetEnumerator_mF3AB816691F71935E2420D5DB4EDB5757F805136 (Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* __this, const RuntimeMethod* method)
 {
@@ -11910,10 +12297,17 @@ inline AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 AsyncT
 {
 	return ((  AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9 (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
 }
+<<<<<<< HEAD
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__13>(TStateMachine&)
 inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C_m8AB43D90D4DB108C2D2D198663FE77B385155043 (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C* ___stateMachine0, const RuntimeMethod* method)
 {
 	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C_mC443645A86103807FE1691BA3FFAF1A782156D5F_gshared)(__this, ___stateMachine0, method);
+=======
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeAccountInfoAsync>d__17>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0_m0CFF194B670DD0FF3BD077E2C4DDCCCFA332E9BC (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0_mA42EEEE534954CFDBD62811ADE7AB1079F2A3ED2_gshared)(__this, ___stateMachine0, method);
+>>>>>>> Game_Dev
 }
 // System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::get_Task()
 inline Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, const RuntimeMethod* method)
@@ -11927,6 +12321,7 @@ inline SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* Task_1_get_R
 {
 	return ((  SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* (*) (Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, const RuntimeMethod*))Task_1_get_Result_m6897AA7D4A583F9E81EC01C1BF788372D64C5A26_gshared)(__this, method);
 }
+<<<<<<< HEAD
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__15>(TStateMachine&)
 inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__15_t36380276A14B8A53DFA76552B1362D4885F977ED_mB59D2A8D923A3B855FA02B1D04E55B5F92D5C264 (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeTokenAccountAsyncU3Ed__15_t36380276A14B8A53DFA76552B1362D4885F977ED* ___stateMachine0, const RuntimeMethod* method)
 {
@@ -11980,15 +12375,77 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126_m33D52AA72FDD1A01D76679E3962945B03A49B173 (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126* ___stateMachine0, const RuntimeMethod* method)
 {
 	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126_m8935BB61C3E4C6B147367ABC7B6D41D0F86A74DE_gshared)(__this, ___stateMachine0, method);
+=======
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeTokenAccountAsync>d__19>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146_m0CF26A2BDBC91225A21C91E79064D29820D4F556 (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146_m08EE161AF2063EC04DEFF9F88EEFE14200A81A84_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::SubscribeTokenAccountAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.TokenAccountInfo>>,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* SolanaStreamingRpcClient_SubscribeTokenAccountAsync_m8AF684A4B99B747D94D0265922B177A5EAF52EF2 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, String_t* ___pubkey0, Action_2_t7CDD50BC9CCD7EFE99205FCBE45F297C4C38DE3D* ___callback1, int32_t ___commitment2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__21>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154_m64EEDC902F8D68CD2B0EE7CCDBCF0253FD1F280D (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154_m64B765DA33B688101536A078E28925D578CA37CE_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::SubscribeLogInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LogInfo>>,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* SolanaStreamingRpcClient_SubscribeLogInfoAsync_m4EB17B7B91BAA61FDEB96AD970D3C6C456AF892F (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, String_t* ___pubkey0, Action_2_t653362422EE7F2FEEEEB70350112CEA9EEA62A4D* ___callback1, int32_t ___commitment2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeLogInfoAsync>d__23>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504_m4112119EE6555F6508E4DE96F67D0500DD78CA71 (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504_m0F0E60FFE2235770DBD5C8CDB890EE42A53721BE_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::SubscribeLogInfoAsync(Solana.Unity.Rpc.Types.LogsSubscriptionType,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LogInfo>>,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* SolanaStreamingRpcClient_SubscribeLogInfoAsync_m5C59FFC9C34EC666AB6657D3755707AE277A92C6 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, int32_t ___subscriptionType0, Action_2_t653362422EE7F2FEEEEB70350112CEA9EEA62A4D* ___callback1, int32_t ___commitment2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSignatureAsync>d__25>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D_mEDB05BB6AC75A02080AFF3C4AE43D94535346CA4 (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D_mF2C2459F63181AAC59A6A8E4CA2B51CE861CBC83_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::SubscribeSignatureAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.ErrorResult>>,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* SolanaStreamingRpcClient_SubscribeSignatureAsync_m72DD01DD790A96787426ADCF8AF7908F38A12AC6 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, String_t* ___transactionSignature0, Action_2_tDF11F4653CEA6C19DEA1A5FED8920E3358C4E28A* ___callback1, int32_t ___commitment2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeProgramAsync>d__27>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383_m7A77D8EABA6A60B98053026D03848CF3030BDF07 (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383_m8327C9AE14AE5D4E9DA6BDB3AB54F2E8A23E9060_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::SubscribeProgramAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountKeyPair>>,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* SolanaStreamingRpcClient_SubscribeProgramAsync_m16E76E48B6079FBC19CE51D5AD27A8E077ABF014 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, String_t* ___programPubkey0, Action_2_tC6F56918FF91C41456211B6D1CF527E7353FF116* ___callback1, int32_t ___commitment2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeSlotInfoAsync>d__29>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908_mBC57A02A3C2BA6F9CE88321D9671F66F9E1FE66A (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908_mC990341CC77B5BED9AE656BB637EC50BC5F2CF7C_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::SubscribeSlotInfoAsync(System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Models.SlotInfo>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* SolanaStreamingRpcClient_SubscribeSlotInfoAsync_mD725C3DEFCB3D5DC407B5712C9573FED026877D5 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, Action_2_t0F9C98E8145687CDABF5E55E0104F3145B52A446* ___callback0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<SubscribeRootAsync>d__31>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA_m266C338998913C0E014A98B0095A36B909359C11 (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA_mC1A9E92761D3C7823D7EA6B9EED42C8CF6C590F6_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.SolanaStreamingRpcClient::SubscribeRootAsync(System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,System.Int32>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* SolanaStreamingRpcClient_SubscribeRootAsync_m54E074927D18C57909A2C0C04875ABBA73D5136E (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, Action_2_tA1D48E4FA7C6170A4932F95A1FDDC22FA92309BD* ___callback0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState>::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<Subscribe>d__33>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846_m1958971BE9E949942D4B8AE68C77A86B57D77B6B (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* __this, U3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9*, U3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846_m56C8E2B13B61A8CE9F726DF619991002AB59F57E_gshared)(__this, ___stateMachine0, method);
+>>>>>>> Game_Dev
 }
 // System.Void System.ArgumentOutOfRangeException::.ctor(System.String,System.Object,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m60B543A63AC8692C28096003FBF2AD124B9D5B85 (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* __this, String_t* ___paramName0, RuntimeObject* ___actualValue1, String_t* ___message2, const RuntimeMethod* method) ;
 // System.Runtime.CompilerServices.AsyncTaskMethodBuilder System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06 AsyncTaskMethodBuilder_Create_m24F3F260A79CA2B9EC4F1F15693A33F5EC58735A (const RuntimeMethod* method) ;
+<<<<<<< HEAD
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__31>(TStateMachine&)
 inline void AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41_mE2E607B7870B156443869B9C121FD794D176EE4B (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, U3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41* ___stateMachine0, const RuntimeMethod* method)
 {
 	((  void (*) (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06*, U3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41*, const RuntimeMethod*))AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41_mE2E607B7870B156443869B9C121FD794D176EE4B_gshared)(__this, ___stateMachine0, method);
+=======
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<Solana.Unity.Rpc.SolanaStreamingRpcClient/<UnsubscribeAsync>d__35>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F_m977070F1B01231063B9D280E403A2A3F5BF86547 (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, U3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06*, U3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F*, const RuntimeMethod*))AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F_m977070F1B01231063B9D280E403A2A3F5BF86547_gshared)(__this, ___stateMachine0, method);
+>>>>>>> Game_Dev
 }
 // System.Threading.Tasks.Task System.Runtime.CompilerServices.AsyncTaskMethodBuilder::get_Task()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AsyncTaskMethodBuilder_get_Task_mE9125D5F8B96F26D1BA5A5347ED82669521C7F9E (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, const RuntimeMethod* method) ;
@@ -11996,6 +12453,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA857
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* SolanaStreamingRpcClient_UnsubscribeAsync_m010D97D6F313A8766B5FB0B10C3A34CA589D8559 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* ___subscription0, const RuntimeMethod* method) ;
 // System.Void System.Threading.Tasks.Task::Wait()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Task_Wait_m33955515E36BF6598FCEDA841C8C75F716DE5A4E (Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* __this, const RuntimeMethod* method) ;
+<<<<<<< HEAD
+=======
+// System.Void Solana.Unity.Rpc.SolanaStreamingRpcClient::TryReconnect()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient_TryReconnect_mC5F35CEBE9D78546EBC1D348D99D7BAF7E7D20B1 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, const RuntimeMethod* method) ;
+>>>>>>> Game_Dev
 // System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
 // System.Span`1<T> System.Span`1<System.Byte>::Slice(System.Int32,System.Int32)
@@ -12081,6 +12543,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClientFactory_GetClient_mEBC2E
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+<<<<<<< HEAD
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5C971D0A28CA2E959259FBB918378BDC51C3317F);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDC3AA8CE50ECC411982D84C99298C085E486136D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDD40A8B430237CE5734D81FC3CC243DA0F62D1BA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralECDDE2566B2BE9A9394F24EEC6E85EB5C7E5FB0F);
@@ -12089,6 +12555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClientFactory_GetClient_mEBC2E
 	String_t* V_0 = NULL;
 	{
 		int32_t L_0 = ___cluster0;
+<<<<<<< HEAD
 		if (!L_0)
 		{
 			goto IL_0009;
@@ -12118,10 +12585,56 @@ IL_0011:
 	}
 
 IL_0019:
+=======
+		switch (L_0)
+		{
+			case 0:
+			{
+				goto IL_0018;
+			}
+			case 1:
+			{
+				goto IL_0020;
+			}
+			case 2:
+			{
+				goto IL_0030;
+			}
+			case 3:
+			{
+				goto IL_0028;
+			}
+		}
+	}
+	{
+		goto IL_0030;
+	}
+
+IL_0018:
+	{
+		V_0 = _stringLiteralDC3AA8CE50ECC411982D84C99298C085E486136D;
+		goto IL_0036;
+	}
+
+IL_0020:
+	{
+		V_0 = _stringLiteralECDDE2566B2BE9A9394F24EEC6E85EB5C7E5FB0F;
+		goto IL_0036;
+	}
+
+IL_0028:
+	{
+		V_0 = _stringLiteral5C971D0A28CA2E959259FBB918378BDC51C3317F;
+		goto IL_0036;
+	}
+
+IL_0030:
+>>>>>>> Game_Dev
 	{
 		V_0 = _stringLiteralDD40A8B430237CE5734D81FC3CC243DA0F62D1BA;
 	}
 
+<<<<<<< HEAD
 IL_001f:
 	{
 		String_t* L_2 = V_0;
@@ -12131,6 +12644,17 @@ IL_001f:
 		RuntimeObject* L_6;
 		L_6 = ClientFactory_GetClient_mE856D1AAE02BB5A1ED47840FCB72B4550F9EC49D(L_2, L_3, L_4, L_5, NULL);
 		return L_6;
+=======
+IL_0036:
+	{
+		String_t* L_1 = V_0;
+		RuntimeObject* L_2 = ___logger1;
+		HttpClient_t18C26B758AF7E9331DC8A86A2AD715B53BBA9D42* L_3 = ___httpClient2;
+		RuntimeObject* L_4 = ___rateLimiter3;
+		RuntimeObject* L_5;
+		L_5 = ClientFactory_GetClient_mE856D1AAE02BB5A1ED47840FCB72B4550F9EC49D(L_1, L_2, L_3, L_4, NULL);
+		return L_5;
+>>>>>>> Game_Dev
 	}
 }
 // Solana.Unity.Rpc.IRpcClient Solana.Unity.Rpc.ClientFactory::GetClient(System.String,System.Object)
@@ -12184,12 +12708,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ClientFactory_GetStreamingClie
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral04DA8D4CB9A34FAE3767098C6C081815C1C47682);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral36E6A1B8CFF97380FAE41DF4EBD1443CBA4DE86A);
+<<<<<<< HEAD
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral40FAF2AC24FCBD20EE154728F86623970EBC5AF2);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBFA9AFED84EB94FAD73B320EB0A1EA6A4B966F86);
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
 	{
 		int32_t L_0 = ___cluster0;
+<<<<<<< HEAD
 		if (!L_0)
 		{
 			goto IL_0009;
@@ -12219,10 +12748,56 @@ IL_0011:
 	}
 
 IL_0019:
+=======
+		switch (L_0)
+		{
+			case 0:
+			{
+				goto IL_0018;
+			}
+			case 1:
+			{
+				goto IL_0020;
+			}
+			case 2:
+			{
+				goto IL_0030;
+			}
+			case 3:
+			{
+				goto IL_0028;
+			}
+		}
+	}
+	{
+		goto IL_0030;
+	}
+
+IL_0018:
+	{
+		V_0 = _stringLiteral36E6A1B8CFF97380FAE41DF4EBD1443CBA4DE86A;
+		goto IL_0036;
+	}
+
+IL_0020:
+	{
+		V_0 = _stringLiteralBFA9AFED84EB94FAD73B320EB0A1EA6A4B966F86;
+		goto IL_0036;
+	}
+
+IL_0028:
+	{
+		V_0 = _stringLiteral40FAF2AC24FCBD20EE154728F86623970EBC5AF2;
+		goto IL_0036;
+	}
+
+IL_0030:
+>>>>>>> Game_Dev
 	{
 		V_0 = _stringLiteral04DA8D4CB9A34FAE3767098C6C081815C1C47682;
 	}
 
+<<<<<<< HEAD
 IL_001f:
 	{
 		String_t* L_2 = V_0;
@@ -12230,6 +12805,15 @@ IL_001f:
 		RuntimeObject* L_4;
 		L_4 = ClientFactory_GetStreamingClient_m8A350E93905CE8FD4A5AA53933A40053DDB577D0(L_2, L_3, (ClientWebSocket_tCA318357FEA5850DFE2109A0139A57F152E0D71F*)NULL, NULL);
 		return L_4;
+=======
+IL_0036:
+	{
+		String_t* L_1 = V_0;
+		RuntimeObject* L_2 = ___logger1;
+		RuntimeObject* L_3;
+		L_3 = ClientFactory_GetStreamingClient_m8A350E93905CE8FD4A5AA53933A40053DDB577D0(L_1, L_2, (ClientWebSocket_tCA318357FEA5850DFE2109A0139A57F152E0D71F*)NULL, NULL);
+		return L_3;
+>>>>>>> Game_Dev
 	}
 }
 // Solana.Unity.Rpc.IStreamingRpcClient Solana.Unity.Rpc.ClientFactory::GetStreamingClient(System.String,System.Object,System.Net.WebSockets.ClientWebSocket)
@@ -16069,8 +16653,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tBB79DEB9BF9F7ABD0A3B10171480AA5526610
 		return L_6;
 	}
 }
+<<<<<<< HEAD
 // System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Models.TransactionMetaSlotInfo>> Solana.Unity.Rpc.SolanaRpcClient::GetTransactionAsync(System.String,Solana.Unity.Rpc.Types.Commitment)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* SolanaRpcClient_GetTransactionAsync_m031450661BFDD82AAC3773A2F57D7F7559C830C2 (SolanaRpcClient_t60F714E76FF8B6FCC9B554A596FC12CAEBD25CD9* __this, String_t* ___signature0, int32_t ___commitment1, const RuntimeMethod* method) 
+=======
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Models.TransactionMetaSlotInfo>> Solana.Unity.Rpc.SolanaRpcClient::GetTransactionAsync(System.String,Solana.Unity.Rpc.Types.Commitment,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* SolanaRpcClient_GetTransactionAsync_m261C574A588F6C97E1B90340B7EADF5B227CED60 (SolanaRpcClient_t60F714E76FF8B6FCC9B554A596FC12CAEBD25CD9* __this, String_t* ___signature0, int32_t ___commitment1, int32_t ___maxSupportedTransactionVersion2, const RuntimeMethod* method) 
+>>>>>>> Game_Dev
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16102,6 +16691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___signature_3), (void*)L_1);
 		int32_t L_2 = ___commitment1;
 		(&V_0)->___commitment_4 = L_2;
+<<<<<<< HEAD
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_t1B869E91896D653BDF655F52B4EB76733EAE2B47* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
 		AsyncTaskMethodBuilder_1_Start_TisU3CGetTransactionAsyncU3Ed__41_tAE18BB404968E0A0C1544FDACFB431BD5012EC10_m8E43A3EDCEB914618DDAF11080EB792C8CD69B06(L_3, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CGetTransactionAsyncU3Ed__41_tAE18BB404968E0A0C1544FDACFB431BD5012EC10_m8E43A3EDCEB914618DDAF11080EB792C8CD69B06_RuntimeMethod_var);
@@ -16109,6 +16699,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4
 		Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* L_5;
 		L_5 = AsyncTaskMethodBuilder_1_get_Task_m0E8128E1367F584B3E8DFCE74D862DDD89E53927(L_4, AsyncTaskMethodBuilder_1_get_Task_m0E8128E1367F584B3E8DFCE74D862DDD89E53927_RuntimeMethod_var);
 		return L_5;
+=======
+		int32_t L_3 = ___maxSupportedTransactionVersion2;
+		(&V_0)->___maxSupportedTransactionVersion_5 = L_3;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_t1B869E91896D653BDF655F52B4EB76733EAE2B47* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CGetTransactionAsyncU3Ed__41_tAE18BB404968E0A0C1544FDACFB431BD5012EC10_m8E43A3EDCEB914618DDAF11080EB792C8CD69B06(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CGetTransactionAsyncU3Ed__41_tAE18BB404968E0A0C1544FDACFB431BD5012EC10_m8E43A3EDCEB914618DDAF11080EB792C8CD69B06_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_t1B869E91896D653BDF655F52B4EB76733EAE2B47* L_5 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* L_6;
+		L_6 = AsyncTaskMethodBuilder_1_get_Task_m0E8128E1367F584B3E8DFCE74D862DDD89E53927(L_5, AsyncTaskMethodBuilder_1_get_Task_m0E8128E1367F584B3E8DFCE74D862DDD89E53927_RuntimeMethod_var);
+		return L_6;
+>>>>>>> Game_Dev
 	}
 }
 // System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Models.TransactionMetaSlotInfo>> Solana.Unity.Rpc.SolanaRpcClient::GetConfirmedTransactionAsync(System.String,Solana.Unity.Rpc.Types.Commitment)
@@ -16168,7 +16769,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RequestResult_1_t12FCD7327E9DC7D57CFEDB628E29
 		int32_t L_2;
 		L_2 = SolanaRpcClient_CommitmentOrDefault_m73CCF554016ADCF4C81A30F7A391C91A165968F6(__this, L_1, NULL);
 		Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* L_3;
+<<<<<<< HEAD
 		L_3 = SolanaRpcClient_GetTransactionAsync_m031450661BFDD82AAC3773A2F57D7F7559C830C2(__this, L_0, L_2, NULL);
+=======
+		L_3 = SolanaRpcClient_GetTransactionAsync_m261C574A588F6C97E1B90340B7EADF5B227CED60(__this, L_0, L_2, 0, NULL);
+>>>>>>> Game_Dev
 		NullCheck(L_3);
 		RequestResult_1_t12FCD7327E9DC7D57CFEDB628E29CE15755E702E* L_4;
 		L_4 = Task_1_get_Result_mE5C50132DA2D5642EC67C3FF5D5719FA800C4AED(L_3, Task_1_get_Result_mE5C50132DA2D5642EC67C3FF5D5719FA800C4AED_RuntimeMethod_var);
@@ -29362,10 +29967,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetTransactionAsyncU3Ed__41_MoveNext_
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9_TisU3CGetTransactionAsyncU3Ed__41_tAE18BB404968E0A0C1544FDACFB431BD5012EC10_mDDE36DA9F465024ECED130DBB064A958431B757B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_m4C970E2ABC51D9FAE1F3DE947DBF6E87603C961C_RuntimeMethod_var);
+<<<<<<< HEAD
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SolanaRpcClient_SendRequestAsync_TisTransactionMetaSlotInfo_tBDA1ECF9C2AB7B7FEC8845CCC58B115B94E8801C_m49E0F832628CB82B9D549CDAF1C654D814766FAC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_mA00833078B0448A95F75DDC0FD34B81A0C5505B8_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m4B34D6129FEFC96C254A2739757D787B0BC26711_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m385DD1F703AF83506BABB349EA28330EF056FEA4_RuntimeMethod_var);
+<<<<<<< HEAD
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0E28AC62D3F4A8A11B927360940A2CB6EAEB0670);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral29988D0F9BCADFABFF66CBF5AB73096D1CAE3128);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral43187C90BBB5DFB063A95733C9BD65ECD25A2E84);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral94FCD9AAD0F4426936DE660BC78E76ABF281A49C);
@@ -29390,7 +30003,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetTransactionAsyncU3Ed__41_MoveNext_
 			int32_t L_2 = V_0;
 			if (!L_2)
 			{
+<<<<<<< HEAD
 				goto IL_0077_1;
+=======
+				goto IL_008c_1;
+>>>>>>> Game_Dev
 			}
 		}
 		{
@@ -29403,6 +30020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetTransactionAsyncU3Ed__41_MoveNext_
 			NullCheck(L_6);
 			KeyValue_t3D02848085B83679AD6D3D8BDA24563C1887E7C4* L_8;
 			L_8 = SolanaRpcClient_HandleCommitment_mB09CA8C9C404B4908BD7F9CDA98A244F7A885214(L_6, L_7, 0, NULL);
+<<<<<<< HEAD
 			Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_9;
 			L_9 = ConfigObject_Create_mEA04AA70BA174C8D96545CAB10E8A768427AA5B0(L_5, L_8, NULL);
 			List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_10;
@@ -29450,6 +30068,60 @@ IL_0093_1:
 			L_20 = TaskAwaiter_1_GetResult_mA00833078B0448A95F75DDC0FD34B81A0C5505B8((&V_3), TaskAwaiter_1_GetResult_mA00833078B0448A95F75DDC0FD34B81A0C5505B8_RuntimeMethod_var);
 			V_2 = L_20;
 			goto IL_00b6;
+=======
+			int32_t L_9 = __this->___maxSupportedTransactionVersion_5;
+			int32_t L_10 = L_9;
+			RuntimeObject* L_11 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_10);
+			KeyValue_t3D02848085B83679AD6D3D8BDA24563C1887E7C4* L_12;
+			L_12 = KeyValue_Create_mD319F02D58730A70E0FD2D01AD4D9DCB4E47B27A(_stringLiteral0E28AC62D3F4A8A11B927360940A2CB6EAEB0670, L_11, NULL);
+			Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* L_13;
+			L_13 = ConfigObject_Create_m7723A953D95F1D605AAD7E4B98ECA0380DC63168(L_5, L_8, L_12, NULL);
+			List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_14;
+			L_14 = Parameters_Create_m219B4F29C692F576D95B2B2011F248B5ACD3C512(L_4, L_13, NULL);
+			NullCheck(L_3);
+			Task_1_tB4E4E08A3F46C8D3BA3C8478BBC53C2285DA4036* L_15;
+			L_15 = SolanaRpcClient_SendRequestAsync_TisTransactionMetaSlotInfo_tBDA1ECF9C2AB7B7FEC8845CCC58B115B94E8801C_m49E0F832628CB82B9D549CDAF1C654D814766FAC(L_3, _stringLiteral94FCD9AAD0F4426936DE660BC78E76ABF281A49C, L_14, SolanaRpcClient_SendRequestAsync_TisTransactionMetaSlotInfo_tBDA1ECF9C2AB7B7FEC8845CCC58B115B94E8801C_m49E0F832628CB82B9D549CDAF1C654D814766FAC_RuntimeMethod_var);
+			NullCheck(L_15);
+			TaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9 L_16;
+			L_16 = Task_1_GetAwaiter_m385DD1F703AF83506BABB349EA28330EF056FEA4(L_15, Task_1_GetAwaiter_m385DD1F703AF83506BABB349EA28330EF056FEA4_RuntimeMethod_var);
+			V_3 = L_16;
+			bool L_17;
+			L_17 = TaskAwaiter_1_get_IsCompleted_m4B34D6129FEFC96C254A2739757D787B0BC26711((&V_3), TaskAwaiter_1_get_IsCompleted_m4B34D6129FEFC96C254A2739757D787B0BC26711_RuntimeMethod_var);
+			if (L_17)
+			{
+				goto IL_00a8_1;
+			}
+		}
+		{
+			int32_t L_18 = 0;
+			V_0 = L_18;
+			__this->___U3CU3E1__state_0 = L_18;
+			TaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9 L_19 = V_3;
+			__this->___U3CU3Eu__1_6 = L_19;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_6))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_t1B869E91896D653BDF655F52B4EB76733EAE2B47* L_20 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9_TisU3CGetTransactionAsyncU3Ed__41_tAE18BB404968E0A0C1544FDACFB431BD5012EC10_mDDE36DA9F465024ECED130DBB064A958431B757B(L_20, (&V_3), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9_TisU3CGetTransactionAsyncU3Ed__41_tAE18BB404968E0A0C1544FDACFB431BD5012EC10_mDDE36DA9F465024ECED130DBB064A958431B757B_RuntimeMethod_var);
+			goto IL_00df;
+		}
+
+IL_008c_1:
+		{
+			TaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9 L_21 = __this->___U3CU3Eu__1_6;
+			V_3 = L_21;
+			TaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9* L_22 = (&__this->___U3CU3Eu__1_6);
+			il2cpp_codegen_initobj(L_22, sizeof(TaskAwaiter_1_t1335662FCB7B5F69B85DFC9595554D7DC71BF9B9));
+			int32_t L_23 = (-1);
+			V_0 = L_23;
+			__this->___U3CU3E1__state_0 = L_23;
+		}
+
+IL_00a8_1:
+		{
+			RequestResult_1_t12FCD7327E9DC7D57CFEDB628E29CE15755E702E* L_24;
+			L_24 = TaskAwaiter_1_GetResult_mA00833078B0448A95F75DDC0FD34B81A0C5505B8((&V_3), TaskAwaiter_1_GetResult_mA00833078B0448A95F75DDC0FD34B81A0C5505B8_RuntimeMethod_var);
+			V_2 = L_24;
+			goto IL_00cb;
+>>>>>>> Game_Dev
 		}
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -29457,11 +30129,16 @@ IL_0093_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+<<<<<<< HEAD
 			goto CATCH_009d;
+=======
+			goto CATCH_00b2;
+>>>>>>> Game_Dev
 		}
 		throw e;
 	}
 
+<<<<<<< HEAD
 CATCH_009d:
 	{// begin catch(System.Exception)
 		V_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
@@ -29482,6 +30159,28 @@ IL_00b6:
 	}
 
 IL_00ca:
+=======
+CATCH_00b2:
+	{// begin catch(System.Exception)
+		V_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		AsyncTaskMethodBuilder_1_t1B869E91896D653BDF655F52B4EB76733EAE2B47* L_25 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_26 = V_4;
+		AsyncTaskMethodBuilder_1_SetException_m0CDE82E6104DC89A26E886534E595AB6A970BB86(L_25, L_26, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m0CDE82E6104DC89A26E886534E595AB6A970BB86_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_00df;
+	}// end catch (depth: 1)
+
+IL_00cb:
+	{
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		AsyncTaskMethodBuilder_1_t1B869E91896D653BDF655F52B4EB76733EAE2B47* L_27 = (&__this->___U3CU3Et__builder_1);
+		RequestResult_1_t12FCD7327E9DC7D57CFEDB628E29CE15755E702E* L_28 = V_2;
+		AsyncTaskMethodBuilder_1_SetResult_m4C970E2ABC51D9FAE1F3DE947DBF6E87603C961C(L_27, L_28, AsyncTaskMethodBuilder_1_SetResult_m4C970E2ABC51D9FAE1F3DE947DBF6E87603C961C_RuntimeMethod_var);
+	}
+
+IL_00df:
+>>>>>>> Game_Dev
 	{
 		return;
 	}
@@ -31734,7 +32433,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient__ctor_mADE48F62
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mF843E5EF4CE95C48BB228B67466B19C789636897_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF_il2cpp_TypeInfo_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IdGenerator_tA4BCDB7CE02BF33DF60A42BBFAA62F59FE740D6B_il2cpp_TypeInfo_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IdGenerator_tA4BCDB7CE02BF33DF60A42BBFAA62F59FE740D6B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SolanaStreamingRpcClient_U3C_ctorU3Eb__4_0_mD65F2BF7DBEE69B303B866E720520B6478F4C968_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -31746,6 +32451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient__ctor_mADE48F62
 		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_1 = (Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF*)il2cpp_codegen_object_new(Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
 		Dictionary_2__ctor_mF843E5EF4CE95C48BB228B67466B19C789636897(L_1, Dictionary_2__ctor_mF843E5EF4CE95C48BB228B67466B19C789636897_RuntimeMethod_var);
+<<<<<<< HEAD
 		__this->___unconfirmedRequests_8 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___unconfirmedRequests_8), (void*)L_1);
 		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_2 = (Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF*)il2cpp_codegen_object_new(Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF_il2cpp_TypeInfo_var);
@@ -31753,14 +32459,97 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient__ctor_mADE48F62
 		Dictionary_2__ctor_mF843E5EF4CE95C48BB228B67466B19C789636897(L_2, Dictionary_2__ctor_mF843E5EF4CE95C48BB228B67466B19C789636897_RuntimeMethod_var);
 		__this->___confirmedSubscriptions_9 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___confirmedSubscriptions_9), (void*)L_2);
+=======
+		__this->____unconfirmedRequests_8 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____unconfirmedRequests_8), (void*)L_1);
+		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_2 = (Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF*)il2cpp_codegen_object_new(Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Dictionary_2__ctor_mF843E5EF4CE95C48BB228B67466B19C789636897(L_2, Dictionary_2__ctor_mF843E5EF4CE95C48BB228B67466B19C789636897_RuntimeMethod_var);
+		__this->____confirmedSubscriptions_9 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____confirmedSubscriptions_9), (void*)L_2);
+		__this->____defaultCommitment_10 = 2;
+>>>>>>> Game_Dev
 		String_t* L_3 = ___url0;
 		RuntimeObject* L_4 = ___logger1;
 		RuntimeObject* L_5 = ___websocket2;
 		ClientWebSocket_tCA318357FEA5850DFE2109A0139A57F152E0D71F* L_6 = ___clientWebSocket3;
 		StreamingRpcClient__ctor_m92334700F27C9E8E592254F836FEB31B333787CA(__this, L_3, L_4, L_5, L_6, NULL);
+<<<<<<< HEAD
 		return;
 	}
 }
+=======
+		EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367* L_7 = (EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367*)il2cpp_codegen_object_new(EventHandler_1_t08F503C93832B568305B35FC7A2C2E657902F367_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		EventHandler_1__ctor_mC7195F6764CA7F64DF609DD0F2291FCF084902A0(L_7, __this, (intptr_t)((void*)SolanaStreamingRpcClient_U3C_ctorU3Eb__4_0_mD65F2BF7DBEE69B303B866E720520B6478F4C968_RuntimeMethod_var), NULL);
+		StreamingRpcClient_add_ConnectionStateChangedEvent_mABEF4D1BF8D0A59D11FC0A421FE26B1CE2FD359E(__this, L_7, NULL);
+		return;
+	}
+}
+// System.Void Solana.Unity.Rpc.SolanaStreamingRpcClient::TryReconnect()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient_TryReconnect_mC5F35CEBE9D78546EBC1D348D99D7BAF7E7D20B1 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncVoidMethodBuilder_Start_TisU3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF_mA783C0B92F98DA192134743A93F241447A48B459_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D L_0;
+		L_0 = AsyncVoidMethodBuilder_Create_m13D0B23DD350C14035918384E10AF641E6B9EE67(NULL);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_synchronizationContext_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_2), (void*)__this);
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncVoidMethodBuilder_t253E37B63E7E7B504878AE6563347C147F98EF2D* L_1 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncVoidMethodBuilder_Start_TisU3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF_mA783C0B92F98DA192134743A93F241447A48B459(L_1, (&V_0), AsyncVoidMethodBuilder_Start_TisU3CTryReconnectU3Ed__5_t9A02BAD9EDAB856A99BAF2833C7F8126C43F0EEF_mA783C0B92F98DA192134743A93F241447A48B459_RuntimeMethod_var);
+		return;
+	}
+}
+// System.Void Solana.Unity.Rpc.SolanaStreamingRpcClient::SetDefaultCommitment(Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient_SetDefaultCommitment_mAE0FBCF72D97318AC1D52C35EACCAFBDC8754958 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, int32_t ___commitment0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___commitment0;
+		__this->____defaultCommitment_10 = L_0;
+		return;
+	}
+}
+// Solana.Unity.Rpc.Types.Commitment Solana.Unity.Rpc.SolanaStreamingRpcClient::CommitmentOrDefault(Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SolanaStreamingRpcClient_CommitmentOrDefault_m5F55FC7DE9DA2F2FC91F241892D77AC8F065D02B (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, int32_t ___commitment0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___commitment0;
+		if ((((int32_t)L_0) == ((int32_t)3)))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		int32_t L_1 = ___commitment0;
+		return L_1;
+	}
+
+IL_0006:
+	{
+		int32_t L_2 = __this->____defaultCommitment_10;
+		return L_2;
+	}
+}
+>>>>>>> Game_Dev
 // System.Void Solana.Unity.Rpc.SolanaStreamingRpcClient::CleanupSubscriptions()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient_CleanupSubscriptions_m17C1CFECB89B7D013A1AD1711AE1AE41876DFAC5 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, const RuntimeMethod* method) 
 {
@@ -31783,7 +32572,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient_CleanupSubscrip
 	KeyValuePair_2_t33481FA7F3E0ACF2E94816B371ACFC31D0178ECA V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
+<<<<<<< HEAD
 		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_0 = __this->___confirmedSubscriptions_9;
+=======
+		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_0 = __this->____confirmedSubscriptions_9;
+>>>>>>> Game_Dev
 		NullCheck(L_0);
 		Enumerator_t20C45A6D6955343E82C0D182B4D1AB6B7ABFE1DB L_1;
 		L_1 = Dictionary_2_GetEnumerator_mF3AB816691F71935E2420D5DB4EDB5757F805136(L_0, Dictionary_2_GetEnumerator_mF3AB816691F71935E2420D5DB4EDB5757F805136_RuntimeMethod_var);
@@ -31837,7 +32630,11 @@ IL_0029_1:
 
 IL_0042:
 	{
+<<<<<<< HEAD
 		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_5 = __this->___unconfirmedRequests_8;
+=======
+		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_5 = __this->____unconfirmedRequests_8;
+>>>>>>> Game_Dev
 		NullCheck(L_5);
 		Enumerator_t20C45A6D6955343E82C0D182B4D1AB6B7ABFE1DB L_6;
 		L_6 = Dictionary_2_GetEnumerator_mF3AB816691F71935E2420D5DB4EDB5757F805136(L_5, Dictionary_2_GetEnumerator_mF3AB816691F71935E2420D5DB4EDB5757F805136_RuntimeMethod_var);
@@ -31891,10 +32688,17 @@ IL_006b_1:
 
 IL_0084:
 	{
+<<<<<<< HEAD
 		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_10 = __this->___unconfirmedRequests_8;
 		NullCheck(L_10);
 		Dictionary_2_Clear_m94F343CB1BF817696D368306B39529BEBCC8552B(L_10, Dictionary_2_Clear_m94F343CB1BF817696D368306B39529BEBCC8552B_RuntimeMethod_var);
 		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_11 = __this->___confirmedSubscriptions_9;
+=======
+		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_10 = __this->____unconfirmedRequests_8;
+		NullCheck(L_10);
+		Dictionary_2_Clear_m94F343CB1BF817696D368306B39529BEBCC8552B(L_10, Dictionary_2_Clear_m94F343CB1BF817696D368306B39529BEBCC8552B_RuntimeMethod_var);
+		Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_11 = __this->____confirmedSubscriptions_9;
+>>>>>>> Game_Dev
 		NullCheck(L_11);
 		Dictionary_2_Clear_m94F343CB1BF817696D368306B39529BEBCC8552B(L_11, Dictionary_2_Clear_m94F343CB1BF817696D368306B39529BEBCC8552B_RuntimeMethod_var);
 		return;
@@ -32287,12 +33091,20 @@ IL_0051:
 			{
 				SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* L_2 = V_1;
 				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_2, (&V_2), NULL);
+<<<<<<< HEAD
 				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->___unconfirmedRequests_8;
+=======
+				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->____unconfirmedRequests_8;
+>>>>>>> Game_Dev
 				int32_t L_4 = ___id0;
 				NullCheck(L_3);
 				bool L_5;
 				L_5 = Dictionary_2_TryGetValue_mDEBC927903B7E84D1BFB1B88D9D9A7A25F54AC8D(L_3, L_4, (&V_0), Dictionary_2_TryGetValue_mDEBC927903B7E84D1BFB1B88D9D9A7A25F54AC8D_RuntimeMethod_var);
+<<<<<<< HEAD
 				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_6 = __this->___unconfirmedRequests_8;
+=======
+				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_6 = __this->____unconfirmedRequests_8;
+>>>>>>> Game_Dev
 				int32_t L_7 = ___id0;
 				NullCheck(L_6);
 				bool L_8;
@@ -32385,12 +33197,20 @@ IL_0051:
 			{
 				SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* L_2 = V_1;
 				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_2, (&V_2), NULL);
+<<<<<<< HEAD
 				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->___confirmedSubscriptions_9;
+=======
+				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->____confirmedSubscriptions_9;
+>>>>>>> Game_Dev
 				int32_t L_4 = ___id0;
 				NullCheck(L_3);
 				bool L_5;
 				L_5 = Dictionary_2_TryGetValue_mDEBC927903B7E84D1BFB1B88D9D9A7A25F54AC8D(L_3, L_4, (&V_0), Dictionary_2_TryGetValue_mDEBC927903B7E84D1BFB1B88D9D9A7A25F54AC8D_RuntimeMethod_var);
+<<<<<<< HEAD
 				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_6 = __this->___confirmedSubscriptions_9;
+=======
+				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_6 = __this->____confirmedSubscriptions_9;
+>>>>>>> Game_Dev
 				int32_t L_7 = ___id0;
 				NullCheck(L_6);
 				bool L_8;
@@ -32501,12 +33321,20 @@ IL_0048:
 			{
 				SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* L_2 = V_1;
 				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_2, (&V_2), NULL);
+<<<<<<< HEAD
 				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->___unconfirmedRequests_8;
+=======
+				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->____unconfirmedRequests_8;
+>>>>>>> Game_Dev
 				int32_t L_4 = ___internalId0;
 				NullCheck(L_3);
 				bool L_5;
 				L_5 = Dictionary_2_TryGetValue_mDEBC927903B7E84D1BFB1B88D9D9A7A25F54AC8D(L_3, L_4, (&V_0), Dictionary_2_TryGetValue_mDEBC927903B7E84D1BFB1B88D9D9A7A25F54AC8D_RuntimeMethod_var);
+<<<<<<< HEAD
 				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_6 = __this->___unconfirmedRequests_8;
+=======
+				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_6 = __this->____unconfirmedRequests_8;
+>>>>>>> Game_Dev
 				int32_t L_7 = ___internalId0;
 				NullCheck(L_6);
 				bool L_8;
@@ -32521,7 +33349,11 @@ IL_0048:
 				int32_t L_10 = ___resultId1;
 				NullCheck(L_9);
 				SubscriptionState_set_SubscriptionId_m3A1D430266356C9D1D240322521CA6121956863C_inline(L_9, L_10, NULL);
+<<<<<<< HEAD
 				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_11 = __this->___confirmedSubscriptions_9;
+=======
+				Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_11 = __this->____confirmedSubscriptions_9;
+>>>>>>> Game_Dev
 				int32_t L_12 = ___resultId1;
 				SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* L_13 = V_0;
 				NullCheck(L_11);
@@ -32601,7 +33433,11 @@ IL_0024:
 		{// begin try (depth: 1)
 			SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* L_2 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_2, (&V_1), NULL);
+<<<<<<< HEAD
 			Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->___unconfirmedRequests_8;
+=======
+			Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->____unconfirmedRequests_8;
+>>>>>>> Game_Dev
 			int32_t L_4 = ___internalId1;
 			SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* L_5 = ___subscription0;
 			NullCheck(L_3);
@@ -32663,7 +33499,11 @@ IL_0024:
 		{// begin try (depth: 1)
 			SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* L_2 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_2, (&V_1), NULL);
+<<<<<<< HEAD
 			Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->___confirmedSubscriptions_9;
+=======
+			Dictionary_2_tE556A4E99F5DE04147326F507F09AF355E68FBFF* L_3 = __this->____confirmedSubscriptions_9;
+>>>>>>> Game_Dev
 			int32_t L_4 = ___subscriptionId0;
 			NullCheck(L_3);
 			SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8* L_5;
@@ -32945,12 +33785,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C_m8AB43D90D4DB108C2D2D198663FE77B385155043_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0_m0CFF194B670DD0FF3BD077E2C4DDCCCFA332E9BC_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C V_0;
+=======
+	U3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0 V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -32964,19 +33812,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
 		#endif
+<<<<<<< HEAD
 		(&V_0)->___U3CU3E4__this_4 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_4), (void*)__this);
 		String_t* L_1 = ___pubkey0;
 		(&V_0)->___pubkey_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___pubkey_2), (void*)L_1);
+=======
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		String_t* L_1 = ___pubkey0;
+		(&V_0)->___pubkey_4 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___pubkey_4), (void*)L_1);
+>>>>>>> Game_Dev
 		Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87* L_2 = ___callback1;
 		(&V_0)->___callback_5 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___callback_5), (void*)L_2);
 		int32_t L_3 = ___commitment2;
+<<<<<<< HEAD
 		(&V_0)->___commitment_3 = L_3;
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C_m8AB43D90D4DB108C2D2D198663FE77B385155043(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__13_t9497E8F82D26908CDF0B80B4C3010A4368D3A38C_m8AB43D90D4DB108C2D2D198663FE77B385155043_RuntimeMethod_var);
+=======
+		(&V_0)->___commitment_2 = L_3;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0_m0CFF194B670DD0FF3BD077E2C4DDCCCFA332E9BC(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeAccountInfoAsyncU3Ed__17_tF974926977BF9B19129599E741ACB0BDA9680CD0_m0CFF194B670DD0FF3BD077E2C4DDCCCFA332E9BC_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_5 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_6;
 		L_6 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_5, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33011,12 +33874,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__15_t36380276A14B8A53DFA76552B1362D4885F977ED_mB59D2A8D923A3B855FA02B1D04E55B5F92D5C264_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146_m0CF26A2BDBC91225A21C91E79064D29820D4F556_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeTokenAccountAsyncU3Ed__15_t36380276A14B8A53DFA76552B1362D4885F977ED V_0;
+=======
+	U3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146 V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -33030,19 +33901,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
 		#endif
+<<<<<<< HEAD
 		(&V_0)->___U3CU3E4__this_4 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_4), (void*)__this);
 		String_t* L_1 = ___pubkey0;
 		(&V_0)->___pubkey_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___pubkey_2), (void*)L_1);
+=======
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		String_t* L_1 = ___pubkey0;
+		(&V_0)->___pubkey_4 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___pubkey_4), (void*)L_1);
+>>>>>>> Game_Dev
 		Action_2_t7CDD50BC9CCD7EFE99205FCBE45F297C4C38DE3D* L_2 = ___callback1;
 		(&V_0)->___callback_5 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___callback_5), (void*)L_2);
 		int32_t L_3 = ___commitment2;
+<<<<<<< HEAD
 		(&V_0)->___commitment_3 = L_3;
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__15_t36380276A14B8A53DFA76552B1362D4885F977ED_mB59D2A8D923A3B855FA02B1D04E55B5F92D5C264(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__15_t36380276A14B8A53DFA76552B1362D4885F977ED_mB59D2A8D923A3B855FA02B1D04E55B5F92D5C264_RuntimeMethod_var);
+=======
+		(&V_0)->___commitment_2 = L_3;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146_m0CF26A2BDBC91225A21C91E79064D29820D4F556(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeTokenAccountAsyncU3Ed__19_t2175087F6800A7C3492B8A76064843A6D5084146_m0CF26A2BDBC91225A21C91E79064D29820D4F556_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_5 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_6;
 		L_6 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_5, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33077,12 +33963,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__17_t2014700B3C86C1FFF43D72EF78C0F1FE26EBECC7_mBF60557B20423C6050E96B8943E661ED3BC75ACC_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154_m64EEDC902F8D68CD2B0EE7CCDBCF0253FD1F280D_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeLogInfoAsyncU3Ed__17_t2014700B3C86C1FFF43D72EF78C0F1FE26EBECC7 V_0;
+=======
+	U3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154 V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -33096,19 +33990,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
 		#endif
+<<<<<<< HEAD
 		(&V_0)->___U3CU3E4__this_4 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_4), (void*)__this);
 		String_t* L_1 = ___pubkey0;
 		(&V_0)->___pubkey_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___pubkey_2), (void*)L_1);
+=======
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		String_t* L_1 = ___pubkey0;
+		(&V_0)->___pubkey_4 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___pubkey_4), (void*)L_1);
+>>>>>>> Game_Dev
 		Action_2_t653362422EE7F2FEEEEB70350112CEA9EEA62A4D* L_2 = ___callback1;
 		(&V_0)->___callback_5 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___callback_5), (void*)L_2);
 		int32_t L_3 = ___commitment2;
+<<<<<<< HEAD
 		(&V_0)->___commitment_3 = L_3;
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__17_t2014700B3C86C1FFF43D72EF78C0F1FE26EBECC7_mBF60557B20423C6050E96B8943E661ED3BC75ACC(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__17_t2014700B3C86C1FFF43D72EF78C0F1FE26EBECC7_mBF60557B20423C6050E96B8943E661ED3BC75ACC_RuntimeMethod_var);
+=======
+		(&V_0)->___commitment_2 = L_3;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154_m64EEDC902F8D68CD2B0EE7CCDBCF0253FD1F280D(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__21_tDDFD23234AAD6CB0622BE063EE5C8470833AE154_m64EEDC902F8D68CD2B0EE7CCDBCF0253FD1F280D_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_5 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_6;
 		L_6 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_5, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33143,12 +34052,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__19_t8BCB70D0C925F29CAAA652E80F6B98A5EC2B7665_m295925690AAAAA14F21D221ED52A0E00C8698D14_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504_m4112119EE6555F6508E4DE96F67D0500DD78CA71_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeLogInfoAsyncU3Ed__19_t8BCB70D0C925F29CAAA652E80F6B98A5EC2B7665 V_0;
+=======
+	U3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504 V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -33162,18 +34079,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
 		#endif
+<<<<<<< HEAD
 		(&V_0)->___U3CU3E4__this_4 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_4), (void*)__this);
 		int32_t L_1 = ___subscriptionType0;
 		(&V_0)->___subscriptionType_2 = L_1;
+=======
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		int32_t L_1 = ___subscriptionType0;
+		(&V_0)->___subscriptionType_4 = L_1;
+>>>>>>> Game_Dev
 		Action_2_t653362422EE7F2FEEEEB70350112CEA9EEA62A4D* L_2 = ___callback1;
 		(&V_0)->___callback_5 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___callback_5), (void*)L_2);
 		int32_t L_3 = ___commitment2;
+<<<<<<< HEAD
 		(&V_0)->___commitment_3 = L_3;
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__19_t8BCB70D0C925F29CAAA652E80F6B98A5EC2B7665_m295925690AAAAA14F21D221ED52A0E00C8698D14(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__19_t8BCB70D0C925F29CAAA652E80F6B98A5EC2B7665_m295925690AAAAA14F21D221ED52A0E00C8698D14_RuntimeMethod_var);
+=======
+		(&V_0)->___commitment_2 = L_3;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504_m4112119EE6555F6508E4DE96F67D0500DD78CA71(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeLogInfoAsyncU3Ed__23_tB3ECE7413C6A9113499D18FDD974C13C80CA2504_m4112119EE6555F6508E4DE96F67D0500DD78CA71_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_5 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_6;
 		L_6 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_5, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33208,12 +34139,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__21_t4468617E242CBCED4029A437BA897D95BF6B22C2_m2328CED4B7A21F3FE580B2B673B9A5D9B9659D74_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D_mEDB05BB6AC75A02080AFF3C4AE43D94535346CA4_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeSignatureAsyncU3Ed__21_t4468617E242CBCED4029A437BA897D95BF6B22C2 V_0;
+=======
+	U3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -33227,19 +34166,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
 		#endif
+<<<<<<< HEAD
 		(&V_0)->___U3CU3E4__this_4 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_4), (void*)__this);
 		String_t* L_1 = ___transactionSignature0;
 		(&V_0)->___transactionSignature_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___transactionSignature_2), (void*)L_1);
+=======
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		String_t* L_1 = ___transactionSignature0;
+		(&V_0)->___transactionSignature_4 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___transactionSignature_4), (void*)L_1);
+>>>>>>> Game_Dev
 		Action_2_tDF11F4653CEA6C19DEA1A5FED8920E3358C4E28A* L_2 = ___callback1;
 		(&V_0)->___callback_5 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___callback_5), (void*)L_2);
 		int32_t L_3 = ___commitment2;
+<<<<<<< HEAD
 		(&V_0)->___commitment_3 = L_3;
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__21_t4468617E242CBCED4029A437BA897D95BF6B22C2_m2328CED4B7A21F3FE580B2B673B9A5D9B9659D74(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__21_t4468617E242CBCED4029A437BA897D95BF6B22C2_m2328CED4B7A21F3FE580B2B673B9A5D9B9659D74_RuntimeMethod_var);
+=======
+		(&V_0)->___commitment_2 = L_3;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D_mEDB05BB6AC75A02080AFF3C4AE43D94535346CA4(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSignatureAsyncU3Ed__25_t730C2A988AFCD1890A1CC2403F11B5506A66206D_mEDB05BB6AC75A02080AFF3C4AE43D94535346CA4_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_5 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_6;
 		L_6 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_5, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33274,12 +34228,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__23_tA375883494226FA653FAF29E54500A49C1625066_mBFD94F2B6190139E46261180D63DD88C4FDC3422_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383_m7A77D8EABA6A60B98053026D03848CF3030BDF07_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeProgramAsyncU3Ed__23_tA375883494226FA653FAF29E54500A49C1625066 V_0;
+=======
+	U3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383 V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -33293,19 +34255,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
 		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
 		#endif
+<<<<<<< HEAD
 		(&V_0)->___U3CU3E4__this_4 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_4), (void*)__this);
 		String_t* L_1 = ___programPubkey0;
 		(&V_0)->___programPubkey_2 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___programPubkey_2), (void*)L_1);
+=======
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		String_t* L_1 = ___programPubkey0;
+		(&V_0)->___programPubkey_4 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___programPubkey_4), (void*)L_1);
+>>>>>>> Game_Dev
 		Action_2_tC6F56918FF91C41456211B6D1CF527E7353FF116* L_2 = ___callback1;
 		(&V_0)->___callback_5 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___callback_5), (void*)L_2);
 		int32_t L_3 = ___commitment2;
+<<<<<<< HEAD
 		(&V_0)->___commitment_3 = L_3;
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__23_tA375883494226FA653FAF29E54500A49C1625066_mBFD94F2B6190139E46261180D63DD88C4FDC3422(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__23_tA375883494226FA653FAF29E54500A49C1625066_mBFD94F2B6190139E46261180D63DD88C4FDC3422_RuntimeMethod_var);
+=======
+		(&V_0)->___commitment_2 = L_3;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383_m7A77D8EABA6A60B98053026D03848CF3030BDF07(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeProgramAsyncU3Ed__27_tCB29F94AA97DCBFEB46ABD0461B8AFBE4C0EF383_m7A77D8EABA6A60B98053026D03848CF3030BDF07_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_5 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_6;
 		L_6 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_5, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33340,12 +34317,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__25_t9B3BA9D079D3BFA70F27807A7CC5E35F9D6CFD29_m21D659931A9BB9BAAA0C07E9EF4856D44F0EB8B4_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908_mBC57A02A3C2BA6F9CE88321D9671F66F9E1FE66A_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeSlotInfoAsyncU3Ed__25_t9B3BA9D079D3BFA70F27807A7CC5E35F9D6CFD29 V_0;
+=======
+	U3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908 V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -33366,7 +34351,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___callback_3), (void*)L_1);
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_2 = (&(&V_0)->___U3CU3Et__builder_1);
+<<<<<<< HEAD
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__25_t9B3BA9D079D3BFA70F27807A7CC5E35F9D6CFD29_m21D659931A9BB9BAAA0C07E9EF4856D44F0EB8B4(L_2, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__25_t9B3BA9D079D3BFA70F27807A7CC5E35F9D6CFD29_m21D659931A9BB9BAAA0C07E9EF4856D44F0EB8B4_RuntimeMethod_var);
+=======
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908_mBC57A02A3C2BA6F9CE88321D9671F66F9E1FE66A(L_2, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeSlotInfoAsyncU3Ed__29_t7E31B057D244CD26349DB1576D0923B7FA1E9908_mBC57A02A3C2BA6F9CE88321D9671F66F9E1FE66A_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_4;
 		L_4 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_3, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33399,12 +34388,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__27_t8D017E64BAB6E4B1B768D6DC24A5D0A1ED7A5AA7_m131BBBF6F82F639CB26245F6D476CAB9A627272E_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA_m266C338998913C0E014A98B0095A36B909359C11_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeRootAsyncU3Ed__27_t8D017E64BAB6E4B1B768D6DC24A5D0A1ED7A5AA7 V_0;
+=======
+	U3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -33425,7 +34422,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___callback_3), (void*)L_1);
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_2 = (&(&V_0)->___U3CU3Et__builder_1);
+<<<<<<< HEAD
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__27_t8D017E64BAB6E4B1B768D6DC24A5D0A1ED7A5AA7_m131BBBF6F82F639CB26245F6D476CAB9A627272E(L_2, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__27_t8D017E64BAB6E4B1B768D6DC24A5D0A1ED7A5AA7_m131BBBF6F82F639CB26245F6D476CAB9A627272E_RuntimeMethod_var);
+=======
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA_m266C338998913C0E014A98B0095A36B909359C11(L_2, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeRootAsyncU3Ed__31_tCFC1ACEDDF37C3942F02D2278A6D6A2068560ADA_m266C338998913C0E014A98B0095A36B909359C11_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_4;
 		L_4 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_3, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33458,12 +34459,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m4A6D286C83DED1D2D0FF2B20787981BAA487B661_RuntimeMethod_var);
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126_m33D52AA72FDD1A01D76679E3962945B03A49B173_RuntimeMethod_var);
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846_m1958971BE9E949942D4B8AE68C77A86B57D77B6B_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
+<<<<<<< HEAD
 	U3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126 V_0;
+=======
+	U3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846 V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9_il2cpp_TypeInfo_var);
@@ -33487,7 +34496,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DE
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___msg_2), (void*)L_2);
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
+<<<<<<< HEAD
 		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126_m33D52AA72FDD1A01D76679E3962945B03A49B173(L_3, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__29_tF49EF461ADB9BAF47C3DE26790734F1FEC3DE126_m33D52AA72FDD1A01D76679E3962945B03A49B173_RuntimeMethod_var);
+=======
+		AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846_m1958971BE9E949942D4B8AE68C77A86B57D77B6B(L_3, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSubscribeU3Ed__33_t3EBCA3CD8C4A51754F33D470229CAF002A31C846_m1958971BE9E949942D4B8AE68C77A86B57D77B6B_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_1_tBBAD01C1DA593EDCD34CCC4458F63A61E57056D9* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_5;
 		L_5 = AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B(L_4, AsyncTaskMethodBuilder_1_get_Task_m381E2D457FEFD5A2D00F010D72D6BD8CF0E1CB0B_RuntimeMethod_var);
@@ -33602,11 +34615,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA857
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+<<<<<<< HEAD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41_mE2E607B7870B156443869B9C121FD794D176EE4B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	U3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41 V_0;
+=======
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F_m977070F1B01231063B9D280E403A2A3F5BF86547_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F V_0;
+>>>>>>> Game_Dev
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_il2cpp_TypeInfo_var);
@@ -33627,7 +34648,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA857
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___subscription_3), (void*)L_1);
 		(&V_0)->___U3CU3E1__state_0 = (-1);
 		AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* L_2 = (&(&V_0)->___U3CU3Et__builder_1);
+<<<<<<< HEAD
 		AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41_mE2E607B7870B156443869B9C121FD794D176EE4B(L_2, (&V_0), AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__31_tD48D1CA7320DEC463E1C2F78BEEE46E88BB80A41_mE2E607B7870B156443869B9C121FD794D176EE4B_RuntimeMethod_var);
+=======
+		AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F_m977070F1B01231063B9D280E403A2A3F5BF86547(L_2, (&V_0), AsyncTaskMethodBuilder_Start_TisU3CUnsubscribeAsyncU3Ed__35_t4ADB8C22086D4549F1A3FD68F2A78E2DFAA86E3F_m977070F1B01231063B9D280E403A2A3F5BF86547_RuntimeMethod_var);
+>>>>>>> Game_Dev
 		AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
 		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_4;
 		L_4 = AsyncTaskMethodBuilder_get_Task_mE9125D5F8B96F26D1BA5A5347ED82669521C7F9E(L_3, NULL);
@@ -33646,6 +34671,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient_Unsubscribe_m10
 		return;
 	}
 }
+<<<<<<< HEAD
+=======
+// System.Void Solana.Unity.Rpc.SolanaStreamingRpcClient::<.ctor>b__4_0(System.Object,System.Net.WebSockets.WebSocketState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SolanaStreamingRpcClient_U3C_ctorU3Eb__4_0_mD65F2BF7DBEE69B303B866E720520B6478F4C968 (SolanaStreamingRpcClient_tDBC9FBAD8F46EFAC27323DC23589C8704144D512* __this, RuntimeObject* ____0, int32_t ___state1, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___state1;
+		if ((!(((uint32_t)L_0) == ((uint32_t)5))))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		SolanaStreamingRpcClient_TryReconnect_mC5F35CEBE9D78546EBC1D348D99D7BAF7E7D20B1(__this, NULL);
+	}
+
+IL_000a:
+	{
+		return;
+	}
+}
+>>>>>>> Game_Dev
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

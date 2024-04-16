@@ -351,6 +351,11 @@ struct InitializePoolAccounts_tC2F76C0706D15B042C1ABB96A6E4CA2A734A7C4C;
 struct InitializeRewardAccounts_t82CEB7564706D7278E2546794C8E2B957BCC2E4C;
 // Solana.Unity.Dex.Orca.Core.Program.InitializeTickArrayAccounts
 struct InitializeTickArrayAccounts_t23A9EAE179018E1FE5B9B6773DA2B493447A0B3B;
+<<<<<<< HEAD
+=======
+// Solana.Unity.Rpc.Messages.JsonRpcRequest
+struct JsonRpcRequest_t65BD1C3872CC7A9681196B11DFEE7018121E4E18;
+>>>>>>> Game_Dev
 // Solana.Unity.Dex.Orca.Exceptions.MathErrorCode
 struct MathErrorCode_tB0E8B53F1B7956F9DD06948E869D3D7F3C4842E1;
 // Solana.Unity.Rpc.Models.MemCmp
@@ -1785,6 +1790,7 @@ struct SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8  : public Run
 	int32_t ___U3CChannelU3Ek__BackingField_2;
 	// Solana.Unity.Rpc.Core.Sockets.SubscriptionStatus Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<State>k__BackingField
 	int32_t ___U3CStateU3Ek__BackingField_3;
+<<<<<<< HEAD
 	// System.String Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<LastError>k__BackingField
 	String_t* ___U3CLastErrorU3Ek__BackingField_4;
 	// System.String Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<LastCode>k__BackingField
@@ -1793,6 +1799,18 @@ struct SubscriptionState_tC612CC1D7DCF58D6BF7B339339E335E957C22EF8  : public Run
 	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___U3CAdditionalParametersU3Ek__BackingField_6;
 	// System.EventHandler`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionEvent> Solana.Unity.Rpc.Core.Sockets.SubscriptionState::SubscriptionChanged
 	EventHandler_1_t9AC229760B9490681DC11804AD73AD6526CBD64B* ___SubscriptionChanged_7;
+=======
+	// Solana.Unity.Rpc.Messages.JsonRpcRequest Solana.Unity.Rpc.Core.Sockets.SubscriptionState::Request
+	JsonRpcRequest_t65BD1C3872CC7A9681196B11DFEE7018121E4E18* ___Request_4;
+	// System.String Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<LastError>k__BackingField
+	String_t* ___U3CLastErrorU3Ek__BackingField_5;
+	// System.String Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<LastCode>k__BackingField
+	String_t* ___U3CLastCodeU3Ek__BackingField_6;
+	// System.Collections.Generic.List`1<System.Object> Solana.Unity.Rpc.Core.Sockets.SubscriptionState::<AdditionalParameters>k__BackingField
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ___U3CAdditionalParametersU3Ek__BackingField_7;
+	// System.EventHandler`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionEvent> Solana.Unity.Rpc.Core.Sockets.SubscriptionState::SubscriptionChanged
+	EventHandler_1_t9AC229760B9490681DC11804AD73AD6526CBD64B* ___SubscriptionChanged_8;
+>>>>>>> Game_Dev
 };
 
 // Solana.Unity.Dex.Orca.Core.Program.SwapAccounts
@@ -19021,7 +19039,11 @@ IL_0044_1:
 			L_17 = Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34(L_16, Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34_RuntimeMethod_var);
 			NullCheck(L_12);
 			Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_18;
+<<<<<<< HEAD
 			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(5 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+=======
+			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(6 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+>>>>>>> Game_Dev
 			NullCheck(L_18);
 			TaskAwaiter_1_t8336371FB28C236254C0A39BB7499454C3DF228C L_19;
 			L_19 = Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742(L_18, Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742_RuntimeMethod_var);
@@ -19223,7 +19245,11 @@ IL_0044_1:
 			L_17 = Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34(L_16, Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34_RuntimeMethod_var);
 			NullCheck(L_12);
 			Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_18;
+<<<<<<< HEAD
 			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(5 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+=======
+			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(6 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+>>>>>>> Game_Dev
 			NullCheck(L_18);
 			TaskAwaiter_1_t8336371FB28C236254C0A39BB7499454C3DF228C L_19;
 			L_19 = Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742(L_18, Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742_RuntimeMethod_var);
@@ -19425,7 +19451,11 @@ IL_0044_1:
 			L_17 = Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34(L_16, Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34_RuntimeMethod_var);
 			NullCheck(L_12);
 			Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_18;
+<<<<<<< HEAD
 			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(5 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+=======
+			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(6 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+>>>>>>> Game_Dev
 			NullCheck(L_18);
 			TaskAwaiter_1_t8336371FB28C236254C0A39BB7499454C3DF228C L_19;
 			L_19 = Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742(L_18, Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742_RuntimeMethod_var);
@@ -19627,7 +19657,11 @@ IL_0044_1:
 			L_17 = Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34(L_16, Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34_RuntimeMethod_var);
 			NullCheck(L_12);
 			Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_18;
+<<<<<<< HEAD
 			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(5 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+=======
+			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(6 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+>>>>>>> Game_Dev
 			NullCheck(L_18);
 			TaskAwaiter_1_t8336371FB28C236254C0A39BB7499454C3DF228C L_19;
 			L_19 = Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742(L_18, Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742_RuntimeMethod_var);
@@ -19829,7 +19863,11 @@ IL_0044_1:
 			L_17 = Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34(L_16, Nullable_1_get_Value_m45DEE4419CF6FDA8AD636466244D6317E5C99D34_RuntimeMethod_var);
 			NullCheck(L_12);
 			Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5* L_18;
+<<<<<<< HEAD
 			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(5 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+=======
+			L_18 = InterfaceFuncInvoker3< Task_1_t40F88F0722EA2CE3B6747C1EF7D83CBA1E3DEAD5*, String_t*, Action_2_t7F6F0306E6EFBCAE4296DE50C91FD0CDC5109A87*, int32_t >::Invoke(6 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Sockets.SubscriptionState> Solana.Unity.Rpc.IStreamingRpcClient::SubscribeAccountInfoAsync(System.String,System.Action`2<Solana.Unity.Rpc.Core.Sockets.SubscriptionState,Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>,Solana.Unity.Rpc.Types.Commitment) */, IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C_il2cpp_TypeInfo_var, L_12, L_13, L_15, L_17);
+>>>>>>> Game_Dev
 			NullCheck(L_18);
 			TaskAwaiter_1_t8336371FB28C236254C0A39BB7499454C3DF228C L_19;
 			L_19 = Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742(L_18, Task_1_GetAwaiter_mBFBE25A25E4D2A7FF56168A1B599B76712061742_RuntimeMethod_var);

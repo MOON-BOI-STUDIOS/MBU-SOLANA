@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Dan.Main;
 using UnityEngine.SceneManagement;
+using System.Net.NetworkInformation;
 
 public class Leaderboard : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Leaderboard : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI currentScoreUI;
     private int currentScore;
+    private string curSceneName;
 
 
     public string publicLeaderboardKey;
@@ -25,6 +27,7 @@ public class Leaderboard : MonoBehaviour
    
     private void Start()
     {
+        curSceneName = SceneManager.GetActiveScene().name;
         //gets leaderboard on load
         getLeaderboard();
 
@@ -32,8 +35,14 @@ public class Leaderboard : MonoBehaviour
         LeaderboardCreator.ResetPlayer();
 
         //calculates the score while submitting
-        currentScore = (PlayerPrefs.GetInt("Round") * PlayerPrefs.GetInt("Coins"));
-        
+        if (curSceneName == "FishingArea")
+        {
+            currentScore = PlayerPrefs.GetInt("Points");
+        }
+        else
+        {
+            currentScore = (PlayerPrefs.GetInt("Round") * PlayerPrefs.GetInt("Coins"));
+        }
         //shows the current score as UI
         if (SceneManager.GetActiveScene().name!="BikeRace")
         currentScoreUI.text = currentScore.ToString();

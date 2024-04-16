@@ -611,14 +611,22 @@ extern void UniTask_AsAsyncUnitUniTask_m54132A2A2BBEB304F7B93EC00CF18145AFE59B2F
 extern void UniTask_Yield_m3362988BC281D8FBE6DE9D42C3123214920954DE (void);
 // 0x0000019A Cysharp.Threading.Tasks.YieldAwaitable Cysharp.Threading.Tasks.UniTask::Yield(Cysharp.Threading.Tasks.PlayerLoopTiming)
 extern void UniTask_Yield_m7ABD90623DC0F932601BFDBED6FFF395A5F8FF50 (void);
+<<<<<<< HEAD
 // 0x0000019B Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Yield(System.Threading.CancellationToken)
 extern void UniTask_Yield_m06FD09ECE3B8C0291CB381E63CC5945A819A0EEE (void);
 // 0x0000019C Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Yield(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
 extern void UniTask_Yield_m7ED0C8EBE368F6236CFB58077DA0D106620F4EF4 (void);
+=======
+// 0x0000019B Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Yield(System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_Yield_m9920243B9AD3744655FB05791C83B5965B05DEAE (void);
+// 0x0000019C Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Yield(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_Yield_m4B8E275224C18E337C7011D519A024009D9CE256 (void);
+>>>>>>> Game_Dev
 // 0x0000019D Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::NextFrame()
 extern void UniTask_NextFrame_mEB306E0E08DD5AFB4841953D92825A43C80B95F4 (void);
 // 0x0000019E Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::NextFrame(Cysharp.Threading.Tasks.PlayerLoopTiming)
 extern void UniTask_NextFrame_mE59EAD5078A121AAA1C6CEF24263D51A52D92070 (void);
+<<<<<<< HEAD
 // 0x0000019F Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::NextFrame(System.Threading.CancellationToken)
 extern void UniTask_NextFrame_mD7B9595F9BB95A137CA1AAEDF9F487135015B4D4 (void);
 // 0x000001A0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::NextFrame(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
@@ -4881,6 +4889,4339 @@ extern void U3CU3Ec_U3CGetStateU3Eb__0_0_m11816848E5A6598D044739D671ECF2189BD8E9
 // 0x00000CC8 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c::.ctor()
 // 0x00000CC9 System.Int32 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c::<.cctor>b__12_0()
 static Il2CppMethodPointer s_methodPointers[3273] = 
+=======
+// 0x0000019F Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::NextFrame(System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_NextFrame_mCF526D867BFA117AFF77025B5E9500510FD87787 (void);
+// 0x000001A0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::NextFrame(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_NextFrame_mD7E7B555695D216D9DD5BEE39D15C30B124693EC (void);
+// 0x000001A1 Cysharp.Threading.Tasks.YieldAwaitable Cysharp.Threading.Tasks.UniTask::WaitForEndOfFrame()
+extern void UniTask_WaitForEndOfFrame_mFA3200F5A4185C0D7AB22EAB3F9AEAF8FF15D1F2 (void);
+// 0x000001A2 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitForEndOfFrame(System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_WaitForEndOfFrame_m265FCD341F489A9D02EAE08E3976D11DF862C9FC (void);
+// 0x000001A3 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitForEndOfFrame(UnityEngine.MonoBehaviour)
+extern void UniTask_WaitForEndOfFrame_m456C9A7188E577AB01B5E5E5D74AE9F2AC861187 (void);
+// 0x000001A4 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitForEndOfFrame(UnityEngine.MonoBehaviour,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_WaitForEndOfFrame_m36D87E5703E885F74A8E991A4C5AB9CDFCA24760 (void);
+// 0x000001A5 Cysharp.Threading.Tasks.YieldAwaitable Cysharp.Threading.Tasks.UniTask::WaitForFixedUpdate()
+extern void UniTask_WaitForFixedUpdate_m6A99F0966CA3B825CBFB21FD424A920F9EA50732 (void);
+// 0x000001A6 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitForFixedUpdate(System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_WaitForFixedUpdate_m5299317C28C7160E48C5F9AC2D663E39C8D15BC8 (void);
+// 0x000001A7 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitForSeconds(System.Single,System.Boolean,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_WaitForSeconds_mBDE525169D43CA651B4C5843902DF2F53C4E011C (void);
+// 0x000001A8 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitForSeconds(System.Int32,System.Boolean,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_WaitForSeconds_m2F49ED9EBF69C45612CBCAD3D716E58EAFF3227B (void);
+// 0x000001A9 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::DelayFrame(System.Int32,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_DelayFrame_m8D556B751B8A1CF275BDADBDB4B2C7839657FBB7 (void);
+// 0x000001AA Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Delay(System.Int32,System.Boolean,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_Delay_m0F6B9A8CE95AB6C59ACCCF49E96369AB9FAD4960 (void);
+// 0x000001AB Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Delay(System.TimeSpan,System.Boolean,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_Delay_m446244C96F6C971AA44C9F458176F25FCA708F2F (void);
+// 0x000001AC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Delay(System.Int32,Cysharp.Threading.Tasks.DelayType,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_Delay_m6FF65999EEEFFD824A44DF8043C49D668D02282E (void);
+// 0x000001AD Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Delay(System.TimeSpan,Cysharp.Threading.Tasks.DelayType,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_Delay_mDBE9F54246D1E057EF8528601E2A86E451FB4462 (void);
+// 0x000001AE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::FromException(System.Exception)
+extern void UniTask_FromException_mC6AC508C727D591C6BE908F2014570963CE9E5EE (void);
+// 0x000001AF Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::FromException(System.Exception)
+// 0x000001B0 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::FromResult(T)
+// 0x000001B1 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::FromCanceled(System.Threading.CancellationToken)
+extern void UniTask_FromCanceled_mCB25269CC2BD34F255BC5DC67D83C09140C49458 (void);
+// 0x000001B2 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::FromCanceled(System.Threading.CancellationToken)
+// 0x000001B3 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Create(System.Func`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTask_Create_mEF4619EAAEFE6AC75B95375CA558D14CB0FBDE3B (void);
+// 0x000001B4 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::Create(System.Func`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000001B5 Cysharp.Threading.Tasks.AsyncLazy Cysharp.Threading.Tasks.UniTask::Lazy(System.Func`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTask_Lazy_m6D4B5EEA3127C77D6AA9A0DAF7519D31341C78D9 (void);
+// 0x000001B6 Cysharp.Threading.Tasks.AsyncLazy`1<T> Cysharp.Threading.Tasks.UniTask::Lazy(System.Func`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000001B7 System.Void Cysharp.Threading.Tasks.UniTask::Void(System.Func`1<Cysharp.Threading.Tasks.UniTaskVoid>)
+extern void UniTask_Void_m75F7036399F769EA171E65F9635A74220B7E7B29 (void);
+// 0x000001B8 System.Void Cysharp.Threading.Tasks.UniTask::Void(System.Func`2<System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTaskVoid>,System.Threading.CancellationToken)
+extern void UniTask_Void_m1BD846B7FC6BD19E7BE013D12B8A51237B5C2757 (void);
+// 0x000001B9 System.Void Cysharp.Threading.Tasks.UniTask::Void(System.Func`2<T,Cysharp.Threading.Tasks.UniTaskVoid>,T)
+// 0x000001BA System.Action Cysharp.Threading.Tasks.UniTask::Action(System.Func`1<Cysharp.Threading.Tasks.UniTaskVoid>)
+extern void UniTask_Action_m7513BD0CC1FFE9ED3EA7CF73ACC06A601C62FF87 (void);
+// 0x000001BB System.Action Cysharp.Threading.Tasks.UniTask::Action(System.Func`2<System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTaskVoid>,System.Threading.CancellationToken)
+extern void UniTask_Action_mE74F38FDB6BCF687ABBAFD321A23D6584749E3B7 (void);
+// 0x000001BC UnityEngine.Events.UnityAction Cysharp.Threading.Tasks.UniTask::UnityAction(System.Func`1<Cysharp.Threading.Tasks.UniTaskVoid>)
+extern void UniTask_UnityAction_mF719B129954A4A43EFD1F5E38B25BAC6469F694D (void);
+// 0x000001BD UnityEngine.Events.UnityAction Cysharp.Threading.Tasks.UniTask::UnityAction(System.Func`2<System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTaskVoid>,System.Threading.CancellationToken)
+extern void UniTask_UnityAction_mCE2D12FF2EA538F4986BE9348FE280E604A27B41 (void);
+// 0x000001BE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Defer(System.Func`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTask_Defer_mF37E41EBB2EA070433FB5F459D15C17D36BE5950 (void);
+// 0x000001BF Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::Defer(System.Func`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000001C0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Never(System.Threading.CancellationToken)
+extern void UniTask_Never_m9EC74285075BC4B3736BB56D798EF7A7FD466B05 (void);
+// 0x000001C1 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::Never(System.Threading.CancellationToken)
+// 0x000001C2 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Run(System.Action,System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_Run_mB53DFE7E4986976F83B8A0CFC5F5810F0A3467F2 (void);
+// 0x000001C3 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Run(System.Action`1<System.Object>,System.Object,System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_Run_mDD332DCF083F0C28C374FBE859FFBBBEEEC6D322 (void);
+// 0x000001C4 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Run(System.Func`1<Cysharp.Threading.Tasks.UniTask>,System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_Run_m17286F415AB870D2648BA5ACB3E15F7F5E857657 (void);
+// 0x000001C5 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::Run(System.Func`2<System.Object,Cysharp.Threading.Tasks.UniTask>,System.Object,System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_Run_m3ECEFD17A618B06B3BB58F04B29C2788BA468EE8 (void);
+// 0x000001C6 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::Run(System.Func`1<T>,System.Boolean,System.Threading.CancellationToken)
+// 0x000001C7 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::Run(System.Func`1<Cysharp.Threading.Tasks.UniTask`1<T>>,System.Boolean,System.Threading.CancellationToken)
+// 0x000001C8 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::Run(System.Func`2<System.Object,T>,System.Object,System.Boolean,System.Threading.CancellationToken)
+// 0x000001C9 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::Run(System.Func`2<System.Object,Cysharp.Threading.Tasks.UniTask`1<T>>,System.Object,System.Boolean,System.Threading.CancellationToken)
+// 0x000001CA Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::RunOnThreadPool(System.Action,System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_RunOnThreadPool_m95F4F71334B98E9F18743AAEC7B32342FF7E460D (void);
+// 0x000001CB Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::RunOnThreadPool(System.Action`1<System.Object>,System.Object,System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_RunOnThreadPool_m592A9B6B81E19896E79C560E912AC820B3B53FCD (void);
+// 0x000001CC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::RunOnThreadPool(System.Func`1<Cysharp.Threading.Tasks.UniTask>,System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_RunOnThreadPool_m6F6C1CC4938493BB8EA615576049C037F95930F7 (void);
+// 0x000001CD Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::RunOnThreadPool(System.Func`2<System.Object,Cysharp.Threading.Tasks.UniTask>,System.Object,System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_RunOnThreadPool_m00D233ABEBE1B71EA5A49AEB10D418933A4DD0BA (void);
+// 0x000001CE Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::RunOnThreadPool(System.Func`1<T>,System.Boolean,System.Threading.CancellationToken)
+// 0x000001CF Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::RunOnThreadPool(System.Func`1<Cysharp.Threading.Tasks.UniTask`1<T>>,System.Boolean,System.Threading.CancellationToken)
+// 0x000001D0 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::RunOnThreadPool(System.Func`2<System.Object,T>,System.Object,System.Boolean,System.Threading.CancellationToken)
+// 0x000001D1 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask::RunOnThreadPool(System.Func`2<System.Object,Cysharp.Threading.Tasks.UniTask`1<T>>,System.Object,System.Boolean,System.Threading.CancellationToken)
+// 0x000001D2 Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable Cysharp.Threading.Tasks.UniTask::SwitchToMainThread(System.Threading.CancellationToken)
+extern void UniTask_SwitchToMainThread_mBC162C95F0ED605F8E5416A60CCA153E0993CBF1 (void);
+// 0x000001D3 Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable Cysharp.Threading.Tasks.UniTask::SwitchToMainThread(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
+extern void UniTask_SwitchToMainThread_m7373C0656841FE81F475D7FA502C02BB656D1F0E (void);
+// 0x000001D4 Cysharp.Threading.Tasks.ReturnToMainThread Cysharp.Threading.Tasks.UniTask::ReturnToMainThread(System.Threading.CancellationToken)
+extern void UniTask_ReturnToMainThread_m0264CF992251B62917D6DA1766DD349907C4FDD9 (void);
+// 0x000001D5 Cysharp.Threading.Tasks.ReturnToMainThread Cysharp.Threading.Tasks.UniTask::ReturnToMainThread(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
+extern void UniTask_ReturnToMainThread_mC8F5799AD89FA58E0731C259B8A019E0CFEA2FAA (void);
+// 0x000001D6 System.Void Cysharp.Threading.Tasks.UniTask::Post(System.Action,Cysharp.Threading.Tasks.PlayerLoopTiming)
+extern void UniTask_Post_m3B396E77C2621278A0AD1D5515BFB7C91C1D7EA3 (void);
+// 0x000001D7 Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable Cysharp.Threading.Tasks.UniTask::SwitchToThreadPool()
+extern void UniTask_SwitchToThreadPool_m4A79CBAD5A44C5037CD0A366CA801875F5206010 (void);
+// 0x000001D8 Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable Cysharp.Threading.Tasks.UniTask::SwitchToTaskPool()
+extern void UniTask_SwitchToTaskPool_mACAC091E27435F67F904141B990B2C0CE63612DB (void);
+// 0x000001D9 Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable Cysharp.Threading.Tasks.UniTask::SwitchToSynchronizationContext(System.Threading.SynchronizationContext,System.Threading.CancellationToken)
+extern void UniTask_SwitchToSynchronizationContext_m4601DE0818B235423FCDC5DE5B08C77731FB64C4 (void);
+// 0x000001DA Cysharp.Threading.Tasks.ReturnToSynchronizationContext Cysharp.Threading.Tasks.UniTask::ReturnToSynchronizationContext(System.Threading.SynchronizationContext,System.Threading.CancellationToken)
+extern void UniTask_ReturnToSynchronizationContext_mE384C39FD911BF1DB2AD461062122AA9452F6DE0 (void);
+// 0x000001DB Cysharp.Threading.Tasks.ReturnToSynchronizationContext Cysharp.Threading.Tasks.UniTask::ReturnToCurrentSynchronizationContext(System.Boolean,System.Threading.CancellationToken)
+extern void UniTask_ReturnToCurrentSynchronizationContext_m283C1B36076B49061B8E52B19DF1DA6F88752E64 (void);
+// 0x000001DC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitUntil(System.Func`1<System.Boolean>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_WaitUntil_m3CC6559258C98FE64A372B1AE9B7CAEA077D7795 (void);
+// 0x000001DD Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitWhile(System.Func`1<System.Boolean>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UniTask_WaitWhile_m96280BD0466423A20CDBE04E6CF68D0DDB7CD884 (void);
+// 0x000001DE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WaitUntilCanceled(System.Threading.CancellationToken,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Boolean)
+extern void UniTask_WaitUntilCanceled_mC1EDEEE15C9D240B4349098E3BDAB31087AAC6AD (void);
+// 0x000001DF Cysharp.Threading.Tasks.UniTask`1<U> Cysharp.Threading.Tasks.UniTask::WaitUntilValueChanged(T,System.Func`2<T,U>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Collections.Generic.IEqualityComparer`1<U>,System.Threading.CancellationToken,System.Boolean)
+// 0x000001E0 Cysharp.Threading.Tasks.UniTask`1<T[]> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T>[])
+// 0x000001E1 Cysharp.Threading.Tasks.UniTask`1<T[]> Cysharp.Threading.Tasks.UniTask::WhenAll(System.Collections.Generic.IEnumerable`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000001E2 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask[])
+extern void UniTask_WhenAll_m9C68DE3D712A9EA42B6711E0D28EE324056137E1 (void);
+// 0x000001E3 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask::WhenAll(System.Collections.Generic.IEnumerable`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTask_WhenAll_m647205A58F2D0D8AB2F0961A45805B086ADE9A17 (void);
+// 0x000001E4 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<T1,T2>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>)
+// 0x000001E5 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`3<T1,T2,T3>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>)
+// 0x000001E6 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`4<T1,T2,T3,T4>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>)
+// 0x000001E7 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`5<T1,T2,T3,T4,T5>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>)
+// 0x000001E8 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`6<T1,T2,T3,T4,T5,T6>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>)
+// 0x000001E9 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`7<T1,T2,T3,T4,T5,T6,T7>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>)
+// 0x000001EA Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`1<T8>>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>)
+// 0x000001EB Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`2<T8,T9>>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>)
+// 0x000001EC Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`3<T8,T9,T10>>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>)
+// 0x000001ED Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`4<T8,T9,T10,T11>>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>)
+// 0x000001EE Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`5<T8,T9,T10,T11,T12>>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>)
+// 0x000001EF Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`6<T8,T9,T10,T11,T12,T13>>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>)
+// 0x000001F0 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`7<T8,T9,T10,T11,T12,T13,T14>>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>)
+// 0x000001F1 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`8<T8,T9,T10,T11,T12,T13,T14,System.ValueTuple`1<T15>>>> Cysharp.Threading.Tasks.UniTask::WhenAll(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>,Cysharp.Threading.Tasks.UniTask`1<T15>)
+// 0x000001F2 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Boolean,T>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T>,Cysharp.Threading.Tasks.UniTask)
+// 0x000001F3 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Int32,T>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T>[])
+// 0x000001F4 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Int32,T>> Cysharp.Threading.Tasks.UniTask::WhenAny(System.Collections.Generic.IEnumerable`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000001F5 Cysharp.Threading.Tasks.UniTask`1<System.Int32> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask[])
+extern void UniTask_WhenAny_m24B0E6C4F5E709EE181F73561090F4D078F33BCE (void);
+// 0x000001F6 Cysharp.Threading.Tasks.UniTask`1<System.Int32> Cysharp.Threading.Tasks.UniTask::WhenAny(System.Collections.Generic.IEnumerable`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTask_WhenAny_m69890D7F8202626B38A913025704975D68A1B7FC (void);
+// 0x000001F7 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`3<System.Int32,T1,T2>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>)
+// 0x000001F8 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`4<System.Int32,T1,T2,T3>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>)
+// 0x000001F9 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`5<System.Int32,T1,T2,T3,T4>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>)
+// 0x000001FA Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`6<System.Int32,T1,T2,T3,T4,T5>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>)
+// 0x000001FB Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`7<System.Int32,T1,T2,T3,T4,T5,T6>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>)
+// 0x000001FC Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`1<T7>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>)
+// 0x000001FD Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`2<T7,T8>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>)
+// 0x000001FE Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`3<T7,T8,T9>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>)
+// 0x000001FF Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`4<T7,T8,T9,T10>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>)
+// 0x00000200 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`5<T7,T8,T9,T10,T11>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>)
+// 0x00000201 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`6<T7,T8,T9,T10,T11,T12>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>)
+// 0x00000202 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`7<T7,T8,T9,T10,T11,T12,T13>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>)
+// 0x00000203 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`8<T7,T8,T9,T10,T11,T12,T13,System.ValueTuple`1<T14>>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>)
+// 0x00000204 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`8<T7,T8,T9,T10,T11,T12,T13,System.ValueTuple`2<T14,T15>>>> Cysharp.Threading.Tasks.UniTask::WhenAny(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>,Cysharp.Threading.Tasks.UniTask`1<T15>)
+// 0x00000205 System.Void Cysharp.Threading.Tasks.UniTask::.cctor()
+extern void UniTask__cctor_m17B980F936F60071A3DD10AD8366298D2886E62A (void);
+// 0x00000206 System.Void Cysharp.Threading.Tasks.UniTask/AsyncUnitSource::.ctor(Cysharp.Threading.Tasks.IUniTaskSource)
+extern void AsyncUnitSource__ctor_m2AD2F876F4BC98C3FB76966297DD1027F3E258A1 (void);
+// 0x00000207 Cysharp.Threading.Tasks.AsyncUnit Cysharp.Threading.Tasks.UniTask/AsyncUnitSource::GetResult(System.Int16)
+extern void AsyncUnitSource_GetResult_m77A04951C40AC01650DD3174F41D00FFB72E1C9F (void);
+// 0x00000208 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/AsyncUnitSource::GetStatus(System.Int16)
+extern void AsyncUnitSource_GetStatus_m6C86F40C53DC81E6FAA90611C8EB57A50F533863 (void);
+// 0x00000209 System.Void Cysharp.Threading.Tasks.UniTask/AsyncUnitSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AsyncUnitSource_OnCompleted_mAB0AEA4106249087BD67EB34FAA98F8B17C95A15 (void);
+// 0x0000020A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/AsyncUnitSource::UnsafeGetStatus()
+extern void AsyncUnitSource_UnsafeGetStatus_m56C594DBE89DDC396EC392AE112BDCD209C4BBB4 (void);
+// 0x0000020B System.Void Cysharp.Threading.Tasks.UniTask/AsyncUnitSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void AsyncUnitSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m07DB5C17E06623DE6220BA41B2A9D2CD8F301EEC (void);
+// 0x0000020C System.Void Cysharp.Threading.Tasks.UniTask/IsCanceledSource::.ctor(Cysharp.Threading.Tasks.IUniTaskSource)
+extern void IsCanceledSource__ctor_m43AB212BB5D35C0B4ADC403D3BA581597B827CB6 (void);
+// 0x0000020D System.Boolean Cysharp.Threading.Tasks.UniTask/IsCanceledSource::GetResult(System.Int16)
+extern void IsCanceledSource_GetResult_m6A2EE039B24F8C2F865641C348CAF5C1E7BCC762 (void);
+// 0x0000020E System.Void Cysharp.Threading.Tasks.UniTask/IsCanceledSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void IsCanceledSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m185222E52F76F43E50140617033E5C343A4EAE52 (void);
+// 0x0000020F Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/IsCanceledSource::GetStatus(System.Int16)
+extern void IsCanceledSource_GetStatus_m3FE382F33F833998F2C9DC75B4E932CEADEDA35C (void);
+// 0x00000210 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/IsCanceledSource::UnsafeGetStatus()
+extern void IsCanceledSource_UnsafeGetStatus_m32E59F0E59C4A620240CC204970D332775AC4594 (void);
+// 0x00000211 System.Void Cysharp.Threading.Tasks.UniTask/IsCanceledSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void IsCanceledSource_OnCompleted_mBF8260DBDD1402DAAC4E0631E6337ED04E9EC1FF (void);
+// 0x00000212 System.Void Cysharp.Threading.Tasks.UniTask/MemoizeSource::.ctor(Cysharp.Threading.Tasks.IUniTaskSource)
+extern void MemoizeSource__ctor_mA6F3CC385E7903E2CA855AC9084D99DD013B2779 (void);
+// 0x00000213 System.Void Cysharp.Threading.Tasks.UniTask/MemoizeSource::GetResult(System.Int16)
+extern void MemoizeSource_GetResult_m5B1F25795A75DECCC49D1C3678C1B15C54C7EFC2 (void);
+// 0x00000214 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/MemoizeSource::GetStatus(System.Int16)
+extern void MemoizeSource_GetStatus_m75F641C2575093D119D0523A0AD182A6C00D95FF (void);
+// 0x00000215 System.Void Cysharp.Threading.Tasks.UniTask/MemoizeSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void MemoizeSource_OnCompleted_m791AD6589A8553FCDA0B9310D24A7116CCBC9CF7 (void);
+// 0x00000216 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/MemoizeSource::UnsafeGetStatus()
+extern void MemoizeSource_UnsafeGetStatus_m25F5C20594237875063FB6EFD74BCA7F974A1444 (void);
+// 0x00000217 System.Void Cysharp.Threading.Tasks.UniTask/Awaiter::.ctor(Cysharp.Threading.Tasks.UniTask&)
+extern void Awaiter__ctor_m4154A3A6D62BB1657D17A8106633CD9E1CE51F04 (void);
+// 0x00000218 System.Boolean Cysharp.Threading.Tasks.UniTask/Awaiter::get_IsCompleted()
+extern void Awaiter_get_IsCompleted_m2D01E3AB8A7C5AA8AA1E1EF58D92A6A095C00B9A (void);
+// 0x00000219 System.Void Cysharp.Threading.Tasks.UniTask/Awaiter::GetResult()
+extern void Awaiter_GetResult_mC439993563D3BD49CEC67AAF6AFB3AEF72E916BD (void);
+// 0x0000021A System.Void Cysharp.Threading.Tasks.UniTask/Awaiter::OnCompleted(System.Action)
+extern void Awaiter_OnCompleted_mCC98D13C05342AF93D2711CCE1E31004F829FE84 (void);
+// 0x0000021B System.Void Cysharp.Threading.Tasks.UniTask/Awaiter::UnsafeOnCompleted(System.Action)
+extern void Awaiter_UnsafeOnCompleted_m6C4775F8F4F2BEFB8118EBBA1EA621440CE84D62 (void);
+// 0x0000021C System.Void Cysharp.Threading.Tasks.UniTask/Awaiter::SourceOnCompleted(System.Action`1<System.Object>,System.Object)
+extern void Awaiter_SourceOnCompleted_m7A5A045E2ED6F2B0729D11CAC4E18F2BC5B758EB (void);
+// 0x0000021D Cysharp.Threading.Tasks.UniTask/YieldPromise& Cysharp.Threading.Tasks.UniTask/YieldPromise::get_NextNode()
+extern void YieldPromise_get_NextNode_m35002F769A22885546B5C01785427698878E3FE2 (void);
+// 0x0000021E System.Void Cysharp.Threading.Tasks.UniTask/YieldPromise::.cctor()
+extern void YieldPromise__cctor_m0178AEF3EA81993CAD2EFCFF0CA0EC74CDBE7F74 (void);
+// 0x0000021F System.Void Cysharp.Threading.Tasks.UniTask/YieldPromise::.ctor()
+extern void YieldPromise__ctor_m6BC7199AEE5C8E8B5FD1CEDC76320506B263F297 (void);
+// 0x00000220 Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/YieldPromise::Create(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void YieldPromise_Create_m3B21084257808512E1F7C8E3B555BFFF43EE95A7 (void);
+// 0x00000221 System.Void Cysharp.Threading.Tasks.UniTask/YieldPromise::GetResult(System.Int16)
+extern void YieldPromise_GetResult_mE36D63A7130D9DB4A0EFF07BC05EB22A72EA0E7A (void);
+// 0x00000222 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/YieldPromise::GetStatus(System.Int16)
+extern void YieldPromise_GetStatus_mF097803CD3CE629482A1D8CB7CFD7559EBE9855F (void);
+// 0x00000223 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/YieldPromise::UnsafeGetStatus()
+extern void YieldPromise_UnsafeGetStatus_mF36A260CBA022295A12C88FC7F2D0BB615A3D242 (void);
+// 0x00000224 System.Void Cysharp.Threading.Tasks.UniTask/YieldPromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void YieldPromise_OnCompleted_mB98AF527F1C2A585A9DCEFCE121EEBE29F6E901F (void);
+// 0x00000225 System.Boolean Cysharp.Threading.Tasks.UniTask/YieldPromise::MoveNext()
+extern void YieldPromise_MoveNext_m23B55FB3E86FEE512F1337BECE7C2AEFC834A388 (void);
+// 0x00000226 System.Boolean Cysharp.Threading.Tasks.UniTask/YieldPromise::TryReturn()
+extern void YieldPromise_TryReturn_mE5E1D5E03E0231F925F1CA467683F2084253697B (void);
+// 0x00000227 System.Void Cysharp.Threading.Tasks.UniTask/YieldPromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_m1D5C6B99F00B6DA22885082DC5421CEEC53D5729 (void);
+// 0x00000228 System.Void Cysharp.Threading.Tasks.UniTask/YieldPromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m1693C9F9C8FA9E08FE00F31BE4509D74B99D1340 (void);
+// 0x00000229 System.Int32 Cysharp.Threading.Tasks.UniTask/YieldPromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m65E3FE2CC0F8FAA9DB530ADAB89FEEAC3FCC6BA3 (void);
+// 0x0000022A System.Void Cysharp.Threading.Tasks.UniTask/YieldPromise/<>c::<Create>b__9_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__9_0_m1070562BA14469EE4A83DCDB7A190662E06ABAFF (void);
+// 0x0000022B Cysharp.Threading.Tasks.UniTask/NextFramePromise& Cysharp.Threading.Tasks.UniTask/NextFramePromise::get_NextNode()
+extern void NextFramePromise_get_NextNode_mEBE190751ED87E6ED0EDFF69F341E968AA24DB78 (void);
+// 0x0000022C System.Void Cysharp.Threading.Tasks.UniTask/NextFramePromise::.cctor()
+extern void NextFramePromise__cctor_mC59005174F368748DA23910F8F585FD33DC09DD3 (void);
+// 0x0000022D System.Void Cysharp.Threading.Tasks.UniTask/NextFramePromise::.ctor()
+extern void NextFramePromise__ctor_m1A527C69C686250659A816FC4805494B45A451EC (void);
+// 0x0000022E Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/NextFramePromise::Create(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void NextFramePromise_Create_m33567EC8A25A6FAF09B870BD5086595F57537094 (void);
+// 0x0000022F System.Void Cysharp.Threading.Tasks.UniTask/NextFramePromise::GetResult(System.Int16)
+extern void NextFramePromise_GetResult_mE381CAAF08DB307E632D789ABB32C9F741840B98 (void);
+// 0x00000230 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/NextFramePromise::GetStatus(System.Int16)
+extern void NextFramePromise_GetStatus_mC17DE65A641EC520FDD1D794434D7721F11FF046 (void);
+// 0x00000231 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/NextFramePromise::UnsafeGetStatus()
+extern void NextFramePromise_UnsafeGetStatus_mB83C781946E1D779D64CEA80E57B5F0949FEB371 (void);
+// 0x00000232 System.Void Cysharp.Threading.Tasks.UniTask/NextFramePromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void NextFramePromise_OnCompleted_m9F4A6D33004DB8626614F48665425A8C20693225 (void);
+// 0x00000233 System.Boolean Cysharp.Threading.Tasks.UniTask/NextFramePromise::MoveNext()
+extern void NextFramePromise_MoveNext_m18BC7278D7DA0160538B12DC8C2F719967D5BE5A (void);
+// 0x00000234 System.Boolean Cysharp.Threading.Tasks.UniTask/NextFramePromise::TryReturn()
+extern void NextFramePromise_TryReturn_m9837FA0455BAC3CC26BBBFBAF6CE27A29401AB44 (void);
+// 0x00000235 System.Void Cysharp.Threading.Tasks.UniTask/NextFramePromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_m0E4C35CBFCA70900634AD2C33811BAAF22C02A0D (void);
+// 0x00000236 System.Void Cysharp.Threading.Tasks.UniTask/NextFramePromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m293F2D26E7857D0E1954C5AE63C1944A0179F2CA (void);
+// 0x00000237 System.Int32 Cysharp.Threading.Tasks.UniTask/NextFramePromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m5F46A495AE0371145399A0FAD5D06FBD542DDB2C (void);
+// 0x00000238 System.Void Cysharp.Threading.Tasks.UniTask/NextFramePromise/<>c::<Create>b__10_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__10_0_mC7FE50796152420A367990BBC78583F80D7331B2 (void);
+// 0x00000239 Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise& Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::get_NextNode()
+extern void WaitForEndOfFramePromise_get_NextNode_m823C37504BA13227B9E371369888D81665192B3C (void);
+// 0x0000023A System.Void Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::.cctor()
+extern void WaitForEndOfFramePromise__cctor_mAA5479E42300EB24BE6E1BBB76E58AD4227A7A6B (void);
+// 0x0000023B System.Void Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::.ctor()
+extern void WaitForEndOfFramePromise__ctor_m1669A1A23C84B7EEA3F0F246FA169119177A34D8 (void);
+// 0x0000023C Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::Create(UnityEngine.MonoBehaviour,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void WaitForEndOfFramePromise_Create_m44B42B4C9736A4B9099E60E41FBAA2C9A11A2D7C (void);
+// 0x0000023D System.Void Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::GetResult(System.Int16)
+extern void WaitForEndOfFramePromise_GetResult_mF1DDC2F07D9322CF2D17D8556E5373630F248C03 (void);
+// 0x0000023E Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::GetStatus(System.Int16)
+extern void WaitForEndOfFramePromise_GetStatus_m86B53226F1F1596ACC662957093665FD7B6A1012 (void);
+// 0x0000023F Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::UnsafeGetStatus()
+extern void WaitForEndOfFramePromise_UnsafeGetStatus_mA385C7E486FF9B73792BDE6012D28960E979AD82 (void);
+// 0x00000240 System.Void Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void WaitForEndOfFramePromise_OnCompleted_m77034FE77C1A625A6ED295849016B4FC0B23003F (void);
+// 0x00000241 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::TryReturn()
+extern void WaitForEndOfFramePromise_TryReturn_m5885833937B9CB00B80631FA3EF5178C537553D2 (void);
+// 0x00000242 System.Object Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::System.Collections.IEnumerator.get_Current()
+extern void WaitForEndOfFramePromise_System_Collections_IEnumerator_get_Current_m74030020D2AB043B17F6333B5E4C9852F4F8AE9D (void);
+// 0x00000243 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::System.Collections.IEnumerator.MoveNext()
+extern void WaitForEndOfFramePromise_System_Collections_IEnumerator_MoveNext_mF9A7477B92F50E31E58E97CF173FD1FE2677BD15 (void);
+// 0x00000244 System.Void Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise::Reset()
+extern void WaitForEndOfFramePromise_Reset_m88801306C08B5DDE6DA666CA2F1839C23E88175B (void);
+// 0x00000245 System.Void Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_m22544CBC76EF2E7453ABB89B68DD0588474A4CEE (void);
+// 0x00000246 System.Void Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_mA57858E50489B0FEB8320A85509984EE403F30EF (void);
+// 0x00000247 System.Int32 Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_mD263B7A832528228622A5ED4EC7770B6E3D67B7C (void);
+// 0x00000248 System.Void Cysharp.Threading.Tasks.UniTask/WaitForEndOfFramePromise/<>c::<Create>b__9_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__9_0_mB1DE28107C616EF671AD2EFC28BAF333D90D9DAA (void);
+// 0x00000249 Cysharp.Threading.Tasks.UniTask/DelayFramePromise& Cysharp.Threading.Tasks.UniTask/DelayFramePromise::get_NextNode()
+extern void DelayFramePromise_get_NextNode_m5E39E63DFA2B973B50EBEE216FA14EDB2B12CD8B (void);
+// 0x0000024A System.Void Cysharp.Threading.Tasks.UniTask/DelayFramePromise::.cctor()
+extern void DelayFramePromise__cctor_m370D1F2F63B63E002B9A0B3ECADF2388D682B26F (void);
+// 0x0000024B System.Void Cysharp.Threading.Tasks.UniTask/DelayFramePromise::.ctor()
+extern void DelayFramePromise__ctor_m654FCF4355DEF52EA1D39E37B55E1456C6BAFE37 (void);
+// 0x0000024C Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/DelayFramePromise::Create(System.Int32,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void DelayFramePromise_Create_m1EFF3370EB1B19B6C153C9E5F0FC82179A255D9E (void);
+// 0x0000024D System.Void Cysharp.Threading.Tasks.UniTask/DelayFramePromise::GetResult(System.Int16)
+extern void DelayFramePromise_GetResult_m47A37A2092283E62B12E3759E6A4CB900C8E95E6 (void);
+// 0x0000024E Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DelayFramePromise::GetStatus(System.Int16)
+extern void DelayFramePromise_GetStatus_m9053C231AC019F2DDDDA4C8B313B35305C6700D2 (void);
+// 0x0000024F Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DelayFramePromise::UnsafeGetStatus()
+extern void DelayFramePromise_UnsafeGetStatus_m1D921F426F932B27009E65877F4D62A75B9CD0D0 (void);
+// 0x00000250 System.Void Cysharp.Threading.Tasks.UniTask/DelayFramePromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void DelayFramePromise_OnCompleted_m129580852FA8EA6401095482F31C6A8D0F5D1073 (void);
+// 0x00000251 System.Boolean Cysharp.Threading.Tasks.UniTask/DelayFramePromise::MoveNext()
+extern void DelayFramePromise_MoveNext_mD075C9B35C34B139ECA9E3C02B7F92DF21E50E1A (void);
+// 0x00000252 System.Boolean Cysharp.Threading.Tasks.UniTask/DelayFramePromise::TryReturn()
+extern void DelayFramePromise_TryReturn_m1AC8FB8392C2A95D8AF55EFB0BD1BCE07EF947FF (void);
+// 0x00000253 System.Void Cysharp.Threading.Tasks.UniTask/DelayFramePromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_mEBB3223756C9BB1FF1ED2B2DD4D705CB2E7AFB89 (void);
+// 0x00000254 System.Void Cysharp.Threading.Tasks.UniTask/DelayFramePromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m6A7F789ECB7D4E3CACD77EE4B335EA08581D097A (void);
+// 0x00000255 System.Int32 Cysharp.Threading.Tasks.UniTask/DelayFramePromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_mA2680085CAC8308E14A11913EBB5B4BD317F866C (void);
+// 0x00000256 System.Void Cysharp.Threading.Tasks.UniTask/DelayFramePromise/<>c::<Create>b__12_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__12_0_m364D84EAB6854A8B331BF39DAAF4FE63A75C2E0E (void);
+// 0x00000257 Cysharp.Threading.Tasks.UniTask/DelayPromise& Cysharp.Threading.Tasks.UniTask/DelayPromise::get_NextNode()
+extern void DelayPromise_get_NextNode_m052F74D1010B856461FFE289BBCE397C23309424 (void);
+// 0x00000258 System.Void Cysharp.Threading.Tasks.UniTask/DelayPromise::.cctor()
+extern void DelayPromise__cctor_mB615EC27C3FAB986A9170F6C16AD17090CEBD04E (void);
+// 0x00000259 System.Void Cysharp.Threading.Tasks.UniTask/DelayPromise::.ctor()
+extern void DelayPromise__ctor_m4F76D103946E1BF73889E5176769AEC683C559B0 (void);
+// 0x0000025A Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/DelayPromise::Create(System.TimeSpan,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void DelayPromise_Create_m891B4E88F71B0718965855E39342115543A9C218 (void);
+// 0x0000025B System.Void Cysharp.Threading.Tasks.UniTask/DelayPromise::GetResult(System.Int16)
+extern void DelayPromise_GetResult_m0E215D75987A62E367C1EC94A8D7646FF5422675 (void);
+// 0x0000025C Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DelayPromise::GetStatus(System.Int16)
+extern void DelayPromise_GetStatus_mCBF2239EB5E8A1B4D2F2F2A37329CCCA82B8A3C0 (void);
+// 0x0000025D Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DelayPromise::UnsafeGetStatus()
+extern void DelayPromise_UnsafeGetStatus_mBCEED523B78BB889EEE752754011EA847B8CB4C4 (void);
+// 0x0000025E System.Void Cysharp.Threading.Tasks.UniTask/DelayPromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void DelayPromise_OnCompleted_m9E6029B1E08DFC77527BE7977C5AE722D0A822C1 (void);
+// 0x0000025F System.Boolean Cysharp.Threading.Tasks.UniTask/DelayPromise::MoveNext()
+extern void DelayPromise_MoveNext_mE40C8EAC8E59FB421A260131A2211A32D18CA297 (void);
+// 0x00000260 System.Boolean Cysharp.Threading.Tasks.UniTask/DelayPromise::TryReturn()
+extern void DelayPromise_TryReturn_m5F9BFE6413F89D571880334FD38AE8751BE7D0F8 (void);
+// 0x00000261 System.Void Cysharp.Threading.Tasks.UniTask/DelayPromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_mB174830645DD5169EFB16D295F5F1C6BF46530D8 (void);
+// 0x00000262 System.Void Cysharp.Threading.Tasks.UniTask/DelayPromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_mE9D5F68457F1916EC15D9E6655A2DB2EF294FE84 (void);
+// 0x00000263 System.Int32 Cysharp.Threading.Tasks.UniTask/DelayPromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m46F5B3B989A9FD3E3ACBF47368DD1745B1362394 (void);
+// 0x00000264 System.Void Cysharp.Threading.Tasks.UniTask/DelayPromise/<>c::<Create>b__12_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__12_0_m98595273B2168D62A2036ECA6FDA7E76A21FE37E (void);
+// 0x00000265 Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise& Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::get_NextNode()
+extern void DelayIgnoreTimeScalePromise_get_NextNode_m843C0B86113D4572E8A581D19E9A1E681E3378D5 (void);
+// 0x00000266 System.Void Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::.cctor()
+extern void DelayIgnoreTimeScalePromise__cctor_m1C95CA9701159FE24C1393FCABD1BE0AF9A2B1A0 (void);
+// 0x00000267 System.Void Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::.ctor()
+extern void DelayIgnoreTimeScalePromise__ctor_mA52BF17839EB6AA55F60B1372C8A97BE98807D3B (void);
+// 0x00000268 Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::Create(System.TimeSpan,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void DelayIgnoreTimeScalePromise_Create_mF528197D8221A96419847E0647A31334E04FAA40 (void);
+// 0x00000269 System.Void Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::GetResult(System.Int16)
+extern void DelayIgnoreTimeScalePromise_GetResult_mBBAB4F9DDEA466CD879B2FA3B11A52C15A8467E2 (void);
+// 0x0000026A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::GetStatus(System.Int16)
+extern void DelayIgnoreTimeScalePromise_GetStatus_mF1A430774D5AB51EBBC84D6F86D9B6AFC0C5E3AF (void);
+// 0x0000026B Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::UnsafeGetStatus()
+extern void DelayIgnoreTimeScalePromise_UnsafeGetStatus_m247A75DF579B04129E29E8A3C727290C9D5E696C (void);
+// 0x0000026C System.Void Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void DelayIgnoreTimeScalePromise_OnCompleted_mB3D8642120A8AE7142FEA205F5207FE5EB89D878 (void);
+// 0x0000026D System.Boolean Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::MoveNext()
+extern void DelayIgnoreTimeScalePromise_MoveNext_m219A29F83B062357AE56861AE3450938775A821D (void);
+// 0x0000026E System.Boolean Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise::TryReturn()
+extern void DelayIgnoreTimeScalePromise_TryReturn_mC21F9BE7A738D73E622BE6CB44AE1262811B295D (void);
+// 0x0000026F System.Void Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_mBDD2DA3503A97010FE47380FD165B1CD288136CB (void);
+// 0x00000270 System.Void Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m03FD2027D47FFA1F391213F7884F7E46DFD8CA0C (void);
+// 0x00000271 System.Int32 Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_mA9F8A6C82393773CC14D351BDD7A4CF1799B2A18 (void);
+// 0x00000272 System.Void Cysharp.Threading.Tasks.UniTask/DelayIgnoreTimeScalePromise/<>c::<Create>b__12_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__12_0_m445459A05943AA908926DCF162FF3C99ED37A305 (void);
+// 0x00000273 Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise& Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::get_NextNode()
+extern void DelayRealtimePromise_get_NextNode_m930A50FBE32B638FE5C2E52F907A257E4AE8589D (void);
+// 0x00000274 System.Void Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::.cctor()
+extern void DelayRealtimePromise__cctor_m6FAE6BD5140883FB8040431545B92712B3161D6B (void);
+// 0x00000275 System.Void Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::.ctor()
+extern void DelayRealtimePromise__ctor_m03F34287DE1C842E9696417787D446E3C4AD5C51 (void);
+// 0x00000276 Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::Create(System.TimeSpan,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void DelayRealtimePromise_Create_m5ACD0D119D883A0D470F3621E983292C96425439 (void);
+// 0x00000277 System.Void Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::GetResult(System.Int16)
+extern void DelayRealtimePromise_GetResult_mB593C0EC23F51A291E4534BFFC26736069BC0DF4 (void);
+// 0x00000278 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::GetStatus(System.Int16)
+extern void DelayRealtimePromise_GetStatus_mDAF74B7067AF460C849BE14725B8AD5A33832656 (void);
+// 0x00000279 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::UnsafeGetStatus()
+extern void DelayRealtimePromise_UnsafeGetStatus_m863E28053457D66C7AE2A26545E6CB206409DAC1 (void);
+// 0x0000027A System.Void Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void DelayRealtimePromise_OnCompleted_m9A69A6B6DEC33B8F10BC758B64F734D51C6AF0A0 (void);
+// 0x0000027B System.Boolean Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::MoveNext()
+extern void DelayRealtimePromise_MoveNext_m5C14410A376AC58B3B2807E1F0FDE08C3FC463E7 (void);
+// 0x0000027C System.Boolean Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise::TryReturn()
+extern void DelayRealtimePromise_TryReturn_mE24471EAFBC0BB4A3E549376E01091C638AAC6FA (void);
+// 0x0000027D System.Void Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_m98DFB32E0E467B914148A6A74BE2C8D8DFC32BAE (void);
+// 0x0000027E System.Void Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m9FA833DBE7208035DB659BADDDBDC124731D3B57 (void);
+// 0x0000027F System.Int32 Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_mEB2B3297429136CF4F3D96A546B441B9A657E2E6 (void);
+// 0x00000280 System.Void Cysharp.Threading.Tasks.UniTask/DelayRealtimePromise/<>c::<Create>b__11_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__11_0_m526892B3D396D3C3F5B67275B1636CB0D03F3467 (void);
+// 0x00000281 System.Void Cysharp.Threading.Tasks.UniTask/CanceledUniTaskCache`1::.cctor()
+// 0x00000282 System.Void Cysharp.Threading.Tasks.UniTask/ExceptionResultSource::.ctor(System.Exception)
+extern void ExceptionResultSource__ctor_m73B2CEF2430F981844640DCE7012B4132E24DBE0 (void);
+// 0x00000283 System.Void Cysharp.Threading.Tasks.UniTask/ExceptionResultSource::GetResult(System.Int16)
+extern void ExceptionResultSource_GetResult_mB8192735CBF28EBC6F4F7488C5DCAB46BE1A1C17 (void);
+// 0x00000284 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/ExceptionResultSource::GetStatus(System.Int16)
+extern void ExceptionResultSource_GetStatus_m250E761F8FE12938E51F82579B3F68D4BA96E8C6 (void);
+// 0x00000285 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/ExceptionResultSource::UnsafeGetStatus()
+extern void ExceptionResultSource_UnsafeGetStatus_mC7E9976510C2EDFAF6DF21DE0B9DE94F2C9D2197 (void);
+// 0x00000286 System.Void Cysharp.Threading.Tasks.UniTask/ExceptionResultSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void ExceptionResultSource_OnCompleted_m3C73A0A4CEC3A10F0C27F389EA32518E9A24283D (void);
+// 0x00000287 System.Void Cysharp.Threading.Tasks.UniTask/ExceptionResultSource::Finalize()
+extern void ExceptionResultSource_Finalize_m55BBC52F3ACE83A060FDE47AD1F2DF8E1FC9507C (void);
+// 0x00000288 System.Void Cysharp.Threading.Tasks.UniTask/ExceptionResultSource`1::.ctor(System.Exception)
+// 0x00000289 T Cysharp.Threading.Tasks.UniTask/ExceptionResultSource`1::GetResult(System.Int16)
+// 0x0000028A System.Void Cysharp.Threading.Tasks.UniTask/ExceptionResultSource`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000028B Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/ExceptionResultSource`1::GetStatus(System.Int16)
+// 0x0000028C Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/ExceptionResultSource`1::UnsafeGetStatus()
+// 0x0000028D System.Void Cysharp.Threading.Tasks.UniTask/ExceptionResultSource`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000028E System.Void Cysharp.Threading.Tasks.UniTask/ExceptionResultSource`1::Finalize()
+// 0x0000028F System.Void Cysharp.Threading.Tasks.UniTask/CanceledResultSource::.ctor(System.Threading.CancellationToken)
+extern void CanceledResultSource__ctor_m2EAB6D4A1ADC45B7D902453F249A893CE12B445C (void);
+// 0x00000290 System.Void Cysharp.Threading.Tasks.UniTask/CanceledResultSource::GetResult(System.Int16)
+extern void CanceledResultSource_GetResult_m18DCE2E7233718125EF31D547AB1ADEF1DED6474 (void);
+// 0x00000291 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/CanceledResultSource::GetStatus(System.Int16)
+extern void CanceledResultSource_GetStatus_mCFE66D2217C82444BC4194FF8551EE3E2D29A615 (void);
+// 0x00000292 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/CanceledResultSource::UnsafeGetStatus()
+extern void CanceledResultSource_UnsafeGetStatus_m1D5E9C9762A95DC7830D3CAF87AEC2B80250C136 (void);
+// 0x00000293 System.Void Cysharp.Threading.Tasks.UniTask/CanceledResultSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void CanceledResultSource_OnCompleted_m8ED55915D9776A6948B5C7AF1E6E283194D4B56F (void);
+// 0x00000294 System.Void Cysharp.Threading.Tasks.UniTask/CanceledResultSource`1::.ctor(System.Threading.CancellationToken)
+// 0x00000295 T Cysharp.Threading.Tasks.UniTask/CanceledResultSource`1::GetResult(System.Int16)
+// 0x00000296 System.Void Cysharp.Threading.Tasks.UniTask/CanceledResultSource`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000297 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/CanceledResultSource`1::GetStatus(System.Int16)
+// 0x00000298 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/CanceledResultSource`1::UnsafeGetStatus()
+// 0x00000299 System.Void Cysharp.Threading.Tasks.UniTask/CanceledResultSource`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000029A System.Void Cysharp.Threading.Tasks.UniTask/DeferPromise::.ctor(System.Func`1<Cysharp.Threading.Tasks.UniTask>)
+extern void DeferPromise__ctor_mDDC9CC78431E2E347305125C71C6CFBF4C6AFA8F (void);
+// 0x0000029B System.Void Cysharp.Threading.Tasks.UniTask/DeferPromise::GetResult(System.Int16)
+extern void DeferPromise_GetResult_m8F7469B0997387B30D081290B192909212BAAA89 (void);
+// 0x0000029C Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DeferPromise::GetStatus(System.Int16)
+extern void DeferPromise_GetStatus_mF3F0CE49D183CF92F5A4D0E8CBAEAAFE8F1D3D12 (void);
+// 0x0000029D System.Void Cysharp.Threading.Tasks.UniTask/DeferPromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void DeferPromise_OnCompleted_mBDEF0EF714EE63EA2C01A7684235C107D7A62258 (void);
+// 0x0000029E Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DeferPromise::UnsafeGetStatus()
+extern void DeferPromise_UnsafeGetStatus_m72DFF9F7C69DE594F9101CB6459A3BBEEFF68571 (void);
+// 0x0000029F System.Void Cysharp.Threading.Tasks.UniTask/DeferPromise`1::.ctor(System.Func`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000002A0 T Cysharp.Threading.Tasks.UniTask/DeferPromise`1::GetResult(System.Int16)
+// 0x000002A1 System.Void Cysharp.Threading.Tasks.UniTask/DeferPromise`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000002A2 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DeferPromise`1::GetStatus(System.Int16)
+// 0x000002A3 System.Void Cysharp.Threading.Tasks.UniTask/DeferPromise`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000002A4 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/DeferPromise`1::UnsafeGetStatus()
+// 0x000002A5 System.Void Cysharp.Threading.Tasks.UniTask/NeverPromise`1::.ctor(System.Threading.CancellationToken)
+// 0x000002A6 System.Void Cysharp.Threading.Tasks.UniTask/NeverPromise`1::CancellationCallback(System.Object)
+// 0x000002A7 T Cysharp.Threading.Tasks.UniTask/NeverPromise`1::GetResult(System.Int16)
+// 0x000002A8 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/NeverPromise`1::GetStatus(System.Int16)
+// 0x000002A9 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/NeverPromise`1::UnsafeGetStatus()
+// 0x000002AA System.Void Cysharp.Threading.Tasks.UniTask/NeverPromise`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000002AB System.Void Cysharp.Threading.Tasks.UniTask/NeverPromise`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000002AC System.Void Cysharp.Threading.Tasks.UniTask/NeverPromise`1::.cctor()
+// 0x000002AD Cysharp.Threading.Tasks.UniTask/WaitUntilPromise& Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::get_NextNode()
+extern void WaitUntilPromise_get_NextNode_m25D42E4145EDB98482ED8CD0F5C99AE1A244BC7D (void);
+// 0x000002AE System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::.cctor()
+extern void WaitUntilPromise__cctor_m43C487202B723888E0A42F1311FDD007794F3420 (void);
+// 0x000002AF System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::.ctor()
+extern void WaitUntilPromise__ctor_m56149FCB2DBF5C76BC47CEF57317B29C03943F5D (void);
+// 0x000002B0 Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::Create(System.Func`1<System.Boolean>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void WaitUntilPromise_Create_mACC38596A21B0A893C342B08C92E55CC63FFB9FE (void);
+// 0x000002B1 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::GetResult(System.Int16)
+extern void WaitUntilPromise_GetResult_mC51A7E70F36B6602CBCD5F1B835B638A15EA77D3 (void);
+// 0x000002B2 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::GetStatus(System.Int16)
+extern void WaitUntilPromise_GetStatus_m214277160B9506ADF2CF2F1770796925726A7AC5 (void);
+// 0x000002B3 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::UnsafeGetStatus()
+extern void WaitUntilPromise_UnsafeGetStatus_m204A9B69EECC18F33733EF42E85F9F7675EC990F (void);
+// 0x000002B4 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void WaitUntilPromise_OnCompleted_m7845F07B26A7F6B07BD42BF9ABF451390937C0EC (void);
+// 0x000002B5 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::MoveNext()
+extern void WaitUntilPromise_MoveNext_mE00AD4E09916079CBA7B31B7333653EA84B29465 (void);
+// 0x000002B6 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitUntilPromise::TryReturn()
+extern void WaitUntilPromise_TryReturn_m6B6D551CDB0D63135C8C1D3396FB3DE48F1DEEE9 (void);
+// 0x000002B7 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilPromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_m9A00EF80F4ACEBB30ECE861D97321E232993EE5A (void);
+// 0x000002B8 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilPromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m64C709F50C2DB563CAF7751E8BF833BA7EB902CD (void);
+// 0x000002B9 System.Int32 Cysharp.Threading.Tasks.UniTask/WaitUntilPromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_mF63DBFB68593D90197816181FE4ACD6921FE2309 (void);
+// 0x000002BA System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilPromise/<>c::<Create>b__10_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__10_0_mDCD888BC4F0A482C867B6EFF0EA8F3280C64B0FE (void);
+// 0x000002BB Cysharp.Threading.Tasks.UniTask/WaitWhilePromise& Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::get_NextNode()
+extern void WaitWhilePromise_get_NextNode_m6F842815A8B9D276C684C9D3268A15FEBB743FAA (void);
+// 0x000002BC System.Void Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::.cctor()
+extern void WaitWhilePromise__cctor_mC7238B8D25FE15B8A815A2DEFE3C7FBDFE4E9BA9 (void);
+// 0x000002BD System.Void Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::.ctor()
+extern void WaitWhilePromise__ctor_m3A46E23BFCD43FE4DABD704EE0B1197D4E0CACC6 (void);
+// 0x000002BE Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::Create(System.Func`1<System.Boolean>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void WaitWhilePromise_Create_mE7E1B7A7195F93218BF8E8BBBDA2DB0354D4E84D (void);
+// 0x000002BF System.Void Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::GetResult(System.Int16)
+extern void WaitWhilePromise_GetResult_m36FEFEBD6B4A92B1E34FB0DBD237B401FF32A69D (void);
+// 0x000002C0 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::GetStatus(System.Int16)
+extern void WaitWhilePromise_GetStatus_mF31DB1B4A86593E2509C12B941B9F0ED8BCB28BA (void);
+// 0x000002C1 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::UnsafeGetStatus()
+extern void WaitWhilePromise_UnsafeGetStatus_mB92B78ED55D7AE33BC662AF31E84420EC754FF4F (void);
+// 0x000002C2 System.Void Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void WaitWhilePromise_OnCompleted_mA7CFBDCD9CD744614BC916274B17B7824916A8E9 (void);
+// 0x000002C3 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::MoveNext()
+extern void WaitWhilePromise_MoveNext_m5EFC6A9F4189FED8E1D3493389E0A346C20AE683 (void);
+// 0x000002C4 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitWhilePromise::TryReturn()
+extern void WaitWhilePromise_TryReturn_mC820997CB8743051F891EC9D8D1019AF1483F36F (void);
+// 0x000002C5 System.Void Cysharp.Threading.Tasks.UniTask/WaitWhilePromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_mCD31D2BC047603EBD8D969E7696FA17E3D99F238 (void);
+// 0x000002C6 System.Void Cysharp.Threading.Tasks.UniTask/WaitWhilePromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_mBA946F519050572816D70CDD3519ADE887FACC85 (void);
+// 0x000002C7 System.Int32 Cysharp.Threading.Tasks.UniTask/WaitWhilePromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m61275CF806507ED197B6F8075DFFD92018242A2A (void);
+// 0x000002C8 System.Void Cysharp.Threading.Tasks.UniTask/WaitWhilePromise/<>c::<Create>b__10_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__10_0_m82004BC844E108013839E3718FB1C4061B202D10 (void);
+// 0x000002C9 Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise& Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::get_NextNode()
+extern void WaitUntilCanceledPromise_get_NextNode_m441AA82EEF59E6A53E363345F0AFD41C3264B32B (void);
+// 0x000002CA System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::.cctor()
+extern void WaitUntilCanceledPromise__cctor_m3085174C507E219E766788DBB1AA20880BB38533 (void);
+// 0x000002CB System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::.ctor()
+extern void WaitUntilCanceledPromise__ctor_m8ED9E27C8C147F7E97FD826788F63B9E2A48A99A (void);
+// 0x000002CC Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::Create(System.Threading.CancellationToken,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Boolean,System.Int16&)
+extern void WaitUntilCanceledPromise_Create_m86BD6DB056107DE9D07BB5357D9DBCED9135992C (void);
+// 0x000002CD System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::GetResult(System.Int16)
+extern void WaitUntilCanceledPromise_GetResult_mE3E47C30A76C9F8FD63FDF37D2DCD57C243B86AB (void);
+// 0x000002CE Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::GetStatus(System.Int16)
+extern void WaitUntilCanceledPromise_GetStatus_m0D1712655B0E0AB9925205C6793A3E83FCEEA7EB (void);
+// 0x000002CF Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::UnsafeGetStatus()
+extern void WaitUntilCanceledPromise_UnsafeGetStatus_mD41B7FDEFD599207FCFCC601BD9CF51D0C79C7DD (void);
+// 0x000002D0 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void WaitUntilCanceledPromise_OnCompleted_mD259D10960A565289D75CE2D1A864EBBCDA25A01 (void);
+// 0x000002D1 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::MoveNext()
+extern void WaitUntilCanceledPromise_MoveNext_m2A31C7296B3A56E5764953758AA13A39CADEBB20 (void);
+// 0x000002D2 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise::TryReturn()
+extern void WaitUntilCanceledPromise_TryReturn_m5FB3476B0ECB3EF7D5BF88F01AF41E7E18B8E729 (void);
+// 0x000002D3 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_mEE81DDD4D5A1354D86AAD9F00A1B241F75410012 (void);
+// 0x000002D4 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m6AC7E94A739295EBB3C7F5260E51FDED066201F3 (void);
+// 0x000002D5 System.Int32 Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_mF7B83A21A1152E5878D41BE2FEB5FAC8DDFA80F6 (void);
+// 0x000002D6 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilCanceledPromise/<>c::<Create>b__9_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__9_0_m3F6834F679C9D673438763911CE54D1AFB12E239 (void);
+// 0x000002D7 Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2<T,U>& Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::get_NextNode()
+// 0x000002D8 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::.cctor()
+// 0x000002D9 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::.ctor()
+// 0x000002DA Cysharp.Threading.Tasks.IUniTaskSource`1<U> Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::Create(T,System.Func`2<T,U>,System.Collections.Generic.IEqualityComparer`1<U>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+// 0x000002DB U Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::GetResult(System.Int16)
+// 0x000002DC System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000002DD Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::GetStatus(System.Int16)
+// 0x000002DE Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::UnsafeGetStatus()
+// 0x000002DF System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000002E0 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::MoveNext()
+// 0x000002E1 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2::TryReturn()
+// 0x000002E2 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2/<>c::.cctor()
+// 0x000002E3 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2/<>c::.ctor()
+// 0x000002E4 System.Int32 Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2/<>c::<.cctor>b__4_0()
+// 0x000002E5 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedUnityObjectPromise`2/<>c::<Create>b__14_0(System.Object)
+// 0x000002E6 Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2<T,U>& Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::get_NextNode()
+// 0x000002E7 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::.cctor()
+// 0x000002E8 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::.ctor()
+// 0x000002E9 Cysharp.Threading.Tasks.IUniTaskSource`1<U> Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::Create(T,System.Func`2<T,U>,System.Collections.Generic.IEqualityComparer`1<U>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+// 0x000002EA U Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::GetResult(System.Int16)
+// 0x000002EB System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000002EC Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::GetStatus(System.Int16)
+// 0x000002ED Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::UnsafeGetStatus()
+// 0x000002EE System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000002EF System.Boolean Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::MoveNext()
+// 0x000002F0 System.Boolean Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2::TryReturn()
+// 0x000002F1 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2/<>c::.cctor()
+// 0x000002F2 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2/<>c::.ctor()
+// 0x000002F3 System.Int32 Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2/<>c::<.cctor>b__4_0()
+// 0x000002F4 System.Void Cysharp.Threading.Tasks.UniTask/WaitUntilValueChangedStandardObjectPromise`2/<>c::<Create>b__13_0(System.Object)
+// 0x000002F5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1::.ctor(Cysharp.Threading.Tasks.UniTask`1<T>[],System.Int32)
+// 0x000002F6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1::TryInvokeContinuation(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1<T>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T>&,System.Int32)
+// 0x000002F7 T[] Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1::GetResult(System.Int16)
+// 0x000002F8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000002F9 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1::GetStatus(System.Int16)
+// 0x000002FA Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1::UnsafeGetStatus()
+// 0x000002FB System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000002FC System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1/<>c::.cctor()
+// 0x000002FD System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1/<>c::.ctor()
+// 0x000002FE System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`1/<>c::<.ctor>b__3_0(System.Object)
+// 0x000002FF System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise::.ctor(Cysharp.Threading.Tasks.UniTask[],System.Int32)
+extern void WhenAllPromise__ctor_mA01F0BE4F12F8AD4EF8EE4B1B943255A6F3063B5 (void);
+// 0x00000300 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise::TryInvokeContinuation(Cysharp.Threading.Tasks.UniTask/WhenAllPromise,Cysharp.Threading.Tasks.UniTask/Awaiter&)
+extern void WhenAllPromise_TryInvokeContinuation_mBCA9E88FEF6A26EFB2FC7461FCBCE32D5FBBCAF9 (void);
+// 0x00000301 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise::GetResult(System.Int16)
+extern void WhenAllPromise_GetResult_mB0BC0BC864A13172B67DA27F4CE9DE3982C41CA9 (void);
+// 0x00000302 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise::GetStatus(System.Int16)
+extern void WhenAllPromise_GetStatus_mB2009FB8A026269059469C3843D4E01AFA3E008F (void);
+// 0x00000303 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise::UnsafeGetStatus()
+extern void WhenAllPromise_UnsafeGetStatus_m249F29D526C9BE6214D898A6846DB6684CC33D41 (void);
+// 0x00000304 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void WhenAllPromise_OnCompleted_m709CB570957A5114148641268661446E5E3A662B (void);
+// 0x00000305 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_mBA016B6C62F33805289E4FC1CDEF1464E8FB37B6 (void);
+// 0x00000306 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m5DA3340D7019CD399E8C409787EE7F7EA123B1A1 (void);
+// 0x00000307 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise/<>c::<.ctor>b__3_0(System.Object)
+extern void U3CU3Ec_U3C_ctorU3Eb__3_0_m2739BAEECD92195E370F1F4CA628035FDDFEDB16 (void);
+// 0x00000308 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>)
+// 0x00000309 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2<T1,T2>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x0000030A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2<T1,T2>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x0000030B System.ValueTuple`2<T1,T2> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2::GetResult(System.Int16)
+// 0x0000030C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000030D Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2::GetStatus(System.Int16)
+// 0x0000030E Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2::UnsafeGetStatus()
+// 0x0000030F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000310 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2/<>c::.cctor()
+// 0x00000311 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2/<>c::.ctor()
+// 0x00000312 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2/<>c::<.ctor>b__4_0(System.Object)
+// 0x00000313 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`2/<>c::<.ctor>b__4_1(System.Object)
+// 0x00000314 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>)
+// 0x00000315 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3<T1,T2,T3>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000316 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3<T1,T2,T3>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000317 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3<T1,T2,T3>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000318 System.ValueTuple`3<T1,T2,T3> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::GetResult(System.Int16)
+// 0x00000319 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000031A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::GetStatus(System.Int16)
+// 0x0000031B Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::UnsafeGetStatus()
+// 0x0000031C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000031D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3/<>c::.cctor()
+// 0x0000031E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3/<>c::.ctor()
+// 0x0000031F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3/<>c::<.ctor>b__5_0(System.Object)
+// 0x00000320 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3/<>c::<.ctor>b__5_1(System.Object)
+// 0x00000321 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`3/<>c::<.ctor>b__5_2(System.Object)
+// 0x00000322 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>)
+// 0x00000323 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4<T1,T2,T3,T4>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000324 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4<T1,T2,T3,T4>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000325 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4<T1,T2,T3,T4>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000326 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4<T1,T2,T3,T4>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x00000327 System.ValueTuple`4<T1,T2,T3,T4> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::GetResult(System.Int16)
+// 0x00000328 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000329 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::GetStatus(System.Int16)
+// 0x0000032A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::UnsafeGetStatus()
+// 0x0000032B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000032C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4/<>c::.cctor()
+// 0x0000032D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4/<>c::.ctor()
+// 0x0000032E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4/<>c::<.ctor>b__6_0(System.Object)
+// 0x0000032F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4/<>c::<.ctor>b__6_1(System.Object)
+// 0x00000330 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4/<>c::<.ctor>b__6_2(System.Object)
+// 0x00000331 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`4/<>c::<.ctor>b__6_3(System.Object)
+// 0x00000332 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>)
+// 0x00000333 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000334 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000335 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000336 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x00000337 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x00000338 System.ValueTuple`5<T1,T2,T3,T4,T5> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::GetResult(System.Int16)
+// 0x00000339 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000033A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::GetStatus(System.Int16)
+// 0x0000033B Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::UnsafeGetStatus()
+// 0x0000033C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000033D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5/<>c::.cctor()
+// 0x0000033E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5/<>c::.ctor()
+// 0x0000033F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5/<>c::<.ctor>b__7_0(System.Object)
+// 0x00000340 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5/<>c::<.ctor>b__7_1(System.Object)
+// 0x00000341 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5/<>c::<.ctor>b__7_2(System.Object)
+// 0x00000342 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5/<>c::<.ctor>b__7_3(System.Object)
+// 0x00000343 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`5/<>c::<.ctor>b__7_4(System.Object)
+// 0x00000344 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>)
+// 0x00000345 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000346 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000347 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000348 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x00000349 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x0000034A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x0000034B System.ValueTuple`6<T1,T2,T3,T4,T5,T6> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::GetResult(System.Int16)
+// 0x0000034C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000034D Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::GetStatus(System.Int16)
+// 0x0000034E Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::UnsafeGetStatus()
+// 0x0000034F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000350 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6/<>c::.cctor()
+// 0x00000351 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6/<>c::.ctor()
+// 0x00000352 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6/<>c::<.ctor>b__8_0(System.Object)
+// 0x00000353 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6/<>c::<.ctor>b__8_1(System.Object)
+// 0x00000354 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6/<>c::<.ctor>b__8_2(System.Object)
+// 0x00000355 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6/<>c::<.ctor>b__8_3(System.Object)
+// 0x00000356 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6/<>c::<.ctor>b__8_4(System.Object)
+// 0x00000357 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`6/<>c::<.ctor>b__8_5(System.Object)
+// 0x00000358 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>)
+// 0x00000359 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x0000035A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x0000035B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x0000035C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x0000035D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x0000035E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x0000035F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000360 System.ValueTuple`7<T1,T2,T3,T4,T5,T6,T7> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::GetResult(System.Int16)
+// 0x00000361 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000362 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::GetStatus(System.Int16)
+// 0x00000363 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::UnsafeGetStatus()
+// 0x00000364 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000365 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::.cctor()
+// 0x00000366 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::.ctor()
+// 0x00000367 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::<.ctor>b__9_0(System.Object)
+// 0x00000368 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::<.ctor>b__9_1(System.Object)
+// 0x00000369 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::<.ctor>b__9_2(System.Object)
+// 0x0000036A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::<.ctor>b__9_3(System.Object)
+// 0x0000036B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::<.ctor>b__9_4(System.Object)
+// 0x0000036C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::<.ctor>b__9_5(System.Object)
+// 0x0000036D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`7/<>c::<.ctor>b__9_6(System.Object)
+// 0x0000036E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>)
+// 0x0000036F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000370 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000371 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000372 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x00000373 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x00000374 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x00000375 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000376 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x00000377 System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`1<T8>> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::GetResult(System.Int16)
+// 0x00000378 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000379 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::GetStatus(System.Int16)
+// 0x0000037A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::UnsafeGetStatus()
+// 0x0000037B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000037C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::.cctor()
+// 0x0000037D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::.ctor()
+// 0x0000037E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::<.ctor>b__10_0(System.Object)
+// 0x0000037F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::<.ctor>b__10_1(System.Object)
+// 0x00000380 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::<.ctor>b__10_2(System.Object)
+// 0x00000381 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::<.ctor>b__10_3(System.Object)
+// 0x00000382 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::<.ctor>b__10_4(System.Object)
+// 0x00000383 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::<.ctor>b__10_5(System.Object)
+// 0x00000384 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::<.ctor>b__10_6(System.Object)
+// 0x00000385 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`8/<>c::<.ctor>b__10_7(System.Object)
+// 0x00000386 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>)
+// 0x00000387 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000388 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000389 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x0000038A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x0000038B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x0000038C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x0000038D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x0000038E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x0000038F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x00000390 System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`2<T8,T9>> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::GetResult(System.Int16)
+// 0x00000391 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000392 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::GetStatus(System.Int16)
+// 0x00000393 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::UnsafeGetStatus()
+// 0x00000394 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000395 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::.cctor()
+// 0x00000396 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::.ctor()
+// 0x00000397 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_0(System.Object)
+// 0x00000398 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_1(System.Object)
+// 0x00000399 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_2(System.Object)
+// 0x0000039A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_3(System.Object)
+// 0x0000039B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_4(System.Object)
+// 0x0000039C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_5(System.Object)
+// 0x0000039D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_6(System.Object)
+// 0x0000039E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_7(System.Object)
+// 0x0000039F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`9/<>c::<.ctor>b__11_8(System.Object)
+// 0x000003A0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>)
+// 0x000003A1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000003A2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000003A3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000003A4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000003A5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000003A6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x000003A7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x000003A8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x000003A9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x000003AA System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x000003AB System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`3<T8,T9,T10>> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::GetResult(System.Int16)
+// 0x000003AC System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000003AD Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::GetStatus(System.Int16)
+// 0x000003AE Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::UnsafeGetStatus()
+// 0x000003AF System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000003B0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::.cctor()
+// 0x000003B1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::.ctor()
+// 0x000003B2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_0(System.Object)
+// 0x000003B3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_1(System.Object)
+// 0x000003B4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_2(System.Object)
+// 0x000003B5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_3(System.Object)
+// 0x000003B6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_4(System.Object)
+// 0x000003B7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_5(System.Object)
+// 0x000003B8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_6(System.Object)
+// 0x000003B9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_7(System.Object)
+// 0x000003BA System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_8(System.Object)
+// 0x000003BB System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`10/<>c::<.ctor>b__12_9(System.Object)
+// 0x000003BC System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>)
+// 0x000003BD System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000003BE System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000003BF System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000003C0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000003C1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000003C2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x000003C3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x000003C4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x000003C5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x000003C6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x000003C7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x000003C8 System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`4<T8,T9,T10,T11>> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::GetResult(System.Int16)
+// 0x000003C9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000003CA Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::GetStatus(System.Int16)
+// 0x000003CB Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::UnsafeGetStatus()
+// 0x000003CC System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000003CD System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::.cctor()
+// 0x000003CE System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::.ctor()
+// 0x000003CF System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_0(System.Object)
+// 0x000003D0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_1(System.Object)
+// 0x000003D1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_2(System.Object)
+// 0x000003D2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_3(System.Object)
+// 0x000003D3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_4(System.Object)
+// 0x000003D4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_5(System.Object)
+// 0x000003D5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_6(System.Object)
+// 0x000003D6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_7(System.Object)
+// 0x000003D7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_8(System.Object)
+// 0x000003D8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_9(System.Object)
+// 0x000003D9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`11/<>c::<.ctor>b__13_10(System.Object)
+// 0x000003DA System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>)
+// 0x000003DB System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000003DC System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000003DD System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000003DE System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000003DF System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000003E0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x000003E1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x000003E2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x000003E3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x000003E4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x000003E5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x000003E6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::TryInvokeContinuationT12(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T12>&)
+// 0x000003E7 System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`5<T8,T9,T10,T11,T12>> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::GetResult(System.Int16)
+// 0x000003E8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000003E9 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::GetStatus(System.Int16)
+// 0x000003EA Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::UnsafeGetStatus()
+// 0x000003EB System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000003EC System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::.cctor()
+// 0x000003ED System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::.ctor()
+// 0x000003EE System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_0(System.Object)
+// 0x000003EF System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_1(System.Object)
+// 0x000003F0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_2(System.Object)
+// 0x000003F1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_3(System.Object)
+// 0x000003F2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_4(System.Object)
+// 0x000003F3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_5(System.Object)
+// 0x000003F4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_6(System.Object)
+// 0x000003F5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_7(System.Object)
+// 0x000003F6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_8(System.Object)
+// 0x000003F7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_9(System.Object)
+// 0x000003F8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_10(System.Object)
+// 0x000003F9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`12/<>c::<.ctor>b__14_11(System.Object)
+// 0x000003FA System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>)
+// 0x000003FB System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000003FC System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000003FD System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000003FE System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000003FF System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x00000400 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x00000401 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000402 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x00000403 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x00000404 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x00000405 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x00000406 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT12(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T12>&)
+// 0x00000407 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::TryInvokeContinuationT13(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T13>&)
+// 0x00000408 System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`6<T8,T9,T10,T11,T12,T13>> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::GetResult(System.Int16)
+// 0x00000409 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000040A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::GetStatus(System.Int16)
+// 0x0000040B Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::UnsafeGetStatus()
+// 0x0000040C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000040D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::.cctor()
+// 0x0000040E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::.ctor()
+// 0x0000040F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_0(System.Object)
+// 0x00000410 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_1(System.Object)
+// 0x00000411 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_2(System.Object)
+// 0x00000412 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_3(System.Object)
+// 0x00000413 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_4(System.Object)
+// 0x00000414 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_5(System.Object)
+// 0x00000415 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_6(System.Object)
+// 0x00000416 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_7(System.Object)
+// 0x00000417 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_8(System.Object)
+// 0x00000418 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_9(System.Object)
+// 0x00000419 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_10(System.Object)
+// 0x0000041A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_11(System.Object)
+// 0x0000041B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`13/<>c::<.ctor>b__15_12(System.Object)
+// 0x0000041C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>)
+// 0x0000041D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x0000041E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x0000041F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000420 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x00000421 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x00000422 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x00000423 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000424 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x00000425 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x00000426 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x00000427 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x00000428 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT12(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T12>&)
+// 0x00000429 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT13(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T13>&)
+// 0x0000042A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::TryInvokeContinuationT14(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T14>&)
+// 0x0000042B System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`7<T8,T9,T10,T11,T12,T13,T14>> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::GetResult(System.Int16)
+// 0x0000042C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000042D Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::GetStatus(System.Int16)
+// 0x0000042E Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::UnsafeGetStatus()
+// 0x0000042F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000430 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::.cctor()
+// 0x00000431 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::.ctor()
+// 0x00000432 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_0(System.Object)
+// 0x00000433 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_1(System.Object)
+// 0x00000434 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_2(System.Object)
+// 0x00000435 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_3(System.Object)
+// 0x00000436 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_4(System.Object)
+// 0x00000437 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_5(System.Object)
+// 0x00000438 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_6(System.Object)
+// 0x00000439 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_7(System.Object)
+// 0x0000043A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_8(System.Object)
+// 0x0000043B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_9(System.Object)
+// 0x0000043C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_10(System.Object)
+// 0x0000043D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_11(System.Object)
+// 0x0000043E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_12(System.Object)
+// 0x0000043F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`14/<>c::<.ctor>b__16_13(System.Object)
+// 0x00000440 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>,Cysharp.Threading.Tasks.UniTask`1<T15>)
+// 0x00000441 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000442 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000443 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000444 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x00000445 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x00000446 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x00000447 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000448 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x00000449 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x0000044A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x0000044B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x0000044C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT12(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T12>&)
+// 0x0000044D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT13(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T13>&)
+// 0x0000044E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT14(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T14>&)
+// 0x0000044F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::TryInvokeContinuationT15(Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T15>&)
+// 0x00000450 System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`8<T8,T9,T10,T11,T12,T13,T14,System.ValueTuple`1<T15>>> Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::GetResult(System.Int16)
+// 0x00000451 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000452 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::GetStatus(System.Int16)
+// 0x00000453 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::UnsafeGetStatus()
+// 0x00000454 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000455 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::.cctor()
+// 0x00000456 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::.ctor()
+// 0x00000457 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_0(System.Object)
+// 0x00000458 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_1(System.Object)
+// 0x00000459 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_2(System.Object)
+// 0x0000045A System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_3(System.Object)
+// 0x0000045B System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_4(System.Object)
+// 0x0000045C System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_5(System.Object)
+// 0x0000045D System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_6(System.Object)
+// 0x0000045E System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_7(System.Object)
+// 0x0000045F System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_8(System.Object)
+// 0x00000460 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_9(System.Object)
+// 0x00000461 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_10(System.Object)
+// 0x00000462 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_11(System.Object)
+// 0x00000463 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_12(System.Object)
+// 0x00000464 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_13(System.Object)
+// 0x00000465 System.Void Cysharp.Threading.Tasks.UniTask/WhenAllPromise`15/<>c::<.ctor>b__17_14(System.Object)
+// 0x00000466 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1::.ctor(Cysharp.Threading.Tasks.UniTask`1<T>,Cysharp.Threading.Tasks.UniTask)
+// 0x00000467 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1::TryLeftInvokeContinuation(Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1<T>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T>&)
+// 0x00000468 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1::TryRightInvokeContinuation(Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1<T>,Cysharp.Threading.Tasks.UniTask/Awaiter&)
+// 0x00000469 System.ValueTuple`2<System.Boolean,T> Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1::GetResult(System.Int16)
+// 0x0000046A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1::GetStatus(System.Int16)
+// 0x0000046B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000046C Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1::UnsafeGetStatus()
+// 0x0000046D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000046E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1/<>c::.cctor()
+// 0x0000046F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1/<>c::.ctor()
+// 0x00000470 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1/<>c::<.ctor>b__2_0(System.Object)
+// 0x00000471 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyLRPromise`1/<>c::<.ctor>b__2_1(System.Object)
+// 0x00000472 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1::.ctor(Cysharp.Threading.Tasks.UniTask`1<T>[],System.Int32)
+// 0x00000473 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1::TryInvokeContinuation(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1<T>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T>&,System.Int32)
+// 0x00000474 System.ValueTuple`2<System.Int32,T> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1::GetResult(System.Int16)
+// 0x00000475 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1::GetStatus(System.Int16)
+// 0x00000476 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000477 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1::UnsafeGetStatus()
+// 0x00000478 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000479 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1/<>c::.cctor()
+// 0x0000047A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1/<>c::.ctor()
+// 0x0000047B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`1/<>c::<.ctor>b__2_0(System.Object)
+// 0x0000047C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise::.ctor(Cysharp.Threading.Tasks.UniTask[],System.Int32)
+extern void WhenAnyPromise__ctor_m8DBAFCD595025F192966DC850D038B518A56E19C (void);
+// 0x0000047D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise::TryInvokeContinuation(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise,Cysharp.Threading.Tasks.UniTask/Awaiter&,System.Int32)
+extern void WhenAnyPromise_TryInvokeContinuation_m9859DE086C8CA005D6BC3305433EE4FB922A26B2 (void);
+// 0x0000047E System.Int32 Cysharp.Threading.Tasks.UniTask/WhenAnyPromise::GetResult(System.Int16)
+extern void WhenAnyPromise_GetResult_m5520741319AB7660068D479D1ABC9B82FCDFF237 (void);
+// 0x0000047F Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise::GetStatus(System.Int16)
+extern void WhenAnyPromise_GetStatus_mBFBA2FFF7DBC8FA45327823CE55291901AA3A21A (void);
+// 0x00000480 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void WhenAnyPromise_OnCompleted_m32139E142DC9C84D881827B2B78C79066AD690DD (void);
+// 0x00000481 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise::UnsafeGetStatus()
+extern void WhenAnyPromise_UnsafeGetStatus_m40D9C4603062632F6746751B950559858C2EA3F9 (void);
+// 0x00000482 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void WhenAnyPromise_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m49EA9C11779DCCE23F77760E6D890728B9B33DD7 (void);
+// 0x00000483 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise/<>c::.cctor()
+extern void U3CU3Ec__cctor_mD16FE495CB1A7004A018B9A9D8AA23B6D830D2D2 (void);
+// 0x00000484 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise/<>c::.ctor()
+extern void U3CU3Ec__ctor_m87CE80638BABF829643B0765720C5878BA0241AC (void);
+// 0x00000485 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise/<>c::<.ctor>b__2_0(System.Object)
+extern void U3CU3Ec_U3C_ctorU3Eb__2_0_m92B42331DF2E807F33A29CE9984BD1AFAB27B8B0 (void);
+// 0x00000486 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>)
+// 0x00000487 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2<T1,T2>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000488 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2<T1,T2>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000489 System.ValueTuple`3<System.Int32,T1,T2> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2::GetResult(System.Int16)
+// 0x0000048A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2::GetStatus(System.Int16)
+// 0x0000048B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000048C Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2::UnsafeGetStatus()
+// 0x0000048D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000048E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2/<>c::.cctor()
+// 0x0000048F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2/<>c::.ctor()
+// 0x00000490 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2/<>c::<.ctor>b__2_0(System.Object)
+// 0x00000491 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`2/<>c::<.ctor>b__2_1(System.Object)
+// 0x00000492 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>)
+// 0x00000493 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3<T1,T2,T3>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000494 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3<T1,T2,T3>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000495 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3<T1,T2,T3>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000496 System.ValueTuple`4<System.Int32,T1,T2,T3> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::GetResult(System.Int16)
+// 0x00000497 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::GetStatus(System.Int16)
+// 0x00000498 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000499 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::UnsafeGetStatus()
+// 0x0000049A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000049B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3/<>c::.cctor()
+// 0x0000049C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3/<>c::.ctor()
+// 0x0000049D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3/<>c::<.ctor>b__2_0(System.Object)
+// 0x0000049E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3/<>c::<.ctor>b__2_1(System.Object)
+// 0x0000049F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`3/<>c::<.ctor>b__2_2(System.Object)
+// 0x000004A0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>)
+// 0x000004A1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4<T1,T2,T3,T4>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000004A2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4<T1,T2,T3,T4>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000004A3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4<T1,T2,T3,T4>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000004A4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4<T1,T2,T3,T4>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000004A5 System.ValueTuple`5<System.Int32,T1,T2,T3,T4> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::GetResult(System.Int16)
+// 0x000004A6 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::GetStatus(System.Int16)
+// 0x000004A7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000004A8 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::UnsafeGetStatus()
+// 0x000004A9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000004AA System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4/<>c::.cctor()
+// 0x000004AB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4/<>c::.ctor()
+// 0x000004AC System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4/<>c::<.ctor>b__2_0(System.Object)
+// 0x000004AD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4/<>c::<.ctor>b__2_1(System.Object)
+// 0x000004AE System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4/<>c::<.ctor>b__2_2(System.Object)
+// 0x000004AF System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`4/<>c::<.ctor>b__2_3(System.Object)
+// 0x000004B0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>)
+// 0x000004B1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000004B2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000004B3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000004B4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000004B5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5<T1,T2,T3,T4,T5>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000004B6 System.ValueTuple`6<System.Int32,T1,T2,T3,T4,T5> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::GetResult(System.Int16)
+// 0x000004B7 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::GetStatus(System.Int16)
+// 0x000004B8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000004B9 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::UnsafeGetStatus()
+// 0x000004BA System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000004BB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5/<>c::.cctor()
+// 0x000004BC System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5/<>c::.ctor()
+// 0x000004BD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5/<>c::<.ctor>b__2_0(System.Object)
+// 0x000004BE System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5/<>c::<.ctor>b__2_1(System.Object)
+// 0x000004BF System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5/<>c::<.ctor>b__2_2(System.Object)
+// 0x000004C0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5/<>c::<.ctor>b__2_3(System.Object)
+// 0x000004C1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`5/<>c::<.ctor>b__2_4(System.Object)
+// 0x000004C2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>)
+// 0x000004C3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000004C4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000004C5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000004C6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000004C7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000004C8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6<T1,T2,T3,T4,T5,T6>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x000004C9 System.ValueTuple`7<System.Int32,T1,T2,T3,T4,T5,T6> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::GetResult(System.Int16)
+// 0x000004CA Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::GetStatus(System.Int16)
+// 0x000004CB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000004CC Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::UnsafeGetStatus()
+// 0x000004CD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000004CE System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6/<>c::.cctor()
+// 0x000004CF System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6/<>c::.ctor()
+// 0x000004D0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6/<>c::<.ctor>b__2_0(System.Object)
+// 0x000004D1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6/<>c::<.ctor>b__2_1(System.Object)
+// 0x000004D2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6/<>c::<.ctor>b__2_2(System.Object)
+// 0x000004D3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6/<>c::<.ctor>b__2_3(System.Object)
+// 0x000004D4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6/<>c::<.ctor>b__2_4(System.Object)
+// 0x000004D5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`6/<>c::<.ctor>b__2_5(System.Object)
+// 0x000004D6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>)
+// 0x000004D7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000004D8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000004D9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000004DA System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000004DB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000004DC System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x000004DD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7<T1,T2,T3,T4,T5,T6,T7>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x000004DE System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`1<T7>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::GetResult(System.Int16)
+// 0x000004DF Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::GetStatus(System.Int16)
+// 0x000004E0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000004E1 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::UnsafeGetStatus()
+// 0x000004E2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000004E3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::.cctor()
+// 0x000004E4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::.ctor()
+// 0x000004E5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::<.ctor>b__2_0(System.Object)
+// 0x000004E6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::<.ctor>b__2_1(System.Object)
+// 0x000004E7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::<.ctor>b__2_2(System.Object)
+// 0x000004E8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::<.ctor>b__2_3(System.Object)
+// 0x000004E9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::<.ctor>b__2_4(System.Object)
+// 0x000004EA System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::<.ctor>b__2_5(System.Object)
+// 0x000004EB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`7/<>c::<.ctor>b__2_6(System.Object)
+// 0x000004EC System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>)
+// 0x000004ED System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000004EE System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000004EF System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000004F0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000004F1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000004F2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x000004F3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x000004F4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8<T1,T2,T3,T4,T5,T6,T7,T8>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x000004F5 System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`2<T7,T8>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::GetResult(System.Int16)
+// 0x000004F6 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::GetStatus(System.Int16)
+// 0x000004F7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000004F8 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::UnsafeGetStatus()
+// 0x000004F9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000004FA System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::.cctor()
+// 0x000004FB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::.ctor()
+// 0x000004FC System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::<.ctor>b__2_0(System.Object)
+// 0x000004FD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::<.ctor>b__2_1(System.Object)
+// 0x000004FE System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::<.ctor>b__2_2(System.Object)
+// 0x000004FF System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::<.ctor>b__2_3(System.Object)
+// 0x00000500 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::<.ctor>b__2_4(System.Object)
+// 0x00000501 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::<.ctor>b__2_5(System.Object)
+// 0x00000502 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::<.ctor>b__2_6(System.Object)
+// 0x00000503 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`8/<>c::<.ctor>b__2_7(System.Object)
+// 0x00000504 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>)
+// 0x00000505 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000506 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000507 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000508 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x00000509 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x0000050A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x0000050B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x0000050C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x0000050D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9<T1,T2,T3,T4,T5,T6,T7,T8,T9>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x0000050E System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`3<T7,T8,T9>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::GetResult(System.Int16)
+// 0x0000050F Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::GetStatus(System.Int16)
+// 0x00000510 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000511 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::UnsafeGetStatus()
+// 0x00000512 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000513 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::.cctor()
+// 0x00000514 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::.ctor()
+// 0x00000515 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_0(System.Object)
+// 0x00000516 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_1(System.Object)
+// 0x00000517 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_2(System.Object)
+// 0x00000518 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_3(System.Object)
+// 0x00000519 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_4(System.Object)
+// 0x0000051A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_5(System.Object)
+// 0x0000051B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_6(System.Object)
+// 0x0000051C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_7(System.Object)
+// 0x0000051D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`9/<>c::<.ctor>b__2_8(System.Object)
+// 0x0000051E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>)
+// 0x0000051F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x00000520 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x00000521 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x00000522 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x00000523 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x00000524 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x00000525 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000526 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x00000527 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x00000528 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x00000529 System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`4<T7,T8,T9,T10>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::GetResult(System.Int16)
+// 0x0000052A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::GetStatus(System.Int16)
+// 0x0000052B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000052C Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::UnsafeGetStatus()
+// 0x0000052D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000052E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::.cctor()
+// 0x0000052F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::.ctor()
+// 0x00000530 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_0(System.Object)
+// 0x00000531 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_1(System.Object)
+// 0x00000532 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_2(System.Object)
+// 0x00000533 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_3(System.Object)
+// 0x00000534 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_4(System.Object)
+// 0x00000535 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_5(System.Object)
+// 0x00000536 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_6(System.Object)
+// 0x00000537 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_7(System.Object)
+// 0x00000538 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_8(System.Object)
+// 0x00000539 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`10/<>c::<.ctor>b__2_9(System.Object)
+// 0x0000053A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>)
+// 0x0000053B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x0000053C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x0000053D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x0000053E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x0000053F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x00000540 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x00000541 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000542 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x00000543 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x00000544 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x00000545 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x00000546 System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`5<T7,T8,T9,T10,T11>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::GetResult(System.Int16)
+// 0x00000547 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::GetStatus(System.Int16)
+// 0x00000548 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000549 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::UnsafeGetStatus()
+// 0x0000054A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000054B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::.cctor()
+// 0x0000054C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::.ctor()
+// 0x0000054D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_0(System.Object)
+// 0x0000054E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_1(System.Object)
+// 0x0000054F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_2(System.Object)
+// 0x00000550 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_3(System.Object)
+// 0x00000551 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_4(System.Object)
+// 0x00000552 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_5(System.Object)
+// 0x00000553 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_6(System.Object)
+// 0x00000554 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_7(System.Object)
+// 0x00000555 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_8(System.Object)
+// 0x00000556 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_9(System.Object)
+// 0x00000557 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`11/<>c::<.ctor>b__2_10(System.Object)
+// 0x00000558 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>)
+// 0x00000559 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x0000055A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x0000055B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x0000055C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x0000055D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x0000055E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x0000055F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000560 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x00000561 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x00000562 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x00000563 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x00000564 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::TryInvokeContinuationT12(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T12>&)
+// 0x00000565 System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`6<T7,T8,T9,T10,T11,T12>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::GetResult(System.Int16)
+// 0x00000566 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::GetStatus(System.Int16)
+// 0x00000567 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000568 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::UnsafeGetStatus()
+// 0x00000569 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000056A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::.cctor()
+// 0x0000056B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::.ctor()
+// 0x0000056C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_0(System.Object)
+// 0x0000056D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_1(System.Object)
+// 0x0000056E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_2(System.Object)
+// 0x0000056F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_3(System.Object)
+// 0x00000570 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_4(System.Object)
+// 0x00000571 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_5(System.Object)
+// 0x00000572 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_6(System.Object)
+// 0x00000573 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_7(System.Object)
+// 0x00000574 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_8(System.Object)
+// 0x00000575 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_9(System.Object)
+// 0x00000576 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_10(System.Object)
+// 0x00000577 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`12/<>c::<.ctor>b__2_11(System.Object)
+// 0x00000578 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>)
+// 0x00000579 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x0000057A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x0000057B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x0000057C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x0000057D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x0000057E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x0000057F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x00000580 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x00000581 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x00000582 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x00000583 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x00000584 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT12(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T12>&)
+// 0x00000585 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::TryInvokeContinuationT13(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T13>&)
+// 0x00000586 System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`7<T7,T8,T9,T10,T11,T12,T13>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::GetResult(System.Int16)
+// 0x00000587 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::GetStatus(System.Int16)
+// 0x00000588 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000589 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::UnsafeGetStatus()
+// 0x0000058A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000058B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::.cctor()
+// 0x0000058C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::.ctor()
+// 0x0000058D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_0(System.Object)
+// 0x0000058E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_1(System.Object)
+// 0x0000058F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_2(System.Object)
+// 0x00000590 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_3(System.Object)
+// 0x00000591 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_4(System.Object)
+// 0x00000592 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_5(System.Object)
+// 0x00000593 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_6(System.Object)
+// 0x00000594 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_7(System.Object)
+// 0x00000595 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_8(System.Object)
+// 0x00000596 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_9(System.Object)
+// 0x00000597 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_10(System.Object)
+// 0x00000598 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_11(System.Object)
+// 0x00000599 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`13/<>c::<.ctor>b__2_12(System.Object)
+// 0x0000059A System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>)
+// 0x0000059B System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x0000059C System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x0000059D System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x0000059E System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x0000059F System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000005A0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x000005A1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x000005A2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x000005A3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x000005A4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x000005A5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x000005A6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT12(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T12>&)
+// 0x000005A7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT13(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T13>&)
+// 0x000005A8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::TryInvokeContinuationT14(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T14>&)
+// 0x000005A9 System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`8<T7,T8,T9,T10,T11,T12,T13,System.ValueTuple`1<T14>>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::GetResult(System.Int16)
+// 0x000005AA Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::GetStatus(System.Int16)
+// 0x000005AB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000005AC Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::UnsafeGetStatus()
+// 0x000005AD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000005AE System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::.cctor()
+// 0x000005AF System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::.ctor()
+// 0x000005B0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_0(System.Object)
+// 0x000005B1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_1(System.Object)
+// 0x000005B2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_2(System.Object)
+// 0x000005B3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_3(System.Object)
+// 0x000005B4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_4(System.Object)
+// 0x000005B5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_5(System.Object)
+// 0x000005B6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_6(System.Object)
+// 0x000005B7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_7(System.Object)
+// 0x000005B8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_8(System.Object)
+// 0x000005B9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_9(System.Object)
+// 0x000005BA System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_10(System.Object)
+// 0x000005BB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_11(System.Object)
+// 0x000005BC System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_12(System.Object)
+// 0x000005BD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`14/<>c::<.ctor>b__2_13(System.Object)
+// 0x000005BE System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::.ctor(Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>,Cysharp.Threading.Tasks.UniTask`1<T15>)
+// 0x000005BF System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT1(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T1>&)
+// 0x000005C0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT2(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T2>&)
+// 0x000005C1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT3(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T3>&)
+// 0x000005C2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT4(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T4>&)
+// 0x000005C3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT5(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T5>&)
+// 0x000005C4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT6(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T6>&)
+// 0x000005C5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT7(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T7>&)
+// 0x000005C6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT8(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T8>&)
+// 0x000005C7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT9(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T9>&)
+// 0x000005C8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT10(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T10>&)
+// 0x000005C9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT11(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T11>&)
+// 0x000005CA System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT12(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T12>&)
+// 0x000005CB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT13(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T13>&)
+// 0x000005CC System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT14(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T14>&)
+// 0x000005CD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::TryInvokeContinuationT15(Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15<T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15>,Cysharp.Threading.Tasks.UniTask`1/Awaiter<T15>&)
+// 0x000005CE System.ValueTuple`8<System.Int32,T1,T2,T3,T4,T5,T6,System.ValueTuple`8<T7,T8,T9,T10,T11,T12,T13,System.ValueTuple`2<T14,T15>>> Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::GetResult(System.Int16)
+// 0x000005CF Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::GetStatus(System.Int16)
+// 0x000005D0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000005D1 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::UnsafeGetStatus()
+// 0x000005D2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000005D3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::.cctor()
+// 0x000005D4 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::.ctor()
+// 0x000005D5 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_0(System.Object)
+// 0x000005D6 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_1(System.Object)
+// 0x000005D7 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_2(System.Object)
+// 0x000005D8 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_3(System.Object)
+// 0x000005D9 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_4(System.Object)
+// 0x000005DA System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_5(System.Object)
+// 0x000005DB System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_6(System.Object)
+// 0x000005DC System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_7(System.Object)
+// 0x000005DD System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_8(System.Object)
+// 0x000005DE System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_9(System.Object)
+// 0x000005DF System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_10(System.Object)
+// 0x000005E0 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_11(System.Object)
+// 0x000005E1 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_12(System.Object)
+// 0x000005E2 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_13(System.Object)
+// 0x000005E3 System.Void Cysharp.Threading.Tasks.UniTask/WhenAnyPromise`15/<>c::<.ctor>b__2_14(System.Object)
+// 0x000005E4 System.Void Cysharp.Threading.Tasks.UniTask/<>c__DisplayClass58_0::.ctor()
+extern void U3CU3Ec__DisplayClass58_0__ctor_m66BE20F828F621AC3261CE53966C61CE9441527A (void);
+// 0x000005E5 System.Void Cysharp.Threading.Tasks.UniTask/<>c__DisplayClass58_0::<Action>b__0()
+extern void U3CU3Ec__DisplayClass58_0_U3CActionU3Eb__0_mF2CADBC4C8392B4CC69D1E0271084B0988D084A2 (void);
+// 0x000005E6 System.Void Cysharp.Threading.Tasks.UniTask/<>c__DisplayClass59_0::.ctor()
+extern void U3CU3Ec__DisplayClass59_0__ctor_m8BD2860FDCCD0531390CBA68267B2E79382D886A (void);
+// 0x000005E7 System.Void Cysharp.Threading.Tasks.UniTask/<>c__DisplayClass59_0::<Action>b__0()
+extern void U3CU3Ec__DisplayClass59_0_U3CActionU3Eb__0_mFC4923E23DAD942A67A60C4FD4E49703B8841B56 (void);
+// 0x000005E8 System.Void Cysharp.Threading.Tasks.UniTask/<>c__DisplayClass60_0::.ctor()
+extern void U3CU3Ec__DisplayClass60_0__ctor_m2169FFC5B1E76EA48204545B32D787F00A11EC99 (void);
+// 0x000005E9 System.Void Cysharp.Threading.Tasks.UniTask/<>c__DisplayClass60_0::<UnityAction>b__0()
+extern void U3CU3Ec__DisplayClass60_0_U3CUnityActionU3Eb__0_m1A4F2452005B6C3A31791D7F43219FBB5902BAA0 (void);
+// 0x000005EA System.Void Cysharp.Threading.Tasks.UniTask/<>c__DisplayClass61_0::.ctor()
+extern void U3CU3Ec__DisplayClass61_0__ctor_mEA5BCD3C1C25FA47C64A7FED69E96ADB57004803 (void);
+// 0x000005EB System.Void Cysharp.Threading.Tasks.UniTask/<>c__DisplayClass61_0::<UnityAction>b__0()
+extern void U3CU3Ec__DisplayClass61_0_U3CUnityActionU3Eb__0_m67D573A54ED2C6698D65BFB361D589A89860C7E2 (void);
+// 0x000005EC System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__81::MoveNext()
+extern void U3CRunOnThreadPoolU3Ed__81_MoveNext_m38720C55FEDB24FF5CFF3CEF813BB47B24B849D0 (void);
+// 0x000005ED System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__81::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRunOnThreadPoolU3Ed__81_SetStateMachine_m9A60EF932E4B983B45D132F1A255C6A327D66F70 (void);
+// 0x000005EE System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__82::MoveNext()
+extern void U3CRunOnThreadPoolU3Ed__82_MoveNext_mD185BE12DB17D522131674C92210325C6871976D (void);
+// 0x000005EF System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__82::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRunOnThreadPoolU3Ed__82_SetStateMachine_m93664B64EABCCC119119500B901CF55DCF17B079 (void);
+// 0x000005F0 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__83::MoveNext()
+extern void U3CRunOnThreadPoolU3Ed__83_MoveNext_mAB51841C09A55524D58D4315A88E8956BAB086FF (void);
+// 0x000005F1 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__83::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRunOnThreadPoolU3Ed__83_SetStateMachine_mBB07955A0F2E26985217E3B1951972F6A45B49C8 (void);
+// 0x000005F2 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__84::MoveNext()
+extern void U3CRunOnThreadPoolU3Ed__84_MoveNext_m7DBAF4F170CDBD752DE4E0B28CC8642555D288E8 (void);
+// 0x000005F3 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__84::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRunOnThreadPoolU3Ed__84_SetStateMachine_m8601A1C0CD68C5BEA9F76BF3B9FF6F6F5C50262A (void);
+// 0x000005F4 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__85`1::MoveNext()
+// 0x000005F5 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__85`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000005F6 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__86`1::MoveNext()
+// 0x000005F7 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__86`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000005F8 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__87`1::MoveNext()
+// 0x000005F9 System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__87`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000005FA System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__88`1::MoveNext()
+// 0x000005FB System.Void Cysharp.Threading.Tasks.UniTask/<RunOnThreadPool>d__88`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000005FC System.Void Cysharp.Threading.Tasks.UniTask/<>c::.cctor()
+extern void U3CU3Ec__cctor_m51CCA72AEF541D67CAD60DB7D0636F332CA62F1C (void);
+// 0x000005FD System.Void Cysharp.Threading.Tasks.UniTask/<>c::.ctor()
+extern void U3CU3Ec__ctor_m9D18525225D440AAFA30EE17A72109811ECD8CB3 (void);
+// 0x000005FE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask/<>c::<.cctor>b__179_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__179_0_m5895DCB0A26365A184B6566591E1BFE6CC532769 (void);
+// 0x000005FF System.Void Cysharp.Threading.Tasks.AwaiterActions::Continuation(System.Object)
+extern void AwaiterActions_Continuation_m0EA21AB9CAA150F08C0928928D6F0BA3B6A0D819 (void);
+// 0x00000600 System.Void Cysharp.Threading.Tasks.AwaiterActions::.cctor()
+extern void AwaiterActions__cctor_mCA4E63B7EB17E13FAF457077BC304C9E9863F22D (void);
+// 0x00000601 System.Void Cysharp.Threading.Tasks.UniTask`1::.ctor(T)
+// 0x00000602 System.Void Cysharp.Threading.Tasks.UniTask`1::.ctor(Cysharp.Threading.Tasks.IUniTaskSource`1<T>,System.Int16)
+// 0x00000603 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask`1::get_Status()
+// 0x00000604 Cysharp.Threading.Tasks.UniTask`1/Awaiter<T> Cysharp.Threading.Tasks.UniTask`1::GetAwaiter()
+// 0x00000605 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTask`1::Preserve()
+// 0x00000606 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask`1::AsUniTask()
+// 0x00000607 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTask`1::op_Implicit(Cysharp.Threading.Tasks.UniTask`1<T>)
+// 0x00000608 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Boolean,T>> Cysharp.Threading.Tasks.UniTask`1::SuppressCancellationThrow()
+// 0x00000609 System.String Cysharp.Threading.Tasks.UniTask`1::ToString()
+// 0x0000060A System.Void Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource::.ctor(Cysharp.Threading.Tasks.IUniTaskSource`1<T>)
+// 0x0000060B System.ValueTuple`2<System.Boolean,T> Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource::GetResult(System.Int16)
+// 0x0000060C System.Void Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000060D Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource::GetStatus(System.Int16)
+// 0x0000060E Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource::UnsafeGetStatus()
+// 0x0000060F System.Void Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000610 System.Void Cysharp.Threading.Tasks.UniTask`1/MemoizeSource::.ctor(Cysharp.Threading.Tasks.IUniTaskSource`1<T>)
+// 0x00000611 T Cysharp.Threading.Tasks.UniTask`1/MemoizeSource::GetResult(System.Int16)
+// 0x00000612 System.Void Cysharp.Threading.Tasks.UniTask`1/MemoizeSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000613 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask`1/MemoizeSource::GetStatus(System.Int16)
+// 0x00000614 System.Void Cysharp.Threading.Tasks.UniTask`1/MemoizeSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000615 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask`1/MemoizeSource::UnsafeGetStatus()
+// 0x00000616 System.Void Cysharp.Threading.Tasks.UniTask`1/Awaiter::.ctor(Cysharp.Threading.Tasks.UniTask`1<T>&)
+// 0x00000617 System.Boolean Cysharp.Threading.Tasks.UniTask`1/Awaiter::get_IsCompleted()
+// 0x00000618 T Cysharp.Threading.Tasks.UniTask`1/Awaiter::GetResult()
+// 0x00000619 System.Void Cysharp.Threading.Tasks.UniTask`1/Awaiter::OnCompleted(System.Action)
+// 0x0000061A System.Void Cysharp.Threading.Tasks.UniTask`1/Awaiter::UnsafeOnCompleted(System.Action)
+// 0x0000061B System.Void Cysharp.Threading.Tasks.UniTask`1/Awaiter::SourceOnCompleted(System.Action`1<System.Object>,System.Object)
+// 0x0000061C System.Void Cysharp.Threading.Tasks.YieldAwaitable::.ctor(Cysharp.Threading.Tasks.PlayerLoopTiming)
+extern void YieldAwaitable__ctor_m18D31312C0A37CDC6345D803A3FC55BEDDB7DB8E (void);
+// 0x0000061D Cysharp.Threading.Tasks.YieldAwaitable/Awaiter Cysharp.Threading.Tasks.YieldAwaitable::GetAwaiter()
+extern void YieldAwaitable_GetAwaiter_m56B2A4754DC798098A8ABD5DE2E6780BCEB64C7C (void);
+// 0x0000061E Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.YieldAwaitable::ToUniTask()
+extern void YieldAwaitable_ToUniTask_mB2497122FD07CCB362BEFCF906C42D5BBB1B2368 (void);
+// 0x0000061F System.Void Cysharp.Threading.Tasks.YieldAwaitable/Awaiter::.ctor(Cysharp.Threading.Tasks.PlayerLoopTiming)
+extern void Awaiter__ctor_m11CEEE91D477321445760BC30E485E54A319E665 (void);
+// 0x00000620 System.Boolean Cysharp.Threading.Tasks.YieldAwaitable/Awaiter::get_IsCompleted()
+extern void Awaiter_get_IsCompleted_m380AD66439FAC48688A6348C575A8122F672D61A (void);
+// 0x00000621 System.Void Cysharp.Threading.Tasks.YieldAwaitable/Awaiter::GetResult()
+extern void Awaiter_GetResult_m65B26AEE969C14E1A7010BCDF845982D6EE1A0AB (void);
+// 0x00000622 System.Void Cysharp.Threading.Tasks.YieldAwaitable/Awaiter::OnCompleted(System.Action)
+extern void Awaiter_OnCompleted_m25464AC3A4D7588622FE4AFFD1ECEF66E32A07EC (void);
+// 0x00000623 System.Void Cysharp.Threading.Tasks.YieldAwaitable/Awaiter::UnsafeOnCompleted(System.Action)
+extern void Awaiter_UnsafeOnCompleted_m449B902ED39DDF273B1DC642244CA8B4D3831BE5 (void);
+// 0x00000624 System.Void Cysharp.Threading.Tasks.CompletedTasks::.cctor()
+extern void CompletedTasks__cctor_m9606900578020736B05C78CBC0C93B0D4E574232 (void);
+// 0x00000625 System.Void Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable::.ctor(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
+extern void SwitchToMainThreadAwaitable__ctor_mFCEC101B3A72BE6FEC732DA2B7E7DD98DA6959D1 (void);
+// 0x00000626 Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable/Awaiter Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable::GetAwaiter()
+extern void SwitchToMainThreadAwaitable_GetAwaiter_m66A0F6F462885727A38028656D11B51CEA32BD29 (void);
+// 0x00000627 System.Void Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable/Awaiter::.ctor(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
+extern void Awaiter__ctor_m09E7F426390A927742186C32D32668BD079D8D73 (void);
+// 0x00000628 System.Boolean Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable/Awaiter::get_IsCompleted()
+extern void Awaiter_get_IsCompleted_m8B4E3723A3CC1B1E8359E40C0766081C55A5BC37 (void);
+// 0x00000629 System.Void Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable/Awaiter::GetResult()
+extern void Awaiter_GetResult_m8383C6B4850150162ECAA6464603B95FD2231CB2 (void);
+// 0x0000062A System.Void Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable/Awaiter::OnCompleted(System.Action)
+extern void Awaiter_OnCompleted_m0CD5A9442BF16C47D21BD171B8CAF3A15274B201 (void);
+// 0x0000062B System.Void Cysharp.Threading.Tasks.SwitchToMainThreadAwaitable/Awaiter::UnsafeOnCompleted(System.Action)
+extern void Awaiter_UnsafeOnCompleted_m0F8D6A7007F0397899FB1444B09D14912BB48E67 (void);
+// 0x0000062C System.Void Cysharp.Threading.Tasks.ReturnToMainThread::.ctor(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
+extern void ReturnToMainThread__ctor_mBAE8FC1A4CE0C29F926C323B3173DAD99AFE9F09 (void);
+// 0x0000062D Cysharp.Threading.Tasks.ReturnToMainThread/Awaiter Cysharp.Threading.Tasks.ReturnToMainThread::DisposeAsync()
+extern void ReturnToMainThread_DisposeAsync_m8E05C25C07680FF07B607A37E69D513FE81870B6 (void);
+// 0x0000062E System.Void Cysharp.Threading.Tasks.ReturnToMainThread/Awaiter::.ctor(Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
+extern void Awaiter__ctor_m24E42F4622634B9637FFD73E12C328A304DB24D5 (void);
+// 0x0000062F Cysharp.Threading.Tasks.ReturnToMainThread/Awaiter Cysharp.Threading.Tasks.ReturnToMainThread/Awaiter::GetAwaiter()
+extern void Awaiter_GetAwaiter_mC6C2ED52158B1D2E1370B29F36C7A1AF73527055 (void);
+// 0x00000630 System.Boolean Cysharp.Threading.Tasks.ReturnToMainThread/Awaiter::get_IsCompleted()
+extern void Awaiter_get_IsCompleted_m86F5D79EB5B73479C076EF6CCB87AB50CF830664 (void);
+// 0x00000631 System.Void Cysharp.Threading.Tasks.ReturnToMainThread/Awaiter::GetResult()
+extern void Awaiter_GetResult_m4A61D93307B30CD5BB4C60AB9FE37554979E34DE (void);
+// 0x00000632 System.Void Cysharp.Threading.Tasks.ReturnToMainThread/Awaiter::OnCompleted(System.Action)
+extern void Awaiter_OnCompleted_m535A23E43030C30F07A94A0A6CF252DDBFB14EB8 (void);
+// 0x00000633 System.Void Cysharp.Threading.Tasks.ReturnToMainThread/Awaiter::UnsafeOnCompleted(System.Action)
+extern void Awaiter_UnsafeOnCompleted_m6C107D081E8C9910B33CF0DCA999FD3ABC226C08 (void);
+// 0x00000634 Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable/Awaiter Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable::GetAwaiter()
+extern void SwitchToThreadPoolAwaitable_GetAwaiter_m8720CC348C2B3A1A6CF1317042436D3F8307BD29 (void);
+// 0x00000635 System.Boolean Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable/Awaiter::get_IsCompleted()
+extern void Awaiter_get_IsCompleted_mC1677DC7707E92D236DF2BA1144FFABF6E45D92E (void);
+// 0x00000636 System.Void Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable/Awaiter::GetResult()
+extern void Awaiter_GetResult_mF089C80E7D6C1B3FFA735B7F5B28098339127021 (void);
+// 0x00000637 System.Void Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable/Awaiter::OnCompleted(System.Action)
+extern void Awaiter_OnCompleted_m822D4D665AD1FEF2EC40615943E1E08BA03D09C7 (void);
+// 0x00000638 System.Void Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable/Awaiter::UnsafeOnCompleted(System.Action)
+extern void Awaiter_UnsafeOnCompleted_mB6FEEBBADB2DEE87A1578C836F09D56A648F1A61 (void);
+// 0x00000639 System.Void Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable/Awaiter::Callback(System.Object)
+extern void Awaiter_Callback_m59E042793983D119D33FED28E23C4F336B0B2904 (void);
+// 0x0000063A System.Void Cysharp.Threading.Tasks.SwitchToThreadPoolAwaitable/Awaiter::.cctor()
+extern void Awaiter__cctor_mED2436D115A1C61C7F5402E1436DAB6DC74C7318 (void);
+// 0x0000063B Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable/Awaiter Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable::GetAwaiter()
+extern void SwitchToTaskPoolAwaitable_GetAwaiter_mCF248AC6C73851FBDA48684ED7D950C11DDB0045 (void);
+// 0x0000063C System.Boolean Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable/Awaiter::get_IsCompleted()
+extern void Awaiter_get_IsCompleted_m3699971AEF35BBDD488E7FDEC4CB36A434F64C5B (void);
+// 0x0000063D System.Void Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable/Awaiter::GetResult()
+extern void Awaiter_GetResult_m47C8A570F1CA1099AD152C462E465056C19E4994 (void);
+// 0x0000063E System.Void Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable/Awaiter::OnCompleted(System.Action)
+extern void Awaiter_OnCompleted_m828E843F11DA61D34C66AE0CB1B0F58DC64D3BA4 (void);
+// 0x0000063F System.Void Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable/Awaiter::UnsafeOnCompleted(System.Action)
+extern void Awaiter_UnsafeOnCompleted_m497F35773C6EFDA56EC3DB7C295933B0D7144212 (void);
+// 0x00000640 System.Void Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable/Awaiter::Callback(System.Object)
+extern void Awaiter_Callback_m16847403C8DA1CE0CBB3253990624C790A0DEA3F (void);
+// 0x00000641 System.Void Cysharp.Threading.Tasks.SwitchToTaskPoolAwaitable/Awaiter::.cctor()
+extern void Awaiter__cctor_m22EA35545AA97AF6026DCE4F143FB01FB8FCDA8D (void);
+// 0x00000642 System.Void Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable::.ctor(System.Threading.SynchronizationContext,System.Threading.CancellationToken)
+extern void SwitchToSynchronizationContextAwaitable__ctor_mAEAB780DB05FAD47A71C686DEF726E3DFD471EFC (void);
+// 0x00000643 Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable/Awaiter Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable::GetAwaiter()
+extern void SwitchToSynchronizationContextAwaitable_GetAwaiter_m5D5CF981B4A7B8CF2AB5EA5CB3717017B18BC29F (void);
+// 0x00000644 System.Void Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable/Awaiter::.ctor(System.Threading.SynchronizationContext,System.Threading.CancellationToken)
+extern void Awaiter__ctor_m492F8B84B5EF8EE7D41EC38C988AA9606FA075E0 (void);
+// 0x00000645 System.Boolean Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable/Awaiter::get_IsCompleted()
+extern void Awaiter_get_IsCompleted_m9FE5B9F4F4FD3A91C3EF001CE7DBF10A74D6D181 (void);
+// 0x00000646 System.Void Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable/Awaiter::GetResult()
+extern void Awaiter_GetResult_mF64A3B59E0F74D96EE3882216DA35F892810140C (void);
+// 0x00000647 System.Void Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable/Awaiter::OnCompleted(System.Action)
+extern void Awaiter_OnCompleted_mEF8828392CBB2AA205D6539FF770CF4F9EF11149 (void);
+// 0x00000648 System.Void Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable/Awaiter::UnsafeOnCompleted(System.Action)
+extern void Awaiter_UnsafeOnCompleted_mBB2852B633C2770F911BCFC59B8B4CA7E443BAB0 (void);
+// 0x00000649 System.Void Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable/Awaiter::Callback(System.Object)
+extern void Awaiter_Callback_m4A3BB77FE0B86B3FF8F0EB987D500D087FBD50D3 (void);
+// 0x0000064A System.Void Cysharp.Threading.Tasks.SwitchToSynchronizationContextAwaitable/Awaiter::.cctor()
+extern void Awaiter__cctor_m44725011E7A05B88DB58F70947BA970F47E61400 (void);
+// 0x0000064B System.Void Cysharp.Threading.Tasks.ReturnToSynchronizationContext::.ctor(System.Threading.SynchronizationContext,System.Boolean,System.Threading.CancellationToken)
+extern void ReturnToSynchronizationContext__ctor_m7DAD006F64492D34E749CA7E0E9167CB2E2117FD (void);
+// 0x0000064C Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter Cysharp.Threading.Tasks.ReturnToSynchronizationContext::DisposeAsync()
+extern void ReturnToSynchronizationContext_DisposeAsync_m9847BC8CB45E26B714CBBE283FBD000DF4ADD0D3 (void);
+// 0x0000064D System.Void Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter::.ctor(System.Threading.SynchronizationContext,System.Boolean,System.Threading.CancellationToken)
+extern void Awaiter__ctor_mF3630039F1EF4AF0055441F3DB64B3F7034D7775 (void);
+// 0x0000064E Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter::GetAwaiter()
+extern void Awaiter_GetAwaiter_m55FB61408CE143EC20403A62C652891C4F1FA04E (void);
+// 0x0000064F System.Boolean Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter::get_IsCompleted()
+extern void Awaiter_get_IsCompleted_m83EEF697D9563038109890CB678E3128629139CF (void);
+// 0x00000650 System.Void Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter::GetResult()
+extern void Awaiter_GetResult_m770255DE65727F4594A3DDAC445728133C06CDC9 (void);
+// 0x00000651 System.Void Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter::OnCompleted(System.Action)
+extern void Awaiter_OnCompleted_m2F069CBCC9FA6609E74548E61462E83E482FE8F8 (void);
+// 0x00000652 System.Void Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter::UnsafeOnCompleted(System.Action)
+extern void Awaiter_UnsafeOnCompleted_m93CC863523AB095BA735F2119A340382C80C3E48 (void);
+// 0x00000653 System.Void Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter::Callback(System.Object)
+extern void Awaiter_Callback_mC2B97BA43FFEF21D9BDBD50942EBFD843E8AB686 (void);
+// 0x00000654 System.Void Cysharp.Threading.Tasks.ReturnToSynchronizationContext/Awaiter::.cctor()
+extern void Awaiter__cctor_m9004B2F2F688043C447D092655C92F5B24E41C23 (void);
+// 0x00000655 System.Boolean Cysharp.Threading.Tasks.IResolvePromise::TrySetResult()
+// 0x00000656 System.Boolean Cysharp.Threading.Tasks.IResolvePromise`1::TrySetResult(T)
+// 0x00000657 System.Boolean Cysharp.Threading.Tasks.IRejectPromise::TrySetException(System.Exception)
+// 0x00000658 System.Boolean Cysharp.Threading.Tasks.ICancelPromise::TrySetCanceled(System.Threading.CancellationToken)
+// 0x00000659 System.Void Cysharp.Threading.Tasks.ExceptionHolder::.ctor(System.Runtime.ExceptionServices.ExceptionDispatchInfo)
+extern void ExceptionHolder__ctor_m6DD4EE0F80BC7D72FFAD053891227F046154EC79 (void);
+// 0x0000065A System.Runtime.ExceptionServices.ExceptionDispatchInfo Cysharp.Threading.Tasks.ExceptionHolder::GetException()
+extern void ExceptionHolder_GetException_m362D89AE3B04CF58E6567EEB499A88B9E6F62B38 (void);
+// 0x0000065B System.Void Cysharp.Threading.Tasks.ExceptionHolder::Finalize()
+extern void ExceptionHolder_Finalize_m5D7B937A4BDAA2DAE58B962B84BA69DB8C2BEBBF (void);
+// 0x0000065C System.Void Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::Reset()
+// 0x0000065D System.Void Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::ReportUnhandledError()
+// 0x0000065E System.Void Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::MarkHandled()
+// 0x0000065F System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::TrySetResult(TResult)
+// 0x00000660 System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::TrySetException(System.Exception)
+// 0x00000661 System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::TrySetCanceled(System.Threading.CancellationToken)
+// 0x00000662 System.Int16 Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::get_Version()
+// 0x00000663 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::GetStatus(System.Int16)
+// 0x00000664 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::UnsafeGetStatus()
+// 0x00000665 TResult Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::GetResult(System.Int16)
+// 0x00000666 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000667 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSourceCore`1::ValidateToken(System.Int16)
+// 0x00000668 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSourceCoreShared::CompletionSentinel(System.Object)
+extern void UniTaskCompletionSourceCoreShared_CompletionSentinel_m5F39E3B8DD297E1DE863AA3054199A4DE848FB10 (void);
+// 0x00000669 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSourceCoreShared::.cctor()
+extern void UniTaskCompletionSourceCoreShared__cctor_mB49EAFB5151515948642A58C02085755F3BE151D (void);
+// 0x0000066A Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource& Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::get_NextNode()
+extern void AutoResetUniTaskCompletionSource_get_NextNode_mA074D19C548EA16E1FFD257EB6F5EA01933513C6 (void);
+// 0x0000066B System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::.cctor()
+extern void AutoResetUniTaskCompletionSource__cctor_mA8C85E9ADFC98D8071F5A150215BE0B4BA617EE4 (void);
+// 0x0000066C System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::.ctor()
+extern void AutoResetUniTaskCompletionSource__ctor_m023A15C924FC18E1730265379F5887CE0D91CE60 (void);
+// 0x0000066D Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::Create()
+extern void AutoResetUniTaskCompletionSource_Create_m8E2EEAAFD5A50FE30B7F559EF5CC90CF05F675C5 (void);
+// 0x0000066E Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::CreateFromCanceled(System.Threading.CancellationToken,System.Int16&)
+extern void AutoResetUniTaskCompletionSource_CreateFromCanceled_mD7DED295D1BC420D4A43D221FB1FF79C87C498A5 (void);
+// 0x0000066F Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::CreateFromException(System.Exception,System.Int16&)
+extern void AutoResetUniTaskCompletionSource_CreateFromException_mD05F9A7B9DA68BB126D970BCB86CF6DDA13C1068 (void);
+// 0x00000670 Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::CreateCompleted(System.Int16&)
+extern void AutoResetUniTaskCompletionSource_CreateCompleted_m54CF1F4354076224C16FCEA6BEC4B1E0A1B8A9DE (void);
+// 0x00000671 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::get_Task()
+extern void AutoResetUniTaskCompletionSource_get_Task_m9FC95D22E40BC58DCA856E32087FB688B952BB2A (void);
+// 0x00000672 System.Boolean Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::TrySetResult()
+extern void AutoResetUniTaskCompletionSource_TrySetResult_mF8542DA1D21F8108A1667773C256239A1701E0DF (void);
+// 0x00000673 System.Boolean Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::TrySetCanceled(System.Threading.CancellationToken)
+extern void AutoResetUniTaskCompletionSource_TrySetCanceled_m4E687B95F7447FE8BCC0E639B06106BDC05067F1 (void);
+// 0x00000674 System.Boolean Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::TrySetException(System.Exception)
+extern void AutoResetUniTaskCompletionSource_TrySetException_m47A57AC1A4D524466C2799A94F766EA02709F37C (void);
+// 0x00000675 System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::GetResult(System.Int16)
+extern void AutoResetUniTaskCompletionSource_GetResult_m16900E2D7F26185D55213CB06AF2033117551745 (void);
+// 0x00000676 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::GetStatus(System.Int16)
+extern void AutoResetUniTaskCompletionSource_GetStatus_m2F0CBECD04F1D780F9561E3A90B7A3A2BA301D6C (void);
+// 0x00000677 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::UnsafeGetStatus()
+extern void AutoResetUniTaskCompletionSource_UnsafeGetStatus_m0204913D767FBA63D0A5D3AEF290283A0AA76AC4 (void);
+// 0x00000678 System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AutoResetUniTaskCompletionSource_OnCompleted_m83CC163076722B065F59180B63E78B5C3A362AD3 (void);
+// 0x00000679 System.Boolean Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource::TryReturn()
+extern void AutoResetUniTaskCompletionSource_TryReturn_mA1B01E7DCA312F6328B8963CD281DFB875517D94 (void);
+// 0x0000067A System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource/<>c::.cctor()
+extern void U3CU3Ec__cctor_m40EBABC43AF2045B6707DC5DBD8BFCD4F8D9C6CF (void);
+// 0x0000067B System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource/<>c::.ctor()
+extern void U3CU3Ec__ctor_mACB75D08D1EB22C42486B215C92917D1CA519700 (void);
+// 0x0000067C System.Int32 Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m41E50932DCCA162736E8412E858A6116F0CB5075 (void);
+// 0x0000067D Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1<T>& Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::get_NextNode()
+// 0x0000067E System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::.cctor()
+// 0x0000067F System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::.ctor()
+// 0x00000680 Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1<T> Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::Create()
+// 0x00000681 Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1<T> Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::CreateFromCanceled(System.Threading.CancellationToken,System.Int16&)
+// 0x00000682 Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1<T> Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::CreateFromException(System.Exception,System.Int16&)
+// 0x00000683 Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1<T> Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::CreateFromResult(T,System.Int16&)
+// 0x00000684 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::get_Task()
+// 0x00000685 System.Boolean Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::TrySetResult(T)
+// 0x00000686 System.Boolean Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::TrySetCanceled(System.Threading.CancellationToken)
+// 0x00000687 System.Boolean Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::TrySetException(System.Exception)
+// 0x00000688 T Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::GetResult(System.Int16)
+// 0x00000689 System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x0000068A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::GetStatus(System.Int16)
+// 0x0000068B Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::UnsafeGetStatus()
+// 0x0000068C System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000068D System.Boolean Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1::TryReturn()
+// 0x0000068E System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1/<>c::.cctor()
+// 0x0000068F System.Void Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1/<>c::.ctor()
+// 0x00000690 System.Int32 Cysharp.Threading.Tasks.AutoResetUniTaskCompletionSource`1/<>c::<.cctor>b__4_0()
+// 0x00000691 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSource::.ctor()
+extern void UniTaskCompletionSource__ctor_m7C8099F88D8C67FBB3D06EB3C12D852869862FF5 (void);
+// 0x00000692 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSource::MarkHandled()
+extern void UniTaskCompletionSource_MarkHandled_m3B29A0420CA63F7C0590149965C3C107D28F4E5A (void);
+// 0x00000693 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskCompletionSource::get_Task()
+extern void UniTaskCompletionSource_get_Task_m25CA1E2D00C877FB6266595D70A2A3035DF89EFC (void);
+// 0x00000694 System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSource::TrySetResult()
+extern void UniTaskCompletionSource_TrySetResult_m5C9F347F58580B4D85076121691E0474A1366F84 (void);
+// 0x00000695 System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSource::TrySetCanceled(System.Threading.CancellationToken)
+extern void UniTaskCompletionSource_TrySetCanceled_mA0D645B87AD2B2AA043E2D3D1AB3C97C253695E2 (void);
+// 0x00000696 System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSource::TrySetException(System.Exception)
+extern void UniTaskCompletionSource_TrySetException_mC95B080730AC978115B11B3254294F09C92B5727 (void);
+// 0x00000697 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSource::GetResult(System.Int16)
+extern void UniTaskCompletionSource_GetResult_m0560DCA9C768570A7AB6B83287922EACAF2FB357 (void);
+// 0x00000698 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskCompletionSource::GetStatus(System.Int16)
+extern void UniTaskCompletionSource_GetStatus_m857C8A01E67333FDDB80A3ED56BFE29A281B06CA (void);
+// 0x00000699 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskCompletionSource::UnsafeGetStatus()
+extern void UniTaskCompletionSource_UnsafeGetStatus_mF4C9873F8275CBCDF281C26A1A9B05BCBBAD4756 (void);
+// 0x0000069A System.Void Cysharp.Threading.Tasks.UniTaskCompletionSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void UniTaskCompletionSource_OnCompleted_mB9171D8E4DF467FCDB0FBE017E0B79C955F83948 (void);
+// 0x0000069B System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSource::TrySignalCompletion(Cysharp.Threading.Tasks.UniTaskStatus)
+extern void UniTaskCompletionSource_TrySignalCompletion_m75DFB8A3BAEDCF994432A71268490F1B4BDEE4EE (void);
+// 0x0000069C System.Void Cysharp.Threading.Tasks.UniTaskCompletionSource`1::.ctor()
+// 0x0000069D System.Void Cysharp.Threading.Tasks.UniTaskCompletionSource`1::MarkHandled()
+// 0x0000069E Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskCompletionSource`1::get_Task()
+// 0x0000069F System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSource`1::TrySetResult(T)
+// 0x000006A0 System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSource`1::TrySetCanceled(System.Threading.CancellationToken)
+// 0x000006A1 System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSource`1::TrySetException(System.Exception)
+// 0x000006A2 T Cysharp.Threading.Tasks.UniTaskCompletionSource`1::GetResult(System.Int16)
+// 0x000006A3 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSource`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000006A4 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskCompletionSource`1::GetStatus(System.Int16)
+// 0x000006A5 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskCompletionSource`1::UnsafeGetStatus()
+// 0x000006A6 System.Void Cysharp.Threading.Tasks.UniTaskCompletionSource`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000006A7 System.Boolean Cysharp.Threading.Tasks.UniTaskCompletionSource`1::TrySignalCompletion(Cysharp.Threading.Tasks.UniTaskStatus)
+// 0x000006A8 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::AsUniTask(System.Threading.Tasks.Task`1<T>,System.Boolean)
+// 0x000006A9 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::AsUniTask(System.Threading.Tasks.Task,System.Boolean)
+extern void UniTaskExtensions_AsUniTask_mDA7FB13EF92BE563AB1C4022DC240955FA4E6F16 (void);
+// 0x000006AA System.Threading.Tasks.Task`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::AsTask(Cysharp.Threading.Tasks.UniTask`1<T>)
+// 0x000006AB System.Threading.Tasks.Task Cysharp.Threading.Tasks.UniTaskExtensions::AsTask(Cysharp.Threading.Tasks.UniTask)
+extern void UniTaskExtensions_AsTask_mE329EE7907470590D7A36D3854FB647C58692935 (void);
+// 0x000006AC Cysharp.Threading.Tasks.AsyncLazy Cysharp.Threading.Tasks.UniTaskExtensions::ToAsyncLazy(Cysharp.Threading.Tasks.UniTask)
+extern void UniTaskExtensions_ToAsyncLazy_m850AA1330FF15C7ADD1061A8F016C3B785DEAC4B (void);
+// 0x000006AD Cysharp.Threading.Tasks.AsyncLazy`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::ToAsyncLazy(Cysharp.Threading.Tasks.UniTask`1<T>)
+// 0x000006AE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::AttachExternalCancellation(Cysharp.Threading.Tasks.UniTask,System.Threading.CancellationToken)
+extern void UniTaskExtensions_AttachExternalCancellation_mD10FFC9C2946A7D3686FCAD013866A1A30B7CF72 (void);
+// 0x000006AF Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::AttachExternalCancellation(Cysharp.Threading.Tasks.UniTask`1<T>,System.Threading.CancellationToken)
+// 0x000006B0 System.Collections.IEnumerator Cysharp.Threading.Tasks.UniTaskExtensions::ToCoroutine(Cysharp.Threading.Tasks.UniTask`1<T>,System.Action`1<T>,System.Action`1<System.Exception>)
+// 0x000006B1 System.Collections.IEnumerator Cysharp.Threading.Tasks.UniTaskExtensions::ToCoroutine(Cysharp.Threading.Tasks.UniTask,System.Action`1<System.Exception>)
+extern void UniTaskExtensions_ToCoroutine_mB4CD938DC218C6749CEF3026DF73558F2923724B (void);
+// 0x000006B2 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::Timeout(Cysharp.Threading.Tasks.UniTask,System.TimeSpan,Cysharp.Threading.Tasks.DelayType,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationTokenSource)
+extern void UniTaskExtensions_Timeout_mE33F5A8965CB4445576D542DACED38E2296DC837 (void);
+// 0x000006B3 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::Timeout(Cysharp.Threading.Tasks.UniTask`1<T>,System.TimeSpan,Cysharp.Threading.Tasks.DelayType,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationTokenSource)
+// 0x000006B4 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.UniTaskExtensions::TimeoutWithoutException(Cysharp.Threading.Tasks.UniTask,System.TimeSpan,Cysharp.Threading.Tasks.DelayType,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationTokenSource)
+extern void UniTaskExtensions_TimeoutWithoutException_mECEA10AC99BDC3D0EA703155DC1291B390F1BDD7 (void);
+// 0x000006B5 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Boolean,T>> Cysharp.Threading.Tasks.UniTaskExtensions::TimeoutWithoutException(Cysharp.Threading.Tasks.UniTask`1<T>,System.TimeSpan,Cysharp.Threading.Tasks.DelayType,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationTokenSource)
+// 0x000006B6 System.Void Cysharp.Threading.Tasks.UniTaskExtensions::Forget(Cysharp.Threading.Tasks.UniTask)
+extern void UniTaskExtensions_Forget_m8F82202C3DB2020AAE7F874AE049DA711A01DF13 (void);
+// 0x000006B7 System.Void Cysharp.Threading.Tasks.UniTaskExtensions::Forget(Cysharp.Threading.Tasks.UniTask,System.Action`1<System.Exception>,System.Boolean)
+extern void UniTaskExtensions_Forget_m8B0726CB46AC3693D2B4CDD92BA1E284E9873991 (void);
+// 0x000006B8 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UniTaskExtensions::ForgetCoreWithCatch(Cysharp.Threading.Tasks.UniTask,System.Action`1<System.Exception>,System.Boolean)
+extern void UniTaskExtensions_ForgetCoreWithCatch_m55B908E474AEFE290A63EFFACFA09D11088473B8 (void);
+// 0x000006B9 System.Void Cysharp.Threading.Tasks.UniTaskExtensions::Forget(Cysharp.Threading.Tasks.UniTask`1<T>)
+// 0x000006BA System.Void Cysharp.Threading.Tasks.UniTaskExtensions::Forget(Cysharp.Threading.Tasks.UniTask`1<T>,System.Action`1<System.Exception>,System.Boolean)
+// 0x000006BB Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UniTaskExtensions::ForgetCoreWithCatch(Cysharp.Threading.Tasks.UniTask`1<T>,System.Action`1<System.Exception>,System.Boolean)
+// 0x000006BC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::ContinueWith(Cysharp.Threading.Tasks.UniTask`1<T>,System.Action`1<T>)
+// 0x000006BD Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::ContinueWith(Cysharp.Threading.Tasks.UniTask`1<T>,System.Func`2<T,Cysharp.Threading.Tasks.UniTask>)
+// 0x000006BE Cysharp.Threading.Tasks.UniTask`1<TR> Cysharp.Threading.Tasks.UniTaskExtensions::ContinueWith(Cysharp.Threading.Tasks.UniTask`1<T>,System.Func`2<T,TR>)
+// 0x000006BF Cysharp.Threading.Tasks.UniTask`1<TR> Cysharp.Threading.Tasks.UniTaskExtensions::ContinueWith(Cysharp.Threading.Tasks.UniTask`1<T>,System.Func`2<T,Cysharp.Threading.Tasks.UniTask`1<TR>>)
+// 0x000006C0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::ContinueWith(Cysharp.Threading.Tasks.UniTask,System.Action)
+extern void UniTaskExtensions_ContinueWith_m54BF61B6944AE60B90EAD15E4728926437A46B5E (void);
+// 0x000006C1 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::ContinueWith(Cysharp.Threading.Tasks.UniTask,System.Func`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_ContinueWith_m60CBFE4AD16AEB160F8BE30936BA8407035E7944 (void);
+// 0x000006C2 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::ContinueWith(Cysharp.Threading.Tasks.UniTask,System.Func`1<T>)
+// 0x000006C3 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::ContinueWith(Cysharp.Threading.Tasks.UniTask,System.Func`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000006C4 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(Cysharp.Threading.Tasks.UniTask`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000006C5 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(Cysharp.Threading.Tasks.UniTask`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_Unwrap_m5A0B6C36B14E244D978930050853C3ACBDC32CAE (void);
+// 0x000006C6 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(System.Threading.Tasks.Task`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000006C7 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(System.Threading.Tasks.Task`1<Cysharp.Threading.Tasks.UniTask`1<T>>,System.Boolean)
+// 0x000006C8 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(System.Threading.Tasks.Task`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_Unwrap_mB8713FDF175CE41BD95F38F43DD55F84A9B38CED (void);
+// 0x000006C9 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(System.Threading.Tasks.Task`1<Cysharp.Threading.Tasks.UniTask>,System.Boolean)
+extern void UniTaskExtensions_Unwrap_m439BBE2F3255A638D7EFE9283ACC7B70AF79E2C7 (void);
+// 0x000006CA Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(Cysharp.Threading.Tasks.UniTask`1<System.Threading.Tasks.Task`1<T>>)
+// 0x000006CB Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(Cysharp.Threading.Tasks.UniTask`1<System.Threading.Tasks.Task`1<T>>,System.Boolean)
+// 0x000006CC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(Cysharp.Threading.Tasks.UniTask`1<System.Threading.Tasks.Task>)
+extern void UniTaskExtensions_Unwrap_mEE05155B5BAAD5EA6CF01EF4D9DB877702263120 (void);
+// 0x000006CD Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UniTaskExtensions::Unwrap(Cysharp.Threading.Tasks.UniTask`1<System.Threading.Tasks.Task>,System.Boolean)
+extern void UniTaskExtensions_Unwrap_m5DF9947D5F4CFD8F7BA7A3E6AD6A699CC2394ADD (void);
+// 0x000006CE Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(Cysharp.Threading.Tasks.UniTask[])
+extern void UniTaskExtensions_GetAwaiter_m0C025EF260AB24EC20C1C324E0C97960E69C2CA6 (void);
+// 0x000006CF Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.Collections.Generic.IEnumerable`1<Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_GetAwaiter_mFCE60C930005D130244CE4DC0E9DBF3877330A0D (void);
+// 0x000006D0 Cysharp.Threading.Tasks.UniTask`1/Awaiter<T[]> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(Cysharp.Threading.Tasks.UniTask`1<T>[])
+// 0x000006D1 Cysharp.Threading.Tasks.UniTask`1/Awaiter<T[]> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.Collections.Generic.IEnumerable`1<Cysharp.Threading.Tasks.UniTask`1<T>>)
+// 0x000006D2 Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`2<T1,T2>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`2<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>>)
+// 0x000006D3 Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`3<T1,T2,T3>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`3<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>>)
+// 0x000006D4 Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`4<T1,T2,T3,T4>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`4<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>>)
+// 0x000006D5 Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`5<T1,T2,T3,T4,T5>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`5<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>>)
+// 0x000006D6 Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`6<T1,T2,T3,T4,T5,T6>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`6<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>>)
+// 0x000006D7 Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`7<T1,T2,T3,T4,T5,T6,T7>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`7<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>>)
+// 0x000006D8 Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`1<T8>>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,System.ValueTuple`1<Cysharp.Threading.Tasks.UniTask`1<T8>>>)
+// 0x000006D9 Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`2<T8,T9>>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,System.ValueTuple`2<Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>>>)
+// 0x000006DA Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`3<T8,T9,T10>>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,System.ValueTuple`3<Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>>>)
+// 0x000006DB Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`4<T8,T9,T10,T11>>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,System.ValueTuple`4<Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>>>)
+// 0x000006DC Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`5<T8,T9,T10,T11,T12>>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,System.ValueTuple`5<Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>>>)
+// 0x000006DD Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`6<T8,T9,T10,T11,T12,T13>>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,System.ValueTuple`6<Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>>>)
+// 0x000006DE Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`7<T8,T9,T10,T11,T12,T13,T14>>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,System.ValueTuple`7<Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>>>)
+// 0x000006DF Cysharp.Threading.Tasks.UniTask`1/Awaiter<System.ValueTuple`8<T1,T2,T3,T4,T5,T6,T7,System.ValueTuple`8<T8,T9,T10,T11,T12,T13,T14,System.ValueTuple`1<T15>>>> Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T1>,Cysharp.Threading.Tasks.UniTask`1<T2>,Cysharp.Threading.Tasks.UniTask`1<T3>,Cysharp.Threading.Tasks.UniTask`1<T4>,Cysharp.Threading.Tasks.UniTask`1<T5>,Cysharp.Threading.Tasks.UniTask`1<T6>,Cysharp.Threading.Tasks.UniTask`1<T7>,System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask`1<T8>,Cysharp.Threading.Tasks.UniTask`1<T9>,Cysharp.Threading.Tasks.UniTask`1<T10>,Cysharp.Threading.Tasks.UniTask`1<T11>,Cysharp.Threading.Tasks.UniTask`1<T12>,Cysharp.Threading.Tasks.UniTask`1<T13>,Cysharp.Threading.Tasks.UniTask`1<T14>,System.ValueTuple`1<Cysharp.Threading.Tasks.UniTask`1<T15>>>>)
+// 0x000006E0 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`2<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_GetAwaiter_mD4BFAD48C94CA39A02C303AFFDA2D6BE7E82AD53 (void);
+// 0x000006E1 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`3<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_GetAwaiter_m2D1C90788637790F3A4A272FCE2011DEA487E2C9 (void);
+// 0x000006E2 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`4<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_GetAwaiter_mAEA4567142821CA63A32F043A9176B6342593FF3 (void);
+// 0x000006E3 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`5<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_GetAwaiter_mE71AC063090C0948CC516A9837F59DBAC88E0CEB (void);
+// 0x000006E4 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`6<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_GetAwaiter_mA0CE5B00D0FF10257EC6DEDB3EA4ED1715B35498 (void);
+// 0x000006E5 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`7<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>)
+extern void UniTaskExtensions_GetAwaiter_mCA1DC323F58CE59697BF04684CB641082EF73B46 (void);
+// 0x000006E6 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`1<Cysharp.Threading.Tasks.UniTask>>)
+extern void UniTaskExtensions_GetAwaiter_m3C2FCFEC396CED696BDF060DF92144FF8C5A220B (void);
+// 0x000006E7 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`2<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>>)
+extern void UniTaskExtensions_GetAwaiter_m5D5DB1DBB7D9476A844263781E31534C1AF0BB56 (void);
+// 0x000006E8 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`3<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>>)
+extern void UniTaskExtensions_GetAwaiter_mDE7C6217C2D2E191C5A79CA10942A86529C13E37 (void);
+// 0x000006E9 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`4<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>>)
+extern void UniTaskExtensions_GetAwaiter_mD4819C3F07931295867221A9A1E62596CA608895 (void);
+// 0x000006EA Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`5<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>>)
+extern void UniTaskExtensions_GetAwaiter_mF4F119EE66FCA93748B70563E0FB06C8AC85AD70 (void);
+// 0x000006EB Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`6<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>>)
+extern void UniTaskExtensions_GetAwaiter_m660517767B7E75504890223549091138001C0265 (void);
+// 0x000006EC Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`7<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask>>)
+extern void UniTaskExtensions_GetAwaiter_m195944057FC8DBF1F565F177891A792E25BF2E7D (void);
+// 0x000006ED Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UniTaskExtensions::GetAwaiter(System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`8<Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,Cysharp.Threading.Tasks.UniTask,System.ValueTuple`1<Cysharp.Threading.Tasks.UniTask>>>)
+extern void UniTaskExtensions_GetAwaiter_mE325E61BDCD06F7D8BC213E4F34743238C9F42D7 (void);
+// 0x000006EE System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource::.ctor(Cysharp.Threading.Tasks.UniTask,System.Threading.CancellationToken)
+extern void AttachExternalCancellationSource__ctor_m318C6ED196B206B316C3B6033BEB0283EE7A0A1B (void);
+// 0x000006EF Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource::RunTask(Cysharp.Threading.Tasks.UniTask)
+extern void AttachExternalCancellationSource_RunTask_mE2FC8F9F1D5A27A9D927C288441A6E82941108F7 (void);
+// 0x000006F0 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource::CancellationCallback(System.Object)
+extern void AttachExternalCancellationSource_CancellationCallback_m61F958A919D7C5C2D95864D8D4E29BB545E14ADC (void);
+// 0x000006F1 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource::GetResult(System.Int16)
+extern void AttachExternalCancellationSource_GetResult_m1A15200BA02682C399DAE41AF75EE42C2D700A2D (void);
+// 0x000006F2 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource::GetStatus(System.Int16)
+extern void AttachExternalCancellationSource_GetStatus_mA44D7922AB8940EC110E63501E126630F0C47143 (void);
+// 0x000006F3 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AttachExternalCancellationSource_OnCompleted_m9C74F7923E34369E6978AC5752916F0EE26BBDEF (void);
+// 0x000006F4 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource::UnsafeGetStatus()
+extern void AttachExternalCancellationSource_UnsafeGetStatus_m34D5DCE09C05E6D40275C08C97951AD452782145 (void);
+// 0x000006F5 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource::.cctor()
+extern void AttachExternalCancellationSource__cctor_m3D5727BCD3BEB56FAC130E662BF8A7563E199BCE (void);
+// 0x000006F6 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource/<RunTask>d__5::MoveNext()
+extern void U3CRunTaskU3Ed__5_MoveNext_m3344B6864F5B1648AE534EB51AB375A63929322D (void);
+// 0x000006F7 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource/<RunTask>d__5::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRunTaskU3Ed__5_SetStateMachine_m676E99B99C852FB1BF9157A3B730FEDCB61D5FE6 (void);
+// 0x000006F8 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::.ctor(Cysharp.Threading.Tasks.UniTask`1<T>,System.Threading.CancellationToken)
+// 0x000006F9 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::RunTask(Cysharp.Threading.Tasks.UniTask`1<T>)
+// 0x000006FA System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::CancellationCallback(System.Object)
+// 0x000006FB System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x000006FC T Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::GetResult(System.Int16)
+// 0x000006FD Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::GetStatus(System.Int16)
+// 0x000006FE System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x000006FF Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::UnsafeGetStatus()
+// 0x00000700 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1::.cctor()
+// 0x00000701 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1/<RunTask>d__5::MoveNext()
+// 0x00000702 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/AttachExternalCancellationSource`1/<RunTask>d__5::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000703 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator::.ctor(Cysharp.Threading.Tasks.UniTask,System.Action`1<System.Exception>)
+extern void ToCoroutineEnumerator__ctor_mBC4745652E8068A0DD506C56ABBBDE88CF43D441 (void);
+// 0x00000704 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator::RunTask(Cysharp.Threading.Tasks.UniTask)
+extern void ToCoroutineEnumerator_RunTask_m2CE897609BEA0EAD2F60AA7A577E52D930A99E0C (void);
+// 0x00000705 System.Object Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator::get_Current()
+extern void ToCoroutineEnumerator_get_Current_m3473537A0D0D8CC5768E261B75FCA93E8512BFE0 (void);
+// 0x00000706 System.Boolean Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator::MoveNext()
+extern void ToCoroutineEnumerator_MoveNext_m52978906696AC2CD9965DBC4B87931E63D0B3B1E (void);
+// 0x00000707 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator::System.Collections.IEnumerator.Reset()
+extern void ToCoroutineEnumerator_System_Collections_IEnumerator_Reset_m02B3682DB29A99D1C80649B810A76F3970A47EB9 (void);
+// 0x00000708 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator/<RunTask>d__6::MoveNext()
+extern void U3CRunTaskU3Ed__6_MoveNext_m3CD3A16774E5247DA30D82C6B223223364D6AD0D (void);
+// 0x00000709 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator/<RunTask>d__6::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CRunTaskU3Ed__6_SetStateMachine_m9874A12704D2EAFD1D7F4623F26D4CB894F837A8 (void);
+// 0x0000070A System.Void Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator`1::.ctor(Cysharp.Threading.Tasks.UniTask`1<T>,System.Action`1<T>,System.Action`1<System.Exception>)
+// 0x0000070B Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator`1::RunTask(Cysharp.Threading.Tasks.UniTask`1<T>)
+// 0x0000070C System.Object Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator`1::get_Current()
+// 0x0000070D System.Boolean Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator`1::MoveNext()
+// 0x0000070E System.Void Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator`1::System.Collections.IEnumerator.Reset()
+// 0x0000070F System.Void Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator`1/<RunTask>d__8::MoveNext()
+// 0x00000710 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/ToCoroutineEnumerator`1/<RunTask>d__8::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000711 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__0`1::.cctor()
+// 0x00000712 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__0`1::.ctor()
+// 0x00000713 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__0`1::<AsUniTask>b__0_0(System.Threading.Tasks.Task`1<T>,System.Object)
+// 0x00000714 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c::.cctor()
+extern void U3CU3Ec__cctor_m08A505E47B79ABCEDFF5C2D25D80D4CB40940E7D (void);
+// 0x00000715 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c::.ctor()
+extern void U3CU3Ec__ctor_m6BFBD27DD778E7CC6F178AD0A4ABFB48B7384EC7 (void);
+// 0x00000716 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c::<AsUniTask>b__1_0(System.Threading.Tasks.Task,System.Object)
+extern void U3CU3Ec_U3CAsUniTaskU3Eb__1_0_mCE3BF4CFBBE8E766364A0482BA418DDE6495B722 (void);
+// 0x00000717 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c::<AsTask>b__3_0(System.Object)
+extern void U3CU3Ec_U3CAsTaskU3Eb__3_0_m047D697A2875C613AC0E1AA085F66C75E76583C0 (void);
+// 0x00000718 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c::<Forget>b__16_0(System.Object)
+extern void U3CU3Ec_U3CForgetU3Eb__16_0_mF73782801449F4A8448C6C4AF7CC23058BDE4A11 (void);
+// 0x00000719 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__2`1::.cctor()
+// 0x0000071A System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__2`1::.ctor()
+// 0x0000071B System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__2`1::<AsTask>b__2_0(System.Object)
+// 0x0000071C System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Timeout>d__12::MoveNext()
+extern void U3CTimeoutU3Ed__12_MoveNext_m7F1BBB5BD22E661AC18BDE2A10C989F3F6CB8650 (void);
+// 0x0000071D System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Timeout>d__12::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CTimeoutU3Ed__12_SetStateMachine_m39053C1E1AF649F423B78669B1A23E4F68278A1C (void);
+// 0x0000071E System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Timeout>d__13`1::MoveNext()
+// 0x0000071F System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Timeout>d__13`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000720 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<TimeoutWithoutException>d__14::MoveNext()
+extern void U3CTimeoutWithoutExceptionU3Ed__14_MoveNext_m78D28DC7B590E159BA908AFDC0BD3F25CAEC4425 (void);
+// 0x00000721 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<TimeoutWithoutException>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CTimeoutWithoutExceptionU3Ed__14_SetStateMachine_mDDCCF16AA7B36820989B7FB9D7E599F796C5B321 (void);
+// 0x00000722 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<TimeoutWithoutException>d__15`1::MoveNext()
+// 0x00000723 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<TimeoutWithoutException>d__15`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000724 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ForgetCoreWithCatch>d__18::MoveNext()
+extern void U3CForgetCoreWithCatchU3Ed__18_MoveNext_m04E4D555E2E8F65BE0C17AE5D25E83FBD776EF81 (void);
+// 0x00000725 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ForgetCoreWithCatch>d__18::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CForgetCoreWithCatchU3Ed__18_SetStateMachine_m08B51AA3872FDE9C88AF5757E8746BD182AEC137 (void);
+// 0x00000726 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__19`1::.cctor()
+// 0x00000727 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__19`1::.ctor()
+// 0x00000728 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<>c__19`1::<Forget>b__19_0(System.Object)
+// 0x00000729 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ForgetCoreWithCatch>d__21`1::MoveNext()
+// 0x0000072A System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ForgetCoreWithCatch>d__21`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000072B System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__22`1::MoveNext()
+// 0x0000072C System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__22`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000072D System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__23`1::MoveNext()
+// 0x0000072E System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__23`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000072F System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__24`2::MoveNext()
+// 0x00000730 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__24`2::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000731 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__25`2::MoveNext()
+// 0x00000732 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__25`2::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000733 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__26::MoveNext()
+extern void U3CContinueWithU3Ed__26_MoveNext_mEF192FB41D809C77DAC056021F36FDC0B0C0708B (void);
+// 0x00000734 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__26::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CContinueWithU3Ed__26_SetStateMachine_m4C00B97F073E582AE70AA66E4823410661C8FA8A (void);
+// 0x00000735 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__27::MoveNext()
+extern void U3CContinueWithU3Ed__27_MoveNext_m346157D6ED11D4268C6A4ED90588CFBF00F1BC1E (void);
+// 0x00000736 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__27::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CContinueWithU3Ed__27_SetStateMachine_m890B1B519DC41F3FBAFE2C76AD9DC86915FA790F (void);
+// 0x00000737 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__28`1::MoveNext()
+// 0x00000738 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__28`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000739 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__29`1::MoveNext()
+// 0x0000073A System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<ContinueWith>d__29`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000073B System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__30`1::MoveNext()
+// 0x0000073C System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__30`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000073D System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__31::MoveNext()
+extern void U3CUnwrapU3Ed__31_MoveNext_m382BE40C5E76185E5D3261584E1BCE9811704EF7 (void);
+// 0x0000073E System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__31::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CUnwrapU3Ed__31_SetStateMachine_mD796E8B98D3BCD72DFDA3814305938D6095F2781 (void);
+// 0x0000073F System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__32`1::MoveNext()
+// 0x00000740 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__32`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000741 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__33`1::MoveNext()
+// 0x00000742 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__33`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000743 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__34::MoveNext()
+extern void U3CUnwrapU3Ed__34_MoveNext_m5D6795B652A68122C5FE7E93CCF42D74EAFFAACA (void);
+// 0x00000744 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__34::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CUnwrapU3Ed__34_SetStateMachine_mD45417191F6A430D91C731510C2134492EB589ED (void);
+// 0x00000745 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__35::MoveNext()
+extern void U3CUnwrapU3Ed__35_MoveNext_mE486B4E83A5455B91BE0109678FC275CF582D716 (void);
+// 0x00000746 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__35::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CUnwrapU3Ed__35_SetStateMachine_m04802B692A477C4ACE2BEF603E437DEB78118DB1 (void);
+// 0x00000747 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__36`1::MoveNext()
+// 0x00000748 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__36`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000749 System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__37`1::MoveNext()
+// 0x0000074A System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__37`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000074B System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__38::MoveNext()
+extern void U3CUnwrapU3Ed__38_MoveNext_m5BB5246A30E6BA3A11BA4DF59FFC17A0CF633A8B (void);
+// 0x0000074C System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__38::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CUnwrapU3Ed__38_SetStateMachine_m2985B8E6BF964965E20234B7B8A820BD001C378D (void);
+// 0x0000074D System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__39::MoveNext()
+extern void U3CUnwrapU3Ed__39_MoveNext_m6041F2BE5EA3F37E5C89337C0635773FD6BA53AA (void);
+// 0x0000074E System.Void Cysharp.Threading.Tasks.UniTaskExtensions/<Unwrap>d__39::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CUnwrapU3Ed__39_SetStateMachine_m92FFF58C2D6B3C934A48263A8D7677E7D500A773 (void);
+// 0x0000074F Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UniTaskObservableExtensions::ToUniTask(System.IObservable`1<T>,System.Boolean,System.Threading.CancellationToken)
+// 0x00000750 System.IObservable`1<T> Cysharp.Threading.Tasks.UniTaskObservableExtensions::ToObservable(Cysharp.Threading.Tasks.UniTask`1<T>)
+// 0x00000751 System.IObservable`1<Cysharp.Threading.Tasks.AsyncUnit> Cysharp.Threading.Tasks.UniTaskObservableExtensions::ToObservable(Cysharp.Threading.Tasks.UniTask)
+extern void UniTaskObservableExtensions_ToObservable_m918E55D83B4CBBED42FCE47DADAD5536E529BB99 (void);
+// 0x00000752 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UniTaskObservableExtensions::Fire(Cysharp.Threading.Tasks.Internal.AsyncSubject`1<T>,Cysharp.Threading.Tasks.UniTask`1<T>)
+// 0x00000753 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UniTaskObservableExtensions::Fire(Cysharp.Threading.Tasks.Internal.AsyncSubject`1<Cysharp.Threading.Tasks.AsyncUnit>,Cysharp.Threading.Tasks.UniTask)
+extern void UniTaskObservableExtensions_Fire_m9FF4DA95110DDC561135B49A6C4F002262799744 (void);
+// 0x00000754 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/ToUniTaskObserver`1::.ctor(Cysharp.Threading.Tasks.UniTaskCompletionSource`1<T>,Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable,System.Threading.CancellationToken)
+// 0x00000755 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/ToUniTaskObserver`1::OnCanceled(System.Object)
+// 0x00000756 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/ToUniTaskObserver`1::OnNext(T)
+// 0x00000757 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/ToUniTaskObserver`1::OnError(System.Exception)
+// 0x00000758 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/ToUniTaskObserver`1::OnCompleted()
+// 0x00000759 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/ToUniTaskObserver`1::.cctor()
+// 0x0000075A System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/FirstValueToUniTaskObserver`1::.ctor(Cysharp.Threading.Tasks.UniTaskCompletionSource`1<T>,Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable,System.Threading.CancellationToken)
+// 0x0000075B System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/FirstValueToUniTaskObserver`1::OnCanceled(System.Object)
+// 0x0000075C System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/FirstValueToUniTaskObserver`1::OnNext(T)
+// 0x0000075D System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/FirstValueToUniTaskObserver`1::OnError(System.Exception)
+// 0x0000075E System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/FirstValueToUniTaskObserver`1::OnCompleted()
+// 0x0000075F System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/FirstValueToUniTaskObserver`1::.cctor()
+// 0x00000760 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/ReturnObservable`1::.ctor(T)
+// 0x00000761 System.IDisposable Cysharp.Threading.Tasks.UniTaskObservableExtensions/ReturnObservable`1::Subscribe(System.IObserver`1<T>)
+// 0x00000762 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/ThrowObservable`1::.ctor(System.Exception)
+// 0x00000763 System.IDisposable Cysharp.Threading.Tasks.UniTaskObservableExtensions/ThrowObservable`1::Subscribe(System.IObserver`1<T>)
+// 0x00000764 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/<Fire>d__3`1::MoveNext()
+// 0x00000765 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/<Fire>d__3`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000766 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/<Fire>d__4::MoveNext()
+extern void U3CFireU3Ed__4_MoveNext_m2A2912B7BCA7C0E7BDEBEB169BEAA8A3AB09057B (void);
+// 0x00000767 System.Void Cysharp.Threading.Tasks.UniTaskObservableExtensions/<Fire>d__4::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CFireU3Ed__4_SetStateMachine_m0E131446887368F98AA0A3AEC1DDCEEFE0187C87 (void);
+// 0x00000768 System.Void Cysharp.Threading.Tasks.UniTaskScheduler::add_UnobservedTaskException(System.Action`1<System.Exception>)
+extern void UniTaskScheduler_add_UnobservedTaskException_m95EED737C11C43DE6C046E4FB0A40B35112F4847 (void);
+// 0x00000769 System.Void Cysharp.Threading.Tasks.UniTaskScheduler::remove_UnobservedTaskException(System.Action`1<System.Exception>)
+extern void UniTaskScheduler_remove_UnobservedTaskException_mCC8B51AD9FB2673AB28FDCBF65FF7454B1D56CB4 (void);
+// 0x0000076A System.Void Cysharp.Threading.Tasks.UniTaskScheduler::InvokeUnobservedTaskException(System.Object)
+extern void UniTaskScheduler_InvokeUnobservedTaskException_m5E53B569EC1EAAC323B73D8C74A0715DD7FC176C (void);
+// 0x0000076B System.Void Cysharp.Threading.Tasks.UniTaskScheduler::PublishUnobservedTaskException(System.Exception)
+extern void UniTaskScheduler_PublishUnobservedTaskException_m9F6352174ED5654B0A9FB5562B6FF25A788B27D3 (void);
+// 0x0000076C System.Void Cysharp.Threading.Tasks.UniTaskScheduler::.cctor()
+extern void UniTaskScheduler__cctor_m9D0CDCBB94462B5956764B2DCCAD4D8D654EB2E3 (void);
+// 0x0000076D System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext::Send(System.Threading.SendOrPostCallback,System.Object)
+extern void UniTaskSynchronizationContext_Send_m02F812DE8CE9F555FB5861280395B561FE42AE5D (void);
+// 0x0000076E System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext::Post(System.Threading.SendOrPostCallback,System.Object)
+extern void UniTaskSynchronizationContext_Post_m8A58D3A572B4E27CB49D44CAD91D4614EDA5C5AA (void);
+// 0x0000076F System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext::OperationStarted()
+extern void UniTaskSynchronizationContext_OperationStarted_mD680FF85F691920CF084857EF3984EB4B09F108F (void);
+// 0x00000770 System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext::OperationCompleted()
+extern void UniTaskSynchronizationContext_OperationCompleted_mD11287AB434D6B2B0FD2BDA1F7B0EFA29A9A570D (void);
+// 0x00000771 System.Threading.SynchronizationContext Cysharp.Threading.Tasks.UniTaskSynchronizationContext::CreateCopy()
+extern void UniTaskSynchronizationContext_CreateCopy_m5D3FE8AEEC2DDDBE68B85B3D81762DC59FAE4627 (void);
+// 0x00000772 System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext::Run()
+extern void UniTaskSynchronizationContext_Run_mC1E290BA942708DC1B8CC4410DFD3FADB8BE720F (void);
+// 0x00000773 System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext::.ctor()
+extern void UniTaskSynchronizationContext__ctor_m37A22C63FEEF576EC4239AAD139BE5A53A52CA3C (void);
+// 0x00000774 System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext::.cctor()
+extern void UniTaskSynchronizationContext__cctor_m2DDCDC914885EDD75D09EA40D7E0EE58BDA79974 (void);
+// 0x00000775 System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext/Callback::.ctor(System.Threading.SendOrPostCallback,System.Object)
+extern void Callback__ctor_m08D0FDF4469178BAD58A49B1DA95BB47A4CFE423 (void);
+// 0x00000776 System.Void Cysharp.Threading.Tasks.UniTaskSynchronizationContext/Callback::Invoke()
+extern void Callback_Invoke_mCAC6841169B5A04BE53DFD6D11385386EEB0D094 (void);
+// 0x00000777 System.Void Cysharp.Threading.Tasks.UniTaskVoid::Forget()
+extern void UniTaskVoid_Forget_mE4FC2CCCEFD822A5D63FFE97EE209FEE949CC255 (void);
+// 0x00000778 Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsAwaiter Cysharp.Threading.Tasks.UnityAsyncExtensions::AwaitForAllAssets(UnityEngine.AssetBundleRequest)
+extern void UnityAsyncExtensions_AwaitForAllAssets_mD55641113CC5707E3D699DF6AAE9095D034800AA (void);
+// 0x00000779 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object[]> Cysharp.Threading.Tasks.UnityAsyncExtensions::AwaitForAllAssets(UnityEngine.AssetBundleRequest,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_AwaitForAllAssets_m841D8C5C8B2FBE6E22C916C806A27F9298ADD475 (void);
+// 0x0000077A Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object[]> Cysharp.Threading.Tasks.UnityAsyncExtensions::AwaitForAllAssets(UnityEngine.AssetBundleRequest,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_AwaitForAllAssets_m4BDAA65013994A4800C1BB5130A351F9CE5D304A (void);
+// 0x0000077B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object[]> Cysharp.Threading.Tasks.UnityAsyncExtensions::AwaitForAllAssets(UnityEngine.AssetBundleRequest,System.IProgress`1<System.Single>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_AwaitForAllAssets_m53A23B992EFAD9E0520794C430D86DCC96438D2D (void);
+// 0x0000077C Cysharp.Threading.Tasks.UniTask`1/Awaiter<UnityEngine.Rendering.AsyncGPUReadbackRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAwaiter(UnityEngine.Rendering.AsyncGPUReadbackRequest)
+extern void UnityAsyncExtensions_GetAwaiter_m49ED60AD5B61EF872A63966540B602D59A42EB16 (void);
+// 0x0000077D Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Rendering.AsyncGPUReadbackRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.Rendering.AsyncGPUReadbackRequest,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_WithCancellation_m21CF5D45E71B2A03D753C35327E8C3784527D2E8 (void);
+// 0x0000077E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Rendering.AsyncGPUReadbackRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.Rendering.AsyncGPUReadbackRequest,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_WithCancellation_m0C43EA5713A5775385B283110AA2A555938B41DE (void);
+// 0x0000077F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Rendering.AsyncGPUReadbackRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions::ToUniTask(UnityEngine.Rendering.AsyncGPUReadbackRequest,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_ToUniTask_mCC109FEDABBA122F82E454625FAE7303B79DA7B2 (void);
+// 0x00000780 Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationAwaiter Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAwaiter(UnityEngine.AsyncOperation)
+extern void UnityAsyncExtensions_GetAwaiter_mC5F1D25704DF49CBCAD4B0B0E4F9B1528CCDB919 (void);
+// 0x00000781 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.AsyncOperation,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_WithCancellation_m3EA97F30A2E874A8B891E502FB9F158ADC38222D (void);
+// 0x00000782 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.AsyncOperation,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_WithCancellation_m89204B23E45A87CC2309D7C47C29BCD52F8737D5 (void);
+// 0x00000783 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::ToUniTask(UnityEngine.AsyncOperation,System.IProgress`1<System.Single>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_ToUniTask_m4F40D1E2D758E794427A06970B88269BC8DF1015 (void);
+// 0x00000784 Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestAwaiter Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAwaiter(UnityEngine.ResourceRequest)
+extern void UnityAsyncExtensions_GetAwaiter_m3B39088BD34AE418D7EA4041E478AF061505F30A (void);
+// 0x00000785 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.ResourceRequest,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_WithCancellation_m32E103C7170D6750E851345A5146773BC731D04B (void);
+// 0x00000786 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.ResourceRequest,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_WithCancellation_m246073C164AB2A1342F74B0890D6FEBFB55866C7 (void);
+// 0x00000787 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object> Cysharp.Threading.Tasks.UnityAsyncExtensions::ToUniTask(UnityEngine.ResourceRequest,System.IProgress`1<System.Single>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_ToUniTask_m246CFA3F9DAF75812EE1AEEB5C4251A685929F41 (void);
+// 0x00000788 Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAwaiter Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAwaiter(UnityEngine.AssetBundleRequest)
+extern void UnityAsyncExtensions_GetAwaiter_m3CB92CA9229C05E1B4650000CE66076FFDCF7B8F (void);
+// 0x00000789 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.AssetBundleRequest,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_WithCancellation_mADA97E792CC54ABFA1B667D4640828851A2FDAE4 (void);
+// 0x0000078A Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.AssetBundleRequest,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_WithCancellation_m9AC0E9CBB6894CD6A7084E25F9C49CE08E174E77 (void);
+// 0x0000078B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Object> Cysharp.Threading.Tasks.UnityAsyncExtensions::ToUniTask(UnityEngine.AssetBundleRequest,System.IProgress`1<System.Single>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_ToUniTask_m382E8377843A28A33973C23347D506E7EDEAA8DE (void);
+// 0x0000078C Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestAwaiter Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAwaiter(UnityEngine.AssetBundleCreateRequest)
+extern void UnityAsyncExtensions_GetAwaiter_m66E339BC7730FA2BEE2035122A9B557246C3D988 (void);
+// 0x0000078D Cysharp.Threading.Tasks.UniTask`1<UnityEngine.AssetBundle> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.AssetBundleCreateRequest,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_WithCancellation_m919E5C61CC3B6DF0B808EFDF1363C58F1948507E (void);
+// 0x0000078E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.AssetBundle> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.AssetBundleCreateRequest,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_WithCancellation_mA3DB8396ABD6EF5075F14D28A7F8D8C090B3A6D2 (void);
+// 0x0000078F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.AssetBundle> Cysharp.Threading.Tasks.UnityAsyncExtensions::ToUniTask(UnityEngine.AssetBundleCreateRequest,System.IProgress`1<System.Single>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_ToUniTask_mC0EC1A0267E8B1F4BC725040889B47263CCE8F89 (void);
+// 0x00000790 Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationAwaiter Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAwaiter(UnityEngine.Networking.UnityWebRequestAsyncOperation)
+extern void UnityAsyncExtensions_GetAwaiter_mA6B6F84DE48BC5EFE2F2BDB1A0011C8A2CD7A920 (void);
+// 0x00000791 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Networking.UnityWebRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.Networking.UnityWebRequestAsyncOperation,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_WithCancellation_m64371919D7F4428DF8B06230F745FAAE766A405D (void);
+// 0x00000792 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Networking.UnityWebRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions::WithCancellation(UnityEngine.Networking.UnityWebRequestAsyncOperation,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_WithCancellation_m884C474049738F36905659408C1555601C31C69B (void);
+// 0x00000793 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Networking.UnityWebRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions::ToUniTask(UnityEngine.Networking.UnityWebRequestAsyncOperation,System.IProgress`1<System.Single>,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean)
+extern void UnityAsyncExtensions_ToUniTask_m1084D95469C3AAF461E16C84B3A7EB830581C61D (void);
+// 0x00000794 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::WaitAsync(Unity.Jobs.JobHandle,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_WaitAsync_mCDE3EE8DB522F6A668B6AF1CD6C39C6F69BAE209 (void);
+// 0x00000795 Cysharp.Threading.Tasks.UniTask/Awaiter Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAwaiter(Unity.Jobs.JobHandle)
+extern void UnityAsyncExtensions_GetAwaiter_m1091B7D68AF3C6364F757480B1EB9CE6591953A3 (void);
+// 0x00000796 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::ToUniTask(Unity.Jobs.JobHandle,Cysharp.Threading.Tasks.PlayerLoopTiming)
+extern void UnityAsyncExtensions_ToUniTask_m6132171ADD69B7D2E3E77E550D29F571609F1829 (void);
+// 0x00000797 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::StartAsyncCoroutine(UnityEngine.MonoBehaviour,System.Func`2<System.Threading.CancellationToken,Cysharp.Threading.Tasks.UniTask>)
+extern void UnityAsyncExtensions_StartAsyncCoroutine_mF0D97386136DD7D26C1CB029D4DA132C4CB0A681 (void);
+// 0x00000798 Cysharp.Threading.Tasks.AsyncUnityEventHandler Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncEventHandler(UnityEngine.Events.UnityEvent,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncEventHandler_m3CE2843CB6FEDC078776CEDD1AD44CFCF595F314 (void);
+// 0x00000799 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::OnInvokeAsync(UnityEngine.Events.UnityEvent,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnInvokeAsync_mDE019014492FAED6A073B79E5B63A4D4E4E845F4 (void);
+// 0x0000079A Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<Cysharp.Threading.Tasks.AsyncUnit> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnInvokeAsAsyncEnumerable(UnityEngine.Events.UnityEvent,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnInvokeAsAsyncEnumerable_mE1C8BD95AE8FE2C1F6EF76D6AF5E9A4BFA0E02F3 (void);
+// 0x0000079B Cysharp.Threading.Tasks.AsyncUnityEventHandler`1<T> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncEventHandler(UnityEngine.Events.UnityEvent`1<T>,System.Threading.CancellationToken)
+// 0x0000079C Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnInvokeAsync(UnityEngine.Events.UnityEvent`1<T>,System.Threading.CancellationToken)
+// 0x0000079D Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<T> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnInvokeAsAsyncEnumerable(UnityEngine.Events.UnityEvent`1<T>,System.Threading.CancellationToken)
+// 0x0000079E Cysharp.Threading.Tasks.IAsyncClickEventHandler Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncClickEventHandler(UnityEngine.UI.Button)
+extern void UnityAsyncExtensions_GetAsyncClickEventHandler_m1565A69ABDF96CFB0AA2E0EDCD7917A6871A0076 (void);
+// 0x0000079F Cysharp.Threading.Tasks.IAsyncClickEventHandler Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncClickEventHandler(UnityEngine.UI.Button,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncClickEventHandler_m07972ED0EA48416763B2C873213B1380C86C1683 (void);
+// 0x000007A0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::OnClickAsync(UnityEngine.UI.Button)
+extern void UnityAsyncExtensions_OnClickAsync_m83DD95CEA80A6C992406CD116A041805656B8724 (void);
+// 0x000007A1 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityAsyncExtensions::OnClickAsync(UnityEngine.UI.Button,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnClickAsync_mDB18E0B13B774B9460D4C64E6C570A8548775C53 (void);
+// 0x000007A2 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<Cysharp.Threading.Tasks.AsyncUnit> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnClickAsAsyncEnumerable(UnityEngine.UI.Button)
+extern void UnityAsyncExtensions_OnClickAsAsyncEnumerable_m595575E461C0CB1DC70B93BF4A1D63141FB0DF61 (void);
+// 0x000007A3 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<Cysharp.Threading.Tasks.AsyncUnit> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnClickAsAsyncEnumerable(UnityEngine.UI.Button,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnClickAsAsyncEnumerable_m869585EE5EFBDC7494F30A56271315A9A9F03132 (void);
+// 0x000007A4 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.Boolean> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.Toggle)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_m3C4D34F9EBEED56B21A500C215AD6FFC872F10D4 (void);
+// 0x000007A5 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.Boolean> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.Toggle,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_mCDC4F7E77A7ADBCC22D1BFC3CEEC6ED7B174D8FC (void);
+// 0x000007A6 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.Toggle)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m1E4770A2C5DAA390FA0655FE4EC89EFC8AB320D3 (void);
+// 0x000007A7 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.Toggle,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m4370942BD77392446EA93ED50AA32E6F0E9E6C2D (void);
+// 0x000007A8 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Boolean> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.Toggle)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_mF7D194F6F1BE55DD40C91A2EA9FE4D4A594A97ED (void);
+// 0x000007A9 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Boolean> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.Toggle,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_mDE6BADF0865511D97EC6AD73EB974F2A12C4BA91 (void);
+// 0x000007AA Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.Scrollbar)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_m3E29B8A7FD2D6C8055602746486EAEC414002035 (void);
+// 0x000007AB Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.Scrollbar,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_mC1F8E59EFAE086AD29E7B97BAFEA99DE009C3460 (void);
+// 0x000007AC Cysharp.Threading.Tasks.UniTask`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.Scrollbar)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m9B80DE75976358DE70E223142411380D5D95A9CB (void);
+// 0x000007AD Cysharp.Threading.Tasks.UniTask`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.Scrollbar,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsync_mF5A7FE7825B37EB0B89262624050E1F533510FCE (void);
+// 0x000007AE Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.Scrollbar)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_mF59E11BB6C6F394CFA35D209F893B236B843D258 (void);
+// 0x000007AF Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.Scrollbar,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_m809F1CB14F420758226A900BA2633412D0C18840 (void);
+// 0x000007B0 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<UnityEngine.Vector2> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.ScrollRect)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_mA1F11031320A8E2B12D8B4140188B3909C1F7B29 (void);
+// 0x000007B1 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<UnityEngine.Vector2> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.ScrollRect,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_mBDDBAD38BD60547745EECEBCFC3BC813AC7040DB (void);
+// 0x000007B2 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Vector2> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.ScrollRect)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m6443BC56215395D70AB9653104D1D065C08B294B (void);
+// 0x000007B3 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Vector2> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.ScrollRect,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m431B02290BDA22837C1D36C7943E08C60BCB531B (void);
+// 0x000007B4 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<UnityEngine.Vector2> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.ScrollRect)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_m7DBCB401561C4116C3F99BFFB9C33A605AB23764 (void);
+// 0x000007B5 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<UnityEngine.Vector2> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.ScrollRect,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_m9E789E87E594FC406A40093BA4E1F40244772389 (void);
+// 0x000007B6 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.Slider)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_m4CCADF484A1A4A16FA11AE17F402274FCFB560B7 (void);
+// 0x000007B7 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.Slider,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_m52941430195A79A6E523E766BAC99C40FD3E7FBF (void);
+// 0x000007B8 Cysharp.Threading.Tasks.UniTask`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.Slider)
+extern void UnityAsyncExtensions_OnValueChangedAsync_mD3F579C633B3E3B21DBDB5ADD5AD3ABD3F925E84 (void);
+// 0x000007B9 Cysharp.Threading.Tasks.UniTask`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.Slider,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m202FB8CB6B58964D593AD91F92330C7168CD40C0 (void);
+// 0x000007BA Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.Slider)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_m2F34CCD1A0545EF8434885614AF336EB98EBB7D9 (void);
+// 0x000007BB Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Single> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.Slider,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_m9F67BC243763C231582EEABB22C9F7578A1A2BA2 (void);
+// 0x000007BC Cysharp.Threading.Tasks.IAsyncEndEditEventHandler`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncEndEditEventHandler(UnityEngine.UI.InputField)
+extern void UnityAsyncExtensions_GetAsyncEndEditEventHandler_m498286671E34E79F559C307F6C855EAA8B8793A6 (void);
+// 0x000007BD Cysharp.Threading.Tasks.IAsyncEndEditEventHandler`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncEndEditEventHandler(UnityEngine.UI.InputField,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncEndEditEventHandler_m82E34E5EC17094EEF464CB03CDEED2BBC9C1C1E4 (void);
+// 0x000007BE Cysharp.Threading.Tasks.UniTask`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnEndEditAsync(UnityEngine.UI.InputField)
+extern void UnityAsyncExtensions_OnEndEditAsync_mDB9DA32A87166C048193716F3B9962D4629A168F (void);
+// 0x000007BF Cysharp.Threading.Tasks.UniTask`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnEndEditAsync(UnityEngine.UI.InputField,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnEndEditAsync_m407CC7FD494538D27AFE8431DC327014F1C9C7AA (void);
+// 0x000007C0 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnEndEditAsAsyncEnumerable(UnityEngine.UI.InputField)
+extern void UnityAsyncExtensions_OnEndEditAsAsyncEnumerable_mDCD3E082D244BD270C8D68E42BCAE0D2E60651D2 (void);
+// 0x000007C1 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnEndEditAsAsyncEnumerable(UnityEngine.UI.InputField,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnEndEditAsAsyncEnumerable_mD0305CEB7522259E075FACF77DCD7B5572044D26 (void);
+// 0x000007C2 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.InputField)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_m1BDC1D58287210B74DEC1B27BEFA157E85A1FE99 (void);
+// 0x000007C3 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.InputField,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_m622C1B84EC37131945DA07CEC093BF1E0395B1B2 (void);
+// 0x000007C4 Cysharp.Threading.Tasks.UniTask`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.InputField)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m8C3C122B7D0C46CEAA1C0DD928D5D0F8682260BC (void);
+// 0x000007C5 Cysharp.Threading.Tasks.UniTask`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.InputField,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m4E4BD08147A1A548BB7F07312124841A2073176A (void);
+// 0x000007C6 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.InputField)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_mA6744B0284092F8AD232D0FAE1827CB7D0F9B158 (void);
+// 0x000007C7 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.String> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.InputField,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_m9A8DB85D4338DA5836F878F0D6204965EA1BF573 (void);
+// 0x000007C8 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.Int32> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.Dropdown)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_m48C0DAB9D3F7959302945470F2F4095567AC3048 (void);
+// 0x000007C9 Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1<System.Int32> Cysharp.Threading.Tasks.UnityAsyncExtensions::GetAsyncValueChangedEventHandler(UnityEngine.UI.Dropdown,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_GetAsyncValueChangedEventHandler_m73599CF491FF441EA2605591E612A72D97906D2C (void);
+// 0x000007CA Cysharp.Threading.Tasks.UniTask`1<System.Int32> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.Dropdown)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m2EFE6FD37E5D9389F86DD79E1DAFAD2B9ECE0F18 (void);
+// 0x000007CB Cysharp.Threading.Tasks.UniTask`1<System.Int32> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsync(UnityEngine.UI.Dropdown,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsync_m72FAB6593BAF1329F3C7A264836E0961FCE1700D (void);
+// 0x000007CC Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Int32> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.Dropdown)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_m96C076F282A8891A1755832CD751921F8C2B1912 (void);
+// 0x000007CD Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Int32> Cysharp.Threading.Tasks.UnityAsyncExtensions::OnValueChangedAsAsyncEnumerable(UnityEngine.UI.Dropdown,System.Threading.CancellationToken)
+extern void UnityAsyncExtensions_OnValueChangedAsAsyncEnumerable_mDEF64A097E3F7B7D851319006B6D2120691A0E0D (void);
+// 0x000007CE System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsAwaiter::.ctor(UnityEngine.AssetBundleRequest)
+extern void AssetBundleRequestAllAssetsAwaiter__ctor_mC44DEAFDE5176198C48DDE03DB1E15D57D17C318 (void);
+// 0x000007CF Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsAwaiter Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsAwaiter::GetAwaiter()
+extern void AssetBundleRequestAllAssetsAwaiter_GetAwaiter_m7F0D757916CF0652FBED2EB92591AB65E948DA7B (void);
+// 0x000007D0 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsAwaiter::get_IsCompleted()
+extern void AssetBundleRequestAllAssetsAwaiter_get_IsCompleted_mE447A272FEA2D7E004A654E074EA7466D224CDB3 (void);
+// 0x000007D1 UnityEngine.Object[] Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsAwaiter::GetResult()
+extern void AssetBundleRequestAllAssetsAwaiter_GetResult_m3A4D3DBFDD6125C51732812710B66495B10879A4 (void);
+// 0x000007D2 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsAwaiter::OnCompleted(System.Action)
+extern void AssetBundleRequestAllAssetsAwaiter_OnCompleted_mFF0396BDD0BD6E99B6E0A35C64EE13E6DFA8F125 (void);
+// 0x000007D3 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsAwaiter::UnsafeOnCompleted(System.Action)
+extern void AssetBundleRequestAllAssetsAwaiter_UnsafeOnCompleted_m06D8B2847D1E649D4A7761FE9D024EF0D3B9FB77 (void);
+// 0x000007D4 Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource& Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::get_NextNode()
+extern void AssetBundleRequestAllAssetsConfiguredSource_get_NextNode_m9E0BA440616FBDD9DCF9A6F85FFA2910CF77AB7C (void);
+// 0x000007D5 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::.cctor()
+extern void AssetBundleRequestAllAssetsConfiguredSource__cctor_mC5735748F1B5497E88D60D9A802B3140207ACC26 (void);
+// 0x000007D6 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::.ctor()
+extern void AssetBundleRequestAllAssetsConfiguredSource__ctor_m612AB9F5D70DE7A00675F9A18011B559DDD0F100 (void);
+// 0x000007D7 Cysharp.Threading.Tasks.IUniTaskSource`1<UnityEngine.Object[]> Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::Create(UnityEngine.AssetBundleRequest,Cysharp.Threading.Tasks.PlayerLoopTiming,System.IProgress`1<System.Single>,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void AssetBundleRequestAllAssetsConfiguredSource_Create_mB65D45FB5C62C5EAD664467E310F9C4CAE761FF9 (void);
+// 0x000007D8 UnityEngine.Object[] Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::GetResult(System.Int16)
+extern void AssetBundleRequestAllAssetsConfiguredSource_GetResult_mBFBBC0F7A7E7D8602CA510250445C7F707E4C32F (void);
+// 0x000007D9 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void AssetBundleRequestAllAssetsConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m80AF272707E79B6F7467A86A6171FDBB63229A83 (void);
+// 0x000007DA Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::GetStatus(System.Int16)
+extern void AssetBundleRequestAllAssetsConfiguredSource_GetStatus_mD840A876B54ED9FC8A5028B8569B1E18D3A4169C (void);
+// 0x000007DB Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::UnsafeGetStatus()
+extern void AssetBundleRequestAllAssetsConfiguredSource_UnsafeGetStatus_m60A2FCB28DF669B8B58AEC5FA71B94E6D6B26CE6 (void);
+// 0x000007DC System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AssetBundleRequestAllAssetsConfiguredSource_OnCompleted_m56D0083688EE3685EC2CA1DD3C7EBD771E49E9B3 (void);
+// 0x000007DD System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::MoveNext()
+extern void AssetBundleRequestAllAssetsConfiguredSource_MoveNext_m245BBA41A31871F2BB689DD798E6706D3A7DCA9A (void);
+// 0x000007DE System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::TryReturn()
+extern void AssetBundleRequestAllAssetsConfiguredSource_TryReturn_m9D3902A1342EB3D7F06CD40A532B17C7A068A424 (void);
+// 0x000007DF System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource::Continuation(UnityEngine.AsyncOperation)
+extern void AssetBundleRequestAllAssetsConfiguredSource_Continuation_m3AD4E46B9B599AF0D1BFE8F2EC6F00F18B43FF50 (void);
+// 0x000007E0 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource/<>c::.cctor()
+extern void U3CU3Ec__cctor_m36F442E239F3752F7A9A2B7EDC6F8E3AD94E0EB3 (void);
+// 0x000007E1 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource/<>c::.ctor()
+extern void U3CU3Ec__ctor_mC125456DE7B6179150DAC27D0C32939BF9C1FAFE (void);
+// 0x000007E2 System.Int32 Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_mC92226D915CA800768AF8A6FD2AFEE9CE7337206 (void);
+// 0x000007E3 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAllAssetsConfiguredSource/<>c::<Create>b__13_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__13_0_mF9DFE28A0507310D67AF3578AF0E54563AC99A38 (void);
+// 0x000007E4 Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource& Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::get_NextNode()
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_get_NextNode_mB5940E33081DC719B9E58824DD48A8F0406E3937 (void);
+// 0x000007E5 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::.cctor()
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource__cctor_m5FE6FD13D6D5C57E6933273C60B5F1AFCBFAE8A4 (void);
+// 0x000007E6 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::.ctor()
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource__ctor_mDA116A552AF93C617A5BDF082EDEC997CA3D9A9D (void);
+// 0x000007E7 Cysharp.Threading.Tasks.IUniTaskSource`1<UnityEngine.Rendering.AsyncGPUReadbackRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::Create(UnityEngine.Rendering.AsyncGPUReadbackRequest,Cysharp.Threading.Tasks.PlayerLoopTiming,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_Create_m793EC1215A2924C72AE0A29CE40A0C59BA28C4C1 (void);
+// 0x000007E8 UnityEngine.Rendering.AsyncGPUReadbackRequest Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::GetResult(System.Int16)
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_GetResult_m513CAFCF1BA15ED84A503A637F55E3078B331061 (void);
+// 0x000007E9 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_mEF69721A498837775E45A2AA2E4FE9640144E2E0 (void);
+// 0x000007EA Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::GetStatus(System.Int16)
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_GetStatus_m3C71594800097EBA439E73EEA654BD34050D527E (void);
+// 0x000007EB Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::UnsafeGetStatus()
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_UnsafeGetStatus_mBF9211E24A21E1721B55F98C7DA4ACC242140438 (void);
+// 0x000007EC System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_OnCompleted_m36FEEAB848812233E33B44B41A4D7FEEE702AC94 (void);
+// 0x000007ED System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::MoveNext()
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_MoveNext_mC61DFD69CB3382EA7E42F4760C94B7732FA8B09B (void);
+// 0x000007EE System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource::TryReturn()
+extern void AsyncGPUReadbackRequestAwaiterConfiguredSource_TryReturn_mBAE97F824E02D72FE274A26BAC0936B1E6844FF8 (void);
+// 0x000007EF System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource/<>c::.cctor()
+extern void U3CU3Ec__cctor_m79CEE3359A844ED3C9B9DC7BE8F308F3634EE197 (void);
+// 0x000007F0 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource/<>c::.ctor()
+extern void U3CU3Ec__ctor_m1DEE312956A401007B8CC702277F4B3A39C6EAD4 (void);
+// 0x000007F1 System.Int32 Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m6FD31AB2173D92C38272B40DE10A46A35C1E3CA1 (void);
+// 0x000007F2 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncGPUReadbackRequestAwaiterConfiguredSource/<>c::<Create>b__10_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__10_0_mA699A5140D7E51273959892829298B4F1F19426E (void);
+// 0x000007F3 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationAwaiter::.ctor(UnityEngine.AsyncOperation)
+extern void AsyncOperationAwaiter__ctor_m3C576C9030722F58BE380F1FB42D8CFD314BF674 (void);
+// 0x000007F4 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationAwaiter::get_IsCompleted()
+extern void AsyncOperationAwaiter_get_IsCompleted_mB1A89F2E5B9E1CD69315D33F6E5F5EC94DEB2DFC (void);
+// 0x000007F5 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationAwaiter::GetResult()
+extern void AsyncOperationAwaiter_GetResult_m40446B2CAF167A2C2FF346BDC11B460F97383BA9 (void);
+// 0x000007F6 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationAwaiter::OnCompleted(System.Action)
+extern void AsyncOperationAwaiter_OnCompleted_m1CCDA532840AF64F7AE1243C7AC6D6D432CFC923 (void);
+// 0x000007F7 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationAwaiter::UnsafeOnCompleted(System.Action)
+extern void AsyncOperationAwaiter_UnsafeOnCompleted_m1FCE8D7EEF11CA5BC83FB9E7ECB4984D16DE8C04 (void);
+// 0x000007F8 Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource& Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::get_NextNode()
+extern void AsyncOperationConfiguredSource_get_NextNode_m25606848D7DB5AB1550E01078CB631B3EF0CD465 (void);
+// 0x000007F9 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::.cctor()
+extern void AsyncOperationConfiguredSource__cctor_m0BD465EBEF989CCF803AEADD8AFA9365E16B385C (void);
+// 0x000007FA System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::.ctor()
+extern void AsyncOperationConfiguredSource__ctor_m3D6B75BDB9AB39718100CA2807B1278DAD95A0F7 (void);
+// 0x000007FB Cysharp.Threading.Tasks.IUniTaskSource Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::Create(UnityEngine.AsyncOperation,Cysharp.Threading.Tasks.PlayerLoopTiming,System.IProgress`1<System.Single>,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void AsyncOperationConfiguredSource_Create_mC9B1151368D05F36EF67CCB5FEBBB7D15BE046AE (void);
+// 0x000007FC System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::GetResult(System.Int16)
+extern void AsyncOperationConfiguredSource_GetResult_m228946356A36BE863FF608EEA1C6A77041ECC767 (void);
+// 0x000007FD Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::GetStatus(System.Int16)
+extern void AsyncOperationConfiguredSource_GetStatus_m4CEA8390BFD528A2726240150684E9907FF5E729 (void);
+// 0x000007FE Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::UnsafeGetStatus()
+extern void AsyncOperationConfiguredSource_UnsafeGetStatus_m2BD3B8FCC10F12C3E1A05EF9A1C840914721FADF (void);
+// 0x000007FF System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AsyncOperationConfiguredSource_OnCompleted_mFD0864DC088F3FEBB535D0B77B24BF29EEA63DC4 (void);
+// 0x00000800 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::MoveNext()
+extern void AsyncOperationConfiguredSource_MoveNext_mB52301B030A620EFFA3A92AD9E26E405B8678518 (void);
+// 0x00000801 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::TryReturn()
+extern void AsyncOperationConfiguredSource_TryReturn_mB017A856BF7C3EE80E9769D22E50856AE80B8CFB (void);
+// 0x00000802 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource::Continuation(UnityEngine.AsyncOperation)
+extern void AsyncOperationConfiguredSource_Continuation_m273C1AFB91BF09FB821A0A62055038C4DBF2EC81 (void);
+// 0x00000803 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource/<>c::.cctor()
+extern void U3CU3Ec__cctor_m684F33F33D52EEB72D07801EF8558E9DD9BF49B6 (void);
+// 0x00000804 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource/<>c::.ctor()
+extern void U3CU3Ec__ctor_m66E55AD70E40AC406B4C127B2082E9F71EA8264D (void);
+// 0x00000805 System.Int32 Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m154EB596C2C5D17DA1541B849FACEF33B34E9D7A (void);
+// 0x00000806 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AsyncOperationConfiguredSource/<>c::<Create>b__13_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__13_0_m0FB0A95123CF54C6A7EF6F63FD8A01AB8EFACC0A (void);
+// 0x00000807 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestAwaiter::.ctor(UnityEngine.ResourceRequest)
+extern void ResourceRequestAwaiter__ctor_m9F612DDCFE50A3CF17BDA678DAA52E7DA5923F86 (void);
+// 0x00000808 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestAwaiter::get_IsCompleted()
+extern void ResourceRequestAwaiter_get_IsCompleted_m797B9071AB9AB8B33167896D6EF9ED10B1C73A10 (void);
+// 0x00000809 UnityEngine.Object Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestAwaiter::GetResult()
+extern void ResourceRequestAwaiter_GetResult_m648D2E45FFE2E55A3FA3175FDF1BCD993CF04068 (void);
+// 0x0000080A System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestAwaiter::OnCompleted(System.Action)
+extern void ResourceRequestAwaiter_OnCompleted_m9F0D431A21800CEA35922F68DBF6129875EA1EB1 (void);
+// 0x0000080B System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestAwaiter::UnsafeOnCompleted(System.Action)
+extern void ResourceRequestAwaiter_UnsafeOnCompleted_mA1C3EDBC89B73759B2EBFBD27C81BEE9AA06B8BE (void);
+// 0x0000080C Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource& Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::get_NextNode()
+extern void ResourceRequestConfiguredSource_get_NextNode_m4EFBF8C846ADEF0C2047D7CDF7C2A1DD1E2702C5 (void);
+// 0x0000080D System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::.cctor()
+extern void ResourceRequestConfiguredSource__cctor_m95BDE6D918682409C68A9EA897AB6BCC8251C160 (void);
+// 0x0000080E System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::.ctor()
+extern void ResourceRequestConfiguredSource__ctor_m12117D5BFA41B302A5D6064ADE51A1A23FB3570B (void);
+// 0x0000080F Cysharp.Threading.Tasks.IUniTaskSource`1<UnityEngine.Object> Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::Create(UnityEngine.ResourceRequest,Cysharp.Threading.Tasks.PlayerLoopTiming,System.IProgress`1<System.Single>,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void ResourceRequestConfiguredSource_Create_mAB2B1CB2826B30231D5FA295FCA4F02EBD12A466 (void);
+// 0x00000810 UnityEngine.Object Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::GetResult(System.Int16)
+extern void ResourceRequestConfiguredSource_GetResult_m03FD455A5B06F37A4A4A0C03B0952ACA44A8AB54 (void);
+// 0x00000811 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void ResourceRequestConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_mBBB418A6BB9C7C1D5D1FB1925ACDFD4A8F1A3F5E (void);
+// 0x00000812 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::GetStatus(System.Int16)
+extern void ResourceRequestConfiguredSource_GetStatus_m4A045D99B4FC72CA919E336797FCA52092D9A3E1 (void);
+// 0x00000813 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::UnsafeGetStatus()
+extern void ResourceRequestConfiguredSource_UnsafeGetStatus_mE77750BFF49111513CEB04F37B337C5196962E9D (void);
+// 0x00000814 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void ResourceRequestConfiguredSource_OnCompleted_m500D39069320AFF23F072E861DD740C762B18D6A (void);
+// 0x00000815 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::MoveNext()
+extern void ResourceRequestConfiguredSource_MoveNext_mD685B9A1EDA628A0FB19E06D5F98693A1D94B3CA (void);
+// 0x00000816 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::TryReturn()
+extern void ResourceRequestConfiguredSource_TryReturn_m8288B600F71C07292DC96B6095EC7995E2B47C45 (void);
+// 0x00000817 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource::Continuation(UnityEngine.AsyncOperation)
+extern void ResourceRequestConfiguredSource_Continuation_m0EB99818314C138902D43C42269B8C8AA9E4A9D1 (void);
+// 0x00000818 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource/<>c::.cctor()
+extern void U3CU3Ec__cctor_m1DC36907560BEA33CBCAE05E7431713C8CCA0DE0 (void);
+// 0x00000819 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource/<>c::.ctor()
+extern void U3CU3Ec__ctor_mCCE71F5CC66743CA57D525CC22038F40E743B349 (void);
+// 0x0000081A System.Int32 Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m4C5C757C5C8EB800B199ED7D2FC76B3AD5B70D09 (void);
+// 0x0000081B System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/ResourceRequestConfiguredSource/<>c::<Create>b__13_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__13_0_m8C43D48F08FE76FE861899FA425F6D29568ECB19 (void);
+// 0x0000081C System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAwaiter::.ctor(UnityEngine.AssetBundleRequest)
+extern void AssetBundleRequestAwaiter__ctor_mF1BD5794A04E62D9CFB5AE48E9289A030066A616 (void);
+// 0x0000081D System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAwaiter::get_IsCompleted()
+extern void AssetBundleRequestAwaiter_get_IsCompleted_m6F6BD2EFBB90B2D4A0E14DAC9CA9CC678019F7CE (void);
+// 0x0000081E UnityEngine.Object Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAwaiter::GetResult()
+extern void AssetBundleRequestAwaiter_GetResult_mDF74CF8F03E4E82C97127326DF5A8ED6F30EF9AE (void);
+// 0x0000081F System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAwaiter::OnCompleted(System.Action)
+extern void AssetBundleRequestAwaiter_OnCompleted_m9F1A25E17F5B90EEEB2CB7328B2B8FFA68074E34 (void);
+// 0x00000820 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestAwaiter::UnsafeOnCompleted(System.Action)
+extern void AssetBundleRequestAwaiter_UnsafeOnCompleted_m9FA0D59F5712A6AC3DD506A2258C98A75918B0D4 (void);
+// 0x00000821 Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource& Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::get_NextNode()
+extern void AssetBundleRequestConfiguredSource_get_NextNode_mD2051DEB50E696709D9F3C81C16C791A313FC6C6 (void);
+// 0x00000822 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::.cctor()
+extern void AssetBundleRequestConfiguredSource__cctor_m89582C3E3A984D6490118A2D2A9A28E11CDF1C52 (void);
+// 0x00000823 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::.ctor()
+extern void AssetBundleRequestConfiguredSource__ctor_mE7DB0BF0FAA3D55BB2A31BA5548817437E14E8D6 (void);
+// 0x00000824 Cysharp.Threading.Tasks.IUniTaskSource`1<UnityEngine.Object> Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::Create(UnityEngine.AssetBundleRequest,Cysharp.Threading.Tasks.PlayerLoopTiming,System.IProgress`1<System.Single>,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void AssetBundleRequestConfiguredSource_Create_m6906C0791A7FCAFD9E3EDC4E2207D1F47DD094D1 (void);
+// 0x00000825 UnityEngine.Object Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::GetResult(System.Int16)
+extern void AssetBundleRequestConfiguredSource_GetResult_m73D9AFF6071587A3A8A3117AC1B75515BFBF92C1 (void);
+// 0x00000826 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void AssetBundleRequestConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m3DBA60EE0B46A6AFD102C8F4DAC003E2E4BFA777 (void);
+// 0x00000827 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::GetStatus(System.Int16)
+extern void AssetBundleRequestConfiguredSource_GetStatus_m2A6B98B6B5E3C6BBAA643B8118595DDD6671FAB2 (void);
+// 0x00000828 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::UnsafeGetStatus()
+extern void AssetBundleRequestConfiguredSource_UnsafeGetStatus_m1CA67192F15366E29FA59DC9E1EB2F42E094FA2C (void);
+// 0x00000829 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AssetBundleRequestConfiguredSource_OnCompleted_mFD98F188C5B0FA72EE10CC858CBB09D89DED8C9F (void);
+// 0x0000082A System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::MoveNext()
+extern void AssetBundleRequestConfiguredSource_MoveNext_m6B0177317625BF693DD7721A083F5A2330875B42 (void);
+// 0x0000082B System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::TryReturn()
+extern void AssetBundleRequestConfiguredSource_TryReturn_m559AD9E5DC2B737F0BFDB6CF654DA7D265739276 (void);
+// 0x0000082C System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource::Continuation(UnityEngine.AsyncOperation)
+extern void AssetBundleRequestConfiguredSource_Continuation_mEA48EF86E114D1D090E846E2A3A573FF34850134 (void);
+// 0x0000082D System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource/<>c::.cctor()
+extern void U3CU3Ec__cctor_mB7D0EE9627155CA6B0BFE27361D9F182D4FDE5A3 (void);
+// 0x0000082E System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource/<>c::.ctor()
+extern void U3CU3Ec__ctor_m131837A9DBAF94112DCA62D5C782174D564BE0FC (void);
+// 0x0000082F System.Int32 Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m00CC0A2E21329AB35014140C8ADDF4E27E7E6CA3 (void);
+// 0x00000830 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleRequestConfiguredSource/<>c::<Create>b__13_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__13_0_m4505BA862AE7AF8D7E3CAF6BC162693D0BA2577B (void);
+// 0x00000831 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestAwaiter::.ctor(UnityEngine.AssetBundleCreateRequest)
+extern void AssetBundleCreateRequestAwaiter__ctor_m0FDB0297DFBC26EEC5756983BCD76093A7837651 (void);
+// 0x00000832 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestAwaiter::get_IsCompleted()
+extern void AssetBundleCreateRequestAwaiter_get_IsCompleted_m19C6B872767AFA928B711B8DDEE6FBC15EF02E28 (void);
+// 0x00000833 UnityEngine.AssetBundle Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestAwaiter::GetResult()
+extern void AssetBundleCreateRequestAwaiter_GetResult_m2B025186132ECE124DB1A871FB3A7110C4F4FC0D (void);
+// 0x00000834 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestAwaiter::OnCompleted(System.Action)
+extern void AssetBundleCreateRequestAwaiter_OnCompleted_m8E10D4B301AE5F5E5C897A1EF38ECE9B67038CA3 (void);
+// 0x00000835 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestAwaiter::UnsafeOnCompleted(System.Action)
+extern void AssetBundleCreateRequestAwaiter_UnsafeOnCompleted_m5AB26F94B21E92D5B22E59BFD555704933F6014C (void);
+// 0x00000836 Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource& Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::get_NextNode()
+extern void AssetBundleCreateRequestConfiguredSource_get_NextNode_m0EE72C439D5B5F96AF173D621CFE8947DD85DCD2 (void);
+// 0x00000837 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::.cctor()
+extern void AssetBundleCreateRequestConfiguredSource__cctor_m8A65E171B39589A0062E1D1C676100E99114667C (void);
+// 0x00000838 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::.ctor()
+extern void AssetBundleCreateRequestConfiguredSource__ctor_mF9EB83AE7FB1997AB023776EE99DEF2B0666078E (void);
+// 0x00000839 Cysharp.Threading.Tasks.IUniTaskSource`1<UnityEngine.AssetBundle> Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::Create(UnityEngine.AssetBundleCreateRequest,Cysharp.Threading.Tasks.PlayerLoopTiming,System.IProgress`1<System.Single>,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void AssetBundleCreateRequestConfiguredSource_Create_m98A3C7E9F1F8581CA54596DAA3FA7578343E0253 (void);
+// 0x0000083A UnityEngine.AssetBundle Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::GetResult(System.Int16)
+extern void AssetBundleCreateRequestConfiguredSource_GetResult_m2F5D56598FD88DB924F2C3D92573DAF571AF2C59 (void);
+// 0x0000083B System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void AssetBundleCreateRequestConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m98CFE677FEDC412D85EDBB89BFA9FEC780B23E73 (void);
+// 0x0000083C Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::GetStatus(System.Int16)
+extern void AssetBundleCreateRequestConfiguredSource_GetStatus_m1023DA1D9898DF072144F91FF23ACEA4562A2418 (void);
+// 0x0000083D Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::UnsafeGetStatus()
+extern void AssetBundleCreateRequestConfiguredSource_UnsafeGetStatus_m1AFCCF067519D134AC6452D6CE5F9A37C7A2B6C8 (void);
+// 0x0000083E System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AssetBundleCreateRequestConfiguredSource_OnCompleted_mFB340540EC35122B1194504B88754614BF40493D (void);
+// 0x0000083F System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::MoveNext()
+extern void AssetBundleCreateRequestConfiguredSource_MoveNext_m06ED7896EA1C9B2A8D643D71B0AB5B850687E003 (void);
+// 0x00000840 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::TryReturn()
+extern void AssetBundleCreateRequestConfiguredSource_TryReturn_m058FEEA7CF415C84D0D3E9BB697AAACB9F207810 (void);
+// 0x00000841 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource::Continuation(UnityEngine.AsyncOperation)
+extern void AssetBundleCreateRequestConfiguredSource_Continuation_mB4249504268E7CB94963BCC803105E100F86669E (void);
+// 0x00000842 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource/<>c::.cctor()
+extern void U3CU3Ec__cctor_mA82C5B694B143674FE0961CAE052F5A339592043 (void);
+// 0x00000843 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource/<>c::.ctor()
+extern void U3CU3Ec__ctor_mED7A2F1CBA9D80AD6840B4243CD2B8A401305240 (void);
+// 0x00000844 System.Int32 Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m597B61AA1A084FA7D2FDAF8F991DAC54BA45ECC8 (void);
+// 0x00000845 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/AssetBundleCreateRequestConfiguredSource/<>c::<Create>b__13_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__13_0_mF62C1013FEBF74DA23BE30F8D84458810DF72BFE (void);
+// 0x00000846 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationAwaiter::.ctor(UnityEngine.Networking.UnityWebRequestAsyncOperation)
+extern void UnityWebRequestAsyncOperationAwaiter__ctor_m03AA09B7CDCE9B8CB5534497C41E571370C2164E (void);
+// 0x00000847 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationAwaiter::get_IsCompleted()
+extern void UnityWebRequestAsyncOperationAwaiter_get_IsCompleted_m7662537975C6DDA7D485E25793703401EA8D04B2 (void);
+// 0x00000848 UnityEngine.Networking.UnityWebRequest Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationAwaiter::GetResult()
+extern void UnityWebRequestAsyncOperationAwaiter_GetResult_m96EA9963C39AC42C04D9E35E1D5CF778D5BE8AF5 (void);
+// 0x00000849 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationAwaiter::OnCompleted(System.Action)
+extern void UnityWebRequestAsyncOperationAwaiter_OnCompleted_m938BD5684517FEEF31E5825EA9766A1CBA93448D (void);
+// 0x0000084A System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationAwaiter::UnsafeOnCompleted(System.Action)
+extern void UnityWebRequestAsyncOperationAwaiter_UnsafeOnCompleted_m6137E393610929F40829FD31FAF86196BADE2EDD (void);
+// 0x0000084B Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource& Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::get_NextNode()
+extern void UnityWebRequestAsyncOperationConfiguredSource_get_NextNode_mEAD9A1EBE54F499CEBB023ED1659D8BEC1DD41F2 (void);
+// 0x0000084C System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::.cctor()
+extern void UnityWebRequestAsyncOperationConfiguredSource__cctor_mC8C3C38B3DAE13E600DAFBBFE04D8CC2FDF068DA (void);
+// 0x0000084D System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::.ctor()
+extern void UnityWebRequestAsyncOperationConfiguredSource__ctor_m4CD2FF6274EE6A19AB9C571415C212B9C3F7CA38 (void);
+// 0x0000084E Cysharp.Threading.Tasks.IUniTaskSource`1<UnityEngine.Networking.UnityWebRequest> Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::Create(UnityEngine.Networking.UnityWebRequestAsyncOperation,Cysharp.Threading.Tasks.PlayerLoopTiming,System.IProgress`1<System.Single>,System.Threading.CancellationToken,System.Boolean,System.Int16&)
+extern void UnityWebRequestAsyncOperationConfiguredSource_Create_m876A435945465F0964143B7F36912FA4A53945C7 (void);
+// 0x0000084F UnityEngine.Networking.UnityWebRequest Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::GetResult(System.Int16)
+extern void UnityWebRequestAsyncOperationConfiguredSource_GetResult_m161AF6871ACBAE7357F652CA87A53AD68AECB2E4 (void);
+// 0x00000850 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void UnityWebRequestAsyncOperationConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m3A6380846EA33DDE07EC13B88484A1364F40B920 (void);
+// 0x00000851 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::GetStatus(System.Int16)
+extern void UnityWebRequestAsyncOperationConfiguredSource_GetStatus_m78D99C1934CAEA8652E5C01E449B969EDB3CF978 (void);
+// 0x00000852 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::UnsafeGetStatus()
+extern void UnityWebRequestAsyncOperationConfiguredSource_UnsafeGetStatus_m81F2522C31F659F415A381C24DBCC25A72CC2DFC (void);
+// 0x00000853 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void UnityWebRequestAsyncOperationConfiguredSource_OnCompleted_m931D0D2A773550BBEEFFD3BD834B1810DFC0A553 (void);
+// 0x00000854 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::MoveNext()
+extern void UnityWebRequestAsyncOperationConfiguredSource_MoveNext_m2F9E10B311858C36B872EE64A44C899610230902 (void);
+// 0x00000855 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::TryReturn()
+extern void UnityWebRequestAsyncOperationConfiguredSource_TryReturn_m278204E8600BFCF362CED308A87B243F834FBF29 (void);
+// 0x00000856 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource::Continuation(UnityEngine.AsyncOperation)
+extern void UnityWebRequestAsyncOperationConfiguredSource_Continuation_mEADF6668BD5A41A9E01B8D1B0EAD01DBB3F568B0 (void);
+// 0x00000857 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource/<>c::.cctor()
+extern void U3CU3Ec__cctor_m789A528B766B078FAEA1EFE64EDA7AFB79FFEA00 (void);
+// 0x00000858 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource/<>c::.ctor()
+extern void U3CU3Ec__ctor_m75C37B2E475CAC463C54C77DB4A2FE3AE2C2BFFB (void);
+// 0x00000859 System.Int32 Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource/<>c::<.cctor>b__4_0()
+extern void U3CU3Ec_U3C_cctorU3Eb__4_0_m2EC3AF6259A6D80681AEFCBF261C65B5F4B3881B (void);
+// 0x0000085A System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/UnityWebRequestAsyncOperationConfiguredSource/<>c::<Create>b__13_0(System.Object)
+extern void U3CU3Ec_U3CCreateU3Eb__13_0_mFC65A07EA0DE4FAD762323C9C4DC936C77CB4B72 (void);
+// 0x0000085B Cysharp.Threading.Tasks.UnityAsyncExtensions/JobHandlePromise Cysharp.Threading.Tasks.UnityAsyncExtensions/JobHandlePromise::Create(Unity.Jobs.JobHandle,System.Int16&)
+extern void JobHandlePromise_Create_m6022713C1C51218E28FE5C560CA52AB3FDA497C9 (void);
+// 0x0000085C System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/JobHandlePromise::GetResult(System.Int16)
+extern void JobHandlePromise_GetResult_m5EA4E470A0A01E1BD51DD19D3C5519747130FA0E (void);
+// 0x0000085D Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/JobHandlePromise::GetStatus(System.Int16)
+extern void JobHandlePromise_GetStatus_m673B4FCBDF057CB870CA670D42E77F822CD26DB2 (void);
+// 0x0000085E Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UnityAsyncExtensions/JobHandlePromise::UnsafeGetStatus()
+extern void JobHandlePromise_UnsafeGetStatus_mEFEEA327CC0171831BAA08DC25BE560A2D24D226 (void);
+// 0x0000085F System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/JobHandlePromise::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void JobHandlePromise_OnCompleted_mBDDF90459D4F0DE88BC4060B601B9F3AF16A31B3 (void);
+// 0x00000860 System.Boolean Cysharp.Threading.Tasks.UnityAsyncExtensions/JobHandlePromise::MoveNext()
+extern void JobHandlePromise_MoveNext_m820CF0F001DB36A7B70B603F41CBA7124B264FF4 (void);
+// 0x00000861 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/JobHandlePromise::.ctor()
+extern void JobHandlePromise__ctor_m3CADF2A7038CF569B2E45CA8E9E6EDC5BBE1B280 (void);
+// 0x00000862 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/<WaitAsync>d__41::MoveNext()
+extern void U3CWaitAsyncU3Ed__41_MoveNext_m26A3BD7F8FCC0041BC75057F68797640EEF7247D (void);
+// 0x00000863 System.Void Cysharp.Threading.Tasks.UnityAsyncExtensions/<WaitAsync>d__41::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CWaitAsyncU3Ed__41_SetStateMachine_mDC8011FCDF25B750A8361F71BCDC69CD6F3079F0 (void);
+// 0x00000864 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.IAsyncClickEventHandler::OnClickAsync()
+// 0x00000865 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler`1::OnValueChangedAsync()
+// 0x00000866 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.IAsyncEndEditEventHandler`1::OnEndEditAsync()
+// 0x00000867 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.IAsyncEndTextSelectionEventHandler`1::OnEndTextSelectionAsync()
+// 0x00000868 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.IAsyncTextSelectionEventHandler`1::OnTextSelectionAsync()
+// 0x00000869 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.IAsyncDeselectEventHandler`1::OnDeselectAsync()
+// 0x0000086A Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.IAsyncSelectEventHandler`1::OnSelectAsync()
+// 0x0000086B Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.IAsyncSubmitEventHandler`1::OnSubmitAsync()
+// 0x0000086C System.Void Cysharp.Threading.Tasks.TextSelectionEventConverter::.ctor(UnityEngine.Events.UnityEvent`3<System.String,System.Int32,System.Int32>)
+extern void TextSelectionEventConverter__ctor_mA2BF172D12BAEF40B4F49E10A6A96016F099EAE3 (void);
+// 0x0000086D System.Void Cysharp.Threading.Tasks.TextSelectionEventConverter::InvokeCore(System.String,System.Int32,System.Int32)
+extern void TextSelectionEventConverter_InvokeCore_m0E7FFF30AC481D1887D09ADFE4EE0F8EE49C17D2 (void);
+// 0x0000086E System.Void Cysharp.Threading.Tasks.TextSelectionEventConverter::Dispose()
+extern void TextSelectionEventConverter_Dispose_mCE3CE4A31D35582CE7D9531A8D38091F409375D9 (void);
+// 0x0000086F System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler::.ctor(UnityEngine.Events.UnityEvent,System.Threading.CancellationToken,System.Boolean)
+extern void AsyncUnityEventHandler__ctor_m96FA1B80A946BF6C9B4BA87529F7A9A0F6F2EB2D (void);
+// 0x00000870 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.AsyncUnityEventHandler::OnInvokeAsync()
+extern void AsyncUnityEventHandler_OnInvokeAsync_mA57ED5AA492DCB048E377263A20ECD57E5FAFA04 (void);
+// 0x00000871 System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler::Invoke()
+extern void AsyncUnityEventHandler_Invoke_m375D85B1AEA593C83D293FB26FCCB4F887A1372E (void);
+// 0x00000872 System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler::CancellationCallback(System.Object)
+extern void AsyncUnityEventHandler_CancellationCallback_m0D11870B8D2871E343AC30401AC943FC4800DAFB (void);
+// 0x00000873 System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler::Dispose()
+extern void AsyncUnityEventHandler_Dispose_m725037EAC2F0548DBD078C215BEE89A9011289FD (void);
+// 0x00000874 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.AsyncUnityEventHandler::Cysharp.Threading.Tasks.IAsyncClickEventHandler.OnClickAsync()
+extern void AsyncUnityEventHandler_Cysharp_Threading_Tasks_IAsyncClickEventHandler_OnClickAsync_m0BD486DDD9815A780ED28B979216DB199B336774 (void);
+// 0x00000875 System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+extern void AsyncUnityEventHandler_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m7C646E8353D9F234CF0852BFC9E2AE62AD8D9D7F (void);
+// 0x00000876 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.AsyncUnityEventHandler::Cysharp.Threading.Tasks.IUniTaskSource.GetStatus(System.Int16)
+extern void AsyncUnityEventHandler_Cysharp_Threading_Tasks_IUniTaskSource_GetStatus_mA4BBA32C3C6110F390B3A52C1516DFC8338B382A (void);
+// 0x00000877 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.AsyncUnityEventHandler::Cysharp.Threading.Tasks.IUniTaskSource.UnsafeGetStatus()
+extern void AsyncUnityEventHandler_Cysharp_Threading_Tasks_IUniTaskSource_UnsafeGetStatus_mCEDC7E35B596DD3A97284693DAC6E655217F852F (void);
+// 0x00000878 System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler::Cysharp.Threading.Tasks.IUniTaskSource.OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+extern void AsyncUnityEventHandler_Cysharp_Threading_Tasks_IUniTaskSource_OnCompleted_mD94B618B57E928AC20060F101F6F9C1062BDBFF0 (void);
+// 0x00000879 System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler::.cctor()
+extern void AsyncUnityEventHandler__cctor_m7E75D0F6C3D61AB7BD5167BDE32E03F6A2437F24 (void);
+// 0x0000087A System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::.ctor(UnityEngine.Events.UnityEvent`1<T>,System.Threading.CancellationToken,System.Boolean)
+// 0x0000087B Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::OnInvokeAsync()
+// 0x0000087C System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Invoke(T)
+// 0x0000087D System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::CancellationCallback(System.Object)
+// 0x0000087E System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Dispose()
+// 0x0000087F Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IAsyncValueChangedEventHandler<T>.OnValueChangedAsync()
+// 0x00000880 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IAsyncEndEditEventHandler<T>.OnEndEditAsync()
+// 0x00000881 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IAsyncEndTextSelectionEventHandler<T>.OnEndTextSelectionAsync()
+// 0x00000882 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IAsyncTextSelectionEventHandler<T>.OnTextSelectionAsync()
+// 0x00000883 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IAsyncDeselectEventHandler<T>.OnDeselectAsync()
+// 0x00000884 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IAsyncSelectEventHandler<T>.OnSelectAsync()
+// 0x00000885 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IAsyncSubmitEventHandler<T>.OnSubmitAsync()
+// 0x00000886 T Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IUniTaskSource<T>.GetResult(System.Int16)
+// 0x00000887 System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000888 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IUniTaskSource.GetStatus(System.Int16)
+// 0x00000889 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IUniTaskSource.UnsafeGetStatus()
+// 0x0000088A System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::Cysharp.Threading.Tasks.IUniTaskSource.OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000088B System.Void Cysharp.Threading.Tasks.AsyncUnityEventHandler`1::.cctor()
+// 0x0000088C System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable::.ctor(UnityEngine.Events.UnityEvent,System.Threading.CancellationToken)
+extern void UnityEventHandlerAsyncEnumerable__ctor_m872CBEB2FF4744426BA872F5C204A0E66DFAA3F6 (void);
+// 0x0000088D Cysharp.Threading.Tasks.IUniTaskAsyncEnumerator`1<Cysharp.Threading.Tasks.AsyncUnit> Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable::GetAsyncEnumerator(System.Threading.CancellationToken)
+extern void UnityEventHandlerAsyncEnumerable_GetAsyncEnumerator_m8ED514BB09333B88262D58316C4BE693621FBA55 (void);
+// 0x0000088E System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable/UnityEventHandlerAsyncEnumerator::.ctor(UnityEngine.Events.UnityEvent,System.Threading.CancellationToken,System.Threading.CancellationToken)
+extern void UnityEventHandlerAsyncEnumerator__ctor_m7F389DEA5389B68BA9C08BE571F279EE25B01042 (void);
+// 0x0000088F Cysharp.Threading.Tasks.AsyncUnit Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable/UnityEventHandlerAsyncEnumerator::get_Current()
+extern void UnityEventHandlerAsyncEnumerator_get_Current_m3248DCE6E615078FBF41AE77E2EC465C490BAC26 (void);
+// 0x00000890 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable/UnityEventHandlerAsyncEnumerator::MoveNextAsync()
+extern void UnityEventHandlerAsyncEnumerator_MoveNextAsync_m0733642FC6A26E4327261114D0BF264B836FC8B4 (void);
+// 0x00000891 System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable/UnityEventHandlerAsyncEnumerator::Invoke()
+extern void UnityEventHandlerAsyncEnumerator_Invoke_m48B0066845F74D490E90B327B1039E528CF23F69 (void);
+// 0x00000892 System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable/UnityEventHandlerAsyncEnumerator::OnCanceled1(System.Object)
+extern void UnityEventHandlerAsyncEnumerator_OnCanceled1_m3D767067488D76D16D4FA04271574E8BAE1B19CF (void);
+// 0x00000893 System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable/UnityEventHandlerAsyncEnumerator::OnCanceled2(System.Object)
+extern void UnityEventHandlerAsyncEnumerator_OnCanceled2_mEC4108370DFA72B5F36A0408C787B0579B571FA4 (void);
+// 0x00000894 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable/UnityEventHandlerAsyncEnumerator::DisposeAsync()
+extern void UnityEventHandlerAsyncEnumerator_DisposeAsync_m0EEA8A5294A6E4287224487AEF24ECD2D78D48E7 (void);
+// 0x00000895 System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable/UnityEventHandlerAsyncEnumerator::.cctor()
+extern void UnityEventHandlerAsyncEnumerator__cctor_m82B59BF3BEFDED7E67F59EE57A2906C62868A677 (void);
+// 0x00000896 System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1::.ctor(UnityEngine.Events.UnityEvent`1<T>,System.Threading.CancellationToken)
+// 0x00000897 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerator`1<T> Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1::GetAsyncEnumerator(System.Threading.CancellationToken)
+// 0x00000898 System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::.ctor(UnityEngine.Events.UnityEvent`1<T>,System.Threading.CancellationToken,System.Threading.CancellationToken)
+// 0x00000899 T Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::get_Current()
+// 0x0000089A System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::set_Current(T)
+// 0x0000089B Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::MoveNextAsync()
+// 0x0000089C System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::Invoke(T)
+// 0x0000089D System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::OnCanceled1(System.Object)
+// 0x0000089E System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::OnCanceled2(System.Object)
+// 0x0000089F Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::DisposeAsync()
+// 0x000008A0 System.Void Cysharp.Threading.Tasks.UnityEventHandlerAsyncEnumerable`1/UnityEventHandlerAsyncEnumerator::.cctor()
+// 0x000008A1 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.String>,UnityEngine.UI.Text,System.Boolean)
+extern void UnityBindingExtensions_BindTo_m302DA4664BC6A24172E5466C687B051DF3FB2D03 (void);
+// 0x000008A2 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.String>,UnityEngine.UI.Text,System.Threading.CancellationToken,System.Boolean)
+extern void UnityBindingExtensions_BindTo_m28DF8B6EDE65761C3BB7F86584BF4546DCD6E348 (void);
+// 0x000008A3 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UnityBindingExtensions::BindToCore(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.String>,UnityEngine.UI.Text,System.Threading.CancellationToken,System.Boolean)
+extern void UnityBindingExtensions_BindToCore_mDBFA3434F62B442103D39DEE3783E0968D045FB1 (void);
+// 0x000008A4 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<T>,UnityEngine.UI.Text,System.Boolean)
+// 0x000008A5 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<T>,UnityEngine.UI.Text,System.Threading.CancellationToken,System.Boolean)
+// 0x000008A6 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.AsyncReactiveProperty`1<T>,UnityEngine.UI.Text,System.Boolean)
+// 0x000008A7 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UnityBindingExtensions::BindToCore(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<T>,UnityEngine.UI.Text,System.Threading.CancellationToken,System.Boolean)
+// 0x000008A8 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Boolean>,UnityEngine.UI.Selectable,System.Boolean)
+extern void UnityBindingExtensions_BindTo_m1A953007D7E5CCC1A6EF1116CEBF5E9DB577A91B (void);
+// 0x000008A9 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Boolean>,UnityEngine.UI.Selectable,System.Threading.CancellationToken,System.Boolean)
+extern void UnityBindingExtensions_BindTo_m1E01FC8AA7CEEBADB39FA598EEDC6EA1AF4E37EC (void);
+// 0x000008AA Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UnityBindingExtensions::BindToCore(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<System.Boolean>,UnityEngine.UI.Selectable,System.Threading.CancellationToken,System.Boolean)
+extern void UnityBindingExtensions_BindToCore_mFA15BB1D1D995BF9876B5B140343118FFE1FDE60 (void);
+// 0x000008AB System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<TSource>,TObject,System.Action`2<TObject,TSource>,System.Boolean)
+// 0x000008AC System.Void Cysharp.Threading.Tasks.UnityBindingExtensions::BindTo(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<TSource>,TObject,System.Action`2<TObject,TSource>,System.Threading.CancellationToken,System.Boolean)
+// 0x000008AD Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.UnityBindingExtensions::BindToCore(Cysharp.Threading.Tasks.IUniTaskAsyncEnumerable`1<TSource>,TObject,System.Action`2<TObject,TSource>,System.Threading.CancellationToken,System.Boolean)
+// 0x000008AE System.Void Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__2::MoveNext()
+extern void U3CBindToCoreU3Ed__2_MoveNext_m5DB7A38AB547C994E313C89C08AA5E7B22AA9CC6 (void);
+// 0x000008AF System.Void Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__2::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CBindToCoreU3Ed__2_SetStateMachine_mCF71D6D6661515657FD6853B4867018395A41098 (void);
+// 0x000008B0 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__6`1::MoveNext()
+// 0x000008B1 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__6`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000008B2 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__9::MoveNext()
+extern void U3CBindToCoreU3Ed__9_MoveNext_mF73579193C12FB95BE91E5B586E4DF4AF4D4B2DC (void);
+// 0x000008B3 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__9::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CBindToCoreU3Ed__9_SetStateMachine_m51113E3162DE6B7B05B6870748D3A672260F7CCD (void);
+// 0x000008B4 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__12`2::MoveNext()
+// 0x000008B5 System.Void Cysharp.Threading.Tasks.UnityBindingExtensions/<BindToCore>d__12`2::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x000008B6 UnityEngine.Networking.UnityWebRequest Cysharp.Threading.Tasks.UnityWebRequestException::get_UnityWebRequest()
+extern void UnityWebRequestException_get_UnityWebRequest_m48414E7877C61EE4F0F14D78A9624EAFB8BDBF7F (void);
+// 0x000008B7 UnityEngine.Networking.UnityWebRequest/Result Cysharp.Threading.Tasks.UnityWebRequestException::get_Result()
+extern void UnityWebRequestException_get_Result_mFA4379BE2F3D85CD5E200DDCC08BC3AED82F8189 (void);
+// 0x000008B8 System.String Cysharp.Threading.Tasks.UnityWebRequestException::get_Error()
+extern void UnityWebRequestException_get_Error_mB55A76B44C4D829F7D7FE796C9360B4D56669012 (void);
+// 0x000008B9 System.String Cysharp.Threading.Tasks.UnityWebRequestException::get_Text()
+extern void UnityWebRequestException_get_Text_m76D36C8F27A1A9D2DADD0EB776C559018E1EC0C5 (void);
+// 0x000008BA System.Int64 Cysharp.Threading.Tasks.UnityWebRequestException::get_ResponseCode()
+extern void UnityWebRequestException_get_ResponseCode_m04B55A69E80FFA3BDF6D2EE3F37EB314B19CA087 (void);
+// 0x000008BB System.Collections.Generic.Dictionary`2<System.String,System.String> Cysharp.Threading.Tasks.UnityWebRequestException::get_ResponseHeaders()
+extern void UnityWebRequestException_get_ResponseHeaders_m727CB6C70CE45BB4A25835AFD5ED32B522D2C7FE (void);
+// 0x000008BC System.Void Cysharp.Threading.Tasks.UnityWebRequestException::.ctor(UnityEngine.Networking.UnityWebRequest)
+extern void UnityWebRequestException__ctor_m7ED0F69F1E92954B06F391B203CD3045C916E6BC (void);
+// 0x000008BD System.String Cysharp.Threading.Tasks.UnityWebRequestException::get_Message()
+extern void UnityWebRequestException_get_Message_mFB10697207F89F9F5E1EA078602684A14DEDC68C (void);
+// 0x000008BE Cysharp.Threading.Tasks.Triggers.AsyncAwakeTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncAwakeTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncAwakeTrigger_m099670C2B2070B26F18DAE89211711916DBED289 (void);
+// 0x000008BF Cysharp.Threading.Tasks.Triggers.AsyncAwakeTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncAwakeTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncAwakeTrigger_mEECA4F5706484C2E5F3EA5A7C510C7AAAADA71C1 (void);
+// 0x000008C0 Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDestroyTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncDestroyTrigger_mD8C7280B4D8038CAF81356C462EDCC07B41318BF (void);
+// 0x000008C1 Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDestroyTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncDestroyTrigger_m12E10A15056C485DB3493CB3F92DD608562FCC88 (void);
+// 0x000008C2 Cysharp.Threading.Tasks.Triggers.AsyncStartTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncStartTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncStartTrigger_mBFE825B96B4D1BE5E9943E98CE7E6E7F0C69AACE (void);
+// 0x000008C3 Cysharp.Threading.Tasks.Triggers.AsyncStartTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncStartTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncStartTrigger_mE10DB4F8190B11689892FDF6CEE71F3A9598395B (void);
+// 0x000008C4 T Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetOrAddComponent(UnityEngine.GameObject)
+// 0x000008C5 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::OnDestroyAsync(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_OnDestroyAsync_m11EFB0ADA73437908FF70614DE36340ABD22C3FD (void);
+// 0x000008C6 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::OnDestroyAsync(UnityEngine.Component)
+extern void AsyncTriggerExtensions_OnDestroyAsync_mE3BF7AD4945217D420C7863E05E92C41615CF259 (void);
+// 0x000008C7 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::StartAsync(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_StartAsync_m30AE1C078674D2DF852ADA7497D43B0289AB2FDD (void);
+// 0x000008C8 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::StartAsync(UnityEngine.Component)
+extern void AsyncTriggerExtensions_StartAsync_m3579138536ED6DA2457E7788BB52FD49F3D00FA2 (void);
+// 0x000008C9 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::AwakeAsync(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_AwakeAsync_mDA9B42F5F62CEA9B6B5B656141F3DD2122E15374 (void);
+// 0x000008CA Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::AwakeAsync(UnityEngine.Component)
+extern void AsyncTriggerExtensions_AwakeAsync_m1F08D339CE69BD675F22FF5840B2C68654422E79 (void);
+// 0x000008CB Cysharp.Threading.Tasks.Triggers.AsyncFixedUpdateTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncFixedUpdateTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncFixedUpdateTrigger_mE3605CCA500D33DDFAE4F3FF327114DECD0741C7 (void);
+// 0x000008CC Cysharp.Threading.Tasks.Triggers.AsyncFixedUpdateTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncFixedUpdateTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncFixedUpdateTrigger_mF8AAE6DFBCE7838E333F4676765B66585EFBA4E6 (void);
+// 0x000008CD Cysharp.Threading.Tasks.Triggers.AsyncLateUpdateTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncLateUpdateTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncLateUpdateTrigger_m09B55C6A1B9F7982BC34463998CAA9E7A7078531 (void);
+// 0x000008CE Cysharp.Threading.Tasks.Triggers.AsyncLateUpdateTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncLateUpdateTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncLateUpdateTrigger_m28EED3BA6F1769ECE883EC159514483C761054D8 (void);
+// 0x000008CF Cysharp.Threading.Tasks.Triggers.AsyncAnimatorIKTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncAnimatorIKTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncAnimatorIKTrigger_m4709029D4645CD1CCC20F00AFCCB4C40D10D91F1 (void);
+// 0x000008D0 Cysharp.Threading.Tasks.Triggers.AsyncAnimatorIKTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncAnimatorIKTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncAnimatorIKTrigger_mF6F721265D0B1BEC27BEFB1C1739273775E00F3E (void);
+// 0x000008D1 Cysharp.Threading.Tasks.Triggers.AsyncAnimatorMoveTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncAnimatorMoveTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncAnimatorMoveTrigger_mC3988A756C2E9E10C62305EB442F06E19AE75C89 (void);
+// 0x000008D2 Cysharp.Threading.Tasks.Triggers.AsyncAnimatorMoveTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncAnimatorMoveTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncAnimatorMoveTrigger_m66ED0BF67AAE5AE92AF070BD8CCCB879D9D739C5 (void);
+// 0x000008D3 Cysharp.Threading.Tasks.Triggers.AsyncApplicationFocusTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncApplicationFocusTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncApplicationFocusTrigger_mC6ED3D8FA68FB2ED821D9E54B646D6348CAA9F4A (void);
+// 0x000008D4 Cysharp.Threading.Tasks.Triggers.AsyncApplicationFocusTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncApplicationFocusTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncApplicationFocusTrigger_mDBD816B1461752A020EBE99C10DB43019E58510C (void);
+// 0x000008D5 Cysharp.Threading.Tasks.Triggers.AsyncApplicationPauseTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncApplicationPauseTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncApplicationPauseTrigger_m832B3E40E75C962D085C9563007350CD41DA1DFD (void);
+// 0x000008D6 Cysharp.Threading.Tasks.Triggers.AsyncApplicationPauseTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncApplicationPauseTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncApplicationPauseTrigger_m97E3FED5343C2F2FD2497A8E3B47FE2D1511CB24 (void);
+// 0x000008D7 Cysharp.Threading.Tasks.Triggers.AsyncApplicationQuitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncApplicationQuitTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncApplicationQuitTrigger_mD2E7F12939DB4A890804857C80583799352491E2 (void);
+// 0x000008D8 Cysharp.Threading.Tasks.Triggers.AsyncApplicationQuitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncApplicationQuitTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncApplicationQuitTrigger_mA1A424292DD31E9FACDBF05B0775094A7EF4D7F0 (void);
+// 0x000008D9 Cysharp.Threading.Tasks.Triggers.AsyncAudioFilterReadTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncAudioFilterReadTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncAudioFilterReadTrigger_m36EE1EEFAC7B5258911D4DA463C5AA2FE34240DE (void);
+// 0x000008DA Cysharp.Threading.Tasks.Triggers.AsyncAudioFilterReadTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncAudioFilterReadTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncAudioFilterReadTrigger_mFBB413D5CE465D9ADBDC5691A81F28CACA77CF3F (void);
+// 0x000008DB Cysharp.Threading.Tasks.Triggers.AsyncBecameInvisibleTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncBecameInvisibleTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncBecameInvisibleTrigger_m252BDC414729C5558E910BD9F0154048607E13E2 (void);
+// 0x000008DC Cysharp.Threading.Tasks.Triggers.AsyncBecameInvisibleTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncBecameInvisibleTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncBecameInvisibleTrigger_mD326FDF21E081A073BFB1B2B268AE717B98FA8B3 (void);
+// 0x000008DD Cysharp.Threading.Tasks.Triggers.AsyncBecameVisibleTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncBecameVisibleTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncBecameVisibleTrigger_m759715068444A209F3F0E92BB8ABBCF95FF09121 (void);
+// 0x000008DE Cysharp.Threading.Tasks.Triggers.AsyncBecameVisibleTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncBecameVisibleTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncBecameVisibleTrigger_m5CFF7B02E1E40F590BE4ED076FE0EC8725287233 (void);
+// 0x000008DF Cysharp.Threading.Tasks.Triggers.AsyncBeforeTransformParentChangedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncBeforeTransformParentChangedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncBeforeTransformParentChangedTrigger_m899CB4CCF84248F0FEF0827BED70B56579688469 (void);
+// 0x000008E0 Cysharp.Threading.Tasks.Triggers.AsyncBeforeTransformParentChangedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncBeforeTransformParentChangedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncBeforeTransformParentChangedTrigger_m08F9CB2ADBD32F97D73F877DA0C7DFC7AD72C02B (void);
+// 0x000008E1 Cysharp.Threading.Tasks.Triggers.AsyncOnCanvasGroupChangedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncOnCanvasGroupChangedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncOnCanvasGroupChangedTrigger_mF72617B10FF330B320F223EE10FBC67F62CCB3F5 (void);
+// 0x000008E2 Cysharp.Threading.Tasks.Triggers.AsyncOnCanvasGroupChangedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncOnCanvasGroupChangedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncOnCanvasGroupChangedTrigger_m72FCAD0534B10CC5E342BAEC99AD31FBA8CE8818 (void);
+// 0x000008E3 Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnterTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionEnterTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncCollisionEnterTrigger_m46BCC66870E74812D18661CABB0E7D7AC2155684 (void);
+// 0x000008E4 Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnterTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionEnterTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncCollisionEnterTrigger_m884EC05A036FC2817867446D73437EF4D742FF80 (void);
+// 0x000008E5 Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnter2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionEnter2DTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncCollisionEnter2DTrigger_m3B6AE029F58B24C2F17C5DCFBA4140EC794E20F5 (void);
+// 0x000008E6 Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnter2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionEnter2DTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncCollisionEnter2DTrigger_mE07AB6D69398329559C4075A8E5E6A872ECFDA71 (void);
+// 0x000008E7 Cysharp.Threading.Tasks.Triggers.AsyncCollisionExitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionExitTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncCollisionExitTrigger_m29A1AA1BAEB8CF9E33E0CBD9B6A9AEFC1EE027A1 (void);
+// 0x000008E8 Cysharp.Threading.Tasks.Triggers.AsyncCollisionExitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionExitTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncCollisionExitTrigger_m832DF409BAC16340B7072A7FAF9A051D1DD3A30B (void);
+// 0x000008E9 Cysharp.Threading.Tasks.Triggers.AsyncCollisionExit2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionExit2DTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncCollisionExit2DTrigger_mAF7D11EE3AF91C971C1BE5523B7B642FF4ED2ED9 (void);
+// 0x000008EA Cysharp.Threading.Tasks.Triggers.AsyncCollisionExit2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionExit2DTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncCollisionExit2DTrigger_mEEB8621784079523E05C7ACDA3DFEE9EB00AB8A9 (void);
+// 0x000008EB Cysharp.Threading.Tasks.Triggers.AsyncCollisionStayTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionStayTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncCollisionStayTrigger_mC6052B09D27ED35D8169C2EA9B9E4C56A284ABCB (void);
+// 0x000008EC Cysharp.Threading.Tasks.Triggers.AsyncCollisionStayTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionStayTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncCollisionStayTrigger_mFB1D244E2FE601C39C215C5DD4833962DAFD525B (void);
+// 0x000008ED Cysharp.Threading.Tasks.Triggers.AsyncCollisionStay2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionStay2DTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncCollisionStay2DTrigger_m113C744407A65A58E3B12930C5190F5CAE5AEB49 (void);
+// 0x000008EE Cysharp.Threading.Tasks.Triggers.AsyncCollisionStay2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCollisionStay2DTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncCollisionStay2DTrigger_m3DAD080257FF529DDC42DB2941704D56288D4202 (void);
+// 0x000008EF Cysharp.Threading.Tasks.Triggers.AsyncControllerColliderHitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncControllerColliderHitTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncControllerColliderHitTrigger_m0F5E171FD103DFAC23D3AA4283FAFA2AFB8A24FF (void);
+// 0x000008F0 Cysharp.Threading.Tasks.Triggers.AsyncControllerColliderHitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncControllerColliderHitTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncControllerColliderHitTrigger_m5B2BA5628672A85C2C7ACCAC922A2338BD9642F5 (void);
+// 0x000008F1 Cysharp.Threading.Tasks.Triggers.AsyncDisableTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDisableTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncDisableTrigger_m044CAA03D719133C44457A10A440E879A6CF15F8 (void);
+// 0x000008F2 Cysharp.Threading.Tasks.Triggers.AsyncDisableTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDisableTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncDisableTrigger_m92E0F9179A000591CD0E54A6DC7825E476FCD3FC (void);
+// 0x000008F3 Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDrawGizmosTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncDrawGizmosTrigger_m52A97482726754D7CBDC3CFFB68B8CC97C48807F (void);
+// 0x000008F4 Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDrawGizmosTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncDrawGizmosTrigger_m010BCA84ECEE8B11F1893CE8C157CF4CA1C4B5EE (void);
+// 0x000008F5 Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosSelectedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDrawGizmosSelectedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncDrawGizmosSelectedTrigger_mF34209596E3063387DB8B0E45F2353F98401BBD6 (void);
+// 0x000008F6 Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosSelectedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDrawGizmosSelectedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncDrawGizmosSelectedTrigger_m67EBF07178E3BDFD14846533B3CC078FE0261EDC (void);
+// 0x000008F7 Cysharp.Threading.Tasks.Triggers.AsyncEnableTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncEnableTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncEnableTrigger_mC4190D58A1BC8FE459376CE38BE3FD2CB1D5E4A1 (void);
+// 0x000008F8 Cysharp.Threading.Tasks.Triggers.AsyncEnableTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncEnableTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncEnableTrigger_m2C6507CF86DD357ABDAA409989315B12647F6D73 (void);
+// 0x000008F9 Cysharp.Threading.Tasks.Triggers.AsyncGUITrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncGUITrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncGUITrigger_m64C63DF1DF878282B1EBEDDAB77ED5F69927F376 (void);
+// 0x000008FA Cysharp.Threading.Tasks.Triggers.AsyncGUITrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncGUITrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncGUITrigger_mBD17E093784252B37EF1273FD7B7DF98BF1E6FF9 (void);
+// 0x000008FB Cysharp.Threading.Tasks.Triggers.AsyncJointBreakTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncJointBreakTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncJointBreakTrigger_mFB211E1BA9EE8D6569ADED493D0F2C7947BA76F7 (void);
+// 0x000008FC Cysharp.Threading.Tasks.Triggers.AsyncJointBreakTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncJointBreakTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncJointBreakTrigger_m1E9064B3A303498E05044ADD8CB0CC527FB44070 (void);
+// 0x000008FD Cysharp.Threading.Tasks.Triggers.AsyncJointBreak2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncJointBreak2DTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncJointBreak2DTrigger_m5137D1A003780D90364CFFDB6841E9A953885FF9 (void);
+// 0x000008FE Cysharp.Threading.Tasks.Triggers.AsyncJointBreak2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncJointBreak2DTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncJointBreak2DTrigger_mEE96DAB110847264A2E42EF43D67BDC5EE22BA8D (void);
+// 0x000008FF Cysharp.Threading.Tasks.Triggers.AsyncParticleCollisionTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncParticleCollisionTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncParticleCollisionTrigger_mC483793B36FEF81705858CB7AB4CDAB9FF6E41F3 (void);
+// 0x00000900 Cysharp.Threading.Tasks.Triggers.AsyncParticleCollisionTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncParticleCollisionTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncParticleCollisionTrigger_m7477C038F2025CC48C4C7C1B78B2409EDECB7437 (void);
+// 0x00000901 Cysharp.Threading.Tasks.Triggers.AsyncParticleSystemStoppedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncParticleSystemStoppedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncParticleSystemStoppedTrigger_m927FECF1026F0C6EA5950C49F52EC08D8078C318 (void);
+// 0x00000902 Cysharp.Threading.Tasks.Triggers.AsyncParticleSystemStoppedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncParticleSystemStoppedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncParticleSystemStoppedTrigger_mB76C8CDB89FE9C77522FF40B1CD9380019F7EB89 (void);
+// 0x00000903 Cysharp.Threading.Tasks.Triggers.AsyncParticleTriggerTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncParticleTriggerTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncParticleTriggerTrigger_m995C669EE142B0ECA52B6D68EA7E15F8F62C09F5 (void);
+// 0x00000904 Cysharp.Threading.Tasks.Triggers.AsyncParticleTriggerTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncParticleTriggerTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncParticleTriggerTrigger_m321B4D121933BAE8FFE40C20CF2A8DD34C985DDA (void);
+// 0x00000905 Cysharp.Threading.Tasks.Triggers.AsyncParticleUpdateJobScheduledTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncParticleUpdateJobScheduledTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncParticleUpdateJobScheduledTrigger_m74083627970E855A23E53CD7F24EB14DF8DD8401 (void);
+// 0x00000906 Cysharp.Threading.Tasks.Triggers.AsyncParticleUpdateJobScheduledTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncParticleUpdateJobScheduledTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncParticleUpdateJobScheduledTrigger_mCACCA9A89E2D87658A6B679A559939FA5E0329B3 (void);
+// 0x00000907 Cysharp.Threading.Tasks.Triggers.AsyncPostRenderTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPostRenderTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncPostRenderTrigger_m1FCEC561B2B3435FECB505D0CF690F9938CCF80A (void);
+// 0x00000908 Cysharp.Threading.Tasks.Triggers.AsyncPostRenderTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPostRenderTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncPostRenderTrigger_m06C369E8160189C4C17D08F23510A59A7C6F7409 (void);
+// 0x00000909 Cysharp.Threading.Tasks.Triggers.AsyncPreCullTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPreCullTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncPreCullTrigger_m7F5B1DEF8BFD0A4E1520E16B675AB1A6D18A0BFA (void);
+// 0x0000090A Cysharp.Threading.Tasks.Triggers.AsyncPreCullTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPreCullTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncPreCullTrigger_mEB05FB07E00BCA2C3BEF76BC08E147FB11E6B72F (void);
+// 0x0000090B Cysharp.Threading.Tasks.Triggers.AsyncPreRenderTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPreRenderTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncPreRenderTrigger_mC2AB3CAB0B577973E92F476306C7B0750E27011B (void);
+// 0x0000090C Cysharp.Threading.Tasks.Triggers.AsyncPreRenderTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPreRenderTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncPreRenderTrigger_m6FED40843BDFD105D1C1BCFD4A7DA32A5A361541 (void);
+// 0x0000090D Cysharp.Threading.Tasks.Triggers.AsyncRectTransformDimensionsChangeTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncRectTransformDimensionsChangeTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncRectTransformDimensionsChangeTrigger_mEEC6AB24EBF4A81162D7E5E423B8A097B8AEDEEB (void);
+// 0x0000090E Cysharp.Threading.Tasks.Triggers.AsyncRectTransformDimensionsChangeTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncRectTransformDimensionsChangeTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncRectTransformDimensionsChangeTrigger_m2E8B6B6199EE0AD80B8B29FC116E7977098684B0 (void);
+// 0x0000090F Cysharp.Threading.Tasks.Triggers.AsyncRectTransformRemovedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncRectTransformRemovedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncRectTransformRemovedTrigger_m9E0C2F0648D53F8878681209CC4703353C8473B4 (void);
+// 0x00000910 Cysharp.Threading.Tasks.Triggers.AsyncRectTransformRemovedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncRectTransformRemovedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncRectTransformRemovedTrigger_mBD96AA1311357B8E4A5B09FCB01B0BE6FDCCA8EB (void);
+// 0x00000911 Cysharp.Threading.Tasks.Triggers.AsyncRenderImageTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncRenderImageTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncRenderImageTrigger_m141DE290DCC58F908AB5B366C9F0019E91034069 (void);
+// 0x00000912 Cysharp.Threading.Tasks.Triggers.AsyncRenderImageTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncRenderImageTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncRenderImageTrigger_m7A0DBF9FE2AED0DE1C129EF3CDB177F66AB003F2 (void);
+// 0x00000913 Cysharp.Threading.Tasks.Triggers.AsyncRenderObjectTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncRenderObjectTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncRenderObjectTrigger_mC0005331145A37FC9D98C6AC9C4BEC8AECE2655C (void);
+// 0x00000914 Cysharp.Threading.Tasks.Triggers.AsyncRenderObjectTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncRenderObjectTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncRenderObjectTrigger_m12DAD6F08CF9EFE11DF7983FB0905B3A122A64DA (void);
+// 0x00000915 Cysharp.Threading.Tasks.Triggers.AsyncServerInitializedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncServerInitializedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncServerInitializedTrigger_mD99447025B17ECF2999FEE758F3BF31B60B04095 (void);
+// 0x00000916 Cysharp.Threading.Tasks.Triggers.AsyncServerInitializedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncServerInitializedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncServerInitializedTrigger_m8E0A7360FE5AB4119DE210D6A8C5F78A49D86836 (void);
+// 0x00000917 Cysharp.Threading.Tasks.Triggers.AsyncTransformChildrenChangedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTransformChildrenChangedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncTransformChildrenChangedTrigger_m28DBADBCBDDFD20399D9F73467A02D8A4CF7F9EB (void);
+// 0x00000918 Cysharp.Threading.Tasks.Triggers.AsyncTransformChildrenChangedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTransformChildrenChangedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncTransformChildrenChangedTrigger_mDA1A04D080882AC015E6ADAC248B812632228D86 (void);
+// 0x00000919 Cysharp.Threading.Tasks.Triggers.AsyncTransformParentChangedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTransformParentChangedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncTransformParentChangedTrigger_mDF50CA939A63C55D5B5AD689CCABF7BED048FA0F (void);
+// 0x0000091A Cysharp.Threading.Tasks.Triggers.AsyncTransformParentChangedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTransformParentChangedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncTransformParentChangedTrigger_m3DF99301A7064B8369D4B07FA5CB2710EEC43456 (void);
+// 0x0000091B Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnterTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerEnterTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncTriggerEnterTrigger_m5BE5049E9664A5E68603595EEAE3F7544058E726 (void);
+// 0x0000091C Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnterTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerEnterTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncTriggerEnterTrigger_m6DB46E46DCE0282583D4296FA163C0FEC9FD47A4 (void);
+// 0x0000091D Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnter2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerEnter2DTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncTriggerEnter2DTrigger_m05D2D4E2B94E31FD65C99084227CE23C510B2A90 (void);
+// 0x0000091E Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnter2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerEnter2DTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncTriggerEnter2DTrigger_m300458B5105FDC209BA9CDF103FD74E873A6231A (void);
+// 0x0000091F Cysharp.Threading.Tasks.Triggers.AsyncTriggerExitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerExitTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncTriggerExitTrigger_m92F64CAAD70F4CBAEB1AA4717228D4FF9B0904C8 (void);
+// 0x00000920 Cysharp.Threading.Tasks.Triggers.AsyncTriggerExitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerExitTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncTriggerExitTrigger_mB69A2E4B90CF87E6C018AFAD680C17F8162592A3 (void);
+// 0x00000921 Cysharp.Threading.Tasks.Triggers.AsyncTriggerExit2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerExit2DTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncTriggerExit2DTrigger_m8A15DA12E3D1332CC38D7BE8980D9E381D0C1D36 (void);
+// 0x00000922 Cysharp.Threading.Tasks.Triggers.AsyncTriggerExit2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerExit2DTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncTriggerExit2DTrigger_m09562C0A1DC50594562E8131B8F3231B6EA9BE6F (void);
+// 0x00000923 Cysharp.Threading.Tasks.Triggers.AsyncTriggerStayTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerStayTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncTriggerStayTrigger_mC0C2D040A67F938DA715949C8F2A58F0461F0463 (void);
+// 0x00000924 Cysharp.Threading.Tasks.Triggers.AsyncTriggerStayTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerStayTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncTriggerStayTrigger_mCDA14BFC7BFE055C1BEE34DBD557C97FB6350080 (void);
+// 0x00000925 Cysharp.Threading.Tasks.Triggers.AsyncTriggerStay2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerStay2DTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncTriggerStay2DTrigger_m8681FC4C00FDCA7C907B87B0B3F29403E787274E (void);
+// 0x00000926 Cysharp.Threading.Tasks.Triggers.AsyncTriggerStay2DTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncTriggerStay2DTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncTriggerStay2DTrigger_m1DCB7E339AC8C2B893B8FDE3A7041F116F8961E4 (void);
+// 0x00000927 Cysharp.Threading.Tasks.Triggers.AsyncValidateTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncValidateTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncValidateTrigger_m27683085FA8621713F4DEFDF4FD1954C6E13F0D5 (void);
+// 0x00000928 Cysharp.Threading.Tasks.Triggers.AsyncValidateTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncValidateTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncValidateTrigger_m684A97196BE67810E963CC8F595C992B18FFB3AE (void);
+// 0x00000929 Cysharp.Threading.Tasks.Triggers.AsyncWillRenderObjectTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncWillRenderObjectTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncWillRenderObjectTrigger_m51790759854D1271D26C5A9B1350678874EAC26A (void);
+// 0x0000092A Cysharp.Threading.Tasks.Triggers.AsyncWillRenderObjectTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncWillRenderObjectTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncWillRenderObjectTrigger_m4B5A998DAD515F7848A783BD3B9CCAE673E0EB3B (void);
+// 0x0000092B Cysharp.Threading.Tasks.Triggers.AsyncResetTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncResetTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncResetTrigger_m9E688FBF381055D7166D9D6D05AF3004512E6F82 (void);
+// 0x0000092C Cysharp.Threading.Tasks.Triggers.AsyncResetTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncResetTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncResetTrigger_mB71486420B462DD84289BBBF7AE0CFD294A5B46C (void);
+// 0x0000092D Cysharp.Threading.Tasks.Triggers.AsyncUpdateTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncUpdateTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncUpdateTrigger_m3434D4BCF2B012F7CF5669B0B6F4CBE37851AD77 (void);
+// 0x0000092E Cysharp.Threading.Tasks.Triggers.AsyncUpdateTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncUpdateTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncUpdateTrigger_m49BCB7526E31DAC8F8A1C917C5A1439BDF68EE53 (void);
+// 0x0000092F Cysharp.Threading.Tasks.Triggers.AsyncBeginDragTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncBeginDragTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncBeginDragTrigger_mD457A35B7F90F7FE2DFD5E2306F251843F7E558C (void);
+// 0x00000930 Cysharp.Threading.Tasks.Triggers.AsyncBeginDragTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncBeginDragTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncBeginDragTrigger_mBBD12DFCA8C508908978BA693C0D7CD31B26E4A4 (void);
+// 0x00000931 Cysharp.Threading.Tasks.Triggers.AsyncCancelTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCancelTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncCancelTrigger_m248A07AB4B0038A0CDA26ABF9CDA50D651BC23E3 (void);
+// 0x00000932 Cysharp.Threading.Tasks.Triggers.AsyncCancelTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncCancelTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncCancelTrigger_m0C4444E630B2D57E161850F1010915B51CD91681 (void);
+// 0x00000933 Cysharp.Threading.Tasks.Triggers.AsyncDeselectTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDeselectTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncDeselectTrigger_m3CCED676BD6B470497F8862B428B8BEFC2445B55 (void);
+// 0x00000934 Cysharp.Threading.Tasks.Triggers.AsyncDeselectTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDeselectTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncDeselectTrigger_m009628CB91CA274C4DAD77661E40D5CF47031095 (void);
+// 0x00000935 Cysharp.Threading.Tasks.Triggers.AsyncDragTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDragTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncDragTrigger_m2FB522E9E97140CADD62F9B7015E1F8B7733D8F4 (void);
+// 0x00000936 Cysharp.Threading.Tasks.Triggers.AsyncDragTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDragTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncDragTrigger_mEC019989EA79D557FF92FFD0C1215BC5346961D2 (void);
+// 0x00000937 Cysharp.Threading.Tasks.Triggers.AsyncDropTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDropTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncDropTrigger_m54F5F5765DC281EE91352DA11E297CCD57B48EC2 (void);
+// 0x00000938 Cysharp.Threading.Tasks.Triggers.AsyncDropTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncDropTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncDropTrigger_m2BCF06694B9F3F748A1067B4253F4B869C0E7317 (void);
+// 0x00000939 Cysharp.Threading.Tasks.Triggers.AsyncEndDragTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncEndDragTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncEndDragTrigger_m403F64397287F4A5E0ADEF63B2BAEEA5A6AFE578 (void);
+// 0x0000093A Cysharp.Threading.Tasks.Triggers.AsyncEndDragTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncEndDragTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncEndDragTrigger_m3FFF0C70D86AF9776E22FCD1960720D799BFBDF9 (void);
+// 0x0000093B Cysharp.Threading.Tasks.Triggers.AsyncInitializePotentialDragTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncInitializePotentialDragTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncInitializePotentialDragTrigger_mFC914F98EB72A739ABB0663BD009B3368739707D (void);
+// 0x0000093C Cysharp.Threading.Tasks.Triggers.AsyncInitializePotentialDragTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncInitializePotentialDragTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncInitializePotentialDragTrigger_mF7ED845AA92C5C47F6A684C7E7C1B69A32F61675 (void);
+// 0x0000093D Cysharp.Threading.Tasks.Triggers.AsyncMoveTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncMoveTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncMoveTrigger_mC49575BF510367A01B65DE891EE78808EE10DB3B (void);
+// 0x0000093E Cysharp.Threading.Tasks.Triggers.AsyncMoveTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncMoveTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncMoveTrigger_mAEE531869ECB464E03EB8F73BC7C3E81580490A0 (void);
+// 0x0000093F Cysharp.Threading.Tasks.Triggers.AsyncPointerClickTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerClickTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncPointerClickTrigger_mAC7115870644846471488244618845E4819CAAAD (void);
+// 0x00000940 Cysharp.Threading.Tasks.Triggers.AsyncPointerClickTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerClickTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncPointerClickTrigger_m52352397FD8E099CE134CEA66D46BF45624C04F4 (void);
+// 0x00000941 Cysharp.Threading.Tasks.Triggers.AsyncPointerDownTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerDownTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncPointerDownTrigger_m4D5C29D9D0F44558655FE09498BACD83DD0CD732 (void);
+// 0x00000942 Cysharp.Threading.Tasks.Triggers.AsyncPointerDownTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerDownTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncPointerDownTrigger_mC49A4817B8F3A70901FE8D640394DF1DD3A76C4B (void);
+// 0x00000943 Cysharp.Threading.Tasks.Triggers.AsyncPointerEnterTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerEnterTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncPointerEnterTrigger_m5FC02539C9708AD272BDD4C370F6A67DF960CD86 (void);
+// 0x00000944 Cysharp.Threading.Tasks.Triggers.AsyncPointerEnterTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerEnterTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncPointerEnterTrigger_mB24FBB37094C572CFE8EEF177DBF58A6AF58DC06 (void);
+// 0x00000945 Cysharp.Threading.Tasks.Triggers.AsyncPointerExitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerExitTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncPointerExitTrigger_m270C582D2394A1CE06FE78640E0CA555C6622F67 (void);
+// 0x00000946 Cysharp.Threading.Tasks.Triggers.AsyncPointerExitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerExitTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncPointerExitTrigger_mE14AACF214D19305C295ACD0244780992EA4D2D4 (void);
+// 0x00000947 Cysharp.Threading.Tasks.Triggers.AsyncPointerUpTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerUpTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncPointerUpTrigger_m6BCEA83BD8F53D68F69F7CCD1A7ACAB9C5258D70 (void);
+// 0x00000948 Cysharp.Threading.Tasks.Triggers.AsyncPointerUpTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncPointerUpTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncPointerUpTrigger_mB01B691D3787DFBCB6C668EFB73365E3D31A2AE7 (void);
+// 0x00000949 Cysharp.Threading.Tasks.Triggers.AsyncScrollTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncScrollTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncScrollTrigger_m9A9E87E180759374A05AD6B1245C243AA926ECA1 (void);
+// 0x0000094A Cysharp.Threading.Tasks.Triggers.AsyncScrollTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncScrollTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncScrollTrigger_m158E5832F725EEE2CAD1FB8876ED74C4FA6D0D19 (void);
+// 0x0000094B Cysharp.Threading.Tasks.Triggers.AsyncSelectTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncSelectTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncSelectTrigger_m91822D2EA106C8648A440AF0D2344773FEC9CC09 (void);
+// 0x0000094C Cysharp.Threading.Tasks.Triggers.AsyncSelectTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncSelectTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncSelectTrigger_mFE75D92B9000EEE77A4E33F567777ACDB39592B5 (void);
+// 0x0000094D Cysharp.Threading.Tasks.Triggers.AsyncSubmitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncSubmitTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncSubmitTrigger_m1DA551962770FC634ED1BBE64743747327CC39D6 (void);
+// 0x0000094E Cysharp.Threading.Tasks.Triggers.AsyncSubmitTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncSubmitTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncSubmitTrigger_mE8C6DC3DE37D3F369F3FA11EF11A31EADB649133 (void);
+// 0x0000094F Cysharp.Threading.Tasks.Triggers.AsyncUpdateSelectedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncUpdateSelectedTrigger(UnityEngine.GameObject)
+extern void AsyncTriggerExtensions_GetAsyncUpdateSelectedTrigger_mEFE8AE007907459106506B0A699A283942D20F37 (void);
+// 0x00000950 Cysharp.Threading.Tasks.Triggers.AsyncUpdateSelectedTrigger Cysharp.Threading.Tasks.Triggers.AsyncTriggerExtensions::GetAsyncUpdateSelectedTrigger(UnityEngine.Component)
+extern void AsyncTriggerExtensions_GetAsyncUpdateSelectedTrigger_m85908CF40893E13704551630759AEA04A1348D1E (void);
+// 0x00000951 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncAwakeTrigger::AwakeAsync()
+extern void AsyncAwakeTrigger_AwakeAsync_mA879106A5928E69410C51D4C51D056064D0808B4 (void);
+// 0x00000952 System.Void Cysharp.Threading.Tasks.Triggers.AsyncAwakeTrigger::.ctor()
+extern void AsyncAwakeTrigger__ctor_m13CF4F7D5B3A40F4B749FEF76710FF7E73D42F97 (void);
+// 0x00000953 System.Threading.CancellationToken Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger::get_CancellationToken()
+extern void AsyncDestroyTrigger_get_CancellationToken_m279C90D70CAB912D1A8B9B375E3D824FE68F0386 (void);
+// 0x00000954 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger::Awake()
+extern void AsyncDestroyTrigger_Awake_mCEB1CA097CCF1C5FA59A07E12309FE874C5F0FA0 (void);
+// 0x00000955 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger::OnDestroy()
+extern void AsyncDestroyTrigger_OnDestroy_m370C10B3F7230D1DFDAA5CDDA4E3757898D4E01D (void);
+// 0x00000956 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger::OnDestroyAsync()
+extern void AsyncDestroyTrigger_OnDestroyAsync_mCBF4866C30E2378EB1D8B19F9E1533BCED03B521 (void);
+// 0x00000957 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger::.ctor()
+extern void AsyncDestroyTrigger__ctor_mA31DF14DD9FBA5472DDCF4057CF83B0750CEB6F2 (void);
+// 0x00000958 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger/AwakeMonitor::.ctor(Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger)
+extern void AwakeMonitor__ctor_mC99505C3BAD69AB2E58E6652E57AAD4D388F9368 (void);
+// 0x00000959 System.Boolean Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger/AwakeMonitor::MoveNext()
+extern void AwakeMonitor_MoveNext_mA118D7593A1BC426A3552B5AA6D2CF77D6BBC0B2 (void);
+// 0x0000095A System.Void Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger/<>c::.cctor()
+extern void U3CU3Ec__cctor_mC7BC6D6E13ABC800AED3E133A7A1E3EEF3031F8C (void);
+// 0x0000095B System.Void Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger/<>c::.ctor()
+extern void U3CU3Ec__ctor_mB92C06E254CDAE1D24DF9A71830865602F90C46B (void);
+// 0x0000095C System.Void Cysharp.Threading.Tasks.Triggers.AsyncDestroyTrigger/<>c::<OnDestroyAsync>b__7_0(System.Object)
+extern void U3CU3Ec_U3COnDestroyAsyncU3Eb__7_0_m6E29C6722B1144387C019ABB11520CF0659E02CE (void);
+// 0x0000095D System.Void Cysharp.Threading.Tasks.Triggers.AsyncStartTrigger::Start()
+extern void AsyncStartTrigger_Start_m983BE686DB4DB41A5E6FA24DB3966904D23B99FB (void);
+// 0x0000095E Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncStartTrigger::StartAsync()
+extern void AsyncStartTrigger_StartAsync_mA31E7C4DD6E90086D49A18B21421AD3A77D0B8F8 (void);
+// 0x0000095F System.Void Cysharp.Threading.Tasks.Triggers.AsyncStartTrigger::.ctor()
+extern void AsyncStartTrigger__ctor_mE3257932A213645A410A170C9C9E9D2D0F5DB119 (void);
+// 0x00000960 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1::Awake()
+// 0x00000961 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1::OnDestroy()
+// 0x00000962 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1::AddHandler(Cysharp.Threading.Tasks.ITriggerHandler`1<T>)
+// 0x00000963 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1::RemoveHandler(Cysharp.Threading.Tasks.ITriggerHandler`1<T>)
+// 0x00000964 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1::RaiseEvent(T)
+// 0x00000965 Cysharp.Threading.Tasks.IUniTaskAsyncEnumerator`1<T> Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1::GetAsyncEnumerator(System.Threading.CancellationToken)
+// 0x00000966 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1::.ctor()
+// 0x00000967 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::.ctor(Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1<T>,System.Threading.CancellationToken)
+// 0x00000968 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::OnCanceled(System.Threading.CancellationToken)
+// 0x00000969 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::OnNext(T)
+// 0x0000096A System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::OnCompleted()
+// 0x0000096B System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::OnError(System.Exception)
+// 0x0000096C System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::CancellationCallback(System.Object)
+// 0x0000096D T Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::get_Current()
+// 0x0000096E System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::set_Current(T)
+// 0x0000096F Cysharp.Threading.Tasks.ITriggerHandler`1<T> Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::Cysharp.Threading.Tasks.ITriggerHandler<T>.get_Prev()
+// 0x00000970 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::Cysharp.Threading.Tasks.ITriggerHandler<T>.set_Prev(Cysharp.Threading.Tasks.ITriggerHandler`1<T>)
+// 0x00000971 Cysharp.Threading.Tasks.ITriggerHandler`1<T> Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::Cysharp.Threading.Tasks.ITriggerHandler<T>.get_Next()
+// 0x00000972 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::Cysharp.Threading.Tasks.ITriggerHandler<T>.set_Next(Cysharp.Threading.Tasks.ITriggerHandler`1<T>)
+// 0x00000973 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::MoveNextAsync()
+// 0x00000974 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::DisposeAsync()
+// 0x00000975 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AsyncTriggerEnumerator::.cctor()
+// 0x00000976 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AwakeMonitor::.ctor(Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1<T>)
+// 0x00000977 System.Boolean Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1/AwakeMonitor::MoveNext()
+// 0x00000978 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOneShotTrigger::OneShotAsync()
+// 0x00000979 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOneShotTrigger.OneShotAsync()
+// 0x0000097A System.Threading.CancellationToken Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::get_CancellationToken()
+// 0x0000097B Cysharp.Threading.Tasks.ITriggerHandler`1<T> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.ITriggerHandler<T>.get_Prev()
+// 0x0000097C System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.ITriggerHandler<T>.set_Prev(Cysharp.Threading.Tasks.ITriggerHandler`1<T>)
+// 0x0000097D Cysharp.Threading.Tasks.ITriggerHandler`1<T> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.ITriggerHandler<T>.get_Next()
+// 0x0000097E System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.ITriggerHandler<T>.set_Next(Cysharp.Threading.Tasks.ITriggerHandler`1<T>)
+// 0x0000097F System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::.ctor(Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1<T>,System.Boolean)
+// 0x00000980 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::.ctor(Cysharp.Threading.Tasks.Triggers.AsyncTriggerBase`1<T>,System.Threading.CancellationToken,System.Boolean)
+// 0x00000981 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::CancellationCallback(System.Object)
+// 0x00000982 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Dispose()
+// 0x00000983 T Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.IUniTaskSource<T>.GetResult(System.Int16)
+// 0x00000984 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.ITriggerHandler<T>.OnNext(T)
+// 0x00000985 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.ITriggerHandler<T>.OnCanceled(System.Threading.CancellationToken)
+// 0x00000986 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.ITriggerHandler<T>.OnCompleted()
+// 0x00000987 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.ITriggerHandler<T>.OnError(System.Exception)
+// 0x00000988 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000989 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.IUniTaskSource.GetStatus(System.Int16)
+// 0x0000098A Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.IUniTaskSource.UnsafeGetStatus()
+// 0x0000098B System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.IUniTaskSource.OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x0000098C Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncFixedUpdateHandler.FixedUpdateAsync()
+// 0x0000098D Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncLateUpdateHandler.LateUpdateAsync()
+// 0x0000098E Cysharp.Threading.Tasks.UniTask`1<System.Int32> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnAnimatorIKHandler.OnAnimatorIKAsync()
+// 0x0000098F Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnAnimatorMoveHandler.OnAnimatorMoveAsync()
+// 0x00000990 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationFocusHandler.OnApplicationFocusAsync()
+// 0x00000991 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationPauseHandler.OnApplicationPauseAsync()
+// 0x00000992 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationQuitHandler.OnApplicationQuitAsync()
+// 0x00000993 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Single[],System.Int32>> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnAudioFilterReadHandler.OnAudioFilterReadAsync()
+// 0x00000994 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnBecameInvisibleHandler.OnBecameInvisibleAsync()
+// 0x00000995 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnBecameVisibleHandler.OnBecameVisibleAsync()
+// 0x00000996 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnBeforeTransformParentChangedHandler.OnBeforeTransformParentChangedAsync()
+// 0x00000997 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnCanvasGroupChangedHandler.OnCanvasGroupChangedAsync()
+// 0x00000998 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionEnterHandler.OnCollisionEnterAsync()
+// 0x00000999 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionEnter2DHandler.OnCollisionEnter2DAsync()
+// 0x0000099A Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionExitHandler.OnCollisionExitAsync()
+// 0x0000099B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionExit2DHandler.OnCollisionExit2DAsync()
+// 0x0000099C Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionStayHandler.OnCollisionStayAsync()
+// 0x0000099D Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionStay2DHandler.OnCollisionStay2DAsync()
+// 0x0000099E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.ControllerColliderHit> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnControllerColliderHitHandler.OnControllerColliderHitAsync()
+// 0x0000099F Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnDisableHandler.OnDisableAsync()
+// 0x000009A0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnDrawGizmosHandler.OnDrawGizmosAsync()
+// 0x000009A1 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnDrawGizmosSelectedHandler.OnDrawGizmosSelectedAsync()
+// 0x000009A2 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnEnableHandler.OnEnableAsync()
+// 0x000009A3 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnGUIHandler.OnGUIAsync()
+// 0x000009A4 Cysharp.Threading.Tasks.UniTask`1<System.Single> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnJointBreakHandler.OnJointBreakAsync()
+// 0x000009A5 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Joint2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnJointBreak2DHandler.OnJointBreak2DAsync()
+// 0x000009A6 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.GameObject> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleCollisionHandler.OnParticleCollisionAsync()
+// 0x000009A7 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleSystemStoppedHandler.OnParticleSystemStoppedAsync()
+// 0x000009A8 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleTriggerHandler.OnParticleTriggerAsync()
+// 0x000009A9 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.ParticleSystemJobs.ParticleSystemJobData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleUpdateJobScheduledHandler.OnParticleUpdateJobScheduledAsync()
+// 0x000009AA Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnPostRenderHandler.OnPostRenderAsync()
+// 0x000009AB Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnPreCullHandler.OnPreCullAsync()
+// 0x000009AC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnPreRenderHandler.OnPreRenderAsync()
+// 0x000009AD Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnRectTransformDimensionsChangeHandler.OnRectTransformDimensionsChangeAsync()
+// 0x000009AE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnRectTransformRemovedHandler.OnRectTransformRemovedAsync()
+// 0x000009AF Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<UnityEngine.RenderTexture,UnityEngine.RenderTexture>> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnRenderImageHandler.OnRenderImageAsync()
+// 0x000009B0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnRenderObjectHandler.OnRenderObjectAsync()
+// 0x000009B1 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnServerInitializedHandler.OnServerInitializedAsync()
+// 0x000009B2 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnTransformChildrenChangedHandler.OnTransformChildrenChangedAsync()
+// 0x000009B3 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnTransformParentChangedHandler.OnTransformParentChangedAsync()
+// 0x000009B4 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerEnterHandler.OnTriggerEnterAsync()
+// 0x000009B5 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerEnter2DHandler.OnTriggerEnter2DAsync()
+// 0x000009B6 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerExitHandler.OnTriggerExitAsync()
+// 0x000009B7 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerExit2DHandler.OnTriggerExit2DAsync()
+// 0x000009B8 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerStayHandler.OnTriggerStayAsync()
+// 0x000009B9 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerStay2DHandler.OnTriggerStay2DAsync()
+// 0x000009BA Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnValidateHandler.OnValidateAsync()
+// 0x000009BB Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnWillRenderObjectHandler.OnWillRenderObjectAsync()
+// 0x000009BC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncResetHandler.ResetAsync()
+// 0x000009BD Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncUpdateHandler.UpdateAsync()
+// 0x000009BE Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnBeginDragHandler.OnBeginDragAsync()
+// 0x000009BF Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnCancelHandler.OnCancelAsync()
+// 0x000009C0 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnDeselectHandler.OnDeselectAsync()
+// 0x000009C1 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnDragHandler.OnDragAsync()
+// 0x000009C2 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnDropHandler.OnDropAsync()
+// 0x000009C3 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnEndDragHandler.OnEndDragAsync()
+// 0x000009C4 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnInitializePotentialDragHandler.OnInitializePotentialDragAsync()
+// 0x000009C5 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.AxisEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnMoveHandler.OnMoveAsync()
+// 0x000009C6 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerClickHandler.OnPointerClickAsync()
+// 0x000009C7 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerDownHandler.OnPointerDownAsync()
+// 0x000009C8 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerEnterHandler.OnPointerEnterAsync()
+// 0x000009C9 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerExitHandler.OnPointerExitAsync()
+// 0x000009CA Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerUpHandler.OnPointerUpAsync()
+// 0x000009CB Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnScrollHandler.OnScrollAsync()
+// 0x000009CC Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnSelectHandler.OnSelectAsync()
+// 0x000009CD Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnSubmitHandler.OnSubmitAsync()
+// 0x000009CE Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::Cysharp.Threading.Tasks.Triggers.IAsyncOnUpdateSelectedHandler.OnUpdateSelectedAsync()
+// 0x000009CF System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerHandler`1::.cctor()
+// 0x000009D0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncFixedUpdateHandler::FixedUpdateAsync()
+// 0x000009D1 System.Void Cysharp.Threading.Tasks.Triggers.AsyncFixedUpdateTrigger::FixedUpdate()
+extern void AsyncFixedUpdateTrigger_FixedUpdate_mF6A14CCA456E3B9D7A947BF9813F7C95776D30C5 (void);
+// 0x000009D2 Cysharp.Threading.Tasks.Triggers.IAsyncFixedUpdateHandler Cysharp.Threading.Tasks.Triggers.AsyncFixedUpdateTrigger::GetFixedUpdateAsyncHandler()
+extern void AsyncFixedUpdateTrigger_GetFixedUpdateAsyncHandler_m8A745FAEA32A417B456A6CADA7766DA866681AC5 (void);
+// 0x000009D3 Cysharp.Threading.Tasks.Triggers.IAsyncFixedUpdateHandler Cysharp.Threading.Tasks.Triggers.AsyncFixedUpdateTrigger::GetFixedUpdateAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncFixedUpdateTrigger_GetFixedUpdateAsyncHandler_m58788C9C42556CED2BA76D98749945A1ADEDDCC9 (void);
+// 0x000009D4 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncFixedUpdateTrigger::FixedUpdateAsync()
+extern void AsyncFixedUpdateTrigger_FixedUpdateAsync_m5D979BCD337E59EC9FE1FB39B605187895BBE545 (void);
+// 0x000009D5 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncFixedUpdateTrigger::FixedUpdateAsync(System.Threading.CancellationToken)
+extern void AsyncFixedUpdateTrigger_FixedUpdateAsync_m96830240B6D94358E752F9CFAA4BE8E2D03EFDD1 (void);
+// 0x000009D6 System.Void Cysharp.Threading.Tasks.Triggers.AsyncFixedUpdateTrigger::.ctor()
+extern void AsyncFixedUpdateTrigger__ctor_m575B8AF32205F9CFDB158FA9EAD1A1B5BB5F1A79 (void);
+// 0x000009D7 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncLateUpdateHandler::LateUpdateAsync()
+// 0x000009D8 System.Void Cysharp.Threading.Tasks.Triggers.AsyncLateUpdateTrigger::LateUpdate()
+extern void AsyncLateUpdateTrigger_LateUpdate_mA6B8F24DAF03C998920A0D7C200553323110BF1F (void);
+// 0x000009D9 Cysharp.Threading.Tasks.Triggers.IAsyncLateUpdateHandler Cysharp.Threading.Tasks.Triggers.AsyncLateUpdateTrigger::GetLateUpdateAsyncHandler()
+extern void AsyncLateUpdateTrigger_GetLateUpdateAsyncHandler_m9D707C3809A57961FA4FE524B8AE7D01541490EA (void);
+// 0x000009DA Cysharp.Threading.Tasks.Triggers.IAsyncLateUpdateHandler Cysharp.Threading.Tasks.Triggers.AsyncLateUpdateTrigger::GetLateUpdateAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncLateUpdateTrigger_GetLateUpdateAsyncHandler_mAB7C4E9D5F3B6F0496C79E6EF7FBB06EBB6184E0 (void);
+// 0x000009DB Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncLateUpdateTrigger::LateUpdateAsync()
+extern void AsyncLateUpdateTrigger_LateUpdateAsync_m5E85A71A744AA9301D1C62EFB53CC0ADA025542B (void);
+// 0x000009DC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncLateUpdateTrigger::LateUpdateAsync(System.Threading.CancellationToken)
+extern void AsyncLateUpdateTrigger_LateUpdateAsync_mA0B535B7DB4CA03E645D12FDFC47FA2A355E2D41 (void);
+// 0x000009DD System.Void Cysharp.Threading.Tasks.Triggers.AsyncLateUpdateTrigger::.ctor()
+extern void AsyncLateUpdateTrigger__ctor_mBC6DDF7E599727B32881652E32CBA73CBF9115A4 (void);
+// 0x000009DE Cysharp.Threading.Tasks.UniTask`1<System.Int32> Cysharp.Threading.Tasks.Triggers.IAsyncOnAnimatorIKHandler::OnAnimatorIKAsync()
+// 0x000009DF System.Void Cysharp.Threading.Tasks.Triggers.AsyncAnimatorIKTrigger::OnAnimatorIK(System.Int32)
+extern void AsyncAnimatorIKTrigger_OnAnimatorIK_m47E70C74254095C9E5E88F7697946A68E515B04B (void);
+// 0x000009E0 Cysharp.Threading.Tasks.Triggers.IAsyncOnAnimatorIKHandler Cysharp.Threading.Tasks.Triggers.AsyncAnimatorIKTrigger::GetOnAnimatorIKAsyncHandler()
+extern void AsyncAnimatorIKTrigger_GetOnAnimatorIKAsyncHandler_m4101EB6425B98841504FECEE8CB8CB764CCE8DA3 (void);
+// 0x000009E1 Cysharp.Threading.Tasks.Triggers.IAsyncOnAnimatorIKHandler Cysharp.Threading.Tasks.Triggers.AsyncAnimatorIKTrigger::GetOnAnimatorIKAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncAnimatorIKTrigger_GetOnAnimatorIKAsyncHandler_m7115604BA4FBD6F2F250E0B895780C4F69EB83C5 (void);
+// 0x000009E2 Cysharp.Threading.Tasks.UniTask`1<System.Int32> Cysharp.Threading.Tasks.Triggers.AsyncAnimatorIKTrigger::OnAnimatorIKAsync()
+extern void AsyncAnimatorIKTrigger_OnAnimatorIKAsync_m6537E9A3E4D35502AC4FF407C134040C03713425 (void);
+// 0x000009E3 Cysharp.Threading.Tasks.UniTask`1<System.Int32> Cysharp.Threading.Tasks.Triggers.AsyncAnimatorIKTrigger::OnAnimatorIKAsync(System.Threading.CancellationToken)
+extern void AsyncAnimatorIKTrigger_OnAnimatorIKAsync_mCF26414C4D2FE79D00DED9FE9522C46764A158BF (void);
+// 0x000009E4 System.Void Cysharp.Threading.Tasks.Triggers.AsyncAnimatorIKTrigger::.ctor()
+extern void AsyncAnimatorIKTrigger__ctor_m1B63E1A5CBDB3267EBD90F7979B1070FA903541D (void);
+// 0x000009E5 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnAnimatorMoveHandler::OnAnimatorMoveAsync()
+// 0x000009E6 System.Void Cysharp.Threading.Tasks.Triggers.AsyncAnimatorMoveTrigger::OnAnimatorMove()
+extern void AsyncAnimatorMoveTrigger_OnAnimatorMove_mBA6C81A5C56A10695B4481B945BB64D8872C38B4 (void);
+// 0x000009E7 Cysharp.Threading.Tasks.Triggers.IAsyncOnAnimatorMoveHandler Cysharp.Threading.Tasks.Triggers.AsyncAnimatorMoveTrigger::GetOnAnimatorMoveAsyncHandler()
+extern void AsyncAnimatorMoveTrigger_GetOnAnimatorMoveAsyncHandler_m22F8BFBAC4C044ECF0E88D016C2E9CED34D1851D (void);
+// 0x000009E8 Cysharp.Threading.Tasks.Triggers.IAsyncOnAnimatorMoveHandler Cysharp.Threading.Tasks.Triggers.AsyncAnimatorMoveTrigger::GetOnAnimatorMoveAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncAnimatorMoveTrigger_GetOnAnimatorMoveAsyncHandler_m9305424D878CEE3DB6D7B2381E1071451C3F7713 (void);
+// 0x000009E9 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncAnimatorMoveTrigger::OnAnimatorMoveAsync()
+extern void AsyncAnimatorMoveTrigger_OnAnimatorMoveAsync_m41A7B0AF73557A1173C57608FE397604FAEAD7D7 (void);
+// 0x000009EA Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncAnimatorMoveTrigger::OnAnimatorMoveAsync(System.Threading.CancellationToken)
+extern void AsyncAnimatorMoveTrigger_OnAnimatorMoveAsync_m9F87CA88EF991EED8B8337CAB7CE81D3EF5014F0 (void);
+// 0x000009EB System.Void Cysharp.Threading.Tasks.Triggers.AsyncAnimatorMoveTrigger::.ctor()
+extern void AsyncAnimatorMoveTrigger__ctor_mBF01F13DAC18B4ABE22CE693D0B3B8EF1F60B380 (void);
+// 0x000009EC Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationFocusHandler::OnApplicationFocusAsync()
+// 0x000009ED System.Void Cysharp.Threading.Tasks.Triggers.AsyncApplicationFocusTrigger::OnApplicationFocus(System.Boolean)
+extern void AsyncApplicationFocusTrigger_OnApplicationFocus_mEAA684300913CF9F1C5D32A6504D8E76A847D054 (void);
+// 0x000009EE Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationFocusHandler Cysharp.Threading.Tasks.Triggers.AsyncApplicationFocusTrigger::GetOnApplicationFocusAsyncHandler()
+extern void AsyncApplicationFocusTrigger_GetOnApplicationFocusAsyncHandler_m793FFF9249D44EC1F3C1112A8015C911FD2A533A (void);
+// 0x000009EF Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationFocusHandler Cysharp.Threading.Tasks.Triggers.AsyncApplicationFocusTrigger::GetOnApplicationFocusAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncApplicationFocusTrigger_GetOnApplicationFocusAsyncHandler_mC13600F0A2E02097EDE223C31152BCF9BD3E3E20 (void);
+// 0x000009F0 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.AsyncApplicationFocusTrigger::OnApplicationFocusAsync()
+extern void AsyncApplicationFocusTrigger_OnApplicationFocusAsync_m98C9F34D23B0D2CA3F35EF201D6AF2939492DD35 (void);
+// 0x000009F1 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.AsyncApplicationFocusTrigger::OnApplicationFocusAsync(System.Threading.CancellationToken)
+extern void AsyncApplicationFocusTrigger_OnApplicationFocusAsync_m3A0B444A40E6BCE3A45CA93F9E149A6A624B6E2F (void);
+// 0x000009F2 System.Void Cysharp.Threading.Tasks.Triggers.AsyncApplicationFocusTrigger::.ctor()
+extern void AsyncApplicationFocusTrigger__ctor_m56399C6629DBB6218C1DD53C6E79506EECC31C70 (void);
+// 0x000009F3 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationPauseHandler::OnApplicationPauseAsync()
+// 0x000009F4 System.Void Cysharp.Threading.Tasks.Triggers.AsyncApplicationPauseTrigger::OnApplicationPause(System.Boolean)
+extern void AsyncApplicationPauseTrigger_OnApplicationPause_m0E27E49834F357B643DCCB470514079E80AA985F (void);
+// 0x000009F5 Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationPauseHandler Cysharp.Threading.Tasks.Triggers.AsyncApplicationPauseTrigger::GetOnApplicationPauseAsyncHandler()
+extern void AsyncApplicationPauseTrigger_GetOnApplicationPauseAsyncHandler_m1E8430BBA86DE783F1FB748AAFFF31E8CA2AEB6A (void);
+// 0x000009F6 Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationPauseHandler Cysharp.Threading.Tasks.Triggers.AsyncApplicationPauseTrigger::GetOnApplicationPauseAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncApplicationPauseTrigger_GetOnApplicationPauseAsyncHandler_m1D042739988163B8E313E4E51C3EFE4DF6778484 (void);
+// 0x000009F7 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.AsyncApplicationPauseTrigger::OnApplicationPauseAsync()
+extern void AsyncApplicationPauseTrigger_OnApplicationPauseAsync_m654318E90645304D0520F0EE392974DFAFD2214F (void);
+// 0x000009F8 Cysharp.Threading.Tasks.UniTask`1<System.Boolean> Cysharp.Threading.Tasks.Triggers.AsyncApplicationPauseTrigger::OnApplicationPauseAsync(System.Threading.CancellationToken)
+extern void AsyncApplicationPauseTrigger_OnApplicationPauseAsync_m4AB59F5883BFD7BBD1FA4F9A1CAE7730E5F6607C (void);
+// 0x000009F9 System.Void Cysharp.Threading.Tasks.Triggers.AsyncApplicationPauseTrigger::.ctor()
+extern void AsyncApplicationPauseTrigger__ctor_m537FFBFCAF1794AE3EE4A6B4F5FEE15B90776DB3 (void);
+// 0x000009FA Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationQuitHandler::OnApplicationQuitAsync()
+// 0x000009FB System.Void Cysharp.Threading.Tasks.Triggers.AsyncApplicationQuitTrigger::OnApplicationQuit()
+extern void AsyncApplicationQuitTrigger_OnApplicationQuit_mA2548998DD2748EBA66904362DD74A44F7BC047B (void);
+// 0x000009FC Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationQuitHandler Cysharp.Threading.Tasks.Triggers.AsyncApplicationQuitTrigger::GetOnApplicationQuitAsyncHandler()
+extern void AsyncApplicationQuitTrigger_GetOnApplicationQuitAsyncHandler_m94C94CC41BC238A0FC0004CA30D1757ABBCA988C (void);
+// 0x000009FD Cysharp.Threading.Tasks.Triggers.IAsyncOnApplicationQuitHandler Cysharp.Threading.Tasks.Triggers.AsyncApplicationQuitTrigger::GetOnApplicationQuitAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncApplicationQuitTrigger_GetOnApplicationQuitAsyncHandler_mBB3126503B25EFAF3B1BD7431D9A895A3CE0ADAA (void);
+// 0x000009FE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncApplicationQuitTrigger::OnApplicationQuitAsync()
+extern void AsyncApplicationQuitTrigger_OnApplicationQuitAsync_mA574A29DCA41E38FF455F3ABDC0DA4ADB32031AA (void);
+// 0x000009FF Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncApplicationQuitTrigger::OnApplicationQuitAsync(System.Threading.CancellationToken)
+extern void AsyncApplicationQuitTrigger_OnApplicationQuitAsync_mBAF1DC0DF0BB9F334FF52F4B454CA8CE63D705D1 (void);
+// 0x00000A00 System.Void Cysharp.Threading.Tasks.Triggers.AsyncApplicationQuitTrigger::.ctor()
+extern void AsyncApplicationQuitTrigger__ctor_mAB3AA2971E4F1AC0F498BB36991B4BC89DFDAAC3 (void);
+// 0x00000A01 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Single[],System.Int32>> Cysharp.Threading.Tasks.Triggers.IAsyncOnAudioFilterReadHandler::OnAudioFilterReadAsync()
+// 0x00000A02 System.Void Cysharp.Threading.Tasks.Triggers.AsyncAudioFilterReadTrigger::OnAudioFilterRead(System.Single[],System.Int32)
+extern void AsyncAudioFilterReadTrigger_OnAudioFilterRead_mEE6E70D75AA076C52394DC62BA2D52DBEA800F46 (void);
+// 0x00000A03 Cysharp.Threading.Tasks.Triggers.IAsyncOnAudioFilterReadHandler Cysharp.Threading.Tasks.Triggers.AsyncAudioFilterReadTrigger::GetOnAudioFilterReadAsyncHandler()
+extern void AsyncAudioFilterReadTrigger_GetOnAudioFilterReadAsyncHandler_mCBE6ECB315423D811983CEA1429EC91FE0183BD0 (void);
+// 0x00000A04 Cysharp.Threading.Tasks.Triggers.IAsyncOnAudioFilterReadHandler Cysharp.Threading.Tasks.Triggers.AsyncAudioFilterReadTrigger::GetOnAudioFilterReadAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncAudioFilterReadTrigger_GetOnAudioFilterReadAsyncHandler_m874FD21CF399F59ACB9D926C78BAFF33C55AE91A (void);
+// 0x00000A05 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Single[],System.Int32>> Cysharp.Threading.Tasks.Triggers.AsyncAudioFilterReadTrigger::OnAudioFilterReadAsync()
+extern void AsyncAudioFilterReadTrigger_OnAudioFilterReadAsync_m7395B4A1AA7F8B4F69AC49A9105780F673A4E7A5 (void);
+// 0x00000A06 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<System.Single[],System.Int32>> Cysharp.Threading.Tasks.Triggers.AsyncAudioFilterReadTrigger::OnAudioFilterReadAsync(System.Threading.CancellationToken)
+extern void AsyncAudioFilterReadTrigger_OnAudioFilterReadAsync_m3245EF3204F44449CFD8A46957BB18921D90576B (void);
+// 0x00000A07 System.Void Cysharp.Threading.Tasks.Triggers.AsyncAudioFilterReadTrigger::.ctor()
+extern void AsyncAudioFilterReadTrigger__ctor_mE79734E5B64F8E8C293E7846D05802983437C849 (void);
+// 0x00000A08 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnBecameInvisibleHandler::OnBecameInvisibleAsync()
+// 0x00000A09 System.Void Cysharp.Threading.Tasks.Triggers.AsyncBecameInvisibleTrigger::OnBecameInvisible()
+extern void AsyncBecameInvisibleTrigger_OnBecameInvisible_m77D5B938F2A9CAEF0487C46CC7FF61EA8A59DBCA (void);
+// 0x00000A0A Cysharp.Threading.Tasks.Triggers.IAsyncOnBecameInvisibleHandler Cysharp.Threading.Tasks.Triggers.AsyncBecameInvisibleTrigger::GetOnBecameInvisibleAsyncHandler()
+extern void AsyncBecameInvisibleTrigger_GetOnBecameInvisibleAsyncHandler_mF9098EA8CAC854198EF0CFE65903A28AAF308049 (void);
+// 0x00000A0B Cysharp.Threading.Tasks.Triggers.IAsyncOnBecameInvisibleHandler Cysharp.Threading.Tasks.Triggers.AsyncBecameInvisibleTrigger::GetOnBecameInvisibleAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncBecameInvisibleTrigger_GetOnBecameInvisibleAsyncHandler_m7B35A1825361105BEF7DBC2277192CC197A51266 (void);
+// 0x00000A0C Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncBecameInvisibleTrigger::OnBecameInvisibleAsync()
+extern void AsyncBecameInvisibleTrigger_OnBecameInvisibleAsync_m751BBA1D3287C5F3A6E3B63139B7CB17F03CF501 (void);
+// 0x00000A0D Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncBecameInvisibleTrigger::OnBecameInvisibleAsync(System.Threading.CancellationToken)
+extern void AsyncBecameInvisibleTrigger_OnBecameInvisibleAsync_m67E44297887780FABB45AA245559ED41831B5E5F (void);
+// 0x00000A0E System.Void Cysharp.Threading.Tasks.Triggers.AsyncBecameInvisibleTrigger::.ctor()
+extern void AsyncBecameInvisibleTrigger__ctor_m1A90CFB1E58FADF3A9E59E917853B6B68489B6EA (void);
+// 0x00000A0F Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnBecameVisibleHandler::OnBecameVisibleAsync()
+// 0x00000A10 System.Void Cysharp.Threading.Tasks.Triggers.AsyncBecameVisibleTrigger::OnBecameVisible()
+extern void AsyncBecameVisibleTrigger_OnBecameVisible_m39B4D78730D757FC1D75C1C52644CC70941FB7DA (void);
+// 0x00000A11 Cysharp.Threading.Tasks.Triggers.IAsyncOnBecameVisibleHandler Cysharp.Threading.Tasks.Triggers.AsyncBecameVisibleTrigger::GetOnBecameVisibleAsyncHandler()
+extern void AsyncBecameVisibleTrigger_GetOnBecameVisibleAsyncHandler_mFA03783E5988CE433AB87B45F7E0D57CEAC057B0 (void);
+// 0x00000A12 Cysharp.Threading.Tasks.Triggers.IAsyncOnBecameVisibleHandler Cysharp.Threading.Tasks.Triggers.AsyncBecameVisibleTrigger::GetOnBecameVisibleAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncBecameVisibleTrigger_GetOnBecameVisibleAsyncHandler_mC262B84DAABA5688D3294B12CDBCD1B75CCE9ABE (void);
+// 0x00000A13 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncBecameVisibleTrigger::OnBecameVisibleAsync()
+extern void AsyncBecameVisibleTrigger_OnBecameVisibleAsync_m0D25209BEEA861B7E2222C2C19C29B26D9D99ADE (void);
+// 0x00000A14 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncBecameVisibleTrigger::OnBecameVisibleAsync(System.Threading.CancellationToken)
+extern void AsyncBecameVisibleTrigger_OnBecameVisibleAsync_m026198068FA68BF75268F4F9C7571AEA96E52F91 (void);
+// 0x00000A15 System.Void Cysharp.Threading.Tasks.Triggers.AsyncBecameVisibleTrigger::.ctor()
+extern void AsyncBecameVisibleTrigger__ctor_mDE949643FE2B5C8648944869AF20C5DDF4CA6ACD (void);
+// 0x00000A16 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnBeforeTransformParentChangedHandler::OnBeforeTransformParentChangedAsync()
+// 0x00000A17 System.Void Cysharp.Threading.Tasks.Triggers.AsyncBeforeTransformParentChangedTrigger::OnBeforeTransformParentChanged()
+extern void AsyncBeforeTransformParentChangedTrigger_OnBeforeTransformParentChanged_m942FD6A248C0927849A612B3B9D58CACCB438639 (void);
+// 0x00000A18 Cysharp.Threading.Tasks.Triggers.IAsyncOnBeforeTransformParentChangedHandler Cysharp.Threading.Tasks.Triggers.AsyncBeforeTransformParentChangedTrigger::GetOnBeforeTransformParentChangedAsyncHandler()
+extern void AsyncBeforeTransformParentChangedTrigger_GetOnBeforeTransformParentChangedAsyncHandler_m7E1FA6B2D412FFD8F344ADCEA07A43BA96DA1DB5 (void);
+// 0x00000A19 Cysharp.Threading.Tasks.Triggers.IAsyncOnBeforeTransformParentChangedHandler Cysharp.Threading.Tasks.Triggers.AsyncBeforeTransformParentChangedTrigger::GetOnBeforeTransformParentChangedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncBeforeTransformParentChangedTrigger_GetOnBeforeTransformParentChangedAsyncHandler_m0FDD80932B47559427028463EE203CA404A374C5 (void);
+// 0x00000A1A Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncBeforeTransformParentChangedTrigger::OnBeforeTransformParentChangedAsync()
+extern void AsyncBeforeTransformParentChangedTrigger_OnBeforeTransformParentChangedAsync_m20B316BD908DA444566B5F5762FC6E973E6D45DC (void);
+// 0x00000A1B Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncBeforeTransformParentChangedTrigger::OnBeforeTransformParentChangedAsync(System.Threading.CancellationToken)
+extern void AsyncBeforeTransformParentChangedTrigger_OnBeforeTransformParentChangedAsync_mA39BE8BAFB0B77072BB69C4BEE775913058FAF64 (void);
+// 0x00000A1C System.Void Cysharp.Threading.Tasks.Triggers.AsyncBeforeTransformParentChangedTrigger::.ctor()
+extern void AsyncBeforeTransformParentChangedTrigger__ctor_m595EB1C1D5EDF1BCD5579E1A39A52B7C212A6B91 (void);
+// 0x00000A1D Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnCanvasGroupChangedHandler::OnCanvasGroupChangedAsync()
+// 0x00000A1E System.Void Cysharp.Threading.Tasks.Triggers.AsyncOnCanvasGroupChangedTrigger::OnCanvasGroupChanged()
+extern void AsyncOnCanvasGroupChangedTrigger_OnCanvasGroupChanged_m5E5AA51E0A79586D22BC53978B422B60C29F4CF9 (void);
+// 0x00000A1F Cysharp.Threading.Tasks.Triggers.IAsyncOnCanvasGroupChangedHandler Cysharp.Threading.Tasks.Triggers.AsyncOnCanvasGroupChangedTrigger::GetOnCanvasGroupChangedAsyncHandler()
+extern void AsyncOnCanvasGroupChangedTrigger_GetOnCanvasGroupChangedAsyncHandler_m253EF25FCC5505D9120B711BA05B3E7F966E2110 (void);
+// 0x00000A20 Cysharp.Threading.Tasks.Triggers.IAsyncOnCanvasGroupChangedHandler Cysharp.Threading.Tasks.Triggers.AsyncOnCanvasGroupChangedTrigger::GetOnCanvasGroupChangedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncOnCanvasGroupChangedTrigger_GetOnCanvasGroupChangedAsyncHandler_m86882E8DE4E19CE03EBE1FB58D21CD524F5A22CF (void);
+// 0x00000A21 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncOnCanvasGroupChangedTrigger::OnCanvasGroupChangedAsync()
+extern void AsyncOnCanvasGroupChangedTrigger_OnCanvasGroupChangedAsync_mE0612E5A7386D353E12BA7EEB487FC2F3395B984 (void);
+// 0x00000A22 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncOnCanvasGroupChangedTrigger::OnCanvasGroupChangedAsync(System.Threading.CancellationToken)
+extern void AsyncOnCanvasGroupChangedTrigger_OnCanvasGroupChangedAsync_m6735815EAA4A4DCA91A893DE72AF1BA9F89E578A (void);
+// 0x00000A23 System.Void Cysharp.Threading.Tasks.Triggers.AsyncOnCanvasGroupChangedTrigger::.ctor()
+extern void AsyncOnCanvasGroupChangedTrigger__ctor_m11E656E5FE00E33305782C5E06E1E57CD207015E (void);
+// 0x00000A24 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionEnterHandler::OnCollisionEnterAsync()
+// 0x00000A25 System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnterTrigger::OnCollisionEnter(UnityEngine.Collision)
+extern void AsyncCollisionEnterTrigger_OnCollisionEnter_mC90290A1150995FB6D95E50AB4ABB6B7F52D719C (void);
+// 0x00000A26 Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionEnterHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnterTrigger::GetOnCollisionEnterAsyncHandler()
+extern void AsyncCollisionEnterTrigger_GetOnCollisionEnterAsyncHandler_m247C45C5942DB8A12C63564F051EC8AD078308B4 (void);
+// 0x00000A27 Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionEnterHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnterTrigger::GetOnCollisionEnterAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncCollisionEnterTrigger_GetOnCollisionEnterAsyncHandler_m4EF839F8F2C3607541B05E3F9848E0EB55C84F0B (void);
+// 0x00000A28 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnterTrigger::OnCollisionEnterAsync()
+extern void AsyncCollisionEnterTrigger_OnCollisionEnterAsync_m741C3CD52C0B86EF4E1DB3C0EC396BA8935C7C75 (void);
+// 0x00000A29 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnterTrigger::OnCollisionEnterAsync(System.Threading.CancellationToken)
+extern void AsyncCollisionEnterTrigger_OnCollisionEnterAsync_m42619646397F338CF53BAD8BB6518E09C83E535A (void);
+// 0x00000A2A System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnterTrigger::.ctor()
+extern void AsyncCollisionEnterTrigger__ctor_mAAB0AA09DB91E5B8EB3AD84B236D5FD49987E3E2 (void);
+// 0x00000A2B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionEnter2DHandler::OnCollisionEnter2DAsync()
+// 0x00000A2C System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnter2DTrigger::OnCollisionEnter2D(UnityEngine.Collision2D)
+extern void AsyncCollisionEnter2DTrigger_OnCollisionEnter2D_m3E85B55BF8C72C63A0202D62724484CB3FF631CE (void);
+// 0x00000A2D Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionEnter2DHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnter2DTrigger::GetOnCollisionEnter2DAsyncHandler()
+extern void AsyncCollisionEnter2DTrigger_GetOnCollisionEnter2DAsyncHandler_m067D70D1CFB3EF5298D3E83D225F26C7EFFE0EED (void);
+// 0x00000A2E Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionEnter2DHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnter2DTrigger::GetOnCollisionEnter2DAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncCollisionEnter2DTrigger_GetOnCollisionEnter2DAsyncHandler_m20E0140CE385B90D078E99E6D5E86F379E428B6C (void);
+// 0x00000A2F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnter2DTrigger::OnCollisionEnter2DAsync()
+extern void AsyncCollisionEnter2DTrigger_OnCollisionEnter2DAsync_m3D9DDA2184719C8C03A500AE27EE19B58032549A (void);
+// 0x00000A30 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnter2DTrigger::OnCollisionEnter2DAsync(System.Threading.CancellationToken)
+extern void AsyncCollisionEnter2DTrigger_OnCollisionEnter2DAsync_m2146E39FE5E0A2614BED849635D567F8AF8CB248 (void);
+// 0x00000A31 System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionEnter2DTrigger::.ctor()
+extern void AsyncCollisionEnter2DTrigger__ctor_m13FEAC1E66AC89B539761206D5A7916823136415 (void);
+// 0x00000A32 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionExitHandler::OnCollisionExitAsync()
+// 0x00000A33 System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionExitTrigger::OnCollisionExit(UnityEngine.Collision)
+extern void AsyncCollisionExitTrigger_OnCollisionExit_m97EC4F1E0B393C79995209073ACD9A091E60781B (void);
+// 0x00000A34 Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionExitHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionExitTrigger::GetOnCollisionExitAsyncHandler()
+extern void AsyncCollisionExitTrigger_GetOnCollisionExitAsyncHandler_m8186D12CFB44F748C65208825A3FA261DB66C253 (void);
+// 0x00000A35 Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionExitHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionExitTrigger::GetOnCollisionExitAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncCollisionExitTrigger_GetOnCollisionExitAsyncHandler_m7C3EF37619A4431570D6C78ABC46749A167ECA99 (void);
+// 0x00000A36 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncCollisionExitTrigger::OnCollisionExitAsync()
+extern void AsyncCollisionExitTrigger_OnCollisionExitAsync_mCDD9563AEE1F5FC9EC72640C023DE1AB33533D6B (void);
+// 0x00000A37 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncCollisionExitTrigger::OnCollisionExitAsync(System.Threading.CancellationToken)
+extern void AsyncCollisionExitTrigger_OnCollisionExitAsync_mA3937BEE0AA24AF4630DB6972BD4D2FFA57530C2 (void);
+// 0x00000A38 System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionExitTrigger::.ctor()
+extern void AsyncCollisionExitTrigger__ctor_m97AE8C6FD5376D4F213B5D4632D2E35BDB0A9224 (void);
+// 0x00000A39 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionExit2DHandler::OnCollisionExit2DAsync()
+// 0x00000A3A System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionExit2DTrigger::OnCollisionExit2D(UnityEngine.Collision2D)
+extern void AsyncCollisionExit2DTrigger_OnCollisionExit2D_m144153AF5996E1F82BEF1FC16B45CC3754DDA0EF (void);
+// 0x00000A3B Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionExit2DHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionExit2DTrigger::GetOnCollisionExit2DAsyncHandler()
+extern void AsyncCollisionExit2DTrigger_GetOnCollisionExit2DAsyncHandler_mA76718CBFB6194D5D8F297BE027D5FBC9612B427 (void);
+// 0x00000A3C Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionExit2DHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionExit2DTrigger::GetOnCollisionExit2DAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncCollisionExit2DTrigger_GetOnCollisionExit2DAsyncHandler_m74907EB9D54FB94FC016C8D98D09BC45E96AAF37 (void);
+// 0x00000A3D Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncCollisionExit2DTrigger::OnCollisionExit2DAsync()
+extern void AsyncCollisionExit2DTrigger_OnCollisionExit2DAsync_m36442794A71DDD50892B524BE15CBA351CE0285F (void);
+// 0x00000A3E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncCollisionExit2DTrigger::OnCollisionExit2DAsync(System.Threading.CancellationToken)
+extern void AsyncCollisionExit2DTrigger_OnCollisionExit2DAsync_m65FB90CFCCA3C5B55B9653F1734EF15E5B0442DB (void);
+// 0x00000A3F System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionExit2DTrigger::.ctor()
+extern void AsyncCollisionExit2DTrigger__ctor_m17D198C09FE6D957B2CA49752ABA20D6CBF1FDC1 (void);
+// 0x00000A40 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionStayHandler::OnCollisionStayAsync()
+// 0x00000A41 System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionStayTrigger::OnCollisionStay(UnityEngine.Collision)
+extern void AsyncCollisionStayTrigger_OnCollisionStay_mF1B9365D81D464CC568094771EC2F75F5C9EAAFB (void);
+// 0x00000A42 Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionStayHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionStayTrigger::GetOnCollisionStayAsyncHandler()
+extern void AsyncCollisionStayTrigger_GetOnCollisionStayAsyncHandler_m0741AA483305011B34A7B387581463F9ECB06F03 (void);
+// 0x00000A43 Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionStayHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionStayTrigger::GetOnCollisionStayAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncCollisionStayTrigger_GetOnCollisionStayAsyncHandler_mA9D6F085925A1E54FBBF4E67035169CCBE7D3ECC (void);
+// 0x00000A44 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncCollisionStayTrigger::OnCollisionStayAsync()
+extern void AsyncCollisionStayTrigger_OnCollisionStayAsync_m4BC9AADF0B2E3378DFD82378C4CDB2EDDE406ABA (void);
+// 0x00000A45 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision> Cysharp.Threading.Tasks.Triggers.AsyncCollisionStayTrigger::OnCollisionStayAsync(System.Threading.CancellationToken)
+extern void AsyncCollisionStayTrigger_OnCollisionStayAsync_m5AEE2CF8B95F133E9C60BE2CC1B36BDCF767CBB9 (void);
+// 0x00000A46 System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionStayTrigger::.ctor()
+extern void AsyncCollisionStayTrigger__ctor_mD8947EFFDD3E218ABF2699AB5E988E88AD178FF5 (void);
+// 0x00000A47 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionStay2DHandler::OnCollisionStay2DAsync()
+// 0x00000A48 System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionStay2DTrigger::OnCollisionStay2D(UnityEngine.Collision2D)
+extern void AsyncCollisionStay2DTrigger_OnCollisionStay2D_m6D15572002ADFFFE16609BA6DD079BBBB7790528 (void);
+// 0x00000A49 Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionStay2DHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionStay2DTrigger::GetOnCollisionStay2DAsyncHandler()
+extern void AsyncCollisionStay2DTrigger_GetOnCollisionStay2DAsyncHandler_m3B12C82B8B157C5D8DB00637D8EA3090EFE82019 (void);
+// 0x00000A4A Cysharp.Threading.Tasks.Triggers.IAsyncOnCollisionStay2DHandler Cysharp.Threading.Tasks.Triggers.AsyncCollisionStay2DTrigger::GetOnCollisionStay2DAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncCollisionStay2DTrigger_GetOnCollisionStay2DAsyncHandler_m7CE1B531488691AA819C0521DB49753BD15D76E0 (void);
+// 0x00000A4B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncCollisionStay2DTrigger::OnCollisionStay2DAsync()
+extern void AsyncCollisionStay2DTrigger_OnCollisionStay2DAsync_mC8C964A3BA9F5DDBD9FAF1C9694B804A590ABE27 (void);
+// 0x00000A4C Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collision2D> Cysharp.Threading.Tasks.Triggers.AsyncCollisionStay2DTrigger::OnCollisionStay2DAsync(System.Threading.CancellationToken)
+extern void AsyncCollisionStay2DTrigger_OnCollisionStay2DAsync_m7815ABF102448305DC42A8510DC8264CFEA60156 (void);
+// 0x00000A4D System.Void Cysharp.Threading.Tasks.Triggers.AsyncCollisionStay2DTrigger::.ctor()
+extern void AsyncCollisionStay2DTrigger__ctor_mD1982A72AF07E99DD6AEF257961027DA768B3815 (void);
+// 0x00000A4E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.ControllerColliderHit> Cysharp.Threading.Tasks.Triggers.IAsyncOnControllerColliderHitHandler::OnControllerColliderHitAsync()
+// 0x00000A4F System.Void Cysharp.Threading.Tasks.Triggers.AsyncControllerColliderHitTrigger::OnControllerColliderHit(UnityEngine.ControllerColliderHit)
+extern void AsyncControllerColliderHitTrigger_OnControllerColliderHit_mCF1DCD15C9B4EA74064F10AE8E1FA624CE2AD37D (void);
+// 0x00000A50 Cysharp.Threading.Tasks.Triggers.IAsyncOnControllerColliderHitHandler Cysharp.Threading.Tasks.Triggers.AsyncControllerColliderHitTrigger::GetOnControllerColliderHitAsyncHandler()
+extern void AsyncControllerColliderHitTrigger_GetOnControllerColliderHitAsyncHandler_m378F060116622AD37BD08CA3198556CD781712EF (void);
+// 0x00000A51 Cysharp.Threading.Tasks.Triggers.IAsyncOnControllerColliderHitHandler Cysharp.Threading.Tasks.Triggers.AsyncControllerColliderHitTrigger::GetOnControllerColliderHitAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncControllerColliderHitTrigger_GetOnControllerColliderHitAsyncHandler_m39873EC5A5480262CEC387C010232D683CE14D1B (void);
+// 0x00000A52 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.ControllerColliderHit> Cysharp.Threading.Tasks.Triggers.AsyncControllerColliderHitTrigger::OnControllerColliderHitAsync()
+extern void AsyncControllerColliderHitTrigger_OnControllerColliderHitAsync_mC09AC7E1BE67B026FEBB3ACEAEA86270871712C4 (void);
+// 0x00000A53 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.ControllerColliderHit> Cysharp.Threading.Tasks.Triggers.AsyncControllerColliderHitTrigger::OnControllerColliderHitAsync(System.Threading.CancellationToken)
+extern void AsyncControllerColliderHitTrigger_OnControllerColliderHitAsync_m1942830ECFEF930FDB87F0841C46F0E5EC002725 (void);
+// 0x00000A54 System.Void Cysharp.Threading.Tasks.Triggers.AsyncControllerColliderHitTrigger::.ctor()
+extern void AsyncControllerColliderHitTrigger__ctor_mFF59DB3B7D54032EBCDF102E92EC971696BD44EF (void);
+// 0x00000A55 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnDisableHandler::OnDisableAsync()
+// 0x00000A56 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDisableTrigger::OnDisable()
+extern void AsyncDisableTrigger_OnDisable_m94534C41131C1669F1426602DA337AA238896EFE (void);
+// 0x00000A57 Cysharp.Threading.Tasks.Triggers.IAsyncOnDisableHandler Cysharp.Threading.Tasks.Triggers.AsyncDisableTrigger::GetOnDisableAsyncHandler()
+extern void AsyncDisableTrigger_GetOnDisableAsyncHandler_m794E325B17DA7DA1FF1A7CAD87B70E30D3077E49 (void);
+// 0x00000A58 Cysharp.Threading.Tasks.Triggers.IAsyncOnDisableHandler Cysharp.Threading.Tasks.Triggers.AsyncDisableTrigger::GetOnDisableAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncDisableTrigger_GetOnDisableAsyncHandler_mC3877B53EB7F03676209A3E4CCC4B4E97D1498A0 (void);
+// 0x00000A59 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncDisableTrigger::OnDisableAsync()
+extern void AsyncDisableTrigger_OnDisableAsync_mFA82D467093DFAC6B62B99ABD57E0574FC6886E0 (void);
+// 0x00000A5A Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncDisableTrigger::OnDisableAsync(System.Threading.CancellationToken)
+extern void AsyncDisableTrigger_OnDisableAsync_m91BA82DDCEDA62211BA3DFE33301196CEB040A68 (void);
+// 0x00000A5B System.Void Cysharp.Threading.Tasks.Triggers.AsyncDisableTrigger::.ctor()
+extern void AsyncDisableTrigger__ctor_mFB504DA992CF40D2552F35FBE01F948B68F756F0 (void);
+// 0x00000A5C Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnDrawGizmosHandler::OnDrawGizmosAsync()
+// 0x00000A5D System.Void Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosTrigger::OnDrawGizmos()
+extern void AsyncDrawGizmosTrigger_OnDrawGizmos_m9EB22D9F78522D9068B32A20A113EB14DF9C36DD (void);
+// 0x00000A5E Cysharp.Threading.Tasks.Triggers.IAsyncOnDrawGizmosHandler Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosTrigger::GetOnDrawGizmosAsyncHandler()
+extern void AsyncDrawGizmosTrigger_GetOnDrawGizmosAsyncHandler_m63D2B35D915532D716701BA49FB0226B94DAC646 (void);
+// 0x00000A5F Cysharp.Threading.Tasks.Triggers.IAsyncOnDrawGizmosHandler Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosTrigger::GetOnDrawGizmosAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncDrawGizmosTrigger_GetOnDrawGizmosAsyncHandler_m9413AA7E3EBD18D3518AAD2DDB9BE015CE92229C (void);
+// 0x00000A60 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosTrigger::OnDrawGizmosAsync()
+extern void AsyncDrawGizmosTrigger_OnDrawGizmosAsync_m995EC266C7D1015C514059494BE85CBEDA5B620C (void);
+// 0x00000A61 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosTrigger::OnDrawGizmosAsync(System.Threading.CancellationToken)
+extern void AsyncDrawGizmosTrigger_OnDrawGizmosAsync_mFD0BC0AB40B9D221979EE4581A48C18DE4EFA7CE (void);
+// 0x00000A62 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosTrigger::.ctor()
+extern void AsyncDrawGizmosTrigger__ctor_mD0FC881341E8CBA94B1041F048A1B68D3E6F816C (void);
+// 0x00000A63 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnDrawGizmosSelectedHandler::OnDrawGizmosSelectedAsync()
+// 0x00000A64 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosSelectedTrigger::OnDrawGizmosSelected()
+extern void AsyncDrawGizmosSelectedTrigger_OnDrawGizmosSelected_m4FB477B43EF05422CCD791ACF7A55EDECD4AA9B8 (void);
+// 0x00000A65 Cysharp.Threading.Tasks.Triggers.IAsyncOnDrawGizmosSelectedHandler Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosSelectedTrigger::GetOnDrawGizmosSelectedAsyncHandler()
+extern void AsyncDrawGizmosSelectedTrigger_GetOnDrawGizmosSelectedAsyncHandler_m45C986C8B39D54C6C9E7419B73B17164BBBC8C2E (void);
+// 0x00000A66 Cysharp.Threading.Tasks.Triggers.IAsyncOnDrawGizmosSelectedHandler Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosSelectedTrigger::GetOnDrawGizmosSelectedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncDrawGizmosSelectedTrigger_GetOnDrawGizmosSelectedAsyncHandler_m09F6EFC1D44144B50955D9E11FD76BD38AAD0352 (void);
+// 0x00000A67 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosSelectedTrigger::OnDrawGizmosSelectedAsync()
+extern void AsyncDrawGizmosSelectedTrigger_OnDrawGizmosSelectedAsync_mC6E55A356EFB75D71D1F4456B7801350B3F82604 (void);
+// 0x00000A68 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosSelectedTrigger::OnDrawGizmosSelectedAsync(System.Threading.CancellationToken)
+extern void AsyncDrawGizmosSelectedTrigger_OnDrawGizmosSelectedAsync_m5756ECE28154E97B36C22294646C49B6E5F9F4BC (void);
+// 0x00000A69 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDrawGizmosSelectedTrigger::.ctor()
+extern void AsyncDrawGizmosSelectedTrigger__ctor_mA0CD6BF6BB129C0A97496821BBF026E8DBA9E29C (void);
+// 0x00000A6A Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnEnableHandler::OnEnableAsync()
+// 0x00000A6B System.Void Cysharp.Threading.Tasks.Triggers.AsyncEnableTrigger::OnEnable()
+extern void AsyncEnableTrigger_OnEnable_m908E830B7C692EFE4B54B9C832A54E31607F986D (void);
+// 0x00000A6C Cysharp.Threading.Tasks.Triggers.IAsyncOnEnableHandler Cysharp.Threading.Tasks.Triggers.AsyncEnableTrigger::GetOnEnableAsyncHandler()
+extern void AsyncEnableTrigger_GetOnEnableAsyncHandler_mF61E39D0BF56E15BFA8BF8C27E7E2003F53BF5C0 (void);
+// 0x00000A6D Cysharp.Threading.Tasks.Triggers.IAsyncOnEnableHandler Cysharp.Threading.Tasks.Triggers.AsyncEnableTrigger::GetOnEnableAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncEnableTrigger_GetOnEnableAsyncHandler_m5B0348F73BA312A50881087B82AD79EFEB32E326 (void);
+// 0x00000A6E Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncEnableTrigger::OnEnableAsync()
+extern void AsyncEnableTrigger_OnEnableAsync_mBC631AE12F5E7AD6F8DEACF51268DD4BDDFFE402 (void);
+// 0x00000A6F Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncEnableTrigger::OnEnableAsync(System.Threading.CancellationToken)
+extern void AsyncEnableTrigger_OnEnableAsync_mD48C8ADF74405FD0CC02B01C12BFEE344DB6DEDC (void);
+// 0x00000A70 System.Void Cysharp.Threading.Tasks.Triggers.AsyncEnableTrigger::.ctor()
+extern void AsyncEnableTrigger__ctor_m0C149280874A22EC2196AB8620219809AB63C2A5 (void);
+// 0x00000A71 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnGUIHandler::OnGUIAsync()
+// 0x00000A72 System.Void Cysharp.Threading.Tasks.Triggers.AsyncGUITrigger::OnGUI()
+extern void AsyncGUITrigger_OnGUI_mC92580E78E76C2E8D426A17872B82FC1BC5C60C5 (void);
+// 0x00000A73 Cysharp.Threading.Tasks.Triggers.IAsyncOnGUIHandler Cysharp.Threading.Tasks.Triggers.AsyncGUITrigger::GetOnGUIAsyncHandler()
+extern void AsyncGUITrigger_GetOnGUIAsyncHandler_m6062771EF6E369735A64964B7DAFFFB7F4517440 (void);
+// 0x00000A74 Cysharp.Threading.Tasks.Triggers.IAsyncOnGUIHandler Cysharp.Threading.Tasks.Triggers.AsyncGUITrigger::GetOnGUIAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncGUITrigger_GetOnGUIAsyncHandler_mAA4F841E9AEAD1D79F46660FA9F8CFA65B3D6A23 (void);
+// 0x00000A75 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncGUITrigger::OnGUIAsync()
+extern void AsyncGUITrigger_OnGUIAsync_m7DA5A1A31E09F09AB38C601843BCF02F47064844 (void);
+// 0x00000A76 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncGUITrigger::OnGUIAsync(System.Threading.CancellationToken)
+extern void AsyncGUITrigger_OnGUIAsync_mA5894CD3F7E18CF46D69BE1EC7B9DCC9C729EE38 (void);
+// 0x00000A77 System.Void Cysharp.Threading.Tasks.Triggers.AsyncGUITrigger::.ctor()
+extern void AsyncGUITrigger__ctor_mBB359CF9E8B6DDA04A26620EA12AF31FC92B4897 (void);
+// 0x00000A78 Cysharp.Threading.Tasks.UniTask`1<System.Single> Cysharp.Threading.Tasks.Triggers.IAsyncOnJointBreakHandler::OnJointBreakAsync()
+// 0x00000A79 System.Void Cysharp.Threading.Tasks.Triggers.AsyncJointBreakTrigger::OnJointBreak(System.Single)
+extern void AsyncJointBreakTrigger_OnJointBreak_m9F0E2F76C2ADF9F4CDCDB02AD5A463EB768735F4 (void);
+// 0x00000A7A Cysharp.Threading.Tasks.Triggers.IAsyncOnJointBreakHandler Cysharp.Threading.Tasks.Triggers.AsyncJointBreakTrigger::GetOnJointBreakAsyncHandler()
+extern void AsyncJointBreakTrigger_GetOnJointBreakAsyncHandler_m4FE53D3C6C604311F08BB08A662A610B68998B10 (void);
+// 0x00000A7B Cysharp.Threading.Tasks.Triggers.IAsyncOnJointBreakHandler Cysharp.Threading.Tasks.Triggers.AsyncJointBreakTrigger::GetOnJointBreakAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncJointBreakTrigger_GetOnJointBreakAsyncHandler_m45DC4532B62A3A1D63423788546D6431E7735822 (void);
+// 0x00000A7C Cysharp.Threading.Tasks.UniTask`1<System.Single> Cysharp.Threading.Tasks.Triggers.AsyncJointBreakTrigger::OnJointBreakAsync()
+extern void AsyncJointBreakTrigger_OnJointBreakAsync_m009D08CB70D48911C64EB66EFDFF0F76BDDD76BB (void);
+// 0x00000A7D Cysharp.Threading.Tasks.UniTask`1<System.Single> Cysharp.Threading.Tasks.Triggers.AsyncJointBreakTrigger::OnJointBreakAsync(System.Threading.CancellationToken)
+extern void AsyncJointBreakTrigger_OnJointBreakAsync_m1A612A9FE46594C7DAD22A9B414DAD775DE79030 (void);
+// 0x00000A7E System.Void Cysharp.Threading.Tasks.Triggers.AsyncJointBreakTrigger::.ctor()
+extern void AsyncJointBreakTrigger__ctor_m0909A04E06E82056B2C1341186AE81DB9C39B6FE (void);
+// 0x00000A7F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Joint2D> Cysharp.Threading.Tasks.Triggers.IAsyncOnJointBreak2DHandler::OnJointBreak2DAsync()
+// 0x00000A80 System.Void Cysharp.Threading.Tasks.Triggers.AsyncJointBreak2DTrigger::OnJointBreak2D(UnityEngine.Joint2D)
+extern void AsyncJointBreak2DTrigger_OnJointBreak2D_m67D95AF80CC0BF148CF0F8BEF88F2D8E6A054CCD (void);
+// 0x00000A81 Cysharp.Threading.Tasks.Triggers.IAsyncOnJointBreak2DHandler Cysharp.Threading.Tasks.Triggers.AsyncJointBreak2DTrigger::GetOnJointBreak2DAsyncHandler()
+extern void AsyncJointBreak2DTrigger_GetOnJointBreak2DAsyncHandler_mA8052F3A35DDD34096E7717EDFB7995EC76A9C0E (void);
+// 0x00000A82 Cysharp.Threading.Tasks.Triggers.IAsyncOnJointBreak2DHandler Cysharp.Threading.Tasks.Triggers.AsyncJointBreak2DTrigger::GetOnJointBreak2DAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncJointBreak2DTrigger_GetOnJointBreak2DAsyncHandler_m44EF7F400E734AEA3F6D3A1A39D56660E2D6C702 (void);
+// 0x00000A83 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Joint2D> Cysharp.Threading.Tasks.Triggers.AsyncJointBreak2DTrigger::OnJointBreak2DAsync()
+extern void AsyncJointBreak2DTrigger_OnJointBreak2DAsync_mEBC2E12DB7B6E809EB4722CEEA53F0FD41A2C9EB (void);
+// 0x00000A84 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Joint2D> Cysharp.Threading.Tasks.Triggers.AsyncJointBreak2DTrigger::OnJointBreak2DAsync(System.Threading.CancellationToken)
+extern void AsyncJointBreak2DTrigger_OnJointBreak2DAsync_m6F7E688EC0FFFB5BBD1516D40259DEB9142EAB73 (void);
+// 0x00000A85 System.Void Cysharp.Threading.Tasks.Triggers.AsyncJointBreak2DTrigger::.ctor()
+extern void AsyncJointBreak2DTrigger__ctor_mF3D16096AFA1D3230787198561D692046D932544 (void);
+// 0x00000A86 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.GameObject> Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleCollisionHandler::OnParticleCollisionAsync()
+// 0x00000A87 System.Void Cysharp.Threading.Tasks.Triggers.AsyncParticleCollisionTrigger::OnParticleCollision(UnityEngine.GameObject)
+extern void AsyncParticleCollisionTrigger_OnParticleCollision_mAB88BF25AF4A07E16A30BB77F515A84916A67F41 (void);
+// 0x00000A88 Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleCollisionHandler Cysharp.Threading.Tasks.Triggers.AsyncParticleCollisionTrigger::GetOnParticleCollisionAsyncHandler()
+extern void AsyncParticleCollisionTrigger_GetOnParticleCollisionAsyncHandler_m3B2DC4C2A129E82A2562E054CBA4535529F77E65 (void);
+// 0x00000A89 Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleCollisionHandler Cysharp.Threading.Tasks.Triggers.AsyncParticleCollisionTrigger::GetOnParticleCollisionAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncParticleCollisionTrigger_GetOnParticleCollisionAsyncHandler_mD6AEC2E8160F2EA131EA13B4E3876D1EB6E1DE32 (void);
+// 0x00000A8A Cysharp.Threading.Tasks.UniTask`1<UnityEngine.GameObject> Cysharp.Threading.Tasks.Triggers.AsyncParticleCollisionTrigger::OnParticleCollisionAsync()
+extern void AsyncParticleCollisionTrigger_OnParticleCollisionAsync_m977ED1879F90F1F3312C9FA331C6D931D8DAF5B3 (void);
+// 0x00000A8B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.GameObject> Cysharp.Threading.Tasks.Triggers.AsyncParticleCollisionTrigger::OnParticleCollisionAsync(System.Threading.CancellationToken)
+extern void AsyncParticleCollisionTrigger_OnParticleCollisionAsync_mB4EE87AFCA7DE53A9430877ABA0B3B14E8F8552F (void);
+// 0x00000A8C System.Void Cysharp.Threading.Tasks.Triggers.AsyncParticleCollisionTrigger::.ctor()
+extern void AsyncParticleCollisionTrigger__ctor_m09D7736615C59A039C72CF98DDC64B0B633EB212 (void);
+// 0x00000A8D Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleSystemStoppedHandler::OnParticleSystemStoppedAsync()
+// 0x00000A8E System.Void Cysharp.Threading.Tasks.Triggers.AsyncParticleSystemStoppedTrigger::OnParticleSystemStopped()
+extern void AsyncParticleSystemStoppedTrigger_OnParticleSystemStopped_m1F15241D8C179E3D910BC60B303DD84C258D5078 (void);
+// 0x00000A8F Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleSystemStoppedHandler Cysharp.Threading.Tasks.Triggers.AsyncParticleSystemStoppedTrigger::GetOnParticleSystemStoppedAsyncHandler()
+extern void AsyncParticleSystemStoppedTrigger_GetOnParticleSystemStoppedAsyncHandler_m94B0E325DB6EA714418A87CB3C42F6B1071901FA (void);
+// 0x00000A90 Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleSystemStoppedHandler Cysharp.Threading.Tasks.Triggers.AsyncParticleSystemStoppedTrigger::GetOnParticleSystemStoppedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncParticleSystemStoppedTrigger_GetOnParticleSystemStoppedAsyncHandler_m9DCA68CB73F0DF57D66B67DC7BE5FEFB1BB0A442 (void);
+// 0x00000A91 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncParticleSystemStoppedTrigger::OnParticleSystemStoppedAsync()
+extern void AsyncParticleSystemStoppedTrigger_OnParticleSystemStoppedAsync_m06CF53CFA48C269D7F80A4BF7722350FC39F6BA3 (void);
+// 0x00000A92 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncParticleSystemStoppedTrigger::OnParticleSystemStoppedAsync(System.Threading.CancellationToken)
+extern void AsyncParticleSystemStoppedTrigger_OnParticleSystemStoppedAsync_mA461791DBBEF11CCD034DBBD8BD65BF4D35699FE (void);
+// 0x00000A93 System.Void Cysharp.Threading.Tasks.Triggers.AsyncParticleSystemStoppedTrigger::.ctor()
+extern void AsyncParticleSystemStoppedTrigger__ctor_m904E62BA6E4518A27C3A61763793F4A986687237 (void);
+// 0x00000A94 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleTriggerHandler::OnParticleTriggerAsync()
+// 0x00000A95 System.Void Cysharp.Threading.Tasks.Triggers.AsyncParticleTriggerTrigger::OnParticleTrigger()
+extern void AsyncParticleTriggerTrigger_OnParticleTrigger_mC208F719B283C4C88E5E3D0482002AECE60839A6 (void);
+// 0x00000A96 Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleTriggerHandler Cysharp.Threading.Tasks.Triggers.AsyncParticleTriggerTrigger::GetOnParticleTriggerAsyncHandler()
+extern void AsyncParticleTriggerTrigger_GetOnParticleTriggerAsyncHandler_m1B5E3D0C2ED8646A0DEA6157F5D23F8661D59868 (void);
+// 0x00000A97 Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleTriggerHandler Cysharp.Threading.Tasks.Triggers.AsyncParticleTriggerTrigger::GetOnParticleTriggerAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncParticleTriggerTrigger_GetOnParticleTriggerAsyncHandler_m9A51E8F1188B8BF257C24DE7FDE8E1C1E58F1DED (void);
+// 0x00000A98 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncParticleTriggerTrigger::OnParticleTriggerAsync()
+extern void AsyncParticleTriggerTrigger_OnParticleTriggerAsync_m47DD183AE5AAF8A99A00B2DE0CC2A586CF108EA3 (void);
+// 0x00000A99 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncParticleTriggerTrigger::OnParticleTriggerAsync(System.Threading.CancellationToken)
+extern void AsyncParticleTriggerTrigger_OnParticleTriggerAsync_m7046FA3D6B4C6515C363F5E9D47E96B85E6D6235 (void);
+// 0x00000A9A System.Void Cysharp.Threading.Tasks.Triggers.AsyncParticleTriggerTrigger::.ctor()
+extern void AsyncParticleTriggerTrigger__ctor_m8269A35ABC71140B7ED5723DE6B568474D057D59 (void);
+// 0x00000A9B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.ParticleSystemJobs.ParticleSystemJobData> Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleUpdateJobScheduledHandler::OnParticleUpdateJobScheduledAsync()
+// 0x00000A9C System.Void Cysharp.Threading.Tasks.Triggers.AsyncParticleUpdateJobScheduledTrigger::OnParticleUpdateJobScheduled(UnityEngine.ParticleSystemJobs.ParticleSystemJobData)
+extern void AsyncParticleUpdateJobScheduledTrigger_OnParticleUpdateJobScheduled_m74A99E942E46AF80E4AB4C5D1A157F6BB51712C9 (void);
+// 0x00000A9D Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleUpdateJobScheduledHandler Cysharp.Threading.Tasks.Triggers.AsyncParticleUpdateJobScheduledTrigger::GetOnParticleUpdateJobScheduledAsyncHandler()
+extern void AsyncParticleUpdateJobScheduledTrigger_GetOnParticleUpdateJobScheduledAsyncHandler_m819FB3F20036AA9189B0CFA747FFB650A57446D1 (void);
+// 0x00000A9E Cysharp.Threading.Tasks.Triggers.IAsyncOnParticleUpdateJobScheduledHandler Cysharp.Threading.Tasks.Triggers.AsyncParticleUpdateJobScheduledTrigger::GetOnParticleUpdateJobScheduledAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncParticleUpdateJobScheduledTrigger_GetOnParticleUpdateJobScheduledAsyncHandler_m95774A8666C72D0C828F1FE08F1852FBDCB3A9EF (void);
+// 0x00000A9F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.ParticleSystemJobs.ParticleSystemJobData> Cysharp.Threading.Tasks.Triggers.AsyncParticleUpdateJobScheduledTrigger::OnParticleUpdateJobScheduledAsync()
+extern void AsyncParticleUpdateJobScheduledTrigger_OnParticleUpdateJobScheduledAsync_m5EEE4CF5485107ECAC80DB74A4381EADE5286BDD (void);
+// 0x00000AA0 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.ParticleSystemJobs.ParticleSystemJobData> Cysharp.Threading.Tasks.Triggers.AsyncParticleUpdateJobScheduledTrigger::OnParticleUpdateJobScheduledAsync(System.Threading.CancellationToken)
+extern void AsyncParticleUpdateJobScheduledTrigger_OnParticleUpdateJobScheduledAsync_m058A419713F55D7889713AB79C086D583B0D8A06 (void);
+// 0x00000AA1 System.Void Cysharp.Threading.Tasks.Triggers.AsyncParticleUpdateJobScheduledTrigger::.ctor()
+extern void AsyncParticleUpdateJobScheduledTrigger__ctor_mBDC5B1EF5960A431B5C7856FE2736C10B7EA523D (void);
+// 0x00000AA2 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnPostRenderHandler::OnPostRenderAsync()
+// 0x00000AA3 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPostRenderTrigger::OnPostRender()
+extern void AsyncPostRenderTrigger_OnPostRender_mBB072ADCE5F2C449BA8B3F6C8D484AAE1E17CE7E (void);
+// 0x00000AA4 Cysharp.Threading.Tasks.Triggers.IAsyncOnPostRenderHandler Cysharp.Threading.Tasks.Triggers.AsyncPostRenderTrigger::GetOnPostRenderAsyncHandler()
+extern void AsyncPostRenderTrigger_GetOnPostRenderAsyncHandler_m743EC696BF3015D8CA610F472266FF15A72BFF61 (void);
+// 0x00000AA5 Cysharp.Threading.Tasks.Triggers.IAsyncOnPostRenderHandler Cysharp.Threading.Tasks.Triggers.AsyncPostRenderTrigger::GetOnPostRenderAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncPostRenderTrigger_GetOnPostRenderAsyncHandler_m0BBA36AF26E020488A4E2ECDE93D628C7823A73F (void);
+// 0x00000AA6 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncPostRenderTrigger::OnPostRenderAsync()
+extern void AsyncPostRenderTrigger_OnPostRenderAsync_mE0663A68C7806C983847686964623C26EA9F6E3C (void);
+// 0x00000AA7 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncPostRenderTrigger::OnPostRenderAsync(System.Threading.CancellationToken)
+extern void AsyncPostRenderTrigger_OnPostRenderAsync_m9CE060A1050D16FB7A719A3A33991DD6B4AF2A15 (void);
+// 0x00000AA8 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPostRenderTrigger::.ctor()
+extern void AsyncPostRenderTrigger__ctor_mB9C91EFA8FD7309B8DADF3C2090E4881367D48BC (void);
+// 0x00000AA9 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnPreCullHandler::OnPreCullAsync()
+// 0x00000AAA System.Void Cysharp.Threading.Tasks.Triggers.AsyncPreCullTrigger::OnPreCull()
+extern void AsyncPreCullTrigger_OnPreCull_m8BB8ACA22D72CB75007C5654A7E4FCD2CB5C9734 (void);
+// 0x00000AAB Cysharp.Threading.Tasks.Triggers.IAsyncOnPreCullHandler Cysharp.Threading.Tasks.Triggers.AsyncPreCullTrigger::GetOnPreCullAsyncHandler()
+extern void AsyncPreCullTrigger_GetOnPreCullAsyncHandler_mBCC91746CF122BAC372FD27DCA0D4EA0165F9652 (void);
+// 0x00000AAC Cysharp.Threading.Tasks.Triggers.IAsyncOnPreCullHandler Cysharp.Threading.Tasks.Triggers.AsyncPreCullTrigger::GetOnPreCullAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncPreCullTrigger_GetOnPreCullAsyncHandler_mE4F6D965AC6FFBF05F6C20203DF56F6AAA2E5242 (void);
+// 0x00000AAD Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncPreCullTrigger::OnPreCullAsync()
+extern void AsyncPreCullTrigger_OnPreCullAsync_m66EE45765FFE039BA71E16A52EE0C464AA45D2D0 (void);
+// 0x00000AAE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncPreCullTrigger::OnPreCullAsync(System.Threading.CancellationToken)
+extern void AsyncPreCullTrigger_OnPreCullAsync_m01A58406C404E6E55C241DA3BE5710A2A16CCB02 (void);
+// 0x00000AAF System.Void Cysharp.Threading.Tasks.Triggers.AsyncPreCullTrigger::.ctor()
+extern void AsyncPreCullTrigger__ctor_mAA11EB2F80B462E9201611C9D15AD0E8A043D2A6 (void);
+// 0x00000AB0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnPreRenderHandler::OnPreRenderAsync()
+// 0x00000AB1 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPreRenderTrigger::OnPreRender()
+extern void AsyncPreRenderTrigger_OnPreRender_m1079D7D822CF19494538DEF22ECE2B81634F41EC (void);
+// 0x00000AB2 Cysharp.Threading.Tasks.Triggers.IAsyncOnPreRenderHandler Cysharp.Threading.Tasks.Triggers.AsyncPreRenderTrigger::GetOnPreRenderAsyncHandler()
+extern void AsyncPreRenderTrigger_GetOnPreRenderAsyncHandler_m1D65A52A4D45E69417D37C2692821BA8E1B89C72 (void);
+// 0x00000AB3 Cysharp.Threading.Tasks.Triggers.IAsyncOnPreRenderHandler Cysharp.Threading.Tasks.Triggers.AsyncPreRenderTrigger::GetOnPreRenderAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncPreRenderTrigger_GetOnPreRenderAsyncHandler_mECD1216D87565C260D8C61A0C43774F65334B7DD (void);
+// 0x00000AB4 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncPreRenderTrigger::OnPreRenderAsync()
+extern void AsyncPreRenderTrigger_OnPreRenderAsync_mB0AC4368868514881C7149CA779F08A8C493A1E4 (void);
+// 0x00000AB5 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncPreRenderTrigger::OnPreRenderAsync(System.Threading.CancellationToken)
+extern void AsyncPreRenderTrigger_OnPreRenderAsync_mC67896394616B2796F138221AD88EB64BDBF707F (void);
+// 0x00000AB6 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPreRenderTrigger::.ctor()
+extern void AsyncPreRenderTrigger__ctor_m58745C27B119C73D861348FA50F2A17FB9954779 (void);
+// 0x00000AB7 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnRectTransformDimensionsChangeHandler::OnRectTransformDimensionsChangeAsync()
+// 0x00000AB8 System.Void Cysharp.Threading.Tasks.Triggers.AsyncRectTransformDimensionsChangeTrigger::OnRectTransformDimensionsChange()
+extern void AsyncRectTransformDimensionsChangeTrigger_OnRectTransformDimensionsChange_mCEF7EEA734C490FF4F183ECC88426EBB60E0E895 (void);
+// 0x00000AB9 Cysharp.Threading.Tasks.Triggers.IAsyncOnRectTransformDimensionsChangeHandler Cysharp.Threading.Tasks.Triggers.AsyncRectTransformDimensionsChangeTrigger::GetOnRectTransformDimensionsChangeAsyncHandler()
+extern void AsyncRectTransformDimensionsChangeTrigger_GetOnRectTransformDimensionsChangeAsyncHandler_m335E5F74ED9D1861F3E4941A7571BA6834C26A57 (void);
+// 0x00000ABA Cysharp.Threading.Tasks.Triggers.IAsyncOnRectTransformDimensionsChangeHandler Cysharp.Threading.Tasks.Triggers.AsyncRectTransformDimensionsChangeTrigger::GetOnRectTransformDimensionsChangeAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncRectTransformDimensionsChangeTrigger_GetOnRectTransformDimensionsChangeAsyncHandler_mF2C56261FF948B05C2B1190532CF5D0E0BCE8BBF (void);
+// 0x00000ABB Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncRectTransformDimensionsChangeTrigger::OnRectTransformDimensionsChangeAsync()
+extern void AsyncRectTransformDimensionsChangeTrigger_OnRectTransformDimensionsChangeAsync_m302946011A50A6C701DB03FBFC432A417242DF76 (void);
+// 0x00000ABC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncRectTransformDimensionsChangeTrigger::OnRectTransformDimensionsChangeAsync(System.Threading.CancellationToken)
+extern void AsyncRectTransformDimensionsChangeTrigger_OnRectTransformDimensionsChangeAsync_mFDE718FC057B3AAECE4C52CE347B34834C90CCCA (void);
+// 0x00000ABD System.Void Cysharp.Threading.Tasks.Triggers.AsyncRectTransformDimensionsChangeTrigger::.ctor()
+extern void AsyncRectTransformDimensionsChangeTrigger__ctor_m1C4CC310B246DDE5A43CB79B23FAC9FADABE39BF (void);
+// 0x00000ABE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnRectTransformRemovedHandler::OnRectTransformRemovedAsync()
+// 0x00000ABF System.Void Cysharp.Threading.Tasks.Triggers.AsyncRectTransformRemovedTrigger::OnRectTransformRemoved()
+extern void AsyncRectTransformRemovedTrigger_OnRectTransformRemoved_mBD06842C7B34DEDA6C64DC7903FB43ADE3E9B85F (void);
+// 0x00000AC0 Cysharp.Threading.Tasks.Triggers.IAsyncOnRectTransformRemovedHandler Cysharp.Threading.Tasks.Triggers.AsyncRectTransformRemovedTrigger::GetOnRectTransformRemovedAsyncHandler()
+extern void AsyncRectTransformRemovedTrigger_GetOnRectTransformRemovedAsyncHandler_mD12641FE032A87B2ED5A831357FC37F8AC27432E (void);
+// 0x00000AC1 Cysharp.Threading.Tasks.Triggers.IAsyncOnRectTransformRemovedHandler Cysharp.Threading.Tasks.Triggers.AsyncRectTransformRemovedTrigger::GetOnRectTransformRemovedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncRectTransformRemovedTrigger_GetOnRectTransformRemovedAsyncHandler_m127633818EC8250B74CA466B200398E4D6A1475D (void);
+// 0x00000AC2 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncRectTransformRemovedTrigger::OnRectTransformRemovedAsync()
+extern void AsyncRectTransformRemovedTrigger_OnRectTransformRemovedAsync_m3EC5F120E02890FB4B5988379B80AFB98CE84328 (void);
+// 0x00000AC3 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncRectTransformRemovedTrigger::OnRectTransformRemovedAsync(System.Threading.CancellationToken)
+extern void AsyncRectTransformRemovedTrigger_OnRectTransformRemovedAsync_m7F129D367F5850EFB5D71B755C0335C9C6F12222 (void);
+// 0x00000AC4 System.Void Cysharp.Threading.Tasks.Triggers.AsyncRectTransformRemovedTrigger::.ctor()
+extern void AsyncRectTransformRemovedTrigger__ctor_m0F2DE34A26744D66C7DB55CE0229E268BFDD88FF (void);
+// 0x00000AC5 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<UnityEngine.RenderTexture,UnityEngine.RenderTexture>> Cysharp.Threading.Tasks.Triggers.IAsyncOnRenderImageHandler::OnRenderImageAsync()
+// 0x00000AC6 System.Void Cysharp.Threading.Tasks.Triggers.AsyncRenderImageTrigger::OnRenderImage(UnityEngine.RenderTexture,UnityEngine.RenderTexture)
+extern void AsyncRenderImageTrigger_OnRenderImage_mDCDB76BCE6EBFF2096A7EAC73E4F72D04C8E3350 (void);
+// 0x00000AC7 Cysharp.Threading.Tasks.Triggers.IAsyncOnRenderImageHandler Cysharp.Threading.Tasks.Triggers.AsyncRenderImageTrigger::GetOnRenderImageAsyncHandler()
+extern void AsyncRenderImageTrigger_GetOnRenderImageAsyncHandler_m9D537F7B59F54A3E3BE60EFC59C76958754B3252 (void);
+// 0x00000AC8 Cysharp.Threading.Tasks.Triggers.IAsyncOnRenderImageHandler Cysharp.Threading.Tasks.Triggers.AsyncRenderImageTrigger::GetOnRenderImageAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncRenderImageTrigger_GetOnRenderImageAsyncHandler_mE3D255982895A770D66E08000126D277B359AC6B (void);
+// 0x00000AC9 Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<UnityEngine.RenderTexture,UnityEngine.RenderTexture>> Cysharp.Threading.Tasks.Triggers.AsyncRenderImageTrigger::OnRenderImageAsync()
+extern void AsyncRenderImageTrigger_OnRenderImageAsync_m91CE6C7DF51D427CCF19CD19ADD13EFA9499017C (void);
+// 0x00000ACA Cysharp.Threading.Tasks.UniTask`1<System.ValueTuple`2<UnityEngine.RenderTexture,UnityEngine.RenderTexture>> Cysharp.Threading.Tasks.Triggers.AsyncRenderImageTrigger::OnRenderImageAsync(System.Threading.CancellationToken)
+extern void AsyncRenderImageTrigger_OnRenderImageAsync_m139CF203844E7CFBD54334949DC18E12BF30B33E (void);
+// 0x00000ACB System.Void Cysharp.Threading.Tasks.Triggers.AsyncRenderImageTrigger::.ctor()
+extern void AsyncRenderImageTrigger__ctor_mFED9370CF549990CEF799FECF0D4C7323FE55D00 (void);
+// 0x00000ACC Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnRenderObjectHandler::OnRenderObjectAsync()
+// 0x00000ACD System.Void Cysharp.Threading.Tasks.Triggers.AsyncRenderObjectTrigger::OnRenderObject()
+extern void AsyncRenderObjectTrigger_OnRenderObject_mE0614C8F30A97D4FA5DB7CE04ACEAA0DA7875D2A (void);
+// 0x00000ACE Cysharp.Threading.Tasks.Triggers.IAsyncOnRenderObjectHandler Cysharp.Threading.Tasks.Triggers.AsyncRenderObjectTrigger::GetOnRenderObjectAsyncHandler()
+extern void AsyncRenderObjectTrigger_GetOnRenderObjectAsyncHandler_m616C95392EB27750CA278FE63F260C9F818FA406 (void);
+// 0x00000ACF Cysharp.Threading.Tasks.Triggers.IAsyncOnRenderObjectHandler Cysharp.Threading.Tasks.Triggers.AsyncRenderObjectTrigger::GetOnRenderObjectAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncRenderObjectTrigger_GetOnRenderObjectAsyncHandler_m1E01EEC9E77863DDC00CA301D90B319C8B1539D4 (void);
+// 0x00000AD0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncRenderObjectTrigger::OnRenderObjectAsync()
+extern void AsyncRenderObjectTrigger_OnRenderObjectAsync_m2AFD6381ED39F073EB4E7F50EA51EE086CE01FA4 (void);
+// 0x00000AD1 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncRenderObjectTrigger::OnRenderObjectAsync(System.Threading.CancellationToken)
+extern void AsyncRenderObjectTrigger_OnRenderObjectAsync_m89DAA18E4F271AFE4B0624A2B0387399EB43F96F (void);
+// 0x00000AD2 System.Void Cysharp.Threading.Tasks.Triggers.AsyncRenderObjectTrigger::.ctor()
+extern void AsyncRenderObjectTrigger__ctor_m02F4B33BE8DE504FB664BB90953AEA86FFE5A7C1 (void);
+// 0x00000AD3 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnServerInitializedHandler::OnServerInitializedAsync()
+// 0x00000AD4 System.Void Cysharp.Threading.Tasks.Triggers.AsyncServerInitializedTrigger::OnServerInitialized()
+extern void AsyncServerInitializedTrigger_OnServerInitialized_mE7C5A6B7CA9DD4A9621C1D7D4A0AA5502D94BFDC (void);
+// 0x00000AD5 Cysharp.Threading.Tasks.Triggers.IAsyncOnServerInitializedHandler Cysharp.Threading.Tasks.Triggers.AsyncServerInitializedTrigger::GetOnServerInitializedAsyncHandler()
+extern void AsyncServerInitializedTrigger_GetOnServerInitializedAsyncHandler_mF9892ACE15C075BD1B64100FAE38CF05F6B15ADE (void);
+// 0x00000AD6 Cysharp.Threading.Tasks.Triggers.IAsyncOnServerInitializedHandler Cysharp.Threading.Tasks.Triggers.AsyncServerInitializedTrigger::GetOnServerInitializedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncServerInitializedTrigger_GetOnServerInitializedAsyncHandler_m230CF255A8EE1403BCF8F749DD60CDA1095DF9FE (void);
+// 0x00000AD7 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncServerInitializedTrigger::OnServerInitializedAsync()
+extern void AsyncServerInitializedTrigger_OnServerInitializedAsync_mBD83933D204A9ABD56169E7A2304DB00F228D952 (void);
+// 0x00000AD8 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncServerInitializedTrigger::OnServerInitializedAsync(System.Threading.CancellationToken)
+extern void AsyncServerInitializedTrigger_OnServerInitializedAsync_mB94CCF570EEAC3E75874E715CFBE103E5B938AED (void);
+// 0x00000AD9 System.Void Cysharp.Threading.Tasks.Triggers.AsyncServerInitializedTrigger::.ctor()
+extern void AsyncServerInitializedTrigger__ctor_m4903A1D3EDFA9556D5071D691C86DCDF55A0BAD4 (void);
+// 0x00000ADA Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnTransformChildrenChangedHandler::OnTransformChildrenChangedAsync()
+// 0x00000ADB System.Void Cysharp.Threading.Tasks.Triggers.AsyncTransformChildrenChangedTrigger::OnTransformChildrenChanged()
+extern void AsyncTransformChildrenChangedTrigger_OnTransformChildrenChanged_mB766B3AAE2AC504FAE655FBAAE91DBA5C60E5A72 (void);
+// 0x00000ADC Cysharp.Threading.Tasks.Triggers.IAsyncOnTransformChildrenChangedHandler Cysharp.Threading.Tasks.Triggers.AsyncTransformChildrenChangedTrigger::GetOnTransformChildrenChangedAsyncHandler()
+extern void AsyncTransformChildrenChangedTrigger_GetOnTransformChildrenChangedAsyncHandler_mAC29370E010951C99D0005DE0FBD845C9B27E8B2 (void);
+// 0x00000ADD Cysharp.Threading.Tasks.Triggers.IAsyncOnTransformChildrenChangedHandler Cysharp.Threading.Tasks.Triggers.AsyncTransformChildrenChangedTrigger::GetOnTransformChildrenChangedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncTransformChildrenChangedTrigger_GetOnTransformChildrenChangedAsyncHandler_mFA04E5A68C238110A9965CBDFE44754E81052048 (void);
+// 0x00000ADE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTransformChildrenChangedTrigger::OnTransformChildrenChangedAsync()
+extern void AsyncTransformChildrenChangedTrigger_OnTransformChildrenChangedAsync_m9A6C0B58EB7B02D87BE90EE1F38AD776AB98E3F5 (void);
+// 0x00000ADF Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTransformChildrenChangedTrigger::OnTransformChildrenChangedAsync(System.Threading.CancellationToken)
+extern void AsyncTransformChildrenChangedTrigger_OnTransformChildrenChangedAsync_m05B67060C03105BCD88618E48F83EF87757B9FE4 (void);
+// 0x00000AE0 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTransformChildrenChangedTrigger::.ctor()
+extern void AsyncTransformChildrenChangedTrigger__ctor_m6487135C4F4E451F55010BBB53427F684253E40B (void);
+// 0x00000AE1 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnTransformParentChangedHandler::OnTransformParentChangedAsync()
+// 0x00000AE2 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTransformParentChangedTrigger::OnTransformParentChanged()
+extern void AsyncTransformParentChangedTrigger_OnTransformParentChanged_m9F023397C4145C57ADDF27B30C56591447862AF7 (void);
+// 0x00000AE3 Cysharp.Threading.Tasks.Triggers.IAsyncOnTransformParentChangedHandler Cysharp.Threading.Tasks.Triggers.AsyncTransformParentChangedTrigger::GetOnTransformParentChangedAsyncHandler()
+extern void AsyncTransformParentChangedTrigger_GetOnTransformParentChangedAsyncHandler_m792911E5D33ACD6F6D8F39342FD052E1063F3A6E (void);
+// 0x00000AE4 Cysharp.Threading.Tasks.Triggers.IAsyncOnTransformParentChangedHandler Cysharp.Threading.Tasks.Triggers.AsyncTransformParentChangedTrigger::GetOnTransformParentChangedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncTransformParentChangedTrigger_GetOnTransformParentChangedAsyncHandler_mFD20DFC05628802928961500AC716CF15EC01F28 (void);
+// 0x00000AE5 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTransformParentChangedTrigger::OnTransformParentChangedAsync()
+extern void AsyncTransformParentChangedTrigger_OnTransformParentChangedAsync_m2A042FDD8DA120540E678D620910F18754F21BB6 (void);
+// 0x00000AE6 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncTransformParentChangedTrigger::OnTransformParentChangedAsync(System.Threading.CancellationToken)
+extern void AsyncTransformParentChangedTrigger_OnTransformParentChangedAsync_m3400D30019581CC110E95B9BE88786A57BF8EC06 (void);
+// 0x00000AE7 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTransformParentChangedTrigger::.ctor()
+extern void AsyncTransformParentChangedTrigger__ctor_m08BA52ADB268DB9B1047B6D0A10EFFC62E216216 (void);
+// 0x00000AE8 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerEnterHandler::OnTriggerEnterAsync()
+// 0x00000AE9 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnterTrigger::OnTriggerEnter(UnityEngine.Collider)
+extern void AsyncTriggerEnterTrigger_OnTriggerEnter_m987B0631561DADCF50ADAB4025D0DA37F044BF0D (void);
+// 0x00000AEA Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerEnterHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnterTrigger::GetOnTriggerEnterAsyncHandler()
+extern void AsyncTriggerEnterTrigger_GetOnTriggerEnterAsyncHandler_mDC42AE523AD77E05A9781A7DB689B4F47E521A9F (void);
+// 0x00000AEB Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerEnterHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnterTrigger::GetOnTriggerEnterAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncTriggerEnterTrigger_GetOnTriggerEnterAsyncHandler_mF9D3C729AB281CFFDD286CDDBCE64796D1D4C8CE (void);
+// 0x00000AEC Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnterTrigger::OnTriggerEnterAsync()
+extern void AsyncTriggerEnterTrigger_OnTriggerEnterAsync_m70124C83C761D35FDCA94667EEA1E460F5F02E9E (void);
+// 0x00000AED Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnterTrigger::OnTriggerEnterAsync(System.Threading.CancellationToken)
+extern void AsyncTriggerEnterTrigger_OnTriggerEnterAsync_mFA17FE0A71CA365A213934E9781F61A043AAF9EC (void);
+// 0x00000AEE System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnterTrigger::.ctor()
+extern void AsyncTriggerEnterTrigger__ctor_m94291F492F7F5FC615902E4843F0C12309930A88 (void);
+// 0x00000AEF Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerEnter2DHandler::OnTriggerEnter2DAsync()
+// 0x00000AF0 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnter2DTrigger::OnTriggerEnter2D(UnityEngine.Collider2D)
+extern void AsyncTriggerEnter2DTrigger_OnTriggerEnter2D_m20C6705138B9F2021D39EB3B19F2974E0B6254D7 (void);
+// 0x00000AF1 Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerEnter2DHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnter2DTrigger::GetOnTriggerEnter2DAsyncHandler()
+extern void AsyncTriggerEnter2DTrigger_GetOnTriggerEnter2DAsyncHandler_mE5922E4095D7E338378986A873F216A26652AEF4 (void);
+// 0x00000AF2 Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerEnter2DHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnter2DTrigger::GetOnTriggerEnter2DAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncTriggerEnter2DTrigger_GetOnTriggerEnter2DAsyncHandler_m364D016D0754472AC213AFF988075A26AD92FE5C (void);
+// 0x00000AF3 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnter2DTrigger::OnTriggerEnter2DAsync()
+extern void AsyncTriggerEnter2DTrigger_OnTriggerEnter2DAsync_m648D60D922B491745048C6AF56F91E6457A82410 (void);
+// 0x00000AF4 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnter2DTrigger::OnTriggerEnter2DAsync(System.Threading.CancellationToken)
+extern void AsyncTriggerEnter2DTrigger_OnTriggerEnter2DAsync_m053C5553A5DDAFE6E2B48E150CB8E01EF59CB859 (void);
+// 0x00000AF5 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerEnter2DTrigger::.ctor()
+extern void AsyncTriggerEnter2DTrigger__ctor_m2C867B03B0CC792FC2D0A4429B4B69B7F3CBFDBB (void);
+// 0x00000AF6 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerExitHandler::OnTriggerExitAsync()
+// 0x00000AF7 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerExitTrigger::OnTriggerExit(UnityEngine.Collider)
+extern void AsyncTriggerExitTrigger_OnTriggerExit_mC9140851D54908E8587502C7093FC0E9478E5F0A (void);
+// 0x00000AF8 Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerExitHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerExitTrigger::GetOnTriggerExitAsyncHandler()
+extern void AsyncTriggerExitTrigger_GetOnTriggerExitAsyncHandler_mD62C3917B65B910FCCD1A28C49C01987641F37D5 (void);
+// 0x00000AF9 Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerExitHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerExitTrigger::GetOnTriggerExitAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncTriggerExitTrigger_GetOnTriggerExitAsyncHandler_m450CE5E9C1698DD90AB559FE25DA709C2F840CDB (void);
+// 0x00000AFA Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerExitTrigger::OnTriggerExitAsync()
+extern void AsyncTriggerExitTrigger_OnTriggerExitAsync_mF399CA1A0F46E3406260F520E9C0CB9273E719B1 (void);
+// 0x00000AFB Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerExitTrigger::OnTriggerExitAsync(System.Threading.CancellationToken)
+extern void AsyncTriggerExitTrigger_OnTriggerExitAsync_m25707BB67EADA30383AB48021BF2BC0DB74FC6D7 (void);
+// 0x00000AFC System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerExitTrigger::.ctor()
+extern void AsyncTriggerExitTrigger__ctor_m02D41654EAA534FEC8206D55AB3B916CE3A975D9 (void);
+// 0x00000AFD Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerExit2DHandler::OnTriggerExit2DAsync()
+// 0x00000AFE System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerExit2DTrigger::OnTriggerExit2D(UnityEngine.Collider2D)
+extern void AsyncTriggerExit2DTrigger_OnTriggerExit2D_mD2347A86823FA31E88FD0EB0A2FE9A194C11FBE3 (void);
+// 0x00000AFF Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerExit2DHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerExit2DTrigger::GetOnTriggerExit2DAsyncHandler()
+extern void AsyncTriggerExit2DTrigger_GetOnTriggerExit2DAsyncHandler_m15A74FF40FCCEF701589E5005613915384BE3139 (void);
+// 0x00000B00 Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerExit2DHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerExit2DTrigger::GetOnTriggerExit2DAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncTriggerExit2DTrigger_GetOnTriggerExit2DAsyncHandler_m62886134FFCA01612A5559BEE2DA14A253C38FCA (void);
+// 0x00000B01 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerExit2DTrigger::OnTriggerExit2DAsync()
+extern void AsyncTriggerExit2DTrigger_OnTriggerExit2DAsync_mF4AFE6532D7E39B0649E2CFFE24F562A56D8EB14 (void);
+// 0x00000B02 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerExit2DTrigger::OnTriggerExit2DAsync(System.Threading.CancellationToken)
+extern void AsyncTriggerExit2DTrigger_OnTriggerExit2DAsync_m8FDF4429E6483153FC537DE0E107D59F05A7250F (void);
+// 0x00000B03 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerExit2DTrigger::.ctor()
+extern void AsyncTriggerExit2DTrigger__ctor_m6C158090D92C5521AAB46AF22CE7D5A249628F29 (void);
+// 0x00000B04 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerStayHandler::OnTriggerStayAsync()
+// 0x00000B05 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerStayTrigger::OnTriggerStay(UnityEngine.Collider)
+extern void AsyncTriggerStayTrigger_OnTriggerStay_mECE592D3892C2113D169D009C149F9F14821752B (void);
+// 0x00000B06 Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerStayHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerStayTrigger::GetOnTriggerStayAsyncHandler()
+extern void AsyncTriggerStayTrigger_GetOnTriggerStayAsyncHandler_mF28681278F440C6BBF1FEA5654C7BC17C30E5354 (void);
+// 0x00000B07 Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerStayHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerStayTrigger::GetOnTriggerStayAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncTriggerStayTrigger_GetOnTriggerStayAsyncHandler_m20F92E48CFAF36C1750D7A8F5BD901736EEA4CBE (void);
+// 0x00000B08 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerStayTrigger::OnTriggerStayAsync()
+extern void AsyncTriggerStayTrigger_OnTriggerStayAsync_m00C665C6B369753660BBA9081F8183DB34ECE2A0 (void);
+// 0x00000B09 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider> Cysharp.Threading.Tasks.Triggers.AsyncTriggerStayTrigger::OnTriggerStayAsync(System.Threading.CancellationToken)
+extern void AsyncTriggerStayTrigger_OnTriggerStayAsync_mE2FDCCC2D53DD23037BDC52303B103DDB1944481 (void);
+// 0x00000B0A System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerStayTrigger::.ctor()
+extern void AsyncTriggerStayTrigger__ctor_mA8262B94799FEDAC48D3A5D67F3A7EAE6D17F5F2 (void);
+// 0x00000B0B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerStay2DHandler::OnTriggerStay2DAsync()
+// 0x00000B0C System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerStay2DTrigger::OnTriggerStay2D(UnityEngine.Collider2D)
+extern void AsyncTriggerStay2DTrigger_OnTriggerStay2D_m1F524CE082AA4BD8DF7344C4A7B544900875F591 (void);
+// 0x00000B0D Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerStay2DHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerStay2DTrigger::GetOnTriggerStay2DAsyncHandler()
+extern void AsyncTriggerStay2DTrigger_GetOnTriggerStay2DAsyncHandler_m84FBB5668D312A20B079DB05E82F8D7861839BD9 (void);
+// 0x00000B0E Cysharp.Threading.Tasks.Triggers.IAsyncOnTriggerStay2DHandler Cysharp.Threading.Tasks.Triggers.AsyncTriggerStay2DTrigger::GetOnTriggerStay2DAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncTriggerStay2DTrigger_GetOnTriggerStay2DAsyncHandler_m6CABA94980326BCFC2E8C0FC5D22CF2B0F162DC8 (void);
+// 0x00000B0F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerStay2DTrigger::OnTriggerStay2DAsync()
+extern void AsyncTriggerStay2DTrigger_OnTriggerStay2DAsync_m4BFC56AB458AE530CE94324E0ABF30DCBACA80DB (void);
+// 0x00000B10 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.Collider2D> Cysharp.Threading.Tasks.Triggers.AsyncTriggerStay2DTrigger::OnTriggerStay2DAsync(System.Threading.CancellationToken)
+extern void AsyncTriggerStay2DTrigger_OnTriggerStay2DAsync_mB378ACE64845B39578647EA254C7CB721AB53615 (void);
+// 0x00000B11 System.Void Cysharp.Threading.Tasks.Triggers.AsyncTriggerStay2DTrigger::.ctor()
+extern void AsyncTriggerStay2DTrigger__ctor_m0C2F47161B6AB02BB517175952CE5073D768C8BB (void);
+// 0x00000B12 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnValidateHandler::OnValidateAsync()
+// 0x00000B13 System.Void Cysharp.Threading.Tasks.Triggers.AsyncValidateTrigger::OnValidate()
+extern void AsyncValidateTrigger_OnValidate_m6D87C365C451119F965AE3C3B26A5BEF18D64F28 (void);
+// 0x00000B14 Cysharp.Threading.Tasks.Triggers.IAsyncOnValidateHandler Cysharp.Threading.Tasks.Triggers.AsyncValidateTrigger::GetOnValidateAsyncHandler()
+extern void AsyncValidateTrigger_GetOnValidateAsyncHandler_m93B61B438CAEC00A57683BE865F3037C7AAB18D1 (void);
+// 0x00000B15 Cysharp.Threading.Tasks.Triggers.IAsyncOnValidateHandler Cysharp.Threading.Tasks.Triggers.AsyncValidateTrigger::GetOnValidateAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncValidateTrigger_GetOnValidateAsyncHandler_m8ECBBB8FDB07F67B8ECA8DE67535E4A1617D1082 (void);
+// 0x00000B16 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncValidateTrigger::OnValidateAsync()
+extern void AsyncValidateTrigger_OnValidateAsync_m5B4930FBBC3B5415906EE63F2AF118E985271BE6 (void);
+// 0x00000B17 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncValidateTrigger::OnValidateAsync(System.Threading.CancellationToken)
+extern void AsyncValidateTrigger_OnValidateAsync_mDC784A5D55B69D304DAE67DCD4FEAC7BB05AEC56 (void);
+// 0x00000B18 System.Void Cysharp.Threading.Tasks.Triggers.AsyncValidateTrigger::.ctor()
+extern void AsyncValidateTrigger__ctor_m8E06D8B7DF5CEFAFFE794462F1DE83062242B16A (void);
+// 0x00000B19 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncOnWillRenderObjectHandler::OnWillRenderObjectAsync()
+// 0x00000B1A System.Void Cysharp.Threading.Tasks.Triggers.AsyncWillRenderObjectTrigger::OnWillRenderObject()
+extern void AsyncWillRenderObjectTrigger_OnWillRenderObject_m000349C12C77A792F5F0E03B28BAB5163AD2621C (void);
+// 0x00000B1B Cysharp.Threading.Tasks.Triggers.IAsyncOnWillRenderObjectHandler Cysharp.Threading.Tasks.Triggers.AsyncWillRenderObjectTrigger::GetOnWillRenderObjectAsyncHandler()
+extern void AsyncWillRenderObjectTrigger_GetOnWillRenderObjectAsyncHandler_m21C0854CAFDAD22FA260F242FDA37EEF0864C37B (void);
+// 0x00000B1C Cysharp.Threading.Tasks.Triggers.IAsyncOnWillRenderObjectHandler Cysharp.Threading.Tasks.Triggers.AsyncWillRenderObjectTrigger::GetOnWillRenderObjectAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncWillRenderObjectTrigger_GetOnWillRenderObjectAsyncHandler_m5A987A306765AA901E6BBB4C65FCE2D015CD8052 (void);
+// 0x00000B1D Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncWillRenderObjectTrigger::OnWillRenderObjectAsync()
+extern void AsyncWillRenderObjectTrigger_OnWillRenderObjectAsync_mE9FE145E988136CB40D676F0491AF3BA419A22C0 (void);
+// 0x00000B1E Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncWillRenderObjectTrigger::OnWillRenderObjectAsync(System.Threading.CancellationToken)
+extern void AsyncWillRenderObjectTrigger_OnWillRenderObjectAsync_mA5CA68CD354E1B84275BB203B343B60E46F4B87A (void);
+// 0x00000B1F System.Void Cysharp.Threading.Tasks.Triggers.AsyncWillRenderObjectTrigger::.ctor()
+extern void AsyncWillRenderObjectTrigger__ctor_m24D430A90CF1A74E75C0EE37DDF463A827E69036 (void);
+// 0x00000B20 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncResetHandler::ResetAsync()
+// 0x00000B21 System.Void Cysharp.Threading.Tasks.Triggers.AsyncResetTrigger::Reset()
+extern void AsyncResetTrigger_Reset_m198B4882AE86300DBC5B07C9AF4CF49BAE6152E0 (void);
+// 0x00000B22 Cysharp.Threading.Tasks.Triggers.IAsyncResetHandler Cysharp.Threading.Tasks.Triggers.AsyncResetTrigger::GetResetAsyncHandler()
+extern void AsyncResetTrigger_GetResetAsyncHandler_mF8F9B51C0C643F4F5BFA1229AF9EDA31BDC849F5 (void);
+// 0x00000B23 Cysharp.Threading.Tasks.Triggers.IAsyncResetHandler Cysharp.Threading.Tasks.Triggers.AsyncResetTrigger::GetResetAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncResetTrigger_GetResetAsyncHandler_mAB5FFC1283DEC76FBE41C065FC98BBCB53B90A33 (void);
+// 0x00000B24 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncResetTrigger::ResetAsync()
+extern void AsyncResetTrigger_ResetAsync_mC38F95492FF08D8253115CC0D2D33217CAA601C7 (void);
+// 0x00000B25 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncResetTrigger::ResetAsync(System.Threading.CancellationToken)
+extern void AsyncResetTrigger_ResetAsync_m1763D6AF5E377D44258B6489EC23145DFA710E16 (void);
+// 0x00000B26 System.Void Cysharp.Threading.Tasks.Triggers.AsyncResetTrigger::.ctor()
+extern void AsyncResetTrigger__ctor_mDA674611F8438A002072FD58EAA5F47782697BCF (void);
+// 0x00000B27 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.IAsyncUpdateHandler::UpdateAsync()
+// 0x00000B28 System.Void Cysharp.Threading.Tasks.Triggers.AsyncUpdateTrigger::Update()
+extern void AsyncUpdateTrigger_Update_m5321BA60C550332ECB74B05D2D26DD2017095123 (void);
+// 0x00000B29 Cysharp.Threading.Tasks.Triggers.IAsyncUpdateHandler Cysharp.Threading.Tasks.Triggers.AsyncUpdateTrigger::GetUpdateAsyncHandler()
+extern void AsyncUpdateTrigger_GetUpdateAsyncHandler_m90503A9E45D8228631B2D988799F3FDCD041E6E7 (void);
+// 0x00000B2A Cysharp.Threading.Tasks.Triggers.IAsyncUpdateHandler Cysharp.Threading.Tasks.Triggers.AsyncUpdateTrigger::GetUpdateAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncUpdateTrigger_GetUpdateAsyncHandler_m3B4493D31EB552A7FE6FFF7AE24E4EA241009E7B (void);
+// 0x00000B2B Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncUpdateTrigger::UpdateAsync()
+extern void AsyncUpdateTrigger_UpdateAsync_m41D031BFCC576B4606888C87DF3217C1F63CD659 (void);
+// 0x00000B2C Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.Triggers.AsyncUpdateTrigger::UpdateAsync(System.Threading.CancellationToken)
+extern void AsyncUpdateTrigger_UpdateAsync_mD324C9094A568ECCFCB9DBBF3A351699CC5E853E (void);
+// 0x00000B2D System.Void Cysharp.Threading.Tasks.Triggers.AsyncUpdateTrigger::.ctor()
+extern void AsyncUpdateTrigger__ctor_m154BA59C03623508B967B4A7428889E7AAFF06BD (void);
+// 0x00000B2E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnBeginDragHandler::OnBeginDragAsync()
+// 0x00000B2F System.Void Cysharp.Threading.Tasks.Triggers.AsyncBeginDragTrigger::UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncBeginDragTrigger_UnityEngine_EventSystems_IBeginDragHandler_OnBeginDrag_mA03ABC0CE73F6A81EAB2A2DC01314DE1C75017D0 (void);
+// 0x00000B30 Cysharp.Threading.Tasks.Triggers.IAsyncOnBeginDragHandler Cysharp.Threading.Tasks.Triggers.AsyncBeginDragTrigger::GetOnBeginDragAsyncHandler()
+extern void AsyncBeginDragTrigger_GetOnBeginDragAsyncHandler_mCC84469272DB1F26A36D79D4D2B17C70A5F51B4C (void);
+// 0x00000B31 Cysharp.Threading.Tasks.Triggers.IAsyncOnBeginDragHandler Cysharp.Threading.Tasks.Triggers.AsyncBeginDragTrigger::GetOnBeginDragAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncBeginDragTrigger_GetOnBeginDragAsyncHandler_m622C2389C34EA474603912204A1D889951B82B3C (void);
+// 0x00000B32 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncBeginDragTrigger::OnBeginDragAsync()
+extern void AsyncBeginDragTrigger_OnBeginDragAsync_m4539156944A7986CF33AF89BAE8836828D67344A (void);
+// 0x00000B33 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncBeginDragTrigger::OnBeginDragAsync(System.Threading.CancellationToken)
+extern void AsyncBeginDragTrigger_OnBeginDragAsync_mFF453D3CFFF6F6C27944FA69AEFEA22B4A0C085B (void);
+// 0x00000B34 System.Void Cysharp.Threading.Tasks.Triggers.AsyncBeginDragTrigger::.ctor()
+extern void AsyncBeginDragTrigger__ctor_m93C1E7BF275BF2740582CDD00D5273EA7890A97D (void);
+// 0x00000B35 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnCancelHandler::OnCancelAsync()
+// 0x00000B36 System.Void Cysharp.Threading.Tasks.Triggers.AsyncCancelTrigger::UnityEngine.EventSystems.ICancelHandler.OnCancel(UnityEngine.EventSystems.BaseEventData)
+extern void AsyncCancelTrigger_UnityEngine_EventSystems_ICancelHandler_OnCancel_m7F923EAA95A3805F736D193A81F94EBEB009E85C (void);
+// 0x00000B37 Cysharp.Threading.Tasks.Triggers.IAsyncOnCancelHandler Cysharp.Threading.Tasks.Triggers.AsyncCancelTrigger::GetOnCancelAsyncHandler()
+extern void AsyncCancelTrigger_GetOnCancelAsyncHandler_m5222CED3A8988662208821CCE5FC48C624234073 (void);
+// 0x00000B38 Cysharp.Threading.Tasks.Triggers.IAsyncOnCancelHandler Cysharp.Threading.Tasks.Triggers.AsyncCancelTrigger::GetOnCancelAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncCancelTrigger_GetOnCancelAsyncHandler_m18ED65769DE2FD370AA935E0E80B03403AFCBEF4 (void);
+// 0x00000B39 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncCancelTrigger::OnCancelAsync()
+extern void AsyncCancelTrigger_OnCancelAsync_m5274E06A1AF76DA4CE71A076F86604D9ED0933B4 (void);
+// 0x00000B3A Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncCancelTrigger::OnCancelAsync(System.Threading.CancellationToken)
+extern void AsyncCancelTrigger_OnCancelAsync_m3DCBAE1F4D50620EBB5436AFECD94FAB2249C9A0 (void);
+// 0x00000B3B System.Void Cysharp.Threading.Tasks.Triggers.AsyncCancelTrigger::.ctor()
+extern void AsyncCancelTrigger__ctor_m91A3511B78449BDF1C667C6D033116499D2B6F01 (void);
+// 0x00000B3C Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnDeselectHandler::OnDeselectAsync()
+// 0x00000B3D System.Void Cysharp.Threading.Tasks.Triggers.AsyncDeselectTrigger::UnityEngine.EventSystems.IDeselectHandler.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+extern void AsyncDeselectTrigger_UnityEngine_EventSystems_IDeselectHandler_OnDeselect_mF0115B94B991F030AC4065B62EE18DCF858BBB80 (void);
+// 0x00000B3E Cysharp.Threading.Tasks.Triggers.IAsyncOnDeselectHandler Cysharp.Threading.Tasks.Triggers.AsyncDeselectTrigger::GetOnDeselectAsyncHandler()
+extern void AsyncDeselectTrigger_GetOnDeselectAsyncHandler_m6F292094CE1EFB741AF4359044A81B3B2118EA99 (void);
+// 0x00000B3F Cysharp.Threading.Tasks.Triggers.IAsyncOnDeselectHandler Cysharp.Threading.Tasks.Triggers.AsyncDeselectTrigger::GetOnDeselectAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncDeselectTrigger_GetOnDeselectAsyncHandler_mCAA51997A06FB65D34E552530879C37FD132CE4F (void);
+// 0x00000B40 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncDeselectTrigger::OnDeselectAsync()
+extern void AsyncDeselectTrigger_OnDeselectAsync_m5F99FAC049CD6D4BBD119AF594ADCBE5BB8AAB0F (void);
+// 0x00000B41 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncDeselectTrigger::OnDeselectAsync(System.Threading.CancellationToken)
+extern void AsyncDeselectTrigger_OnDeselectAsync_mACA85079A579109733B7CBD73C373B9F106AF043 (void);
+// 0x00000B42 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDeselectTrigger::.ctor()
+extern void AsyncDeselectTrigger__ctor_m88193D405ABE43B9A86FA98574B267D7050B09D8 (void);
+// 0x00000B43 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnDragHandler::OnDragAsync()
+// 0x00000B44 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDragTrigger::UnityEngine.EventSystems.IDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncDragTrigger_UnityEngine_EventSystems_IDragHandler_OnDrag_mE6EE89FD4B8C55B6CAD8CDD583E98085803CA5BB (void);
+// 0x00000B45 Cysharp.Threading.Tasks.Triggers.IAsyncOnDragHandler Cysharp.Threading.Tasks.Triggers.AsyncDragTrigger::GetOnDragAsyncHandler()
+extern void AsyncDragTrigger_GetOnDragAsyncHandler_mE9A088371AED15D78320931AE777F175EC267B3E (void);
+// 0x00000B46 Cysharp.Threading.Tasks.Triggers.IAsyncOnDragHandler Cysharp.Threading.Tasks.Triggers.AsyncDragTrigger::GetOnDragAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncDragTrigger_GetOnDragAsyncHandler_mC62B15B6DB1524F512DF26ED66E4630D0B594FDB (void);
+// 0x00000B47 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncDragTrigger::OnDragAsync()
+extern void AsyncDragTrigger_OnDragAsync_mFE1C88E879C8620A7411C2AFDF2A7CB656F92C17 (void);
+// 0x00000B48 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncDragTrigger::OnDragAsync(System.Threading.CancellationToken)
+extern void AsyncDragTrigger_OnDragAsync_mDE183DAF1CB58E17D55FEFDC418043A73D8B93D9 (void);
+// 0x00000B49 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDragTrigger::.ctor()
+extern void AsyncDragTrigger__ctor_m4246DA4A79FC5B4EE7AF2D40D8E61C2C557BC3BB (void);
+// 0x00000B4A Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnDropHandler::OnDropAsync()
+// 0x00000B4B System.Void Cysharp.Threading.Tasks.Triggers.AsyncDropTrigger::UnityEngine.EventSystems.IDropHandler.OnDrop(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncDropTrigger_UnityEngine_EventSystems_IDropHandler_OnDrop_m6EC469C5DDE8F5DFA56DC574CB30A0C899A3BE79 (void);
+// 0x00000B4C Cysharp.Threading.Tasks.Triggers.IAsyncOnDropHandler Cysharp.Threading.Tasks.Triggers.AsyncDropTrigger::GetOnDropAsyncHandler()
+extern void AsyncDropTrigger_GetOnDropAsyncHandler_mC7BC09849A0A3EEBCC9A49992C3F85CBC99D40F9 (void);
+// 0x00000B4D Cysharp.Threading.Tasks.Triggers.IAsyncOnDropHandler Cysharp.Threading.Tasks.Triggers.AsyncDropTrigger::GetOnDropAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncDropTrigger_GetOnDropAsyncHandler_mD131FC037DAD9C1375DC8B6338B3F7DE488B1592 (void);
+// 0x00000B4E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncDropTrigger::OnDropAsync()
+extern void AsyncDropTrigger_OnDropAsync_m24E0BFD04C65108867E6C2DDCB2E0C77316FFBD3 (void);
+// 0x00000B4F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncDropTrigger::OnDropAsync(System.Threading.CancellationToken)
+extern void AsyncDropTrigger_OnDropAsync_m667E704E1DC358927FF27D820DBCA73F48A8E860 (void);
+// 0x00000B50 System.Void Cysharp.Threading.Tasks.Triggers.AsyncDropTrigger::.ctor()
+extern void AsyncDropTrigger__ctor_m52B026578FEC5CADE8EC07012219195372042C75 (void);
+// 0x00000B51 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnEndDragHandler::OnEndDragAsync()
+// 0x00000B52 System.Void Cysharp.Threading.Tasks.Triggers.AsyncEndDragTrigger::UnityEngine.EventSystems.IEndDragHandler.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncEndDragTrigger_UnityEngine_EventSystems_IEndDragHandler_OnEndDrag_mA6E208817F267F75434FB20CC4A2C1656FA72CDA (void);
+// 0x00000B53 Cysharp.Threading.Tasks.Triggers.IAsyncOnEndDragHandler Cysharp.Threading.Tasks.Triggers.AsyncEndDragTrigger::GetOnEndDragAsyncHandler()
+extern void AsyncEndDragTrigger_GetOnEndDragAsyncHandler_m8DD5DC103EF92681BA60966BCCF3C0ED2022E8F1 (void);
+// 0x00000B54 Cysharp.Threading.Tasks.Triggers.IAsyncOnEndDragHandler Cysharp.Threading.Tasks.Triggers.AsyncEndDragTrigger::GetOnEndDragAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncEndDragTrigger_GetOnEndDragAsyncHandler_m85F4AFDCE4CEC2FBCE4E33BB482C499EAFCEE29C (void);
+// 0x00000B55 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncEndDragTrigger::OnEndDragAsync()
+extern void AsyncEndDragTrigger_OnEndDragAsync_m3FA7DFA354A3AFF9179AC97017A153AF33CB9674 (void);
+// 0x00000B56 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncEndDragTrigger::OnEndDragAsync(System.Threading.CancellationToken)
+extern void AsyncEndDragTrigger_OnEndDragAsync_m33CD963F2D8E25C6631DC5D3B570A369146AD160 (void);
+// 0x00000B57 System.Void Cysharp.Threading.Tasks.Triggers.AsyncEndDragTrigger::.ctor()
+extern void AsyncEndDragTrigger__ctor_m6AD8D6387589C775E66148AC3C327418FC273B79 (void);
+// 0x00000B58 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnInitializePotentialDragHandler::OnInitializePotentialDragAsync()
+// 0x00000B59 System.Void Cysharp.Threading.Tasks.Triggers.AsyncInitializePotentialDragTrigger::UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncInitializePotentialDragTrigger_UnityEngine_EventSystems_IInitializePotentialDragHandler_OnInitializePotentialDrag_m29C011CBE259A2772D34FED167FDE9B5F19E3E7E (void);
+// 0x00000B5A Cysharp.Threading.Tasks.Triggers.IAsyncOnInitializePotentialDragHandler Cysharp.Threading.Tasks.Triggers.AsyncInitializePotentialDragTrigger::GetOnInitializePotentialDragAsyncHandler()
+extern void AsyncInitializePotentialDragTrigger_GetOnInitializePotentialDragAsyncHandler_m79E90E8346E05A21414B2F052BDD2624BBA5214E (void);
+// 0x00000B5B Cysharp.Threading.Tasks.Triggers.IAsyncOnInitializePotentialDragHandler Cysharp.Threading.Tasks.Triggers.AsyncInitializePotentialDragTrigger::GetOnInitializePotentialDragAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncInitializePotentialDragTrigger_GetOnInitializePotentialDragAsyncHandler_mD09078E1E80CEAFD30E5EB8054FF9F02BD3A21BE (void);
+// 0x00000B5C Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncInitializePotentialDragTrigger::OnInitializePotentialDragAsync()
+extern void AsyncInitializePotentialDragTrigger_OnInitializePotentialDragAsync_mB8A6588663519DE5E66BF691194393CE7F9C3301 (void);
+// 0x00000B5D Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncInitializePotentialDragTrigger::OnInitializePotentialDragAsync(System.Threading.CancellationToken)
+extern void AsyncInitializePotentialDragTrigger_OnInitializePotentialDragAsync_m2670ACE4FA88A59573E089FF56FEEB9F6DD6AAEC (void);
+// 0x00000B5E System.Void Cysharp.Threading.Tasks.Triggers.AsyncInitializePotentialDragTrigger::.ctor()
+extern void AsyncInitializePotentialDragTrigger__ctor_mA856ED893AE01C6799E3BBBDBDCF32C80F692952 (void);
+// 0x00000B5F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.AxisEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnMoveHandler::OnMoveAsync()
+// 0x00000B60 System.Void Cysharp.Threading.Tasks.Triggers.AsyncMoveTrigger::UnityEngine.EventSystems.IMoveHandler.OnMove(UnityEngine.EventSystems.AxisEventData)
+extern void AsyncMoveTrigger_UnityEngine_EventSystems_IMoveHandler_OnMove_m106A6DE0A40BF1992095328994E9B25266C07A19 (void);
+// 0x00000B61 Cysharp.Threading.Tasks.Triggers.IAsyncOnMoveHandler Cysharp.Threading.Tasks.Triggers.AsyncMoveTrigger::GetOnMoveAsyncHandler()
+extern void AsyncMoveTrigger_GetOnMoveAsyncHandler_m4DB3879B5B3F1A9DA814A7D9789137FFB11F76AF (void);
+// 0x00000B62 Cysharp.Threading.Tasks.Triggers.IAsyncOnMoveHandler Cysharp.Threading.Tasks.Triggers.AsyncMoveTrigger::GetOnMoveAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncMoveTrigger_GetOnMoveAsyncHandler_m4CCAD0773D4AE9E657E196A3A6FD66E7B3EDCEE9 (void);
+// 0x00000B63 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.AxisEventData> Cysharp.Threading.Tasks.Triggers.AsyncMoveTrigger::OnMoveAsync()
+extern void AsyncMoveTrigger_OnMoveAsync_m2ABBCFD97CD0ECF6D3E6220D87F67281E50DD278 (void);
+// 0x00000B64 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.AxisEventData> Cysharp.Threading.Tasks.Triggers.AsyncMoveTrigger::OnMoveAsync(System.Threading.CancellationToken)
+extern void AsyncMoveTrigger_OnMoveAsync_m0488637FE9AA347498D6060A49FE93E3A501AF2F (void);
+// 0x00000B65 System.Void Cysharp.Threading.Tasks.Triggers.AsyncMoveTrigger::.ctor()
+extern void AsyncMoveTrigger__ctor_m45E3B69860382856E11BA62527F019FE069804B5 (void);
+// 0x00000B66 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerClickHandler::OnPointerClickAsync()
+// 0x00000B67 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerClickTrigger::UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncPointerClickTrigger_UnityEngine_EventSystems_IPointerClickHandler_OnPointerClick_mE04300FDF07CDE0FE4428BDE950A72AC000EF30B (void);
+// 0x00000B68 Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerClickHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerClickTrigger::GetOnPointerClickAsyncHandler()
+extern void AsyncPointerClickTrigger_GetOnPointerClickAsyncHandler_mA566665DF7714C32E9BD7B1DF530F57BAC6F26E0 (void);
+// 0x00000B69 Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerClickHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerClickTrigger::GetOnPointerClickAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncPointerClickTrigger_GetOnPointerClickAsyncHandler_m73077567C1FAA022B7A090B98E6781CADAAB1F61 (void);
+// 0x00000B6A Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerClickTrigger::OnPointerClickAsync()
+extern void AsyncPointerClickTrigger_OnPointerClickAsync_mFAB255C3C4797C7B60655C035B2938C8FDCCA33F (void);
+// 0x00000B6B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerClickTrigger::OnPointerClickAsync(System.Threading.CancellationToken)
+extern void AsyncPointerClickTrigger_OnPointerClickAsync_m5B4E2978071A425B3229AC1AD264DA796396E9B1 (void);
+// 0x00000B6C System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerClickTrigger::.ctor()
+extern void AsyncPointerClickTrigger__ctor_m0BC216A191100A4553FB7C5E5CB02283EF95AFF1 (void);
+// 0x00000B6D Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerDownHandler::OnPointerDownAsync()
+// 0x00000B6E System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerDownTrigger::UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncPointerDownTrigger_UnityEngine_EventSystems_IPointerDownHandler_OnPointerDown_m538BA1B2A4BC460886C9BA40233C3D8CF718FF9E (void);
+// 0x00000B6F Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerDownHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerDownTrigger::GetOnPointerDownAsyncHandler()
+extern void AsyncPointerDownTrigger_GetOnPointerDownAsyncHandler_m688F1EEF4459FBB17E2EE3A94E90B8B44F3939A3 (void);
+// 0x00000B70 Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerDownHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerDownTrigger::GetOnPointerDownAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncPointerDownTrigger_GetOnPointerDownAsyncHandler_mE523D00A201D7AF98DFE605A1A5CAC33724913F7 (void);
+// 0x00000B71 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerDownTrigger::OnPointerDownAsync()
+extern void AsyncPointerDownTrigger_OnPointerDownAsync_m940E470426C0E2CDF91094036B4DABD1A903FB1D (void);
+// 0x00000B72 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerDownTrigger::OnPointerDownAsync(System.Threading.CancellationToken)
+extern void AsyncPointerDownTrigger_OnPointerDownAsync_m97F16BD60F67D92B5558B54048C6C8F6AAB8BDDC (void);
+// 0x00000B73 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerDownTrigger::.ctor()
+extern void AsyncPointerDownTrigger__ctor_m47AC62324159AC99D02E8F2C03DC532249DFA205 (void);
+// 0x00000B74 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerEnterHandler::OnPointerEnterAsync()
+// 0x00000B75 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerEnterTrigger::UnityEngine.EventSystems.IPointerEnterHandler.OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncPointerEnterTrigger_UnityEngine_EventSystems_IPointerEnterHandler_OnPointerEnter_m9CC1764FFE744F7DA3CD0948EEB78F853F1DA263 (void);
+// 0x00000B76 Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerEnterHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerEnterTrigger::GetOnPointerEnterAsyncHandler()
+extern void AsyncPointerEnterTrigger_GetOnPointerEnterAsyncHandler_m71BA530662B463CB6E38A453CF5B7C8F08A7D8F6 (void);
+// 0x00000B77 Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerEnterHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerEnterTrigger::GetOnPointerEnterAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncPointerEnterTrigger_GetOnPointerEnterAsyncHandler_mFD5431F7A7A6F56B58C28C80A3B29B659B6B4F0B (void);
+// 0x00000B78 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerEnterTrigger::OnPointerEnterAsync()
+extern void AsyncPointerEnterTrigger_OnPointerEnterAsync_mB2D312F1E56A2A670BBA8C588A92A557881C6E8A (void);
+// 0x00000B79 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerEnterTrigger::OnPointerEnterAsync(System.Threading.CancellationToken)
+extern void AsyncPointerEnterTrigger_OnPointerEnterAsync_mA69CAFE10318A3360E997B8B9F8095FDA6D8F4A4 (void);
+// 0x00000B7A System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerEnterTrigger::.ctor()
+extern void AsyncPointerEnterTrigger__ctor_mCD8B949EDDFBCAB60C7BBCD7B3B14126E077004A (void);
+// 0x00000B7B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerExitHandler::OnPointerExitAsync()
+// 0x00000B7C System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerExitTrigger::UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncPointerExitTrigger_UnityEngine_EventSystems_IPointerExitHandler_OnPointerExit_m21FF9CEAB6518F47CA763B4359549C60BD121545 (void);
+// 0x00000B7D Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerExitHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerExitTrigger::GetOnPointerExitAsyncHandler()
+extern void AsyncPointerExitTrigger_GetOnPointerExitAsyncHandler_mB9F1108DBFF5AAB0607750BFC5E30F7C72D1D678 (void);
+// 0x00000B7E Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerExitHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerExitTrigger::GetOnPointerExitAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncPointerExitTrigger_GetOnPointerExitAsyncHandler_mA6A4970B7FD37ED5AA4860FDDF229D100B44AF24 (void);
+// 0x00000B7F Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerExitTrigger::OnPointerExitAsync()
+extern void AsyncPointerExitTrigger_OnPointerExitAsync_m05F7D5E6C6642002650ADF4048B312642167023B (void);
+// 0x00000B80 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerExitTrigger::OnPointerExitAsync(System.Threading.CancellationToken)
+extern void AsyncPointerExitTrigger_OnPointerExitAsync_mCA9B7E46E233C86EED631B0999DC5DF6341190E7 (void);
+// 0x00000B81 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerExitTrigger::.ctor()
+extern void AsyncPointerExitTrigger__ctor_m4402450531D2F20D61BEEC8817CCAE3F32953F5D (void);
+// 0x00000B82 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerUpHandler::OnPointerUpAsync()
+// 0x00000B83 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerUpTrigger::UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncPointerUpTrigger_UnityEngine_EventSystems_IPointerUpHandler_OnPointerUp_m70F177ACD1FDED11A2B3EB06F5FEF5E91C181286 (void);
+// 0x00000B84 Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerUpHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerUpTrigger::GetOnPointerUpAsyncHandler()
+extern void AsyncPointerUpTrigger_GetOnPointerUpAsyncHandler_mEE2547442026FD5C03D78557B257DBC4B3F4AD16 (void);
+// 0x00000B85 Cysharp.Threading.Tasks.Triggers.IAsyncOnPointerUpHandler Cysharp.Threading.Tasks.Triggers.AsyncPointerUpTrigger::GetOnPointerUpAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncPointerUpTrigger_GetOnPointerUpAsyncHandler_m5F89720EA1F24FFE6C3309394CC2232D7C0DE006 (void);
+// 0x00000B86 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerUpTrigger::OnPointerUpAsync()
+extern void AsyncPointerUpTrigger_OnPointerUpAsync_mB8C833F75C04322D0640D6C7D81B62BF62F4755C (void);
+// 0x00000B87 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncPointerUpTrigger::OnPointerUpAsync(System.Threading.CancellationToken)
+extern void AsyncPointerUpTrigger_OnPointerUpAsync_m018A9D9AD3D0E676FBC6C0527968EE819731F495 (void);
+// 0x00000B88 System.Void Cysharp.Threading.Tasks.Triggers.AsyncPointerUpTrigger::.ctor()
+extern void AsyncPointerUpTrigger__ctor_m45B519521DCA4CD711890353781ACE67B46D0901 (void);
+// 0x00000B89 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnScrollHandler::OnScrollAsync()
+// 0x00000B8A System.Void Cysharp.Threading.Tasks.Triggers.AsyncScrollTrigger::UnityEngine.EventSystems.IScrollHandler.OnScroll(UnityEngine.EventSystems.PointerEventData)
+extern void AsyncScrollTrigger_UnityEngine_EventSystems_IScrollHandler_OnScroll_m8945007EA695538E62EBFBFFC76BEB3184D847ED (void);
+// 0x00000B8B Cysharp.Threading.Tasks.Triggers.IAsyncOnScrollHandler Cysharp.Threading.Tasks.Triggers.AsyncScrollTrigger::GetOnScrollAsyncHandler()
+extern void AsyncScrollTrigger_GetOnScrollAsyncHandler_mEDD87166B0C11F3111B0465DA7BAF874F82F77B6 (void);
+// 0x00000B8C Cysharp.Threading.Tasks.Triggers.IAsyncOnScrollHandler Cysharp.Threading.Tasks.Triggers.AsyncScrollTrigger::GetOnScrollAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncScrollTrigger_GetOnScrollAsyncHandler_m04D9951AFA1FF263081D2A2F60707519121183AA (void);
+// 0x00000B8D Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncScrollTrigger::OnScrollAsync()
+extern void AsyncScrollTrigger_OnScrollAsync_mDE615A9D7E7C7BA53FA03A3143A11DA1641A7467 (void);
+// 0x00000B8E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.PointerEventData> Cysharp.Threading.Tasks.Triggers.AsyncScrollTrigger::OnScrollAsync(System.Threading.CancellationToken)
+extern void AsyncScrollTrigger_OnScrollAsync_m20AC4D84B89B0375ACC0EA9411C9840CAF738EC6 (void);
+// 0x00000B8F System.Void Cysharp.Threading.Tasks.Triggers.AsyncScrollTrigger::.ctor()
+extern void AsyncScrollTrigger__ctor_m6C7411E7DE5ABE67A459D5BEE2C1233ACCC81CE7 (void);
+// 0x00000B90 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnSelectHandler::OnSelectAsync()
+// 0x00000B91 System.Void Cysharp.Threading.Tasks.Triggers.AsyncSelectTrigger::UnityEngine.EventSystems.ISelectHandler.OnSelect(UnityEngine.EventSystems.BaseEventData)
+extern void AsyncSelectTrigger_UnityEngine_EventSystems_ISelectHandler_OnSelect_m2E2DE234586ECA1CE685D841BEBCB702159C398D (void);
+// 0x00000B92 Cysharp.Threading.Tasks.Triggers.IAsyncOnSelectHandler Cysharp.Threading.Tasks.Triggers.AsyncSelectTrigger::GetOnSelectAsyncHandler()
+extern void AsyncSelectTrigger_GetOnSelectAsyncHandler_mF048D4E0FB6FCC1B396D4266FC51AEA684077C12 (void);
+// 0x00000B93 Cysharp.Threading.Tasks.Triggers.IAsyncOnSelectHandler Cysharp.Threading.Tasks.Triggers.AsyncSelectTrigger::GetOnSelectAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncSelectTrigger_GetOnSelectAsyncHandler_m617C2B56B8A4EC8FCFFB1D60C6C36708CD4A9796 (void);
+// 0x00000B94 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncSelectTrigger::OnSelectAsync()
+extern void AsyncSelectTrigger_OnSelectAsync_mA234129DF821D8705973E57C1F1B817AB844F3FA (void);
+// 0x00000B95 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncSelectTrigger::OnSelectAsync(System.Threading.CancellationToken)
+extern void AsyncSelectTrigger_OnSelectAsync_m58D691420266A3E01918667F41D35239011CDC60 (void);
+// 0x00000B96 System.Void Cysharp.Threading.Tasks.Triggers.AsyncSelectTrigger::.ctor()
+extern void AsyncSelectTrigger__ctor_m9961CCBC188ED442EF801485D0A070950BDB9242 (void);
+// 0x00000B97 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnSubmitHandler::OnSubmitAsync()
+// 0x00000B98 System.Void Cysharp.Threading.Tasks.Triggers.AsyncSubmitTrigger::UnityEngine.EventSystems.ISubmitHandler.OnSubmit(UnityEngine.EventSystems.BaseEventData)
+extern void AsyncSubmitTrigger_UnityEngine_EventSystems_ISubmitHandler_OnSubmit_m13EE18C4B9DDA7E0AD97CD2B0AF83538C7A62480 (void);
+// 0x00000B99 Cysharp.Threading.Tasks.Triggers.IAsyncOnSubmitHandler Cysharp.Threading.Tasks.Triggers.AsyncSubmitTrigger::GetOnSubmitAsyncHandler()
+extern void AsyncSubmitTrigger_GetOnSubmitAsyncHandler_m5048EDDE331533E46A0FD4D74F4AFF3E4B0D3527 (void);
+// 0x00000B9A Cysharp.Threading.Tasks.Triggers.IAsyncOnSubmitHandler Cysharp.Threading.Tasks.Triggers.AsyncSubmitTrigger::GetOnSubmitAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncSubmitTrigger_GetOnSubmitAsyncHandler_mD358FE71567F3E4E158B0875F0DBD2CA78BE5047 (void);
+// 0x00000B9B Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncSubmitTrigger::OnSubmitAsync()
+extern void AsyncSubmitTrigger_OnSubmitAsync_mC989E95E688D41DB759E34C9D01AF6E85142A9A9 (void);
+// 0x00000B9C Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncSubmitTrigger::OnSubmitAsync(System.Threading.CancellationToken)
+extern void AsyncSubmitTrigger_OnSubmitAsync_m499D26BBA1CCA12C56EAB4AC2CBE850AF26D63FC (void);
+// 0x00000B9D System.Void Cysharp.Threading.Tasks.Triggers.AsyncSubmitTrigger::.ctor()
+extern void AsyncSubmitTrigger__ctor_mBEFC6E37237735EE8E1A4D077C64F09EB0B7F83F (void);
+// 0x00000B9E Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.IAsyncOnUpdateSelectedHandler::OnUpdateSelectedAsync()
+// 0x00000B9F System.Void Cysharp.Threading.Tasks.Triggers.AsyncUpdateSelectedTrigger::UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected(UnityEngine.EventSystems.BaseEventData)
+extern void AsyncUpdateSelectedTrigger_UnityEngine_EventSystems_IUpdateSelectedHandler_OnUpdateSelected_m751BCA6DC0D3FB832F14A44DCC7F08FA36B83403 (void);
+// 0x00000BA0 Cysharp.Threading.Tasks.Triggers.IAsyncOnUpdateSelectedHandler Cysharp.Threading.Tasks.Triggers.AsyncUpdateSelectedTrigger::GetOnUpdateSelectedAsyncHandler()
+extern void AsyncUpdateSelectedTrigger_GetOnUpdateSelectedAsyncHandler_m91B0AD3DBC4A601FFEA58763B6B5FC676E380B76 (void);
+// 0x00000BA1 Cysharp.Threading.Tasks.Triggers.IAsyncOnUpdateSelectedHandler Cysharp.Threading.Tasks.Triggers.AsyncUpdateSelectedTrigger::GetOnUpdateSelectedAsyncHandler(System.Threading.CancellationToken)
+extern void AsyncUpdateSelectedTrigger_GetOnUpdateSelectedAsyncHandler_mD0E63D5FED30DEAAD37F4224036EBB11B6A2A0CF (void);
+// 0x00000BA2 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncUpdateSelectedTrigger::OnUpdateSelectedAsync()
+extern void AsyncUpdateSelectedTrigger_OnUpdateSelectedAsync_mB5E2B84F5C14E42D61801287414C513AF9306F1E (void);
+// 0x00000BA3 Cysharp.Threading.Tasks.UniTask`1<UnityEngine.EventSystems.BaseEventData> Cysharp.Threading.Tasks.Triggers.AsyncUpdateSelectedTrigger::OnUpdateSelectedAsync(System.Threading.CancellationToken)
+extern void AsyncUpdateSelectedTrigger_OnUpdateSelectedAsync_m348EF605036779545BF1F5393BB5AB74A5C01D77 (void);
+// 0x00000BA4 System.Void Cysharp.Threading.Tasks.Triggers.AsyncUpdateSelectedTrigger::.ctor()
+extern void AsyncUpdateSelectedTrigger__ctor_m8F8F7CEBEE75BD238702F928EE7D434AE11F7448 (void);
+// 0x00000BA5 System.Void Cysharp.Threading.Tasks.Internal.ArrayPool`1::.ctor()
+// 0x00000BA6 T[] Cysharp.Threading.Tasks.Internal.ArrayPool`1::Rent(System.Int32)
+// 0x00000BA7 System.Void Cysharp.Threading.Tasks.Internal.ArrayPool`1::Return(T[],System.Boolean)
+// 0x00000BA8 System.Int32 Cysharp.Threading.Tasks.Internal.ArrayPool`1::CalculateSize(System.Int32)
+// 0x00000BA9 System.Int32 Cysharp.Threading.Tasks.Internal.ArrayPool`1::GetQueueIndex(System.Int32)
+// 0x00000BAA System.Void Cysharp.Threading.Tasks.Internal.ArrayPool`1::.cctor()
+// 0x00000BAB System.Void Cysharp.Threading.Tasks.Internal.ArrayPoolUtil::EnsureCapacity(T[]&,System.Int32,Cysharp.Threading.Tasks.Internal.ArrayPool`1<T>)
+// 0x00000BAC System.Void Cysharp.Threading.Tasks.Internal.ArrayPoolUtil::EnsureCapacityCore(T[]&,System.Int32,Cysharp.Threading.Tasks.Internal.ArrayPool`1<T>)
+// 0x00000BAD Cysharp.Threading.Tasks.Internal.ArrayPoolUtil/RentArray`1<T> Cysharp.Threading.Tasks.Internal.ArrayPoolUtil::Materialize(System.Collections.Generic.IEnumerable`1<T>)
+// 0x00000BAE System.Void Cysharp.Threading.Tasks.Internal.ArrayPoolUtil/RentArray`1::.ctor(T[],System.Int32,Cysharp.Threading.Tasks.Internal.ArrayPool`1<T>)
+// 0x00000BAF System.Void Cysharp.Threading.Tasks.Internal.ArrayPoolUtil/RentArray`1::Dispose()
+// 0x00000BB0 System.Void Cysharp.Threading.Tasks.Internal.ArrayPoolUtil/RentArray`1::DisposeManually(System.Boolean)
+// 0x00000BB1 System.Void Cysharp.Threading.Tasks.Internal.ArrayUtil::EnsureCapacity(T[]&,System.Int32)
+// 0x00000BB2 System.Void Cysharp.Threading.Tasks.Internal.ArrayUtil::EnsureCore(T[]&,System.Int32)
+// 0x00000BB3 System.ValueTuple`2<T[],System.Int32> Cysharp.Threading.Tasks.Internal.ArrayUtil::Materialize(System.Collections.Generic.IEnumerable`1<T>)
+// 0x00000BB4 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::.ctor(Cysharp.Threading.Tasks.PlayerLoopTiming)
+extern void ContinuationQueue__ctor_m2691F2E47B45071E1D748B12BFCEA7003A4A2349 (void);
+// 0x00000BB5 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::Enqueue(System.Action)
+extern void ContinuationQueue_Enqueue_m802882C7B05D37A530F9E81453259CD2A8FAAF16 (void);
+// 0x00000BB6 System.Int32 Cysharp.Threading.Tasks.Internal.ContinuationQueue::Clear()
+extern void ContinuationQueue_Clear_m981446057CEAD9D6A27FA0ADF9F16C0B2F764C18 (void);
+// 0x00000BB7 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::Run()
+extern void ContinuationQueue_Run_mAF0D9BE1DE591406CF6E9E7AE723BFF6FB248027 (void);
+// 0x00000BB8 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::Initialization()
+extern void ContinuationQueue_Initialization_mCEE8AC1829A03B2346961EF03F5A6CF781D49CCA (void);
+// 0x00000BB9 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::LastInitialization()
+extern void ContinuationQueue_LastInitialization_m0A14A82C3FC05EAB16A2F53B67FE20F7A5AA9BA9 (void);
+// 0x00000BBA System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::EarlyUpdate()
+extern void ContinuationQueue_EarlyUpdate_mE2D343C81C97676F58EBB14AD0D0166BD342C90E (void);
+// 0x00000BBB System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::LastEarlyUpdate()
+extern void ContinuationQueue_LastEarlyUpdate_m3B9F214C3BA142D1C09865F15C5A85D637121DAA (void);
+// 0x00000BBC System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::FixedUpdate()
+extern void ContinuationQueue_FixedUpdate_m31E37797C020DC852FC8493DBAC90A9C46EE1CBC (void);
+// 0x00000BBD System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::LastFixedUpdate()
+extern void ContinuationQueue_LastFixedUpdate_mCC4FC1FD84E95AA48F4200F4A3EE5FF8E92AAF94 (void);
+// 0x00000BBE System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::PreUpdate()
+extern void ContinuationQueue_PreUpdate_mE93C2E72DC0FA847BD8310F67FCEDFEDBE43BE33 (void);
+// 0x00000BBF System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::LastPreUpdate()
+extern void ContinuationQueue_LastPreUpdate_m970552416F8418461AF2707BB9FA52B764B6D632 (void);
+// 0x00000BC0 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::Update()
+extern void ContinuationQueue_Update_mF437F847D02FB8DE1BFB309D8C6A04C824FD198F (void);
+// 0x00000BC1 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::LastUpdate()
+extern void ContinuationQueue_LastUpdate_mE0155228A6BCC874D777A668FF642C72AD2B8A6B (void);
+// 0x00000BC2 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::PreLateUpdate()
+extern void ContinuationQueue_PreLateUpdate_m8DF6791BC638D689D4C37ED4221A0FFCCAAD3B71 (void);
+// 0x00000BC3 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::LastPreLateUpdate()
+extern void ContinuationQueue_LastPreLateUpdate_m4DE23C52241C21064CB12C63C9F23F19A9A7942B (void);
+// 0x00000BC4 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::PostLateUpdate()
+extern void ContinuationQueue_PostLateUpdate_m55D35665E9FA975C9B2EB4CEA9B5D1E3E802D7F0 (void);
+// 0x00000BC5 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::LastPostLateUpdate()
+extern void ContinuationQueue_LastPostLateUpdate_mBC3FDF1E9B650F49F9DE9A58C3B0E67CCD676DCD (void);
+// 0x00000BC6 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::TimeUpdate()
+extern void ContinuationQueue_TimeUpdate_m95DC65E6A08364B3326E2B0D1E2007EA218942C6 (void);
+// 0x00000BC7 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::LastTimeUpdate()
+extern void ContinuationQueue_LastTimeUpdate_m2FFF647992655828559CD332BD4BFD7893941CDE (void);
+// 0x00000BC8 System.Void Cysharp.Threading.Tasks.Internal.ContinuationQueue::RunCore()
+extern void ContinuationQueue_RunCore_m3CF0C93FCEC17B9E879B2A31FE46A9846C77EFEC (void);
+// 0x00000BC9 System.String Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions::CleanupAsyncStackTrace(System.Diagnostics.StackTrace)
+extern void DiagnosticsExtensions_CleanupAsyncStackTrace_m11838690613AFBA650316B4427E615C2487912AF (void);
+// 0x00000BCA System.Boolean Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions::IsAsync(System.Reflection.MethodBase)
+extern void DiagnosticsExtensions_IsAsync_m956F3FE343416BF5906EC8B0686E0D27C95B4FAF (void);
+// 0x00000BCB System.Boolean Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions::TryResolveStateMachineMethod(System.Reflection.MethodBase&,System.Type&)
+extern void DiagnosticsExtensions_TryResolveStateMachineMethod_m2DF4EE0DD25AE6A161D350683A2E0D97CDA6A058 (void);
+// 0x00000BCC System.String Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions::BeautifyType(System.Type,System.Boolean)
+extern void DiagnosticsExtensions_BeautifyType_m1A0350FA9FFB2651E61565CFC80007107813E28B (void);
+// 0x00000BCD System.Boolean Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions::IgnoreLine(System.Reflection.MethodBase)
+extern void DiagnosticsExtensions_IgnoreLine_m580D79D313843B79A1E0042643CF2B547B7731E6 (void);
+// 0x00000BCE System.String Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions::AppendHyperLink(System.String,System.String)
+extern void DiagnosticsExtensions_AppendHyperLink_mBFAB11F2A1ACFEB872D1C1132C8AD6BE21C7F6BF (void);
+// 0x00000BCF System.Void Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions::.cctor()
+extern void DiagnosticsExtensions__cctor_mC0156294F3B0529AE5C54D00A307BB07752D1DE3 (void);
+// 0x00000BD0 System.Void Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions/<>c::.cctor()
+extern void U3CU3Ec__cctor_mB72DC626F9E8D103A38945DAAF2A68BF46A62E48 (void);
+// 0x00000BD1 System.Void Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions/<>c::.ctor()
+extern void U3CU3Ec__ctor_mC92C852032D4C1D3994F4B9EC6863C2060B15439 (void);
+// 0x00000BD2 System.String Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions/<>c::<CleanupAsyncStackTrace>b__3_0(System.Reflection.ParameterInfo)
+extern void U3CU3Ec_U3CCleanupAsyncStackTraceU3Eb__3_0_m940739004B6C223040896DBF530CBD027B7CC838 (void);
+// 0x00000BD3 System.String Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions/<>c::<BeautifyType>b__6_0(System.Type)
+extern void U3CU3Ec_U3CBeautifyTypeU3Eb__6_0_m815E669F8C1A9E5CDBECCA95C693FA2DED92279E (void);
+// 0x00000BD4 System.String Cysharp.Threading.Tasks.Internal.DiagnosticsExtensions/<>c::<BeautifyType>b__6_1(System.Type)
+extern void U3CU3Ec_U3CBeautifyTypeU3Eb__6_1_m0019F9BAD73E19CFA2615DD94A359D05433A6DCC (void);
+// 0x00000BD5 System.Void Cysharp.Threading.Tasks.Internal.Error::ThrowArgumentNullException(T,System.String)
+// 0x00000BD6 System.Void Cysharp.Threading.Tasks.Internal.Error::ThrowArgumentNullExceptionCore(System.String)
+extern void Error_ThrowArgumentNullExceptionCore_m3FF7A528380B19AF3E6A08B2CD103556B0A94779 (void);
+// 0x00000BD7 System.Exception Cysharp.Threading.Tasks.Internal.Error::ArgumentOutOfRange(System.String)
+extern void Error_ArgumentOutOfRange_mB12CA2A5A28BE69DF8EFD9AB4FBD5DDD4C27AD13 (void);
+// 0x00000BD8 System.Exception Cysharp.Threading.Tasks.Internal.Error::NoElements()
+extern void Error_NoElements_m9FAF29875B71BD3258D6E9E0BD6207BFC95316A5 (void);
+// 0x00000BD9 System.Exception Cysharp.Threading.Tasks.Internal.Error::MoreThanOneElement()
+extern void Error_MoreThanOneElement_mD66FED8AE9CF26384AFAA60BCFF0216F9490ECEE (void);
+// 0x00000BDA System.Void Cysharp.Threading.Tasks.Internal.Error::ThrowArgumentException(System.String)
+extern void Error_ThrowArgumentException_m889149DF71CE175AE054CBD976C3B533989821B7 (void);
+// 0x00000BDB System.Void Cysharp.Threading.Tasks.Internal.Error::ThrowNotYetCompleted()
+extern void Error_ThrowNotYetCompleted_m0DD6572E6CF007038FBC3872B193BE74C67C2AB8 (void);
+// 0x00000BDC T Cysharp.Threading.Tasks.Internal.Error::ThrowNotYetCompleted()
+// 0x00000BDD System.Void Cysharp.Threading.Tasks.Internal.Error::ThrowWhenContinuationIsAlreadyRegistered(T)
+// 0x00000BDE System.Void Cysharp.Threading.Tasks.Internal.Error::ThrowInvalidOperationExceptionCore(System.String)
+extern void Error_ThrowInvalidOperationExceptionCore_m5BEDE591893014DF989C54DFB3D8B060252C1A31 (void);
+// 0x00000BDF System.Void Cysharp.Threading.Tasks.Internal.Error::ThrowOperationCanceledException()
+extern void Error_ThrowOperationCanceledException_mB05D15918A01405FCDEE56CA5F5BE433DA1D6C8F (void);
+// 0x00000BE0 System.Void Cysharp.Threading.Tasks.Internal.MinimumQueue`1::.ctor(System.Int32)
+// 0x00000BE1 System.Int32 Cysharp.Threading.Tasks.Internal.MinimumQueue`1::get_Count()
+// 0x00000BE2 T Cysharp.Threading.Tasks.Internal.MinimumQueue`1::Peek()
+// 0x00000BE3 System.Void Cysharp.Threading.Tasks.Internal.MinimumQueue`1::Enqueue(T)
+// 0x00000BE4 T Cysharp.Threading.Tasks.Internal.MinimumQueue`1::Dequeue()
+// 0x00000BE5 System.Void Cysharp.Threading.Tasks.Internal.MinimumQueue`1::Grow()
+// 0x00000BE6 System.Void Cysharp.Threading.Tasks.Internal.MinimumQueue`1::SetCapacity(System.Int32)
+// 0x00000BE7 System.Void Cysharp.Threading.Tasks.Internal.MinimumQueue`1::MoveNext(System.Int32&)
+// 0x00000BE8 System.Void Cysharp.Threading.Tasks.Internal.MinimumQueue`1::ThrowForEmptyQueue()
+// 0x00000BE9 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::.ctor(Cysharp.Threading.Tasks.PlayerLoopTiming)
+extern void PlayerLoopRunner__ctor_m2D6695A577F21178AB92E93FDF465CE37ECA28E1 (void);
+// 0x00000BEA System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::AddAction(Cysharp.Threading.Tasks.IPlayerLoopItem)
+extern void PlayerLoopRunner_AddAction_mC0968BDEF4B70D3CBF59AF574D87DDB51982236D (void);
+// 0x00000BEB System.Int32 Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::Clear()
+extern void PlayerLoopRunner_Clear_mD138CAAC3638EB1F0949F8CC9BC876AAA02B5333 (void);
+// 0x00000BEC System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::Run()
+extern void PlayerLoopRunner_Run_m33748216201A3D6575D14D23450C03068FD1729B (void);
+// 0x00000BED System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::Initialization()
+extern void PlayerLoopRunner_Initialization_m261886B5EE4FE447AC0D9970A2611CB15F30A3C0 (void);
+// 0x00000BEE System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::LastInitialization()
+extern void PlayerLoopRunner_LastInitialization_mD60239EE16381604AF1F898F321BD9B5DBFF5BF7 (void);
+// 0x00000BEF System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::EarlyUpdate()
+extern void PlayerLoopRunner_EarlyUpdate_mA17D05AE2D41AC0AC8FBA6A6F887022B5919E181 (void);
+// 0x00000BF0 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::LastEarlyUpdate()
+extern void PlayerLoopRunner_LastEarlyUpdate_mF015AACB9D25CF340986B968F77384A0A2975DFD (void);
+// 0x00000BF1 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::FixedUpdate()
+extern void PlayerLoopRunner_FixedUpdate_m46665E9C1FDA461847D4EED290F11C8704631F67 (void);
+// 0x00000BF2 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::LastFixedUpdate()
+extern void PlayerLoopRunner_LastFixedUpdate_mB77A68F437A2A4CA9152CB80F638A12195DEB08E (void);
+// 0x00000BF3 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::PreUpdate()
+extern void PlayerLoopRunner_PreUpdate_m346C48450A6B63EE2147DF3A902008BF932FD649 (void);
+// 0x00000BF4 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::LastPreUpdate()
+extern void PlayerLoopRunner_LastPreUpdate_mE6D4A4211F5D699CA52F229DEF02D14C435CBB49 (void);
+// 0x00000BF5 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::Update()
+extern void PlayerLoopRunner_Update_mE9FAAF206931C3575A7D84FEFC50CE119EEC9E9E (void);
+// 0x00000BF6 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::LastUpdate()
+extern void PlayerLoopRunner_LastUpdate_mA6E740086E42031FAEDF12D6D29F5ECFCA8E36B8 (void);
+// 0x00000BF7 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::PreLateUpdate()
+extern void PlayerLoopRunner_PreLateUpdate_m9A5A64617B89F735E29217E1DFA546E5F058BF14 (void);
+// 0x00000BF8 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::LastPreLateUpdate()
+extern void PlayerLoopRunner_LastPreLateUpdate_m46D83DE50CE91101E177611F90491B2C97FB94F1 (void);
+// 0x00000BF9 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::PostLateUpdate()
+extern void PlayerLoopRunner_PostLateUpdate_mC2235D8AA5C890A2DED85B058A8226284CD0F03C (void);
+// 0x00000BFA System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::LastPostLateUpdate()
+extern void PlayerLoopRunner_LastPostLateUpdate_mB141860C1D02EE72D1BA5FAD550A9EEBB3A2A583 (void);
+// 0x00000BFB System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::TimeUpdate()
+extern void PlayerLoopRunner_TimeUpdate_m78113C468F4D9542AF991E290672ABF89DA0B8FD (void);
+// 0x00000BFC System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::LastTimeUpdate()
+extern void PlayerLoopRunner_LastTimeUpdate_m34D7531369689AE25CBC54466A711086336EE94F (void);
+// 0x00000BFD System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner::RunCore()
+extern void PlayerLoopRunner_RunCore_m053B5E8652893AA94B9CD56C64484CA49D01153A (void);
+// 0x00000BFE System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner/<>c::.cctor()
+extern void U3CU3Ec__cctor_mE23C6BAF80DDC97AC0299B07D5E5EBEDAD7AE1C3 (void);
+// 0x00000BFF System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner/<>c::.ctor()
+extern void U3CU3Ec__ctor_mEC8E674F3A7E554B6C09782BE4023E8DDA0F7E9E (void);
+// 0x00000C00 System.Void Cysharp.Threading.Tasks.Internal.PlayerLoopRunner/<>c::<.ctor>b__9_0(System.Exception)
+extern void U3CU3Ec_U3C_ctorU3Eb__9_0_m7FD5E476CB2AB74C2AA83C5A0A68796DF976B7A9 (void);
+// 0x00000C01 Cysharp.Threading.Tasks.Internal.PooledDelegate`1<T>& Cysharp.Threading.Tasks.Internal.PooledDelegate`1::get_NextNode()
+// 0x00000C02 System.Void Cysharp.Threading.Tasks.Internal.PooledDelegate`1::.cctor()
+// 0x00000C03 System.Void Cysharp.Threading.Tasks.Internal.PooledDelegate`1::.ctor()
+// 0x00000C04 System.Action`1<T> Cysharp.Threading.Tasks.Internal.PooledDelegate`1::Create(System.Action)
+// 0x00000C05 System.Void Cysharp.Threading.Tasks.Internal.PooledDelegate`1::Run(T)
+// 0x00000C06 System.Void Cysharp.Threading.Tasks.Internal.PooledDelegate`1/<>c::.cctor()
+// 0x00000C07 System.Void Cysharp.Threading.Tasks.Internal.PooledDelegate`1/<>c::.ctor()
+// 0x00000C08 System.Int32 Cysharp.Threading.Tasks.Internal.PooledDelegate`1/<>c::<.cctor>b__4_0()
+// 0x00000C09 System.Boolean Cysharp.Threading.Tasks.Internal.RuntimeHelpersAbstraction::IsWellKnownNoReferenceContainsType()
+// 0x00000C0A System.Boolean Cysharp.Threading.Tasks.Internal.RuntimeHelpersAbstraction::WellKnownNoReferenceContainsTypeInitialize(System.Type)
+extern void RuntimeHelpersAbstraction_WellKnownNoReferenceContainsTypeInitialize_mD3611FAEF828BA7D67B3B447050F697AA89CB364 (void);
+// 0x00000C0B System.Void Cysharp.Threading.Tasks.Internal.RuntimeHelpersAbstraction/WellKnownNoReferenceContainsType`1::.cctor()
+// 0x00000C0C Cysharp.Threading.Tasks.Internal.StateTuple`1<T1> Cysharp.Threading.Tasks.Internal.StateTuple::Create(T1)
+// 0x00000C0D Cysharp.Threading.Tasks.Internal.StateTuple`2<T1,T2> Cysharp.Threading.Tasks.Internal.StateTuple::Create(T1,T2)
+// 0x00000C0E Cysharp.Threading.Tasks.Internal.StateTuple`3<T1,T2,T3> Cysharp.Threading.Tasks.Internal.StateTuple::Create(T1,T2,T3)
+// 0x00000C0F System.Void Cysharp.Threading.Tasks.Internal.StateTuple`1::Deconstruct(T1&)
+// 0x00000C10 System.Void Cysharp.Threading.Tasks.Internal.StateTuple`1::Dispose()
+// 0x00000C11 System.Void Cysharp.Threading.Tasks.Internal.StateTuple`1::.ctor()
+// 0x00000C12 Cysharp.Threading.Tasks.Internal.StateTuple`1<T1> Cysharp.Threading.Tasks.Internal.StatePool`1::Create(T1)
+// 0x00000C13 System.Void Cysharp.Threading.Tasks.Internal.StatePool`1::Return(Cysharp.Threading.Tasks.Internal.StateTuple`1<T1>)
+// 0x00000C14 System.Void Cysharp.Threading.Tasks.Internal.StatePool`1::.cctor()
+// 0x00000C15 System.Void Cysharp.Threading.Tasks.Internal.StateTuple`2::Deconstruct(T1&,T2&)
+// 0x00000C16 System.Void Cysharp.Threading.Tasks.Internal.StateTuple`2::Dispose()
+// 0x00000C17 System.Void Cysharp.Threading.Tasks.Internal.StateTuple`2::.ctor()
+// 0x00000C18 Cysharp.Threading.Tasks.Internal.StateTuple`2<T1,T2> Cysharp.Threading.Tasks.Internal.StatePool`2::Create(T1,T2)
+// 0x00000C19 System.Void Cysharp.Threading.Tasks.Internal.StatePool`2::Return(Cysharp.Threading.Tasks.Internal.StateTuple`2<T1,T2>)
+// 0x00000C1A System.Void Cysharp.Threading.Tasks.Internal.StatePool`2::.cctor()
+// 0x00000C1B System.Void Cysharp.Threading.Tasks.Internal.StateTuple`3::Deconstruct(T1&,T2&,T3&)
+// 0x00000C1C System.Void Cysharp.Threading.Tasks.Internal.StateTuple`3::Dispose()
+// 0x00000C1D System.Void Cysharp.Threading.Tasks.Internal.StateTuple`3::.ctor()
+// 0x00000C1E Cysharp.Threading.Tasks.Internal.StateTuple`3<T1,T2,T3> Cysharp.Threading.Tasks.Internal.StatePool`3::Create(T1,T2,T3)
+// 0x00000C1F System.Void Cysharp.Threading.Tasks.Internal.StatePool`3::Return(Cysharp.Threading.Tasks.Internal.StateTuple`3<T1,T2,T3>)
+// 0x00000C20 System.Void Cysharp.Threading.Tasks.Internal.StatePool`3::.cctor()
+// 0x00000C21 System.Collections.Generic.IEqualityComparer`1<T> Cysharp.Threading.Tasks.Internal.UnityEqualityComparer::GetDefault()
+// 0x00000C22 System.Object Cysharp.Threading.Tasks.Internal.UnityEqualityComparer::GetDefaultHelper(System.Type)
+extern void UnityEqualityComparer_GetDefaultHelper_mBD5CBC13CCF4A2D1A0E121A874B47648D919CC1E (void);
+// 0x00000C23 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer::.cctor()
+extern void UnityEqualityComparer__cctor_m27C5F8E0B687AFEC0F3E4EBB9BC857453B466BF8 (void);
+// 0x00000C24 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Cache`1::.cctor()
+// 0x00000C25 System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector2EqualityComparer::Equals(UnityEngine.Vector2,UnityEngine.Vector2)
+extern void Vector2EqualityComparer_Equals_mDCF8794B659CF4F453670F50C038E29AB7A45B5F (void);
+// 0x00000C26 System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector2EqualityComparer::GetHashCode(UnityEngine.Vector2)
+extern void Vector2EqualityComparer_GetHashCode_mE3C5D0219CB404919B2DABFE2EA1A2DB4928BC43 (void);
+// 0x00000C27 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector2EqualityComparer::.ctor()
+extern void Vector2EqualityComparer__ctor_m207C26FCCF0F5DC22A53A9B0F60F4147ABA55222 (void);
+// 0x00000C28 System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector3EqualityComparer::Equals(UnityEngine.Vector3,UnityEngine.Vector3)
+extern void Vector3EqualityComparer_Equals_m37AFB52DA45A16EEC47E0EFA7547C7A92F7CE00C (void);
+// 0x00000C29 System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector3EqualityComparer::GetHashCode(UnityEngine.Vector3)
+extern void Vector3EqualityComparer_GetHashCode_m2E0133ED677D6B890BC03F7C7558EDAEEF5B5989 (void);
+// 0x00000C2A System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector3EqualityComparer::.ctor()
+extern void Vector3EqualityComparer__ctor_m106F2FE1F18B2947A2D4B57C79D52F88BA085E49 (void);
+// 0x00000C2B System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector4EqualityComparer::Equals(UnityEngine.Vector4,UnityEngine.Vector4)
+extern void Vector4EqualityComparer_Equals_m2086F254F3E0DBB61870C6AFC2071F0B55D46BEE (void);
+// 0x00000C2C System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector4EqualityComparer::GetHashCode(UnityEngine.Vector4)
+extern void Vector4EqualityComparer_GetHashCode_m9A62BAC63109A30401C65E44DFDDC6DCC8A032DB (void);
+// 0x00000C2D System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector4EqualityComparer::.ctor()
+extern void Vector4EqualityComparer__ctor_m5E6E79B4C6602C5483FC06EF3C519FE37C7F030E (void);
+// 0x00000C2E System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/ColorEqualityComparer::Equals(UnityEngine.Color,UnityEngine.Color)
+extern void ColorEqualityComparer_Equals_mB179B1B397F1F1168EC53962ABB3523FF74AFD6B (void);
+// 0x00000C2F System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/ColorEqualityComparer::GetHashCode(UnityEngine.Color)
+extern void ColorEqualityComparer_GetHashCode_mE8448792E611375BF81BEB3F74EF316C9C5089F1 (void);
+// 0x00000C30 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/ColorEqualityComparer::.ctor()
+extern void ColorEqualityComparer__ctor_m80FBCEE72A7623DD986FDA00A8C2D00BBF13E947 (void);
+// 0x00000C31 System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RectEqualityComparer::Equals(UnityEngine.Rect,UnityEngine.Rect)
+extern void RectEqualityComparer_Equals_m7C5D4094F024E1E3303902EC45511360AB84C3A5 (void);
+// 0x00000C32 System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RectEqualityComparer::GetHashCode(UnityEngine.Rect)
+extern void RectEqualityComparer_GetHashCode_m371270E3930F1051BA8A383A7AD4E8185F34BB41 (void);
+// 0x00000C33 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RectEqualityComparer::.ctor()
+extern void RectEqualityComparer__ctor_m01CF0A80C073920D7259C0CF6F5E3768B3CCC885 (void);
+// 0x00000C34 System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/BoundsEqualityComparer::Equals(UnityEngine.Bounds,UnityEngine.Bounds)
+extern void BoundsEqualityComparer_Equals_mEEBF4CEE6EFACEE9C65585CF206560F896E450BC (void);
+// 0x00000C35 System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/BoundsEqualityComparer::GetHashCode(UnityEngine.Bounds)
+extern void BoundsEqualityComparer_GetHashCode_m3B5BB89CBE2292F63CE1AF79355488D5FA842332 (void);
+// 0x00000C36 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/BoundsEqualityComparer::.ctor()
+extern void BoundsEqualityComparer__ctor_m744245C474174E3821DDF6B29A3C9507E5F7E31B (void);
+// 0x00000C37 System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/QuaternionEqualityComparer::Equals(UnityEngine.Quaternion,UnityEngine.Quaternion)
+extern void QuaternionEqualityComparer_Equals_m31074902EFDF140C640FE4572226107F8051AED6 (void);
+// 0x00000C38 System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/QuaternionEqualityComparer::GetHashCode(UnityEngine.Quaternion)
+extern void QuaternionEqualityComparer_GetHashCode_m16370B5BA87F585E8EF9F90079BE8639A736B108 (void);
+// 0x00000C39 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/QuaternionEqualityComparer::.ctor()
+extern void QuaternionEqualityComparer__ctor_mFCB6AB9DDAFA9A18AB3234EBC4DD559ACEDFD81D (void);
+// 0x00000C3A System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Color32EqualityComparer::Equals(UnityEngine.Color32,UnityEngine.Color32)
+extern void Color32EqualityComparer_Equals_m65994327B8D4AE5F437ECDBB056B51121D4E123C (void);
+// 0x00000C3B System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Color32EqualityComparer::GetHashCode(UnityEngine.Color32)
+extern void Color32EqualityComparer_GetHashCode_m6C09A2DCB410B21E5A7B29BF078997D13BD828AC (void);
+// 0x00000C3C System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Color32EqualityComparer::.ctor()
+extern void Color32EqualityComparer__ctor_mF55426A5F99AA53C3FD4A1DD7021C77F012338C7 (void);
+// 0x00000C3D System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector2IntEqualityComparer::Equals(UnityEngine.Vector2Int,UnityEngine.Vector2Int)
+extern void Vector2IntEqualityComparer_Equals_m601E35C575B3B80972F7DCD6E0F4FFDB0BBC6FD1 (void);
+// 0x00000C3E System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector2IntEqualityComparer::GetHashCode(UnityEngine.Vector2Int)
+extern void Vector2IntEqualityComparer_GetHashCode_mA47DD005DCD1F908934A7FBDEC0302B7E721CFB6 (void);
+// 0x00000C3F System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector2IntEqualityComparer::.ctor()
+extern void Vector2IntEqualityComparer__ctor_m5B88D4FCC1D89A35D0AA716F22A1BC4D9D2E46A6 (void);
+// 0x00000C40 System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector3IntEqualityComparer::Equals(UnityEngine.Vector3Int,UnityEngine.Vector3Int)
+extern void Vector3IntEqualityComparer_Equals_mF18B9FF6B1CC550E240F27D4B00A6B902D453958 (void);
+// 0x00000C41 System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector3IntEqualityComparer::GetHashCode(UnityEngine.Vector3Int)
+extern void Vector3IntEqualityComparer_GetHashCode_mBD55FE76A603A43A5A537640A998E2D873C88755 (void);
+// 0x00000C42 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector3IntEqualityComparer::.ctor()
+extern void Vector3IntEqualityComparer__ctor_mA4AA6BF7F8538B26E688AEC47377342B1FEDDDE2 (void);
+// 0x00000C43 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/Vector3IntEqualityComparer::.cctor()
+extern void Vector3IntEqualityComparer__cctor_m756665A10DFA6CA45296419E6B855B84D46DA59C (void);
+// 0x00000C44 System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RangeIntEqualityComparer::Equals(UnityEngine.RangeInt,UnityEngine.RangeInt)
+extern void RangeIntEqualityComparer_Equals_mFAF08E61133434AAE753541F122850020EE5A5FC (void);
+// 0x00000C45 System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RangeIntEqualityComparer::GetHashCode(UnityEngine.RangeInt)
+extern void RangeIntEqualityComparer_GetHashCode_m6E983D944CB99F6213799F3C01D1C4B2B0471A0D (void);
+// 0x00000C46 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RangeIntEqualityComparer::.ctor()
+extern void RangeIntEqualityComparer__ctor_m2083D87FEE042275EDC16B25AF0D364674DDE85F (void);
+// 0x00000C47 System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RectIntEqualityComparer::Equals(UnityEngine.RectInt,UnityEngine.RectInt)
+extern void RectIntEqualityComparer_Equals_m2DB1E4DE26E7EBC6F11FBA44CAC624C1929052B7 (void);
+// 0x00000C48 System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RectIntEqualityComparer::GetHashCode(UnityEngine.RectInt)
+extern void RectIntEqualityComparer_GetHashCode_mE62B5C63CA51E8456976FC89AD8C28BF7E268693 (void);
+// 0x00000C49 System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/RectIntEqualityComparer::.ctor()
+extern void RectIntEqualityComparer__ctor_m561C0689A658AF24ACF83930EFF0C24C4C451071 (void);
+// 0x00000C4A System.Boolean Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/BoundsIntEqualityComparer::Equals(UnityEngine.BoundsInt,UnityEngine.BoundsInt)
+extern void BoundsIntEqualityComparer_Equals_m122729F17B69AEA949D6EE76770F49C256D5FA96 (void);
+// 0x00000C4B System.Int32 Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/BoundsIntEqualityComparer::GetHashCode(UnityEngine.BoundsInt)
+extern void BoundsIntEqualityComparer_GetHashCode_m0D967C9173D85163A31114670AFD2DBE43580F7C (void);
+// 0x00000C4C System.Void Cysharp.Threading.Tasks.Internal.UnityEqualityComparer/BoundsIntEqualityComparer::.ctor()
+extern void BoundsIntEqualityComparer__ctor_m24AFB0639DF0D9267F95F0530E9F05C3DA72920B (void);
+// 0x00000C4D System.Boolean Cysharp.Threading.Tasks.Internal.UnityWebRequestResultExtensions::IsError(UnityEngine.Networking.UnityWebRequest)
+extern void UnityWebRequestResultExtensions_IsError_m1E1CC890AF2527FABD6B6AD5BD6A25FEF0604310 (void);
+// 0x00000C4E Cysharp.Threading.Tasks.Internal.ValueStopwatch Cysharp.Threading.Tasks.Internal.ValueStopwatch::StartNew()
+extern void ValueStopwatch_StartNew_m0E86DE08F588C60DCA8982B16DB6949C4A93233F (void);
+// 0x00000C4F System.Void Cysharp.Threading.Tasks.Internal.ValueStopwatch::.ctor(System.Int64)
+extern void ValueStopwatch__ctor_mF4323A30F6F82FAAA7C2C943EE2E708A2E482D68 (void);
+// 0x00000C50 System.TimeSpan Cysharp.Threading.Tasks.Internal.ValueStopwatch::get_Elapsed()
+extern void ValueStopwatch_get_Elapsed_m3D0250DBD5A7CCD764D56F4A4230DF2953406963 (void);
+// 0x00000C51 System.Boolean Cysharp.Threading.Tasks.Internal.ValueStopwatch::get_IsInvalid()
+extern void ValueStopwatch_get_IsInvalid_mE2AFBDC1DEB255E72DE87B2BD2C7EA8BFDCDBDF1 (void);
+// 0x00000C52 System.Int64 Cysharp.Threading.Tasks.Internal.ValueStopwatch::get_ElapsedTicks()
+extern void ValueStopwatch_get_ElapsedTicks_mF4B713799E06F9F82066A6AB557F419F21C18E40 (void);
+// 0x00000C53 System.Void Cysharp.Threading.Tasks.Internal.ValueStopwatch::.cctor()
+extern void ValueStopwatch__cctor_m57CAAF73C5CED4A7B8A02C11494C2D632AD7DAC1 (void);
+// 0x00000C54 System.Void Cysharp.Threading.Tasks.Internal.WeakDictionary`2::.ctor(System.Int32,System.Single,System.Collections.Generic.IEqualityComparer`1<TKey>)
+// 0x00000C55 System.Boolean Cysharp.Threading.Tasks.Internal.WeakDictionary`2::TryAdd(TKey,TValue)
+// 0x00000C56 System.Boolean Cysharp.Threading.Tasks.Internal.WeakDictionary`2::TryGetValue(TKey,TValue&)
+// 0x00000C57 System.Boolean Cysharp.Threading.Tasks.Internal.WeakDictionary`2::TryRemove(TKey)
+// 0x00000C58 System.Boolean Cysharp.Threading.Tasks.Internal.WeakDictionary`2::TryAddInternal(TKey,TValue)
+// 0x00000C59 System.Boolean Cysharp.Threading.Tasks.Internal.WeakDictionary`2::AddToBuckets(Cysharp.Threading.Tasks.Internal.WeakDictionary`2/Entry<TKey,TValue>[],TKey,TValue,System.Int32)
+// 0x00000C5A System.Boolean Cysharp.Threading.Tasks.Internal.WeakDictionary`2::TryGetEntry(TKey,System.Int32&,Cysharp.Threading.Tasks.Internal.WeakDictionary`2/Entry<TKey,TValue>&)
+// 0x00000C5B System.Void Cysharp.Threading.Tasks.Internal.WeakDictionary`2::Remove(System.Int32,Cysharp.Threading.Tasks.Internal.WeakDictionary`2/Entry<TKey,TValue>)
+// 0x00000C5C System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>> Cysharp.Threading.Tasks.Internal.WeakDictionary`2::ToList()
+// 0x00000C5D System.Int32 Cysharp.Threading.Tasks.Internal.WeakDictionary`2::ToList(System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<TKey,TValue>>&,System.Boolean)
+// 0x00000C5E System.Int32 Cysharp.Threading.Tasks.Internal.WeakDictionary`2::CalculateCapacity(System.Int32,System.Single)
+// 0x00000C5F System.String Cysharp.Threading.Tasks.Internal.WeakDictionary`2/Entry::ToString()
+// 0x00000C60 System.Int32 Cysharp.Threading.Tasks.Internal.WeakDictionary`2/Entry::Count()
+// 0x00000C61 System.Void Cysharp.Threading.Tasks.Internal.WeakDictionary`2/Entry::.ctor()
+// 0x00000C62 System.Void Cysharp.Threading.Tasks.Internal.EmptyDisposable::.ctor()
+extern void EmptyDisposable__ctor_m179249B1C5FA1A3EF54591D7DB459A0F2715BA11 (void);
+// 0x00000C63 System.Void Cysharp.Threading.Tasks.Internal.EmptyDisposable::Dispose()
+extern void EmptyDisposable_Dispose_mEB82FA6D7E68C4C41DE0827DC453BFEC38DC5718 (void);
+// 0x00000C64 System.Void Cysharp.Threading.Tasks.Internal.EmptyDisposable::.cctor()
+extern void EmptyDisposable__cctor_m87FC68912734BEE69C0411AB1E281FC5DAA12A0B (void);
+// 0x00000C65 System.Boolean Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable::get_IsDisposed()
+extern void SingleAssignmentDisposable_get_IsDisposed_m06D541A6B56DB09E9CCF17D9CDDD858A806ED7B9 (void);
+// 0x00000C66 System.IDisposable Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable::get_Disposable()
+extern void SingleAssignmentDisposable_get_Disposable_m0C180530F9F23348245F031D3777F765F15DDC17 (void);
+// 0x00000C67 System.Void Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable::set_Disposable(System.IDisposable)
+extern void SingleAssignmentDisposable_set_Disposable_m47E3E5D9584661A7C67BE8DD02B784D30680909B (void);
+// 0x00000C68 System.Void Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable::Dispose()
+extern void SingleAssignmentDisposable_Dispose_m2B96E78DEE7B62F8C9518752EB9E9F614EA05D45 (void);
+// 0x00000C69 System.Void Cysharp.Threading.Tasks.Internal.SingleAssignmentDisposable::.ctor()
+extern void SingleAssignmentDisposable__ctor_m0D2759248B3CEBD509F9B848CD0B385E783777D4 (void);
+// 0x00000C6A T Cysharp.Threading.Tasks.Internal.AsyncSubject`1::get_Value()
+// 0x00000C6B System.Boolean Cysharp.Threading.Tasks.Internal.AsyncSubject`1::get_HasObservers()
+// 0x00000C6C System.Boolean Cysharp.Threading.Tasks.Internal.AsyncSubject`1::get_IsCompleted()
+// 0x00000C6D System.Void Cysharp.Threading.Tasks.Internal.AsyncSubject`1::OnCompleted()
+// 0x00000C6E System.Void Cysharp.Threading.Tasks.Internal.AsyncSubject`1::OnError(System.Exception)
+// 0x00000C6F System.Void Cysharp.Threading.Tasks.Internal.AsyncSubject`1::OnNext(T)
+// 0x00000C70 System.IDisposable Cysharp.Threading.Tasks.Internal.AsyncSubject`1::Subscribe(System.IObserver`1<T>)
+// 0x00000C71 System.Void Cysharp.Threading.Tasks.Internal.AsyncSubject`1::Dispose()
+// 0x00000C72 System.Void Cysharp.Threading.Tasks.Internal.AsyncSubject`1::ThrowIfDisposed()
+// 0x00000C73 System.Void Cysharp.Threading.Tasks.Internal.AsyncSubject`1::.ctor()
+// 0x00000C74 System.Void Cysharp.Threading.Tasks.Internal.AsyncSubject`1/Subscription::.ctor(Cysharp.Threading.Tasks.Internal.AsyncSubject`1<T>,System.IObserver`1<T>)
+// 0x00000C75 System.Void Cysharp.Threading.Tasks.Internal.AsyncSubject`1/Subscription::Dispose()
+// 0x00000C76 System.Void Cysharp.Threading.Tasks.Internal.ListObserver`1::.ctor(Cysharp.Threading.Tasks.Internal.ImmutableList`1<System.IObserver`1<T>>)
+// 0x00000C77 System.Void Cysharp.Threading.Tasks.Internal.ListObserver`1::OnCompleted()
+// 0x00000C78 System.Void Cysharp.Threading.Tasks.Internal.ListObserver`1::OnError(System.Exception)
+// 0x00000C79 System.Void Cysharp.Threading.Tasks.Internal.ListObserver`1::OnNext(T)
+// 0x00000C7A System.IObserver`1<T> Cysharp.Threading.Tasks.Internal.ListObserver`1::Add(System.IObserver`1<T>)
+// 0x00000C7B System.IObserver`1<T> Cysharp.Threading.Tasks.Internal.ListObserver`1::Remove(System.IObserver`1<T>)
+// 0x00000C7C System.Void Cysharp.Threading.Tasks.Internal.EmptyObserver`1::.ctor()
+// 0x00000C7D System.Void Cysharp.Threading.Tasks.Internal.EmptyObserver`1::OnCompleted()
+// 0x00000C7E System.Void Cysharp.Threading.Tasks.Internal.EmptyObserver`1::OnError(System.Exception)
+// 0x00000C7F System.Void Cysharp.Threading.Tasks.Internal.EmptyObserver`1::OnNext(T)
+// 0x00000C80 System.Void Cysharp.Threading.Tasks.Internal.EmptyObserver`1::.cctor()
+// 0x00000C81 System.Void Cysharp.Threading.Tasks.Internal.ThrowObserver`1::.ctor()
+// 0x00000C82 System.Void Cysharp.Threading.Tasks.Internal.ThrowObserver`1::OnCompleted()
+// 0x00000C83 System.Void Cysharp.Threading.Tasks.Internal.ThrowObserver`1::OnError(System.Exception)
+// 0x00000C84 System.Void Cysharp.Threading.Tasks.Internal.ThrowObserver`1::OnNext(T)
+// 0x00000C85 System.Void Cysharp.Threading.Tasks.Internal.ThrowObserver`1::.cctor()
+// 0x00000C86 System.Void Cysharp.Threading.Tasks.Internal.DisposedObserver`1::.ctor()
+// 0x00000C87 System.Void Cysharp.Threading.Tasks.Internal.DisposedObserver`1::OnCompleted()
+// 0x00000C88 System.Void Cysharp.Threading.Tasks.Internal.DisposedObserver`1::OnError(System.Exception)
+// 0x00000C89 System.Void Cysharp.Threading.Tasks.Internal.DisposedObserver`1::OnNext(T)
+// 0x00000C8A System.Void Cysharp.Threading.Tasks.Internal.DisposedObserver`1::.cctor()
+// 0x00000C8B T[] Cysharp.Threading.Tasks.Internal.ImmutableList`1::get_Data()
+// 0x00000C8C System.Void Cysharp.Threading.Tasks.Internal.ImmutableList`1::.ctor()
+// 0x00000C8D System.Void Cysharp.Threading.Tasks.Internal.ImmutableList`1::.ctor(T[])
+// 0x00000C8E Cysharp.Threading.Tasks.Internal.ImmutableList`1<T> Cysharp.Threading.Tasks.Internal.ImmutableList`1::Add(T)
+// 0x00000C8F Cysharp.Threading.Tasks.Internal.ImmutableList`1<T> Cysharp.Threading.Tasks.Internal.ImmutableList`1::Remove(T)
+// 0x00000C90 System.Int32 Cysharp.Threading.Tasks.Internal.ImmutableList`1::IndexOf(T)
+// 0x00000C91 System.Void Cysharp.Threading.Tasks.Internal.ImmutableList`1::.cctor()
+// 0x00000C92 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder::Create()
+extern void AsyncUniTaskMethodBuilder_Create_m882DFD5EE004FF6F84F182A3AC170AEDCA8C5327 (void);
+// 0x00000C93 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder::get_Task()
+extern void AsyncUniTaskMethodBuilder_get_Task_m11E43D69C4F85EB23AAC58143DE695309D1022EC (void);
+// 0x00000C94 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder::SetException(System.Exception)
+extern void AsyncUniTaskMethodBuilder_SetException_m0D772D62D01CC371F4AB0F6943BBBE0FEAB19643 (void);
+// 0x00000C95 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder::SetResult()
+extern void AsyncUniTaskMethodBuilder_SetResult_mBBA527F0F21E04D65A269C0D02597CE5B2D1E9CB (void);
+// 0x00000C96 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder::AwaitOnCompleted(TAwaiter&,TStateMachine&)
+// 0x00000C97 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder::AwaitUnsafeOnCompleted(TAwaiter&,TStateMachine&)
+// 0x00000C98 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder::Start(TStateMachine&)
+// 0x00000C99 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void AsyncUniTaskMethodBuilder_SetStateMachine_m466E6779CB9DEC814C0A59E7766D95EC2C3268CF (void);
+// 0x00000C9A Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1<T> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1::Create()
+// 0x00000C9B Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1::get_Task()
+// 0x00000C9C System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1::SetException(System.Exception)
+// 0x00000C9D System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1::SetResult(T)
+// 0x00000C9E System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1::AwaitOnCompleted(TAwaiter&,TStateMachine&)
+// 0x00000C9F System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1::AwaitUnsafeOnCompleted(TAwaiter&,TStateMachine&)
+// 0x00000CA0 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1::Start(TStateMachine&)
+// 0x00000CA1 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder`1::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000CA2 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder::Create()
+extern void AsyncUniTaskVoidMethodBuilder_Create_m06E63ABF318CBA8C8DE8BA460E94C6E9CDB5ED64 (void);
+// 0x00000CA3 Cysharp.Threading.Tasks.UniTaskVoid Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder::get_Task()
+extern void AsyncUniTaskVoidMethodBuilder_get_Task_mA5D58CCC3268985A789B48F67492123752CE7A98 (void);
+// 0x00000CA4 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder::SetException(System.Exception)
+extern void AsyncUniTaskVoidMethodBuilder_SetException_m7492DE9DAE6EEC3DA2D1792A7B937F6CF61C6EB5 (void);
+// 0x00000CA5 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder::SetResult()
+extern void AsyncUniTaskVoidMethodBuilder_SetResult_m12336C298D2F8CED07AAB85C3DD67815E8343947 (void);
+// 0x00000CA6 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder::AwaitOnCompleted(TAwaiter&,TStateMachine&)
+// 0x00000CA7 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder::AwaitUnsafeOnCompleted(TAwaiter&,TStateMachine&)
+// 0x00000CA8 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder::Start(TStateMachine&)
+// 0x00000CA9 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoidMethodBuilder::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void AsyncUniTaskVoidMethodBuilder_SetStateMachine_mF9EBFE4E8FBA7ABFE21AC2390B9C3748DCA0FC2C (void);
+// 0x00000CAA System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunner::get_MoveNext()
+// 0x00000CAB System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunner::Return()
+// 0x00000CAC System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunner::get_ReturnAction()
+// 0x00000CAD System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::get_MoveNext()
+// 0x00000CAE Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::get_Task()
+// 0x00000CAF System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::SetResult()
+// 0x00000CB0 System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise::SetException(System.Exception)
+// 0x00000CB1 System.Action Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1::get_MoveNext()
+// 0x00000CB2 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1::get_Task()
+// 0x00000CB3 System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1::SetResult(T)
+// 0x00000CB4 System.Void Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1::SetException(System.Exception)
+// 0x00000CB5 System.Int32 Cysharp.Threading.Tasks.CompilerServices.StateMachineUtility::GetState(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void StateMachineUtility_GetState_m73ED4AA318CC7A1938F1B72B07ED60F3BC4BDFF8 (void);
+// 0x00000CB6 System.Void Cysharp.Threading.Tasks.CompilerServices.StateMachineUtility/<>c::.cctor()
+extern void U3CU3Ec__cctor_m327DEDD01D590EFC16BFAB20A67015DA0B845AC4 (void);
+// 0x00000CB7 System.Void Cysharp.Threading.Tasks.CompilerServices.StateMachineUtility/<>c::.ctor()
+extern void U3CU3Ec__ctor_mDFC27D5AF59E9AD444D8C391B87AF320AD73A004 (void);
+// 0x00000CB8 System.Boolean Cysharp.Threading.Tasks.CompilerServices.StateMachineUtility/<>c::<GetState>b__0_0(System.Reflection.FieldInfo)
+extern void U3CU3Ec_U3CGetStateU3Eb__0_0_m11816848E5A6598D044739D671ECF2189BD8E994 (void);
+// 0x00000CB9 System.Action Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::get_ReturnAction()
+// 0x00000CBA System.Action Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::get_MoveNext()
+// 0x00000CBB System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::.ctor()
+// 0x00000CBC System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::SetStateMachine(TStateMachine&,Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunner&)
+// 0x00000CBD System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::.cctor()
+// 0x00000CBE Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1<TStateMachine>& Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::get_NextNode()
+// 0x00000CBF System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::Return()
+// 0x00000CC0 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::Run()
+// 0x00000CC1 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::Cysharp.Threading.Tasks.IUniTaskSource.GetStatus(System.Int16)
+// 0x00000CC2 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::Cysharp.Threading.Tasks.IUniTaskSource.UnsafeGetStatus()
+// 0x00000CC3 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::Cysharp.Threading.Tasks.IUniTaskSource.OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000CC4 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000CC5 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1/<>c::.cctor()
+// 0x00000CC6 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1/<>c::.ctor()
+// 0x00000CC7 System.Int32 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskVoid`1/<>c::<.cctor>b__10_0()
+// 0x00000CC8 System.Action Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::get_MoveNext()
+// 0x00000CC9 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::.ctor()
+// 0x00000CCA System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::SetStateMachine(TStateMachine&,Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise&)
+// 0x00000CCB Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1<TStateMachine>& Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::get_NextNode()
+// 0x00000CCC System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::.cctor()
+// 0x00000CCD System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::Return()
+// 0x00000CCE System.Boolean Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::TryReturn()
+// 0x00000CCF System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::Run()
+// 0x00000CD0 Cysharp.Threading.Tasks.UniTask Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::get_Task()
+// 0x00000CD1 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::SetResult()
+// 0x00000CD2 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::SetException(System.Exception)
+// 0x00000CD3 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::GetResult(System.Int16)
+// 0x00000CD4 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::GetStatus(System.Int16)
+// 0x00000CD5 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::UnsafeGetStatus()
+// 0x00000CD6 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000CD7 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c::.cctor()
+// 0x00000CD8 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c::.ctor()
+// 0x00000CD9 System.Int32 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`1/<>c::<.cctor>b__12_0()
+// 0x00000CDA System.Action Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::get_MoveNext()
+// 0x00000CDB System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::.ctor()
+// 0x00000CDC System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::SetStateMachine(TStateMachine&,Cysharp.Threading.Tasks.CompilerServices.IStateMachineRunnerPromise`1<T>&)
+// 0x00000CDD Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2<TStateMachine,T>& Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::get_NextNode()
+// 0x00000CDE System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::.cctor()
+// 0x00000CDF System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::Return()
+// 0x00000CE0 System.Boolean Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::TryReturn()
+// 0x00000CE1 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::Run()
+// 0x00000CE2 Cysharp.Threading.Tasks.UniTask`1<T> Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::get_Task()
+// 0x00000CE3 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::SetResult(T)
+// 0x00000CE4 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::SetException(System.Exception)
+// 0x00000CE5 T Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::GetResult(System.Int16)
+// 0x00000CE6 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
+// 0x00000CE7 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::GetStatus(System.Int16)
+// 0x00000CE8 Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::UnsafeGetStatus()
+// 0x00000CE9 System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
+// 0x00000CEA System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c::.cctor()
+// 0x00000CEB System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c::.ctor()
+// 0x00000CEC System.Int32 Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask`2/<>c::<.cctor>b__12_0()
+static Il2CppMethodPointer s_methodPointers[3308] = 
+>>>>>>> Game_Dev
 {
 	AsyncMethodBuilderAttribute_get_BuilderType_mAAF8EFDD0ABD0F4D501851C30EEAFAD9A1762588,
 	AsyncMethodBuilderAttribute__ctor_m362B0044366C29B2E6E2626F1FB61D9CF443111C,
@@ -5292,6 +9633,7 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	UniTask_AsAsyncUnitUniTask_m54132A2A2BBEB304F7B93EC00CF18145AFE59B2F,
 	UniTask_Yield_m3362988BC281D8FBE6DE9D42C3123214920954DE,
 	UniTask_Yield_m7ABD90623DC0F932601BFDBED6FFF395A5F8FF50,
+<<<<<<< HEAD
 	UniTask_Yield_m06FD09ECE3B8C0291CB381E63CC5945A819A0EEE,
 	UniTask_Yield_m7ED0C8EBE368F6236CFB58077DA0D106620F4EF4,
 	UniTask_NextFrame_mEB306E0E08DD5AFB4841953D92825A43C80B95F4,
@@ -5308,6 +9650,27 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	UniTask_Delay_m597DD522A5DA5609CD0A9A15DB702D6C6E326835,
 	UniTask_Delay_m69A5F36F92C5259E944E54999F11A4B014FF0ACA,
 	UniTask_Delay_m067A7FB8CB4D5FD76ADAD9ABCABED99A91726479,
+=======
+	UniTask_Yield_m9920243B9AD3744655FB05791C83B5965B05DEAE,
+	UniTask_Yield_m4B8E275224C18E337C7011D519A024009D9CE256,
+	UniTask_NextFrame_mEB306E0E08DD5AFB4841953D92825A43C80B95F4,
+	UniTask_NextFrame_mE59EAD5078A121AAA1C6CEF24263D51A52D92070,
+	UniTask_NextFrame_mCF526D867BFA117AFF77025B5E9500510FD87787,
+	UniTask_NextFrame_mD7E7B555695D216D9DD5BEE39D15C30B124693EC,
+	UniTask_WaitForEndOfFrame_mFA3200F5A4185C0D7AB22EAB3F9AEAF8FF15D1F2,
+	UniTask_WaitForEndOfFrame_m265FCD341F489A9D02EAE08E3976D11DF862C9FC,
+	UniTask_WaitForEndOfFrame_m456C9A7188E577AB01B5E5E5D74AE9F2AC861187,
+	UniTask_WaitForEndOfFrame_m36D87E5703E885F74A8E991A4C5AB9CDFCA24760,
+	UniTask_WaitForFixedUpdate_m6A99F0966CA3B825CBFB21FD424A920F9EA50732,
+	UniTask_WaitForFixedUpdate_m5299317C28C7160E48C5F9AC2D663E39C8D15BC8,
+	UniTask_WaitForSeconds_mBDE525169D43CA651B4C5843902DF2F53C4E011C,
+	UniTask_WaitForSeconds_m2F49ED9EBF69C45612CBCAD3D716E58EAFF3227B,
+	UniTask_DelayFrame_m8D556B751B8A1CF275BDADBDB4B2C7839657FBB7,
+	UniTask_Delay_m0F6B9A8CE95AB6C59ACCCF49E96369AB9FAD4960,
+	UniTask_Delay_m446244C96F6C971AA44C9F458176F25FCA708F2F,
+	UniTask_Delay_m6FF65999EEEFFD824A44DF8043C49D668D02282E,
+	UniTask_Delay_mDBE9F54246D1E057EF8528601E2A86E451FB4462,
+>>>>>>> Game_Dev
 	UniTask_FromException_mC6AC508C727D591C6BE908F2014570963CE9E5EE,
 	NULL,
 	NULL,
@@ -5354,9 +9717,15 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	UniTask_SwitchToSynchronizationContext_m4601DE0818B235423FCDC5DE5B08C77731FB64C4,
 	UniTask_ReturnToSynchronizationContext_mE384C39FD911BF1DB2AD461062122AA9452F6DE0,
 	UniTask_ReturnToCurrentSynchronizationContext_m283C1B36076B49061B8E52B19DF1DA6F88752E64,
+<<<<<<< HEAD
 	UniTask_WaitUntil_m229641C28FBE73CE2AF1FF2399745674A2BAB85D,
 	UniTask_WaitWhile_m6EE062D5B50C70887DF7B974F4475FED9A6C25F0,
 	UniTask_WaitUntilCanceled_m2F6581A54FF6FB6AA51BEC0336DEA0B22D86B520,
+=======
+	UniTask_WaitUntil_m3CC6559258C98FE64A372B1AE9B7CAEA077D7795,
+	UniTask_WaitWhile_m96280BD0466423A20CDBE04E6CF68D0DDB7CD884,
+	UniTask_WaitUntilCanceled_mC1EDEEE15C9D240B4349098E3BDAB31087AAC6AD,
+>>>>>>> Game_Dev
 	NULL,
 	NULL,
 	NULL,
@@ -5422,7 +9791,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	YieldPromise_get_NextNode_m35002F769A22885546B5C01785427698878E3FE2,
 	YieldPromise__cctor_m0178AEF3EA81993CAD2EFCFF0CA0EC74CDBE7F74,
 	YieldPromise__ctor_m6BC7199AEE5C8E8B5FD1CEDC76320506B263F297,
+<<<<<<< HEAD
 	YieldPromise_Create_m4FDB214D1A2F8FB2961B140190CE469F7990085B,
+=======
+	YieldPromise_Create_m3B21084257808512E1F7C8E3B555BFFF43EE95A7,
+>>>>>>> Game_Dev
 	YieldPromise_GetResult_mE36D63A7130D9DB4A0EFF07BC05EB22A72EA0E7A,
 	YieldPromise_GetStatus_mF097803CD3CE629482A1D8CB7CFD7559EBE9855F,
 	YieldPromise_UnsafeGetStatus_mF36A260CBA022295A12C88FC7F2D0BB615A3D242,
@@ -5432,10 +9805,18 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_m1D5C6B99F00B6DA22885082DC5421CEEC53D5729,
 	U3CU3Ec__ctor_m1693C9F9C8FA9E08FE00F31BE4509D74B99D1340,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m65E3FE2CC0F8FAA9DB530ADAB89FEEAC3FCC6BA3,
+<<<<<<< HEAD
 	NextFramePromise_get_NextNode_mEBE190751ED87E6ED0EDFF69F341E968AA24DB78,
 	NextFramePromise__cctor_mC59005174F368748DA23910F8F585FD33DC09DD3,
 	NextFramePromise__ctor_m1A527C69C686250659A816FC4805494B45A451EC,
 	NextFramePromise_Create_mE825C992EC3155724210885AF5DE1E83E717DE49,
+=======
+	U3CU3Ec_U3CCreateU3Eb__9_0_m1070562BA14469EE4A83DCDB7A190662E06ABAFF,
+	NextFramePromise_get_NextNode_mEBE190751ED87E6ED0EDFF69F341E968AA24DB78,
+	NextFramePromise__cctor_mC59005174F368748DA23910F8F585FD33DC09DD3,
+	NextFramePromise__ctor_m1A527C69C686250659A816FC4805494B45A451EC,
+	NextFramePromise_Create_m33567EC8A25A6FAF09B870BD5086595F57537094,
+>>>>>>> Game_Dev
 	NextFramePromise_GetResult_mE381CAAF08DB307E632D789ABB32C9F741840B98,
 	NextFramePromise_GetStatus_mC17DE65A641EC520FDD1D794434D7721F11FF046,
 	NextFramePromise_UnsafeGetStatus_mB83C781946E1D779D64CEA80E57B5F0949FEB371,
@@ -5445,10 +9826,18 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_m0E4C35CBFCA70900634AD2C33811BAAF22C02A0D,
 	U3CU3Ec__ctor_m293F2D26E7857D0E1954C5AE63C1944A0179F2CA,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m5F46A495AE0371145399A0FAD5D06FBD542DDB2C,
+<<<<<<< HEAD
 	WaitForEndOfFramePromise_get_NextNode_m823C37504BA13227B9E371369888D81665192B3C,
 	WaitForEndOfFramePromise__cctor_mAA5479E42300EB24BE6E1BBB76E58AD4227A7A6B,
 	WaitForEndOfFramePromise__ctor_m1669A1A23C84B7EEA3F0F246FA169119177A34D8,
 	WaitForEndOfFramePromise_Create_m6D9DCDA0FAD56C3605A87EA79D2CD9BAE5A6A202,
+=======
+	U3CU3Ec_U3CCreateU3Eb__10_0_mC7FE50796152420A367990BBC78583F80D7331B2,
+	WaitForEndOfFramePromise_get_NextNode_m823C37504BA13227B9E371369888D81665192B3C,
+	WaitForEndOfFramePromise__cctor_mAA5479E42300EB24BE6E1BBB76E58AD4227A7A6B,
+	WaitForEndOfFramePromise__ctor_m1669A1A23C84B7EEA3F0F246FA169119177A34D8,
+	WaitForEndOfFramePromise_Create_m44B42B4C9736A4B9099E60E41FBAA2C9A11A2D7C,
+>>>>>>> Game_Dev
 	WaitForEndOfFramePromise_GetResult_mF1DDC2F07D9322CF2D17D8556E5373630F248C03,
 	WaitForEndOfFramePromise_GetStatus_m86B53226F1F1596ACC662957093665FD7B6A1012,
 	WaitForEndOfFramePromise_UnsafeGetStatus_mA385C7E486FF9B73792BDE6012D28960E979AD82,
@@ -5460,10 +9849,18 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_m22544CBC76EF2E7453ABB89B68DD0588474A4CEE,
 	U3CU3Ec__ctor_mA57858E50489B0FEB8320A85509984EE403F30EF,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_mD263B7A832528228622A5ED4EC7770B6E3D67B7C,
+<<<<<<< HEAD
 	DelayFramePromise_get_NextNode_m5E39E63DFA2B973B50EBEE216FA14EDB2B12CD8B,
 	DelayFramePromise__cctor_m370D1F2F63B63E002B9A0B3ECADF2388D682B26F,
 	DelayFramePromise__ctor_m654FCF4355DEF52EA1D39E37B55E1456C6BAFE37,
 	DelayFramePromise_Create_m0542A59D73DB08736E9E3042CFF77FC832A50B5B,
+=======
+	U3CU3Ec_U3CCreateU3Eb__9_0_mB1DE28107C616EF671AD2EFC28BAF333D90D9DAA,
+	DelayFramePromise_get_NextNode_m5E39E63DFA2B973B50EBEE216FA14EDB2B12CD8B,
+	DelayFramePromise__cctor_m370D1F2F63B63E002B9A0B3ECADF2388D682B26F,
+	DelayFramePromise__ctor_m654FCF4355DEF52EA1D39E37B55E1456C6BAFE37,
+	DelayFramePromise_Create_m1EFF3370EB1B19B6C153C9E5F0FC82179A255D9E,
+>>>>>>> Game_Dev
 	DelayFramePromise_GetResult_m47A37A2092283E62B12E3759E6A4CB900C8E95E6,
 	DelayFramePromise_GetStatus_m9053C231AC019F2DDDDA4C8B313B35305C6700D2,
 	DelayFramePromise_UnsafeGetStatus_m1D921F426F932B27009E65877F4D62A75B9CD0D0,
@@ -5473,10 +9870,18 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_mEBB3223756C9BB1FF1ED2B2DD4D705CB2E7AFB89,
 	U3CU3Ec__ctor_m6A7F789ECB7D4E3CACD77EE4B335EA08581D097A,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_mA2680085CAC8308E14A11913EBB5B4BD317F866C,
+<<<<<<< HEAD
 	DelayPromise_get_NextNode_m052F74D1010B856461FFE289BBCE397C23309424,
 	DelayPromise__cctor_mB615EC27C3FAB986A9170F6C16AD17090CEBD04E,
 	DelayPromise__ctor_m4F76D103946E1BF73889E5176769AEC683C559B0,
 	DelayPromise_Create_m7C0B282EBD4942139D762B0E4C787E960956BDC1,
+=======
+	U3CU3Ec_U3CCreateU3Eb__12_0_m364D84EAB6854A8B331BF39DAAF4FE63A75C2E0E,
+	DelayPromise_get_NextNode_m052F74D1010B856461FFE289BBCE397C23309424,
+	DelayPromise__cctor_mB615EC27C3FAB986A9170F6C16AD17090CEBD04E,
+	DelayPromise__ctor_m4F76D103946E1BF73889E5176769AEC683C559B0,
+	DelayPromise_Create_m891B4E88F71B0718965855E39342115543A9C218,
+>>>>>>> Game_Dev
 	DelayPromise_GetResult_m0E215D75987A62E367C1EC94A8D7646FF5422675,
 	DelayPromise_GetStatus_mCBF2239EB5E8A1B4D2F2F2A37329CCCA82B8A3C0,
 	DelayPromise_UnsafeGetStatus_mBCEED523B78BB889EEE752754011EA847B8CB4C4,
@@ -5486,10 +9891,18 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_mB174830645DD5169EFB16D295F5F1C6BF46530D8,
 	U3CU3Ec__ctor_mE9D5F68457F1916EC15D9E6655A2DB2EF294FE84,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m46F5B3B989A9FD3E3ACBF47368DD1745B1362394,
+<<<<<<< HEAD
 	DelayIgnoreTimeScalePromise_get_NextNode_m843C0B86113D4572E8A581D19E9A1E681E3378D5,
 	DelayIgnoreTimeScalePromise__cctor_m1C95CA9701159FE24C1393FCABD1BE0AF9A2B1A0,
 	DelayIgnoreTimeScalePromise__ctor_mA52BF17839EB6AA55F60B1372C8A97BE98807D3B,
 	DelayIgnoreTimeScalePromise_Create_m9E6F2677DD93BC154643A70F7138DEB04FDBAE77,
+=======
+	U3CU3Ec_U3CCreateU3Eb__12_0_m98595273B2168D62A2036ECA6FDA7E76A21FE37E,
+	DelayIgnoreTimeScalePromise_get_NextNode_m843C0B86113D4572E8A581D19E9A1E681E3378D5,
+	DelayIgnoreTimeScalePromise__cctor_m1C95CA9701159FE24C1393FCABD1BE0AF9A2B1A0,
+	DelayIgnoreTimeScalePromise__ctor_mA52BF17839EB6AA55F60B1372C8A97BE98807D3B,
+	DelayIgnoreTimeScalePromise_Create_mF528197D8221A96419847E0647A31334E04FAA40,
+>>>>>>> Game_Dev
 	DelayIgnoreTimeScalePromise_GetResult_mBBAB4F9DDEA466CD879B2FA3B11A52C15A8467E2,
 	DelayIgnoreTimeScalePromise_GetStatus_mF1A430774D5AB51EBBC84D6F86D9B6AFC0C5E3AF,
 	DelayIgnoreTimeScalePromise_UnsafeGetStatus_m247A75DF579B04129E29E8A3C727290C9D5E696C,
@@ -5499,10 +9912,18 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_mBDD2DA3503A97010FE47380FD165B1CD288136CB,
 	U3CU3Ec__ctor_m03FD2027D47FFA1F391213F7884F7E46DFD8CA0C,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_mA9F8A6C82393773CC14D351BDD7A4CF1799B2A18,
+<<<<<<< HEAD
 	DelayRealtimePromise_get_NextNode_m930A50FBE32B638FE5C2E52F907A257E4AE8589D,
 	DelayRealtimePromise__cctor_m6FAE6BD5140883FB8040431545B92712B3161D6B,
 	DelayRealtimePromise__ctor_m03F34287DE1C842E9696417787D446E3C4AD5C51,
 	DelayRealtimePromise_Create_mBA2C5A25C4968E02944B77F901A3D911E9665BC5,
+=======
+	U3CU3Ec_U3CCreateU3Eb__12_0_m445459A05943AA908926DCF162FF3C99ED37A305,
+	DelayRealtimePromise_get_NextNode_m930A50FBE32B638FE5C2E52F907A257E4AE8589D,
+	DelayRealtimePromise__cctor_m6FAE6BD5140883FB8040431545B92712B3161D6B,
+	DelayRealtimePromise__ctor_m03F34287DE1C842E9696417787D446E3C4AD5C51,
+	DelayRealtimePromise_Create_m5ACD0D119D883A0D470F3621E983292C96425439,
+>>>>>>> Game_Dev
 	DelayRealtimePromise_GetResult_mB593C0EC23F51A291E4534BFFC26736069BC0DF4,
 	DelayRealtimePromise_GetStatus_mDAF74B7067AF460C849BE14725B8AD5A33832656,
 	DelayRealtimePromise_UnsafeGetStatus_m863E28053457D66C7AE2A26545E6CB206409DAC1,
@@ -5512,6 +9933,10 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_m98DFB32E0E467B914148A6A74BE2C8D8DFC32BAE,
 	U3CU3Ec__ctor_m9FA833DBE7208035DB659BADDDBDC124731D3B57,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_mEB2B3297429136CF4F3D96A546B441B9A657E2E6,
+<<<<<<< HEAD
+=======
+	U3CU3Ec_U3CCreateU3Eb__11_0_m526892B3D396D3C3F5B67275B1636CB0D03F3467,
+>>>>>>> Game_Dev
 	NULL,
 	ExceptionResultSource__ctor_m73B2CEF2430F981844640DCE7012B4132E24DBE0,
 	ExceptionResultSource_GetResult_mB8192735CBF28EBC6F4F7488C5DCAB46BE1A1C17,
@@ -5559,7 +9984,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	WaitUntilPromise_get_NextNode_m25D42E4145EDB98482ED8CD0F5C99AE1A244BC7D,
 	WaitUntilPromise__cctor_m43C487202B723888E0A42F1311FDD007794F3420,
 	WaitUntilPromise__ctor_m56149FCB2DBF5C76BC47CEF57317B29C03943F5D,
+<<<<<<< HEAD
 	WaitUntilPromise_Create_m0F43923D726C4A2622956B53DECA03753588FAAB,
+=======
+	WaitUntilPromise_Create_mACC38596A21B0A893C342B08C92E55CC63FFB9FE,
+>>>>>>> Game_Dev
 	WaitUntilPromise_GetResult_mC51A7E70F36B6602CBCD5F1B835B638A15EA77D3,
 	WaitUntilPromise_GetStatus_m214277160B9506ADF2CF2F1770796925726A7AC5,
 	WaitUntilPromise_UnsafeGetStatus_m204A9B69EECC18F33733EF42E85F9F7675EC990F,
@@ -5569,10 +9998,18 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_m9A00EF80F4ACEBB30ECE861D97321E232993EE5A,
 	U3CU3Ec__ctor_m64C709F50C2DB563CAF7751E8BF833BA7EB902CD,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_mF63DBFB68593D90197816181FE4ACD6921FE2309,
+<<<<<<< HEAD
 	WaitWhilePromise_get_NextNode_m6F842815A8B9D276C684C9D3268A15FEBB743FAA,
 	WaitWhilePromise__cctor_mC7238B8D25FE15B8A815A2DEFE3C7FBDFE4E9BA9,
 	WaitWhilePromise__ctor_m3A46E23BFCD43FE4DABD704EE0B1197D4E0CACC6,
 	WaitWhilePromise_Create_mB5E4D421967A0CD9BD2F4852BF26B0CD4DD7CCB7,
+=======
+	U3CU3Ec_U3CCreateU3Eb__10_0_mDCD888BC4F0A482C867B6EFF0EA8F3280C64B0FE,
+	WaitWhilePromise_get_NextNode_m6F842815A8B9D276C684C9D3268A15FEBB743FAA,
+	WaitWhilePromise__cctor_mC7238B8D25FE15B8A815A2DEFE3C7FBDFE4E9BA9,
+	WaitWhilePromise__ctor_m3A46E23BFCD43FE4DABD704EE0B1197D4E0CACC6,
+	WaitWhilePromise_Create_mE7E1B7A7195F93218BF8E8BBBDA2DB0354D4E84D,
+>>>>>>> Game_Dev
 	WaitWhilePromise_GetResult_m36FEFEBD6B4A92B1E34FB0DBD237B401FF32A69D,
 	WaitWhilePromise_GetStatus_mF31DB1B4A86593E2509C12B941B9F0ED8BCB28BA,
 	WaitWhilePromise_UnsafeGetStatus_mB92B78ED55D7AE33BC662AF31E84420EC754FF4F,
@@ -5582,10 +10019,18 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_mCD31D2BC047603EBD8D969E7696FA17E3D99F238,
 	U3CU3Ec__ctor_mBA946F519050572816D70CDD3519ADE887FACC85,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m61275CF806507ED197B6F8075DFFD92018242A2A,
+<<<<<<< HEAD
 	WaitUntilCanceledPromise_get_NextNode_m441AA82EEF59E6A53E363345F0AFD41C3264B32B,
 	WaitUntilCanceledPromise__cctor_m3085174C507E219E766788DBB1AA20880BB38533,
 	WaitUntilCanceledPromise__ctor_m8ED9E27C8C147F7E97FD826788F63B9E2A48A99A,
 	WaitUntilCanceledPromise_Create_m8FF72F185CE94E3D9A7D6DFA78C29B0E9019B4FE,
+=======
+	U3CU3Ec_U3CCreateU3Eb__10_0_m82004BC844E108013839E3718FB1C4061B202D10,
+	WaitUntilCanceledPromise_get_NextNode_m441AA82EEF59E6A53E363345F0AFD41C3264B32B,
+	WaitUntilCanceledPromise__cctor_m3085174C507E219E766788DBB1AA20880BB38533,
+	WaitUntilCanceledPromise__ctor_m8ED9E27C8C147F7E97FD826788F63B9E2A48A99A,
+	WaitUntilCanceledPromise_Create_m86BD6DB056107DE9D07BB5357D9DBCED9135992C,
+>>>>>>> Game_Dev
 	WaitUntilCanceledPromise_GetResult_mE3E47C30A76C9F8FD63FDF37D2DCD57C243B86AB,
 	WaitUntilCanceledPromise_GetStatus_m0D1712655B0E0AB9925205C6793A3E83FCEEA7EB,
 	WaitUntilCanceledPromise_UnsafeGetStatus_mD41B7FDEFD599207FCFCC601BD9CF51D0C79C7DD,
@@ -5595,6 +10040,12 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_mEE81DDD4D5A1354D86AAD9F00A1B241F75410012,
 	U3CU3Ec__ctor_m6AC7E94A739295EBB3C7F5260E51FDED066201F3,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_mF7B83A21A1152E5878D41BE2FEB5FAC8DDFA80F6,
+<<<<<<< HEAD
+=======
+	U3CU3Ec_U3CCreateU3Eb__9_0_m3F6834F679C9D673438763911CE54D1AFB12E239,
+	NULL,
+	NULL,
+>>>>>>> Game_Dev
 	NULL,
 	NULL,
 	NULL,
@@ -6374,6 +10825,7 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	NULL,
 	NULL,
 	NULL,
+<<<<<<< HEAD
 	U3CU3Ec__DisplayClass55_0__ctor_mC54320D39DDE18A27847BF7A5480723C743866EC,
 	U3CU3Ec__DisplayClass55_0_U3CActionU3Eb__0_m1FD4C5516638B1BBEC4D4CEBA91A50EF8A75ACAD,
 	U3CU3Ec__DisplayClass56_0__ctor_m5D0CC954C1FCA3E55BC3FCDAADCE1177C0904228,
@@ -6390,6 +10842,24 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CRunOnThreadPoolU3Ed__80_SetStateMachine_m1B8203DEE6056BA075E2F527F0D870BF4B7224A3,
 	U3CRunOnThreadPoolU3Ed__81_MoveNext_m38720C55FEDB24FF5CFF3CEF813BB47B24B849D0,
 	U3CRunOnThreadPoolU3Ed__81_SetStateMachine_m9A60EF932E4B983B45D132F1A255C6A327D66F70,
+=======
+	U3CU3Ec__DisplayClass58_0__ctor_m66BE20F828F621AC3261CE53966C61CE9441527A,
+	U3CU3Ec__DisplayClass58_0_U3CActionU3Eb__0_mF2CADBC4C8392B4CC69D1E0271084B0988D084A2,
+	U3CU3Ec__DisplayClass59_0__ctor_m8BD2860FDCCD0531390CBA68267B2E79382D886A,
+	U3CU3Ec__DisplayClass59_0_U3CActionU3Eb__0_mFC4923E23DAD942A67A60C4FD4E49703B8841B56,
+	U3CU3Ec__DisplayClass60_0__ctor_m2169FFC5B1E76EA48204545B32D787F00A11EC99,
+	U3CU3Ec__DisplayClass60_0_U3CUnityActionU3Eb__0_m1A4F2452005B6C3A31791D7F43219FBB5902BAA0,
+	U3CU3Ec__DisplayClass61_0__ctor_mEA5BCD3C1C25FA47C64A7FED69E96ADB57004803,
+	U3CU3Ec__DisplayClass61_0_U3CUnityActionU3Eb__0_m67D573A54ED2C6698D65BFB361D589A89860C7E2,
+	U3CRunOnThreadPoolU3Ed__81_MoveNext_m38720C55FEDB24FF5CFF3CEF813BB47B24B849D0,
+	U3CRunOnThreadPoolU3Ed__81_SetStateMachine_m9A60EF932E4B983B45D132F1A255C6A327D66F70,
+	U3CRunOnThreadPoolU3Ed__82_MoveNext_mD185BE12DB17D522131674C92210325C6871976D,
+	U3CRunOnThreadPoolU3Ed__82_SetStateMachine_m93664B64EABCCC119119500B901CF55DCF17B079,
+	U3CRunOnThreadPoolU3Ed__83_MoveNext_mAB51841C09A55524D58D4315A88E8956BAB086FF,
+	U3CRunOnThreadPoolU3Ed__83_SetStateMachine_mBB07955A0F2E26985217E3B1951972F6A45B49C8,
+	U3CRunOnThreadPoolU3Ed__84_MoveNext_m7DBAF4F170CDBD752DE4E0B28CC8642555D288E8,
+	U3CRunOnThreadPoolU3Ed__84_SetStateMachine_m8601A1C0CD68C5BEA9F76BF3B9FF6F6F5C50262A,
+>>>>>>> Game_Dev
 	NULL,
 	NULL,
 	NULL,
@@ -6400,7 +10870,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	NULL,
 	U3CU3Ec__cctor_m51CCA72AEF541D67CAD60DB7D0636F332CA62F1C,
 	U3CU3Ec__ctor_m9D18525225D440AAFA30EE17A72109811ECD8CB3,
+<<<<<<< HEAD
 	U3CU3Ec_U3C_cctorU3Eb__176_0_mACC81EF32347C2865A461CD62AC05FCF7E3AAC37,
+=======
+	U3CU3Ec_U3C_cctorU3Eb__179_0_m5895DCB0A26365A184B6566591E1BFE6CC532769,
+>>>>>>> Game_Dev
 	AwaiterActions_Continuation_m0EA21AB9CAA150F08C0928928D6F0BA3B6A0D819,
 	AwaiterActions__cctor_mCA4E63B7EB17E13FAF457077BC304C9E9863F22D,
 	NULL,
@@ -6780,6 +11254,7 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	UniTaskVoid_Forget_mE4FC2CCCEFD822A5D63FFE97EE209FEE949CC255,
 	UnityAsyncExtensions_AwaitForAllAssets_mD55641113CC5707E3D699DF6AAE9095D034800AA,
 	UnityAsyncExtensions_AwaitForAllAssets_m841D8C5C8B2FBE6E22C916C806A27F9298ADD475,
+<<<<<<< HEAD
 	UnityAsyncExtensions_AwaitForAllAssets_mFCD2EB892930F6C77254A679094E21B0FF00E1E0,
 	UnityAsyncExtensions_GetAwaiter_m49ED60AD5B61EF872A63966540B602D59A42EB16,
 	UnityAsyncExtensions_WithCancellation_m21CF5D45E71B2A03D753C35327E8C3784527D2E8,
@@ -6799,6 +11274,34 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	UnityAsyncExtensions_GetAwaiter_mA6B6F84DE48BC5EFE2F2BDB1A0011C8A2CD7A920,
 	UnityAsyncExtensions_WithCancellation_m64371919D7F4428DF8B06230F745FAAE766A405D,
 	UnityAsyncExtensions_ToUniTask_mB1FE7182040451DB90368E9EB7F661335ADCFFF7,
+=======
+	UnityAsyncExtensions_AwaitForAllAssets_m4BDAA65013994A4800C1BB5130A351F9CE5D304A,
+	UnityAsyncExtensions_AwaitForAllAssets_m53A23B992EFAD9E0520794C430D86DCC96438D2D,
+	UnityAsyncExtensions_GetAwaiter_m49ED60AD5B61EF872A63966540B602D59A42EB16,
+	UnityAsyncExtensions_WithCancellation_m21CF5D45E71B2A03D753C35327E8C3784527D2E8,
+	UnityAsyncExtensions_WithCancellation_m0C43EA5713A5775385B283110AA2A555938B41DE,
+	UnityAsyncExtensions_ToUniTask_mCC109FEDABBA122F82E454625FAE7303B79DA7B2,
+	UnityAsyncExtensions_GetAwaiter_mC5F1D25704DF49CBCAD4B0B0E4F9B1528CCDB919,
+	UnityAsyncExtensions_WithCancellation_m3EA97F30A2E874A8B891E502FB9F158ADC38222D,
+	UnityAsyncExtensions_WithCancellation_m89204B23E45A87CC2309D7C47C29BCD52F8737D5,
+	UnityAsyncExtensions_ToUniTask_m4F40D1E2D758E794427A06970B88269BC8DF1015,
+	UnityAsyncExtensions_GetAwaiter_m3B39088BD34AE418D7EA4041E478AF061505F30A,
+	UnityAsyncExtensions_WithCancellation_m32E103C7170D6750E851345A5146773BC731D04B,
+	UnityAsyncExtensions_WithCancellation_m246073C164AB2A1342F74B0890D6FEBFB55866C7,
+	UnityAsyncExtensions_ToUniTask_m246CFA3F9DAF75812EE1AEEB5C4251A685929F41,
+	UnityAsyncExtensions_GetAwaiter_m3CB92CA9229C05E1B4650000CE66076FFDCF7B8F,
+	UnityAsyncExtensions_WithCancellation_mADA97E792CC54ABFA1B667D4640828851A2FDAE4,
+	UnityAsyncExtensions_WithCancellation_m9AC0E9CBB6894CD6A7084E25F9C49CE08E174E77,
+	UnityAsyncExtensions_ToUniTask_m382E8377843A28A33973C23347D506E7EDEAA8DE,
+	UnityAsyncExtensions_GetAwaiter_m66E339BC7730FA2BEE2035122A9B557246C3D988,
+	UnityAsyncExtensions_WithCancellation_m919E5C61CC3B6DF0B808EFDF1363C58F1948507E,
+	UnityAsyncExtensions_WithCancellation_mA3DB8396ABD6EF5075F14D28A7F8D8C090B3A6D2,
+	UnityAsyncExtensions_ToUniTask_mC0EC1A0267E8B1F4BC725040889B47263CCE8F89,
+	UnityAsyncExtensions_GetAwaiter_mA6B6F84DE48BC5EFE2F2BDB1A0011C8A2CD7A920,
+	UnityAsyncExtensions_WithCancellation_m64371919D7F4428DF8B06230F745FAAE766A405D,
+	UnityAsyncExtensions_WithCancellation_m884C474049738F36905659408C1555601C31C69B,
+	UnityAsyncExtensions_ToUniTask_m1084D95469C3AAF461E16C84B3A7EB830581C61D,
+>>>>>>> Game_Dev
 	UnityAsyncExtensions_WaitAsync_mCDE3EE8DB522F6A668B6AF1CD6C39C6F69BAE209,
 	UnityAsyncExtensions_GetAwaiter_m1091B7D68AF3C6364F757480B1EB9CE6591953A3,
 	UnityAsyncExtensions_ToUniTask_m6132171ADD69B7D2E3E77E550D29F571609F1829,
@@ -6866,7 +11369,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	AssetBundleRequestAllAssetsConfiguredSource_get_NextNode_m9E0BA440616FBDD9DCF9A6F85FFA2910CF77AB7C,
 	AssetBundleRequestAllAssetsConfiguredSource__cctor_mC5735748F1B5497E88D60D9A802B3140207ACC26,
 	AssetBundleRequestAllAssetsConfiguredSource__ctor_m612AB9F5D70DE7A00675F9A18011B559DDD0F100,
+<<<<<<< HEAD
 	AssetBundleRequestAllAssetsConfiguredSource_Create_m2532A7DD87DF82C79DEA368892B45D6E5E137A15,
+=======
+	AssetBundleRequestAllAssetsConfiguredSource_Create_mB65D45FB5C62C5EAD664467E310F9C4CAE761FF9,
+>>>>>>> Game_Dev
 	AssetBundleRequestAllAssetsConfiguredSource_GetResult_mBFBBC0F7A7E7D8602CA510250445C7F707E4C32F,
 	AssetBundleRequestAllAssetsConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m80AF272707E79B6F7467A86A6171FDBB63229A83,
 	AssetBundleRequestAllAssetsConfiguredSource_GetStatus_mD840A876B54ED9FC8A5028B8569B1E18D3A4169C,
@@ -6874,6 +11381,7 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	AssetBundleRequestAllAssetsConfiguredSource_OnCompleted_m56D0083688EE3685EC2CA1DD3C7EBD771E49E9B3,
 	AssetBundleRequestAllAssetsConfiguredSource_MoveNext_m245BBA41A31871F2BB689DD798E6706D3A7DCA9A,
 	AssetBundleRequestAllAssetsConfiguredSource_TryReturn_m9D3902A1342EB3D7F06CD40A532B17C7A068A424,
+<<<<<<< HEAD
 	U3CU3Ec__cctor_m36F442E239F3752F7A9A2B7EDC6F8E3AD94E0EB3,
 	U3CU3Ec__ctor_mC125456DE7B6179150DAC27D0C32939BF9C1FAFE,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_mC92226D915CA800768AF8A6FD2AFEE9CE7337206,
@@ -6881,6 +11389,17 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	AsyncGPUReadbackRequestAwaiterConfiguredSource__cctor_m5FE6FD13D6D5C57E6933273C60B5F1AFCBFAE8A4,
 	AsyncGPUReadbackRequestAwaiterConfiguredSource__ctor_mDA116A552AF93C617A5BDF082EDEC997CA3D9A9D,
 	AsyncGPUReadbackRequestAwaiterConfiguredSource_Create_m0EFDF25AC33A44CC915D66F3806269484509B5ED,
+=======
+	AssetBundleRequestAllAssetsConfiguredSource_Continuation_m3AD4E46B9B599AF0D1BFE8F2EC6F00F18B43FF50,
+	U3CU3Ec__cctor_m36F442E239F3752F7A9A2B7EDC6F8E3AD94E0EB3,
+	U3CU3Ec__ctor_mC125456DE7B6179150DAC27D0C32939BF9C1FAFE,
+	U3CU3Ec_U3C_cctorU3Eb__4_0_mC92226D915CA800768AF8A6FD2AFEE9CE7337206,
+	U3CU3Ec_U3CCreateU3Eb__13_0_mF9DFE28A0507310D67AF3578AF0E54563AC99A38,
+	AsyncGPUReadbackRequestAwaiterConfiguredSource_get_NextNode_mB5940E33081DC719B9E58824DD48A8F0406E3937,
+	AsyncGPUReadbackRequestAwaiterConfiguredSource__cctor_m5FE6FD13D6D5C57E6933273C60B5F1AFCBFAE8A4,
+	AsyncGPUReadbackRequestAwaiterConfiguredSource__ctor_mDA116A552AF93C617A5BDF082EDEC997CA3D9A9D,
+	AsyncGPUReadbackRequestAwaiterConfiguredSource_Create_m793EC1215A2924C72AE0A29CE40A0C59BA28C4C1,
+>>>>>>> Game_Dev
 	AsyncGPUReadbackRequestAwaiterConfiguredSource_GetResult_m513CAFCF1BA15ED84A503A637F55E3078B331061,
 	AsyncGPUReadbackRequestAwaiterConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_mEF69721A498837775E45A2AA2E4FE9640144E2E0,
 	AsyncGPUReadbackRequestAwaiterConfiguredSource_GetStatus_m3C71594800097EBA439E73EEA654BD34050D527E,
@@ -6891,6 +11410,10 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	U3CU3Ec__cctor_m79CEE3359A844ED3C9B9DC7BE8F308F3634EE197,
 	U3CU3Ec__ctor_m1DEE312956A401007B8CC702277F4B3A39C6EAD4,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m6FD31AB2173D92C38272B40DE10A46A35C1E3CA1,
+<<<<<<< HEAD
+=======
+	U3CU3Ec_U3CCreateU3Eb__10_0_mA699A5140D7E51273959892829298B4F1F19426E,
+>>>>>>> Game_Dev
 	AsyncOperationAwaiter__ctor_m3C576C9030722F58BE380F1FB42D8CFD314BF674,
 	AsyncOperationAwaiter_get_IsCompleted_mB1A89F2E5B9E1CD69315D33F6E5F5EC94DEB2DFC,
 	AsyncOperationAwaiter_GetResult_m40446B2CAF167A2C2FF346BDC11B460F97383BA9,
@@ -6899,16 +11422,28 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	AsyncOperationConfiguredSource_get_NextNode_m25606848D7DB5AB1550E01078CB631B3EF0CD465,
 	AsyncOperationConfiguredSource__cctor_m0BD465EBEF989CCF803AEADD8AFA9365E16B385C,
 	AsyncOperationConfiguredSource__ctor_m3D6B75BDB9AB39718100CA2807B1278DAD95A0F7,
+<<<<<<< HEAD
 	AsyncOperationConfiguredSource_Create_m87639CE0ADB50FA96398C914DCDD9717945CD389,
+=======
+	AsyncOperationConfiguredSource_Create_mC9B1151368D05F36EF67CCB5FEBBB7D15BE046AE,
+>>>>>>> Game_Dev
 	AsyncOperationConfiguredSource_GetResult_m228946356A36BE863FF608EEA1C6A77041ECC767,
 	AsyncOperationConfiguredSource_GetStatus_m4CEA8390BFD528A2726240150684E9907FF5E729,
 	AsyncOperationConfiguredSource_UnsafeGetStatus_m2BD3B8FCC10F12C3E1A05EF9A1C840914721FADF,
 	AsyncOperationConfiguredSource_OnCompleted_mFD0864DC088F3FEBB535D0B77B24BF29EEA63DC4,
 	AsyncOperationConfiguredSource_MoveNext_mB52301B030A620EFFA3A92AD9E26E405B8678518,
 	AsyncOperationConfiguredSource_TryReturn_mB017A856BF7C3EE80E9769D22E50856AE80B8CFB,
+<<<<<<< HEAD
 	U3CU3Ec__cctor_m684F33F33D52EEB72D07801EF8558E9DD9BF49B6,
 	U3CU3Ec__ctor_m66E55AD70E40AC406B4C127B2082E9F71EA8264D,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m154EB596C2C5D17DA1541B849FACEF33B34E9D7A,
+=======
+	AsyncOperationConfiguredSource_Continuation_m273C1AFB91BF09FB821A0A62055038C4DBF2EC81,
+	U3CU3Ec__cctor_m684F33F33D52EEB72D07801EF8558E9DD9BF49B6,
+	U3CU3Ec__ctor_m66E55AD70E40AC406B4C127B2082E9F71EA8264D,
+	U3CU3Ec_U3C_cctorU3Eb__4_0_m154EB596C2C5D17DA1541B849FACEF33B34E9D7A,
+	U3CU3Ec_U3CCreateU3Eb__13_0_m0FB0A95123CF54C6A7EF6F63FD8A01AB8EFACC0A,
+>>>>>>> Game_Dev
 	ResourceRequestAwaiter__ctor_m9F612DDCFE50A3CF17BDA678DAA52E7DA5923F86,
 	ResourceRequestAwaiter_get_IsCompleted_m797B9071AB9AB8B33167896D6EF9ED10B1C73A10,
 	ResourceRequestAwaiter_GetResult_m648D2E45FFE2E55A3FA3175FDF1BCD993CF04068,
@@ -6917,7 +11452,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	ResourceRequestConfiguredSource_get_NextNode_m4EFBF8C846ADEF0C2047D7CDF7C2A1DD1E2702C5,
 	ResourceRequestConfiguredSource__cctor_m95BDE6D918682409C68A9EA897AB6BCC8251C160,
 	ResourceRequestConfiguredSource__ctor_m12117D5BFA41B302A5D6064ADE51A1A23FB3570B,
+<<<<<<< HEAD
 	ResourceRequestConfiguredSource_Create_m6687FBF0E4846B2BC6EC06047952265A143A94E6,
+=======
+	ResourceRequestConfiguredSource_Create_mAB2B1CB2826B30231D5FA295FCA4F02EBD12A466,
+>>>>>>> Game_Dev
 	ResourceRequestConfiguredSource_GetResult_m03FD455A5B06F37A4A4A0C03B0952ACA44A8AB54,
 	ResourceRequestConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_mBBB418A6BB9C7C1D5D1FB1925ACDFD4A8F1A3F5E,
 	ResourceRequestConfiguredSource_GetStatus_m4A045D99B4FC72CA919E336797FCA52092D9A3E1,
@@ -6925,9 +11464,17 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	ResourceRequestConfiguredSource_OnCompleted_m500D39069320AFF23F072E861DD740C762B18D6A,
 	ResourceRequestConfiguredSource_MoveNext_mD685B9A1EDA628A0FB19E06D5F98693A1D94B3CA,
 	ResourceRequestConfiguredSource_TryReturn_m8288B600F71C07292DC96B6095EC7995E2B47C45,
+<<<<<<< HEAD
 	U3CU3Ec__cctor_m1DC36907560BEA33CBCAE05E7431713C8CCA0DE0,
 	U3CU3Ec__ctor_mCCE71F5CC66743CA57D525CC22038F40E743B349,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m4C5C757C5C8EB800B199ED7D2FC76B3AD5B70D09,
+=======
+	ResourceRequestConfiguredSource_Continuation_m0EB99818314C138902D43C42269B8C8AA9E4A9D1,
+	U3CU3Ec__cctor_m1DC36907560BEA33CBCAE05E7431713C8CCA0DE0,
+	U3CU3Ec__ctor_mCCE71F5CC66743CA57D525CC22038F40E743B349,
+	U3CU3Ec_U3C_cctorU3Eb__4_0_m4C5C757C5C8EB800B199ED7D2FC76B3AD5B70D09,
+	U3CU3Ec_U3CCreateU3Eb__13_0_m8C43D48F08FE76FE861899FA425F6D29568ECB19,
+>>>>>>> Game_Dev
 	AssetBundleRequestAwaiter__ctor_mF1BD5794A04E62D9CFB5AE48E9289A030066A616,
 	AssetBundleRequestAwaiter_get_IsCompleted_m6F6BD2EFBB90B2D4A0E14DAC9CA9CC678019F7CE,
 	AssetBundleRequestAwaiter_GetResult_mDF74CF8F03E4E82C97127326DF5A8ED6F30EF9AE,
@@ -6936,7 +11483,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	AssetBundleRequestConfiguredSource_get_NextNode_mD2051DEB50E696709D9F3C81C16C791A313FC6C6,
 	AssetBundleRequestConfiguredSource__cctor_m89582C3E3A984D6490118A2D2A9A28E11CDF1C52,
 	AssetBundleRequestConfiguredSource__ctor_mE7DB0BF0FAA3D55BB2A31BA5548817437E14E8D6,
+<<<<<<< HEAD
 	AssetBundleRequestConfiguredSource_Create_m1EF3E2631E9DEAF87581530FB8902362E243C9EA,
+=======
+	AssetBundleRequestConfiguredSource_Create_m6906C0791A7FCAFD9E3EDC4E2207D1F47DD094D1,
+>>>>>>> Game_Dev
 	AssetBundleRequestConfiguredSource_GetResult_m73D9AFF6071587A3A8A3117AC1B75515BFBF92C1,
 	AssetBundleRequestConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m3DBA60EE0B46A6AFD102C8F4DAC003E2E4BFA777,
 	AssetBundleRequestConfiguredSource_GetStatus_m2A6B98B6B5E3C6BBAA643B8118595DDD6671FAB2,
@@ -6944,9 +11495,17 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	AssetBundleRequestConfiguredSource_OnCompleted_mFD98F188C5B0FA72EE10CC858CBB09D89DED8C9F,
 	AssetBundleRequestConfiguredSource_MoveNext_m6B0177317625BF693DD7721A083F5A2330875B42,
 	AssetBundleRequestConfiguredSource_TryReturn_m559AD9E5DC2B737F0BFDB6CF654DA7D265739276,
+<<<<<<< HEAD
 	U3CU3Ec__cctor_mB7D0EE9627155CA6B0BFE27361D9F182D4FDE5A3,
 	U3CU3Ec__ctor_m131837A9DBAF94112DCA62D5C782174D564BE0FC,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m00CC0A2E21329AB35014140C8ADDF4E27E7E6CA3,
+=======
+	AssetBundleRequestConfiguredSource_Continuation_mEA48EF86E114D1D090E846E2A3A573FF34850134,
+	U3CU3Ec__cctor_mB7D0EE9627155CA6B0BFE27361D9F182D4FDE5A3,
+	U3CU3Ec__ctor_m131837A9DBAF94112DCA62D5C782174D564BE0FC,
+	U3CU3Ec_U3C_cctorU3Eb__4_0_m00CC0A2E21329AB35014140C8ADDF4E27E7E6CA3,
+	U3CU3Ec_U3CCreateU3Eb__13_0_m4505BA862AE7AF8D7E3CAF6BC162693D0BA2577B,
+>>>>>>> Game_Dev
 	AssetBundleCreateRequestAwaiter__ctor_m0FDB0297DFBC26EEC5756983BCD76093A7837651,
 	AssetBundleCreateRequestAwaiter_get_IsCompleted_m19C6B872767AFA928B711B8DDEE6FBC15EF02E28,
 	AssetBundleCreateRequestAwaiter_GetResult_m2B025186132ECE124DB1A871FB3A7110C4F4FC0D,
@@ -6955,7 +11514,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	AssetBundleCreateRequestConfiguredSource_get_NextNode_m0EE72C439D5B5F96AF173D621CFE8947DD85DCD2,
 	AssetBundleCreateRequestConfiguredSource__cctor_m8A65E171B39589A0062E1D1C676100E99114667C,
 	AssetBundleCreateRequestConfiguredSource__ctor_mF9EB83AE7FB1997AB023776EE99DEF2B0666078E,
+<<<<<<< HEAD
 	AssetBundleCreateRequestConfiguredSource_Create_mABB6F10D575E087AB66C6F32F95753C264540E42,
+=======
+	AssetBundleCreateRequestConfiguredSource_Create_m98A3C7E9F1F8581CA54596DAA3FA7578343E0253,
+>>>>>>> Game_Dev
 	AssetBundleCreateRequestConfiguredSource_GetResult_m2F5D56598FD88DB924F2C3D92573DAF571AF2C59,
 	AssetBundleCreateRequestConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m98CFE677FEDC412D85EDBB89BFA9FEC780B23E73,
 	AssetBundleCreateRequestConfiguredSource_GetStatus_m1023DA1D9898DF072144F91FF23ACEA4562A2418,
@@ -6963,9 +11526,17 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	AssetBundleCreateRequestConfiguredSource_OnCompleted_mFB340540EC35122B1194504B88754614BF40493D,
 	AssetBundleCreateRequestConfiguredSource_MoveNext_m06ED7896EA1C9B2A8D643D71B0AB5B850687E003,
 	AssetBundleCreateRequestConfiguredSource_TryReturn_m058FEEA7CF415C84D0D3E9BB697AAACB9F207810,
+<<<<<<< HEAD
 	U3CU3Ec__cctor_mA82C5B694B143674FE0961CAE052F5A339592043,
 	U3CU3Ec__ctor_mED7A2F1CBA9D80AD6840B4243CD2B8A401305240,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m597B61AA1A084FA7D2FDAF8F991DAC54BA45ECC8,
+=======
+	AssetBundleCreateRequestConfiguredSource_Continuation_mB4249504268E7CB94963BCC803105E100F86669E,
+	U3CU3Ec__cctor_mA82C5B694B143674FE0961CAE052F5A339592043,
+	U3CU3Ec__ctor_mED7A2F1CBA9D80AD6840B4243CD2B8A401305240,
+	U3CU3Ec_U3C_cctorU3Eb__4_0_m597B61AA1A084FA7D2FDAF8F991DAC54BA45ECC8,
+	U3CU3Ec_U3CCreateU3Eb__13_0_mF62C1013FEBF74DA23BE30F8D84458810DF72BFE,
+>>>>>>> Game_Dev
 	UnityWebRequestAsyncOperationAwaiter__ctor_m03AA09B7CDCE9B8CB5534497C41E571370C2164E,
 	UnityWebRequestAsyncOperationAwaiter_get_IsCompleted_m7662537975C6DDA7D485E25793703401EA8D04B2,
 	UnityWebRequestAsyncOperationAwaiter_GetResult_m96EA9963C39AC42C04D9E35E1D5CF778D5BE8AF5,
@@ -6974,7 +11545,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	UnityWebRequestAsyncOperationConfiguredSource_get_NextNode_mEAD9A1EBE54F499CEBB023ED1659D8BEC1DD41F2,
 	UnityWebRequestAsyncOperationConfiguredSource__cctor_mC8C3C38B3DAE13E600DAFBBFE04D8CC2FDF068DA,
 	UnityWebRequestAsyncOperationConfiguredSource__ctor_m4CD2FF6274EE6A19AB9C571415C212B9C3F7CA38,
+<<<<<<< HEAD
 	UnityWebRequestAsyncOperationConfiguredSource_Create_mB3AA3233A7947BE19EE2B2C0632586A9B97712C8,
+=======
+	UnityWebRequestAsyncOperationConfiguredSource_Create_m876A435945465F0964143B7F36912FA4A53945C7,
+>>>>>>> Game_Dev
 	UnityWebRequestAsyncOperationConfiguredSource_GetResult_m161AF6871ACBAE7357F652CA87A53AD68AECB2E4,
 	UnityWebRequestAsyncOperationConfiguredSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m3A6380846EA33DDE07EC13B88484A1364F40B920,
 	UnityWebRequestAsyncOperationConfiguredSource_GetStatus_m78D99C1934CAEA8652E5C01E449B969EDB3CF978,
@@ -6982,9 +11557,17 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	UnityWebRequestAsyncOperationConfiguredSource_OnCompleted_m931D0D2A773550BBEEFFD3BD834B1810DFC0A553,
 	UnityWebRequestAsyncOperationConfiguredSource_MoveNext_m2F9E10B311858C36B872EE64A44C899610230902,
 	UnityWebRequestAsyncOperationConfiguredSource_TryReturn_m278204E8600BFCF362CED308A87B243F834FBF29,
+<<<<<<< HEAD
 	U3CU3Ec__cctor_m789A528B766B078FAEA1EFE64EDA7AFB79FFEA00,
 	U3CU3Ec__ctor_m75C37B2E475CAC463C54C77DB4A2FE3AE2C2BFFB,
 	U3CU3Ec_U3C_cctorU3Eb__4_0_m2EC3AF6259A6D80681AEFCBF261C65B5F4B3881B,
+=======
+	UnityWebRequestAsyncOperationConfiguredSource_Continuation_mEADF6668BD5A41A9E01B8D1B0EAD01DBB3F568B0,
+	U3CU3Ec__cctor_m789A528B766B078FAEA1EFE64EDA7AFB79FFEA00,
+	U3CU3Ec__ctor_m75C37B2E475CAC463C54C77DB4A2FE3AE2C2BFFB,
+	U3CU3Ec_U3C_cctorU3Eb__4_0_m2EC3AF6259A6D80681AEFCBF261C65B5F4B3881B,
+	U3CU3Ec_U3CCreateU3Eb__13_0_mFC65A07EA0DE4FAD762323C9C4DC936C77CB4B72,
+>>>>>>> Game_Dev
 	JobHandlePromise_Create_m6022713C1C51218E28FE5C560CA52AB3FDA497C9,
 	JobHandlePromise_GetResult_m5EA4E470A0A01E1BD51DD19D3C5519747130FA0E,
 	JobHandlePromise_GetStatus_m673B4FCBDF057CB870CA670D42E77F822CD26DB2,
@@ -6992,8 +11575,13 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	JobHandlePromise_OnCompleted_mBDDF90459D4F0DE88BC4060B601B9F3AF16A31B3,
 	JobHandlePromise_MoveNext_m820CF0F001DB36A7B70B603F41CBA7124B264FF4,
 	JobHandlePromise__ctor_m3CADF2A7038CF569B2E45CA8E9E6EDC5BBE1B280,
+<<<<<<< HEAD
 	U3CWaitAsyncU3Ed__34_MoveNext_m1CA2A29DE0D4EF56CECB7AEAC7F887742638CD72,
 	U3CWaitAsyncU3Ed__34_SetStateMachine_m2F5FDDD56B9CCC58CCE6619DD73D1721F2EC8D9A,
+=======
+	U3CWaitAsyncU3Ed__41_MoveNext_m26A3BD7F8FCC0041BC75057F68797640EEF7247D,
+	U3CWaitAsyncU3Ed__41_SetStateMachine_mDC8011FCDF25B750A8361F71BCDC69CD6F3079F0,
+>>>>>>> Game_Dev
 	NULL,
 	NULL,
 	NULL,
@@ -7880,7 +12468,11 @@ static Il2CppMethodPointer s_methodPointers[3273] =
 	Error_ArgumentOutOfRange_mB12CA2A5A28BE69DF8EFD9AB4FBD5DDD4C27AD13,
 	Error_NoElements_m9FAF29875B71BD3258D6E9E0BD6207BFC95316A5,
 	Error_MoreThanOneElement_mD66FED8AE9CF26384AFAA60BCFF0216F9490ECEE,
+<<<<<<< HEAD
 	NULL,
+=======
+	Error_ThrowArgumentException_m889149DF71CE175AE054CBD976C3B533989821B7,
+>>>>>>> Game_Dev
 	Error_ThrowNotYetCompleted_m0DD6572E6CF007038FBC3872B193BE74C67C2AB8,
 	NULL,
 	NULL,
@@ -8181,6 +12773,7 @@ extern void Awaiter_GetResult_mC439993563D3BD49CEC67AAF6AFB3AEF72E916BD_Adjustor
 extern void Awaiter_OnCompleted_mCC98D13C05342AF93D2711CCE1E31004F829FE84_AdjustorThunk (void);
 extern void Awaiter_UnsafeOnCompleted_m6C4775F8F4F2BEFB8118EBBA1EA621440CE84D62_AdjustorThunk (void);
 extern void Awaiter_SourceOnCompleted_m7A5A045E2ED6F2B0729D11CAC4E18F2BC5B758EB_AdjustorThunk (void);
+<<<<<<< HEAD
 extern void U3CRunOnThreadPoolU3Ed__78_MoveNext_m01B67A52D6EE263CDB3343D2D91555E73D473B51_AdjustorThunk (void);
 extern void U3CRunOnThreadPoolU3Ed__78_SetStateMachine_mA9E905D461711E4EC176EDAF27DC105CF8B3D782_AdjustorThunk (void);
 extern void U3CRunOnThreadPoolU3Ed__79_MoveNext_m3C4EA9D2E1DC943E44F555A1769833DA7C81B26C_AdjustorThunk (void);
@@ -8189,6 +12782,16 @@ extern void U3CRunOnThreadPoolU3Ed__80_MoveNext_m86F6350A86A40AC104E6E3978179413
 extern void U3CRunOnThreadPoolU3Ed__80_SetStateMachine_m1B8203DEE6056BA075E2F527F0D870BF4B7224A3_AdjustorThunk (void);
 extern void U3CRunOnThreadPoolU3Ed__81_MoveNext_m38720C55FEDB24FF5CFF3CEF813BB47B24B849D0_AdjustorThunk (void);
 extern void U3CRunOnThreadPoolU3Ed__81_SetStateMachine_m9A60EF932E4B983B45D132F1A255C6A327D66F70_AdjustorThunk (void);
+=======
+extern void U3CRunOnThreadPoolU3Ed__81_MoveNext_m38720C55FEDB24FF5CFF3CEF813BB47B24B849D0_AdjustorThunk (void);
+extern void U3CRunOnThreadPoolU3Ed__81_SetStateMachine_m9A60EF932E4B983B45D132F1A255C6A327D66F70_AdjustorThunk (void);
+extern void U3CRunOnThreadPoolU3Ed__82_MoveNext_mD185BE12DB17D522131674C92210325C6871976D_AdjustorThunk (void);
+extern void U3CRunOnThreadPoolU3Ed__82_SetStateMachine_m93664B64EABCCC119119500B901CF55DCF17B079_AdjustorThunk (void);
+extern void U3CRunOnThreadPoolU3Ed__83_MoveNext_mAB51841C09A55524D58D4315A88E8956BAB086FF_AdjustorThunk (void);
+extern void U3CRunOnThreadPoolU3Ed__83_SetStateMachine_mBB07955A0F2E26985217E3B1951972F6A45B49C8_AdjustorThunk (void);
+extern void U3CRunOnThreadPoolU3Ed__84_MoveNext_m7DBAF4F170CDBD752DE4E0B28CC8642555D288E8_AdjustorThunk (void);
+extern void U3CRunOnThreadPoolU3Ed__84_SetStateMachine_m8601A1C0CD68C5BEA9F76BF3B9FF6F6F5C50262A_AdjustorThunk (void);
+>>>>>>> Game_Dev
 extern void YieldAwaitable__ctor_m18D31312C0A37CDC6345D803A3FC55BEDDB7DB8E_AdjustorThunk (void);
 extern void YieldAwaitable_GetAwaiter_m56B2A4754DC798098A8ABD5DE2E6780BCEB64C7C_AdjustorThunk (void);
 extern void YieldAwaitable_ToUniTask_mB2497122FD07CCB362BEFCF906C42D5BBB1B2368_AdjustorThunk (void);
@@ -8297,8 +12900,13 @@ extern void UnityWebRequestAsyncOperationAwaiter_get_IsCompleted_m7662537975C6DD
 extern void UnityWebRequestAsyncOperationAwaiter_GetResult_m96EA9963C39AC42C04D9E35E1D5CF778D5BE8AF5_AdjustorThunk (void);
 extern void UnityWebRequestAsyncOperationAwaiter_OnCompleted_m938BD5684517FEEF31E5825EA9766A1CBA93448D_AdjustorThunk (void);
 extern void UnityWebRequestAsyncOperationAwaiter_UnsafeOnCompleted_m6137E393610929F40829FD31FAF86196BADE2EDD_AdjustorThunk (void);
+<<<<<<< HEAD
 extern void U3CWaitAsyncU3Ed__34_MoveNext_m1CA2A29DE0D4EF56CECB7AEAC7F887742638CD72_AdjustorThunk (void);
 extern void U3CWaitAsyncU3Ed__34_SetStateMachine_m2F5FDDD56B9CCC58CCE6619DD73D1721F2EC8D9A_AdjustorThunk (void);
+=======
+extern void U3CWaitAsyncU3Ed__41_MoveNext_m26A3BD7F8FCC0041BC75057F68797640EEF7247D_AdjustorThunk (void);
+extern void U3CWaitAsyncU3Ed__41_SetStateMachine_mDC8011FCDF25B750A8361F71BCDC69CD6F3079F0_AdjustorThunk (void);
+>>>>>>> Game_Dev
 extern void U3CBindToCoreU3Ed__2_MoveNext_m5DB7A38AB547C994E313C89C08AA5E7B22AA9CC6_AdjustorThunk (void);
 extern void U3CBindToCoreU3Ed__2_SetStateMachine_mCF71D6D6661515657FD6853B4867018395A41098_AdjustorThunk (void);
 extern void U3CBindToCoreU3Ed__9_MoveNext_mF73579193C12FB95BE91E5B586E4DF4AF4D4B2DC_AdjustorThunk (void);
@@ -8336,6 +12944,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[159] =
 	{ 0x06000196, UniTask_ToString_m40AB733888F35A7079CDF8B5399A7DD5AC4AC214_AdjustorThunk },
 	{ 0x06000197, UniTask_Preserve_m8876D573C390EC900423D993560E7EB62A2BBC76_AdjustorThunk },
 	{ 0x06000198, UniTask_AsAsyncUnitUniTask_m54132A2A2BBEB304F7B93EC00CF18145AFE59B2F_AdjustorThunk },
+<<<<<<< HEAD
 	{ 0x06000214, Awaiter__ctor_m4154A3A6D62BB1657D17A8106633CD9E1CE51F04_AdjustorThunk },
 	{ 0x06000215, Awaiter_get_IsCompleted_m2D01E3AB8A7C5AA8AA1E1EF58D92A6A095C00B9A_AdjustorThunk },
 	{ 0x06000216, Awaiter_GetResult_mC439993563D3BD49CEC67AAF6AFB3AEF72E916BD_AdjustorThunk },
@@ -8490,6 +13099,162 @@ static const int32_t s_InvokerIndices[3273] =
 	9922,
 	18966,
 	19910,
+=======
+	{ 0x06000217, Awaiter__ctor_m4154A3A6D62BB1657D17A8106633CD9E1CE51F04_AdjustorThunk },
+	{ 0x06000218, Awaiter_get_IsCompleted_m2D01E3AB8A7C5AA8AA1E1EF58D92A6A095C00B9A_AdjustorThunk },
+	{ 0x06000219, Awaiter_GetResult_mC439993563D3BD49CEC67AAF6AFB3AEF72E916BD_AdjustorThunk },
+	{ 0x0600021A, Awaiter_OnCompleted_mCC98D13C05342AF93D2711CCE1E31004F829FE84_AdjustorThunk },
+	{ 0x0600021B, Awaiter_UnsafeOnCompleted_m6C4775F8F4F2BEFB8118EBBA1EA621440CE84D62_AdjustorThunk },
+	{ 0x0600021C, Awaiter_SourceOnCompleted_m7A5A045E2ED6F2B0729D11CAC4E18F2BC5B758EB_AdjustorThunk },
+	{ 0x060005EC, U3CRunOnThreadPoolU3Ed__81_MoveNext_m38720C55FEDB24FF5CFF3CEF813BB47B24B849D0_AdjustorThunk },
+	{ 0x060005ED, U3CRunOnThreadPoolU3Ed__81_SetStateMachine_m9A60EF932E4B983B45D132F1A255C6A327D66F70_AdjustorThunk },
+	{ 0x060005EE, U3CRunOnThreadPoolU3Ed__82_MoveNext_mD185BE12DB17D522131674C92210325C6871976D_AdjustorThunk },
+	{ 0x060005EF, U3CRunOnThreadPoolU3Ed__82_SetStateMachine_m93664B64EABCCC119119500B901CF55DCF17B079_AdjustorThunk },
+	{ 0x060005F0, U3CRunOnThreadPoolU3Ed__83_MoveNext_mAB51841C09A55524D58D4315A88E8956BAB086FF_AdjustorThunk },
+	{ 0x060005F1, U3CRunOnThreadPoolU3Ed__83_SetStateMachine_mBB07955A0F2E26985217E3B1951972F6A45B49C8_AdjustorThunk },
+	{ 0x060005F2, U3CRunOnThreadPoolU3Ed__84_MoveNext_m7DBAF4F170CDBD752DE4E0B28CC8642555D288E8_AdjustorThunk },
+	{ 0x060005F3, U3CRunOnThreadPoolU3Ed__84_SetStateMachine_m8601A1C0CD68C5BEA9F76BF3B9FF6F6F5C50262A_AdjustorThunk },
+	{ 0x0600061C, YieldAwaitable__ctor_m18D31312C0A37CDC6345D803A3FC55BEDDB7DB8E_AdjustorThunk },
+	{ 0x0600061D, YieldAwaitable_GetAwaiter_m56B2A4754DC798098A8ABD5DE2E6780BCEB64C7C_AdjustorThunk },
+	{ 0x0600061E, YieldAwaitable_ToUniTask_mB2497122FD07CCB362BEFCF906C42D5BBB1B2368_AdjustorThunk },
+	{ 0x0600061F, Awaiter__ctor_m11CEEE91D477321445760BC30E485E54A319E665_AdjustorThunk },
+	{ 0x06000620, Awaiter_get_IsCompleted_m380AD66439FAC48688A6348C575A8122F672D61A_AdjustorThunk },
+	{ 0x06000621, Awaiter_GetResult_m65B26AEE969C14E1A7010BCDF845982D6EE1A0AB_AdjustorThunk },
+	{ 0x06000622, Awaiter_OnCompleted_m25464AC3A4D7588622FE4AFFD1ECEF66E32A07EC_AdjustorThunk },
+	{ 0x06000623, Awaiter_UnsafeOnCompleted_m449B902ED39DDF273B1DC642244CA8B4D3831BE5_AdjustorThunk },
+	{ 0x06000625, SwitchToMainThreadAwaitable__ctor_mFCEC101B3A72BE6FEC732DA2B7E7DD98DA6959D1_AdjustorThunk },
+	{ 0x06000626, SwitchToMainThreadAwaitable_GetAwaiter_m66A0F6F462885727A38028656D11B51CEA32BD29_AdjustorThunk },
+	{ 0x06000627, Awaiter__ctor_m09E7F426390A927742186C32D32668BD079D8D73_AdjustorThunk },
+	{ 0x06000628, Awaiter_get_IsCompleted_m8B4E3723A3CC1B1E8359E40C0766081C55A5BC37_AdjustorThunk },
+	{ 0x06000629, Awaiter_GetResult_m8383C6B4850150162ECAA6464603B95FD2231CB2_AdjustorThunk },
+	{ 0x0600062A, Awaiter_OnCompleted_m0CD5A9442BF16C47D21BD171B8CAF3A15274B201_AdjustorThunk },
+	{ 0x0600062B, Awaiter_UnsafeOnCompleted_m0F8D6A7007F0397899FB1444B09D14912BB48E67_AdjustorThunk },
+	{ 0x0600062C, ReturnToMainThread__ctor_mBAE8FC1A4CE0C29F926C323B3173DAD99AFE9F09_AdjustorThunk },
+	{ 0x0600062D, ReturnToMainThread_DisposeAsync_m8E05C25C07680FF07B607A37E69D513FE81870B6_AdjustorThunk },
+	{ 0x0600062E, Awaiter__ctor_m24E42F4622634B9637FFD73E12C328A304DB24D5_AdjustorThunk },
+	{ 0x0600062F, Awaiter_GetAwaiter_mC6C2ED52158B1D2E1370B29F36C7A1AF73527055_AdjustorThunk },
+	{ 0x06000630, Awaiter_get_IsCompleted_m86F5D79EB5B73479C076EF6CCB87AB50CF830664_AdjustorThunk },
+	{ 0x06000631, Awaiter_GetResult_m4A61D93307B30CD5BB4C60AB9FE37554979E34DE_AdjustorThunk },
+	{ 0x06000632, Awaiter_OnCompleted_m535A23E43030C30F07A94A0A6CF252DDBFB14EB8_AdjustorThunk },
+	{ 0x06000633, Awaiter_UnsafeOnCompleted_m6C107D081E8C9910B33CF0DCA999FD3ABC226C08_AdjustorThunk },
+	{ 0x06000634, SwitchToThreadPoolAwaitable_GetAwaiter_m8720CC348C2B3A1A6CF1317042436D3F8307BD29_AdjustorThunk },
+	{ 0x06000635, Awaiter_get_IsCompleted_mC1677DC7707E92D236DF2BA1144FFABF6E45D92E_AdjustorThunk },
+	{ 0x06000636, Awaiter_GetResult_mF089C80E7D6C1B3FFA735B7F5B28098339127021_AdjustorThunk },
+	{ 0x06000637, Awaiter_OnCompleted_m822D4D665AD1FEF2EC40615943E1E08BA03D09C7_AdjustorThunk },
+	{ 0x06000638, Awaiter_UnsafeOnCompleted_mB6FEEBBADB2DEE87A1578C836F09D56A648F1A61_AdjustorThunk },
+	{ 0x0600063B, SwitchToTaskPoolAwaitable_GetAwaiter_mCF248AC6C73851FBDA48684ED7D950C11DDB0045_AdjustorThunk },
+	{ 0x0600063C, Awaiter_get_IsCompleted_m3699971AEF35BBDD488E7FDEC4CB36A434F64C5B_AdjustorThunk },
+	{ 0x0600063D, Awaiter_GetResult_m47C8A570F1CA1099AD152C462E465056C19E4994_AdjustorThunk },
+	{ 0x0600063E, Awaiter_OnCompleted_m828E843F11DA61D34C66AE0CB1B0F58DC64D3BA4_AdjustorThunk },
+	{ 0x0600063F, Awaiter_UnsafeOnCompleted_m497F35773C6EFDA56EC3DB7C295933B0D7144212_AdjustorThunk },
+	{ 0x06000642, SwitchToSynchronizationContextAwaitable__ctor_mAEAB780DB05FAD47A71C686DEF726E3DFD471EFC_AdjustorThunk },
+	{ 0x06000643, SwitchToSynchronizationContextAwaitable_GetAwaiter_m5D5CF981B4A7B8CF2AB5EA5CB3717017B18BC29F_AdjustorThunk },
+	{ 0x06000644, Awaiter__ctor_m492F8B84B5EF8EE7D41EC38C988AA9606FA075E0_AdjustorThunk },
+	{ 0x06000645, Awaiter_get_IsCompleted_m9FE5B9F4F4FD3A91C3EF001CE7DBF10A74D6D181_AdjustorThunk },
+	{ 0x06000646, Awaiter_GetResult_mF64A3B59E0F74D96EE3882216DA35F892810140C_AdjustorThunk },
+	{ 0x06000647, Awaiter_OnCompleted_mEF8828392CBB2AA205D6539FF770CF4F9EF11149_AdjustorThunk },
+	{ 0x06000648, Awaiter_UnsafeOnCompleted_mBB2852B633C2770F911BCFC59B8B4CA7E443BAB0_AdjustorThunk },
+	{ 0x0600064B, ReturnToSynchronizationContext__ctor_m7DAD006F64492D34E749CA7E0E9167CB2E2117FD_AdjustorThunk },
+	{ 0x0600064C, ReturnToSynchronizationContext_DisposeAsync_m9847BC8CB45E26B714CBBE283FBD000DF4ADD0D3_AdjustorThunk },
+	{ 0x0600064D, Awaiter__ctor_mF3630039F1EF4AF0055441F3DB64B3F7034D7775_AdjustorThunk },
+	{ 0x0600064E, Awaiter_GetAwaiter_m55FB61408CE143EC20403A62C652891C4F1FA04E_AdjustorThunk },
+	{ 0x0600064F, Awaiter_get_IsCompleted_m83EEF697D9563038109890CB678E3128629139CF_AdjustorThunk },
+	{ 0x06000650, Awaiter_GetResult_m770255DE65727F4594A3DDAC445728133C06CDC9_AdjustorThunk },
+	{ 0x06000651, Awaiter_OnCompleted_m2F069CBCC9FA6609E74548E61462E83E482FE8F8_AdjustorThunk },
+	{ 0x06000652, Awaiter_UnsafeOnCompleted_m93CC863523AB095BA735F2119A340382C80C3E48_AdjustorThunk },
+	{ 0x060006F6, U3CRunTaskU3Ed__5_MoveNext_m3344B6864F5B1648AE534EB51AB375A63929322D_AdjustorThunk },
+	{ 0x060006F7, U3CRunTaskU3Ed__5_SetStateMachine_m676E99B99C852FB1BF9157A3B730FEDCB61D5FE6_AdjustorThunk },
+	{ 0x06000708, U3CRunTaskU3Ed__6_MoveNext_m3CD3A16774E5247DA30D82C6B223223364D6AD0D_AdjustorThunk },
+	{ 0x06000709, U3CRunTaskU3Ed__6_SetStateMachine_m9874A12704D2EAFD1D7F4623F26D4CB894F837A8_AdjustorThunk },
+	{ 0x0600071C, U3CTimeoutU3Ed__12_MoveNext_m7F1BBB5BD22E661AC18BDE2A10C989F3F6CB8650_AdjustorThunk },
+	{ 0x0600071D, U3CTimeoutU3Ed__12_SetStateMachine_m39053C1E1AF649F423B78669B1A23E4F68278A1C_AdjustorThunk },
+	{ 0x06000720, U3CTimeoutWithoutExceptionU3Ed__14_MoveNext_m78D28DC7B590E159BA908AFDC0BD3F25CAEC4425_AdjustorThunk },
+	{ 0x06000721, U3CTimeoutWithoutExceptionU3Ed__14_SetStateMachine_mDDCCF16AA7B36820989B7FB9D7E599F796C5B321_AdjustorThunk },
+	{ 0x06000724, U3CForgetCoreWithCatchU3Ed__18_MoveNext_m04E4D555E2E8F65BE0C17AE5D25E83FBD776EF81_AdjustorThunk },
+	{ 0x06000725, U3CForgetCoreWithCatchU3Ed__18_SetStateMachine_m08B51AA3872FDE9C88AF5757E8746BD182AEC137_AdjustorThunk },
+	{ 0x06000733, U3CContinueWithU3Ed__26_MoveNext_mEF192FB41D809C77DAC056021F36FDC0B0C0708B_AdjustorThunk },
+	{ 0x06000734, U3CContinueWithU3Ed__26_SetStateMachine_m4C00B97F073E582AE70AA66E4823410661C8FA8A_AdjustorThunk },
+	{ 0x06000735, U3CContinueWithU3Ed__27_MoveNext_m346157D6ED11D4268C6A4ED90588CFBF00F1BC1E_AdjustorThunk },
+	{ 0x06000736, U3CContinueWithU3Ed__27_SetStateMachine_m890B1B519DC41F3FBAFE2C76AD9DC86915FA790F_AdjustorThunk },
+	{ 0x0600073D, U3CUnwrapU3Ed__31_MoveNext_m382BE40C5E76185E5D3261584E1BCE9811704EF7_AdjustorThunk },
+	{ 0x0600073E, U3CUnwrapU3Ed__31_SetStateMachine_mD796E8B98D3BCD72DFDA3814305938D6095F2781_AdjustorThunk },
+	{ 0x06000743, U3CUnwrapU3Ed__34_MoveNext_m5D6795B652A68122C5FE7E93CCF42D74EAFFAACA_AdjustorThunk },
+	{ 0x06000744, U3CUnwrapU3Ed__34_SetStateMachine_mD45417191F6A430D91C731510C2134492EB589ED_AdjustorThunk },
+	{ 0x06000745, U3CUnwrapU3Ed__35_MoveNext_mE486B4E83A5455B91BE0109678FC275CF582D716_AdjustorThunk },
+	{ 0x06000746, U3CUnwrapU3Ed__35_SetStateMachine_m04802B692A477C4ACE2BEF603E437DEB78118DB1_AdjustorThunk },
+	{ 0x0600074B, U3CUnwrapU3Ed__38_MoveNext_m5BB5246A30E6BA3A11BA4DF59FFC17A0CF633A8B_AdjustorThunk },
+	{ 0x0600074C, U3CUnwrapU3Ed__38_SetStateMachine_m2985B8E6BF964965E20234B7B8A820BD001C378D_AdjustorThunk },
+	{ 0x0600074D, U3CUnwrapU3Ed__39_MoveNext_m6041F2BE5EA3F37E5C89337C0635773FD6BA53AA_AdjustorThunk },
+	{ 0x0600074E, U3CUnwrapU3Ed__39_SetStateMachine_m92FFF58C2D6B3C934A48263A8D7677E7D500A773_AdjustorThunk },
+	{ 0x06000766, U3CFireU3Ed__4_MoveNext_m2A2912B7BCA7C0E7BDEBEB169BEAA8A3AB09057B_AdjustorThunk },
+	{ 0x06000767, U3CFireU3Ed__4_SetStateMachine_m0E131446887368F98AA0A3AEC1DDCEEFE0187C87_AdjustorThunk },
+	{ 0x06000775, Callback__ctor_m08D0FDF4469178BAD58A49B1DA95BB47A4CFE423_AdjustorThunk },
+	{ 0x06000776, Callback_Invoke_mCAC6841169B5A04BE53DFD6D11385386EEB0D094_AdjustorThunk },
+	{ 0x06000777, UniTaskVoid_Forget_mE4FC2CCCEFD822A5D63FFE97EE209FEE949CC255_AdjustorThunk },
+	{ 0x060007CE, AssetBundleRequestAllAssetsAwaiter__ctor_mC44DEAFDE5176198C48DDE03DB1E15D57D17C318_AdjustorThunk },
+	{ 0x060007CF, AssetBundleRequestAllAssetsAwaiter_GetAwaiter_m7F0D757916CF0652FBED2EB92591AB65E948DA7B_AdjustorThunk },
+	{ 0x060007D0, AssetBundleRequestAllAssetsAwaiter_get_IsCompleted_mE447A272FEA2D7E004A654E074EA7466D224CDB3_AdjustorThunk },
+	{ 0x060007D1, AssetBundleRequestAllAssetsAwaiter_GetResult_m3A4D3DBFDD6125C51732812710B66495B10879A4_AdjustorThunk },
+	{ 0x060007D2, AssetBundleRequestAllAssetsAwaiter_OnCompleted_mFF0396BDD0BD6E99B6E0A35C64EE13E6DFA8F125_AdjustorThunk },
+	{ 0x060007D3, AssetBundleRequestAllAssetsAwaiter_UnsafeOnCompleted_m06D8B2847D1E649D4A7761FE9D024EF0D3B9FB77_AdjustorThunk },
+	{ 0x060007F3, AsyncOperationAwaiter__ctor_m3C576C9030722F58BE380F1FB42D8CFD314BF674_AdjustorThunk },
+	{ 0x060007F4, AsyncOperationAwaiter_get_IsCompleted_mB1A89F2E5B9E1CD69315D33F6E5F5EC94DEB2DFC_AdjustorThunk },
+	{ 0x060007F5, AsyncOperationAwaiter_GetResult_m40446B2CAF167A2C2FF346BDC11B460F97383BA9_AdjustorThunk },
+	{ 0x060007F6, AsyncOperationAwaiter_OnCompleted_m1CCDA532840AF64F7AE1243C7AC6D6D432CFC923_AdjustorThunk },
+	{ 0x060007F7, AsyncOperationAwaiter_UnsafeOnCompleted_m1FCE8D7EEF11CA5BC83FB9E7ECB4984D16DE8C04_AdjustorThunk },
+	{ 0x06000807, ResourceRequestAwaiter__ctor_m9F612DDCFE50A3CF17BDA678DAA52E7DA5923F86_AdjustorThunk },
+	{ 0x06000808, ResourceRequestAwaiter_get_IsCompleted_m797B9071AB9AB8B33167896D6EF9ED10B1C73A10_AdjustorThunk },
+	{ 0x06000809, ResourceRequestAwaiter_GetResult_m648D2E45FFE2E55A3FA3175FDF1BCD993CF04068_AdjustorThunk },
+	{ 0x0600080A, ResourceRequestAwaiter_OnCompleted_m9F0D431A21800CEA35922F68DBF6129875EA1EB1_AdjustorThunk },
+	{ 0x0600080B, ResourceRequestAwaiter_UnsafeOnCompleted_mA1C3EDBC89B73759B2EBFBD27C81BEE9AA06B8BE_AdjustorThunk },
+	{ 0x0600081C, AssetBundleRequestAwaiter__ctor_mF1BD5794A04E62D9CFB5AE48E9289A030066A616_AdjustorThunk },
+	{ 0x0600081D, AssetBundleRequestAwaiter_get_IsCompleted_m6F6BD2EFBB90B2D4A0E14DAC9CA9CC678019F7CE_AdjustorThunk },
+	{ 0x0600081E, AssetBundleRequestAwaiter_GetResult_mDF74CF8F03E4E82C97127326DF5A8ED6F30EF9AE_AdjustorThunk },
+	{ 0x0600081F, AssetBundleRequestAwaiter_OnCompleted_m9F1A25E17F5B90EEEB2CB7328B2B8FFA68074E34_AdjustorThunk },
+	{ 0x06000820, AssetBundleRequestAwaiter_UnsafeOnCompleted_m9FA0D59F5712A6AC3DD506A2258C98A75918B0D4_AdjustorThunk },
+	{ 0x06000831, AssetBundleCreateRequestAwaiter__ctor_m0FDB0297DFBC26EEC5756983BCD76093A7837651_AdjustorThunk },
+	{ 0x06000832, AssetBundleCreateRequestAwaiter_get_IsCompleted_m19C6B872767AFA928B711B8DDEE6FBC15EF02E28_AdjustorThunk },
+	{ 0x06000833, AssetBundleCreateRequestAwaiter_GetResult_m2B025186132ECE124DB1A871FB3A7110C4F4FC0D_AdjustorThunk },
+	{ 0x06000834, AssetBundleCreateRequestAwaiter_OnCompleted_m8E10D4B301AE5F5E5C897A1EF38ECE9B67038CA3_AdjustorThunk },
+	{ 0x06000835, AssetBundleCreateRequestAwaiter_UnsafeOnCompleted_m5AB26F94B21E92D5B22E59BFD555704933F6014C_AdjustorThunk },
+	{ 0x06000846, UnityWebRequestAsyncOperationAwaiter__ctor_m03AA09B7CDCE9B8CB5534497C41E571370C2164E_AdjustorThunk },
+	{ 0x06000847, UnityWebRequestAsyncOperationAwaiter_get_IsCompleted_m7662537975C6DDA7D485E25793703401EA8D04B2_AdjustorThunk },
+	{ 0x06000848, UnityWebRequestAsyncOperationAwaiter_GetResult_m96EA9963C39AC42C04D9E35E1D5CF778D5BE8AF5_AdjustorThunk },
+	{ 0x06000849, UnityWebRequestAsyncOperationAwaiter_OnCompleted_m938BD5684517FEEF31E5825EA9766A1CBA93448D_AdjustorThunk },
+	{ 0x0600084A, UnityWebRequestAsyncOperationAwaiter_UnsafeOnCompleted_m6137E393610929F40829FD31FAF86196BADE2EDD_AdjustorThunk },
+	{ 0x06000862, U3CWaitAsyncU3Ed__41_MoveNext_m26A3BD7F8FCC0041BC75057F68797640EEF7247D_AdjustorThunk },
+	{ 0x06000863, U3CWaitAsyncU3Ed__41_SetStateMachine_mDC8011FCDF25B750A8361F71BCDC69CD6F3079F0_AdjustorThunk },
+	{ 0x060008AE, U3CBindToCoreU3Ed__2_MoveNext_m5DB7A38AB547C994E313C89C08AA5E7B22AA9CC6_AdjustorThunk },
+	{ 0x060008AF, U3CBindToCoreU3Ed__2_SetStateMachine_mCF71D6D6661515657FD6853B4867018395A41098_AdjustorThunk },
+	{ 0x060008B2, U3CBindToCoreU3Ed__9_MoveNext_mF73579193C12FB95BE91E5B586E4DF4AF4D4B2DC_AdjustorThunk },
+	{ 0x060008B3, U3CBindToCoreU3Ed__9_SetStateMachine_m51113E3162DE6B7B05B6870748D3A672260F7CCD_AdjustorThunk },
+	{ 0x06000C4F, ValueStopwatch__ctor_mF4323A30F6F82FAAA7C2C943EE2E708A2E482D68_AdjustorThunk },
+	{ 0x06000C50, ValueStopwatch_get_Elapsed_m3D0250DBD5A7CCD764D56F4A4230DF2953406963_AdjustorThunk },
+	{ 0x06000C51, ValueStopwatch_get_IsInvalid_mE2AFBDC1DEB255E72DE87B2BD2C7EA8BFDCDBDF1_AdjustorThunk },
+	{ 0x06000C52, ValueStopwatch_get_ElapsedTicks_mF4B713799E06F9F82066A6AB557F419F21C18E40_AdjustorThunk },
+	{ 0x06000C93, AsyncUniTaskMethodBuilder_get_Task_m11E43D69C4F85EB23AAC58143DE695309D1022EC_AdjustorThunk },
+	{ 0x06000C94, AsyncUniTaskMethodBuilder_SetException_m0D772D62D01CC371F4AB0F6943BBBE0FEAB19643_AdjustorThunk },
+	{ 0x06000C95, AsyncUniTaskMethodBuilder_SetResult_mBBA527F0F21E04D65A269C0D02597CE5B2D1E9CB_AdjustorThunk },
+	{ 0x06000C99, AsyncUniTaskMethodBuilder_SetStateMachine_m466E6779CB9DEC814C0A59E7766D95EC2C3268CF_AdjustorThunk },
+	{ 0x06000CA3, AsyncUniTaskVoidMethodBuilder_get_Task_mA5D58CCC3268985A789B48F67492123752CE7A98_AdjustorThunk },
+	{ 0x06000CA4, AsyncUniTaskVoidMethodBuilder_SetException_m7492DE9DAE6EEC3DA2D1792A7B937F6CF61C6EB5_AdjustorThunk },
+	{ 0x06000CA5, AsyncUniTaskVoidMethodBuilder_SetResult_m12336C298D2F8CED07AAB85C3DD67815E8343947_AdjustorThunk },
+	{ 0x06000CA9, AsyncUniTaskVoidMethodBuilder_SetStateMachine_mF9EBFE4E8FBA7ABFE21AC2390B9C3748DCA0FC2C_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[3308] = 
+{
+	12513,
+	10111,
+	10111,
+	10245,
+	12656,
+	12858,
+	12673,
+	12673,
+	9967,
+	19125,
+	20070,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -8605,6 +13370,7 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	12420,
 	7335,
 	12457,
@@ -8641,6 +13407,44 @@ static const int32_t s_InvokerIndices[3273] =
 	17049,
 	17049,
 	19910,
+=======
+	12475,
+	7367,
+	12513,
+	20070,
+	3347,
+	8550,
+	12673,
+	20070,
+	18199,
+	16414,
+	0,
+	0,
+	16937,
+	18056,
+	19125,
+	18200,
+	16415,
+	15212,
+	16416,
+	19125,
+	20070,
+	12673,
+	10111,
+	9985,
+	12716,
+	9985,
+	12383,
+	12673,
+	10111,
+	10111,
+	19125,
+	14631,
+	14693,
+	17203,
+	17203,
+	20070,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -8663,10 +13467,17 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	12616,
 	10065,
 	10065,
 	5636,
+=======
+	12673,
+	10111,
+	10111,
+	5666,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -8697,6 +13508,7 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	16778,
 	15459,
 	16779,
@@ -8748,6 +13560,59 @@ static const int32_t s_InvokerIndices[3273] =
 	18966,
 	17049,
 	19910,
+=======
+	16931,
+	15608,
+	16932,
+	15464,
+	12367,
+	20070,
+	12673,
+	14629,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	18486,
+	18486,
+	18486,
+	20070,
+	12673,
+	12475,
+	10075,
+	12673,
+	12383,
+	12513,
+	12673,
+	12513,
+	10075,
+	12673,
+	12383,
+	12513,
+	12673,
+	12513,
+	10075,
+	12673,
+	12383,
+	12513,
+	12673,
+	12513,
+	10075,
+	12673,
+	12383,
+	12513,
+	12673,
+	12513,
+	18163,
+	17196,
+	19125,
+	19979,
+	19125,
+	17203,
+	20070,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -8768,6 +13633,7 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	18005,
 	18005,
 	18005,
@@ -8826,6 +13692,65 @@ static const int32_t s_InvokerIndices[3273] =
 	561,
 	12328,
 	9582,
+=======
+	18160,
+	18160,
+	18160,
+	18160,
+	7460,
+	8601,
+	2872,
+	12475,
+	10074,
+	0,
+	7849,
+	12673,
+	0,
+	20015,
+	20006,
+	20015,
+	19979,
+	19979,
+	19113,
+	13394,
+	15497,
+	18487,
+	20070,
+	16550,
+	13016,
+	17084,
+	17120,
+	19121,
+	17120,
+	20070,
+	19979,
+	20070,
+	12673,
+	7513,
+	20070,
+	12673,
+	7513,
+	7513,
+	7513,
+	853,
+	13212,
+	13212,
+	12673,
+	10230,
+	12673,
+	0,
+	12673,
+	12383,
+	0,
+	573,
+	12383,
+	9624,
+	573,
+	12383,
+	9624,
+	573,
+	12383,
+	9624,
 	0,
 	0,
 	0,
@@ -8833,6 +13758,1381 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+	0,
+	0,
+	20070,
+	19121,
+	20015,
+	17203,
+	10075,
+	12673,
+	12383,
+	12673,
+	12673,
+	12317,
+	12673,
+	12513,
+	12513,
+	12513,
+	0,
+	0,
+	0,
+	0,
+	19125,
+	5303,
+	2848,
+	7882,
+	7883,
+	12383,
+	12673,
+	12673,
+	20070,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	18198,
+	18198,
+	18486,
+	5656,
+	12475,
+	12858,
+	12131,
+	12513,
+	12656,
+	12128,
+	20072,
+	19144,
+	16928,
+	15604,
+	20063,
+	19080,
+	16928,
+	15604,
+	20072,
+	16928,
+	19081,
+	15607,
+	20072,
+	16928,
+	13911,
+	13908,
+	14772,
+	13908,
+	13912,
+	13909,
+	13913,
+	19081,
+	0,
+	0,
+	19079,
+	0,
+	19081,
+	0,
+	18486,
+	0,
+	19125,
+	17187,
+	0,
+	18486,
+	16686,
+	18486,
+	16686,
+	19081,
+	0,
+	19079,
+	0,
+	15606,
+	14774,
+	15606,
+	14774,
+	0,
+	0,
+	0,
+	0,
+	15606,
+	14774,
+	15606,
+	14774,
+	0,
+	0,
+	0,
+	0,
+	18702,
+	16846,
+	18557,
+	16768,
+	17196,
+	20051,
+	20050,
+	16847,
+	16770,
+	16769,
+	14773,
+	14773,
+	15603,
+	0,
+	0,
+	0,
+	19081,
+	19081,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	18043,
+	18043,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	20070,
+	10111,
+	6728,
+	8601,
+	2872,
+	12475,
+	10074,
+	10111,
+	7460,
+	10074,
+	8601,
+	12475,
+	2872,
+	10111,
+	10074,
+	8601,
+	2872,
+	12475,
+	9967,
+	12383,
+	12673,
+	10111,
+	10111,
+	5666,
+	12367,
+	20070,
+	12673,
+	14590,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	14590,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	14614,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12513,
+	12383,
+	12673,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	13784,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	13876,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	13876,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	13876,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	0,
+	10111,
+	10074,
+	8601,
+	12475,
+	2872,
+	12673,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	9985,
+	10074,
+	8601,
+	12475,
+	2872,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	10111,
+	10074,
+	8601,
+	2872,
+	12475,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12367,
+	20070,
+	12673,
+	13810,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	13810,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	14579,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	5657,
+	17185,
+	10074,
+	8601,
+	12475,
+	2872,
+	20070,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	5657,
+	15850,
+	8601,
+	8601,
+	2872,
+	12475,
+	10074,
+	20070,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	10111,
+	12673,
+	10111,
+	12673,
+	10111,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	20070,
+	12673,
+	12656,
+	19125,
+	20070,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	10075,
+	12882,
+	12656,
+	10075,
+	12383,
+	12673,
+	10111,
+	10111,
+	20070,
+	5251,
+	12833,
+	5251,
+	12383,
+	12673,
+	10111,
+	10111,
+	5251,
+	12817,
+	5251,
+	12817,
+	12383,
+	12673,
+	10111,
+	10111,
+	12836,
+	12383,
+	12673,
+	10111,
+	10111,
+	19125,
+	20070,
+	12835,
+	12383,
+	12673,
+	10111,
+	10111,
+	19125,
+	20070,
+	5645,
+	12834,
+	5645,
+	12383,
+	12673,
+	10111,
+	10111,
+	19125,
+	20070,
+	2825,
+	12818,
+	2825,
+	12818,
+	12383,
+	12673,
+	10111,
+	10111,
+	19125,
+	20070,
+	0,
+	0,
+	0,
+	0,
+	10111,
+	12513,
+	12673,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	19125,
+	20070,
+	12367,
+	20070,
+	12673,
+	20015,
+	16653,
+	16684,
+	18460,
+	12656,
+	12383,
+	7388,
+	7500,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	20070,
+	12673,
+	12475,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12673,
+	12673,
+	12656,
+	12383,
+	7388,
+	7500,
+	10074,
+	8601,
+	12475,
+	2872,
+	7461,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	16930,
+	0,
+	18505,
+	18505,
+	0,
+	16933,
+	0,
+	0,
+	16737,
+	13914,
+	0,
+	13528,
+	0,
+	19138,
+	15933,
+	15610,
+>>>>>>> Game_Dev
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+<<<<<<< HEAD
 	0,
 	0,
 	19910,
@@ -8862,6 +15162,24 @@ static const int32_t s_InvokerIndices[3273] =
 	12616,
 	12616,
 	19910,
+=======
+	16934,
+	16934,
+	0,
+	0,
+	0,
+	19077,
+	0,
+	0,
+	19081,
+	16930,
+	0,
+	0,
+	19076,
+	16927,
+	19879,
+	19879,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -8877,6 +15195,7 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	18043,
 	18043,
 	18329,
@@ -8929,18 +15248,673 @@ static const int32_t s_InvokerIndices[3273] =
 	14641,
 	15458,
 	14641,
+=======
+	0,
+	19864,
+	19865,
+	19866,
+	19867,
+	19868,
+	19869,
+	19870,
+	19871,
+	19872,
+	19873,
+	19874,
+	19875,
+	19876,
+	19877,
+	5760,
+	9294,
+	19125,
+	10074,
+	8601,
+	2872,
+	12475,
+	20070,
+	12673,
+	10111,
 	0,
 	0,
 	0,
 	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	5762,
+	9294,
+	12513,
+	12383,
+	12673,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	20070,
+	12673,
+	5666,
+	10111,
+	10111,
+	0,
+	0,
+	0,
+	12673,
+	10111,
+	0,
+	0,
+	12673,
+	10111,
+	0,
+	0,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12673,
+	10111,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	12673,
+	10111,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	12673,
+	10111,
+	12673,
+	10111,
+	0,
+	0,
+	18505,
+	0,
+	16936,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	12673,
+	10111,
+	19125,
+	19125,
+	19125,
+	19125,
+	20070,
+	5666,
+	5666,
+	12673,
+	12673,
+	12513,
+	20070,
+	12673,
+	20070,
+	5666,
+	12673,
+	12673,
+	19881,
+	16126,
+	15085,
+	13526,
+	17914,
+	16128,
+	15087,
+	14216,
+	19883,
+	16931,
+	15607,
+	13910,
+	19884,
+	16137,
+	15089,
+	13530,
+	19882,
+	16137,
+	15089,
+	13530,
+	19880,
+	16127,
+	15086,
+	13527,
+	19885,
+	16140,
+	15090,
+	13531,
+	15605,
+	19878,
+	16929,
+	16932,
+	16686,
+	16931,
+	16686,
+	0,
+	0,
+	0,
+	18486,
+	16686,
+	19081,
+	16931,
+	18486,
+	16686,
+	18486,
+	16686,
+	18041,
+	16129,
+	18486,
+	16686,
+	18486,
+	16686,
+	18048,
+	16138,
+	18486,
+	16686,
+	18486,
+	16686,
+	18050,
+	16141,
+	18486,
+	16686,
+	18486,
+	16686,
+	18048,
+	16138,
+	18486,
+	16686,
+	18486,
+	16686,
+	18049,
+	16139,
+	18486,
+	16686,
+	18486,
+	16686,
+	18049,
+	16139,
+	18486,
+	16686,
+	18486,
+	16686,
+	18043,
+	16130,
+	18486,
+	16686,
+	10111,
+	12861,
+	12383,
+	12513,
+	10111,
+	10111,
+	12367,
+	20070,
+	12673,
+	13354,
+	9006,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	10111,
+	20070,
+	12673,
+	12475,
+	10111,
+	12367,
+	20070,
+	12673,
+	13773,
+	6726,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	20070,
+	12673,
+	12475,
+	10111,
+	10111,
+	12383,
+	12673,
+	10111,
+	10111,
+	12367,
+	20070,
+	12673,
+	13354,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	10111,
+	20070,
+	12673,
+	12475,
+	10111,
+	10111,
+	12383,
+	12513,
+	10111,
+	10111,
+	12367,
+	20070,
+	12673,
+	13354,
+	9006,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	10111,
+	20070,
+	12673,
+	12475,
+	10111,
+	10111,
+	12383,
+	12513,
+	10111,
+	10111,
+	12367,
+	20070,
+	12673,
+	13354,
+	9006,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	10111,
+	20070,
+	12673,
+	12475,
+	10111,
+	10111,
+	12383,
+	12513,
+	10111,
+	10111,
+	12367,
+	20070,
+	12673,
+	13354,
+	9006,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	10111,
+	20070,
+	12673,
+	12475,
+	10111,
+	10111,
+	12383,
+	12513,
+	10111,
+	10111,
+	12367,
+	20070,
+	12673,
+	13354,
+	9006,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12383,
+	10111,
+	20070,
+	12673,
+	12475,
+	10111,
+	16679,
+	10074,
+	8601,
+	12475,
+	2872,
+	12383,
+	12673,
+	12673,
+	10111,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	10111,
+	2848,
+	12673,
+	2831,
+	12656,
+	12673,
+	19125,
+	12673,
+	12656,
+	10074,
+	8601,
+	12475,
+	2872,
+	20070,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	5645,
+	8992,
+	2832,
+	12370,
+	12131,
+	12673,
+	19125,
+	19125,
+	12656,
+	20070,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	15886,
+	14894,
+	14775,
+	0,
+	0,
+	0,
+	0,
+	15886,
+	14894,
+	14775,
+	0,
+	0,
+	0,
+	12673,
+	10111,
+	0,
+	0,
+	12673,
+	10111,
+	0,
+	0,
+	12513,
+	12475,
+	12513,
+	12513,
+	12476,
+	12513,
+	10111,
+	12513,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	0,
+	19081,
+	19081,
+	19081,
+	19081,
+	19081,
+	19081,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	18486,
+	12656,
+	12673,
+	12384,
+	12673,
+	12673,
+	12656,
+	12673,
+	10111,
+	12383,
+	20070,
+	12673,
+	10111,
+	12673,
+	12656,
+	12673,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+>>>>>>> Game_Dev
+	0,
+	0,
+	0,
+	0,
+<<<<<<< HEAD
 	15458,
 	14641,
 	15458,
 	14641,
+=======
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	18545,
 	16692,
 	18400,
@@ -8959,6 +15933,11 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	18924,
 	18924,
+=======
+	0,
+	0,
+	0,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -8976,8 +15955,11 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	17887,
 	17887,
+=======
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -8992,6 +15974,7 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	19910,
 	10065,
 	6696,
@@ -9116,6 +16099,8 @@ static const int32_t s_InvokerIndices[3273] =
 	12420,
 	2851,
 	12616,
+=======
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -9123,22 +16108,28 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	9940,
 	10029,
 	8566,
 	12420,
 	2851,
+=======
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	10065,
 	10029,
 	8566,
 	2851,
 	12420,
+=======
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -9153,6 +16144,7 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	12312,
 	19910,
 	12616,
@@ -9192,6 +16184,8 @@ static const int32_t s_InvokerIndices[3273] =
 	19910,
 	12616,
 	12420,
+=======
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -9228,6 +16222,7 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	0,
 	0,
 	5627,
@@ -9247,8 +16242,667 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+=======
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	10075,
+	12513,
+	8992,
+	12138,
+	6227,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	9983,
+	12513,
+	8992,
+	12131,
+	6220,
+	12673,
+	0,
+	9983,
+	12513,
+	8992,
+	12131,
+	6220,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	5657,
+	12513,
+	8992,
+	11853,
+	6216,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12134,
+	6223,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12135,
+	6224,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12134,
+	6223,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12135,
+	6224,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12134,
+	6223,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12135,
+	6224,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12136,
+	6225,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	10176,
+	12513,
+	8992,
+	12143,
+	6246,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12139,
+	6228,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12137,
+	6226,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	10117,
+	12513,
+	8992,
+	12141,
+	6244,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	5666,
+	12513,
+	8992,
+	12097,
+	6217,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12132,
+	6221,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12133,
+	6222,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12132,
+	6221,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12133,
+	6222,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12132,
+	6221,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12133,
+	6222,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	12673,
+	12513,
+	8992,
+	12656,
+	9280,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12130,
+	6219,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12130,
+	6219,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12129,
+	6218,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12142,
+	6245,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12130,
+	6219,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12130,
+	6219,
+	12673,
+	0,
+	10111,
+	12513,
+	8992,
+	12130,
+	6219,
+	12673,
+>>>>>>> Game_Dev
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+<<<<<<< HEAD
+	0,
+	0,
+	0,
+=======
+	10075,
+	10111,
+	12475,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	18486,
+	18163,
+	16219,
+	16685,
+	18163,
+	16697,
+	20070,
+	20070,
+	12673,
+	9014,
+	9014,
+	9014,
+	0,
+	19125,
+	18486,
+	20015,
+	20015,
+	19125,
+	20070,
+	0,
+	0,
+	19125,
+	20070,
+>>>>>>> Game_Dev
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+<<<<<<< HEAD
+=======
+	10075,
+	10111,
+	12475,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	12673,
+	20070,
+	12673,
+	10111,
+>>>>>>> Game_Dev
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+<<<<<<< HEAD
+=======
+	18163,
+>>>>>>> Game_Dev
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+<<<<<<< HEAD
 	0,
+=======
+	18486,
+	20070,
 	0,
+	3540,
+	8736,
+	12673,
+	3542,
+	8738,
+	12673,
+	3546,
+	8740,
+	12673,
+	3350,
+	8552,
+	12673,
+	3481,
+	8653,
+	12673,
+	3341,
+	8547,
+	12673,
+	3474,
+	8647,
+	12673,
+	3351,
+	8553,
+	12673,
+	3541,
+	8737,
+	12673,
+	3545,
+	8739,
+	12673,
+	20070,
+	3475,
+	8648,
+	12673,
+	3482,
+	8654,
+	12673,
+	3342,
+	8548,
+	12673,
+	18163,
+	20064,
+	10076,
+	12638,
+	12383,
+	12476,
+	20070,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -9263,6 +16917,17 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
+=======
+	12673,
+	12673,
+	20070,
+	12383,
+	12513,
+	10111,
+	12673,
+	12673,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -9303,12 +16968,20 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	0,
 	0,
 	0,
+=======
+	19970,
+	12656,
+	10111,
+	12673,
 	0,
 	0,
 	0,
+	10111,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -9317,12 +16990,20 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	0,
 	0,
 	0,
+=======
+	19971,
+	12657,
+	10111,
+	12673,
 	0,
 	0,
 	0,
+	10111,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -9334,58 +17015,7 @@ static const int32_t s_InvokerIndices[3273] =
 	0,
 	0,
 	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
-	0,
+<<<<<<< HEAD
 	0,
 	0,
 	0,
@@ -11700,6 +19330,12 @@ static const int32_t s_InvokerIndices[3273] =
 	19910,
 	12616,
 	7467,
+=======
+	18325,
+	20070,
+	12673,
+	7500,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -11786,6 +19422,7 @@ static const Il2CppTokenRangePair s_rgctxIndices[310] =
 	{ 0x02000086, { 862, 5 } },
 	{ 0x0200008C, { 867, 6 } },
 	{ 0x0200008D, { 873, 8 } },
+<<<<<<< HEAD
 	{ 0x02000094, { 881, 27 } },
 	{ 0x02000095, { 908, 5 } },
 	{ 0x02000096, { 913, 29 } },
@@ -11928,6 +19565,150 @@ static const Il2CppTokenRangePair s_rgctxIndices[310] =
 	{ 0x02000235, { 4451, 5 } },
 	{ 0x02000236, { 4456, 23 } },
 	{ 0x02000237, { 4479, 5 } },
+=======
+	{ 0x02000094, { 881, 28 } },
+	{ 0x02000095, { 909, 7 } },
+	{ 0x02000096, { 916, 30 } },
+	{ 0x02000097, { 946, 7 } },
+	{ 0x02000098, { 953, 18 } },
+	{ 0x02000099, { 971, 6 } },
+	{ 0x0200009C, { 977, 25 } },
+	{ 0x0200009D, { 1002, 8 } },
+	{ 0x0200009E, { 1010, 32 } },
+	{ 0x0200009F, { 1042, 10 } },
+	{ 0x020000A0, { 1052, 39 } },
+	{ 0x020000A1, { 1091, 12 } },
+	{ 0x020000A2, { 1103, 46 } },
+	{ 0x020000A3, { 1149, 14 } },
+	{ 0x020000A4, { 1163, 53 } },
+	{ 0x020000A5, { 1216, 16 } },
+	{ 0x020000A6, { 1232, 60 } },
+	{ 0x020000A7, { 1292, 18 } },
+	{ 0x020000A8, { 1310, 69 } },
+	{ 0x020000A9, { 1379, 20 } },
+	{ 0x020000AA, { 1399, 76 } },
+	{ 0x020000AB, { 1475, 22 } },
+	{ 0x020000AC, { 1497, 83 } },
+	{ 0x020000AD, { 1580, 24 } },
+	{ 0x020000AE, { 1604, 90 } },
+	{ 0x020000AF, { 1694, 26 } },
+	{ 0x020000B0, { 1720, 97 } },
+	{ 0x020000B1, { 1817, 28 } },
+	{ 0x020000B2, { 1845, 104 } },
+	{ 0x020000B3, { 1949, 30 } },
+	{ 0x020000B4, { 1979, 111 } },
+	{ 0x020000B5, { 2090, 32 } },
+	{ 0x020000B6, { 2122, 120 } },
+	{ 0x020000B7, { 2242, 34 } },
+	{ 0x020000B8, { 2276, 21 } },
+	{ 0x020000B9, { 2297, 8 } },
+	{ 0x020000BA, { 2305, 18 } },
+	{ 0x020000BB, { 2323, 6 } },
+	{ 0x020000BE, { 2329, 25 } },
+	{ 0x020000BF, { 2354, 8 } },
+	{ 0x020000C0, { 2362, 32 } },
+	{ 0x020000C1, { 2394, 10 } },
+	{ 0x020000C2, { 2404, 39 } },
+	{ 0x020000C3, { 2443, 12 } },
+	{ 0x020000C4, { 2455, 46 } },
+	{ 0x020000C5, { 2501, 14 } },
+	{ 0x020000C6, { 2515, 53 } },
+	{ 0x020000C7, { 2568, 16 } },
+	{ 0x020000C8, { 2584, 62 } },
+	{ 0x020000C9, { 2646, 18 } },
+	{ 0x020000CA, { 2664, 69 } },
+	{ 0x020000CB, { 2733, 20 } },
+	{ 0x020000CC, { 2753, 76 } },
+	{ 0x020000CD, { 2829, 22 } },
+	{ 0x020000CE, { 2851, 83 } },
+	{ 0x020000CF, { 2934, 24 } },
+	{ 0x020000D0, { 2958, 90 } },
+	{ 0x020000D1, { 3048, 26 } },
+	{ 0x020000D2, { 3074, 97 } },
+	{ 0x020000D3, { 3171, 28 } },
+	{ 0x020000D4, { 3199, 104 } },
+	{ 0x020000D5, { 3303, 30 } },
+	{ 0x020000D6, { 3333, 113 } },
+	{ 0x020000D7, { 3446, 32 } },
+	{ 0x020000D8, { 3478, 120 } },
+	{ 0x020000D9, { 3598, 34 } },
+	{ 0x020000E2, { 3632, 7 } },
+	{ 0x020000E3, { 3639, 11 } },
+	{ 0x020000E4, { 3650, 7 } },
+	{ 0x020000E5, { 3657, 11 } },
+	{ 0x020000E8, { 3668, 18 } },
+	{ 0x020000E9, { 3686, 5 } },
+	{ 0x020000EA, { 3691, 3 } },
+	{ 0x020000EB, { 3694, 3 } },
+	{ 0x02000103, { 3697, 2 } },
+	{ 0x02000107, { 3699, 25 } },
+	{ 0x02000108, { 3724, 5 } },
+	{ 0x0200010A, { 3729, 7 } },
+	{ 0x0200010E, { 3855, 10 } },
+	{ 0x0200010F, { 3865, 6 } },
+	{ 0x02000112, { 3871, 2 } },
+	{ 0x02000113, { 3873, 7 } },
+	{ 0x02000114, { 3880, 9 } },
+	{ 0x02000116, { 3889, 9 } },
+	{ 0x02000118, { 3898, 9 } },
+	{ 0x0200011A, { 3907, 11 } },
+	{ 0x0200011C, { 3918, 5 } },
+	{ 0x0200011D, { 3923, 5 } },
+	{ 0x0200011E, { 3928, 6 } },
+	{ 0x0200011F, { 3934, 7 } },
+	{ 0x02000120, { 3941, 9 } },
+	{ 0x02000121, { 3950, 13 } },
+	{ 0x02000124, { 3963, 6 } },
+	{ 0x02000125, { 3969, 10 } },
+	{ 0x02000126, { 3979, 11 } },
+	{ 0x02000128, { 3990, 12 } },
+	{ 0x02000129, { 4002, 13 } },
+	{ 0x0200012C, { 4015, 12 } },
+	{ 0x0200012D, { 4027, 13 } },
+	{ 0x02000131, { 4061, 7 } },
+	{ 0x02000132, { 4068, 7 } },
+	{ 0x02000133, { 4075, 3 } },
+	{ 0x02000134, { 4078, 2 } },
+	{ 0x02000135, { 4080, 8 } },
+	{ 0x0200015C, { 4095, 23 } },
+	{ 0x0200015F, { 4118, 2 } },
+	{ 0x02000160, { 4120, 12 } },
+	{ 0x02000163, { 4140, 9 } },
+	{ 0x02000165, { 4149, 9 } },
+	{ 0x0200016D, { 4160, 8 } },
+	{ 0x0200016E, { 4168, 8 } },
+	{ 0x0200016F, { 4176, 2 } },
+	{ 0x02000171, { 4178, 18 } },
+	{ 0x020001F8, { 4196, 12 } },
+	{ 0x020001FA, { 4230, 4 } },
+	{ 0x02000200, { 4253, 5 } },
+	{ 0x02000203, { 4258, 11 } },
+	{ 0x02000204, { 4269, 5 } },
+	{ 0x02000206, { 4275, 2 } },
+	{ 0x02000208, { 4283, 2 } },
+	{ 0x02000209, { 4285, 7 } },
+	{ 0x0200020A, { 4292, 2 } },
+	{ 0x0200020B, { 4294, 7 } },
+	{ 0x0200020C, { 4301, 2 } },
+	{ 0x0200020D, { 4303, 7 } },
+	{ 0x0200020F, { 4311, 5 } },
+	{ 0x0200021F, { 4316, 25 } },
+	{ 0x02000220, { 4341, 4 } },
+	{ 0x02000223, { 4345, 16 } },
+	{ 0x02000224, { 4361, 3 } },
+	{ 0x02000225, { 4364, 11 } },
+	{ 0x02000226, { 4375, 3 } },
+	{ 0x02000227, { 4378, 3 } },
+	{ 0x02000228, { 4381, 3 } },
+	{ 0x02000229, { 4384, 7 } },
+	{ 0x0200022B, { 4401, 7 } },
+	{ 0x02000232, { 4428, 12 } },
+	{ 0x02000233, { 4440, 5 } },
+	{ 0x02000234, { 4445, 12 } },
+	{ 0x02000235, { 4457, 5 } },
+	{ 0x02000236, { 4462, 23 } },
+	{ 0x02000237, { 4485, 5 } },
+>>>>>>> Game_Dev
 	{ 0x0600007D, { 139, 2 } },
 	{ 0x0600007E, { 141, 2 } },
 	{ 0x06000089, { 143, 1 } },
@@ -11942,6 +19723,7 @@ static const Il2CppTokenRangePair s_rgctxIndices[310] =
 	{ 0x0600012B, { 220, 1 } },
 	{ 0x0600015C, { 221, 3 } },
 	{ 0x0600015D, { 224, 4 } },
+<<<<<<< HEAD
 	{ 0x060001AC, { 252, 5 } },
 	{ 0x060001AD, { 257, 2 } },
 	{ 0x060001AF, { 259, 5 } },
@@ -12065,6 +19847,131 @@ static const Il2CppTokenRangePair s_rgctxIndices[310] =
 	{ 0x06000C83, { 4412, 4 } },
 	{ 0x06000C84, { 4416, 4 } },
 	{ 0x06000C85, { 4420, 2 } },
+=======
+	{ 0x060001AF, { 252, 5 } },
+	{ 0x060001B0, { 257, 2 } },
+	{ 0x060001B2, { 259, 5 } },
+	{ 0x060001B4, { 264, 2 } },
+	{ 0x060001B6, { 266, 2 } },
+	{ 0x060001B9, { 268, 2 } },
+	{ 0x060001BF, { 270, 4 } },
+	{ 0x060001C1, { 274, 4 } },
+	{ 0x060001C6, { 278, 1 } },
+	{ 0x060001C7, { 279, 1 } },
+	{ 0x060001C8, { 280, 1 } },
+	{ 0x060001C9, { 281, 1 } },
+	{ 0x060001CE, { 282, 4 } },
+	{ 0x060001CF, { 286, 4 } },
+	{ 0x060001D0, { 290, 4 } },
+	{ 0x060001D1, { 294, 4 } },
+	{ 0x060001DF, { 298, 7 } },
+	{ 0x060001E0, { 305, 6 } },
+	{ 0x060001E1, { 311, 7 } },
+	{ 0x060001E4, { 318, 13 } },
+	{ 0x060001E5, { 331, 16 } },
+	{ 0x060001E6, { 347, 19 } },
+	{ 0x060001E7, { 366, 22 } },
+	{ 0x060001E8, { 388, 25 } },
+	{ 0x060001E9, { 413, 28 } },
+	{ 0x060001EA, { 441, 33 } },
+	{ 0x060001EB, { 474, 36 } },
+	{ 0x060001EC, { 510, 39 } },
+	{ 0x060001ED, { 549, 42 } },
+	{ 0x060001EE, { 591, 45 } },
+	{ 0x060001EF, { 636, 48 } },
+	{ 0x060001F0, { 684, 51 } },
+	{ 0x060001F1, { 735, 56 } },
+	{ 0x060001F2, { 791, 4 } },
+	{ 0x060001F3, { 795, 4 } },
+	{ 0x060001F4, { 799, 7 } },
+	{ 0x060001F7, { 806, 4 } },
+	{ 0x060001F8, { 810, 4 } },
+	{ 0x060001F9, { 814, 4 } },
+	{ 0x060001FA, { 818, 4 } },
+	{ 0x060001FB, { 822, 4 } },
+	{ 0x060001FC, { 826, 4 } },
+	{ 0x060001FD, { 830, 4 } },
+	{ 0x060001FE, { 834, 4 } },
+	{ 0x060001FF, { 838, 4 } },
+	{ 0x06000200, { 842, 4 } },
+	{ 0x06000201, { 846, 4 } },
+	{ 0x06000202, { 850, 4 } },
+	{ 0x06000203, { 854, 4 } },
+	{ 0x06000204, { 858, 4 } },
+	{ 0x060006A8, { 3736, 9 } },
+	{ 0x060006AA, { 3745, 12 } },
+	{ 0x060006AD, { 3757, 2 } },
+	{ 0x060006AF, { 3759, 6 } },
+	{ 0x060006B0, { 3765, 2 } },
+	{ 0x060006B3, { 3767, 4 } },
+	{ 0x060006B5, { 3771, 4 } },
+	{ 0x060006B9, { 3775, 7 } },
+	{ 0x060006BA, { 3782, 2 } },
+	{ 0x060006BB, { 3784, 1 } },
+	{ 0x060006BC, { 3785, 1 } },
+	{ 0x060006BD, { 3786, 1 } },
+	{ 0x060006BE, { 3787, 4 } },
+	{ 0x060006BF, { 3791, 4 } },
+	{ 0x060006C2, { 3795, 4 } },
+	{ 0x060006C3, { 3799, 4 } },
+	{ 0x060006C4, { 3803, 4 } },
+	{ 0x060006C6, { 3807, 4 } },
+	{ 0x060006C7, { 3811, 4 } },
+	{ 0x060006CA, { 3815, 4 } },
+	{ 0x060006CB, { 3819, 4 } },
+	{ 0x060006D0, { 3823, 2 } },
+	{ 0x060006D1, { 3825, 2 } },
+	{ 0x060006D2, { 3827, 2 } },
+	{ 0x060006D3, { 3829, 2 } },
+	{ 0x060006D4, { 3831, 2 } },
+	{ 0x060006D5, { 3833, 2 } },
+	{ 0x060006D6, { 3835, 2 } },
+	{ 0x060006D7, { 3837, 2 } },
+	{ 0x060006D8, { 3839, 2 } },
+	{ 0x060006D9, { 3841, 2 } },
+	{ 0x060006DA, { 3843, 2 } },
+	{ 0x060006DB, { 3845, 2 } },
+	{ 0x060006DC, { 3847, 2 } },
+	{ 0x060006DD, { 3849, 2 } },
+	{ 0x060006DE, { 3851, 2 } },
+	{ 0x060006DF, { 3853, 2 } },
+	{ 0x0600074F, { 4040, 10 } },
+	{ 0x06000750, { 4050, 10 } },
+	{ 0x06000752, { 4060, 1 } },
+	{ 0x0600079B, { 4088, 2 } },
+	{ 0x0600079C, { 4090, 3 } },
+	{ 0x0600079D, { 4093, 2 } },
+	{ 0x060008A4, { 4132, 1 } },
+	{ 0x060008A5, { 4133, 1 } },
+	{ 0x060008A6, { 4134, 1 } },
+	{ 0x060008A7, { 4135, 1 } },
+	{ 0x060008AB, { 4136, 2 } },
+	{ 0x060008AC, { 4138, 1 } },
+	{ 0x060008AD, { 4139, 1 } },
+	{ 0x060008C4, { 4158, 2 } },
+	{ 0x06000BAB, { 4208, 1 } },
+	{ 0x06000BAC, { 4209, 4 } },
+	{ 0x06000BAD, { 4213, 17 } },
+	{ 0x06000BB1, { 4234, 1 } },
+	{ 0x06000BB2, { 4235, 1 } },
+	{ 0x06000BB3, { 4236, 15 } },
+	{ 0x06000BD5, { 4251, 1 } },
+	{ 0x06000BDD, { 4252, 1 } },
+	{ 0x06000C09, { 4274, 1 } },
+	{ 0x06000C0C, { 4277, 2 } },
+	{ 0x06000C0D, { 4279, 2 } },
+	{ 0x06000C0E, { 4281, 2 } },
+	{ 0x06000C21, { 4310, 1 } },
+	{ 0x06000C96, { 4391, 4 } },
+	{ 0x06000C97, { 4395, 4 } },
+	{ 0x06000C98, { 4399, 2 } },
+	{ 0x06000C9E, { 4408, 4 } },
+	{ 0x06000C9F, { 4412, 4 } },
+	{ 0x06000CA0, { 4416, 2 } },
+	{ 0x06000CA6, { 4418, 4 } },
+	{ 0x06000CA7, { 4422, 4 } },
+	{ 0x06000CA8, { 4426, 2 } },
+>>>>>>> Game_Dev
 };
 extern const uint32_t g_rgctx_UniTaskCompletionSource_1_tB8028B0977C2ECCC727F8F063D0A2AC8E428AFEB;
 extern const uint32_t g_rgctx_UniTaskCompletionSource_1__ctor_mC1D4CCF7FB2B85BB31064DBED02BCD0E1438C409;
@@ -12350,6 +20257,7 @@ extern const uint32_t g_rgctx_UniTask_RunOnThreadPool_TisT_t6A869956298AD1D04310
 extern const uint32_t g_rgctx_UniTask_RunOnThreadPool_TisT_t4FC9E4CFAD8E5DBA81DDC8C627C2C81C5A9825B4_m244769D4BEFA3AD0BEA8FB8B8C92BA113FDA0BF1;
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Create_mDFD4E2F67C25386E31EF7967E0CB438E648C5528;
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_t3DCBF0BC3A443E3A732FF287C18D25EF6743711D;
+<<<<<<< HEAD
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__82_1_t374418F20E56FAE5419D9091FE8C1255436F963D_m3A05FD72635D3222C5A031EA1F860AB4D063881B;
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_mE0C275DBC5C014370B659A095102455DFEFA23F5;
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Create_mFAA899015E78013D971F52C80FD4E9A9701EC899;
@@ -12371,6 +20279,29 @@ extern const uint32_t g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_Create_m
 extern const uint32_t g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_t7F44B49C00413A70F43DF515604E49E4FADEE5AD;
 extern const uint32_t g_rgctx_UniTask_1_t62B39796659224C5C0AB31B67F7AE368824C8964;
 extern const uint32_t g_rgctx_UniTask_1__ctor_mBF0053F7AC2C1427CAA6F40F554E4A08ECD269CF;
+=======
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__85_1_t5F728A14271B9F4B042696FBE727A85758415995_m0653BA10C2265C47502D00BA63C07D3B1CA4A036;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_mE0C275DBC5C014370B659A095102455DFEFA23F5;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Create_mFAA899015E78013D971F52C80FD4E9A9701EC899;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_t84409AB58EBC311DA6BDEDFFB9DDFB70541FCC17;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__86_1_t6759A1B2E7AF18F376B5EC8CE018DB84BBF1BBB3_m96622F3C86871FF6B6C85FD05B8CB9E548A1C131;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_mCA26FDF4909797BECA8B318AE9FB5D93E02D6DDD;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Create_m732DA15D6D0E651FA8816A2FB9304B059E5E2B54;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_tE906E832ED8DCD6B6F9BD4ADC89C6E25C6A5CC7A;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__87_1_tC75128B43BD3FF27CF8C8EBF3291D5C56CD54FB8_m9F904F1067A4DFBB61FACBBF950903DBCE8B787F;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_m6F81E965810E1884171FE9EE1B30B4586B77CCE2;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Create_m91EBF924A3381532ECFC8706325496A22C807DBE;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_tD7DE8FAD4FDC5E75F604D1501898F3DD781BC70F;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__88_1_t3006E7B77824A352ADE3415A35D0F534AEC8EFF6_m8A9989E078F40D4E8DDEA51EC1FA556F793DAEE3;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_m5F88CED40A6A527667B1D1A474AE258CABB65129;
+extern const uint32_t g_rgctx_T_t7ED27781D4F76C1E5A7266FFC5459037A45C8FA7;
+extern const uint32_t g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_Create_m52E41AD09189FEC8E53F1A5D034FC8B5998B281B;
+extern const uint32_t g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_t2E0DEC3FB81642E039807C41E449474729576439;
+extern const uint32_t g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_Create_mED58D5E0B14986FA1B8E9CD2DBD2D07B04392560;
+extern const uint32_t g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_t99E34C9732DD975215F02D542B1D036CDADD32EA;
+extern const uint32_t g_rgctx_UniTask_1_t9F49F22F5EA01DD316FD3FAFF4751D5FAFFEEE9B;
+extern const uint32_t g_rgctx_UniTask_1__ctor_m6B5765EED32ACB4DF071875C55F000CF2AE2D766;
+>>>>>>> Game_Dev
 extern const uint32_t g_rgctx_Array_Empty_TisT_tD994A613B0A19A40E8D08D86E2E0C14F20706E29_m0B779D1F0F47E83305539926768B83FFB0ADEE9D;
 extern const uint32_t g_rgctx_UniTask_FromResult_TisTU5BU5D_tDBD66DF775977D6A9542C8AFF0CF8FEA0946D56E_m2C2264CCAEFC5F25271AD62530DB3FC3667C8A37;
 extern const uint32_t g_rgctx_WhenAllPromise_1_t10A184373C688EAD181D7529399468FC6F28BBE0;
@@ -12960,6 +20891,10 @@ extern const uint32_t g_rgctx_T_t0E080AE436568C1B2C83C4E0135513BE7FB0AC20;
 extern const uint32_t g_rgctx_Func_2_t120F5C23E03B5DE05205558617C315796F5A7769;
 extern const uint32_t g_rgctx_Func_2_Invoke_mF7AF07019E8243636B2C298B2CE9F581C580B1B3;
 extern const uint32_t g_rgctx_UnityEqualityComparer_GetDefault_TisU_t03C229BCA61D223398C1175F9A5C33B5147CCA32_m0055788A7C001B4AD5E951D07AD3C9B27FB5A5BA;
+<<<<<<< HEAD
+=======
+extern const uint32_t g_rgctx_U3CU3Ec_U3CCreateU3Eb__14_0_m481497C50920124BE2BB86470F72001E9C5486BC;
+>>>>>>> Game_Dev
 extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_get_Version_m8BED30E08D2809CD70DCBF62B5B3869E9BBB68BB;
 extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_GetResult_mBC1662CF8E6FE552176A99C40A4EFEE6BCAE5FB9;
 extern const uint32_t g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_TryReturn_mDFDC9D803E8A89B5042907EFA0610A09F34ABD1A;
@@ -12979,6 +20914,11 @@ extern const uint32_t g_rgctx_U3CU3Ec__ctor_m993FB63A5499D91C721218C3DE97476CC1C
 extern const uint32_t g_rgctx_U3CU3Ec_t6297605340756465C06A76314DCE9D139F794430;
 extern const uint32_t g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_t3C3B1BB4430C3791FD18181087AF42348F79384A;
 extern const uint32_t g_rgctx_TaskPool_1_get_Size_mA57E1EC6F564F5EB5059ED44C8E32F4B7229432F;
+<<<<<<< HEAD
+=======
+extern const uint32_t g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_t3C3B1BB4430C3791FD18181087AF42348F79384A;
+extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_TrySetCanceled_mF12293E56D66A2B07640AF2100CCFDC4891C7A3F;
+>>>>>>> Game_Dev
 extern const uint32_t g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_t184DB2498C583195649823375076514D4A61D357;
 extern const uint32_t g_rgctx_U3CU3Ec_t73AF457040AD9AF2262A4CB92EB7BB6E3E391090;
 extern const uint32_t g_rgctx_U3CU3Ec_U3C_cctorU3Eb__4_0_m7DBD8767ABC5690B9644758F582C8CCB7D1F12F3;
@@ -12993,6 +20933,10 @@ extern const uint32_t g_rgctx_WeakReference_1__ctor_m09168E01C4B895B230CE7ACFDF5
 extern const uint32_t g_rgctx_Func_2_tB4F0FFC59C55D02DCAB9139BCFBF64E4250E8AA3;
 extern const uint32_t g_rgctx_Func_2_Invoke_mBA95614C89E38DE804F911EEE02F044F0683B314;
 extern const uint32_t g_rgctx_UnityEqualityComparer_GetDefault_TisU_t755F802C0F0EF88D1AE194ECC2FDA86D0DF9F1C1_m2A680C2E909FDADA575D0875482C8E171F6DD61B;
+<<<<<<< HEAD
+=======
+extern const uint32_t g_rgctx_U3CU3Ec_U3CCreateU3Eb__13_0_m1404D3386A0E4B4B071B25B9E3859F594A006FAB;
+>>>>>>> Game_Dev
 extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_get_Version_mE686249EF47532CCCD7039E89BFEB3B900E322EE;
 extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_GetResult_mCF24590F3E66E0AC0E798B366ADD47DC833C9AF3;
 extern const uint32_t g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_TryReturn_mFA52F6D1AA0CE808071123548E0F4D1078072DCA;
@@ -13013,6 +20957,11 @@ extern const uint32_t g_rgctx_U3CU3Ec__ctor_mD6974332B000B592CA6D9E7E581254B7FA3
 extern const uint32_t g_rgctx_U3CU3Ec_tDE31C18AFA371DE612666F1A9B3E3F2C6E836C18;
 extern const uint32_t g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_t759200321D6DD38B60F648EDBD6914CC45CC81F9;
 extern const uint32_t g_rgctx_TaskPool_1_get_Size_mF106EF4154635C7165D83776C08734F9A19E9E20;
+<<<<<<< HEAD
+=======
+extern const uint32_t g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_t759200321D6DD38B60F648EDBD6914CC45CC81F9;
+extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_TrySetCanceled_m404252D2F05BD6AACB9D0AD776C39983D701AF81;
+>>>>>>> Game_Dev
 extern const uint32_t g_rgctx_Array_Empty_TisT_t60B6CF8C28203B48D068E6B7E3E03FC76C2C7E77_m63B316625CC216AE62EA7D11AB8CD8CE4CE33172;
 extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_TrySetResult_m17D75942DBFDBD0BD646383740E02D705B345A03;
 extern const uint32_t g_rgctx_TU5BU5D_t144FEA7681CF5D806BC2DD54DD2B96D70FFCD2D0;
@@ -15692,6 +23641,7 @@ extern const uint32_t g_rgctx_StateTuple_2_t82B30980E0B1475845572BE04C7FFE352E12
 extern const uint32_t g_rgctx_WhenAnyPromise_15_TryInvokeContinuationT14_m5EA38C56000DFB64F7ABAE2291599958CA38A84F;
 extern const uint32_t g_rgctx_StateTuple_2_t5F023F74A5C6D0325006FA9D5EDE52C2EB781B9A;
 extern const uint32_t g_rgctx_WhenAnyPromise_15_TryInvokeContinuationT15_m43A6211CAE8E326E6D594A6742D92951C4B87CC5;
+<<<<<<< HEAD
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__82_1_t77162128E4161A7480AF36DF29A74942B9B03ED7_mE76D4A5BEF2DB7BE1BFC90F05A6F697A7F855B3E;
 extern const uint32_t g_rgctx_Func_1_tE2050734831663E3CFAC65756E8BB3CDE6B6FE18;
 extern const uint32_t g_rgctx_Func_1_Invoke_m3A02E9593E3A209A4402233EB61D087DB64B6D7C;
@@ -15724,10 +23674,47 @@ extern const uint32_t g_rgctx_UniTask_1_GetAwaiter_m40E1124D9F4DBD8D7C46F7AEF107
 extern const uint32_t g_rgctx_Awaiter_get_IsCompleted_m4B989586D0C40A1DC371C68F6A71B7FE4076AC47;
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_tD38F026DDBE9F117EEFAA6E034E1DE193334D30C_TisU3CRunOnThreadPoolU3Ed__85_1_t2EE7B988F75ADD1B2467976482134009BD20F8EF_mF75656F08B9D3EBE8B7FF112F719F0054EBE4722;
 extern const uint32_t g_rgctx_Awaiter_GetResult_m62D90549496B091235AB667580F84C0A0D094C43;
+=======
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__85_1_t2EE7B988F75ADD1B2467976482134009BD20F8EF_m9F2862C54AA39EC913121354D51F49734C90E269;
+extern const uint32_t g_rgctx_Func_1_tA0EAFF1112C627CACCE5AB3C91001617AC296FC9;
+extern const uint32_t g_rgctx_Func_1_Invoke_m3E42F94686CE4D3F5AF3C474283B67525F7D3054;
+>>>>>>> Game_Dev
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t8B500B68E8763F6139A8470A24AB065434A17220_TisU3CRunOnThreadPoolU3Ed__85_1_t2EE7B988F75ADD1B2467976482134009BD20F8EF_m2E77B5FD19C208119E36EE1EF12A76469475FC0C;
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetException_m7A98251C657F16C92DCCE9099B84398EFC564736;
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetResult_m00D5687675E34EC0D50EE4BBAC911531775A84B0;
 extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetStateMachine_m54BD47FE8B3284C380EA509688E289806C67CD05;
+<<<<<<< HEAD
+=======
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__86_1_tE1A9DC760CE5E0135008C42CAE986AE4043AD826_mF8D43A745465CA262DD4D5E442535379BD036CDA;
+extern const uint32_t g_rgctx_Func_1_tF962D7FA4A45AB76B2B53BD17E169D3A42BEC807;
+extern const uint32_t g_rgctx_Func_1_Invoke_m8B56E24DDF9CF1CB4FF28F04548671BD3403F7F7;
+extern const uint32_t g_rgctx_UniTask_1_GetAwaiter_m19079EEF423B5BD54FF7598259C9EED61199E2EB;
+extern const uint32_t g_rgctx_Awaiter_get_IsCompleted_m37A5494B2DBC9CD38ABA2F6D38C1CA4DE4B6859A;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_tD2543BC89EA4249DACC717F9089686727C71543C_TisU3CRunOnThreadPoolU3Ed__86_1_tE1A9DC760CE5E0135008C42CAE986AE4043AD826_m4D966640F0F42261B9694A71D19A3F61F45AACE9;
+extern const uint32_t g_rgctx_Awaiter_GetResult_mE0B0A5DA24B757062B0CA010C81B04B7EBE0FCF2;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t8B500B68E8763F6139A8470A24AB065434A17220_TisU3CRunOnThreadPoolU3Ed__86_1_tE1A9DC760CE5E0135008C42CAE986AE4043AD826_m3C3E4EB808A29D7C373EBA60B33A105B88CA469A;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetException_m3A2D09817A5CF8ACBA942DBDA3A9A9DDF105E8A2;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetResult_m624A93D1D120FFE80CFA71F9CEE53F74037DE02F;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetStateMachine_m864D1EB56F030288011CF4B19A7D807CBCABBDB2;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__87_1_t154DA3F2B3A7D49DA157E16480D2266119C1CCF4_mD543728998202A0364D59EBA355F46B1D6BE611A;
+extern const uint32_t g_rgctx_Func_2_t00E7EF8F40BB25AC226A1D5EC2CA548F32935589;
+extern const uint32_t g_rgctx_Func_2_Invoke_m25989B2D3CABFED9D45E26A4DFDEE99D04AE3469;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t8B500B68E8763F6139A8470A24AB065434A17220_TisU3CRunOnThreadPoolU3Ed__87_1_t154DA3F2B3A7D49DA157E16480D2266119C1CCF4_m71AC2A26128B419D458F20AF504DB19B43EC538B;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetException_m749CC1F25BACF009BF8388E0EEDDD9E740F99DED;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetResult_m69D18FF78CA40DB0FA04912E922A28B108773435;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetStateMachine_mAFA97EAB37AF72967774A242EB108B385C77A1B7;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__88_1_t9F7B13813514C8E2016BD2B39D72C26CABAD1F01_m4C5DE02160886BEC866220090BBB902F68C58AC5;
+extern const uint32_t g_rgctx_Func_2_tF0CBAF779BF885C896CA286C822E11F248D71226;
+extern const uint32_t g_rgctx_Func_2_Invoke_mA8B773F5ED3BF75EE442CD9144A73F6CD71CC8DD;
+extern const uint32_t g_rgctx_UniTask_1_GetAwaiter_m5CB2EF95EA5FF480AEF37888927EDE35B8F2D887;
+extern const uint32_t g_rgctx_Awaiter_get_IsCompleted_mBD1CB8EFCD8340B1A967AC097BAD67E5FE9CFA2D;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t064AC187D62DCCD404DAD08D3A55728AA9D3C768_TisU3CRunOnThreadPoolU3Ed__88_1_t9F7B13813514C8E2016BD2B39D72C26CABAD1F01_mE84C9FBD11950637B5A3D069A19E0A2B5716C26E;
+extern const uint32_t g_rgctx_Awaiter_GetResult_m5B0E54B08E5C7085EE8695593D04DD544B6A30FB;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t8B500B68E8763F6139A8470A24AB065434A17220_TisU3CRunOnThreadPoolU3Ed__88_1_t9F7B13813514C8E2016BD2B39D72C26CABAD1F01_m4ABB2A74E66FD4CC691C30A8D76EE4873E368864;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetException_mEA67DD74EB62B052F45648BF0CEBE1F09998633B;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetResult_mC5FD1C44C29CBFA88F96C4D87B684654729D801D;
+extern const uint32_t g_rgctx_AsyncUniTaskMethodBuilder_1_SetStateMachine_m2D3ADCEAD1BD6400790EB130C9AF844B654BAE89;
+>>>>>>> Game_Dev
 extern const uint32_t g_rgctx_Awaiter_t12412F44D0A1D4C6573C6EDD4F933E1089C86DFC;
 extern const uint32_t g_rgctx_Awaiter__ctor_m6C11E745E474B2896035A9AD17327C659C66A372;
 extern const uint32_t g_rgctx_MemoizeSource_tEA360883883744F24E520875DB900ED71A1849F1;
@@ -15766,9 +23753,15 @@ extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1_t3C604AF18625B9
 extern const uint32_t g_rgctx_TaskPool_1_TryPop_m91AA17CD3A6F907C8EE5C1EE6CC41479A48CF0CE;
 extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1_t3C604AF18625B9E3164784AFC7BB09279C54F371;
 extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1__ctor_m857513E8EF03682A0AA338B29CD048C1F3312B15;
+<<<<<<< HEAD
 extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1_Create_mAD1121675A6F54A8AC3EC3A4F2A6E80AA704FFCF;
 extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1_TrySetCanceled_m2FB6DAC0855A440D19A03F069FA350D08B9BDD26;
 extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_get_Version_mF3C4C3A410B3467A3184C33D1D8990D8494554FD;
+=======
+extern const uint32_t g_rgctx_UniTaskCompletionSourceCore_1_get_Version_mF3C4C3A410B3467A3184C33D1D8990D8494554FD;
+extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1_Create_mAD1121675A6F54A8AC3EC3A4F2A6E80AA704FFCF;
+extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1_TrySetCanceled_m2FB6DAC0855A440D19A03F069FA350D08B9BDD26;
+>>>>>>> Game_Dev
 extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1_TrySetException_m8E8F3EB026E0AC599EF4B557A2B1F08F5909F52E;
 extern const uint32_t g_rgctx_AutoResetUniTaskCompletionSource_1_TrySetResult_m2B65EEB0465898398D3AB482295B8BBC8358BB30;
 extern const uint32_t g_rgctx_UniTask_1_tCD24A1A6FE3F05F51E921A431395129DD31DA416;
@@ -16550,7 +24543,11 @@ extern const uint32_t g_rgctx_U3CU3Ec__ctor_m9E410E202B901545A65EEFDD1E8C1E3563B
 extern const uint32_t g_rgctx_U3CU3Ec_t2B5EDDA82A511CFEEE59D9149BD958E4BF1178D4;
 extern const uint32_t g_rgctx_AsyncUniTask_2_t484FAC6CC888435FC7EAE43D73A2D30F8B283B23;
 extern const uint32_t g_rgctx_TaskPool_1_get_Size_mE5B7C31AB112CD2E5D1A0EAEB5EC8052F69E9E8E;
+<<<<<<< HEAD
 static const Il2CppRGCTXDefinition s_rgctxValues[4484] = 
+=======
+static const Il2CppRGCTXDefinition s_rgctxValues[4490] = 
+>>>>>>> Game_Dev
 {
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_UniTaskCompletionSource_1_tB8028B0977C2ECCC727F8F063D0A2AC8E428AFEB },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSource_1__ctor_mC1D4CCF7FB2B85BB31064DBED02BCD0E1438C409 },
@@ -16836,6 +24833,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTask_RunOnThreadPool_TisT_t4FC9E4CFAD8E5DBA81DDC8C627C2C81C5A9825B4_m244769D4BEFA3AD0BEA8FB8B8C92BA113FDA0BF1 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Create_mDFD4E2F67C25386E31EF7967E0CB438E648C5528 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_t3DCBF0BC3A443E3A732FF287C18D25EF6743711D },
+<<<<<<< HEAD
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__82_1_t374418F20E56FAE5419D9091FE8C1255436F963D_m3A05FD72635D3222C5A031EA1F860AB4D063881B },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_mE0C275DBC5C014370B659A095102455DFEFA23F5 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Create_mFAA899015E78013D971F52C80FD4E9A9701EC899 },
@@ -16857,6 +24855,29 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_t7F44B49C00413A70F43DF515604E49E4FADEE5AD },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_UniTask_1_t62B39796659224C5C0AB31B67F7AE368824C8964 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTask_1__ctor_mBF0053F7AC2C1427CAA6F40F554E4A08ECD269CF },
+=======
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__85_1_t5F728A14271B9F4B042696FBE727A85758415995_m0653BA10C2265C47502D00BA63C07D3B1CA4A036 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_mE0C275DBC5C014370B659A095102455DFEFA23F5 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Create_mFAA899015E78013D971F52C80FD4E9A9701EC899 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_t84409AB58EBC311DA6BDEDFFB9DDFB70541FCC17 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__86_1_t6759A1B2E7AF18F376B5EC8CE018DB84BBF1BBB3_m96622F3C86871FF6B6C85FD05B8CB9E548A1C131 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_mCA26FDF4909797BECA8B318AE9FB5D93E02D6DDD },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Create_m732DA15D6D0E651FA8816A2FB9304B059E5E2B54 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_tE906E832ED8DCD6B6F9BD4ADC89C6E25C6A5CC7A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__87_1_tC75128B43BD3FF27CF8C8EBF3291D5C56CD54FB8_m9F904F1067A4DFBB61FACBBF950903DBCE8B787F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_m6F81E965810E1884171FE9EE1B30B4586B77CCE2 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Create_m91EBF924A3381532ECFC8706325496A22C807DBE },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_tD7DE8FAD4FDC5E75F604D1501898F3DD781BC70F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_Start_TisU3CRunOnThreadPoolU3Ed__88_1_t3006E7B77824A352ADE3415A35D0F534AEC8EFF6_m8A9989E078F40D4E8DDEA51EC1FA556F793DAEE3 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_get_Task_m5F88CED40A6A527667B1D1A474AE258CABB65129 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t7ED27781D4F76C1E5A7266FFC5459037A45C8FA7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_Create_m52E41AD09189FEC8E53F1A5D034FC8B5998B281B },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_t2E0DEC3FB81642E039807C41E449474729576439 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_Create_mED58D5E0B14986FA1B8E9CD2DBD2D07B04392560 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_t99E34C9732DD975215F02D542B1D036CDADD32EA },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_UniTask_1_t9F49F22F5EA01DD316FD3FAFF4751D5FAFFEEE9B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTask_1__ctor_m6B5765EED32ACB4DF071875C55F000CF2AE2D766 },
+>>>>>>> Game_Dev
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Array_Empty_TisT_tD994A613B0A19A40E8D08D86E2E0C14F20706E29_m0B779D1F0F47E83305539926768B83FFB0ADEE9D },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTask_FromResult_TisTU5BU5D_tDBD66DF775977D6A9542C8AFF0CF8FEA0946D56E_m2C2264CCAEFC5F25271AD62530DB3FC3667C8A37 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_WhenAllPromise_1_t10A184373C688EAD181D7529399468FC6F28BBE0 },
@@ -17446,6 +25467,10 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Func_2_t120F5C23E03B5DE05205558617C315796F5A7769 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Func_2_Invoke_mF7AF07019E8243636B2C298B2CE9F581C580B1B3 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UnityEqualityComparer_GetDefault_TisU_t03C229BCA61D223398C1175F9A5C33B5147CCA32_m0055788A7C001B4AD5E951D07AD3C9B27FB5A5BA },
+<<<<<<< HEAD
+=======
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_U3CU3Ec_U3CCreateU3Eb__14_0_m481497C50920124BE2BB86470F72001E9C5486BC },
+>>>>>>> Game_Dev
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_get_Version_m8BED30E08D2809CD70DCBF62B5B3869E9BBB68BB },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_GetResult_mBC1662CF8E6FE552176A99C40A4EFEE6BCAE5FB9 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_TryReturn_mDFDC9D803E8A89B5042907EFA0610A09F34ABD1A },
@@ -17465,6 +25490,11 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3CU3Ec_t6297605340756465C06A76314DCE9D139F794430 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_t3C3B1BB4430C3791FD18181087AF42348F79384A },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_TaskPool_1_get_Size_mA57E1EC6F564F5EB5059ED44C8E32F4B7229432F },
+<<<<<<< HEAD
+=======
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_WaitUntilValueChangedUnityObjectPromise_2_t3C3B1BB4430C3791FD18181087AF42348F79384A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_TrySetCanceled_mF12293E56D66A2B07640AF2100CCFDC4891C7A3F },
+>>>>>>> Game_Dev
 	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_t184DB2498C583195649823375076514D4A61D357 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3CU3Ec_t73AF457040AD9AF2262A4CB92EB7BB6E3E391090 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_U3CU3Ec_U3C_cctorU3Eb__4_0_m7DBD8767ABC5690B9644758F582C8CCB7D1F12F3 },
@@ -17479,6 +25509,10 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Func_2_tB4F0FFC59C55D02DCAB9139BCFBF64E4250E8AA3 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Func_2_Invoke_mBA95614C89E38DE804F911EEE02F044F0683B314 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UnityEqualityComparer_GetDefault_TisU_t755F802C0F0EF88D1AE194ECC2FDA86D0DF9F1C1_m2A680C2E909FDADA575D0875482C8E171F6DD61B },
+<<<<<<< HEAD
+=======
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_U3CU3Ec_U3CCreateU3Eb__13_0_m1404D3386A0E4B4B071B25B9E3859F594A006FAB },
+>>>>>>> Game_Dev
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_get_Version_mE686249EF47532CCCD7039E89BFEB3B900E322EE },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_GetResult_mCF24590F3E66E0AC0E798B366ADD47DC833C9AF3 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_TryReturn_mFA52F6D1AA0CE808071123548E0F4D1078072DCA },
@@ -17499,6 +25533,11 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_U3CU3Ec_tDE31C18AFA371DE612666F1A9B3E3F2C6E836C18 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_t759200321D6DD38B60F648EDBD6914CC45CC81F9 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_TaskPool_1_get_Size_mF106EF4154635C7165D83776C08734F9A19E9E20 },
+<<<<<<< HEAD
+=======
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_WaitUntilValueChangedStandardObjectPromise_2_t759200321D6DD38B60F648EDBD6914CC45CC81F9 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_TrySetCanceled_m404252D2F05BD6AACB9D0AD776C39983D701AF81 },
+>>>>>>> Game_Dev
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Array_Empty_TisT_t60B6CF8C28203B48D068E6B7E3E03FC76C2C7E77_m63B316625CC216AE62EA7D11AB8CD8CE4CE33172 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_TrySetResult_m17D75942DBFDBD0BD646383740E02D705B345A03 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TU5BU5D_t144FEA7681CF5D806BC2DD54DD2B96D70FFCD2D0 },
@@ -20178,6 +28217,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_WhenAnyPromise_15_TryInvokeContinuationT14_m5EA38C56000DFB64F7ABAE2291599958CA38A84F },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_StateTuple_2_t5F023F74A5C6D0325006FA9D5EDE52C2EB781B9A },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_WhenAnyPromise_15_TryInvokeContinuationT15_m43A6211CAE8E326E6D594A6742D92951C4B87CC5 },
+<<<<<<< HEAD
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__82_1_t77162128E4161A7480AF36DF29A74942B9B03ED7_mE76D4A5BEF2DB7BE1BFC90F05A6F697A7F855B3E },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Func_1_tE2050734831663E3CFAC65756E8BB3CDE6B6FE18 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Func_1_Invoke_m3A02E9593E3A209A4402233EB61D087DB64B6D7C },
@@ -20210,10 +28250,47 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Awaiter_get_IsCompleted_m4B989586D0C40A1DC371C68F6A71B7FE4076AC47 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_tD38F026DDBE9F117EEFAA6E034E1DE193334D30C_TisU3CRunOnThreadPoolU3Ed__85_1_t2EE7B988F75ADD1B2467976482134009BD20F8EF_mF75656F08B9D3EBE8B7FF112F719F0054EBE4722 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Awaiter_GetResult_m62D90549496B091235AB667580F84C0A0D094C43 },
+=======
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__85_1_t2EE7B988F75ADD1B2467976482134009BD20F8EF_m9F2862C54AA39EC913121354D51F49734C90E269 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Func_1_tA0EAFF1112C627CACCE5AB3C91001617AC296FC9 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Func_1_Invoke_m3E42F94686CE4D3F5AF3C474283B67525F7D3054 },
+>>>>>>> Game_Dev
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t8B500B68E8763F6139A8470A24AB065434A17220_TisU3CRunOnThreadPoolU3Ed__85_1_t2EE7B988F75ADD1B2467976482134009BD20F8EF_m2E77B5FD19C208119E36EE1EF12A76469475FC0C },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetException_m7A98251C657F16C92DCCE9099B84398EFC564736 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetResult_m00D5687675E34EC0D50EE4BBAC911531775A84B0 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetStateMachine_m54BD47FE8B3284C380EA509688E289806C67CD05 },
+<<<<<<< HEAD
+=======
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__86_1_tE1A9DC760CE5E0135008C42CAE986AE4043AD826_mF8D43A745465CA262DD4D5E442535379BD036CDA },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Func_1_tF962D7FA4A45AB76B2B53BD17E169D3A42BEC807 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Func_1_Invoke_m8B56E24DDF9CF1CB4FF28F04548671BD3403F7F7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTask_1_GetAwaiter_m19079EEF423B5BD54FF7598259C9EED61199E2EB },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Awaiter_get_IsCompleted_m37A5494B2DBC9CD38ABA2F6D38C1CA4DE4B6859A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_tD2543BC89EA4249DACC717F9089686727C71543C_TisU3CRunOnThreadPoolU3Ed__86_1_tE1A9DC760CE5E0135008C42CAE986AE4043AD826_m4D966640F0F42261B9694A71D19A3F61F45AACE9 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Awaiter_GetResult_mE0B0A5DA24B757062B0CA010C81B04B7EBE0FCF2 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t8B500B68E8763F6139A8470A24AB065434A17220_TisU3CRunOnThreadPoolU3Ed__86_1_tE1A9DC760CE5E0135008C42CAE986AE4043AD826_m3C3E4EB808A29D7C373EBA60B33A105B88CA469A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetException_m3A2D09817A5CF8ACBA942DBDA3A9A9DDF105E8A2 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetResult_m624A93D1D120FFE80CFA71F9CEE53F74037DE02F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetStateMachine_m864D1EB56F030288011CF4B19A7D807CBCABBDB2 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__87_1_t154DA3F2B3A7D49DA157E16480D2266119C1CCF4_mD543728998202A0364D59EBA355F46B1D6BE611A },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Func_2_t00E7EF8F40BB25AC226A1D5EC2CA548F32935589 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Func_2_Invoke_m25989B2D3CABFED9D45E26A4DFDEE99D04AE3469 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t8B500B68E8763F6139A8470A24AB065434A17220_TisU3CRunOnThreadPoolU3Ed__87_1_t154DA3F2B3A7D49DA157E16480D2266119C1CCF4_m71AC2A26128B419D458F20AF504DB19B43EC538B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetException_m749CC1F25BACF009BF8388E0EEDDD9E740F99DED },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetResult_m69D18FF78CA40DB0FA04912E922A28B108773435 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetStateMachine_mAFA97EAB37AF72967774A242EB108B385C77A1B7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t7CBE53F73E5BFF2DA17D963AB12D91B876024ED9_TisU3CRunOnThreadPoolU3Ed__88_1_t9F7B13813514C8E2016BD2B39D72C26CABAD1F01_m4C5DE02160886BEC866220090BBB902F68C58AC5 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Func_2_tF0CBAF779BF885C896CA286C822E11F248D71226 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Func_2_Invoke_mA8B773F5ED3BF75EE442CD9144A73F6CD71CC8DD },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTask_1_GetAwaiter_m5CB2EF95EA5FF480AEF37888927EDE35B8F2D887 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Awaiter_get_IsCompleted_mBD1CB8EFCD8340B1A967AC097BAD67E5FE9CFA2D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t064AC187D62DCCD404DAD08D3A55728AA9D3C768_TisU3CRunOnThreadPoolU3Ed__88_1_t9F7B13813514C8E2016BD2B39D72C26CABAD1F01_mE84C9FBD11950637B5A3D069A19E0A2B5716C26E },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Awaiter_GetResult_m5B0E54B08E5C7085EE8695593D04DD544B6A30FB },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisAwaiter_t8B500B68E8763F6139A8470A24AB065434A17220_TisU3CRunOnThreadPoolU3Ed__88_1_t9F7B13813514C8E2016BD2B39D72C26CABAD1F01_m4ABB2A74E66FD4CC691C30A8D76EE4873E368864 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetException_mEA67DD74EB62B052F45648BF0CEBE1F09998633B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetResult_mC5FD1C44C29CBFA88F96C4D87B684654729D801D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AsyncUniTaskMethodBuilder_1_SetStateMachine_m2D3ADCEAD1BD6400790EB130C9AF844B654BAE89 },
+>>>>>>> Game_Dev
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Awaiter_t12412F44D0A1D4C6573C6EDD4F933E1089C86DFC },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Awaiter__ctor_m6C11E745E474B2896035A9AD17327C659C66A372 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_MemoizeSource_tEA360883883744F24E520875DB900ED71A1849F1 },
@@ -20252,9 +28329,15 @@ static const Il2CppRGCTXDefinition s_rgctxValues[4484] =
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_TaskPool_1_TryPop_m91AA17CD3A6F907C8EE5C1EE6CC41479A48CF0CE },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_AutoResetUniTaskCompletionSource_1_t3C604AF18625B9E3164784AFC7BB09279C54F371 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AutoResetUniTaskCompletionSource_1__ctor_m857513E8EF03682A0AA338B29CD048C1F3312B15 },
+<<<<<<< HEAD
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AutoResetUniTaskCompletionSource_1_Create_mAD1121675A6F54A8AC3EC3A4F2A6E80AA704FFCF },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AutoResetUniTaskCompletionSource_1_TrySetCanceled_m2FB6DAC0855A440D19A03F069FA350D08B9BDD26 },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_get_Version_mF3C4C3A410B3467A3184C33D1D8990D8494554FD },
+=======
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_UniTaskCompletionSourceCore_1_get_Version_mF3C4C3A410B3467A3184C33D1D8990D8494554FD },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AutoResetUniTaskCompletionSource_1_Create_mAD1121675A6F54A8AC3EC3A4F2A6E80AA704FFCF },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AutoResetUniTaskCompletionSource_1_TrySetCanceled_m2FB6DAC0855A440D19A03F069FA350D08B9BDD26 },
+>>>>>>> Game_Dev
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AutoResetUniTaskCompletionSource_1_TrySetException_m8E8F3EB026E0AC599EF4B557A2B1F08F5909F52E },
 	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_AutoResetUniTaskCompletionSource_1_TrySetResult_m2B65EEB0465898398D3AB482295B8BBC8358BB30 },
 	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_UniTask_1_tCD24A1A6FE3F05F51E921A431395129DD31DA416 },
@@ -21041,7 +29124,11 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UniTask_CodeGenModule;
 const Il2CppCodeGenModule g_UniTask_CodeGenModule = 
 {
 	"UniTask.dll",
+<<<<<<< HEAD
 	3273,
+=======
+	3308,
+>>>>>>> Game_Dev
 	s_methodPointers,
 	159,
 	s_adjustorThunks,
@@ -21050,7 +29137,11 @@ const Il2CppCodeGenModule g_UniTask_CodeGenModule =
 	NULL,
 	310,
 	s_rgctxIndices,
+<<<<<<< HEAD
 	4484,
+=======
+	4490,
+>>>>>>> Game_Dev
 	s_rgctxValues,
 	NULL,
 	NULL, // module initializer,

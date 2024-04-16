@@ -11751,7 +11751,11 @@ IL_0009_1:
 				RuntimeObject* L_8 = V_1;
 				NullCheck(L_7);
 				bool L_9;
+<<<<<<< HEAD
 				L_9 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_7, L_8);
+=======
+				L_9 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_7, L_8);
+>>>>>>> Game_Dev
 				if (L_9)
 				{
 					goto IL_002f_1;

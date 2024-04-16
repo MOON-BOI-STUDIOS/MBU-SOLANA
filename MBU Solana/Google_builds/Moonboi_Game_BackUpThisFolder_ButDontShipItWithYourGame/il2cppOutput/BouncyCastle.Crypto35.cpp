@@ -20872,7 +20872,11 @@ IL_0008:
 		PgpObject_tDC291B8062A0AD1A369B24A9DFDA4B0A8383AC79* L_2 = V_1;
 		NullCheck(L_1);
 		bool L_3;
+<<<<<<< HEAD
 		L_3 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_1, L_2);
+=======
+		L_3 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_1, L_2);
+>>>>>>> Game_Dev
 		if (!L_3)
 		{
 			goto IL_0019;

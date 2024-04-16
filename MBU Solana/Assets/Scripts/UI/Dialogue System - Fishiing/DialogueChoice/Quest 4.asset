@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ab5a0590081c344b247f819578352e, type: 3}
+  m_Name: Quest 4
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - text: 'FISHERMAN
+
+      Indeed, there is a reward. Take this ancient fishing
+      rod as a token of gratitude. I hope plenty of more young people like you experience
+      the art of fishing.'
+  questionText: 
+  optionsinfo:
+  - buttonName: "DR\xC9 receives the Ancient Rod"
+    nextdialogue: {fileID: 0}
+    Event:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2

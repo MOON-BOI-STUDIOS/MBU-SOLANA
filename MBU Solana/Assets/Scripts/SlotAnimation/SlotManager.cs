@@ -1,6 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+<<<<<<< HEAD
+=======
+using Solana.Unity.Wallet;
+>>>>>>> Game_Dev
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,7 +14,11 @@ using Random = UnityEngine.Random;
 // This is the Slot Machine Manager that will animate the machine as it appears on the screen 
 // It will also be responsible for spinning of the slots and animation of the lever 
 
+<<<<<<< HEAD
 public class SlotManager : MonoBehaviour
+=======
+public class SlotManager : MonoBehaviour, ITransferInfo
+>>>>>>> Game_Dev
 {
     [Header("Slots, Lever and Machine")]
     public SlotRoll[] slots;
@@ -34,17 +42,30 @@ public class SlotManager : MonoBehaviour
     
     private int spinTimes = 0;
 
+<<<<<<< HEAD
     private IPaymentHandler _paymentHandler;
     //private ICreditBalance _creditBalance;
     private IToggleUI _toggleUI;
+=======
+    [Header("Wallet")]
+    public GameObject walletHolder;
+    public GameObject walletBackground;
+    public TMP_Text toastMessage;
+    public Button walletBackButton;
+    public Button walletBGBackButton;
+
+>>>>>>> Game_Dev
     private bool IsSpinning = false;
 
     private void Start()
     {
+<<<<<<< HEAD
         //Infotext = spinAgaintext.GetComponent<TextMeshProUGUI>();
         _paymentHandler = GetComponent<IPaymentHandler>();
         _toggleUI = GetComponent<IToggleUI>();
         //_creditBalance = GetComponent<ICreditBalance>();
+=======
+>>>>>>> Game_Dev
         Spin();
     }
 
@@ -61,10 +82,25 @@ public class SlotManager : MonoBehaviour
         }
         else
         {
+<<<<<<< HEAD
             //Debug.Log("spinTimes > limit" + spinTimes);
             _toggleUI.ToggleSlotsMachine(false);
             _toggleUI.ToggleWalletUI(true);
             _paymentHandler.TryAndProcessTransaction();
+=======
+            // Sol money transfer starts here
+            // Setting The Wallet Holder GameObject as true so that the customer can login. Set the wallet background as true
+            walletHolder.SetActive(true);
+            walletBackground.SetActive(true);
+
+            // Let the customer login. After logging set the amount according to required amount
+            PaymentInfo.requiredAmount = 250000; // PaymentInfo is a static class in Scripts/GeneralScript used only to store required amount
+
+            // Once clicked on the button transfer screen will appear with prefilled public key and amount
+            //Setting the event so that it the current event triggers and if transaction is successful
+            PaymentInfo.queriedEvent = "wheelspin";
+            //then success function will take over
+>>>>>>> Game_Dev
         }
     }
 
@@ -99,6 +135,10 @@ public class SlotManager : MonoBehaviour
 
     public void nextRound()
     {
+<<<<<<< HEAD
+=======
+        //Time.timeScale = 1f;
+>>>>>>> Game_Dev
         spinTimes = 0;
         limit = 2;
         spinAgaintext.SetActive(false);
@@ -222,8 +262,11 @@ public class SlotManager : MonoBehaviour
 
      public void ResetSlot()
     {
+<<<<<<< HEAD
         _toggleUI.ToggleWalletUI(false);
         _toggleUI.ToggleSlotsMachine(true);
+=======
+>>>>>>> Game_Dev
         if (spinTimes < limit)
         {
             Infotext.text = Math.Abs(limit - spinTimes) + " spin(s) left";
@@ -232,13 +275,49 @@ public class SlotManager : MonoBehaviour
         {
             Infotext.text = "0 spin(s) left";
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Game_Dev
         spinAgaintext.SetActive(true);
         slotNumbers.Clear();
         IsSpinning = false;
         _leverButton.SetActive(true);
         Debug.Log("IsSpinning:" + IsSpinning);
     }
+<<<<<<< HEAD
      
      
+=======
+
+    public void TransferSuccessful(string quried)
+    {
+        // Transaction Successful message and wait for 1 second
+        toastMessage.text = "Transfer Successful";
+        StartCoroutine(TransferSuccessfulEvent());
+        //Disable wallet screens
+        switch (quried)
+        {
+            case "wheelspin":
+                Debug.Log("Transfer Successful, Execution in SlotManager");
+                limit += 1;
+                ResetSlot();
+                break;
+        }
+    }
+
+    public void TransferUnsuccessful()
+    {
+        Debug.Log("Transfer Unsuccessful, Execution in SlotManager");
+        ResetSlot();
+    }
+
+    IEnumerator TransferSuccessfulEvent()
+    {
+        yield return new WaitForSeconds(5f);
+        toastMessage.text = "";
+        //walletBackButton.onClick.Invoke();
+        //walletBGBackButton.onClick.Invoke();
+    }
+>>>>>>> Game_Dev
 }

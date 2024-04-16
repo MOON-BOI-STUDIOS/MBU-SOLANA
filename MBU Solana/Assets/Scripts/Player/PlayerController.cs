@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public IPlayerInput inputHandler;
     //public CustomJoystick joystick;
     private PlayerManager _manager;
+    public bool TutorialMove;
 
     void Start()
     {
@@ -42,6 +43,10 @@ public class PlayerController : MonoBehaviour
     {
 #if !UNITY_STANDALONE && !UNITY_WEBGL 
         moveDirection = inputHandler.GetInputDirection();
+<<<<<<< HEAD
+=======
+        
+>>>>>>> Game_Dev
         //Debug.Log(moveDirection);//joystick.GetJoystickDirection();// //
 #endif
     }
@@ -54,6 +59,7 @@ public class PlayerController : MonoBehaviour
         rb.MovePosition(newPos);
 
         isMoving = moveDirection.magnitude > 0;
+        TutorialMove = true;
         UpdateRunningState();
     }
 

@@ -14,14 +14,27 @@ public class GameManager : MonoBehaviour
     bool isPaused;
     public GameObject transitionIn;
     public int scene;
-    
+
+   
     
     public AudioClip transitionOutSound;
     bool isLevelSwitch = false;
+    int IsawardMoney;
     public AudioSource backgroundMusic;
+    public GameObject enemies;
+    private GameObject[] childenemies;
+
     // Start is called before the first frame update
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
+        IsawardMoney = PlayerPrefs.GetInt("MoneyAward");
+        if(IsawardMoney == 0)
+        {
+            PlayerPrefs.SetInt("Coins",250);
+            PlayerPrefs.SetInt("MoneyAward", 1);
+        }
+
 
     }
 
@@ -37,6 +50,8 @@ public class GameManager : MonoBehaviour
     //loads a given level. plays the transition animation
     public void nextScene(int sceneNumber)
     {
+        Time.timeScale = 1f;
+        PaymentInfo.UIActive = false;
         StartCoroutine(loadScene(sceneNumber));
     }
      IEnumerator loadScene(int sceneNumber)
@@ -49,4 +64,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(sceneNumber);
         
     }
+
+  public void SetLastLocation(int number)
+  {
+        PlayerPrefs.SetInt("LastLocation", number);
+  }
+
+    
 }

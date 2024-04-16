@@ -111,6 +111,7 @@ static const int32_t s_InvokerIndices[37] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	15580,
 	15580,
 	15580,
@@ -119,6 +120,16 @@ static const int32_t s_InvokerIndices[37] =
 	15585,
 	15585,
 	15585,
+=======
+	15729,
+	15729,
+	15729,
+	15729,
+	15734,
+	15734,
+	15734,
+	15734,
+>>>>>>> Game_Dev
 	0,
 	0,
 	0,
@@ -136,8 +147,13 @@ static const int32_t s_InvokerIndices[37] =
 	0,
 	0,
 	0,
+<<<<<<< HEAD
 	12616,
 	12616,
+=======
+	12673,
+	12673,
+>>>>>>> Game_Dev
 };
 static const Il2CppTokenRangePair s_rgctxIndices[8] = 
 {

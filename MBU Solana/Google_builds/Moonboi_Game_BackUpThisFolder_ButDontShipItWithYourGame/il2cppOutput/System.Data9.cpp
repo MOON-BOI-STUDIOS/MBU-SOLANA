@@ -15489,7 +15489,11 @@ IL_0047:
 		RuntimeObject* L_14 = ___value1;
 		NullCheck(L_13);
 		bool L_15;
+<<<<<<< HEAD
 		L_15 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_13, L_14);
+=======
+		L_15 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_13, L_14);
+>>>>>>> Game_Dev
 		if (L_15)
 		{
 			goto IL_005b;

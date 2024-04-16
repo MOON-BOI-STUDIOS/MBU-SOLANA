@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068a0f3717bed864ba3437651ba7b73d, type: 3}
+  m_Name: NPC1 17
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - text: Why do we tell secrets in the arcade?
+  - text: ' Because the pinball machines have too many flippers! '
+  - text: Your secret to fun awaits at 'BONK BARKADE'!
+  - text: Why was Dogecoin a bad video game player?
+  - text: ' Its value couldn''t stop jumping around! '
+  - text: Here at 'BONK BARKADE', we value consistency and fun!"
+  - text: Litecoin can't keep up, like an old arcade game. Try our new BONK token
+      games!
+  - text: 'Why don''t Ethereum users play video games? '
+  - text: 'They''re too busy figuring out gas fees! '
+  - text: Come save your gas and spend some BONK tokens at 'BONK BARKADE'!"

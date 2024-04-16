@@ -15,5 +15,6 @@ MonoBehaviour:
   name: FishItem
   icon: {fileID: 21300000, guid: 868ac6e597ec9a849a808cde2ab0e8c2, type: 3}
   ItemDescription: The current Fish Item
+  ItemValue: 20
   itemType: 0
   amount: 10

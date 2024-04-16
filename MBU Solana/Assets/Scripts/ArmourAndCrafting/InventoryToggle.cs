@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class InventoryToggle : MonoBehaviour
 {
+<<<<<<< HEAD
+=======
+    private GameObject InventoryObjectParent;
+
+    public static InventoryToggle instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
+>>>>>>> Game_Dev
 
     private bool inventoryOpen = false;
 
@@ -47,7 +60,10 @@ public class InventoryToggle : MonoBehaviour
             {
                 //update the current item in the slot
                 itemSlots[i].AddItem(ItemInventory.instance.inventoryItemList[i]);
+<<<<<<< HEAD
                 
+=======
+>>>>>>> Game_Dev
             }
             else
             {
@@ -57,9 +73,16 @@ public class InventoryToggle : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
     private void SetupCraftingRecipes()
     {
         List<Items> craftingRecipes = DummyItemScript.instance.CraftingReceipes;
+=======
+
+    private void SetupCraftingRecipes()
+    {
+        List<Items> craftingRecipes = AddInventoryItemScript.instance.CraftingReceipes;
+>>>>>>> Game_Dev
 
         foreach(Items recipe in craftingRecipes)
         {
@@ -114,10 +137,18 @@ public class InventoryToggle : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
     public void OpenInventory()
     {
         inventoryOpen = true;
         InevtoryParent.SetActive(true);
+=======
+    public void OpenInventory(bool IsSellingItems = false)
+    {
+        inventoryOpen = true;
+        InevtoryParent.SetActive(true);
+        
+>>>>>>> Game_Dev
         //Uncomment for WebGl Build
         //ChangeCursorState(false);
     }
@@ -130,6 +161,17 @@ public class InventoryToggle : MonoBehaviour
         //ChangeCursorState(true);
     }
 
+<<<<<<< HEAD
+=======
+    public void TurnOfTutorial()
+    {
+        if(TutorialManager_Fishing.instance != null)
+        {
+            TutorialManager_Fishing.instance.cloinv();
+        }
+    }
+
+>>>>>>> Game_Dev
     public void InventoryTabOpen()
     {
         InventoryTab.SetActive(true);
@@ -155,4 +197,22 @@ public class InventoryToggle : MonoBehaviour
             Cursor.visible = true;
         }
     }
+<<<<<<< HEAD
+=======
+
+    public void SwitchParent()
+    {
+        InventoryObjectParent = GameObject.Find("InventoryBackground 1");
+        {
+            if(InventoryObjectParent != null)
+            {
+                InevtoryParent.transform.parent = InventoryObjectParent.transform;
+            }
+        }
+        if(ButtonScript.instance.GetSellingItems())
+        {
+            ButtonScript.instance.SetSellingItems(false);
+        }
+    }
+>>>>>>> Game_Dev
 }

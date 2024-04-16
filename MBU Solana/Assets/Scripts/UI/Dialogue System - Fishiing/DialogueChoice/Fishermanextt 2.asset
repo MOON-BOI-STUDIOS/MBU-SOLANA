@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4c28c8c58bfff44bcf56c96cc59ad2, type: 3}
+  m_Name: Fishermanextt 2
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - text: 'FISHERMAN
+
+      Aye, if you wish. The choice is yours. The waters have
+      their own way of balancing things.'
+  - text: 'FISHERMAN
+
+      You can now go and sell your fish at the shop by tapping
+      the ''sell fish'' option.'
+  - text: "FISHERMAN\nAs a bonus, you can fish to your heart's content.\_Good\_luck!"

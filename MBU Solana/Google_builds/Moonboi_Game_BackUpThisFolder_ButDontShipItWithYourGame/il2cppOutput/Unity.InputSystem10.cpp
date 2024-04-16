@@ -26674,7 +26674,11 @@ IL_001f:
 		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_6 = V_0;
 		NullCheck(L_5);
 		bool L_7;
+<<<<<<< HEAD
 		L_7 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_5, L_6);
+=======
+		L_7 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_5, L_6);
+>>>>>>> Game_Dev
 		if (L_7)
 		{
 			goto IL_002e;
@@ -30329,7 +30333,11 @@ IL_0139:
 		L_56 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_55, NULL);
 		NullCheck(L_56);
 		Type_t* L_57;
+<<<<<<< HEAD
 		L_57 = VirtualFuncInvoker0< Type_t* >::Invoke(121 /* System.Type System.Type::GetEnumUnderlyingType() */, L_56);
+=======
+		L_57 = VirtualFuncInvoker0< Type_t* >::Invoke(122 /* System.Type System.Type::GetEnumUnderlyingType() */, L_56);
+>>>>>>> Game_Dev
 		// var underlyingTypeCode = Type.GetTypeCode(underlyingType);
 		il2cpp_codegen_runtime_class_init_inline(Type_t_il2cpp_TypeInfo_var);
 		int32_t L_58;

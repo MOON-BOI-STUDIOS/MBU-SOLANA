@@ -16,6 +16,7 @@ public class spawnLocationManager : MonoBehaviour
         if(PlayerPrefs.GetInt("LastLocation",0) == 0)
         {
             telport();
+
         }
     }
     public void telport()
@@ -31,7 +32,7 @@ public class spawnLocationManager : MonoBehaviour
     {
         //sets the player location at the start of the scene, according to where they were before
         player.position = spawnLocations[PlayerPrefs.GetInt("LastLocation")].position;
-        PlayerPrefs.SetInt("LastLocation", 0);
+        PlayerPrefs.GetInt("LastLocation");
     }
 
     // Update is called once per frame

@@ -145,6 +145,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] =
 };
 static const int32_t s_InvokerIndices[41] = 
 {
+<<<<<<< HEAD
 	12616,
 	12616,
 	12457,
@@ -186,6 +187,49 @@ static const int32_t s_InvokerIndices[41] =
 	12616,
 	12616,
 	7467,
+=======
+	12673,
+	12673,
+	12513,
+	12383,
+	12475,
+	2040,
+	20015,
+	12673,
+	18321,
+	12673,
+	19125,
+	12663,
+	12580,
+	12513,
+	20070,
+	9967,
+	15897,
+	14911,
+	5660,
+	2884,
+	5660,
+	2043,
+	5303,
+	4328,
+	15460,
+	14732,
+	12513,
+	12673,
+	2775,
+	2179,
+	5303,
+	12475,
+	12673,
+	7500,
+	19979,
+	20070,
+	18464,
+	20070,
+	12673,
+	12673,
+	7500,
+>>>>>>> Game_Dev
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_TerrainModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_TerrainModule_CodeGenModule = 

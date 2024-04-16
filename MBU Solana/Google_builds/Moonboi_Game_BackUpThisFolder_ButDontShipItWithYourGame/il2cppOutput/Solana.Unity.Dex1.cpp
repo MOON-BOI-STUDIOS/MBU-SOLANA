@@ -260,12 +260,22 @@ struct TaskFactory_1_t4434127C7A0C47FF07D3E3601F5A4A2F1338EA4C;
 struct TaskFactory_1_t8F6BC72973897CF15B23213BA761FBEE1255F477;
 // System.Threading.Tasks.TaskFactory`1<System.Boolean>
 struct TaskFactory_1_tFAEAC22A1E986463E6956C344A78A7C7197288E0;
+<<<<<<< HEAD
+=======
+// System.Threading.Tasks.TaskFactory`1<Solana.Unity.Dex.Models.Pool>
+struct TaskFactory_1_t06058BFBF7096CAF646493148F980616B50C5B1C;
+>>>>>>> Game_Dev
 // System.Threading.Tasks.TaskFactory`1<Solana.Unity.Dex.Orca.Core.Accounts.Position>
 struct TaskFactory_1_tACCF37AA9004A23388F7F8D4D82C2287B3F18F6E;
 // System.Threading.Tasks.TaskFactory`1<Solana.Unity.Dex.Quotes.SwapQuote>
 struct TaskFactory_1_t9E702F0D61BD389F1AC4EF83A5E6B57244831BD2;
 // System.Threading.Tasks.TaskFactory`1<Solana.Unity.Dex.Orca.Quotes.Swap.SwapQuoteParam>
 struct TaskFactory_1_t13755E8E80CB937E1882EDD1285642847F336181;
+<<<<<<< HEAD
+=======
+// System.Threading.Tasks.TaskFactory`1<Solana.Unity.Dex.Models.TokenData>
+struct TaskFactory_1_tFA1980B79AF304BC9ACBA13DF579B95B0C1AC5CA;
+>>>>>>> Game_Dev
 // System.Threading.Tasks.TaskFactory`1<Solana.Unity.Rpc.Models.Transaction>
 struct TaskFactory_1_t759A8A33FFB48693DD723070C9FAF08AC4A24915;
 // System.Threading.Tasks.TaskFactory`1<Solana.Unity.Rpc.Models.TransactionInstruction>
@@ -386,6 +396,11 @@ struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
 struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F;
 // System.AsyncCallback
 struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
+<<<<<<< HEAD
+=======
+// Solana.Unity.Programs.Abstract.BaseClient
+struct BaseClient_t17729739896F3595EC6D20C2273EA5558597A030;
+>>>>>>> Game_Dev
 // Solana.Unity.Dex.Orca.Math.SpecialTypes.BigDecimal
 struct BigDecimal_t03CCA216410AB09BF113B13F23DB71A27E893AF8;
 // System.Numerics.BigInteger
@@ -434,6 +449,11 @@ struct DivideByZeroException_tC43171E50A38F5CD4242D258D0B0C6B74898C279;
 struct ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8;
 // System.Exception
 struct Exception_t;
+<<<<<<< HEAD
+=======
+// Solana.Unity.Dex.Models.Extensions
+struct Extensions_tB35916CBB845E64F2A90175663BE04972E6A7FCE;
+>>>>>>> Game_Dev
 // Solana.Unity.Rpc.Models.FeeCalculator
 struct FeeCalculator_tA5405DEF85DB80887E252A76DB88830F219654F5;
 // System.IAsyncResult
@@ -552,6 +572,11 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct Whirlpool_tB340FB91CC429BDA7DB45944AF1AAA6D637E9BF9;
 // Solana.Unity.Dex.Orca.Core.WhirlpoolClient
 struct WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4;
+<<<<<<< HEAD
+=======
+// Solana.Unity.Dex.Orca.WhirlpoolContext
+struct WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7;
+>>>>>>> Game_Dev
 // Solana.Unity.Dex.Orca.Core.Types.WhirlpoolRewardInfo
 struct WhirlpoolRewardInfo_t602C8F6744961BA2E42B8EBADD3B25F73F6FC45F;
 // Solana.Unity.Dex.Orca.Exceptions.WhirlpoolsErrorCode
@@ -590,6 +615,12 @@ IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_t651E7BA5C7209C40335555F3
 IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_t7C3D909ADFE9E719AAB1B78110E747F8A392FA88_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_t7D4B2DCD5FE778C764A5B9DDC18D744F4709595E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_t874910A6136B1D325FA6E356DB4B964B72511DE1_il2cpp_TypeInfo_var;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351_il2cpp_TypeInfo_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_tC44BBA2032DB2F76523EC3769182888FA2E6422B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BigDecimal_t03CCA216410AB09BF113B13F23DB71A27E893AF8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BigDecimal_tE9F10B31359E043949B2DFFD9F3C05BC385801DB_il2cpp_TypeInfo_var;
@@ -684,6 +715,10 @@ IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t48A18EEAF594BBAE46EFD1126788304F006B63BF_
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t7547AC60470F96B076B7D8520F8D7D132B8F2F4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t87887AAA9EF60C522B1FAFA944804C724D8F67F4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UpdateFeesAndRewardsAccounts_t88743F39DFB5FD5C56315C35A3400B50393AA5C9_il2cpp_TypeInfo_var;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C RuntimeClass* WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4_il2cpp_TypeInfo_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C RuntimeClass* WhirlpoolsException_t0C80A7D1D8C27882FA1262B2DD6A729B49D92247_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral03B4E327A54B8E4B482F4D9FC76E8754CAF5BB69;
 IL2CPP_EXTERN_C String_t* _stringLiteral05485443C35A93C0FE4DA95687D6D88474016B09;
@@ -835,6 +870,12 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompl
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tDB66C4D8327949CFB0B98736E8313E6664FC5D5A_TisU3CGenerateIncreaseLiquidityInstructionU3Ed__3_tCAB8E418AB31A74EE651EEF3C0EB94FE6CC0B2D9_m6774F3A745A8905170323648C29F3BA6C82F33E3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tEA7C7AF572ACD0653FE1DD150331848613F14A7D_TisU3CGenerateClosePositionInstructionU3Ed__2_t64073184CFA9006E8A38C88DB8E462AF5D297843_m1D1F4FD0CDDC39BC76074B69901F5F1EA940E68C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B_RuntimeMethod_var;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_m62A4F90FFD8CD59CAA062188312F7CC02795857F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_m7B2AEA388A3AA1EA0E2F95BF49E859E34CAA3E5A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_m956F5B87AB1FBDBF871F21D1F2424B55273C176B_RuntimeMethod_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_mA86694527610A40A01A943B16F0ECDDD8F00982D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_mBD5BAE2655E3C56E9569A936A0FBEAD114E334E0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_mC157468CE4C860F8C6A6674374FD5CDB4A5DDCFA_RuntimeMethod_var;
@@ -874,13 +915,26 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetStateMachine_mF
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CCreateAccountAsyncU3Ed__2_t6044444A6A2A4AF21933D098840836661DEB2BC9_m4E8E7ED95DB0A6FBFD865D3CB94FFB9D86F83448_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CCreateAndMintToAssociatedTokenAccountU3Ed__1_t2959264C8C128AB6F77BD6CDAC5D19C2980BF419_mDF2E19F82E479901C961528F96A7CA1B32056767_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CCreateMintU3Ed__0_tE5CDCBBD9C5EE27EE97C34EF81884E2E4F010B14_m11F048FDE2B80B906E03A15703FC9C759CADDB72_RuntimeMethod_var;
+<<<<<<< HEAD
+=======
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188_m07EFD72CE29FA1DBC76D11545B10A53C32DEA61D_RuntimeMethod_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGenerateClosePositionInstructionU3Ed__2_t64073184CFA9006E8A38C88DB8E462AF5D297843_m093F8E8DCBB759780F04DEB2CEDBC8830287BC5A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGenerateCollectFeesInstructionU3Ed__7_t521A064FE40ABE672BDABC248566AD49F38545AF_m7C40CDA1279E96D5200F3F946583449136451365_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGenerateCollectRewardsInstructionU3Ed__8_tD5BFB09A5627780EAEEB63D529BB5D8E8FCDAAF1_m9DEED7E6E0DB0594542178B6B88988044322465D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGenerateDecreaseLiquidityInstructionU3Ed__5_t38EF5709B82185728B7D4CFA43652DE8216D3033_mB7042E5B2FD9F5C5EF589D72D1466E56DDCA4700_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGenerateIncreaseLiquidityInstructionU3Ed__3_tCAB8E418AB31A74EE651EEF3C0EB94FE6CC0B2D9_mD12C84AC81C3BB1A7A10F2BAB7BCE055612A5F12_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGenerateIncreaseLiquidityInstructionU3Ed__4_tC7E0567B20FFC1FA620F8FA671AE00154A9FF736_m88F57D6CBD1D488DFEB413337FABA2ED99238CE9_RuntimeMethod_var;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetTickArraysU3Ed__4_t21B689F65B15D8C3B849FEFA77B77C4F0B1C72D5_mB7B32A44AEE69D00D23FB02D87F98B356C2CF2B8_RuntimeMethod_var;
+=======
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1_mA71763E21305DD51BD2F6D96FF17221D260A3C4A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB_m9FFB8D31392824BB765446E492958FFE42FE2E86_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetTickArraysU3Ed__4_t21B689F65B15D8C3B849FEFA77B77C4F0B1C72D5_mB7B32A44AEE69D00D23FB02D87F98B356C2CF2B8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333_m4EE0263122BA41358ECEDD283CCB3C2FC8B8032F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C_mF2435FFD3E128652B5DFF66BCF578315F917CC41_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2_mF6859A1D5DFE89D023FB5285B4385444F8AEFB3E_RuntimeMethod_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CMintToByAuthorityU3Ed__2_t151D1AEAEE97FC5A7B32C555047BE4A66851A593_m6CC3ABD38E9B56BAB2FB18D6E1A43E3C477B8487_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CRequestAirdropAsyncU3Ed__0_tE599F9CFC129A0B2242D94F14111B5356F6673A8_mE17D4EFC19BAF3B4865C54123CCFA27D86ECFC1C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSwapQuoteByInputTokenU3Ed__2_t2065B649CA44FCF9911FC98A9F4811469DEDF23E_m367AE4911796A815B7F1BA728548269497BECEB0_RuntimeMethod_var;
@@ -889,10 +943,20 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSwapQu
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CTokenAccountExistsU3Ed__3_tCBFB9C60244A427C2482B25E13259866FDC78C35_mA6EA7D23F95D9958B6C714114C2FA727C5465A79_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CTransferSolAsyncU3Ed__1_t813922687931774F33161D0CCC10CB98EA0BF03D_m960532AE8816BD7BD4ED3159895F3C5965EFAFCC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m09169C120A259AF1F267F54C09A92B84D9832943_RuntimeMethod_var;
+<<<<<<< HEAD
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m2BBDF873380C6A4D135C7020DB9E738825F4EF25_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m466CA77966A09435F52233912BFF0D830C19FD7E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m64A0C49728C62ED63E8086B5659066DD0B3D3026_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A_RuntimeMethod_var;
+=======
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m25F4C7C1193ECA9FB887576CB744DFF1D50F551C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m2BBDF873380C6A4D135C7020DB9E738825F4EF25_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m466CA77966A09435F52233912BFF0D830C19FD7E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m5E60B8ECF2B1C4D988041B17CAC0BA13FAE74C2F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m64A0C49728C62ED63E8086B5659066DD0B3D3026_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mAE5752F2240A4222D3B08923EF4C8D73070476E6_RuntimeMethod_var;
+>>>>>>> Game_Dev
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mB6BEA75DC9C9A273CB0AE08F2D1F321958B1CC70_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mBF96E1B7A77DF870B178B0CC4DBF2EAE87D3C094_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* BigDecimal_Divide_m0192188021F9695858A217C7ACDB931114FBC6A7_RuntimeMethod_var;
@@ -2338,6 +2402,7 @@ struct TokenData_t07E7175C762D8E10668082E42C12B501B9464631  : public RuntimeObje
 {
 	// System.String Solana.Unity.Dex.Models.TokenData::<Name>k__BackingField
 	String_t* ___U3CNameU3Ek__BackingField_0;
+<<<<<<< HEAD
 	// System.String Solana.Unity.Dex.Models.TokenData::<Mint>k__BackingField
 	String_t* ___U3CMintU3Ek__BackingField_1;
 	// System.String Solana.Unity.Dex.Models.TokenData::<Symbol>k__BackingField
@@ -2352,6 +2417,26 @@ struct TokenData_t07E7175C762D8E10668082E42C12B501B9464631  : public RuntimeObje
 	bool ___U3CWhitelistedU3Ek__BackingField_6;
 	// System.Boolean Solana.Unity.Dex.Models.TokenData::<PoolToken>k__BackingField
 	bool ___U3CPoolTokenU3Ek__BackingField_7;
+=======
+	// System.String Solana.Unity.Dex.Models.TokenData::<Symbol>k__BackingField
+	String_t* ___U3CSymbolU3Ek__BackingField_1;
+	// System.Int32 Solana.Unity.Dex.Models.TokenData::<Decimals>k__BackingField
+	int32_t ___U3CDecimalsU3Ek__BackingField_2;
+	// System.String Solana.Unity.Dex.Models.TokenData::<LogoURI>k__BackingField
+	String_t* ___U3CLogoURIU3Ek__BackingField_3;
+	// System.Boolean Solana.Unity.Dex.Models.TokenData::<Whitelisted>k__BackingField
+	bool ___U3CWhitelistedU3Ek__BackingField_4;
+	// System.Boolean Solana.Unity.Dex.Models.TokenData::<PoolToken>k__BackingField
+	bool ___U3CPoolTokenU3Ek__BackingField_5;
+	// System.String Solana.Unity.Dex.Models.TokenData::<_coingeckoId>k__BackingField
+	String_t* ___U3C_coingeckoIdU3Ek__BackingField_6;
+	// Solana.Unity.Dex.Models.Extensions Solana.Unity.Dex.Models.TokenData::<_extensions>k__BackingField
+	Extensions_tB35916CBB845E64F2A90175663BE04972E6A7FCE* ___U3C_extensionsU3Ek__BackingField_7;
+	// System.String Solana.Unity.Dex.Models.TokenData::<_mint>k__BackingField
+	String_t* ___U3C_mintU3Ek__BackingField_8;
+	// System.String Solana.Unity.Dex.Models.TokenData::<_address>k__BackingField
+	String_t* ___U3C_addressU3Ek__BackingField_9;
+>>>>>>> Game_Dev
 };
 
 // Solana.Unity.Dex.Orca.Math.TokenMath
@@ -2514,6 +2599,20 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
 };
 
+<<<<<<< HEAD
+=======
+// Solana.Unity.Dex.Orca.WhirlpoolContext
+struct WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Dex.Orca.WhirlpoolContext::<ProgramId>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CProgramIdU3Ek__BackingField_0;
+	// Solana.Unity.Dex.Orca.Core.WhirlpoolClient Solana.Unity.Dex.Orca.WhirlpoolContext::<WhirlpoolClient>k__BackingField
+	WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* ___U3CWhirlpoolClientU3Ek__BackingField_1;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Dex.Orca.WhirlpoolContext::<WalletPubKey>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CWalletPubKeyU3Ek__BackingField_2;
+};
+
+>>>>>>> Game_Dev
 // Solana.Unity.Dex.Orca.Exceptions.WhirlpoolsErrorCode
 struct WhirlpoolsErrorCode_t42D6F863AB3EB0434C91F23DAA23B8F53E4CEF13  : public RuntimeObject
 {
@@ -2873,6 +2972,22 @@ struct Task_1_t824317F4B958F7512E8F7300511752937A6C6043_StaticFields
 	TaskFactory_1_tFAEAC22A1E986463E6956C344A78A7C7197288E0* ___s_defaultFactory_39;
 };
 
+<<<<<<< HEAD
+=======
+// System.Threading.Tasks.Task`1<Solana.Unity.Dex.Models.Pool>
+struct Task_1_t46A619886FB6B06F100CA319BAA0BC99D9D334AF  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	Pool_t29C59CF78096852961D6AAC62200864EC43C6833* ___m_result_38;
+};
+
+struct Task_1_t46A619886FB6B06F100CA319BAA0BC99D9D334AF_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t06058BFBF7096CAF646493148F980616B50C5B1C* ___s_defaultFactory_39;
+};
+
+>>>>>>> Game_Dev
 // System.Threading.Tasks.Task`1<Solana.Unity.Dex.Orca.Core.Accounts.Position>
 struct Task_1_t13E03A968958585A9BC3AB6B0253D4EABC2EDBDC  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
 {
@@ -2912,6 +3027,22 @@ struct Task_1_t368990CD437178F904F653B0F80AB1301AE58274_StaticFields
 	TaskFactory_1_t13755E8E80CB937E1882EDD1285642847F336181* ___s_defaultFactory_39;
 };
 
+<<<<<<< HEAD
+=======
+// System.Threading.Tasks.Task`1<Solana.Unity.Dex.Models.TokenData>
+struct Task_1_t1A60F1D3DC665B4C0E140E6F4723A7153A057C71  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	TokenData_t07E7175C762D8E10668082E42C12B501B9464631* ___m_result_38;
+};
+
+struct Task_1_t1A60F1D3DC665B4C0E140E6F4723A7153A057C71_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_tFA1980B79AF304BC9ACBA13DF579B95B0C1AC5CA* ___s_defaultFactory_39;
+};
+
+>>>>>>> Game_Dev
 // System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Models.Transaction>
 struct Task_1_tFFBC4F378370B812D44AAE2D4FDAF7BFA87EF954  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
 {
@@ -5305,6 +5436,25 @@ IL2CPP_EXTERN_C void BigDecimal_t03CCA216410AB09BF113B13F23DB71A27E893AF8_marsha
 IL2CPP_EXTERN_C void BigDecimal_t03CCA216410AB09BF113B13F23DB71A27E893AF8_marshal_com_back(const BigDecimal_t03CCA216410AB09BF113B13F23DB71A27E893AF8_marshaled_com& marshaled, BigDecimal_t03CCA216410AB09BF113B13F23DB71A27E893AF8& unmarshaled);
 IL2CPP_EXTERN_C void BigDecimal_t03CCA216410AB09BF113B13F23DB71A27E893AF8_marshal_com_cleanup(BigDecimal_t03CCA216410AB09BF113B13F23DB71A27E893AF8_marshaled_com& marshaled);
 
+<<<<<<< HEAD
+=======
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0 AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared (const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<FindWhirlpoolAddress>d__23>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188_mCE746B354FC02133315F93B726DAE26557530CA6_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::get_Task()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetSwapQuote>d__26>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB_mC81E6E473450A02F9BECA5E1FA36344B09F9EB70_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetSwapQuoteFromWhirlpool>d__27>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1_m6F166CB02558E5A64C33076908FDE5FD6AF8C583_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetTokens>d__32>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2_mB7732609CA1FAACEADF9EA0CAC1BF44A9F5C5FFB_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetTokenBySymbol>d__33>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C_m7550A98DCAA8129CAB5F02D6E89BEFB7128D8983_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetTokenByMint>d__34>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333_m46DC648AC14D30ABBD2537B8A1A66650D0C66466_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333* ___stateMachine0, const RuntimeMethod* method) ;
+>>>>>>> Game_Dev
 // System.Runtime.CompilerServices.TaskAwaiter`1<TResult> System.Threading.Tasks.Task`1<System.Object>::GetAwaiter()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA Task_1_GetAwaiter_mD80ED263BF3F1F8DBDBD177BA3401A0AAAFA38E3_gshared (Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>::get_IsCompleted()
@@ -5371,12 +5521,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Dictionary_2_get_Item_mA019F7A495B48E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m517E7F9D104FEAE6646EABDDC9C852510E86077C_gshared (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Int32>::Add(TKey,TValue)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m63897227AFA7035F1772315ABBBE7FD0A250E10C_gshared (Dictionary_2_t5C96F4B6841710A9013966F76224BAE01FB4B4D1* __this, RuntimeObject* ___key0, int32_t ___value1, const RuntimeMethod* method) ;
+<<<<<<< HEAD
 // System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0 AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared (const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Dex.Orca.Swap.SwapUtils/<GetTickArrays>d__4>(TStateMachine&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CGetTickArraysU3Ed__4_t21B689F65B15D8C3B849FEFA77B77C4F0B1C72D5_m93ACA49BE849D515B33D9051C041F5835322CD49_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CGetTickArraysU3Ed__4_t21B689F65B15D8C3B849FEFA77B77C4F0B1C72D5* ___stateMachine0, const RuntimeMethod* method) ;
 // System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::get_Task()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, const RuntimeMethod* method) ;
+=======
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.Dex.Orca.Swap.SwapUtils/<GetTickArrays>d__4>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CGetTickArraysU3Ed__4_t21B689F65B15D8C3B849FEFA77B77C4F0B1C72D5_m93ACA49BE849D515B33D9051C041F5835322CD49_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CGetTickArraysU3Ed__4_t21B689F65B15D8C3B849FEFA77B77C4F0B1C72D5* ___stateMachine0, const RuntimeMethod* method) ;
+>>>>>>> Game_Dev
 // System.Tuple`2<T1,T2> System.Tuple::Create<System.Numerics.BigInteger,System.Numerics.BigInteger>(T1,T2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tuple_2_tD681365A1463E6F454F2A563E7B764426F147E34* Tuple_Create_TisBigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_TisBigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_mE501A747D564FEC965CC54F7B000A7B438EE1EBB_gshared (BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___item10, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___item21, const RuntimeMethod* method) ;
 // T2 System.Tuple`2<System.Object,System.Object>::get_Item2()
@@ -5556,8 +5711,101 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR EqualityComparer_1_t4F82E3B044BF3
 // System.Collections.Generic.EqualityComparer`1<T> System.Collections.Generic.EqualityComparer`1<System.Int32>::get_Default()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR EqualityComparer_1_t8576A23859AAB111A218EAE239E10E5E9E2D66FC* EqualityComparer_1_get_Default_mF70F6C11A35B420DFA4628EE316B087F2DCB280C_gshared_inline (const RuntimeMethod* method) ;
 
+<<<<<<< HEAD
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+=======
+// Solana.Unity.Dex.Orca.Core.WhirlpoolClient Solana.Unity.Dex.Orca.WhirlpoolContext::get_WhirlpoolClient()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* WhirlpoolContext_get_WhirlpoolClient_mA80B2695323420B7D3FE9AC4F6A49D8BDF026417_inline (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.IRpcClient Solana.Unity.Programs.Abstract.BaseClient::get_RpcClient()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BaseClient_get_RpcClient_mDC99C59F85131FF26A4B3A336BED28115177FAE4_inline (BaseClient_t17729739896F3595EC6D20C2273EA5558597A030* __this, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.IStreamingRpcClient Solana.Unity.Programs.Abstract.BaseClient::get_StreamingRpcClient()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BaseClient_get_StreamingRpcClient_m31A16EE3DE5B5391430A9D3ADAEB2B563676A46B_inline (BaseClient_t17729739896F3595EC6D20C2273EA5558597A030* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Wallet.PublicKey::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PublicKey__ctor_mAC5FE8C442D642434F04E8491B83BDBBE9E80A90 (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* __this, String_t* ___key0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::.ctor(Solana.Unity.Wallet.PublicKey,Solana.Unity.Rpc.IRpcClient,Solana.Unity.Rpc.IStreamingRpcClient,Solana.Unity.Wallet.PublicKey,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WhirlpoolContext__ctor_m137B43BB99B315E9DE94D9DEC54E8BA7D5B36505 (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId0, RuntimeObject* ___rpcClient1, RuntimeObject* ___streamingClient2, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___walletPubKey3, int32_t ___defaultCommitment4, const RuntimeMethod* method) ;
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::set_ProgramId(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WhirlpoolContext_set_ProgramId_m27D0000640407FC2AEDF0A59C8F3E21EFD8867AA_inline (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::set_WalletPubKey(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WhirlpoolContext_set_WalletPubKey_m6E9E8390EC88C1785E9313BC4129B3C7ED653282_inline (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Dex.Orca.Core.WhirlpoolClient::.ctor(Solana.Unity.Rpc.IRpcClient,Solana.Unity.Rpc.IStreamingRpcClient,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WhirlpoolClient__ctor_mDCA583BE7F1540AED88181725A08F9060543EA09 (WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* __this, RuntimeObject* ___rpcClient0, RuntimeObject* ___streamingRpcClient1, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId2, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::set_WhirlpoolClient(Solana.Unity.Dex.Orca.Core.WhirlpoolClient)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WhirlpoolContext_set_WhirlpoolClient_mB02705FE34345175DE3CC700944350DC2629B128_inline (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* ___value0, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Models.Pool>::Create()
+inline AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF AsyncTaskMethodBuilder_1_Create_m7B2AEA388A3AA1EA0E2F95BF49E859E34CAA3E5A (const RuntimeMethod* method)
+{
+	return ((  AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Models.Pool>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<FindWhirlpoolAddress>d__23>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188_m07EFD72CE29FA1DBC76D11545B10A53C32DEA61D (AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF* __this, U3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF*, U3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188_mCE746B354FC02133315F93B726DAE26557530CA6_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Models.Pool>::get_Task()
+inline Task_1_t46A619886FB6B06F100CA319BAA0BC99D9D334AF* AsyncTaskMethodBuilder_1_get_Task_m25F4C7C1193ECA9FB887576CB744DFF1D50F551C (AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF* __this, const RuntimeMethod* method)
+{
+	return ((  Task_1_t46A619886FB6B06F100CA319BAA0BC99D9D334AF* (*) (AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared)(__this, method);
+}
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Quotes.SwapQuote>::Create()
+inline AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176 AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B (const RuntimeMethod* method)
+{
+	return ((  AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176 (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Quotes.SwapQuote>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetSwapQuote>d__26>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB_m9FFB8D31392824BB765446E492958FFE42FE2E86 (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* __this, U3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176*, U3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB_mC81E6E473450A02F9BECA5E1FA36344B09F9EB70_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Quotes.SwapQuote>::get_Task()
+inline Task_1_t07DE0CE700C40950CDE5C5935F05B83A7349B338* AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* __this, const RuntimeMethod* method)
+{
+	return ((  Task_1_t07DE0CE700C40950CDE5C5935F05B83A7349B338* (*) (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Quotes.SwapQuote>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetSwapQuoteFromWhirlpool>d__27>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1_mA71763E21305DD51BD2F6D96FF17221D260A3C4A (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* __this, U3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176*, U3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1_m6F166CB02558E5A64C33076908FDE5FD6AF8C583_gshared)(__this, ___stateMachine0, method);
+}
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.IList`1<Solana.Unity.Dex.Models.TokenData>>::Create()
+inline AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351 AsyncTaskMethodBuilder_1_Create_m956F5B87AB1FBDBF871F21D1F2424B55273C176B (const RuntimeMethod* method)
+{
+	return ((  AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351 (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.IList`1<Solana.Unity.Dex.Models.TokenData>>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetTokens>d__32>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2_mF6859A1D5DFE89D023FB5285B4385444F8AEFB3E (AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351* __this, U3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351*, U3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2_mB7732609CA1FAACEADF9EA0CAC1BF44A9F5C5FFB_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.IList`1<Solana.Unity.Dex.Models.TokenData>>::get_Task()
+inline Task_1_tB9AFBB9CB2C40590B9F4E163E3EEC9C957962FD8* AsyncTaskMethodBuilder_1_get_Task_mAE5752F2240A4222D3B08923EF4C8D73070476E6 (AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351* __this, const RuntimeMethod* method)
+{
+	return ((  Task_1_tB9AFBB9CB2C40590B9F4E163E3EEC9C957962FD8* (*) (AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared)(__this, method);
+}
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Models.TokenData>::Create()
+inline AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0 AsyncTaskMethodBuilder_1_Create_m62A4F90FFD8CD59CAA062188312F7CC02795857F (const RuntimeMethod* method)
+{
+	return ((  AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0 (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Models.TokenData>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetTokenBySymbol>d__33>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C_mF2435FFD3E128652B5DFF66BCF578315F917CC41 (AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0* __this, U3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0*, U3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C_m7550A98DCAA8129CAB5F02D6E89BEFB7128D8983_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Models.TokenData>::get_Task()
+inline Task_1_t1A60F1D3DC665B4C0E140E6F4723A7153A057C71* AsyncTaskMethodBuilder_1_get_Task_m5E60B8ECF2B1C4D988041B17CAC0BA13FAE74C2F (AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0* __this, const RuntimeMethod* method)
+{
+	return ((  Task_1_t1A60F1D3DC665B4C0E140E6F4723A7153A057C71* (*) (AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Models.TokenData>::Start<Solana.Unity.Dex.Orca.TxApi.Dex/<GetTokenByMint>d__34>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333_m4EE0263122BA41358ECEDD283CCB3C2FC8B8032F (AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0* __this, U3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0*, U3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333_m46DC648AC14D30ABBD2537B8A1A66650D0C66466_gshared)(__this, ___stateMachine0, method);
+}
+>>>>>>> Game_Dev
 // System.String Solana.Unity.Dex.Models.TokenData::get_Symbol()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TokenData_get_Symbol_mB392FE5F4C94165F334C05F5988E97B20B9E4B3C_inline (TokenData_t07E7175C762D8E10668082E42C12B501B9464631* __this, const RuntimeMethod* method) ;
 // System.Boolean System.String::Equals(System.String,System.String,System.StringComparison)
@@ -5565,7 +5813,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_Equals_mCC34895D0DB2AD440C9D87670
 // System.String System.String::Concat(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
 // System.String Solana.Unity.Dex.Models.TokenData::get_Mint()
+<<<<<<< HEAD
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TokenData_get_Mint_mDF65AA4AAE11F30D913EB902C641DA105A84807E_inline (TokenData_t07E7175C762D8E10668082E42C12B501B9464631* __this, const RuntimeMethod* method) ;
+=======
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TokenData_get_Mint_mDF65AA4AAE11F30D913EB902C641DA105A84807E (TokenData_t07E7175C762D8E10668082E42C12B501B9464631* __this, const RuntimeMethod* method) ;
+>>>>>>> Game_Dev
 // System.Runtime.CompilerServices.TaskAwaiter`1<TResult> System.Threading.Tasks.Task`1<System.Tuple`2<Solana.Unity.Wallet.PublicKey,Solana.Unity.Dex.Orca.Core.Accounts.Whirlpool>>::GetAwaiter()
 inline TaskAwaiter_1_t5D0E2363E56F49192E124931CC96F99341FCF6BA Task_1_GetAwaiter_m34A42EE37614FC61959BDB655EC57E39F3288703 (Task_1_t8032BA1187668BE188DC937208A3A9C84A54E5D0* __this, const RuntimeMethod* method)
 {
@@ -6867,21 +7119,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tuple_2_tD681365A1463E6F454F2A563E7B764426F14
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SwapQuote_set_Amount_m1B742326022B37B799153720A6E19E1A5A52DF5A_inline (SwapQuote_t71A69C122CAA5A6B19A40DB03B2B11C81A63A435* __this, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___value0, const RuntimeMethod* method) ;
 // System.Void Solana.Unity.Dex.Quotes.SwapQuote::set_OtherAmountThreshold(System.Numerics.BigInteger)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SwapQuote_set_OtherAmountThreshold_mF633534C3C923A703D74F06AC76637EB1158C8B2_inline (SwapQuote_t71A69C122CAA5A6B19A40DB03B2B11C81A63A435* __this, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___value0, const RuntimeMethod* method) ;
+<<<<<<< HEAD
 // System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Quotes.SwapQuote>::Create()
 inline AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176 AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B (const RuntimeMethod* method)
 {
 	return ((  AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176 (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
 }
+=======
+>>>>>>> Game_Dev
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Quotes.SwapQuote>::Start<Solana.Unity.Dex.Orca.Quotes.Swap.SwapQuoteUtils/<SwapQuoteByInputToken>d__2>(TStateMachine&)
 inline void AsyncTaskMethodBuilder_1_Start_TisU3CSwapQuoteByInputTokenU3Ed__2_t2065B649CA44FCF9911FC98A9F4811469DEDF23E_m367AE4911796A815B7F1BA728548269497BECEB0 (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* __this, U3CSwapQuoteByInputTokenU3Ed__2_t2065B649CA44FCF9911FC98A9F4811469DEDF23E* ___stateMachine0, const RuntimeMethod* method)
 {
 	((  void (*) (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176*, U3CSwapQuoteByInputTokenU3Ed__2_t2065B649CA44FCF9911FC98A9F4811469DEDF23E*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSwapQuoteByInputTokenU3Ed__2_t2065B649CA44FCF9911FC98A9F4811469DEDF23E_m04B7AE8B505825157849033F22333189838CCD25_gshared)(__this, ___stateMachine0, method);
 }
+<<<<<<< HEAD
 // System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Quotes.SwapQuote>::get_Task()
 inline Task_1_t07DE0CE700C40950CDE5C5935F05B83A7349B338* AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* __this, const RuntimeMethod* method)
 {
 	return ((  Task_1_t07DE0CE700C40950CDE5C5935F05B83A7349B338* (*) (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared)(__this, method);
 }
+=======
+>>>>>>> Game_Dev
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.Dex.Quotes.SwapQuote>::Start<Solana.Unity.Dex.Orca.Quotes.Swap.SwapQuoteUtils/<SwapQuoteByOutputToken>d__3>(TStateMachine&)
 inline void AsyncTaskMethodBuilder_1_Start_TisU3CSwapQuoteByOutputTokenU3Ed__3_tA84842EB056410A0DEB0F9CDE0836FB2BD4D17E0_m3037977364E46F346C9D5D174A7B158CA85C9773 (AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* __this, U3CSwapQuoteByOutputTokenU3Ed__3_tA84842EB056410A0DEB0F9CDE0836FB2BD4D17E0* ___stateMachine0, const RuntimeMethod* method)
 {
@@ -8098,6 +8356,483 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BitConverter_SingleToInt3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+<<<<<<< HEAD
+=======
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Dex.Orca.WhirlpoolContext::get_ProgramId()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* WhirlpoolContext_get_ProgramId_mC33EB2BD161FF4CF7E6515F3D304322186E82A78 (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = __this->___U3CProgramIdU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::set_ProgramId(Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WhirlpoolContext_set_ProgramId_m27D0000640407FC2AEDF0A59C8F3E21EFD8867AA (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CProgramIdU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CProgramIdU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// Solana.Unity.Dex.Orca.Core.WhirlpoolClient Solana.Unity.Dex.Orca.WhirlpoolContext::get_WhirlpoolClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* WhirlpoolContext_get_WhirlpoolClient_mA80B2695323420B7D3FE9AC4F6A49D8BDF026417 (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, const RuntimeMethod* method) 
+{
+	{
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_0 = __this->___U3CWhirlpoolClientU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::set_WhirlpoolClient(Solana.Unity.Dex.Orca.Core.WhirlpoolClient)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WhirlpoolContext_set_WhirlpoolClient_mB02705FE34345175DE3CC700944350DC2629B128 (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* ___value0, const RuntimeMethod* method) 
+{
+	{
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_0 = ___value0;
+		__this->___U3CWhirlpoolClientU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CWhirlpoolClientU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// Solana.Unity.Rpc.IRpcClient Solana.Unity.Dex.Orca.WhirlpoolContext::get_RpcClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WhirlpoolContext_get_RpcClient_m78A105172E490BF08E605373A3E162FB24F66AC0 (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, const RuntimeMethod* method) 
+{
+	{
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_0;
+		L_0 = WhirlpoolContext_get_WhirlpoolClient_mA80B2695323420B7D3FE9AC4F6A49D8BDF026417_inline(__this, NULL);
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = BaseClient_get_RpcClient_mDC99C59F85131FF26A4B3A336BED28115177FAE4_inline(L_0, NULL);
+		return L_1;
+	}
+}
+// Solana.Unity.Rpc.IStreamingRpcClient Solana.Unity.Dex.Orca.WhirlpoolContext::get_StreamingRpcClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WhirlpoolContext_get_StreamingRpcClient_mBBCC903882B849BA6FEFAF33BC8B9D3AA046D195 (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, const RuntimeMethod* method) 
+{
+	{
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_0;
+		L_0 = WhirlpoolContext_get_WhirlpoolClient_mA80B2695323420B7D3FE9AC4F6A49D8BDF026417_inline(__this, NULL);
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = BaseClient_get_StreamingRpcClient_m31A16EE3DE5B5391430A9D3ADAEB2B563676A46B_inline(L_0, NULL);
+		return L_1;
+	}
+}
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Dex.Orca.WhirlpoolContext::get_WalletPubKey()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* WhirlpoolContext_get_WalletPubKey_m4F5B51326CA904FE708B3BB326440677EE860A1D (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = __this->___U3CWalletPubKeyU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::set_WalletPubKey(Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WhirlpoolContext_set_WalletPubKey_m6E9E8390EC88C1785E9313BC4129B3C7ED653282 (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CWalletPubKeyU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CWalletPubKeyU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::.ctor(System.String,Solana.Unity.Rpc.IRpcClient,Solana.Unity.Rpc.IStreamingRpcClient,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WhirlpoolContext__ctor_m0E95E98A68826F0C2F53A5C866058C8B3E198D7A (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, String_t* ___programId0, RuntimeObject* ___rpcClient1, RuntimeObject* ___streamingClient2, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___walletPubKey3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___programId0;
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_1 = (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)il2cpp_codegen_object_new(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		PublicKey__ctor_mAC5FE8C442D642434F04E8491B83BDBBE9E80A90(L_1, L_0, NULL);
+		RuntimeObject* L_2 = ___rpcClient1;
+		RuntimeObject* L_3 = ___streamingClient2;
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_4 = ___walletPubKey3;
+		WhirlpoolContext__ctor_m137B43BB99B315E9DE94D9DEC54E8BA7D5B36505(__this, L_1, L_2, L_3, L_4, 0, NULL);
+		return;
+	}
+}
+// System.Void Solana.Unity.Dex.Orca.WhirlpoolContext::.ctor(Solana.Unity.Wallet.PublicKey,Solana.Unity.Rpc.IRpcClient,Solana.Unity.Rpc.IStreamingRpcClient,Solana.Unity.Wallet.PublicKey,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WhirlpoolContext__ctor_m137B43BB99B315E9DE94D9DEC54E8BA7D5B36505 (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId0, RuntimeObject* ___rpcClient1, RuntimeObject* ___streamingClient2, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___walletPubKey3, int32_t ___defaultCommitment4, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___programId0;
+		WhirlpoolContext_set_ProgramId_m27D0000640407FC2AEDF0A59C8F3E21EFD8867AA_inline(__this, L_0, NULL);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_1 = ___walletPubKey3;
+		WhirlpoolContext_set_WalletPubKey_m6E9E8390EC88C1785E9313BC4129B3C7ED653282_inline(__this, L_1, NULL);
+		RuntimeObject* L_2 = ___rpcClient1;
+		RuntimeObject* L_3 = ___streamingClient2;
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_4 = ___programId0;
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_5 = (WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4*)il2cpp_codegen_object_new(WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		WhirlpoolClient__ctor_mDCA583BE7F1540AED88181725A08F9060543EA09(L_5, L_2, L_3, L_4, NULL);
+		WhirlpoolContext_set_WhirlpoolClient_mB02705FE34345175DE3CC700944350DC2629B128_inline(__this, L_5, NULL);
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_6;
+		L_6 = WhirlpoolContext_get_WhirlpoolClient_mA80B2695323420B7D3FE9AC4F6A49D8BDF026417_inline(__this, NULL);
+		int32_t L_7 = ___defaultCommitment4;
+		NullCheck(L_6);
+		L_6->___DefaultCommitment_4 = L_7;
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Solana.Unity.Rpc.IRpcClient Solana.Unity.Dex.Orca.TxApi.Dex::get_RpcClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Dex_get_RpcClient_m3F395D7919D99F7D7154CA3346FB93B6687F2A62 (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWhirlpoolContext_t3F73896E6B69BA4DC6E5B038AA030FD7D58178F7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0 = __this->___Context_0;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(2 /* Solana.Unity.Rpc.IRpcClient Solana.Unity.Dex.Orca.IWhirlpoolContext::get_RpcClient() */, IWhirlpoolContext_t3F73896E6B69BA4DC6E5B038AA030FD7D58178F7_il2cpp_TypeInfo_var, L_0);
+		return L_1;
+	}
+}
+// Solana.Unity.Dex.Orca.Core.WhirlpoolClient Solana.Unity.Dex.Orca.TxApi.Dex::get_WhirlpoolClient()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* Dex_get_WhirlpoolClient_m9D4C02191FEE8F5C68E3466FDFC77638AFC982CE (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWhirlpoolContext_t3F73896E6B69BA4DC6E5B038AA030FD7D58178F7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0 = __this->___Context_0;
+		NullCheck(L_0);
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_1;
+		L_1 = InterfaceFuncInvoker0< WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* >::Invoke(1 /* Solana.Unity.Dex.Orca.Core.WhirlpoolClient Solana.Unity.Dex.Orca.IWhirlpoolContext::get_WhirlpoolClient() */, IWhirlpoolContext_t3F73896E6B69BA4DC6E5B038AA030FD7D58178F7_il2cpp_TypeInfo_var, L_0);
+		return L_1;
+	}
+}
+// System.Void Solana.Unity.Dex.Orca.TxApi.Dex::.ctor(Solana.Unity.Dex.Orca.IWhirlpoolContext)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dex__ctor_mC6D5A89910314FE86EDDFAC403B0B8FC82EA5719 (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, RuntimeObject* ___context0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IWhirlpoolContext_t3F73896E6B69BA4DC6E5B038AA030FD7D58178F7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		RuntimeObject* L_0 = ___context0;
+		__this->___Context_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Context_0), (void*)L_0);
+		RuntimeObject* L_1 = __this->___Context_0;
+		NullCheck(L_1);
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_2;
+		L_2 = InterfaceFuncInvoker0< WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* >::Invoke(1 /* Solana.Unity.Dex.Orca.Core.WhirlpoolClient Solana.Unity.Dex.Orca.IWhirlpoolContext::get_WhirlpoolClient() */, IWhirlpoolContext_t3F73896E6B69BA4DC6E5B038AA030FD7D58178F7_il2cpp_TypeInfo_var, L_1);
+		NullCheck(L_2);
+		int32_t L_3 = L_2->___DefaultCommitment_4;
+		__this->___DefaultCommitment_1 = L_3;
+		return;
+	}
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Dex.Models.Pool> Solana.Unity.Dex.Orca.TxApi.Dex::FindWhirlpoolAddress(Solana.Unity.Wallet.PublicKey,Solana.Unity.Wallet.PublicKey,System.UInt16,Solana.Unity.Wallet.PublicKey,System.Nullable`1<Solana.Unity.Rpc.Types.Commitment>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t46A619886FB6B06F100CA319BAA0BC99D9D334AF* Dex_FindWhirlpoolAddress_m450E9AE0F9BD9FFEECC9563311ABFDC47839E155 (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___tokenMintA0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___tokenMintB1, uint16_t ___tickSpacing2, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___configAccountAddress3, Nullable_1_t8B4B69AC2D4CBAE914948398F7ADC081B0F286A0 ___commitment4, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m7B2AEA388A3AA1EA0E2F95BF49E859E34CAA3E5A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188_m07EFD72CE29FA1DBC76D11545B10A53C32DEA61D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m25F4C7C1193ECA9FB887576CB744DFF1D50F551C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m7B2AEA388A3AA1EA0E2F95BF49E859E34CAA3E5A(AsyncTaskMethodBuilder_1_Create_m7B2AEA388A3AA1EA0E2F95BF49E859E34CAA3E5A_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_2), (void*)__this);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_1 = ___tokenMintA0;
+		(&V_0)->___tokenMintA_3 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___tokenMintA_3), (void*)L_1);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_2 = ___tokenMintB1;
+		(&V_0)->___tokenMintB_4 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___tokenMintB_4), (void*)L_2);
+		uint16_t L_3 = ___tickSpacing2;
+		(&V_0)->___tickSpacing_5 = L_3;
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_4 = ___configAccountAddress3;
+		(&V_0)->___configAccountAddress_6 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___configAccountAddress_6), (void*)L_4);
+		Nullable_1_t8B4B69AC2D4CBAE914948398F7ADC081B0F286A0 L_5 = ___commitment4;
+		(&V_0)->___commitment_7 = L_5;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF* L_6 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188_m07EFD72CE29FA1DBC76D11545B10A53C32DEA61D(L_6, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CFindWhirlpoolAddressU3Ed__23_t5E491E45DB4504EE2569E16E5A627C7F24A83188_m07EFD72CE29FA1DBC76D11545B10A53C32DEA61D_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tA9ED4EF605C64B03C3720DD0A8B3BEBEC83730BF* L_7 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t46A619886FB6B06F100CA319BAA0BC99D9D334AF* L_8;
+		L_8 = AsyncTaskMethodBuilder_1_get_Task_m25F4C7C1193ECA9FB887576CB744DFF1D50F551C(L_7, AsyncTaskMethodBuilder_1_get_Task_m25F4C7C1193ECA9FB887576CB744DFF1D50F551C_RuntimeMethod_var);
+		return L_8;
+	}
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Dex.Quotes.SwapQuote> Solana.Unity.Dex.Orca.TxApi.Dex::GetSwapQuote(Solana.Unity.Wallet.PublicKey,Solana.Unity.Wallet.PublicKey,System.Numerics.BigInteger,System.Double,System.Boolean,System.Nullable`1<Solana.Unity.Rpc.Types.Commitment>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t07DE0CE700C40950CDE5C5935F05B83A7349B338* Dex_GetSwapQuote_mA1A0AEF6DC61BF4FB7EBB98A3985CDBB72A13961 (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___inputTokenMintAddress0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___outputTokenMintAddress1, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___tokenAmount2, double ___slippageTolerance3, bool ___amountSpecifiedIsInput4, Nullable_1_t8B4B69AC2D4CBAE914948398F7ADC081B0F286A0 ___commitment5, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB_m9FFB8D31392824BB765446E492958FFE42FE2E86_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176 L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B(AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_2), (void*)__this);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_1 = ___inputTokenMintAddress0;
+		(&V_0)->___inputTokenMintAddress_3 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___inputTokenMintAddress_3), (void*)L_1);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_2 = ___outputTokenMintAddress1;
+		(&V_0)->___outputTokenMintAddress_4 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___outputTokenMintAddress_4), (void*)L_2);
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_3 = ___tokenAmount2;
+		(&V_0)->___tokenAmount_6 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___tokenAmount_6))->____bits_7), (void*)NULL);
+		double L_4 = ___slippageTolerance3;
+		(&V_0)->___slippageTolerance_7 = L_4;
+		bool L_5 = ___amountSpecifiedIsInput4;
+		(&V_0)->___amountSpecifiedIsInput_8 = L_5;
+		Nullable_1_t8B4B69AC2D4CBAE914948398F7ADC081B0F286A0 L_6 = ___commitment5;
+		(&V_0)->___commitment_5 = L_6;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* L_7 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB_m9FFB8D31392824BB765446E492958FFE42FE2E86(L_7, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteU3Ed__26_t1A85A64E41B0E2C0253BA9B0B36659052136A0EB_m9FFB8D31392824BB765446E492958FFE42FE2E86_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* L_8 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t07DE0CE700C40950CDE5C5935F05B83A7349B338* L_9;
+		L_9 = AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A(L_8, AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A_RuntimeMethod_var);
+		return L_9;
+	}
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Dex.Quotes.SwapQuote> Solana.Unity.Dex.Orca.TxApi.Dex::GetSwapQuoteFromWhirlpool(Solana.Unity.Wallet.PublicKey,System.Numerics.BigInteger,Solana.Unity.Wallet.PublicKey,System.Double,System.Boolean,System.Nullable`1<Solana.Unity.Rpc.Types.Commitment>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t07DE0CE700C40950CDE5C5935F05B83A7349B338* Dex_GetSwapQuoteFromWhirlpool_mB94B3376BC3B4CA161AD677D6DF970C47A7F9518 (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___whirlpoolAddress0, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___tokenAmount1, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___inputTokenMintAddress2, double ___slippageTolerance3, bool ___amountSpecifiedIsInput4, Nullable_1_t8B4B69AC2D4CBAE914948398F7ADC081B0F286A0 ___commitment5, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1_mA71763E21305DD51BD2F6D96FF17221D260A3C4A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176 L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B(AsyncTaskMethodBuilder_1_Create_m36935FBDDDBFCD666AA8C8FB88C9008586E32A7B_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_2), (void*)__this);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_1 = ___whirlpoolAddress0;
+		(&V_0)->___whirlpoolAddress_3 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___whirlpoolAddress_3), (void*)L_1);
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_2 = ___tokenAmount1;
+		(&V_0)->___tokenAmount_5 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___tokenAmount_5))->____bits_7), (void*)NULL);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_3 = ___inputTokenMintAddress2;
+		(&V_0)->___inputTokenMintAddress_6 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___inputTokenMintAddress_6), (void*)L_3);
+		double L_4 = ___slippageTolerance3;
+		(&V_0)->___slippageTolerance_7 = L_4;
+		bool L_5 = ___amountSpecifiedIsInput4;
+		(&V_0)->___amountSpecifiedIsInput_8 = L_5;
+		Nullable_1_t8B4B69AC2D4CBAE914948398F7ADC081B0F286A0 L_6 = ___commitment5;
+		(&V_0)->___commitment_4 = L_6;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* L_7 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1_mA71763E21305DD51BD2F6D96FF17221D260A3C4A(L_7, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CGetSwapQuoteFromWhirlpoolU3Ed__27_t425A7B6A29C2E32A281DDD536DAD44191D4641A1_mA71763E21305DD51BD2F6D96FF17221D260A3C4A_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_t359368A605E12438CEB50DB63629E1CE7B341176* L_8 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t07DE0CE700C40950CDE5C5935F05B83A7349B338* L_9;
+		L_9 = AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A(L_8, AsyncTaskMethodBuilder_1_get_Task_m9560902E001D8CC4E9D5B4F3E40A87B77E902E8A_RuntimeMethod_var);
+		return L_9;
+	}
+}
+// System.Threading.Tasks.Task`1<System.Collections.Generic.IList`1<Solana.Unity.Dex.Models.TokenData>> Solana.Unity.Dex.Orca.TxApi.Dex::GetTokens()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tB9AFBB9CB2C40590B9F4E163E3EEC9C957962FD8* Dex_GetTokens_mB541910A55E29EE00DCA27E885BB08F0D6DADEC8 (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m956F5B87AB1FBDBF871F21D1F2424B55273C176B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2_mF6859A1D5DFE89D023FB5285B4385444F8AEFB3E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_mAE5752F2240A4222D3B08923EF4C8D73070476E6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351 L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m956F5B87AB1FBDBF871F21D1F2424B55273C176B(AsyncTaskMethodBuilder_1_Create_m956F5B87AB1FBDBF871F21D1F2424B55273C176B_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_2), (void*)__this);
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351* L_1 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2_mF6859A1D5DFE89D023FB5285B4385444F8AEFB3E(L_1, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CGetTokensU3Ed__32_tDA10E9FA8AEE22363D0FF7559A5CB6F7B6A189D2_mF6859A1D5DFE89D023FB5285B4385444F8AEFB3E_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tADD68596DFE6F92EEDF5830745D64EC47E26E351* L_2 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_tB9AFBB9CB2C40590B9F4E163E3EEC9C957962FD8* L_3;
+		L_3 = AsyncTaskMethodBuilder_1_get_Task_mAE5752F2240A4222D3B08923EF4C8D73070476E6(L_2, AsyncTaskMethodBuilder_1_get_Task_mAE5752F2240A4222D3B08923EF4C8D73070476E6_RuntimeMethod_var);
+		return L_3;
+	}
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Dex.Models.TokenData> Solana.Unity.Dex.Orca.TxApi.Dex::GetTokenBySymbol(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t1A60F1D3DC665B4C0E140E6F4723A7153A057C71* Dex_GetTokenBySymbol_mD6205CE961EECE0067937C90A01915A9535536BB (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, String_t* ___symbol0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m62A4F90FFD8CD59CAA062188312F7CC02795857F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C_mF2435FFD3E128652B5DFF66BCF578315F917CC41_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m5E60B8ECF2B1C4D988041B17CAC0BA13FAE74C2F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0 L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m62A4F90FFD8CD59CAA062188312F7CC02795857F(AsyncTaskMethodBuilder_1_Create_m62A4F90FFD8CD59CAA062188312F7CC02795857F_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		String_t* L_1 = ___symbol0;
+		(&V_0)->___symbol_2 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___symbol_2), (void*)L_1);
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0* L_2 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C_mF2435FFD3E128652B5DFF66BCF578315F917CC41(L_2, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenBySymbolU3Ed__33_t2D2DFD47455775A3A896CCE433F33D98EAA3E56C_mF2435FFD3E128652B5DFF66BCF578315F917CC41_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t1A60F1D3DC665B4C0E140E6F4723A7153A057C71* L_4;
+		L_4 = AsyncTaskMethodBuilder_1_get_Task_m5E60B8ECF2B1C4D988041B17CAC0BA13FAE74C2F(L_3, AsyncTaskMethodBuilder_1_get_Task_m5E60B8ECF2B1C4D988041B17CAC0BA13FAE74C2F_RuntimeMethod_var);
+		return L_4;
+	}
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.Dex.Models.TokenData> Solana.Unity.Dex.Orca.TxApi.Dex::GetTokenByMint(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t1A60F1D3DC665B4C0E140E6F4723A7153A057C71* Dex_GetTokenByMint_m351B314AAD20D41EA0C62DF57A44C2C24E5C1C51 (Dex_t16DB941A6F5B9ACB6AC316BD6F366236B2C0A9E8* __this, String_t* ___mint0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m62A4F90FFD8CD59CAA062188312F7CC02795857F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333_m4EE0263122BA41358ECEDD283CCB3C2FC8B8032F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m5E60B8ECF2B1C4D988041B17CAC0BA13FAE74C2F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0 L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m62A4F90FFD8CD59CAA062188312F7CC02795857F(AsyncTaskMethodBuilder_1_Create_m62A4F90FFD8CD59CAA062188312F7CC02795857F_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		String_t* L_1 = ___mint0;
+		(&V_0)->___mint_2 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___mint_2), (void*)L_1);
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0* L_2 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333_m4EE0263122BA41358ECEDD283CCB3C2FC8B8032F(L_2, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CGetTokenByMintU3Ed__34_t4569FFFF2AE0B1AF3DEA4725E12F245216B51333_m4EE0263122BA41358ECEDD283CCB3C2FC8B8032F_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_t986E2D1F17966A70465E483171D8DBB11A5969D0* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t1A60F1D3DC665B4C0E140E6F4723A7153A057C71* L_4;
+		L_4 = AsyncTaskMethodBuilder_1_get_Task_m5E60B8ECF2B1C4D988041B17CAC0BA13FAE74C2F(L_3, AsyncTaskMethodBuilder_1_get_Task_m5E60B8ECF2B1C4D988041B17CAC0BA13FAE74C2F_RuntimeMethod_var);
+		return L_4;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+>>>>>>> Game_Dev
 // System.Void Solana.Unity.Dex.Orca.TxApi.Dex/<>c__DisplayClass33_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass33_0__ctor_m13AEFE60EA4E4A1A94C5B09DAFA9EFA6DE3C644C (U3CU3Ec__DisplayClass33_0_tFA3C5237ECB39163230F65648195E551E482BDAB* __this, const RuntimeMethod* method) 
 {
@@ -8169,7 +8904,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass34_0_U3CGetTokenByM
 		TokenData_t07E7175C762D8E10668082E42C12B501B9464631* L_0 = ___t0;
 		NullCheck(L_0);
 		String_t* L_1;
+<<<<<<< HEAD
 		L_1 = TokenData_get_Mint_mDF65AA4AAE11F30D913EB902C641DA105A84807E_inline(L_0, NULL);
+=======
+		L_1 = TokenData_get_Mint_mDF65AA4AAE11F30D913EB902C641DA105A84807E(L_0, NULL);
+>>>>>>> Game_Dev
 		String_t* L_2 = __this->___mint_0;
 		bool L_3;
 		L_3 = String_Equals_mCC34895D0DB2AD440C9D8767032215BC86B5C48B(L_1, L_2, 1, NULL);
@@ -33471,6 +34210,7 @@ IL2CPP_EXTERN_C  bool BigDecimal_Equals_m6F3644EC9CFECDBC3CB1D5CA7964A134122E850
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+<<<<<<< HEAD
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TokenData_get_Symbol_mB392FE5F4C94165F334C05F5988E97B20B9E4B3C_inline (TokenData_t07E7175C762D8E10668082E42C12B501B9464631* __this, const RuntimeMethod* method) 
 {
 	{
@@ -33482,6 +34222,60 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TokenData_get_Mint_mDF6
 {
 	{
 		String_t* L_0 = __this->___U3CMintU3Ek__BackingField_1;
+=======
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* WhirlpoolContext_get_WhirlpoolClient_mA80B2695323420B7D3FE9AC4F6A49D8BDF026417_inline (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, const RuntimeMethod* method) 
+{
+	{
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_0 = __this->___U3CWhirlpoolClientU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BaseClient_get_RpcClient_mDC99C59F85131FF26A4B3A336BED28115177FAE4_inline (BaseClient_t17729739896F3595EC6D20C2273EA5558597A030* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CRpcClientU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BaseClient_get_StreamingRpcClient_m31A16EE3DE5B5391430A9D3ADAEB2B563676A46B_inline (BaseClient_t17729739896F3595EC6D20C2273EA5558597A030* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CStreamingRpcClientU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WhirlpoolContext_set_ProgramId_m27D0000640407FC2AEDF0A59C8F3E21EFD8867AA_inline (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CProgramIdU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CProgramIdU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WhirlpoolContext_set_WalletPubKey_m6E9E8390EC88C1785E9313BC4129B3C7ED653282_inline (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CWalletPubKeyU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CWalletPubKeyU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WhirlpoolContext_set_WhirlpoolClient_mB02705FE34345175DE3CC700944350DC2629B128_inline (WhirlpoolContext_tDAE1217E467E54B1513A8C16F167BCD69D91EFF7* __this, WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* ___value0, const RuntimeMethod* method) 
+{
+	{
+		WhirlpoolClient_t3C0DE980F975AD9EE9625A29A9ECFD90A180F8E4* L_0 = ___value0;
+		__this->___U3CWhirlpoolClientU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CWhirlpoolClientU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TokenData_get_Symbol_mB392FE5F4C94165F334C05F5988E97B20B9E4B3C_inline (TokenData_t07E7175C762D8E10668082E42C12B501B9464631* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CSymbolU3Ek__BackingField_1;
+>>>>>>> Game_Dev
 		return L_0;
 	}
 }

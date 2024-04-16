@@ -19,7 +19,10 @@ public class UIManager : MonoBehaviour
     public bool debugger = false;
     void Start()
     {
+<<<<<<< HEAD
         //PlayerPrefs.SetInt("Round", 1);
+=======
+>>>>>>> Game_Dev
     }
 
     // Update is called once per frame
