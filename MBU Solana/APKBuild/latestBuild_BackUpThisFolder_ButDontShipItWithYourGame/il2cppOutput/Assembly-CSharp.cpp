@@ -1156,6 +1156,7 @@ IL2CPP_EXTERN_C RuntimeClass* RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E
 IL2CPP_EXTERN_C RuntimeClass* Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RpcCluster_t2AAFB854993AA2F8AE9DC35249DAE1B16B7B5535_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StatItems_t988C47737C4B336AF6B1459F230E690B41B5EEF3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SwapScreen_t71DB4F02C74A772B0FFB4DE5AA69A0E891605553_il2cpp_TypeInfo_var;
@@ -1261,6 +1262,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9901D42AC3B146FBCA4C5340BD05D246B0736655
 IL2CPP_EXTERN_C String_t* _stringLiteral9D98CF45AE5B5E623759A6DCB43B04AC6BAE9719;
 IL2CPP_EXTERN_C String_t* _stringLiteralA05B9E25A898D8B08F4DD187E711174CB1AE99B5;
 IL2CPP_EXTERN_C String_t* _stringLiteralA15C898F015A9B0BC3268E8883CD03008A56DE26;
+IL2CPP_EXTERN_C String_t* _stringLiteralA472854151FBA7D5A0ACD2746B9D09DC3574B565;
 IL2CPP_EXTERN_C String_t* _stringLiteralA7D4EEC416AC338E6E2167EA3D26093C96A03CCD;
 IL2CPP_EXTERN_C String_t* _stringLiteralA904208C78F3D6B0DC6824912631DB979BB2A440;
 IL2CPP_EXTERN_C String_t* _stringLiteralA90A6C3F8AF2040BB342A9E9B41CC54966F1452B;
@@ -6326,12 +6328,14 @@ struct AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043  : publi
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___inventoryTransform_11;
 	// System.Boolean AddInventoryItemScript::IsSelling
 	bool ___IsSelling_12;
+	// System.Int32 AddInventoryItemScript::points
+	int32_t ___points_13;
 };
 
 struct AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields
 {
 	// AddInventoryItemScript AddInventoryItemScript::instance
-	AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* ___instance_13;
+	AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* ___instance_14;
 };
 
 // AnimationController
@@ -11150,8 +11154,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager_Start_m87A71D65F3171A58DBDDB
 		}
 	}
 	{
-		// PlayerPrefs.SetInt("Coins",500);
-		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15, ((int32_t)500), NULL);
+		// PlayerPrefs.SetInt("Coins",250);
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral1A4EE5BEF65324F81F44FB871AD37A4741D69B15, ((int32_t)250), NULL);
 		// PlayerPrefs.SetInt("MoneyAward", 1);
 		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteral54A59AEC55C8311216FED5202EEBB8B68F745614, 1, NULL);
 	}
@@ -23478,7 +23482,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddInventoryItemScript_Awake_m6C8FED29FE
 	}
 	{
 		// if (instance == null)
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_0 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_0 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
@@ -23489,8 +23493,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddInventoryItemScript_Awake_m6C8FED29FE
 	}
 	{
 		// instance = this;
-		((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13), (void*)__this);
+		((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14), (void*)__this);
 		// DontDestroyOnLoad(this.gameObject);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
 		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
@@ -23594,9 +23598,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddInventoryItemScript_AddToInventory_m4
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ItemInventory_t6E1E47FF0EEBB944349D8A2F31E8EC2E4D22463F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisItems_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA_m8C2CC4FA77A57BA8FC80139C049351A0AE66BE57_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StatItems_t988C47737C4B336AF6B1459F230E690B41B5EEF3_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3CBA5EC4AD1E65A2235695F30656AC54601566FF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA472854151FBA7D5A0ACD2746B9D09DC3574B565);
 		s_Il2CppMethodInitialized = true;
 	}
+	int32_t V_0 = 0;
 	{
 		// if(newItem != null)
 		Items_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA* L_0 = ___newItem0;
@@ -23605,24 +23612,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddInventoryItemScript_AddToInventory_m4
 		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_1)
 		{
-			goto IL_0023;
+			goto IL_0056;
 		}
 	}
 	{
+		// points = PlayerPrefs.GetInt("Points");
+		int32_t L_2;
+		L_2 = PlayerPrefs_GetInt_m4D859DBEABAD3FB406C94485A0B2638A0C7F2987(_stringLiteralA472854151FBA7D5A0ACD2746B9D09DC3574B565, NULL);
+		__this->___points_13 = L_2;
 		// Debug.Log("Reached here");
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral3CBA5EC4AD1E65A2235695F30656AC54601566FF, NULL);
-		// ItemInventory.instance.AddItem(Instantiate(newItem));
-		ItemInventory_t6E1E47FF0EEBB944349D8A2F31E8EC2E4D22463F* L_2 = ((ItemInventory_t6E1E47FF0EEBB944349D8A2F31E8EC2E4D22463F_StaticFields*)il2cpp_codegen_static_fields_for(ItemInventory_t6E1E47FF0EEBB944349D8A2F31E8EC2E4D22463F_il2cpp_TypeInfo_var))->___instance_4;
+		// StatItems currentItem = (StatItems)newItem;
 		Items_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA* L_3 = ___newItem0;
+		// int currentPoint = currentItem.points + points;
+		NullCheck(((StatItems_t988C47737C4B336AF6B1459F230E690B41B5EEF3*)CastclassClass((RuntimeObject*)L_3, StatItems_t988C47737C4B336AF6B1459F230E690B41B5EEF3_il2cpp_TypeInfo_var)));
+		int32_t L_4 = ((StatItems_t988C47737C4B336AF6B1459F230E690B41B5EEF3*)CastclassClass((RuntimeObject*)L_3, StatItems_t988C47737C4B336AF6B1459F230E690B41B5EEF3_il2cpp_TypeInfo_var))->___points_12;
+		int32_t L_5 = __this->___points_13;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_4, L_5));
+		// PlayerPrefs.SetInt("Points", currentPoint);
+		int32_t L_6 = V_0;
+		PlayerPrefs_SetInt_m956D3E2DB966F20CF42F842880DDF9E2BE94D948(_stringLiteralA472854151FBA7D5A0ACD2746B9D09DC3574B565, L_6, NULL);
+		// PlayerPrefs.Save();
+		PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE(NULL);
+		// ItemInventory.instance.AddItem(Instantiate(newItem));
+		ItemInventory_t6E1E47FF0EEBB944349D8A2F31E8EC2E4D22463F* L_7 = ((ItemInventory_t6E1E47FF0EEBB944349D8A2F31E8EC2E4D22463F_StaticFields*)il2cpp_codegen_static_fields_for(ItemInventory_t6E1E47FF0EEBB944349D8A2F31E8EC2E4D22463F_il2cpp_TypeInfo_var))->___instance_4;
+		Items_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA* L_8 = ___newItem0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Items_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA* L_4;
-		L_4 = Object_Instantiate_TisItems_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA_m8C2CC4FA77A57BA8FC80139C049351A0AE66BE57(L_3, Object_Instantiate_TisItems_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA_m8C2CC4FA77A57BA8FC80139C049351A0AE66BE57_RuntimeMethod_var);
-		NullCheck(L_2);
-		ItemInventory_AddItem_m81CDC0339829BD2AD5847D7DF15D44828956C468(L_2, L_4, NULL);
+		Items_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA* L_9;
+		L_9 = Object_Instantiate_TisItems_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA_m8C2CC4FA77A57BA8FC80139C049351A0AE66BE57(L_8, Object_Instantiate_TisItems_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA_m8C2CC4FA77A57BA8FC80139C049351A0AE66BE57_RuntimeMethod_var);
+		NullCheck(L_7);
+		ItemInventory_AddItem_m81CDC0339829BD2AD5847D7DF15D44828956C468(L_7, L_9, NULL);
 	}
 
-IL_0023:
+IL_0056:
 	{
 		// }
 		return;
@@ -24918,7 +24941,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InventoryToggle_SetupCraftingRecipes_m5F
 	CraftingSlot_tF7AE7DD993452B1B94B1C5AA162C03233254123B* V_2 = NULL;
 	{
 		// List<Items> craftingRecipes = AddInventoryItemScript.instance.CraftingReceipes;
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_0 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_0 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		NullCheck(L_0);
 		List_1_tC49EC2F1B91F15EFC8233741575214F277A959C0* L_1 = L_0->___CraftingReceipes_5;
 		// foreach(Items recipe in craftingRecipes)
@@ -25394,13 +25417,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemDrag_Start_m7BB6EB269811A5A76797EA41
 		__this->___itemSlot_4 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___itemSlot_4), (void*)L_0);
 		// hotbarRect = AddInventoryItemScript.instance.HotbarTransform as RectTransform;
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_1 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_1 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		NullCheck(L_1);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2 = L_1->___HotbarTransform_10;
 		__this->___hotbarRect_5 = ((RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*)IsInstSealed((RuntimeObject*)L_2, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___hotbarRect_5), (void*)((RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*)IsInstSealed((RuntimeObject*)L_2, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var)));
 		// inventoryRect = AddInventoryItemScript.instance.inventoryTransform as RectTransform;
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_3 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_3 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = L_3->___inventoryTransform_11;
 		__this->___inventoryRect_6 = ((RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*)IsInstSealed((RuntimeObject*)L_4, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var));
@@ -25468,7 +25491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemDrag_OnBeginDrag_m20CD72B888CD89603F
 		VirtualActionInvoker1< Color_tD001788D726C3A7F1379BEED0260B9591F440C1F >::Invoke(23 /* System.Void UnityEngine.UI.Graphic::set_color(UnityEngine.Color) */, L_3, L_4);
 		// currentPreview = Instantiate(previewPrefab, AddInventoryItemScript.instance.InventorymainCanvas);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___previewPrefab_7;
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_6 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_6 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		NullCheck(L_6);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7 = L_6->___InventorymainCanvas_9;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -27406,7 +27429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Items_Use_m3205BBBDED7A36740CA16E165FD25
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
 		// AddInventoryItemScript.instance.OnItemUse(this);
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_2 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_2 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		NullCheck(L_2);
 		AddInventoryItemScript_OnItemUse_m075A5BB55FD00D7EFFA8A3CFE7B7EC7767408623(L_2, __this, NULL);
 		// }
@@ -27687,7 +27710,7 @@ IL_0017:
 		V_0 = L_9;
 		// AddInventoryItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
 		// _items.GetItemValue(),baitValue,transform.position);
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_10 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_10 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		Items_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA* L_11 = __this->____items_5;
 		NullCheck(L_11);
 		String_t* L_12 = L_11->___name_5;
@@ -27716,7 +27739,7 @@ IL_0087:
 	{
 		// AddInventoryItemScript.instance.DisplayItemInfo(_items.name,_items.GetItemDescription(),
 		// _items.GetItemValue(),0,transform.position);
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_21 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_21 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		Items_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA* L_22 = __this->____items_5;
 		NullCheck(L_22);
 		String_t* L_23 = L_22->___name_5;
@@ -27770,7 +27793,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemSlot_OnCursorExit_m3C11E066F3646F7AC
 IL_000f:
 	{
 		// AddInventoryItemScript.instance.DestroyItemInfo();
-		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_2 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_13;
+		AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* L_2 = ((AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_StaticFields*)il2cpp_codegen_static_fields_for(AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043_il2cpp_TypeInfo_var))->___instance_14;
 		NullCheck(L_2);
 		AddInventoryItemScript_DestroyItemInfo_m32248E9F396D516510F88604F3266D181E0F2737(L_2, NULL);
 		// }
