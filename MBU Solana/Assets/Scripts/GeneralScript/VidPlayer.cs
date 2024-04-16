@@ -12,8 +12,10 @@ public class VidPlayer : MonoBehaviour
 
     private void Awake()
     {
+#if UNITY_STANDALONE || UNITY_WEBGL
         Time.timeScale = 0;
         videoPlayer = GetComponent<VideoPlayer>();
+#endif
 
     }
 
@@ -28,7 +30,9 @@ public class VidPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if UNITY_STANDALONE || UNITY_WEBGL
         videoPlayer.loopPointReached += EndVideo;
+#endif
     }
 
     public void PlayVideo()
