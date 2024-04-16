@@ -9910,8 +9910,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AddInventoryItemScript_AddToInventory_m4E87D1BE2EC48FAC832B49DDD4FD9940219171FD (AddInventoryItemScript_t6F688D4D3CAFB3DA0D0487C21DBB147FB033E043* __this, Items_t18CE2636DB829093B0F67FC7A93C14BD477DDCCA* ___newItem0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.PlayerPrefs::Save()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerPrefs_Save_m82567E045D69C838112EA204B60C144D4C1EA3AE (const RuntimeMethod* method) ;
-// System.Void VideoScript::PlayVideo()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoScript_PlayVideo_m143513B250D5DE96F0F91293B84945FB996915E1 (VideoScript_t319311C95582A9141C5B4240CF255252238A416F* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Video.VideoPlayer/EventHandler::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventHandler__ctor_mFCF62E0BB29DD3D2B2F1306BD8657E374CF60903 (EventHandler_tE1FA51515FC895E3A02E317912FBDCDCF390A411* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Video.VideoPlayer::add_loopPointReached(UnityEngine.Video.VideoPlayer/EventHandler)
@@ -18715,8 +18713,6 @@ IL_0013:
 
 IL_0052:
 	{
-		// PlayVideo();
-		VideoScript_PlayVideo_m143513B250D5DE96F0F91293B84945FB996915E1(__this, NULL);
 		// }
 		return;
 	}
@@ -18739,14 +18735,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoScript_Start_m80D4AD8B372CE58B387A6
 		EventHandler__ctor_mFCF62E0BB29DD3D2B2F1306BD8657E374CF60903(L_1, __this, (intptr_t)((void*)VideoScript_videoFinished_m0FB46CDC9169214C621CBAE7FA206444471EB2F1_RuntimeMethod_var), NULL);
 		NullCheck(L_0);
 		VideoPlayer_add_loopPointReached_m384F2CD1412D92561E7A489C05D1F78A7EC931DD(L_0, L_1, NULL);
-		// }
-		return;
-	}
-}
-// System.Void VideoScript::Update()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoScript_Update_mB6119EA1A4BB062F7BC262230E4E6A5480E07B3B (VideoScript_t319311C95582A9141C5B4240CF255252238A416F* __this, const RuntimeMethod* method) 
-{
-	{
 		// }
 		return;
 	}
