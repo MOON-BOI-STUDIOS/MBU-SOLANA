@@ -19,6 +19,7 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     public Transform HotbarTransform;
     public Transform inventoryTransform;
     public bool IsSelling;
+    private int points;
 
     #region Singleton
 
@@ -56,7 +57,13 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     {
         if(newItem != null)
         {
+            points = PlayerPrefs.GetInt("Points");
             Debug.Log("Reached here");
+            // Add PlayerPrefs for points
+            StatItems currentItem = (StatItems)newItem;
+            int currentPoint = currentItem.points + points;
+            PlayerPrefs.SetInt("Points", currentPoint);
+            PlayerPrefs.Save();
             ItemInventory.instance.AddItem(Instantiate(newItem));
         }
         /*if(numberToAdd > 0 && numberToAdd < itemList.Count)
