@@ -36,9 +36,9 @@ public class VideoScript : MonoBehaviour
             
         }
 
-//#if UNITY_WEBGL || UNITY_STANDALONE
+#if UNITY_WEBGL || UNITY_STANDALONE
         PlayVideo();
-//#endif
+#endif
     }
  
     void Start()
@@ -52,11 +52,7 @@ public class VideoScript : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
+ 
 
     public void PlayVideo()
     {
