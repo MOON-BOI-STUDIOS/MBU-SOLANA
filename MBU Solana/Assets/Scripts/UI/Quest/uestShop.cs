@@ -22,7 +22,7 @@ public class uestShop : MonoBehaviour
         {
             instance = this;
         }
-        objectiveindex = PlayerPrefs.GetInt("questComplete");
+        objectiveindex = PlayerPrefs.GetInt("questCompletefish");
     }
     public void Start()
     {
