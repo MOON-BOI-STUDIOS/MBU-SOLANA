@@ -116,6 +116,7 @@ namespace Solana.Unity.SDK.Example
             }
             else
             {
+                Debug.Log(ownedAmountTxt);
                 if (long.Parse(amountTxt.text) > long.Parse(ownedAmountTxt.text))
                 {
                     errorTxt.text = "Not enough funds for transaction.";
@@ -181,7 +182,7 @@ namespace Solana.Unity.SDK.Example
         {
             nftImage.gameObject.SetActive(false);
             nftTitleTxt.gameObject.SetActive(false);
-            ownedAmountTxt.gameObject.SetActive(false);
+            //ownedAmountTxt.gameObject.SetActive(false);
             if (data != null && data.GetType() == typeof(Tuple<TokenAccount, string, Texture2D>))
             {
                 var (tokenAccount, tokenDef, texture) = (Tuple<TokenAccount, string, Texture2D>)data;
