@@ -1805,9 +1805,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.1670282
-    width: 2.66384
-    height: 1.1713666
+    y: 0.03268945
+    width: 1.3321234
+    height: 0.26745912
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2373,9 +2373,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.1670282
-    width: 2.66384
-    height: 1.1713666
+    y: 0.03268945
+    width: 1.3321234
+    height: 0.26745912
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8857,6 +8857,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6975029137372319481, guid: 5963685b51636764990b7919155a6e03, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4a26277b4a1393046afe8108e958d91f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5963685b51636764990b7919155a6e03, type: 3}
 --- !u!1 &6340856634219620422
