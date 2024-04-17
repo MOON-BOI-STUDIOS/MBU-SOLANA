@@ -101,21 +101,21 @@ public class ChestFish : MonoBehaviour
     {
         PlayerPrefs.SetInt("ChestopenFish", (chestOpened ? 1 : 0));
         PlayerPrefs.SetInt("versions", versions);
-        if (chestOpened == true || versions == 1)
-        {
-            SpriteRenderer.sprite = chesto;
-            GetComponent<SpriteRenderer>().sprite = chesto;
-            chest.enabled = false;
+        //    if (chestOpened == true || versions == 1)
+        //    {
+        //        SpriteRenderer.sprite = chesto;
+        //        GetComponent<SpriteRenderer>().sprite = chesto;
+        //        chest.enabled = false;
 
 
-        }
-        else if (chestOpened == false || versions == 0)
-        {
-            SpriteRenderer.sprite = chestc;
-            GetComponent<SpriteRenderer>().sprite = chestc;
-            chest.enabled = true;
+        //    }
+        //    else if (chestOpened == false || versions == 0)
+        //    {
+        //        SpriteRenderer.sprite = chestc;
+        //        GetComponent<SpriteRenderer>().sprite = chestc;
+        //        chest.enabled = true;
 
-        }
+        //    }
     }
 
 

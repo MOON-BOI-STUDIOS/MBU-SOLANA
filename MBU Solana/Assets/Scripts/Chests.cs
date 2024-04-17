@@ -121,20 +121,20 @@ public class Chests : MonoBehaviour
     {
         PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
         PlayerPrefs.SetInt("mainVer", mainVer);
-        if (chestOpened == true || mainVer == 1)
-        {
-            SpriteRenderer.sprite = chesto;
-            GetComponent<SpriteRenderer>().sprite = chesto;
-            chest.enabled = false;
+        //if (chestOpened == true || mainVer == 1)
+        //{
+        //    SpriteRenderer.sprite = chesto;
+        //    GetComponent<SpriteRenderer>().sprite = chesto;
+        //    chest.enabled = false;
 
-        }
-        else if(chestOpened == false || mainVer == 0)
-        {
-            SpriteRenderer.sprite = chestc;
-            GetComponent<SpriteRenderer>().sprite = chestc;
-            chest.enabled = true;
+        //}
+        //else if(chestOpened == false || mainVer == 0)
+        //{
+        //    SpriteRenderer.sprite = chestc;
+        //    GetComponent<SpriteRenderer>().sprite = chestc;
+        //    chest.enabled = true;
 
-        }
+        //}
 
         //if (Input.GetKeyDown(KeyCode.I))
         //{
@@ -149,7 +149,7 @@ public class Chests : MonoBehaviour
     {
         //yield return new WaitForSeconds(5f);
         textobj.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         textobj.SetActive(false);
     }
 
