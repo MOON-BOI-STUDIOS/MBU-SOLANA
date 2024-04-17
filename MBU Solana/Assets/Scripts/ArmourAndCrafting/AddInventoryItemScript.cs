@@ -59,11 +59,14 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
         {
             points = PlayerPrefs.GetInt("Points");
             Debug.Log("Reached here");
-            // Add PlayerPrefs for points
-            StatItems currentItem = (StatItems)newItem;
-            int currentPoint = currentItem.points + points;
-            PlayerPrefs.SetInt("Points", currentPoint);
-            PlayerPrefs.Save();
+            // Add PlayerPrefs for points if it is a fish
+            if (string.Equals(newItem.classOfItem.ToString(), "fish"))
+            {
+                StatItems currentItem = (StatItems)newItem;
+                int currentPoint = currentItem.GetPoints() + points;
+                PlayerPrefs.SetInt("Points", currentPoint);
+                PlayerPrefs.Save();
+            }
             ItemInventory.instance.AddItem(Instantiate(newItem));
         }
         /*if(numberToAdd > 0 && numberToAdd < itemList.Count)
