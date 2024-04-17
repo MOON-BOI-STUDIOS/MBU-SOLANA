@@ -3294,11 +3294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8041513765739747396, guid: 369bdfc086f768e4785b00b8f9b8ea54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.257
+      value: 0.416
       objectReference: {fileID: 0}
     - target: {fileID: 8041513765739747396, guid: 369bdfc086f768e4785b00b8f9b8ea54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.514
+      value: -1.423
       objectReference: {fileID: 0}
     - target: {fileID: 8041513765739747396, guid: 369bdfc086f768e4785b00b8f9b8ea54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3384,7 +3384,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0592718, y: 0.21345651}
+  m_Size: {x: 1.96, y: 0.8}
   m_EdgeRadius: 0
 --- !u!1001 &1197735250
 PrefabInstance:
