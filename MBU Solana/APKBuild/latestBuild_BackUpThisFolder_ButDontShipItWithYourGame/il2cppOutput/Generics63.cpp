@@ -203,8 +203,6 @@ struct IEqualityComparer_1_t84CD58C3582484C691B22BB0E534C8ADD9B22966;
 struct IEqualityComparer_1_t28901CA89F7C7DF3DE6229DF3A87D9B107C2FA9B;
 // Newtonsoft.Json.Linq.IJEnumerable`1<Newtonsoft.Json.Linq.JToken>
 struct IJEnumerable_1_tB56BA71A043994E9EFEE673A05AE71A5ABD1914B;
-// Cysharp.Threading.Tasks.IUniTaskSource`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct IUniTaskSource_1_tE77E1363034B82176F435900A1F68BEF21B21D06;
 // Cysharp.Threading.Tasks.IUniTaskSource`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Int32>>>>>
 struct IUniTaskSource_1_t525B966515E25DB4D6827D0BD292E95F8AB2FA05;
 // Cysharp.Threading.Tasks.IUniTaskSource`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>
@@ -525,8 +523,6 @@ struct IUniTaskSource_1_tD745CD56EC6E5CB710B56755B2E0F56C83FD8F2F;
 struct IUniTaskSource_1_t78F9BD55CF948EEF6F7A1A4C7E90D6116E1CD611;
 // Cysharp.Threading.Tasks.IUniTaskSource`1<UnityEngine.Vector2>
 struct IUniTaskSource_1_t0CD0A672609127FD838731352E6BF634996445D3;
-// Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958;
 // Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Int32>>>>>
 struct IsCanceledSource_tFBBF5D34D7C1A1038C576C1C6FE3C7759707CDA3;
 // Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>
@@ -1348,13 +1344,6 @@ struct Dictionary_2_tA923EC8CA0D1A96AB2A52415403F3C0CB3A20A47  : public RuntimeO
 	ValueCollection_tDA8FAA6C5A039E7B9EB46EC61A0A6DB9F0C62E0E* ____values_8;
 	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
 	RuntimeObject* ____syncRoot_9;
-};
-
-// Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958  : public RuntimeObject
-{
-	// Cysharp.Threading.Tasks.IUniTaskSource`1<T> Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource::source
-	RuntimeObject* ___source_0;
 };
 
 // Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Int32>>>>>
@@ -7179,15 +7168,6 @@ struct Iterator_1_t663C454E8122995A9F7D16861978B365A00FA909  : public RuntimeObj
 	KeyValuePair_2_tF857B1C753163D05D6CE5351B5146D32C33F0B0C ___current_2;
 };
 
-// System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>
-struct ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9 
-{
-	// T1 System.ValueTuple`2::Item1
-	bool ___Item1_0;
-	// T2 System.ValueTuple`2::Item2
-	ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D ___Item2_1;
-};
-
 // System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Int32>>>>>
 struct ValueTuple_2_t080CA831DC414BEAA50894A0E00736068C362266 
 {
@@ -8314,8 +8294,6 @@ struct EntryU5BU5D_t37DFB2DDA180A7BAF641D94A30C820E39A68B359  : public RuntimeAr
 };
 
 
-// System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::.ctor(T1,T2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m35ABF89ABC32A022B198FA4C9F34EBFD4CD12773_gshared (ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9* __this, bool ___item10, ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D ___item21, const RuntimeMethod* method) ;
 // System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Int32>>>>>::.ctor(T1,T2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m3D22926A7918DC7F9385A9C0CD07022491338341_gshared (ValueTuple_2_t080CA831DC414BEAA50894A0E00736068C362266* __this, bool ___item10, ValueTuple_2_tD892015C67259A7424294FA5093B451BF8AA43CD ___item21, const RuntimeMethod* method) ;
 // System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Object>>>>>::.ctor(T1,T2)
@@ -8667,11 +8645,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mDF29F51421B71371C4B826
 
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
-// System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::.ctor(T1,T2)
-inline void ValueTuple_2__ctor_m35ABF89ABC32A022B198FA4C9F34EBFD4CD12773 (ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9* __this, bool ___item10, ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D ___item21, const RuntimeMethod* method)
-{
-	((  void (*) (ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9*, bool, ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D, const RuntimeMethod*))ValueTuple_2__ctor_m35ABF89ABC32A022B198FA4C9F34EBFD4CD12773_gshared)(__this, ___item10, ___item21, method);
-}
 // System.Void System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Object,System.Int32>>>>>::.ctor(T1,T2)
 inline void ValueTuple_2__ctor_m3D22926A7918DC7F9385A9C0CD07022491338341 (ValueTuple_2_t080CA831DC414BEAA50894A0E00736068C362266* __this, bool ___item10, ValueTuple_2_tD892015C67259A7424294FA5093B451BF8AA43CD ___item21, const RuntimeMethod* method)
 {
@@ -9597,150 +9570,6 @@ inline void Enumerator__ctor_mDF29F51421B71371C4B8265994E8CE7D293D28B1 (Enumerat
 {
 	((  void (*) (Enumerator_tCF6AFA80C3EDF022F00252BD5B5F78F0989EC7FB*, Dictionary_2_tA923EC8CA0D1A96AB2A52415403F3C0CB3A20A47*, const RuntimeMethod*))Enumerator__ctor_mDF29F51421B71371C4B8265994E8CE7D293D28B1_gshared)(__this, ___dictionary0, method);
 }
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::.ctor(Cysharp.Threading.Tasks.IUniTaskSource`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsCanceledSource__ctor_mB79886A5D7CDCA3FBD5CB6F62ACA256B7442398D_gshared (IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958* __this, RuntimeObject* ___source0, const RuntimeMethod* method) 
-{
-	{
-		// public IsCanceledSource(IUniTaskSource<T> source)
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
-		// this.source = source;
-		RuntimeObject* L_0 = ___source0;
-		__this->___source_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___source_0), (void*)L_0);
-		// }
-		return;
-	}
-}
-// System.ValueTuple`2<System.Boolean,T> Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::GetResult(System.Int16)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9 IsCanceledSource_GetResult_m2694ABFAACD04910E20E31FBA1D1CBA20385CCF3_gshared (IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958* __this, int16_t ___token0, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IUniTaskSource_t5AF6C202B2616C72E989C90B6E76DFEC4118174D_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	{
-		// if (source.GetStatus(token) == UniTaskStatus.Canceled)
-		RuntimeObject* L_0 = (RuntimeObject*)__this->___source_0;
-		int16_t L_1 = ___token0;
-		NullCheck((RuntimeObject*)L_0);
-		int32_t L_2;
-		L_2 = InterfaceFuncInvoker1< int32_t, int16_t >::Invoke(0 /* Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.IUniTaskSource::GetStatus(System.Int16) */, IUniTaskSource_t5AF6C202B2616C72E989C90B6E76DFEC4118174D_il2cpp_TypeInfo_var, (RuntimeObject*)L_0, L_1);
-		if ((!(((uint32_t)L_2) == ((uint32_t)3))))
-		{
-			goto IL_001f;
-		}
-	}
-	{
-		// return (true, default);
-		il2cpp_codegen_initobj((&V_1), sizeof(ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D));
-		ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D L_3 = V_1;
-		ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9 L_4;
-		memset((&L_4), 0, sizeof(L_4));
-		ValueTuple_2__ctor_m35ABF89ABC32A022B198FA4C9F34EBFD4CD12773((&L_4), (bool)1, L_3, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		return L_4;
-	}
-
-IL_001f:
-	{
-		// var result = source.GetResult(token);
-		RuntimeObject* L_5 = (RuntimeObject*)__this->___source_0;
-		int16_t L_6 = ___token0;
-		NullCheck(L_5);
-		ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D L_7;
-		L_7 = InterfaceFuncInvoker1< ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D, int16_t >::Invoke(0 /* T Cysharp.Threading.Tasks.IUniTaskSource`1<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::GetResult(System.Int16) */, il2cpp_rgctx_data(method->klass->rgctx_data, 2), L_5, L_6);
-		V_0 = L_7;
-		// return (false, result);
-		ValueTuple_2_t9EB52060F7CD034AF0DDEB9BE4446BC97B7C3A9D L_8 = V_0;
-		ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9 L_9;
-		memset((&L_9), 0, sizeof(L_9));
-		ValueTuple_2__ctor_m35ABF89ABC32A022B198FA4C9F34EBFD4CD12773((&L_9), (bool)0, L_8, /*hidden argument*/il2cpp_rgctx_method(method->klass->rgctx_data, 1));
-		return L_9;
-	}
-}
-// System.Void Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::Cysharp.Threading.Tasks.IUniTaskSource.GetResult(System.Int16)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsCanceledSource_Cysharp_Threading_Tasks_IUniTaskSource_GetResult_m4355974AA6B67E9FBFC31533A57319F61FE2C8E1_gshared (IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958* __this, int16_t ___token0, const RuntimeMethod* method) 
-{
-	{
-		// GetResult(token);
-		int16_t L_0 = ___token0;
-		ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9 L_1;
-		L_1 = ((  ValueTuple_2_t9F0D9CC318A4C064A6EF95C0F0A9DD4CA57330F9 (*) (IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958*, int16_t, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)))(__this, L_0, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		// }
-		return;
-	}
-}
-// Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::GetStatus(System.Int16)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t IsCanceledSource_GetStatus_m91C969CB430BFF3C99FD62E44FE36406AED59320_gshared (IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958* __this, int16_t ___token0, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IUniTaskSource_t5AF6C202B2616C72E989C90B6E76DFEC4118174D_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// return source.GetStatus(token);
-		RuntimeObject* L_0 = (RuntimeObject*)__this->___source_0;
-		int16_t L_1 = ___token0;
-		NullCheck((RuntimeObject*)L_0);
-		int32_t L_2;
-		L_2 = InterfaceFuncInvoker1< int32_t, int16_t >::Invoke(0 /* Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.IUniTaskSource::GetStatus(System.Int16) */, IUniTaskSource_t5AF6C202B2616C72E989C90B6E76DFEC4118174D_il2cpp_TypeInfo_var, (RuntimeObject*)L_0, L_1);
-		return L_2;
-	}
-}
-// Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::UnsafeGetStatus()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t IsCanceledSource_UnsafeGetStatus_m1C655B4C98F2038E44DAD62924F923EDB43D3B7F_gshared (IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IUniTaskSource_t5AF6C202B2616C72E989C90B6E76DFEC4118174D_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// return source.UnsafeGetStatus();
-		RuntimeObject* L_0 = (RuntimeObject*)__this->___source_0;
-		NullCheck((RuntimeObject*)L_0);
-		int32_t L_1;
-		L_1 = InterfaceFuncInvoker0< int32_t >::Invoke(3 /* Cysharp.Threading.Tasks.UniTaskStatus Cysharp.Threading.Tasks.IUniTaskSource::UnsafeGetStatus() */, IUniTaskSource_t5AF6C202B2616C72E989C90B6E76DFEC4118174D_il2cpp_TypeInfo_var, (RuntimeObject*)L_0);
-		return L_1;
-	}
-}
-// System.Void Cysharp.Threading.Tasks.UniTask`1/IsCanceledSource<System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Boolean,System.ValueTuple`2<System.Int32,System.Object>>>>>::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IsCanceledSource_OnCompleted_m2A8182D4BE59CEDEF62004740F04C13B368A3DA8_gshared (IsCanceledSource_tAC511852B3E3193F627163875DFCCBFC9311F958* __this, Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___continuation0, RuntimeObject* ___state1, int16_t ___token2, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IUniTaskSource_t5AF6C202B2616C72E989C90B6E76DFEC4118174D_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// source.OnCompleted(continuation, state, token);
-		RuntimeObject* L_0 = (RuntimeObject*)__this->___source_0;
-		Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* L_1 = ___continuation0;
-		RuntimeObject* L_2 = ___state1;
-		int16_t L_3 = ___token2;
-		NullCheck((RuntimeObject*)L_0);
-		InterfaceActionInvoker3< Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87*, RuntimeObject*, int16_t >::Invoke(1 /* System.Void Cysharp.Threading.Tasks.IUniTaskSource::OnCompleted(System.Action`1<System.Object>,System.Object,System.Int16) */, IUniTaskSource_t5AF6C202B2616C72E989C90B6E76DFEC4118174D_il2cpp_TypeInfo_var, (RuntimeObject*)L_0, L_1, L_2, L_3);
-		// }
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

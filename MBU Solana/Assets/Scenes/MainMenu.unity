@@ -3041,7 +3041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1479888382
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5161,23 +5161,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_DataSource
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_SkipOnDrop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 8400000, guid: 045a3a5fe75fa4f78b6163285b4e9242, type: 2}
+      objectReference: {fileID: 8400000, guid: bd9eb749b3121a84a812c96735685727, type: 2}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_WaitForFirstFrame
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}

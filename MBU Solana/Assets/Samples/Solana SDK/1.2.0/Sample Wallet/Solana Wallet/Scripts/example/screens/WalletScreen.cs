@@ -126,6 +126,7 @@ namespace Solana.Unity.SDK.Example
 
         private void RefreshWallet()
         {
+            Debug.Log("Refresh Wallet");
             Web3.UpdateBalance().Forget();
             GetOwnedTokenAccounts().AsAsyncUnitUniTask().Forget();
         }
@@ -196,6 +197,8 @@ namespace Solana.Unity.SDK.Example
             //toPublicTxt.interactable = false;
             //PaymentInfo.requiredAmount = PaymentInfo.requiredAmount;
             //amountTxt.interactable = false;
+            Debug.Log("Inside Wallet transaction" + bonkTokenAccount.ToString());
+            PaymentInfo.account = bonkTokenAccount;
 
             manager.ShowScreen(this, "transfer_screen",Tuple.Create(bonkTokenAccount, BonkMintAddress, _texture));
         }
@@ -214,12 +217,15 @@ namespace Solana.Unity.SDK.Example
             //toPublicTxt.interactable = false;
             PaymentInfo.requiredAmount = PaymentInfo.requiredAmount * 0.000027;
             //amountTxt.interactable = false;
+            Debug.Log("Inside Wallet transaction" + bonkTokenAccount.ToString());
+            PaymentInfo.account = usdcTokenAccount;
 
             manager.ShowScreen(this, "transfer_screen", Tuple.Create(usdcTokenAccount, USDCMintAddress, _texture));
         }
 
         private async UniTask GetOwnedTokenAccounts()
         {
+            Debug.Log("Get Owned Token Accounts");
             if(_isLoadingTokens) return;
             _isLoadingTokens = true;
             var tokens = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
@@ -276,10 +282,12 @@ namespace Solana.Unity.SDK.Example
                     }
                     if (item.Account.Data.Parsed.Info.Mint == BonkMintAddress)
                     {
+                        Debug.Log("Get Owned token account if they have bonk");
                         bonkTokenAccount = item;
                     }
                     if (item.Account.Data.Parsed.Info.Mint == USDCMintAddress)
                     {
+                        Debug.Log("Get Owned token account if they have USDC");
                         usdcTokenAccount = item;
                     }
                 }
@@ -298,6 +306,7 @@ namespace Solana.Unity.SDK.Example
 
         public override void ShowScreen(object data = null)
         {
+            Debug.Log("Show Screen ");
             base.ShowScreen();
             gameObject.SetActive(true);
             GetOwnedTokenAccounts().Forget();

@@ -48,17 +48,27 @@ namespace Solana.Unity.SDK.Example
             {
                 manager.ShowScreen(this, "wallet_screen");
             });
+            if (_transferTokenAccount == null)
+            {
+                Debug.Log("Transfer token is Null");
+            }
+            else
+            {
+                Debug.Log("_transfer Token Account Start function" + _transferTokenAccount.ToString());
+            }
         }
-        public void OnEnable()
+        private void OnEnable()
         {
             toPublicTxt.text = PaymentInfo.publicKey;
             toPublicTxt.interactable = false;
             amountTxt.text = PaymentInfo.requiredAmount.ToString();
             amountTxt.interactable = false;
+            _transferTokenAccount = PaymentInfo.account;
 
         }
         private void TryTransfer()
         {
+            Debug.Log("_transfer Token Account in Try function" + _transferTokenAccount);
             if (_nft != null)
             {
                 TransferNft();
@@ -108,6 +118,9 @@ namespace Solana.Unity.SDK.Example
 
             if (_transferTokenAccount == null)
             {
+                Debug.Log("_transferTokenAccount == null == true");
+                Debug.Log("Amount text:" + amountTxt);
+                Debug.Log("Amount in sol:"+ _ownedSolAmount);
                 if (float.Parse(amountTxt.text) > _ownedSolAmount)
                 {
                     errorTxt.text = "Not enough funds for transaction.";
@@ -116,7 +129,9 @@ namespace Solana.Unity.SDK.Example
             }
             else
             {
-                Debug.Log(ownedAmountTxt);
+                Debug.Log("else part of _transferTokenAccount == null");
+                Debug.Log("Owned amount:"+ownedAmountTxt);
+
                 if (long.Parse(amountTxt.text) > long.Parse(ownedAmountTxt.text))
                 {
                     errorTxt.text = "Not enough funds for transaction.";
@@ -182,7 +197,7 @@ namespace Solana.Unity.SDK.Example
         {
             nftImage.gameObject.SetActive(false);
             nftTitleTxt.gameObject.SetActive(false);
-            //ownedAmountTxt.gameObject.SetActive(false);
+            ownedAmountTxt.gameObject.SetActive(false);
             if (data != null && data.GetType() == typeof(Tuple<TokenAccount, string, Texture2D>))
             {
                 var (tokenAccount, tokenDef, texture) = (Tuple<TokenAccount, string, Texture2D>)data;
@@ -221,6 +236,7 @@ namespace Solana.Unity.SDK.Example
 
         public override void HideScreen()
         {
+            Debug.Log("HideScreen is called");
             base.HideScreen();
             _transferTokenAccount = null;
             gameObject.SetActive(false);

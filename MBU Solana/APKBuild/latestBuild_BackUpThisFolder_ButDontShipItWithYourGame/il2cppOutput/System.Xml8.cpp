@@ -9213,7 +9213,7 @@ IL_021a:
 		RuntimeObject* L_124 = ___memberValue1;
 		NullCheck(L_123);
 		bool L_125;
-		L_125 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_123, L_124);
+		L_125 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_123, L_124);
 		if (L_125)
 		{
 			goto IL_024a;
@@ -9402,7 +9402,7 @@ IL_008f:
 		Type_t* L_35 = V_0;
 		NullCheck(L_35);
 		Type_t* L_36;
-		L_36 = VirtualFuncInvoker0< Type_t* >::Invoke(117 /* System.Type System.Type::get_BaseType() */, L_35);
+		L_36 = VirtualFuncInvoker0< Type_t* >::Invoke(116 /* System.Type System.Type::get_BaseType() */, L_35);
 		V_0 = L_36;
 	}
 
@@ -13961,7 +13961,7 @@ IL_00b3_1:
 				RuntimeObject* L_37 = ___memberValue1;
 				NullCheck(L_36);
 				bool L_38;
-				L_38 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(120 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_36, L_37);
+				L_38 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(119 /* System.Boolean System.Type::IsInstanceOfType(System.Object) */, L_36, L_37);
 				if (!L_38)
 				{
 					goto IL_00fb_1;

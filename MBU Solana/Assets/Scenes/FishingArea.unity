@@ -8045,7 +8045,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 642462190}
         m_TargetAssemblyTypeName: VideoScript, Assembly-CSharp
-        m_MethodName: EndVideo
+        m_MethodName: videoFinished
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 6210402978520942207}
@@ -15017,7 +15017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
@@ -18872,7 +18872,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 1
+  m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources:
@@ -18883,10 +18883,10 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
-  m_SkipOnDrop: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 0
   m_Looping: 0
-  m_WaitForFirstFrame: 0
+  m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
 --- !u!1001 &6634853444709245795
