@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 634602bdaa672e44f9e632f9262ae128, type: 3}
-  m_Name: New Special Card
+  m_Name: decrease enemy attack next round
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Decrease enemy attack next round
   art: {fileID: 0}
   description: 
   cost: 0
+  Rarity: 0
+  ID_SpecialAction: 0
   cardType: 2
