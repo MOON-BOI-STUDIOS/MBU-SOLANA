@@ -10,6 +10,9 @@ public class SpecialCard : ScriptableObject
     [TextArea(0, 100)]
     public string description;
     public int cost;
-    public CardType cardType;
     public int Rarity;
+    public int ID_SpecialAction;
+    public CardType cardType;
+   
+
 }

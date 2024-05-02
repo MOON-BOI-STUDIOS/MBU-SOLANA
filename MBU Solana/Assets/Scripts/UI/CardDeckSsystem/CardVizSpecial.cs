@@ -9,23 +9,24 @@ public class CardVizRPS : MonoBehaviour
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
     public Image art;
-    public TextMeshProUGUI damage;
-    public TextMeshProUGUI cost;
 
-    public RPS cardObject;
+    public RPS co;
 
 
     private void Start()
     {
-        LoadCard(cardObject);
+        LoadCard();
+        Debug.Log("Working");
+
+
     }
-    public void LoadCard(RPS co) 
+    public void LoadCard() 
     {
-        cardObject = co;
+        
         title.text = co.cardName;
         description.text = co.description;
-        art = co.art;
-        cost.text = co.cost.ToString();
+        art.sprite = co.art.sprite;
+        Debug.Log(art);
 
     }
 

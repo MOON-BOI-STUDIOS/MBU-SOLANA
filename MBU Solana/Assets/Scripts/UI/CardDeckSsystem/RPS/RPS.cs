@@ -10,5 +10,6 @@ public class RPS : ScriptableObject
     [TextArea(0, 100)]
     public string description;
     public int cost;
+    public int ID_RPS;
     public CardType cardType;
 }

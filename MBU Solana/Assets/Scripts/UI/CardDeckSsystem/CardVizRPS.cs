@@ -9,8 +9,7 @@ public class CardVizSpecial : MonoBehaviour
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
     public Image art;
-    public TextMeshProUGUI damage;
-    public TextMeshProUGUI cost;
+
 
     public SpecialCard cardObject;
 
@@ -25,7 +24,7 @@ public class CardVizSpecial : MonoBehaviour
         title.text = co.cardName;
         description.text = co.description;
         art = co.art;
-        cost.text = co.cost.ToString();
+
 
     }
 

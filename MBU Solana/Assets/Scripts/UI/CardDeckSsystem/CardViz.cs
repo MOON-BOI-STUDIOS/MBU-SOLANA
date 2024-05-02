@@ -9,8 +9,8 @@ public class CardViz : MonoBehaviour
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
     public Image art;
-    public TextMeshProUGUI damage;
-    public TextMeshProUGUI cost;
+   
+
 
     public CardObject cardObject;
 
@@ -25,8 +25,7 @@ public class CardViz : MonoBehaviour
         title.text = co.cardName;
         description.text = co.description;
         art = co.art;
-        damage.text = co.damage.ToString();
-        cost.text = co.cost.ToString();
+
 
     }
 

@@ -11,6 +11,8 @@ public class CardObject : ScriptableObject
     public string description;
     public int cost;
     public int damage;
+    public int ID_BasicAction;
     public CardType cardType;
+   
 }
  
