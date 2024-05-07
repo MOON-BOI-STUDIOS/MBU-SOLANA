@@ -17,11 +17,15 @@ public static class TurnOptions
         HeavyAttack,
     };
 
-    public enum PhaseDefenceTurns
+    public enum PhaseDefenceTurns //PhaseSpecialAbilityOptions
     {
         DoubleAttack,
+        PlayerIncreseDamage,
+        DecreaseEnemyAttack,
         BlockAttack,
-        OtherSpecialCard
+        HealPortionOfHealth,
+        HealMaxHealth,
+        EnemyDefenceReducedOnNextRound
     }
 }
 

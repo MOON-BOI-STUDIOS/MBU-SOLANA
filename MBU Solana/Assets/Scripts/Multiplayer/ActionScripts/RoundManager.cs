@@ -28,15 +28,15 @@ public class RoundManager : MonoBehaviour
     public void OnRoundStart()
     {
         StartCoroutine(CountDownTimer());
+        NumberOfPhases += 1;
         OpenForPlayerChoice();
         PhaseStart = true;
-        NumberOfPhases += 1;
     }
 
     IEnumerator CountDownTimer()
     {
-        yield return new WaitForSeconds(5.0f);
-        if (NumberOfPhases <= 3)
+        yield return new WaitForSeconds(10.0f);
+        if (NumberOfPhases >= 3)
         {
             StartRoundResultCalculation();
         }
@@ -55,16 +55,19 @@ public class RoundManager : MonoBehaviour
         // Enable UI input with Buttons
         if (NumberOfPhases == 1)
         {
+            Debug.Log("Choose for Phase 1");
             // Open Rock Paper Scissor
             CardManager.openRPS();
         }
         else if (NumberOfPhases == 2)
         {
+            Debug.Log("Choose for Phase 2");
             //Open Normal Card Selection with choice of Light Attack Heavy Attack and Attack
             CardManager.OpenNormal();
         }
         else
         {
+            Debug.Log("Choose for Phase 3");
             // Open Choice for Double Attack, Block Attack and Other Special Attack
             CardManager.OpenSpecial();
         }
@@ -72,6 +75,7 @@ public class RoundManager : MonoBehaviour
 
     void CloseForPlayerChoice()
     {
+        Debug.Log("Stop Choosing");
         // Disable Ui input with Buttons
         PhaseStart = false;
         StartCoroutine(CountDownTimer());

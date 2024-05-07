@@ -24,7 +24,7 @@ public class CardManager : MonoBehaviour
     public void Start()
     {
         Debug.Log("cards are intialised");
-        cardchoice = cardChoice.Default;
+        //cardchoice = cardChoice.Default;
 
         int rn = Random.Range(0, 7);
 
@@ -34,6 +34,7 @@ public class CardManager : MonoBehaviour
 
     public void openRPS()
     {
+        Debug.Log("Open RPS");
         cardchoice = cardChoice.RPS;
         cardselection = 1;
     }
@@ -99,7 +100,7 @@ public class CardManager : MonoBehaviour
                 {
                     cv.gameObject.SetActive(true);
                 }
-                Debug.Log("Open cards");
+                //Debug.Log("Open cards");
                 foreach (CardVizRPS c in cardVizRPs)
                 {
                     c.gameObject.SetActive(false);
@@ -108,11 +109,11 @@ public class CardManager : MonoBehaviour
                 {
                     cs.gameObject.SetActive(false);
                 }
-                Debug.Log("other cards are closed");
+                //Debug.Log("other cards are closed");
                 shufflebutton.SetActive(false);
                 break;
             case cardChoice.RPS:
-                Debug.Log("Open cards");
+                //Debug.Log("Open cards");
                 foreach (CardVizRPS c in cardVizRPs)
                 {
                     c.gameObject.SetActive(true);
@@ -125,16 +126,19 @@ public class CardManager : MonoBehaviour
                 {
                     cs.gameObject.SetActive(false);
                 }
-                Debug.Log("other cards are closed");
+                //Debug.Log("other cards are closed");
                 shufflebutton.SetActive(false);
                 break;
             case cardChoice.Special:
-
+                foreach (CardViz cv in cardVizs)
+                {
+                    cv.gameObject.SetActive(false);
+                }
                 foreach (CardVizRPS c in cardVizRPs)
                 {
                     c.gameObject.SetActive(false);
                 }
-                Debug.Log("other cards are closed");
+                //Debug.Log("other cards are closed");
                 shufflebutton.SetActive(true);
                 break;
             case cardChoice.Default:

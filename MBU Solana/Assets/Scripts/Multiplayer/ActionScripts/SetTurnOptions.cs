@@ -46,8 +46,28 @@ public class SetTurnOptions : MonoBehaviour
         roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.BlockAttack;
     }
 
-    public void OnChosenSpecialCard()
+    public void OnChosenPlayerIncreaseDamage()
     {
-        roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.OtherSpecialCard;
+        roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage;
+    }
+
+    public void OnChosenDecreaseEnemyAttack()
+    {
+        roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack;
+    }
+
+    public void OnChosenHealPortionOfHealth()
+    {
+        roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.HealPortionOfHealth;
+    }
+
+    public void OnChosenHealMaxHealth()
+    {
+        roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.HealMaxHealth;
+    }
+
+    public void OnChosenEnemyDefenceReducedNextRound()
+    {
+        roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound;
     }
 }

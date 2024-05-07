@@ -5,8 +5,6 @@ using UnityEngine;
 public class Phase1Turns : MonoBehaviour, ITurnOptionsMethods
 {
 
-    public RoundScript roundScript;
-
     public int OnPhase1Options(GameObject Selector, GameObject OtherPlayer) // 0 -> Host player/ 1st player, 1-> client Player/ Enemy, 2-> tie
     {
         //Tie Option both the player and enemy selected same Option

@@ -9,19 +9,19 @@ public class RoundScript : MonoBehaviour
 
     public ITurnOptionsMethods turnOptionsMethods;
 
-    PhaseDefenceOptions phase;
+    PhaseSpecialAbilityOptions phase;
 
     // Start is called before the first frame update
     void Start()
     {
         // Add If statement if locally controlled find the Player manager of the Owner and get a referenc of the Script
-        playerManagerScript = GameObject.Find("Player");
+        playerManagerScript = GameObject.FindGameObjectWithTag("Player");
         //get the Enemy in case of single player and incase of multiplayer get the other player
-        enemyManagerScript = GameObject.Find("Enemy");
+        //enemyManagerScript = GameObject.Find("Enemy");
         //To Get Iterface for Rock Paper Scissor logic
         turnOptionsMethods = GetComponent<ITurnOptionsMethods>();
         // For Phase Logic
-        phase = GetComponent<PhaseDefenceOptions>();
+        phase = GetComponent<PhaseSpecialAbilityOptions>();
     }
 
     // Update is called once per frame
