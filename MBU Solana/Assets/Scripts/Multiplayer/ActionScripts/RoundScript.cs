@@ -66,7 +66,12 @@ public class RoundScript : MonoBehaviour
             // For Phase 2 and 3 Attacks of Enemy
             phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
         }
+
+        // This will happen for 3 rounds
+        //Call OnRoundStart Once again
     }
+
+
 
     /*public void OnOptionSelected(TurnOptions.Turns _turns, GameObject Selector, GameObject OtherPlayer )
     {
