@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: 'Heal max health '
   art: {fileID: 0}
-  description: 
+  description: this is a test
   cost: 0
   Rarity: 0
-  ID_SpecialAction: 0
+  ID_SpecialAction: 106
   cardType: 2

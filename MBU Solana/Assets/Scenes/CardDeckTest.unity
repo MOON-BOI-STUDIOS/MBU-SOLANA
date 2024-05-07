@@ -7327,6 +7327,8 @@ MonoBehaviour:
   - {fileID: 1141563620}
   - {fileID: 897518949}
   - {fileID: 1429519026}
+  - {fileID: 2056904140}
+  - {fileID: 1377280000}
   enemyAttacks:
   - {fileID: 1560884599}
   - {fileID: 1497657957}

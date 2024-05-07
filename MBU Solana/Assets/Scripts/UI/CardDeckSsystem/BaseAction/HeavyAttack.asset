@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561e9d46e27d3184aa8d02cfd58c19fc, type: 3}
   m_Name: HeavyAttack
   m_EditorClassIdentifier: 
-  cardName: 
+  cardName: Heavy Attack
   art: {fileID: 0}
-  description: 
+  description: this is a test
   cost: 0
   damage: 0
+  ID_BasicAction: 5
   cardType: 1

@@ -16,7 +16,7 @@ public class CardManager : MonoBehaviour
     public cardChoice cardchoice;
     public int cardselection;
     public GameObject shufflebutton;
-   
+
 
 
 
@@ -27,9 +27,9 @@ public class CardManager : MonoBehaviour
         cardchoice = cardChoice.Default;
 
         int rn = Random.Range(0, 7);
-    
-        
-     
+
+
+
     }
 
     public void openRPS()
@@ -70,26 +70,25 @@ public class CardManager : MonoBehaviour
         }
         else if (cardselection == 3)
         {
-            Debug.Log("Card are shuffled ahhhh special");
-            int ra = Random.Range(0, enemyAttacks.Length);
-            enemyAttacks[ra].gameObject.SetActive(true);
-            int rb = Random.Range(0, enemyBlocks.Length);
-            enemyBlocks[rb].gameObject.SetActive(true);
-            int rd = Random.Range(0, enemyDefends.Length);
-            enemyDefends[rd].gameObject.SetActive(true);
-
             foreach (CardVizSpecial cs in cardVizSpecials)
             {
                 cs.gameObject.SetActive(false);
             }
-          
-
-
-
-
-
         }
+
+        Debug.Log("Card are shuffled ahhhh special");
+        int ra = Random.Range(0, enemyAttacks.Length);
+        enemyAttacks[ra].gameObject.SetActive(true);
+        int rb = Random.Range(0, enemyBlocks.Length);
+        enemyBlocks[rb].gameObject.SetActive(true);
+        int rd = Random.Range(0, enemyDefends.Length);
+        enemyDefends[rd].gameObject.SetActive(true);
     }
+
+
+
+    
+    
 
     public void Update()
     {

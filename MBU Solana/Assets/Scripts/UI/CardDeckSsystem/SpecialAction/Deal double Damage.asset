@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Deal double Damage
   art: {fileID: 0}
-  description: 
+  description: this is a test
   cost: 0
   Rarity: 0
-  ID_SpecialAction: 0
+  ID_SpecialAction: 8
   cardType: 2
