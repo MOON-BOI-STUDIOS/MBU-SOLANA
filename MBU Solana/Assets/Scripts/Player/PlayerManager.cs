@@ -40,7 +40,9 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     //Inventory Additions Array
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
 
-    public TurnOptions.Turns selectedOption;
+    private TurnOptions.Phase1Turns Phase1Turns;
+    private TurnOptions.PhaseAttackTurns Phase2Turns;
+    private TurnOptions.PhaseDefenceTurns Phase3Turns;
 
     public enum OptionSelected
     {
@@ -243,14 +245,22 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         
     }
 
-    public void SetSelectedOptions(TurnOptions.Turns option)
+    public TurnOptions.Phase1Turns Phase1Options
     {
-        selectedOption = option;
+        get { return Phase1Turns; }
+        set { Phase1Turns = value; }
     }
 
-    public TurnOptions.Turns GetSelectedOption()
+    public TurnOptions.PhaseAttackTurns Phase2Options
     {
-        return selectedOption;
+        get { return Phase2Turns; }
+        set { Phase2Turns = value; }
+    }
+
+    public TurnOptions.PhaseDefenceTurns Phase3Options
+    {
+        get { return Phase3Turns; }
+        set { Phase3Turns = value; }
     }
 
     public void OnNoDamage()

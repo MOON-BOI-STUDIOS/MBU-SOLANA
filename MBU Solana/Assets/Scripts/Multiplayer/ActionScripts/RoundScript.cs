@@ -7,7 +7,9 @@ public class RoundScript : MonoBehaviour
     private GameObject playerManagerScript;
     private GameObject enemyManagerScript;
 
+    public ITurnOptionsMethods turnOptionsMethods;
 
+    PhaseDefenceOptions phase;
 
     // Start is called before the first frame update
     void Start()
@@ -16,17 +18,16 @@ public class RoundScript : MonoBehaviour
         playerManagerScript = GameObject.Find("Player");
         //get the Enemy in case of single player and incase of multiplayer get the other player
         enemyManagerScript = GameObject.Find("Enemy");
+        //To Get Iterface for Rock Paper Scissor logic
+        turnOptionsMethods = GetComponent<ITurnOptionsMethods>();
+        // For Phase Logic
+        phase = GetComponent<PhaseDefenceOptions>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    public void OnRoundStarted()
-    {
-
     }
 
     public PlayerManager GetPlayerScript()
@@ -41,14 +42,33 @@ public class RoundScript : MonoBehaviour
 
     public void OnCalculationOfResult()
     {
-        // Get the option Selected by the player
-        OnOptionSelected(playerManagerScript.GetComponent<PlayerManager>().GetSelectedOption(), playerManagerScript, enemyManagerScript);
-
-        //Get the option Selected by the Enemy
-        OnOptionSelected(enemyManagerScript.GetComponent<PlayerManager>().GetSelectedOption(), enemyManagerScript, playerManagerScript);
+        // Calculation of Phase1
+        int PlayerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
+        // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
+        if (PlayerNumber == 2)
+        {
+            // For Phase 2 and 3 Attacks of player
+            phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);// Check the Definition of PhaseOptions
+            // For Phase 2 and 3 Attacks of Enemy
+            phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);// true is used to call both the phases
+        }
+        else if (PlayerNumber == 0)
+        {
+            // For Phase 2 and 3 Attacks of player
+            phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);
+            // For only Phase 2 Attack
+            phase.PhaseOptions(enemyManagerScript, playerManagerScript, false);
+        }
+        else if(PlayerNumber == 1)
+        {
+            // For only Phase 2 Attack
+            phase.PhaseOptions(playerManagerScript, enemyManagerScript, false);
+            // For Phase 2 and 3 Attacks of Enemy
+            phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
+        }
     }
 
-    public void OnOptionSelected(TurnOptions.Turns _turns, GameObject Selector, GameObject OtherPlayer )
+    /*public void OnOptionSelected(TurnOptions.Turns _turns, GameObject Selector, GameObject OtherPlayer )
     {
         switch (_turns)
         {
@@ -84,5 +104,5 @@ public class RoundScript : MonoBehaviour
                 // Reduce Enemy Damage on Player next round
                 break;
         }
-    }
+    }*/
 }

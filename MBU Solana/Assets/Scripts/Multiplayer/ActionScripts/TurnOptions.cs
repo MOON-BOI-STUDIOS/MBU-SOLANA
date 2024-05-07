@@ -3,14 +3,34 @@
 
 public static class TurnOptions
 {
-    public enum Turns
+    public enum Phase1Turns
     {
-        BlockEnemyDamage,
+        Rock,
+        Paper,
+        Scissor
+    };
+
+    public enum PhaseAttackTurns
+    {
+        Attack,
+        LightAttack,
+        HeavyAttack,
+    };
+
+    public enum PhaseDefenceTurns
+    {
+        DoubleAttack,
+        BlockAttack,
+        OtherSpecialCard
+    }
+}
+
+/*
+      BlockEnemyDamage,
         IncreasePlayerDefence,
         HealPortionHealth,
         HealMaxHealth,
         DoubleDamage,
         NxtRdReduceEnemyDefence,
         NxtRdReduceEnemyAttack
-    };
-}
+ */
