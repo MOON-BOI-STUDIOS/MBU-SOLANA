@@ -7678,6 +7678,8 @@ MonoBehaviour:
   startLocation: []
   isPoweredUp: 0
   enemies: {fileID: 0}
+  selectedOption: 0
+  Option: 1
 --- !u!114 &3482781816479680323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9457,7 +9459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905097600670, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905197117974, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: OutputAudioMixerGroup

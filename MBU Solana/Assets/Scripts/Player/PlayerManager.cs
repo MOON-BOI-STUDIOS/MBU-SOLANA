@@ -15,6 +15,8 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public PlayerCombat _combat;
     public float maxHealth = 500;
     public float health = 500;
+    private float Defence = 100.0f;
+    private float MAX_DEFENCE = 100.0f;
     
     public TextMeshProUGUI coinsText;
     public Transform healthIndicator;
@@ -37,6 +39,16 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
     //Inventory Additions Array
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
+
+    public TurnOptions.Turns selectedOption;
+
+    public enum OptionSelected
+    {
+        NoDamage,
+        Default
+    };
+
+    public OptionSelected Option = OptionSelected.Default;
 
     private void Awake()
     {
@@ -229,6 +241,73 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             inv[invItemNumber].DisplayInventoryItem();
         }
         
+    }
+
+    public void SetSelectedOptions(TurnOptions.Turns option)
+    {
+        selectedOption = option;
+    }
+
+    public TurnOptions.Turns GetSelectedOption()
+    {
+        return selectedOption;
+    }
+
+    public void OnNoDamage()
+    {
+        Option = OptionSelected.NoDamage;
+    }
+
+    public void OnChangeHealth(float num, bool Isincreased)
+    {
+        if (Isincreased)
+        {
+            health = health + num;
+        }
+        else if (Option == OptionSelected.NoDamage)
+        {
+            return;
+        }
+        else if (Defence != 0.0f)
+        {
+            OnChangeDefence(40, false);
+        }
+        else
+        { 
+            health = health - num;
+        }
+
+        // Clamp health between min and max limits
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
+        else if (health < 0.0f)
+        {
+            health = 0.0f;
+        }
+    }
+
+    public void OnChangeDefence(float num, bool Isincreased)
+    {
+        if (Isincreased)
+        {
+            Defence = Defence + num;
+        }
+        else
+        {
+            Defence = Defence - num;
+        }
+
+        // Clamp health between min and max limits
+        if (Defence > MAX_DEFENCE)
+        {
+            Defence = MAX_DEFENCE;
+        }
+        else if (Defence < 0.0f)
+        {
+            Defence = 0.0f;
+        }
     }
 
 }
