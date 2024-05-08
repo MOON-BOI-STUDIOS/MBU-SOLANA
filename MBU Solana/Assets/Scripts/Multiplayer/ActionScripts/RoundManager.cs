@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class RoundManager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class RoundManager : MonoBehaviour
     private int NumberOfPhases = 0;
     private RoundScript RoundScript;
 
+    public TextMeshProUGUI time;
+    public float timeRemaining = 10;
+    public bool timerIsRunning = false;
 
     public CardManager CardManager;
 
@@ -22,8 +26,34 @@ public class RoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (timerIsRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                DisplayTime(timeRemaining);
+            }
+            else
+            {
+                Debug.Log("Time has run out!");
+                timeRemaining = 0;
+                timerIsRunning = false;
+            }
+        }
     }
+
+
+  
+
+    public void DisplayTime(float timeToDisplay)
+    {
+        timeToDisplay += 1;
+        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+
+        time.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
 
     public void OnRoundStart()
     {
@@ -35,7 +65,9 @@ public class RoundManager : MonoBehaviour
 
     IEnumerator CountDownTimer()
     {
+      
         yield return new WaitForSeconds(10.0f);
+
         if (NumberOfPhases >= 3)
         {
             StartRoundResultCalculation();
@@ -48,6 +80,7 @@ public class RoundManager : MonoBehaviour
         {
             OnRoundStart();
         }
+        yield return true;
     }
 
     void OpenForPlayerChoice()
@@ -78,6 +111,7 @@ public class RoundManager : MonoBehaviour
         Debug.Log("Stop Choosing");
         // Disable Ui input with Buttons
         PhaseStart = false;
+        timerIsRunning = true;
         StartCoroutine(CountDownTimer());
     }
 
