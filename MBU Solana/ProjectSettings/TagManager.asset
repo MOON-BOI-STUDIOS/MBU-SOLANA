@@ -17,6 +17,7 @@ TagManager:
   - FishingZone
   - FishermanSpot
   - InventoryObject
+  - Enemy
   layers:
   - Default
   - TransparentFX

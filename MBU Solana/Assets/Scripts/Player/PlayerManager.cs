@@ -15,9 +15,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public PlayerCombat _combat;
     public float maxHealth = 500;
     public float health = 500;
-    private float Defence = 100.0f;
+    private float Defence = 90.0f;
     private float MAX_DEFENCE = 100.0f;
-    
+
+    public Transform DefenceIndicator;
     public TextMeshProUGUI coinsText;
     public Transform healthIndicator;
     public TextMeshProUGUI healthNumber;
@@ -92,7 +93,12 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             //displays number of coins the player has
             if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
             if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
-        
+
+        if (curSceneName == "PVP_BattleArena")
+        {
+            //updates the health bar according to current health
+            DefenceIndicator.localScale = new Vector3(Defence / MAX_DEFENCE, DefenceIndicator.localScale.y, DefenceIndicator.localScale.z);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
