@@ -61,11 +61,12 @@ public class RoundManager : MonoBehaviour
         NumberOfPhases += 1;
         OpenForPlayerChoice();
         PhaseStart = true;
+       
     }
 
     IEnumerator CountDownTimer()
     {
-      
+        timerIsRunning = true;
         yield return new WaitForSeconds(10.0f);
 
         if (NumberOfPhases >= 3)
@@ -80,7 +81,7 @@ public class RoundManager : MonoBehaviour
         {
             OnRoundStart();
         }
-        yield return true;
+       
     }
 
     void OpenForPlayerChoice()
@@ -111,7 +112,6 @@ public class RoundManager : MonoBehaviour
         Debug.Log("Stop Choosing");
         // Disable Ui input with Buttons
         PhaseStart = false;
-        timerIsRunning = true;
         StartCoroutine(CountDownTimer());
     }
 
