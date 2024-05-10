@@ -14074,6 +14074,7 @@ GameObject:
   - component: {fileID: 1773701793}
   - component: {fileID: 1773701790}
   - component: {fileID: 1773701792}
+  - component: {fileID: 1773701798}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Enemy
@@ -14568,6 +14569,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773701785}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1773701798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773701785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19be78ae318e44c57bd4e79af5fb6859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1797068018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19979,7 +19992,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.857143
+  orthographic size: 10.285714
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

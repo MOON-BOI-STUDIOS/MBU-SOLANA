@@ -33,6 +33,7 @@ public class PhaseSpecialAbilityOptions : PhaseAttacks
                 case TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack:
                     Debug.Log("Decrease Enemy Attack");
                     // Action Required
+                    Selector.GetComponent<PlayerManager>().OnChangeHealth(5, false);
                     break;
 
                 case TurnOptions.PhaseDefenceTurns.HealPortionOfHealth:
@@ -47,6 +48,7 @@ public class PhaseSpecialAbilityOptions : PhaseAttacks
 
                 case TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound:
                     Debug.Log("Enemy Defence Reduced On Next Round");
+                    //Action Required
                     break;
             }
         }

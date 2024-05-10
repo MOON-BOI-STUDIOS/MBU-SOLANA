@@ -92,18 +92,27 @@ public class RoundManager : MonoBehaviour
             Debug.Log("Choose for Phase 1");
             // Open Rock Paper Scissor
             CardManager.openRPS();
+            //Saving Choices of NPC
+            int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase1();
+            RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options = (TurnOptions.Phase1Turns)choice;
         }
         else if (NumberOfPhases == 2)
         {
             Debug.Log("Choose for Phase 2");
             //Open Normal Card Selection with choice of Light Attack Heavy Attack and Attack
             CardManager.OpenNormal();
+            //Saving Choices of NPC
+            int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase2();
+            RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options = (TurnOptions.PhaseAttackTurns)choice;
         }
         else
         {
             Debug.Log("Choose for Phase 3");
             // Open Choice for Double Attack, Block Attack and Other Special Attack
             CardManager.OpenSpecial();
+            //Saving Choices of NPC
+            int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase3();
+            RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options = (TurnOptions.PhaseDefenceTurns)choice;
         }
     }
 
