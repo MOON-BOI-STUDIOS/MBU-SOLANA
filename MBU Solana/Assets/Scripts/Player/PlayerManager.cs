@@ -15,7 +15,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public PlayerCombat _combat;
     public float maxHealth = 500;
     public float health = 500;
-    private float Defence = 90.0f;
+    public float Defence = 90.0f;
     private float MAX_DEFENCE = 100.0f;
 
     public Transform DefenceIndicator;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Photon.Realtime;
 
 public class RoundManager : MonoBehaviour
 {
@@ -61,7 +62,12 @@ public class RoundManager : MonoBehaviour
         NumberOfPhases += 1;
         OpenForPlayerChoice();
         PhaseStart = true;
-       
+
+        // Setting the timer
+        timeRemaining = 10;
+        timerIsRunning = true;
+        time.color = Color.green;
+
     }
 
     IEnumerator CountDownTimer()
@@ -95,6 +101,7 @@ public class RoundManager : MonoBehaviour
             //Saving Choices of NPC
             int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase1();
             RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options = (TurnOptions.Phase1Turns)choice;
+            Debug.Log("Enemy Choice:" + (TurnOptions.Phase1Turns)choice);
         }
         else if (NumberOfPhases == 2)
         {
@@ -104,6 +111,7 @@ public class RoundManager : MonoBehaviour
             //Saving Choices of NPC
             int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase2();
             RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options = (TurnOptions.PhaseAttackTurns)choice;
+            Debug.Log("Enemy Choice:" + (TurnOptions.PhaseAttackTurns)choice);
         }
         else
         {
@@ -113,6 +121,7 @@ public class RoundManager : MonoBehaviour
             //Saving Choices of NPC
             int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase3();
             RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options = (TurnOptions.PhaseDefenceTurns)choice;
+            Debug.Log("Enemy Choice:" + (TurnOptions.PhaseDefenceTurns)choice);
         }
     }
 
@@ -122,11 +131,19 @@ public class RoundManager : MonoBehaviour
         // Disable Ui input with Buttons
         PhaseStart = false;
         StartCoroutine(CountDownTimer());
+        // Timers
+        timeRemaining = 10;
+        timerIsRunning = true;
+        time.color = Color.red;
     }
 
     void StartRoundResultCalculation()
     {
         // Shift COntrol to RoundScript for Choice Calculation and Consequences
         RoundScript.OnCalculationOfResult();
+        Debug.Log("Player Health: "+ RoundScript.GetPlayerScript().GetComponent<PlayerManager>().health);
+        Debug.Log("Enemy Health:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().health);
+        Debug.Log("Player Defence:" +RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Defence);
+        Debug.Log("Enemy Defence:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Defence);
     }
 }
