@@ -63,10 +63,10 @@ public class FileDataHandler
         try{
             //Create a directory path just in case it doesn't exist in our computer
             Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
-
+            data = CheckDuplicates(data);
             //Serialise the C# game data object into Json
-            string dataToStore = JsonUtility.ToJson(data, true);
-
+            string dataToStore= JsonUtility.ToJson(data);
+            Debug.Log(dataToStore);
             //optionally encrypt the file
             if(useEncryption)
             {
@@ -98,5 +98,11 @@ public class FileDataHandler
             modifiedData += (char) (data[i]^ encryptedCodeWord[i % encryptedCodeWord.Length]);   
         }
         return modifiedData;
+    }
+
+    private GameData CheckDuplicates(GameData data)
+    {
+       
+        return data;
     }
 }

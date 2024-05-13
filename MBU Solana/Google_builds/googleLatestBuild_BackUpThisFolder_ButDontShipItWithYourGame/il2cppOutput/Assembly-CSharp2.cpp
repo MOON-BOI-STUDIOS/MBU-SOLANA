@@ -17523,13 +17523,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RodShopitem_LooseCurrncy_mE728522D5A175F
 		}
 	}
 	{
-		// if(rdb.GetItemValue() < currentNumOfCoins)
+		// if(rdb.GetItemValue() <= currentNumOfCoins)
 		RodItemObj_tEEFE5DF88C8D7B130075AFFF4FB462487623C6CF* L_2 = __this->___rdb_12;
 		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 Items::GetItemValue() */, L_2);
 		int32_t L_4 = V_0;
-		if ((((int32_t)L_3) >= ((int32_t)L_4)))
+		if ((((int32_t)L_3) > ((int32_t)L_4)))
 		{
 			goto IL_0072;
 		}
@@ -17575,13 +17575,13 @@ IL_0072:
 
 IL_0073:
 	{
-		// if(_bait.GetItemValue() < currentNumOfCoins)
+		// if(_bait.GetItemValue() <= currentNumOfCoins)
 		BaitItemObjj_t34FA9E046E99DCD3D69BF83AF3E767A5705D115E* L_15 = __this->____bait_13;
 		NullCheck(L_15);
 		int32_t L_16;
 		L_16 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 Items::GetItemValue() */, L_15);
 		int32_t L_17 = V_0;
-		if ((((int32_t)L_16) >= ((int32_t)L_17)))
+		if ((((int32_t)L_16) > ((int32_t)L_17)))
 		{
 			goto IL_00d2;
 		}

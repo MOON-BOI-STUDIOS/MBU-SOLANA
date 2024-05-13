@@ -162,4 +162,8 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
 
     }
 
+    public void SaveData(ref List<ItemData> data)
+    {
+        
+    }
 }

@@ -32,6 +32,7 @@ public class DataPersistanceManager : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log(Application.persistentDataPath);
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
         this.dataPersistenceObjects = FindAllDataPersistanceObjects();
         LoadGame();
@@ -69,6 +70,7 @@ public class DataPersistanceManager : MonoBehaviour
         foreach(IDataPersistanceScript dataPersistanceObj in dataPersistenceObjects)
         {
             dataPersistanceObj.SaveData(ref gamedata);
+            //Debug.Log(gamedata.savedData[0].itemListIndex);
         }
         //save the data to a file using data handler
         dataHandler.Save(gamedata);
