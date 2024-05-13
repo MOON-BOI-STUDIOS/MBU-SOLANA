@@ -22,6 +22,14 @@ public class RoundManager : MonoBehaviour
     void Start()
     {
         RoundScript = GetComponent<RoundScript>();
+
+        // Player choice of Phase1, 
+        //RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
+        //RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
+        //RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
+
+        // Enemy choice of Phase1
+        //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options.ToString();
     }
 
     // Update is called once per frame
@@ -145,5 +153,6 @@ public class RoundManager : MonoBehaviour
         Debug.Log("Enemy Health:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().health);
         Debug.Log("Player Defence:" +RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Defence);
         Debug.Log("Enemy Defence:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Defence);
+
     }
 }
