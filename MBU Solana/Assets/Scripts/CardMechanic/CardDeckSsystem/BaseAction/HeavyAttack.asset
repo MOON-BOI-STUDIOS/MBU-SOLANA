@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 561e9d46e27d3184aa8d02cfd58c19fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 43711e450f6b3f04f8d00e58ee58c316, type: 3}
   m_Name: HeavyAttack
   m_EditorClassIdentifier: 
   cardName: Heavy Attack
   art: {fileID: 0}
-  description: this is a test
+  description: 
   cost: 0
   damage: 0
-  ID_BasicAction: 5
-  cardType: 1
+  ID_BasicAction: 0
+  cardType: 0

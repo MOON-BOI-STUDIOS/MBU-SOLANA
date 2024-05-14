@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 634602bdaa672e44f9e632f9262ae128, type: 3}
+  m_Script: {fileID: 11500000, guid: cbf3d09cb3ab09b4e832d854c57cdc32, type: 3}
   m_Name: Heal max health
   m_EditorClassIdentifier: 
-  cardName: 'Heal max health '
+  cardName: Heal max health
   art: {fileID: 0}
-  description: this is a test
+  description: 
   cost: 0
   Rarity: 0
-  ID_SpecialAction: 106
+  ID_SpecialAction: 0
   cardType: 2

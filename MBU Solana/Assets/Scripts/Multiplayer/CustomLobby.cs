@@ -20,7 +20,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        PhotonNetwork.ConnectUsingSettings(); //  connecr to masters photon server
+        PhotonNetwork.ConnectUsingSettings(); //  connect to masters photon server
     }
 
     public override void OnConnectedToMaster()
