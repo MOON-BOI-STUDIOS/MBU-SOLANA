@@ -10,6 +10,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public string roomName;
     public int roomSize;
     public GameObject roomListingprefab;
+    public Transform roomsPanel;
 
 
     private void Awake()
@@ -35,6 +36,36 @@ public class CustomLobby : MonoBehaviourPunCallbacks
 
         PhotonNetwork.JoinRandomRoom();
     }
+
+
+    public override void OnRoomListUpdate(List<RoomInfo> roomList)
+    {
+        base.OnRoomListUpdate(roomList);
+        RemoveRoomListing();
+        foreach(RoomInfo room in roomList)
+        {
+            ListRoom(room);
+        }
+    }
+
+
+    public void RemoveRoomListing()
+    {
+        while(roomsPanel.childCount != 0)
+        {
+            Destroy(roomsPanel.GetChild(0).gameObject);
+  
+        }
+    }
+
+    public void ListRoom (RoomInfo room)
+    {
+        if(room.IsOpen && room.IsVisible)
+        {
+            GameObject tempListing = Instantiate(roomListingprefab, roomsPanel);
+        }
+    }
+
 
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
