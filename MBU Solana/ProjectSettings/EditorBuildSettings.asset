@@ -29,9 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SinglePlayer/ShopInterior.unity
     guid: 59576e44ded70bc4eb34ebbb0a98fa36
-  - enabled: 0
-    path: Assets/VideoPlayerForWebGL/Scenes/MultipleVideos.unity
-    guid: e9c6d8f036e63a44fa18a95c4677b944
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer/TestScene.unity
+    guid: b82a0de2a01efba4eb5475468fc1787c
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 4a4770776bdf7b14a84228a59cf77774, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: a6e9b68d07b5cd24982c6610bfdae1de, type: 2}

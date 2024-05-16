@@ -2,21 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class RoomButton : MonoBehaviour
 {
     public TextMeshProUGUI nameText;
+
+    public string roomName;
+
+    public void SetRoom()
+    {
+        nameText.text = roomName;
+
+    }
+
+    public void JoinRoomClick()
+    {
+        PhotonNetwork.JoinRoom(roomName);
+    }
+
+
     
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

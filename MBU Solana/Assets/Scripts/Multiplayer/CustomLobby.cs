@@ -8,7 +8,6 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public static CustomLobby lobby;
 
     public string roomName;
-    public int roomSize;
     public GameObject roomListingprefab;
     public Transform roomsPanel;
 
@@ -63,29 +62,24 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         if(room.IsOpen && room.IsVisible)
         {
             GameObject tempListing = Instantiate(roomListingprefab, roomsPanel);
+            RoomButton tempButton = tempListing.GetComponent<RoomButton>();
+            tempButton.roomName = room.Name;
+            tempButton.SetRoom();
+            
         }
     }
 
-
-    public override void OnJoinRandomFailed(short returnCode, string message)
-    {
-        Debug.Log("Tried to join a randon game but failed. There must be no open games available");
-        CreateRoom();
-
-        
-    }
     public void CreateRoom()
     {
         Debug.Log("Trying to create a new room");
-        int randomRoomName = Random.Range(0, 1000);
         RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)MultiplayerSettings.multiplayerSettings.maxPlayers };
-        PhotonNetwork.CreateRoom("Room" + randomRoomName, roomOps);
+        PhotonNetwork.CreateRoom(roomName, roomOps);
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         Debug.Log("Tried to create a new room but failed, there must already be a room with the same name");
-        CreateRoom();
+        //CreateRoom();
     }
 
     public void OncancleearchClicked()
@@ -95,14 +89,18 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         PhotonNetwork.LeaveRoom();
     }
 
-    //public override void OnJoinedRoom()
-    //{
-    //    Debug.Log("We are now in a room");
-    //}
-
-
-    void Update()
+    public void onNameChange(string nameIn)
     {
-        
+        roomName = nameIn;
     }
+
+
+    public void JoinLobbyClick()
+    {
+        if (!PhotonNetwork.InLobby)
+        {
+            PhotonNetwork.JoinLobby();
+        }
+    }
+
 }
