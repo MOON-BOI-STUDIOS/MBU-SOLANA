@@ -5349,6 +5349,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1121051582397954332, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1162762977844732808, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -5365,10 +5369,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1875723687}
-    - target: {fileID: 2557152466069651386, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5188324795780581457, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -5481,10 +5481,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1875723687}
+    - target: {fileID: 6726346714725070028, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6752092515467674468, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1875723687}
+    - target: {fileID: 8080841402337155503, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8170588453949254290, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.5000076
@@ -7579,7 +7587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1238141689
 Animator:
   serializedVersion: 4
@@ -11737,7 +11745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}

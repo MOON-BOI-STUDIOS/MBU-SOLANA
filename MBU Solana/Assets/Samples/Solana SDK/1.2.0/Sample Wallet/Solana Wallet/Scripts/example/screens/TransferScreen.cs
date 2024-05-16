@@ -37,10 +37,10 @@ namespace Solana.Unity.SDK.Example
             this.transferInfosImplementedScripts = FindAllTransferInfoImplementedScript();
             //Get Payment information from static fields from the PlaymentInfo Static class
             //Disabling interactibility of the input fields so that it cannot be changed
-            toPublicTxt.text = PaymentInfo.publicKey;
-            toPublicTxt.interactable = false;
-            amountTxt.text = PaymentInfo.requiredAmount.ToString();
-            amountTxt.interactable = false;
+            //toPublicTxt.text = PaymentInfo.publicKey;
+            //toPublicTxt.interactable = false;
+            //amountTxt.text = PaymentInfo.requiredAmount.ToString();
+            //amountTxt.interactable = false;
 
             transferBtn.onClick.AddListener(TryTransfer);
 
@@ -59,6 +59,7 @@ namespace Solana.Unity.SDK.Example
         }
         private void TryTransfer()
         {
+            Debug.Log(_transferTokenAccount);
             if (_nft != null)
             {
                 TransferNft();
@@ -108,6 +109,9 @@ namespace Solana.Unity.SDK.Example
 
             if (_transferTokenAccount == null)
             {
+                Debug.Log("Owned Amount:" + ownedAmountTxt.text);
+                Debug.Log("Amount shown:" + amountTxt.text);
+                Debug.Log("Transaction in Sol" + _transferTokenAccount);
                 if (float.Parse(amountTxt.text) > _ownedSolAmount)
                 {
                     errorTxt.text = "Not enough funds for transaction.";
@@ -116,10 +120,12 @@ namespace Solana.Unity.SDK.Example
             }
             else
             {
-                Debug.Log(ownedAmountTxt);
+                Debug.Log("Owned Amount:" + long.Parse(ownedAmountTxt.text));
+                Debug.Log("Amount shown" + long.Parse(amountTxt.text));
+                Debug.Log("Transaction in a kind of Token");
                 if (long.Parse(amountTxt.text) > long.Parse(ownedAmountTxt.text))
                 {
-                    errorTxt.text = "Not enough funds for transaction.";
+                    errorTxt.text = "Not enough funds for transaction for Bonk transaction.";
                     return false;
                 }
             }
@@ -144,7 +150,7 @@ namespace Solana.Unity.SDK.Example
             {
                 Debug.Log(result.WasSuccessful.ToString());
                 Debug.Log("In Handle Response() function");
-                manager.ShowScreen(this, "wallet_screen");
+                manager.ShowScreen(this, "wallet_screen", Tuple.Create("Successful",result.Result));
 
                 //Calling if transaction is successful
                 Debug.Log("Transaction is successful");
@@ -170,6 +176,7 @@ namespace Solana.Unity.SDK.Example
             ResetInputFields();
             await PopulateInfoFields(data);
             gameObject.SetActive(true);
+            OnEnable();
         }
         
         public void OnClose()
@@ -180,13 +187,16 @@ namespace Solana.Unity.SDK.Example
 
         private async System.Threading.Tasks.Task PopulateInfoFields(object data)
         {
+            
             nftImage.gameObject.SetActive(false);
             nftTitleTxt.gameObject.SetActive(false);
-            //ownedAmountTxt.gameObject.SetActive(false);
+            ownedAmountTxt.gameObject.SetActive(false);
             if (data != null && data.GetType() == typeof(Tuple<TokenAccount, string, Texture2D>))
             {
+                Debug.Log("data is not null");
                 var (tokenAccount, tokenDef, texture) = (Tuple<TokenAccount, string, Texture2D>)data;
-                ownedAmountTxt.text = $"{tokenAccount.Account.Data.Parsed.Info.TokenAmount.Amount}";
+                _transferTokenAccount = tokenAccount;
+                ownedAmountTxt.text = $"{_transferTokenAccount.Account.Data.Parsed.Info.TokenAmount.Amount}";
                 nftTitleTxt.gameObject.SetActive(true);
                 nftImage.gameObject.SetActive(true);
                 nftTitleTxt.text = $"{tokenDef}";
@@ -206,6 +216,7 @@ namespace Solana.Unity.SDK.Example
             }
             else
             {
+                Debug.Log("Data is null Token is not set");
                 _ownedSolAmount = await Web3.Instance.WalletBase.GetBalance();
                 ownedAmountTxt.text = $"{_ownedSolAmount}";
             }

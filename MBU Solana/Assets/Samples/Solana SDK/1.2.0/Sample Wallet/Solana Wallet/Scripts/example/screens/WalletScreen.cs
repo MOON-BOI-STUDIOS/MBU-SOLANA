@@ -11,6 +11,7 @@ using Solana.Unity.Rpc.Types;
 using Solana.Unity.Rpc.Models;
 using System;
 using Solana.Unity.Wallet;
+using System.Collections;
 
 // ReSharper disable once CheckNamespace
 
@@ -61,9 +62,13 @@ namespace Solana.Unity.SDK.Example
         private TokenAccount usdcTokenAccount;
         string BonkMintAddress = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263";
         string USDCMintAddress = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
-        private Texture2D _texture;
+        public Texture2D _texture;
         //End of Region
 
+        //Successful Message region
+        public GameObject messagePopup;
+        public TMP_Text messageText;
+        //End Region
         public void Start()
         {
             refreshBtn.onClick.AddListener(RefreshWallet);
@@ -112,6 +117,9 @@ namespace Solana.Unity.SDK.Example
             _stopTask = new CancellationTokenSource();
             
             Web3.OnWalletChangeState += OnWalletChangeState;
+
+            //Make the message Popup false if specified otherwise
+            messagePopup.SetActive(false);
         }
 
         private void OnWalletChangeState()
@@ -301,6 +309,24 @@ namespace Solana.Unity.SDK.Example
             base.ShowScreen();
             gameObject.SetActive(true);
             GetOwnedTokenAccounts().Forget();
+            if (data != null && data.GetType() == typeof(Tuple<string ,string>))
+            {
+                var (message,resultString) = (Tuple<string,string>)data;
+                if (String.Equals(message, "Successful"))
+                {
+                    messagePopup.SetActive(true);
+                    messageText.text = "Successful " + resultString;
+                    //Start Coroutine for Automatic Handling of Message box
+                    StartCoroutine(DelayForSeconds());
+                }
+
+            }
+        }
+
+        IEnumerator DelayForSeconds()
+        {
+            yield return new WaitForSeconds(2.0f);
+            messagePopup.SetActive(false);
         }
 
         public override void HideScreen()
