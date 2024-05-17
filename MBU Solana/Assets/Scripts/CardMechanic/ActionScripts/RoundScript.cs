@@ -54,14 +54,6 @@ public class RoundScript : MonoBehaviourPunCallbacks
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-  
-
     public PlayerManager GetPlayerScript()
     {
         return playerManagerScript;
@@ -76,17 +68,15 @@ public class RoundScript : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            // Calculation of Phase1
-            int PlayerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
-
             //Invoke RPC to handle result calculation on all clients
-            photonView.RPC("HandleResultCalculation", RpcTarget.AllBuffered, PlayerNumber);
+            photonView.RPC("HandleResultCalculation", RpcTarget.AllBuffered);
         }
     }
 
     [PunRPC]
-    void HandleResultCalculation(int playerNumber)
+    void HandleResultCalculation()
     {
+        int playerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
         // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
         if (playerNumber == 2)
         {
