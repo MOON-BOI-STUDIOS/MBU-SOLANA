@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class PhaseAttacks : MonoBehaviour
 {
-    public virtual void PhaseOptions(GameObject Selector, GameObject OtherPlayer, bool bothPhases)
+    public virtual void PhaseOptions(PlayerManager Selector, PlayerManager OtherPlayer, bool bothPhases)
     {
-        TurnOptions.PhaseAttackTurns PhaseAttackTurns = Selector.GetComponent<PlayerManager>().Phase2Options;
+        TurnOptions.PhaseAttackTurns PhaseAttackTurns = Selector.Phase2Options;
         switch (PhaseAttackTurns)
         {
             case TurnOptions.PhaseAttackTurns.Attack:
-                OtherPlayer.GetComponent<PlayerManager>().OnChangeHealth(10, false);
+                OtherPlayer.OnChangeHealth(10, false);
                 break;
 
             case TurnOptions.PhaseAttackTurns.LightAttack:
-                OtherPlayer.GetComponent<PlayerManager>().OnChangeHealth(30, false);
+                OtherPlayer.OnChangeHealth(30, false);
                 break;
 
             case TurnOptions.PhaseAttackTurns.HeavyAttack:
-                OtherPlayer.GetComponent<PlayerManager>().OnChangeHealth(40, false);
+                OtherPlayer.OnChangeHealth(40, false);
                 break;
 
         }

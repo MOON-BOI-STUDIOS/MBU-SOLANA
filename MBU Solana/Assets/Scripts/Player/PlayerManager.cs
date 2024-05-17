@@ -6,8 +6,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
+using Photon.Pun;
 
-public class PlayerManager : MonoBehaviour, IAddToInventory
+public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
 {
     // Start is called before the first frame update
     public PlayerController _controller;
@@ -41,8 +42,12 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     //Inventory Additions Array
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
 
+
+    [SerializeField]
     private TurnOptions.Phase1Turns Phase1Turns;
+    [SerializeField]
     private TurnOptions.PhaseAttackTurns Phase2Turns;
+    [SerializeField]
     private TurnOptions.PhaseDefenceTurns Phase3Turns;
 
     public enum OptionSelected
@@ -51,12 +56,26 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         Default
     };
 
+    [SerializeField]
     public OptionSelected Option = OptionSelected.Default;
+
+    //Photon View Filed
+    private PhotonView photonView;
 
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetInt("MaxHealth", 500);
+    }
+
+    private void Start()
+    {
+        photonView = GetComponent<PhotonView>();
+    }
+
+    public bool IsLocalPlayer()
+    {
+        return photonView.IsMine;
     }
 
     // Update is called once per frame
@@ -254,24 +273,43 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public TurnOptions.Phase1Turns Phase1Options
     {
         get { return Phase1Turns; }
-        set { Phase1Turns = value; }
+        set
+        {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Phase1Turns = value;
+            }
+        }
     }
 
     public TurnOptions.PhaseAttackTurns Phase2Options
     {
         get { return Phase2Turns; }
-        set { Phase2Turns = value; }
+        set {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Phase2Turns = value;
+            }
+        }
     }
 
     public TurnOptions.PhaseDefenceTurns Phase3Options
     {
         get { return Phase3Turns; }
-        set { Phase3Turns = value; }
+        set {
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Phase3Turns = value;
+            }
+        }
     }
 
     public void OnNoDamage()
     {
-        Option = OptionSelected.NoDamage;
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Option = OptionSelected.NoDamage;
+        }
     }
 
     public void OnChangeHealth(float num, bool Isincreased)
@@ -326,4 +364,19 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         }
     }
 
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext((int)Phase1Turns);
+            stream.SendNext((int)Phase2Turns);
+            stream.SendNext((int)Phase3Turns);
+        }
+        else
+        {
+            Phase1Turns = (TurnOptions.Phase1Turns)stream.ReceiveNext();
+            Phase2Turns = (TurnOptions.PhaseAttackTurns)stream.ReceiveNext();
+            Phase3Turns = (TurnOptions.PhaseDefenceTurns)stream.ReceiveNext();
+        }
+    }
 }

@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface ITurnOptionsMethods 
 {
-    int OnPhase1Options(GameObject Selector, GameObject OtherPlayer);
+    int OnPhase1Options(PlayerManager Selector, PlayerManager OtherPlayer);
 }

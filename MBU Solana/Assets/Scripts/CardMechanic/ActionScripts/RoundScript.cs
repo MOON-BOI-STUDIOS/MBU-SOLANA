@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 
-public class RoundScript : MonoBehaviour
+public class RoundScript : MonoBehaviourPunCallbacks
 {
-    private GameObject playerManagerScript;
-    private GameObject enemyManagerScript;
-
-  
+    private PlayerManager playerManagerScript;
+    private PlayerManager enemyManagerScript;
 
     public ITurnOptionsMethods turnOptionsMethods;
 
@@ -19,14 +18,40 @@ public class RoundScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        FindPlayers();
         // Add If statement if locally controlled find the Player manager of the Owner and get a referenc of the Script
-        playerManagerScript = GameObject.FindGameObjectWithTag("Player");
+        //playerManagerScript = GameObject.FindGameObjectWithTag("Player");
         //get the Enemy in case of single player and incase of multiplayer get the other player
-        enemyManagerScript = GameObject.FindGameObjectWithTag("Enemy");
+        //enemyManagerScript = GameObject.FindGameObjectWithTag("Enemy");
         //To Get Iterface for Rock Paper Scissor logic
         turnOptionsMethods = GetComponent<ITurnOptionsMethods>();
         // For Phase Logic
         phase = GetComponent<PhaseSpecialAbilityOptions>();
+    }
+
+    private void FindPlayers()
+    {
+        PlayerManager[] allPlayerManager = FindObjectsOfType<PlayerManager>();
+        for (int i = 0; i < allPlayerManager.Length; i++)
+        {
+            if (allPlayerManager[i].IsLocalPlayer())
+            {
+                playerManagerScript = allPlayerManager[i];
+            }
+            else
+            {
+                enemyManagerScript = allPlayerManager[i];
+            }
+        }
+
+        if (playerManagerScript == null && enemyManagerScript == null)
+        {
+            Debug.Log("Failed to find both local Player Manager Script and Enemy's same");
+        }
+        else {
+            Debug.Log("Founf required Scripts");
+        }
     }
 
     // Update is called once per frame
@@ -39,34 +64,45 @@ public class RoundScript : MonoBehaviour
 
     public PlayerManager GetPlayerScript()
     {
-        return playerManagerScript.GetComponent<PlayerManager>();
+        return playerManagerScript;
     }
 
     public PlayerManager GetEnemyScript()
     {
-        return enemyManagerScript.GetComponent<PlayerManager>();
+        return enemyManagerScript;
     }
 
     public void OnCalculationOfResult()
     {
-        // Calculation of Phase1
-        int PlayerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            // Calculation of Phase1
+            int PlayerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
+
+            //Invoke RPC to handle result calculation on all clients
+            photonView.RPC("HandleResultCalculation", RpcTarget.AllBuffered, PlayerNumber);
+        }
+    }
+
+    [PunRPC]
+    void HandleResultCalculation(int playerNumber)
+    {
         // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
-        if (PlayerNumber == 2)
+        if (playerNumber == 2)
         {
             // For Phase 2 and 3 Attacks of player
             phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);// Check the Definition of PhaseOptions
             // For Phase 2 and 3 Attacks of Enemy
             phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);// true is used to call both the phases
         }
-        else if (PlayerNumber == 0)
+        else if (playerNumber == 0)
         {
             // For Phase 2 and 3 Attacks of player
             phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);
             // For only Phase 2 Attack
             phase.PhaseOptions(enemyManagerScript, playerManagerScript, false);
         }
-        else if(PlayerNumber == 1)
+        else if (playerNumber == 1)
         {
             // For only Phase 2 Attack
             phase.PhaseOptions(playerManagerScript, enemyManagerScript, false);

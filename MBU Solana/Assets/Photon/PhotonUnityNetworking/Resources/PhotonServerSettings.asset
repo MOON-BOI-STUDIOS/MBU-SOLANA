@@ -42,6 +42,7 @@ MonoBehaviour:
   - CreatePlayer
   - RPC_AddCharacter
   - RPC_LoadedGameScene
+  - HandleResultCalculation
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

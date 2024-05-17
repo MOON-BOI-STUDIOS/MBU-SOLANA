@@ -17059,6 +17059,9 @@ MonoBehaviour:
   startLocation: []
   isPoweredUp: 0
   enemies: {fileID: 0}
+  Phase1Turns: 0
+  Phase2Turns: 0
+  Phase3Turns: 0
   Option: 1
 --- !u!114 &1773701788
 MonoBehaviour:
@@ -37827,6 +37830,7 @@ GameObject:
   - component: {fileID: 248699829284429079}
   - component: {fileID: 248699829177208230}
   - component: {fileID: 8649694182372630271}
+  - component: {fileID: 8649694182372630272}
   m_Layer: 0
   m_Name: Dre
   m_TagString: Player
@@ -37866,6 +37870,9 @@ MonoBehaviour:
   startLocation: []
   isPoweredUp: 0
   enemies: {fileID: 0}
+  Phase1Turns: 0
+  Phase2Turns: 0
+  Phase3Turns: 0
   Option: 1
 --- !u!114 &3482781816479680323
 MonoBehaviour:
@@ -38626,6 +38633,7 @@ GameObject:
   - component: {fileID: 4382410426989119046}
   - component: {fileID: 4382410426989119045}
   - component: {fileID: 4382410426989119044}
+  - component: {fileID: 4382410426989119048}
   m_Layer: 0
   m_Name: CardManager
   m_TagString: Untagged
@@ -38735,6 +38743,28 @@ MonoBehaviour:
   plph1: {fileID: 1789861748}
   plph2: {fileID: 1969755765}
   plph3: {fileID: 228577089}
+--- !u!114 &4382410426989119048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4382410426989119041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &6340856634219620422
 GameObject:
   m_ObjectHideFlags: 0
@@ -39934,3 +39964,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 248699829983360684}
+--- !u!114 &8649694182372630272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482781816479680312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 3482781816479680320}
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
