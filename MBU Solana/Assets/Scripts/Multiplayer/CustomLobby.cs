@@ -11,6 +11,8 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public GameObject roomListingprefab;
     public Transform roomsPanel;
 
+    public List<RoomInfo> roomlistings;
+
 
     private void Awake()
     {
@@ -27,6 +29,8 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     {
         Debug.Log("Player has connected to photon master server");
         PhotonNetwork.AutomaticallySyncScene = true;
+        PhotonNetwork.NickName = "Player" + Random.Range(0, 1000);
+
 
     }
 
@@ -40,11 +44,33 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
         base.OnRoomListUpdate(roomList);
-        RemoveRoomListing();
-        foreach(RoomInfo room in roomList)
+        //RemoveRoomListing();
+        int tempIndex;
+        foreach (RoomInfo room in roomList)
         {
-            ListRoom(room);
+            if (roomlistings != null)
+            {
+                tempIndex = roomlistings.FindIndex(ByName(room.Name));
+            }
+            else
+            {
+                tempIndex = -1;
+            }
+            if (tempIndex != -1)
+            {
+                roomlistings.RemoveAt(tempIndex);
+                Destroy(roomsPanel.GetChild(tempIndex).gameObject);
+
+            }
+            else
+            {
+                roomlistings.Add(room);
+                ListRoom(room);
+            }
+
+
         }
+
     }
 
 
@@ -67,6 +93,14 @@ public class CustomLobby : MonoBehaviourPunCallbacks
             tempButton.SetRoom();
             
         }
+    }
+
+    static System.Predicate<RoomInfo> ByName(string name)
+    {
+        return delegate (RoomInfo room)
+        {
+            return room.Name == name;
+        };
     }
 
     public void CreateRoom()
