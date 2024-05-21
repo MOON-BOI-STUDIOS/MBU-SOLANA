@@ -24,6 +24,8 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.ConnectUsingSettings(); //  connect to masters photon server
         roomlistings = new List<RoomInfo>();
+        string playerRegion = PhotonNetwork.CloudRegion;
+        Debug.Log("Player Region" + playerRegion);
     }
 
     public override void OnConnectedToMaster()
