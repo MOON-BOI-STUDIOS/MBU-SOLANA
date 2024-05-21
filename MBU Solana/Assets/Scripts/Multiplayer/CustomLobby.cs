@@ -44,7 +44,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
         base.OnRoomListUpdate(roomList);
-        //RemoveRoomListing();
+        RemoveRoomListing();
         int tempIndex;
         foreach (RoomInfo room in roomList)
         {
