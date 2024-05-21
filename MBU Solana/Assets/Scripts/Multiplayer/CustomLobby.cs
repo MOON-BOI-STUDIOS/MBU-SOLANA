@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
+using TMPro;
 public class CustomLobby : MonoBehaviourPunCallbacks
 {
     public static CustomLobby lobby;
@@ -12,6 +14,8 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public Transform roomsPanel;
 
     public List<RoomInfo> roomlistings;
+    public TMP_Dropdown regionDropdown; // Dropdown UI element for region selection
+    private string[] regions = { "us", "eu", "asia", "jp", "au", "sa", "in"}; // Example region codes
 
 
     private void Awake()
@@ -26,6 +30,10 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         roomlistings = new List<RoomInfo>();
         string playerRegion = PhotonNetwork.CloudRegion;
         Debug.Log("Player Region" + playerRegion);
+
+        // Populate the dropdown with region options
+        regionDropdown.ClearOptions();
+        regionDropdown.AddOptions(new List<string>(regions));
     }
 
     public override void OnConnectedToMaster()
@@ -36,6 +44,21 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinLobby();
 
 
+    }
+
+    public void OnRegionSelected()
+    {
+        // Get the index of the selected item
+        int index = regionDropdown.value;
+
+        // Set the selected region
+        string selectedRegion = regions[index];
+        PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = selectedRegion;
+
+        // Connect to Photon with the selected region
+        PhotonNetwork.ConnectUsingSettings();
+
+        Debug.Log("Region was switched to " + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion);
     }
 
     public void OnSearchButtonClicked()
