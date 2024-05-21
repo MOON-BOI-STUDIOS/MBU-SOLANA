@@ -14,10 +14,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     public PlayerController _controller;
     public PlayerAnimator _animator;
     public PlayerCombat _combat;
-    public float maxHealth = 500;
-    public float health = 500;
-    public float Defence = 90.0f;
-    private float MAX_DEFENCE = 100.0f;
+    public const float MAXHealth = 500.0f;
+    public float health;
+    public float Defence;
+    private const float MAX_DEFENCE = 100.0f;
 
     public Transform DefenceIndicator;
     public TextMeshProUGUI coinsText;
@@ -71,6 +71,8 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     private void Start()
     {
         photonView = GetComponent<PhotonView>();
+        health = MAXHealth;
+        Defence = MAX_DEFENCE;
     }
 
     public bool IsLocalPlayer()
@@ -83,31 +85,23 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     {
 
         //max health taked from PlayerPrefs
-        maxHealth = PlayerPrefs.GetInt("MaxHealth");
+        //maxHealth = PlayerPrefs.GetInt("MaxHealth");
         
-        //regenerates health slowly
-        if (health <= maxHealth && !isDead)
+        /*regenerates health slowly
+        if (health <= MAXHealth && !isDead)
         {
             health += 10 * Time.deltaTime;
-        }
+        }*/
 
-        //triggers death sequence, death animation
-        if(health <= 0 && !isDead)
-        {
-            isDead = true;
-            _animator._heroAnimator.SetLayerWeight(2, 1);
-            _animator._heroAnimator.SetBool("isDead", true);
-            StartCoroutine(deathSequence());
-        }
 
 
         if (curSceneName == "BonkArcade" || curSceneName == "FishingArea" || curSceneName == "ShopInterior")
             return;
 
             //updates the health bar according to current health
-            healthIndicator.localScale = new Vector3(health / maxHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
+            healthIndicator.localScale = new Vector3(health / MAXHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
             // displays current health in a numerical form
-            healthNumber.text = "Health: " + (int)health + " / " + maxHealth;
+            healthNumber.text = "Health: " + (int)health + " / " + MAXHealth;
 
             //displays number of coins the player has
             if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
@@ -120,7 +114,31 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void Die()
+    {
+        //triggers death sequence, death animation
+        if (health <= 0 && !isDead)
+        {
+            isDead = true;
+            _animator._heroAnimator.SetLayerWeight(2, 1);
+            _animator._heroAnimator.SetBool("isDead", true);
+            StartCoroutine(deathSequence());
+        }
+    }
+
+    [PunRPC]
+    void UpdateHealth(float newHealth)
+    {
+        health = newHealth;
+    }
+
+    [PunRPC]
+    void UpdateDefence(float newDefence)
+    {
+        Defence = newDefence;
+    }
+
+    /*private void OnTriggerEnter2D(Collider2D other)
     {
         //takes damage from the normal void 
         if (other.tag == "enemyAttackZone" && isPoweredUp == false && !isDead)
@@ -232,8 +250,8 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         {
             ExitButton.SetActive(false);
         }
-    }
-  
+    }*/
+
     //death sequence
     IEnumerator  deathSequence()
     {
@@ -314,53 +332,65 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
 
     public void OnChangeHealth(float num, bool Isincreased)
     {
-        if (Isincreased)
+        if (photonView.IsMine)
         {
-            health = health + num;
-        }
-        else if (Option == OptionSelected.NoDamage)
-        {
-            return;
-        }
-        else if (Defence != 0.0f)
-        {
-            OnChangeDefence(40, false);
-        }
-        else
-        { 
-            health = health - num;
-        }
+            if (Isincreased)
+            {
+                health = health + num;
 
-        // Clamp health between min and max limits
-        if (health > maxHealth)
-        {
-            health = maxHealth;
-        }
-        else if (health < 0.0f)
-        {
-            health = 0.0f;
+            }
+            else if (Option == OptionSelected.NoDamage)
+            {
+                return;
+            }
+            else if (Defence != 0.0f)
+            {
+                OnChangeDefence(40, false);
+            }
+            else
+            {
+                health = health - num;
+            }
+
+            // Clamp health between min and max limits
+            if (health > MAXHealth)
+            {
+                health = MAXHealth;
+            }
+            else if (health <= 0.0f)
+            {
+                health = 0.0f;
+                Die();
+            }
+
+            // Call the RPC to update health on all clients
+            photonView.RPC("UpdateHealth", RpcTarget.All, health);
         }
     }
 
     public void OnChangeDefence(float num, bool Isincreased)
     {
-        if (Isincreased)
+        if (photonView.IsMine)
         {
-            Defence = Defence + num;
-        }
-        else
-        {
-            Defence = Defence - num;
-        }
+            if (Isincreased)
+            {
+                Defence = Defence + num;
+            }
+            else
+            {
+                Defence = Defence - num;
+            }
 
-        // Clamp health between min and max limits
-        if (Defence > MAX_DEFENCE)
-        {
-            Defence = MAX_DEFENCE;
-        }
-        else if (Defence < 0.0f)
-        {
-            Defence = 0.0f;
+            // Clamp health between min and max limits
+            if (Defence > MAX_DEFENCE)
+            {
+                Defence = MAX_DEFENCE;
+            }
+            else if (Defence <= 0.0f)
+            {
+                Defence = 0.0f;
+            }
+            photonView.RPC("UpdateDefence", RpcTarget.All, Defence);
         }
     }
 

@@ -19,12 +19,14 @@ public class UIManager : MonoBehaviour
     public bool debugger = false;
     void Start()
     {
+        coins.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
+        swordLevel.text = "Sword Level : " + (PlayerPrefs.GetInt("SwordPower") / 7).ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Adjusts UI to current values
+        /*//Adjusts UI to current values
         coins.text = "Coins: "+ PlayerPrefs.GetInt("Coins").ToString();
         swordLevel.text = "Sword Level : " + (PlayerPrefs.GetInt("SwordPower") / 7).ToString();
         specialLevel.text = "Special Level : " + (PlayerPrefs.GetInt("SpecialPower") / 20).ToString();
@@ -40,7 +42,7 @@ public class UIManager : MonoBehaviour
         if(Input.GetButtonDown("Interact"))
         {
             eatFish();
-        }
+        }*/
     }
 
 
@@ -75,9 +77,9 @@ public class UIManager : MonoBehaviour
 
     public void eatFish()
     {
-        if(PlayerPrefs.GetInt("Fishes") > 0)
+        /*if(PlayerPrefs.GetInt("Fishes") > 0)
         {
-            if (player.GetComponent<PlayerManager>().health > 0 && player.GetComponent<PlayerManager>().health <= player.GetComponent<PlayerManager>().maxHealth - 80)
+            if (player.GetComponent<PlayerManager>().health > 0 && player.GetComponent<PlayerManager>().health <= player.GetComponent<PlayerManager>().MAXHealth - 80)
             {
                 player.GetComponent<PlayerManager>().health += 75;
                 PlayerPrefs.SetInt("Fishes", PlayerPrefs.GetInt("Fishes") - 1);
@@ -86,7 +88,7 @@ public class UIManager : MonoBehaviour
         if (panel != null)
         {
             openPanel();
-        }
+        }*/
     }
 
     //Buy Max Health Upgrade
