@@ -111,11 +111,6 @@ public class PlayerAnimator : MonoBehaviour
         
     }
 
-    public void MoveAttackArea()
-    {
-        _manager._combat.MoveAttackCollider();
-    }
-
     //north star starts
     public void specialStart()
     {
