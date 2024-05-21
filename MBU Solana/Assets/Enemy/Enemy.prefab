@@ -479,8 +479,8 @@ MonoBehaviour:
   leftAttack: {fileID: 1052430009402016090}
   rightAttack: {fileID: 1052430007969968645}
   attackSound: {fileID: 8300000, guid: a2015f22e5e689c4da60d2c90aabc8ba, type: 3}
-  solanaCoin: {fileID: 4614449820940051731, guid: 804d24531515de1449a4c46d64170480,
-    type: 3}
+  solanaCoin: {fileID: 4614449820940051731, guid: 804d24531515de1449a4c46d64170480, type: 3}
+  powerUpCan: {fileID: 0}
 --- !u!82 &1052430008957843198
 AudioSource:
   m_ObjectHideFlags: 0
