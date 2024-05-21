@@ -28,15 +28,20 @@ public class UIManager : MonoBehaviour
     // Getting the Local Player's Player Manager
     private PlayerManager _player;
 
+    private void Awake()
+    {
+        if (RoundScript)
+        {
+            _player = RoundScript.GetPlayerScript();
+            Debug.Log("Player is set");
+        }
+    }
+
 
     void Start()
     {
         coins.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
         swordLevel.text = "Sword Level : " + (PlayerPrefs.GetInt("SwordPower") / 7).ToString();
-        if (RoundScript)
-        {
-            _player = RoundScript.GetPlayerScript();
-        }
     }
 
     // Update is called once per frame

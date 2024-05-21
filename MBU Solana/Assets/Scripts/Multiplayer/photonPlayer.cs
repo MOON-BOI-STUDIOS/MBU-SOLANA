@@ -27,7 +27,7 @@ public class photonPlayer : MonoBehaviour
         if (PV.IsMine)
         {
             // instantiates photon prefab over the network
-            myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefab", "playerAvatar"), GameSetUP.GS.spawnPoints[spawnPicker].position, GameSetUP.GS.spawnPoints[spawnPicker].rotation, 0);
+            myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefab", "Dre"), GameSetUP.GS.spawnPoints[spawnPicker].position, GameSetUP.GS.spawnPoints[spawnPicker].rotation, 0);
         }
     }
     #endregion
