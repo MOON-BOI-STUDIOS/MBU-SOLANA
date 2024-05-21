@@ -218,11 +218,11 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
 
             if (MultiplayerSettings.multiplayerSettings.delayStart)
             {
-                //pv.RPC("RPC_LoadedGameScene", RpcTarget.MasterClient);
+                pv.RPC("RPC_LoadedGameScene", RpcTarget.MasterClient);
             }
             else
             {
-                //CreatePlayer();
+                CreatePlayer();
             }
         }
     }
