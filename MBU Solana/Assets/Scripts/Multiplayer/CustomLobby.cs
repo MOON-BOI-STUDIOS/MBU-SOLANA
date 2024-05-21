@@ -23,6 +23,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     void Start()
     {
         PhotonNetwork.ConnectUsingSettings(); //  connect to masters photon server
+        roomlistings = new List<RoomInfo>();
     }
 
     public override void OnConnectedToMaster()
@@ -30,6 +31,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         Debug.Log("Player has connected to photon master server");
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = "Player" + Random.Range(0, 1000);
+        PhotonNetwork.JoinLobby();
 
 
     }
