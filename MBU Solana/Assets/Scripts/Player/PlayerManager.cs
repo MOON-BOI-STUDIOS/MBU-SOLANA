@@ -130,12 +130,14 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     void UpdateHealth(float newHealth)
     {
         health = newHealth;
+        // Put the Helath UI here for now for testing
     }
 
     [PunRPC]
     void UpdateDefence(float newDefence)
     {
         Defence = newDefence;
+        //Put the Defence UI here for now for testing
     }
 
     /*private void OnTriggerEnter2D(Collider2D other)

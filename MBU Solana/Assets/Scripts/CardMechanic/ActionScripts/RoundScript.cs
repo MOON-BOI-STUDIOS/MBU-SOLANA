@@ -32,6 +32,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     private void FindPlayers()
     {
+        // This is finding the Player Manager. Essentially finding two players in the Scene
         PlayerManager[] allPlayerManager = FindObjectsOfType<PlayerManager>();
         for (int i = 0; i < allPlayerManager.Length; i++)
         {
@@ -73,6 +74,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
         }
     }
 
+    // This function is Invoking other functions to calculate the Result
     [PunRPC]
     void HandleResultCalculation()
     {
