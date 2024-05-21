@@ -35,6 +35,8 @@ public class UIManager : MonoBehaviour
             _player = RoundScript.GetPlayerScript();
             Debug.Log("Player is set");
         }
+
+        Debug.Log(_player);
     }
 
 
