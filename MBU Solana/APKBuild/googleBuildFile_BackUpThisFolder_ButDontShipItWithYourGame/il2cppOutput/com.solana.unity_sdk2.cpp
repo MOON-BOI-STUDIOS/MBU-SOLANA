@@ -1,0 +1,7361 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <limits>
+#include <stdint.h>
+
+
+template <typename R, typename T1>
+struct VirtualFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1>
+struct InterfaceActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R, typename T1>
+struct InterfaceFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2, typename T3>
+struct InterfaceFuncInvoker3
+{
+	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2, typename T3, typename T4>
+struct InterfaceFuncInvoker4
+{
+	typedef R (*Func)(void*, T1, T2, T3, T4, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3, T4 p4)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
+	}
+};
+
+// Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>
+struct AccountResultWrapper_1_tA6D459C4542D331860DFDFFF8344B251F33CB7E9;
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding>
+struct Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.Tasks.Task>
+struct Dictionary_2_t403063CE4960B4F46C688912237C6A27E550FF55;
+// System.Collections.Generic.Dictionary`2<System.UInt32,Solana.Unity.Programs.Abstract.ProgramError`1<Solana.Unity.Metaplex.Candymachine.Errors.CandyMachineErrorKind>>
+struct Dictionary_2_t2A680664ADF3939C9F9404B5C94266CF46AE75DB;
+// System.Func`1<System.Threading.Tasks.Task/ContingentProperties>
+struct Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1;
+// System.Func`2<Solana.Unity.Rpc.Models.AccountMeta,Solana.Unity.Rpc.Models.AccountMeta>
+struct Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1;
+// System.Func`2<System.Object,System.Object>
+struct Func_2_tACBF5A1656250800CE861707354491F0611F6624;
+// System.Collections.Generic.IEnumerable`1<System.Byte[]>
+struct IEnumerable_1_t21E2C2093877744709873DDCB2D3C8297821E513;
+// System.Collections.Generic.IEnumerable`1<Solana.Unity.Rpc.Models.AccountMeta>
+struct IEnumerable_1_tE24A661BDC272286AD29C21636EF5C35358F36DD;
+// System.Collections.Generic.IEnumerable`1<System.Object>
+struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
+// System.Collections.Generic.IList`1<Solana.Unity.Wallet.Account>
+struct IList_1_t9F08F4110D950C3B923C36F1E5E2E6CA58998687;
+// System.Collections.Generic.IList`1<Solana.Unity.Rpc.Models.AccountMeta>
+struct IList_1_t9A5C9737E26A667715B960D3844A419275F5807B;
+// System.Collections.Generic.IList`1<Solana.Unity.Metaplex.NFT.Library.Creator>
+struct IList_1_tB05B95847DE28E30CBCAA5A612D667A497FCF935;
+// System.Collections.Generic.List`1<System.Byte[]>
+struct List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4;
+// System.Collections.Generic.List`1<Solana.Unity.Wallet.Account>
+struct List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550;
+// System.Collections.Generic.List`1<Solana.Unity.Rpc.Models.AccountMeta>
+struct List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25;
+// System.Collections.Generic.List`1<Solana.Unity.Metaplex.Utilities.Json.Attribute>
+struct List_1_tAB7180741C6C774B2CDC9EF7D7E02B56836B26AA;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
+// System.Predicate`1<System.Object>
+struct Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12;
+// System.Predicate`1<System.Threading.Tasks.Task>
+struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
+// Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>>
+struct RequestResult_1_t8FF863D369FC7B36364D9AB901041DC97502B757;
+// Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>
+struct RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35;
+// Solana.Unity.Rpc.Core.Http.RequestResult`1<System.Object>
+struct RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24;
+// Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>
+struct RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2;
+// Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>
+struct ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF;
+// Solana.Unity.Rpc.Messages.ResponseValue`1<System.Object>
+struct ResponseValue_1_t8663D687999D2DEE6072DDA9FD2059BBDE351512;
+// Solana.Unity.Programs.Models.ResultWrapper`2<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>,Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>
+struct ResultWrapper_2_t15633B262ECD1D6EC1FF34622B82F08C4E193831;
+// Solana.Unity.Programs.Models.ResultWrapper`2<System.Object,System.Object>
+struct ResultWrapper_2_t11BD214545D74204F1CB9BEF2D7033BDC9108F0D;
+// System.Threading.Tasks.TaskFactory`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>>
+struct TaskFactory_1_tA42076D38A7D7BFA2998A866A76A4FD08A0D95D2;
+// System.Threading.Tasks.TaskFactory`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>
+struct TaskFactory_1_t60CBBC9B8FDA4FBCEE072106F1390382DA41CE36;
+// System.Threading.Tasks.TaskFactory`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>
+struct TaskFactory_1_tCEEA6255AC75CD14CEB27326ECAE7A87FEE55EDE;
+// System.Threading.Tasks.TaskFactory`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>
+struct TaskFactory_1_t1BAB1DD150543F0B5649ACE9277A73A84413FACC;
+// System.Threading.Tasks.TaskFactory`1<Solana.Unity.SDK.Nft.Nft>
+struct TaskFactory_1_tC39EEBBCAF1FC1A089FC96D7DE3D186A3135563D;
+// System.Threading.Tasks.TaskFactory`1<UnityEngine.Texture2D>
+struct TaskFactory_1_tA02CD66EEE1C447BE2C3BDAF4821F919418AE5FF;
+// System.Threading.Tasks.Task`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>>
+struct Task_1_t17852F67E3A39967F433EF731F2EBAE41F70EA6A;
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>
+struct Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9;
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>
+struct Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6;
+// System.Threading.Tasks.Task`1<System.ValueTuple`2<System.Object,System.Object>>
+struct Task_1_tDF6755931ADF5913629FA0B8E5826884D8E52D05;
+// System.Threading.Tasks.Task`1<System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>>
+struct Task_1_tF909834A5F763C1F28385C4383CDB879631E956B;
+// System.Threading.Tasks.Task`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>
+struct Task_1_t6EAD20B5A3A44575D9A8067DBF57C0FB36A453DA;
+// System.Threading.Tasks.Task`1<Solana.Unity.SDK.Nft.Nft>
+struct Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA;
+// System.Threading.Tasks.Task`1<System.Object>
+struct Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2;
+// System.Threading.Tasks.Task`1<System.String>
+struct Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0;
+// System.Threading.Tasks.Task`1<UnityEngine.Texture2D>
+struct Task_1_t95921EB64E237ACD28589D64B693C652268F225E;
+// System.Threading.Tasks.Task`1<System.Threading.Tasks.VoidTaskResult>
+struct Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17;
+// Solana.Unity.SDK.Nft.iNftFile`1<UnityEngine.Texture2D>
+struct iNftFile_1_t34D520A6CC3B3DF35FEB3C67370D70D748CEFC92;
+// System.Byte[][]
+struct ByteU5BU5DU5BU5D_t19A0C6D66F22DF673E9CDB37DEF566FE0EC947FA;
+// Solana.Unity.Wallet.Account[]
+struct AccountU5BU5D_t4D822BD299AF7EAAE543308D62E7BCCBBC434F5D;
+// Solana.Unity.Rpc.Models.AccountMeta[]
+struct AccountMetaU5BU5D_t2EF33B747B434F719379E7E87EBB631A70F9C27A;
+// Solana.Unity.SDK.Nft.Attributes[]
+struct AttributesU5BU5D_t673490871CE21CEFD574A90C94A5AE1422838967;
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+// Solana.Unity.SDK.Nft.CreatorData[]
+struct CreatorDataU5BU5D_tE50F5E4A6A050F81DE177BA85BC603BC580B4FDC;
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// Solana.Unity.SDK.Nft.File[]
+struct FileU5BU5D_t6F05D7044E8C9B7DD8FDEC4153A6D99D1CB7B245;
+// Solana.Unity.Metaplex.CandyGuard.Group[]
+struct GroupU5BU5D_t75C1A5FFDB9CC7C58ECF869145809321084FC731;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+// Solana.Unity.Wallet.Account
+struct Account_t15F1801E39C4C126421D353BFA50F8BD35957596;
+// Solana.Unity.Rpc.Models.AccountInfo
+struct AccountInfo_tA8F8793AFBFF73090B460192B39BA38F79B1032D;
+// Solana.Unity.Rpc.Models.AccountMeta
+struct AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F;
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+// Solana.Unity.SDK.Nft.Attributes
+struct Attributes_t42915D121F8913EAA4A590E3675A06DA6DEEEC34;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings
+struct CandyGuardMintSettings_t8F90A74B122E3D05823A9124EE2AFC402C84DACE;
+// Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine
+struct CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8;
+// Solana.Unity.Metaplex.Candymachine.CandyMachineClient
+struct CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E;
+// Solana.Unity.Metaplex.Candymachine.Types.CandyMachineData
+struct CandyMachineData_t0FC9BC6308F1616FB934103299A6940B255F8ED3;
+// System.Globalization.CodePageDataItem
+struct CodePageDataItem_t52460FA30AE37F4F26ACB81055E58002262F19F2;
+// Solana.Unity.Metaplex.NFT.Library.Collection
+struct Collection_tDE0355DB6E57EC9B283E9847E3DFBC01C2296993;
+// Solana.Unity.Metaplex.Utilities.Json.Collection
+struct Collection_tD231FB729DC2ED75269A636DE5628A2EA92996FE;
+// System.Threading.ContextCallback
+struct ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007;
+// Solana.Unity.Rpc.Messages.ContextObj
+struct ContextObj_t20CBAD0294B1CE430341642034DBC6207DABD526;
+// Solana.Unity.SDK.Nft.CreatorData
+struct CreatorData_t5E41875F2A84FA801C05956443D9A3844E5E179A;
+// System.Text.DecoderFallback
+struct DecoderFallback_t7324102215E4ED41EC065C02EB501CB0BC23CD90;
+// System.Delegate
+struct Delegate_t;
+// System.DelegateData
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// System.Text.EncoderFallback
+struct EncoderFallback_tD2C40CE114AA9D8E1F7196608B2D088548015293;
+// System.Text.Encoding
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095;
+// Solana.Unity.Rpc.Models.ErrorData
+struct ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8;
+// System.Exception
+struct Exception_t;
+// Solana.Unity.SDK.Nft.File
+struct File_t1B581E593FAE35BE02F82A19923E64AC64574E45;
+// Solana.Unity.SDK.Metaplex.GuardData
+struct GuardData_t1D96F9E11536F054A90B61EF72162BF54ADF0385;
+// Solana.Unity.Metaplex.CandyGuard.GuardSet
+struct GuardSet_t491BB6B1CC42D9AC6F158F82968866E9FB792D15;
+// System.Runtime.CompilerServices.IAsyncStateMachine
+struct IAsyncStateMachine_t0680C7F905C553076B552D5A1A6E39E2F0F36AA2;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// Solana.Unity.Rpc.IRpcClient
+struct IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE;
+// Solana.Unity.Rpc.IStreamingRpcClient
+struct IStreamingRpcClient_tD95D1830E2CE0EFC8A302FAC12CC93BAC7C76B3C;
+// Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts
+struct InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329;
+// Solana.Unity.Rpc.Models.LatestBlockHash
+struct LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD;
+// Solana.Unity.Rpc.Builders.MessageBuilder
+struct MessageBuilder_t79F41E3E76BE5BBB6D146628BB96C70CBE68E2E2;
+// Solana.Unity.Metaplex.NFT.Library.MetadataAccount
+struct MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51;
+// Solana.Unity.SDK.Nft.Metaplex
+struct Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A;
+// Solana.Unity.SDK.Nft.MetaplexData
+struct MetaplexData_tC37F1D8BEEC3B67D72F3C047E6704BB9811B1254;
+// Solana.Unity.SDK.Nft.MetaplexJsonData
+struct MetaplexJsonData_t8BFED7ECD7C8B9537758CC3B0C317FF915437678;
+// Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard
+struct MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
+// Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts
+struct MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724;
+// Solana.Unity.SDK.Nft.NFTProData
+struct NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF;
+// Solana.Unity.SDK.Nft.Nft
+struct Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E;
+// Solana.Unity.SDK.Nft.NftImage
+struct NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20;
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+// Solana.Unity.Metaplex.NFT.Library.OnChainData
+struct OnChainData_tDE37880ED87AB6DC2E17563E8A15904F4457F09C;
+// Solana.Unity.Wallet.PrivateKey
+struct PrivateKey_t90586BD92512B1F79CAFAE6DEC4D7B812DE78D41;
+// Solana.Unity.Metaplex.NFT.Library.ProgrammableConfig
+struct ProgrammableConfig_t940E8A7584F57DC616E148E2147D1F3CABCDB4B2;
+// Solana.Unity.Metaplex.Utilities.Json.Properties
+struct Properties_tF8BC75EA7C06853B3158EF3430BFDAAA81889A6B;
+// Solana.Unity.SDK.Nft.Properties
+struct Properties_t35B1027239852E24EAC0F2B5A83695B84DDD31D5;
+// Solana.Unity.Wallet.PublicKey
+struct PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// System.Threading.Tasks.StackGuard
+struct StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352;
+// System.String
+struct String_t;
+// System.Threading.Tasks.Task
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572;
+// System.Threading.Tasks.TaskFactory
+struct TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0;
+// System.Threading.Tasks.TaskScheduler
+struct TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E;
+// UnityEngine.Texture
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700;
+// UnityEngine.Texture2D
+struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
+// Solana.Unity.Rpc.Builders.TransactionBuilder
+struct TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4;
+// Solana.Unity.Rpc.Models.TransactionInstruction
+struct TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B;
+// Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts
+struct UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766;
+// Solana.Unity.Metaplex.NFT.Library.Uses
+struct Uses_tA33DAA1C1E73A092D0E53F30D1F7630FD5885714;
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// Solana.Unity.Metaplex.CandyGuard.Program.WithdrawAccounts
+struct WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0;
+// Solana.Unity.Metaplex.Candymachine.WithdrawAccounts
+struct WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D;
+// Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts
+struct WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/AllowListMintSettings
+struct AllowListMintSettings_tA97245D285F82EF5C08F4781D5A9CF0EC972FFB5;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/FreezeSolPaymentMintSettings
+struct FreezeSolPaymentMintSettings_tA96E97097A540C5DBE514E17DFE34F9D4666693A;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/FreezeTokenPaymentMintSettings
+struct FreezeTokenPaymentMintSettings_t5AF500F515FF1A77D6D726F48CA31F35306B0C52;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/GatekeeperMintSettings
+struct GatekeeperMintSettings_t2E6D9C0C6E9A790D4CF2727FB79E53009D13D114;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/MintLimitMintSettings
+struct MintLimitMintSettings_tC8ED2D7E47D01DB28BDAFE0C5A9917654D9B65CE;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/NftBurnMintSettings
+struct NftBurnMintSettings_tA3F5BC75BF39E54151DBE80DB47A6D3A77FE9750;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/NftGateMintSettings
+struct NftGateMintSettings_t692F3DA37B85F874EC0DB7B7F8AC601527992B3E;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/NftPaymentMintSettings
+struct NftPaymentMintSettings_t6D2661108B02FD3DA95DC867FD37B70FBE95018D;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/SolPaymentMintSettings
+struct SolPaymentMintSettings_t141754C4329E307F805896622DBDF2B2668DD6D9;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/ThirdPartySignerMintSettings
+struct ThirdPartySignerMintSettings_t44742CE17381503C8122DE3BBFB339CEA746ABE0;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/TokenBurnMintSettings
+struct TokenBurnMintSettings_t1936C8AE361D877D43E6D2BD6F8EAE58FBE49420;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/TokenGateMintSettings
+struct TokenGateMintSettings_tBD34BA7903F3C06B578D5B5BDFA3595901730D45;
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/TokenPaymentMintSettings
+struct TokenPaymentMintSettings_tC90D725064632D4AD1D0A95500B59CEE7A2B187D;
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<>c__DisplayClass14_0
+struct U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936;
+// System.Threading.Tasks.Task/ContingentProperties
+struct ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540;
+
+IL2CPP_EXTERN_C RuntimeClass* Account_t15F1801E39C4C126421D353BFA50F8BD35957596_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AssociatedTokenAccountProgram_tFC3624824F991B8AEA618DEE565CB16C25BCBC22_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ComputeBudgetProgram_tD1E21E1B65B9BAFCF6ED370F1DBDE3C495B2108D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MetadataProgram_tC7FFBB9FB10DD793C6739437E8A6BBF7DC534270_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SysVars_t8E6A88778C6137B9BB28FFB92A5B775C92E3C5F8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TokenProgram_tAC7AD56BE92E3D7F5BB55E7C8F018DB308607424_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* iNftFile_1_t34D520A6CC3B3DF35FEB3C67370D70D748CEFC92_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral0CF6E760F4429CA66FCDDB0BC125023158962742;
+IL2CPP_EXTERN_C String_t* _stringLiteral683E9AEDEA0A637BF28D65D46A3996D097F4DFF6;
+IL2CPP_EXTERN_C String_t* _stringLiteral6AD3488524C3846792C69FAE659FB340679F91C4;
+IL2CPP_EXTERN_C String_t* _stringLiteral6C350721AC95DF93C2DF71D3A42C52DCC411F05F;
+IL2CPP_EXTERN_C String_t* _stringLiteralA15C898F015A9B0BC3268E8883CD03008A56DE26;
+IL2CPP_EXTERN_C String_t* _stringLiteralD312B65DE8A886159808475CA6C7A878F51A120A;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+IL2CPP_EXTERN_C String_t* _stringLiteralF9A0C8B4D77ADFC63D1015CBBFC7CB27E8E61DC8;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_m6BE8300DBCC84BA4B9D51A4BC6CF311DB7823431_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_m16F86F34D937C793288258ECD17D8061529DE927_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2138E21A86BFC15C199D953CAE47896DBB57B67C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_m29A77235A15B294F5DB6CD7BD44873543E39B01E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m8B60C41D78189CF27952EF72DE1C90981D044E58_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_m86B07EF0DD5B86618CA122FADF4F2E78E64CD703_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m93F34FFA7C03829FFA89661159F5695828A4CC7A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mFA3308FD473A79D0A3AF021D94629C33D8E276D2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_mDF8F7C6AF01BBE2B037DC030BF6751027C17B804_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_mF95CC50AC32B74CEF845E6E0E4CF764EA9706D29_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m22BDD6AAE5777BA61F548D6F82403CF5D316EECD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_mE55A97269FE5DE299C959FFF470005FA16E2C29E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m3CFC79EE53C15D614C22BDF0D3F2FBC60A62F0A0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_mA0134BCB0655310E800C0632633593486E4DD61F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mA5F7719DD296C516D447134B5352D83BB8CE35A0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_m5FF2C09F29073DCAC073D42B2C03F7D286D69645_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetException_m125E519D143550CF0A759BC0787619B05252EBA1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetException_m75725988E2733A64B19D8B9271CCDDDD05B7F5A7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_m042A9DFC699DD914C49DD5B25561DB97403AF3B2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_m08FFC63CC76712C6E11105CFDEF8B3E9DE4E503B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetStateMachine_m611FCFDB5FE2F9D9DB4B97F721F099F02C6171CA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetStateMachine_mC1CBC034F550F61C34863E501693731D4DC917ED_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m1CA6E3479FF4EAA03F90DE766249C53F978609FF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mFAE22BF22742386E2EB689B5B32BEDCFC82C2A9D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_mD6738CAD485051F94AA5CEB97F9B30CC31DB607A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_Start_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m3974670026A667EC10D97325143B868330D41076_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Concat_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mFF575F57DEBCB323A03171728B6BAF429238E633_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Select_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_m6EC54EA8A8E3EC6879F13A4B186229660AF7A706_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_ToList_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mD9525E2DB3B03D54FF5A091EC412A44A12DFBE9A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FileLoader_LoadFileFromLocalPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_m3C52711C22108678C731A7B179D739AA707BFC09_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FileLoader_LoadFileFromLocalPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m016C359B5BB9BE795CD536FA49FE4A0DFEB5998F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FileLoader_LoadFile_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m80E0333559E547473442D0D3AA22C040938B7714_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FileLoader_SaveToPersistentDataPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_mCBFD7B61780A7B74B3E5EF16DC7FD097CC7F4B34_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FileLoader_SaveToPersistentDataPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_mB85A1EECDCFFC9DD8BD906A6DE24ED636334B8B8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mAF067D8BCD6732A0ADBE1BA6EE909B3512880D42_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m8070151BA99349188C9F1457EC394480BE0D4ED4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ResultWrapper_2_get_ParsedResult_mDC664D682469C262D4B62A9F052B4A337E2AE96E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_GetResult_m82A4B2A438721CBE6D9BB37486616D975F8BAF28_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_GetResult_m985AE989091993E43286DF30A7CCD0F9192A8FA9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_GetResult_mE4B8867B0D8DAA1317AD64FE09FBD26E825A654C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_get_IsCompleted_m7186C8E1159C2CB0E7473A29238DA824907B340A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_get_IsCompleted_m7380958BCD673BEF6D478E07F22B7EA94896C6EB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TaskAwaiter_1_get_IsCompleted_m77FF413EE49A5859C0BC111104448D64F3C01911_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_GetAwaiter_m123CA477CD77203FA7F82D9119B581658958A73F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_GetAwaiter_m88AFED53B032F7EDDB6F9746699970B9FFFC992C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_GetAwaiter_m8FCC61F9B37C918DC80679E0B38EFC5BD84871F1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass14_0_U3CMintOneTokenWithGuardsU3Eb__0_m21D61C61B638AB5C39D1DF8A6A1BE1CC5EFE0884_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551_RuntimeMethod_var;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<System.Byte[]>
+struct List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ByteU5BU5DU5BU5D_t19A0C6D66F22DF673E9CDB37DEF566FE0EC947FA* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ByteU5BU5DU5BU5D_t19A0C6D66F22DF673E9CDB37DEF566FE0EC947FA* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Solana.Unity.Wallet.Account>
+struct List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	AccountU5BU5D_t4D822BD299AF7EAAE543308D62E7BCCBBC434F5D* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	AccountU5BU5D_t4D822BD299AF7EAAE543308D62E7BCCBBC434F5D* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Solana.Unity.Rpc.Models.AccountMeta>
+struct List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	AccountMetaU5BU5D_t2EF33B747B434F719379E7E87EBB631A70F9C27A* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	AccountMetaU5BU5D_t2EF33B747B434F719379E7E87EBB631A70F9C27A* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>
+struct RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35  : public RuntimeObject
+{
+	// System.Boolean Solana.Unity.Rpc.Core.Http.RequestResult`1::<WasHttpRequestSuccessful>k__BackingField
+	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField_0;
+	// System.Boolean Solana.Unity.Rpc.Core.Http.RequestResult`1::<WasRequestSuccessfullyHandled>k__BackingField
+	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField_1;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<Reason>k__BackingField
+	String_t* ___U3CReasonU3Ek__BackingField_2;
+	// T Solana.Unity.Rpc.Core.Http.RequestResult`1::<Result>k__BackingField
+	ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* ___U3CResultU3Ek__BackingField_3;
+	// System.Net.HttpStatusCode Solana.Unity.Rpc.Core.Http.RequestResult`1::<HttpStatusCode>k__BackingField
+	int32_t ___U3CHttpStatusCodeU3Ek__BackingField_4;
+	// System.Int32 Solana.Unity.Rpc.Core.Http.RequestResult`1::<ServerErrorCode>k__BackingField
+	int32_t ___U3CServerErrorCodeU3Ek__BackingField_5;
+	// Solana.Unity.Rpc.Models.ErrorData Solana.Unity.Rpc.Core.Http.RequestResult`1::<ErrorData>k__BackingField
+	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField_6;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<RawRpcRequest>k__BackingField
+	String_t* ___U3CRawRpcRequestU3Ek__BackingField_7;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<RawRpcResponse>k__BackingField
+	String_t* ___U3CRawRpcResponseU3Ek__BackingField_8;
+};
+
+// Solana.Unity.Rpc.Core.Http.RequestResult`1<System.Object>
+struct RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24  : public RuntimeObject
+{
+	// System.Boolean Solana.Unity.Rpc.Core.Http.RequestResult`1::<WasHttpRequestSuccessful>k__BackingField
+	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField_0;
+	// System.Boolean Solana.Unity.Rpc.Core.Http.RequestResult`1::<WasRequestSuccessfullyHandled>k__BackingField
+	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField_1;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<Reason>k__BackingField
+	String_t* ___U3CReasonU3Ek__BackingField_2;
+	// T Solana.Unity.Rpc.Core.Http.RequestResult`1::<Result>k__BackingField
+	RuntimeObject* ___U3CResultU3Ek__BackingField_3;
+	// System.Net.HttpStatusCode Solana.Unity.Rpc.Core.Http.RequestResult`1::<HttpStatusCode>k__BackingField
+	int32_t ___U3CHttpStatusCodeU3Ek__BackingField_4;
+	// System.Int32 Solana.Unity.Rpc.Core.Http.RequestResult`1::<ServerErrorCode>k__BackingField
+	int32_t ___U3CServerErrorCodeU3Ek__BackingField_5;
+	// Solana.Unity.Rpc.Models.ErrorData Solana.Unity.Rpc.Core.Http.RequestResult`1::<ErrorData>k__BackingField
+	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField_6;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<RawRpcRequest>k__BackingField
+	String_t* ___U3CRawRpcRequestU3Ek__BackingField_7;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<RawRpcResponse>k__BackingField
+	String_t* ___U3CRawRpcResponseU3Ek__BackingField_8;
+};
+
+// Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>
+struct RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2  : public RuntimeObject
+{
+	// System.Boolean Solana.Unity.Rpc.Core.Http.RequestResult`1::<WasHttpRequestSuccessful>k__BackingField
+	bool ___U3CWasHttpRequestSuccessfulU3Ek__BackingField_0;
+	// System.Boolean Solana.Unity.Rpc.Core.Http.RequestResult`1::<WasRequestSuccessfullyHandled>k__BackingField
+	bool ___U3CWasRequestSuccessfullyHandledU3Ek__BackingField_1;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<Reason>k__BackingField
+	String_t* ___U3CReasonU3Ek__BackingField_2;
+	// T Solana.Unity.Rpc.Core.Http.RequestResult`1::<Result>k__BackingField
+	String_t* ___U3CResultU3Ek__BackingField_3;
+	// System.Net.HttpStatusCode Solana.Unity.Rpc.Core.Http.RequestResult`1::<HttpStatusCode>k__BackingField
+	int32_t ___U3CHttpStatusCodeU3Ek__BackingField_4;
+	// System.Int32 Solana.Unity.Rpc.Core.Http.RequestResult`1::<ServerErrorCode>k__BackingField
+	int32_t ___U3CServerErrorCodeU3Ek__BackingField_5;
+	// Solana.Unity.Rpc.Models.ErrorData Solana.Unity.Rpc.Core.Http.RequestResult`1::<ErrorData>k__BackingField
+	ErrorData_t49373BB7C78A299593CF1FF546FFB3DCC8A9E5B8* ___U3CErrorDataU3Ek__BackingField_6;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<RawRpcRequest>k__BackingField
+	String_t* ___U3CRawRpcRequestU3Ek__BackingField_7;
+	// System.String Solana.Unity.Rpc.Core.Http.RequestResult`1::<RawRpcResponse>k__BackingField
+	String_t* ___U3CRawRpcResponseU3Ek__BackingField_8;
+};
+
+// Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>
+struct ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF  : public RuntimeObject
+{
+	// Solana.Unity.Rpc.Messages.ContextObj Solana.Unity.Rpc.Messages.ResponseValue`1::<Context>k__BackingField
+	ContextObj_t20CBAD0294B1CE430341642034DBC6207DABD526* ___U3CContextU3Ek__BackingField_0;
+	// T Solana.Unity.Rpc.Messages.ResponseValue`1::<Value>k__BackingField
+	LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* ___U3CValueU3Ek__BackingField_1;
+};
+
+// Solana.Unity.Rpc.Messages.ResponseValue`1<System.Object>
+struct ResponseValue_1_t8663D687999D2DEE6072DDA9FD2059BBDE351512  : public RuntimeObject
+{
+	// Solana.Unity.Rpc.Messages.ContextObj Solana.Unity.Rpc.Messages.ResponseValue`1::<Context>k__BackingField
+	ContextObj_t20CBAD0294B1CE430341642034DBC6207DABD526* ___U3CContextU3Ek__BackingField_0;
+	// T Solana.Unity.Rpc.Messages.ResponseValue`1::<Value>k__BackingField
+	RuntimeObject* ___U3CValueU3Ek__BackingField_1;
+};
+
+// Solana.Unity.Programs.Models.ResultWrapper`2<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>,Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>
+struct ResultWrapper_2_t15633B262ECD1D6EC1FF34622B82F08C4E193831  : public RuntimeObject
+{
+	// Solana.Unity.Rpc.Core.Http.RequestResult`1<T> Solana.Unity.Programs.Models.ResultWrapper`2::<OriginalRequest>k__BackingField
+	RequestResult_1_t8FF863D369FC7B36364D9AB901041DC97502B757* ___U3COriginalRequestU3Ek__BackingField_0;
+	// T2 Solana.Unity.Programs.Models.ResultWrapper`2::<ParsedResult>k__BackingField
+	CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* ___U3CParsedResultU3Ek__BackingField_1;
+};
+
+// Solana.Unity.Programs.Models.ResultWrapper`2<System.Object,System.Object>
+struct ResultWrapper_2_t11BD214545D74204F1CB9BEF2D7033BDC9108F0D  : public RuntimeObject
+{
+	// Solana.Unity.Rpc.Core.Http.RequestResult`1<T> Solana.Unity.Programs.Models.ResultWrapper`2::<OriginalRequest>k__BackingField
+	RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24* ___U3COriginalRequestU3Ek__BackingField_0;
+	// T2 Solana.Unity.Programs.Models.ResultWrapper`2::<ParsedResult>k__BackingField
+	RuntimeObject* ___U3CParsedResultU3Ek__BackingField_1;
+};
+
+// Solana.Unity.Wallet.Account
+struct Account_t15F1801E39C4C126421D353BFA50F8BD35957596  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PrivateKey Solana.Unity.Wallet.Account::<PrivateKey>k__BackingField
+	PrivateKey_t90586BD92512B1F79CAFAE6DEC4D7B812DE78D41* ___U3CPrivateKeyU3Ek__BackingField_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Wallet.Account::<PublicKey>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CPublicKeyU3Ek__BackingField_1;
+};
+
+// Solana.Unity.Rpc.Models.AccountMeta
+struct AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F  : public RuntimeObject
+{
+	// System.Byte[] Solana.Unity.Rpc.Models.AccountMeta::<PublicKeyBytes>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CPublicKeyBytesU3Ek__BackingField_0;
+	// System.String Solana.Unity.Rpc.Models.AccountMeta::<PublicKey>k__BackingField
+	String_t* ___U3CPublicKeyU3Ek__BackingField_1;
+	// System.Boolean Solana.Unity.Rpc.Models.AccountMeta::<IsSigner>k__BackingField
+	bool ___U3CIsSignerU3Ek__BackingField_2;
+	// System.Boolean Solana.Unity.Rpc.Models.AccountMeta::<IsWritable>k__BackingField
+	bool ___U3CIsWritableU3Ek__BackingField_3;
+};
+struct Il2CppArrayBounds;
+
+// Solana.Unity.Programs.AssociatedTokenAccountProgram
+struct AssociatedTokenAccountProgram_tFC3624824F991B8AEA618DEE565CB16C25BCBC22  : public RuntimeObject
+{
+};
+
+struct AssociatedTokenAccountProgram_tFC3624824F991B8AEA618DEE565CB16C25BCBC22_StaticFields
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.AssociatedTokenAccountProgram::ProgramIdKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___ProgramIdKey_0;
+};
+
+// Solana.Unity.SDK.Nft.Attributes
+struct Attributes_t42915D121F8913EAA4A590E3675A06DA6DEEEC34  : public RuntimeObject
+{
+	// System.String Solana.Unity.SDK.Nft.Attributes::trait_type
+	String_t* ___trait_type_0;
+	// System.String Solana.Unity.SDK.Nft.Attributes::value
+	String_t* ___value_1;
+};
+
+// Solana.Unity.Programs.Abstract.BaseClient
+struct BaseClient_t17729739896F3595EC6D20C2273EA5558597A030  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.Abstract.BaseClient::<ProgramIdKey>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CProgramIdKeyU3Ek__BackingField_0;
+	// Solana.Unity.Rpc.IRpcClient Solana.Unity.Programs.Abstract.BaseClient::<RpcClient>k__BackingField
+	RuntimeObject* ___U3CRpcClientU3Ek__BackingField_1;
+	// Solana.Unity.Rpc.IStreamingRpcClient Solana.Unity.Programs.Abstract.BaseClient::<StreamingRpcClient>k__BackingField
+	RuntimeObject* ___U3CStreamingRpcClientU3Ek__BackingField_2;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings
+struct CandyGuardMintSettings_t8F90A74B122E3D05823A9124EE2AFC402C84DACE  : public RuntimeObject
+{
+	// System.String Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::GuardGroup
+	String_t* ___GuardGroup_1;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/ThirdPartySignerMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<ThirdPartySigner>k__BackingField
+	ThirdPartySignerMintSettings_t44742CE17381503C8122DE3BBFB339CEA746ABE0* ___U3CThirdPartySignerU3Ek__BackingField_2;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/GatekeeperMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<Gatekeeper>k__BackingField
+	GatekeeperMintSettings_t2E6D9C0C6E9A790D4CF2727FB79E53009D13D114* ___U3CGatekeeperU3Ek__BackingField_3;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/AllowListMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<AllowList>k__BackingField
+	AllowListMintSettings_tA97245D285F82EF5C08F4781D5A9CF0EC972FFB5* ___U3CAllowListU3Ek__BackingField_4;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/MintLimitMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<MintLimit>k__BackingField
+	MintLimitMintSettings_tC8ED2D7E47D01DB28BDAFE0C5A9917654D9B65CE* ___U3CMintLimitU3Ek__BackingField_5;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/SolPaymentMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<SolPayment>k__BackingField
+	SolPaymentMintSettings_t141754C4329E307F805896622DBDF2B2668DD6D9* ___U3CSolPaymentU3Ek__BackingField_6;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/NftPaymentMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<NftPayment>k__BackingField
+	NftPaymentMintSettings_t6D2661108B02FD3DA95DC867FD37B70FBE95018D* ___U3CNftPaymentU3Ek__BackingField_7;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/NftGateMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<NftGate>k__BackingField
+	NftGateMintSettings_t692F3DA37B85F874EC0DB7B7F8AC601527992B3E* ___U3CNftGateU3Ek__BackingField_8;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/NftBurnMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<NftBurn>k__BackingField
+	NftBurnMintSettings_tA3F5BC75BF39E54151DBE80DB47A6D3A77FE9750* ___U3CNftBurnU3Ek__BackingField_9;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/TokenBurnMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<TokenBurn>k__BackingField
+	TokenBurnMintSettings_t1936C8AE361D877D43E6D2BD6F8EAE58FBE49420* ___U3CTokenBurnU3Ek__BackingField_10;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/TokenGateMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<TokenGate>k__BackingField
+	TokenGateMintSettings_tBD34BA7903F3C06B578D5B5BDFA3595901730D45* ___U3CTokenGateU3Ek__BackingField_11;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/TokenPaymentMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<TokenPayment>k__BackingField
+	TokenPaymentMintSettings_tC90D725064632D4AD1D0A95500B59CEE7A2B187D* ___U3CTokenPaymentU3Ek__BackingField_12;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/FreezeSolPaymentMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<FreezeSolPayment>k__BackingField
+	FreezeSolPaymentMintSettings_tA96E97097A540C5DBE514E17DFE34F9D4666693A* ___U3CFreezeSolPaymentU3Ek__BackingField_13;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings/FreezeTokenPaymentMintSettings Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::<FreezeTokenPayment>k__BackingField
+	FreezeTokenPaymentMintSettings_t5AF500F515FF1A77D6D726F48CA31F35306B0C52* ___U3CFreezeTokenPaymentU3Ek__BackingField_14;
+};
+
+struct CandyGuardMintSettings_t8F90A74B122E3D05823A9124EE2AFC402C84DACE_StaticFields
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::GATEWAY_PROGRAM_ID
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___GATEWAY_PROGRAM_ID_0;
+};
+
+// Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine
+struct CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8  : public RuntimeObject
+{
+	// Solana.Unity.Metaplex.Candymachine.Types.AccountVersion Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::<Version>k__BackingField
+	uint8_t ___U3CVersionU3Ek__BackingField_0;
+	// System.Byte Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::<TokenStandard>k__BackingField
+	uint8_t ___U3CTokenStandardU3Ek__BackingField_1;
+	// System.Byte[] Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::<Features>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CFeaturesU3Ek__BackingField_2;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::<Authority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CAuthorityU3Ek__BackingField_3;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::<MintAuthority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CMintAuthorityU3Ek__BackingField_4;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::<CollectionMint>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCollectionMintU3Ek__BackingField_5;
+	// System.UInt64 Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::<ItemsRedeemed>k__BackingField
+	uint64_t ___U3CItemsRedeemedU3Ek__BackingField_6;
+	// Solana.Unity.Metaplex.Candymachine.Types.CandyMachineData Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::<Data>k__BackingField
+	CandyMachineData_t0FC9BC6308F1616FB934103299A6940B255F8ED3* ___U3CDataU3Ek__BackingField_7;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands
+struct CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50  : public RuntimeObject
+{
+};
+
+struct CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands::CandyMachineProgramId
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___CandyMachineProgramId_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands::CandyGuardProgramId
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___CandyGuardProgramId_1;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands::RECENT_SLOTHASHES
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___RECENT_SLOTHASHES_2;
+	// System.UInt32 Solana.Unity.SDK.Metaplex.CandyMachineCommands::COMPUTE_UNITS
+	uint32_t ___COMPUTE_UNITS_3;
+	// System.UInt64 Solana.Unity.SDK.Metaplex.CandyMachineCommands::MAX_CREATOR_LIMIT
+	uint64_t ___MAX_CREATOR_LIMIT_4;
+	// System.UInt64 Solana.Unity.SDK.Metaplex.CandyMachineCommands::MAX_CREATOR_LEN
+	uint64_t ___MAX_CREATOR_LEN_5;
+	// System.UInt64 Solana.Unity.SDK.Metaplex.CandyMachineCommands::MAX_NAME_LEN
+	uint64_t ___MAX_NAME_LEN_6;
+	// System.UInt64 Solana.Unity.SDK.Metaplex.CandyMachineCommands::MAX_SYMBOL_LEN
+	uint64_t ___MAX_SYMBOL_LEN_7;
+	// System.UInt64 Solana.Unity.SDK.Metaplex.CandyMachineCommands::MAX_URI_LEN
+	uint64_t ___MAX_URI_LEN_8;
+	// System.UInt64 Solana.Unity.SDK.Metaplex.CandyMachineCommands::HIDDEN_SETTINGS_START
+	uint64_t ___HIDDEN_SETTINGS_START_9;
+};
+
+// Solana.Unity.SDK.Nft.CreatorData
+struct CreatorData_t5E41875F2A84FA801C05956443D9A3844E5E179A  : public RuntimeObject
+{
+	// System.String Solana.Unity.SDK.Nft.CreatorData::address
+	String_t* ___address_0;
+	// System.Boolean Solana.Unity.SDK.Nft.CreatorData::verified
+	bool ___verified_1;
+	// System.Int32 Solana.Unity.SDK.Nft.CreatorData::share
+	int32_t ___share_2;
+};
+
+// System.Text.Encoding
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095  : public RuntimeObject
+{
+	// System.Int32 System.Text.Encoding::m_codePage
+	int32_t ___m_codePage_55;
+	// System.Globalization.CodePageDataItem System.Text.Encoding::dataItem
+	CodePageDataItem_t52460FA30AE37F4F26ACB81055E58002262F19F2* ___dataItem_56;
+	// System.Boolean System.Text.Encoding::m_deserializedFromEverett
+	bool ___m_deserializedFromEverett_57;
+	// System.Boolean System.Text.Encoding::m_isReadOnly
+	bool ___m_isReadOnly_58;
+	// System.Text.EncoderFallback System.Text.Encoding::encoderFallback
+	EncoderFallback_tD2C40CE114AA9D8E1F7196608B2D088548015293* ___encoderFallback_59;
+	// System.Text.DecoderFallback System.Text.Encoding::decoderFallback
+	DecoderFallback_t7324102215E4ED41EC065C02EB501CB0BC23CD90* ___decoderFallback_60;
+};
+
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
+{
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::defaultEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___defaultEncoding_0;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::unicodeEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___unicodeEncoding_1;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::bigEndianUnicode
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___bigEndianUnicode_2;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf7Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf7Encoding_3;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf8Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf8Encoding_4;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf32Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf32Encoding_5;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::asciiEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___asciiEncoding_6;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::latin1Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___latin1Encoding_7;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding> modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::encodings
+	Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54* ___encodings_8;
+	// System.Object System.Text.Encoding::s_InternalSyncObject
+	RuntimeObject* ___s_InternalSyncObject_61;
+};
+
+// Solana.Unity.SDK.Nft.File
+struct File_t1B581E593FAE35BE02F82A19923E64AC64574E45  : public RuntimeObject
+{
+	// System.String Solana.Unity.SDK.Nft.File::uri
+	String_t* ___uri_0;
+	// System.String Solana.Unity.SDK.Nft.File::type
+	String_t* ___type_1;
+};
+
+// Solana.Unity.SDK.Metaplex.GuardData
+struct GuardData_t1D96F9E11536F054A90B61EF72162BF54ADF0385  : public RuntimeObject
+{
+	// Solana.Unity.Metaplex.CandyGuard.GuardSet Solana.Unity.SDK.Metaplex.GuardData::<Default>k__BackingField
+	GuardSet_t491BB6B1CC42D9AC6F158F82968866E9FB792D15* ___U3CDefaultU3Ek__BackingField_2;
+	// Solana.Unity.Metaplex.CandyGuard.Group[] Solana.Unity.SDK.Metaplex.GuardData::<Groups>k__BackingField
+	GroupU5BU5D_t75C1A5FFDB9CC7C58ECF869145809321084FC731* ___U3CGroupsU3Ek__BackingField_3;
+};
+
+// Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts
+struct InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::<CandyGuard>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyGuardU3Ek__BackingField_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::<Base>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CBaseU3Ek__BackingField_1;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::<Authority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CAuthorityU3Ek__BackingField_2;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::<Payer>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CPayerU3Ek__BackingField_3;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::<SystemProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CSystemProgramU3Ek__BackingField_4;
+};
+
+// Solana.Unity.Rpc.Models.LatestBlockHash
+struct LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD  : public RuntimeObject
+{
+	// System.String Solana.Unity.Rpc.Models.LatestBlockHash::<Blockhash>k__BackingField
+	String_t* ___U3CBlockhashU3Ek__BackingField_0;
+	// System.UInt64 Solana.Unity.Rpc.Models.LatestBlockHash::<LastValidBlockHeight>k__BackingField
+	uint64_t ___U3CLastValidBlockHeightU3Ek__BackingField_1;
+};
+
+// Solana.Unity.Metaplex.NFT.Library.MetadataAccount
+struct MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.NFT.Library.MetadataAccount::metadataKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___metadataKey_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.NFT.Library.MetadataAccount::updateAuthority
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___updateAuthority_1;
+	// System.String Solana.Unity.Metaplex.NFT.Library.MetadataAccount::mint
+	String_t* ___mint_2;
+	// Solana.Unity.Metaplex.NFT.Library.OnChainData Solana.Unity.Metaplex.NFT.Library.MetadataAccount::metadata
+	OnChainData_tDE37880ED87AB6DC2E17563E8A15904F4457F09C* ___metadata_3;
+	// Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard Solana.Unity.Metaplex.NFT.Library.MetadataAccount::offchainData
+	MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* ___offchainData_4;
+	// Solana.Unity.Rpc.Models.AccountInfo Solana.Unity.Metaplex.NFT.Library.MetadataAccount::accInfo
+	AccountInfo_tA8F8793AFBFF73090B460192B39BA38F79B1032D* ___accInfo_5;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.NFT.Library.MetadataAccount::owner
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___owner_6;
+};
+
+// Solana.Unity.Metaplex.NFT.Library.MetadataProgram
+struct MetadataProgram_tC7FFBB9FB10DD793C6739437E8A6BBF7DC534270  : public RuntimeObject
+{
+};
+
+struct MetadataProgram_tC7FFBB9FB10DD793C6739437E8A6BBF7DC534270_StaticFields
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.NFT.Library.MetadataProgram::ProgramIdKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___ProgramIdKey_0;
+};
+
+// Solana.Unity.SDK.Nft.Metaplex
+struct Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A  : public RuntimeObject
+{
+	// Solana.Unity.SDK.Nft.iNftFile`1<UnityEngine.Texture2D> Solana.Unity.SDK.Nft.Metaplex::nftImage
+	RuntimeObject* ___nftImage_0;
+	// Solana.Unity.Metaplex.NFT.Library.MetadataAccount Solana.Unity.SDK.Nft.Metaplex::data
+	MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* ___data_1;
+};
+
+// Solana.Unity.SDK.Nft.MetaplexData
+struct MetaplexData_tC37F1D8BEEC3B67D72F3C047E6704BB9811B1254  : public RuntimeObject
+{
+	// System.String Solana.Unity.SDK.Nft.MetaplexData::name
+	String_t* ___name_0;
+	// System.String Solana.Unity.SDK.Nft.MetaplexData::symbol
+	String_t* ___symbol_1;
+	// System.String Solana.Unity.SDK.Nft.MetaplexData::url
+	String_t* ___url_2;
+	// System.Int32 Solana.Unity.SDK.Nft.MetaplexData::seller_fee_basis_points
+	int32_t ___seller_fee_basis_points_3;
+	// Solana.Unity.SDK.Nft.CreatorData[] Solana.Unity.SDK.Nft.MetaplexData::creators
+	CreatorDataU5BU5D_tE50F5E4A6A050F81DE177BA85BC603BC580B4FDC* ___creators_4;
+	// Solana.Unity.SDK.Nft.MetaplexJsonData Solana.Unity.SDK.Nft.MetaplexData::json
+	MetaplexJsonData_t8BFED7ECD7C8B9537758CC3B0C317FF915437678* ___json_5;
+};
+
+// Solana.Unity.SDK.Nft.MetaplexJsonData
+struct MetaplexJsonData_t8BFED7ECD7C8B9537758CC3B0C317FF915437678  : public RuntimeObject
+{
+	// System.String Solana.Unity.SDK.Nft.MetaplexJsonData::name
+	String_t* ___name_0;
+	// System.String Solana.Unity.SDK.Nft.MetaplexJsonData::description
+	String_t* ___description_1;
+	// System.String Solana.Unity.SDK.Nft.MetaplexJsonData::previewUrl
+	String_t* ___previewUrl_2;
+	// System.String Solana.Unity.SDK.Nft.MetaplexJsonData::animation_url
+	String_t* ___animation_url_3;
+	// System.String Solana.Unity.SDK.Nft.MetaplexJsonData::image
+	String_t* ___image_4;
+	// Solana.Unity.SDK.Nft.Attributes[] Solana.Unity.SDK.Nft.MetaplexJsonData::attributes
+	AttributesU5BU5D_t673490871CE21CEFD574A90C94A5AE1422838967* ___attributes_5;
+	// Solana.Unity.SDK.Nft.Properties Solana.Unity.SDK.Nft.MetaplexJsonData::properties
+	Properties_t35B1027239852E24EAC0F2B5A83695B84DDD31D5* ___properties_6;
+};
+
+// Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard
+struct MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5  : public RuntimeObject
+{
+	// System.String Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<name>k__BackingField
+	String_t* ___U3CnameU3Ek__BackingField_0;
+	// System.String Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<symbol>k__BackingField
+	String_t* ___U3CsymbolU3Ek__BackingField_1;
+	// System.String Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<description>k__BackingField
+	String_t* ___U3CdescriptionU3Ek__BackingField_2;
+	// System.Int32 Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<seller_fee_basis_points>k__BackingField
+	int32_t ___U3Cseller_fee_basis_pointsU3Ek__BackingField_3;
+	// System.String Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<default_image>k__BackingField
+	String_t* ___U3Cdefault_imageU3Ek__BackingField_4;
+	// System.String Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<animation_url>k__BackingField
+	String_t* ___U3Canimation_urlU3Ek__BackingField_5;
+	// System.String Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<external_url>k__BackingField
+	String_t* ___U3Cexternal_urlU3Ek__BackingField_6;
+	// System.Collections.Generic.List`1<Solana.Unity.Metaplex.Utilities.Json.Attribute> Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<attributes>k__BackingField
+	List_1_tAB7180741C6C774B2CDC9EF7D7E02B56836B26AA* ___U3CattributesU3Ek__BackingField_7;
+	// Solana.Unity.Metaplex.Utilities.Json.Collection Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<collection>k__BackingField
+	Collection_tD231FB729DC2ED75269A636DE5628A2EA92996FE* ___U3CcollectionU3Ek__BackingField_8;
+	// Solana.Unity.Metaplex.Utilities.Json.Properties Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::<properties>k__BackingField
+	Properties_tF8BC75EA7C06853B3158EF3430BFDAAA81889A6B* ___U3CpropertiesU3Ek__BackingField_9;
+};
+
+// Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts
+struct MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CandyGuard>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyGuardU3Ek__BackingField_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CandyMachineProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyMachineProgramU3Ek__BackingField_1;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CandyMachine>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyMachineU3Ek__BackingField_2;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CandyMachineAuthorityPda>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyMachineAuthorityPdaU3Ek__BackingField_3;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<Payer>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CPayerU3Ek__BackingField_4;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<Minter>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CMinterU3Ek__BackingField_5;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<NftMint>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CNftMintU3Ek__BackingField_6;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<NftMintAuthority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CNftMintAuthorityU3Ek__BackingField_7;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<NftMetadata>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CNftMetadataU3Ek__BackingField_8;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<NftMasterEdition>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CNftMasterEditionU3Ek__BackingField_9;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<Token>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CTokenU3Ek__BackingField_10;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<TokenRecord>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CTokenRecordU3Ek__BackingField_11;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CollectionDelegateRecord>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCollectionDelegateRecordU3Ek__BackingField_12;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CollectionMint>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCollectionMintU3Ek__BackingField_13;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CollectionMetadata>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCollectionMetadataU3Ek__BackingField_14;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CollectionMasterEdition>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCollectionMasterEditionU3Ek__BackingField_15;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<CollectionUpdateAuthority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCollectionUpdateAuthorityU3Ek__BackingField_16;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<TokenMetadataProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CTokenMetadataProgramU3Ek__BackingField_17;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<SplTokenProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CSplTokenProgramU3Ek__BackingField_18;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<SplAtaProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CSplAtaProgramU3Ek__BackingField_19;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<SystemProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CSystemProgramU3Ek__BackingField_20;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<SysvarInstructions>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CSysvarInstructionsU3Ek__BackingField_21;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<RecentSlothashes>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CRecentSlothashesU3Ek__BackingField_22;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<AuthorizationRulesProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CAuthorizationRulesProgramU3Ek__BackingField_23;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::<AuthorizationRules>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CAuthorizationRulesU3Ek__BackingField_24;
+};
+
+// Solana.Unity.SDK.Nft.NFTProData
+struct NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF  : public RuntimeObject
+{
+	// System.String Solana.Unity.SDK.Nft.NFTProData::type
+	String_t* ___type_0;
+	// System.UInt32 Solana.Unity.SDK.Nft.NFTProData::version
+	uint32_t ___version_1;
+	// System.String Solana.Unity.SDK.Nft.NFTProData::mint
+	String_t* ___mint_2;
+	// System.String Solana.Unity.SDK.Nft.NFTProData::metadata
+	String_t* ___metadata_3;
+	// System.String Solana.Unity.SDK.Nft.NFTProData::title
+	String_t* ___title_4;
+	// System.String Solana.Unity.SDK.Nft.NFTProData::description
+	String_t* ___description_5;
+	// System.String Solana.Unity.SDK.Nft.NFTProData::creator
+	String_t* ___creator_6;
+	// System.String Solana.Unity.SDK.Nft.NFTProData::collection
+	String_t* ___collection_7;
+	// System.String Solana.Unity.SDK.Nft.NFTProData::licence
+	String_t* ___licence_8;
+	// System.String Solana.Unity.SDK.Nft.NFTProData::licence_title
+	String_t* ___licence_title_9;
+	// System.Boolean Solana.Unity.SDK.Nft.NFTProData::nsfw
+	bool ___nsfw_10;
+	// System.String[] Solana.Unity.SDK.Nft.NFTProData::tags
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___tags_11;
+};
+
+// Solana.Unity.SDK.Nft.Nft
+struct Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E  : public RuntimeObject
+{
+	// Solana.Unity.SDK.Nft.Metaplex Solana.Unity.SDK.Nft.Nft::metaplexData
+	Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* ___metaplexData_0;
+};
+
+// Solana.Unity.SDK.Nft.NftImage
+struct NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20  : public RuntimeObject
+{
+	// System.String Solana.Unity.SDK.Nft.NftImage::<name>k__BackingField
+	String_t* ___U3CnameU3Ek__BackingField_0;
+	// System.String Solana.Unity.SDK.Nft.NftImage::<extension>k__BackingField
+	String_t* ___U3CextensionU3Ek__BackingField_1;
+	// System.String Solana.Unity.SDK.Nft.NftImage::<externalUrl>k__BackingField
+	String_t* ___U3CexternalUrlU3Ek__BackingField_2;
+	// UnityEngine.Texture2D Solana.Unity.SDK.Nft.NftImage::<file>k__BackingField
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___U3CfileU3Ek__BackingField_3;
+};
+
+// Solana.Unity.Metaplex.NFT.Library.OnChainData
+struct OnChainData_tDE37880ED87AB6DC2E17563E8A15904F4457F09C  : public RuntimeObject
+{
+	// Solana.Unity.Metaplex.NFT.Library.MetadataVersion Solana.Unity.Metaplex.NFT.Library.OnChainData::version
+	int32_t ___version_0;
+	// System.String Solana.Unity.Metaplex.NFT.Library.OnChainData::name
+	String_t* ___name_1;
+	// System.String Solana.Unity.Metaplex.NFT.Library.OnChainData::symbol
+	String_t* ___symbol_2;
+	// System.String Solana.Unity.Metaplex.NFT.Library.OnChainData::uri
+	String_t* ___uri_3;
+	// System.UInt32 Solana.Unity.Metaplex.NFT.Library.OnChainData::sellerFeeBasisPoints
+	uint32_t ___sellerFeeBasisPoints_4;
+	// System.Boolean Solana.Unity.Metaplex.NFT.Library.OnChainData::hasCreators
+	bool ___hasCreators_5;
+	// System.Collections.Generic.IList`1<Solana.Unity.Metaplex.NFT.Library.Creator> Solana.Unity.Metaplex.NFT.Library.OnChainData::<creators>k__BackingField
+	RuntimeObject* ___U3CcreatorsU3Ek__BackingField_6;
+	// Solana.Unity.Metaplex.NFT.Library.Collection Solana.Unity.Metaplex.NFT.Library.OnChainData::<collectionLink>k__BackingField
+	Collection_tDE0355DB6E57EC9B283E9847E3DFBC01C2296993* ___U3CcollectionLinkU3Ek__BackingField_7;
+	// Solana.Unity.Metaplex.NFT.Library.Uses Solana.Unity.Metaplex.NFT.Library.OnChainData::<uses>k__BackingField
+	Uses_tA33DAA1C1E73A092D0E53F30D1F7630FD5885714* ___U3CusesU3Ek__BackingField_8;
+	// Solana.Unity.Metaplex.NFT.Library.ProgrammableConfig Solana.Unity.Metaplex.NFT.Library.OnChainData::<programmableConfig>k__BackingField
+	ProgrammableConfig_t940E8A7584F57DC616E148E2147D1F3CABCDB4B2* ___U3CprogrammableConfigU3Ek__BackingField_9;
+	// System.Boolean Solana.Unity.Metaplex.NFT.Library.OnChainData::isMutable
+	bool ___isMutable_10;
+	// System.Int32 Solana.Unity.Metaplex.NFT.Library.OnChainData::editionNonce
+	int32_t ___editionNonce_11;
+	// System.Int32 Solana.Unity.Metaplex.NFT.Library.OnChainData::tokenStandard
+	int32_t ___tokenStandard_12;
+	// System.String Solana.Unity.Metaplex.NFT.Library.OnChainData::metadata
+	String_t* ___metadata_13;
+};
+
+// Solana.Unity.SDK.Nft.Properties
+struct Properties_t35B1027239852E24EAC0F2B5A83695B84DDD31D5  : public RuntimeObject
+{
+	// Solana.Unity.SDK.Nft.File[] Solana.Unity.SDK.Nft.Properties::files
+	FileU5BU5D_t6F05D7044E8C9B7DD8FDEC4153A6D99D1CB7B245* ___files_0;
+	// System.String Solana.Unity.SDK.Nft.Properties::category
+	String_t* ___category_1;
+	// Solana.Unity.SDK.Nft.CreatorData[] Solana.Unity.SDK.Nft.Properties::creators
+	CreatorDataU5BU5D_tE50F5E4A6A050F81DE177BA85BC603BC580B4FDC* ___creators_2;
+};
+
+// Solana.Unity.Wallet.PublicKey
+struct PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751  : public RuntimeObject
+{
+	// System.String Solana.Unity.Wallet.PublicKey::_key
+	String_t* ____key_2;
+	// System.Byte[] Solana.Unity.Wallet.PublicKey::_keyBytes
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____keyBytes_3;
+};
+
+struct PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_StaticFields
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Wallet.PublicKey::DefaultPublicKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___DefaultPublicKey_1;
+	// System.Byte[] Solana.Unity.Wallet.PublicKey::ProgramDerivedAddressBytes
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___ProgramDerivedAddressBytes_4;
+};
+
+// System.String
+struct String_t  : public RuntimeObject
+{
+	// System.Int32 System.String::_stringLength
+	int32_t ____stringLength_4;
+	// System.Char System.String::_firstChar
+	Il2CppChar ____firstChar_5;
+};
+
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// Solana.Unity.Programs.SysVars
+struct SysVars_t8E6A88778C6137B9BB28FFB92A5B775C92E3C5F8  : public RuntimeObject
+{
+};
+
+struct SysVars_t8E6A88778C6137B9BB28FFB92A5B775C92E3C5F8_StaticFields
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.SysVars::RecentBlockHashesKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___RecentBlockHashesKey_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.SysVars::RentKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___RentKey_1;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.SysVars::ClockKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___ClockKey_2;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.SysVars::StakeHistoryKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___StakeHistoryKey_3;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.SysVars::InstructionAccount
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___InstructionAccount_4;
+};
+
+// Solana.Unity.Programs.SystemProgram
+struct SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800  : public RuntimeObject
+{
+};
+
+struct SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_StaticFields
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.SystemProgram::ProgramIdKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___ProgramIdKey_0;
+};
+
+// System.Threading.Tasks.Task
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572  : public RuntimeObject
+{
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_taskId
+	int32_t ___m_taskId_1;
+	// System.Delegate System.Threading.Tasks.Task::m_action
+	Delegate_t* ___m_action_2;
+	// System.Object System.Threading.Tasks.Task::m_stateObject
+	RuntimeObject* ___m_stateObject_3;
+	// System.Threading.Tasks.TaskScheduler System.Threading.Tasks.Task::m_taskScheduler
+	TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E* ___m_taskScheduler_4;
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::m_parent
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_parent_5;
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_stateFlags
+	int32_t ___m_stateFlags_6;
+	// System.Object modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_continuationObject
+	RuntimeObject* ___m_continuationObject_23;
+	// System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_contingentProperties
+	ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540* ___m_contingentProperties_26;
+};
+
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_StaticFields
+{
+	// System.Int32 System.Threading.Tasks.Task::s_taskIdCounter
+	int32_t ___s_taskIdCounter_0;
+	// System.Object System.Threading.Tasks.Task::s_taskCompletionSentinel
+	RuntimeObject* ___s_taskCompletionSentinel_24;
+	// System.Boolean System.Threading.Tasks.Task::s_asyncDebuggingEnabled
+	bool ___s_asyncDebuggingEnabled_25;
+	// System.Action`1<System.Object> System.Threading.Tasks.Task::s_taskCancelCallback
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___s_taskCancelCallback_27;
+	// System.Func`1<System.Threading.Tasks.Task/ContingentProperties> System.Threading.Tasks.Task::s_createContingentProperties
+	Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1* ___s_createContingentProperties_30;
+	// System.Threading.Tasks.TaskFactory System.Threading.Tasks.Task::<Factory>k__BackingField
+	TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0* ___U3CFactoryU3Ek__BackingField_31;
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::<CompletedTask>k__BackingField
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___U3CCompletedTaskU3Ek__BackingField_32;
+	// System.Predicate`1<System.Threading.Tasks.Task> System.Threading.Tasks.Task::s_IsExceptionObservedByParentPredicate
+	Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED* ___s_IsExceptionObservedByParentPredicate_33;
+	// System.Threading.ContextCallback System.Threading.Tasks.Task::s_ecCallback
+	ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007* ___s_ecCallback_34;
+	// System.Predicate`1<System.Object> System.Threading.Tasks.Task::s_IsTaskContinuationNullPredicate
+	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___s_IsTaskContinuationNullPredicate_35;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.Tasks.Task> System.Threading.Tasks.Task::s_currentActiveTasks
+	Dictionary_2_t403063CE4960B4F46C688912237C6A27E550FF55* ___s_currentActiveTasks_36;
+	// System.Object System.Threading.Tasks.Task::s_activeTasksLock
+	RuntimeObject* ___s_activeTasksLock_37;
+};
+
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_ThreadStaticFields
+{
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::t_currentTask
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___t_currentTask_28;
+	// System.Threading.Tasks.StackGuard System.Threading.Tasks.Task::t_stackGuard
+	StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352* ___t_stackGuard_29;
+};
+
+// Solana.Unity.Programs.TokenProgram
+struct TokenProgram_tAC7AD56BE92E3D7F5BB55E7C8F018DB308607424  : public RuntimeObject
+{
+};
+
+struct TokenProgram_tAC7AD56BE92E3D7F5BB55E7C8F018DB308607424_StaticFields
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.TokenProgram::ProgramIdKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___ProgramIdKey_0;
+};
+
+// Solana.Unity.Rpc.Builders.TransactionBuilder
+struct TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4  : public RuntimeObject
+{
+	// Solana.Unity.Rpc.Builders.MessageBuilder Solana.Unity.Rpc.Builders.TransactionBuilder::_messageBuilder
+	MessageBuilder_t79F41E3E76BE5BBB6D146628BB96C70CBE68E2E2* ____messageBuilder_1;
+	// System.Collections.Generic.List`1<System.String> Solana.Unity.Rpc.Builders.TransactionBuilder::_signatures
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ____signatures_2;
+	// System.Byte[] Solana.Unity.Rpc.Builders.TransactionBuilder::_serializedMessage
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____serializedMessage_3;
+};
+
+// Solana.Unity.Rpc.Models.TransactionInstruction
+struct TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B  : public RuntimeObject
+{
+	// System.Byte[] Solana.Unity.Rpc.Models.TransactionInstruction::<ProgramId>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CProgramIdU3Ek__BackingField_0;
+	// System.Collections.Generic.IList`1<Solana.Unity.Rpc.Models.AccountMeta> Solana.Unity.Rpc.Models.TransactionInstruction::<Keys>k__BackingField
+	RuntimeObject* ___U3CKeysU3Ek__BackingField_1;
+	// System.Byte[] Solana.Unity.Rpc.Models.TransactionInstruction::<Data>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CDataU3Ek__BackingField_2;
+};
+
+// Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts
+struct UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::<CandyGuard>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyGuardU3Ek__BackingField_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::<Authority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CAuthorityU3Ek__BackingField_1;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::<Payer>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CPayerU3Ek__BackingField_2;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::<SystemProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CSystemProgramU3Ek__BackingField_3;
+};
+
+// System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// Solana.Unity.Metaplex.CandyGuard.Program.WithdrawAccounts
+struct WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.WithdrawAccounts::<CandyGuard>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyGuardU3Ek__BackingField_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.WithdrawAccounts::<Authority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CAuthorityU3Ek__BackingField_1;
+};
+
+// Solana.Unity.Metaplex.Candymachine.WithdrawAccounts
+struct WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Candymachine.WithdrawAccounts::<CandyMachine>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyMachineU3Ek__BackingField_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Candymachine.WithdrawAccounts::<Authority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CAuthorityU3Ek__BackingField_1;
+};
+
+// Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts
+struct WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::<CandyGuard>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyGuardU3Ek__BackingField_0;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::<Authority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CAuthorityU3Ek__BackingField_1;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::<CandyMachine>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyMachineU3Ek__BackingField_2;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::<CandyMachineProgram>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyMachineProgramU3Ek__BackingField_3;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::<CandyMachineAuthority>k__BackingField
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CCandyMachineAuthorityU3Ek__BackingField_4;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<>c__DisplayClass14_0
+struct U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936  : public RuntimeObject
+{
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<>c__DisplayClass14_0::mint
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___mint_0;
+};
+
+// Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>
+struct AccountResultWrapper_1_tA6D459C4542D331860DFDFFF8344B251F33CB7E9  : public ResultWrapper_2_t15633B262ECD1D6EC1FF34622B82F08C4E193831
+{
+};
+
+// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>>
+struct TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.TaskAwaiter`1::m_task
+	Task_1_t17852F67E3A39967F433EF731F2EBAE41F70EA6A* ___m_task_0;
+};
+
+// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>
+struct TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.TaskAwaiter`1::m_task
+	Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9* ___m_task_0;
+};
+
+// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>
+struct TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.TaskAwaiter`1::m_task
+	Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6* ___m_task_0;
+};
+
+// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>
+struct TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.TaskAwaiter`1::m_task
+	Task_1_t6EAD20B5A3A44575D9A8067DBF57C0FB36A453DA* ___m_task_0;
+};
+
+// System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>
+struct TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.TaskAwaiter`1::m_task
+	Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* ___m_task_0;
+};
+
+// System.Runtime.CompilerServices.TaskAwaiter`1<UnityEngine.Texture2D>
+struct TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.TaskAwaiter`1::m_task
+	Task_1_t95921EB64E237ACD28589D64B693C652268F225E* ___m_task_0;
+};
+
+// System.Threading.Tasks.Task`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>>
+struct Task_1_t17852F67E3A39967F433EF731F2EBAE41F70EA6A  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	AccountResultWrapper_1_tA6D459C4542D331860DFDFFF8344B251F33CB7E9* ___m_result_38;
+};
+
+struct Task_1_t17852F67E3A39967F433EF731F2EBAE41F70EA6A_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_tA42076D38A7D7BFA2998A866A76A4FD08A0D95D2* ___s_defaultFactory_39;
+};
+
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>
+struct Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* ___m_result_38;
+};
+
+struct Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t60CBBC9B8FDA4FBCEE072106F1390382DA41CE36* ___s_defaultFactory_39;
+};
+
+// System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>
+struct Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* ___m_result_38;
+};
+
+struct Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_tCEEA6255AC75CD14CEB27326ECAE7A87FEE55EDE* ___s_defaultFactory_39;
+};
+
+// System.Threading.Tasks.Task`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>
+struct Task_1_t6EAD20B5A3A44575D9A8067DBF57C0FB36A453DA  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* ___m_result_38;
+};
+
+struct Task_1_t6EAD20B5A3A44575D9A8067DBF57C0FB36A453DA_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t1BAB1DD150543F0B5649ACE9277A73A84413FACC* ___s_defaultFactory_39;
+};
+
+// System.Threading.Tasks.Task`1<Solana.Unity.SDK.Nft.Nft>
+struct Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* ___m_result_38;
+};
+
+struct Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_tC39EEBBCAF1FC1A089FC96D7DE3D186A3135563D* ___s_defaultFactory_39;
+};
+
+// System.Threading.Tasks.Task`1<UnityEngine.Texture2D>
+struct Task_1_t95921EB64E237ACD28589D64B693C652268F225E  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___m_result_38;
+};
+
+struct Task_1_t95921EB64E237ACD28589D64B693C652268F225E_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_tA02CD66EEE1C447BE2C3BDAF4821F919418AE5FF* ___s_defaultFactory_39;
+};
+
+// Solana.Unity.Programs.Abstract.TransactionalBaseClient`1<Solana.Unity.Metaplex.Candymachine.Errors.CandyMachineErrorKind>
+struct TransactionalBaseClient_1_tD52E7BC5A466AF19B39E074F46EDFDDA9F41C557  : public BaseClient_t17729739896F3595EC6D20C2273EA5558597A030
+{
+	// System.Collections.Generic.Dictionary`2<System.UInt32,Solana.Unity.Programs.Abstract.ProgramError`1<TEnum>> Solana.Unity.Programs.Abstract.TransactionalBaseClient`1::<ProgramErrors>k__BackingField
+	Dictionary_2_t2A680664ADF3939C9F9404B5C94266CF46AE75DB* ___U3CProgramErrorsU3Ek__BackingField_3;
+};
+
+// System.ValueTuple`2<System.Object,System.Object>
+struct ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A 
+{
+	// T1 System.ValueTuple`2::Item1
+	RuntimeObject* ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	RuntimeObject* ___Item2_1;
+};
+
+// System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>
+struct ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D 
+{
+	// T1 System.ValueTuple`2::Item1
+	String_t* ___Item1_0;
+	// T2 System.ValueTuple`2::Item2
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___Item2_1;
+};
+
+// System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF 
+{
+	// System.Runtime.CompilerServices.IAsyncStateMachine System.Runtime.CompilerServices.AsyncMethodBuilderCore::m_stateMachine
+	RuntimeObject* ___m_stateMachine_0;
+	// System.Action System.Runtime.CompilerServices.AsyncMethodBuilderCore::m_defaultContextAction
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___m_defaultContextAction_1;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_pinvoke
+{
+	RuntimeObject* ___m_stateMachine_0;
+	Il2CppMethodPointer ___m_defaultContextAction_1;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_com
+{
+	RuntimeObject* ___m_stateMachine_0;
+	Il2CppMethodPointer ___m_defaultContextAction_1;
+};
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+};
+
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Byte
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
+{
+	// System.Byte System.Byte::m_value
+	uint8_t ___m_value_0;
+};
+
+// System.Int32
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	// System.Int32 System.Int32::m_value
+	int32_t ___m_value_0;
+};
+
+// System.IntPtr
+struct IntPtr_t 
+{
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+};
+
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 
+{
+	// System.Threading.Tasks.Task System.Runtime.CompilerServices.TaskAwaiter::m_task
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_marshaled_pinvoke
+{
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.TaskAwaiter
+struct TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_marshaled_com
+{
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_task_0;
+};
+
+// System.UInt32
+struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B 
+{
+	// System.UInt32 System.UInt32::m_value
+	uint32_t ___m_value_0;
+};
+
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.Object,System.Object>>
+struct AsyncTaskMethodBuilder_1_t19C1CF48F1810F444FF4ED4FD3C086547AEF7999 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_tDF6755931ADF5913629FA0B8E5826884D8E52D05* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_t19C1CF48F1810F444FF4ED4FD3C086547AEF7999_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_tDF6755931ADF5913629FA0B8E5826884D8E52D05* ___s_defaultResultTask_0;
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>>
+struct AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_tF909834A5F763C1F28385C4383CDB879631E956B* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_tF909834A5F763C1F28385C4383CDB879631E956B* ___s_defaultResultTask_0;
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>
+struct AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA* ___s_defaultResultTask_0;
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>
+struct AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* ___s_defaultResultTask_0;
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>
+struct AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* ___s_defaultResultTask_0;
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult>
+struct AsyncTaskMethodBuilder_1_tE88892A6B2F97B5D44B7C3EE2DBEED85743412AC 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_tE88892A6B2F97B5D44B7C3EE2DBEED85743412AC_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17* ___s_defaultResultTask_0;
+};
+
+// Solana.Unity.Metaplex.Candymachine.CandyMachineClient
+struct CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E  : public TransactionalBaseClient_1_tD52E7BC5A466AF19B39E074F46EDFDDA9F41C557
+{
+};
+
+// System.Delegate
+struct Delegate_t  : public RuntimeObject
+{
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject* ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.IntPtr System.Delegate::interp_method
+	intptr_t ___interp_method_7;
+	// System.IntPtr System.Delegate::interp_invoke_impl
+	intptr_t ___interp_invoke_impl_8;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t* ___method_info_9;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t* ___original_method_info_10;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_12;
+};
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	// System.IntPtr UnityEngine.Object::m_CachedPtr
+	intptr_t ___m_CachedPtr_0;
+};
+
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr_0;
+};
+// Native definition for COM marshalling of UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr_0;
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+struct AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06 
+{
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder::m_builder
+	AsyncTaskMethodBuilder_1_tE88892A6B2F97B5D44B7C3EE2DBEED85743412AC ___m_builder_1;
+};
+
+struct AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_StaticFields
+{
+	// System.Threading.Tasks.Task`1<System.Threading.Tasks.VoidTaskResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder::s_cachedCompleted
+	Task_1_tE41CFF640EB7C045550D9D0D92BE67533B084C17* ___s_cachedCompleted_0;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+struct AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_marshaled_pinvoke
+{
+	AsyncTaskMethodBuilder_1_tE88892A6B2F97B5D44B7C3EE2DBEED85743412AC ___m_builder_1;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.AsyncTaskMethodBuilder
+struct AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_marshaled_com
+{
+	AsyncTaskMethodBuilder_1_tE88892A6B2F97B5D44B7C3EE2DBEED85743412AC ___m_builder_1;
+};
+
+// System.MulticastDelegate
+struct MulticastDelegate_t  : public Delegate_t
+{
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
+};
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_13;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// UnityEngine.Texture
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
+{
+	// System.Int32 UnityEngine.Texture::GenerateAllMips
+	int32_t ___GenerateAllMips_4;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16
+struct U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1 
+{
+	// System.Int32 Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::<>t__builder
+	AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E ___U3CU3Et__builder_1;
+	// Solana.Unity.SDK.Metaplex.GuardData Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::guardData
+	GuardData_t1D96F9E11536F054A90B61EF72162BF54ADF0385* ___guardData_2;
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::account
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___account_3;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::guardKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___guardKey_4;
+	// Solana.Unity.Rpc.IRpcClient Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::rpcClient
+	RuntimeObject* ___rpcClient_5;
+	// System.Boolean Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::skipPreflight
+	bool ___skipPreflight_6;
+	// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::<candyGuardInstruction>5__2
+	TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* ___U3CcandyGuardInstructionU3E5__2_7;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::<>u__1
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C ___U3CU3Eu__1_8;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::<>u__2
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 ___U3CU3Eu__2_9;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15
+struct U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9 
+{
+	// System.Int32 Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::<>t__builder
+	AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5 ___U3CU3Et__builder_1;
+	// Solana.Unity.SDK.Metaplex.GuardData Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::guardData
+	GuardData_t1D96F9E11536F054A90B61EF72162BF54ADF0385* ___guardData_2;
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::account
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___account_3;
+	// Solana.Unity.Rpc.IRpcClient Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::rpcClient
+	RuntimeObject* ___rpcClient_4;
+	// System.Boolean Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::skipPreflight
+	bool ___skipPreflight_5;
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::<baseAccount>5__2
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___U3CbaseAccountU3E5__2_6;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::<guardAccount>5__3
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CguardAccountU3E5__3_7;
+	// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::<candyGuardInstruction>5__4
+	TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* ___U3CcandyGuardInstructionU3E5__4_8;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::<>u__1
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C ___U3CU3Eu__1_9;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::<>u__2
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 ___U3CU3Eu__2_10;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14
+struct U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2 
+{
+	// System.Int32 Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<>t__builder
+	AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E ___U3CU3Et__builder_1;
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::mint
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___mint_2;
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::payer
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___payer_3;
+	// Solana.Unity.Rpc.IRpcClient Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::rpcClient
+	RuntimeObject* ___rpcClient_4;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::candyMachineKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyMachineKey_5;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::receiver
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___receiver_6;
+	// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<>c__DisplayClass14_0 Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<>8__1
+	U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* ___U3CU3E8__1_7;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::collectionUpdateAuthority
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___collectionUpdateAuthority_8;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::candyGuardKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyGuardKey_9;
+	// Solana.Unity.SDK.Metaplex.CandyGuardMintSettings Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::mintSettings
+	CandyGuardMintSettings_t8F90A74B122E3D05823A9124EE2AFC402C84DACE* ___mintSettings_10;
+	// System.Boolean Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::skipPreflight
+	bool ___skipPreflight_11;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<associatedTokenAccount>5__2
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___U3CassociatedTokenAccountU3E5__2_12;
+	// System.Collections.Generic.List`1<Solana.Unity.Rpc.Models.AccountMeta> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<mintSettingsAccounts>5__3
+	List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25* ___U3CmintSettingsAccountsU3E5__3_13;
+	// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<candyMachineInstruction>5__4
+	TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* ___U3CcandyMachineInstructionU3E5__4_14;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<>u__1
+	TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3 ___U3CU3Eu__1_15;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<>u__2
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C ___U3CU3Eu__2_16;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::<>u__3
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 ___U3CU3Eu__3_17;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18
+struct U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779 
+{
+	// System.Int32 Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::<>t__builder
+	AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E ___U3CU3Et__builder_1;
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::account
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___account_2;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::candyMachineAccount
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyMachineAccount_3;
+	// Solana.Unity.Rpc.IRpcClient Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::rpcClient
+	RuntimeObject* ___rpcClient_4;
+	// System.Boolean Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::skipPreflight
+	bool ___skipPreflight_5;
+	// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::<withdrawInstruction>5__2
+	TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* ___U3CwithdrawInstructionU3E5__2_6;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::<>u__1
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C ___U3CU3Eu__1_7;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::<>u__2
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 ___U3CU3Eu__2_8;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19
+struct U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40 
+{
+	// System.Int32 Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::<>t__builder
+	AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E ___U3CU3Et__builder_1;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::candyGuardAccount
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyGuardAccount_2;
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::account
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___account_3;
+	// Solana.Unity.Rpc.IRpcClient Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::rpcClient
+	RuntimeObject* ___rpcClient_4;
+	// System.Boolean Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::skipPreflight
+	bool ___skipPreflight_5;
+	// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::<withdrawInstruction>5__2
+	TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* ___U3CwithdrawInstructionU3E5__2_6;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::<>u__1
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C ___U3CU3Eu__1_7;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::<>u__2
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 ___U3CU3Eu__2_8;
+};
+
+// Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17
+struct U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5 
+{
+	// System.Int32 Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::<>t__builder
+	AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E ___U3CU3Et__builder_1;
+	// Solana.Unity.Wallet.Account Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::account
+	Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___account_2;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::candyGuardKey
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyGuardKey_3;
+	// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::candyMachineAccount
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyMachineAccount_4;
+	// Solana.Unity.Rpc.IRpcClient Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::rpcClient
+	RuntimeObject* ___rpcClient_5;
+	// System.Boolean Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::skipPreflight
+	bool ___skipPreflight_6;
+	// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::<wrapInstruction>5__2
+	TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* ___U3CwrapInstructionU3E5__2_7;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::<>u__1
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C ___U3CU3Eu__1_8;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::<>u__2
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 ___U3CU3Eu__2_9;
+};
+
+// Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3
+struct U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048 
+{
+	// System.Int32 Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft> Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::<>t__builder
+	AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841 ___U3CU3Et__builder_1;
+	// System.Boolean Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::tryUseLocalContent
+	bool ___tryUseLocalContent_2;
+	// System.String Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::mint
+	String_t* ___mint_3;
+	// System.Boolean Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::loadTexture
+	bool ___loadTexture_4;
+	// Solana.Unity.Rpc.IRpcClient Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::connection
+	RuntimeObject* ___connection_5;
+	// Solana.Unity.Rpc.Types.Commitment Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::commitment
+	int32_t ___commitment_6;
+	// System.Int32 Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::imageHeightAndWidth
+	int32_t ___imageHeightAndWidth_7;
+	// Solana.Unity.SDK.Nft.Nft Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::<newNft>5__2
+	Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* ___U3CnewNftU3E5__2_8;
+	// Solana.Unity.SDK.Nft.Nft Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::<nft>5__3
+	Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* ___U3CnftU3E5__3_9;
+	// System.Runtime.CompilerServices.TaskAwaiter Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::<>u__1
+	TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 ___U3CU3Eu__1_10;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount> Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::<>u__2
+	TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258 ___U3CU3Eu__2_11;
+};
+
+// System.Func`2<Solana.Unity.Rpc.Models.AccountMeta,Solana.Unity.Rpc.Models.AccountMeta>
+struct Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1  : public MulticastDelegate_t
+{
+};
+
+// UnityEngine.Texture2D
+struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4  : public Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700
+{
+};
+
+// Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5
+struct U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637 
+{
+	// System.Int32 Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::<>t__builder
+	AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06 ___U3CU3Et__builder_1;
+	// Solana.Unity.SDK.Nft.Nft Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::<>4__this
+	Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* ___U3CU3E4__this_2;
+	// System.Int32 Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::imageHeightAndWidth
+	int32_t ___imageHeightAndWidth_3;
+	// Solana.Unity.SDK.Nft.NftImage Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::<nftImage>5__2
+	NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* ___U3CnftImageU3E5__2_4;
+	// System.Runtime.CompilerServices.TaskAwaiter`1<UnityEngine.Texture2D> Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::<>u__1
+	TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B ___U3CU3Eu__1_5;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
+{
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+
+// System.Runtime.CompilerServices.TaskAwaiter`1<TResult> System.Threading.Tasks.Task`1<System.Object>::GetAwaiter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA Task_1_GetAwaiter_mD80ED263BF3F1F8DBDBD177BA3401A0AAAFA38E3_gshared (Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>::get_IsCompleted()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TaskAwaiter_1_get_IsCompleted_mEEBB09E26F4165A0F864D92E1890CFCD2C8CFD54_gshared (TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2F7607595635F1D55B95D3E3EA1FEA4D0F94E91C_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* ___stateMachine1, const RuntimeMethod* method) ;
+// TResult System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>::GetResult()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TaskAwaiter_1_GetResult_mA4A8A1F43A456B40DDA251D00026C60919AED85B_gshared (TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* __this, const RuntimeMethod* method) ;
+// T2 Solana.Unity.Programs.Models.ResultWrapper`2<System.Object,System.Object>::get_ParsedResult()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ResultWrapper_2_get_ParsedResult_m7914953A70EC5BE979663F841531B1A218638A23_gshared_inline (ResultWrapper_2_t11BD214545D74204F1CB9BEF2D7033BDC9108F0D* __this, const RuntimeMethod* method) ;
+// System.Void System.Func`2<System.Object,System.Object>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m7F8A01C0B02BC1D4063F4EB1E817F7A48562A398_gshared (Func_2_tACBF5A1656250800CE861707354491F0611F6624* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Collections.Generic.IEnumerable`1<TResult> System.Linq.Enumerable::Select<System.Object,System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TResult>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Select_TisRuntimeObject_TisRuntimeObject_m67C538A5EBF57C4844107A8EF25DB2CAAFBAF8FB_gshared (RuntimeObject* ___source0, Func_2_tACBF5A1656250800CE861707354491F0611F6624* ___selector1, const RuntimeMethod* method) ;
+// System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Concat<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Concat_TisRuntimeObject_m84DD8C4D7381636C5F798202183E95C359606D33_gshared (RuntimeObject* ___first0, RuntimeObject* ___second1, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+// T Solana.Unity.Rpc.Core.Http.RequestResult`1<System.Object>::get_Result()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* RequestResult_1_get_Result_m37897891F48B9F2ADF46524718A671C1F7F827CC_gshared_inline (RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24* __this, const RuntimeMethod* method) ;
+// T Solana.Unity.Rpc.Messages.ResponseValue`1<System.Object>::get_Value()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ResponseValue_1_get_Value_m6C5854737B78630F19EC3D59B572C8A944FE1A18_gshared_inline (ResponseValue_1_t8663D687999D2DEE6072DDA9FD2059BBDE351512* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::SetException(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetException_mC2F74B26F5303F9F960965220E2866D777F1A5C6_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, Exception_t* ___exception0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::SetResult(TResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetResult_m0D83195F995F9825D7A6DCDC3835D6917C43B5A6_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, RuntimeObject* ___result0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetStateMachine_m3BE54983634ABF5BE05200C7894AD0F9F20BDD65_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.ValueTuple`2<System.Object,System.Object>::.ctor(T1,T2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_m4D25F4A0A0085EBE6559B6CC932AA5E267DB554D_gshared (ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A* __this, RuntimeObject* ___item10, RuntimeObject* ___item21, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.Object,System.Object>>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_m232EF86DCC717BECD4C45B772FAF631CFE92D868_gshared (AsyncTaskMethodBuilder_1_t19C1CF48F1810F444FF4ED4FD3C086547AEF7999* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.Object,System.Object>>::SetException(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetException_m809D4FAC3AFE7AA7C3D6416FF11D121BA29584BB_gshared (AsyncTaskMethodBuilder_1_t19C1CF48F1810F444FF4ED4FD3C086547AEF7999* __this, Exception_t* ___exception0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.Object,System.Object>>::SetResult(TResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetResult_m7EE8FD04BC65C0F94D8E79E8F21CB01784ADE55E_gshared (AsyncTaskMethodBuilder_1_t19C1CF48F1810F444FF4ED4FD3C086547AEF7999* __this, ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A ___result0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.Object,System.Object>>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetStateMachine_m66BF792E7E95E5802E582520C1627DFE4FF204DB_gshared (AsyncTaskMethodBuilder_1_t19C1CF48F1810F444FF4ED4FD3C086547AEF7999* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_m27CB9A496681698BACB3A6728C8433CB61025F41_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_mA83ED93ED0B4C0D50EABD9A523C559C091DDF5C4_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m13DC362A2A97307D605B1CE5B7F40B307A444A20_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_m3B7D5C1618DDF3EDA3F9870AF608C3C76E447D0A_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0 AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared (const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m67828312A502CE3ADE471AAFF4AE57A984FB43D7_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::get_Task()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, const RuntimeMethod* method) ;
+// T Solana.Unity.SDK.Utility.FileLoader::LoadFileFromLocalPath<System.Object>(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FileLoader_LoadFileFromLocalPath_TisRuntimeObject_mFC0C9D77360E50273C50F696B77D87EB327AC761_gshared (String_t* ___path0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_Start_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m3974670026A667EC10D97325143B868330D41076_gshared (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m64F00AFC43B368F0B6CFDD941529B6102315171C_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* ___awaiter0, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mCC380285248DC96C474000B9B1930BA7CAA619A2_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Utility.FileLoader::SaveToPersistentDataPath<System.Object>(System.String,T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileLoader_SaveToPersistentDataPath_TisRuntimeObject_m7CDE6001F1B69646CEE5650C02CDE0C42C042C4D_gshared (String_t* ___path0, RuntimeObject* ___data1, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<T> Solana.Unity.SDK.Utility.FileLoader::LoadFile<System.Object>(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* FileLoader_LoadFile_TisRuntimeObject_mA78E7EC8879F8476AC2FF67FD85C8EE5752A8C39_gshared (String_t* ___path0, String_t* ___optionalName1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<System.Object>,Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m985FC300E5B7B269DEA0D012F1C45E771183BCDD_gshared (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, TaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA* ___awaiter0, U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* ___stateMachine1, const RuntimeMethod* method) ;
+
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.String Solana.Unity.Rpc.Models.AccountMeta::get_PublicKey()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* AccountMeta_get_PublicKey_mFC96C51156F0A89D687F8500675BF2E411EA298D_inline (AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F* __this, const RuntimeMethod* method) ;
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Wallet.Account::get_PublicKey()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* Account_get_PublicKey_m2CA474B3A5F3B29408EEB2DB88A8440914D5DDCB_inline (Account_t15F1801E39C4C126421D353BFA50F8BD35957596* __this, const RuntimeMethod* method) ;
+// System.String Solana.Unity.Wallet.PublicKey::op_Implicit(Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PublicKey_op_Implicit_m384B7ABBC96BB94E492A1F7EDD3EA30EFCB38921 (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___publicKey0, const RuntimeMethod* method) ;
+// System.Boolean System.String::op_Equality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Wallet.Account::op_Implicit(Solana.Unity.Wallet.Account)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E (Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___account0, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Models.AccountMeta Solana.Unity.Rpc.Models.AccountMeta::Writable(Solana.Unity.Wallet.PublicKey,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F* AccountMeta_Writable_mAD682B881063D73C1ACD89BB71BAB7974E5C8AE5 (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___publicKey0, bool ___isSigner1, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<>c__DisplayClass14_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0__ctor_m16266346A035C6239F9618056E72F2473CC765CE (U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* __this, const RuntimeMethod* method) ;
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Programs.AssociatedTokenAccountProgram::DeriveAssociatedTokenAccount(Solana.Unity.Wallet.PublicKey,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* AssociatedTokenAccountProgram_DeriveAssociatedTokenAccount_m1F121F2AB02376A948F92BE49A09E48F239C91B4 (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___owner0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___mint1, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.Candymachine.CandyMachineClient::.ctor(Solana.Unity.Rpc.IRpcClient,Solana.Unity.Rpc.IStreamingRpcClient,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandyMachineClient__ctor_mF5AD66BDC091F197A6CEEA6351CABA1D9B4CCC91 (CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E* __this, RuntimeObject* ___rpcClient0, RuntimeObject* ___streamingRpcClient1, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId2, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>> Solana.Unity.Metaplex.Candymachine.CandyMachineClient::GetCandyMachineAsync(System.String,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t17852F67E3A39967F433EF731F2EBAE41F70EA6A* CandyMachineClient_GetCandyMachineAsync_m2F78806A646FF0C375EFA49F4716B79348415FB7 (CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E* __this, String_t* ___accountAddress0, int32_t ___commitment1, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.TaskAwaiter`1<TResult> System.Threading.Tasks.Task`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>>::GetAwaiter()
+inline TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3 Task_1_GetAwaiter_m8FCC61F9B37C918DC80679E0B38EFC5BD84871F1 (Task_1_t17852F67E3A39967F433EF731F2EBAE41F70EA6A* __this, const RuntimeMethod* method)
+{
+	return ((  TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3 (*) (Task_1_t17852F67E3A39967F433EF731F2EBAE41F70EA6A*, const RuntimeMethod*))Task_1_GetAwaiter_mD80ED263BF3F1F8DBDBD177BA3401A0AAAFA38E3_gshared)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>>::get_IsCompleted()
+inline bool TaskAwaiter_1_get_IsCompleted_m7186C8E1159C2CB0E7473A29238DA824907B340A (TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3*, const RuntimeMethod*))TaskAwaiter_1_get_IsCompleted_mEEBB09E26F4165A0F864D92E1890CFCD2C8CFD54_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m93F34FFA7C03829FFA89661159F5695828A4CC7A (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3* ___awaiter0, U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3*, U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2F7607595635F1D55B95D3E3EA1FEA4D0F94E91C_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Programs.Models.AccountResultWrapper`1<Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>>::GetResult()
+inline AccountResultWrapper_1_tA6D459C4542D331860DFDFFF8344B251F33CB7E9* TaskAwaiter_1_GetResult_m985AE989091993E43286DF30A7CCD0F9192A8FA9 (TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3* __this, const RuntimeMethod* method)
+{
+	return ((  AccountResultWrapper_1_tA6D459C4542D331860DFDFFF8344B251F33CB7E9* (*) (TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3*, const RuntimeMethod*))TaskAwaiter_1_GetResult_mA4A8A1F43A456B40DDA251D00026C60919AED85B_gshared)(__this, method);
+}
+// T2 Solana.Unity.Programs.Models.ResultWrapper`2<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.AccountInfo>,Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine>::get_ParsedResult()
+inline CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* ResultWrapper_2_get_ParsedResult_mDC664D682469C262D4B62A9F052B4A337E2AE96E_inline (ResultWrapper_2_t15633B262ECD1D6EC1FF34622B82F08C4E193831* __this, const RuntimeMethod* method)
+{
+	return ((  CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* (*) (ResultWrapper_2_t15633B262ECD1D6EC1FF34622B82F08C4E193831*, const RuntimeMethod*))ResultWrapper_2_get_ParsedResult_m7914953A70EC5BE979663F841531B1A218638A23_gshared_inline)(__this, method);
+}
+// Solana.Unity.Wallet.PublicKey Solana.Unity.SDK.Metaplex.CandyMachineCommands::GetCandyMachineCreator(Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* CandyMachineCommands_GetCandyMachineCreator_m41AE2D18C8E41F06956768B236B9998F22258B74 (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyMachineAddress0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MintV2Accounts__ctor_m5D36A4608AE0BB402D4703AB66B2B453F8AAF7E1 (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CandyMachineAuthorityPda(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CandyMachineAuthorityPda_mEDD2CC289C65FB33B3BA445E8123909C8BFF44DD_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_Payer(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_Payer_mC813E71EE50C8E166328CD41E111FCB843E71FD8_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_Minter(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_Minter_m75BD19DBEE81DA5F2C17EFEFF16957169B41A5A2_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CandyMachine(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CandyMachine_mF04774DDBACB9716EF4A8FDE8FF4131AEA1ED391_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Utilities.PDALookup::FindMetadataPDA(Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* PDALookup_FindMetadataPDA_m3D3ED218E5E0CC01C5BB2C70FDD391BF5AF23DE0 (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___mintAddress0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_NftMetadata(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_NftMetadata_m32B972740F4BC53532C0990BBB6AAB1592640EA7_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Utilities.PDALookup::FindMasterEditionPDA(Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* PDALookup_FindMasterEditionPDA_m0EA6B5C9C9A0C84099F3EB7FE795C86CE7121F0B (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___mintAddress0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_NftMasterEdition(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_NftMasterEdition_m783B193255CF740782DFA0C92B48BA7B312114C5_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_SystemProgram(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_SystemProgram_m08E8A67A2EB9F2F5307DB7C4BCE7EF6FD3F032DB_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_TokenMetadataProgram(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_TokenMetadataProgram_m824A84BCEBA6AFEE79920FEC02886906778587A4_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_SplTokenProgram(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_SplTokenProgram_mE32ABF275106E25D8F0F378F7736BAD5D924FA0A_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Candymachine.Accounts.CandyMachine::get_CollectionMint()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* CandyMachine_get_CollectionMint_m2D2A85ED3FB4D2AF80755185B081230D53BB8294_inline (CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* __this, const RuntimeMethod* method) ;
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Utilities.PDALookup::FindDelegateRecordPDA(Solana.Unity.Wallet.PublicKey,Solana.Unity.Wallet.PublicKey,Solana.Unity.Wallet.PublicKey,Solana.Unity.Metaplex.NFT.Library.MetadataDelegateRole)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* PDALookup_FindDelegateRecordPDA_m90A5A799ACBC5AF0B17879B2C80AA1EB79300E2D (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___updateAuthority0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___mintAddress1, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___delegateAddress2, int32_t ___delegateRole3, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CollectionDelegateRecord(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionDelegateRecord_m6BA5A4B751BDE5EA2024815EE44997764557E762_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CollectionMasterEdition(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionMasterEdition_mEB56A5AAD2F8F268C49D33E30A568B966BA5D526_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CollectionMetadata(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionMetadata_m992DE8780661F8EF0814D2D5E1145D2F4A1AA751_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CollectionMint(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionMint_m214CAD0AF092C2124A85646FE2E7519C9DDE3F20_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CollectionUpdateAuthority(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionUpdateAuthority_m7ABF3C70B0C7BF6A3343A7DC517A85678899002D_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_NftMint(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_NftMint_m76F5C006BA757DD7B5FFE4E73E17955646267545_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_NftMintAuthority(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_NftMintAuthority_m0B778DD6407BB9013569D45A7E112C5C5141543C_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_Token(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_Token_m5CE49FE3381DC03DEEBD61E436B8E4CD4BDBB845_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Wallet.PublicKey Solana.Unity.Metaplex.Utilities.PDALookup::FindTokenRecordPDA(Solana.Unity.Wallet.PublicKey,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* PDALookup_FindTokenRecordPDA_m31E3DD98644A1C02CB84AE31A93E88A683ED478F (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___ownerAccount0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___mintAddress1, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_TokenRecord(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_TokenRecord_m35C29FB98220CEBBF47A660E2BD8535D905C2C12_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_SplAtaProgram(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_SplAtaProgram_m7F11E6231F3376B2DD9C6531D8FDE01394241E92_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_SysvarInstructions(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_SysvarInstructions_m50BB13A29B70848EB079754A87A0962853FC9904_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_RecentSlothashes(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_RecentSlothashes_mCF5EC4A5B5957D1A587EE920BBF96EC8D83B2B8E_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CandyGuard(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CandyGuard_m0554D170D4E919E734010C7DA2A19426E128592B_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts::set_CandyMachineProgram(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CandyMachineProgram_m1E06C8F21E873E617173416D3DA541DBF2A7B583_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1<Solana.Unity.Rpc.Models.AccountMeta> Solana.Unity.SDK.Metaplex.CandyGuardMintSettings::GetMintArgs(Solana.Unity.Wallet.Account,Solana.Unity.Wallet.Account,Solana.Unity.Wallet.PublicKey,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25* CandyGuardMintSettings_GetMintArgs_mD60BB6B0254E0C40597A26BA5BA33012B5E013F6 (CandyGuardMintSettings_t8F90A74B122E3D05823A9124EE2AFC402C84DACE* __this, Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___payer0, Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___mint1, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyMachineKey2, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___candyGuardKey3, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.Metaplex.CandyGuard.Program.CandyGuardProgram::MintV2(Solana.Unity.Metaplex.CandyGuard.Program.MintV2Accounts,System.Byte[],System.String,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* CandyGuardProgram_MintV2_mA7C37B0CF9D28F7AFEE435B15FD12EC0A7B4924E (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* ___accounts0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___mintArgs1, String_t* ___label2, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId3, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.TaskAwaiter`1<TResult> System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>::GetAwaiter()
+inline TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE (Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9* __this, const RuntimeMethod* method)
+{
+	return ((  TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C (*) (Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9*, const RuntimeMethod*))Task_1_GetAwaiter_mD80ED263BF3F1F8DBDBD177BA3401A0AAAFA38E3_gshared)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>::get_IsCompleted()
+inline bool TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC (TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C*, const RuntimeMethod*))TaskAwaiter_1_get_IsCompleted_mEEBB09E26F4165A0F864D92E1890CFCD2C8CFD54_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m22BDD6AAE5777BA61F548D6F82403CF5D316EECD (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* ___awaiter0, U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C*, U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2F7607595635F1D55B95D3E3EA1FEA4D0F94E91C_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>::GetResult()
+inline RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E (TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* __this, const RuntimeMethod* method)
+{
+	return ((  RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* (*) (TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C*, const RuntimeMethod*))TaskAwaiter_1_GetResult_mA4A8A1F43A456B40DDA251D00026C60919AED85B_gshared)(__this, method);
+}
+// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.Programs.ComputeBudgetProgram::SetComputeUnitLimit(System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* ComputeBudgetProgram_SetComputeUnitLimit_m7DBAB460BD1FA06CD7921081A640FEF369854D62 (uint32_t ___units0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Rpc.Models.TransactionInstruction::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransactionInstruction__ctor_mD4A602752140DDCA7AB55A6C1B5F6690769B473C (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, const RuntimeMethod* method) ;
+// System.Byte[] Solana.Unity.Rpc.Models.TransactionInstruction::get_Data()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* TransactionInstruction_get_Data_mD0D8887DD66481B7EE27A70D3CDD559F4E2FF4E2_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, const RuntimeMethod* method) ;
+// System.Void modreq(System.Runtime.CompilerServices.IsExternalInit) Solana.Unity.Rpc.Models.TransactionInstruction::set_Data(System.Byte[])
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TransactionInstruction_set_Data_m04A7F7910F30C3CC2DA1A9AA4470C609BE5A7797_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) ;
+// System.Byte[] Solana.Unity.Rpc.Models.TransactionInstruction::get_ProgramId()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* TransactionInstruction_get_ProgramId_mE857581B4C57D4EAF7142CE37FDA33F677DEF271_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, const RuntimeMethod* method) ;
+// System.Void modreq(System.Runtime.CompilerServices.IsExternalInit) Solana.Unity.Rpc.Models.TransactionInstruction::set_ProgramId(System.Byte[])
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TransactionInstruction_set_ProgramId_mB99504E26550E308C1FFDA8EFF9DBDEE582A9C52_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) ;
+// System.Collections.Generic.IList`1<Solana.Unity.Rpc.Models.AccountMeta> Solana.Unity.Rpc.Models.TransactionInstruction::get_Keys()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* TransactionInstruction_get_Keys_m4919C0B7F1942DE9C0349F39A8F4BE957F32EEBA_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, const RuntimeMethod* method) ;
+// System.Void System.Func`2<Solana.Unity.Rpc.Models.AccountMeta,Solana.Unity.Rpc.Models.AccountMeta>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_mB37D6A2EE0A43845ABEA19A0F5F1959BF13465F8 (Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m7F8A01C0B02BC1D4063F4EB1E817F7A48562A398_gshared)(__this, ___object0, ___method1, method);
+}
+// System.Collections.Generic.IEnumerable`1<TResult> System.Linq.Enumerable::Select<Solana.Unity.Rpc.Models.AccountMeta,Solana.Unity.Rpc.Models.AccountMeta>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TResult>)
+inline RuntimeObject* Enumerable_Select_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_m6EC54EA8A8E3EC6879F13A4B186229660AF7A706 (RuntimeObject* ___source0, Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1* ___selector1, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1*, const RuntimeMethod*))Enumerable_Select_TisRuntimeObject_TisRuntimeObject_m67C538A5EBF57C4844107A8EF25DB2CAAFBAF8FB_gshared)(___source0, ___selector1, method);
+}
+// System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Concat<Solana.Unity.Rpc.Models.AccountMeta>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>)
+inline RuntimeObject* Enumerable_Concat_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mFF575F57DEBCB323A03171728B6BAF429238E633 (RuntimeObject* ___first0, RuntimeObject* ___second1, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*))Enumerable_Concat_TisRuntimeObject_m84DD8C4D7381636C5F798202183E95C359606D33_gshared)(___first0, ___second1, method);
+}
+// System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<Solana.Unity.Rpc.Models.AccountMeta>(System.Collections.Generic.IEnumerable`1<TSource>)
+inline List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25* Enumerable_ToList_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mD9525E2DB3B03D54FF5A091EC412A44A12DFBE9A (RuntimeObject* ___source0, const RuntimeMethod* method)
+{
+	return ((  List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared)(___source0, method);
+}
+// System.Void modreq(System.Runtime.CompilerServices.IsExternalInit) Solana.Unity.Rpc.Models.TransactionInstruction::set_Keys(System.Collections.Generic.IList`1<Solana.Unity.Rpc.Models.AccountMeta>)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TransactionInstruction_set_Keys_mEE992F580C4FB052CA6D59F4DDE06C1C00587226_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, RuntimeObject* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Rpc.Builders.TransactionBuilder::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransactionBuilder__ctor_m0B3F1BCABDCC514E09F089FADDF382793AB85906 (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* __this, const RuntimeMethod* method) ;
+// T Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>::get_Result()
+inline ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_inline (RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* __this, const RuntimeMethod* method)
+{
+	return ((  ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* (*) (RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35*, const RuntimeMethod*))RequestResult_1_get_Result_m37897891F48B9F2ADF46524718A671C1F7F827CC_gshared_inline)(__this, method);
+}
+// T Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>::get_Value()
+inline LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_inline (ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* __this, const RuntimeMethod* method)
+{
+	return ((  LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* (*) (ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF*, const RuntimeMethod*))ResponseValue_1_get_Value_m6C5854737B78630F19EC3D59B572C8A944FE1A18_gshared_inline)(__this, method);
+}
+// System.String Solana.Unity.Rpc.Models.LatestBlockHash::get_Blockhash()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* LatestBlockHash_get_Blockhash_mDED25F2CB2D12CA897B10DBD08D6FF28FB840A4D_inline (LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* __this, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Builders.TransactionBuilder Solana.Unity.Rpc.Builders.TransactionBuilder::SetRecentBlockHash(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* TransactionBuilder_SetRecentBlockHash_m867442395CF50EE764EF39BF869C480246E1ECC9 (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* __this, String_t* ___recentBlockHash0, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Builders.TransactionBuilder Solana.Unity.Rpc.Builders.TransactionBuilder::SetFeePayer(Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* TransactionBuilder_SetFeePayer_m0667AA3756160B7FCF72EB4F44EEB1D59D0A5698 (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___account0, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Builders.TransactionBuilder Solana.Unity.Rpc.Builders.TransactionBuilder::AddInstruction(Solana.Unity.Rpc.Models.TransactionInstruction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* TransactionBuilder_AddInstruction_m47204C5F74C6203BCF68D1965D8BB186CA148B3A (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* __this, TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* ___instruction0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Solana.Unity.Wallet.Account>::.ctor()
+inline void List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5 (List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<Solana.Unity.Wallet.Account>::Add(T)
+inline void List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_inline (List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* __this, Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550*, Account_t15F1801E39C4C126421D353BFA50F8BD35957596*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+}
+// System.Byte[] Solana.Unity.Rpc.Builders.TransactionBuilder::Build(System.Collections.Generic.IList`1<Solana.Unity.Wallet.Account>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* TransactionBuilder_Build_m9F3B305D960BCAA5792825205D115271B3775C21 (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* __this, RuntimeObject* ___signers0, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.TaskAwaiter`1<TResult> System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>::GetAwaiter()
+inline TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988 (Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6* __this, const RuntimeMethod* method)
+{
+	return ((  TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 (*) (Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6*, const RuntimeMethod*))Task_1_GetAwaiter_mD80ED263BF3F1F8DBDBD177BA3401A0AAAFA38E3_gshared)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>::get_IsCompleted()
+inline bool TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C (TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935*, const RuntimeMethod*))TaskAwaiter_1_get_IsCompleted_mEEBB09E26F4165A0F864D92E1890CFCD2C8CFD54_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2138E21A86BFC15C199D953CAE47896DBB57B67C (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* ___awaiter0, U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935*, U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2F7607595635F1D55B95D3E3EA1FEA4D0F94E91C_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>::GetResult()
+inline RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919 (TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* __this, const RuntimeMethod* method)
+{
+	return ((  RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* (*) (TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935*, const RuntimeMethod*))TaskAwaiter_1_GetResult_mA4A8A1F43A456B40DDA251D00026C60919AED85B_gshared)(__this, method);
+}
+// T Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>::get_Result()
+inline String_t* RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_inline (RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2*, const RuntimeMethod*))RequestResult_1_get_Result_m37897891F48B9F2ADF46524718A671C1F7F827CC_gshared_inline)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::SetException(System.Exception)
+inline void AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, Exception_t* ___exception0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, Exception_t*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetException_mC2F74B26F5303F9F960965220E2866D777F1A5C6_gshared)(__this, ___exception0, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::SetResult(TResult)
+inline void AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, String_t* ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, String_t*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetResult_m0D83195F995F9825D7A6DCDC3835D6917C43B5A6_gshared)(__this, ___result0, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMintOneTokenWithGuardsU3Ed__14_MoveNext_m682B6F914390CFE441FD7466165340A59B6F97C6 (U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+inline void AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, RuntimeObject*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetStateMachine_m3BE54983634ABF5BE05200C7894AD0F9F20BDD65_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMintOneTokenWithGuardsU3Ed__14_SetStateMachine_mA7E1168AC2B81C8594970424C1C18C17A000AE72 (U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogError(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.Void System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>::.ctor(T1,T2)
+inline void ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551 (ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D* __this, String_t* ___item10, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___item21, const RuntimeMethod* method)
+{
+	((  void (*) (ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D*, String_t*, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*, const RuntimeMethod*))ValueTuple_2__ctor_m4D25F4A0A0085EBE6559B6CC932AA5E267DB554D_gshared)(__this, ___item10, ___item21, method);
+}
+// System.Void UnityEngine.Debug::Log(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// System.Int32 Solana.Unity.SDK.Metaplex.GuardData::Serialize(System.Byte[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GuardData_Serialize_mBB60B060D8FE7D1D3435927391D225C3D7A374D1 (GuardData_t1D96F9E11536F054A90B61EF72162BF54ADF0385* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____data0, int32_t ___initialOffset1, const RuntimeMethod* method) ;
+// System.Void System.Array::Copy(System.Array,System.Array,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Copy_m4233828B4E6288B6D815F539AAA38575DE627900 (RuntimeArray* ___sourceArray0, RuntimeArray* ___destinationArray1, int32_t ___length2, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Wallet.Account::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Account__ctor_mA2E711F906E1D1A8D4BAD908732B310F8A609168 (Account_t15F1801E39C4C126421D353BFA50F8BD35957596* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Byte[]>::.ctor()
+inline void List_1__ctor_m8070151BA99349188C9F1457EC394480BE0D4ED4 (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Text.Encoding System.Text.Encoding::get_UTF8()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9 (const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Byte[]>::Add(T)
+inline void List_1_Add_mAF067D8BCD6732A0ADBE1BA6EE909B3512880D42_inline (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+}
+// System.Byte[] Solana.Unity.Wallet.PublicKey::get_KeyBytes()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* PublicKey_get_KeyBytes_m227D50C47CBD2081B12896002FC4372DE8DF5784 (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* __this, const RuntimeMethod* method) ;
+// System.Boolean Solana.Unity.Wallet.PublicKey::TryFindProgramAddress(System.Collections.Generic.IEnumerable`1<System.Byte[]>,Solana.Unity.Wallet.PublicKey,Solana.Unity.Wallet.PublicKey&,System.Byte&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PublicKey_TryFindProgramAddress_m380002D59B3888237ABE355B8B8365E1503A6409 (RuntimeObject* ___seeds0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId1, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751** ___address2, uint8_t* ___bump3, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitializeAccounts__ctor_m0E498003C7D5A6BF270D4CA62AB4202324EA3779 (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::set_SystemProgram(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_SystemProgram_m037C96692C13D6EB978307974F5992D1EA5206BD_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::set_Authority(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_Authority_m482C5C86C49ACB28BD69F7C7DC854FAF6A15D0E6_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::set_Base(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_Base_mC71A2082C9EAB6A86386A3A9C5C4EC821FFFADC8_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::set_CandyGuard(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_CandyGuard_m01343CFCF071B8168139E2FF282C61FCA1680021_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts::set_Payer(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_Payer_m4900F973E48BEF0CB76EE1760225D3379BDEF59E_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.Metaplex.CandyGuard.Program.CandyGuardProgram::Initialize(Solana.Unity.Metaplex.CandyGuard.Program.InitializeAccounts,System.Byte[],Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* CandyGuardProgram_Initialize_m6CF29E9EED950AC9277B40D982CD4ED85DBAA794 (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* ___accounts0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___data1, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_mF95CC50AC32B74CEF845E6E0E4CF764EA9706D29 (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* __this, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* ___awaiter0, U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5*, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C*, U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_m232EF86DCC717BECD4C45B772FAF631CFE92D868_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_m16F86F34D937C793288258ECD17D8061529DE927 (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* __this, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* ___awaiter0, U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5*, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935*, U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_m232EF86DCC717BECD4C45B772FAF631CFE92D868_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>>::SetException(System.Exception)
+inline void AsyncTaskMethodBuilder_1_SetException_m125E519D143550CF0A759BC0787619B05252EBA1 (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* __this, Exception_t* ___exception0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5*, Exception_t*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetException_m809D4FAC3AFE7AA7C3D6416FF11D121BA29584BB_gshared)(__this, ___exception0, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>>::SetResult(TResult)
+inline void AsyncTaskMethodBuilder_1_SetResult_m08FFC63CC76712C6E11105CFDEF8B3E9DE4E503B (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* __this, ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5*, ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetResult_m7EE8FD04BC65C0F94D8E79E8F21CB01784ADE55E_gshared)(__this, ___result0, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInitializeGuardsU3Ed__15_MoveNext_m291F4376836824E1F41296225A055115C611F450 (U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.ValueTuple`2<System.String,Solana.Unity.Wallet.PublicKey>>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+inline void AsyncTaskMethodBuilder_1_SetStateMachine_mC1CBC034F550F61C34863E501693731D4DC917ED (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5*, RuntimeObject*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetStateMachine_m66BF792E7E95E5802E582520C1627DFE4FF204DB_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInitializeGuardsU3Ed__15_SetStateMachine_m2B3178034275BF7A34AC592DF5F82B430D0E306C (U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UpdateAccounts__ctor_mFF11D7918AA11CA3285E6A3BAE1689A22F7C979F (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::set_SystemProgram(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdateAccounts_set_SystemProgram_m27D28D027F959E2044A830E153D51BF3E1DF506B_inline (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::set_Authority(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdateAccounts_set_Authority_m3034661A6B7241C482895A1AB900539828303F88_inline (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::set_CandyGuard(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdateAccounts_set_CandyGuard_m9B1A7ECEEBCCF1A820223C95D10A999A41837202_inline (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts::set_Payer(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdateAccounts_set_Payer_m2E8FD6B9810111A3D400A28F9303426357A2D20C_inline (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.Metaplex.CandyGuard.Program.CandyGuardProgram::Update(Solana.Unity.Metaplex.CandyGuard.Program.UpdateAccounts,System.Byte[],Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* CandyGuardProgram_Update_m38092C85F1E08A14B884765C60294ECA8193C587 (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* ___accounts0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___data1, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_mDF8F7C6AF01BBE2B037DC030BF6751027C17B804 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* ___awaiter0, U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C*, U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_m27CB9A496681698BACB3A6728C8433CB61025F41_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_m6BE8300DBCC84BA4B9D51A4BC6CF311DB7823431 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* ___awaiter0, U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935*, U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_m27CB9A496681698BACB3A6728C8433CB61025F41_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAddGuardsU3Ed__16_MoveNext_m28772698B0EC23BE754B73A4524061C7AEBDB79C (U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAddGuardsU3Ed__16_SetStateMachine_mFF608CBD682B1B11475BF40DAE7A73F076A2BDEE (U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WrapAccounts__ctor_m9D95A80DBCA5208EA64FEEA88E5DD2D32612A54C (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::set_Authority(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_Authority_m0C8D6DECBCF87D4F0039DCE558062F0F61DB4013_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::set_CandyMachineAuthority(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_CandyMachineAuthority_m7757239586D84D7F72A7B6EBE73B8D5864691B1D_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::set_CandyGuard(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_CandyGuard_mECF5B4FF4E96479A32624E225737521D56E6863F_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::set_CandyMachine(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_CandyMachine_mB31A0715D0EE0F2AF6C7DEF8086B4D5255794DC6_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts::set_CandyMachineProgram(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_CandyMachineProgram_m6912285235AA0E879734AF32BE38716C3B76B51B_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.Metaplex.CandyGuard.Program.CandyGuardProgram::Wrap(Solana.Unity.Metaplex.CandyGuard.Program.WrapAccounts,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* CandyGuardProgram_Wrap_mD4BDE51423CECB59F10830978E40B4581D5046C4 (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* ___accounts0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_mA0134BCB0655310E800C0632633593486E4DD61F (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* ___awaiter0, U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C*, U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_mA83ED93ED0B4C0D50EABD9A523C559C091DDF5C4_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_m86B07EF0DD5B86618CA122FADF4F2E78E64CD703 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* ___awaiter0, U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935*, U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_mA83ED93ED0B4C0D50EABD9A523C559C091DDF5C4_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWrapCandyMachineU3Ed__17_MoveNext_m505FB69D8E9217EFB7C8639BF8E2200FD5F23C00 (U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWrapCandyMachineU3Ed__17_SetStateMachine_m465E0684DB3D9127C425A76BC938C0C01BDC8CAE (U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.Candymachine.WithdrawAccounts::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WithdrawAccounts__ctor_m38D8EF8963CCE0D8025151380FC06C216083CB20 (WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.Candymachine.WithdrawAccounts::set_Authority(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WithdrawAccounts_set_Authority_m28872DC69BED9B38C0C916143636996024E843AD_inline (WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.Candymachine.WithdrawAccounts::set_CandyMachine(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WithdrawAccounts_set_CandyMachine_mB5A968084727A9CE9E16383ED3599B9DD0CBFAF5_inline (WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.Metaplex.Candymachine.CandyMachineProgram::Withdraw(Solana.Unity.Metaplex.Candymachine.WithdrawAccounts,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* CandyMachineProgram_Withdraw_mE0B11ACB5BF2D754E27A1EAEC991BB9B3E4BDE35 (WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* ___accounts0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m3CFC79EE53C15D614C22BDF0D3F2FBC60A62F0A0 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* ___awaiter0, U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C*, U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m13DC362A2A97307D605B1CE5B7F40B307A444A20_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Byte[] Solana.Unity.Rpc.Builders.TransactionBuilder::Build(Solana.Unity.Wallet.Account)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* TransactionBuilder_Build_m943CA918D10296F1FBC00EE75472D561B8F9DDCD (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* __this, Account_t15F1801E39C4C126421D353BFA50F8BD35957596* ___signer0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m8B60C41D78189CF27952EF72DE1C90981D044E58 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* ___awaiter0, U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935*, U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m13DC362A2A97307D605B1CE5B7F40B307A444A20_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWithdrawU3Ed__18_MoveNext_mE3E2A0BEB76A21E2241189CABE17AD8E46CC46B9 (U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWithdrawU3Ed__18_SetStateMachine_m60D6BE7DDA5057C7EC1F1D66B6D60A7752D7E136 (U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WithdrawAccounts::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WithdrawAccounts__ctor_m19383E92B856DFC4068BC2658F4091EB225E0180 (WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WithdrawAccounts::set_CandyGuard(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WithdrawAccounts_set_CandyGuard_m9C148D89216527FF0D18330525DC09E7C6898F70_inline (WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Metaplex.CandyGuard.Program.WithdrawAccounts::set_Authority(Solana.Unity.Wallet.PublicKey)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WithdrawAccounts_set_Authority_m454232E954B4A35E4CE701951D8E6DE5EE93A6C4_inline (WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) ;
+// Solana.Unity.Rpc.Models.TransactionInstruction Solana.Unity.Metaplex.CandyGuard.Program.CandyGuardProgram::Withdraw(Solana.Unity.Metaplex.CandyGuard.Program.WithdrawAccounts,Solana.Unity.Wallet.PublicKey)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* CandyGuardProgram_Withdraw_m30B9947EE9587B495C6DB5A264E7509F6557C160 (WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* ___accounts0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___programId1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_mE55A97269FE5DE299C959FFF470005FA16E2C29E (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* ___awaiter0, U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C*, U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_m3B7D5C1618DDF3EDA3F9870AF608C3C76E447D0A_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>>,Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_m29A77235A15B294F5DB6CD7BD44873543E39B01E (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* ___awaiter0, U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935*, U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_m3B7D5C1618DDF3EDA3F9870AF608C3C76E447D0A_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWithdrawGuardsU3Ed__19_MoveNext_m635D26AD0E4F6E47F900FA79B5D481FF3D1AF4A8 (U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWithdrawGuardsU3Ed__19_SetStateMachine_mA9B5959934310C72D0C308383C7BFBE2A16A4B94 (U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Byte[] System.Convert::FromBase64String(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Convert_FromBase64String_m267327B074B41D93C9622D142B95CFAA4ACCCA9C (String_t* ___s0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Nft.NFTProData::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NFTProData__ctor_m6D6E773454EE51C70B1B56D7FB4F472008AC2A62 (NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Utility.ObjectToByte::DecodeUTF8StringFromByte(System.Byte[],System.Int32,System.Int32,System.String&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___data0, int32_t ___offset1, int32_t ___length2, String_t** ___decodedData3, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Utility.ObjectToByte::DecodeUIntFromByte(System.Byte[],System.Int32,System.UInt32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectToByte_DecodeUIntFromByte_mB43A80B57C31A2FF925805DFF3E5D46002B325A3 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___data0, int32_t ___offset1, uint32_t* ___decodedData2, const RuntimeMethod* method) ;
+// System.Boolean System.BitConverter::ToBoolean(System.Byte[],System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BitConverter_ToBoolean_mBDA6F9734B907F7BA1135819940F5D6C3E5085FB (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, int32_t ___startIndex1, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Utility.ObjectToByte::DecodeBase58StringFromByte(System.Byte[],System.Int32,System.Int32,System.String&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectToByte_DecodeBase58StringFromByte_mC6CBEFFAA6B15AA40EA4BD9426CE3C58A9485BD6 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___data0, int32_t ___offset1, int32_t ___length2, String_t** ___decodedData3, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>::Create()
+inline AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841 AsyncTaskMethodBuilder_1_Create_m5FF2C09F29073DCAC073D42B2C03F7D286D69645 (const RuntimeMethod* method)
+{
+	return ((  AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841 (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>::Start<Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m1CA6E3479FF4EAA03F90DE766249C53F978609FF (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* __this, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841*, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m67828312A502CE3ADE471AAFF4AE57A984FB43D7_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>::get_Task()
+inline Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA* AsyncTaskMethodBuilder_1_get_Task_mFAE22BF22742386E2EB689B5B32BEDCFC82C2A9D (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* __this, const RuntimeMethod* method)
+{
+	return ((  Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA* (*) (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared)(__this, method);
+}
+// System.String UnityEngine.Application::get_persistentDataPath()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399 (const RuntimeMethod* method) ;
+// System.String System.IO.Path::Combine(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE (String_t* ___path10, String_t* ___path21, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
+// T Solana.Unity.SDK.Utility.FileLoader::LoadFileFromLocalPath<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>(System.String)
+inline MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* FileLoader_LoadFileFromLocalPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_m3C52711C22108678C731A7B179D739AA707BFC09 (String_t* ___path0, const RuntimeMethod* method)
+{
+	return ((  MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* (*) (String_t*, const RuntimeMethod*))FileLoader_LoadFileFromLocalPath_TisRuntimeObject_mFC0C9D77360E50273C50F696B77D87EB327AC761_gshared)(___path0, method);
+}
+// System.Void Solana.Unity.SDK.Nft.Metaplex::.ctor(Solana.Unity.Metaplex.NFT.Library.MetadataAccount)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Metaplex__ctor_m301DD08FF78DBFE60FB196F060B64D5B1082A29C (Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* __this, MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* ___metadataAccount0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Nft.Nft::.ctor(Solana.Unity.SDK.Nft.Metaplex)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nft__ctor_m87A95EEFFB10B250CA7E350677DB735AD03F6D9C (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* __this, Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* ___metaplexData0, const RuntimeMethod* method) ;
+// T Solana.Unity.SDK.Utility.FileLoader::LoadFileFromLocalPath<UnityEngine.Texture2D>(System.String)
+inline Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* FileLoader_LoadFileFromLocalPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m016C359B5BB9BE795CD536FA49FE4A0DFEB5998F (String_t* ___path0, const RuntimeMethod* method)
+{
+	return ((  Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* (*) (String_t*, const RuntimeMethod*))FileLoader_LoadFileFromLocalPath_TisRuntimeObject_mFC0C9D77360E50273C50F696B77D87EB327AC761_gshared)(___path0, method);
+}
+// System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___exists0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Nft.NftImage::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NftImage__ctor_m67A1777D7E2D8D968815C6E7803EF2D219E5B3CC (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06 AsyncTaskMethodBuilder_Create_m24F3F260A79CA2B9EC4F1F15693A33F5EC58735A (const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::Start<Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_Start_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m3974670026A667EC10D97325143B868330D41076 (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06*, U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637*, const RuntimeMethod*))AsyncTaskMethodBuilder_Start_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m3974670026A667EC10D97325143B868330D41076_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task System.Runtime.CompilerServices.AsyncTaskMethodBuilder::get_Task()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* AsyncTaskMethodBuilder_get_Task_mE9125D5F8B96F26D1BA5A5347ED82669521C7F9E (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, const RuntimeMethod* method) ;
+// Solana.Unity.SDK.Nft.Nft Solana.Unity.SDK.Nft.Nft::TryLoadNftFromLocal(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* Nft_TryLoadNftFromLocal_m847ED85635E5620F2FB57EA13E811C20490A07A7 (String_t* ___mint0, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task Solana.Unity.SDK.Nft.Nft::LoadTexture(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* Nft_LoadTexture_mDFB1A673C4F3B46C7CD2344EBD8976AA9A9EAE56 (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* __this, int32_t ___imageHeightAndWidth0, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.TaskAwaiter System.Threading.Tasks.Task::GetAwaiter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 Task_GetAwaiter_m08B368EAC939DD35D0AC428180822255A442CA29 (Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Runtime.CompilerServices.TaskAwaiter::get_IsCompleted()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TaskAwaiter_get_IsCompleted_mC236D276FBE3A271B56EE13FCAF2C96E48453ED8 (TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mA5F7719DD296C516D447134B5352D83BB8CE35A0 (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* __this, TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* ___awaiter0, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841*, TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833*, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m64F00AFC43B368F0B6CFDD941529B6102315171C_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// System.Void System.Runtime.CompilerServices.TaskAwaiter::GetResult()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskAwaiter_GetResult_mC1D712500AE49B4A89C85D6B79D87D1BA9A6B94D (TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.Wallet.PublicKey::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PublicKey__ctor_mAC5FE8C442D642434F04E8491B83BDBBE9E80A90 (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* __this, String_t* ___key0, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount> Solana.Unity.Metaplex.NFT.Library.MetadataAccount::GetAccount(Solana.Unity.Rpc.IRpcClient,Solana.Unity.Wallet.PublicKey,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t6EAD20B5A3A44575D9A8067DBF57C0FB36A453DA* MetadataAccount_GetAccount_m694CF57B71848F15B526AD7BF3ABDB168A8D4FE1 (RuntimeObject* ___client0, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___tokenAddress1, int32_t ___commitment2, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.TaskAwaiter`1<TResult> System.Threading.Tasks.Task`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>::GetAwaiter()
+inline TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258 Task_1_GetAwaiter_m123CA477CD77203FA7F82D9119B581658958A73F (Task_1_t6EAD20B5A3A44575D9A8067DBF57C0FB36A453DA* __this, const RuntimeMethod* method)
+{
+	return ((  TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258 (*) (Task_1_t6EAD20B5A3A44575D9A8067DBF57C0FB36A453DA*, const RuntimeMethod*))Task_1_GetAwaiter_mD80ED263BF3F1F8DBDBD177BA3401A0AAAFA38E3_gshared)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>::get_IsCompleted()
+inline bool TaskAwaiter_1_get_IsCompleted_m7380958BCD673BEF6D478E07F22B7EA94896C6EB (TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258*, const RuntimeMethod*))TaskAwaiter_1_get_IsCompleted_mEEBB09E26F4165A0F864D92E1890CFCD2C8CFD54_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>,Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mFA3308FD473A79D0A3AF021D94629C33D8E276D2 (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* __this, TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258* ___awaiter0, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841*, TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258*, U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mCC380285248DC96C474000B9B1930BA7CAA619A2_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.TaskAwaiter`1<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>::GetResult()
+inline MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* TaskAwaiter_1_GetResult_m82A4B2A438721CBE6D9BB37486616D975F8BAF28 (TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258* __this, const RuntimeMethod* method)
+{
+	return ((  MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* (*) (TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258*, const RuntimeMethod*))TaskAwaiter_1_GetResult_mA4A8A1F43A456B40DDA251D00026C60919AED85B_gshared)(__this, method);
+}
+// System.Void Solana.Unity.SDK.Utility.FileLoader::SaveToPersistentDataPath<Solana.Unity.Metaplex.NFT.Library.MetadataAccount>(System.String,T)
+inline void FileLoader_SaveToPersistentDataPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_mCBFD7B61780A7B74B3E5EF16DC7FD097CC7F4B34 (String_t* ___path0, MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* ___data1, const RuntimeMethod* method)
+{
+	((  void (*) (String_t*, MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51*, const RuntimeMethod*))FileLoader_SaveToPersistentDataPath_TisRuntimeObject_m7CDE6001F1B69646CEE5650C02CDE0C42C042C4D_gshared)(___path0, ___data1, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>::SetException(System.Exception)
+inline void AsyncTaskMethodBuilder_1_SetException_m75725988E2733A64B19D8B9271CCDDDD05B7F5A7 (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* __this, Exception_t* ___exception0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841*, Exception_t*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetException_mC2F74B26F5303F9F960965220E2866D777F1A5C6_gshared)(__this, ___exception0, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>::SetResult(TResult)
+inline void AsyncTaskMethodBuilder_1_SetResult_m042A9DFC699DD914C49DD5B25561DB97403AF3B2 (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* __this, Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841*, Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetResult_m0D83195F995F9825D7A6DCDC3835D6917C43B5A6_gshared)(__this, ___result0, method);
+}
+// System.Void Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTryGetNftDataU3Ed__3_MoveNext_m58C0867108B5FFE2CD4C4B51BF5948194AF79581 (U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Solana.Unity.SDK.Nft.Nft>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+inline void AsyncTaskMethodBuilder_1_SetStateMachine_m611FCFDB5FE2F9D9DB4B97F721F099F02C6171CA (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841*, RuntimeObject*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetStateMachine_m3BE54983634ABF5BE05200C7894AD0F9F20BDD65_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTryGetNftDataU3Ed__3_SetStateMachine_m0DF8A2A110E9187D23E731F7A7605B3C6869F516 (U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.String Solana.Unity.Metaplex.Utilities.Json.MetaplexTokenStandard::get_default_image()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaplexTokenStandard_get_default_image_m54B60D3D52B9B0DA969BECF63DFB63499FA916ED_inline (MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* __this, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<T> Solana.Unity.SDK.Utility.FileLoader::LoadFile<UnityEngine.Texture2D>(System.String,System.String)
+inline Task_1_t95921EB64E237ACD28589D64B693C652268F225E* FileLoader_LoadFile_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m80E0333559E547473442D0D3AA22C040938B7714 (String_t* ___path0, String_t* ___optionalName1, const RuntimeMethod* method)
+{
+	return ((  Task_1_t95921EB64E237ACD28589D64B693C652268F225E* (*) (String_t*, String_t*, const RuntimeMethod*))FileLoader_LoadFile_TisRuntimeObject_mA78E7EC8879F8476AC2FF67FD85C8EE5752A8C39_gshared)(___path0, ___optionalName1, method);
+}
+// System.Runtime.CompilerServices.TaskAwaiter`1<TResult> System.Threading.Tasks.Task`1<UnityEngine.Texture2D>::GetAwaiter()
+inline TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B Task_1_GetAwaiter_m88AFED53B032F7EDDB6F9746699970B9FFFC992C (Task_1_t95921EB64E237ACD28589D64B693C652268F225E* __this, const RuntimeMethod* method)
+{
+	return ((  TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B (*) (Task_1_t95921EB64E237ACD28589D64B693C652268F225E*, const RuntimeMethod*))Task_1_GetAwaiter_mD80ED263BF3F1F8DBDBD177BA3401A0AAAFA38E3_gshared)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.TaskAwaiter`1<UnityEngine.Texture2D>::get_IsCompleted()
+inline bool TaskAwaiter_1_get_IsCompleted_m77FF413EE49A5859C0BC111104448D64F3C01911 (TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B*, const RuntimeMethod*))TaskAwaiter_1_get_IsCompleted_mEEBB09E26F4165A0F864D92E1890CFCD2C8CFD54_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter`1<UnityEngine.Texture2D>,Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_mD6738CAD485051F94AA5CEB97F9B30CC31DB607A (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B* ___awaiter0, U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06*, TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B*, U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637*, const RuntimeMethod*))AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t0B808409CD8201F13AAC85F29D646518C4857BEA_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m985FC300E5B7B269DEA0D012F1C45E771183BCDD_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.TaskAwaiter`1<UnityEngine.Texture2D>::GetResult()
+inline Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* TaskAwaiter_1_GetResult_mE4B8867B0D8DAA1317AD64FE09FBD26E825A654C (TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B* __this, const RuntimeMethod* method)
+{
+	return ((  Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* (*) (TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B*, const RuntimeMethod*))TaskAwaiter_1_GetResult_mA4A8A1F43A456B40DDA251D00026C60919AED85B_gshared)(__this, method);
+}
+// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+// UnityEngine.Texture2D Solana.Unity.SDK.Utility.FileLoader::Resize(UnityEngine.Texture,System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* FileLoader_Resize_m9CEA433A8CE82F3C2D109EEB0E105DB8DBE09000 (Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___texture2D0, int32_t ___targetX1, int32_t ___targetY2, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Nft.NftImage::set_externalUrl(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NftImage_set_externalUrl_m82EAF4A55FBB51F7A775758786A5410906B85AF7_inline (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, String_t* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Nft.NftImage::set_file(UnityEngine.Texture2D)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NftImage_set_file_mA0E407437B4D29D0B68645934C4613FEF61B7B23_inline (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___value0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Utility.FileLoader::SaveToPersistentDataPath<UnityEngine.Texture2D>(System.String,T)
+inline void FileLoader_SaveToPersistentDataPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_mB85A1EECDCFFC9DD8BD906A6DE24ED636334B8B8 (String_t* ___path0, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___data1, const RuntimeMethod* method)
+{
+	((  void (*) (String_t*, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*, const RuntimeMethod*))FileLoader_SaveToPersistentDataPath_TisRuntimeObject_m7CDE6001F1B69646CEE5650C02CDE0C42C042C4D_gshared)(___path0, ___data1, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::SetException(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_SetException_mBE41863F0571E0177A15731294087DE45E1FC10B (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, Exception_t* ___exception0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::SetResult()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_SetResult_m76D8B84F0068257C1823B1200B00E58E0C8DDDDE (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadTextureU3Ed__5_MoveNext_mC655A2A6DAE3DDA587484EAA064FA24C4E715217 (U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_SetStateMachine_mE52B5B6B076025592A7AB462E3D26FA434AEB795 (AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadTextureU3Ed__5_SetStateMachine_m416574BBE0B82DCB9C76C15F9D7A47FEAA340017 (U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<>c__DisplayClass14_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0__ctor_m16266346A035C6239F9618056E72F2473CC765CE (U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// Solana.Unity.Rpc.Models.AccountMeta Solana.Unity.SDK.Metaplex.CandyMachineCommands/<>c__DisplayClass14_0::<MintOneTokenWithGuards>b__0(Solana.Unity.Rpc.Models.AccountMeta)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F* U3CU3Ec__DisplayClass14_0_U3CMintOneTokenWithGuardsU3Eb__0_m21D61C61B638AB5C39D1DF8A6A1BE1CC5EFE0884 (U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* __this, AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F* ___k0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (k.PublicKey == mint.PublicKey) {
+		AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F* L_0 = ___k0;
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = AccountMeta_get_PublicKey_mFC96C51156F0A89D687F8500675BF2E411EA298D_inline(L_0, NULL);
+		Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_2 = __this->___mint_0;
+		NullCheck(L_2);
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_3;
+		L_3 = Account_get_PublicKey_m2CA474B3A5F3B29408EEB2DB88A8440914D5DDCB_inline(L_2, NULL);
+		il2cpp_codegen_runtime_class_init_inline(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+		String_t* L_4;
+		L_4 = PublicKey_op_Implicit_m384B7ABBC96BB94E492A1F7EDD3EA30EFCB38921(L_3, NULL);
+		bool L_5;
+		L_5 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_1, L_4, NULL);
+		if (!L_5)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		// return AccountMeta.Writable(mint, true);
+		Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_6 = __this->___mint_0;
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_7;
+		L_7 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_6, NULL);
+		AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F* L_8;
+		L_8 = AccountMeta_Writable_mAD682B881063D73C1ACD89BB71BAB7974E5C8AE5(L_7, (bool)1, NULL);
+		return L_8;
+	}
+
+IL_002f:
+	{
+		// return k;
+		AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F* L_9 = ___k0;
+		return L_9;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMintOneTokenWithGuardsU3Ed__14_MoveNext_m682B6F914390CFE441FD7466165340A59B6F97C6 (U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AssociatedTokenAccountProgram_tFC3624824F991B8AEA618DEE565CB16C25BCBC22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2138E21A86BFC15C199D953CAE47896DBB57B67C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m93F34FFA7C03829FFA89661159F5695828A4CC7A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m22BDD6AAE5777BA61F548D6F82403CF5D316EECD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputeBudgetProgram_tD1E21E1B65B9BAFCF6ED370F1DBDE3C495B2108D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Concat_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mFF575F57DEBCB323A03171728B6BAF429238E633_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Select_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_m6EC54EA8A8E3EC6879F13A4B186229660AF7A706_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_ToList_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mD9525E2DB3B03D54FF5A091EC412A44A12DFBE9A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MetadataProgram_tC7FFBB9FB10DD793C6739437E8A6BBF7DC534270_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResultWrapper_2_get_ParsedResult_mDC664D682469C262D4B62A9F052B4A337E2AE96E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SysVars_t8E6A88778C6137B9BB28FFB92A5B775C92E3C5F8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_m985AE989091993E43286DF30A7CCD0F9192A8FA9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m7186C8E1159C2CB0E7473A29238DA824907B340A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m8FCC61F9B37C918DC80679E0B38EFC5BD84871F1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TokenProgram_tAC7AD56BE92E3D7F5BB55E7C8F018DB308607424_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass14_0_U3CMintOneTokenWithGuardsU3Eb__0_m21D61C61B638AB5C39D1DF8A6A1BE1CC5EFE0884_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* V_2 = NULL;
+	PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* V_3 = NULL;
+	MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* V_4 = NULL;
+	RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* V_5 = NULL;
+	TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* V_6 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_7 = NULL;
+	TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3 V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 V_10;
+	memset((&V_10), 0, sizeof(V_10));
+	Exception_t* V_11 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_1 = V_0;
+			switch (L_1)
+			{
+				case 0:
+				{
+					goto IL_00b1_1;
+				}
+				case 1:
+				{
+					goto IL_02e5_1;
+				}
+				case 2:
+				{
+					goto IL_0429_1;
+				}
+			}
+		}
+		{
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_2 = (U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936_il2cpp_TypeInfo_var);
+			NullCheck(L_2);
+			U3CU3Ec__DisplayClass14_0__ctor_m16266346A035C6239F9618056E72F2473CC765CE(L_2, NULL);
+			__this->___U3CU3E8__1_7 = L_2;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__1_7), (void*)L_2);
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_3 = __this->___U3CU3E8__1_7;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_4 = __this->___mint_2;
+			NullCheck(L_3);
+			L_3->___mint_0 = L_4;
+			Il2CppCodeGenWriteBarrier((void**)(&L_3->___mint_0), (void*)L_4);
+			// var associatedTokenAccount = AssociatedTokenAccountProgram.DeriveAssociatedTokenAccount(payer, mint.PublicKey);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_5 = __this->___payer_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_6;
+			L_6 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_5, NULL);
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_7 = __this->___U3CU3E8__1_7;
+			NullCheck(L_7);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_8 = L_7->___mint_0;
+			NullCheck(L_8);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_9;
+			L_9 = Account_get_PublicKey_m2CA474B3A5F3B29408EEB2DB88A8440914D5DDCB_inline(L_8, NULL);
+			il2cpp_codegen_runtime_class_init_inline(AssociatedTokenAccountProgram_tFC3624824F991B8AEA618DEE565CB16C25BCBC22_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_10;
+			L_10 = AssociatedTokenAccountProgram_DeriveAssociatedTokenAccount_m1F121F2AB02376A948F92BE49A09E48F239C91B4(L_6, L_9, NULL);
+			__this->___U3CassociatedTokenAccountU3E5__2_12 = L_10;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CassociatedTokenAccountU3E5__2_12), (void*)L_10);
+			// var candyMachineClient = new CandyMachineClient(rpcClient, null, CandyMachineProgramId);
+			RuntimeObject* L_11 = __this->___rpcClient_4;
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_12 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyMachineProgramId_0;
+			CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E* L_13 = (CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E*)il2cpp_codegen_object_new(CandyMachineClient_t0F997B8ACB16A2A88718288C3DCD7177EAFEF02E_il2cpp_TypeInfo_var);
+			NullCheck(L_13);
+			CandyMachineClient__ctor_mF5AD66BDC091F197A6CEEA6351CABA1D9B4CCC91(L_13, L_11, (RuntimeObject*)NULL, L_12, NULL);
+			// var stateRequest = await candyMachineClient.GetCandyMachineAsync(candyMachineKey);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_14 = __this->___candyMachineKey_5;
+			il2cpp_codegen_runtime_class_init_inline(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+			String_t* L_15;
+			L_15 = PublicKey_op_Implicit_m384B7ABBC96BB94E492A1F7EDD3EA30EFCB38921(L_14, NULL);
+			NullCheck(L_13);
+			Task_1_t17852F67E3A39967F433EF731F2EBAE41F70EA6A* L_16;
+			L_16 = CandyMachineClient_GetCandyMachineAsync_m2F78806A646FF0C375EFA49F4716B79348415FB7(L_13, L_15, 0, NULL);
+			NullCheck(L_16);
+			TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3 L_17;
+			L_17 = Task_1_GetAwaiter_m8FCC61F9B37C918DC80679E0B38EFC5BD84871F1(L_16, Task_1_GetAwaiter_m8FCC61F9B37C918DC80679E0B38EFC5BD84871F1_RuntimeMethod_var);
+			V_8 = L_17;
+			bool L_18;
+			L_18 = TaskAwaiter_1_get_IsCompleted_m7186C8E1159C2CB0E7473A29238DA824907B340A((&V_8), TaskAwaiter_1_get_IsCompleted_m7186C8E1159C2CB0E7473A29238DA824907B340A_RuntimeMethod_var);
+			if (L_18)
+			{
+				goto IL_00ce_1;
+			}
+		}
+		{
+			int32_t L_19 = 0;
+			V_0 = L_19;
+			__this->___U3CU3E1__state_0 = L_19;
+			TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3 L_20 = V_8;
+			__this->___U3CU3Eu__1_15 = L_20;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_15))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_21 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m93F34FFA7C03829FFA89661159F5695828A4CC7A(L_21, (&V_8), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m93F34FFA7C03829FFA89661159F5695828A4CC7A_RuntimeMethod_var);
+			goto IL_04ba;
+		}
+
+IL_00b1_1:
+		{
+			TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3 L_22 = __this->___U3CU3Eu__1_15;
+			V_8 = L_22;
+			TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3* L_23 = (&__this->___U3CU3Eu__1_15);
+			il2cpp_codegen_initobj(L_23, sizeof(TaskAwaiter_1_t961EB0CAC795C413D0170332B979479C075703A3));
+			int32_t L_24 = (-1);
+			V_0 = L_24;
+			__this->___U3CU3E1__state_0 = L_24;
+		}
+
+IL_00ce_1:
+		{
+			AccountResultWrapper_1_tA6D459C4542D331860DFDFFF8344B251F33CB7E9* L_25;
+			L_25 = TaskAwaiter_1_GetResult_m985AE989091993E43286DF30A7CCD0F9192A8FA9((&V_8), TaskAwaiter_1_GetResult_m985AE989091993E43286DF30A7CCD0F9192A8FA9_RuntimeMethod_var);
+			// var state = stateRequest.ParsedResult;
+			NullCheck(L_25);
+			CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* L_26;
+			L_26 = ResultWrapper_2_get_ParsedResult_mDC664D682469C262D4B62A9F052B4A337E2AE96E_inline(L_25, ResultWrapper_2_get_ParsedResult_mDC664D682469C262D4B62A9F052B4A337E2AE96E_RuntimeMethod_var);
+			V_2 = L_26;
+			// var candyMachineCreator = GetCandyMachineCreator(candyMachineKey);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_27 = __this->___candyMachineKey_5;
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_28;
+			L_28 = CandyMachineCommands_GetCandyMachineCreator_m41AE2D18C8E41F06956768B236B9998F22258B74(L_27, NULL);
+			V_3 = L_28;
+			// var mintNftAccounts = new Unity.Metaplex.CandyGuard.Program.MintV2Accounts {
+			//     CandyMachineAuthorityPda = candyMachineCreator,
+			//     Payer = payer,
+			//     Minter = receiver,
+			//     CandyMachine = candyMachineKey,
+			//     NftMetadata = PDALookup.FindMetadataPDA(mint),
+			//     NftMasterEdition = PDALookup.FindMasterEditionPDA(mint),
+			//     SystemProgram = SystemProgram.ProgramIdKey,
+			//     TokenMetadataProgram = MetadataProgram.ProgramIdKey,
+			//     SplTokenProgram = TokenProgram.ProgramIdKey,
+			//     CollectionDelegateRecord = PDALookup.FindDelegateRecordPDA(
+			//         collectionUpdateAuthority,
+			//         state.CollectionMint,
+			//         candyMachineCreator,
+			//         MetadataDelegateRole.Collection
+			//     ),
+			//     CollectionMasterEdition = PDALookup.FindMasterEditionPDA(state.CollectionMint),
+			//     CollectionMetadata = PDALookup.FindMetadataPDA(state.CollectionMint),
+			//     CollectionMint = state.CollectionMint,
+			//     CollectionUpdateAuthority = collectionUpdateAuthority,
+			//     NftMint = mint,
+			//     NftMintAuthority = payer,
+			//     Token = associatedTokenAccount,
+			//     TokenRecord = PDALookup.FindTokenRecordPDA(associatedTokenAccount, mint),
+			//     SplAtaProgram = AssociatedTokenAccountProgram.ProgramIdKey,
+			//     SysvarInstructions = SysVars.InstructionAccount,
+			//     RecentSlothashes = RECENT_SLOTHASHES,
+			//     CandyGuard = candyGuardKey,
+			//     CandyMachineProgram = CandyMachineProgramId
+			// };
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_29 = (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724*)il2cpp_codegen_object_new(MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724_il2cpp_TypeInfo_var);
+			NullCheck(L_29);
+			MintV2Accounts__ctor_m5D36A4608AE0BB402D4703AB66B2B453F8AAF7E1(L_29, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_30 = L_29;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_31 = V_3;
+			NullCheck(L_30);
+			MintV2Accounts_set_CandyMachineAuthorityPda_mEDD2CC289C65FB33B3BA445E8123909C8BFF44DD_inline(L_30, L_31, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_32 = L_30;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_33 = __this->___payer_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_34;
+			L_34 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_33, NULL);
+			NullCheck(L_32);
+			MintV2Accounts_set_Payer_mC813E71EE50C8E166328CD41E111FCB843E71FD8_inline(L_32, L_34, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_35 = L_32;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_36 = __this->___receiver_6;
+			NullCheck(L_35);
+			MintV2Accounts_set_Minter_m75BD19DBEE81DA5F2C17EFEFF16957169B41A5A2_inline(L_35, L_36, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_37 = L_35;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_38 = __this->___candyMachineKey_5;
+			NullCheck(L_37);
+			MintV2Accounts_set_CandyMachine_mF04774DDBACB9716EF4A8FDE8FF4131AEA1ED391_inline(L_37, L_38, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_39 = L_37;
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_40 = __this->___U3CU3E8__1_7;
+			NullCheck(L_40);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_41 = L_40->___mint_0;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_42;
+			L_42 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_41, NULL);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_43;
+			L_43 = PDALookup_FindMetadataPDA_m3D3ED218E5E0CC01C5BB2C70FDD391BF5AF23DE0(L_42, NULL);
+			NullCheck(L_39);
+			MintV2Accounts_set_NftMetadata_m32B972740F4BC53532C0990BBB6AAB1592640EA7_inline(L_39, L_43, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_44 = L_39;
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_45 = __this->___U3CU3E8__1_7;
+			NullCheck(L_45);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_46 = L_45->___mint_0;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_47;
+			L_47 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_46, NULL);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_48;
+			L_48 = PDALookup_FindMasterEditionPDA_m0EA6B5C9C9A0C84099F3EB7FE795C86CE7121F0B(L_47, NULL);
+			NullCheck(L_44);
+			MintV2Accounts_set_NftMasterEdition_m783B193255CF740782DFA0C92B48BA7B312114C5_inline(L_44, L_48, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_49 = L_44;
+			il2cpp_codegen_runtime_class_init_inline(SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_50 = ((SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_StaticFields*)il2cpp_codegen_static_fields_for(SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var))->___ProgramIdKey_0;
+			NullCheck(L_49);
+			MintV2Accounts_set_SystemProgram_m08E8A67A2EB9F2F5307DB7C4BCE7EF6FD3F032DB_inline(L_49, L_50, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_51 = L_49;
+			il2cpp_codegen_runtime_class_init_inline(MetadataProgram_tC7FFBB9FB10DD793C6739437E8A6BBF7DC534270_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_52 = ((MetadataProgram_tC7FFBB9FB10DD793C6739437E8A6BBF7DC534270_StaticFields*)il2cpp_codegen_static_fields_for(MetadataProgram_tC7FFBB9FB10DD793C6739437E8A6BBF7DC534270_il2cpp_TypeInfo_var))->___ProgramIdKey_0;
+			NullCheck(L_51);
+			MintV2Accounts_set_TokenMetadataProgram_m824A84BCEBA6AFEE79920FEC02886906778587A4_inline(L_51, L_52, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_53 = L_51;
+			il2cpp_codegen_runtime_class_init_inline(TokenProgram_tAC7AD56BE92E3D7F5BB55E7C8F018DB308607424_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_54 = ((TokenProgram_tAC7AD56BE92E3D7F5BB55E7C8F018DB308607424_StaticFields*)il2cpp_codegen_static_fields_for(TokenProgram_tAC7AD56BE92E3D7F5BB55E7C8F018DB308607424_il2cpp_TypeInfo_var))->___ProgramIdKey_0;
+			NullCheck(L_53);
+			MintV2Accounts_set_SplTokenProgram_mE32ABF275106E25D8F0F378F7736BAD5D924FA0A_inline(L_53, L_54, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_55 = L_53;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_56 = __this->___collectionUpdateAuthority_8;
+			CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* L_57 = V_2;
+			NullCheck(L_57);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_58;
+			L_58 = CandyMachine_get_CollectionMint_m2D2A85ED3FB4D2AF80755185B081230D53BB8294_inline(L_57, NULL);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_59 = V_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_60;
+			L_60 = PDALookup_FindDelegateRecordPDA_m90A5A799ACBC5AF0B17879B2C80AA1EB79300E2D(L_56, L_58, L_59, 1, NULL);
+			NullCheck(L_55);
+			MintV2Accounts_set_CollectionDelegateRecord_m6BA5A4B751BDE5EA2024815EE44997764557E762_inline(L_55, L_60, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_61 = L_55;
+			CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* L_62 = V_2;
+			NullCheck(L_62);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_63;
+			L_63 = CandyMachine_get_CollectionMint_m2D2A85ED3FB4D2AF80755185B081230D53BB8294_inline(L_62, NULL);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_64;
+			L_64 = PDALookup_FindMasterEditionPDA_m0EA6B5C9C9A0C84099F3EB7FE795C86CE7121F0B(L_63, NULL);
+			NullCheck(L_61);
+			MintV2Accounts_set_CollectionMasterEdition_mEB56A5AAD2F8F268C49D33E30A568B966BA5D526_inline(L_61, L_64, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_65 = L_61;
+			CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* L_66 = V_2;
+			NullCheck(L_66);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_67;
+			L_67 = CandyMachine_get_CollectionMint_m2D2A85ED3FB4D2AF80755185B081230D53BB8294_inline(L_66, NULL);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_68;
+			L_68 = PDALookup_FindMetadataPDA_m3D3ED218E5E0CC01C5BB2C70FDD391BF5AF23DE0(L_67, NULL);
+			NullCheck(L_65);
+			MintV2Accounts_set_CollectionMetadata_m992DE8780661F8EF0814D2D5E1145D2F4A1AA751_inline(L_65, L_68, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_69 = L_65;
+			CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* L_70 = V_2;
+			NullCheck(L_70);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_71;
+			L_71 = CandyMachine_get_CollectionMint_m2D2A85ED3FB4D2AF80755185B081230D53BB8294_inline(L_70, NULL);
+			NullCheck(L_69);
+			MintV2Accounts_set_CollectionMint_m214CAD0AF092C2124A85646FE2E7519C9DDE3F20_inline(L_69, L_71, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_72 = L_69;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_73 = __this->___collectionUpdateAuthority_8;
+			NullCheck(L_72);
+			MintV2Accounts_set_CollectionUpdateAuthority_m7ABF3C70B0C7BF6A3343A7DC517A85678899002D_inline(L_72, L_73, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_74 = L_72;
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_75 = __this->___U3CU3E8__1_7;
+			NullCheck(L_75);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_76 = L_75->___mint_0;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_77;
+			L_77 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_76, NULL);
+			NullCheck(L_74);
+			MintV2Accounts_set_NftMint_m76F5C006BA757DD7B5FFE4E73E17955646267545_inline(L_74, L_77, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_78 = L_74;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_79 = __this->___payer_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_80;
+			L_80 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_79, NULL);
+			NullCheck(L_78);
+			MintV2Accounts_set_NftMintAuthority_m0B778DD6407BB9013569D45A7E112C5C5141543C_inline(L_78, L_80, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_81 = L_78;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_82 = __this->___U3CassociatedTokenAccountU3E5__2_12;
+			NullCheck(L_81);
+			MintV2Accounts_set_Token_m5CE49FE3381DC03DEEBD61E436B8E4CD4BDBB845_inline(L_81, L_82, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_83 = L_81;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_84 = __this->___U3CassociatedTokenAccountU3E5__2_12;
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_85 = __this->___U3CU3E8__1_7;
+			NullCheck(L_85);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_86 = L_85->___mint_0;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_87;
+			L_87 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_86, NULL);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_88;
+			L_88 = PDALookup_FindTokenRecordPDA_m31E3DD98644A1C02CB84AE31A93E88A683ED478F(L_84, L_87, NULL);
+			NullCheck(L_83);
+			MintV2Accounts_set_TokenRecord_m35C29FB98220CEBBF47A660E2BD8535D905C2C12_inline(L_83, L_88, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_89 = L_83;
+			il2cpp_codegen_runtime_class_init_inline(AssociatedTokenAccountProgram_tFC3624824F991B8AEA618DEE565CB16C25BCBC22_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_90 = ((AssociatedTokenAccountProgram_tFC3624824F991B8AEA618DEE565CB16C25BCBC22_StaticFields*)il2cpp_codegen_static_fields_for(AssociatedTokenAccountProgram_tFC3624824F991B8AEA618DEE565CB16C25BCBC22_il2cpp_TypeInfo_var))->___ProgramIdKey_0;
+			NullCheck(L_89);
+			MintV2Accounts_set_SplAtaProgram_m7F11E6231F3376B2DD9C6531D8FDE01394241E92_inline(L_89, L_90, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_91 = L_89;
+			il2cpp_codegen_runtime_class_init_inline(SysVars_t8E6A88778C6137B9BB28FFB92A5B775C92E3C5F8_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_92 = ((SysVars_t8E6A88778C6137B9BB28FFB92A5B775C92E3C5F8_StaticFields*)il2cpp_codegen_static_fields_for(SysVars_t8E6A88778C6137B9BB28FFB92A5B775C92E3C5F8_il2cpp_TypeInfo_var))->___InstructionAccount_4;
+			NullCheck(L_91);
+			MintV2Accounts_set_SysvarInstructions_m50BB13A29B70848EB079754A87A0962853FC9904_inline(L_91, L_92, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_93 = L_91;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_94 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___RECENT_SLOTHASHES_2;
+			NullCheck(L_93);
+			MintV2Accounts_set_RecentSlothashes_mCF5EC4A5B5957D1A587EE920BBF96EC8D83B2B8E_inline(L_93, L_94, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_95 = L_93;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_96 = __this->___candyGuardKey_9;
+			NullCheck(L_95);
+			MintV2Accounts_set_CandyGuard_m0554D170D4E919E734010C7DA2A19426E128592B_inline(L_95, L_96, NULL);
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_97 = L_95;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_98 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyMachineProgramId_0;
+			NullCheck(L_97);
+			MintV2Accounts_set_CandyMachineProgram_m1E06C8F21E873E617173416D3DA541DBF2A7B583_inline(L_97, L_98, NULL);
+			V_4 = L_97;
+			// var mintSettingsAccounts = mintSettings.GetMintArgs(payer, mint, candyMachineKey, candyGuardKey);
+			CandyGuardMintSettings_t8F90A74B122E3D05823A9124EE2AFC402C84DACE* L_99 = __this->___mintSettings_10;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_100 = __this->___payer_3;
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_101 = __this->___U3CU3E8__1_7;
+			NullCheck(L_101);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_102 = L_101->___mint_0;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_103 = __this->___candyMachineKey_5;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_104 = __this->___candyGuardKey_9;
+			NullCheck(L_99);
+			List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25* L_105;
+			L_105 = CandyGuardMintSettings_GetMintArgs_mD60BB6B0254E0C40597A26BA5BA33012B5E013F6(L_99, L_100, L_102, L_103, L_104, NULL);
+			__this->___U3CmintSettingsAccountsU3E5__3_13 = L_105;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmintSettingsAccountsU3E5__3_13), (void*)L_105);
+			// var candyMachineInstruction = CandyGuardProgram.MintV2(
+			//     mintNftAccounts,
+			//     new byte[0],
+			//     mintSettings.GuardGroup,
+			//     CandyGuardProgramId
+			// );
+			MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* L_106 = V_4;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_107 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)0);
+			CandyGuardMintSettings_t8F90A74B122E3D05823A9124EE2AFC402C84DACE* L_108 = __this->___mintSettings_10;
+			NullCheck(L_108);
+			String_t* L_109 = L_108->___GuardGroup_1;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_110 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyGuardProgramId_1;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_111;
+			L_111 = CandyGuardProgram_MintV2_mA7C37B0CF9D28F7AFEE435B15FD12EC0A7B4924E(L_106, L_107, L_109, L_110, NULL);
+			__this->___U3CcandyMachineInstructionU3E5__4_14 = L_111;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcandyMachineInstructionU3E5__4_14), (void*)L_111);
+			// var blockHash = await rpcClient.GetLatestBlockHashAsync();
+			RuntimeObject* L_112 = __this->___rpcClient_4;
+			NullCheck(L_112);
+			Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9* L_113;
+			L_113 = InterfaceFuncInvoker1< Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9*, int32_t >::Invoke(38 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.Rpc.IRpcClient::GetLatestBlockHashAsync(Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_112, 0);
+			NullCheck(L_113);
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_114;
+			L_114 = Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE(L_113, Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+			V_9 = L_114;
+			bool L_115;
+			L_115 = TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC((&V_9), TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+			if (L_115)
+			{
+				goto IL_0302_1;
+			}
+		}
+		{
+			int32_t L_116 = 1;
+			V_0 = L_116;
+			__this->___U3CU3E1__state_0 = L_116;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_117 = V_9;
+			__this->___U3CU3Eu__2_16 = L_117;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_16))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_118 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m22BDD6AAE5777BA61F548D6F82403CF5D316EECD(L_118, (&V_9), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m22BDD6AAE5777BA61F548D6F82403CF5D316EECD_RuntimeMethod_var);
+			goto IL_04ba;
+		}
+
+IL_02e5_1:
+		{
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_119 = __this->___U3CU3Eu__2_16;
+			V_9 = L_119;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* L_120 = (&__this->___U3CU3Eu__2_16);
+			il2cpp_codegen_initobj(L_120, sizeof(TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C));
+			int32_t L_121 = (-1);
+			V_0 = L_121;
+			__this->___U3CU3E1__state_0 = L_121;
+		}
+
+IL_0302_1:
+		{
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_122;
+			L_122 = TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E((&V_9), TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+			V_5 = L_122;
+			// var computeInstruction = ComputeBudgetProgram.SetComputeUnitLimit(COMPUTE_UNITS);
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			uint32_t L_123 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___COMPUTE_UNITS_3;
+			il2cpp_codegen_runtime_class_init_inline(ComputeBudgetProgram_tD1E21E1B65B9BAFCF6ED370F1DBDE3C495B2108D_il2cpp_TypeInfo_var);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_124;
+			L_124 = ComputeBudgetProgram_SetComputeUnitLimit_m7DBAB460BD1FA06CD7921081A640FEF369854D62(L_123, NULL);
+			V_6 = L_124;
+			// candyMachineInstruction = new TransactionInstruction {
+			//     Data = candyMachineInstruction.Data,
+			//     ProgramId = candyMachineInstruction.ProgramId,
+			//     Keys = candyMachineInstruction.Keys.Select(k => {
+			//         if (k.PublicKey == mint.PublicKey) {
+			//             return AccountMeta.Writable(mint, true);
+			//         }
+			//         return k;
+			//     }).Concat(mintSettingsAccounts).ToList()
+			// };
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_125 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)il2cpp_codegen_object_new(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B_il2cpp_TypeInfo_var);
+			NullCheck(L_125);
+			TransactionInstruction__ctor_mD4A602752140DDCA7AB55A6C1B5F6690769B473C(L_125, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_126 = L_125;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_127 = __this->___U3CcandyMachineInstructionU3E5__4_14;
+			NullCheck(L_127);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_128;
+			L_128 = TransactionInstruction_get_Data_mD0D8887DD66481B7EE27A70D3CDD559F4E2FF4E2_inline(L_127, NULL);
+			NullCheck(L_126);
+			TransactionInstruction_set_Data_m04A7F7910F30C3CC2DA1A9AA4470C609BE5A7797_inline(L_126, L_128, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_129 = L_126;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_130 = __this->___U3CcandyMachineInstructionU3E5__4_14;
+			NullCheck(L_130);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_131;
+			L_131 = TransactionInstruction_get_ProgramId_mE857581B4C57D4EAF7142CE37FDA33F677DEF271_inline(L_130, NULL);
+			NullCheck(L_129);
+			TransactionInstruction_set_ProgramId_mB99504E26550E308C1FFDA8EFF9DBDEE582A9C52_inline(L_129, L_131, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_132 = L_129;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_133 = __this->___U3CcandyMachineInstructionU3E5__4_14;
+			NullCheck(L_133);
+			RuntimeObject* L_134;
+			L_134 = TransactionInstruction_get_Keys_m4919C0B7F1942DE9C0349F39A8F4BE957F32EEBA_inline(L_133, NULL);
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_135 = __this->___U3CU3E8__1_7;
+			Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1* L_136 = (Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1*)il2cpp_codegen_object_new(Func_2_tE7B51D9A6F23C51178416425207C5E7711E3CFB1_il2cpp_TypeInfo_var);
+			NullCheck(L_136);
+			Func_2__ctor_mB37D6A2EE0A43845ABEA19A0F5F1959BF13465F8(L_136, L_135, (intptr_t)((void*)U3CU3Ec__DisplayClass14_0_U3CMintOneTokenWithGuardsU3Eb__0_m21D61C61B638AB5C39D1DF8A6A1BE1CC5EFE0884_RuntimeMethod_var), NULL);
+			RuntimeObject* L_137;
+			L_137 = Enumerable_Select_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_m6EC54EA8A8E3EC6879F13A4B186229660AF7A706(L_134, L_136, Enumerable_Select_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_m6EC54EA8A8E3EC6879F13A4B186229660AF7A706_RuntimeMethod_var);
+			List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25* L_138 = __this->___U3CmintSettingsAccountsU3E5__3_13;
+			RuntimeObject* L_139;
+			L_139 = Enumerable_Concat_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mFF575F57DEBCB323A03171728B6BAF429238E633(L_137, L_138, Enumerable_Concat_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mFF575F57DEBCB323A03171728B6BAF429238E633_RuntimeMethod_var);
+			List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25* L_140;
+			L_140 = Enumerable_ToList_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mD9525E2DB3B03D54FF5A091EC412A44A12DFBE9A(L_139, Enumerable_ToList_TisAccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F_mD9525E2DB3B03D54FF5A091EC412A44A12DFBE9A_RuntimeMethod_var);
+			NullCheck(L_132);
+			TransactionInstruction_set_Keys_mEE992F580C4FB052CA6D59F4DDE06C1C00587226_inline(L_132, L_140, NULL);
+			__this->___U3CcandyMachineInstructionU3E5__4_14 = L_132;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcandyMachineInstructionU3E5__4_14), (void*)L_132);
+			// var transaction = new TransactionBuilder()
+			//     .SetRecentBlockHash(blockHash.Result.Value.Blockhash)
+			//     .SetFeePayer(payer)
+			//     .AddInstruction(computeInstruction)
+			//     .AddInstruction(candyMachineInstruction)
+			//     .Build(new List<Account> { payer, mint });
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_141 = (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4*)il2cpp_codegen_object_new(TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+			NullCheck(L_141);
+			TransactionBuilder__ctor_m0B3F1BCABDCC514E09F089FADDF382793AB85906(L_141, NULL);
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_142 = V_5;
+			NullCheck(L_142);
+			ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* L_143;
+			L_143 = RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_inline(L_142, RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+			NullCheck(L_143);
+			LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* L_144;
+			L_144 = ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_inline(L_143, ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+			NullCheck(L_144);
+			String_t* L_145;
+			L_145 = LatestBlockHash_get_Blockhash_mDED25F2CB2D12CA897B10DBD08D6FF28FB840A4D_inline(L_144, NULL);
+			NullCheck(L_141);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_146;
+			L_146 = TransactionBuilder_SetRecentBlockHash_m867442395CF50EE764EF39BF869C480246E1ECC9(L_141, L_145, NULL);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_147 = __this->___payer_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_148;
+			L_148 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_147, NULL);
+			NullCheck(L_146);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_149;
+			L_149 = TransactionBuilder_SetFeePayer_m0667AA3756160B7FCF72EB4F44EEB1D59D0A5698(L_146, L_148, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_150 = V_6;
+			NullCheck(L_149);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_151;
+			L_151 = TransactionBuilder_AddInstruction_m47204C5F74C6203BCF68D1965D8BB186CA148B3A(L_149, L_150, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_152 = __this->___U3CcandyMachineInstructionU3E5__4_14;
+			NullCheck(L_151);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_153;
+			L_153 = TransactionBuilder_AddInstruction_m47204C5F74C6203BCF68D1965D8BB186CA148B3A(L_151, L_152, NULL);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_154 = (List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550*)il2cpp_codegen_object_new(List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var);
+			NullCheck(L_154);
+			List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5(L_154, List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_155 = L_154;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_156 = __this->___payer_3;
+			NullCheck(L_155);
+			List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_inline(L_155, L_156, List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_157 = L_155;
+			U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936* L_158 = __this->___U3CU3E8__1_7;
+			NullCheck(L_158);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_159 = L_158->___mint_0;
+			NullCheck(L_157);
+			List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_inline(L_157, L_159, List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+			NullCheck(L_153);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_160;
+			L_160 = TransactionBuilder_Build_m9F3B305D960BCAA5792825205D115271B3775C21(L_153, L_157, NULL);
+			V_7 = L_160;
+			// var txId = await rpcClient.SendTransactionAsync(transaction, skipPreflight, Rpc.Types.Commitment.Confirmed);
+			RuntimeObject* L_161 = __this->___rpcClient_4;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_162 = V_7;
+			bool L_163 = __this->___skipPreflight_11;
+			NullCheck(L_161);
+			Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6* L_164;
+			L_164 = InterfaceFuncInvoker3< Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, bool, int32_t >::Invoke(62 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.Rpc.IRpcClient::SendTransactionAsync(System.Byte[],System.Boolean,Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_161, L_162, L_163, 1);
+			NullCheck(L_164);
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_165;
+			L_165 = Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988(L_164, Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+			V_10 = L_165;
+			bool L_166;
+			L_166 = TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C((&V_10), TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+			if (L_166)
+			{
+				goto IL_0446_1;
+			}
+		}
+		{
+			int32_t L_167 = 2;
+			V_0 = L_167;
+			__this->___U3CU3E1__state_0 = L_167;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_168 = V_10;
+			__this->___U3CU3Eu__3_17 = L_168;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__3_17))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_169 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2138E21A86BFC15C199D953CAE47896DBB57B67C(L_169, (&V_10), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2_m2138E21A86BFC15C199D953CAE47896DBB57B67C_RuntimeMethod_var);
+			goto IL_04ba;
+		}
+
+IL_0429_1:
+		{
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_170 = __this->___U3CU3Eu__3_17;
+			V_10 = L_170;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* L_171 = (&__this->___U3CU3Eu__3_17);
+			il2cpp_codegen_initobj(L_171, sizeof(TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935));
+			int32_t L_172 = (-1);
+			V_0 = L_172;
+			__this->___U3CU3E1__state_0 = L_172;
+		}
+
+IL_0446_1:
+		{
+			RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* L_173;
+			L_173 = TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919((&V_10), TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+			// return txId.Result;
+			NullCheck(L_173);
+			String_t* L_174;
+			L_174 = RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_inline(L_173, RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+			V_1 = L_174;
+			goto IL_048a;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0455;
+		}
+		throw e;
+	}
+
+CATCH_0455:
+	{// begin catch(System.Exception)
+		V_11 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CU3E8__1_7 = (U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__1_7), (void*)(U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936*)NULL);
+		__this->___U3CassociatedTokenAccountU3E5__2_12 = (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CassociatedTokenAccountU3E5__2_12), (void*)(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL);
+		__this->___U3CmintSettingsAccountsU3E5__3_13 = (List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmintSettingsAccountsU3E5__3_13), (void*)(List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25*)NULL);
+		__this->___U3CcandyMachineInstructionU3E5__4_14 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcandyMachineInstructionU3E5__4_14), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_175 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_176 = V_11;
+		AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C(L_175, L_176, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_04ba;
+	}// end catch (depth: 1)
+
+IL_048a:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CU3E8__1_7 = (U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__1_7), (void*)(U3CU3Ec__DisplayClass14_0_tAFC242EF7839C69933C7014E79B105AE26F11936*)NULL);
+		__this->___U3CassociatedTokenAccountU3E5__2_12 = (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CassociatedTokenAccountU3E5__2_12), (void*)(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL);
+		__this->___U3CmintSettingsAccountsU3E5__3_13 = (List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmintSettingsAccountsU3E5__3_13), (void*)(List_1_tCD6ABB9D9150093D7DF920674414F5665C10AA25*)NULL);
+		__this->___U3CcandyMachineInstructionU3E5__4_14 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcandyMachineInstructionU3E5__4_14), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_177 = (&__this->___U3CU3Et__builder_1);
+		String_t* L_178 = V_1;
+		AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E(L_177, L_178, AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+	}
+
+IL_04ba:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CMintOneTokenWithGuardsU3Ed__14_MoveNext_m682B6F914390CFE441FD7466165340A59B6F97C6_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2*>(__this + _offset);
+	U3CMintOneTokenWithGuardsU3Ed__14_MoveNext_m682B6F914390CFE441FD7466165340A59B6F97C6(_thisAdjusted, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<MintOneTokenWithGuards>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMintOneTokenWithGuardsU3Ed__14_SetStateMachine_mA7E1168AC2B81C8594970424C1C18C17A000AE72 (U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CMintOneTokenWithGuardsU3Ed__14_SetStateMachine_mA7E1168AC2B81C8594970424C1C18C17A000AE72_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CMintOneTokenWithGuardsU3Ed__14_tB5015838D2D3D691F8FABE0DC3D51B223D4EA3E2*>(__this + _offset);
+	U3CMintOneTokenWithGuardsU3Ed__14_SetStateMachine_mA7E1168AC2B81C8594970424C1C18C17A000AE72(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInitializeGuardsU3Ed__15_MoveNext_m291F4376836824E1F41296225A055115C611F450 (U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Account_t15F1801E39C4C126421D353BFA50F8BD35957596_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_m16F86F34D937C793288258ECD17D8061529DE927_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_mF95CC50AC32B74CEF845E6E0E4CF764EA9706D29_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_m08FFC63CC76712C6E11105CFDEF8B3E9DE4E503B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mAF067D8BCD6732A0ADBE1BA6EE909B3512880D42_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m8070151BA99349188C9F1457EC394480BE0D4ED4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6AD3488524C3846792C69FAE659FB340679F91C4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C350721AC95DF93C2DF71D3A42C52DCC411F05F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD312B65DE8A886159808475CA6C7A878F51A120A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF9A0C8B4D77ADFC63D1015CBBFC7CB27E8E61DC8);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_2 = NULL;
+	int32_t V_3 = 0;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_4 = NULL;
+	uint8_t V_5 = 0x0;
+	RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* V_6 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_7 = NULL;
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	Exception_t* V_10 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_1 = V_0;
+			if (!L_1)
+			{
+				goto IL_015a_1;
+			}
+		}
+		{
+			int32_t L_2 = V_0;
+			if ((((int32_t)L_2) == ((int32_t)1)))
+			{
+				goto IL_0223_1;
+			}
+		}
+		{
+			// if (guardData == null)
+			GuardData_t1D96F9E11536F054A90B61EF72162BF54ADF0385* L_3 = __this->___guardData_2;
+			if (L_3)
+			{
+				goto IL_0033_1;
+			}
+		}
+		{
+			// Debug.LogError("Missing guard configuration");
+			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+			Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteralD312B65DE8A886159808475CA6C7A878F51A120A, NULL);
+			// return (null, null);
+			ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D L_4;
+			memset((&L_4), 0, sizeof(L_4));
+			ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551((&L_4), (String_t*)NULL, (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL, /*hidden argument*/ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551_RuntimeMethod_var);
+			V_1 = L_4;
+			goto IL_0295;
+		}
+
+IL_0033_1:
+		{
+			// Debug.Log("Initializing Candy Guard...");
+			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+			Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralF9A0C8B4D77ADFC63D1015CBBFC7CB27E8E61DC8, NULL);
+			// var guardDataBytes = new byte[3600];
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)3600));
+			V_2 = L_5;
+			// var offset = guardData.Serialize(guardDataBytes, 0);
+			GuardData_t1D96F9E11536F054A90B61EF72162BF54ADF0385* L_6 = __this->___guardData_2;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_2;
+			NullCheck(L_6);
+			int32_t L_8;
+			L_8 = GuardData_Serialize_mBB60B060D8FE7D1D3435927391D225C3D7A374D1(L_6, L_7, 0, NULL);
+			V_3 = L_8;
+			// var resultData = new byte[offset];
+			int32_t L_9 = V_3;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_10 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)L_9);
+			V_4 = L_10;
+			// Array.Copy(guardDataBytes, resultData, offset);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11 = V_2;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = V_4;
+			int32_t L_13 = V_3;
+			Array_Copy_m4233828B4E6288B6D815F539AAA38575DE627900((RuntimeArray*)L_11, (RuntimeArray*)L_12, L_13, NULL);
+			// var baseAccount = new Account();
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_14 = (Account_t15F1801E39C4C126421D353BFA50F8BD35957596*)il2cpp_codegen_object_new(Account_t15F1801E39C4C126421D353BFA50F8BD35957596_il2cpp_TypeInfo_var);
+			NullCheck(L_14);
+			Account__ctor_mA2E711F906E1D1A8D4BAD908732B310F8A609168(L_14, NULL);
+			__this->___U3CbaseAccountU3E5__2_6 = L_14;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbaseAccountU3E5__2_6), (void*)L_14);
+			// if (PublicKey.TryFindProgramAddress(
+			//     new List<byte[]> { Encoding.UTF8.GetBytes("candy_guard"), baseAccount.PublicKey.KeyBytes },
+			//     CandyGuardProgramId,
+			//     out var guardAccount,
+			//     out var _
+			// ))
+			List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* L_15 = (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4*)il2cpp_codegen_object_new(List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4_il2cpp_TypeInfo_var);
+			NullCheck(L_15);
+			List_1__ctor_m8070151BA99349188C9F1457EC394480BE0D4ED4(L_15, List_1__ctor_m8070151BA99349188C9F1457EC394480BE0D4ED4_RuntimeMethod_var);
+			List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* L_16 = L_15;
+			Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_17;
+			L_17 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
+			NullCheck(L_17);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18;
+			L_18 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(19 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_17, _stringLiteral6C350721AC95DF93C2DF71D3A42C52DCC411F05F);
+			NullCheck(L_16);
+			List_1_Add_mAF067D8BCD6732A0ADBE1BA6EE909B3512880D42_inline(L_16, L_18, List_1_Add_mAF067D8BCD6732A0ADBE1BA6EE909B3512880D42_RuntimeMethod_var);
+			List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* L_19 = L_16;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_20 = __this->___U3CbaseAccountU3E5__2_6;
+			NullCheck(L_20);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_21;
+			L_21 = Account_get_PublicKey_m2CA474B3A5F3B29408EEB2DB88A8440914D5DDCB_inline(L_20, NULL);
+			NullCheck(L_21);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_22;
+			L_22 = PublicKey_get_KeyBytes_m227D50C47CBD2081B12896002FC4372DE8DF5784(L_21, NULL);
+			NullCheck(L_19);
+			List_1_Add_mAF067D8BCD6732A0ADBE1BA6EE909B3512880D42_inline(L_19, L_22, List_1_Add_mAF067D8BCD6732A0ADBE1BA6EE909B3512880D42_RuntimeMethod_var);
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_23 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyGuardProgramId_1;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751** L_24 = (&__this->___U3CguardAccountU3E5__3_7);
+			il2cpp_codegen_runtime_class_init_inline(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+			bool L_25;
+			L_25 = PublicKey_TryFindProgramAddress_m380002D59B3888237ABE355B8B8365E1503A6409(L_19, L_23, L_24, (&V_5), NULL);
+			if (!L_25)
+			{
+				goto IL_025a_1;
+			}
+		}
+		{
+			// var candyGuardInstruction = CandyGuardProgram.Initialize(
+			//     new() {
+			//         SystemProgram = SystemProgram.ProgramIdKey,
+			//         Authority = account,
+			//         Base = baseAccount,
+			//         CandyGuard = guardAccount,
+			//         Payer = account
+			//     },
+			//     resultData,
+			//     CandyGuardProgramId
+			// );
+			InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* L_26 = (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329*)il2cpp_codegen_object_new(InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329_il2cpp_TypeInfo_var);
+			NullCheck(L_26);
+			InitializeAccounts__ctor_m0E498003C7D5A6BF270D4CA62AB4202324EA3779(L_26, NULL);
+			InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* L_27 = L_26;
+			il2cpp_codegen_runtime_class_init_inline(SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_28 = ((SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_StaticFields*)il2cpp_codegen_static_fields_for(SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var))->___ProgramIdKey_0;
+			NullCheck(L_27);
+			InitializeAccounts_set_SystemProgram_m037C96692C13D6EB978307974F5992D1EA5206BD_inline(L_27, L_28, NULL);
+			InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* L_29 = L_27;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_30 = __this->___account_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_31;
+			L_31 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_30, NULL);
+			NullCheck(L_29);
+			InitializeAccounts_set_Authority_m482C5C86C49ACB28BD69F7C7DC854FAF6A15D0E6_inline(L_29, L_31, NULL);
+			InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* L_32 = L_29;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_33 = __this->___U3CbaseAccountU3E5__2_6;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_34;
+			L_34 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_33, NULL);
+			NullCheck(L_32);
+			InitializeAccounts_set_Base_mC71A2082C9EAB6A86386A3A9C5C4EC821FFFADC8_inline(L_32, L_34, NULL);
+			InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* L_35 = L_32;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_36 = __this->___U3CguardAccountU3E5__3_7;
+			NullCheck(L_35);
+			InitializeAccounts_set_CandyGuard_m01343CFCF071B8168139E2FF282C61FCA1680021_inline(L_35, L_36, NULL);
+			InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* L_37 = L_35;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_38 = __this->___account_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_39;
+			L_39 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_38, NULL);
+			NullCheck(L_37);
+			InitializeAccounts_set_Payer_m4900F973E48BEF0CB76EE1760225D3379BDEF59E_inline(L_37, L_39, NULL);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_40 = V_4;
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_41 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyGuardProgramId_1;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_42;
+			L_42 = CandyGuardProgram_Initialize_m6CF29E9EED950AC9277B40D982CD4ED85DBAA794(L_37, L_40, L_41, NULL);
+			__this->___U3CcandyGuardInstructionU3E5__4_8 = L_42;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcandyGuardInstructionU3E5__4_8), (void*)L_42);
+			// var blockHash = await rpcClient.GetLatestBlockHashAsync();
+			RuntimeObject* L_43 = __this->___rpcClient_4;
+			NullCheck(L_43);
+			Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9* L_44;
+			L_44 = InterfaceFuncInvoker1< Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9*, int32_t >::Invoke(38 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.Rpc.IRpcClient::GetLatestBlockHashAsync(Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_43, 0);
+			NullCheck(L_44);
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_45;
+			L_45 = Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE(L_44, Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+			V_8 = L_45;
+			bool L_46;
+			L_46 = TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC((&V_8), TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+			if (L_46)
+			{
+				goto IL_0177_1;
+			}
+		}
+		{
+			int32_t L_47 = 0;
+			V_0 = L_47;
+			__this->___U3CU3E1__state_0 = L_47;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_48 = V_8;
+			__this->___U3CU3Eu__1_9 = L_48;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_9))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* L_49 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_mF95CC50AC32B74CEF845E6E0E4CF764EA9706D29(L_49, (&V_8), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_mF95CC50AC32B74CEF845E6E0E4CF764EA9706D29_RuntimeMethod_var);
+			goto IL_02b7;
+		}
+
+IL_015a_1:
+		{
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_50 = __this->___U3CU3Eu__1_9;
+			V_8 = L_50;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* L_51 = (&__this->___U3CU3Eu__1_9);
+			il2cpp_codegen_initobj(L_51, sizeof(TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C));
+			int32_t L_52 = (-1);
+			V_0 = L_52;
+			__this->___U3CU3E1__state_0 = L_52;
+		}
+
+IL_0177_1:
+		{
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_53;
+			L_53 = TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E((&V_8), TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+			V_6 = L_53;
+			// var transaction = new TransactionBuilder()
+			//     .SetRecentBlockHash(blockHash.Result.Value.Blockhash)
+			//     .SetFeePayer(account)
+			//     .AddInstruction(candyGuardInstruction)
+			//     .Build(new List<Account> { account, baseAccount });
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_54 = (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4*)il2cpp_codegen_object_new(TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+			NullCheck(L_54);
+			TransactionBuilder__ctor_m0B3F1BCABDCC514E09F089FADDF382793AB85906(L_54, NULL);
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_55 = V_6;
+			NullCheck(L_55);
+			ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* L_56;
+			L_56 = RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_inline(L_55, RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+			NullCheck(L_56);
+			LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* L_57;
+			L_57 = ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_inline(L_56, ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+			NullCheck(L_57);
+			String_t* L_58;
+			L_58 = LatestBlockHash_get_Blockhash_mDED25F2CB2D12CA897B10DBD08D6FF28FB840A4D_inline(L_57, NULL);
+			NullCheck(L_54);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_59;
+			L_59 = TransactionBuilder_SetRecentBlockHash_m867442395CF50EE764EF39BF869C480246E1ECC9(L_54, L_58, NULL);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_60 = __this->___account_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_61;
+			L_61 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_60, NULL);
+			NullCheck(L_59);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_62;
+			L_62 = TransactionBuilder_SetFeePayer_m0667AA3756160B7FCF72EB4F44EEB1D59D0A5698(L_59, L_61, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_63 = __this->___U3CcandyGuardInstructionU3E5__4_8;
+			NullCheck(L_62);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_64;
+			L_64 = TransactionBuilder_AddInstruction_m47204C5F74C6203BCF68D1965D8BB186CA148B3A(L_62, L_63, NULL);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_65 = (List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550*)il2cpp_codegen_object_new(List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var);
+			NullCheck(L_65);
+			List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5(L_65, List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_66 = L_65;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_67 = __this->___account_3;
+			NullCheck(L_66);
+			List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_inline(L_66, L_67, List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_68 = L_66;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_69 = __this->___U3CbaseAccountU3E5__2_6;
+			NullCheck(L_68);
+			List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_inline(L_68, L_69, List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+			NullCheck(L_64);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_70;
+			L_70 = TransactionBuilder_Build_m9F3B305D960BCAA5792825205D115271B3775C21(L_64, L_68, NULL);
+			V_7 = L_70;
+			// var txId = await rpcClient.SendAndConfirmTransactionAsync(transaction, skipPreflight);
+			RuntimeObject* L_71 = __this->___rpcClient_4;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_72 = V_7;
+			bool L_73 = __this->___skipPreflight_5;
+			NullCheck(L_71);
+			Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6* L_74;
+			L_74 = InterfaceFuncInvoker4< Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, bool, int32_t, int32_t >::Invoke(63 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.Rpc.IRpcClient::SendAndConfirmTransactionAsync(System.Byte[],System.Boolean,Solana.Unity.Rpc.Types.Commitment,Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_71, L_72, L_73, 0, 0);
+			NullCheck(L_74);
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_75;
+			L_75 = Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988(L_74, Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+			V_9 = L_75;
+			bool L_76;
+			L_76 = TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C((&V_9), TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+			if (L_76)
+			{
+				goto IL_0240_1;
+			}
+		}
+		{
+			int32_t L_77 = 1;
+			V_0 = L_77;
+			__this->___U3CU3E1__state_0 = L_77;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_78 = V_9;
+			__this->___U3CU3Eu__2_10 = L_78;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_10))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* L_79 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_m16F86F34D937C793288258ECD17D8061529DE927(L_79, (&V_9), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9_m16F86F34D937C793288258ECD17D8061529DE927_RuntimeMethod_var);
+			goto IL_02b7;
+		}
+
+IL_0223_1:
+		{
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_80 = __this->___U3CU3Eu__2_10;
+			V_9 = L_80;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* L_81 = (&__this->___U3CU3Eu__2_10);
+			il2cpp_codegen_initobj(L_81, sizeof(TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935));
+			int32_t L_82 = (-1);
+			V_0 = L_82;
+			__this->___U3CU3E1__state_0 = L_82;
+		}
+
+IL_0240_1:
+		{
+			RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* L_83;
+			L_83 = TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919((&V_9), TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+			// return (txId.Result, guardAccount);
+			NullCheck(L_83);
+			String_t* L_84;
+			L_84 = RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_inline(L_83, RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_85 = __this->___U3CguardAccountU3E5__3_7;
+			ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D L_86;
+			memset((&L_86), 0, sizeof(L_86));
+			ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551((&L_86), L_84, L_85, /*hidden argument*/ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551_RuntimeMethod_var);
+			V_1 = L_86;
+			goto IL_0295;
+		}
+
+IL_025a_1:
+		{
+			// Debug.LogError("Failed to create CandyGuard account.");
+			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+			Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral6AD3488524C3846792C69FAE659FB340679F91C4, NULL);
+			// return (null, null);
+			ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D L_87;
+			memset((&L_87), 0, sizeof(L_87));
+			ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551((&L_87), (String_t*)NULL, (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL, /*hidden argument*/ValueTuple_2__ctor_m5A866F6B8ED51BB1E4EDD2E5374011684B2E9551_RuntimeMethod_var);
+			V_1 = L_87;
+			goto IL_0295;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_026e;
+		}
+		throw e;
+	}
+
+CATCH_026e:
+	{// begin catch(System.Exception)
+		V_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CbaseAccountU3E5__2_6 = (Account_t15F1801E39C4C126421D353BFA50F8BD35957596*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbaseAccountU3E5__2_6), (void*)(Account_t15F1801E39C4C126421D353BFA50F8BD35957596*)NULL);
+		__this->___U3CguardAccountU3E5__3_7 = (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CguardAccountU3E5__3_7), (void*)(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL);
+		AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* L_88 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_89 = V_10;
+		AsyncTaskMethodBuilder_1_SetException_m125E519D143550CF0A759BC0787619B05252EBA1(L_88, L_89, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m125E519D143550CF0A759BC0787619B05252EBA1_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_02b7;
+	}// end catch (depth: 1)
+
+IL_0295:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CbaseAccountU3E5__2_6 = (Account_t15F1801E39C4C126421D353BFA50F8BD35957596*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbaseAccountU3E5__2_6), (void*)(Account_t15F1801E39C4C126421D353BFA50F8BD35957596*)NULL);
+		__this->___U3CguardAccountU3E5__3_7 = (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CguardAccountU3E5__3_7), (void*)(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)NULL);
+		AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* L_90 = (&__this->___U3CU3Et__builder_1);
+		ValueTuple_2_t075812AA7035DB63F71E63539E1560E7715CAE0D L_91 = V_1;
+		AsyncTaskMethodBuilder_1_SetResult_m08FFC63CC76712C6E11105CFDEF8B3E9DE4E503B(L_90, L_91, AsyncTaskMethodBuilder_1_SetResult_m08FFC63CC76712C6E11105CFDEF8B3E9DE4E503B_RuntimeMethod_var);
+	}
+
+IL_02b7:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CInitializeGuardsU3Ed__15_MoveNext_m291F4376836824E1F41296225A055115C611F450_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9*>(__this + _offset);
+	U3CInitializeGuardsU3Ed__15_MoveNext_m291F4376836824E1F41296225A055115C611F450(_thisAdjusted, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<InitializeGuards>d__15::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CInitializeGuardsU3Ed__15_SetStateMachine_m2B3178034275BF7A34AC592DF5F82B430D0E306C (U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mC1CBC034F550F61C34863E501693731D4DC917ED_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_t122322A8A6ED46C70A6FE9A1E76DEB8F12C473A5* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mC1CBC034F550F61C34863E501693731D4DC917ED(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mC1CBC034F550F61C34863E501693731D4DC917ED_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CInitializeGuardsU3Ed__15_SetStateMachine_m2B3178034275BF7A34AC592DF5F82B430D0E306C_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CInitializeGuardsU3Ed__15_t0FAB055351AACEDD40AC4088BA8DB0E6F5A7C3D9*>(__this + _offset);
+	U3CInitializeGuardsU3Ed__15_SetStateMachine_m2B3178034275BF7A34AC592DF5F82B430D0E306C(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAddGuardsU3Ed__16_MoveNext_m28772698B0EC23BE754B73A4524061C7AEBDB79C (U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_m6BE8300DBCC84BA4B9D51A4BC6CF311DB7823431_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_mDF8F7C6AF01BBE2B037DC030BF6751027C17B804_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_2 = NULL;
+	int32_t V_3 = 0;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_4 = NULL;
+	RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* V_5 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_6 = NULL;
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	Exception_t* V_9 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_1 = V_0;
+			if (!L_1)
+			{
+				goto IL_00ce_1;
+			}
+		}
+		{
+			int32_t L_2 = V_0;
+			if ((((int32_t)L_2) == ((int32_t)1)))
+			{
+				goto IL_0188_1;
+			}
+		}
+		{
+			// var guardDataBytes = new byte[3600];
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)3600));
+			V_2 = L_3;
+			// var offset = guardData.Serialize(guardDataBytes, 0);
+			GuardData_t1D96F9E11536F054A90B61EF72162BF54ADF0385* L_4 = __this->___guardData_2;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = V_2;
+			NullCheck(L_4);
+			int32_t L_6;
+			L_6 = GuardData_Serialize_mBB60B060D8FE7D1D3435927391D225C3D7A374D1(L_4, L_5, 0, NULL);
+			V_3 = L_6;
+			// var resultData = new byte[offset];
+			int32_t L_7 = V_3;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)L_7);
+			V_4 = L_8;
+			// Array.Copy(guardDataBytes, resultData, offset);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = V_2;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_10 = V_4;
+			int32_t L_11 = V_3;
+			Array_Copy_m4233828B4E6288B6D815F539AAA38575DE627900((RuntimeArray*)L_9, (RuntimeArray*)L_10, L_11, NULL);
+			// var candyGuardInstruction = CandyGuardProgram.Update(
+			//     new() {
+			//         SystemProgram = SystemProgram.ProgramIdKey,
+			//         Authority = account,
+			//         CandyGuard = guardKey,
+			//         Payer = account
+			//     },
+			//     resultData,
+			//     CandyGuardProgramId
+			// );
+			UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* L_12 = (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766*)il2cpp_codegen_object_new(UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766_il2cpp_TypeInfo_var);
+			NullCheck(L_12);
+			UpdateAccounts__ctor_mFF11D7918AA11CA3285E6A3BAE1689A22F7C979F(L_12, NULL);
+			UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* L_13 = L_12;
+			il2cpp_codegen_runtime_class_init_inline(SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_14 = ((SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_StaticFields*)il2cpp_codegen_static_fields_for(SystemProgram_tF7C4D5C50D210D350E75586DC10BAC82C2DFD800_il2cpp_TypeInfo_var))->___ProgramIdKey_0;
+			NullCheck(L_13);
+			UpdateAccounts_set_SystemProgram_m27D28D027F959E2044A830E153D51BF3E1DF506B_inline(L_13, L_14, NULL);
+			UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* L_15 = L_13;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_16 = __this->___account_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_17;
+			L_17 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_16, NULL);
+			NullCheck(L_15);
+			UpdateAccounts_set_Authority_m3034661A6B7241C482895A1AB900539828303F88_inline(L_15, L_17, NULL);
+			UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* L_18 = L_15;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_19 = __this->___guardKey_4;
+			NullCheck(L_18);
+			UpdateAccounts_set_CandyGuard_m9B1A7ECEEBCCF1A820223C95D10A999A41837202_inline(L_18, L_19, NULL);
+			UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* L_20 = L_18;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_21 = __this->___account_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_22;
+			L_22 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_21, NULL);
+			NullCheck(L_20);
+			UpdateAccounts_set_Payer_m2E8FD6B9810111A3D400A28F9303426357A2D20C_inline(L_20, L_22, NULL);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_23 = V_4;
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_24 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyGuardProgramId_1;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_25;
+			L_25 = CandyGuardProgram_Update_m38092C85F1E08A14B884765C60294ECA8193C587(L_20, L_23, L_24, NULL);
+			__this->___U3CcandyGuardInstructionU3E5__2_7 = L_25;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcandyGuardInstructionU3E5__2_7), (void*)L_25);
+			// var blockHash = await rpcClient.GetLatestBlockHashAsync();
+			RuntimeObject* L_26 = __this->___rpcClient_5;
+			NullCheck(L_26);
+			Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9* L_27;
+			L_27 = InterfaceFuncInvoker1< Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9*, int32_t >::Invoke(38 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.Rpc.IRpcClient::GetLatestBlockHashAsync(Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_26, 0);
+			NullCheck(L_27);
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_28;
+			L_28 = Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE(L_27, Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+			V_7 = L_28;
+			bool L_29;
+			L_29 = TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC((&V_7), TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+			if (L_29)
+			{
+				goto IL_00eb_1;
+			}
+		}
+		{
+			int32_t L_30 = 0;
+			V_0 = L_30;
+			__this->___U3CU3E1__state_0 = L_30;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_31 = V_7;
+			__this->___U3CU3Eu__1_8 = L_31;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_8))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_32 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_mDF8F7C6AF01BBE2B037DC030BF6751027C17B804(L_32, (&V_7), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_mDF8F7C6AF01BBE2B037DC030BF6751027C17B804_RuntimeMethod_var);
+			goto IL_01ef;
+		}
+
+IL_00ce_1:
+		{
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_33 = __this->___U3CU3Eu__1_8;
+			V_7 = L_33;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* L_34 = (&__this->___U3CU3Eu__1_8);
+			il2cpp_codegen_initobj(L_34, sizeof(TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C));
+			int32_t L_35 = (-1);
+			V_0 = L_35;
+			__this->___U3CU3E1__state_0 = L_35;
+		}
+
+IL_00eb_1:
+		{
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_36;
+			L_36 = TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E((&V_7), TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+			V_5 = L_36;
+			// var transaction = new TransactionBuilder()
+			//     .SetRecentBlockHash(blockHash.Result.Value.Blockhash)
+			//     .SetFeePayer(account)
+			//     .AddInstruction(candyGuardInstruction)
+			//     .Build(new List<Account> { account });
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_37 = (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4*)il2cpp_codegen_object_new(TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+			NullCheck(L_37);
+			TransactionBuilder__ctor_m0B3F1BCABDCC514E09F089FADDF382793AB85906(L_37, NULL);
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_38 = V_5;
+			NullCheck(L_38);
+			ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* L_39;
+			L_39 = RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_inline(L_38, RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+			NullCheck(L_39);
+			LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* L_40;
+			L_40 = ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_inline(L_39, ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+			NullCheck(L_40);
+			String_t* L_41;
+			L_41 = LatestBlockHash_get_Blockhash_mDED25F2CB2D12CA897B10DBD08D6FF28FB840A4D_inline(L_40, NULL);
+			NullCheck(L_37);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_42;
+			L_42 = TransactionBuilder_SetRecentBlockHash_m867442395CF50EE764EF39BF869C480246E1ECC9(L_37, L_41, NULL);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_43 = __this->___account_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_44;
+			L_44 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_43, NULL);
+			NullCheck(L_42);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_45;
+			L_45 = TransactionBuilder_SetFeePayer_m0667AA3756160B7FCF72EB4F44EEB1D59D0A5698(L_42, L_44, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_46 = __this->___U3CcandyGuardInstructionU3E5__2_7;
+			NullCheck(L_45);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_47;
+			L_47 = TransactionBuilder_AddInstruction_m47204C5F74C6203BCF68D1965D8BB186CA148B3A(L_45, L_46, NULL);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_48 = (List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550*)il2cpp_codegen_object_new(List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var);
+			NullCheck(L_48);
+			List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5(L_48, List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_49 = L_48;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_50 = __this->___account_3;
+			NullCheck(L_49);
+			List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_inline(L_49, L_50, List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+			NullCheck(L_47);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_51;
+			L_51 = TransactionBuilder_Build_m9F3B305D960BCAA5792825205D115271B3775C21(L_47, L_49, NULL);
+			V_6 = L_51;
+			// var txId = await rpcClient.SendAndConfirmTransactionAsync(transaction, skipPreflight);
+			RuntimeObject* L_52 = __this->___rpcClient_5;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_53 = V_6;
+			bool L_54 = __this->___skipPreflight_6;
+			NullCheck(L_52);
+			Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6* L_55;
+			L_55 = InterfaceFuncInvoker4< Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, bool, int32_t, int32_t >::Invoke(63 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.Rpc.IRpcClient::SendAndConfirmTransactionAsync(System.Byte[],System.Boolean,Solana.Unity.Rpc.Types.Commitment,Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_52, L_53, L_54, 0, 0);
+			NullCheck(L_55);
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_56;
+			L_56 = Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988(L_55, Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+			V_8 = L_56;
+			bool L_57;
+			L_57 = TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C((&V_8), TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+			if (L_57)
+			{
+				goto IL_01a5_1;
+			}
+		}
+		{
+			int32_t L_58 = 1;
+			V_0 = L_58;
+			__this->___U3CU3E1__state_0 = L_58;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_59 = V_8;
+			__this->___U3CU3Eu__2_9 = L_59;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_9))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_60 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_m6BE8300DBCC84BA4B9D51A4BC6CF311DB7823431(L_60, (&V_8), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1_m6BE8300DBCC84BA4B9D51A4BC6CF311DB7823431_RuntimeMethod_var);
+			goto IL_01ef;
+		}
+
+IL_0188_1:
+		{
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_61 = __this->___U3CU3Eu__2_9;
+			V_8 = L_61;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* L_62 = (&__this->___U3CU3Eu__2_9);
+			il2cpp_codegen_initobj(L_62, sizeof(TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935));
+			int32_t L_63 = (-1);
+			V_0 = L_63;
+			__this->___U3CU3E1__state_0 = L_63;
+		}
+
+IL_01a5_1:
+		{
+			RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* L_64;
+			L_64 = TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919((&V_8), TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+			// return txId.Result;
+			NullCheck(L_64);
+			String_t* L_65;
+			L_65 = RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_inline(L_64, RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+			V_1 = L_65;
+			goto IL_01d4;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_01b4;
+		}
+		throw e;
+	}
+
+CATCH_01b4:
+	{// begin catch(System.Exception)
+		V_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CcandyGuardInstructionU3E5__2_7 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcandyGuardInstructionU3E5__2_7), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_66 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_67 = V_9;
+		AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C(L_66, L_67, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_01ef;
+	}// end catch (depth: 1)
+
+IL_01d4:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CcandyGuardInstructionU3E5__2_7 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcandyGuardInstructionU3E5__2_7), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_68 = (&__this->___U3CU3Et__builder_1);
+		String_t* L_69 = V_1;
+		AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E(L_68, L_69, AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+	}
+
+IL_01ef:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CAddGuardsU3Ed__16_MoveNext_m28772698B0EC23BE754B73A4524061C7AEBDB79C_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1*>(__this + _offset);
+	U3CAddGuardsU3Ed__16_MoveNext_m28772698B0EC23BE754B73A4524061C7AEBDB79C(_thisAdjusted, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<AddGuards>d__16::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAddGuardsU3Ed__16_SetStateMachine_mFF608CBD682B1B11475BF40DAE7A73F076A2BDEE (U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CAddGuardsU3Ed__16_SetStateMachine_mFF608CBD682B1B11475BF40DAE7A73F076A2BDEE_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CAddGuardsU3Ed__16_tC85D8E0E915D3D17E5CCA6F1032540D547A44AC1*>(__this + _offset);
+	U3CAddGuardsU3Ed__16_SetStateMachine_mFF608CBD682B1B11475BF40DAE7A73F076A2BDEE(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWrapCandyMachineU3Ed__17_MoveNext_m505FB69D8E9217EFB7C8639BF8E2200FD5F23C00 (U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_m86B07EF0DD5B86618CA122FADF4F2E78E64CD703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_mA0134BCB0655310E800C0632633593486E4DD61F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* V_2 = NULL;
+	RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* V_3 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_4 = NULL;
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	Exception_t* V_7 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_1 = V_0;
+			if (!L_1)
+			{
+				goto IL_00b0_1;
+			}
+		}
+		{
+			int32_t L_2 = V_0;
+			if ((((int32_t)L_2) == ((int32_t)1)))
+			{
+				goto IL_0167_1;
+			}
+		}
+		{
+			// var wrapAccounts = new WrapAccounts() {
+			//     Authority = account,
+			//     CandyMachineAuthority = account,
+			//     CandyGuard = candyGuardKey,
+			//     CandyMachine = candyMachineAccount,
+			//     CandyMachineProgram = CandyMachineProgramId
+			// };
+			WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* L_3 = (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D*)il2cpp_codegen_object_new(WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D_il2cpp_TypeInfo_var);
+			NullCheck(L_3);
+			WrapAccounts__ctor_m9D95A80DBCA5208EA64FEEA88E5DD2D32612A54C(L_3, NULL);
+			WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* L_4 = L_3;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_5 = __this->___account_2;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_6;
+			L_6 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_5, NULL);
+			NullCheck(L_4);
+			WrapAccounts_set_Authority_m0C8D6DECBCF87D4F0039DCE558062F0F61DB4013_inline(L_4, L_6, NULL);
+			WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* L_7 = L_4;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_8 = __this->___account_2;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_9;
+			L_9 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_8, NULL);
+			NullCheck(L_7);
+			WrapAccounts_set_CandyMachineAuthority_m7757239586D84D7F72A7B6EBE73B8D5864691B1D_inline(L_7, L_9, NULL);
+			WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* L_10 = L_7;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_11 = __this->___candyGuardKey_3;
+			NullCheck(L_10);
+			WrapAccounts_set_CandyGuard_mECF5B4FF4E96479A32624E225737521D56E6863F_inline(L_10, L_11, NULL);
+			WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* L_12 = L_10;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_13 = __this->___candyMachineAccount_4;
+			NullCheck(L_12);
+			WrapAccounts_set_CandyMachine_mB31A0715D0EE0F2AF6C7DEF8086B4D5255794DC6_inline(L_12, L_13, NULL);
+			WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* L_14 = L_12;
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_15 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyMachineProgramId_0;
+			NullCheck(L_14);
+			WrapAccounts_set_CandyMachineProgram_m6912285235AA0E879734AF32BE38716C3B76B51B_inline(L_14, L_15, NULL);
+			V_2 = L_14;
+			// var wrapInstruction = CandyGuardProgram.Wrap(
+			//     wrapAccounts,
+			//     CandyGuardProgramId
+			// );
+			WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* L_16 = V_2;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_17 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyGuardProgramId_1;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_18;
+			L_18 = CandyGuardProgram_Wrap_mD4BDE51423CECB59F10830978E40B4581D5046C4(L_16, L_17, NULL);
+			__this->___U3CwrapInstructionU3E5__2_7 = L_18;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwrapInstructionU3E5__2_7), (void*)L_18);
+			// var blockHash = await rpcClient.GetLatestBlockHashAsync();
+			RuntimeObject* L_19 = __this->___rpcClient_5;
+			NullCheck(L_19);
+			Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9* L_20;
+			L_20 = InterfaceFuncInvoker1< Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9*, int32_t >::Invoke(38 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.Rpc.IRpcClient::GetLatestBlockHashAsync(Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_19, 0);
+			NullCheck(L_20);
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_21;
+			L_21 = Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE(L_20, Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+			V_5 = L_21;
+			bool L_22;
+			L_22 = TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC((&V_5), TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+			if (L_22)
+			{
+				goto IL_00cd_1;
+			}
+		}
+		{
+			int32_t L_23 = 0;
+			V_0 = L_23;
+			__this->___U3CU3E1__state_0 = L_23;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_24 = V_5;
+			__this->___U3CU3Eu__1_8 = L_24;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_8))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_25 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_mA0134BCB0655310E800C0632633593486E4DD61F(L_25, (&V_5), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_mA0134BCB0655310E800C0632633593486E4DD61F_RuntimeMethod_var);
+			goto IL_01ce;
+		}
+
+IL_00b0_1:
+		{
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_26 = __this->___U3CU3Eu__1_8;
+			V_5 = L_26;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* L_27 = (&__this->___U3CU3Eu__1_8);
+			il2cpp_codegen_initobj(L_27, sizeof(TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C));
+			int32_t L_28 = (-1);
+			V_0 = L_28;
+			__this->___U3CU3E1__state_0 = L_28;
+		}
+
+IL_00cd_1:
+		{
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_29;
+			L_29 = TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E((&V_5), TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+			V_3 = L_29;
+			// var transaction = new TransactionBuilder()
+			//     .SetRecentBlockHash(blockHash.Result.Value.Blockhash)
+			//     .SetFeePayer(account)
+			//     .AddInstruction(wrapInstruction)
+			//     .Build(new List<Account>() { account });
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_30 = (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4*)il2cpp_codegen_object_new(TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+			NullCheck(L_30);
+			TransactionBuilder__ctor_m0B3F1BCABDCC514E09F089FADDF382793AB85906(L_30, NULL);
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_31 = V_3;
+			NullCheck(L_31);
+			ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* L_32;
+			L_32 = RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_inline(L_31, RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+			NullCheck(L_32);
+			LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* L_33;
+			L_33 = ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_inline(L_32, ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+			NullCheck(L_33);
+			String_t* L_34;
+			L_34 = LatestBlockHash_get_Blockhash_mDED25F2CB2D12CA897B10DBD08D6FF28FB840A4D_inline(L_33, NULL);
+			NullCheck(L_30);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_35;
+			L_35 = TransactionBuilder_SetRecentBlockHash_m867442395CF50EE764EF39BF869C480246E1ECC9(L_30, L_34, NULL);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_36 = __this->___account_2;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_37;
+			L_37 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_36, NULL);
+			NullCheck(L_35);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_38;
+			L_38 = TransactionBuilder_SetFeePayer_m0667AA3756160B7FCF72EB4F44EEB1D59D0A5698(L_35, L_37, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_39 = __this->___U3CwrapInstructionU3E5__2_7;
+			NullCheck(L_38);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_40;
+			L_40 = TransactionBuilder_AddInstruction_m47204C5F74C6203BCF68D1965D8BB186CA148B3A(L_38, L_39, NULL);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_41 = (List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550*)il2cpp_codegen_object_new(List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550_il2cpp_TypeInfo_var);
+			NullCheck(L_41);
+			List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5(L_41, List_1__ctor_mEEEFCA8D2F3F5CF40E60254AE1CFAF1783CE1BA5_RuntimeMethod_var);
+			List_1_tCB10DEED1B996DE6A16786A0FA121E63627ED550* L_42 = L_41;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_43 = __this->___account_2;
+			NullCheck(L_42);
+			List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_inline(L_42, L_43, List_1_Add_mE987BBC306D746F9F197D9165B58BF49A5D7446C_RuntimeMethod_var);
+			NullCheck(L_40);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_44;
+			L_44 = TransactionBuilder_Build_m9F3B305D960BCAA5792825205D115271B3775C21(L_40, L_42, NULL);
+			V_4 = L_44;
+			// var txId = await rpcClient.SendTransactionAsync(transaction, skipPreflight);
+			RuntimeObject* L_45 = __this->___rpcClient_5;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_46 = V_4;
+			bool L_47 = __this->___skipPreflight_6;
+			NullCheck(L_45);
+			Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6* L_48;
+			L_48 = InterfaceFuncInvoker3< Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, bool, int32_t >::Invoke(62 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.Rpc.IRpcClient::SendTransactionAsync(System.Byte[],System.Boolean,Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_45, L_46, L_47, 0);
+			NullCheck(L_48);
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_49;
+			L_49 = Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988(L_48, Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+			V_6 = L_49;
+			bool L_50;
+			L_50 = TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C((&V_6), TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+			if (L_50)
+			{
+				goto IL_0184_1;
+			}
+		}
+		{
+			int32_t L_51 = 1;
+			V_0 = L_51;
+			__this->___U3CU3E1__state_0 = L_51;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_52 = V_6;
+			__this->___U3CU3Eu__2_9 = L_52;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_9))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_53 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_m86B07EF0DD5B86618CA122FADF4F2E78E64CD703(L_53, (&V_6), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5_m86B07EF0DD5B86618CA122FADF4F2E78E64CD703_RuntimeMethod_var);
+			goto IL_01ce;
+		}
+
+IL_0167_1:
+		{
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_54 = __this->___U3CU3Eu__2_9;
+			V_6 = L_54;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* L_55 = (&__this->___U3CU3Eu__2_9);
+			il2cpp_codegen_initobj(L_55, sizeof(TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935));
+			int32_t L_56 = (-1);
+			V_0 = L_56;
+			__this->___U3CU3E1__state_0 = L_56;
+		}
+
+IL_0184_1:
+		{
+			RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* L_57;
+			L_57 = TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919((&V_6), TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+			// return txId.Result;
+			NullCheck(L_57);
+			String_t* L_58;
+			L_58 = RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_inline(L_57, RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+			V_1 = L_58;
+			goto IL_01b3;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0193;
+		}
+		throw e;
+	}
+
+CATCH_0193:
+	{// begin catch(System.Exception)
+		V_7 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CwrapInstructionU3E5__2_7 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwrapInstructionU3E5__2_7), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_59 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_60 = V_7;
+		AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C(L_59, L_60, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_01ce;
+	}// end catch (depth: 1)
+
+IL_01b3:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CwrapInstructionU3E5__2_7 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwrapInstructionU3E5__2_7), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_61 = (&__this->___U3CU3Et__builder_1);
+		String_t* L_62 = V_1;
+		AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E(L_61, L_62, AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+	}
+
+IL_01ce:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CWrapCandyMachineU3Ed__17_MoveNext_m505FB69D8E9217EFB7C8639BF8E2200FD5F23C00_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5*>(__this + _offset);
+	U3CWrapCandyMachineU3Ed__17_MoveNext_m505FB69D8E9217EFB7C8639BF8E2200FD5F23C00(_thisAdjusted, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WrapCandyMachine>d__17::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWrapCandyMachineU3Ed__17_SetStateMachine_m465E0684DB3D9127C425A76BC938C0C01BDC8CAE (U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CWrapCandyMachineU3Ed__17_SetStateMachine_m465E0684DB3D9127C425A76BC938C0C01BDC8CAE_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CWrapCandyMachineU3Ed__17_t64D7BBCDA6A8122FD67D07589346D9EE55CA1DB5*>(__this + _offset);
+	U3CWrapCandyMachineU3Ed__17_SetStateMachine_m465E0684DB3D9127C425A76BC938C0C01BDC8CAE(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWithdrawU3Ed__18_MoveNext_mE3E2A0BEB76A21E2241189CABE17AD8E46CC46B9 (U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m8B60C41D78189CF27952EF72DE1C90981D044E58_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m3CFC79EE53C15D614C22BDF0D3F2FBC60A62F0A0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* V_2 = NULL;
+	RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* V_3 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_4 = NULL;
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	Exception_t* V_7 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_1 = V_0;
+			if (!L_1)
+			{
+				goto IL_0085_1;
+			}
+		}
+		{
+			int32_t L_2 = V_0;
+			if ((((int32_t)L_2) == ((int32_t)1)))
+			{
+				goto IL_0131_1;
+			}
+		}
+		{
+			// var withdrawAccounts = new Unity.Metaplex.Candymachine.WithdrawAccounts() {
+			//     Authority = account,
+			//     CandyMachine = candyMachineAccount
+			// };
+			WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* L_3 = (WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D*)il2cpp_codegen_object_new(WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D_il2cpp_TypeInfo_var);
+			NullCheck(L_3);
+			WithdrawAccounts__ctor_m38D8EF8963CCE0D8025151380FC06C216083CB20(L_3, NULL);
+			WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* L_4 = L_3;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_5 = __this->___account_2;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_6;
+			L_6 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_5, NULL);
+			NullCheck(L_4);
+			WithdrawAccounts_set_Authority_m28872DC69BED9B38C0C916143636996024E843AD_inline(L_4, L_6, NULL);
+			WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* L_7 = L_4;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_8 = __this->___candyMachineAccount_3;
+			NullCheck(L_7);
+			WithdrawAccounts_set_CandyMachine_mB5A968084727A9CE9E16383ED3599B9DD0CBFAF5_inline(L_7, L_8, NULL);
+			V_2 = L_7;
+			// var withdrawInstruction = CandyMachineProgram.Withdraw(withdrawAccounts, CandyMachineProgramId);
+			WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* L_9 = V_2;
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_10 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyMachineProgramId_0;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_11;
+			L_11 = CandyMachineProgram_Withdraw_mE0B11ACB5BF2D754E27A1EAEC991BB9B3E4BDE35(L_9, L_10, NULL);
+			__this->___U3CwithdrawInstructionU3E5__2_6 = L_11;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwithdrawInstructionU3E5__2_6), (void*)L_11);
+			// var blockHash = await rpcClient.GetLatestBlockHashAsync();
+			RuntimeObject* L_12 = __this->___rpcClient_4;
+			NullCheck(L_12);
+			Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9* L_13;
+			L_13 = InterfaceFuncInvoker1< Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9*, int32_t >::Invoke(38 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.Rpc.IRpcClient::GetLatestBlockHashAsync(Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_12, 0);
+			NullCheck(L_13);
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_14;
+			L_14 = Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE(L_13, Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+			V_5 = L_14;
+			bool L_15;
+			L_15 = TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC((&V_5), TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+			if (L_15)
+			{
+				goto IL_00a2_1;
+			}
+		}
+		{
+			int32_t L_16 = 0;
+			V_0 = L_16;
+			__this->___U3CU3E1__state_0 = L_16;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_17 = V_5;
+			__this->___U3CU3Eu__1_7 = L_17;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_7))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_18 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m3CFC79EE53C15D614C22BDF0D3F2FBC60A62F0A0(L_18, (&V_5), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m3CFC79EE53C15D614C22BDF0D3F2FBC60A62F0A0_RuntimeMethod_var);
+			goto IL_0198;
+		}
+
+IL_0085_1:
+		{
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_19 = __this->___U3CU3Eu__1_7;
+			V_5 = L_19;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* L_20 = (&__this->___U3CU3Eu__1_7);
+			il2cpp_codegen_initobj(L_20, sizeof(TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C));
+			int32_t L_21 = (-1);
+			V_0 = L_21;
+			__this->___U3CU3E1__state_0 = L_21;
+		}
+
+IL_00a2_1:
+		{
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_22;
+			L_22 = TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E((&V_5), TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+			V_3 = L_22;
+			// var transaction = new TransactionBuilder()
+			//     .SetRecentBlockHash(blockHash.Result.Value.Blockhash)
+			//     .SetFeePayer(account)
+			//     .AddInstruction(withdrawInstruction)
+			//     .Build(account);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_23 = (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4*)il2cpp_codegen_object_new(TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+			NullCheck(L_23);
+			TransactionBuilder__ctor_m0B3F1BCABDCC514E09F089FADDF382793AB85906(L_23, NULL);
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_24 = V_3;
+			NullCheck(L_24);
+			ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* L_25;
+			L_25 = RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_inline(L_24, RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+			NullCheck(L_25);
+			LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* L_26;
+			L_26 = ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_inline(L_25, ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+			NullCheck(L_26);
+			String_t* L_27;
+			L_27 = LatestBlockHash_get_Blockhash_mDED25F2CB2D12CA897B10DBD08D6FF28FB840A4D_inline(L_26, NULL);
+			NullCheck(L_23);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_28;
+			L_28 = TransactionBuilder_SetRecentBlockHash_m867442395CF50EE764EF39BF869C480246E1ECC9(L_23, L_27, NULL);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_29 = __this->___account_2;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_30;
+			L_30 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_29, NULL);
+			NullCheck(L_28);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_31;
+			L_31 = TransactionBuilder_SetFeePayer_m0667AA3756160B7FCF72EB4F44EEB1D59D0A5698(L_28, L_30, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_32 = __this->___U3CwithdrawInstructionU3E5__2_6;
+			NullCheck(L_31);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_33;
+			L_33 = TransactionBuilder_AddInstruction_m47204C5F74C6203BCF68D1965D8BB186CA148B3A(L_31, L_32, NULL);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_34 = __this->___account_2;
+			NullCheck(L_33);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_35;
+			L_35 = TransactionBuilder_Build_m943CA918D10296F1FBC00EE75472D561B8F9DDCD(L_33, L_34, NULL);
+			V_4 = L_35;
+			// var txId = await rpcClient.SendTransactionAsync(transaction, skipPreflight);
+			RuntimeObject* L_36 = __this->___rpcClient_4;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_37 = V_4;
+			bool L_38 = __this->___skipPreflight_5;
+			NullCheck(L_36);
+			Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6* L_39;
+			L_39 = InterfaceFuncInvoker3< Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, bool, int32_t >::Invoke(62 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.Rpc.IRpcClient::SendTransactionAsync(System.Byte[],System.Boolean,Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_36, L_37, L_38, 0);
+			NullCheck(L_39);
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_40;
+			L_40 = Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988(L_39, Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+			V_6 = L_40;
+			bool L_41;
+			L_41 = TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C((&V_6), TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+			if (L_41)
+			{
+				goto IL_014e_1;
+			}
+		}
+		{
+			int32_t L_42 = 1;
+			V_0 = L_42;
+			__this->___U3CU3E1__state_0 = L_42;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_43 = V_6;
+			__this->___U3CU3Eu__2_8 = L_43;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_8))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_44 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m8B60C41D78189CF27952EF72DE1C90981D044E58(L_44, (&V_6), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779_m8B60C41D78189CF27952EF72DE1C90981D044E58_RuntimeMethod_var);
+			goto IL_0198;
+		}
+
+IL_0131_1:
+		{
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_45 = __this->___U3CU3Eu__2_8;
+			V_6 = L_45;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* L_46 = (&__this->___U3CU3Eu__2_8);
+			il2cpp_codegen_initobj(L_46, sizeof(TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935));
+			int32_t L_47 = (-1);
+			V_0 = L_47;
+			__this->___U3CU3E1__state_0 = L_47;
+		}
+
+IL_014e_1:
+		{
+			RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* L_48;
+			L_48 = TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919((&V_6), TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+			// return txId.Result;
+			NullCheck(L_48);
+			String_t* L_49;
+			L_49 = RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_inline(L_48, RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+			V_1 = L_49;
+			goto IL_017d;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_015d;
+		}
+		throw e;
+	}
+
+CATCH_015d:
+	{// begin catch(System.Exception)
+		V_7 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CwithdrawInstructionU3E5__2_6 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwithdrawInstructionU3E5__2_6), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_50 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_51 = V_7;
+		AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C(L_50, L_51, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0198;
+	}// end catch (depth: 1)
+
+IL_017d:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CwithdrawInstructionU3E5__2_6 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwithdrawInstructionU3E5__2_6), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_52 = (&__this->___U3CU3Et__builder_1);
+		String_t* L_53 = V_1;
+		AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E(L_52, L_53, AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+	}
+
+IL_0198:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CWithdrawU3Ed__18_MoveNext_mE3E2A0BEB76A21E2241189CABE17AD8E46CC46B9_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779*>(__this + _offset);
+	U3CWithdrawU3Ed__18_MoveNext_mE3E2A0BEB76A21E2241189CABE17AD8E46CC46B9(_thisAdjusted, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<Withdraw>d__18::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWithdrawU3Ed__18_SetStateMachine_m60D6BE7DDA5057C7EC1F1D66B6D60A7752D7E136 (U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CWithdrawU3Ed__18_SetStateMachine_m60D6BE7DDA5057C7EC1F1D66B6D60A7752D7E136_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CWithdrawU3Ed__18_tB7D9F869F23477EFEE85F0CF9A44076EACBA9779*>(__this + _offset);
+	U3CWithdrawU3Ed__18_SetStateMachine_m60D6BE7DDA5057C7EC1F1D66B6D60A7752D7E136(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWithdrawGuardsU3Ed__19_MoveNext_m635D26AD0E4F6E47F900FA79B5D481FF3D1AF4A8 (U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_m29A77235A15B294F5DB6CD7BD44873543E39B01E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_mE55A97269FE5DE299C959FFF470005FA16E2C29E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	String_t* V_1 = NULL;
+	WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* V_2 = NULL;
+	RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* V_3 = NULL;
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_4 = NULL;
+	TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	Exception_t* V_7 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_1 = V_0;
+			if (!L_1)
+			{
+				goto IL_0085_1;
+			}
+		}
+		{
+			int32_t L_2 = V_0;
+			if ((((int32_t)L_2) == ((int32_t)1)))
+			{
+				goto IL_0131_1;
+			}
+		}
+		{
+			// var withdrawAccounts = new Unity.Metaplex.CandyGuard.Program.WithdrawAccounts() {
+			//     CandyGuard = candyGuardAccount,
+			//     Authority = account
+			// };
+			WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* L_3 = (WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0*)il2cpp_codegen_object_new(WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0_il2cpp_TypeInfo_var);
+			NullCheck(L_3);
+			WithdrawAccounts__ctor_m19383E92B856DFC4068BC2658F4091EB225E0180(L_3, NULL);
+			WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* L_4 = L_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_5 = __this->___candyGuardAccount_2;
+			NullCheck(L_4);
+			WithdrawAccounts_set_CandyGuard_m9C148D89216527FF0D18330525DC09E7C6898F70_inline(L_4, L_5, NULL);
+			WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* L_6 = L_4;
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_7 = __this->___account_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_8;
+			L_8 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_7, NULL);
+			NullCheck(L_6);
+			WithdrawAccounts_set_Authority_m454232E954B4A35E4CE701951D8E6DE5EE93A6C4_inline(L_6, L_8, NULL);
+			V_2 = L_6;
+			// var withdrawInstruction = CandyGuardProgram.Withdraw(withdrawAccounts, CandyMachineProgramId);
+			WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* L_9 = V_2;
+			il2cpp_codegen_runtime_class_init_inline(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var);
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_10 = ((CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_StaticFields*)il2cpp_codegen_static_fields_for(CandyMachineCommands_tA0D671BBA3FF201FBB2CD7C3DF1B6AEAFB2F6E50_il2cpp_TypeInfo_var))->___CandyMachineProgramId_0;
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_11;
+			L_11 = CandyGuardProgram_Withdraw_m30B9947EE9587B495C6DB5A264E7509F6557C160(L_9, L_10, NULL);
+			__this->___U3CwithdrawInstructionU3E5__2_6 = L_11;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwithdrawInstructionU3E5__2_6), (void*)L_11);
+			// var blockHash = await rpcClient.GetLatestBlockHashAsync();
+			RuntimeObject* L_12 = __this->___rpcClient_4;
+			NullCheck(L_12);
+			Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9* L_13;
+			L_13 = InterfaceFuncInvoker1< Task_1_tA053B139658665082F10827CD4B30F2A6D46B7A9*, int32_t >::Invoke(38 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<Solana.Unity.Rpc.Messages.ResponseValue`1<Solana.Unity.Rpc.Models.LatestBlockHash>>> Solana.Unity.Rpc.IRpcClient::GetLatestBlockHashAsync(Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_12, 0);
+			NullCheck(L_13);
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_14;
+			L_14 = Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE(L_13, Task_1_GetAwaiter_m20E3709DFB36F8040B238A6AACF77C02588CF3BE_RuntimeMethod_var);
+			V_5 = L_14;
+			bool L_15;
+			L_15 = TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC((&V_5), TaskAwaiter_1_get_IsCompleted_m2BE8658ADF8CEF6E83AE7A3D35616CE2D0B681DC_RuntimeMethod_var);
+			if (L_15)
+			{
+				goto IL_00a2_1;
+			}
+		}
+		{
+			int32_t L_16 = 0;
+			V_0 = L_16;
+			__this->___U3CU3E1__state_0 = L_16;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_17 = V_5;
+			__this->___U3CU3Eu__1_7 = L_17;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_7))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_18 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_mE55A97269FE5DE299C959FFF470005FA16E2C29E(L_18, (&V_5), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_mE55A97269FE5DE299C959FFF470005FA16E2C29E_RuntimeMethod_var);
+			goto IL_0198;
+		}
+
+IL_0085_1:
+		{
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C L_19 = __this->___U3CU3Eu__1_7;
+			V_5 = L_19;
+			TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C* L_20 = (&__this->___U3CU3Eu__1_7);
+			il2cpp_codegen_initobj(L_20, sizeof(TaskAwaiter_1_tF38B839ACDDDE177BBCBAC689314856CD630A24C));
+			int32_t L_21 = (-1);
+			V_0 = L_21;
+			__this->___U3CU3E1__state_0 = L_21;
+		}
+
+IL_00a2_1:
+		{
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_22;
+			L_22 = TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E((&V_5), TaskAwaiter_1_GetResult_mEA3909D1449996DF7B83E590FD1D85CE404E9F9E_RuntimeMethod_var);
+			V_3 = L_22;
+			// var transaction = new TransactionBuilder()
+			//     .SetRecentBlockHash(blockHash.Result.Value.Blockhash)
+			//     .SetFeePayer(account)
+			//     .AddInstruction(withdrawInstruction)
+			//     .Build(account);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_23 = (TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4*)il2cpp_codegen_object_new(TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4_il2cpp_TypeInfo_var);
+			NullCheck(L_23);
+			TransactionBuilder__ctor_m0B3F1BCABDCC514E09F089FADDF382793AB85906(L_23, NULL);
+			RequestResult_1_tEC397F70BAC1C6B95E43305A97CB41C1F2A99A35* L_24 = V_3;
+			NullCheck(L_24);
+			ResponseValue_1_t22EDCC180109C1A736D90970959CFB12BDFBE5CF* L_25;
+			L_25 = RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_inline(L_24, RequestResult_1_get_Result_m55281D33B02FFD99FDB3F526EC9838ABE1F2860E_RuntimeMethod_var);
+			NullCheck(L_25);
+			LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* L_26;
+			L_26 = ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_inline(L_25, ResponseValue_1_get_Value_m90EF24C6B13D4A3E6EA55DDD07951AE7BC94B2C7_RuntimeMethod_var);
+			NullCheck(L_26);
+			String_t* L_27;
+			L_27 = LatestBlockHash_get_Blockhash_mDED25F2CB2D12CA897B10DBD08D6FF28FB840A4D_inline(L_26, NULL);
+			NullCheck(L_23);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_28;
+			L_28 = TransactionBuilder_SetRecentBlockHash_m867442395CF50EE764EF39BF869C480246E1ECC9(L_23, L_27, NULL);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_29 = __this->___account_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_30;
+			L_30 = Account_op_Implicit_mC59941C4FC805D3077DC6647D4CF15D61FB7359E(L_29, NULL);
+			NullCheck(L_28);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_31;
+			L_31 = TransactionBuilder_SetFeePayer_m0667AA3756160B7FCF72EB4F44EEB1D59D0A5698(L_28, L_30, NULL);
+			TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* L_32 = __this->___U3CwithdrawInstructionU3E5__2_6;
+			NullCheck(L_31);
+			TransactionBuilder_t330AC2AE6F5CC5B7061C3F234AD2A438068B0AE4* L_33;
+			L_33 = TransactionBuilder_AddInstruction_m47204C5F74C6203BCF68D1965D8BB186CA148B3A(L_31, L_32, NULL);
+			Account_t15F1801E39C4C126421D353BFA50F8BD35957596* L_34 = __this->___account_3;
+			NullCheck(L_33);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_35;
+			L_35 = TransactionBuilder_Build_m943CA918D10296F1FBC00EE75472D561B8F9DDCD(L_33, L_34, NULL);
+			V_4 = L_35;
+			// var txId = await rpcClient.SendTransactionAsync(transaction, skipPreflight);
+			RuntimeObject* L_36 = __this->___rpcClient_4;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_37 = V_4;
+			bool L_38 = __this->___skipPreflight_5;
+			NullCheck(L_36);
+			Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6* L_39;
+			L_39 = InterfaceFuncInvoker3< Task_1_t407274F67F6A8DBD24C694CB37E91EED6424A3D6*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, bool, int32_t >::Invoke(62 /* System.Threading.Tasks.Task`1<Solana.Unity.Rpc.Core.Http.RequestResult`1<System.String>> Solana.Unity.Rpc.IRpcClient::SendTransactionAsync(System.Byte[],System.Boolean,Solana.Unity.Rpc.Types.Commitment) */, IRpcClient_t4E221F0637F19F7A9DCA46B3CA05F653E4FEFAFE_il2cpp_TypeInfo_var, L_36, L_37, L_38, 0);
+			NullCheck(L_39);
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_40;
+			L_40 = Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988(L_39, Task_1_GetAwaiter_m217C2221A7CC682CB8BF46E42B44869F62833988_RuntimeMethod_var);
+			V_6 = L_40;
+			bool L_41;
+			L_41 = TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C((&V_6), TaskAwaiter_1_get_IsCompleted_m685471B67B30A781836E35A314B48D3BFC81134C_RuntimeMethod_var);
+			if (L_41)
+			{
+				goto IL_014e_1;
+			}
+		}
+		{
+			int32_t L_42 = 1;
+			V_0 = L_42;
+			__this->___U3CU3E1__state_0 = L_42;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_43 = V_6;
+			__this->___U3CU3Eu__2_8 = L_43;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_8))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_44 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_m29A77235A15B294F5DB6CD7BD44873543E39B01E(L_44, (&V_6), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935_TisU3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40_m29A77235A15B294F5DB6CD7BD44873543E39B01E_RuntimeMethod_var);
+			goto IL_0198;
+		}
+
+IL_0131_1:
+		{
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935 L_45 = __this->___U3CU3Eu__2_8;
+			V_6 = L_45;
+			TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935* L_46 = (&__this->___U3CU3Eu__2_8);
+			il2cpp_codegen_initobj(L_46, sizeof(TaskAwaiter_1_t2D57666CF9009F20A42CFED1F306028D26E9F935));
+			int32_t L_47 = (-1);
+			V_0 = L_47;
+			__this->___U3CU3E1__state_0 = L_47;
+		}
+
+IL_014e_1:
+		{
+			RequestResult_1_tE6E5810F227563C57A60E9A0FC27EC0C855521A2* L_48;
+			L_48 = TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919((&V_6), TaskAwaiter_1_GetResult_m5A0448347F8D6CCE76CE3A161937C925A6103919_RuntimeMethod_var);
+			// return txId.Result;
+			NullCheck(L_48);
+			String_t* L_49;
+			L_49 = RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_inline(L_48, RequestResult_1_get_Result_mD9D8BAFD9D457FDD905273FDD4C10269C8FF9945_RuntimeMethod_var);
+			V_1 = L_49;
+			goto IL_017d;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_015d;
+		}
+		throw e;
+	}
+
+CATCH_015d:
+	{// begin catch(System.Exception)
+		V_7 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CwithdrawInstructionU3E5__2_6 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwithdrawInstructionU3E5__2_6), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_50 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_51 = V_7;
+		AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C(L_50, L_51, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0198;
+	}// end catch (depth: 1)
+
+IL_017d:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CwithdrawInstructionU3E5__2_6 = (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CwithdrawInstructionU3E5__2_6), (void*)(TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_52 = (&__this->___U3CU3Et__builder_1);
+		String_t* L_53 = V_1;
+		AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E(L_52, L_53, AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+	}
+
+IL_0198:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CWithdrawGuardsU3Ed__19_MoveNext_m635D26AD0E4F6E47F900FA79B5D481FF3D1AF4A8_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40*>(__this + _offset);
+	U3CWithdrawGuardsU3Ed__19_MoveNext_m635D26AD0E4F6E47F900FA79B5D481FF3D1AF4A8(_thisAdjusted, method);
+}
+// System.Void Solana.Unity.SDK.Metaplex.CandyMachineCommands/<WithdrawGuards>d__19::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWithdrawGuardsU3Ed__19_SetStateMachine_mA9B5959934310C72D0C308383C7BFBE2A16A4B94 (U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CWithdrawGuardsU3Ed__19_SetStateMachine_mA9B5959934310C72D0C308383C7BFBE2A16A4B94_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CWithdrawGuardsU3Ed__19_t2A2288B385BF3AD82BC953485F90A1D715558F40*>(__this + _offset);
+	U3CWithdrawGuardsU3Ed__19_SetStateMachine_mA9B5959934310C72D0C308383C7BFBE2A16A4B94(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.Attributes::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Attributes__ctor_mE823C4A7CEB5D6A5D6C761A8AD42548F2AEA0199 (Attributes_t42915D121F8913EAA4A590E3675A06DA6DEEEC34* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.MetaplexJsonData::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaplexJsonData__ctor_mF1CE93E88CD9BA674FD69D75D54268726E30643A (MetaplexJsonData_t8BFED7ECD7C8B9537758CC3B0C317FF915437678* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.MetaplexData::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaplexData__ctor_m8C7AB1EA3C51A48260FB0D9A4DE01081AD1857FB (MetaplexData_tC37F1D8BEEC3B67D72F3C047E6704BB9811B1254* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.CreatorData::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CreatorData__ctor_mA17A1B2AA158D11B1AEA9A77EEE06FA000BE6EFC (CreatorData_t5E41875F2A84FA801C05956443D9A3844E5E179A* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.File::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void File__ctor_m715CBF3E44330435DF65991787BDD0AFC5550228 (File_t1B581E593FAE35BE02F82A19923E64AC64574E45* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.Properties::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Properties__ctor_m78944B6ABFC5BCD5ACC11B55E4EAA1CD0E97553A (Properties_t35B1027239852E24EAC0F2B5A83695B84DDD31D5* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.Metaplex::.ctor(Solana.Unity.Metaplex.NFT.Library.MetadataAccount)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Metaplex__ctor_m301DD08FF78DBFE60FB196F060B64D5B1082A29C (Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* __this, MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* ___metadataAccount0, const RuntimeMethod* method) 
+{
+	{
+		// public Metaplex(MetadataAccount metadataAccount)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// data = metadataAccount;
+		MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_0 = ___metadataAccount0;
+		__this->___data_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___data_1), (void*)L_0);
+		// }
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Solana.Unity.SDK.Nft.NFTProData Solana.Unity.SDK.Nft.NFTProData::DeserializeNFTProData(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* NFTProData_DeserializeNFTProData_m1B56B9DFBC2FF15965779F8E8019E7A6E113BE03 (String_t* ___base640, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
+	NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* V_1 = NULL;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	int32_t V_4 = 0;
+	String_t* V_5 = NULL;
+	{
+		// byte[] data = Convert.FromBase64String(base64);
+		String_t* L_0 = ___base640;
+		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
+		L_1 = Convert_FromBase64String_m267327B074B41D93C9622D142B95CFAA4ACCCA9C(L_0, NULL);
+		V_0 = L_1;
+		// NFTProData swapData = new NFTProData();
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_2 = (NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF*)il2cpp_codegen_object_new(NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		NFTProData__ctor_m6D6E773454EE51C70B1B56D7FB4F472008AC2A62(L_2, NULL);
+		V_1 = L_2;
+		// int index = 0;
+		V_2 = 0;
+		// ObjectToByte.DecodeUTF8StringFromByte(data, 0, 4, out swapData.type);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = V_0;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_4 = V_1;
+		NullCheck(L_4);
+		String_t** L_5 = (&L_4->___type_0);
+		ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD(L_3, 0, 4, L_5, NULL);
+		// index+= 4;
+		int32_t L_6 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_6, 4));
+		// ObjectToByte.DecodeUIntFromByte(data, index, out swapData.version);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_0;
+		int32_t L_8 = V_2;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_9 = V_1;
+		NullCheck(L_9);
+		uint32_t* L_10 = (&L_9->___version_1);
+		ObjectToByte_DecodeUIntFromByte_mB43A80B57C31A2FF925805DFF3E5D46002B325A3(L_7, L_8, L_10, NULL);
+		// index += 4;
+		int32_t L_11 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_11, 4));
+		// ObjectToByte.DecodeUTF8StringFromByte(data, index, 32, out swapData.mint);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = V_0;
+		int32_t L_13 = V_2;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_14 = V_1;
+		NullCheck(L_14);
+		String_t** L_15 = (&L_14->___mint_2);
+		ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD(L_12, L_13, ((int32_t)32), L_15, NULL);
+		// index += 32;
+		int32_t L_16 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_16, ((int32_t)32)));
+		// ObjectToByte.DecodeUTF8StringFromByte(data, index, 32, out swapData.metadata);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_17 = V_0;
+		int32_t L_18 = V_2;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_19 = V_1;
+		NullCheck(L_19);
+		String_t** L_20 = (&L_19->___metadata_3);
+		ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD(L_17, L_18, ((int32_t)32), L_20, NULL);
+		// index += 32;
+		int32_t L_21 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_21, ((int32_t)32)));
+		// ObjectToByte.DecodeUTF8StringFromByte(data, index, 20, out swapData.title);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_22 = V_0;
+		int32_t L_23 = V_2;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_24 = V_1;
+		NullCheck(L_24);
+		String_t** L_25 = (&L_24->___title_4);
+		ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD(L_22, L_23, ((int32_t)20), L_25, NULL);
+		// index += 20;
+		int32_t L_26 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_26, ((int32_t)20)));
+		// ObjectToByte.DecodeUTF8StringFromByte(data, index, 64, out swapData.description);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_27 = V_0;
+		int32_t L_28 = V_2;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_29 = V_1;
+		NullCheck(L_29);
+		String_t** L_30 = (&L_29->___description_5);
+		ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD(L_27, L_28, ((int32_t)64), L_30, NULL);
+		// index += 64;
+		int32_t L_31 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_31, ((int32_t)64)));
+		// ObjectToByte.DecodeUTF8StringFromByte(data, index, 64, out swapData.creator);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_32 = V_0;
+		int32_t L_33 = V_2;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_34 = V_1;
+		NullCheck(L_34);
+		String_t** L_35 = (&L_34->___creator_6);
+		ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD(L_32, L_33, ((int32_t)64), L_35, NULL);
+		// index += 64;
+		int32_t L_36 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_36, ((int32_t)64)));
+		// ObjectToByte.DecodeUTF8StringFromByte(data, index, 100, out swapData.licence);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_37 = V_0;
+		int32_t L_38 = V_2;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_39 = V_1;
+		NullCheck(L_39);
+		String_t** L_40 = (&L_39->___licence_8);
+		ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD(L_37, L_38, ((int32_t)100), L_40, NULL);
+		// index += 100;
+		int32_t L_41 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_41, ((int32_t)100)));
+		// ObjectToByte.DecodeUTF8StringFromByte(data, index, 20, out swapData.licence_title);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_42 = V_0;
+		int32_t L_43 = V_2;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_44 = V_1;
+		NullCheck(L_44);
+		String_t** L_45 = (&L_44->___licence_title_9);
+		ObjectToByte_DecodeUTF8StringFromByte_m0D99F929E301E292E7A8BC112C912F7B1FD955AD(L_42, L_43, ((int32_t)20), L_45, NULL);
+		// index += 20;
+		int32_t L_46 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_46, ((int32_t)20)));
+		// swapData.nsfw = BitConverter.ToBoolean(data, index);
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_47 = V_1;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_48 = V_0;
+		int32_t L_49 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var);
+		bool L_50;
+		L_50 = BitConverter_ToBoolean_mBDA6F9734B907F7BA1135819940F5D6C3E5085FB(L_48, L_49, NULL);
+		NullCheck(L_47);
+		L_47->___nsfw_10 = L_50;
+		// index++;
+		int32_t L_51 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_51, 1));
+		// swapData.tags = new string[10];
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_52 = V_1;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_53 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10));
+		NullCheck(L_52);
+		L_52->___tags_11 = L_53;
+		Il2CppCodeGenWriteBarrier((void**)(&L_52->___tags_11), (void*)L_53);
+		// for (int i = index, ind = 0; i < 10 * 15 + index; i += 15, ind++)
+		int32_t L_54 = V_2;
+		V_3 = L_54;
+		// for (int i = index, ind = 0; i < 10 * 15 + index; i += 15, ind++)
+		V_4 = 0;
+		goto IL_0104;
+	}
+
+IL_00e3:
+	{
+		// ObjectToByte.DecodeBase58StringFromByte(data, i, 32, out string key);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_55 = V_0;
+		int32_t L_56 = V_3;
+		ObjectToByte_DecodeBase58StringFromByte_mC6CBEFFAA6B15AA40EA4BD9426CE3C58A9485BD6(L_55, L_56, ((int32_t)32), (&V_5), NULL);
+		// swapData.tags[ind] = key;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_57 = V_1;
+		NullCheck(L_57);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_58 = L_57->___tags_11;
+		int32_t L_59 = V_4;
+		String_t* L_60 = V_5;
+		NullCheck(L_58);
+		ArrayElementTypeCheck (L_58, L_60);
+		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(L_59), (String_t*)L_60);
+		// for (int i = index, ind = 0; i < 10 * 15 + index; i += 15, ind++)
+		int32_t L_61 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_61, ((int32_t)15)));
+		// for (int i = index, ind = 0; i < 10 * 15 + index; i += 15, ind++)
+		int32_t L_62 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_62, 1));
+	}
+
+IL_0104:
+	{
+		// for (int i = index, ind = 0; i < 10 * 15 + index; i += 15, ind++)
+		int32_t L_63 = V_3;
+		int32_t L_64 = V_2;
+		if ((((int32_t)L_63) < ((int32_t)((int32_t)il2cpp_codegen_add(((int32_t)150), L_64)))))
+		{
+			goto IL_00e3;
+		}
+	}
+	{
+		// return swapData;
+		NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* L_65 = V_1;
+		return L_65;
+	}
+}
+// System.Void Solana.Unity.SDK.Nft.NFTProData::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NFTProData__ctor_m6D6E773454EE51C70B1B56D7FB4F472008AC2A62 (NFTProData_t50A0143696132B692FA63C13CCEE4A5058FCBEDF* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Solana.Unity.SDK.Nft.NftImage::get_name()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NftImage_get_name_m31A02C1BBDC36B30D4A2061B2A6D7F2727F05620 (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string name { get; set; }
+		String_t* L_0 = __this->___U3CnameU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Solana.Unity.SDK.Nft.NftImage::set_name(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NftImage_set_name_m595DD99548F5EF12D840D8316EB45816919E46F6 (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public string name { get; set; }
+		String_t* L_0 = ___value0;
+		__this->___U3CnameU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnameU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.String Solana.Unity.SDK.Nft.NftImage::get_extension()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NftImage_get_extension_m8EC747E41953C61A5BE39943D6876D92A4246D11 (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string extension { get; set; }
+		String_t* L_0 = __this->___U3CextensionU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Solana.Unity.SDK.Nft.NftImage::set_extension(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NftImage_set_extension_m570CD3BB0C9FF797E8FDA2EB61ED406DC28486E8 (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public string extension { get; set; }
+		String_t* L_0 = ___value0;
+		__this->___U3CextensionU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CextensionU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.String Solana.Unity.SDK.Nft.NftImage::get_externalUrl()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NftImage_get_externalUrl_m809C6DC78D290A0FF51CC08ADC4AB145A66EA806 (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string externalUrl { get; set; }
+		String_t* L_0 = __this->___U3CexternalUrlU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Solana.Unity.SDK.Nft.NftImage::set_externalUrl(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NftImage_set_externalUrl_m82EAF4A55FBB51F7A775758786A5410906B85AF7 (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public string externalUrl { get; set; }
+		String_t* L_0 = ___value0;
+		__this->___U3CexternalUrlU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CexternalUrlU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+// UnityEngine.Texture2D Solana.Unity.SDK.Nft.NftImage::get_file()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* NftImage_get_file_mF87C00E458B7385A20656B4FAAC930473B3CDFD6 (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Texture2D file { get; set; }
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_0 = __this->___U3CfileU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.Void Solana.Unity.SDK.Nft.NftImage::set_file(UnityEngine.Texture2D)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NftImage_set_file_mA0E407437B4D29D0B68645934C4613FEF61B7B23 (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public Texture2D file { get; set; }
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_0 = ___value0;
+		__this->___U3CfileU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfileU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+// System.Void Solana.Unity.SDK.Nft.NftImage::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NftImage__ctor_m67A1777D7E2D8D968815C6E7803EF2D219E5B3CC (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.Nft::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nft__ctor_mE6D1F715EEA47AEAA6F8C9F6A8A7D7C815B997AB (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Nft() { }
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// public Nft() { }
+		return;
+	}
+}
+// System.Void Solana.Unity.SDK.Nft.Nft::.ctor(Solana.Unity.SDK.Nft.Metaplex)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nft__ctor_m87A95EEFFB10B250CA7E350677DB735AD03F6D9C (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* __this, Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* ___metaplexData0, const RuntimeMethod* method) 
+{
+	{
+		// public Nft(Metaplex metaplexData)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// this.metaplexData = metaplexData;
+		Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_0 = ___metaplexData0;
+		__this->___metaplexData_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___metaplexData_0), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Threading.Tasks.Task`1<Solana.Unity.SDK.Nft.Nft> Solana.Unity.SDK.Nft.Nft::TryGetNftData(System.String,Solana.Unity.Rpc.IRpcClient,System.Boolean,System.Int32,System.Boolean,Solana.Unity.Rpc.Types.Commitment)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA* Nft_TryGetNftData_m5AAF4EADA0D4058E07FFBB49D27AC368E458D5A2 (String_t* ___mint0, RuntimeObject* ___connection1, bool ___loadTexture2, int32_t ___imageHeightAndWidth3, bool ___tryUseLocalContent4, int32_t ___commitment5, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m5FF2C09F29073DCAC073D42B2C03F7D286D69645_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m1CA6E3479FF4EAA03F90DE766249C53F978609FF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_mFAE22BF22742386E2EB689B5B32BEDCFC82C2A9D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841 L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m5FF2C09F29073DCAC073D42B2C03F7D286D69645(AsyncTaskMethodBuilder_1_Create_m5FF2C09F29073DCAC073D42B2C03F7D286D69645_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		String_t* L_1 = ___mint0;
+		(&V_0)->___mint_3 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___mint_3), (void*)L_1);
+		RuntimeObject* L_2 = ___connection1;
+		(&V_0)->___connection_5 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___connection_5), (void*)L_2);
+		bool L_3 = ___loadTexture2;
+		(&V_0)->___loadTexture_4 = L_3;
+		int32_t L_4 = ___imageHeightAndWidth3;
+		(&V_0)->___imageHeightAndWidth_7 = L_4;
+		bool L_5 = ___tryUseLocalContent4;
+		(&V_0)->___tryUseLocalContent_2 = L_5;
+		int32_t L_6 = ___commitment5;
+		(&V_0)->___commitment_6 = L_6;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* L_7 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m1CA6E3479FF4EAA03F90DE766249C53F978609FF(L_7, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_m1CA6E3479FF4EAA03F90DE766249C53F978609FF_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* L_8 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t56AF99E9787DBB0970871E96442BC816D9B88BAA* L_9;
+		L_9 = AsyncTaskMethodBuilder_1_get_Task_mFAE22BF22742386E2EB689B5B32BEDCFC82C2A9D(L_8, AsyncTaskMethodBuilder_1_get_Task_mFAE22BF22742386E2EB689B5B32BEDCFC82C2A9D_RuntimeMethod_var);
+		return L_9;
+	}
+}
+// Solana.Unity.SDK.Nft.Nft Solana.Unity.SDK.Nft.Nft::TryLoadNftFromLocal(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* Nft_TryLoadNftFromLocal_m847ED85635E5620F2FB57EA13E811C20490A07A7 (String_t* ___mint0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FileLoader_LoadFileFromLocalPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_m3C52711C22108678C731A7B179D739AA707BFC09_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FileLoader_LoadFileFromLocalPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m016C359B5BB9BE795CD536FA49FE4A0DFEB5998F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0CF6E760F4429CA66FCDDB0BC125023158962742);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA15C898F015A9B0BC3268E8883CD03008A56DE26);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&iNftFile_1_t34D520A6CC3B3DF35FEB3C67370D70D748CEFC92_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* V_0 = NULL;
+	Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* V_1 = NULL;
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_2 = NULL;
+	{
+		// var metadataAccount = FileLoader.LoadFileFromLocalPath<MetadataAccount>($"{Path.Combine(Application.persistentDataPath, mint)}.json");
+		String_t* L_0;
+		L_0 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
+		String_t* L_1 = ___mint0;
+		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		String_t* L_2;
+		L_2 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_0, L_1, NULL);
+		String_t* L_3;
+		L_3 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_2, _stringLiteral0CF6E760F4429CA66FCDDB0BC125023158962742, NULL);
+		MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_4;
+		L_4 = FileLoader_LoadFileFromLocalPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_m3C52711C22108678C731A7B179D739AA707BFC09(L_3, FileLoader_LoadFileFromLocalPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_m3C52711C22108678C731A7B179D739AA707BFC09_RuntimeMethod_var);
+		V_0 = L_4;
+		// if (metadataAccount == null) return null;
+		MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_5 = V_0;
+		if (L_5)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		// if (metadataAccount == null) return null;
+		return (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL;
+	}
+
+IL_0020:
+	{
+		// var local = new Nft(new Metaplex(metadataAccount));
+		MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_6 = V_0;
+		Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_7 = (Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A*)il2cpp_codegen_object_new(Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		Metaplex__ctor_m301DD08FF78DBFE60FB196F060B64D5B1082A29C(L_7, L_6, NULL);
+		Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_8 = (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)il2cpp_codegen_object_new(Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		Nft__ctor_m87A95EEFFB10B250CA7E350677DB735AD03F6D9C(L_8, L_7, NULL);
+		V_1 = L_8;
+		// var tex = FileLoader.LoadFileFromLocalPath<Texture2D>($"{Path.Combine(Application.persistentDataPath, mint)}.png");
+		String_t* L_9;
+		L_9 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
+		String_t* L_10 = ___mint0;
+		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		String_t* L_11;
+		L_11 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_9, L_10, NULL);
+		String_t* L_12;
+		L_12 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_11, _stringLiteralA15C898F015A9B0BC3268E8883CD03008A56DE26, NULL);
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_13;
+		L_13 = FileLoader_LoadFileFromLocalPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m016C359B5BB9BE795CD536FA49FE4A0DFEB5998F(L_12, FileLoader_LoadFileFromLocalPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m016C359B5BB9BE795CD536FA49FE4A0DFEB5998F_RuntimeMethod_var);
+		V_2 = L_13;
+		// if (tex)
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_14 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_14, NULL);
+		if (!L_15)
+		{
+			goto IL_0072;
+		}
+	}
+	{
+		// local.metaplexData.nftImage = new NftImage();
+		Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_16 = V_1;
+		NullCheck(L_16);
+		Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_17 = L_16->___metaplexData_0;
+		NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* L_18 = (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20*)il2cpp_codegen_object_new(NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20_il2cpp_TypeInfo_var);
+		NullCheck(L_18);
+		NftImage__ctor_m67A1777D7E2D8D968815C6E7803EF2D219E5B3CC(L_18, NULL);
+		NullCheck(L_17);
+		L_17->___nftImage_0 = L_18;
+		Il2CppCodeGenWriteBarrier((void**)(&L_17->___nftImage_0), (void*)L_18);
+		// local.metaplexData.nftImage.file = tex;
+		Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_19 = V_1;
+		NullCheck(L_19);
+		Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_20 = L_19->___metaplexData_0;
+		NullCheck(L_20);
+		RuntimeObject* L_21 = L_20->___nftImage_0;
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_22 = V_2;
+		NullCheck(L_21);
+		InterfaceActionInvoker1< Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* >::Invoke(7 /* System.Void Solana.Unity.SDK.Nft.iNftFile`1<UnityEngine.Texture2D>::set_file(T) */, iNftFile_1_t34D520A6CC3B3DF35FEB3C67370D70D748CEFC92_il2cpp_TypeInfo_var, L_21, L_22);
+		goto IL_0074;
+	}
+
+IL_0072:
+	{
+		// return null;
+		return (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL;
+	}
+
+IL_0074:
+	{
+		// return local;
+		Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_23 = V_1;
+		return L_23;
+	}
+}
+// System.Threading.Tasks.Task Solana.Unity.SDK.Nft.Nft::LoadTexture(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* Nft_LoadTexture_mDFB1A673C4F3B46C7CD2344EBD8976AA9A9EAE56 (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* __this, int32_t ___imageHeightAndWidth0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_Start_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m3974670026A667EC10D97325143B868330D41076_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06 L_0;
+		L_0 = AsyncTaskMethodBuilder_Create_m24F3F260A79CA2B9EC4F1F15693A33F5EC58735A(NULL);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_2), (void*)__this);
+		int32_t L_1 = ___imageHeightAndWidth0;
+		(&V_0)->___imageHeightAndWidth_3 = L_1;
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* L_2 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_Start_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m3974670026A667EC10D97325143B868330D41076(L_2, (&V_0), AsyncTaskMethodBuilder_Start_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_m3974670026A667EC10D97325143B868330D41076_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_4;
+		L_4 = AsyncTaskMethodBuilder_get_Task_mE9125D5F8B96F26D1BA5A5347ED82669521C7F9E(L_3, NULL);
+		return L_4;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTryGetNftDataU3Ed__3_MoveNext_m58C0867108B5FFE2CD4C4B51BF5948194AF79581 (U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mFA3308FD473A79D0A3AF021D94629C33D8E276D2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mA5F7719DD296C516D447134B5352D83BB8CE35A0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_m042A9DFC699DD914C49DD5B25561DB97403AF3B2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FileLoader_SaveToPersistentDataPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_mCBFD7B61780A7B74B3E5EF16DC7FD097CC7F4B34_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_m82A4B2A438721CBE6D9BB37486616D975F8BAF28_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m7380958BCD673BEF6D478E07F22B7EA94896C6EB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m123CA477CD77203FA7F82D9119B581658958A73F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0CF6E760F4429CA66FCDDB0BC125023158962742);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* V_1 = NULL;
+	MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* V_2 = NULL;
+	Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* V_3 = NULL;
+	TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	Exception_t* V_6 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	OnChainData_tDE37880ED87AB6DC2E17563E8A15904F4457F09C* G_B17_0 = NULL;
+	MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* G_B21_0 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_1 = V_0;
+			switch (L_1)
+			{
+				case 0:
+				{
+					goto IL_008b_1;
+				}
+				case 1:
+				{
+					goto IL_011a_1;
+				}
+				case 2:
+				{
+					goto IL_01c2_1;
+				}
+			}
+		}
+		{
+			// if (tryUseLocalContent)
+			bool L_2 = __this->___tryUseLocalContent_2;
+			if (!L_2)
+			{
+				goto IL_00ca_1;
+			}
+		}
+		{
+			// var nft = TryLoadNftFromLocal(mint);
+			String_t* L_3 = __this->___mint_3;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_4;
+			L_4 = Nft_TryLoadNftFromLocal_m847ED85635E5620F2FB57EA13E811C20490A07A7(L_3, NULL);
+			__this->___U3CnftU3E5__3_9 = L_4;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnftU3E5__3_9), (void*)L_4);
+			// if(nft != null && loadTexture) await nft.LoadTexture();
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_5 = __this->___U3CnftU3E5__3_9;
+			bool L_6 = __this->___loadTexture_4;
+			if (!((int32_t)(((!(((RuntimeObject*)(Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)L_5) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0)&(int32_t)L_6)))
+			{
+				goto IL_00af_1;
+			}
+		}
+		{
+			// if(nft != null && loadTexture) await nft.LoadTexture();
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_7 = __this->___U3CnftU3E5__3_9;
+			NullCheck(L_7);
+			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_8;
+			L_8 = Nft_LoadTexture_mDFB1A673C4F3B46C7CD2344EBD8976AA9A9EAE56(L_7, ((int32_t)256), NULL);
+			NullCheck(L_8);
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_9;
+			L_9 = Task_GetAwaiter_m08B368EAC939DD35D0AC428180822255A442CA29(L_8, NULL);
+			V_4 = L_9;
+			bool L_10;
+			L_10 = TaskAwaiter_get_IsCompleted_mC236D276FBE3A271B56EE13FCAF2C96E48453ED8((&V_4), NULL);
+			if (L_10)
+			{
+				goto IL_00a8_1;
+			}
+		}
+		{
+			int32_t L_11 = 0;
+			V_0 = L_11;
+			__this->___U3CU3E1__state_0 = L_11;
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_12 = V_4;
+			__this->___U3CU3Eu__1_10 = L_12;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_10))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* L_13 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mA5F7719DD296C516D447134B5352D83BB8CE35A0(L_13, (&V_4), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mA5F7719DD296C516D447134B5352D83BB8CE35A0_RuntimeMethod_var);
+			goto IL_0259;
+		}
+
+IL_008b_1:
+		{
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_14 = __this->___U3CU3Eu__1_10;
+			V_4 = L_14;
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* L_15 = (&__this->___U3CU3Eu__1_10);
+			il2cpp_codegen_initobj(L_15, sizeof(TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833));
+			int32_t L_16 = (-1);
+			V_0 = L_16;
+			__this->___U3CU3E1__state_0 = L_16;
+		}
+
+IL_00a8_1:
+		{
+			TaskAwaiter_GetResult_mC1D712500AE49B4A89C85D6B79D87D1BA9A6B94D((&V_4), NULL);
+		}
+
+IL_00af_1:
+		{
+			// if (nft != null) return nft;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_17 = __this->___U3CnftU3E5__3_9;
+			if (!L_17)
+			{
+				goto IL_00c3_1;
+			}
+		}
+		{
+			// if (nft != null) return nft;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_18 = __this->___U3CnftU3E5__3_9;
+			V_1 = L_18;
+			goto IL_023e;
+		}
+
+IL_00c3_1:
+		{
+			// }
+			__this->___U3CnftU3E5__3_9 = (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnftU3E5__3_9), (void*)(Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL);
+		}
+
+IL_00ca_1:
+		{
+			// var newData = await MetadataAccount.GetAccount( connection, new PublicKey(mint), commitment);
+			RuntimeObject* L_19 = __this->___connection_5;
+			String_t* L_20 = __this->___mint_3;
+			PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_21 = (PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751*)il2cpp_codegen_object_new(PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751_il2cpp_TypeInfo_var);
+			NullCheck(L_21);
+			PublicKey__ctor_mAC5FE8C442D642434F04E8491B83BDBBE9E80A90(L_21, L_20, NULL);
+			int32_t L_22 = __this->___commitment_6;
+			Task_1_t6EAD20B5A3A44575D9A8067DBF57C0FB36A453DA* L_23;
+			L_23 = MetadataAccount_GetAccount_m694CF57B71848F15B526AD7BF3ABDB168A8D4FE1(L_19, L_21, L_22, NULL);
+			NullCheck(L_23);
+			TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258 L_24;
+			L_24 = Task_1_GetAwaiter_m123CA477CD77203FA7F82D9119B581658958A73F(L_23, Task_1_GetAwaiter_m123CA477CD77203FA7F82D9119B581658958A73F_RuntimeMethod_var);
+			V_5 = L_24;
+			bool L_25;
+			L_25 = TaskAwaiter_1_get_IsCompleted_m7380958BCD673BEF6D478E07F22B7EA94896C6EB((&V_5), TaskAwaiter_1_get_IsCompleted_m7380958BCD673BEF6D478E07F22B7EA94896C6EB_RuntimeMethod_var);
+			if (L_25)
+			{
+				goto IL_0137_1;
+			}
+		}
+		{
+			int32_t L_26 = 1;
+			V_0 = L_26;
+			__this->___U3CU3E1__state_0 = L_26;
+			TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258 L_27 = V_5;
+			__this->___U3CU3Eu__2_11 = L_27;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_11))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* L_28 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mFA3308FD473A79D0A3AF021D94629C33D8E276D2(L_28, (&V_5), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mFA3308FD473A79D0A3AF021D94629C33D8E276D2_RuntimeMethod_var);
+			goto IL_0259;
+		}
+
+IL_011a_1:
+		{
+			TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258 L_29 = __this->___U3CU3Eu__2_11;
+			V_5 = L_29;
+			TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258* L_30 = (&__this->___U3CU3Eu__2_11);
+			il2cpp_codegen_initobj(L_30, sizeof(TaskAwaiter_1_tE9E6BC42C54381D8CF354FAE44690A8E8FCF1258));
+			int32_t L_31 = (-1);
+			V_0 = L_31;
+			__this->___U3CU3E1__state_0 = L_31;
+		}
+
+IL_0137_1:
+		{
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_32;
+			L_32 = TaskAwaiter_1_GetResult_m82A4B2A438721CBE6D9BB37486616D975F8BAF28((&V_5), TaskAwaiter_1_GetResult_m82A4B2A438721CBE6D9BB37486616D975F8BAF28_RuntimeMethod_var);
+			V_2 = L_32;
+			// if (newData?.metadata == null || newData?.offchainData == null) return null;
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_33 = V_2;
+			if (L_33)
+			{
+				goto IL_0145_1;
+			}
+		}
+		{
+			G_B17_0 = ((OnChainData_tDE37880ED87AB6DC2E17563E8A15904F4457F09C*)(NULL));
+			goto IL_014b_1;
+		}
+
+IL_0145_1:
+		{
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_34 = V_2;
+			NullCheck(L_34);
+			OnChainData_tDE37880ED87AB6DC2E17563E8A15904F4457F09C* L_35 = L_34->___metadata_3;
+			G_B17_0 = L_35;
+		}
+
+IL_014b_1:
+		{
+			if (!G_B17_0)
+			{
+				goto IL_015b_1;
+			}
+		}
+		{
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_36 = V_2;
+			if (L_36)
+			{
+				goto IL_0153_1;
+			}
+		}
+		{
+			G_B21_0 = ((MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5*)(NULL));
+			goto IL_0159_1;
+		}
+
+IL_0153_1:
+		{
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_37 = V_2;
+			NullCheck(L_37);
+			MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* L_38 = L_37->___offchainData_4;
+			G_B21_0 = L_38;
+		}
+
+IL_0159_1:
+		{
+			if (G_B21_0)
+			{
+				goto IL_0162_1;
+			}
+		}
+
+IL_015b_1:
+		{
+			// if (newData?.metadata == null || newData?.offchainData == null) return null;
+			V_1 = (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL;
+			goto IL_023e;
+		}
+
+IL_0162_1:
+		{
+			// var met = new Metaplex(newData);
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_39 = V_2;
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_40 = (Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A*)il2cpp_codegen_object_new(Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A_il2cpp_TypeInfo_var);
+			NullCheck(L_40);
+			Metaplex__ctor_m301DD08FF78DBFE60FB196F060B64D5B1082A29C(L_40, L_39, NULL);
+			V_3 = L_40;
+			// var newNft = new Nft(met);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_41 = V_3;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_42 = (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)il2cpp_codegen_object_new(Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E_il2cpp_TypeInfo_var);
+			NullCheck(L_42);
+			Nft__ctor_m87A95EEFFB10B250CA7E350677DB735AD03F6D9C(L_42, L_41, NULL);
+			__this->___U3CnewNftU3E5__2_8 = L_42;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnewNftU3E5__2_8), (void*)L_42);
+			// if (loadTexture) await newNft.LoadTexture(imageHeightAndWidth);
+			bool L_43 = __this->___loadTexture_4;
+			if (!L_43)
+			{
+				goto IL_01e6_1;
+			}
+		}
+		{
+			// if (loadTexture) await newNft.LoadTexture(imageHeightAndWidth);
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_44 = __this->___U3CnewNftU3E5__2_8;
+			int32_t L_45 = __this->___imageHeightAndWidth_7;
+			NullCheck(L_44);
+			Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_46;
+			L_46 = Nft_LoadTexture_mDFB1A673C4F3B46C7CD2344EBD8976AA9A9EAE56(L_44, L_45, NULL);
+			NullCheck(L_46);
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_47;
+			L_47 = Task_GetAwaiter_m08B368EAC939DD35D0AC428180822255A442CA29(L_46, NULL);
+			V_4 = L_47;
+			bool L_48;
+			L_48 = TaskAwaiter_get_IsCompleted_mC236D276FBE3A271B56EE13FCAF2C96E48453ED8((&V_4), NULL);
+			if (L_48)
+			{
+				goto IL_01df_1;
+			}
+		}
+		{
+			int32_t L_49 = 2;
+			V_0 = L_49;
+			__this->___U3CU3E1__state_0 = L_49;
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_50 = V_4;
+			__this->___U3CU3Eu__1_10 = L_50;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_10))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* L_51 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mA5F7719DD296C516D447134B5352D83BB8CE35A0(L_51, (&V_4), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833_TisU3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048_mA5F7719DD296C516D447134B5352D83BB8CE35A0_RuntimeMethod_var);
+			goto IL_0259;
+		}
+
+IL_01c2_1:
+		{
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833 L_52 = __this->___U3CU3Eu__1_10;
+			V_4 = L_52;
+			TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833* L_53 = (&__this->___U3CU3Eu__1_10);
+			il2cpp_codegen_initobj(L_53, sizeof(TaskAwaiter_t9B661AC8C2EFA6BAB94C77BB24A5DDA82D61F833));
+			int32_t L_54 = (-1);
+			V_0 = L_54;
+			__this->___U3CU3E1__state_0 = L_54;
+		}
+
+IL_01df_1:
+		{
+			TaskAwaiter_GetResult_mC1D712500AE49B4A89C85D6B79D87D1BA9A6B94D((&V_4), NULL);
+		}
+
+IL_01e6_1:
+		{
+			// FileLoader.SaveToPersistentDataPath(Path.Combine(Application.persistentDataPath, $"{mint}.json"), newNft.metaplexData.data);
+			String_t* L_55;
+			L_55 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
+			String_t* L_56 = __this->___mint_3;
+			String_t* L_57;
+			L_57 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_56, _stringLiteral0CF6E760F4429CA66FCDDB0BC125023158962742, NULL);
+			il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+			String_t* L_58;
+			L_58 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_55, L_57, NULL);
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_59 = __this->___U3CnewNftU3E5__2_8;
+			NullCheck(L_59);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_60 = L_59->___metaplexData_0;
+			NullCheck(L_60);
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_61 = L_60->___data_1;
+			FileLoader_SaveToPersistentDataPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_mCBFD7B61780A7B74B3E5EF16DC7FD097CC7F4B34(L_58, L_61, FileLoader_SaveToPersistentDataPath_TisMetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51_mCBFD7B61780A7B74B3E5EF16DC7FD097CC7F4B34_RuntimeMethod_var);
+			// return newNft;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_62 = __this->___U3CnewNftU3E5__2_8;
+			V_1 = L_62;
+			goto IL_023e;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_021e;
+		}
+		throw e;
+	}
+
+CATCH_021e:
+	{// begin catch(System.Exception)
+		V_6 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CnewNftU3E5__2_8 = (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnewNftU3E5__2_8), (void*)(Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL);
+		AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* L_63 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_64 = V_6;
+		AsyncTaskMethodBuilder_1_SetException_m75725988E2733A64B19D8B9271CCDDDD05B7F5A7(L_63, L_64, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m75725988E2733A64B19D8B9271CCDDDD05B7F5A7_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0259;
+	}// end catch (depth: 1)
+
+IL_023e:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CnewNftU3E5__2_8 = (Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnewNftU3E5__2_8), (void*)(Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E*)NULL);
+		AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* L_65 = (&__this->___U3CU3Et__builder_1);
+		Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_66 = V_1;
+		AsyncTaskMethodBuilder_1_SetResult_m042A9DFC699DD914C49DD5B25561DB97403AF3B2(L_65, L_66, AsyncTaskMethodBuilder_1_SetResult_m042A9DFC699DD914C49DD5B25561DB97403AF3B2_RuntimeMethod_var);
+	}
+
+IL_0259:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CTryGetNftDataU3Ed__3_MoveNext_m58C0867108B5FFE2CD4C4B51BF5948194AF79581_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048*>(__this + _offset);
+	U3CTryGetNftDataU3Ed__3_MoveNext_m58C0867108B5FFE2CD4C4B51BF5948194AF79581(_thisAdjusted, method);
+}
+// System.Void Solana.Unity.SDK.Nft.Nft/<TryGetNftData>d__3::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTryGetNftDataU3Ed__3_SetStateMachine_m0DF8A2A110E9187D23E731F7A7605B3C6869F516 (U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_m611FCFDB5FE2F9D9DB4B97F721F099F02C6171CA_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_t0E2B75B305B2AD2D437C4DEC6549537350C7C841* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_m611FCFDB5FE2F9D9DB4B97F721F099F02C6171CA(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_m611FCFDB5FE2F9D9DB4B97F721F099F02C6171CA_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CTryGetNftDataU3Ed__3_SetStateMachine_m0DF8A2A110E9187D23E731F7A7605B3C6869F516_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CTryGetNftDataU3Ed__3_t4280079FEFE6E2998EDA0F10C1DF3613734A4048*>(__this + _offset);
+	U3CTryGetNftDataU3Ed__3_SetStateMachine_m0DF8A2A110E9187D23E731F7A7605B3C6869F516(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadTextureU3Ed__5_MoveNext_mC655A2A6DAE3DDA587484EAA064FA24C4E715217 (U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_mD6738CAD485051F94AA5CEB97F9B30CC31DB607A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FileLoader_LoadFile_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m80E0333559E547473442D0D3AA22C040938B7714_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FileLoader_SaveToPersistentDataPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_mB85A1EECDCFFC9DD8BD906A6DE24ED636334B8B8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_GetResult_mE4B8867B0D8DAA1317AD64FE09FBD26E825A654C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TaskAwaiter_1_get_IsCompleted_m77FF413EE49A5859C0BC111104448D64F3C01911_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_GetAwaiter_m88AFED53B032F7EDDB6F9746699970B9FFFC992C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral683E9AEDEA0A637BF28D65D46A3996D097F4DFF6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA15C898F015A9B0BC3268E8883CD03008A56DE26);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* V_1 = NULL;
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_2 = NULL;
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_3 = NULL;
+	TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	Exception_t* V_5 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* G_B12_0 = NULL;
+	String_t* G_B12_1 = NULL;
+	Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* G_B11_0 = NULL;
+	String_t* G_B11_1 = NULL;
+	String_t* G_B17_0 = NULL;
+	String_t* G_B17_1 = NULL;
+	MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* G_B14_0 = NULL;
+	String_t* G_B14_1 = NULL;
+	MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* G_B13_0 = NULL;
+	String_t* G_B13_1 = NULL;
+	MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* G_B16_0 = NULL;
+	String_t* G_B16_1 = NULL;
+	MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* G_B15_0 = NULL;
+	String_t* G_B15_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_1 = __this->___U3CU3E4__this_2;
+		V_1 = L_1;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_2 = V_0;
+			if (!L_2)
+			{
+				goto IL_009b_1;
+			}
+		}
+		{
+			// if (metaplexData.data.offchainData == null) return;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_3 = V_1;
+			NullCheck(L_3);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_4 = L_3->___metaplexData_0;
+			NullCheck(L_4);
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_5 = L_4->___data_1;
+			NullCheck(L_5);
+			MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* L_6 = L_5->___offchainData_4;
+			if (L_6)
+			{
+				goto IL_002b_1;
+			}
+		}
+		{
+			// if (metaplexData.data.offchainData == null) return;
+			goto IL_01cb;
+		}
+
+IL_002b_1:
+		{
+			// if (metaplexData.nftImage != null) return;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_7 = V_1;
+			NullCheck(L_7);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_8 = L_7->___metaplexData_0;
+			NullCheck(L_8);
+			RuntimeObject* L_9 = L_8->___nftImage_0;
+			if (!L_9)
+			{
+				goto IL_003d_1;
+			}
+		}
+		{
+			// if (metaplexData.nftImage != null) return;
+			goto IL_01cb;
+		}
+
+IL_003d_1:
+		{
+			// var nftImage = new NftImage();
+			NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* L_10 = (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20*)il2cpp_codegen_object_new(NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20_il2cpp_TypeInfo_var);
+			NullCheck(L_10);
+			NftImage__ctor_m67A1777D7E2D8D968815C6E7803EF2D219E5B3CC(L_10, NULL);
+			__this->___U3CnftImageU3E5__2_4 = L_10;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnftImageU3E5__2_4), (void*)L_10);
+			// var texture = await FileLoader.LoadFile<Texture2D>(metaplexData.data.offchainData.default_image);
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_11 = V_1;
+			NullCheck(L_11);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_12 = L_11->___metaplexData_0;
+			NullCheck(L_12);
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_13 = L_12->___data_1;
+			NullCheck(L_13);
+			MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* L_14 = L_13->___offchainData_4;
+			NullCheck(L_14);
+			String_t* L_15;
+			L_15 = MetaplexTokenStandard_get_default_image_m54B60D3D52B9B0DA969BECF63DFB63499FA916ED_inline(L_14, NULL);
+			Task_1_t95921EB64E237ACD28589D64B693C652268F225E* L_16;
+			L_16 = FileLoader_LoadFile_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m80E0333559E547473442D0D3AA22C040938B7714(L_15, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, FileLoader_LoadFile_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_m80E0333559E547473442D0D3AA22C040938B7714_RuntimeMethod_var);
+			NullCheck(L_16);
+			TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B L_17;
+			L_17 = Task_1_GetAwaiter_m88AFED53B032F7EDDB6F9746699970B9FFFC992C(L_16, Task_1_GetAwaiter_m88AFED53B032F7EDDB6F9746699970B9FFFC992C_RuntimeMethod_var);
+			V_4 = L_17;
+			bool L_18;
+			L_18 = TaskAwaiter_1_get_IsCompleted_m77FF413EE49A5859C0BC111104448D64F3C01911((&V_4), TaskAwaiter_1_get_IsCompleted_m77FF413EE49A5859C0BC111104448D64F3C01911_RuntimeMethod_var);
+			if (L_18)
+			{
+				goto IL_00b8_1;
+			}
+		}
+		{
+			int32_t L_19 = 0;
+			V_0 = L_19;
+			__this->___U3CU3E1__state_0 = L_19;
+			TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B L_20 = V_4;
+			__this->___U3CU3Eu__1_5 = L_20;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_5))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* L_21 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_mD6738CAD485051F94AA5CEB97F9B30CC31DB607A(L_21, (&V_4), __this, AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_TisTaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B_TisU3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637_mD6738CAD485051F94AA5CEB97F9B30CC31DB607A_RuntimeMethod_var);
+			goto IL_01e5;
+		}
+
+IL_009b_1:
+		{
+			TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B L_22 = __this->___U3CU3Eu__1_5;
+			V_4 = L_22;
+			TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B* L_23 = (&__this->___U3CU3Eu__1_5);
+			il2cpp_codegen_initobj(L_23, sizeof(TaskAwaiter_1_t6D65E8305E8A65AA4939559CBC191F5C2238F74B));
+			int32_t L_24 = (-1);
+			V_0 = L_24;
+			__this->___U3CU3E1__state_0 = L_24;
+		}
+
+IL_00b8_1:
+		{
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_25;
+			L_25 = TaskAwaiter_1_GetResult_mE4B8867B0D8DAA1317AD64FE09FBD26E825A654C((&V_4), TaskAwaiter_1_GetResult_mE4B8867B0D8DAA1317AD64FE09FBD26E825A654C_RuntimeMethod_var);
+			V_2 = L_25;
+			// if (texture == null)
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_26 = V_2;
+			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+			bool L_27;
+			L_27 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_26, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+			if (!L_27)
+			{
+				goto IL_0107_1;
+			}
+		}
+		{
+			// Debug.LogWarning($"Unable to load: {metaplexData?.data?.offchainData?.default_image}");
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_28 = V_1;
+			NullCheck(L_28);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_29 = L_28->___metaplexData_0;
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_30 = L_29;
+			G_B11_0 = L_30;
+			G_B11_1 = _stringLiteral683E9AEDEA0A637BF28D65D46A3996D097F4DFF6;
+			if (L_30)
+			{
+				G_B12_0 = L_30;
+				G_B12_1 = _stringLiteral683E9AEDEA0A637BF28D65D46A3996D097F4DFF6;
+				goto IL_00db_1;
+			}
+		}
+		{
+			G_B17_0 = ((String_t*)(NULL));
+			G_B17_1 = G_B11_1;
+			goto IL_00f8_1;
+		}
+
+IL_00db_1:
+		{
+			NullCheck(G_B12_0);
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_31 = G_B12_0->___data_1;
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_32 = L_31;
+			G_B13_0 = L_32;
+			G_B13_1 = G_B12_1;
+			if (L_32)
+			{
+				G_B14_0 = L_32;
+				G_B14_1 = G_B12_1;
+				goto IL_00e7_1;
+			}
+		}
+		{
+			G_B17_0 = ((String_t*)(NULL));
+			G_B17_1 = G_B13_1;
+			goto IL_00f8_1;
+		}
+
+IL_00e7_1:
+		{
+			NullCheck(G_B14_0);
+			MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* L_33 = G_B14_0->___offchainData_4;
+			MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* L_34 = L_33;
+			G_B15_0 = L_34;
+			G_B15_1 = G_B14_1;
+			if (L_34)
+			{
+				G_B16_0 = L_34;
+				G_B16_1 = G_B14_1;
+				goto IL_00f3_1;
+			}
+		}
+		{
+			G_B17_0 = ((String_t*)(NULL));
+			G_B17_1 = G_B15_1;
+			goto IL_00f8_1;
+		}
+
+IL_00f3_1:
+		{
+			NullCheck(G_B16_0);
+			String_t* L_35;
+			L_35 = MetaplexTokenStandard_get_default_image_m54B60D3D52B9B0DA969BECF63DFB63499FA916ED_inline(G_B16_0, NULL);
+			G_B17_0 = L_35;
+			G_B17_1 = G_B16_1;
+		}
+
+IL_00f8_1:
+		{
+			String_t* L_36;
+			L_36 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B17_1, G_B17_0, NULL);
+			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+			Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(L_36, NULL);
+			// return;
+			goto IL_01cb;
+		}
+
+IL_0107_1:
+		{
+			// var compressedTexture = FileLoader.Resize(texture, imageHeightAndWidth, imageHeightAndWidth);
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_37 = V_2;
+			int32_t L_38 = __this->___imageHeightAndWidth_3;
+			int32_t L_39 = __this->___imageHeightAndWidth_3;
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_40;
+			L_40 = FileLoader_Resize_m9CEA433A8CE82F3C2D109EEB0E105DB8DBE09000(L_37, L_38, L_39, NULL);
+			V_3 = L_40;
+			// if (compressedTexture)
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_41 = V_3;
+			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+			bool L_42;
+			L_42 = Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A(L_41, NULL);
+			if (!L_42)
+			{
+				goto IL_017f_1;
+			}
+		}
+		{
+			// nftImage.externalUrl = metaplexData.data.offchainData.default_image;
+			NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* L_43 = __this->___U3CnftImageU3E5__2_4;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_44 = V_1;
+			NullCheck(L_44);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_45 = L_44->___metaplexData_0;
+			NullCheck(L_45);
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_46 = L_45->___data_1;
+			NullCheck(L_46);
+			MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* L_47 = L_46->___offchainData_4;
+			NullCheck(L_47);
+			String_t* L_48;
+			L_48 = MetaplexTokenStandard_get_default_image_m54B60D3D52B9B0DA969BECF63DFB63499FA916ED_inline(L_47, NULL);
+			NullCheck(L_43);
+			NftImage_set_externalUrl_m82EAF4A55FBB51F7A775758786A5410906B85AF7_inline(L_43, L_48, NULL);
+			// nftImage.file = compressedTexture;
+			NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* L_49 = __this->___U3CnftImageU3E5__2_4;
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_50 = V_3;
+			NullCheck(L_49);
+			NftImage_set_file_mA0E407437B4D29D0B68645934C4613FEF61B7B23_inline(L_49, L_50, NULL);
+			// metaplexData.nftImage = nftImage;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_51 = V_1;
+			NullCheck(L_51);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_52 = L_51->___metaplexData_0;
+			NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* L_53 = __this->___U3CnftImageU3E5__2_4;
+			NullCheck(L_52);
+			L_52->___nftImage_0 = L_53;
+			Il2CppCodeGenWriteBarrier((void**)(&L_52->___nftImage_0), (void*)L_53);
+			// nftImage.externalUrl = metaplexData.data.offchainData.default_image;
+			NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* L_54 = __this->___U3CnftImageU3E5__2_4;
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_55 = V_1;
+			NullCheck(L_55);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_56 = L_55->___metaplexData_0;
+			NullCheck(L_56);
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_57 = L_56->___data_1;
+			NullCheck(L_57);
+			MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* L_58 = L_57->___offchainData_4;
+			NullCheck(L_58);
+			String_t* L_59;
+			L_59 = MetaplexTokenStandard_get_default_image_m54B60D3D52B9B0DA969BECF63DFB63499FA916ED_inline(L_58, NULL);
+			NullCheck(L_54);
+			NftImage_set_externalUrl_m82EAF4A55FBB51F7A775758786A5410906B85AF7_inline(L_54, L_59, NULL);
+		}
+
+IL_017f_1:
+		{
+			// FileLoader.SaveToPersistentDataPath(Path.Combine(Application.persistentDataPath, $"{metaplexData.data.mint}.png"), compressedTexture);
+			String_t* L_60;
+			L_60 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
+			Nft_t2BFB342353D6048B569ED6D974FD8873C4287D9E* L_61 = V_1;
+			NullCheck(L_61);
+			Metaplex_tD2818B8E47352D593B257148AA853006A4F7ED1A* L_62 = L_61->___metaplexData_0;
+			NullCheck(L_62);
+			MetadataAccount_t017FA063B7C70E9E1BE2258A35F1F5D8ABBF6E51* L_63 = L_62->___data_1;
+			NullCheck(L_63);
+			String_t* L_64 = L_63->___mint_2;
+			String_t* L_65;
+			L_65 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_64, _stringLiteralA15C898F015A9B0BC3268E8883CD03008A56DE26, NULL);
+			il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+			String_t* L_66;
+			L_66 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_60, L_65, NULL);
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_67 = V_3;
+			FileLoader_SaveToPersistentDataPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_mB85A1EECDCFFC9DD8BD906A6DE24ED636334B8B8(L_66, L_67, FileLoader_SaveToPersistentDataPath_TisTexture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_mB85A1EECDCFFC9DD8BD906A6DE24ED636334B8B8_RuntimeMethod_var);
+			goto IL_01cb;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_01ab;
+		}
+		throw e;
+	}
+
+CATCH_01ab:
+	{// begin catch(System.Exception)
+		V_5 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CnftImageU3E5__2_4 = (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnftImageU3E5__2_4), (void*)(NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20*)NULL);
+		AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* L_68 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_69 = V_5;
+		AsyncTaskMethodBuilder_SetException_mBE41863F0571E0177A15731294087DE45E1FC10B(L_68, L_69, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_01e5;
+	}// end catch (depth: 1)
+
+IL_01cb:
+	{
+		// }
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CnftImageU3E5__2_4 = (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CnftImageU3E5__2_4), (void*)(NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20*)NULL);
+		AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* L_70 = (&__this->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_SetResult_m76D8B84F0068257C1823B1200B00E58E0C8DDDDE(L_70, NULL);
+	}
+
+IL_01e5:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CLoadTextureU3Ed__5_MoveNext_mC655A2A6DAE3DDA587484EAA064FA24C4E715217_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637*>(__this + _offset);
+	U3CLoadTextureU3Ed__5_MoveNext_mC655A2A6DAE3DDA587484EAA064FA24C4E715217(_thisAdjusted, method);
+}
+// System.Void Solana.Unity.SDK.Nft.Nft/<LoadTexture>d__5::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CLoadTextureU3Ed__5_SetStateMachine_m416574BBE0B82DCB9C76C15F9D7A47FEAA340017 (U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	{
+		AsyncTaskMethodBuilder_t7A5128C134547B5918EB1AA24FE47ED4C1DF3F06* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_SetStateMachine_mE52B5B6B076025592A7AB462E3D26FA434AEB795(L_0, L_1, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CLoadTextureU3Ed__5_SetStateMachine_m416574BBE0B82DCB9C76C15F9D7A47FEAA340017_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CLoadTextureU3Ed__5_t714A4B8C338A88FF5EE213C7C0F04BE6B4C04637*>(__this + _offset);
+	U3CLoadTextureU3Ed__5_SetStateMachine_m416574BBE0B82DCB9C76C15F9D7A47FEAA340017(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* AccountMeta_get_PublicKey_mFC96C51156F0A89D687F8500675BF2E411EA298D_inline (AccountMeta_t541C82B459AD2D2C44F9C9BED4E3BA8C5571137F* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CPublicKeyU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* Account_get_PublicKey_m2CA474B3A5F3B29408EEB2DB88A8440914D5DDCB_inline (Account_t15F1801E39C4C126421D353BFA50F8BD35957596* __this, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = __this->___U3CPublicKeyU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CandyMachineAuthorityPda_mEDD2CC289C65FB33B3BA445E8123909C8BFF44DD_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyMachineAuthorityPdaU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyMachineAuthorityPdaU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_Payer_mC813E71EE50C8E166328CD41E111FCB843E71FD8_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CPayerU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CPayerU3Ek__BackingField_4), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_Minter_m75BD19DBEE81DA5F2C17EFEFF16957169B41A5A2_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CMinterU3Ek__BackingField_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMinterU3Ek__BackingField_5), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CandyMachine_mF04774DDBACB9716EF4A8FDE8FF4131AEA1ED391_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyMachineU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyMachineU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_NftMetadata_m32B972740F4BC53532C0990BBB6AAB1592640EA7_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CNftMetadataU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CNftMetadataU3Ek__BackingField_8), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_NftMasterEdition_m783B193255CF740782DFA0C92B48BA7B312114C5_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CNftMasterEditionU3Ek__BackingField_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CNftMasterEditionU3Ek__BackingField_9), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_SystemProgram_m08E8A67A2EB9F2F5307DB7C4BCE7EF6FD3F032DB_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CSystemProgramU3Ek__BackingField_20 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSystemProgramU3Ek__BackingField_20), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_TokenMetadataProgram_m824A84BCEBA6AFEE79920FEC02886906778587A4_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CTokenMetadataProgramU3Ek__BackingField_17 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTokenMetadataProgramU3Ek__BackingField_17), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_SplTokenProgram_mE32ABF275106E25D8F0F378F7736BAD5D924FA0A_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CSplTokenProgramU3Ek__BackingField_18 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSplTokenProgramU3Ek__BackingField_18), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* CandyMachine_get_CollectionMint_m2D2A85ED3FB4D2AF80755185B081230D53BB8294_inline (CandyMachine_t8FDEC3BC25093B78BADE3A562F4569C5DEE07AE8* __this, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = __this->___U3CCollectionMintU3Ek__BackingField_5;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionDelegateRecord_m6BA5A4B751BDE5EA2024815EE44997764557E762_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCollectionDelegateRecordU3Ek__BackingField_12 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCollectionDelegateRecordU3Ek__BackingField_12), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionMasterEdition_mEB56A5AAD2F8F268C49D33E30A568B966BA5D526_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCollectionMasterEditionU3Ek__BackingField_15 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCollectionMasterEditionU3Ek__BackingField_15), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionMetadata_m992DE8780661F8EF0814D2D5E1145D2F4A1AA751_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCollectionMetadataU3Ek__BackingField_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCollectionMetadataU3Ek__BackingField_14), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionMint_m214CAD0AF092C2124A85646FE2E7519C9DDE3F20_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCollectionMintU3Ek__BackingField_13 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCollectionMintU3Ek__BackingField_13), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CollectionUpdateAuthority_m7ABF3C70B0C7BF6A3343A7DC517A85678899002D_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCollectionUpdateAuthorityU3Ek__BackingField_16 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCollectionUpdateAuthorityU3Ek__BackingField_16), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_NftMint_m76F5C006BA757DD7B5FFE4E73E17955646267545_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CNftMintU3Ek__BackingField_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CNftMintU3Ek__BackingField_6), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_NftMintAuthority_m0B778DD6407BB9013569D45A7E112C5C5141543C_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CNftMintAuthorityU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CNftMintAuthorityU3Ek__BackingField_7), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_Token_m5CE49FE3381DC03DEEBD61E436B8E4CD4BDBB845_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CTokenU3Ek__BackingField_10 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTokenU3Ek__BackingField_10), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_TokenRecord_m35C29FB98220CEBBF47A660E2BD8535D905C2C12_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CTokenRecordU3Ek__BackingField_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTokenRecordU3Ek__BackingField_11), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_SplAtaProgram_m7F11E6231F3376B2DD9C6531D8FDE01394241E92_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CSplAtaProgramU3Ek__BackingField_19 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSplAtaProgramU3Ek__BackingField_19), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_SysvarInstructions_m50BB13A29B70848EB079754A87A0962853FC9904_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CSysvarInstructionsU3Ek__BackingField_21 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSysvarInstructionsU3Ek__BackingField_21), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_RecentSlothashes_mCF5EC4A5B5957D1A587EE920BBF96EC8D83B2B8E_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CRecentSlothashesU3Ek__BackingField_22 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CRecentSlothashesU3Ek__BackingField_22), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CandyGuard_m0554D170D4E919E734010C7DA2A19426E128592B_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyGuardU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyGuardU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MintV2Accounts_set_CandyMachineProgram_m1E06C8F21E873E617173416D3DA541DBF2A7B583_inline (MintV2Accounts_t731298872F82BD31668EA63AEC2425DFB3EC7724* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyMachineProgramU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyMachineProgramU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* TransactionInstruction_get_Data_mD0D8887DD66481B7EE27A70D3CDD559F4E2FF4E2_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CDataU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TransactionInstruction_set_Data_m04A7F7910F30C3CC2DA1A9AA4470C609BE5A7797_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CDataU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CDataU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* TransactionInstruction_get_ProgramId_mE857581B4C57D4EAF7142CE37FDA33F677DEF271_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CProgramIdU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TransactionInstruction_set_ProgramId_mB99504E26550E308C1FFDA8EFF9DBDEE582A9C52_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CProgramIdU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CProgramIdU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* TransactionInstruction_get_Keys_m4919C0B7F1942DE9C0349F39A8F4BE957F32EEBA_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CKeysU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TransactionInstruction_set_Keys_mEE992F580C4FB052CA6D59F4DDE06C1C00587226_inline (TransactionInstruction_tB22FB70486FEC8B6AE0EFEA4DB7806A80DA4625B* __this, RuntimeObject* ___value0, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = ___value0;
+		__this->___U3CKeysU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CKeysU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* LatestBlockHash_get_Blockhash_mDED25F2CB2D12CA897B10DBD08D6FF28FB840A4D_inline (LatestBlockHash_t18E0B8C4D04F7B533945E60CD1ED4B3BC28C3AAD* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CBlockhashU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_SystemProgram_m037C96692C13D6EB978307974F5992D1EA5206BD_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CSystemProgramU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSystemProgramU3Ek__BackingField_4), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_Authority_m482C5C86C49ACB28BD69F7C7DC854FAF6A15D0E6_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CAuthorityU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAuthorityU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_Base_mC71A2082C9EAB6A86386A3A9C5C4EC821FFFADC8_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CBaseU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CBaseU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_CandyGuard_m01343CFCF071B8168139E2FF282C61FCA1680021_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyGuardU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyGuardU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InitializeAccounts_set_Payer_m4900F973E48BEF0CB76EE1760225D3379BDEF59E_inline (InitializeAccounts_t0749B63604F319681FDF74E88304832C0008C329* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CPayerU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CPayerU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdateAccounts_set_SystemProgram_m27D28D027F959E2044A830E153D51BF3E1DF506B_inline (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CSystemProgramU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSystemProgramU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdateAccounts_set_Authority_m3034661A6B7241C482895A1AB900539828303F88_inline (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CAuthorityU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAuthorityU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdateAccounts_set_CandyGuard_m9B1A7ECEEBCCF1A820223C95D10A999A41837202_inline (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyGuardU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyGuardU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UpdateAccounts_set_Payer_m2E8FD6B9810111A3D400A28F9303426357A2D20C_inline (UpdateAccounts_t759760E76259DD1CF087C060F370E7C5F7520766* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CPayerU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CPayerU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_Authority_m0C8D6DECBCF87D4F0039DCE558062F0F61DB4013_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CAuthorityU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAuthorityU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_CandyMachineAuthority_m7757239586D84D7F72A7B6EBE73B8D5864691B1D_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyMachineAuthorityU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyMachineAuthorityU3Ek__BackingField_4), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_CandyGuard_mECF5B4FF4E96479A32624E225737521D56E6863F_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyGuardU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyGuardU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_CandyMachine_mB31A0715D0EE0F2AF6C7DEF8086B4D5255794DC6_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyMachineU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyMachineU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WrapAccounts_set_CandyMachineProgram_m6912285235AA0E879734AF32BE38716C3B76B51B_inline (WrapAccounts_t52DFC3E769B498220C16F31DD79C9E875F1E1D8D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyMachineProgramU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyMachineProgramU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WithdrawAccounts_set_Authority_m28872DC69BED9B38C0C916143636996024E843AD_inline (WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CAuthorityU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAuthorityU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WithdrawAccounts_set_CandyMachine_mB5A968084727A9CE9E16383ED3599B9DD0CBFAF5_inline (WithdrawAccounts_t4567A4DD33345ADB4B9BE0BA55A6D1025515831D* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyMachineU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyMachineU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WithdrawAccounts_set_CandyGuard_m9C148D89216527FF0D18330525DC09E7C6898F70_inline (WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CCandyGuardU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCandyGuardU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WithdrawAccounts_set_Authority_m454232E954B4A35E4CE701951D8E6DE5EE93A6C4_inline (WithdrawAccounts_tC093D31A539C7533C5125843D8648029A5AF88E0* __this, PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* ___value0, const RuntimeMethod* method) 
+{
+	{
+		PublicKey_t6F22B541109DEBE6AFC7B2093079B92AF5DAF751* L_0 = ___value0;
+		__this->___U3CAuthorityU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAuthorityU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaplexTokenStandard_get_default_image_m54B60D3D52B9B0DA969BECF63DFB63499FA916ED_inline (MetaplexTokenStandard_tBF036F9C7CD39436BC9C6E0D6C0DEAA30295F2E5* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3Cdefault_imageU3Ek__BackingField_4;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NftImage_set_externalUrl_m82EAF4A55FBB51F7A775758786A5410906B85AF7_inline (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public string externalUrl { get; set; }
+		String_t* L_0 = ___value0;
+		__this->___U3CexternalUrlU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CexternalUrlU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NftImage_set_file_mA0E407437B4D29D0B68645934C4613FEF61B7B23_inline (NftImage_tE2FB056991499DA7A3E96086D29DA07753744E20* __this, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___value0, const RuntimeMethod* method) 
+{
+	{
+		// public Texture2D file { get; set; }
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_0 = ___value0;
+		__this->___U3CfileU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfileU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ResultWrapper_2_get_ParsedResult_m7914953A70EC5BE979663F841531B1A218638A23_gshared_inline (ResultWrapper_2_t11BD214545D74204F1CB9BEF2D7033BDC9108F0D* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CParsedResultU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* RequestResult_1_get_Result_m37897891F48B9F2ADF46524718A671C1F7F827CC_gshared_inline (RequestResult_1_tF25E3B2C01F82A444D7625EB9C476DC8437EBA24* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CResultU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ResponseValue_1_get_Value_m6C5854737B78630F19EC3D59B572C8A944FE1A18_gshared_inline (ResponseValue_1_t8663D687999D2DEE6072DDA9FD2059BBDE351512* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___U3CValueU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->____items_1;
+		V_0 = L_1;
+		int32_t L_2 = (int32_t)__this->____size_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
+		int32_t L_7 = V_1;
+		RuntimeObject* L_8 = ___item0;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		RuntimeObject* L_9 = ___item0;
+		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
+		return;
+	}
+}
