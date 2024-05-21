@@ -26,12 +26,12 @@ public class RoundInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Player choice of Phase1, 
+        /*// Player choice of Phase1, 
       enemyph1.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
       enemyph2.text =  RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
       enemyph3.text =  RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
 
         //Enemy choice of Phase1
-       plph1.text = RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options.ToString();
+       plph1.text = RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options.ToString();*/
     }
 }

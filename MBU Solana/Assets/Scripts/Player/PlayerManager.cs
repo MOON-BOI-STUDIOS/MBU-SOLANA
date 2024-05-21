@@ -19,10 +19,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     public float Defence;
     private const float MAX_DEFENCE = 100.0f;
 
-    public Transform DefenceIndicator;
-    public TextMeshProUGUI coinsText;
-    public Transform healthIndicator;
-    public TextMeshProUGUI healthNumber;
     bool isDead;
     bool isDeadRevive;
 
@@ -49,6 +45,13 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     private TurnOptions.PhaseAttackTurns Phase2Turns;
     [SerializeField]
     private TurnOptions.PhaseDefenceTurns Phase3Turns;
+
+    public delegate void HealthChangedDelegate(float newHealth,float MaxHealth);
+    public event HealthChangedDelegate OnHealthChanged;
+
+    public delegate void DefenceChangedDelegate(float newDefence, float MaxDefence);
+    public event HealthChangedDelegate OnDefenceChanged;
+
 
     public enum OptionSelected
     {
@@ -99,18 +102,18 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
             return;
 
             //updates the health bar according to current health
-            healthIndicator.localScale = new Vector3(health / MAXHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
+            //healthIndicator.localScale = new Vector3(health / MAXHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
             // displays current health in a numerical form
-            healthNumber.text = "Health: " + (int)health + " / " + MAXHealth;
+            //healthNumber.text = "Health: " + (int)health + " / " + MAXHealth;
 
             //displays number of coins the player has
-            if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
-            if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
+            //if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
+            //if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
 
         if (curSceneName == "PVP_BattleArena")
         {
             //updates the health bar according to current health
-            DefenceIndicator.localScale = new Vector3(Defence / MAX_DEFENCE, DefenceIndicator.localScale.y, DefenceIndicator.localScale.z);
+            //DefenceIndicator.localScale = new Vector3(Defence / MAX_DEFENCE, DefenceIndicator.localScale.y, DefenceIndicator.localScale.z);
         }
     }
 
@@ -131,6 +134,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     {
         health = newHealth;
         // Put the Helath UI here for now for testing
+        OnHealthChanged?.Invoke(health, MAXHealth);
     }
 
     [PunRPC]
@@ -138,6 +142,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     {
         Defence = newDefence;
         //Put the Defence UI here for now for testing
+        OnDefenceChanged?.Invoke(Defence, MAX_DEFENCE);
     }
 
     /*private void OnTriggerEnter2D(Collider2D other)

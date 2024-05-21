@@ -8,19 +8,35 @@ using UnityEngine.UIElements;
 
 public class UIManager : MonoBehaviour
 {
-    public Transform player;
+    //public Transform player;
     public TextMeshProUGUI coins, swordLevel, specialLevel, maxHealth, fishesUI, roundIndicator;
+
+    public Transform DefenceIndicator;
+    public TextMeshProUGUI coinsText;
+    public Transform healthIndicator;
+    public TextMeshProUGUI healthNumber;
     // Start is called before the first frame update
-    
+
     // Inventory Button
     public GameObject panel;
     private bool isPanelOpen = false;
     // Debugger
     public bool debugger = false;
+
+    public RoundScript RoundScript;
+
+    // Getting the Local Player's Player Manager
+    private PlayerManager _player;
+
+
     void Start()
     {
         coins.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
         swordLevel.text = "Sword Level : " + (PlayerPrefs.GetInt("SwordPower") / 7).ToString();
+        if (RoundScript)
+        {
+            _player = RoundScript.GetPlayerScript();
+        }
     }
 
     // Update is called once per frame
@@ -43,6 +59,43 @@ public class UIManager : MonoBehaviour
         {
             eatFish();
         }*/
+    }
+
+    private void OnEnable()
+    {
+        // On Health Changes of the local Player
+        _player.OnHealthChanged += HandleHealthChanged;
+
+        // On Defence Changes of the local Player
+        _player.OnDefenceChanged += HandleDefenceChanged;
+    }
+
+    private void OnDisable()
+    {
+        // On Health Changes of the local Player 
+        _player.OnHealthChanged -= HandleHealthChanged;
+
+        // On Defence Changes of the local Player
+        _player.OnDefenceChanged -= HandleDefenceChanged;
+
+    }
+
+    private void HandleHealthChanged(float newHealth, float MaxHealth)
+    {
+        // Update UI or other game elements with the new health value
+        Debug.Log("Player health updated: " + newHealth);
+        //updates the health bar according to current health
+        healthIndicator.localScale = new Vector3(newHealth / MaxHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
+        // displays current health in a numerical form
+        healthNumber.text = "Health: " + (int)newHealth + " / " + MaxHealth;
+    }
+
+    private void HandleDefenceChanged(float newDefence, float MaxDefence)
+    {
+        // Update UI or other game elements with the new health value
+        Debug.Log("Player health updated: " + newDefence);
+
+        DefenceIndicator.localScale = new Vector3( newDefence/ MaxDefence, DefenceIndicator.localScale.y, DefenceIndicator.localScale.z);
     }
 
 
