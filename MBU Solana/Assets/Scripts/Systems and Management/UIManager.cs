@@ -30,11 +30,7 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
-        if (RoundScript)
-        {
-            _player = RoundScript.GetPlayerScript();
-            Debug.Log("Player is set");
-        }
+         _player = RoundScript.GetPlayerScript();
 
         Debug.Log(_player);
     }
@@ -70,6 +66,7 @@ public class UIManager : MonoBehaviour
 
     private void OnEnable()
     {
+        Debug.Log("This is called in OnEnable function");
         // On Health Changes of the local Player
         _player.OnHealthChanged += HandleHealthChanged;
 

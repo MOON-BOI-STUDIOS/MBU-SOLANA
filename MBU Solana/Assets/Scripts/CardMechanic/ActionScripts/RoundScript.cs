@@ -32,17 +32,16 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     private void FindPlayers()
     {
-        // This is finding the Player Manager. Essentially finding two players in the Scene
-        PlayerManager[] allPlayerManager = FindObjectsOfType<PlayerManager>();
-        for (int i = 0; i < allPlayerManager.Length; i++)
+        GameObject[] PlayerObjects =  GameObject.FindGameObjectsWithTag("Player"); //FindGameObjectWithTag("Player");
+        for (int i = 0; i < PlayerObjects.Length; i++)
         {
-            if (allPlayerManager[i].IsLocalPlayer())
+            if (PlayerObjects[i].GetComponent<PlayerManager>().IsLocalPlayer())
             {
-                playerManagerScript = allPlayerManager[i];
+                playerManagerScript = PlayerObjects[i].GetComponent<PlayerManager>();
             }
             else
             {
-                enemyManagerScript = allPlayerManager[i];
+                enemyManagerScript = PlayerObjects[i].GetComponent<PlayerManager>();
             }
         }
 

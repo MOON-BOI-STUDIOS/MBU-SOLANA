@@ -6,6 +6,30 @@ using Photon.Pun;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[System.Serializable]
+public struct SpawnPoints
+{
+
+    public Transform spawnPoint;
+    public bool boolSpawnPoint;
+
+    public bool GetBoolSpawnPoint()
+    {
+        return boolSpawnPoint;
+    }
+
+    public void SetBoolSpawnPoint(bool value)
+    {
+        boolSpawnPoint = value;
+    }
+
+    public Transform GetTransformSpawnPoint()
+    {
+        return spawnPoint;
+    }
+   
+}
+
 //script by Oliver Lancashire
 public class GameSetUP : MonoBehaviour
 {
@@ -17,7 +41,8 @@ public class GameSetUP : MonoBehaviour
     /// <summary>
     /// array of spawn points
     /// </summary>
-    public Transform[] spawnPoints;
+    // Struct array which will hold the value of the Struct Objects
+    public SpawnPoints[] spawnPoints;
     #endregion
 
     #region methods
@@ -83,6 +108,7 @@ public class GameSetUP : MonoBehaviour
     //    }
     //}
     #endregion
+
 }
 
 
