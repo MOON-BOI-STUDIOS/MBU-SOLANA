@@ -16,7 +16,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public List<RoomInfo> roomlistings;
     public TMP_Dropdown regionDropdown; // Dropdown UI element for region selection
     private string[] regions = { "us", "eu", "asia", "jp", "au", "sa", "in"}; // Example region codes
-
+    public Button rlp;
 
     private void Awake()
     {
@@ -98,6 +98,18 @@ public class CustomLobby : MonoBehaviourPunCallbacks
 
         }
 
+    }
+
+    private void Update()
+    {
+        if(PhotonRoom.room.playersInRoom == 2)
+        {
+            rlp.interactable = false;
+        }
+        else
+        {
+            rlp.interactable = true;
+        }
     }
 
 
