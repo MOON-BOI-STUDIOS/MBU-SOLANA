@@ -90,6 +90,7 @@ public class GameSetUP : MonoBehaviour
 
             yield return null;
         SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
+        CustomLobby.lobby.RemoveRoomListing();
 
 
 
