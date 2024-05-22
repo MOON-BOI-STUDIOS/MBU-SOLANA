@@ -129,7 +129,11 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
         RoomGO.SetActive(true);
         if (PhotonNetwork.IsMasterClient)
         {
-            startButton.SetActive(true);
+            if(playersInRoom < 2)
+            {
+                startButton.SetActive(true);
+            }
+          
         }
         else
         {
