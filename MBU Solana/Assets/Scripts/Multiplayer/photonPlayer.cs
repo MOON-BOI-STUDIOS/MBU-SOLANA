@@ -24,25 +24,20 @@ public class photonPlayer : MonoBehaviour
         PV = GetComponent<PhotonView>();
 
         // randomly chooses spawn point
-        //int spawnPicker = Random.Range(0, GameSetUP.GS.spawnPoints.Length);
+        int spawnPicker = 0;
+        if (GameSetUP.GS.spawnPoints[spawnPicker].GetBoolSpawnPoint())
+        {
+            spawnPicker = 1;
+        }
+        //Setting the element's object's value of bool to be true in the struct
+        GameSetUP.GS.spawnPoints[spawnPicker].SetBoolSpawnPoint(true);
+
         if (PV.IsMine)
         {
-            //Check if Spawn point is empty
-            if (!GameSetUP.GS.spawnPoints[0].GetBoolSpawnPoint())
-            {
-                // instantiates photon prefab over the network
-                myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerAvatar"), GameSetUP.GS.spawnPoints[0].GetTransformSpawnPoint().position, GameSetUP.GS.spawnPoints[0].GetTransformSpawnPoint().rotation, 0);
-                //Setting the element's object's value of bool to be true in the struct
-                GameSetUP.GS.spawnPoints[0].SetBoolSpawnPoint(true);
-            }
-            else
-            {
-                // instantiates photon prefab over the network
-                myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerAvatar"), GameSetUP.GS.spawnPoints[1].GetTransformSpawnPoint().position, GameSetUP.GS.spawnPoints[1].GetTransformSpawnPoint().rotation, 0);
-                //Setting the element's object's value of bool to be true in the struct
-                GameSetUP.GS.spawnPoints[1].SetBoolSpawnPoint(true);
-            }
+            // instantiates photon prefab over the network
+            myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerAvatar"), GameSetUP.GS.spawnPoints[spawnPicker].GetTransformSpawnPoint().position, GameSetUP.GS.spawnPoints[spawnPicker].GetTransformSpawnPoint().rotation, 0);
         }
+        Debug.Log(GameSetUP.GS.spawnPoints[spawnPicker].GetBoolSpawnPoint());
     }
     #endregion
 }
