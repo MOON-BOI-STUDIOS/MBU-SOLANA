@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.InputSystem.HID;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
+using Photon.Pun;
 
 public class UIManager : MonoBehaviour
 {
@@ -28,10 +29,9 @@ public class UIManager : MonoBehaviour
     // Getting the Local Player's Player Manager
     private PlayerManager _player;
 
-    private void Awake()
+    /*private void Awake()
     {
-         _player = RoundScript.GetPlayerScript();
-
+         _player =  RoundScript.GetPlayerScript();
         Debug.Log(_player);
     }
 
@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*//Adjusts UI to current values
+        //Adjusts UI to current values
         coins.text = "Coins: "+ PlayerPrefs.GetInt("Coins").ToString();
         swordLevel.text = "Sword Level : " + (PlayerPrefs.GetInt("SwordPower") / 7).ToString();
         specialLevel.text = "Special Level : " + (PlayerPrefs.GetInt("SpecialPower") / 20).ToString();
@@ -61,7 +61,7 @@ public class UIManager : MonoBehaviour
         if(Input.GetButtonDown("Interact"))
         {
             eatFish();
-        }*/
+        }
     }
 
     private void OnEnable()
@@ -145,7 +145,7 @@ public class UIManager : MonoBehaviour
         if (panel != null)
         {
             openPanel();
-        }*/
+        }
     }
 
     //Buy Max Health Upgrade
@@ -187,6 +187,6 @@ public class UIManager : MonoBehaviour
         {
             panel.SetActive(false);
             isPanelOpen = false;
-        }*/
-    }
+        }
+    }*/
 }
