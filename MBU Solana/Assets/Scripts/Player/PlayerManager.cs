@@ -94,41 +94,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
             Defence = MAX_DEFENCE;
 
             Debug.Log(PhotonRoom.room.playersInRoom);
-            if (PhotonNetwork.IsMasterClient)
-            {
-                if (PhotonRoom.room.playersInRoom == 2)
-                {
-                    GameObject text = GameObject.Find("Cost");
-                    GameObject text2 = GameObject.Find("Cost2");
-
-                    if (text2 != null && text != null)
-                    {
-                        costtext = text2.gameObject.GetComponent<TextMeshProUGUI>();
-                        CostManager.Instance.costTotal2 = 100;
-                        costtext = text.gameObject.GetComponent<TextMeshProUGUI>();
-                        CostManager.Instance.costTotal1 = 100;
-                    }
-
-
-                }
-                else if (PhotonRoom.room.playersInRoom == 1)
-                {
-                    GameObject text = GameObject.Find("Cost");
-                    GameObject hud = GameObject.Find("CombatUI (1)");
-                    hud.SetActive(false);
-
-                    if (text != null)
-                    {
-                        costtext = text.gameObject.GetComponent<TextMeshProUGUI>();
-                        CostManager.Instance.costTotal1 = 100;
-
-
-                    }
-                }
-
-
-
-            }
+           
 
         }
         else

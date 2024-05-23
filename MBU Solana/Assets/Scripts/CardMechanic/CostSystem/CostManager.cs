@@ -2,14 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
 
 public class CostManager : MonoBehaviour
 {
 
     public static CostManager Instance;
 
-    public int costTotal1;
-    public int costTotal2;
+    public int playersroom;
+
+    public TextMeshProUGUI[] playerScoreText;
 
     public void Awake()
     {

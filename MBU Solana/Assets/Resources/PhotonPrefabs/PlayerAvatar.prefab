@@ -1833,7 +1833,6 @@ MonoBehaviour:
   startLocation: []
   isPoweredUp: 0
   enemies: {fileID: 0}
-  cost: 0
   costtext: {fileID: 0}
   Phase1Turns: 0
   Phase2Turns: 0
