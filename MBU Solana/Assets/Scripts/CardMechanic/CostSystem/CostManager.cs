@@ -5,16 +5,24 @@ using TMPro;
 
 public class CostManager : MonoBehaviour
 {
-    public int PlayerCost;
-    // Start is called before the first frame update
-    void Start()
+
+    public static CostManager Instance;
+
+    public int costTotal1;
+    public int costTotal2;
+
+    public void Awake()
     {
-        
+        if (CostManager.Instance == null)
+        {
+            CostManager.Instance = this;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void BuyItem()
     {
-        
+
     }
 }
+

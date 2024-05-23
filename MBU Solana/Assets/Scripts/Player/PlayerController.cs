@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class PlayerController : MonoBehaviour
     //public CustomJoystick joystick;
     private PlayerManager _manager;
     public bool TutorialMove;
+
+ 
 
     void Start()
     {

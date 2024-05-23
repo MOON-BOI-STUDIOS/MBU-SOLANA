@@ -10,7 +10,10 @@ public class CardVizRPS : MonoBehaviour
     public TextMeshProUGUI description;
     public Image art;
 
+
     public RPS co;
+
+
 
 
     private void Start()
@@ -26,8 +29,11 @@ public class CardVizRPS : MonoBehaviour
         title.text = co.cardName;
         description.text = co.description;
         art.sprite = co.art.sprite;
+        
         Debug.Log(art);
 
     }
+
+  
 
 }
