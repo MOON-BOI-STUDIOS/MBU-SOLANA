@@ -11,6 +11,8 @@ public class CostManager : MonoBehaviour
 
     public int Total;
 
+    public bool canBUY;
+
 
     public void Awake()
     {
@@ -28,33 +30,40 @@ public class CostManager : MonoBehaviour
       
     }
 
-   
-
+ 
 
     public void BuyItem(C_Special special)
     {
         Total = Total - special.cost;
+        Debug.Log("Has Brought");
 
         if (special.cost < Total)
         {
             this.enabled = false;
+            canBUY = false;
+            Debug.Log("Not Enough cost");
         }
         else
         {
             this.enabled = true;
+            canBUY = true;
         }
     }
 
     public void shuffle(int amount)
     {
         Total = Total - amount;
-        if(amount < Total)
+        Debug.Log("Has Brought");
+        if (amount < Total)
         {
             this.enabled = false;
+            canBUY = false;
+            Debug.Log("Not Enough cost");
         }
         else
         {
             this.enabled = true;
+            canBUY = true;
         }
     }
 }
