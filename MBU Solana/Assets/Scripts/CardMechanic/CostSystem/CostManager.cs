@@ -28,15 +28,34 @@ public class CostManager : MonoBehaviour
       
     }
 
-  
+   
+
+
     public void BuyItem(C_Special special)
     {
         Total = Total - special.cost;
+
+        if (special.cost < Total)
+        {
+            this.enabled = false;
+        }
+        else
+        {
+            this.enabled = true;
+        }
     }
 
     public void shuffle(int amount)
     {
         Total = Total - amount;
+        if(amount < Total)
+        {
+            this.enabled = false;
+        }
+        else
+        {
+            this.enabled = true;
+        }
     }
 }
 
