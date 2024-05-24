@@ -1505,7 +1505,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4170756980471298698, guid: f548d26c911024aebb968d3bb506cf28, type: 3}
       propertyPath: sceneViewId
-      value: 1
+      value: 606
       objectReference: {fileID: 0}
     - target: {fileID: 7103053432333709803, guid: f548d26c911024aebb968d3bb506cf28, type: 3}
       propertyPath: m_IsActive
@@ -22681,7 +22681,6 @@ GameObject:
   - component: {fileID: 4382410426989119047}
   - component: {fileID: 4382410426989119046}
   - component: {fileID: 4382410426989119045}
-  - component: {fileID: 4382410426989119044}
   - component: {fileID: 4382410426989119048}
   - component: {fileID: 4382410426989119049}
   m_Layer: 0
@@ -22706,47 +22705,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4382410426989119044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4382410426989119041}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da4eb64e2480ab647a8aea5bf743843b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardVizRPs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  cardVizs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  cardVizSpecials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  enemyAttacks:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  enemyBlocks:
-  - {fileID: 0}
-  - {fileID: 0}
-  enemyDefends:
-  - {fileID: 0}
-  - {fileID: 0}
-  cardchoice: 0
-  cardselection: 0
-  shufflebutton: {fileID: 0}
 --- !u!114 &4382410426989119045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22828,6 +22786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Total: 0
+  canBUY: 0
 --- !u!1 &6340856634219620422
 GameObject:
   m_ObjectHideFlags: 0

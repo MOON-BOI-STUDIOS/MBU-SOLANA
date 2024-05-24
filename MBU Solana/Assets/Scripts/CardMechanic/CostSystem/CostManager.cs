@@ -27,7 +27,9 @@ public class CostManager : MonoBehaviour
 
 
         Total = 100;
-      
+        Debug.Log("Has Brought");
+        canBUY = true;
+
     }
 
  
