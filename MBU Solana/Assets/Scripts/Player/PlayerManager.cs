@@ -88,14 +88,14 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
             
             health = MAXHealth;
             Defence = MAX_DEFENCE;
-
+            RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.ViewID, PlayerUI);
             Debug.Log(PhotonRoom.room.playersInRoom);
            
 
         }
         else
         {
-            Destroy(GetComponentInChildren<Camera>().gameObject);
+            //Destroy(GetComponentInChildren<Camera>().gameObject);
             Destroy(rb);
             PlayerUI.DestroyUICanvas();
         }

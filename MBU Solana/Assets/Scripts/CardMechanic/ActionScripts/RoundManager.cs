@@ -34,9 +34,11 @@ public class RoundManager : MonoBehaviourPun
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
 
-    public CardManager CardManager;
+    public GameObject cardManagerPrefab;
 
     private Dictionary<int, PlayerUIManager> playerCanvases = new Dictionary<int, PlayerUIManager>();
+
+    private List<GameObject> CardManagersArray;
 
 
     // Start is called before the first frame update
@@ -88,6 +90,7 @@ public class RoundManager : MonoBehaviourPun
     {
         if (!playerCanvases.ContainsKey(playerId))
         {
+            Debug.Log("Registered");
             playerCanvases.Add(playerId, playerUI);
         }
     }
@@ -139,8 +142,9 @@ public class RoundManager : MonoBehaviourPun
         if (NumberOfPhases == 1)
         {
             Debug.Log("Choose for Phase 1");
+            // Instantiate the CardManager on each client
             // Open Rock Paper Scissor
-            CardManager.openRPS();
+            //CardManager.openRPS();
             //Saving Choices of NPC
             //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase1();
             //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options = (TurnOptions.Phase1Turns)choice;
@@ -150,7 +154,7 @@ public class RoundManager : MonoBehaviourPun
         {
             Debug.Log("Choose for Phase 2");
             //Open Normal Card Selection with choice of Light Attack Heavy Attack and Attack
-            CardManager.OpenNormal();
+            //CardManager.OpenNormal();
             //Saving Choices of NPC
             //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase2();
             //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options = (TurnOptions.PhaseAttackTurns)choice;
@@ -160,11 +164,24 @@ public class RoundManager : MonoBehaviourPun
         {
             Debug.Log("Choose for Phase 3");
             // Open Choice for Double Attack, Block Attack and Other Special Attack
-            CardManager.OpenSpecial();
+            //CardManager.OpenSpecial();
             //Saving Choices of NPC
             //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase3();
             //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options = (TurnOptions.PhaseDefenceTurns)choice;
             //Debug.Log("Enemy Choice:" + (TurnOptions.PhaseDefenceTurns)choice);
+        }
+    }
+
+    private void InstantiateCardManager()
+    {
+        Debug.Log(playerCanvases.Count);
+        // Instantiate the CardManager prefab for each Player
+        foreach (var canvas in playerCanvases.Values)
+        {
+            GameObject cardManager = Instantiate(cardManagerPrefab);
+            CardManagersArray.Add(cardManager);
+      
+            //canvas.SetParentforCards(cardManager);
         }
     }
 
