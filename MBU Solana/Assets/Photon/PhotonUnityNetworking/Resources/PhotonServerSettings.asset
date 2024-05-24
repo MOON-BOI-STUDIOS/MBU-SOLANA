@@ -47,6 +47,9 @@ MonoBehaviour:
   - UpdateHealth
   - RPC_SetSpawnPoint
   - UpdatedUI
+  - CloseForPlayerChoice
+  - OpenForPlayerChoice
+  - StartRoundResultCalculation
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

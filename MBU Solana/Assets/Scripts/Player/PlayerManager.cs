@@ -19,12 +19,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     public float Defence;
     private const float MAX_DEFENCE = 100.0f;
 
-    //Local Player Indicators
-    public Transform DefenceIndicator;
-    public TextMeshProUGUI coinsText;
-    public Transform healthIndicator;
-    public TextMeshProUGUI healthNumber;
-    public GameObject IndicatorUI;
+    private PlayerUIManager PlayerUI;
 
     bool isDead;
     bool isDeadRevive;
@@ -82,6 +77,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         PlayerPrefs.SetInt("MaxHealth", 500);
         photonView = GetComponent<PhotonView>();
         rb = GetComponent<Rigidbody2D>();
+        PlayerUI = GetComponent<PlayerUIManager>();
 
     }
 
@@ -101,7 +97,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         {
             Destroy(GetComponentInChildren<Camera>().gameObject);
             Destroy(rb);
-            Destroy(IndicatorUI);
+            PlayerUI.DestroyUICanvas();
         }
     }
 
@@ -114,14 +110,14 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     void Update()
     {
 
-        //max health taked from PlayerPrefs
+        /*max health taked from PlayerPrefs
         //maxHealth = PlayerPrefs.GetInt("MaxHealth");
         
         /*regenerates health slowly
         if (health <= MAXHealth && !isDead)
         {
             health += 10 * Time.deltaTime;
-        }*/
+        }
 
 
 
@@ -141,7 +137,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         {
             //updates the health bar according to current health
             //DefenceIndicator.localScale = new Vector3(Defence / MAX_DEFENCE, DefenceIndicator.localScale.y, DefenceIndicator.localScale.z);
-        }
+        }*/
     }
 
     void Die()
@@ -163,10 +159,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         // Put the Helath UI here for now for testing
         //OnHealthChanged?.Invoke(health, MAXHealth);
 
-        //updates the health bar according to current health
-        healthIndicator.localScale = new Vector3(health / MAXHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
-        // displays current health in a numerical form
-        healthNumber.text = "Health: " + (int)health + " / " + MAXHealth;
+        PlayerUI.UpdateHealth(health, MAXHealth);
     }
 
     [PunRPC]
@@ -176,8 +169,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         //Put the Defence UI here for now for testing
         //OnDefenceChanged?.Invoke(Defence, MAX_DEFENCE);
 
-        //updates the health bar according to current health
-        DefenceIndicator.localScale = new Vector3(Defence / MAX_DEFENCE, DefenceIndicator.localScale.y, DefenceIndicator.localScale.z);
+        PlayerUI.UpdateDefence(Defence, MAX_DEFENCE);
     }
 
     /*private void OnTriggerEnter2D(Collider2D other)
