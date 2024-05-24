@@ -4,15 +4,25 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class CardVizSpecial : MonoBehaviour
+public class C_Special : MonoBehaviour
 {
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
     public Image art;
+    public int cost;
 
+    public static C_Special Instance;
 
     public SpecialCard cardObject;
 
+
+    public void Awake()
+    {
+        if (C_Special.Instance == null)
+        {
+            C_Special.Instance = this;
+        }
+    }
 
     private void Start()
     {
@@ -24,6 +34,7 @@ public class CardVizSpecial : MonoBehaviour
         title.text = co.cardName;
         description.text = co.description;
         art = co.art;
+        cost = co.cost;
 
 
     }

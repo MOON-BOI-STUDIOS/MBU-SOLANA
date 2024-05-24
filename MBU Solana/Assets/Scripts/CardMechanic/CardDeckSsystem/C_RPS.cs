@@ -4,36 +4,29 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class CardVizRPS : MonoBehaviour
+public class C_RPS : MonoBehaviour
 {
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
     public Image art;
+   
 
 
-    public RPS co;
-
-
+    public RPS cardObject;
 
 
     private void Start()
     {
-        LoadCard();
-        Debug.Log("Working");
-
-
+        LoadCard(cardObject);
     }
-    public void LoadCard() 
+    public void LoadCard(RPS co) 
     {
-        
+        cardObject = co;
         title.text = co.cardName;
         description.text = co.description;
-        art.sprite = co.art.sprite;
-        
-        Debug.Log(art);
+        art = co.art;
+
 
     }
-
-  
 
 }

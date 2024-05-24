@@ -6,13 +6,13 @@ using System.Linq;
 public class CardManager : MonoBehaviour
 {
     [Header("cards")]
-    public CardVizRPS[] cardVizRPs;
+    public C_RPS[] cardVizRPs;
     public CardViz[] cardVizs;
-    public CardVizSpecial[] cardVizSpecials;
+    public C_Special[] cardVizSpecials;
     [Header("Sub special cards")]
-    public CardVizSpecial[] enemyAttacks;
-    public CardVizSpecial[] enemyBlocks;
-    public CardVizSpecial[] enemyDefends;
+    public C_Special[] enemyAttacks;
+    public C_Special[] enemyBlocks;
+    public C_Special[] enemyDefends;
     public cardChoice cardchoice;
     public int cardselection;
     public GameObject shufflebutton;
@@ -71,7 +71,7 @@ public class CardManager : MonoBehaviour
         }
         else if (cardselection == 3)
         {
-            foreach (CardVizSpecial cs in cardVizSpecials)
+            foreach (C_Special cs in cardVizSpecials)
             {
                 cs.gameObject.SetActive(false);
             }
@@ -101,11 +101,11 @@ public class CardManager : MonoBehaviour
                     cv.gameObject.SetActive(true);
                 }
                 //Debug.Log("Open cards");
-                foreach (CardVizRPS c in cardVizRPs)
+                foreach (C_RPS c in cardVizRPs)
                 {
                     c.gameObject.SetActive(false);
                 }
-                foreach (CardVizSpecial cs in cardVizSpecials)
+                foreach (C_Special cs in cardVizSpecials)
                 {
                     cs.gameObject.SetActive(false);
                 }
@@ -114,7 +114,7 @@ public class CardManager : MonoBehaviour
                 break;
             case cardChoice.RPS:
                 //Debug.Log("Open cards");
-                foreach (CardVizRPS c in cardVizRPs)
+                foreach (C_RPS c in cardVizRPs)
                 {
                     c.gameObject.SetActive(true);
                 }
@@ -122,7 +122,7 @@ public class CardManager : MonoBehaviour
                 {
                     cv.gameObject.SetActive(false);
                 }
-                foreach (CardVizSpecial cs in cardVizSpecials)
+                foreach (C_Special cs in cardVizSpecials)
                 {
                     cs.gameObject.SetActive(false);
                 }
@@ -134,7 +134,7 @@ public class CardManager : MonoBehaviour
                 {
                     cv.gameObject.SetActive(false);
                 }
-                foreach (CardVizRPS c in cardVizRPs)
+                foreach (C_RPS c in cardVizRPs)
                 {
                     c.gameObject.SetActive(false);
                 }

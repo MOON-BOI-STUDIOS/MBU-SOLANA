@@ -10,6 +10,7 @@ public class PlayerUIManager : MonoBehaviour
     public Transform healthIndicator;
     public TextMeshProUGUI healthNumber;
     public GameObject IndicatorUI;
+    public TextMeshProUGUI costText;
 
     public void Start()
     {
@@ -21,6 +22,7 @@ public class PlayerUIManager : MonoBehaviour
         //displays number of coins the player has
         if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
         if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
+        costText.text = "Cost:" + CostManager.Instance.Total.ToString();    
     }
 
     public void DestroyUICanvas()

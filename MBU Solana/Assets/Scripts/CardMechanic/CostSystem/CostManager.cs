@@ -9,9 +9,8 @@ public class CostManager : MonoBehaviour
 
     public static CostManager Instance;
 
-    public int playersroom;
+    public int Total;
 
-    public TextMeshProUGUI[] playerScoreText;
 
     public void Awake()
     {
@@ -21,10 +20,23 @@ public class CostManager : MonoBehaviour
         }
     }
 
-
-    public void BuyItem()
+    public void Start()
     {
 
+
+        Total = 100;
+      
+    }
+
+  
+    public void BuyItem(C_Special special)
+    {
+        Total = Total - special.cost;
+    }
+
+    public void shuffle(int amount)
+    {
+        Total = Total - amount;
     }
 }
 
