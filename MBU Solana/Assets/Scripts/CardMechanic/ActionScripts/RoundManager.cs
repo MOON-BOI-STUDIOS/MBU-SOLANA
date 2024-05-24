@@ -3,10 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Photon.Realtime;
+using Photon.Pun;
+using Unity.VisualScripting;
 
-public class RoundManager : MonoBehaviour
+public class RoundManager : MonoBehaviourPun
 {
+    #region Singleton
+
+    public static RoundManager InstRoundManager;
+
+    private void Awake()
+    {
+        if (InstRoundManager == null)
+        {
+            InstRoundManager = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    #endregion
+
     private bool PhaseStart = false;
     private int NumberOfPhases = 0;
     private RoundScript RoundScript;
@@ -16,6 +35,8 @@ public class RoundManager : MonoBehaviour
     public bool timerIsRunning = false;
 
     public CardManager CardManager;
+
+    private Dictionary<int, PlayerUIManager> playerCanvases = new Dictionary<int, PlayerUIManager>();
 
 
     // Start is called before the first frame update
@@ -63,19 +84,29 @@ public class RoundManager : MonoBehaviour
         time.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
+    public void RegisterPlayerCanvas(int playerId, PlayerUIManager playerUI)
+    {
+        if (!playerCanvases.ContainsKey(playerId))
+        {
+            playerCanvases.Add(playerId, playerUI);
+        }
+    }
+
 
     public void OnRoundStart()
     {
-        StartCoroutine(CountDownTimer());
-        NumberOfPhases += 1;
-        OpenForPlayerChoice();
-        PhaseStart = true;
+        if (PhotonNetwork.IsMasterClient)
+        {
+            StartCoroutine(CountDownTimer());
+            NumberOfPhases += 1;
+            OpenForPlayerChoice();
+            PhaseStart = true;
 
-        // Setting the timer
-        timeRemaining = 10;
-        timerIsRunning = true;
-        time.color = Color.green;
-
+            // Setting the timer
+            timeRemaining = 10;
+            timerIsRunning = true;
+            time.color = Color.green;
+        }
     }
 
     IEnumerator CountDownTimer()
@@ -85,19 +116,23 @@ public class RoundManager : MonoBehaviour
 
         if (NumberOfPhases >= 3)
         {
-            StartRoundResultCalculation();
+            photonView.RPC("StartRoundResultCalculation", RpcTarget.All);
+            //StartRoundResultCalculation();
         }
         else if (PhaseStart)
         {
-            CloseForPlayerChoice();
+            photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
+            //CloseForPlayerChoice();
         }
         else
         {
-            OnRoundStart();
+            photonView.RPC("OnRoundStart", RpcTarget.All);
+            //OnRoundStart();
         }
        
     }
 
+    [PunRPC]
     void OpenForPlayerChoice()
     {
         // Enable UI input with Buttons
@@ -107,9 +142,9 @@ public class RoundManager : MonoBehaviour
             // Open Rock Paper Scissor
             CardManager.openRPS();
             //Saving Choices of NPC
-            int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase1();
-            RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options = (TurnOptions.Phase1Turns)choice;
-            Debug.Log("Enemy Choice:" + (TurnOptions.Phase1Turns)choice);
+            //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase1();
+            //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options = (TurnOptions.Phase1Turns)choice;
+            //Debug.Log("Enemy Choice:" + (TurnOptions.Phase1Turns)choice);
         }
         else if (NumberOfPhases == 2)
         {
@@ -117,9 +152,9 @@ public class RoundManager : MonoBehaviour
             //Open Normal Card Selection with choice of Light Attack Heavy Attack and Attack
             CardManager.OpenNormal();
             //Saving Choices of NPC
-            int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase2();
-            RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options = (TurnOptions.PhaseAttackTurns)choice;
-            Debug.Log("Enemy Choice:" + (TurnOptions.PhaseAttackTurns)choice);
+            //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase2();
+            //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options = (TurnOptions.PhaseAttackTurns)choice;
+            //Debug.Log("Enemy Choice:" + (TurnOptions.PhaseAttackTurns)choice);
         }
         else
         {
@@ -127,12 +162,13 @@ public class RoundManager : MonoBehaviour
             // Open Choice for Double Attack, Block Attack and Other Special Attack
             CardManager.OpenSpecial();
             //Saving Choices of NPC
-            int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase3();
-            RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options = (TurnOptions.PhaseDefenceTurns)choice;
-            Debug.Log("Enemy Choice:" + (TurnOptions.PhaseDefenceTurns)choice);
+            //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase3();
+            //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options = (TurnOptions.PhaseDefenceTurns)choice;
+            //Debug.Log("Enemy Choice:" + (TurnOptions.PhaseDefenceTurns)choice);
         }
     }
 
+    [PunRPC]
     void CloseForPlayerChoice()
     {
         Debug.Log("Stop Choosing");
@@ -145,14 +181,15 @@ public class RoundManager : MonoBehaviour
         time.color = Color.red;
     }
 
+    [PunRPC]
     void StartRoundResultCalculation()
     {
         // Shift COntrol to RoundScript for Choice Calculation and Consequences
         RoundScript.OnCalculationOfResult();
-        Debug.Log("Player Health: "+ RoundScript.GetPlayerScript().GetComponent<PlayerManager>().health);
-        Debug.Log("Enemy Health:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().health);
-        Debug.Log("Player Defence:" +RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Defence);
-        Debug.Log("Enemy Defence:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Defence);
+        //Debug.Log("Player Health: "+ RoundScript.GetPlayerScript().GetComponent<PlayerManager>().health);
+        //Debug.Log("Enemy Health:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().health);
+        //Debug.Log("Player Defence:" +RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Defence);
+        //Debug.Log("Enemy Defence:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Defence);
 
     }
 }

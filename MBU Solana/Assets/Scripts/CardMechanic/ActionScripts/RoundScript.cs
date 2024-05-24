@@ -66,15 +66,10 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public void OnCalculationOfResult()
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            //Invoke RPC to handle result calculation on all clients
-            photonView.RPC("HandleResultCalculation", RpcTarget.AllBuffered);
-        }
+        HandleResultCalculation();
     }
 
     // This function is Invoking other functions to calculate the Result
-    [PunRPC]
     void HandleResultCalculation()
     {
         int playerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
