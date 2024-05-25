@@ -9,6 +9,7 @@ public class PlayerCombat : MonoBehaviour
     public float comboTimer = 1;
     public int comboCounter;
     public int numberOfComboHits;
+    float comboInterval;
     public float comboIntervalMax;
     public TextMeshProUGUI comboText;
     public Transform comboIndicatorParent;
@@ -21,36 +22,50 @@ public class PlayerCombat : MonoBehaviour
     void Start()
     {
         _manager = GetComponent<PlayerManager>();
+        comboInterval = comboIntervalMax;
     }
 
     void Update()
     {
-        Mathf.Clamp(comboTimer, 0, 1);
-        comboTimer += comboIntervalMax * Time.deltaTime;
-        if (comboTimer >= 1) comboCounter = 0;
+        // Clamping the comboTimer to ensure it stays within 0 and comboIntervalMax
+        comboTimer = Mathf.Clamp(comboTimer + Time.deltaTime, 0, comboInterval);
 
-        if (comboCounter < 10) comboText.text = "0" + comboCounter.ToString();
-        if (comboCounter >= 10) comboText.text =  comboCounter.ToString();
+        // Reset combo counter if comboTimer exceeds comboIntervalMax
+        if (comboTimer >= comboInterval)
+        {
+            comboCounter = 0;
+            comboTimer = 0;
+        }
 
-        comboIndicatorParent.localScale = new Vector3((float)comboCounter / (float)numberOfComboHits * 1, comboIndicatorParent.localScale.y, comboIndicatorParent.localScale.z);
+        // Update combo text
+        comboText.text = comboCounter.ToString("00");
+
+        // Update combo indicator scale
+        comboIndicatorParent.localScale = new Vector3((float)comboCounter / numberOfComboHits, comboIndicatorParent.localScale.y, comboIndicatorParent.localScale.z);
 
         // PC Controls
 #if UNITY_STANDALONE || UNITY_WEBGL
         if (Input.GetMouseButtonDown(0) && !PaymentInfo.UIActive)
         {
-            OnAttack(); // Renamed method to follow standard naming convention
+            OnAttack(); // Handle the attack input
         }
 #endif
     }
 
-    // Renamed the method to follow standard naming convention
     public void OnAttack()
     {
-        comboTimer = 0;
         _manager._animator.GetComponent<Animator>().SetTrigger("Attack");
+    }
 
-        // Rotate the attack collider based on the last movement direction
-        
+    // New method to be called by the enemy when it is killed
+    public void IncrementCombo()
+    {
+        comboCounter++;
+        comboTimer = 0;
+        comboInterval = comboIntervalMax;
+
+        // Ensure comboCounter doesn't exceed numberOfComboHits
+        comboCounter = Mathf.Clamp(comboCounter, 0, numberOfComboHits);
     }
 
     // Method to move the attack collider based on the last direction

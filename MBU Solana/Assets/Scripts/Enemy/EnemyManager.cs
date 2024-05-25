@@ -42,9 +42,9 @@ public class EnemyManager : MonoBehaviour
             //taking standard sword damage
             if (other.tag == "AttackZone")
             {
-                if (other.transform.parent.parent.GetComponent<PlayerManager>()._combat.comboTimer <= 1)
+                if (other.transform.parent.parent.GetComponent<PlayerManager>()._combat.comboTimer <= other.transform.parent.parent.GetComponent<PlayerManager>()._combat.comboIntervalMax)
                 {
-                    other.transform.parent.parent.GetComponent<PlayerManager>()._combat.comboCounter += 1;
+                    other.transform.parent.parent.GetComponent<PlayerManager>()._combat.IncrementCombo();
                 }
 
                 health -= 30 + PlayerPrefs.GetInt("SwordPower");

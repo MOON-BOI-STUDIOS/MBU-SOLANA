@@ -425,7 +425,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SpecialRight
-  m_Speed: 0.3
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 7077304131795532102}
@@ -1904,7 +1904,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SpecialLeft
-  m_Speed: 0.3
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 132600330134531540}
@@ -2037,9 +2037,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.0053220987
-  m_TransitionOffset: 0
-  m_ExitTime: 0.9810532
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0.0053222245
+  m_ExitTime: 0.9825047
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
