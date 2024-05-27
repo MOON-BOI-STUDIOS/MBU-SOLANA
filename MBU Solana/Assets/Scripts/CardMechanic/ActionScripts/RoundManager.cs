@@ -38,7 +38,7 @@ public class RoundManager : MonoBehaviourPun
 
     private Dictionary<int, PlayerUIManager> playerCanvases = new Dictionary<int, PlayerUIManager>();
 
-    private List<GameObject> CardManagersArray;
+    private List<CardManager> CardManagersArray = new List<CardManager>();
 
 
     // Start is called before the first frame update
@@ -100,16 +100,26 @@ public class RoundManager : MonoBehaviourPun
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            StartCoroutine(CountDownTimer());
-            NumberOfPhases += 1;
-            OpenForPlayerChoice();
-            PhaseStart = true;
-
-            // Setting the timer
-            timeRemaining = 10;
-            timerIsRunning = true;
-            time.color = Color.green;
+            RoundProgressor();   
         }
+    }
+
+    [PunRPC]
+    void RoundProgressor()
+    {
+        if (CardManagersArray.Count <= 0)
+        {
+            InstantiateCardManager();
+        }
+        StartCoroutine(CountDownTimer());
+        NumberOfPhases += 1;
+        OpenForPlayerChoice();
+        PhaseStart = true;
+
+        // Setting the timer
+        timeRemaining = 10;
+        timerIsRunning = true;
+        time.color = Color.green;
     }
 
     IEnumerator CountDownTimer()
@@ -129,7 +139,7 @@ public class RoundManager : MonoBehaviourPun
         }
         else
         {
-            photonView.RPC("OnRoundStart", RpcTarget.All);
+            photonView.RPC("RoundProgressor", RpcTarget.All);
             //OnRoundStart();
         }
        
@@ -142,6 +152,10 @@ public class RoundManager : MonoBehaviourPun
         if (NumberOfPhases == 1)
         {
             Debug.Log("Choose for Phase 1");
+            for (int i = 0; i < CardManagersArray.Count; i++)
+            {
+                CardManagersArray[i].openRPS();
+            }
             // Instantiate the CardManager on each client
             // Open Rock Paper Scissor
             //CardManager.openRPS();
@@ -153,6 +167,10 @@ public class RoundManager : MonoBehaviourPun
         else if (NumberOfPhases == 2)
         {
             Debug.Log("Choose for Phase 2");
+            for (int i = 0; i < CardManagersArray.Count; i++)
+            {
+                CardManagersArray[i].OpenNormal();
+            }
             //Open Normal Card Selection with choice of Light Attack Heavy Attack and Attack
             //CardManager.OpenNormal();
             //Saving Choices of NPC
@@ -163,6 +181,10 @@ public class RoundManager : MonoBehaviourPun
         else
         {
             Debug.Log("Choose for Phase 3");
+            for (int i = 0; i < CardManagersArray.Count; i++)
+            {
+                CardManagersArray[i].OpenSpecial();
+            }
             // Open Choice for Double Attack, Block Attack and Other Special Attack
             //CardManager.OpenSpecial();
             //Saving Choices of NPC
@@ -179,7 +201,14 @@ public class RoundManager : MonoBehaviourPun
         foreach (var canvas in playerCanvases.Values)
         {
             GameObject cardManager = Instantiate(cardManagerPrefab);
-            CardManagersArray.Add(cardManager);
+            if (cardManager != null)
+            {
+                CardManagersArray.Add(cardManager.GetComponent<CardManager>());
+            }
+            else
+            {
+                Debug.Log("cardManager is Null");
+            }
       
             //canvas.SetParentforCards(cardManager);
         }
