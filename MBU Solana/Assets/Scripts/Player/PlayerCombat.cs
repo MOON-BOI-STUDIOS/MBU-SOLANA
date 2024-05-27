@@ -6,7 +6,7 @@ using TMPro;
 public class PlayerCombat : MonoBehaviour
 {
     private PlayerManager _manager;
-    public float comboTimer = 1;
+    public float comboTimer;
     public int comboCounter;
     public int numberOfComboHits;
     float comboInterval;
@@ -85,6 +85,8 @@ public void MoveAttackCollider()
     attackArea.transform.position = transform.position + offset;
 }
 
+
+//Gizmos representation for Dre's basic attack
  void OnDrawGizmos()
     {
         // Get the BoxCollider component
