@@ -252,7 +252,7 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: /Users/vaibhavkatturu/Documents/UnityProjects/Moonboi/Keys/MoonboiGame.keystore
+  AndroidKeystoreName: D:/Downloads G.Chrome/MoonboiGame.keystore
   AndroidKeyaliasName: moonboistudios
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
