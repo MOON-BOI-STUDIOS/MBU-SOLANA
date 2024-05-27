@@ -88,7 +88,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
             
             health = MAXHealth;
             Defence = MAX_DEFENCE;
-            RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.ViewID, PlayerUI);
+            RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.ViewID, PlayerUI, this);
             Debug.Log(PhotonRoom.room.playersInRoom);
            
 

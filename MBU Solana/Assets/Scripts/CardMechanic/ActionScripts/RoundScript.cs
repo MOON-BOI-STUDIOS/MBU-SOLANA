@@ -19,7 +19,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
     void Start()
     {
 
-        FindPlayers();
+        //FindPlayers();
         // Add If statement if locally controlled find the Player manager of the Owner and get a referenc of the Script
         //playerManagerScript = GameObject.FindGameObjectWithTag("Player");
         //get the Enemy in case of single player and incase of multiplayer get the other player
@@ -30,28 +30,55 @@ public class RoundScript : MonoBehaviourPunCallbacks
         phase = GetComponent<PhaseSpecialAbilityOptions>();
     }
 
-    private void FindPlayers()
+    public void FindPlayers(PlayerManager player)
     {
-        GameObject[] PlayerObjects =  GameObject.FindGameObjectsWithTag("Player"); //FindGameObjectWithTag("Player");
-        for (int i = 0; i < PlayerObjects.Length; i++)
+        /*if (PhotonNetwork.IsMasterClient)
         {
-            if (PlayerObjects[i].GetComponent<PlayerManager>().IsLocalPlayer())
+            GameObject[] PlayerObjects = GameObject.FindGameObjectsWithTag("Player"); //FindGameObjectWithTag("Player");
+            Debug.Log(PlayerObjects.Length);
+            for (int i = 0; i < PlayerObjects.Length; i++)
             {
-                playerManagerScript = PlayerObjects[i].GetComponent<PlayerManager>();
+                if (PlayerObjects[i].GetComponent<PlayerManager>().IsLocalPlayer())
+                {
+                    playerManagerScript = PlayerObjects[i].GetComponent<PlayerManager>();
+                }
+                else
+                {
+                    enemyManagerScript = PlayerObjects[i].GetComponent<PlayerManager>();
+                }
+            }
+
+            if (playerManagerScript == null && enemyManagerScript == null)
+            {
+                Debug.Log("Failed to find both local Player Manager Script and Enemy's same");
             }
             else
             {
-                enemyManagerScript = PlayerObjects[i].GetComponent<PlayerManager>();
+                Debug.Log("Found required Scripts");
             }
+        }*/
+
+        //Setting the Player Manager and the Enemy Manager Script 
+        if (player != null && player.IsLocalPlayer())
+        {
+            playerManagerScript = player;
+        }
+        else if(player != null && !player.IsLocalPlayer())
+        {
+            enemyManagerScript = player;
         }
 
+        // Check if the PlayerManager is not null 
         if (playerManagerScript == null && enemyManagerScript == null)
         {
             Debug.Log("Failed to find both local Player Manager Script and Enemy's same");
         }
-        else {
-            Debug.Log("Founf required Scripts");
+        else
+        {
+            Debug.Log("Found required Scripts");
         }
+
+
     }
 
     public PlayerManager GetPlayerScript()

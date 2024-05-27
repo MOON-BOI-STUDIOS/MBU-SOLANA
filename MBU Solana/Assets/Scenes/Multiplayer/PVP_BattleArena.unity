@@ -2045,6 +2045,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1721298274}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &199089302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7785,19 +7797,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa7cc583abe54d32bd7a5dc528fe3d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1718240335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4382410426989119041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd0a50db39c24fe29cc2a913806dccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roundScript: {fileID: 1718240333}
 --- !u!1 &1721298274
 GameObject:
   m_ObjectHideFlags: 0
@@ -21636,15 +21635,13 @@ GameObject:
   - component: {fileID: 1718240331}
   - component: {fileID: 1718240332}
   - component: {fileID: 1718240333}
-  - component: {fileID: 1718240335}
   - component: {fileID: 4382410426989119047}
   - component: {fileID: 4382410426989119046}
   - component: {fileID: 4382410426989119045}
   - component: {fileID: 4382410426989119048}
-  - component: {fileID: 4382410426989119049}
   m_Layer: 0
   m_Name: CardManager
-  m_TagString: Untagged
+  m_TagString: Multiplayer_manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21732,20 +21729,6 @@ MonoBehaviour:
   sceneViewId: 2
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &4382410426989119049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4382410426989119041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45a9111eb0671ba4599cc331ed5296b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Total: 0
-  canBUY: 0
 --- !u!1 &6340856634219620422
 GameObject:
   m_ObjectHideFlags: 0

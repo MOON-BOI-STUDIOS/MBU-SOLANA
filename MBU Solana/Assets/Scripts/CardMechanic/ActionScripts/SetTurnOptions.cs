@@ -5,11 +5,16 @@ using Photon.Pun;
 
 public class SetTurnOptions : MonoBehaviour
 {
-    public RoundScript roundScript;
+    private RoundScript roundScript;
+
+    private void Start()
+    {
+        roundScript = GameObject.FindGameObjectWithTag("Multiplayer_manager").GetComponent<RoundScript>();
+    }
 
     public void OnChosenRock()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null)
         {
             roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Rock;
         }
@@ -17,7 +22,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenPaper()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null)
         {
             roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Paper;
         }
@@ -25,7 +30,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenScissor()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null)
         {
             roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Scissor;
         }
@@ -33,7 +38,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenAttack()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null )
         {
             roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.Attack;
         }
@@ -41,7 +46,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenLightAttack()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.LightAttack;
         }
@@ -49,7 +54,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenHeavyAttack()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.HeavyAttack;
         }
@@ -57,7 +62,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenDoubleAttack()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.DoubleAttack;
         }
@@ -65,7 +70,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenBlockAttack()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.BlockAttack;
         }
@@ -73,7 +78,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenPlayerIncreaseDamage()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage;
         }
@@ -81,7 +86,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenDecreaseEnemyAttack()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack;
         }
@@ -89,7 +94,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenHealPortionOfHealth()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.HealPortionOfHealth;
         }
@@ -97,7 +102,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenHealMaxHealth()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.HealMaxHealth;
         }
@@ -105,7 +110,7 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenEnemyDefenceReducedNextRound()
     {
-        if (roundScript != null && PhotonNetwork.IsMasterClient)
+        if (roundScript != null  )
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound;
         }

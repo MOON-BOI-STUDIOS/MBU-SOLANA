@@ -39,7 +39,7 @@ public class CostManager : MonoBehaviour
         Total = Total - special.cost;
         Debug.Log("Has Brought");
 
-        if (special.cost < Total)
+        if (special.cost > Total)
         {
             this.enabled = false;
             canBUY = false;
@@ -56,7 +56,7 @@ public class CostManager : MonoBehaviour
     {
         Total = Total - amount;
         Debug.Log("Has Brought");
-        if (amount < Total)
+        if (amount > Total)
         {
             this.enabled = false;
             canBUY = false;

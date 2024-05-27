@@ -20,9 +20,12 @@ public class PlayerUIManager : MonoBehaviour
     private void Update()
     {
         //displays number of coins the player has
-        if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
-        if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
-        costText.text = "Cost:" + CostManager.Instance.Total.ToString();    
+        //if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
+        //if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
+        if (CostManager.Instance != null)
+        {
+            costText.text = "Cost:" + CostManager.Instance.Total.ToString();
+        }
     }
 
     public void DestroyUICanvas()

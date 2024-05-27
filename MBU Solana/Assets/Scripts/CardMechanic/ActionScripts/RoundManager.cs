@@ -86,12 +86,13 @@ public class RoundManager : MonoBehaviourPun
         time.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    public void RegisterPlayerCanvas(int playerId, PlayerUIManager playerUI)
+    public void RegisterPlayerCanvas(int playerId, PlayerUIManager playerUI, PlayerManager playerManager)
     {
         if (!playerCanvases.ContainsKey(playerId))
         {
             Debug.Log("Registered");
             playerCanvases.Add(playerId, playerUI);
+            RoundScript.FindPlayers(playerManager);
         }
     }
 
