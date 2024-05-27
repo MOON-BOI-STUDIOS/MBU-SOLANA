@@ -37,6 +37,7 @@ public class CostManager : MonoBehaviour
     public void BuyItem(C_Special special)
     {
         Total = Total - special.cost;
+        Debug.Log(Total);
         Debug.Log("Has Brought");
 
         if (special.cost > Total)

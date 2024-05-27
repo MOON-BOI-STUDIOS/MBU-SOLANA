@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbf3d09cb3ab09b4e832d854c57cdc32, type: 3}
-  m_Name: Deal Double Damage
+  m_Name: Deal double Damage
   m_EditorClassIdentifier: 
   cardName: Deal Double Damage
   art: {fileID: 0}
   description: 
-  cost: 0
+  cost: 10
   Rarity: 0
   ID_SpecialAction: 0
   cardType: 2
