@@ -9,6 +9,20 @@ using Photon.Pun;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject StartGameButton;
+
+    private void Start()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            StartGameButton.SetActive(true);
+        }
+        else
+        {
+            Destroy(StartGameButton);
+        }
+    }
+    /*
     //public Transform player;
     public TextMeshProUGUI coins, swordLevel, specialLevel, maxHealth, fishesUI, roundIndicator;
 
@@ -29,7 +43,7 @@ public class UIManager : MonoBehaviour
     // Getting the Local Player's Player Manager
     private PlayerManager _player;
 
-    /*private void Awake()
+    private void Awake()
     {
          _player =  RoundScript.GetPlayerScript();
         Debug.Log(_player);

@@ -3163,17 +3163,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480656282}
   m_CullTransparentMesh: 1
---- !u!114 &542954681 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000368204684607, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &566979034
 GameObject:
   m_ObjectHideFlags: 0
@@ -4756,17 +4745,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812411841}
   m_CullTransparentMesh: 1
---- !u!114 &826253205 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000368753845482, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &866110514
 GameObject:
   m_ObjectHideFlags: 0
@@ -6939,17 +6917,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488678849}
   m_CullTransparentMesh: 1
---- !u!114 &1507612388 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000368047298976, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1507659871
 GameObject:
   m_ObjectHideFlags: 0
@@ -7243,17 +7210,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539417021}
   m_CullTransparentMesh: 1
---- !u!114 &1542827844 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000366844508483, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1572019822
 GameObject:
   m_ObjectHideFlags: 0
@@ -7596,17 +7552,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628267088}
   m_CullTransparentMesh: 1
---- !u!114 &1662919219 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000367032442267, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1693982660
 GameObject:
   m_ObjectHideFlags: 0
@@ -8641,11 +8586,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1969755763}
   m_CullTransparentMesh: 1
---- !u!1 &1970818169 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4912000367396938247, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1970818170 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4912000367396938246, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
@@ -9489,63 +9429,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134037201}
   m_CullTransparentMesh: 1
---- !u!4 &248699827886117719
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248699827886117721}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 718.47595, y: 174.86975, z: 11.923826}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3531403341474482990}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &248699827886117720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 248699827886117721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e483a0570ba4340a6ac894b3a064a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coins: {fileID: 248699828704088381}
-  swordLevel: {fileID: 248699829330386766}
-  specialLevel: {fileID: 248699829137014421}
-  maxHealth: {fileID: 248699829003283057}
-  fishesUI: {fileID: 248699829739849382}
-  roundIndicator: {fileID: 248699828748482887}
-  DefenceIndicator: {fileID: 0}
-  coinsText: {fileID: 0}
-  healthIndicator: {fileID: 0}
-  healthNumber: {fileID: 0}
-  panel: {fileID: 0}
-  debugger: 0
-  RoundScript: {fileID: 1718240333}
---- !u!1 &248699827886117721
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 248699827886117719}
-  - component: {fileID: 248699827886117720}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
 --- !u!224 &248699827893075080
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9668,7 +9551,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 248699827886117720}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: upgradeSpecial
         m_Mode: 1
@@ -10692,7 +10575,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 248699827886117720}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: upgradeHealth
         m_Mode: 1
@@ -11335,7 +11218,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3531403341474482990}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &248699828517402180
 MonoBehaviour:
@@ -12275,6 +12158,7 @@ GameObject:
   - component: {fileID: 248699828764633065}
   - component: {fileID: 248699828764633066}
   - component: {fileID: 248699828764633069}
+  - component: {fileID: 248699828764633070}
   m_Layer: 5
   m_Name: UI - Arena
   m_TagString: Untagged
@@ -12294,19 +12178,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e483a0570ba4340a6ac894b3a064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: {fileID: 1662919219}
-  swordLevel: {fileID: 1542827844}
-  specialLevel: {fileID: 826253205}
-  maxHealth: {fileID: 1507612388}
-  fishesUI: {fileID: 542954681}
-  roundIndicator: {fileID: 248699828748482887}
-  DefenceIndicator: {fileID: 0}
-  coinsText: {fileID: 0}
-  healthIndicator: {fileID: 0}
-  healthNumber: {fileID: 0}
-  panel: {fileID: 1970818169}
-  debugger: 0
-  RoundScript: {fileID: 0}
+  StartGameButton: {fileID: 199089299}
+--- !u!114 &248699828764633070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248699828764633068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 10
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!222 &248699828765284569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17171,7 +17065,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 248699827886117720}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: eatFish
         m_Mode: 1
@@ -18692,7 +18586,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3531403341474482990}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &248699829641253686
 AudioSource:
@@ -19861,7 +19755,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 248699827886117720}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: upgradeSword
         m_Mode: 1
@@ -21616,7 +21510,6 @@ Transform:
   - {fileID: 248699828363390034}
   - {fileID: 248699829710051870}
   - {fileID: 248699829550042027}
-  - {fileID: 248699827886117719}
   - {fileID: 248699829641253685}
   - {fileID: 248699828517402179}
   m_Father: {fileID: 0}

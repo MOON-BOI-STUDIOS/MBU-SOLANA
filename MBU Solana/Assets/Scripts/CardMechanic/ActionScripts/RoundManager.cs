@@ -101,6 +101,7 @@ public class RoundManager : MonoBehaviourPun
     {
         if (PhotonNetwork.IsMasterClient)
         {
+            InstantiateCardManager();
             RoundProgressor();   
         }
     }
@@ -108,10 +109,6 @@ public class RoundManager : MonoBehaviourPun
     [PunRPC]
     void RoundProgressor()
     {
-        if (CardManagersArray.Count <= 0)
-        {
-            InstantiateCardManager();
-        }
         StartCoroutine(CountDownTimer());
         NumberOfPhases += 1;
         OpenForPlayerChoice();
@@ -195,6 +192,7 @@ public class RoundManager : MonoBehaviourPun
         }
     }
 
+    [PunRPC]
     private void InstantiateCardManager()
     {
         Debug.Log(playerCanvases.Count);
