@@ -97,7 +97,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         {
             //Destroy(GetComponentInChildren<Camera>().gameObject);
             Destroy(rb);
-            PlayerUI.DestroyUICanvas();
+            //PlayerUI.DestroyUICanvas();
         }
     }
 
