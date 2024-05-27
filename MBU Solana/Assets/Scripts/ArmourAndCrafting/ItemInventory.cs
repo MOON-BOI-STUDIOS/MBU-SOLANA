@@ -62,8 +62,19 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
         }
     }
 
-    public void AddItem(Items items)
+    public void AddItem(Items items, int defaultInstanceNum = 0)
     {
+        int UniqueInstance = PlayerPrefs.GetInt("InstanceNumber");
+        if (defaultInstanceNum == 0)
+        {
+            UniqueInstance += 1;
+            items.InstanceNum = UniqueInstance;
+            PlayerPrefs.SetInt("InstanceNumber", UniqueInstance);
+            Debug.Log("Instance Number:" + PlayerPrefs.GetInt("InstanceNumber"));
+            PlayerPrefs.Save();
+        }
+        items.InstanceNum = defaultInstanceNum;
+        Debug.Log("Existing instance Number:" + items.InstanceNum);
         inventoryItemList.Add(items);
         // Add item to the Dictionary
         AddItemToDict(items);
@@ -258,6 +269,7 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
         for(int i = 0;i < inventoryItemList.Count;i++)
         {
             int idx = inventoryItemList[i].itemNumber;
+            int instNum = inventoryItemList[i].InstanceNum;
             int baitValue = -1;
             if(idx >= 0)
             {
@@ -266,13 +278,15 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
                     BaitItemObjj queryItem = (BaitItemObjj)inventoryItemList[i];
                     baitValue = queryItem.GetbaitValue();
                 }
-                data.savedData.Add(new ItemData(idx,baitValue));
+                Debug.Log("Instance number going to be saved" + instNum);
+                data.savedData.Add(new ItemData(idx,baitValue,instNum));
             }
         }
         // Save hotbar items if any
         for(int i = 0;i < hotbarItemList.Count;i++)
         {
             int idx = hotbarItemList[i].itemNumber;
+            int instNum = inventoryItemList[i].InstanceNum;
             int baitValue = -1;
             if(idx >= 0)
             {
@@ -281,7 +295,7 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
                     BaitItemObjj queryItem = (BaitItemObjj)hotbarItemList[i];
                     baitValue = queryItem.GetbaitValue();
                 }
-                data.savedData.Add(new ItemData(idx,baitValue));
+                data.savedData.Add(new ItemData(idx,baitValue,instNum));
             }
         }
     }

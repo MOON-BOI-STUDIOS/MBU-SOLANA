@@ -19,10 +19,12 @@ public struct ItemData
 {
     public int itemListIndex;
     public int depletivebait;
+    public int instanceNum;
 
-    public ItemData(int index = 0, int bait = 0, int _count = 0)
+    public ItemData(int index = 0, int bait = 0, int instNum = 0)
     {
         this.itemListIndex = index;
         this.depletivebait = bait;
+        this.instanceNum = instNum;
     }
 }
