@@ -201,6 +201,8 @@ public class RoundManager : MonoBehaviourPun
         foreach (var canvas in playerCanvases.Values)
         {
             GameObject cardManager = Instantiate(cardManagerPrefab);
+            cardManager.transform.SetParent(canvas.transform, false);
+
             if (cardManager != null)
             {
                 CardManagersArray.Add(cardManager.GetComponent<CardManager>());
