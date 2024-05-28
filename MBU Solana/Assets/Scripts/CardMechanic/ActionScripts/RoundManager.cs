@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using Photon.Pun;
 using Unity.VisualScripting;
+using System.IO;
 
 public class RoundManager : MonoBehaviourPun
 {
@@ -199,7 +200,7 @@ public class RoundManager : MonoBehaviourPun
         // Instantiate the CardManager prefab for each Player
         foreach (var canvas in playerCanvases.Values)
         {
-            GameObject cardManager = Instantiate(cardManagerPrefab);
+            GameObject cardManager = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Card prefabs"), Vector3.zero, Quaternion.identity); //Instantiate(cardManagerPrefab);
             cardManager.transform.SetParent(canvas.transform, false);
 
             if (cardManager != null)
