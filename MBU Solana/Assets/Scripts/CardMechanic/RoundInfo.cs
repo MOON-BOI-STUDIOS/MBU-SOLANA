@@ -56,6 +56,7 @@ public class RoundInfo : MonoBehaviourPunCallbacks
     if(pv.IsMine)
     {
 
+        Time.timeScale = 0;
         screen.SetActive(true);
         plph1.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
        plph2.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
