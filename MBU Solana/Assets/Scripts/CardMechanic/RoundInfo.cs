@@ -2,14 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
+using  Photon.Realtime;
 
-public class RoundInfo : MonoBehaviour
+public class RoundInfo : MonoBehaviourPunCallbacks
 {
     private GameObject playerManagerScript;
     private GameObject enemyManagerScript;
     private RoundScript RoundScript;
 
     public TextMeshProUGUI enemyph1, enemyph2, enemyph3, plph1, plph2, plph3;
+
+    private PhotonView pv;
+
+    public GameObject screen;
+
+    public static RoundInfo RI;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +29,7 @@ public class RoundInfo : MonoBehaviour
         playerManagerScript = GameObject.FindGameObjectWithTag("Player");
         //get the Enemy in case of single player and incase of multiplayer get the other player
         enemyManagerScript = GameObject.FindGameObjectWithTag("Enemy");
+         pv = GetComponent<PhotonView>();
 
        
     }
@@ -26,12 +37,35 @@ public class RoundInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*// Player choice of Phase1, 
-      enemyph1.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
-      enemyph2.text =  RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
-      enemyph3.text =  RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
+        
+        // Player choice of Phase1, 
+     // enemyph1.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
+     // enemyph2.text =  RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
+      //enemyph3.text =  RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
 
         //Enemy choice of Phase1
-       plph1.text = RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options.ToString();*/
+
+      // plph1.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
+      // plph2.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
+       //plph3.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
     }
+
+ [PunRPC]
+ public void updatedUI()
+ {
+    if(pv.IsMine)
+    {
+
+        screen.SetActive(true);
+        plph1.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
+       plph2.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
+       plph3.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
+        enemyph1.text = RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options.ToString();
+      enemyph2.text =  RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options.ToString();
+      enemyph3.text =  RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options.ToString();
+
+    }
+
+ }
+
 }

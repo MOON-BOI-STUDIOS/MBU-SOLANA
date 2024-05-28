@@ -251,6 +251,7 @@ public class RoundManager : MonoBehaviourPun
     {
         // Shift COntrol to RoundScript for Choice Calculation and Consequences
         RoundScript.OnCalculationOfResult();
+        photonView.RPC("updatedUI",RpcTarget.All);
         //Debug.Log("Player Health: "+ RoundScript.GetPlayerScript().GetComponent<PlayerManager>().health);
         //Debug.Log("Enemy Health:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().health);
         //Debug.Log("Player Defence:" +RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Defence);
