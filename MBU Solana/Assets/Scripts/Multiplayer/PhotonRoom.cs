@@ -111,6 +111,19 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
             }
         }
 
+           if (PhotonNetwork.IsMasterClient)
+            {
+            if(playersInRoom  ==  2)
+            {
+                startButton.SetActive(true);
+            }
+          
+        }
+        else
+        {
+            startButton.SetActive(false);
+        }
+
 
     }
 
@@ -129,18 +142,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
         Debug.Log("in room");
         lobbyGO.SetActive(false);
         RoomGO.SetActive(true);
-        if (PhotonNetwork.IsMasterClient)
-        {
-            if(playersInRoom < 2)
-            {
-                startButton.SetActive(true);
-            }
-          
-        }
-        else
-        {
-            startButton.SetActive(false);
-        }
+     
 
         ClearPlayerListing();
         ListPlayers();
