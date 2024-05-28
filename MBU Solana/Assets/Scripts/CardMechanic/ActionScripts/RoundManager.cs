@@ -102,8 +102,8 @@ public class RoundManager : MonoBehaviourPun
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            InstantiateCardManager();
-            RoundProgressor();   
+            photonView.RPC("InstantiateCardManager", RpcTarget.All);
+            photonView.RPC("RoundProgressor", RpcTarget.All); 
         }
     }
 
@@ -112,7 +112,7 @@ public class RoundManager : MonoBehaviourPun
     {
         StartCoroutine(CountDownTimer());
         NumberOfPhases += 1;
-        OpenForPlayerChoice();
+        photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
         PhaseStart = true;
 
         // Setting the timer
@@ -197,7 +197,24 @@ public class RoundManager : MonoBehaviourPun
     private void InstantiateCardManager()
     {
         Debug.Log(playerCanvases.Count);
-        // Instantiate the CardManager prefab for each Player
+
+        GameObject cardManager = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Card prefabs"), Vector3.zero, Quaternion.identity); //Instantiate(cardManagerPrefab);
+        int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
+        if (playerCanvases.ContainsKey(playerId))
+        {
+            cardManager.transform.SetParent(playerCanvases[playerId].transform, false);
+        }
+        
+        if (cardManager != null)
+        {
+            CardManagersArray.Add(cardManager.GetComponent<CardManager>());
+        }
+        else
+        {
+            Debug.Log("cardManager is Null");
+        }
+
+        /*Instantiate the CardManager prefab for each Player
         foreach (var canvas in playerCanvases.Values)
         {
             GameObject cardManager = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Card prefabs"), Vector3.zero, Quaternion.identity); //Instantiate(cardManagerPrefab);
@@ -213,7 +230,7 @@ public class RoundManager : MonoBehaviourPun
             }
       
             //canvas.SetParentforCards(cardManager);
-        }
+        }*/
     }
 
     [PunRPC]
