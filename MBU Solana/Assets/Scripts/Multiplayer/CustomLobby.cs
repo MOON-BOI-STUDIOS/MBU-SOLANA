@@ -34,6 +34,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         // Populate the dropdown with region options
         regionDropdown.ClearOptions();
         regionDropdown.AddOptions(new List<string>(regions));
+         RemoveRoomListing();
     }
 
     public override void OnConnectedToMaster()
@@ -41,7 +42,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         Debug.Log("Player has connected to photon master server");
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = "Player" + Random.Range(0, 1000);
-        PhotonNetwork.JoinLobby();
+       // PhotonNetwork.JoinLobby();
 
 
     }
