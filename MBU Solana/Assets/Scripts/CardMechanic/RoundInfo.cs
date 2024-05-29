@@ -19,6 +19,8 @@ public class RoundInfo : MonoBehaviourPunCallbacks
 
     public static RoundInfo RI;
 
+   
+
     
 
     // Start is called before the first frame update
@@ -29,7 +31,8 @@ public class RoundInfo : MonoBehaviourPunCallbacks
         playerManagerScript = GameObject.FindGameObjectWithTag("Player");
         //get the Enemy in case of single player and incase of multiplayer get the other player
         enemyManagerScript = GameObject.FindGameObjectWithTag("Enemy");
-         pv = GetComponent<PhotonView>();
+        pv = GetComponent<PhotonView>();
+        RI = this;
 
        
     }
