@@ -100,10 +100,11 @@ public class RoundManager : MonoBehaviourPun
         if (PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("InstantiateCardManager", RpcTarget.All);// Instantiates cards 
-            RoundProgressor(); // Progresses the round
+            photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
         }
     }
 
+    [PunRPC]
     void RoundProgressor()
     {
         NumberOfPhases += 1;
@@ -149,16 +150,15 @@ public class RoundManager : MonoBehaviourPun
     {
         if (NumberOfPhases >= 3 && PhotonNetwork.IsMasterClient)
         {
-            Debug.Log("Calling Start Round Result Calculation");
             photonView.RPC("StartRoundResultCalculation", RpcTarget.All);
         }
         else if (PhaseStart && PhotonNetwork.IsMasterClient)
         {
-            CloseForPlayerChoice();
+            photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
         }
         else if(PhotonNetwork.IsMasterClient)
         {
-            RoundProgressor();
+            photonView.RPC("RoundProgressor", RpcTarget.All);
         }
     }
 
@@ -210,6 +210,7 @@ public class RoundManager : MonoBehaviourPun
         TimerObject.SetActive(true);
     }
 
+    [PunRPC]
     void CloseForPlayerChoice()
     {
         Debug.Log("Stop Choosing");
@@ -236,9 +237,6 @@ public class RoundManager : MonoBehaviourPun
             //photonView.RPC("updatedUI", RpcTarget.All);
         }*/
         //photonView.RPC("updatedUI",RpcTarget.All);
-
-        // Calling the Transcript
         RoundInfo.RI.updatedUI();
-
     }
 }
