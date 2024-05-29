@@ -153,10 +153,7 @@ public class RoundManager : MonoBehaviourPun
         }
 
         // Timer finished, notify all clients
-        if (PhotonNetwork.IsMasterClient)
-        {
-            photonView.RPC("EndGame", RpcTarget.All);
-        }
+        photonView.RPC("EndGame", RpcTarget.All);
     }
 
     [PunRPC]
