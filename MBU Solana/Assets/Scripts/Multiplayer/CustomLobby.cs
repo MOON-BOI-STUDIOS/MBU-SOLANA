@@ -199,7 +199,11 @@ public class CustomLobby : MonoBehaviourPunCallbacks
             yield return null;
        lobbygo.SetActive(true);
        roomgo.SetActive(false);
+       if(PhotonRoom.room.playersInRoom <1)
+       {
         CustomLobby.lobby.RemoveRoomListing();
+       }
+        
         yield return new  WaitForSeconds(3f);
         PhotonNetwork.ConnectUsingSettings();
         
