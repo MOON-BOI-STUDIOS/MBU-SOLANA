@@ -111,7 +111,18 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
             }
         }
 
-      
+           if (PhotonNetwork.IsMasterClient)
+            {
+            if(playersInRoom  ==  2)
+            {
+                startButton.SetActive(true);
+            }
+          
+        }
+        else
+        {
+            startButton.SetActive(false);
+        }
 
 
     }

@@ -1776,18 +1776,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1721298274}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!114 &199089302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17489,6 +17477,7 @@ MonoBehaviour:
   timeRemaining: 10
   timerIsRunning: 0
   cardManagerPrefab: {fileID: 2489264153883970338, guid: f548d26c911024aebb968d3bb506cf28, type: 3}
+  TimerObject: {fileID: 1721298274}
 --- !u!114 &4382410426989119046
 MonoBehaviour:
   m_ObjectHideFlags: 0

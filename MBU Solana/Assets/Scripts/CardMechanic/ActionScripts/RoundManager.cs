@@ -44,6 +44,8 @@ public class RoundManager : MonoBehaviourPun
     private float gameDuration = 10f; // Duration of the game in seconds
     private float startTime;
 
+    public GameObject TimerObject;
+
 
     // Start is called before the first frame update
     void Start()
@@ -249,6 +251,9 @@ public class RoundManager : MonoBehaviourPun
         {
             Debug.Log("cardManager is Null");
         }
+
+        //Turning on the Gameobject for timer as true. Doing it here as this function is only triggered once
+        TimerObject.SetActive(true);
 
         /*Instantiate the CardManager prefab for each Player
         foreach (var canvas in playerCanvases.Values)
