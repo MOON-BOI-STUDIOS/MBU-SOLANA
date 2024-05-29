@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class CustomLobby : MonoBehaviourPunCallbacks
 {
     public static CustomLobby lobby;
@@ -184,6 +185,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         StartCoroutine(changepanel());
          Debug.Log("Left Room");
          Debug.Log(PhotonRoom.room.playersInRoom);
+           Destroy(PhotonRoom.room.gameObject);
 
 
     }
@@ -192,20 +194,19 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     {
 
           PhotonNetwork.Disconnect();
+         
 
         //while(PhotonNetwork.IsConnected)
         while (PhotonNetwork.InRoom)
 
             yield return null;
-       lobbygo.SetActive(true);
-       roomgo.SetActive(false);
+  
        if(PhotonRoom.room.playersInRoom <1)
        {
         CustomLobby.lobby.RemoveRoomListing();
        }
-        
-        yield return new  WaitForSeconds(3f);
-        PhotonNetwork.ConnectUsingSettings();
+        SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
+      
         
 
     }
