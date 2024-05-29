@@ -29,7 +29,12 @@ public class CustomLobby : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        PhotonNetwork.ConnectUsingSettings(); //  connect to masters photon server
+
+        if (!PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.ConnectUsingSettings(); //  connect to masters photon server
+            OnConnectedToMaster();
+        }
         roomlistings = new List<RoomInfo>();
         string playerRegion = PhotonNetwork.CloudRegion;
         Debug.Log("Player Region" + playerRegion);
@@ -38,6 +43,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         regionDropdown.ClearOptions();
         regionDropdown.AddOptions(new List<string>(regions));
          RemoveRoomListing();
+         
     }
 
     public override void OnConnectedToMaster()
@@ -218,6 +224,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
        {
         CustomLobby.lobby.RemoveRoomListing();
        }
+        PhotonNetwork.ConnectUsingSettings(); //  connect to masters photon server
         SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
       
         

@@ -157,6 +157,13 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
         }
     }
 
+    public override void OnLeftRoom()
+    {
+        base.OnLeftRoom();
+          SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
+           PhotonNetwork.Disconnect();
+    }
+
 
     public void ListPlayers()
     {
@@ -239,7 +246,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
     private void CreatePlayer()
     {
         // creates player network controller but not player character
-        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "photonNetworkPlayer"), transform.position, Quaternion.identity,0);
+        PhotonNetwork.InstantiateRoomObject(Path.Combine("PhotonPrefabs", "photonNetworkPlayer"), transform.position, Quaternion.identity,0);
     }
 
     [PunRPC]  
@@ -250,5 +257,13 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
         {
             pv.RPC("CreatePlayer", RpcTarget.All);
         }
+    }
+
+    public override void OnPlayerLeftRoom(Player otherPlayer)
+    {
+        base.OnPlayerLeftRoom(otherPlayer);
+
+        Debug.Log(otherPlayer.NickName + "has left the game");
+        PlayersInGame--;
     }
 }

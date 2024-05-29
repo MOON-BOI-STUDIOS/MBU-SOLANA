@@ -84,13 +84,14 @@ public class GameSetUP : MonoBehaviour
     {
 
         PhotonNetwork.Disconnect();
+        //PhotonNetwork.LeaveRoom();
 
         //while(PhotonNetwork.IsConnected)
         while (PhotonNetwork.InRoom)
 
             yield return null;
         SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
-        CustomLobby.lobby.RemoveRoomListing();
+         
 
 
 
