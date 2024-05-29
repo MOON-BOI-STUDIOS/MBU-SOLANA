@@ -32,8 +32,6 @@ public class CostManager : MonoBehaviour
 
     }
 
- 
-
     public void BuyItem(C_Special special)
     {
         Total = Total - special.cost;

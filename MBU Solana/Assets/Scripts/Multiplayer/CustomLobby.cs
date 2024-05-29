@@ -18,6 +18,8 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     private string[] regions = { "us", "eu", "asia", "jp", "au", "sa", "in"}; // Example region codes
     public Button rlp;
 
+    public GameObject lobbygo,roomgo;
+
     private void Awake()
     {
         lobby = this; // creates the singleton, lives within the main menu scene
@@ -176,5 +178,31 @@ public class CustomLobby : MonoBehaviourPunCallbacks
             PhotonNetwork.JoinLobby();
         }
     }
+
+    public void disconnect()
+    {
+        StartCoroutine(changepanel());
+
+    }
+
+    public IEnumerator changepanel()
+    {
+
+          PhotonNetwork.Disconnect();
+
+        //while(PhotonNetwork.IsConnected)
+        while (PhotonNetwork.InRoom)
+
+            yield return null;
+       lobbygo.SetActive(true);
+       roomgo.SetActive(false);
+        CustomLobby.lobby.RemoveRoomListing();
+        yield return new  WaitForSeconds(3f);
+        PhotonNetwork.ConnectUsingSettings();
+        
+
+    }
+
+   
 
 }
