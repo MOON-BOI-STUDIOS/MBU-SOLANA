@@ -113,7 +113,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
 
            if (PhotonNetwork.IsMasterClient)
             {
-            if(playersInRoom  ==  1)
+            if(playersInRoom  ==  2)
             {
                 startButton.SetActive(true);
             }
