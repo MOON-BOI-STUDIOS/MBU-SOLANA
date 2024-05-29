@@ -51,14 +51,6 @@ public class RoundManager : MonoBehaviourPun
     void Start()
     {
         RoundScript = GetComponent<RoundScript>();
-
-        // Player choice of Phase1, 
-        //RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
-        //RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
-        //RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
-
-        // Enemy choice of Phase1
-        //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options.ToString();
     }
 
     // Update is called once per frame
@@ -117,23 +109,20 @@ public class RoundManager : MonoBehaviourPun
     {
         NumberOfPhases += 1;
         Debug.Log("Number pf Phases:" + NumberOfPhases);
-        photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
+        }
         PhaseStart = true;
         gameDuration = 10f;
         time.color = Color.green;
 
         //Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
-        photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
-
-        // Setting the timer
-        //timeRemaining = 10;
-        //timerIsRunning = true;
-
-        
+        //photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
+        StartGameTimer(masterStartTime);
     }
 
-    [PunRPC]
     public void StartGameTimer(float masterStartTime)
     {
         startTime = masterStartTime;
@@ -153,26 +142,26 @@ public class RoundManager : MonoBehaviourPun
         }
 
         // Timer finished, notify all clients
-        photonView.RPC("EndGame", RpcTarget.All);
+        if (PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("EndGame", RpcTarget.All);
+        }
     }
 
     [PunRPC]
     private void EndGame()
     {
-        if (NumberOfPhases >= 3)
+        if (NumberOfPhases >= 3 && PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("StartRoundResultCalculation", RpcTarget.All);
-            //StartRoundResultCalculation();
         }
-        else if (PhaseStart)
+        else if (PhaseStart && PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
-            //CloseForPlayerChoice();
         }
-        else
+        else if(PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("RoundProgressor", RpcTarget.All);
-            //OnRoundStart();
         }
     }
 
@@ -185,37 +174,17 @@ public class RoundManager : MonoBehaviourPun
             Debug.Log("Choose for Phase 1");
 
             CardManagersObject.openRPS();
-            // Instantiate the CardManager on each client
-            // Open Rock Paper Scissor
-            //CardManager.openRPS();
-            //Saving Choices of NPC
-            //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase1();
-            //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options = (TurnOptions.Phase1Turns)choice;
-            //Debug.Log("Enemy Choice:" + (TurnOptions.Phase1Turns)choice);
         }
         else if (NumberOfPhases == 2)
         {
             Debug.Log("Choose for Phase 2");
 
             CardManagersObject.OpenNormal();
-
-            //Open Normal Card Selection with choice of Light Attack Heavy Attack and Attack
-            //CardManager.OpenNormal();
-            //Saving Choices of NPC
-            //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase2();
-            //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options = (TurnOptions.PhaseAttackTurns)choice;
-            //Debug.Log("Enemy Choice:" + (TurnOptions.PhaseAttackTurns)choice);
         }
         else
         {
             Debug.Log("Choose for Phase 3");
             CardManagersObject.OpenSpecial();
-            // Open Choice for Double Attack, Block Attack and Other Special Attack
-            //CardManager.OpenSpecial();
-            //Saving Choices of NPC
-            //int choice = RoundScript.GetEnemyScript().GetComponent<NPCScript>().ChoiceForPhase3();
-            //RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options = (TurnOptions.PhaseDefenceTurns)choice;
-            //Debug.Log("Enemy Choice:" + (TurnOptions.PhaseDefenceTurns)choice);
         }
     }
 
@@ -242,24 +211,6 @@ public class RoundManager : MonoBehaviourPun
 
         //Turning on the Gameobject for timer as true. Doing it here as this function is only triggered once
         TimerObject.SetActive(true);
-
-        /*Instantiate the CardManager prefab for each Player
-        foreach (var canvas in playerCanvases.Values)
-        {
-            GameObject cardManager = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Card prefabs"), Vector3.zero, Quaternion.identity); //Instantiate(cardManagerPrefab);
-            cardManager.transform.SetParent(canvas.transform, false);
-
-            if (cardManager != null)
-            {
-                CardManagersObject.Add(cardManager.GetComponent<CardManager>());
-            }
-            else
-            {
-                Debug.Log("cardManager is Null");
-            }
-      
-            //canvas.SetParentforCards(cardManager);
-        }*/
     }
 
     [PunRPC]
@@ -268,17 +219,13 @@ public class RoundManager : MonoBehaviourPun
         Debug.Log("Stop Choosing");
         // Disable Ui input with Buttons
         PhaseStart = false;
-        //StartCoroutine(CountDownTimer());
-
-        // Timers
-        //timeRemaining = 10;
-        //timerIsRunning = true;
         gameDuration = 10f;
         time.color = Color.red;
 
         //Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
-        photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
+        //photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
+        StartGameTimer(masterStartTime);
     }
 
     [PunRPC]
@@ -288,12 +235,9 @@ public class RoundManager : MonoBehaviourPun
         if (PhotonNetwork.IsMasterClient)
         {
             RoundScript.OnCalculationOfResult();
+            photonView.RPC("updatedUI", RpcTarget.All);
         }
-        photonView.RPC("updatedUI",RpcTarget.All);
-        //Debug.Log("Player Health: "+ RoundScript.GetPlayerScript().GetComponent<PlayerManager>().health);
-        //Debug.Log("Enemy Health:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().health);
-        //Debug.Log("Player Defence:" +RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Defence);
-        //Debug.Log("Enemy Defence:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Defence);
+        //photonView.RPC("updatedUI",RpcTarget.All);
 
     }
 }
