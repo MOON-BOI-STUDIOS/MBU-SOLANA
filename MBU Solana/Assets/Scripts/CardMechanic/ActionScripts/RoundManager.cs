@@ -235,7 +235,7 @@ public class RoundManager : MonoBehaviourPun
         if (PhotonNetwork.IsMasterClient)
         {
             RoundScript.OnCalculationOfResult();
-            photonView.RPC("updatedUI", RpcTarget.All);
+            //photonView.RPC("updatedUI", RpcTarget.All);
         }
         //photonView.RPC("updatedUI",RpcTarget.All);
 
