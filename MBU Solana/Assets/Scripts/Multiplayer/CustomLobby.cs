@@ -182,6 +182,9 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public void disconnect()
     {
         StartCoroutine(changepanel());
+         Debug.Log("Left Room");
+         Debug.Log(PhotonRoom.room.playersInRoom);
+
 
     }
 
