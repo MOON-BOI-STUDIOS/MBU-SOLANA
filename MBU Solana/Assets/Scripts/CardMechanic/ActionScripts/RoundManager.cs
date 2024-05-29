@@ -109,10 +109,6 @@ public class RoundManager : MonoBehaviourPun
         {
             photonView.RPC("InstantiateCardManager", RpcTarget.All);// Instantiates cards 
             photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
-
-            //Start Time
-            float masterStartTime = (float)PhotonNetwork.Time;
-            photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
         }
     }
 
@@ -298,7 +294,10 @@ public class RoundManager : MonoBehaviourPun
     void StartRoundResultCalculation()
     {
         // Shift COntrol to RoundScript for Choice Calculation and Consequences
-        RoundScript.OnCalculationOfResult();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            RoundScript.OnCalculationOfResult();
+        }
         photonView.RPC("updatedUI",RpcTarget.All);
         //Debug.Log("Player Health: "+ RoundScript.GetPlayerScript().GetComponent<PlayerManager>().health);
         //Debug.Log("Enemy Health:" + RoundScript.GetEnemyScript().GetComponent<PlayerManager>().health);
