@@ -192,6 +192,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     {
 
           PhotonNetwork.Disconnect();
+          PhotonNetwork.LeaveRoom();
 
         //while(PhotonNetwork.IsConnected)
         while (PhotonNetwork.InRoom)
