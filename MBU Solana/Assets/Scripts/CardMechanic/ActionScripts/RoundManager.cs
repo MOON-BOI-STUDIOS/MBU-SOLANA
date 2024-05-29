@@ -39,7 +39,7 @@ public class RoundManager : MonoBehaviourPun
 
     private Dictionary<int, PlayerUIManager> playerCanvases = new Dictionary<int, PlayerUIManager>();
 
-    private List<CardManager> CardManagersArray = new List<CardManager>();
+    private CardManager CardManagersObject;
 
     private float gameDuration = 10f; // Duration of the game in seconds
     private float startTime;
@@ -183,10 +183,8 @@ public class RoundManager : MonoBehaviourPun
         if (NumberOfPhases == 1)
         {
             Debug.Log("Choose for Phase 1");
-            for (int i = 0; i < CardManagersArray.Count; i++)
-            {
-                CardManagersArray[i].openRPS();
-            }
+
+            CardManagersObject.openRPS();
             // Instantiate the CardManager on each client
             // Open Rock Paper Scissor
             //CardManager.openRPS();
@@ -198,10 +196,9 @@ public class RoundManager : MonoBehaviourPun
         else if (NumberOfPhases == 2)
         {
             Debug.Log("Choose for Phase 2");
-            for (int i = 0; i < CardManagersArray.Count; i++)
-            {
-                CardManagersArray[i].OpenNormal();
-            }
+
+            CardManagersObject.OpenNormal();
+
             //Open Normal Card Selection with choice of Light Attack Heavy Attack and Attack
             //CardManager.OpenNormal();
             //Saving Choices of NPC
@@ -212,10 +209,7 @@ public class RoundManager : MonoBehaviourPun
         else
         {
             Debug.Log("Choose for Phase 3");
-            for (int i = 0; i < CardManagersArray.Count; i++)
-            {
-                CardManagersArray[i].OpenSpecial();
-            }
+            CardManagersObject.OpenSpecial();
             // Open Choice for Double Attack, Block Attack and Other Special Attack
             //CardManager.OpenSpecial();
             //Saving Choices of NPC
@@ -239,7 +233,7 @@ public class RoundManager : MonoBehaviourPun
         
         if (cardManager != null)
         {
-            CardManagersArray.Add(cardManager.GetComponent<CardManager>());
+            CardManagersObject = cardManager.GetComponent<CardManager>();
         }
         else
         {
@@ -257,7 +251,7 @@ public class RoundManager : MonoBehaviourPun
 
             if (cardManager != null)
             {
-                CardManagersArray.Add(cardManager.GetComponent<CardManager>());
+                CardManagersObject.Add(cardManager.GetComponent<CardManager>());
             }
             else
             {
