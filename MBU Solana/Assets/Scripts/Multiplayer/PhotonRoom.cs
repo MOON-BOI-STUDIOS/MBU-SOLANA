@@ -32,7 +32,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
     private float atmaxPlayers;
     private float timeToStart;
 
-    public GameObject lobbyGO, RoomGO,playerListingPrefab,startButton;
+    public GameObject lobbyGO, RoomGO,playerListingPrefab;
     public Transform playerPanel;
 
 
@@ -111,19 +111,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
             }
         }
 
-           if (PhotonNetwork.IsMasterClient)
-            {
-            if(playersInRoom  ==  2)
-            {
-                startButton.SetActive(true);
-            }
-          
-        }
-        else
-        {
-            startButton.SetActive(false);
-        }
-
+       
 
     }
 
