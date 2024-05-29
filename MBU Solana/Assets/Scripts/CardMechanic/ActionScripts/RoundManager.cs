@@ -120,6 +120,7 @@ public class RoundManager : MonoBehaviourPun
     void RoundProgressor()
     {
         NumberOfPhases += 1;
+        Debug.Log("Number pf Phases:" + NumberOfPhases);
         photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
         PhaseStart = true;
         gameDuration = 10f;
