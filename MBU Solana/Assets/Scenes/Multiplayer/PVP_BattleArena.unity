@@ -5671,6 +5671,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 401484579178574044, guid: 4bcbe538bc9a42e49b4135055b370b2c, type: 3}
+      propertyPath: m_text
+      value: 'Disconnect
+
+'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bcbe538bc9a42e49b4135055b370b2c, type: 3}
 --- !u!1 &1427812247 stripped
