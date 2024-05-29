@@ -41,6 +41,9 @@ public class RoundManager : MonoBehaviourPun
 
     private List<CardManager> CardManagersArray = new List<CardManager>();
 
+    private float gameDuration = 10f; // Duration of the game in seconds
+    private float startTime;
+
 
     // Start is called before the first frame update
     void Start()
@@ -102,30 +105,64 @@ public class RoundManager : MonoBehaviourPun
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            photonView.RPC("InstantiateCardManager", RpcTarget.All);
-            photonView.RPC("RoundProgressor", RpcTarget.All); 
+            photonView.RPC("InstantiateCardManager", RpcTarget.All);// Instantiates cards 
+            photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
+
+            //Start Time
+            float masterStartTime = (float)PhotonNetwork.Time;
+            photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
         }
     }
 
     [PunRPC]
     void RoundProgressor()
     {
-        StartCoroutine(CountDownTimer());
         NumberOfPhases += 1;
         photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
         PhaseStart = true;
+        gameDuration = 10f;
+        time.color = Color.green;
+
+        //Start Time
+        float masterStartTime = (float)PhotonNetwork.Time;
+        photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
 
         // Setting the timer
-        timeRemaining = 10;
-        timerIsRunning = true;
-        time.color = Color.green;
+        //timeRemaining = 10;
+        //timerIsRunning = true;
+
+        
+    }
+
+    [PunRPC]
+    public void StartGameTimer(float masterStartTime)
+    {
+        startTime = masterStartTime;
+        StartCoroutine(CountDownTimer());
     }
 
     IEnumerator CountDownTimer()
     {
-        timerIsRunning = true;
-        yield return new WaitForSeconds(10.0f);
+        float elapsedTime = 0f;
 
+        while (elapsedTime < gameDuration)
+        {
+            elapsedTime = (float)(PhotonNetwork.Time - startTime);
+            float remainingTime = Mathf.Max(gameDuration - elapsedTime, 0);
+            DisplayTime(remainingTime);
+            yield return null;
+        }
+
+        // Timer finished, notify all clients
+        if (PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("EndGame", RpcTarget.All);
+        }
+    }
+
+    [PunRPC]
+    private void EndGame()
+    {
         if (NumberOfPhases >= 3)
         {
             photonView.RPC("StartRoundResultCalculation", RpcTarget.All);
@@ -141,7 +178,6 @@ public class RoundManager : MonoBehaviourPun
             photonView.RPC("RoundProgressor", RpcTarget.All);
             //OnRoundStart();
         }
-       
     }
 
     [PunRPC]
@@ -239,11 +275,17 @@ public class RoundManager : MonoBehaviourPun
         Debug.Log("Stop Choosing");
         // Disable Ui input with Buttons
         PhaseStart = false;
-        StartCoroutine(CountDownTimer());
+        //StartCoroutine(CountDownTimer());
+
         // Timers
-        timeRemaining = 10;
-        timerIsRunning = true;
+        //timeRemaining = 10;
+        //timerIsRunning = true;
+        gameDuration = 10f;
         time.color = Color.red;
+
+        //Start Time
+        float masterStartTime = (float)PhotonNetwork.Time;
+        photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
     }
 
     [PunRPC]
