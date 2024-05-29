@@ -3066,6 +3066,7 @@ MonoBehaviour:
   rlp: {fileID: 2692797080706736994, guid: 0fabd98ebf4a9414f92bd033deb5db32, type: 3}
   lobbygo: {fileID: 85038543}
   roomgo: {fileID: 253559231}
+  StartGame: {fileID: 386854407}
 --- !u!1 &1283411169
 GameObject:
   m_ObjectHideFlags: 0
