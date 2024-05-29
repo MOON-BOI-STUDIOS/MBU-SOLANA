@@ -246,7 +246,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
     private void CreatePlayer()
     {
         // creates player network controller but not player character
-        PhotonNetwork.InstantiateRoomObject(Path.Combine("PhotonPrefabs", "photonNetworkPlayer"), transform.position, Quaternion.identity,0);
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "photonNetworkPlayer"), transform.position, Quaternion.identity,0);
     }
 
     [PunRPC]  
