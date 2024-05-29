@@ -231,6 +231,7 @@ public class RoundManager : MonoBehaviourPun
     [PunRPC]
     void StartRoundResultCalculation()
     {
+        Debug.Log("Round End");
         // Shift COntrol to RoundScript for Choice Calculation and Consequences
         if (PhotonNetwork.IsMasterClient)
         {
