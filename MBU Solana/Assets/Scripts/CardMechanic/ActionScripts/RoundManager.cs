@@ -100,11 +100,10 @@ public class RoundManager : MonoBehaviourPun
         if (PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("InstantiateCardManager", RpcTarget.All);// Instantiates cards 
-            photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
+            RoundProgressor(); // Progresses the round
         }
     }
 
-    [PunRPC]
     void RoundProgressor()
     {
         NumberOfPhases += 1;
@@ -142,26 +141,24 @@ public class RoundManager : MonoBehaviourPun
         }
 
         // Timer finished, notify all clients
-        if (PhotonNetwork.IsMasterClient)
-        {
-            photonView.RPC("EndGame", RpcTarget.All);
-        }
+        EndGame();
+
     }
 
-    [PunRPC]
     private void EndGame()
     {
         if (NumberOfPhases >= 3 && PhotonNetwork.IsMasterClient)
         {
+            Debug.Log("Calling Start Round Result Calculation");
             photonView.RPC("StartRoundResultCalculation", RpcTarget.All);
         }
         else if (PhaseStart && PhotonNetwork.IsMasterClient)
         {
-            photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
+            CloseForPlayerChoice();
         }
         else if(PhotonNetwork.IsMasterClient)
         {
-            photonView.RPC("RoundProgressor", RpcTarget.All);
+            RoundProgressor();
         }
     }
 
@@ -213,7 +210,6 @@ public class RoundManager : MonoBehaviourPun
         TimerObject.SetActive(true);
     }
 
-    [PunRPC]
     void CloseForPlayerChoice()
     {
         Debug.Log("Stop Choosing");
@@ -232,13 +228,17 @@ public class RoundManager : MonoBehaviourPun
     void StartRoundResultCalculation()
     {
         Debug.Log("Round End");
+        TimerObject.SetActive(false);
         // Shift COntrol to RoundScript for Choice Calculation and Consequences
-        if (PhotonNetwork.IsMasterClient)
+        /*if (PhotonNetwork.IsMasterClient)
         {
             RoundScript.OnCalculationOfResult();
             //photonView.RPC("updatedUI", RpcTarget.All);
-        }
+        }*/
         //photonView.RPC("updatedUI",RpcTarget.All);
+
+        // Calling the Transcript
+        RoundInfo.RI.updatedUI();
 
     }
 }

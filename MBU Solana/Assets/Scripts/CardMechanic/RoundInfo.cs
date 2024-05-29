@@ -50,7 +50,6 @@ public class RoundInfo : MonoBehaviourPunCallbacks
        //plph3.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
     }
 
- [PunRPC]
  public void updatedUI()
  {
     if(pv.IsMine)
