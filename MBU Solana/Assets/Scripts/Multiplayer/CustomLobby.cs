@@ -19,7 +19,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     private string[] regions = { "us", "eu", "asia", "jp", "au", "sa", "in"}; // Example region codes
     public Button rlp;
 
-    public GameObject lobbygo,roomgo;
+    public GameObject lobbygo,roomgo,StartGame;
 
     private void Awake()
     {
@@ -113,6 +113,19 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         else
         {
             rlp.interactable = true;
+        }
+
+             if (PhotonNetwork.IsMasterClient)
+            {
+            if(PhotonRoom.room.playersInRoom  ==  2)
+            {
+                StartGame.SetActive(true);
+            }
+          
+        }
+        else
+        {
+            StartGame.SetActive(false);
         }
     }
 
