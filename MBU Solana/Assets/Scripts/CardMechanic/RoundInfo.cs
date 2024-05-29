@@ -53,22 +53,16 @@ public class RoundInfo : MonoBehaviourPunCallbacks
        //plph3.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
     }
 
- public void updatedUI()
- {
-    if(pv.IsMine)
-    {
-
+     public void updatedUI()
+     {
         Time.timeScale = 0;
         screen.SetActive(true);
         plph1.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase1Options.ToString();
-       plph2.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
-       plph3.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
+        plph2.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase2Options.ToString();
+        plph3.text = RoundScript.GetPlayerScript().GetComponent<PlayerManager>().Phase3Options.ToString();
         enemyph1.text = RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase1Options.ToString();
-      enemyph2.text =  RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options.ToString();
-      enemyph3.text =  RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options.ToString();
-
-    }
-
- }
+        enemyph2.text =  RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase2Options.ToString();
+        enemyph3.text =  RoundScript.GetEnemyScript().GetComponent<PlayerManager>().Phase3Options.ToString();
+     }
 
 }

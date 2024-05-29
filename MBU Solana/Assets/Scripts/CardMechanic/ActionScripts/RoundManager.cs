@@ -237,6 +237,7 @@ public class RoundManager : MonoBehaviourPun
             //photonView.RPC("updatedUI", RpcTarget.All);
         }*/
         //photonView.RPC("updatedUI",RpcTarget.All);
-        RoundInfo.RI.updatedUI();
+
+        
     }
 }
