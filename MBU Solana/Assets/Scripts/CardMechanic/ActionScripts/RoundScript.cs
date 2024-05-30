@@ -13,6 +13,8 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     PhaseSpecialAbilityOptions phase;
 
+    private PhotonView pv;
+
 
 
     // Start is called before the first frame update
@@ -28,7 +30,10 @@ public class RoundScript : MonoBehaviourPunCallbacks
         turnOptionsMethods = GetComponent<ITurnOptionsMethods>();
         // For Phase Logic
         phase = GetComponent<PhaseSpecialAbilityOptions>();
+        pv = GetComponent<PhotonView>();
+
     }
+
 
     public void FindPlayers(PlayerManager player)
     {
@@ -95,14 +100,17 @@ public class RoundScript : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            HandleResultCalculation();
+            pv.RPC("HandleResultCalculation", RpcTarget.All);
+            //HandleResultCalculation();
         }
     }
 
+    [PunRPC]
     // This function is Invoking other functions to calculate the Result
-    void HandleResultCalculation()
+    public void HandleResultCalculation()
     {
-        if (playerManagerScript != null && enemyManagerScript != null)
+        Debug.Log("This is working in both Players");
+        /*if (playerManagerScript != null && enemyManagerScript != null)
         {
             int playerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
             // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
@@ -127,7 +135,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
                 // For Phase 2 and 3 Attacks of Enemy
                 phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
             }
-        }
+        }*/
 
         // This will happen for 3 rounds
         //Call OnRoundStart Once again

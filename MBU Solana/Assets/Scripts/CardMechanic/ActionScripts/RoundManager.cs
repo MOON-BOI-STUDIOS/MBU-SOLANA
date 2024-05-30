@@ -233,14 +233,7 @@ public class RoundManager : MonoBehaviourPun
     {
         Debug.Log("Round End");
         TimerObject.SetActive(false);
-        // Shift COntrol to RoundScript for Choice Calculation and Consequences
-        /*if (PhotonNetwork.IsMasterClient)
-        {
-            RoundScript.OnCalculationOfResult();
-            //photonView.RPC("updatedUI", RpcTarget.All);
-        }*/
-        //photonView.RPC("updatedUI",RpcTarget.All);
-
+        RoundScript.OnCalculationOfResult();
         
     }
 }
