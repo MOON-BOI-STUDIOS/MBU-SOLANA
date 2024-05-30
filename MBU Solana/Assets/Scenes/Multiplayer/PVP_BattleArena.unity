@@ -17476,8 +17476,15 @@ MonoBehaviour:
   time: {fileID: 141328154}
   timeRemaining: 10
   timerIsRunning: 0
-  cardManagerPrefab: {fileID: 2489264153883970338, guid: f548d26c911024aebb968d3bb506cf28, type: 3}
+  cardManagerPrefab: {fileID: 9118166675790550648, guid: f548d26c911024aebb968d3bb506cf28, type: 3}
   TimerObject: {fileID: 1721298274}
+  enemyph1: {fileID: 1539417023}
+  enemyph2: {fileID: 1419974126}
+  enemyph3: {fileID: 14964994}
+  plph1: {fileID: 1789861748}
+  plph2: {fileID: 1969755765}
+  plph3: {fileID: 228577089}
+  screen: {fileID: 248699829957622594}
 --- !u!114 &4382410426989119046
 MonoBehaviour:
   m_ObjectHideFlags: 0
