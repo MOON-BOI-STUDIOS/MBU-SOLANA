@@ -330,8 +330,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delayStart: 0
   maxPlayers: 2
-  menuScene: 8
-  mulitplayerScene: 9
+  menuScene: 0
+  mulitplayerScene: 1
 --- !u!4 &144036302
 Transform:
   m_ObjectHideFlags: 0
@@ -1608,7 +1608,6 @@ MonoBehaviour:
   lobbyGO: {fileID: 85038543}
   RoomGO: {fileID: 253559231}
   playerListingPrefab: {fileID: 462785640609745103, guid: 450712fe33b991d479ecf72fbe0b0a80, type: 3}
-  startButton: {fileID: 386854407}
   playerPanel: {fileID: 396663834}
 --- !u!4 &648265535
 Transform:

@@ -88,9 +88,12 @@ public class RoundManager : MonoBehaviourPun
     {
         if (!playerCanvases.ContainsKey(playerId))
         {
-            Debug.Log("Registered");
+            Debug.Log("Registered with player ID: " + playerId);
             playerCanvases.Add(playerId, playerUI);
-            RoundScript.FindPlayers(playerManager);
+            if (PhotonNetwork.IsMasterClient)
+            {
+                RoundScript.FindPlayers(playerManager);
+            }
         }
     }
 

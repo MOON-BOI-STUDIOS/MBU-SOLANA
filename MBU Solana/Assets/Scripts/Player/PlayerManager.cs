@@ -7,6 +7,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 using Photon.Pun;
+using Photon.Pun.Demo.PunBasics;
 
 public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
 {
@@ -88,7 +89,8 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
             
             health = MAXHealth;
             Defence = MAX_DEFENCE;
-            RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.ViewID, PlayerUI, this);
+            RegisterPlayer();
+            //RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.ViewID, PlayerUI, this);
             Debug.Log(PhotonRoom.room.playersInRoom);
            
 
@@ -99,6 +101,22 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
             Destroy(rb);
             //PlayerUI.DestroyUICanvas();
         }
+    }
+
+    public void RegisterPlayer()
+    {
+        int playerId = photonView.OwnerActorNr;
+        RoundManager.InstRoundManager.RegisterPlayerCanvas(playerId, PlayerUI, this);
+        if (!PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("NotifyMasterClientOfRegistration", RpcTarget.MasterClient, playerId);
+        }
+    }
+
+    [PunRPC]
+    void NotifyMasterClientOfRegistration(int playerId)
+    {
+        RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.ViewID, PlayerUI, this);
     }
 
     public bool IsLocalPlayer()

@@ -55,6 +55,8 @@ MonoBehaviour:
   - updatedUI
   - EndGame
   - StartGameTimer
+  - Phase2Result
+  - NotifyMasterClientOfRegistration
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

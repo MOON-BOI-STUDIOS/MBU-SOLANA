@@ -73,7 +73,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
         {
             Debug.Log("Failed to find both local Player Manager Script and Enemy's same");
         }
-        else
+        else if(playerManagerScript != null && enemyManagerScript != null)
         {
             Debug.Log("Found required Scripts");
         }
@@ -93,34 +93,40 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public void OnCalculationOfResult()
     {
-        HandleResultCalculation();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            HandleResultCalculation();
+        }
     }
 
     // This function is Invoking other functions to calculate the Result
     void HandleResultCalculation()
     {
-        int playerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
-        // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
-        if (playerNumber == 2)
+        if (playerManagerScript != null && enemyManagerScript != null)
         {
-            // For Phase 2 and 3 Attacks of player
-            phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);// Check the Definition of PhaseOptions
-            // For Phase 2 and 3 Attacks of Enemy
-            phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);// true is used to call both the phases
-        }
-        else if (playerNumber == 0)
-        {
-            // For Phase 2 and 3 Attacks of player
-            phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);
-            // For only Phase 2 Attack
-            phase.PhaseOptions(enemyManagerScript, playerManagerScript, false);
-        }
-        else if (playerNumber == 1)
-        {
-            // For only Phase 2 Attack
-            phase.PhaseOptions(playerManagerScript, enemyManagerScript, false);
-            // For Phase 2 and 3 Attacks of Enemy
-            phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
+            int playerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
+            // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
+            if (playerNumber == 2)
+            {
+                // For Phase 2 and 3 Attacks of player
+                phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);// Check the Definition of PhaseOptions
+                                                                                  // For Phase 2 and 3 Attacks of Enemy
+                phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);// true is used to call both the phases
+            }
+            else if (playerNumber == 0)
+            {
+                // For Phase 2 and 3 Attacks of player
+                phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);
+                // For only Phase 2 Attack
+                phase.PhaseOptions(enemyManagerScript, playerManagerScript, false);
+            }
+            else if (playerNumber == 1)
+            {
+                // For only Phase 2 Attack
+                phase.PhaseOptions(playerManagerScript, enemyManagerScript, false);
+                // For Phase 2 and 3 Attacks of Enemy
+                phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
+            }
         }
 
         // This will happen for 3 rounds

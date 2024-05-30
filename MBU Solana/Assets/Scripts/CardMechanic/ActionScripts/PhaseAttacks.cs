@@ -1,12 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PhaseAttacks : MonoBehaviour
 {
+    private PhotonView pv;
+    private void Start()
+    {
+        pv = GetComponent<PhotonView>();
+    }
     public virtual void PhaseOptions(PlayerManager Selector, PlayerManager OtherPlayer, bool bothPhases)
     {
-        TurnOptions.PhaseAttackTurns PhaseAttackTurns = Selector.Phase2Options;
+        if (pv.IsMine)
+        {
+            PlayerManager[] players = { Selector, OtherPlayer };
+            pv.RPC("Phase2Result", RpcTarget.Others, players);
+        }
+    }
+
+    [PunRPC]
+    void Phase2Result(PlayerManager[] players)
+    {
+        /*TurnOptions.PhaseAttackTurns PhaseAttackTurns = players[0].Phase2Options;
         switch (PhaseAttackTurns)
         {
             case TurnOptions.PhaseAttackTurns.Attack:
@@ -21,6 +37,6 @@ public class PhaseAttacks : MonoBehaviour
                 OtherPlayer.OnChangeHealth(40, false);
                 break;
 
-        }
+        }*/
     }
 }
