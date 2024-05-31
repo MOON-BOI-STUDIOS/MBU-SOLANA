@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
+
 
 public class CardManager : MonoBehaviour
 {
@@ -16,6 +18,9 @@ public class CardManager : MonoBehaviour
     public cardChoice cardchoice;
     public int cardselection;
     public GameObject shufflebutton;
+    
+    public Button[] allCards;
+    
 
 
 
@@ -146,9 +151,30 @@ public class CardManager : MonoBehaviour
                 break;
         }
 
-        
+        if(RoundManager.InstRoundManager.isCoolDown == true)
+        {
+            for(int i = 0; i < allCards.Length; i++ )
+            {
+                allCards[i].interactable = false;
+
+            }
+
+        }
+        else if(RoundManager.InstRoundManager.isCoolDown == false)
+        {
+            for(int i = 0; i < allCards.Length; i++ )
+            {
+                allCards[i].interactable = true;
+
+            }
+
+            
+
+        }
         
     }
+
+   
 }
 
 public enum cardChoice
