@@ -7,7 +7,7 @@ using Photon.Pun;
 public class RoundScript : MonoBehaviourPunCallbacks
 {
     //private PlayerManager playerManagerScript;
-    //private PlayerManager enemyManagerScript;
+    private PlayerManager enemyManagerScript;
 
     public ITurnOptionsMethods turnOptionsMethods;
 
@@ -90,6 +90,11 @@ public class RoundScript : MonoBehaviourPunCallbacks
         {
             playerDict.Add(playerId, player);
         }
+
+        if (player != null && !player.IsLocalPlayer())
+        {
+            enemyManagerScript = player;
+        }
     }
 
     public PlayerManager GetPlayerScript()
@@ -104,13 +109,18 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public PlayerManager GetEnemyScript()
     {
-        // This will only work if there are only two players
+        /* This will only work if there are only two players
         int playerId = PhotonNetwork.PlayerListOthers[0].ActorNumber;
         if (playerDict.ContainsKey(playerId))
         {
             return playerDict[playerId];
         }
 
+        return null;*/
+        if (enemyManagerScript != null)
+        {
+            return enemyManagerScript;
+        }
         return null;
     }
 

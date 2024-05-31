@@ -251,7 +251,7 @@ public class RoundManager : MonoBehaviourPun
         RoundScript.OnCalculationOfResult();
         Time.timeScale = 0;
         screen.SetActive(true);
-        if (RoundScript != null && RoundScript.GetPlayerScript() != null)
+        if (RoundScript != null && RoundScript.GetPlayerScript() != null && RoundScript.GetEnemyScript() != null)
         {
             Debug.Log("This is called");
             plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
