@@ -6,14 +6,16 @@ using Photon.Pun;
 
 public class RoundScript : MonoBehaviourPunCallbacks
 {
-    private PlayerManager playerManagerScript;
-    private PlayerManager enemyManagerScript;
+    //private PlayerManager playerManagerScript;
+    //private PlayerManager enemyManagerScript;
 
     public ITurnOptionsMethods turnOptionsMethods;
 
     PhaseSpecialAbilityOptions phase;
 
     private PhotonView pv;
+
+    private Dictionary<int, PlayerManager> playerDict = new Dictionary<int, PlayerManager>();
 
 
 
@@ -33,7 +35,6 @@ public class RoundScript : MonoBehaviourPunCallbacks
         pv = GetComponent<PhotonView>();
 
     }
-
 
     public void FindPlayers(PlayerManager player)
     {
@@ -61,11 +62,13 @@ public class RoundScript : MonoBehaviourPunCallbacks
             {
                 Debug.Log("Found required Scripts");
             }
-        }*/
+        }
 
         //Setting the Player Manager and the Enemy Manager Script 
         if (player != null && player.IsLocalPlayer())
         {
+            int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
+            playerDict.Add(playerId)
             playerManagerScript = player;
         }
         else if(player != null && !player.IsLocalPlayer())
@@ -81,20 +84,28 @@ public class RoundScript : MonoBehaviourPunCallbacks
         else if(playerManagerScript != null && enemyManagerScript != null)
         {
             Debug.Log("Found required Scripts");
-        }
+        }*/
+
+        int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
+        playerDict.Add(playerId, player);
 
 
     }
 
     public PlayerManager GetPlayerScript()
     {
-        return playerManagerScript;
+        int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
+        if (playerDict.ContainsKey(playerId))
+        {
+            return playerDict[playerId];
+        }
+        return null;
     }
 
-    public PlayerManager GetEnemyScript()
+    /*public PlayerManager GetEnemyScript()
     {
         return enemyManagerScript;
-    }
+    }*/
 
     public void OnCalculationOfResult()
     {
@@ -108,7 +119,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
     // This function is Invoking other functions to calculate the Result
     public void HandleResultCalculation()
     {
-        if (playerManagerScript != null && enemyManagerScript != null)
+        /*if (playerManagerScript != null && enemyManagerScript != null)
         {
             int playerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
             // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
@@ -133,7 +144,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
                 // For Phase 2 and 3 Attacks of Enemy
                 phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
             }
-        }
+        }*/
 
         // This will happen for 3 rounds
         //Call OnRoundStart Once again

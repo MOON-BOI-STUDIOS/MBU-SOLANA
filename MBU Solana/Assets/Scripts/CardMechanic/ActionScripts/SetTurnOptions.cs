@@ -16,40 +16,32 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenRock()
     {
-        if (roundScript != null)
+        // Get the local player who is clicking on the card and save the choice for that player in their Player Manager variable
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Rock;
         }
-        /*if (Player != null)
-        {
-            Player.Phase1Options = TurnOptions.Phase1Turns.Rock;
-        }*/
     }
 
     public void OnChosenPaper()
     {
-        if (roundScript != null)
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
-            //roundScript.GetPlayerScript()
-            //Player.Phase1Options = TurnOptions.Phase1Turns.Paper;
+            roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Paper;
         }
-        //if(Player != null)
-          //  Player.Phase1Options = TurnOptions.Phase1Turns.Paper;
     }
 
     public void OnChosenScissor()
     {
-        if (roundScript != null)
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Scissor;
         }
-        //if (Player != null)
-          //  Player.Phase1Options = TurnOptions.Phase1Turns.Scissor;
     }
 
     public void OnChosenAttack()
     {
-        if (roundScript != null )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.Attack;
         }
@@ -59,91 +51,73 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenLightAttack()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.LightAttack;
         }
-        //if (Player != null)
-          //  Player.Phase2Options = TurnOptions.PhaseAttackTurns.LightAttack;
     }
 
     public void OnChosenHeavyAttack()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.HeavyAttack;
         }
-        //if (Player != null)
-          //  Player.Phase2Options = TurnOptions.PhaseAttackTurns.HeavyAttack;
     }
 
     public void OnChosenDoubleAttack()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.DoubleAttack;
         }
-        //if (Player != null)
-          //  Player.Phase3Options = TurnOptions.PhaseDefenceTurns.DoubleAttack;
     }
 
     public void OnChosenBlockAttack()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.BlockAttack;
         }
-        //if (Player != null)
-          //  Player.Phase3Options = TurnOptions.PhaseDefenceTurns.BlockAttack;
     }
 
     public void OnChosenPlayerIncreaseDamage()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage;
         }
-        //if (Player != null)
-          //  Player.Phase3Options = TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage;
     }
 
     public void OnChosenDecreaseEnemyAttack()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack;
         }
-        //if (Player != null)
-          //  Player.Phase3Options = TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack;
     }
 
     public void OnChosenHealPortionOfHealth()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.HealPortionOfHealth;
         }
-        //if (Player != null)
-          //  Player.Phase3Options = TurnOptions.PhaseDefenceTurns.HealPortionOfHealth;
     }
 
     public void OnChosenHealMaxHealth()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.HealMaxHealth;
         }
-        //if (Player != null)
-          //  Player.Phase3Options = TurnOptions.PhaseDefenceTurns.HealMaxHealth;
     }
 
     public void OnChosenEnemyDefenceReducedNextRound()
     {
-        if (roundScript != null  )
+        if (roundScript != null && roundScript.GetPlayerScript() != null)
         {
             roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound;
         }
-        //if (Player != null)
-          //  Player.Phase3Options = TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound;
     }
 }
