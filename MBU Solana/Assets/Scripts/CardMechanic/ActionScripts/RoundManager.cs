@@ -106,7 +106,7 @@ public class RoundManager : MonoBehaviourPun
         {
             Debug.Log("Registered with player ID: " + playerId);
             playerCanvases.Add(playerId, playerUI);
-            RoundScript.FindPlayers(playerManager);
+            RoundScript.FindPlayers(playerId,playerManager);
         }
     }
 
@@ -257,9 +257,9 @@ public class RoundManager : MonoBehaviourPun
             plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
             plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
             plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
-            enemyph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
-            enemyph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
-            enemyph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
+            enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
+            enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
+            enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
         }
         
     }

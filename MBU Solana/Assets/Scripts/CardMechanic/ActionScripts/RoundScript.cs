@@ -36,7 +36,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     }
 
-    public void FindPlayers(PlayerManager player)
+    public void FindPlayers(int playerId,PlayerManager player)
     {
         /*if (PhotonNetwork.IsMasterClient)
         {
@@ -86,7 +86,6 @@ public class RoundScript : MonoBehaviourPunCallbacks
             Debug.Log("Found required Scripts");
         }*/
 
-        int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
         if (!playerDict.ContainsKey(playerId))
         {
             playerDict.Add(playerId, player);
@@ -103,10 +102,17 @@ public class RoundScript : MonoBehaviourPunCallbacks
         return null;
     }
 
-    /*public PlayerManager GetEnemyScript()
+    public PlayerManager GetEnemyScript()
     {
-        return enemyManagerScript;
-    }*/
+        // This will only work if there are only two players
+        int playerId = PhotonNetwork.PlayerListOthers[0].ActorNumber;
+        if (playerDict.ContainsKey(playerId))
+        {
+            return playerDict[playerId];
+        }
+
+        return null;
+    }
 
     public void OnCalculationOfResult()
     {
