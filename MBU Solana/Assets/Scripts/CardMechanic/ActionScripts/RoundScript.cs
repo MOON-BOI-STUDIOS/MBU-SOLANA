@@ -100,8 +100,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            pv.RPC("HandleResultCalculation", RpcTarget.All);
-            //HandleResultCalculation();
+            HandleResultCalculation();
         }
     }
 
@@ -109,8 +108,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
     // This function is Invoking other functions to calculate the Result
     public void HandleResultCalculation()
     {
-        Debug.Log("This is working in both Players");
-        /*if (playerManagerScript != null && enemyManagerScript != null)
+        if (playerManagerScript != null && enemyManagerScript != null)
         {
             int playerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
             // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
@@ -135,7 +133,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
                 // For Phase 2 and 3 Attacks of Enemy
                 phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
             }
-        }*/
+        }
 
         // This will happen for 3 rounds
         //Call OnRoundStart Once again
