@@ -60,13 +60,6 @@ public class RoundManager : MonoBehaviourPun
     void Start()
     {
         RoundScript = GetComponent<RoundScript>();
-        // Add If statement if locally controlled find the Player manager of the Owner and get a referenc of the Script
-        playerManagerScript = GameObject.FindGameObjectWithTag("Player");
-        //get the Enemy in case of single player and incase of multiplayer get the other player
-        enemyManagerScript = GameObject.FindGameObjectWithTag("Enemy");
-
-        
-
     }
 
     // Update is called once per frame

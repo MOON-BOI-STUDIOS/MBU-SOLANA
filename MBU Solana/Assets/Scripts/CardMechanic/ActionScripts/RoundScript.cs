@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
 
 
 public class RoundScript : MonoBehaviourPunCallbacks
@@ -22,13 +23,6 @@ public class RoundScript : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-
-        //FindPlayers();
-        // Add If statement if locally controlled find the Player manager of the Owner and get a referenc of the Script
-        //playerManagerScript = GameObject.FindGameObjectWithTag("Player");
-        //get the Enemy in case of single player and incase of multiplayer get the other player
-        //enemyManagerScript = GameObject.FindGameObjectWithTag("Enemy");
-        //To Get Iterface for Rock Paper Scissor logic
         turnOptionsMethods = GetComponent<ITurnOptionsMethods>();
         // For Phase Logic
         phase = GetComponent<PhaseSpecialAbilityOptions>();
@@ -38,59 +32,19 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public void FindPlayers(int playerId,PlayerManager player)
     {
-        /*if (PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.IsMasterClient)
         {
-            GameObject[] PlayerObjects = GameObject.FindGameObjectsWithTag("Player"); //FindGameObjectWithTag("Player");
-            Debug.Log(PlayerObjects.Length);
-            for (int i = 0; i < PlayerObjects.Length; i++)
-            {
-                if (PlayerObjects[i].GetComponent<PlayerManager>().IsLocalPlayer())
-                {
-                    playerManagerScript = PlayerObjects[i].GetComponent<PlayerManager>();
-                }
-                else
-                {
-                    enemyManagerScript = PlayerObjects[i].GetComponent<PlayerManager>();
-                }
-            }
-
-            if (playerManagerScript == null && enemyManagerScript == null)
-            {
-                Debug.Log("Failed to find both local Player Manager Script and Enemy's same");
-            }
-            else
-            {
-                Debug.Log("Found required Scripts");
-            }
+            pv.RPC("SetVariables", RpcTarget.All, player);
         }
-
-        //Setting the Player Manager and the Enemy Manager Script 
-        if (player != null && player.IsLocalPlayer())
-        {
-            int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
-            playerDict.Add(playerId)
-            playerManagerScript = player;
-        }
-        else if(player != null && !player.IsLocalPlayer())
-        {
-            enemyManagerScript = player;
-        }
-
-        // Check if the PlayerManager is not null 
-        if (playerManagerScript == null && enemyManagerScript == null)
-        {
-            Debug.Log("Failed to find both local Player Manager Script and Enemy's same");
-        }
-        else if(playerManagerScript != null && enemyManagerScript != null)
-        {
-            Debug.Log("Found required Scripts");
-        }*/
-
         if (!playerDict.ContainsKey(playerId))
         {
             playerDict.Add(playerId, player);
         }
+    }
 
+    [PunRPC]
+    public void SetVariables(PlayerManager player)
+    {
         if (player != null && !player.IsLocalPlayer())
         {
             enemyManagerScript = player;
@@ -109,14 +63,6 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public PlayerManager GetEnemyScript()
     {
-        /* This will only work if there are only two players
-        int playerId = PhotonNetwork.PlayerListOthers[0].ActorNumber;
-        if (playerDict.ContainsKey(playerId))
-        {
-            return playerDict[playerId];
-        }
-
-        return null;*/
         if (enemyManagerScript != null)
         {
             return enemyManagerScript;
