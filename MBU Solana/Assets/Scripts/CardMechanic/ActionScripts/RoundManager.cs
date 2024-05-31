@@ -53,6 +53,8 @@ public class RoundManager : MonoBehaviourPun
 
     public GameObject screen;
 
+    public bool isCoolDown = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -130,6 +132,7 @@ public class RoundManager : MonoBehaviourPun
         PhaseStart = true;
         gameDuration = 10f;
         time.color = Color.green;
+        isCoolDown = false;
 
         //Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
@@ -232,6 +235,7 @@ public class RoundManager : MonoBehaviourPun
         PhaseStart = false;
         gameDuration = 10f;
         time.color = Color.red;
+        isCoolDown = true;
 
         //Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
