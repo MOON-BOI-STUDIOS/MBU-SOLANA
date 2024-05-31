@@ -104,10 +104,7 @@ public class RoundManager : MonoBehaviourPun
         {
             Debug.Log("Registered with player ID: " + playerId);
             playerCanvases.Add(playerId, playerUI);
-            if (PhotonNetwork.IsMasterClient)
-            {
-                RoundScript.FindPlayers(playerManager);
-            }
+            RoundScript.FindPlayers(playerManager);
         }
     }
 
@@ -252,6 +249,7 @@ public class RoundManager : MonoBehaviourPun
         screen.SetActive(true);
         if (RoundScript != null && RoundScript.GetPlayerScript() != null)
         {
+            Debug.Log("This is called");
             plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
             plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
             plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
