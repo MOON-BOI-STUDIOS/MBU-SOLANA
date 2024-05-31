@@ -87,9 +87,10 @@ public class RoundScript : MonoBehaviourPunCallbacks
         }*/
 
         int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
-        playerDict.Add(playerId, player);
-
-
+        if (!playerDict.ContainsKey(playerId))
+        {
+            playerDict.Add(playerId, player);
+        }
     }
 
     public PlayerManager GetPlayerScript()
