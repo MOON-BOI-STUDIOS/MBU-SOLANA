@@ -3059,13 +3059,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomName: 
-  roomListingprefab: {fileID: 7850805970889538319, guid: 0fabd98ebf4a9414f92bd033deb5db32, type: 3}
+  roomListingPrefab: {fileID: 0}
   roomsPanel: {fileID: 412789590}
   regionDropdown: {fileID: 883056379}
   rlp: {fileID: 2692797080706736994, guid: 0fabd98ebf4a9414f92bd033deb5db32, type: 3}
-  lobbygo: {fileID: 85038543}
-  roomgo: {fileID: 253559231}
-  StartGame: {fileID: 386854407}
+  lobbyGo: {fileID: 0}
+  roomGo: {fileID: 0}
+  startGame: {fileID: 386854407}
 --- !u!1 &1283411169
 GameObject:
   m_ObjectHideFlags: 0

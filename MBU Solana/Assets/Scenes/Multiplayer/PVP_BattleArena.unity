@@ -5035,6 +5035,7 @@ MonoBehaviour:
     boolSpawnPoint: 0
   - spawnPoint: {fileID: 248699829563240274}
     boolSpawnPoint: 0
+  pause: {fileID: 248699829710051873}
 --- !u!1 &1419974124
 GameObject:
   m_ObjectHideFlags: 0
@@ -5477,7 +5478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 401484577365519735, guid: 4bcbe538bc9a42e49b4135055b370b2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: disconnectPlayer
+      value: DisconnectPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 401484577365519735, guid: 4bcbe538bc9a42e49b4135055b370b2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -17485,6 +17486,7 @@ MonoBehaviour:
   plph2: {fileID: 1969755765}
   plph3: {fileID: 228577089}
   screen: {fileID: 248699829957622594}
+  isCoolDown: 0
 --- !u!114 &4382410426989119046
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,44 +6,40 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 using UnityEngine.SceneManagement;
+
 public class CustomLobby : MonoBehaviourPunCallbacks
 {
     public static CustomLobby lobby;
 
     public string roomName;
-    public GameObject roomListingprefab;
+    public GameObject roomListingPrefab;
     public Transform roomsPanel;
 
-    public List<RoomInfo> roomlistings;
-    public TMP_Dropdown regionDropdown; // Dropdown UI element for region selection
-    private string[] regions = { "us", "eu", "asia", "jp", "au", "sa", "in"}; // Example region codes
+    public List<RoomInfo> roomListings;
+    public TMP_Dropdown regionDropdown;
+    private string[] regions = { "us", "eu", "asia", "jp", "au", "sa", "in" };
     public Button rlp;
 
-    public GameObject lobbygo,roomgo,StartGame;
+    public GameObject lobbyGo, roomGo, startGame;
 
     private void Awake()
     {
-        lobby = this; // creates the singleton, lives within the main menu scene
+        lobby = this;
     }
-
 
     void Start()
     {
-
         if (!PhotonNetwork.IsConnected)
         {
-            PhotonNetwork.ConnectUsingSettings(); //  connect to masters photon server
-            OnConnectedToMaster();
+            PhotonNetwork.ConnectUsingSettings();
         }
-        roomlistings = new List<RoomInfo>();
+        roomListings = new List<RoomInfo>();
         string playerRegion = PhotonNetwork.CloudRegion;
-        Debug.Log("Player Region" + playerRegion);
+        Debug.Log("Player Region: " + playerRegion);
 
-        // Populate the dropdown with region options
         regionDropdown.ClearOptions();
         regionDropdown.AddOptions(new List<string>(regions));
-         RemoveRoomListing();
-         
+        RemoveRoomListing();
     }
 
     public override void OnConnectedToMaster()
@@ -51,32 +47,22 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         Debug.Log("Player has connected to photon master server");
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = "Player" + Random.Range(0, 1000);
-       // PhotonNetwork.JoinLobby();
-
-
     }
 
     public void OnRegionSelected()
     {
-        // Get the index of the selected item
         int index = regionDropdown.value;
-
-        // Set the selected region
         string selectedRegion = regions[index];
         PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = selectedRegion;
 
-        // Connect to Photon with the selected region
         PhotonNetwork.ConnectUsingSettings();
-
         Debug.Log("Region was switched to " + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion);
     }
 
     public void OnSearchButtonClicked()
     {
-
         PhotonNetwork.JoinRandomRoom();
     }
-
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
@@ -85,9 +71,9 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         int tempIndex;
         foreach (RoomInfo room in roomList)
         {
-            if (roomlistings != null)
+            if (roomListings != null)
             {
-                tempIndex = roomlistings.FindIndex(ByName(room.Name));
+                tempIndex = roomListings.FindIndex(ByName(room.Name));
             }
             else
             {
@@ -95,24 +81,20 @@ public class CustomLobby : MonoBehaviourPunCallbacks
             }
             if (tempIndex != -1)
             {
-                roomlistings.RemoveAt(tempIndex);
+                roomListings.RemoveAt(tempIndex);
                 Destroy(roomsPanel.GetChild(tempIndex).gameObject);
-
             }
             else
             {
-                roomlistings.Add(room);
+                roomListings.Add(room);
                 ListRoom(room);
             }
-
-
         }
-
     }
 
     private void Update()
     {
-        if(PhotonRoom.room.playersInRoom == 2)
+        if (PhotonRoom.room.playersInRoom == 2)
         {
             rlp.interactable = false;
         }
@@ -121,39 +103,35 @@ public class CustomLobby : MonoBehaviourPunCallbacks
             rlp.interactable = true;
         }
 
-             if (PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.IsMasterClient)
+        {
+            if (PhotonRoom.room.playersInRoom == 2)
             {
-            if(PhotonRoom.room.playersInRoom  ==  2)
-            {
-                StartGame.SetActive(true);
+                startGame.SetActive(true);
             }
-          
         }
         else
         {
-            StartGame.SetActive(false);
+            startGame.SetActive(false);
         }
     }
-
 
     public void RemoveRoomListing()
     {
-        while(roomsPanel.childCount != 0)
+        while (roomsPanel.childCount != 0)
         {
             Destroy(roomsPanel.GetChild(0).gameObject);
-  
         }
     }
 
-    public void ListRoom (RoomInfo room)
+    public void ListRoom(RoomInfo room)
     {
-        if(room.IsOpen && room.IsVisible)
+        if (room.IsOpen && room.IsVisible)
         {
-            GameObject tempListing = Instantiate(roomListingprefab, roomsPanel);
+            GameObject tempListing = Instantiate(roomListingPrefab, roomsPanel);
             RoomButton tempButton = tempListing.GetComponent<RoomButton>();
             tempButton.roomName = room.Name;
             tempButton.SetRoom();
-            
         }
     }
 
@@ -175,21 +153,18 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         Debug.Log("Tried to create a new room but failed, there must already be a room with the same name");
-        //CreateRoom();
     }
 
-    public void OncancleearchClicked()
+    public void OnCancelSearchClicked()
     {
-        Debug.Log("search canceled");
-
+        Debug.Log("Search canceled");
         PhotonNetwork.LeaveRoom();
     }
 
-    public void onNameChange(string nameIn)
+    public void OnNameChange(string nameIn)
     {
         roomName = nameIn;
     }
-
 
     public void JoinLobbyClick()
     {
@@ -199,38 +174,16 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         }
     }
 
-    public void disconnect()
+    public void Disconnect()
     {
-        StartCoroutine(changepanel());
-         Debug.Log("Left Room");
-         Debug.Log(PhotonRoom.room.playersInRoom);
-           Destroy(PhotonRoom.room.gameObject);
-
-
+        PhotonNetwork.LeaveRoom();
     }
 
-    public IEnumerator changepanel()
+    public override void OnLeftRoom()
     {
+        Debug.Log("Left room successfully");
 
-          PhotonNetwork.Disconnect();
-         
-
-        //while(PhotonNetwork.IsConnected)
-        while (PhotonNetwork.InRoom)
-
-            yield return null;
-  
-       if(PhotonRoom.room.playersInRoom <1)
-       {
-        CustomLobby.lobby.RemoveRoomListing();
-       }
-        PhotonNetwork.ConnectUsingSettings(); //  connect to masters photon server
+        // Reload the lobby scene after leaving the room
         SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
-      
-        
-
     }
-
-   
-
 }
