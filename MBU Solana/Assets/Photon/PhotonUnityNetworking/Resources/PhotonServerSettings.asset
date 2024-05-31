@@ -57,6 +57,7 @@ MonoBehaviour:
   - StartGameTimer
   - Phase2Result
   - NotifyMasterClientOfRegistration
+  - SetVariables
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
