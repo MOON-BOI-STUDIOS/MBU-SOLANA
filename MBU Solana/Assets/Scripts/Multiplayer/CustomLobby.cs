@@ -20,7 +20,11 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     private string[] regions = { "us", "eu", "asia", "jp", "au", "sa", "in" };
     public Button rlp;
 
+    public string currentRegion;
+
     public GameObject lobbyGo, roomGo, startGame;
+
+    public TextMeshProUGUI regiontxt,regiontext1;
 
     private void Awake()
     {
@@ -40,6 +44,9 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         regionDropdown.ClearOptions();
         regionDropdown.AddOptions(new List<string>(regions));
         RemoveRoomListing();
+
+         regiontxt.text = "Current Region is:" + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion;
+         regiontext1.text = "Current Region is:" + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion;
     }
 
     public override void OnConnectedToMaster()
@@ -54,6 +61,9 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         int index = regionDropdown.value;
         string selectedRegion = regions[index];
         PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = selectedRegion;
+        currentRegion = selectedRegion;
+        regiontxt.text = "Current Region is:" + currentRegion;
+        regiontext1.text = "Current Region is:" + currentRegion;
 
         PhotonNetwork.ConnectUsingSettings();
         Debug.Log("Region was switched to " + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion);
@@ -114,6 +124,10 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         {
             startGame.SetActive(false);
         }
+
+        
+
+
     }
 
     public void RemoveRoomListing()
@@ -177,6 +191,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public void Disconnect()
     {
         PhotonNetwork.LeaveRoom();
+        Destroy(PhotonRoom.room.gameObject);
     }
 
     public override void OnLeftRoom()

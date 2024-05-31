@@ -59,6 +59,7 @@ public class GameSetUP : MonoBehaviour
     public void DisconnectPlayer()
     {
         PhotonNetwork.LeaveRoom();
+         Destroy(PhotonRoom.room.gameObject);
         pause.Resume();
     }
 
