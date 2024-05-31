@@ -12,17 +12,7 @@ public class PhaseAttacks : MonoBehaviour
     }
     public virtual void PhaseOptions(PlayerManager Selector, PlayerManager OtherPlayer, bool bothPhases)
     {
-        if (pv.IsMine)
-        {
-            PlayerManager[] players = { Selector, OtherPlayer };
-            pv.RPC("Phase2Result", RpcTarget.Others, players);
-        }
-    }
-
-    [PunRPC]
-    void Phase2Result(PlayerManager[] players)
-    {
-        /*TurnOptions.PhaseAttackTurns PhaseAttackTurns = players[0].Phase2Options;
+        TurnOptions.PhaseAttackTurns PhaseAttackTurns = Selector.Phase2Options;
         switch (PhaseAttackTurns)
         {
             case TurnOptions.PhaseAttackTurns.Attack:
@@ -37,6 +27,6 @@ public class PhaseAttacks : MonoBehaviour
                 OtherPlayer.OnChangeHealth(40, false);
                 break;
 
-        }*/
+        }
     }
 }
