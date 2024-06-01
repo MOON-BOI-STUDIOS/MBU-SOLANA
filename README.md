@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# For RENAISSANCE submission please go to the game-dev branch! :) 
+# For BONKATHON submission please go to the game-dev branch! :) 
 =======
 <<<<<<< HEAD
 # MOON BOI UNIVERSE - The open-world cyber-fantasy RPG
@@ -67,10 +67,10 @@ For more details, refer to the [architecture diagram](./docs/architecture.png).
    Follow the instructions in the game to log in using your Solana wallet.
 
 4. **Play & Enjoy**:
-   Explore the city and engage in the arcade room experience.
+   Explore the city and engage in the arcade room experience. Complete the dragonfish quest. Top leaderboards!
 
 ## How to Play
-- **Download APK for Android mobile**: Link: 
+- **Access via moonboi.io or Solana dAppstore on SAGA**: Link: 
 - **Log In**: Use your Solana wallet with a minimum of 0.5 SOL and 10 million Bonk tokens.
 - **Explore**: Walk around the city and enter the arcade room.
 - **Upgrade**: Stand in front of an arcade machine to upgrade using Bonk tokens.
@@ -78,6 +78,6 @@ For more details, refer to the [architecture diagram](./docs/architecture.png).
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 =======
-# For RENAISSANCE submission please go to the game-dev branch! :) 
+# For BONKATHON submission please go to the game-dev branch! :) 
 >>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
 >>>>>>> Game_Dev
