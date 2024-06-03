@@ -8,6 +8,7 @@ using Photon.Realtime;
 using System;
 using TMPro;
 
+
 public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
 {
     // room info

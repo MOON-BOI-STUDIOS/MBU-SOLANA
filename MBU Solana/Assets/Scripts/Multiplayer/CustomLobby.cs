@@ -24,8 +24,9 @@ public class CustomLobby : MonoBehaviourPunCallbacks
 
     public GameObject lobbyGo, roomGo, startGame;
 
-    public TextMeshProUGUI regiontxt,regiontext1;
-
+    public TextMeshProUGUI regiontxt,regiontext1 ,textroom;
+    
+    
     private void Awake()
     {
         lobby = this;
@@ -125,7 +126,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
             startGame.SetActive(false);
         }
 
-        
+        textroom.text = roomName.ToString();
 
 
     }

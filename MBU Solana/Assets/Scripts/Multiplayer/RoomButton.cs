@@ -13,7 +13,7 @@ public class RoomButton : MonoBehaviour
 
     public void SetRoom()
     {
-        nameText.text = roomName;
+        nameText.text = roomName.ToString();
 
     }
 
