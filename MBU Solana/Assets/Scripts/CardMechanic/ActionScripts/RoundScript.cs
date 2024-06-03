@@ -32,28 +32,30 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public void FindPlayers(int playerId,PlayerManager player)
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
-            pv.RPC("SetVariables", RpcTarget.All, player);
-        }
-        if (!playerDict.ContainsKey(playerId))
+        /*if (!playerDict.ContainsKey(playerId))
         {
             playerDict.Add(playerId, player);
+        }*/
+        if (PhotonNetwork.IsMasterClient)
+        {
+            object[] data = { playerId, player };
+            pv.RPC("SetVariableDict", RpcTarget.MasterClient, data);
         }
     }
 
     [PunRPC]
-    public void SetVariables(PlayerManager player)
+    public void SetVariableDict(int playerId,PlayerManager player)
     {
-        if (player != null && !player.IsLocalPlayer())
+        if (!playerDict.ContainsKey(playerId))
         {
-            enemyManagerScript = player;
+            Debug.Log("Registered with player ID: " + playerId);
+            playerDict.Add(playerId, player);
         }
     }
 
     public PlayerManager GetPlayerScript()
     {
-        int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
+        int playerId = PhotonNetwork.LocalPlayer.ActorNumber; //PhotonNetwork.LocalPlayer.ActorNumber;
         if (playerDict.ContainsKey(playerId))
         {
             return playerDict[playerId];
@@ -63,18 +65,21 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public PlayerManager GetEnemyScript()
     {
-        if (enemyManagerScript != null)
+        int playerId = PhotonNetwork.PlayerListOthers[0].ActorNumber;
+        if (playerDict.ContainsKey(playerId))
         {
-            return enemyManagerScript;
+            return playerDict[playerId];
         }
+        Debug.Log("Enemy script is null as Player id not present:" + playerId);
         return null;
+
     }
 
     public void OnCalculationOfResult()
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            HandleResultCalculation();
+            pv.RPC("HandleResultCalculation", RpcTarget.MasterClient);
         }
     }
 
@@ -82,32 +87,32 @@ public class RoundScript : MonoBehaviourPunCallbacks
     // This function is Invoking other functions to calculate the Result
     public void HandleResultCalculation()
     {
-        /*if (playerManagerScript != null && enemyManagerScript != null)
+        Debug.Log("Calculating");
+        int playerNumber = turnOptionsMethods.OnPhase1Options(GetPlayerScript(), GetEnemyScript());
+        // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
+        if (playerNumber == 2)
         {
-            int playerNumber = turnOptionsMethods.OnPhase1Options(playerManagerScript, enemyManagerScript);
-            // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
-            if (playerNumber == 2)
-            {
-                // For Phase 2 and 3 Attacks of player
-                phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);// Check the Definition of PhaseOptions
-                                                                                  // For Phase 2 and 3 Attacks of Enemy
-                phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);// true is used to call both the phases
-            }
-            else if (playerNumber == 0)
-            {
-                // For Phase 2 and 3 Attacks of player
-                phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);
-                // For only Phase 2 Attack
-                phase.PhaseOptions(enemyManagerScript, playerManagerScript, false);
-            }
-            else if (playerNumber == 1)
-            {
-                // For only Phase 2 Attack
-                phase.PhaseOptions(playerManagerScript, enemyManagerScript, false);
-                // For Phase 2 and 3 Attacks of Enemy
-                phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
-            }
+            // For Phase 2 and 3 Attacks of player
+            phase.PhaseOptions(GetPlayerScript(), GetEnemyScript(), true);// Check the Definition of PhaseOptions
+                                                                                // For Phase 2 and 3 Attacks of Enemy
+            phase.PhaseOptions(GetEnemyScript(), GetPlayerScript(), true);// true is used to call both the phases
+        }
+        Debug.Log("Player Number is:" + playerNumber);
+        /*else if (playerNumber == 0)
+        {
+            // For Phase 2 and 3 Attacks of player
+            phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);
+            // For only Phase 2 Attack
+            phase.PhaseOptions(enemyManagerScript, playerManagerScript, false);
+        }
+        else if (playerNumber == 1)
+        {
+            // For only Phase 2 Attack
+            phase.PhaseOptions(playerManagerScript, enemyManagerScript, false);
+            // For Phase 2 and 3 Attacks of Enemy
+            phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
         }*/
+
 
         // This will happen for 3 rounds
         //Call OnRoundStart Once again

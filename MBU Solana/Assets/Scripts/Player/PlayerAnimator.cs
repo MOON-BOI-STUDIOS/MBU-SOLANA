@@ -168,7 +168,7 @@ public class PlayerAnimator : MonoBehaviour
     public IEnumerator powerUp()
     {
         powerUpMuisc.enabled = true;
-        _manager.isPoweredUp = true;
+        //_manager.isPoweredUp = true;
         _manager._controller.enabled = false;
        _manager._combat.enabled = false;
         _heroAnimator.SetLayerWeight(4, 1);
@@ -187,7 +187,7 @@ public class PlayerAnimator : MonoBehaviour
         powerUpMuisc.enabled = false;
         mainMusic.volume = 0.676f;
         GetComponent<SpriteRenderer>().color = initialColor;
-        _manager.isPoweredUp = false;
+        //_manager.isPoweredUp = false;
 
     }
 

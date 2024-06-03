@@ -97,7 +97,6 @@ public class RoundManager : MonoBehaviourPun
     {
         if (!playerCanvases.ContainsKey(playerId))
         {
-            Debug.Log("Registered with player ID: " + playerId);
             playerCanvases.Add(playerId, playerUI);
             RoundScript.FindPlayers(playerId,playerManager);
         }
@@ -243,7 +242,11 @@ public class RoundManager : MonoBehaviourPun
         TimerObject.SetActive(false);
         RoundScript.OnCalculationOfResult();
         Time.timeScale = 0;
-        screen.SetActive(true);
+        /*screen.SetActive(true);
+        if (RoundScript.GetEnemyScript() == null)
+        {
+            Debug.Log("Enemy Script is null");
+        }
         if (RoundScript != null && RoundScript.GetPlayerScript() != null && RoundScript.GetEnemyScript() != null)
         {
             Debug.Log("This is called");
@@ -253,7 +256,7 @@ public class RoundManager : MonoBehaviourPun
             enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
             enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
             enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
-        }
+        }*/
         
     }
 }

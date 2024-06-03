@@ -16,6 +16,7 @@ public class PhaseAttacks : MonoBehaviour
         switch (PhaseAttackTurns)
         {
             case TurnOptions.PhaseAttackTurns.Attack:
+
                 OtherPlayer.OnChangeHealth(10, false);
                 break;
 

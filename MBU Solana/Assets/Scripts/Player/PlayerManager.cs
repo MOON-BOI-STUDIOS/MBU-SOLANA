@@ -9,12 +9,13 @@ using Random = UnityEngine.Random;
 using Photon.Pun;
 using Photon.Pun.Demo.PunBasics;
 
-public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
+public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
 {
     // Start is called before the first frame update
     public PlayerController _controller;
     public PlayerAnimator _animator;
     public PlayerCombat _combat;
+
     public const float MAXHealth = 500.0f;
     public float health;
     public float Defence;
@@ -26,23 +27,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     bool isDeadRevive;
 
     public GameObject fadeOut;
-    public AudioClip coinSound1, coinSound2;
-    public GameObject attackButton;
-    public GameObject enterButton, fishButton, ExitButton;
-
-    public Transform[] startLocation;
-
-    public bool isPoweredUp = false;
-
-    string curSceneName;
-    public GameObject enemies;
-    private GameObject[] childenemies;
-
-    public TextMeshProUGUI costtext;
-
-    //Inventory Additions Array
-    private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
-
 
     [SerializeField]
     private TurnOptions.Phase1Turns Phase1Turns;
@@ -74,7 +58,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
 
     private void Awake()
     {
-        curSceneName = SceneManager.GetActiveScene().name;
+        //curSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetInt("MaxHealth", 500);
         photonView = GetComponent<PhotonView>();
         rb = GetComponent<Rigidbody2D>();
@@ -84,22 +68,17 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
 
     private void Start()
     {
+        health = MAXHealth;
+        Defence = MAX_DEFENCE;
+
         if (photonView.IsMine)
         {
-            
-            health = MAXHealth;
-            Defence = MAX_DEFENCE;
             RegisterPlayer();
-            //RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.ViewID, PlayerUI, this);
-            Debug.Log(PhotonRoom.room.playersInRoom);
-           
-
         }
         else
         {
-            //Destroy(GetComponentInChildren<Camera>().gameObject);
             Destroy(rb);
-            //PlayerUI.DestroyUICanvas();
+            PlayerUI.DestroyUICanvas();
         }
     }
 
@@ -116,7 +95,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
     [PunRPC]
     void NotifyMasterClientOfRegistration(int playerId)
     {
-        RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.ViewID, PlayerUI, this);
+        RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.OwnerActorNr, PlayerUI, this);
     }
 
     public bool IsLocalPlayer()
@@ -190,120 +169,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         PlayerUI.UpdateDefence(Defence, MAX_DEFENCE);
     }
 
-    /*private void OnTriggerEnter2D(Collider2D other)
-    {
-        //takes damage from the normal void 
-        if (other.tag == "enemyAttackZone" && isPoweredUp == false && !isDead)
-        {
-            StartCoroutine(_animator.CameraShake(0.3f));
-            
-            health -= 20;
-        }
-
-        //takes damage from the green void projectile
-        if (other.tag == "greenVoidProjectile" && isPoweredUp == false && !isDead)
-        {
-            Destroy(other.transform.parent.gameObject);
-            StartCoroutine(_animator.CameraShake(0.3f));
-         
-          
-            health -= 40;
-            StartCoroutine(_animator.greenVoidDamage());
-        }
-
-        //takes damage from the red void projectile
-        if (other.tag == "redVoidProjectile" && isPoweredUp == false && !isDead)
-        {
-            Destroy(other.transform.parent.gameObject);
-            StartCoroutine(_animator.CameraShake(0.3f));
-            health -= 40;
-            StartCoroutine(_animator.redVoidDamage());
-        }
-
-        //triggers the poweup through the animator
-        if(other.tag == "PowerUp" &&!isDead)
-        {
-            Destroy(other.gameObject);
-            StartCoroutine(_animator.powerUp());
-        }
-
-        // collects coin. inccreases in playerprefs, plays a random coin pickup sound, destroys coin
-        if (other.tag == "salanaCoin" && !isDead)
-        {
-            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + 1);
-            
-            int randomCoinSound = Random.Range(1, 3);
-            if (randomCoinSound == 2)
-            {
-                GetComponent<AudioSource>().PlayOneShot(coinSound2);
-            }
-            else
-            {
-                GetComponent<AudioSource>().PlayOneShot(coinSound1);
-            }
-
-            Destroy(other.gameObject);
-        }
-        if(other.TryGetComponent(out ICollisiontype fishSceneCollider))
-        {
-            fishSceneCollider.callUIFunctions();
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        //enables fishing entrance and arena entrance buttons when not in the interaction area
-        if (collision.tag == "ArenaZone")
-        {
-            if(collision.name == "FishingAreaTrigger")
-            {
-                fishButton.SetActive(true);
-            }
-            if(collision.name == "ArenaEntranceTrigger")
-            {
-                enterButton.SetActive(true);
-            }
-            if (collision.name == "ShopEntrance")
-            {
-                fishButton.SetActive(true);
-            }
-            if (collision.name == "ShopExit")
-            {
-                fishButton.SetActive(true);
-            }
-            if (collision.name == "FishingExit")
-            {
-                ExitButton.SetActive(true);
-            }
-
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        //disables fishing entrance and arena entrance buttons when not in the interaction area
-        if (collision.name == "FishingAreaTrigger")
-        {
-            fishButton.SetActive(false);
-        }
-        if (collision.name == "ArenaEntranceTrigger")
-        {
-            enterButton.SetActive(false);
-        }
-        if (collision.name == "ShopEntrance")
-        {
-            fishButton.SetActive(false);
-        }
-        if (collision.name == "ShopExit")
-        {
-            fishButton.SetActive(false);
-        }
-        if (collision.name == "FishingExit")
-        {
-            ExitButton.SetActive(false);
-        }
-    }*/
-
     //death sequence
     IEnumerator  deathSequence()
     {
@@ -318,33 +183,13 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
         //SceneManager.LoadScene(0);
     }
     
-    // Adding to Inventory
-    public void AdditionToInventory(String invGameObject, int invItemNumber)
-    {
-        // Adding to Inventory
-        if (inv.ContainsKey(invItemNumber))
-        {
-            Inventory inventoryItem = inv[invItemNumber];
-            Debug.Log("Amount: " + inventoryItem.GetAmount());
-            inventoryItem.IncreaseAmount(inventoryItem.GetAmount() + 1);
-            inv[invItemNumber] = inventoryItem;
-            inventoryItem.DisplayInventoryItem();
-        }
-        else
-        {
-            Debug.Log("Added");
-            Inventory newItem = new Inventory(invGameObject,invItemNumber);
-            inv.Add(invItemNumber,newItem);
-            inv[invItemNumber].DisplayInventoryItem();
-        }
-        
-    }
 
     public TurnOptions.Phase1Turns Phase1Options
     {
         get { return Phase1Turns; }
         set
         {
+
             if (PhotonNetwork.IsMasterClient)
             {
                 Phase1Turns = value;
@@ -461,4 +306,157 @@ public class PlayerManager : MonoBehaviour, IAddToInventory, IPunObservable
             Phase3Turns = (TurnOptions.PhaseDefenceTurns)stream.ReceiveNext();
         }
     }
+
+    /*public AudioClip coinSound1, coinSound2;
+public GameObject attackButton;
+public GameObject enterButton, fishButton, ExitButton;
+
+public Transform[] startLocation;
+
+public bool isPoweredUp = false;
+
+string curSceneName;
+public GameObject enemies;
+private GameObject[] childenemies;
+
+public TextMeshProUGUI costtext;
+
+//Inventory Additions Array
+private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();*/
+
+    /*Adding to Inventory
+public void AdditionToInventory(String invGameObject, int invItemNumber)
+{
+    // Adding to Inventory
+    if (inv.ContainsKey(invItemNumber))
+    {
+        Inventory inventoryItem = inv[invItemNumber];
+        Debug.Log("Amount: " + inventoryItem.GetAmount());
+        inventoryItem.IncreaseAmount(inventoryItem.GetAmount() + 1);
+        inv[invItemNumber] = inventoryItem;
+        inventoryItem.DisplayInventoryItem();
+    }
+    else
+    {
+        Debug.Log("Added");
+        Inventory newItem = new Inventory(invGameObject,invItemNumber);
+        inv.Add(invItemNumber,newItem);
+        inv[invItemNumber].DisplayInventoryItem();
+    }
+
+}
+
+    private void OnTriggerEnter2D(Collider2D other)
+{
+    //takes damage from the normal void 
+    if (other.tag == "enemyAttackZone" && isPoweredUp == false && !isDead)
+    {
+        StartCoroutine(_animator.CameraShake(0.3f));
+
+        health -= 20;
+    }
+
+    //takes damage from the green void projectile
+    if (other.tag == "greenVoidProjectile" && isPoweredUp == false && !isDead)
+    {
+        Destroy(other.transform.parent.gameObject);
+        StartCoroutine(_animator.CameraShake(0.3f));
+
+
+        health -= 40;
+        StartCoroutine(_animator.greenVoidDamage());
+    }
+
+    //takes damage from the red void projectile
+    if (other.tag == "redVoidProjectile" && isPoweredUp == false && !isDead)
+    {
+        Destroy(other.transform.parent.gameObject);
+        StartCoroutine(_animator.CameraShake(0.3f));
+        health -= 40;
+        StartCoroutine(_animator.redVoidDamage());
+    }
+
+    //triggers the poweup through the animator
+    if(other.tag == "PowerUp" &&!isDead)
+    {
+        Destroy(other.gameObject);
+        StartCoroutine(_animator.powerUp());
+    }
+
+    // collects coin. inccreases in playerprefs, plays a random coin pickup sound, destroys coin
+    if (other.tag == "salanaCoin" && !isDead)
+    {
+        PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + 1);
+
+        int randomCoinSound = Random.Range(1, 3);
+        if (randomCoinSound == 2)
+        {
+            GetComponent<AudioSource>().PlayOneShot(coinSound2);
+        }
+        else
+        {
+            GetComponent<AudioSource>().PlayOneShot(coinSound1);
+        }
+
+        Destroy(other.gameObject);
+    }
+    if(other.TryGetComponent(out ICollisiontype fishSceneCollider))
+    {
+        fishSceneCollider.callUIFunctions();
+    }
+}
+
+private void OnTriggerStay2D(Collider2D collision)
+{
+    //enables fishing entrance and arena entrance buttons when not in the interaction area
+    if (collision.tag == "ArenaZone")
+    {
+        if(collision.name == "FishingAreaTrigger")
+        {
+            fishButton.SetActive(true);
+        }
+        if(collision.name == "ArenaEntranceTrigger")
+        {
+            enterButton.SetActive(true);
+        }
+        if (collision.name == "ShopEntrance")
+        {
+            fishButton.SetActive(true);
+        }
+        if (collision.name == "ShopExit")
+        {
+            fishButton.SetActive(true);
+        }
+        if (collision.name == "FishingExit")
+        {
+            ExitButton.SetActive(true);
+        }
+
+    }
+}
+
+private void OnTriggerExit2D(Collider2D collision)
+{
+    //disables fishing entrance and arena entrance buttons when not in the interaction area
+    if (collision.name == "FishingAreaTrigger")
+    {
+        fishButton.SetActive(false);
+    }
+    if (collision.name == "ArenaEntranceTrigger")
+    {
+        enterButton.SetActive(false);
+    }
+    if (collision.name == "ShopEntrance")
+    {
+        fishButton.SetActive(false);
+    }
+    if (collision.name == "ShopExit")
+    {
+        fishButton.SetActive(false);
+    }
+    if (collision.name == "FishingExit")
+    {
+        ExitButton.SetActive(false);
+    }
+}*/
 }

@@ -17485,6 +17485,7 @@ MonoBehaviour:
   plph2: {fileID: 1969755765}
   plph3: {fileID: 228577089}
   screen: {fileID: 248699829957622594}
+  isCoolDown: 0
 --- !u!114 &4382410426989119046
 MonoBehaviour:
   m_ObjectHideFlags: 0
