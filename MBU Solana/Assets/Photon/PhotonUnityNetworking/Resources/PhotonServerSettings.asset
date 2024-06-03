@@ -19,7 +19,7 @@ MonoBehaviour:
     AppIdVoice: 
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: jp
+    FixedRegion: 
     Server: 
     Port: 0
     ProxyServer: 
@@ -58,6 +58,8 @@ MonoBehaviour:
   - Phase2Result
   - NotifyMasterClientOfRegistration
   - SetVariables
+  - SkipRemainingTime
+  - SetVariableDict
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
