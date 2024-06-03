@@ -3417,6 +3417,7 @@ MonoBehaviour:
   rmthealthNumber: {fileID: 1907720535649833946}
   rmtIndicatorUI: {fileID: 6236970949038465983}
   rmtcostText: {fileID: 822554495520302228}
+  skipButton: {fileID: 6704751553133579958}
 --- !u!1 &9029094405160294605
 GameObject:
   m_ObjectHideFlags: 0
