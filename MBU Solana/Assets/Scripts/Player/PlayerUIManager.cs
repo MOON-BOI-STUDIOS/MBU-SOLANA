@@ -5,6 +5,9 @@ using Photon.Pun;
 
 public class PlayerUIManager : MonoBehaviour
 {
+    private RoundManager _roundManager;
+    public bool cardSelected = false;
+
     //-----------------Local Player ---------------------//
     public Transform DefenceIndicator;
     public TextMeshProUGUI coinsText;
@@ -21,12 +24,14 @@ public class PlayerUIManager : MonoBehaviour
     public GameObject rmtIndicatorUI;
     public TextMeshProUGUI rmtcostText;
 
-
     private PhotonView pv;
+
+    public GameObject skipButton;
 
     public void Start()
     {
         pv = GetComponent<PhotonView>();
+        _roundManager = GameObject.FindGameObjectWithTag("Multiplayer_manager").GetComponent<RoundManager>();
     }
 
     private void Update()
@@ -69,5 +74,40 @@ public class PlayerUIManager : MonoBehaviour
         DefenceIndicator.localScale = new Vector3(Defence / MAX_DEFENCE, DefenceIndicator.localScale.y, DefenceIndicator.localScale.z);
     }
 
-}
+    public void PlayerHasCardSelected()
+    {
+        if(pv.IsMine)
+        {
+            SwitchCardSelected();
+            skipButton.SetActive(false);
+        }
 
+        if(PhotonNetwork.IsMasterClient)
+        {
+            bool localPlayerCardSelected = false;
+            if(pv.IsMine && cardSelected)
+            {
+                localPlayerCardSelected = true;
+            }
+
+            if(!pv.IsMine && cardSelected && localPlayerCardSelected)
+            {
+                _roundManager.OnPlayerCardSelected();
+            }
+        }
+    }
+
+    public void SwitchCardSelected()
+    {
+        cardSelected = !cardSelected;
+    }
+
+    public void ResetCardSelected()
+    {
+        if(pv.IsMine)
+        {
+            cardSelected = false;
+            skipButton.SetActive(true);
+        }
+    }
+}

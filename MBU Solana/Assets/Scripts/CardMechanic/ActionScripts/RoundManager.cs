@@ -115,6 +115,9 @@ public class RoundManager : MonoBehaviourPun
             photonView.RPC("InstantiateCardManager", RpcTarget.All); // Instantiates cards 
             photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
         }
+
+        playerCanvases[1].ResetCardSelected(); //Resetting the card selection on player 1
+        playerCanvases[2].ResetCardSelected(); //Resetting the card selection on player 2
     }
 
     [PunRPC]
@@ -173,9 +176,9 @@ public class RoundManager : MonoBehaviourPun
             photonView.RPC("RoundProgressor", RpcTarget.All);
         }
 
-        // Reset card selection flags
-        player1CardSelected = false;
-        player2CardSelected = false;
+        // // Reset card selection flags
+        // player1CardSelected = false;
+        // player2CardSelected = false;
     }
 
     [PunRPC]
@@ -247,42 +250,36 @@ public class RoundManager : MonoBehaviourPun
         Debug.Log("Round End");
         TimerObject.SetActive(false);
         RoundScript.OnCalculationOfResult();
-        Time.timeScale = 0;
-        screen.SetActive(true);
-        if (RoundScript != null && RoundScript.GetPlayerScript() != null && RoundScript.GetEnemyScript() != null)
-        {
-            Debug.Log("This is called");
-            plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
-            plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
-            plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
-            enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
-            enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
-            enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
-        }
+        // Time.timeScale = 0;
+        // screen.SetActive(true);
+        // if (RoundScript != null && RoundScript.GetPlayerScript() != null && RoundScript.GetEnemyScript() != null)
+        // {
+        //     Debug.Log("This is called");
+        //     plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
+        //     plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
+        //     plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
+        //     enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
+        //     enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
+        //     enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
+        // }
     }
 
     // Called when a player selects a card
-    public void OnPlayerCardSelected(int playerId)
+    public void OnPlayerCardSelected()
     {
-        if (playerId == 1)
-        {
-            player1CardSelected = true;
-        }
-        else if (playerId == 2)
-        {
-            player2CardSelected = true;
-        }
-
-        if (player1CardSelected && player2CardSelected)
-        {
-            // Both players have selected their cards, skip the remaining time
+        if(PhotonNetwork.IsMasterClient)
             photonView.RPC("SkipRemainingTime", RpcTarget.All);
-        }
     }
 
     [PunRPC]
     void SkipRemainingTime()
     {
-        timeRemaining = 0;
+        StopAllCoroutines();
+        //TimerObject.SetActive(false);
+
+        if (PhaseStart && PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
+        }
     }
 }
