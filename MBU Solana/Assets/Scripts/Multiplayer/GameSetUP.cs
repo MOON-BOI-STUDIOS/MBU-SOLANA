@@ -1,15 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 [System.Serializable]
 public struct SpawnPoints
 {
-
     public Transform spawnPoint;
     public bool boolSpawnPoint;
 
@@ -27,27 +24,26 @@ public struct SpawnPoints
     {
         return spawnPoint;
     }
-   
 }
 
-//script by Oliver Lancashire
+// Script by Oliver Lancashire
 public class GameSetUP : MonoBehaviour
 {
     #region fields
     /// <summary>
-    /// creating a singleton for this script
+    /// Creating a singleton for this script
     /// </summary>
     public static GameSetUP GS;
     /// <summary>
-    /// array of spawn points
+    /// Array of spawn points
     /// </summary>
-    // Struct array which will hold the value of the Struct Objects
     public SpawnPoints[] spawnPoints;
+    [SerializeField] Pause pause;
     #endregion
 
     #region methods
     /// <summary>
-    /// intialise singleton for game set up
+    /// Initialize singleton for game setup
     /// </summary>
     private void OnEnable()
     {
@@ -58,64 +54,30 @@ public class GameSetUP : MonoBehaviour
     }
 
     /// <summary>
-    /// disconnect player from game
+    /// Disconnect player from game
     /// </summary>
-    public void disconnectPlayer()
+    public void DisconnectPlayer()
     {
-
-
-        StartCoroutine(DsiconnectAndLoad());
-        Destroy(PhotonRoom.room.gameObject);
-
-
+        PhotonNetwork.LeaveRoom();
+         Destroy(PhotonRoom.room.gameObject);
+        pause.Resume();
     }
-
-
-    //public void NextLevel()
-    //{
-    //    StartCoroutine(LoadLevel());
-    //}
 
     /// <summary>
-    /// coroutine that will load menu scene
+    /// Coroutine that will load the menu scene
     /// </summary>
     /// <returns></returns>
-    public IEnumerator DsiconnectAndLoad()
+    public IEnumerator DisconnectAndLoad()
     {
+        PhotonNetwork.LeaveRoom();
 
-        PhotonNetwork.Disconnect();
-        //PhotonNetwork.LeaveRoom();
-
-        //while(PhotonNetwork.IsConnected)
+        // Wait until the player has left the room
         while (PhotonNetwork.InRoom)
-
+        {
             yield return null;
+        }
+
         SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
-         
-
-
-
-
-
-
     }
-
-    //IEnumerator LoadLevel()
-    //{
-    //    while (PhotonNetwork.InRoom)
-    //    {
-    //        yield return null;
-    //        SceneManager.LoadScene(Multiplayersettings.multiplayersettings.secondScene);
-
-    //    }
-    //}
     #endregion
-
 }
-
-
-
-
-
-
-
