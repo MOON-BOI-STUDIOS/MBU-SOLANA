@@ -25,17 +25,9 @@ public class StatItems : Items
         //ItemInventory.instance.RemoveItem(this);
 >>>>>>> Game_Dev
     }
-
-    // Start is called before the first frame update
-    void Start()
+    public int GetPoints()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return points;
     }
 }
 

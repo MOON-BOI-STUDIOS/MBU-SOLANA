@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     private PlayerManager _manager;
     public bool TutorialMove;
 
+    bool canMove = true;
+
     void Start()
     {
         _manager = GetComponent<PlayerManager>();
@@ -34,6 +36,11 @@ public class PlayerController : MonoBehaviour
         UpdateMoveDirection();
         HandleMovement();
     }
+
+    public void SwitchCanMove()
+    {
+        canMove = !canMove;
+    }
     public void Move(InputAction.CallbackContext context)
     {
         //moveDirection = context.ReadValue<Vector2>();
@@ -41,7 +48,8 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateMoveDirection()
     {
-#if !UNITY_STANDALONE && !UNITY_WEBGL 
+#if !UNITY_STANDALONE && !UNITY_WEBGL
+    if(canMove)
         moveDirection = inputHandler.GetInputDirection();
 <<<<<<< HEAD
 =======

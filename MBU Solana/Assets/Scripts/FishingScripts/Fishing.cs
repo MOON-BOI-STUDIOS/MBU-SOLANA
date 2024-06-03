@@ -32,8 +32,7 @@ public class Fishing : MonoBehaviour
 
     public CollisionType[] collisionType;
     public DialoguebaseFishing db;
-    public GameObject backMecha;
-    public GameObject backarcade;
+
 
     private RodItemObj currentRod;
     private BaitItemObjj currentBait;
@@ -56,16 +55,7 @@ public class Fishing : MonoBehaviour
     {
         //fishing.GetequippedItems(equippedItems);
         //Debug.Log(PlayerPrefs.GetInt("LastLocation"));
-        if (PlayerPrefs.GetInt("LastLocation")!=3)
-        {
-            PlayerPrefs.SetInt("LastLocation", 1);
-  
-            backMecha.SetActive(true);
-        }
-        else
-        {
-            backarcade.SetActive(true);
-        }
+   
 
         audioS = GetComponent<AudioSource>();
         greenAreaScale = new Vector3(greenArea.localScale.x, greenArea.localScale.y, greenArea.localScale.z);

@@ -25,7 +25,7 @@ public class Coin : Collectables
 >>>>>>> Game_Dev
             if (particleImpactPrefab != null)
             {
-                Debug.Log("ParticleEffect");
+                //Debug.Log("ParticleEffect");
                 particleImpactPrefab.Play();
             }
             Destroyable();
@@ -35,6 +35,7 @@ public class Coin : Collectables
     public override void Destroyable()
     {
         StartCoroutine(nameof(DestroyGameObject));
+        WaveManager.RemoveCoin(gameObject);
     }
 
     IEnumerator DestroyGameObject()

@@ -116,9 +116,15 @@ public class PlayerAnimator : MonoBehaviour
         
     }
 
+    public void MoveAttackArea()
+    {
+        _manager._combat.MoveAttackCollider();
+    }
+
     //north star starts
     public void specialStart()
     {
+        _manager.SwitchImmunity();
         audioSource.PlayOneShot(northStar);
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = false;
@@ -128,6 +134,7 @@ public class PlayerAnimator : MonoBehaviour
     //north start ends
     public void specialEnd()
     {
+        _manager.SwitchImmunity();
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
@@ -137,6 +144,7 @@ public class PlayerAnimator : MonoBehaviour
     //orion belt starts
     public void orionsBeltStart()
     {
+        _manager.SwitchImmunity();
         audioSource.PlayOneShot(orionsBelt);
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = false;
@@ -146,6 +154,7 @@ public class PlayerAnimator : MonoBehaviour
     //orion's belt ends
     public void orionsBeltEnd()
     {
+        _manager.SwitchImmunity();
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
@@ -170,7 +179,7 @@ public class PlayerAnimator : MonoBehaviour
     }
 
     //power up. plays music, makes player invincible, plays animation, all timed to music
-    public IEnumerator powerUp()
+    public IEnumerator PowerUp()
     {
         powerUpMuisc.enabled = true;
         _manager.isPoweredUp = true;
@@ -178,13 +187,16 @@ public class PlayerAnimator : MonoBehaviour
        _manager._combat.enabled = false;
         _heroAnimator.SetLayerWeight(4, 1);
         _heroAnimator.SetTrigger("Drink");
+        
         yield return new WaitForSeconds(3f);
         if(powerUpVolume != null)
             powerUpVolume.SetActive(true);
         _heroAnimator.SetLayerWeight(4, 0);
         mainMusic.volume = 0;
+        
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
+
         GetComponent<SpriteRenderer>().color = Color.yellow;
         yield return new WaitForSeconds(11f);
         if(powerUpVolume != null)
@@ -193,7 +205,7 @@ public class PlayerAnimator : MonoBehaviour
         mainMusic.volume = 0.676f;
         GetComponent<SpriteRenderer>().color = initialColor;
         _manager.isPoweredUp = false;
-
+        
     }
 
     //camera shake

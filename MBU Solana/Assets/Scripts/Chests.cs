@@ -22,16 +22,19 @@ public class Chests : MonoBehaviour
     public PlayerAnimator player;
     public Items ChestItemObj; 
     public GameObject textobj;
+    public int mainVer;
 
 
     private void Awake()
     {
         chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
+        mainVer = PlayerPrefs.GetInt("mainVer");
     }
     public void Start()
     {
         chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
-        if (chestOpened == true)
+        mainVer = PlayerPrefs.GetInt("mainVer");
+        if (chestOpened == true || mainVer == 1)
         {
             SpriteRenderer.sprite = chesto;
             GetComponent<SpriteRenderer>().sprite = chesto;
@@ -39,7 +42,7 @@ public class Chests : MonoBehaviour
 
 
         }
-        else if (chestOpened == false)
+        else if (chestOpened == false || mainVer == 0)
         {
             SpriteRenderer.sprite = chestc;
             GetComponent<SpriteRenderer>().sprite = chestc;
@@ -88,6 +91,8 @@ public class Chests : MonoBehaviour
         AddInventoryItemScript.instance.AddToInventory(ChestItemObj);
         chestOpened = true;
         PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
+        mainVer++;
+        PlayerPrefs.SetInt("mainVer", mainVer);
     }
 
 
@@ -114,28 +119,29 @@ public class Chests : MonoBehaviour
 
     public void Update()
     {
-        chestOpened = (PlayerPrefs.GetInt("chestOpened") != 0);
-        if (chestOpened == true)
-        {
-            SpriteRenderer.sprite = chesto;
-            GetComponent<SpriteRenderer>().sprite = chesto;
-            chest.enabled = false;
+        PlayerPrefs.SetInt("chestOpened", (chestOpened ? 1 : 0));
+        PlayerPrefs.SetInt("mainVer", mainVer);
+        //if (chestOpened == true || mainVer == 1)
+        //{
+        //    SpriteRenderer.sprite = chesto;
+        //    GetComponent<SpriteRenderer>().sprite = chesto;
+        //    chest.enabled = false;
 
-        }
-        else if(chestOpened == false)
-        {
-            SpriteRenderer.sprite = chestc;
-            GetComponent<SpriteRenderer>().sprite = chestc;
-            chest.enabled = true;
+        //}
+        //else if(chestOpened == false || mainVer == 0)
+        //{
+        //    SpriteRenderer.sprite = chestc;
+        //    GetComponent<SpriteRenderer>().sprite = chestc;
+        //    chest.enabled = true;
 
-        }
+        //}
 
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            isPickingUP = true;
-            dre.SetBool("isPickingUP", isPickingUP);
-            postion = player.lastDirection;
-        }
+        //if (Input.GetKeyDown(KeyCode.I))
+        //{
+        //    isPickingUP = true;
+        //    dre.SetBool("isPickingUP", isPickingUP);
+        //    postion = player.lastDirection;
+        //}
     }
 
 
@@ -143,7 +149,7 @@ public class Chests : MonoBehaviour
     {
         //yield return new WaitForSeconds(5f);
         textobj.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         textobj.SetActive(false);
     }
 

@@ -131,7 +131,7 @@ public class RodShopitem : MonoBehaviour
         int currentNumOfCoins = PlayerPrefs.GetInt("Coins");
         if(!isbait)
         {
-            if(rdb.GetItemValue() < currentNumOfCoins)
+            if(rdb.GetItemValue() <= currentNumOfCoins)
             {
                 // Call to reduce gold coin of the player
                 currentNumOfCoins = currentNumOfCoins - rdb.GetItemValue();
@@ -146,7 +146,7 @@ public class RodShopitem : MonoBehaviour
         }
         else
         {
-            if(_bait.GetItemValue() < currentNumOfCoins)
+            if(_bait.GetItemValue() <= currentNumOfCoins)
             {
                 currentNumOfCoins = currentNumOfCoins - _bait.GetItemValue();
                 PlayerPrefs.SetInt("Coins",currentNumOfCoins);

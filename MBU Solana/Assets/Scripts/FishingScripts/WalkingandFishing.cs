@@ -25,7 +25,7 @@ public class WalkingandFishing : MonoBehaviour
     public GameObject jolt;
     public GameObject Mecha;
     public GameObject panel;
-    public GameObject ArcMecha;
+
 
 
     public Animator transitions;
@@ -128,8 +128,7 @@ public class WalkingandFishing : MonoBehaviour
             jolt.SetActive(true);
             //fishingMec.SetActive(true);
             tutorial.SetActive(true);
-            Mecha.SetActive(true);
-            ArcMecha.SetActive(false);
+            //Mecha.SetActive(true);
             Walking.SetActive(false);
             FishingObj.SetActive(true);
             DialogueManagerFishing.instance.CloseOptions();

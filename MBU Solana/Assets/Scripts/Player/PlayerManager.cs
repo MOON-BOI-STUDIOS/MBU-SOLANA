@@ -15,6 +15,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public PlayerCombat _combat;
     public float maxHealth = 500;
     public float health = 500;
+    bool immunity = false;
     
     public TextMeshProUGUI coinsText;
     public Transform healthIndicator;
@@ -93,41 +94,50 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         
     }
 
+    public void SwitchImmunity()
+    {
+        immunity = !immunity;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //takes damage from the normal void 
-        if (other.tag == "enemyAttackZone" && isPoweredUp == false && !isDead)
+        if(!immunity && !isPoweredUp && !isDead)
         {
-            StartCoroutine(_animator.CameraShake(0.3f));
-            
-            health -= 20;
-        }
+            //takes damage from the normal void 
+            if (other.tag == "enemyAttackZone")
+            {
+                StartCoroutine(_animator.CameraShake(0.3f));
 
-        //takes damage from the green void projectile
-        if (other.tag == "greenVoidProjectile" && isPoweredUp == false && !isDead)
-        {
-            Destroy(other.transform.parent.gameObject);
-            StartCoroutine(_animator.CameraShake(0.3f));
-         
-          
-            health -= 40;
-            StartCoroutine(_animator.greenVoidDamage());
-        }
+                health -= 20;
+            }
 
-        //takes damage from the red void projectile
-        if (other.tag == "redVoidProjectile" && isPoweredUp == false && !isDead)
-        {
-            Destroy(other.transform.parent.gameObject);
-            StartCoroutine(_animator.CameraShake(0.3f));
-            health -= 40;
-            StartCoroutine(_animator.redVoidDamage());
+            //takes damage from the green void projectile
+            if (other.tag == "greenVoidProjectile")
+            {
+                Destroy(other.transform.parent.gameObject);
+                StartCoroutine(_animator.CameraShake(0.3f));
+
+
+                health -= 40;
+                StartCoroutine(_animator.greenVoidDamage());
+            }
+
+            //takes damage from the red void projectile
+            if (other.tag == "redVoidProjectile")
+            {
+                Destroy(other.transform.parent.gameObject);
+                StartCoroutine(_animator.CameraShake(0.3f));
+                health -= 40;
+                StartCoroutine(_animator.redVoidDamage());
+            }
         }
+        
 
         //triggers the poweup through the animator
         if(other.tag == "PowerUp" &&!isDead)
         {
             Destroy(other.gameObject);
-            StartCoroutine(_animator.powerUp());
+            StartCoroutine(_animator.PowerUp());
         }
 
         // collects coin. inccreases in playerprefs, plays a random coin pickup sound, destroys coin

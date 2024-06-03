@@ -20,11 +20,11 @@ public class WaveManager : MonoBehaviour
 
     public bool executeOnce;
     string curSceneName;
-<<<<<<< HEAD
-=======
     private List<GameObject> childenemies;
     //private GameObject[] childenemies;
->>>>>>> Game_Dev
+
+
+    public static List<GameObject> coins = new List<GameObject>();
     private void Awake()
     {
         nextRound();
@@ -52,6 +52,16 @@ public class WaveManager : MonoBehaviour
     }
 
 
+    public static void AddCoin(GameObject coin)
+    {
+        coins.Add(coin);
+    }
+
+    public static void RemoveCoin(GameObject coin)
+    {
+        coins.Remove(coin);
+    }
+
     IEnumerator delayLittleCoroutine()
     {
         yield return new WaitForSeconds(2f);
@@ -65,20 +75,13 @@ public class WaveManager : MonoBehaviour
         if (delayLittle)
             return;
 
-        if (enemiesParent.childCount <= 0 && waveSwitch == false )
+        if (enemiesParent.childCount <= 0 && waveSwitch == false && coins.Count <= 0)
         {
            
-<<<<<<< HEAD
-                PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1); 
-                endOfRoundScreen.SetActive(true);
-                // Activating the Slots Assets
-                //SlotMachineAppear();
-                //slotAssets.SetActive(true);
-                //
-                waveSwitch = true;
-=======
-            PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1); 
+            PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1);
+
             endOfRoundScreen.SetActive(true);
+
             PaymentInfo.UIActive = true;
             //Time.timeScale = 0f;
             // Activating the Slots Assets
@@ -86,7 +89,6 @@ public class WaveManager : MonoBehaviour
             //slotAssets.SetActive(true);
             //
             waveSwitch = true;
->>>>>>> Game_Dev
             Destroy(GameObject.FindGameObjectWithTag("PowerUp"));
 
         }
@@ -109,16 +111,11 @@ public class WaveManager : MonoBehaviour
         //Disabling the Slots Assets
         //SlotMachineAppear();
         //
-<<<<<<< HEAD
-        endOfRoundScreen.SetActive(false);
-        executeOnce = false;
-=======
         Time.timeScale = 1f;
         PaymentInfo.UIActive = false;
         endOfRoundScreen.SetActive(false);
         executeOnce = false;
 
->>>>>>> Game_Dev
 
         for (int i = 0; i < 2 + 2 * PlayerPrefs.GetInt("Round"); i++)
         {

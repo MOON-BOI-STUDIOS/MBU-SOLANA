@@ -15,17 +15,18 @@ public class ChestFish : MonoBehaviour
     public Sprite chesto;
     public Sprite chestc;
     public SpriteRenderer SpriteRenderer;
+    public int versions;
 
 
     private void Awake()
     {
         chestOpened = (PlayerPrefs.GetInt("ChestopenFish") != 0);
+        versions = PlayerPrefs.GetInt("versions");
     }
 
     public void Start()
     {
-        chestOpened = (PlayerPrefs.GetInt("ChestopenFish") != 0);
-        if (chestOpened == true)
+        if (chestOpened == true || versions == 1)
         {
             SpriteRenderer.sprite = chesto;
             GetComponent<SpriteRenderer>().sprite = chesto;
@@ -33,7 +34,7 @@ public class ChestFish : MonoBehaviour
 
 
         }
-        else if (chestOpened == false)
+        else if (chestOpened == false || versions == 0)
         {
             SpriteRenderer.sprite = chestc;
             GetComponent<SpriteRenderer>().sprite = chestc;
@@ -45,7 +46,7 @@ public class ChestFish : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            if(chestOpened == false)
+            if(chestOpened == false )
             {
                 button.SetActive(true);
             }
@@ -61,7 +62,7 @@ public class ChestFish : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (chestOpened == false)
+            if (chestOpened == false )
             {
                 button.SetActive(false);
             }
@@ -80,6 +81,8 @@ public class ChestFish : MonoBehaviour
         button.SetActive(false);
         PlayerPrefs.SetInt("ChestopenFish", (chestOpened ? 1 : 0));
         chestOpened = true;
+        versions++;
+        PlayerPrefs.GetInt("versions",versions);
 
 
     }
@@ -96,22 +99,23 @@ public class ChestFish : MonoBehaviour
 
     public void Update()
     {
-        chestOpened = (PlayerPrefs.GetInt("ChestopenFish") != 0);
-        if (chestOpened == true)
-        {
-            SpriteRenderer.sprite = chesto;
-            GetComponent<SpriteRenderer>().sprite = chesto;
-            chest.enabled = false;
+        PlayerPrefs.SetInt("ChestopenFish", (chestOpened ? 1 : 0));
+        PlayerPrefs.SetInt("versions", versions);
+        //    if (chestOpened == true || versions == 1)
+        //    {
+        //        SpriteRenderer.sprite = chesto;
+        //        GetComponent<SpriteRenderer>().sprite = chesto;
+        //        chest.enabled = false;
 
 
-        }
-        else if(chestOpened == false)
-        {
-            SpriteRenderer.sprite = chestc;
-            GetComponent<SpriteRenderer>().sprite = chestc;
-            chest.enabled = true;
+        //    }
+        //    else if (chestOpened == false || versions == 0)
+        //    {
+        //        SpriteRenderer.sprite = chestc;
+        //        GetComponent<SpriteRenderer>().sprite = chestc;
+        //        chest.enabled = true;
 
-        }
+        //    }
     }
 
 

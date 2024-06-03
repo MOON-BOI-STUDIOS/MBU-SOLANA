@@ -70,8 +70,19 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
         }
     }
 
-    public void AddItem(Items items)
+    public void AddItem(Items items, int defaultInstanceNum = 0)
     {
+        int UniqueInstance = PlayerPrefs.GetInt("InstanceNumber");
+        if (defaultInstanceNum == 0)
+        {
+            UniqueInstance += 1;
+            items.InstanceNum = UniqueInstance;
+            PlayerPrefs.SetInt("InstanceNumber", UniqueInstance);
+            Debug.Log("Instance Number:" + PlayerPrefs.GetInt("InstanceNumber"));
+            PlayerPrefs.Save();
+        }
+        items.InstanceNum = defaultInstanceNum;
+        Debug.Log("Existing instance Number:" + items.InstanceNum);
         inventoryItemList.Add(items);
 <<<<<<< HEAD
         onItemChange.Invoke();
@@ -287,14 +298,14 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
 
     public void SaveData(ref GameData data)
     {
-        Debug.Log("Number of items in ythe inventoryItemList" + inventoryItemList.Count);
+        Debug.Log("Number of items in the inventoryItemList" + inventoryItemList.Count);
         //Check index from the item list in AddInventoryItemList and if it is a rod object then save its index and bait number as -1 
         // if it is a bait object save index and the bait number as well
         for(int i = 0;i < inventoryItemList.Count;i++)
         {
             int idx = inventoryItemList[i].itemNumber;
+            int instNum = inventoryItemList[i].InstanceNum;
             int baitValue = -1;
-            Debug.Log("Index of the data being saved" + idx);
             if(idx >= 0)
             {
                 if(string.Equals(inventoryItemList[i].classOfItem.ToString(),"bait"))
@@ -302,13 +313,15 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
                     BaitItemObjj queryItem = (BaitItemObjj)inventoryItemList[i];
                     baitValue = queryItem.GetbaitValue();
                 }
-                data.savedData.Add(new ItemData(idx,baitValue));
+                Debug.Log("Instance number going to be saved" + instNum);
+                data.savedData.Add(new ItemData(idx,baitValue,instNum));
             }
         }
         // Save hotbar items if any
         for(int i = 0;i < hotbarItemList.Count;i++)
         {
             int idx = hotbarItemList[i].itemNumber;
+            int instNum = inventoryItemList[i].InstanceNum;
             int baitValue = -1;
             if(idx >= 0)
             {
@@ -317,7 +330,7 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
                     BaitItemObjj queryItem = (BaitItemObjj)hotbarItemList[i];
                     baitValue = queryItem.GetbaitValue();
                 }
-                data.savedData.Add(new ItemData(idx,baitValue));
+                data.savedData.Add(new ItemData(idx,baitValue,instNum));
             }
         }
     }

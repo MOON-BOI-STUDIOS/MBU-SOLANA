@@ -74,14 +74,17 @@ public class GreenVoidAnimator : MonoBehaviour
     {
         //spawns coin upon death
         GameObject coin = Instantiate(solanaCoin, transform.parent.position, Quaternion.identity);
-        coin.transform.GetComponent<Rigidbody>().AddForce((Vector3.up + new Vector3(Random.Range(1, -1), 0, 0)) * 3 + new Vector3(Random.Range(1, -1), 0, 0), ForceMode.Impulse);
+        WaveManager.AddCoin(coin);
+
+        //if(coin != null)
+        //coin.transform.GetComponent<Rigidbody>().AddForce((Vector3.up + new Vector3(Random.Range(1, -1), 0, 0)) * 3 + new Vector3(Random.Range(1, -1), 0, 0), ForceMode.Impulse);
 
         //Spawns the power up can, after round 3 (one in 20 chance)
         int powerUpChance = Random.Range(0, 20);
         if(PlayerPrefs.GetInt("Round") >= 3 && powerUpChance == 5)
         {
             GameObject can = Instantiate(powerUpCan, transform.parent.position, Quaternion.identity);
-            can.transform.GetComponent<Rigidbody>().AddForce((Vector3.up + new Vector3(Random.Range(1, -1), 0, 0)) * 3 + new Vector3(Random.Range(1, -1), 0, 0), ForceMode.Impulse);
+            //can.transform.GetComponent<Rigidbody>().AddForce((Vector3.up + new Vector3(Random.Range(1, -1), 0, 0)) * 3 + new Vector3(Random.Range(1, -1), 0, 0), ForceMode.Impulse);
         }
     }
 

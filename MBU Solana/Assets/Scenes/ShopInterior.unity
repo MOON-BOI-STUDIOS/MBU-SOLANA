@@ -326,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 2701667282038435724, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e36eb343190726140bc5a38cf6b03d45, type: 3}
+      objectReference: {fileID: 21300000, guid: 4a26277b4a1393046afe8108e958d91f, type: 3}
     - target: {fileID: 2701667282038435725, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -3294,11 +3294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8041513765739747396, guid: 369bdfc086f768e4785b00b8f9b8ea54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.257
+      value: 0.372
       objectReference: {fileID: 0}
     - target: {fileID: 8041513765739747396, guid: 369bdfc086f768e4785b00b8f9b8ea54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.514
+      value: -1.499
       objectReference: {fileID: 0}
     - target: {fileID: 8041513765739747396, guid: 369bdfc086f768e4785b00b8f9b8ea54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3373,7 +3373,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18691093, y: 0.39327174}
+  m_Offset: {x: -0.19, y: 0.39327174}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3384,7 +3384,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0592718, y: 0.21345651}
+  m_Size: {x: 2.33, y: 0.92}
   m_EdgeRadius: 0
 --- !u!1001 &1197735250
 PrefabInstance:
@@ -3589,9 +3589,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 232034981}
+    - target: {fileID: 3323450373715611010, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5359501488407022395, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_Name
       value: wallet_holder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359501488407022395, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5527986196015098934, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_Pivot.x
@@ -3675,6 +3683,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5527986196015098934, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697632521220696608, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.5000076
+      objectReference: {fileID: 0}
+    - target: {fileID: 6726346714725070028, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170588453949254290, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.5000076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260554316814568753, guid: 51b19f34b566aa04ea3325e5810f314c, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5274,6 +5298,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2098408987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098408990}
+  - component: {fileID: 2098408989}
+  - component: {fileID: 2098408988}
+  m_Layer: 0
+  m_Name: '[WalletController]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2098408988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098408987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75a4e92c14884ea6bf3e46d07a33eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rpcCluster: 0
+  customRpc: wss://mainnet.helius-rpc.com/?api-key=67b9777c-d9f3-4485-af2a-a20012a4b676
+  webSocketsRpc: wss://mainnet.helius-rpc.com/?api-key=67b9777c-d9f3-4485-af2a-a20012a4b676
+  autoConnectOnStartup: 1
+  web3AuthWalletOptions:
+    appName: Solana Unity SDK
+    logoLight: 
+    logoDark: 
+    defaultLanguage: en
+    dark: 1
+    themeName: primary
+    themeColor: '#123456'
+    redirectUrl: torusapp://com.torus.Web3AuthUnity/auth
+    clientId: BO4zGEzyV6DT1vHU46b6GEngOcg2jl5Pmd9Boi8dLdBpBZnS351ulHDz2k7XJ1dEm-DcvyyARivGCZDXrbZng-0
+    network: 0
+  solanaWalletAdapterOptions:
+    solanaMobileWalletAdapterOptions:
+      identityUri: https://solana.unity-sdk.gg/
+      iconUri: /favicon.ico
+      name: Solana.Unity-SDK
+      keepConnectionAlive: 1
+    solanaWalletAdapterWebGLOptions:
+      walletAdapterButtonPrefab: {fileID: 0}
+      walletAdapterUIPrefab: {fileID: 0}
+    phantomWalletOptions:
+      phantomApiVersion: v1
+      appMetaDataUrl: https://phantom.app/ul/v1/connect
+      deeplinkUrlScheme: unitydl
+--- !u!114 &2098408989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098408987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7daddfbeaa44729a122a269ac8fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2098408990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098408987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 523.5468, y: 236.58032, z: -101.23384}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2099801127 stripped
 MonoBehaviour:
