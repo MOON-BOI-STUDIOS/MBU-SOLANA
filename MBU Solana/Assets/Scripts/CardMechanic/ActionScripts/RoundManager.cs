@@ -55,6 +55,8 @@ public class RoundManager : MonoBehaviourPun
 
     public bool isCoolDown = false;
 
+    private bool player1CardSelected = false; // Track player 1 card selection
+    private bool player2CardSelected = false; // Track player 2 card selection
 
     // Start is called before the first frame update
     void Start()
@@ -71,6 +73,12 @@ public class RoundManager : MonoBehaviourPun
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+
+                // Check if both players have selected their cards
+                if (player1CardSelected && player2CardSelected)
+                {
+                    EndGame(); // Skip to the next phase
+                }
             }
             else
             {
@@ -80,9 +88,6 @@ public class RoundManager : MonoBehaviourPun
             }
         }
     }
-
-
-  
 
     public void DisplayTime(float timeToDisplay)
     {
@@ -97,17 +102,17 @@ public class RoundManager : MonoBehaviourPun
     {
         if (!playerCanvases.ContainsKey(playerId))
         {
+            Debug.Log("Registered with player ID: " + playerId);
             playerCanvases.Add(playerId, playerUI);
-            RoundScript.FindPlayers(playerId,playerManager);
+            RoundScript.FindPlayers(playerId, playerManager);
         }
     }
-
 
     public void OnRoundStart()
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            photonView.RPC("InstantiateCardManager", RpcTarget.All);// Instantiates cards 
+            photonView.RPC("InstantiateCardManager", RpcTarget.All); // Instantiates cards 
             photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
         }
     }
@@ -116,7 +121,7 @@ public class RoundManager : MonoBehaviourPun
     void RoundProgressor()
     {
         NumberOfPhases += 1;
-        Debug.Log("Number pf Phases:" + NumberOfPhases);
+        Debug.Log("Number of Phases:" + NumberOfPhases);
         if (PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
@@ -126,9 +131,8 @@ public class RoundManager : MonoBehaviourPun
         time.color = Color.green;
         isCoolDown = false;
 
-        //Start Time
+        // Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
-        //photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
         StartGameTimer(masterStartTime);
     }
 
@@ -152,7 +156,6 @@ public class RoundManager : MonoBehaviourPun
 
         // Timer finished, notify all clients
         EndGame();
-
     }
 
     private void EndGame()
@@ -165,10 +168,14 @@ public class RoundManager : MonoBehaviourPun
         {
             photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
         }
-        else if(PhotonNetwork.IsMasterClient)
+        else if (PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("RoundProgressor", RpcTarget.All);
         }
+
+        // Reset card selection flags
+        player1CardSelected = false;
+        player2CardSelected = false;
     }
 
     [PunRPC]
@@ -205,7 +212,7 @@ public class RoundManager : MonoBehaviourPun
         {
             cardManager.transform.SetParent(playerCanvases[playerId].transform, false);
         }
-        
+
         if (cardManager != null)
         {
             CardManagersObject = cardManager.GetComponent<CardManager>();
@@ -215,7 +222,7 @@ public class RoundManager : MonoBehaviourPun
             Debug.Log("cardManager is Null");
         }
 
-        //Turning on the Gameobject for timer as true. Doing it here as this function is only triggered once
+        // Turning on the Gameobject for timer as true. Doing it here as this function is only triggered once
         TimerObject.SetActive(true);
     }
 
@@ -223,15 +230,14 @@ public class RoundManager : MonoBehaviourPun
     void CloseForPlayerChoice()
     {
         Debug.Log("Stop Choosing");
-        // Disable Ui input with Buttons
+        // Disable UI input with Buttons
         PhaseStart = false;
         gameDuration = 10f;
         time.color = Color.red;
         isCoolDown = true;
 
-        //Start Time
+        // Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
-        //photonView.RPC("StartGameTimer", RpcTarget.All, masterStartTime);
         StartGameTimer(masterStartTime);
     }
 
@@ -242,11 +248,7 @@ public class RoundManager : MonoBehaviourPun
         TimerObject.SetActive(false);
         RoundScript.OnCalculationOfResult();
         Time.timeScale = 0;
-        /*screen.SetActive(true);
-        if (RoundScript.GetEnemyScript() == null)
-        {
-            Debug.Log("Enemy Script is null");
-        }
+        screen.SetActive(true);
         if (RoundScript != null && RoundScript.GetPlayerScript() != null && RoundScript.GetEnemyScript() != null)
         {
             Debug.Log("This is called");
@@ -256,7 +258,31 @@ public class RoundManager : MonoBehaviourPun
             enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
             enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
             enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
-        }*/
-        
+        }
+    }
+
+    // Called when a player selects a card
+    public void OnPlayerCardSelected(int playerId)
+    {
+        if (playerId == 1)
+        {
+            player1CardSelected = true;
+        }
+        else if (playerId == 2)
+        {
+            player2CardSelected = true;
+        }
+
+        if (player1CardSelected && player2CardSelected)
+        {
+            // Both players have selected their cards, skip the remaining time
+            photonView.RPC("SkipRemainingTime", RpcTarget.All);
+        }
+    }
+
+    [PunRPC]
+    void SkipRemainingTime()
+    {
+        timeRemaining = 0;
     }
 }
