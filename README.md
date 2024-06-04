@@ -75,5 +75,5 @@ For more details, refer to the [architecture diagram](./docs/architecture.png).
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 =======
-# For RENAISSANCE submission please go to the game-dev branch! :) 
+# For BONKATHON submission please go to the game-dev branch! :) 
 >>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
