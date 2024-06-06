@@ -35,8 +35,22 @@ public class C_Special : MonoBehaviour
         description.text = co.description;
         art = co.art;
         cost = co.cost;
-
-
+    }
+    public float getDamage()
+    {
+        return cardObject.damage;
+    }
+    public float getDecreaseDamagePercent()
+    {
+        return cardObject.decreaseDamagePercent;
+    }
+    public float getIncreaseDamagePercent()
+    {
+        return cardObject.increaseDamagePercent;
+    }
+    public float getHealingPower()
+    {
+        return cardObject.healingPower;
     }
 
 }

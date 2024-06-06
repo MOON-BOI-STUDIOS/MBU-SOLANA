@@ -18,7 +18,11 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     private Dictionary<int, PlayerManager> playerDict = new Dictionary<int, PlayerManager>();
 
+    private bool nextRoundAttack = false;
 
+    private PlayerManager playerToBeDamaged = null;
+
+    private float DamageToBeInflicted = 0; //Next Round DamageVariable 
 
     // Start is called before the first frame update
     void Start()
@@ -89,25 +93,25 @@ public class RoundScript : MonoBehaviourPunCallbacks
     {
         Debug.Log("Calculating");
         int playerNumber = turnOptionsMethods.OnPhase1Options(GetPlayerScript(), GetEnemyScript());
+        Debug.Log("Player Number is:" + playerNumber);
         // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
         if (playerNumber == 2)
         {
             // For Phase 2 and 3 Attacks of player
             phase.PhaseOptions(GetPlayerScript(), GetEnemyScript(), true);// Check the Definition of PhaseOptions
-                                                                                // For Phase 2 and 3 Attacks of Enemy
+            // For Phase 2 and 3 Attacks of Enemy
             phase.PhaseOptions(GetEnemyScript(), GetPlayerScript(), true);// true is used to call both the phases
         }
-        Debug.Log("Player Number is:" + playerNumber);
         /*else if (playerNumber == 0)
         {
             // For Phase 2 and 3 Attacks of player
             phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);
-            // For only Phase 2 Attack
+            // For only Phase 2 Attack of enemy
             phase.PhaseOptions(enemyManagerScript, playerManagerScript, false);
         }
         else if (playerNumber == 1)
         {
-            // For only Phase 2 Attack
+            // For only Phase 2 Attack of player
             phase.PhaseOptions(playerManagerScript, enemyManagerScript, false);
             // For Phase 2 and 3 Attacks of Enemy
             phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
@@ -118,43 +122,29 @@ public class RoundScript : MonoBehaviourPunCallbacks
         //Call OnRoundStart Once again
     }
 
-
-
-    /*public void OnOptionSelected(TurnOptions.Turns _turns, GameObject Selector, GameObject OtherPlayer )
+    #region NextRoundAttack
+    public void SetNextRoundAttack(bool value)
     {
-        switch (_turns)
+        nextRoundAttack = value;
+    }
+
+    public void SetToBeDamagedPlayer(PlayerManager player)
+    {
+        playerToBeDamaged = player;
+    }
+
+    public void SetDamageForNextRound(float value)
+    {
+        DamageToBeInflicted = value;
+    }
+
+    public void OnNextRoundAttack()
+    {
+        if (nextRoundAttack && playerToBeDamaged != null)
         {
-            case TurnOptions.Turns.BlockEnemyDamage:
-                // No change in Player Health no matter what attack
-                Selector.GetComponent<PlayerManager>().OnNoDamage();
-                break;
-
-            case TurnOptions.Turns.IncreasePlayerDefence:
-                // Increase the defence of the Player
-                Selector.GetComponent<PlayerManager>().OnChangeDefence(10, true);
-                break;
-
-            case TurnOptions.Turns.HealPortionHealth:
-                // Heal the health
-                Selector.GetComponent<PlayerManager>().OnChangeHealth(10, true);
-                break;
-
-            case TurnOptions.Turns.HealMaxHealth:
-                // Increase Max Health
-                break;
-
-            case TurnOptions.Turns.DoubleDamage:
-                // Decrease Player Health
-                OtherPlayer.GetComponent<PlayerManager>().OnChangeHealth(40, false);
-                break;
-
-            case TurnOptions.Turns.NxtRdReduceEnemyDefence:
-                // Reduce Enemy Defence Next Round
-                break;
-
-            case TurnOptions.Turns.NxtRdReduceEnemyAttack:
-                // Reduce Enemy Damage on Player next round
-                break;
+            playerToBeDamaged.OnChangeHealth(DamageToBeInflicted, false);
         }
-    }*/
+    }
+
+    #endregion
 }
