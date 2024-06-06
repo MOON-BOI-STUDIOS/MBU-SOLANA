@@ -6,41 +6,69 @@ using TMPro;
 public class RaceGameUIManager : MonoBehaviour
 {
     [SerializeField] Transform Lives;
-    [SerializeField] TMP_Text _score;
+    public TMP_Text scoreUI;
     [SerializeField] GameObject Boost;
     [SerializeField] Image BoostFill;
 
+    public CanvasGroup canvasGroup; // assign this in the inspector
+    private BikeController _playerController;
 
     public static RaceGameUIManager Inst;
-
+    public int LivesCount;
+    private int _maxLives;
     private void Awake()
     {
         Inst = this;
+        
+    }
+
+    void Start()
+    {
+        _playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<BikeController>();
+        if(_playerController != null)
+        {
+            _maxLives = _playerController.lives;
+            LivesCount = _maxLives;
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (_playerController != null)
+            BoostFill.fillAmount = _playerController.boostAmount;
     }
 
     public void UpdateLives()
     {
+        if(_playerController != null)
+            LivesCount = _playerController.lives;
         // Enable the lives up to the LivesCount
-        for (int i = 0; i < RaceGameManager.inst.LivesCount; i++)
-        {
-            Lives.GetChild(i).gameObject.SetActive(true);
-        }
-
-        // Disable the remaining lives
-        for (int i = RaceGameManager.inst.LivesCount; i < Lives.childCount; i++)
+        for (int i = _maxLives-1; i > LivesCount-1; i--)
         {
             Lives.GetChild(i).gameObject.SetActive(false);
         }
     }
 
-    public void UpdateScore()
+    public void ReduceLife()
     {
-        _score.text = ((int)RaceGameManager.inst.score).ToString();
+        UpdateLives();
+
+        if (LivesCount <= 0)
+        {
+            _playerController.kill();
+            return;
+        }
+        raceAnimationManager.Inst.PlayBlinking();
     }
 
-    public IEnumerator BoostStart(float time)
+    public void UpdateScore()
     {
-        Boost.SetActive(true);
+        scoreUI.text = ((int)RaceGameManager.inst.score).ToString();
+    }
+
+    /*public IEnumerator BoostStart(float time)
+    {
         float elapsed = 0f;
         BoostFill.fillAmount = 1;
 
@@ -52,21 +80,33 @@ public class RaceGameUIManager : MonoBehaviour
         }
 
         BoostFill.fillAmount = 0;
+    }*/
+
+    /* public void boostStop()
+     {
+         Boost.SetActive(false);
+     }*/
+
+    public void ShowLeaderboard(float duration)
+    {
+        canvasGroup.gameObject.SetActive(true);
+        StartCoroutine(FadeInCanvas(canvasGroup, canvasGroup.alpha, 1, duration));
     }
 
-    public void boostStop()
+    private IEnumerator FadeInCanvas(CanvasGroup cg, float start, float end, float duration)
     {
-        Boost.SetActive(false);
+        float startTime = Time.time;
+        float endTime = Time.time + duration;
+
+        while (Time.time <= endTime)
+        {
+            float t = (Time.time - startTime) / duration;
+            cg.alpha = Mathf.Lerp(start, end, t);
+            yield return null;
+        }
+
+        // Ensure the fade is complete
+        cg.alpha = end;
     }
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

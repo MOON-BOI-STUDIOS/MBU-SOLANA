@@ -17,6 +17,7 @@ TagManager:
   - FishingZone
   - FishermanSpot
   - InventoryObject
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -29,8 +30,8 @@ TagManager:
   - Booster
   - Ground
   - InventoryObject
-  - 
-  - 
+  - Player
+  - Interactable
   - 
   - 
   - 

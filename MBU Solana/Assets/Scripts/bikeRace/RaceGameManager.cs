@@ -1,18 +1,20 @@
 using System;
 using UnityEngine;
 
+
+
 public class RaceGameManager : MonoBehaviour
 {
     public enum Difficulty { Easy, Medium, Hard }
-
+    public bool hasReceiveInput = false;
     [SerializeField] public static float currentSpeed;
-    float _score;
+    private float _score;
     public float score
     {
         set
         {
             _score = value;
-            RaceGameUIManager.Inst.UpdateScore();
+            RaceGameUIManager.Inst.scoreUI.text = value.ToString("F0");
         }
         get
         {
@@ -28,9 +30,9 @@ public class RaceGameManager : MonoBehaviour
     [SerializeField] private float mediumSpeed = 20f;
     [SerializeField] private float hardSpeed = 30f;
 
-    [Header("Threshold")]
-    public float mediumThreshold = 1000f;
-    public float hardThreshold = 2000f;
+//     [Header("Threshold")]
+//     public float mediumThreshold = 1000f;
+//     public float hardThreshold = 2000f;
 
     private float transitionSmoothness = 0.1f;
 
@@ -42,7 +44,7 @@ public class RaceGameManager : MonoBehaviour
 
     public SpriteRenderer sp;
     [Header("PowerUps")]
-    public int LivesCount;
+    
     public float BoostTime;
 
 
@@ -53,27 +55,28 @@ public class RaceGameManager : MonoBehaviour
     private void Awake()
     {
         inst = this;
-
-     
-     current = bikeDataArray[PlayerPrefs.GetInt("CurrentPlayBikeIndex", 0)];
-        LivesCount = current.Health;
-        BoostTime = current.Boost;
-        sp.sprite = current.BikeImage;
     }
 
 
     private void Start()
     {
         RaceGameUIManager.Inst.UpdateLives();
+        current = bikeDataArray[PlayerPrefs.GetInt("CurrentPlayBikeIndex", 0)];
+        RaceGameUIManager.Inst.LivesCount = current.Health;
+        BoostTime = current.Boost;
+        sp.sprite = current.BikeImage;
+        currentSpeed = -10f;
     }
-
 
     void Update()
     {
-        score = bikeController.GetDistanceCovered();
-        float relativeScore = score - resetScore;
-        float targetSpeed;
+        if (Input.anyKeyDown) hasReceiveInput = true;
+        if (!hasReceiveInput) return;
 
+        score += (Time.realtimeSinceStartup * Time.fixedDeltaTime / 100);
+        float relativeScore = score - resetScore;
+        //float targetSpeed;
+/*
         if (relativeScore < mediumThreshold)
         {
             currentDifficulty = Difficulty.Easy;
@@ -89,23 +92,10 @@ public class RaceGameManager : MonoBehaviour
             currentDifficulty = Difficulty.Hard;
             targetSpeed = hardSpeed;
         }
+*/
 
-        currentSpeed = Mathf.Lerp(currentSpeed, targetSpeed, transitionSmoothness * Time.deltaTime);
+        //currentSpeed = Mathf.Lerp(currentSpeed, targetSpeed, transitionSmoothness * Time.deltaTime);
     }
-
-    public void ReduseLife()
-    {
-        LivesCount--;
-        RaceGameUIManager.Inst.UpdateLives();
-
-        if (LivesCount<=0)
-        {
-            bikeController.kill();
-            return;
-        }
-        raceAnimationManager.Inst.PlayBlinking();
-    }
-
 
     public void ResetDifficulty()
     {

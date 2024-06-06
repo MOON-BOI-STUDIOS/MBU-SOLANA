@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//not used anymore
 public class RoadWall : MonoBehaviour
 {
     public BikeController bikeController;
@@ -12,8 +12,8 @@ public class RoadWall : MonoBehaviour
         if (bikeController != null)
         {
             Vector3 bikePosition = bikeController.transform.position;
-            Vector3 cameraPosition = new Vector3(transform.position.x, bikePosition.y + yOffset, transform.position.z);
-            transform.position = cameraPosition;
+            //Vector3 cameraPosition = new Vector3(transform.position.x, bikePosition.y + yOffset, transform.position.z);
+            //transform.position = cameraPosition;
         }
         else
         {
