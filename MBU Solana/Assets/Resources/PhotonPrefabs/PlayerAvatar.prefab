@@ -1664,7 +1664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3071885676069113847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3411,13 +3411,13 @@ MonoBehaviour:
   healthNumber: {fileID: 1508601869022854459}
   IndicatorUI: {fileID: 8285820528448135646}
   costText: {fileID: 8070831575953455087}
+  skipButton: {fileID: 6704751553133579958}
   rmtDefenceIndicator: {fileID: 1383032127953848496}
   rmtcoinsText: {fileID: 8210324088761795880}
   rmthealthIndicator: {fileID: 777431372250283686}
   rmthealthNumber: {fileID: 1907720535649833946}
   rmtIndicatorUI: {fileID: 6236970949038465983}
   rmtcostText: {fileID: 822554495520302228}
-  skipButton: {fileID: 6704751553133579958}
 --- !u!1 &9029094405160294605
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,8 +55,7 @@ public class RoundManager : MonoBehaviourPun
 
     public bool isCoolDown = false;
 
-    private bool player1CardSelected = false; // Track player 1 card selection
-    private bool player2CardSelected = false; // Track player 2 card selection
+    private int playersSkipped = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -73,18 +72,13 @@ public class RoundManager : MonoBehaviourPun
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
-
-                // Check if both players have selected their cards
-                if (player1CardSelected && player2CardSelected)
-                {
-                    EndGame(); // Skip to the next phase
-                }
             }
             else
             {
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                EndGame();
             }
         }
     }
@@ -116,8 +110,7 @@ public class RoundManager : MonoBehaviourPun
             photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
         }
 
-        playerCanvases[1].ResetCardSelected(); //Resetting the card selection on player 1
-        playerCanvases[2].ResetCardSelected(); //Resetting the card selection on player 2
+
     }
 
     [PunRPC]
@@ -133,6 +126,11 @@ public class RoundManager : MonoBehaviourPun
         gameDuration = 10f;
         time.color = Color.green;
         isCoolDown = false;
+
+
+        playerCanvases[1].ResetCardSelected(); //Resetting the card selection on player 1
+        playerCanvases[2].ResetCardSelected(); //Resetting the card selection on player 2
+
 
         // Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
@@ -175,10 +173,6 @@ public class RoundManager : MonoBehaviourPun
         {
             photonView.RPC("RoundProgressor", RpcTarget.All);
         }
-
-        // // Reset card selection flags
-        // player1CardSelected = false;
-        // player2CardSelected = false;
     }
 
     [PunRPC]
@@ -264,18 +258,31 @@ public class RoundManager : MonoBehaviourPun
         // }
     }
 
-    // Called when a player selects a card
-    public void OnPlayerCardSelected()
+    // Called when a player presses the skip button
+    public void OnPlayerSkipPressed()
     {
-        if(PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("PlayerSkipPressedRPC", RpcTarget.MasterClient, PhotonNetwork.LocalPlayer.ActorNumber);
+        }
+    }
+
+    [PunRPC]
+    void PlayerSkipPressedRPC(int playerId)
+    {
+        playersSkipped++;
+        if (playersSkipped >= 2) // Both players have pressed the skip button
+        {
             photonView.RPC("SkipRemainingTime", RpcTarget.All);
+            playersSkipped = 0; // Reset for the next round
+        }
     }
 
     [PunRPC]
     void SkipRemainingTime()
     {
         StopAllCoroutines();
-        //TimerObject.SetActive(false);
+        timerIsRunning = false;
 
         if (PhaseStart && PhotonNetwork.IsMasterClient)
         {

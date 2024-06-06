@@ -16,6 +16,8 @@ public class PlayerUIManager : MonoBehaviour
     public GameObject IndicatorUI;
     public TextMeshProUGUI costText;
 
+    public GameObject skipButton;
+
     // ---------------- Remote Player ------------------//
     public Transform rmtDefenceIndicator;
     public TextMeshProUGUI rmtcoinsText;
@@ -26,7 +28,7 @@ public class PlayerUIManager : MonoBehaviour
 
     private PhotonView pv;
 
-    public GameObject skipButton;
+    
 
     public void Start()
     {
@@ -76,24 +78,13 @@ public class PlayerUIManager : MonoBehaviour
 
     public void PlayerHasCardSelected()
     {
-        if(pv.IsMine)
+        if (pv.IsMine)
         {
             SwitchCardSelected();
             skipButton.SetActive(false);
-        }
 
-        if(PhotonNetwork.IsMasterClient)
-        {
-            bool localPlayerCardSelected = false;
-            if(pv.IsMine && cardSelected)
-            {
-                localPlayerCardSelected = true;
-            }
-
-            if(!pv.IsMine && cardSelected && localPlayerCardSelected)
-            {
-                _roundManager.OnPlayerCardSelected();
-            }
+            // Notify RoundManager that this player has selected a card and pressed skip
+            _roundManager.OnPlayerSkipPressed();
         }
     }
 
