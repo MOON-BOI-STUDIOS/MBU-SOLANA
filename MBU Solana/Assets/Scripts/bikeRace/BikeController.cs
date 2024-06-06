@@ -11,8 +11,8 @@ public class BikeController : MonoBehaviour
 
     //private Vector3 targetPosition;
     //private bool isMoving = false;
-    
 
+    [SerializeField]
     private bool _inputEnabled = true;
     public bool InputEnabled { get { return _inputEnabled; } set { _inputEnabled = value; } }
 

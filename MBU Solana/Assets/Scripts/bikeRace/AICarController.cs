@@ -98,7 +98,6 @@ public class AICarController : RaceObjectBase
         }
 
         isMoving = false;
-        _rb.velocity = new Vector2(0, speed); // Reset the Y-axis movement
     }
     IEnumerator MoveRight()
     {
@@ -114,7 +113,6 @@ public class AICarController : RaceObjectBase
         }
 
         isMoving = false;
-        _rb.velocity = new Vector2(0, speed); // Reset the Y-axis movement
     }
 
     IEnumerator HandleRotationLeft(float movementTime)

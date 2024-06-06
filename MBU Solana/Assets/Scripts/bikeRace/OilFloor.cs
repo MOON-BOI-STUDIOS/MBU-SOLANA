@@ -39,5 +39,7 @@ public class OilFloor : RaceObjectBase
         }
         target.transform.rotation = Quaternion.Euler(0,0,0);
         target.GetComponent<BikeController>().InputEnabled = true;
+        Debug.Log("HIII");
+
     }
 }

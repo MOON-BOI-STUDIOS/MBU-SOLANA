@@ -19,13 +19,10 @@ public class InteractableManager : MonoBehaviour
     public List<GameObject> carsPrefab = new List<GameObject>();
     public GameObject[] positionsToMoveTo = new GameObject[3];
 
-
-
     //speed which things appear
     [SerializeField]
     private float _frequency = 0f;
     private float _frequencyMax = 2f;
-
 
     //random generator int holder
     //  true means I don't want repetition
@@ -43,7 +40,12 @@ public class InteractableManager : MonoBehaviour
     [SerializeField]
     private GameObject prefabBubble;
     private List<GameObject> _dBubbleAvailable = new List<GameObject>();
-    
+
+    private void Start()
+    {
+        //bubble start off by default so later we can check for availability
+        prefabBubble.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
@@ -143,19 +145,15 @@ public class InteractableManager : MonoBehaviour
 
         for(int i = 0; i < _dBubbleAvailable.Count; i++)
         {
-            if (!_dBubbleAvailable[i].activeInHierarchy)
+            if (!_dBubbleAvailable[i].activeSelf)
             {
                 target.GetComponent<RaceObjectBase>().OnBubble(_dBubbleAvailable[i]);
-            }
-            else
-            {
-                GameObject temp = Instantiate(prefabBubble);
-                _dBubbleAvailable.Add(temp);
-                target.GetComponent<RaceObjectBase>().OnBubble(temp);
-            }
-            
+                return;
+            }            
         }
-        
+        GameObject temp = Instantiate(prefabBubble, prefabBubble.transform.position, Quaternion.identity, transform);
+        _dBubbleAvailable.Add(temp);
+        target.GetComponent<RaceObjectBase>().OnBubble(temp);
 
         //array while blabla
     }
