@@ -60,7 +60,7 @@ MonoBehaviour:
   - SetVariables
   - SkipRemainingTime
   - SetVariableDict
-  - PlayerSkipPressedRPC
+  - SetCardManager
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -25,8 +25,16 @@ public class CardViz : MonoBehaviour
         title.text = co.cardName;
         description.text = co.description;
         art = co.art;
+    }
 
+    public int getDamage()
+    {
+        return cardObject.damage;
+    }
 
+    public string getCardName()
+    {
+        return cardObject.cardName;
     }
 
 }

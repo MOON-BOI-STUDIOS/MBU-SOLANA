@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class PhaseSpecialAbilityOptions : PhaseAttacks
 {
@@ -10,45 +11,67 @@ public class PhaseSpecialAbilityOptions : PhaseAttacks
 
         if (bothOptions)
         {
-
+            float damage = 0;
             TurnOptions.PhaseDefenceTurns PhaseAttackTurns = Selector.Phase3Options;
             switch (PhaseAttackTurns)
             {
                 case TurnOptions.PhaseDefenceTurns.DoubleAttack:
-                    Debug.Log("Doube Attack");
-                    OtherPlayer.OnChangeHealth(50, false);
+                    //Attack on Other player from Selector
+                    damage = cm.cardVizSpecials[0].getDamage();
+                    if (OtherPlayer.Phase3Options == TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack)
+                    {
+                        //Decreasing the attack by enemy
+                        damage = damage * cm.cardVizSpecials[2].getDecreaseDamagePercent();
+                    }
+
+                    Debug.Log("Double Attack");
+                    OtherPlayer.OnChangeHealth(damage, false);
                     break;
 
                 case TurnOptions.PhaseDefenceTurns.BlockAttack:
-                    Debug.Log("Block Attack");
-                    Selector.OnNoDamage();
+                    // if either player chooses this nothing will happen as the attack will be blocked
                     break;
 
                 case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
-                    // Randomize the number of Health Change when calling OnChangeHealth
-                    Debug.Log("Player Increase Damage");
-                    OtherPlayer.OnChangeHealth(40, false);
+                    //Attack on Other player from Selector
+                    damage = cm.cardVizSpecials[0].getDamage();
+                    if (OtherPlayer.Phase3Options == TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack)
+                    {
+                        //Decreasing the attack by enemy
+                        damage = damage * cm.cardVizSpecials[2].getDecreaseDamagePercent();
+                    }
+
+                    Debug.Log("Double Attack");
+                    OtherPlayer.OnChangeHealth(damage, false);
                     break;
 
                 case TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack:
-                    Debug.Log("Decrease Enemy Attack");
-                    // Action Required
-                    Selector.OnChangeHealth(5, false);
+                    if (OtherPlayer.Phase3Options == TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage
+                        || OtherPlayer.Phase3Options == TurnOptions.PhaseDefenceTurns.DoubleAttack)
+                    {
+                        //Attack on Other player from Selector
+                        damage = cm.cardVizSpecials[0].getDamage();
+                        //Decreasing the attack by enemy
+                        damage = damage * cm.cardVizSpecials[2].getDecreaseDamagePercent();
+                    }
+
+                    Debug.Log("Decrease enemy attack");
+                    Selector.OnChangeHealth(damage, false);
                     break;
 
                 case TurnOptions.PhaseDefenceTurns.HealPortionOfHealth:
                     Debug.Log("Heal Portion of Health");
-                    Selector.OnChangeHealth(10, true);
+                    Selector.OnChangeHealth(cm.cardVizSpecials[5].getHealingPower(), true);
                     break;
 
                 case TurnOptions.PhaseDefenceTurns.HealMaxHealth:
-                    Debug.Log("Heal Max Health");
-                    Selector.OnChangeHealth(500, true);
+                    Debug.Log("Heal Portion of Health");
+                    Selector.OnChangeHealth(cm.cardVizSpecials[5].getHealingPower(), true);
                     break;
 
                 case TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound:
                     Debug.Log("Enemy Defence Reduced On Next Round");
-                    //Action Required
+
                     break;
             }
         }

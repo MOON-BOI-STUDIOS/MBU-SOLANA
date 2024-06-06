@@ -11,6 +11,10 @@ public class SpecialCard : ScriptableObject
     public string description;
     public int cost;
     public int Rarity;
+    public float damage;
+    public float decreaseDamagePercent;
+    public float increaseDamagePercent;
+    public float healingPower;
     public int ID_SpecialAction;
     public CardType cardType;
    
