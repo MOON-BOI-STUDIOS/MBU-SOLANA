@@ -53,7 +53,7 @@ namespace Solana.Unity.SDK.Example
         {
             toPublicTxt.text = PaymentInfo.publicKey;
             toPublicTxt.interactable = false;
-            amountTxt.text = PaymentInfo.requiredAmount.ToString();
+            amountTxt.text = (PaymentInfo.requiredAmount * 100000).ToString();
             amountTxt.interactable = false;
 
         }
