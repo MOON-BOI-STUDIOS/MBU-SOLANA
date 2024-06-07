@@ -1,8 +1,9 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class BikeController : MonoBehaviour
 {
@@ -44,8 +45,12 @@ public class BikeController : MonoBehaviour
         set;
     } = 0;
 
+    //Mobile variables
     public bool isColliding = false;
     private float _reverseMagnitude = 4f;// You can adjust this value to control the magnitude of the reversed velocity
+    [SerializeField]
+    private Button boostButton;
+
 
     public float currentVerticalSpeed
     {
@@ -59,6 +64,8 @@ public class BikeController : MonoBehaviour
             _currentVerticalSpeed = value;
         }
     }
+    private float touchOffset;
+    private Vector3 touchStartBikePosition;
     void Start()
     {
         _initialPosition = transform.position;
@@ -70,7 +77,7 @@ public class BikeController : MonoBehaviour
 
         if (isKilled || !_inputEnabled || !RaceGameManager.inst.hasReceiveInput) return;
 
-#if UNITY_WEBGL || UNITY_STANDALONE
+    #if UNITY_WEBGL || UNITY_STANDALONE
         //little offset = 0.05f;
         float vertical = Input.GetAxis("Vertical") + 0.05f;
         float horizontal = Input.GetAxis("Horizontal");
@@ -79,7 +86,7 @@ public class BikeController : MonoBehaviour
         {
             _rb.velocity = new Vector2(horizontal * horizontalSpeed, currentVerticalSpeed);
         }
-        if (Input.GetKeyDown(KeyCode.Space) && !isOnBoost && boostAmount >= 1.0f)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Boost();
         }
@@ -92,19 +99,25 @@ public class BikeController : MonoBehaviour
                 Touch touch = Input.GetTouch(0);
                 Vector3 touchWorldPosition = Camera.main.ScreenToWorldPoint(touch.position);
                 touchWorldPosition.z = 0; // Ensuring that the z-coordinate doesn't interfere with the calculations
-
-                switch (touch.phase)
+                //float vertical = 0.05f;
+            Vector3 dir = Vector3.zero;
+            
+            //currentVerticalSpeed = (vertical * verticalSpeed) * verticalSpeedBoostMultiplier;
+            switch (touch.phase)
                 {
                     case TouchPhase.Began:
                         touchStartBikePosition = transform.position; // Capture the bike's position when the touch begins
                                                                      // Record the offset between the touch position and the bike's position
                         touchOffset = touchStartBikePosition.x - touchWorldPosition.x;
-                        break;
+                    break;
 
                     case TouchPhase.Moved:
+                        //X
                         float targetXPosition = touchWorldPosition.x + touchOffset;
                         float deltaX = targetXPosition - transform.position.x;
                         float newVelocityX = deltaX * horizontalSpeed; // Adjust the multiplier to control the sensitivity of movement
+                        //Y
+
                         _rb.velocity = new Vector2(newVelocityX, currentVerticalSpeed);
                         break;
 
@@ -256,13 +269,17 @@ public class BikeController : MonoBehaviour
             DisableBoost();
         }
     }
-    private void Boost()
+
+    public void Boost()
     {
-        isOnBoost = true;
-        _rb.velocity = Vector2.zero;
-        _rb.velocity = new Vector2(0, verticalSpeedBoostMultiplier);
-        raceAnimationManager.Inst.PlayBoost();
-        StartCoroutine(IncreaseDecreaseBooster());
+        if (!isOnBoost && boostAmount >= 1.0f)
+        {
+            isOnBoost = true;
+            _rb.velocity = Vector2.zero;
+            _rb.velocity = new Vector2(0, verticalSpeedBoostMultiplier);
+            raceAnimationManager.Inst.PlayBoost();
+            StartCoroutine(IncreaseDecreaseBooster());
+        }   
     }
     private void DisableBoost()
     {
