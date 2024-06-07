@@ -29,6 +29,7 @@ namespace Solana.Unity.SDK.Example
         private double _ownedSolAmount;
         
         private const long SolLamports = 1000000000;
+        private const long bonkLamports = 100000;
         private List<ITransferInfo> transferInfosImplementedScripts;
 
         private void Start()
@@ -53,7 +54,7 @@ namespace Solana.Unity.SDK.Example
         {
             toPublicTxt.text = PaymentInfo.publicKey;
             toPublicTxt.interactable = false;
-            amountTxt.text = (PaymentInfo.requiredAmount * 100000).ToString();
+            amountTxt.text = PaymentInfo.requiredAmount.ToString();
             amountTxt.interactable = false;
 
         }
@@ -139,7 +140,7 @@ namespace Solana.Unity.SDK.Example
             RequestResult<string> result = await Web3.Instance.WalletBase.Transfer(
                 new PublicKey(toPublicTxt.text),
                 new PublicKey(_transferTokenAccount.Account.Data.Parsed.Info.Mint),
-                ulong.Parse(amountTxt.text));
+                Convert.ToUInt64(float.Parse(amountTxt.text) * bonkLamports));//ulong.Parse((amountTxt.text) * bonkLamports));
             HandleResponse(result);
         }
 
