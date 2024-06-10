@@ -127,9 +127,9 @@ public class RoundManager : MonoBehaviourPun
         time.color = Color.green;
         isCoolDown = false;
 
-
-        playerCanvases[1].ResetCardSelected(); //Resetting the card selection on player 1
-        playerCanvases[2].ResetCardSelected(); //Resetting the card selection on player 2
+        //Activating Skip Buttons for each player
+        playerCanvases[1].ActivateSkipButton(); 
+        playerCanvases[2].ActivateSkipButton();
 
 
         // Start Time
@@ -194,6 +194,7 @@ public class RoundManager : MonoBehaviourPun
         else
         {
             Debug.Log("Choose for Phase 3");
+
             CardManagersObject.OpenSpecial();
         }
     }
@@ -288,5 +289,6 @@ public class RoundManager : MonoBehaviourPun
         {
             photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
         }
+        Debug.Log("CARD TIMER SKIPPED");
     }
 }

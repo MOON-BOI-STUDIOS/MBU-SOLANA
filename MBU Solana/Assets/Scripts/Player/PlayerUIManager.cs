@@ -80,7 +80,7 @@ public class PlayerUIManager : MonoBehaviour
     {
         if (pv.IsMine)
         {
-            SwitchCardSelected();
+            //SwitchCardSelected();
             skipButton.SetActive(false);
 
             // Notify RoundManager that this player has selected a card and pressed skip
@@ -88,17 +88,22 @@ public class PlayerUIManager : MonoBehaviour
         }
     }
 
-    public void SwitchCardSelected()
+    public void ActivateSkipButton()
     {
-        cardSelected = !cardSelected;
+        skipButton.SetActive(true);
     }
 
-    public void ResetCardSelected()
-    {
-        if(pv.IsMine)
-        {
-            cardSelected = false;
-            skipButton.SetActive(true);
-        }
-    }
+    // public void SwitchCardSelected()
+    // {
+    //     cardSelected = !cardSelected;
+    // }
+
+    // public void ResetCardSelected()
+    // {
+    //     if(pv.IsMine)
+    //     {
+    //         cardSelected = false;
+    //         skipButton.SetActive(true);
+    //     }
+    // }
 }
