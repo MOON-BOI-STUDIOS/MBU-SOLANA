@@ -230,7 +230,6 @@ public class RoundManager : MonoBehaviourPun
     [PunRPC]
     void CloseForPlayerChoice()
     {
-        playerCanvases[PhotonNetwork.LocalPlayer.ActorNumber].DisableSkipButton();
         Debug.Log("STOP CHOOSING");
         // Disable UI input with Buttons
         PhaseStart = false;
