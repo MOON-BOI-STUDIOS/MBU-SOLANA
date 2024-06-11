@@ -258,7 +258,7 @@ public class RoundManager : MonoBehaviourPun
         // }
     }
 
-    /*Called when a player presses the skip button
+    //Called when a player presses the skip button
     public void OnPlayerSkipPressed()
     {
         if (PhotonNetwork.IsMasterClient)
@@ -286,8 +286,8 @@ public class RoundManager : MonoBehaviourPun
 
         if (PhaseStart && PhotonNetwork.IsMasterClient)
         {
-            //photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
+            photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
         }
         Debug.Log("CARD TIMER SKIPPED");
-    }*/
+    }
 }
