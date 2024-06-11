@@ -46,6 +46,7 @@ public class CardManager : MonoBehaviour
 
     public void OpenNormal()
     {
+        Debug.Log("Open Normal");
         cardchoice = cardChoice.Normal;
         cardselection = 2;
     }
