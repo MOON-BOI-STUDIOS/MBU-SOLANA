@@ -106,18 +106,18 @@ public class RoundManager : MonoBehaviourPun
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            photonView.RPC("InstantiateCardManager", RpcTarget.All); // Instantiates cards 
+            photonView.RPC("InstantiateCardManager", RpcTarget.All); // Instantiates cards
             photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
         }
-
-
     }
 
     [PunRPC]
     void RoundProgressor()
     {
+        
         NumberOfPhases += 1;
-        Debug.Log("Number of Phases:" + NumberOfPhases);
+
+        Debug.Log("NUMBER OF PHASES:" + NumberOfPhases);
         if (PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
@@ -177,19 +177,19 @@ public class RoundManager : MonoBehaviourPun
         // Enable UI input with Buttons
         if (NumberOfPhases == 1)
         {
-            Debug.Log("Choose for Phase 1");
+            Debug.Log("CHOOSE OF PHASE 1");
 
             CardManagersObject.openRPS();
         }
         else if (NumberOfPhases == 2)
         {
-            Debug.Log("Choose for Phase 2");
+            Debug.Log("CHOOSE OF PHASE 2");
 
             CardManagersObject.OpenNormal();
         }
         else
         {
-            Debug.Log("Choose for Phase 3");
+            Debug.Log("CHOOSE OF PHASE 3");
 
             CardManagersObject.OpenSpecial();
         }
@@ -226,7 +226,7 @@ public class RoundManager : MonoBehaviourPun
     [PunRPC]
     void CloseForPlayerChoice()
     {
-        Debug.Log("Stop Choosing");
+        Debug.Log("STOP CHOOSING");
         // Disable UI input with Buttons
         PhaseStart = false;
         gameDuration = 10f;

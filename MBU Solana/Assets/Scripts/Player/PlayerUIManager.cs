@@ -80,9 +80,6 @@ public class PlayerUIManager : MonoBehaviour
     {
         if (pv.IsMine)
         {
-            //SwitchCardSelected();
-            skipButton.SetActive(false);
-
             // Notify RoundManager that this player has selected a card and pressed skip
             _roundManager.OnPlayerSkipPressed();
         }
