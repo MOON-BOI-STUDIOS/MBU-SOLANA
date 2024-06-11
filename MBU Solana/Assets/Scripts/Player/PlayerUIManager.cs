@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using TMPro;
 using Photon.Pun;
@@ -16,7 +17,7 @@ public class PlayerUIManager : MonoBehaviour
     public GameObject IndicatorUI;
     public TextMeshProUGUI costText;
 
-    public GameObject skipButton;
+    public Button skipButton;
 
     // ---------------- Remote Player ------------------//
     public Transform rmtDefenceIndicator;
@@ -88,7 +89,19 @@ public class PlayerUIManager : MonoBehaviour
 
     public void ActivateSkipButton()
     {
-        skipButton.SetActive(true);
+        skipButton.gameObject.SetActive(true);
+    }
+
+
+
+    public void DisableSkipButton()
+    {
+        skipButton.enabled = false;
+    }
+
+    public void EnableSkipButton()
+    {
+        skipButton.enabled = true;
     }
 
     // public void SwitchCardSelected()
