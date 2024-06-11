@@ -57,6 +57,8 @@ public class RoundManager : MonoBehaviourPun
 
     private int playersSkipped = 0;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -174,6 +176,7 @@ public class RoundManager : MonoBehaviourPun
     [PunRPC]
     void OpenForPlayerChoice()
     {
+
         // Enable UI input with Buttons
         if (NumberOfPhases == 1)
         {
