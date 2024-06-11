@@ -275,7 +275,7 @@ public class RoundManager : MonoBehaviourPun
     void PlayerSkipPressedRPC(int playerId)
     {
         playersSkipped++;
-        if (playersSkipped >= 2) // Both players have pressed the skip button
+        if (playersSkipped >= PhotonNetwork.PlayerList.Length) // All players have pressed the skip button
         {
             photonView.RPC("SkipRemainingTime", RpcTarget.All);
             playersSkipped = 0; // Reset for the next round
