@@ -177,7 +177,6 @@ public class RoundManager : MonoBehaviourPun
     void OpenForPlayerChoice()
     {  
         playerCanvases[PhotonNetwork.LocalPlayer.ActorNumber].EnableSkipButton();
-        playersSkipped = 0;
 
         // Enable UI input with Buttons
         if (NumberOfPhases == 1)
@@ -276,6 +275,7 @@ public class RoundManager : MonoBehaviourPun
     void PlayerSkipPressedRPC(int playerId)
     {
         playersSkipped++;
+        Debug.Log("PLAYER PRESSED SKIP FOR " + playersSkipped + " TIMES");
         if (playersSkipped >= PhotonNetwork.PlayerList.Length) // All players have pressed the skip button
         {
             photonView.RPC("SkipRemainingTime", RpcTarget.All);
