@@ -265,10 +265,9 @@ public class RoundManager : MonoBehaviourPun
     //Called when a player presses the skip button
     public void OnPlayerSkipPressed()
     {
-        if (PhotonNetwork.IsMasterClient)
-        {
+        
             photonView.RPC("PlayerSkipPressedRPC", RpcTarget.MasterClient, PhotonNetwork.LocalPlayer.ActorNumber);
-        }
+        
     }
 
     [PunRPC]
