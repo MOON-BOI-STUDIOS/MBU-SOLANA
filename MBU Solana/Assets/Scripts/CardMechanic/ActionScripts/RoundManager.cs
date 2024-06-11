@@ -127,10 +127,6 @@ public class RoundManager : MonoBehaviourPun
         time.color = Color.green;
         isCoolDown = false;
 
-        //Activating Skip Buttons for each player
-        playerCanvases[1].ActivateSkipButton(); 
-        playerCanvases[2].ActivateSkipButton();
-
 
         // Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
@@ -209,6 +205,9 @@ public class RoundManager : MonoBehaviourPun
         if (playerCanvases.ContainsKey(playerId))
         {
             cardManager.transform.SetParent(playerCanvases[playerId].transform, false);
+
+            //Activating Skip Buttons for each player
+            playerCanvases[playerId].ActivateSkipButton();
         }
 
         if (cardManager != null)
