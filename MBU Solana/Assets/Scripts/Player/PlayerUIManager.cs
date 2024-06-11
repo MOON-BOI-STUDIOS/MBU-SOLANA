@@ -96,12 +96,12 @@ public class PlayerUIManager : MonoBehaviour
 
     public void DisableSkipButton()
     {
-        skipButton.enabled = false;
+        skipButton.interactable = false;
     }
 
     public void EnableSkipButton()
     {
-        skipButton.enabled = true;
+        skipButton.interactable = true;
     }
 
     // public void SwitchCardSelected()
