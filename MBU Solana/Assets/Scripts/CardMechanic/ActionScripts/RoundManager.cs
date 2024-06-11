@@ -207,7 +207,7 @@ public class RoundManager : MonoBehaviourPun
             cardManager.transform.SetParent(playerCanvases[playerId].transform, false);
 
             //Activating Skip Buttons for each player
-            playerCanvases[playerId].ActivateSkipButton();
+            //playerCanvases[playerId].ActivateSkipButton();
         }
 
         if (cardManager != null)
@@ -258,7 +258,7 @@ public class RoundManager : MonoBehaviourPun
         // }
     }
 
-    // Called when a player presses the skip button
+    /*Called when a player presses the skip button
     public void OnPlayerSkipPressed()
     {
         if (PhotonNetwork.IsMasterClient)
@@ -289,5 +289,5 @@ public class RoundManager : MonoBehaviourPun
             //photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
         }
         Debug.Log("CARD TIMER SKIPPED");
-    }
+    }*/
 }
