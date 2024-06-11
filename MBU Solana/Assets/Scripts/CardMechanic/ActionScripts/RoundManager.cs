@@ -286,7 +286,7 @@ public class RoundManager : MonoBehaviourPun
 
         if (PhaseStart && PhotonNetwork.IsMasterClient)
         {
-            photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
+            //photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
         }
         Debug.Log("CARD TIMER SKIPPED");
     }
