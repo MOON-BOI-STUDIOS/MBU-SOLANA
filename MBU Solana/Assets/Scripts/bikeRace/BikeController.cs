@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class BikeController : MonoBehaviour
 {
@@ -12,7 +11,10 @@ public class BikeController : MonoBehaviour
 
     //private Vector3 targetPosition;
     //private bool isMoving = false;
-
+    //Player Bike selected (Health, type, movementSpeed)
+    [Header("Bike Data")]
+    public BikeData bikeInfo;
+    //
     [SerializeField]
     private bool _inputEnabled = true;
     public bool InputEnabled { get { return _inputEnabled; } set { _inputEnabled = value; } }
@@ -68,6 +70,14 @@ public class BikeController : MonoBehaviour
     private Vector3 touchStartBikePosition;
     void Start()
     {
+
+#if UNITY_IOS || UNITY_ANDROID 
+        boostButton.gameObject.SetActive(true);
+
+#endif
+#if UNITY_WEBGL || UNITY_STANDALONE
+        boostButton.gameObject.SetActive(false);
+#endif
         _initialPosition = transform.position;
         _rb = GetComponent<Rigidbody2D>();
     }
@@ -75,12 +85,14 @@ public class BikeController : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (isKilled || !_inputEnabled || !RaceGameManager.inst.hasReceiveInput) return;
+        if (isKilled || !_inputEnabled || !RaceGameManager.inst.hasReceiveInput || isOnBoost) return;
+        float vertical; //float vertical = input + 0.05f;
+        float horizontal;
 
-    #if UNITY_WEBGL || UNITY_STANDALONE
+#if UNITY_WEBGL || UNITY_STANDALONE
         //little offset = 0.05f;
-        float vertical = Input.GetAxis("Vertical") + 0.05f;
-        float horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical") + 0.05f;
+        horizontal = Input.GetAxis("Horizontal");
         currentVerticalSpeed = (vertical * verticalSpeed) * verticalSpeedBoostMultiplier;
         if (!isOnBoost)
         {
@@ -91,46 +103,48 @@ public class BikeController : MonoBehaviour
             Boost();
         }
 
-    #endif
+#endif
 
-    #if UNITY_IOS || UNITY_ANDROID
-            if (Input.touchCount > 0)
-            {
-                Touch touch = Input.GetTouch(0);
-                Vector3 touchWorldPosition = Camera.main.ScreenToWorldPoint(touch.position);
-                touchWorldPosition.z = 0; // Ensuring that the z-coordinate doesn't interfere with the calculations
-                //float vertical = 0.05f;
-            Vector3 dir = Vector3.zero;
-            
-            //currentVerticalSpeed = (vertical * verticalSpeed) * verticalSpeedBoostMultiplier;
+#if UNITY_IOS || UNITY_ANDROID
+
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchWorldPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            touchWorldPosition.z = 0; // Ensuring that the z-coordinate doesn't interfere with the calculations
+            vertical = touch.deltaPosition.normalized.y + 0.05f;
+            horizontal = touch.deltaPosition.normalized.x;
+            currentVerticalSpeed = (vertical * verticalSpeed) * verticalSpeedBoostMultiplier;
             switch (touch.phase)
-                {
-                    case TouchPhase.Began:
-                        touchStartBikePosition = transform.position; // Capture the bike's position when the touch begins
-                                                                     // Record the offset between the touch position and the bike's position
-                        touchOffset = touchStartBikePosition.x - touchWorldPosition.x;
+            {
+                /*case TouchPhase.Began:
+                    touchStartBikePosition = transform.position; // Capture the bike's position when the touch begins
+                                                                    // Record the offset between the touch position and the bike's position
+                    touchOffset = touchStartBikePosition.x - touchWorldPosition.x;
+                break;*/
+
+                case TouchPhase.Moved:
+                    /*
+                    float targetXPosition = touchWorldPosition.x + touchOffset;
+                    float deltaX = targetXPosition - transform.position.x;
+                    float newVelocityX = deltaX * horizontalSpeed; // Adjust the multiplier to control the sensitivity of movement*/
+                    
+                    _rb.velocity = new Vector2(horizontal * horizontalSpeed, currentVerticalSpeed);
+                    
                     break;
 
-                    case TouchPhase.Moved:
-                        //X
-                        float targetXPosition = touchWorldPosition.x + touchOffset;
-                        float deltaX = targetXPosition - transform.position.x;
-                        float newVelocityX = deltaX * horizontalSpeed; // Adjust the multiplier to control the sensitivity of movement
-                        //Y
+                case TouchPhase.Ended or TouchPhase.Stationary or TouchPhase.Canceled or TouchPhase.Began:
 
-                        _rb.velocity = new Vector2(newVelocityX, currentVerticalSpeed);
-                        break;
-
-                    case TouchPhase.Ended:
-                        _rb.velocity = new Vector2(0, currentVerticalSpeed);
-                        break;
-                }
+                    _rb.velocity = new Vector2(0, vertical);
+                    break;
             }
-            else
-            {
-                _rb.velocity = new Vector2(0, currentVerticalSpeed);
-            }
-    #endif
+        }
+        else
+        {
+            _rb.velocity = new Vector2(0, 0.05f);
+        }
+        
+#endif
 
 
     }
@@ -155,6 +169,7 @@ public class BikeController : MonoBehaviour
 
         RaceGameUIManager.Inst.ShowLeaderboard(0.5f);
     }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {

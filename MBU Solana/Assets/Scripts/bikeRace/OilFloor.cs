@@ -14,7 +14,10 @@ public class OilFloor : RaceObjectBase
     {
         StartCoroutine(rotateOnOilFloor(target));
     }
-
+    public override void OnDeInteract()
+    {
+        base.OnDeInteract();
+    }
     private IEnumerator rotateOnOilFloor(GameObject target)
     {
         int numberOfRotations = 4;
@@ -34,9 +37,13 @@ public class OilFloor : RaceObjectBase
                 yield return null;
             }
             target.transform.rotation = goalRotation;
+            // Yield here to ensure the rotation has been fully processed before the next iteration
+            yield return null;
             currentRotation = goalRotation;
             rotationDegrees = -rotationDegrees;
         }
+        //delay to ensure final rotation is processed???
+        yield return null;
         target.transform.rotation = Quaternion.Euler(0,0,0);
         target.GetComponent<BikeController>().InputEnabled = true;
         Debug.Log("HIII");

@@ -16,11 +16,13 @@ public class RaceGameUIManager : MonoBehaviour
     public static RaceGameUIManager Inst;
     public int LivesCount;
     private int _maxLives;
+
     private void Awake()
     {
         Inst = this;
         
     }
+
 
     void Start()
     {

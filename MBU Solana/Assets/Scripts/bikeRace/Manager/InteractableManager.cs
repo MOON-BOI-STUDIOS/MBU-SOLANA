@@ -22,7 +22,9 @@ public class InteractableManager : MonoBehaviour
     //speed which things appear
     [SerializeField]
     private float _frequency = 0f;
-    private float _frequencyMax = 2f;
+    [SerializeField]
+    [Tooltip("Play as you see fit, but obviously 0-1 is just chaos xD")]
+    private float[] _frequencyMax = new float[3];
 
     //random generator int holder
     //  true means I don't want repetition
@@ -45,7 +47,10 @@ public class InteractableManager : MonoBehaviour
     {
         //bubble start off by default so later we can check for availability
         prefabBubble.SetActive(false);
+        _frequencyMax = new float[3] { 2f, 1.5f, 1f };
     }
+
+    
 
     // Update is called once per frame
     void Update()
@@ -56,38 +61,44 @@ public class InteractableManager : MonoBehaviour
 
         if(_frequency <= 0)
         {
-            switch (randominator())
-            {
-                case >= 0 and <= 1:
-                    repositionOfObject(oilFloorPrefab);
-                    _previousType = types.oil;
-                break;
-
-                case >= 2 and <= 3:
-                    boostPrefab.SetActive(true);
-                    repositionOfObject(boostPrefab);
-                    _previousType = types.boost;
-                break;
-
-                case >= 4 and <= 10:
-                    int position = Random.Range(0, carsPrefab.Count);
-                    while (_previousCar == position) position = Random.Range(0, carsPrefab.Count);
-                    _previousCar = position;
-
-                    //Reposition a random car array to the top with no repetition
-                    repositionOfObject(carsPrefab[position]);
-                    //position goes from 0 1 2 left center right, as in AICarController Position Enum.
-                    carsPrefab[position].GetComponent<AICarController>().currentPosition = (AICarController.Position) _previousPosition;
-                    _previousType = types.car;
-                break;
-
-                default:
-                    Debug.Log("Out of boundries");
-                break;
-            }
-            _frequency = _frequencyMax;
+            CallObjectToWorld();
         }
-        
+
+    }
+    private void CallObjectToWorld()
+    {
+        switch (randominator())
+        {
+            case >= 0 and <= 1:
+                repositionOfObject(oilFloorPrefab);
+                _previousType = types.oil;
+                break;
+
+            case >= 2 and <= 3:
+                boostPrefab.SetActive(true);
+                repositionOfObject(boostPrefab);
+                _previousType = types.boost;
+                break;
+
+            case >= 4 and <= 10:
+                int position = Random.Range(0, carsPrefab.Count);
+                //Car Check so it doesn't get to repetitive
+                while (_previousCar == position) position = Random.Range(0, carsPrefab.Count);
+                _previousCar = position;
+
+                //Reposition a random car array to the top with no repetition
+                repositionOfObject(carsPrefab[position]);
+                //position goes from 0 1 2 left center right, as in AICarController Position Enum.
+                carsPrefab[position].GetComponent<AICarController>().currentPosition = (AICarController.Position)_previousPosition;
+                _previousType = types.car;
+                break;
+
+            default:
+                Debug.Log("Out of boundries");
+                break;
+        }
+        //updates frequency based on the currentDifficulty
+        _frequency = _frequencyMax[(int) RaceGameManager.inst.currentDifficulty];
     }
     //dr. doofenshmirtz approves
     private int randominator(int range = 10)
@@ -112,6 +123,15 @@ public class InteractableManager : MonoBehaviour
     {
         //in case of error
         if (target == null) return;
+
+        //Check availability before using it.
+        if (target.GetComponent<RaceObjectBase>() != null && !target.GetComponent<RaceObjectBase>().available)
+        {
+            _frequency = 0;
+            return;
+        }
+
+        target.GetComponent<RaceObjectBase>().available = false;
         //choose one out of 3 positions
         int positionChosen = Random.Range(0, positionsToMoveTo.Length - 1);
         //we don't like repetition
@@ -129,9 +149,10 @@ public class InteractableManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //object reach end
-        if (collision.gameObject.GetComponent<Rigidbody2D>() != null)
+        if (collision.gameObject.GetComponent<Rigidbody2D>() != null && collision.gameObject.GetComponent<RaceObjectBase>() != null)
         {
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            collision.gameObject.GetComponent<RaceObjectBase>().OnDeInteract(); 
         }
 
     }

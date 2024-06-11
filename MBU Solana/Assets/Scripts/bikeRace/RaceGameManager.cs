@@ -1,14 +1,22 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 
 
 public class RaceGameManager : MonoBehaviour
 {
-    public enum Difficulty { Easy, Medium, Hard }
+    
+    //Check for first input
     public bool hasReceiveInput = false;
-    [SerializeField] public static float currentSpeed;
+    //if true plays game
+    public bool canPlayGame = false;
+    
+    //score point before going to UI
     private float _score;
+    //Tip before game starts
+    [SerializeField]
+    private GameObject TutorialText;
     public float score
     {
         set
@@ -23,35 +31,48 @@ public class RaceGameManager : MonoBehaviour
     }
 
     [SerializeField] private float resetScore = 0f;
-
+    /// <summary>
+    /// BE AWARE THAT CHANGING ANYTHING RELATED TO DIFFICULTY MAY CAUSE MANY ERRORS AS CURRENTLY THERE'S ONLY 3 MODES AND MANY SCRIPTS HAVE AN ARRAY OF 3
+    /// </summary>
+    //Types of difficulty
+    public enum Difficulty { Easy, Medium, Hard }
+    //speed related to difficulty
+    private float[] difficultySpeed = new float[3] { -10f, -15f, -20f };
+    //Speed related stuff
     [Header("Speed")]
-    [SerializeField] public Difficulty currentDifficulty;
-    [SerializeField] private float easySpeed = 10f;
-    [SerializeField] private float mediumSpeed = 20f;
-    [SerializeField] private float hardSpeed = 30f;
-
-//     [Header("Threshold")]
-//     public float mediumThreshold = 1000f;
-//     public float hardThreshold = 2000f;
-
+    private Difficulty _currentDifficulty; 
+    public Difficulty currentDifficulty { get { return _currentDifficulty; } }
+//     private float _easySpeed = 10f;
+//     private float _mediumSpeed = 20f;
+//     private float _hardSpeed = 30f;
+    //Difficulty change requirements (score)
+    [Header("Threshold")]
+    public float mediumThreshold = 100f;
+    public float hardThreshold = 200f;
+    [field: SerializeField]
+    //current speed
+    public static float currentSpeed;
+    //transition to the current speed
     private float transitionSmoothness = 0.1f;
-
+    
+    //Player related
     [Header("Ref")]
     public BikeController bikeController;
-
-
-    public static RaceGameManager inst;
+    private raceAnimationManager _bikeAnimation;
+    private raceAudioManager _bikeSound;
 
     public SpriteRenderer sp;
     [Header("PowerUps")]
     
     public float BoostTime;
 
-
+    //Player Bike selected (Health, type, movementSpeed)
     [Header("Bike Data")]
     [SerializeField] private BikeData[] bikeDataArray = new BikeData[5];
     BikeData current;
 
+    //Singleton...
+    public static RaceGameManager inst;
     private void Awake()
     {
         inst = this;
@@ -60,46 +81,68 @@ public class RaceGameManager : MonoBehaviour
 
     private void Start()
     {
-        RaceGameUIManager.Inst.UpdateLives();
+        //retrieve first index bike type
         current = bikeDataArray[PlayerPrefs.GetInt("CurrentPlayBikeIndex", 0)];
-        RaceGameUIManager.Inst.LivesCount = current.Health;
-        BoostTime = current.Boost;
-        sp.sprite = current.BikeImage;
-        currentSpeed = -10f;
+        if (bikeController != null)
+        {
+            _bikeAnimation = bikeController.GetComponent<raceAnimationManager>();
+            _bikeSound = bikeController.GetComponent<raceAudioManager>();
+            bikeController.bikeInfo = current;
+        }
+
+        RaceGameUIManager.Inst.UpdateLives();
+        
+//         RaceGameUIManager.Inst.LivesCount = current.Health;
+//         BoostTime = current.Boost;
+//         sp.sprite = current.BikeImage;
+        //set current speed
+        currentSpeed = difficultySpeed[(int)Difficulty.Easy];
+        if (TutorialText != null) TutorialText.SetActive(true);
     }
 
     void Update()
     {
-        if (Input.anyKeyDown) hasReceiveInput = true;
+        
+#if UNITY_IOS || UNITY_ANDROID
+        TutorialText.GetComponentInChildren<TextMeshProUGUI>().text = "Tap to Play";
+#endif
+#if UNITY_WEBGL || UNITY_STANDALONE
+        TutorialText.GetComponentInChildren<TextMeshProUGUI>().text = "Press any key to Play";
+#endif
+
+        //Game Can start
+        if (Input.anyKeyDown)
+        {
+            hasReceiveInput = true;
+            TutorialText.SetActive(false);
+        }
         if (!hasReceiveInput) return;
 
         score += (Time.realtimeSinceStartup * Time.fixedDeltaTime / 100);
         float relativeScore = score - resetScore;
-        //float targetSpeed;
-/*
+        float targetSpeed;
         if (relativeScore < mediumThreshold)
         {
-            currentDifficulty = Difficulty.Easy;
-            targetSpeed = easySpeed;
+            _currentDifficulty = Difficulty.Easy;
+            targetSpeed = difficultySpeed[(int)Difficulty.Easy];
         }
         else if (relativeScore < hardThreshold)
         {
-            currentDifficulty = Difficulty.Medium;
-            targetSpeed = mediumSpeed;
+            _currentDifficulty = Difficulty.Medium;
+            targetSpeed = difficultySpeed[(int)Difficulty.Medium];
         }
         else
         {
-            currentDifficulty = Difficulty.Hard;
-            targetSpeed = hardSpeed;
+            _currentDifficulty = Difficulty.Hard;
+            targetSpeed = difficultySpeed[(int)Difficulty.Hard];
         }
-*/
 
-        //currentSpeed = Mathf.Lerp(currentSpeed, targetSpeed, transitionSmoothness * Time.deltaTime);
+        currentSpeed = Mathf.Lerp(currentSpeed, targetSpeed, transitionSmoothness * Time.deltaTime);
     }
 
     public void ResetDifficulty()
     {
         resetScore = score;
-        currentDifficulty = Difficulty.Easy;
+        _currentDifficulty = Difficulty.Easy;
     }
 }

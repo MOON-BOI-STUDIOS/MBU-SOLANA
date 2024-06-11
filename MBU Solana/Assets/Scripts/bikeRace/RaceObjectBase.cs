@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine;
 public class RaceObjectBase : MonoBehaviour, IInteractable
 {
     public Sprite _bubbleSprite;
+
+    public bool available { get; set; } = true;
 
     public virtual void OnBubble(GameObject target)
     {
@@ -52,8 +55,8 @@ public class RaceObjectBase : MonoBehaviour, IInteractable
         ///To be implemented in each script
     }
 
-    public virtual void OnRemoveInteract()
+    public virtual void OnDeInteract()
     {
-        ///To be implemented in each script
+        available = true;
     }
 }

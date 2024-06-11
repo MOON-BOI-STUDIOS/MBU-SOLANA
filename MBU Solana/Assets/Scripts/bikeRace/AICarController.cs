@@ -19,7 +19,7 @@ public class AICarController : RaceObjectBase
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        StartCoroutine(RepairCar(0f));
+        RepairCar();
     }
 
     public enum Position { Left, Centre, Right } // Positions a car can be in
@@ -203,7 +203,6 @@ public class AICarController : RaceObjectBase
             // Add force in the opposite direction of the bike's movement
             // Start fading out
             StartCoroutine(RotateCarRandomly(0.5f));
-            StartCoroutine(RepairCar(2f));
         }
     }
     /// Not necessary
@@ -218,9 +217,8 @@ public class AICarController : RaceObjectBase
     }
     */
 
-    public IEnumerator RepairCar(float timer)
+    private void RepairCar()
     {
-        yield return new WaitForSeconds(timer);
         transform.rotation = Quaternion.Euler(0,0,0);
         isDisdroyed = false;
         isColliding = false;
@@ -273,6 +271,12 @@ public class AICarController : RaceObjectBase
             temp.isOnBoost = false;
             temp.boostAmount = 0;
         }
+    }
+
+    public override void OnDeInteract()
+    {
+        base.OnDeInteract();
+        RepairCar();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

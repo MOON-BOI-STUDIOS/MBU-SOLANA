@@ -3,8 +3,10 @@ using UnityEngine;
 
 public interface IInteractable
 {
+    public bool available { get; set; }
+
     public abstract void OnInteract(GameObject target);
-    public abstract void OnRemoveInteract();
+    public abstract void OnDeInteract();
     public abstract void OnBubble(GameObject target);
 
 }

@@ -108,11 +108,12 @@ public class BoosterManager : RaceObjectBase
     public override void OnInteract(GameObject target)
     {
         target.GetComponent<BikeController>().CallBoosterCourotine();
-        OnRemoveInteract();
+        OnDeInteract();
     }
 
-    public override void OnRemoveInteract()
+    public override void OnDeInteract()
     {
+        base.OnDeInteract();
         //pretty much just De-activate boost
         gameObject.SetActive(false);
     }

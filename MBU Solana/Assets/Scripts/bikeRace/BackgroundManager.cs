@@ -21,7 +21,7 @@ public class BackgroundManager : MonoBehaviour
         if (RaceGameManager.inst.bikeController.isKilled) return;
 
         //transform.position = new Vector2(transform.position.x, transform.position.y + VelocityToMove());
-        GetComponent<Rigidbody2D>().velocity = Vector2.down * 10f;
+        GetComponent<Rigidbody2D>().velocity = Vector2.up * RaceGameManager.currentSpeed;
         if (backgrounds[_mediumIndex].gameObject.transform.position.y <= _bottomTransform.y)
             MoveBackgrounds();
         //Move all background as a whole, once mid background reaches below background position, shifts all background to -1
