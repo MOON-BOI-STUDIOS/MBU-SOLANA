@@ -177,6 +177,7 @@ public class RoundManager : MonoBehaviourPun
     void OpenForPlayerChoice()
     {  
         playerCanvases[PhotonNetwork.LocalPlayer.ActorNumber].EnableSkipButton();
+        playersSkipped = 0;
 
         // Enable UI input with Buttons
         if (NumberOfPhases == 1)
