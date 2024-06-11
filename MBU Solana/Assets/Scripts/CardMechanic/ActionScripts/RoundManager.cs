@@ -210,7 +210,7 @@ public class RoundManager : MonoBehaviourPun
             cardManager.transform.SetParent(playerCanvases[playerId].transform, false);
 
             //Activating Skip Buttons for each player
-            //playerCanvases[playerId].ActivateSkipButton();
+            playerCanvases[playerId].ActivateSkipButton();
         }
 
         if (cardManager != null)
