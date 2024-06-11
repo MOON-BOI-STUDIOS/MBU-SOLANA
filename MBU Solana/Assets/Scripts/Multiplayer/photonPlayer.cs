@@ -44,13 +44,12 @@ public class photonPlayer : MonoBehaviour
     [PunRPC]
     void RPC_SetSpawnPoint(int spawnPicker)
     {
-        if (PV.IsMine)
-        {
+
             // Instantiate the player avatar at the selected spawn point
             myAvatar = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerAvatar"),
                 GameSetUP.GS.spawnPoints[spawnPicker].GetTransformSpawnPoint().position,
                 GameSetUP.GS.spawnPoints[spawnPicker].GetTransformSpawnPoint().rotation, 0);
-        }
+        
         Debug.Log(GameSetUP.GS.spawnPoints[spawnPicker].GetBoolSpawnPoint());
     }
 }
