@@ -3411,7 +3411,7 @@ MonoBehaviour:
   healthNumber: {fileID: 1508601869022854459}
   IndicatorUI: {fileID: 8285820528448135646}
   costText: {fileID: 8070831575953455087}
-  skipButton: {fileID: 6704751553133579958}
+  skipButton: {fileID: 652574973841114057}
   rmtDefenceIndicator: {fileID: 1383032127953848496}
   rmtcoinsText: {fileID: 8210324088761795880}
   rmthealthIndicator: {fileID: 777431372250283686}
