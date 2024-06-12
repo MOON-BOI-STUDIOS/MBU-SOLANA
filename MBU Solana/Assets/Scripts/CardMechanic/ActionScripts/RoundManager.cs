@@ -27,33 +27,54 @@ public class RoundManager : MonoBehaviourPun
 
     #endregion
 
+    [Header("Bool")]
+    public bool isCoolDown = false;
+
+    public bool infoisShown = false;
+    
+    public bool timerIsRunning = false;
+
     private bool PhaseStart = false;
+
+ 
     private int NumberOfPhases = 0;
     private RoundScript RoundScript;
 
-    public TextMeshProUGUI time;
-    public float timeRemaining = 10;
-    public bool timerIsRunning = false;
+  
 
-    public GameObject cardManagerPrefab;
+    [Header("Floats")]
+    public float timeRemaining = 10;
+    
+    private float gameDuration = 10f; // Duration of the game in seconds
+
+    private float startTime;
+
+
+    
 
     private Dictionary<int, PlayerUIManager> playerCanvases = new Dictionary<int, PlayerUIManager>();
 
     private CardManager CardManagersObject;
 
-    private float gameDuration = 10f; // Duration of the game in seconds
-    private float startTime;
 
-    public GameObject TimerObject;
+
+    [Header("Text")]
+
+    public TextMeshProUGUI enemyph1, enemyph2, enemyph3, plph1, plph2, plph3;
+    public TextMeshProUGUI time;
+
+    [Header("Game Object")]
+
+    public GameObject screen, nextRoundBTN, playerinfo,enemyinfo;
+
+     public GameObject TimerObject;
+     public GameObject cardManagerPrefab;
 
     private GameObject playerManagerScript;
     private GameObject enemyManagerScript;
 
-    public TextMeshProUGUI enemyph1, enemyph2, enemyph3, plph1, plph2, plph3;
 
-    public GameObject screen;
 
-    public bool isCoolDown = false;
 
     private int playersSkipped = 0;
 
@@ -248,18 +269,27 @@ public class RoundManager : MonoBehaviourPun
         Debug.Log("Round End");
         TimerObject.SetActive(false);
         RoundScript.OnCalculationOfResult();
-        // Time.timeScale = 0;
-        // screen.SetActive(true);
-        // if (RoundScript != null && RoundScript.GetPlayerScript() != null && RoundScript.GetEnemyScript() != null)
-        // {
-        //     Debug.Log("This is called");
-        //     plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
-        //     plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
-        //     plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
-        //     enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
-        //     enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
-        //     enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
-        // }
+        playerinfo.SetActive(true);
+        enemyinfo.SetActive(true);
+        nextRoundBTN.SetActive(true);
+         plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
+        plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
+        plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
+        enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
+        enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
+        enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
+        Debug.Log("This is called");
+         infoisShown = true;    
+      
+           
+    }
+
+    public void OnIfoOff()
+    {
+        playerinfo.SetActive(false);
+        enemyinfo.SetActive(false);
+        nextRoundBTN.SetActive(false);
+        infoisShown = false;
     }
 
     //Called when a player presses the skip button
