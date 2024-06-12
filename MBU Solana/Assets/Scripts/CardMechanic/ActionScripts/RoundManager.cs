@@ -131,6 +131,7 @@ public class RoundManager : MonoBehaviourPun
         {
             photonView.RPC("InstantiateCardManager", RpcTarget.All); // Instantiates cards
             photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
+            
         }
     }
 
@@ -271,7 +272,11 @@ public class RoundManager : MonoBehaviourPun
         RoundScript.OnCalculationOfResult();
         playerinfo.SetActive(true);
         enemyinfo.SetActive(true);
-        nextRoundBTN.SetActive(true);
+        if(PhotonNetwork.IsMasterClient)
+        {
+         nextRoundBTN.SetActive(true);
+        }
+       
          plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
         plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
         plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
@@ -279,16 +284,16 @@ public class RoundManager : MonoBehaviourPun
         enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
         enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
         Debug.Log("This is called");
-         infoisShown = true;    
+         infoisShown = true;   
+    }    
       
            
-    }
+    
 
     public void OnIfoOff()
     {
         playerinfo.SetActive(false);
         enemyinfo.SetActive(false);
-        nextRoundBTN.SetActive(false);
         infoisShown = false;
     }
 
