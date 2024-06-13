@@ -27,6 +27,8 @@ public class PlayerUIManager : MonoBehaviour
     public GameObject rmtIndicatorUI;
     public TextMeshProUGUI rmtcostText;
 
+    public GameObject cardPrefab;
+
     private PhotonView pv;
 
     
@@ -46,6 +48,13 @@ public class PlayerUIManager : MonoBehaviour
         {
             costText.text = "Cost:" + CostManager.Instance.Total.ToString();
         }
+        if(RoundManager.InstRoundManager.infoisShown == true)
+        {
+            skipButton.gameObject.SetActive(false);
+            PhotonNetwork.Destroy(cardPrefab.gameObject);
+
+        }
+       
     }
 
     public void DestroyUICanvas()
