@@ -284,7 +284,7 @@ public class RoundManager : MonoBehaviourPun
         enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
         enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
         Debug.Log("This is called");
-         infoisShown = true;   
+        infoisShown = true;   
     }    
       
            
@@ -300,17 +300,23 @@ public class RoundManager : MonoBehaviourPun
     //Called when a player presses the skip button
     public void OnPlayerSkipPressed()
     {
-        photonView.RPC("PlayerSkipPressedRPC", RpcTarget.MasterClient, PhotonNetwork.LocalPlayer.ActorNumber);
+        if (photonView.IsMine)
+        {
+            photonView.RPC("PlayerSkipPressedRPC", RpcTarget.MasterClient);
+        }
     }
 
     [PunRPC]
-    void PlayerSkipPressedRPC(int playerId)
+    void PlayerSkipPressedRPC()
     {
-        playersSkipped++;
+        playersSkipped +=1;
         Debug.Log("PLAYER PRESSED SKIP FOR " + playersSkipped + " TIMES");
         if (playersSkipped >= PhotonNetwork.PlayerList.Length) // All players have pressed the skip button
         {
-            photonView.RPC("SkipRemainingTime", RpcTarget.All);
+            if (PhotonNetwork.IsMasterClient)
+            {
+                photonView.RPC("SkipRemainingTime", RpcTarget.All);
+            }
             playersSkipped = 0; // Reset for the next round
         }
     }
