@@ -125,8 +125,17 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         {
             startGame.SetActive(false);
         }
+        if(PhotonNetwork.IsMasterClient)
+        {
+             textroom.text = roomName.ToString();
+        }
+        else if(!PhotonNetwork.IsMasterClient)
+        {
+              textroom.text = roomName.ToString();
 
-        textroom.text = roomName.ToString();
+        }
+
+       
 
 
     }
