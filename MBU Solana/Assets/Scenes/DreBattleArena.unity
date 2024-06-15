@@ -1784,9 +1784,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.11527778
-    width: 1.5320313
-    height: 0.5
+    y: 0.10162003
+    width: 1
+    height: 0.7952872
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2326,9 +2326,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.11527778
-    width: 1.5320313
-    height: 0.5
+    y: 0.10162003
+    width: 1
+    height: 0.7952872
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -6819,7 +6819,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 256
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
