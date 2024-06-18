@@ -6881,7 +6881,7 @@ GameObject:
   - component: {fileID: 1693982661}
   m_Layer: 0
   m_Name: MainCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6977,7 +6977,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12.574074
+  orthographic size: 13.333333
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -7021,7 +7021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cm: {fileID: 0}
-  rs: {fileID: 0}
+  rs: {fileID: 1718240333}
 --- !u!114 &1718240331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7035,7 +7035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cm: {fileID: 0}
-  rs: {fileID: 0}
+  rs: {fileID: 1718240333}
 --- !u!114 &1718240332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18720,7 +18720,8 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 4382410426989119045}
   sceneViewId: 2
   InstantiationId: 0
   isRuntimeInstantiated: 0

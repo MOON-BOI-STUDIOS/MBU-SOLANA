@@ -113,18 +113,4 @@ public class PlayerUIManager : MonoBehaviour
     {
         skipButton.interactable = true;
     }
-
-    // public void SwitchCardSelected()
-    // {
-    //     cardSelected = !cardSelected;
-    // }
-
-    // public void ResetCardSelected()
-    // {
-    //     if(pv.IsMine)
-    //     {
-    //         cardSelected = false;
-    //         skipButton.SetActive(true);
-    //     }
-    // }
 }

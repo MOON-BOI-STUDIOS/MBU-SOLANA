@@ -6,8 +6,9 @@ using TMPro;
 using Photon.Pun;
 using Unity.VisualScripting;
 using System.IO;
+using System;
 
-public class RoundManager : MonoBehaviourPun
+public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
 {
     #region Singleton
 
@@ -59,7 +60,7 @@ public class RoundManager : MonoBehaviourPun
 
 
     [Header("Text")]
-
+    [SerializeField]
     public TextMeshProUGUI enemyph1, enemyph2, enemyph3, plph1, plph2, plph3;
     public TextMeshProUGUI time;
 
@@ -269,26 +270,51 @@ public class RoundManager : MonoBehaviourPun
     {
         Debug.Log("Round End");
         TimerObject.SetActive(false);
-        RoundScript.OnCalculationOfResult();
         playerinfo.SetActive(true);
         enemyinfo.SetActive(true);
         if(PhotonNetwork.IsMasterClient)
         {
-         nextRoundBTN.SetActive(true);
+            nextRoundBTN.SetActive(true);
+            UpdateUI();
         }
-       
-         plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
+        infoisShown = true;
+        RoundScript.OnCalculationOfResult();
+    }
+
+    private void UpdateUI()
+    {
+        plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
         plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
         plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
         enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
         enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
         enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
-        Debug.Log("This is called");
-        infoisShown = true;   
-    }    
-      
-           
-    
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            // We own this player: send the others our data
+            stream.SendNext(plph1.text);
+            stream.SendNext(plph2.text);
+            stream.SendNext(plph3.text);
+            stream.SendNext(enemyph1.text);
+            stream.SendNext(enemyph1.text);
+            stream.SendNext(enemyph2.text);
+        }
+        else
+        {
+            // Network player, receive data
+            this.plph1.text = (string)stream.ReceiveNext();
+            this.plph2.text = (string)stream.ReceiveNext();
+            this.plph3.text = (string)stream.ReceiveNext();
+            this.enemyph1.text = (string)stream.ReceiveNext();
+            this.enemyph2.text = (string)stream.ReceiveNext();
+            this.enemyph3.text = (string)stream.ReceiveNext();
+        }
+    }
+
 
     public void OnIfoOff()
     {
