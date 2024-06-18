@@ -11745,7 +11745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
@@ -14488,6 +14488,7 @@ MonoBehaviour:
   comboIntervalMax: 5
   comboText: {fileID: 0}
   comboIndicatorParent: {fileID: 0}
+  attackArea: {fileID: 0}
 --- !u!4 &3685875997906252225
 Transform:
   m_ObjectHideFlags: 0
