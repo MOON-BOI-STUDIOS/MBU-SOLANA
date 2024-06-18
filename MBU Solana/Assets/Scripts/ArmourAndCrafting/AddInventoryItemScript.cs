@@ -20,6 +20,7 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     public Transform inventoryTransform;
     public bool IsSelling;
     private int points;
+    private int defaultInstanceNum = 0;
 
     #region Singleton
 
@@ -72,6 +73,7 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
                 PlayerPrefs.SetInt("Points", currentPoint);
                 PlayerPrefs.Save();
             }
+            Debug.Log("In the Add to Inventory the value of defaultInstance " + defaultInstanceNum);
             // This is a very essential step so that a unique value is present inside each item;
             ItemInventory.instance.AddItem(Instantiate(newItem), defaultInstanceNum);
         }

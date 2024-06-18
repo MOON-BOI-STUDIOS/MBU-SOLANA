@@ -73,7 +73,10 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
             Debug.Log("Instance Number:" + PlayerPrefs.GetInt("InstanceNumber"));
             PlayerPrefs.Save();
         }
-        items.InstanceNum = defaultInstanceNum;
+        else
+        {
+            items.InstanceNum = defaultInstanceNum;
+        }
         Debug.Log("Existing instance Number:" + items.InstanceNum);
         inventoryItemList.Add(items);
         // Add item to the Dictionary

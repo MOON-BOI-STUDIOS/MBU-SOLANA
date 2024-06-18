@@ -119,6 +119,7 @@ public class FileDataHandler
         Dictionary<int,bool>queriedData = new Dictionary<int, bool>();
         for (int i = 0; i < loadedData.savedData.Count; i++)
         {
+
             queriedData.Add(loadedData.savedData[i].instanceNum,true);
         }
         //Check from list
