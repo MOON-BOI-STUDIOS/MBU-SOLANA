@@ -277,10 +277,12 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         {
             nextRoundBTN.SetActive(true);
             UpdateUI();
+            PhotonNetwork.Destroy(cardManagerPrefab);
         }
         if (!PhotonNetwork.IsMasterClient)
         {
             UpdateUIClient();
+            PhotonNetwork.Destroy(cardManagerPrefab);
         }
         infoisShown = true;
         RoundScript.OnCalculationOfResult();
