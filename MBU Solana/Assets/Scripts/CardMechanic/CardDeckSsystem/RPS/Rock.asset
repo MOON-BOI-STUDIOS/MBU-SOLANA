@@ -16,5 +16,5 @@ MonoBehaviour:
   art: {fileID: 0}
   description: 
   cost: 0
-  ID_RPS: 0
+  ID_RPS: 2
   cardType: 3

@@ -286,7 +286,7 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         }
         infoisShown = true;
         RoundScript.OnCalculationOfResult();
-        PhotonNetwork.Destroy(cardManagerPrefab);
+        
         
     }
     //For Master Client
