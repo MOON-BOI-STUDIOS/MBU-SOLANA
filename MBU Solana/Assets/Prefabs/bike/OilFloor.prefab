@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 185923418425452725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.03, y: 31.6, z: 0}
-  m_LocalScale: {x: 3.5, y: 2, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 21
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 704b89fd3e1259f4c938d2df7f1f7095, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 1
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f6fdd28c180ca46b18b2f5d92b3f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bubbleSprite: {fileID: 21300000, guid: 704b89fd3e1259f4c938d2df7f1f7095, type: 3}
 --- !u!50 &185923418425452721
 Rigidbody2D:
   serializedVersion: 4
@@ -135,4 +136,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.3

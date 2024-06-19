@@ -86,10 +86,14 @@ public class InteractableManager : MonoBehaviour
                 while (_previousCar == position) position = Random.Range(0, carsPrefab.Count);
                 _previousCar = position;
 
-                //Reposition a random car array to the top with no repetition
-                repositionOfObject(carsPrefab[position]);
+                
                 //position goes from 0 1 2 left center right, as in AICarController Position Enum.
                 carsPrefab[position].GetComponent<AICarController>().currentPosition = (AICarController.Position)_previousPosition;
+                //Decide future movement
+                carsPrefab[position].GetComponent<AICarController>().FutureChangePath();
+
+                //Reposition a random car array to the top with no repetition
+                repositionOfObject(carsPrefab[position]);
                 _previousType = types.car;
                 break;
 
@@ -134,7 +138,7 @@ public class InteractableManager : MonoBehaviour
         target.GetComponent<RaceObjectBase>().available = false;
         //choose one out of 3 positions
         int positionChosen = Random.Range(0, positionsToMoveTo.Length - 1);
-        //we don't like repetition
+        //save positionChosen for later uses such as car position
         _previousPosition = positionChosen;
         //move object to desire location
         target.transform.position = positionsToMoveTo[positionChosen].transform.position;
@@ -159,6 +163,8 @@ public class InteractableManager : MonoBehaviour
 
     private void LookForAvailableBubble(GameObject target)
     {
+        //Add bubble to DArray, if there's not a single bubble available, we instantiate a new one and start using it 
+        //This help ensure that once the game gets faster we can always have a bubble 
         if (_dBubbleAvailable.Count == 0)
         {
             _dBubbleAvailable.Add(prefabBubble);
@@ -174,8 +180,8 @@ public class InteractableManager : MonoBehaviour
         }
         GameObject temp = Instantiate(prefabBubble, prefabBubble.transform.position, Quaternion.identity, transform);
         _dBubbleAvailable.Add(temp);
+        //bubble RaceObjectBase function (sprite definition)
         target.GetComponent<RaceObjectBase>().OnBubble(temp);
 
-        //array while blabla
     }
 }

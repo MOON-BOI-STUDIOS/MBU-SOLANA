@@ -46,6 +46,7 @@ public class RaceObjectBase : MonoBehaviour, IInteractable
 
             yield return null; // Wait for the next frame
         }
+        yield return null;
         //set bubble false, so it canbe used later on by another object
         target.SetActive(false);
     }

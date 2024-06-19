@@ -89,9 +89,9 @@ public class AICarManager : MonoBehaviour
    
     /*public void CollisionWithCar(AICarController acc)
     {
-        if(!acc.isDisdroyed)
+        if(!acc.isDestroyed)
         {
-            acc.isDisdroyed = true;
+            acc.isDestroyed = true;
             var blast = Instantiate(BlastPrefab, acc.gameObject.transform);
             blast.transform.localPosition = new Vector3(0, 0, 0);
             Destroy(blast, 0.5f);

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: SmallOrangeCrystalAnim
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -970057503, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: 722093761, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: -1072785021, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: 654730636, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: 1541161553, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: 1360696577, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: 2036538452, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: 1396573956, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: -1048669431, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: 2065650229, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: -539678895, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  - {fileID: 846716200, guid: de806e9c6d31ca341948eb4f0ac5e540, type: 3}
+  m_MinSpeed: 10
+  m_MaxSpeed: 10
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
