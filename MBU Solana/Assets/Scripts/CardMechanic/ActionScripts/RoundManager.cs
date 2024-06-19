@@ -240,6 +240,7 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         if (cardManager != null)
         {
             CardManagersObject = cardManager.GetComponent<CardManager>();
+            cardManagerPrefab = cardManager;
         }
         else
         {
@@ -277,10 +278,16 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
             nextRoundBTN.SetActive(true);
             UpdateUI();
         }
+        if (!PhotonNetwork.IsMasterClient)
+        {
+            UpdateUIClient();
+        }
         infoisShown = true;
         RoundScript.OnCalculationOfResult();
+        PhotonNetwork.Destroy(cardManagerPrefab);
+        
     }
-
+    //For Master Client
     private void UpdateUI()
     {
         plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
@@ -290,6 +297,17 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
         enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
     }
+    //For Client
+    private void UpdateUIClient()
+    {
+        this.plph1.text = plph1.text;
+        this.plph2.text = plph2.text;
+        this.plph3.text = plph3.text;
+        this.enemyph1.text = enemyph1.text;
+        this.enemyph2.text = enemyph2.text;
+        this.enemyph3.text = enemyph3.text;
+    }
+
 
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {

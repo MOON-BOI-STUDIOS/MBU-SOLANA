@@ -52,7 +52,7 @@ public class PlayerUIManager : MonoBehaviour
         if(RoundManager.InstRoundManager.infoisShown == true)
         {
             skipButton.gameObject.SetActive(false);
-            PhotonNetwork.Destroy(cardPrefab.gameObject);
+            //PhotonNetwork.Destroy(cardPrefab.gameObject);
 
         }
        
