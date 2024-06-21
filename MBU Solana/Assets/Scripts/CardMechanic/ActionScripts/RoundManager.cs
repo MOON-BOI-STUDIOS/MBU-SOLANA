@@ -313,12 +313,15 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
     //For Client
     private void UpdateUIClient()
     {
-        this.plph1.text = plph1.text;
-        this.plph2.text = plph2.text;
-        this.plph3.text = plph3.text;
-        this.enemyph1.text = enemyph1.text;
-        this.enemyph2.text = enemyph2.text;
-        this.enemyph3.text = enemyph3.text;
+        if (photonView.IsMine)
+        {
+            this.plph1.text = plph1.text;
+            this.plph2.text = plph2.text;
+            this.plph3.text = plph3.text;
+            this.enemyph1.text = enemyph1.text;
+            this.enemyph2.text = enemyph2.text;
+            this.enemyph3.text = enemyph3.text;
+        }
     }
 
 
