@@ -184,7 +184,7 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (NumberOfPhases >= 3 && PhotonNetwork.IsMasterClient)
         {
-            photonView.RPC("StartRoundResultCalculation", RpcTarget.All);
+            photonView.RPC("StartRoundResultCalculation", RpcTarget.AllBufferedViaServer);
         }
         else if (PhaseStart && PhotonNetwork.IsMasterClient)
         {
