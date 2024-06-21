@@ -282,7 +282,6 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         if (!PhotonNetwork.IsMasterClient)
         {
             UpdateUIClient();
-            Debug.Log(this.enemyph1.text);
             PhotonNetwork.Destroy(cardManagerPrefab);
         }
         infoisShown = true;
@@ -296,6 +295,11 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
         plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
         plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
+        if (RoundScript.GetEnemyScript() == null)
+        {
+            Debug.Log("Get Enemy Script is null");
+            return;
+        }
         enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
         enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
         enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
