@@ -194,6 +194,10 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         {
             photonView.RPC("RoundProgressor", RpcTarget.All);
         }
+        if (NumberOfPhases >= 3 && !PhotonNetwork.IsMasterClient)
+        {
+            UpdateUIClient();
+        }
     }
 
     [PunRPC]
