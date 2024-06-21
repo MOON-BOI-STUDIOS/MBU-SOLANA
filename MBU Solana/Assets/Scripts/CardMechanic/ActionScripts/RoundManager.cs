@@ -276,14 +276,21 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         if(PhotonNetwork.IsMasterClient)
         {
             nextRoundBTN.SetActive(true);
-            UpdateUI();
-            PhotonNetwork.Destroy(cardManagerPrefab);
+            //UpdateUI();
+            //PhotonNetwork.Destroy(cardManagerPrefab);
         }
-        if (!PhotonNetwork.IsMasterClient)
+        /*if (!PhotonNetwork.IsMasterClient)
         {
             UpdateUIClient();
             PhotonNetwork.Destroy(cardManagerPrefab);
-        }
+        }*/
+        plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
+        plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
+        plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
+        enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
+        enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
+        enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
+        PhotonNetwork.Destroy(cardManagerPrefab);
         infoisShown = true;
         RoundScript.OnCalculationOfResult();
         
@@ -295,11 +302,6 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
         plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
         plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
-        if (RoundScript.GetEnemyScript() == null)
-        {
-            Debug.Log("Get Enemy Script is null");
-            return;
-        }
         enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
         enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
         enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
