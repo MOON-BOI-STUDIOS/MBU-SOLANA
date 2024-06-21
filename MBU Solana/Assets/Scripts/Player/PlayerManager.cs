@@ -189,33 +189,25 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         get { return Phase1Turns; }
         set
         {
-
-            if (PhotonNetwork.IsMasterClient)
-            {
-                Phase1Turns = value;
-            }
+            Phase1Turns = value;
         }
     }
 
     public TurnOptions.PhaseAttackTurns Phase2Options
     {
         get { return Phase2Turns; }
-        set {
-            if (PhotonNetwork.IsMasterClient)
-            {
-                Phase2Turns = value;
-            }
+        set
+        {
+            Phase2Turns = value;
         }
     }
 
     public TurnOptions.PhaseDefenceTurns Phase3Options
     {
         get { return Phase3Turns; }
-        set {
-            if (PhotonNetwork.IsMasterClient)
-            {
-                Phase3Turns = value;
-            }
+        set
+        {
+            Phase3Turns = value;
         }
     }
 
