@@ -282,6 +282,7 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         if (!PhotonNetwork.IsMasterClient)
         {
             UpdateUIClient();
+            Debug.Log(this.enemyph1.text);
             PhotonNetwork.Destroy(cardManagerPrefab);
         }
         infoisShown = true;
