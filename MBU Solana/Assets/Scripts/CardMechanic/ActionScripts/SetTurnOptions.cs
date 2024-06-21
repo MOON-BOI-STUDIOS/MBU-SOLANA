@@ -19,37 +19,37 @@ public class SetTurnOptions : MonoBehaviour
     public void OnChosenRock()
     {
         // Get the local player who is clicking on the card and save the choice for that player in their Player Manager variable
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null)
         {
             Debug.Log("On Chosen Rock");
-            roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Rock;
+            roundScript.GetLocalPlayer().Phase1Options = TurnOptions.Phase1Turns.Rock;
         }
     }
 
     public void OnChosenPaper()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null)
         {
             Debug.Log("On Chosen Paper");
-            roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Paper;
+            roundScript.GetLocalPlayer().Phase1Options = TurnOptions.Phase1Turns.Paper;
         }
     }
 
     public void OnChosenScissor()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null)
         {
             Debug.Log("On Chosen Scissor");
-            roundScript.GetPlayerScript().Phase1Options = TurnOptions.Phase1Turns.Scissor;
+            roundScript.GetLocalPlayer().Phase1Options = TurnOptions.Phase1Turns.Scissor;
         }
     }
 
     public void OnChosenAttack()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null)
         {
             Debug.Log("On Chosen Attack");
-            roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.Attack;
+            roundScript.GetLocalPlayer().Phase2Options = TurnOptions.PhaseAttackTurns.Attack;
         }
         //if (Player != null)
         //  Player.Phase2Options = TurnOptions.PhaseAttackTurns.Attack;
@@ -57,82 +57,82 @@ public class SetTurnOptions : MonoBehaviour
 
     public void OnChosenLightAttack()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null )
         {
             Debug.Log("On Chosen Light Attack");
-            roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.LightAttack;
+            roundScript.GetLocalPlayer().Phase2Options = TurnOptions.PhaseAttackTurns.LightAttack;
         }
     }
 
     public void OnChosenHeavyAttack()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null)
         {
             Debug.Log("On Chosen Heavy Attack");
-            roundScript.GetPlayerScript().Phase2Options = TurnOptions.PhaseAttackTurns.HeavyAttack;
+            roundScript.GetLocalPlayer().Phase2Options = TurnOptions.PhaseAttackTurns.HeavyAttack;
         }
     }
 
     public void OnChosenDoubleAttack()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null )
         {
             Debug.Log("On Chosen Double Attack");
-            roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.DoubleAttack;
+            roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.DoubleAttack;
         }
     }
 
     public void OnChosenBlockAttack()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null )
         {
             Debug.Log("On Chosen Block Attack");
-            roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.BlockAttack;
+            roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.BlockAttack;
         }
     }
 
     public void OnChosenPlayerIncreaseDamage()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null )
         {
             Debug.Log("On Chosen ncrease Damage");
-            roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage;
+            roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage;
         }
     }
 
     public void OnChosenDecreaseEnemyAttack()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null )
         {
             Debug.Log("On Chosen Enemy Attack");
-            roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack;
+            roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack;
         }
     }
 
     public void OnChosenHealPortionOfHealth()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null )
         {
             Debug.Log("On Chosen Portion of Health");
-            roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.HealPortionOfHealth;
+            roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.HealPortionOfHealth;
         }
     }
 
     public void OnChosenHealMaxHealth()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null )
         {
             Debug.Log("On Chosen Max Health");
-            roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.HealMaxHealth;
+            roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.HealMaxHealth;
         }
     }
 
     public void OnChosenEnemyDefenceReducedNextRound()
     {
-        if (pv.IsMine && roundScript != null && roundScript.GetPlayerScript() != null)
+        if (pv.IsMine && roundScript != null)
         {
             Debug.Log("On Chosen Next Round");
-            roundScript.GetPlayerScript().Phase3Options = TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound;
+            roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound;
         }
     }
 }

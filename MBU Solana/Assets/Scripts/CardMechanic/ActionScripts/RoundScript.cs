@@ -47,6 +47,15 @@ public class RoundScript : MonoBehaviourPunCallbacks
         }
     }
 
+    public PlayerManager GetLocalPlayer()
+    {
+        if (PlayerManager.LocalPlayerInstance != null)
+        {
+            return PlayerManager.LocalPlayerInstance.GetComponent<PlayerManager>();
+        }
+        return null;
+    }
+
     [PunRPC]
     public void SetVariableDict(int playerId,PlayerManager player)
     {
@@ -59,7 +68,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public PlayerManager GetPlayerScript()
     {
-        int playerId = PhotonNetwork.LocalPlayer.ActorNumber; //PhotonNetwork.LocalPlayer.ActorNumber;
+        int playerId = PhotonNetwork.LocalPlayer.ActorNumber;//PhotonNetwork.LocalPlayer.ActorNumber;
         if (playerDict.ContainsKey(playerId))
         {
             return playerDict[playerId];
@@ -69,6 +78,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public PlayerManager GetEnemyScript()
     {
+
         int playerId = PhotonNetwork.PlayerListOthers[0].ActorNumber;
         if (playerDict.ContainsKey(playerId))
         {
@@ -76,6 +86,18 @@ public class RoundScript : MonoBehaviourPunCallbacks
         }
         Debug.Log("Enemy script is null as Player id not present:" + playerId);
         return null;
+        // Get all player objects in the scene
+        //GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
+
+        //foreach (GameObject playerObject in playerObjects)
+        //{
+        //    PhotonView photonView = playerObject.GetComponent<PhotonView>();
+        //    if (photonView != null && photonView.IsMine)
+        //    {
+        //        return playerObject.GetComponent<PlayerManager>();
+        //    }
+        //}
+        //return null;
 
     }
 

@@ -37,6 +37,8 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         NoDamage,
         Default
     };
+
+    public static GameObject LocalPlayerInstance;
     #endregion
 
     #region Private Fields Region
@@ -71,6 +73,12 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         photonView = GetComponent<PhotonView>();
         rb = GetComponent<Rigidbody2D>();
         PlayerUI = GetComponent<PlayerUIManager>();
+
+        if (photonView.IsMine)
+        {
+            LocalPlayerInstance = this.gameObject;
+        }
+
 
     }
 
