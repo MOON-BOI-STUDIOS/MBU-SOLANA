@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Block Enenmy Damage
   m_EditorClassIdentifier: 
   cardName: Block Enenmy Damage
-  art: {fileID: 0}
-  description: 
+  cardImage: {fileID: 0}
   cost: 10
-  Rarity: 0
-  damage: 0
+  Attack: 0
   decreaseDamagePercent: 0
   increaseDamagePercent: 0
   healingPower: 0
+  Block: 500
   ID_SpecialAction: 201
   cardType: 2
