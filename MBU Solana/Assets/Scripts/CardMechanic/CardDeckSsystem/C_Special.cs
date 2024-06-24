@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class C_Special : MonoBehaviour
 {
-    public TextMeshProUGUI title;
-    public TextMeshProUGUI description;
-    public Image art;
+
+    public Image cardart;
+
+
     public int cost;
 
     public static C_Special Instance;
@@ -31,14 +32,12 @@ public class C_Special : MonoBehaviour
     public void LoadCard(SpecialCard co) 
     {
         cardObject = co;
-        title.text = co.cardName;
-        description.text = co.description;
-        art = co.art;
         cost = co.cost;
+        co.cardImage = cardart;
     }
     public float getDamage()
     {
-        return cardObject.damage;
+        return cardObject.Attack;
     }
     public float getDecreaseDamagePercent()
     {

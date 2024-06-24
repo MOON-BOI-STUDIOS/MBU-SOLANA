@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class SpecialCard : ScriptableObject
 {
     public string cardName;
-    public Image art;
-    [TextArea(0, 100)]
-    public string description;
+
+    public Image cardImage;
+
     public int cost;
-    public int Rarity;
-    public float damage;
+    public float Attack;
     public float decreaseDamagePercent;
     public float increaseDamagePercent;
     public float healingPower;
+    public float Block;
     public int ID_SpecialAction;
     public CardType cardType;
    
