@@ -1705,7 +1705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: -142, y: 20}
   m_SizeDelta: {x: 689.327, y: 257.271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199089301
@@ -6369,7 +6369,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 13.333333
+  orthographic size: 9.518518
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -7000,7 +7000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: -142, y: 20}
   m_SizeDelta: {x: 689.327, y: 257.271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825969414
@@ -17777,17 +17777,9 @@ MonoBehaviour:
   infoisShown: 0
   timerIsRunning: 0
   timeRemaining: 10
-  enemyph1: {fileID: 0}
-  enemyph2: {fileID: 0}
-  enemyph3: {fileID: 0}
-  plph1: {fileID: 0}
-  plph2: {fileID: 0}
-  plph3: {fileID: 0}
   time: {fileID: 141328154}
   screen: {fileID: 248699829957622594}
   nextRoundBTN: {fileID: 1825969412}
-  playerinfo: {fileID: 0}
-  enemyinfo: {fileID: 0}
   TimerObject: {fileID: 1721298274}
   cardManagerPrefab: {fileID: 9118166675790550648, guid: f548d26c911024aebb968d3bb506cf28, type: 3}
 --- !u!114 &4382410426989119047
