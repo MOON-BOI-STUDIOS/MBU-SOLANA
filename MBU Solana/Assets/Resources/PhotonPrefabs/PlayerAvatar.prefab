@@ -2156,7 +2156,6 @@ MonoBehaviour:
   rmthealthNumber: {fileID: 0}
   rmtIndicatorUI: {fileID: 0}
   rmtcostText: {fileID: 0}
-  cardPrefab: {fileID: 9118166675790550648, guid: f548d26c911024aebb968d3bb506cf28, type: 3}
 --- !u!1 &9029094405160294605
 GameObject:
   m_ObjectHideFlags: 0
