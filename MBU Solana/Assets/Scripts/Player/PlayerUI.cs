@@ -17,6 +17,18 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]
     private Slider playerHealthSlider;
 
+    [Tooltip("UI text to display player's chpice1")]
+    [SerializeField]
+    private TextMeshProUGUI playerChpice1;
+
+    [Tooltip("UI text to display player's chpice2")]
+    [SerializeField]
+    private TextMeshProUGUI playerChpice2;
+
+    [Tooltip("UI text to display player's chpice3")]
+    [SerializeField]
+    private TextMeshProUGUI playerChpice3;
+
     Transform targetTransform;
     CanvasGroup _canvasGroup;
     Vector3 targetPosition;
@@ -44,6 +56,12 @@ public class PlayerUI : MonoBehaviour
         if (playerHealthSlider != null)
         {
             playerHealthSlider.value = target.health;
+        }
+        if (playerChpice1 != null && playerChpice2 != null && playerChpice3 != null)
+        {
+            playerChpice1.text = target.Phase1Options.ToString();
+            playerChpice2.text = target.Phase2Options.ToString();
+            playerChpice3.text = target.Phase3Options.ToString();
         }
 
         // Destroy itself if the target is null, It's a fail safe when Photon is destroying Instances of a Player over the network
@@ -87,6 +105,12 @@ public class PlayerUI : MonoBehaviour
         if (playerNameText != null)
         {
             playerNameText.text = target.photonView.Owner.NickName;
+        }
+        if (playerChpice1 != null && playerChpice2 != null && playerChpice3 != null)
+        {
+            playerChpice1.text = target.Phase1Options.ToString();
+            playerChpice2.text = target.Phase2Options.ToString();
+            playerChpice3.text = target.Phase3Options.ToString();
         }
 
         targetTransform = this.target.GetComponent<Transform>();

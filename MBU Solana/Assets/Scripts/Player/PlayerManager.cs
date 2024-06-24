@@ -78,8 +78,6 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         {
             LocalPlayerInstance = this.gameObject;
         }
-
-
     }
 
     private void Start()
@@ -95,7 +93,7 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         }
         else
         {
-            Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerUiPrefab reference on player Prefab.", this);
+            Debug.LogWarning("PlayerUiPrefab reference on player Prefab.", this);
         }
         //End of Health Prefab
 
