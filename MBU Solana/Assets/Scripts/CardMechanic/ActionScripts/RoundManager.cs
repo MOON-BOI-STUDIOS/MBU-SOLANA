@@ -62,7 +62,7 @@ public class RoundManager : MonoBehaviourPunCallbacks
 
     [Header("Game Object")]
 
-    public GameObject screen, nextRoundBTN, playerinfo,enemyinfo;
+    public GameObject screen, nextRoundBTN;
 
      public GameObject TimerObject;
      public GameObject cardManagerPrefab;
@@ -267,8 +267,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
     {
         Debug.Log("Round End");
         TimerObject.SetActive(false);
-        playerinfo.SetActive(true);
-        enemyinfo.SetActive(true);
         if(PhotonNetwork.IsMasterClient)
         {
             nextRoundBTN.SetActive(true);

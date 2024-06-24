@@ -126,7 +126,7 @@ MonoBehaviour:
   playerChpice1: {fileID: 743272247792474928}
   playerChpice2: {fileID: 486024366515834146}
   playerChpice3: {fileID: 5068549126201079867}
-  screenOffset: {x: 0, y: 10, z: 0}
+  screenOffset: {x: 0, y: 5, z: 0}
 --- !u!1 &541533815978702447
 GameObject:
   m_ObjectHideFlags: 0
