@@ -49,11 +49,11 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
     bool isDead;
 
     [SerializeField]
-    private TurnOptions.Phase1Turns Phase1Turns;
+    private TurnOptions.Phase1Turns Phase1Turns = TurnOptions.Phase1Turns.None;
     [SerializeField]
-    private TurnOptions.PhaseAttackTurns Phase2Turns;
+    private TurnOptions.PhaseAttackTurns Phase2Turns = TurnOptions.PhaseAttackTurns.None;
     [SerializeField]
-    private TurnOptions.PhaseDefenceTurns Phase3Turns;
+    private TurnOptions.PhaseDefenceTurns Phase3Turns = TurnOptions.PhaseDefenceTurns.None;
 
     Rigidbody2D rb;
     #endregion

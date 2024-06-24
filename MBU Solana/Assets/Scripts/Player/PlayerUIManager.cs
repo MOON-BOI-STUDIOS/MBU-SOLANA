@@ -27,7 +27,6 @@ public class PlayerUIManager : MonoBehaviour
     public GameObject rmtIndicatorUI;
     public TextMeshProUGUI rmtcostText;
 
-    public GameObject cardPrefab = null;
 
     private PhotonView pv;
 
@@ -37,7 +36,6 @@ public class PlayerUIManager : MonoBehaviour
     {
         pv = GetComponent<PhotonView>();
         _roundManager = GameObject.FindGameObjectWithTag("Multiplayer_manager").GetComponent<RoundManager>();
-        cardPrefab = gameObject.GetComponent<RoundManager>().cardManagerPrefab;
     }
 
     private void Update()
@@ -52,8 +50,6 @@ public class PlayerUIManager : MonoBehaviour
         if(RoundManager.InstRoundManager.infoisShown == true)
         {
             skipButton.gameObject.SetActive(false);
-            //PhotonNetwork.Destroy(cardPrefab.gameObject);
-
         }
        
     }

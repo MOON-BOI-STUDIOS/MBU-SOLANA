@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 using System.IO;
 using System;
 
-public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
+public class RoundManager : MonoBehaviourPunCallbacks
 {
     #region Singleton
 
@@ -58,10 +58,6 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
     private CardManager CardManagersObject;
 
 
-
-    [Header("Text")]
-    [SerializeField]
-    public TextMeshProUGUI enemyph1, enemyph2, enemyph3, plph1, plph2, plph3;
     public TextMeshProUGUI time;
 
     [Header("Game Object")]
@@ -194,10 +190,6 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
         {
             photonView.RPC("RoundProgressor", RpcTarget.All);
         }
-        if (NumberOfPhases >= 3 && !PhotonNetwork.IsMasterClient)
-        {
-            UpdateUIClient();
-        }
     }
 
     [PunRPC]
@@ -283,79 +275,11 @@ public class RoundManager : MonoBehaviourPunCallbacks, IPunObservable
             //UpdateUI();
             //PhotonNetwork.Destroy(cardManagerPrefab);
         }
-        /*if (!PhotonNetwork.IsMasterClient)
-        {
-            UpdateUIClient();
-            PhotonNetwork.Destroy(cardManagerPrefab);
-        }*/
-        plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
-        plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
-        plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
-        enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
-        enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
-        enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
         PhotonNetwork.Destroy(cardManagerPrefab);
         infoisShown = true;
         RoundScript.OnCalculationOfResult();
-        
-        
-    }
-    //For Master Client
-    private void UpdateUI()
-    {
-        plph1.text = RoundScript.GetPlayerScript().Phase1Options.ToString();
-        plph2.text = RoundScript.GetPlayerScript().Phase2Options.ToString();
-        plph3.text = RoundScript.GetPlayerScript().Phase3Options.ToString();
-        enemyph1.text = RoundScript.GetEnemyScript().Phase1Options.ToString();
-        enemyph2.text = RoundScript.GetEnemyScript().Phase2Options.ToString();
-        enemyph3.text = RoundScript.GetEnemyScript().Phase3Options.ToString();
-    }
-    //For Client
-    private void UpdateUIClient()
-    {
-        if (photonView.IsMine)
-        {
-            this.plph1.text = plph1.text;
-            this.plph2.text = plph2.text;
-            this.plph3.text = plph3.text;
-            this.enemyph1.text = enemyph1.text;
-            this.enemyph2.text = enemyph2.text;
-            this.enemyph3.text = enemyph3.text;
-        }
     }
 
-
-    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if (stream.IsWriting)
-        {
-            // We own this player: send the others our data
-            stream.SendNext(plph1.text);
-            stream.SendNext(plph2.text);
-            stream.SendNext(plph3.text);
-            stream.SendNext(enemyph1.text);
-            stream.SendNext(enemyph1.text);
-            stream.SendNext(enemyph2.text);
-        }
-        else
-        {
-            // Network player, receive data
-            this.plph1.text = (string)stream.ReceiveNext();
-            this.plph2.text = (string)stream.ReceiveNext();
-            this.plph3.text = (string)stream.ReceiveNext();
-            this.enemyph1.text = (string)stream.ReceiveNext();
-            this.enemyph2.text = (string)stream.ReceiveNext();
-            this.enemyph3.text = (string)stream.ReceiveNext();
-        }
-    }
-
-
-    public void OnIfoOff()
-    {
-        playerinfo.SetActive(false);
-        enemyinfo.SetActive(false);
-        infoisShown = false;
-    }
 
     //Called when a player presses the skip button
     public void OnPlayerSkipPressed()

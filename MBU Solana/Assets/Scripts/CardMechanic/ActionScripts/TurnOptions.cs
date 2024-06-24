@@ -8,7 +8,7 @@ public static class TurnOptions
         Rock,
         Paper,
         Scissor,
-        DefaultMaxPhase1
+        None
     };
 
     public enum PhaseAttackTurns
@@ -16,7 +16,7 @@ public static class TurnOptions
         Attack,
         LightAttack,
         HeavyAttack,
-        DefaultMaxPhase2
+        None
     };
 
     public enum PhaseDefenceTurns //PhaseSpecialAbilityOptions
@@ -28,16 +28,6 @@ public static class TurnOptions
         HealPortionOfHealth,
         HealMaxHealth,
         EnemyDefenceReducedOnNextRound,
-        DefaultMaxPhase3
+        None
     }
 }
-
-/*
-      BlockEnemyDamage,
-        IncreasePlayerDefence,
-        HealPortionHealth,
-        HealMaxHealth,
-        DoubleDamage,
-        NxtRdReduceEnemyDefence,
-        NxtRdReduceEnemyAttack
- */

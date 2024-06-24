@@ -36,10 +36,6 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public void FindPlayers(int playerId,PlayerManager player)
     {
-        /*if (!playerDict.ContainsKey(playerId))
-        {
-            playerDict.Add(playerId, player);
-        }*/
         if (PhotonNetwork.IsMasterClient)
         {
             object[] data = { playerId, player };

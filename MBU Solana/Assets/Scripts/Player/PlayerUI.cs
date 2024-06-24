@@ -33,6 +33,8 @@ public class PlayerUI : MonoBehaviour
     CanvasGroup _canvasGroup;
     Vector3 targetPosition;
 
+    private bool doOnce = false;
+
     #endregion
 
     #region Public Fields Region
@@ -57,12 +59,8 @@ public class PlayerUI : MonoBehaviour
         {
             playerHealthSlider.value = target.health;
         }
-        if (playerChpice1 != null && playerChpice2 != null && playerChpice3 != null)
-        {
-            playerChpice1.text = target.Phase1Options.ToString();
-            playerChpice2.text = target.Phase2Options.ToString();
-            playerChpice3.text = target.Phase3Options.ToString();
-        }
+        // Show Choices;
+        ShowChoices();
 
         // Destroy itself if the target is null, It's a fail safe when Photon is destroying Instances of a Player over the network
         if (target == null)
@@ -89,6 +87,30 @@ public class PlayerUI : MonoBehaviour
         }
     }
 
+    private void ShowChoices()
+    {
+        if (playerChpice1 != null && playerChpice2 != null && playerChpice3 != null && RoundManager.InstRoundManager.infoisShown == true)
+        {
+            if (!doOnce)
+            {
+                //Change alpha to 1
+                playerChpice1.alpha = 1.0f;
+                playerChpice2.alpha = 1.0f;
+                playerChpice3.alpha = 1.0f;
+
+                playerChpice1.text = target.Phase1Options.ToString();
+                playerChpice2.text = target.Phase2Options.ToString();
+                playerChpice3.text = target.Phase3Options.ToString();
+
+                doOnce = true;
+            }
+        }
+        else if(RoundManager.InstRoundManager.infoisShown == false)
+        {
+            doOnce = false;
+        }
+    }
+
     #endregion
 
     #region Public Methods
@@ -108,9 +130,9 @@ public class PlayerUI : MonoBehaviour
         }
         if (playerChpice1 != null && playerChpice2 != null && playerChpice3 != null)
         {
-            playerChpice1.text = target.Phase1Options.ToString();
-            playerChpice2.text = target.Phase2Options.ToString();
-            playerChpice3.text = target.Phase3Options.ToString();
+            playerChpice1.alpha = 0.0f;
+            playerChpice2.alpha = 0.0f;
+            playerChpice3.alpha = 0.0f;
         }
 
         targetTransform = this.target.GetComponent<Transform>();
