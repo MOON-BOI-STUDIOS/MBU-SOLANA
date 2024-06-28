@@ -83,6 +83,7 @@ public class SetTurnOptions : MonoBehaviour
         {
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.DoubleAttack;
             roundScript.GetLocalPlayer().Phase3OptionAttackPower = (int)cardManager.cardVizSpecials[0].getDamage();
+            roundScript.GetLocalPlayer().SetOptionSelected(3);
             Debug.Log("On Chosen Double Attack" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }
@@ -104,6 +105,7 @@ public class SetTurnOptions : MonoBehaviour
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage;
             roundScript.GetLocalPlayer().Phase3OptionhealthEffector = (int)cardManager.cardVizSpecials[1].getIncreaseDamagePercent();
             roundScript.GetLocalPlayer().Phase3OptionAttackPower = (int)cardManager.cardVizSpecials[1].getDamage();
+            roundScript.GetLocalPlayer().SetOptionSelected(3);
             Debug.Log("On Chosen ncrease Damage" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }

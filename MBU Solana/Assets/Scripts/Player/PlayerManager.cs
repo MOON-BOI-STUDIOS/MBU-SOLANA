@@ -34,7 +34,8 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         NoDamage,               //0
         DecreaseDamage,         //1
         Heal,                   //2
-        Default                 //3
+        Damage,                 //3
+        Default                 //4
     };
 
     public static GameObject LocalPlayerInstance;
@@ -260,6 +261,10 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         {
             health -= attack;
             health += healtheffector;
+        }
+        else if (Option == OptionSelected.Damage)
+        {
+            health -= attack;
         }
 
         //-----------------------------------//
