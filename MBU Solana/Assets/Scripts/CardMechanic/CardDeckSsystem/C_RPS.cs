@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class C_RPS : MonoBehaviour
 {
-    public TextMeshProUGUI title;
-    public TextMeshProUGUI description;
+
     public Image art;
    
 
@@ -22,9 +21,8 @@ public class C_RPS : MonoBehaviour
     public void LoadCard(RPS co) 
     {
         cardObject = co;
-        title.text = co.cardName;
-        description.text = co.description;
-        art = co.art;
+     
+        co.art = art;
 
 
     }

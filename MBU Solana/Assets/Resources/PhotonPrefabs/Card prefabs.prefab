@@ -1323,9 +1323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b444e14493a448449bb41a1efdd4886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
-  description: {fileID: 0}
-  art: {fileID: 0}
+  art: {fileID: 7118430799246498319}
   cardObject: {fileID: 11400000, guid: b3eabd646340448478f171575188ee66, type: 2}
 --- !u!1 &7118430799413374667
 GameObject:
@@ -3344,9 +3342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b444e14493a448449bb41a1efdd4886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
-  description: {fileID: 0}
-  art: {fileID: 0}
+  art: {fileID: 9118166676403412654}
   cardObject: {fileID: 11400000, guid: ab53c1185b21a1048a6e1a66bbeaf224, type: 2}
 --- !u!1 &9118166676510739488
 GameObject:
@@ -4357,7 +4353,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b444e14493a448449bb41a1efdd4886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
-  description: {fileID: 0}
-  art: {fileID: 0}
+  art: {fileID: 9118166677626690119}
   cardObject: {fileID: 11400000, guid: ada644aa695a1ac4c8a8ac56bc436a42, type: 2}
