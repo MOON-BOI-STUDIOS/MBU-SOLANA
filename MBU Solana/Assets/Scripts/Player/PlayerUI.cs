@@ -62,7 +62,7 @@ public class PlayerUI : MonoBehaviour
         if (playerHealthSlider != null && playerHealth != null)
         {
             playerHealthSlider.value = target.health;
-            playerHealth.text = "Defence:" + target.health;
+            playerHealth.text = "Health:" + target.health;
         }
         // Show Choices;
         ShowChoices();
