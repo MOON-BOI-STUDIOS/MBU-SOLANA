@@ -99,7 +99,8 @@ public class RoundScript : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            pv.RPC("HandleResultCalculation", RpcTarget.All);
+            pv.RPC("HandleResultCalculation", RpcTarget.MasterClient);
+            pv.RPC("UpdateWinningPlayer", RpcTarget.Others, winningPlayer);
             pv.RPC("ApplyCardDamages", RpcTarget.All);
         }
         // For --Host and --Client
@@ -115,33 +116,32 @@ public class RoundScript : MonoBehaviourPunCallbacks
         Debug.Log("0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie");*/
         Debug.Log("Calculating Round Option from phase 1");
         //Tie Option both the player and enemy selected same Option
-        bool flag = false;
         if (GetLocalPlayer().Phase1Options == GetOtherPlayer().Phase1Options)
         {
             winningPlayer = 2;
-            flag = true;
-
         }
         else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Rock &&
             GetOtherPlayer().Phase1Options == TurnOptions.Phase1Turns.Scissor)
         {
             winningPlayer = 0;
-            flag = true;
         }
-        else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Scissor &&
+        else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Rock &&
             GetOtherPlayer().Phase1Options == TurnOptions.Phase1Turns.Paper)
         {
-            winningPlayer = 0;
-            flag = true;
+            winningPlayer = 1;
         }
         else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Paper &&
             GetOtherPlayer().Phase1Options == TurnOptions.Phase1Turns.Rock)
         {
             winningPlayer = 0;
-            flag = true;
         }
-
-        if (!flag)
+        else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Paper &&
+            GetOtherPlayer().Phase1Options == TurnOptions.Phase1Turns.Scissor)
+        {
+            winningPlayer = 1;
+        }
+        else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Scissor &&
+            GetOtherPlayer().Phase1Options == TurnOptions.Phase1Turns.Rock)
         {
             winningPlayer = 1;
         }
@@ -150,6 +150,13 @@ public class RoundScript : MonoBehaviourPunCallbacks
             winningPlayer = 0;
         }
         Debug.Log("The Player number which won is:" + winningPlayer);
+    }
+
+    [PunRPC]
+    public void UpdateWinningPlayer(int value)
+    {
+        this.winningPlayer = value;
+        Debug.Log("(Only for client)The Player number which won is:" + winningPlayer);
     }
 
     [PunRPC]
