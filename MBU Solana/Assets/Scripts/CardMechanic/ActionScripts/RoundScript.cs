@@ -118,10 +118,11 @@ public class RoundScript : MonoBehaviourPunCallbacks
     [PunRPC]
     public void ApplyCardDamages()
     {
-       //0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
-         
-       // For phase 2 damages
-       GetLocalPlayer().OnChangeHealth(GetOtherPlayer().Phase2CardDamage, 1); // Set the last parameter to 1 to let the function in player manager decrease health
+        Debug.Log("(Inside ApplyCardDamage Function)The Player number which won is:" + winningPlayer);
+        //0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
+
+        // For phase 2 damages
+        GetLocalPlayer().OnChangeHealth(GetOtherPlayer().Phase2CardDamage, 1); // Set the last parameter to 1 to let the function in player manager decrease health
 
         if (winningPlayer == 0 && PhotonNetwork.IsMasterClient) // Host won RPS round
         {
