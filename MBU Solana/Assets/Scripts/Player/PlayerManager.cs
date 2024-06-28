@@ -251,24 +251,24 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         else if (Option == OptionSelected.NoDamage)
         {
             // Nothing will happen to the health
-            Debug.Log("Option selected is No Damage");
+            Debug.Log("Option selected is No Damage" + health);
         }
         else if (Option == OptionSelected.DecreaseDamage)
         {
             int damage = attack * healtheffector;
             health -= damage;
-            Debug.Log("Option selected is Decrease Damage");
+            Debug.Log("Option selected is Decrease Damage" + health);
         }
         else if (Option == OptionSelected.Heal)
         {
             health -= attack;
             health += healtheffector;
-            Debug.Log("Option selected is Heal");
+            Debug.Log("Option selected is Heal" + health);
         }
         else if (Option == OptionSelected.Damage)
         {
             health -= attack;
-            Debug.Log("Option selected is Damage");
+            Debug.Log("Option selected is Damage" + health);
         }
 
         //-----------------------------------//
