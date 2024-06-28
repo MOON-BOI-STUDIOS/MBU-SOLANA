@@ -99,7 +99,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            pv.RPC("HandleResultCalculation", RpcTarget.MasterClient);
+            pv.RPC("HandleResultCalculation", RpcTarget.All);
             pv.RPC("ApplyCardDamages", RpcTarget.All);
         }
         // For --Host and --Client
