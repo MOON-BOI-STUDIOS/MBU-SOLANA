@@ -84,7 +84,7 @@ public class SetTurnOptions : MonoBehaviour
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.DoubleAttack;
             roundScript.GetLocalPlayer().Phase3OptionAttackPower = (int)cardManager.cardVizSpecials[0].getDamage();
             roundScript.GetLocalPlayer().SetOptionSelected(3);
-            Debug.Log("On Chosen Double Attack" + roundScript.GetLocalPlayer().Phase3Options.ToString());
+            Debug.Log("On Chosen Double Attack" + roundScript.GetLocalPlayer().Phase3Options.ToString() +":" + roundScript.GetLocalPlayer().Phase3OptionAttackPower);
         }
     }
 
@@ -106,7 +106,7 @@ public class SetTurnOptions : MonoBehaviour
             roundScript.GetLocalPlayer().Phase3OptionhealthEffector = (int)cardManager.cardVizSpecials[1].getIncreaseDamagePercent();
             roundScript.GetLocalPlayer().Phase3OptionAttackPower = (int)cardManager.cardVizSpecials[1].getDamage();
             roundScript.GetLocalPlayer().SetOptionSelected(3);
-            Debug.Log("On Chosen ncrease Damage" + roundScript.GetLocalPlayer().Phase3Options.ToString());
+            Debug.Log("On Chosen ncrease Damage" + roundScript.GetLocalPlayer().Phase3Options.ToString() + ":" + roundScript.GetLocalPlayer().Phase3OptionAttackPower);
         }
     }
 
@@ -117,7 +117,7 @@ public class SetTurnOptions : MonoBehaviour
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack;
             roundScript.GetLocalPlayer().SetOptionSelected(1); // Decrease Enemy Attack
             roundScript.GetLocalPlayer().Phase3OptionhealthEffector = (int)cardManager.cardVizSpecials[2].getDecreaseDamagePercent();
-            Debug.Log("On Chosen Enemy Attack" + roundScript.GetLocalPlayer().Phase3Options.ToString());
+            Debug.Log("On Chosen Enemy Attack" + roundScript.GetLocalPlayer().Phase3Options.ToString() + ":" + roundScript.GetLocalPlayer().Phase3OptionhealthEffector);
         }
     }
 
@@ -128,7 +128,7 @@ public class SetTurnOptions : MonoBehaviour
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.HealPortionOfHealth;
             roundScript.GetLocalPlayer().SetOptionSelected(2); // Heal
             roundScript.GetLocalPlayer().Phase3OptionhealthEffector = (int)cardManager.cardVizSpecials[5].getHealingPower();
-            Debug.Log("On Chosen Portion of Health" + roundScript.GetLocalPlayer().Phase3Options.ToString());
+            Debug.Log("On Chosen Portion of Health" + roundScript.GetLocalPlayer().Phase3Options.ToString() + ":" + roundScript.GetLocalPlayer().Phase3OptionhealthEffector);
         }
     }
 
@@ -146,6 +146,7 @@ public class SetTurnOptions : MonoBehaviour
         if (pv.IsMine && roundScript != null)
         {
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound;
+            roundScript.GetLocalPlayer().SetOptionSelected(3);
             Debug.Log("On Chosen Next Round" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }

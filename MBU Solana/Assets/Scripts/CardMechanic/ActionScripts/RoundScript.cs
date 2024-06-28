@@ -171,40 +171,58 @@ public class RoundScript : MonoBehaviourPunCallbacks
         TurnOptions.PhaseDefenceTurns cardName = GetOtherPlayer().Phase3Options;
         Debug.Log("The name of the card chosen by the other player" + cardName);
 
-        if (winningPlayer == 0 && !PhotonNetwork.IsMasterClient) // Host won RPS round
+        if (winningPlayer == 0) // Host won RPS round
         {
-            GetLocalPlayer().SetOptionSelected(3); // Damage will be imminent;
-            Debug.Log("if it is 0");
-            switch (cardName)
+            if (!PhotonNetwork.IsMasterClient)
             {
-                case TurnOptions.PhaseDefenceTurns.DoubleAttack:
-                    GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower * 2);
-                    break;
+                GetLocalPlayer().SetOptionSelected(3); // Damage will be imminent;
+                Debug.Log("if it is 0");
+                switch (cardName)
+                {
+                    case PhaseDefenceTurns.DoubleAttack:
+                        GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower * 2);
+                        Debug.Log("GetOtherPlayer().Phase3OptionAttackPower * 2" + GetOtherPlayer().Phase3OptionAttackPower * 2);
+                        break;
 
-                case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
-                    GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
-                    break;
-                default:
-                    GetLocalPlayer().OnChangeHealth(0, 0);
-                    break;
+                    case PhaseDefenceTurns.PlayerIncreseDamage:
+                        GetLocalPlayer().OnChangeHealth(0, (int)(GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * (float)(GetOtherPlayer().Phase3OptionhealthEffector/100))));
+                        Debug.Log("GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector" + GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
+                        break;
+                    default:
+                        GetLocalPlayer().OnChangeHealth(0, 0);
+                        break;
+                }
+            }
+            else
+            {
+                GetLocalPlayer().OnChangeHealth(0, 0);
             }
         }
-        else if (winningPlayer == 1 && PhotonNetwork.IsMasterClient) // Client Won
+        else if (winningPlayer == 1) // Client Won
         {
-            GetLocalPlayer().SetOptionSelected(3); // Damage will be imminent;
-            Debug.Log("if it is 1");
-            switch (cardName)
+            if (PhotonNetwork.IsMasterClient)
             {
-                case TurnOptions.PhaseDefenceTurns.DoubleAttack:
-                    GetLocalPlayer().OnChangeHealth(0, (GetOtherPlayer().Phase3OptionAttackPower * 2));
-                    break;
+                GetLocalPlayer().SetOptionSelected(3); // Damage will be imminent;
+                Debug.Log("if it is 1");
+                switch (cardName)
+                {
+                    case PhaseDefenceTurns.DoubleAttack:
+                        GetLocalPlayer().OnChangeHealth(0, (GetOtherPlayer().Phase3OptionAttackPower * 2));
+                        Debug.Log("GetOtherPlayer().Phase3OptionAttackPower * 2" + GetOtherPlayer().Phase3OptionAttackPower * 2);
+                        break;
 
-                case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
-                    GetLocalPlayer().OnChangeHealth(0, (GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector)));
-                    break;
-                default:
-                    GetLocalPlayer().OnChangeHealth(0, 0);
-                    break;
+                    case PhaseDefenceTurns.PlayerIncreseDamage:
+                        GetLocalPlayer().OnChangeHealth(0, (int)(GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * (float)(GetOtherPlayer().Phase3OptionhealthEffector / 100))));
+                        Debug.Log("GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector" + GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
+                        break;
+                    default:
+                        GetLocalPlayer().OnChangeHealth(0, 0);
+                        break;
+                }
+            }
+            else
+            {
+                GetLocalPlayer().OnChangeHealth(0, 0);
             }
         }
         else if(winningPlayer == 2)
@@ -214,10 +232,12 @@ public class RoundScript : MonoBehaviourPunCallbacks
             {
                 case PhaseDefenceTurns.DoubleAttack:
                     GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower * 2);
+                    Debug.Log("GetOtherPlayer().Phase3OptionAttackPower * 2" + GetOtherPlayer().Phase3OptionAttackPower * 2);
                     break;
 
                 case PhaseDefenceTurns.PlayerIncreseDamage:
-                    GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
+                    GetLocalPlayer().OnChangeHealth(0, (int)(GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * (float)(GetOtherPlayer().Phase3OptionhealthEffector / 100))));
+                    Debug.Log("GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector" + GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
                     break;
 
                 default:

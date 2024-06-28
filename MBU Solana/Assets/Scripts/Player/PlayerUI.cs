@@ -61,7 +61,7 @@ public class PlayerUI : MonoBehaviour
         //Reflects the Player Health
         if (playerHealthSlider != null && playerHealth != null)
         {
-            playerHealthSlider.value = target.health;
+            playerHealthSlider.value = target.health/target.GetMaxHealth();
             playerHealth.text = "Health:" + target.health;
         }
         // Show Choices;
@@ -112,6 +112,10 @@ public class PlayerUI : MonoBehaviour
         }
         else if(RoundManager.InstRoundManager.infoisShown == false)
         {
+            playerChpice1.alpha = 0.0f;
+            playerChpice2.alpha = 0.0f;
+            playerChpice3.alpha = 0.0f;
+
             doOnce = false;
         }
     }

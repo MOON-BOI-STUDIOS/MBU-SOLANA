@@ -168,7 +168,11 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         yield return new WaitForSeconds(1);
         //SceneManager.LoadScene(0);
     }
-    
+
+    public float GetMaxHealth()
+    {
+        return MAXHealth; 
+    }
 
     public TurnOptions.Phase1Turns Phase1Options
     {
@@ -255,20 +259,23 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         }
         else if (Option == OptionSelected.DecreaseDamage)
         {
-            int damage = attack * healtheffector;
+            int damage = attack - (int)(attack * (float)healtheffector/100);
             health -= damage;
+            Debug.Log("Inside OnChangeHealth with attack:" + attack);
             Debug.Log("Option selected is Decrease Damage" + health);
         }
         else if (Option == OptionSelected.Heal)
         {
             health -= attack;
             health += healtheffector;
+            Debug.Log("Inside OnChangeHealth with attack:" + attack);
             Debug.Log("Option selected is Heal" + health);
         }
         else if (Option == OptionSelected.Damage)
         {
             health -= attack;
-            Debug.Log("Option selected is Damage" + health);
+            Debug.Log("Inside OnChangeHealth with attack:" + attack);
+            Debug.Log("Option selected is Damage:" + health);
         }
 
         //-----------------------------------//
@@ -317,6 +324,7 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
             stream.SendNext(carddamage);
             stream.SendNext(Option);
             stream.SendNext(healtheffector);
+            stream.SendNext(attackPower);
         }
         else
         {
@@ -327,6 +335,7 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
             this.carddamage = (int)stream.ReceiveNext();
             this.Option = (OptionSelected)stream.ReceiveNext();
             this.healtheffector = (int)stream.ReceiveNext();
+            this.attackPower = (int)stream.ReceiveNext();
         }
     }
 }

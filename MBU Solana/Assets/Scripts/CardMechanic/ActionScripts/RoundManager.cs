@@ -124,10 +124,28 @@ public class RoundManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
+            photonView.RPC("ResetRound", RpcTarget.All);
             photonView.RPC("InstantiateCardManager", RpcTarget.All); // Instantiates cards
             photonView.RPC("RoundProgressor", RpcTarget.All); // Progresses the round
-            
         }
+    }
+
+    [PunRPC]
+    void ResetRound()
+    {
+        isCoolDown = false;
+
+        infoisShown = false;
+
+        timerIsRunning = false;
+
+        PhaseStart = false;
+
+        NumberOfPhases = 0;
+
+        timeRemaining = 10;
+
+        gameDuration = 10f;
     }
 
     [PunRPC]
