@@ -171,8 +171,9 @@ public class RoundScript : MonoBehaviourPunCallbacks
         TurnOptions.PhaseDefenceTurns cardName = GetOtherPlayer().Phase3Options;
         Debug.Log("The name of the card chosen by the other player" + cardName);
 
-        if (winningPlayer == 0 && PhotonNetwork.IsMasterClient) // Host won RPS round
+        if (winningPlayer == 0 && !PhotonNetwork.IsMasterClient) // Host won RPS round
         {
+            GetLocalPlayer().SetOptionSelected(3); // Damage will be imminent;
             Debug.Log("if it is 0");
             switch (cardName)
             {
@@ -188,8 +189,9 @@ public class RoundScript : MonoBehaviourPunCallbacks
                     break;
             }
         }
-        else if (winningPlayer == 1 && !PhotonNetwork.IsMasterClient) // Client Won
+        else if (winningPlayer == 1 && PhotonNetwork.IsMasterClient) // Client Won
         {
+            GetLocalPlayer().SetOptionSelected(3); // Damage will be imminent;
             Debug.Log("if it is 1");
             switch (cardName)
             {
