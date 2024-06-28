@@ -1796,7 +1796,6 @@ MonoBehaviour:
   _combat: {fileID: 9029094404681564997}
   health: 500
   fadeOut: {fileID: 0}
-  Option: 1
   photonView: {fileID: 0}
   PlayerUiPrefab: {fileID: 148239963541485328, guid: 1c28d52610fee4c84948b246274e9b07, type: 3}
 --- !u!114 &9029094404681564995
