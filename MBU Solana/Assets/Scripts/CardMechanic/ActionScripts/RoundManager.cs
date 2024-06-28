@@ -95,7 +95,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
             }
             else
             {
-                Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
                 EndGame();
@@ -116,7 +115,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
     {
         if (!playerCanvases.ContainsKey(playerId))
         {
-            Debug.Log("Registered with player ID: " + playerId);
             playerCanvases.Add(playerId, playerUI);
             RoundScript.FindPlayers(playerId, playerManager);
         }
@@ -138,7 +136,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
         
         NumberOfPhases += 1;
 
-        Debug.Log("NUMBER OF PHASES:" + NumberOfPhases);
         if (PhotonNetwork.IsMasterClient)
         {
             photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
@@ -178,9 +175,14 @@ public class RoundManager : MonoBehaviourPunCallbacks
 
     private void EndGame()
     {
-        if (NumberOfPhases >= 3 && PhotonNetwork.IsMasterClient)
+        if (NumberOfPhases >= 3)
         {
-            photonView.RPC("StartRoundResultCalculation", RpcTarget.AllBufferedViaServer);
+            if (PhotonNetwork.IsMasterClient)
+            {
+                photonView.RPC("StartRoundResultCalculation", RpcTarget.AllBufferedViaServer);
+            }
+
+            RoundScript.OnCalculationOfResult();
         }
         else if (PhaseStart && PhotonNetwork.IsMasterClient)
         {
@@ -200,20 +202,14 @@ public class RoundManager : MonoBehaviourPunCallbacks
         // Enable UI input with Buttons
         if (NumberOfPhases == 1)
         {
-            Debug.Log("CHOOSE OF PHASE 1");
-
             CardManagersObject.openRPS();
         }
         else if (NumberOfPhases == 2)
         {
-            Debug.Log("CHOOSE OF PHASE 2");
-
             CardManagersObject.OpenNormal();
         }
         else
         {
-            Debug.Log("CHOOSE OF PHASE 3");
-
             CardManagersObject.OpenSpecial();
         }
     }
@@ -221,7 +217,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
     [PunRPC]
     private void InstantiateCardManager()
     {
-        Debug.Log(playerCanvases.Count);
 
         GameObject cardManager = PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Card prefabs"), Vector3.zero, Quaternion.identity); //Instantiate(cardManagerPrefab);
         int playerId = PhotonNetwork.LocalPlayer.ActorNumber;
@@ -250,7 +245,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
     [PunRPC]
     void CloseForPlayerChoice()
     {
-        Debug.Log("STOP CHOOSING");
         // Disable UI input with Buttons
         PhaseStart = false;
         gameDuration = 10f;
@@ -265,7 +259,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
     [PunRPC]
     void StartRoundResultCalculation()
     {
-        Debug.Log("Round End");
         TimerObject.SetActive(false);
         if(PhotonNetwork.IsMasterClient)
         {
@@ -275,7 +268,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
         }
         PhotonNetwork.Destroy(cardManagerPrefab);
         infoisShown = true;
-        RoundScript.OnCalculationOfResult();
     }
 
 
@@ -289,7 +281,6 @@ public class RoundManager : MonoBehaviourPunCallbacks
     void PlayerSkipPressedRPC()
     {
         playersSkipped +=1;
-        Debug.Log("PLAYER PRESSED SKIP FOR " + playersSkipped + " TIMES");
         if (playersSkipped >= PhotonNetwork.PlayerList.Length) // All players have pressed the skip button
         {
             if (PhotonNetwork.IsMasterClient)
@@ -310,6 +301,5 @@ public class RoundManager : MonoBehaviourPunCallbacks
         {
             photonView.RPC("CloseForPlayerChoice", RpcTarget.All);
         }
-        Debug.Log("CARD TIMER SKIPPED");
     }
 }

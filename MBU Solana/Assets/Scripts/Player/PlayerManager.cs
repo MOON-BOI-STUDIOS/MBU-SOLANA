@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 using Photon.Pun;
 using Photon.Pun.Demo.PunBasics;
+using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
 {
@@ -18,12 +19,8 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
 
     public const float MAXHealth = 500.0f;
     public float health;
-    public float Defence;
 
     public GameObject fadeOut;
-
-    [SerializeField]
-    public OptionSelected Option = OptionSelected.Default;
 
     //Photon View Filed
     public PhotonView photonView;
@@ -34,26 +31,36 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
 
     public enum OptionSelected
     {
-        NoDamage,
-        Default
+        NoDamage,               //0
+        DecreaseDamage,         //1
+        Heal,                   //2
+        Default                 //3
     };
 
     public static GameObject LocalPlayerInstance;
+    public static GameObject OtherPlayer;
     #endregion
 
     #region Private Fields Region
-    private const float MAX_DEFENCE = 100.0f;
 
     private PlayerUIManager PlayerUI;
 
     bool isDead;
 
-    [SerializeField]
+    //For Phase 1 options
     private TurnOptions.Phase1Turns Phase1Turns = TurnOptions.Phase1Turns.None;
-    [SerializeField]
+
+    //For Phase2 options
     private TurnOptions.PhaseAttackTurns Phase2Turns = TurnOptions.PhaseAttackTurns.None;
-    [SerializeField]
+    private int carddamage = 0;
+
+    //For Phase3 options
+    private SpecialCard specialcardData;
     private TurnOptions.PhaseDefenceTurns Phase3Turns = TurnOptions.PhaseDefenceTurns.None;
+    private SpecialCardData _specialCardData;
+    private OptionSelected Option = OptionSelected.Default;
+    private int healtheffector = 0;
+    private int attackPower = 0;
 
     Rigidbody2D rb;
     #endregion
@@ -61,9 +68,6 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
     #region Delegates and Events
     public delegate void HealthChangedDelegate(float newHealth, float MaxHealth);
     public event HealthChangedDelegate OnHealthChanged;
-
-    public delegate void DefenceChangedDelegate(float newDefence, float MaxDefence);
-    public event HealthChangedDelegate OnDefenceChanged;
     #endregion
 
     private void Awake()
@@ -78,12 +82,15 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         {
             LocalPlayerInstance = this.gameObject;
         }
+        else
+        {
+            OtherPlayer = this.gameObject;
+        }
     }
 
     private void Start()
     {
         health = MAXHealth;
-        Defence = MAX_DEFENCE;
 
         // Health Prefab
         if (PlayerUiPrefab != null)
@@ -147,26 +154,6 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         }
     }
 
-    [PunRPC]
-    void UpdateHealth(float newHealth)
-    {
-        health = newHealth;
-        // Put the Helath UI here for now for testing
-        //OnHealthChanged?.Invoke(health, MAXHealth);
-
-        PlayerUI.UpdateHealth(health, MAXHealth);
-    }
-
-    [PunRPC]
-    void UpdateDefence(float newDefence)
-    {
-        Defence = newDefence;
-        //Put the Defence UI here for now for testing
-        //OnDefenceChanged?.Invoke(Defence, MAX_DEFENCE);
-
-        PlayerUI.UpdateDefence(Defence, MAX_DEFENCE);
-    }
-
     //death sequence
     IEnumerator  deathSequence()
     {
@@ -200,6 +187,15 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         }
     }
 
+    public int Phase2CardDamage
+    {
+        get { return carddamage; }
+        set
+        {
+            carddamage = value;
+        }
+    }
+
     public TurnOptions.PhaseDefenceTurns Phase3Options
     {
         get { return Phase3Turns; }
@@ -209,75 +205,95 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         }
     }
 
-    public void OnNoDamage()
+    public OptionSelected GetOptionSelected()
     {
-        if (PhotonNetwork.IsMasterClient)
+        return Option;
+    }
+
+    public void SetOptionSelected(int value)
+    {
+        Option = (OptionSelected)value;
+    }
+
+    public int Phase3OptionhealthEffector
+    {
+        get { return healtheffector; }
+        set
         {
-            Option = OptionSelected.NoDamage;
+            healtheffector = value;
         }
     }
 
-    public void OnChangeHealth(float num, bool Isincreased)
+    public int Phase3OptionAttackPower
     {
-        if (photonView.IsMine)
+        get { return attackPower; }
+        set
         {
-            if (Isincreased)
-            {
-                health = health + num;
+            attackPower = value;
+        }
+    }
 
-            }
-            else if (Option == OptionSelected.NoDamage)
-            {
-                return;
-            }
-            else if (Defence != 0.0f)
-            {
-                OnChangeDefence(40, false);
-            }
-            else
-            {
-                health = health - num;
-            }
-
-            // Clamp health between min and max limits
-            if (health > MAXHealth)
-            {
-                health = MAXHealth;
-            }
-            else if (health <= 0.0f)
+    public void OnChangeHealth(int num, int attack)
+    {
+        //-----------Only for Phase 2----------------
+        if (attack == 1)
+        {
+            health -= num;
+            if (health <= 0.0f)
             {
                 health = 0.0f;
                 Die();
             }
+            return;
+        }
+        //----------------- For Phase 3 ------------
+        else if (Option == OptionSelected.NoDamage)
+        {
+            // Nothing will happen to the health
+        }
+        else if (Option == OptionSelected.DecreaseDamage)
+        {
+            int damage = attack * healtheffector;
+            health -= damage;
+        }
+        else if (Option == OptionSelected.Heal)
+        {
+            health -= attack;
+            health += healtheffector;
+        }
 
-            // Call the RPC to update health on all clients
-            //photonView.RPC("UpdateHealth", RpcTarget.All, health);
+        //-----------------------------------//
+        // Clamp health between min and max limits
+        if (health > MAXHealth)
+        {
+            health = MAXHealth;
+        }
+        else if (health <= 0.0f)
+        {
+            health = 0.0f;
+            Die();
+        }
+
+        // Call the RPC to update health on all clients
+        //photonView.RPC("UpdateHealth", RpcTarget.All, health);
+    }
+
+
+    public SpecialCard SpecialCardData
+    {
+        get { return specialcardData; }
+        set
+        {
+            specialcardData = value;
         }
     }
 
-    public void OnChangeDefence(float num, bool Isincreased)
+    public SpecialCardData CardData
     {
-        if (photonView.IsMine)
+        get { return _specialCardData; }
+        set
         {
-            if (Isincreased)
-            {
-                Defence = Defence + num;
-            }
-            else
-            {
-                Defence = Defence - num;
-            }
-
-            // Clamp health between min and max limits
-            if (Defence > MAX_DEFENCE)
-            {
-                Defence = MAX_DEFENCE;
-            }
-            else if (Defence <= 0.0f)
-            {
-                Defence = 0.0f;
-            }
-            //photonView.RPC("UpdateDefence", RpcTarget.All, Defence);
+            _specialCardData = value;
         }
     }
 
@@ -289,7 +305,9 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
             stream.SendNext((int)Phase2Turns);
             stream.SendNext((int)Phase3Turns);
             stream.SendNext(health);
-            stream.SendNext(Defence);
+            stream.SendNext(carddamage);
+            stream.SendNext(Option);
+            stream.SendNext(healtheffector);
         }
         else
         {
@@ -297,7 +315,9 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
             Phase2Turns = (TurnOptions.PhaseAttackTurns)stream.ReceiveNext();
             Phase3Turns = (TurnOptions.PhaseDefenceTurns)stream.ReceiveNext();
             this.health = (float)stream.ReceiveNext();
-            this.Defence = (float)stream.ReceiveNext();
+            this.carddamage = (int)stream.ReceiveNext();
+            this.Option = (OptionSelected)stream.ReceiveNext();
+            this.healtheffector = (int)stream.ReceiveNext();
         }
     }
 }

@@ -10,10 +10,13 @@ public class SetTurnOptions : MonoBehaviour
     //public PlayerManager Player;
     private PhotonView pv;
 
+    private CardManager cardManager;
+
     private void Start()
     {
         roundScript = GameObject.FindGameObjectWithTag("Multiplayer_manager").GetComponent<RoundScript>();
         pv = GetComponent<PhotonView>();
+        cardManager = GetComponent<CardManager>();
     }
 
     public void OnChosenRock()
@@ -48,19 +51,19 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null)
         {
-            Debug.Log("On Chosen Attack");
             roundScript.GetLocalPlayer().Phase2Options = TurnOptions.PhaseAttackTurns.Attack;
+            roundScript.GetLocalPlayer().Phase2CardDamage = cardManager.cardVizs[0].getDamage();
+            Debug.Log("On Chosen Attack with Damage" + cardManager.cardVizs[0].getDamage());
         }
-        //if (Player != null)
-        //  Player.Phase2Options = TurnOptions.PhaseAttackTurns.Attack;
     }
 
     public void OnChosenLightAttack()
     {
         if (pv.IsMine && roundScript != null )
         {
-            Debug.Log("On Chosen Light Attack");
             roundScript.GetLocalPlayer().Phase2Options = TurnOptions.PhaseAttackTurns.LightAttack;
+            roundScript.GetLocalPlayer().Phase2CardDamage = cardManager.cardVizs[2].getDamage();
+            Debug.Log("On Chosen Light Attack" + cardManager.cardVizs[2].getDamage());
         }
     }
 
@@ -68,8 +71,9 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null)
         {
-            Debug.Log("On Chosen Heavy Attack");
             roundScript.GetLocalPlayer().Phase2Options = TurnOptions.PhaseAttackTurns.HeavyAttack;
+            roundScript.GetLocalPlayer().Phase2CardDamage = cardManager.cardVizs[1].getDamage();
+            Debug.Log("On Chosen Heavy Attack" + cardManager.cardVizs[1].getDamage());
         }
     }
 
@@ -77,8 +81,9 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null )
         {
-            Debug.Log("On Chosen Double Attack");
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.DoubleAttack;
+            roundScript.GetLocalPlayer().Phase3OptionAttackPower = (int)cardManager.cardVizSpecials[0].getDamage();
+            Debug.Log("On Chosen Double Attack" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }
 
@@ -86,8 +91,9 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null )
         {
-            Debug.Log("On Chosen Block Attack");
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.BlockAttack;
+            roundScript.GetLocalPlayer().SetOptionSelected(0); // block
+            Debug.Log("On Chosen Block Attack" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }
 
@@ -95,8 +101,10 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null )
         {
-            Debug.Log("On Chosen ncrease Damage");
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage;
+            roundScript.GetLocalPlayer().Phase3OptionhealthEffector = (int)cardManager.cardVizSpecials[1].getIncreaseDamagePercent();
+            roundScript.GetLocalPlayer().Phase3OptionAttackPower = (int)cardManager.cardVizSpecials[1].getDamage();
+            Debug.Log("On Chosen ncrease Damage" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }
 
@@ -104,8 +112,10 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null )
         {
-            Debug.Log("On Chosen Enemy Attack");
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack;
+            roundScript.GetLocalPlayer().SetOptionSelected(1); // Decrease Enemy Attack
+            roundScript.GetLocalPlayer().Phase3OptionhealthEffector = (int)cardManager.cardVizSpecials[2].getDecreaseDamagePercent();
+            Debug.Log("On Chosen Enemy Attack" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }
 
@@ -113,8 +123,10 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null )
         {
-            Debug.Log("On Chosen Portion of Health");
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.HealPortionOfHealth;
+            roundScript.GetLocalPlayer().SetOptionSelected(2); // Heal
+            roundScript.GetLocalPlayer().Phase3OptionhealthEffector = (int)cardManager.cardVizSpecials[5].getHealingPower();
+            Debug.Log("On Chosen Portion of Health" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }
 
@@ -122,8 +134,8 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null )
         {
-            Debug.Log("On Chosen Max Health");
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.HealMaxHealth;
+            Debug.Log("On Chosen Max Health" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }
 
@@ -131,8 +143,8 @@ public class SetTurnOptions : MonoBehaviour
     {
         if (pv.IsMine && roundScript != null)
         {
-            Debug.Log("On Chosen Next Round");
             roundScript.GetLocalPlayer().Phase3Options = TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound;
+            Debug.Log("On Chosen Next Round" + roundScript.GetLocalPlayer().Phase3Options.ToString());
         }
     }
 }

@@ -17,6 +17,10 @@ public class PlayerUI : MonoBehaviour
     [SerializeField]
     private Slider playerHealthSlider;
 
+    [Tooltip("UI Slider to display Player's Health")]
+    [SerializeField]
+    private TextMeshProUGUI playerHealth;
+
     [Tooltip("UI text to display player's chpice1")]
     [SerializeField]
     private TextMeshProUGUI playerChpice1;
@@ -55,9 +59,10 @@ public class PlayerUI : MonoBehaviour
     private void Update()
     {
         //Reflects the Player Health
-        if (playerHealthSlider != null)
+        if (playerHealthSlider != null && playerHealth != null)
         {
             playerHealthSlider.value = target.health;
+            playerHealth.text = "Defence:" + target.health;
         }
         // Show Choices;
         ShowChoices();
@@ -124,9 +129,10 @@ public class PlayerUI : MonoBehaviour
         }
         // Cache references for efficiency
         target = _target;
-        if (playerNameText != null)
+        if (playerNameText != null && playerHealth != null)
         {
             playerNameText.text = target.photonView.Owner.NickName;
+            playerHealth.text = "Defence:" + target.health;
         }
         if (playerChpice1 != null && playerChpice2 != null && playerChpice3 != null)
         {

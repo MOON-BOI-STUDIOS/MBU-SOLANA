@@ -1795,14 +1795,10 @@ MonoBehaviour:
   _animator: {fileID: 9029094403243350930}
   _combat: {fileID: 9029094404681564997}
   health: 500
-  Defence: 90
   fadeOut: {fileID: 0}
   Option: 1
   photonView: {fileID: 0}
   PlayerUiPrefab: {fileID: 148239963541485328, guid: 1c28d52610fee4c84948b246274e9b07, type: 3}
-  Phase1Turns: 0
-  Phase2Turns: 0
-  Phase3Turns: 0
 --- !u!114 &9029094404681564995
 MonoBehaviour:
   m_ObjectHideFlags: 0

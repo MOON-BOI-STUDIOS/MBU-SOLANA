@@ -63,6 +63,9 @@ MonoBehaviour:
   - SetCardManager
   - PlayerSkipPressedRPC
   - SkipButtonPressed
+  - HandleClientAttack
+  - InflictDamage
+  - ApplyCardDamages
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

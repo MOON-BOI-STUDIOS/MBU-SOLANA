@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using static TurnOptions;
 
 
 public class RoundScript : MonoBehaviourPunCallbacks
@@ -12,7 +13,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     public ITurnOptionsMethods turnOptionsMethods;
 
-    PhaseSpecialAbilityOptions phase;
+    PhaseSpecialAbilityOptions specialphase;
 
     private PhotonView pv;
 
@@ -22,14 +23,16 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
     private PlayerManager playerToBeDamaged = null;
 
-    private float DamageToBeInflicted = 0; //Next Round DamageVariable 
+    private float DamageToBeInflicted = 0; //Next Round DamageVariable
+
+    private int winningPlayer = 0; // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
 
     // Start is called before the first frame update
     void Start()
     {
         turnOptionsMethods = GetComponent<ITurnOptionsMethods>();
         // For Phase Logic
-        phase = GetComponent<PhaseSpecialAbilityOptions>();
+        specialphase = GetComponent<PhaseSpecialAbilityOptions>();
         pv = GetComponent<PhotonView>();
 
     }
@@ -52,12 +55,20 @@ public class RoundScript : MonoBehaviourPunCallbacks
         return null;
     }
 
+    public PlayerManager GetOtherPlayer()
+    {
+        if (PlayerManager.OtherPlayer != null)
+        {
+            return PlayerManager.OtherPlayer.GetComponent<PlayerManager>();
+        }
+        return null;
+    }
+
     [PunRPC]
     public void SetVariableDict(int playerId,PlayerManager player)
     {
         if (!playerDict.ContainsKey(playerId))
         {
-            Debug.Log("Registered with player ID: " + playerId);
             playerDict.Add(playerId, player);
         }
     }
@@ -76,25 +87,12 @@ public class RoundScript : MonoBehaviourPunCallbacks
     {
 
         int playerId = PhotonNetwork.PlayerListOthers[0].ActorNumber;
+        Player player = PhotonNetwork.PlayerListOthers[0];
         if (playerDict.ContainsKey(playerId))
         {
             return playerDict[playerId];
         }
-        Debug.Log("Enemy script is null as Player id not present:" + playerId);
         return null;
-        // Get all player objects in the scene
-        //GameObject[] playerObjects = GameObject.FindGameObjectsWithTag("Player");
-
-        //foreach (GameObject playerObject in playerObjects)
-        //{
-        //    PhotonView photonView = playerObject.GetComponent<PhotonView>();
-        //    if (photonView != null && photonView.IsMine)
-        //    {
-        //        return playerObject.GetComponent<PlayerManager>();
-        //    }
-        //}
-        //return null;
-
     }
 
     public void OnCalculationOfResult()
@@ -102,67 +100,79 @@ public class RoundScript : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             pv.RPC("HandleResultCalculation", RpcTarget.MasterClient);
+            pv.RPC("ApplyCardDamages", RpcTarget.All);
         }
+        // For --Host and --Client
+
     }
 
     [PunRPC]
     // This function is Invoking other functions to calculate the Result
     public void HandleResultCalculation()
     {
-        Debug.Log("Calculating");
-        int playerNumber = turnOptionsMethods.OnPhase1Options(GetPlayerScript(), GetEnemyScript());
-        Debug.Log("Player Number is:" + playerNumber);
-        // 0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
-        if (playerNumber == 2)
-        {
-            // For Phase 2 and 3 Attacks of player
-            phase.PhaseOptions(GetPlayerScript(), GetEnemyScript(), true);// Check the Definition of PhaseOptions
-            // For Phase 2 and 3 Attacks of Enemy
-            phase.PhaseOptions(GetEnemyScript(), GetPlayerScript(), true);// true is used to call both the phases
-        }
-        /*else if (playerNumber == 0)
-        {
-            // For Phase 2 and 3 Attacks of player
-            phase.PhaseOptions(playerManagerScript, enemyManagerScript, true);
-            // For only Phase 2 Attack of enemy
-            phase.PhaseOptions(enemyManagerScript, playerManagerScript, false);
-        }
-        else if (playerNumber == 1)
-        {
-            // For only Phase 2 Attack of player
-            phase.PhaseOptions(playerManagerScript, enemyManagerScript, false);
-            // For Phase 2 and 3 Attacks of Enemy
-            phase.PhaseOptions(enemyManagerScript, playerManagerScript, true);
-        }*/
+        winningPlayer = turnOptionsMethods.OnPhase1Options(GetPlayerScript(), GetEnemyScript());
+        Debug.Log("The Player number which won is:" + winningPlayer);
+        Debug.Log("0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie");
+    }
 
+    [PunRPC]
+    public void ApplyCardDamages()
+    {
+       //0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
+         
+       // For phase 2 damages
+       GetLocalPlayer().OnChangeHealth(GetOtherPlayer().Phase2CardDamage, 1); // Set the last parameter to 1 to let the function in player manager decrease health
 
+       if (winningPlayer == 0 && PhotonNetwork.IsMasterClient) // Host won RPS round
+       {
+           specialphase.SpecialPhaseResult(GetLocalPlayer(), GetOtherPlayer());
+       }
+       else if (winningPlayer == 1 && !PhotonNetwork.IsMasterClient) // Client Won
+       {
+           specialphase.SpecialPhaseResult(GetLocalPlayer(), GetOtherPlayer());
+       }
+       else
+       {
+            specialphase.SpecialPhaseResult(GetLocalPlayer(), GetOtherPlayer());
+       }
+   }
+       /*0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
+       if (playerNumber == 2)
+       {
+           // For Phase 2 and 3 Attacks of player
+           phase.PhaseOptions(GetPlayerScript(), GetEnemyScript(), true);// Check the Definition of PhaseOptions
+           // For Phase 2 and 3 Attacks of Enemy
+           phase.PhaseOptions(GetEnemyScript(), GetPlayerScript(), true);// true is used to call both the phases
+       }
+       if (playerNumber == 0 && PhotonNetwork.IsMasterClient)
+       {
+           pv.RPC("InflictDamage", RpcTarget.All);
+           Debug.Log("Inflicting Damage on the other player");
+           // For Phase 2 and 3 Attacks of player
+           //phase.PhaseOptions(GetPlayerScript(), GetEnemyScript(), true);
+           // For only Phase 2 Attack of enemy
+           //phase.PhaseOptions(GetEnemyScript(), GetPlayerScript(), false);
+       }
+       /*else if (playerNumber == 1)
+       {
+           // For only Phase 2 Attack of player
+           phase.PhaseOptions(GetPlayerScript(), GetEnemyScript(), false);
+           // For Phase 2 and 3 Attacks of Enemy
+           phase.PhaseOptions(GetEnemyScript(), GetPlayerScript(), true);
+       }*/
         // This will happen for 3 rounds
         //Call OnRoundStart Once again
-    }
 
-    #region NextRoundAttack
-    public void SetNextRoundAttack(bool value)
-    {
-        nextRoundAttack = value;
-    }
 
-    public void SetToBeDamagedPlayer(PlayerManager player)
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        playerToBeDamaged = player;
-    }
-
-    public void SetDamageForNextRound(float value)
-    {
-        DamageToBeInflicted = value;
-    }
-
-    public void OnNextRoundAttack()
-    {
-        if (nextRoundAttack && playerToBeDamaged != null)
+        if (stream.IsWriting)
         {
-            playerToBeDamaged.OnChangeHealth(DamageToBeInflicted, false);
+            stream.SendNext((int)winningPlayer);
+        }
+        else
+        {
+            winningPlayer = (int)stream.ReceiveNext();
         }
     }
-
-    #endregion
 }

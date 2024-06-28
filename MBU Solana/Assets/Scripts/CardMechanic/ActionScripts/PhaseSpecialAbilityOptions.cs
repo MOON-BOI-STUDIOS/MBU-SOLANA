@@ -3,77 +3,80 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class PhaseSpecialAbilityOptions : PhaseAttacks
+public class PhaseSpecialAbilityOptions : MonoBehaviour
 {
-    public override void PhaseOptions(PlayerManager Selector, PlayerManager OtherPlayer, bool bothOptions)
+    public void SpecialPhaseResult(PlayerManager LocalPlayer, PlayerManager OtherPlayer)
     {
-        base.PhaseOptions(Selector, OtherPlayer, bothOptions);
-
-        if (bothOptions)
+        TurnOptions.PhaseDefenceTurns cardName = OtherPlayer.Phase3Options;
+        switch (cardName)
         {
-            float damage = 0;
-            TurnOptions.PhaseDefenceTurns PhaseAttackTurns = Selector.Phase3Options;
-            switch (PhaseAttackTurns)
-            {
-                case TurnOptions.PhaseDefenceTurns.DoubleAttack:
+            case TurnOptions.PhaseDefenceTurns.DoubleAttack:
+                LocalPlayer.OnChangeHealth(0, OtherPlayer.Phase3OptionAttackPower * 2);
+                break;
+
+            case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
+                LocalPlayer.OnChangeHealth(0, OtherPlayer.Phase3OptionAttackPower + (OtherPlayer.Phase3OptionAttackPower * OtherPlayer.Phase3OptionhealthEffector));
+                break;
+            /*case TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack: //Deal Double Damage
+
+                LocalPlayer.OnChangeHealth(LocalPlayer.Phase3OptionhealthEffector, OtherPlayer.Phase3OptionAttackPower);
+
+                damage = Selector.SpecialCardData.Attack;
+                if (OtherPlayer.SpecialCardData.ID_SpecialAction == 203) // Check if enemy chose Dcrease Enemy Damage
+                {
+                    //Decreasing the attack by enemy
+                    damage = damage * OtherPlayer.SpecialCardData.decreaseDamagePercent;
+                }
+                Debug.Log("Double Attack");
+                OtherPlayer.OnChangeHealth(damage, false);
+                break;
+
+            case TurnOptions.PhaseDefenceTurns.BlockAttack: //Player block Attack
+                damage = Selector.SpecialCardData.Attack;
+                if(OtherPlayer.SpecialCardData.ID_SpecialAction == 203) // Check if enemy chose Dcrease Enemy Damage
+                {
+                    //Decreasing the attack by enemy
+                    damage = damage * OtherPlayer.SpecialCardData.decreaseDamagePercent;
+                }
+
+                Debug.Log("Double Attack");
+                OtherPlayer.OnChangeHealth(damage, false);
+                break;
+
+            case TurnOptions.PhaseDefenceTurns.HealPortionOfHealth: // Heal Portion of health
+                LocalPlayer.OnChangeHealth(LocalPlayer.Phase3OptionhealthEffector, 0);// 
+                if (OtherPlayer.SpecialCardData.ID_SpecialAction == 206
+|| OtherPlayer.SpecialCardData.ID_SpecialAction == 202)
+                {
                     //Attack on Other player from Selector
-                    damage = cm.cardVizSpecials[0].getDamage();
-                    if (OtherPlayer.Phase3Options == TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack)
-                    {
-                        //Decreasing the attack by enemy
-                        damage = damage * cm.cardVizSpecials[2].getDecreaseDamagePercent();
-                    }
+                    damage = Selector.SpecialCardData.Attack;
+                    //Decreasing the attack by enemy
+                    damage = damage * Selector.SpecialCardData.decreaseDamagePercent;
+                }
 
-                    Debug.Log("Double Attack");
-                    OtherPlayer.OnChangeHealth(damage, false);
-                    break;
+                Debug.Log("Decrease enemy attack");
+                Selector.OnChangeHealth(damage, false);
 
-                case TurnOptions.PhaseDefenceTurns.BlockAttack:
-                    // if either player chooses this nothing will happen as the attack will be blocked
-                    break;
+                break;
 
-                case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
-                    //Attack on Other player from Selector
-                    damage = cm.cardVizSpecials[0].getDamage();
-                    if (OtherPlayer.Phase3Options == TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack)
-                    {
-                        //Decreasing the attack by enemy
-                        damage = damage * cm.cardVizSpecials[2].getDecreaseDamagePercent();
-                    }
+            case 201: //Block Enemy Damage
+                // if either player chooses this nothing will happen as the attack will be blocked
+                break;
 
-                    Debug.Log("Double Attack");
-                    OtherPlayer.OnChangeHealth(damage, false);
-                    break;
+            case 204: // Enemy Defence Reuces for next round
+                Debug.Log("Enemy Defence Reduced On Next Round");
+                break;
 
-                case TurnOptions.PhaseDefenceTurns.DecreaseEnemyAttack:
-                    if (OtherPlayer.Phase3Options == TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage
-                        || OtherPlayer.Phase3Options == TurnOptions.PhaseDefenceTurns.DoubleAttack)
-                    {
-                        //Attack on Other player from Selector
-                        damage = cm.cardVizSpecials[0].getDamage();
-                        //Decreasing the attack by enemy
-                        damage = damage * cm.cardVizSpecials[2].getDecreaseDamagePercent();
-                    }
+            case 205: // Heal a portion of Health
+                Debug.Log("Heal Portion of Health");
+                Selector.OnChangeHealth(Selector.SpecialCardData.healingPower, true);
+                break;
 
-                    Debug.Log("Decrease enemy attack");
-                    Selector.OnChangeHealth(damage, false);
-                    break;
-
-                case TurnOptions.PhaseDefenceTurns.HealPortionOfHealth:
-                    Debug.Log("Heal Portion of Health");
-                    Selector.OnChangeHealth(cm.cardVizSpecials[5].getHealingPower(), true);
-                    break;
-
-                case TurnOptions.PhaseDefenceTurns.HealMaxHealth:
-                    Debug.Log("Heal Portion of Health");
-                    Selector.OnChangeHealth(cm.cardVizSpecials[5].getHealingPower(), true);
-                    break;
-
-                case TurnOptions.PhaseDefenceTurns.EnemyDefenceReducedOnNextRound:
-                    Debug.Log("Enemy Defence Reduced On Next Round");
-
-                    break;
-            }
+            case 207: // Heal Max Health
+                Debug.Log("Heal Portion of Health");
+                LocalPlayer.OnChangeHealth(LocalPlayer.)
+                //Selector.OnChangeHealth(Selector.SpecialCardData.healingPower, true);
+                break;*/
         }
 
     }
