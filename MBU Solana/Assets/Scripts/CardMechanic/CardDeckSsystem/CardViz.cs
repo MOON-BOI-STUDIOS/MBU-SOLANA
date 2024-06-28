@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class CardViz : MonoBehaviour
 {
-    public TextMeshProUGUI title;
-    public TextMeshProUGUI description;
+
     public Image art;
    
 
@@ -22,9 +21,8 @@ public class CardViz : MonoBehaviour
     public void LoadCard(CardObject co) 
     {
         cardObject = co;
-        title.text = co.cardName;
-        description.text = co.description;
-        art = co.art;
+    
+       co.art = art;
     }
 
     public int getDamage()
