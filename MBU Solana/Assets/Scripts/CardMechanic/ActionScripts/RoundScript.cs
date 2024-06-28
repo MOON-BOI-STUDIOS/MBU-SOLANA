@@ -115,27 +115,40 @@ public class RoundScript : MonoBehaviourPunCallbacks
         Debug.Log("0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie");*/
         Debug.Log("Calculating Round Option from phase 1");
         //Tie Option both the player and enemy selected same Option
+        bool flag = false;
         if (GetLocalPlayer().Phase1Options == GetOtherPlayer().Phase1Options)
         {
             winningPlayer = 2;
+            flag = true;
+
         }
         else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Rock &&
             GetOtherPlayer().Phase1Options == TurnOptions.Phase1Turns.Scissor)
         {
             winningPlayer = 0;
+            flag = true;
         }
         else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Scissor &&
             GetOtherPlayer().Phase1Options == TurnOptions.Phase1Turns.Paper)
         {
             winningPlayer = 0;
+            flag = true;
         }
         else if (GetLocalPlayer().Phase1Options == TurnOptions.Phase1Turns.Paper &&
             GetOtherPlayer().Phase1Options == TurnOptions.Phase1Turns.Rock)
         {
             winningPlayer = 0;
+            flag = true;
         }
 
-        winningPlayer = 1;
+        if (!flag)
+        {
+            winningPlayer = 1;
+        }
+        else
+        {
+            winningPlayer = 0;
+        }
         Debug.Log("The Player number which won is:" + winningPlayer);
     }
 
@@ -185,7 +198,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
                     break;
             }
         }
-        else
+        else if(winningPlayer == 2)
         {
             Debug.Log("if it is 2");
             switch (cardName)
