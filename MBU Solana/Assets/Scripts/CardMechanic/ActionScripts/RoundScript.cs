@@ -110,7 +110,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
     // This function is Invoking other functions to calculate the Result
     public void HandleResultCalculation()
     {
-        winningPlayer = turnOptionsMethods.OnPhase1Options(GetPlayerScript(), GetEnemyScript());
+        winningPlayer = turnOptionsMethods.OnPhase1Options(GetLocalPlayer(), GetOtherPlayer());
         Debug.Log("The Player number which won is:" + winningPlayer);
         Debug.Log("0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie");
     }
@@ -169,7 +169,7 @@ public class RoundScript : MonoBehaviourPunCallbacks
                     break;
             }
         }
-        }
+    }
        /*0 -> Host player/ 1st player win , 1-> client Player/ Enemy win , 2-> tie
        if (playerNumber == 2)
        {
