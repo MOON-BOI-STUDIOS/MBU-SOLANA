@@ -234,7 +234,7 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         }
     }
 
-    public void OnChangeHealth(int num, int attack)
+    public void OnChangeHealth(int num = 0, int attack = 0)
     {
         //-----------Only for Phase 2----------------
         if (attack == 1)
@@ -251,20 +251,24 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         else if (Option == OptionSelected.NoDamage)
         {
             // Nothing will happen to the health
+            Debug.Log("Option selected is No Damage");
         }
         else if (Option == OptionSelected.DecreaseDamage)
         {
             int damage = attack * healtheffector;
             health -= damage;
+            Debug.Log("Option selected is Decrease Damage");
         }
         else if (Option == OptionSelected.Heal)
         {
             health -= attack;
             health += healtheffector;
+            Debug.Log("Option selected is Heal");
         }
         else if (Option == OptionSelected.Damage)
         {
             health -= attack;
+            Debug.Log("Option selected is Damage");
         }
 
         //-----------------------------------//

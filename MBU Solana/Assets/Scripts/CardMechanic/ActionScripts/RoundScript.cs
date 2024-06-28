@@ -196,11 +196,11 @@ public class RoundScript : MonoBehaviourPunCallbacks
             switch (cardName)
             {
                 case TurnOptions.PhaseDefenceTurns.DoubleAttack:
-                    GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower * 2);
+                    GetLocalPlayer().OnChangeHealth(0, (GetOtherPlayer().Phase3OptionAttackPower * 2));
                     break;
 
                 case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
-                    GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
+                    GetLocalPlayer().OnChangeHealth(0, (GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector)));
                     break;
                 default:
                     GetLocalPlayer().OnChangeHealth(0, 0);
