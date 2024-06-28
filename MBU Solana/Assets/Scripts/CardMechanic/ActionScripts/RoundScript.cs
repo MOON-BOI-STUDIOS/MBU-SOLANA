@@ -123,11 +123,13 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
         // For phase 2 damages
         GetLocalPlayer().OnChangeHealth(GetOtherPlayer().Phase2CardDamage, 1); // Set the last parameter to 1 to let the function in player manager decrease health
+                                                                               //specialphase.SpecialPhaseResult(GetLocalPlayer(), GetOtherPlayer());
+        TurnOptions.PhaseDefenceTurns cardName = GetOtherPlayer().Phase3Options;
+        Debug.Log("The name of the card chosen by the other player" + cardName);
 
         if (winningPlayer == 0 && PhotonNetwork.IsMasterClient) // Host won RPS round
         {
-            //specialphase.SpecialPhaseResult(GetLocalPlayer(), GetOtherPlayer());
-            TurnOptions.PhaseDefenceTurns cardName = GetOtherPlayer().Phase3Options;
+            Debug.Log("if it is 0");
             switch (cardName)
             {
                 case TurnOptions.PhaseDefenceTurns.DoubleAttack:
@@ -136,13 +138,15 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
                 case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
                     GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
+                    break;
+                default:
+                    GetLocalPlayer().OnChangeHealth(0, 0);
                     break;
             }
         }
         else if (winningPlayer == 1 && !PhotonNetwork.IsMasterClient) // Client Won
         {
-            //specialphase.SpecialPhaseResult(GetLocalPlayer(), GetOtherPlayer());
-            TurnOptions.PhaseDefenceTurns cardName = GetOtherPlayer().Phase3Options;
+            Debug.Log("if it is 1");
             switch (cardName)
             {
                 case TurnOptions.PhaseDefenceTurns.DoubleAttack:
@@ -151,21 +155,27 @@ public class RoundScript : MonoBehaviourPunCallbacks
 
                 case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
                     GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
+                    break;
+                default:
+                    GetLocalPlayer().OnChangeHealth(0, 0);
                     break;
             }
         }
         else
         {
-            //specialphase.SpecialPhaseResult(GetLocalPlayer(), GetOtherPlayer());
-            TurnOptions.PhaseDefenceTurns cardName = GetOtherPlayer().Phase3Options;
+            Debug.Log("if it is 2");
             switch (cardName)
             {
-                case TurnOptions.PhaseDefenceTurns.DoubleAttack:
+                case PhaseDefenceTurns.DoubleAttack:
                     GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower * 2);
                     break;
 
-                case TurnOptions.PhaseDefenceTurns.PlayerIncreseDamage:
+                case PhaseDefenceTurns.PlayerIncreseDamage:
                     GetLocalPlayer().OnChangeHealth(0, GetOtherPlayer().Phase3OptionAttackPower + (GetOtherPlayer().Phase3OptionAttackPower * GetOtherPlayer().Phase3OptionhealthEffector));
+                    break;
+
+                default:
+                    GetLocalPlayer().OnChangeHealth(0, 0);
                     break;
             }
         }
