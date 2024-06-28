@@ -59,6 +59,7 @@ public class DialogueSystem : MonoBehaviour
                 dialoguebegan = false;
             }
         }
+    
 
 
 
@@ -106,6 +107,7 @@ public class DialogueSystem : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             DialogueManager.instance.endOfDialogue();
+              DialogueManager.instance.dialogueBox.SetActive(false);
         }
     }
 }
