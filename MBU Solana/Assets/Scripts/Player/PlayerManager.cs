@@ -39,7 +39,7 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
     };
 
     public static GameObject LocalPlayerInstance;
-    public static GameObject OtherPlayer;
+    public static GameObject OtherPlayerInstance;
     #endregion
 
     #region Private Fields Region
@@ -85,7 +85,7 @@ public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
         }
         else
         {
-            OtherPlayer = this.gameObject;
+            OtherPlayerInstance = this.gameObject;
         }
     }
 
