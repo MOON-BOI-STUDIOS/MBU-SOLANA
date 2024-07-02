@@ -68,6 +68,9 @@ public class BikeController : MonoBehaviour
     }
     private float touchOffset;
     private Vector3 touchStartBikePosition;
+
+    private PlayerParticleSystem _playerParticles;
+
     void Start()
     {
 
@@ -80,6 +83,7 @@ public class BikeController : MonoBehaviour
 #endif
         _initialPosition = transform.position;
         _rb = GetComponent<Rigidbody2D>();
+        _playerParticles = GetComponent<PlayerParticleSystem>();
     }
 
     void FixedUpdate()
@@ -145,7 +149,10 @@ public class BikeController : MonoBehaviour
         }
         
 #endif
-
+        if(_rb.velocity.y > 1f)
+        {
+            _playerParticles.ParticleEngineOn();
+        }
 
     }
 
@@ -257,7 +264,12 @@ public class BikeController : MonoBehaviour
     /// </summary>
     /// 
     ///Calling from Booster script
-    public void CallBoosterCourotine() { StartCoroutine(IncreaseDecreaseBooster()); }
+    public void CallBoosterCourotine() 
+    {
+        //Call from BoostManager Object, small if so it doesn't reduce from 1 to 0 without using boost
+        if (boostAmount >= 1.0f) return;
+        StartCoroutine(IncreaseDecreaseBooster()); 
+    }
     private IEnumerator IncreaseDecreaseBooster()
     {
         float addRemoveAmount = 0.01f;

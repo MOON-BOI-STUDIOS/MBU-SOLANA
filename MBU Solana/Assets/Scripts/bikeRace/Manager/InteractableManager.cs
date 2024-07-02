@@ -67,16 +67,19 @@ public class InteractableManager : MonoBehaviour
     }
     private void CallObjectToWorld()
     {
+        GameObject temp = null;
         switch (randominator())
         {
             case >= 0 and <= 1:
-                repositionOfObject(oilFloorPrefab);
+                temp = oilFloorPrefab;
+                repositionOfObject(temp);
                 _previousType = types.oil;
                 break;
 
             case >= 2 and <= 3:
                 boostPrefab.SetActive(true);
-                repositionOfObject(boostPrefab);
+                temp = boostPrefab;
+                repositionOfObject(temp);
                 _previousType = types.boost;
                 break;
 
@@ -86,14 +89,12 @@ public class InteractableManager : MonoBehaviour
                 while (_previousCar == position) position = Random.Range(0, carsPrefab.Count);
                 _previousCar = position;
 
-                
+                repositionOfObject(temp = carsPrefab[position]);
                 //position goes from 0 1 2 left center right, as in AICarController Position Enum.
                 carsPrefab[position].GetComponent<AICarController>().currentPosition = (AICarController.Position)_previousPosition;
                 //Decide future movement
                 carsPrefab[position].GetComponent<AICarController>().FutureChangePath();
 
-                //Reposition a random car array to the top with no repetition
-                repositionOfObject(carsPrefab[position]);
                 _previousType = types.car;
                 break;
 
@@ -102,6 +103,12 @@ public class InteractableManager : MonoBehaviour
                 break;
         }
         //updates frequency based on the currentDifficulty
+        if(temp != null)
+        {
+            //set object bubble
+            LookForAvailableBubble(temp);
+        }
+       
         _frequency = _frequencyMax[(int) RaceGameManager.inst.currentDifficulty];
     }
     //dr. doofenshmirtz approves
@@ -142,8 +149,6 @@ public class InteractableManager : MonoBehaviour
         _previousPosition = positionChosen;
         //move object to desire location
         target.transform.position = positionsToMoveTo[positionChosen].transform.position;
-        //set object bubble
-        LookForAvailableBubble(target);
         //set object speed
         if (target.GetComponent<Rigidbody2D>() != null) target.GetComponent<Rigidbody2D>().velocity = new Vector2(0, RaceGameManager.currentSpeed);
 
@@ -169,7 +174,7 @@ public class InteractableManager : MonoBehaviour
         {
             _dBubbleAvailable.Add(prefabBubble);
         }
-
+        //Create new bubble, use it and finish func.
         for(int i = 0; i < _dBubbleAvailable.Count; i++)
         {
             if (!_dBubbleAvailable[i].activeSelf)

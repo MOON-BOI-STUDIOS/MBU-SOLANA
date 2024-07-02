@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class RaceGameManager : MonoBehaviour
 {
+    //Initialization event
+    public delegate void InitiateIntro();
+    public static event InitiateIntro OnIntro;
+
     
     //Check for first input
     public bool hasReceiveInput = false;
@@ -53,7 +57,7 @@ public class RaceGameManager : MonoBehaviour
     //current speed
     public static float currentSpeed;
     //transition to the current speed
-    private float transitionSmoothness = 0.1f;
+    private float transitionSmoothness = 1f;
     
     //Player related
     [Header("Ref")]
@@ -89,8 +93,6 @@ public class RaceGameManager : MonoBehaviour
             _bikeSound = bikeController.GetComponent<raceAudioManager>();
             bikeController.bikeInfo = current;
         }
-
-        RaceGameUIManager.Inst.UpdateLives();
         
 //         RaceGameUIManager.Inst.LivesCount = current.Health;
 //         BoostTime = current.Boost;
@@ -111,12 +113,14 @@ public class RaceGameManager : MonoBehaviour
 #endif
 
         //Game Can start
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && !hasReceiveInput)
         {
+            if(OnIntro != null) OnIntro();
+            //
             hasReceiveInput = true;
             TutorialText.SetActive(false);
         }
-        if (!hasReceiveInput) return;
+        if (!hasReceiveInput || bikeController.isKilled) return;
 
         score += (Time.realtimeSinceStartup * Time.fixedDeltaTime / 100);
         float relativeScore = score - resetScore;

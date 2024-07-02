@@ -15,6 +15,7 @@ public class AICarController : RaceObjectBase
     public bool isColliding=false;
     public bool isDestroyed=false;
     [SerializeField]
+    //0 - straight, 1- left, 2- right
     private Sprite[] _arrowsDirection = new Sprite[3];
     public GameObject BlastPrefab;
     private void Start()
@@ -64,7 +65,6 @@ public class AICarController : RaceObjectBase
             _futurePosition = Position.Centre;
             return;
         }
-            
 
         switch (currentPosition)
         {
@@ -84,13 +84,13 @@ public class AICarController : RaceObjectBase
                 {
                     _futurePosition = Position.Right;
                     currentPosition = Position.Right;
-                    _bubbleSprite = _arrowsDirection[1];
+                    _bubbleSprite = _arrowsDirection[2];
                 }
                 break;
             case Position.Right:
                 _futurePosition = Position.Left;
                 currentPosition = Position.Centre;
-                _bubbleSprite = _arrowsDirection[2];
+                _bubbleSprite = _arrowsDirection[1];
                 break;
             default: break;
         }
@@ -98,6 +98,8 @@ public class AICarController : RaceObjectBase
 
     public void ChangePath()
     {
+        //Gives a bit of randomness to the movement
+        moveDistance = Random.Range(1.5f, 2.5f);
         switch (_futurePosition)
         {
             case Position.Left:

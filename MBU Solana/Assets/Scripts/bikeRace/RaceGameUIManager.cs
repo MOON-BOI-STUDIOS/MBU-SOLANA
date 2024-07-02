@@ -16,6 +16,18 @@ public class RaceGameUIManager : MonoBehaviour
     public static RaceGameUIManager Inst;
     public int LivesCount;
     private int _maxLives;
+    //Game yet to start
+    private bool _toInitiate = true;
+
+    private void OnEnable()
+    {
+        RaceGameManager.OnIntro += UpdateLives;
+    }
+
+    private void OnDisable()
+    {
+        RaceGameManager.OnIntro -= UpdateLives;
+    }
 
     private void Awake()
     {
@@ -45,10 +57,23 @@ public class RaceGameUIManager : MonoBehaviour
     {
         if(_playerController != null)
             LivesCount = _playerController.lives;
+        //if livesCount = 0, game has yet to start (we are checking death in ReduceLife before calling this method
+        if (_toInitiate)
+        {
+            _toInitiate = false;
+            for (int i = 0; i < _maxLives; i++)
+            {
+                //Lives.GetChild(i).gameObject.SetActive(true);
+                Lives.GetChild(i).gameObject.GetComponent<Animator>().Play("FillAnim");
+            }
+            return;
+        }
+
         // Enable the lives up to the LivesCount
         for (int i = _maxLives-1; i > LivesCount-1; i--)
         {
-            Lives.GetChild(i).gameObject.SetActive(false);
+            //Lives.GetChild(i).gameObject.SetActive(false);
+            Lives.GetChild(i).gameObject.GetComponent<Animator>().Play("FadeOutAnim");
         }
     }
 
@@ -61,6 +86,8 @@ public class RaceGameUIManager : MonoBehaviour
             _playerController.kill();
             return;
         }
+
+        
         raceAnimationManager.Inst.PlayBlinking();
     }
 

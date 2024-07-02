@@ -23,14 +23,15 @@ public class OilFloor : RaceObjectBase
         int numberOfRotations = 4;
         float rotationDegrees = 20;
         float speed = 10f;
+        target.transform.rotation = Quaternion.Euler(0, 0, 0);
+        target.GetComponent<BikeController>().InputEnabled = false;
         for (int i = 0; i < numberOfRotations; i++)
         {
             Quaternion currentRotation = target.transform.rotation;
             Quaternion goalRotation =  currentRotation * Quaternion.Euler(0, 0, rotationDegrees);
             float step = 0;
-            target.GetComponent<BikeController>().InputEnabled = false;
-
-            while (Quaternion.Angle(target.transform.rotation, goalRotation) > 0.1f)
+            //above 1 the bug don't happen, so keep it as such
+            while (Quaternion.Angle(target.transform.rotation, goalRotation) > 2f)
             {
                 step += Time.deltaTime * speed;
                 target.transform.rotation = Quaternion.Lerp(currentRotation, goalRotation, step);
@@ -38,15 +39,11 @@ public class OilFloor : RaceObjectBase
             }
             target.transform.rotation = goalRotation;
             // Yield here to ensure the rotation has been fully processed before the next iteration
-            yield return null;
             currentRotation = goalRotation;
             rotationDegrees = -rotationDegrees;
         }
         //delay to ensure final rotation is processed???
-        yield return null;
         target.transform.rotation = Quaternion.Euler(0,0,0);
         target.GetComponent<BikeController>().InputEnabled = true;
-        Debug.Log("HIII");
-
     }
 }
