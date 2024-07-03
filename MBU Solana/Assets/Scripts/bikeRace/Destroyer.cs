@@ -5,7 +5,7 @@ using UnityEngine;
 public class Destroyer : MonoBehaviour
 {
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 7)
         {
@@ -15,10 +15,10 @@ public class Destroyer : MonoBehaviour
                 AICarManager.Inst.aiCarControllers.Add(carController);
             }
         }
-        if(collision.gameObject.layer == 8)
+        / *if(collision.gameObject.layer == 8)
         {
-            BoosterManager.Inst.PutBoosterBackInPool(collision.gameObject);
-        }
-    }
+            //BoosterManager.Inst.PutBoosterBackInPool(collision.gameObject);
+        }* /
+    }*/
 
 }

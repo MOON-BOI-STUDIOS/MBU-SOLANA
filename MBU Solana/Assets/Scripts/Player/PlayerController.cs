@@ -104,7 +104,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    public Rigidbody2D _rb;
     public Vector2 moveDirection;
     public bool isMoving;
     public float moveSpeed;
@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _manager = GetComponent<PlayerManager>();
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -126,7 +126,7 @@ public class PlayerController : MonoBehaviour
         
     {
         //Gets current position and input from the RigidBody
-        Vector2 currentPosition = rb.position;
+        Vector2 currentPosition = _rb.position;
 
 
 
@@ -142,7 +142,7 @@ public class PlayerController : MonoBehaviour
         //Uses the direction with movement speed, to actually move the Character
         Vector2 movement = moveDirection * currentSpeed;
         Vector2 newPos = currentPosition + movement * Time.fixedDeltaTime;
-        rb.MovePosition(newPos);
+        _rb.MovePosition(newPos);
 
 
         //Checks if moving

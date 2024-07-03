@@ -2,22 +2,58 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class BikeController : MonoBehaviour
 {
-    private Vector3 initialPosition;
-    private Vector3 targetPosition;
-    private bool isMoving = false;
-    private bool inputEnabled = true;
-    private bool isOnBoost = false;
+    //Position to spawn
+    private Vector3 _initialPosition;
 
-    public float horizontalSpeed = 5f;
-    public float verticalSpeedBoostMultiplier = 2f;
+    //private Vector3 targetPosition;
+    //private bool isMoving = false;
+    //Player Bike selected (Health, type, movementSpeed)
+    [Header("Bike Data")]
+    public BikeData bikeInfo;
+    //
+    [SerializeField]
+    private bool _inputEnabled = true;
+    public bool InputEnabled { get { return _inputEnabled; } set { _inputEnabled = value; } }
 
-    private float normalVerticalSpeed;
-    public TMP_Text _youScore;
+    public bool isOnBoost = false;
 
+    public float horizontalSpeed = 3f;
+    public float verticalSpeed = 6f;
+
+    //call it when car collides with player
+    public float timeBikeDisableInput = .2f;
+
+    public float verticalSpeedBoostMultiplier = 20f;
     private float _currentVerticalSpeed;
+
+    public TMP_Text youScore;
+    private Rigidbody2D _rb;
+
+    public GameObject blastPrefab;
+    public bool isKilled { get; private set; }  // Add this new variable at the class level
+    [field: SerializeField]
+    public int lives { get; set; } = 3;
+    private float _touchOffset;
+    private Vector3 _touchStartBikePosition;
+
+    [field: SerializeField]
+    public float boostAmount
+    {
+        get;
+        set;
+    } = 0;
+
+    //Mobile variables
+    public bool isColliding = false;
+    private float _reverseMagnitude = 4f;// You can adjust this value to control the magnitude of the reversed velocity
+    [SerializeField]
+    private Button boostButton;
+
+
     public float currentVerticalSpeed
     {
         get
@@ -30,186 +66,163 @@ public class BikeController : MonoBehaviour
             _currentVerticalSpeed = value;
         }
     }
-
-
-    private Rigidbody2D rb;
-    void Start()
-    {
-        initialPosition = transform.position;
-        rb = GetComponent<Rigidbody2D>();
-        normalVerticalSpeed = RaceGameManager.currentSpeed;
-        currentVerticalSpeed = normalVerticalSpeed;
-    }
-
-    public GameObject BlastPrefab;
-    private bool isKilled = false;  // Add this new variable at the class level
-
-    public void kill()
-    {
-        raceAudioManager.Inst.playerIfDead();
-        var blast = Instantiate(BlastPrefab, gameObject.transform);
-        blast.transform.localScale = new Vector3(7.2f, 7.2f, 7.2f);
-        blast.transform.localPosition = new Vector3(0, 0, 0);
-        Destroy(blast, 0.5f);
-
-        if (rb != null)
-        {
-            rb.velocity = Vector2.zero;
-        }
-
-        isKilled = true;  // Set the flag when the bike is killed
-        transform.GetChild(0).gameObject.SetActive(false);
-        _youScore.text = ((int)RaceGameManager.inst.score).ToString();
-        FadeIn(0.5f);
-    }
-
-
-    public CanvasGroup canvasGroup; // assign this in the inspector
-
-    public void FadeIn(float duration)
-    {
-        canvasGroup.gameObject.SetActive(true);
-        StartCoroutine(FadeCanvasGroup(canvasGroup, canvasGroup.alpha, 1, duration));
-    }
-
-    private IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float duration)
-    {
-        float startTime = Time.time;
-        float endTime = Time.time + duration;
-
-        while (Time.time <= endTime)
-        {
-            float t = (Time.time - startTime) / duration;
-            cg.alpha = Mathf.Lerp(start, end, t);
-            yield return null;
-        }
-
-        // Ensure the fade is complete
-        cg.alpha = end;
-    }
-
-
     private float touchOffset;
     private Vector3 touchStartBikePosition;
 
-    void Update()
+    private PlayerParticleSystem _playerParticles;
+
+    void Start()
     {
-        if (isKilled) return;
-        normalVerticalSpeed = RaceGameManager.currentSpeed;
-        currentVerticalSpeed = isOnBoost ? normalVerticalSpeed * verticalSpeedBoostMultiplier : normalVerticalSpeed;
 
+#if UNITY_IOS || UNITY_ANDROID 
+        boostButton.gameObject.SetActive(true);
 
-        if (!inputEnabled) return;
+#endif
+#if UNITY_WEBGL || UNITY_STANDALONE
+        boostButton.gameObject.SetActive(false);
+#endif
+        _initialPosition = transform.position;
+        _rb = GetComponent<Rigidbody2D>();
+        _playerParticles = GetComponent<PlayerParticleSystem>();
+    }
 
-        float verticalSpeed = currentVerticalSpeed;
+    void FixedUpdate()
+    {
+
+        if (isKilled || !_inputEnabled || !RaceGameManager.inst.hasReceiveInput || isOnBoost) return;
+        float vertical; //float vertical = input + 0.05f;
+        float horizontal;
 
 #if UNITY_WEBGL || UNITY_STANDALONE
-        if (Input.GetKey(KeyCode.A))
+        //little offset = 0.05f;
+        vertical = Input.GetAxis("Vertical") + 0.05f;
+        horizontal = Input.GetAxis("Horizontal");
+        currentVerticalSpeed = (vertical * verticalSpeed) * verticalSpeedBoostMultiplier;
+        if (!isOnBoost)
         {
-            rb.velocity = new Vector2(-horizontalSpeed, verticalSpeed);
+            _rb.velocity = new Vector2(horizontal * horizontalSpeed, currentVerticalSpeed);
         }
-        else if (Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.velocity = new Vector2(horizontalSpeed, verticalSpeed);
+            Boost();
         }
-        else
-        {
-            rb.velocity = new Vector2(0, verticalSpeed);
-        }
+
 #endif
 
 #if UNITY_IOS || UNITY_ANDROID
+
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
             Vector3 touchWorldPosition = Camera.main.ScreenToWorldPoint(touch.position);
             touchWorldPosition.z = 0; // Ensuring that the z-coordinate doesn't interfere with the calculations
-
+            vertical = touch.deltaPosition.normalized.y + 0.05f;
+            horizontal = touch.deltaPosition.normalized.x;
+            currentVerticalSpeed = (vertical * verticalSpeed) * verticalSpeedBoostMultiplier;
             switch (touch.phase)
             {
-                case TouchPhase.Began:
+                /*case TouchPhase.Began:
                     touchStartBikePosition = transform.position; // Capture the bike's position when the touch begins
-                                                                 // Record the offset between the touch position and the bike's position
+                                                                    // Record the offset between the touch position and the bike's position
                     touchOffset = touchStartBikePosition.x - touchWorldPosition.x;
-                    break;
+                break;*/
 
                 case TouchPhase.Moved:
+                    /*
                     float targetXPosition = touchWorldPosition.x + touchOffset;
                     float deltaX = targetXPosition - transform.position.x;
-                    float newVelocityX = deltaX * horizontalSpeed; // Adjust the multiplier to control the sensitivity of movement
-                    rb.velocity = new Vector2(newVelocityX, currentVerticalSpeed);
+                    float newVelocityX = deltaX * horizontalSpeed; // Adjust the multiplier to control the sensitivity of movement*/
+                    
+                    _rb.velocity = new Vector2(horizontal * horizontalSpeed, currentVerticalSpeed);
+                    
                     break;
 
-                case TouchPhase.Ended:
-                    rb.velocity = new Vector2(0, currentVerticalSpeed);
+                case TouchPhase.Ended or TouchPhase.Stationary or TouchPhase.Canceled or TouchPhase.Began:
+
+                    _rb.velocity = new Vector2(0, vertical);
                     break;
             }
         }
         else
         {
-            rb.velocity = new Vector2(0, currentVerticalSpeed);
+            _rb.velocity = new Vector2(0, 0.05f);
         }
+        
 #endif
-
+        if(_rb.velocity.y > 1f)
+        {
+            _playerParticles.ParticleEngineOn();
+        }
 
     }
 
-    public float GetDistanceCovered()
+    public void kill()
     {
-        return Vector3.Distance(initialPosition, transform.position);
+        raceAudioManager.Inst.playerIfDead();
+
+        var blast = Instantiate(blastPrefab, gameObject.transform);
+        blast.transform.localScale = new Vector3(7.2f, 7.2f, 7.2f);
+        blast.transform.localPosition = new Vector3(0, 0, 0);
+        Destroy(blast, 0.5f);
+
+        if (_rb != null)
+        {
+            _rb.velocity = Vector2.zero;
+        }
+
+        isKilled = true;  // Set the flag when the bike is killed
+        transform.GetChild(0).gameObject.SetActive(false);
+        youScore.text = ((int)RaceGameManager.inst.score).ToString();
+
+        RaceGameUIManager.Inst.ShowLeaderboard(0.5f);
     }
 
-    bool isColliding;
 
-    float reverseMagnitude = 4f;// You can adjust this value to control the magnitude of the reversed velocity
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (isColliding)
+        //New code
+        //Every object (car, oil floor, Boost) has an interactable interface, so all the implementation is there
+        if (other.gameObject.GetComponent<IInteractable>() != null)
         {
-            return;
+            other.gameObject.GetComponent<IInteractable>().OnInteract(gameObject);
         }
-        if (isKilled)
-            return;
-
-        if (other.gameObject.layer == 8)
-        {
-            boost();
-        }
-
-        if (other.gameObject.layer == 6)
-        {
-             // Fixed magnitude for the reversed velocity
-            Vector2 currentVelocity = rb.velocity;
-            float newVelocityX = currentVelocity.x > 0 ? -reverseMagnitude : reverseMagnitude; // Set the reversed velocity, maintaining the sign
-            rb.velocity = new Vector2(newVelocityX, currentVelocity.y);
-            StartCoroutine(DisableInput(0.7f));
-            raceAudioManager.Inst.PlayScreech();
-
-            RaceGameManager.inst.ResetDifficulty();
-
-            if (!isOnBoost)
-            {
-                RaceGameManager.inst.ReduseLife();
-            }
-            else
-            {
-                currentVerticalSpeed = normalVerticalSpeed;
-                rb.velocity = new Vector2(rb.velocity.x, currentVerticalSpeed);
-                isOnBoost = false;
-
-                if (boostUICoroutine != null)
+        /// OLD CODE
+        //roadwall
+        /*
+                if (other.gameObject.layer == 6)
                 {
-                    RaceGameUIManager.Inst.boostStop();
-                    raceAnimationManager.Inst.StopBoost();
-                    StopCoroutine(boostUICoroutine);
-                    boostUICoroutine = null;
+                     // Fixed magnitude for the reversed velocity
+                    Vector2 currentVelocity = _rb.velocity;
+                    float newVelocityX = currentVelocity.x > 0 ? -_reverseMagnitude : _reverseMagnitude; // Set the reversed velocity, maintaining the sign
+                    _rb.velocity = new Vector2(newVelocityX, currentVelocity.y);
+                    StartCoroutine(DisableInput(0.7f));
+                    raceAudioManager.Inst.PlayScreech();
+
+                    RaceGameManager.inst.ResetDifficulty();
+
+                    if (!isOnBoost)
+                    {
+                        RaceGameManager.inst.ReduseLife();
+                    }
+                    else
+                    {
+                        currentVerticalSpeed = _normalVerticalSpeed;
+                        _rb.velocity = new Vector2(_rb.velocity.x, currentVerticalSpeed);
+                        isOnBoost = false;
+
+                        if (boostUICoroutine != null)
+                        {
+                            RaceGameUIManager.Inst.boostStop();
+                            raceAnimationManager.Inst.StopBoost();
+                            StopCoroutine(boostUICoroutine);
+                            boostUICoroutine = null;
+                        }
+                    }
                 }
-            }
-        }
-
-
-
-        if (other.gameObject.layer == 7)
+        */
+        //Put all together
+        //cars
+        /*if (other.gameObject.layer == 7 && !isColliding)
         {
             StartCoroutine(DisableInput(0.2f));
             RaceGameManager.inst.ResetDifficulty();
@@ -217,77 +230,90 @@ public class BikeController : MonoBehaviour
 
             if (!isOnBoost)
             {
-                RaceGameManager.inst.ReduseLife();
+                lives--;
+                RaceGameUIManager.Inst.ReduceLife();
             }
             else
             {
-                currentVerticalSpeed = normalVerticalSpeed;
-                rb.velocity = new Vector2(rb.velocity.x, currentVerticalSpeed);
                 isOnBoost = false;
-
-                if (boostUICoroutine != null)
-                {
-                    RaceGameUIManager.Inst.boostStop();
-                    raceAnimationManager.Inst.StopBoost();
-                    StopCoroutine(boostUICoroutine);
-                    boostUICoroutine = null;
-                }
+                boostAmount = 0;
             }
-        }
+        }*/
+        /// END OF OLD CODE
+        /// 
+
+
     }
 
-    
+    /// <summary>
+    ///  Disable Hero input section
+    /// </summary>
+    public void CallDisableInput(float duration) { StartCoroutine(DisableInput(duration)); }
     private IEnumerator DisableInput(float duration)
     {
-        inputEnabled = false;
+        _inputEnabled = false;
         isColliding = true;
+        _rb.velocity = Vector2.zero;
         yield return new WaitForSeconds(duration);
-        inputEnabled = true;
+        _inputEnabled = true;
         isColliding = false;
     }
 
-    private Coroutine boostUICoroutine;
-    private Coroutine DisableBoostCoroutine;
-    private void boost()
+    /// <summary>
+    /// Boost section
+    /// </summary>
+    /// 
+    ///Calling from Booster script
+    public void CallBoosterCourotine() 
     {
-        if(boostUICoroutine!=null)
+        //Call from BoostManager Object, small if so it doesn't reduce from 1 to 0 without using boost
+        if (boostAmount >= 1.0f) return;
+        StartCoroutine(IncreaseDecreaseBooster()); 
+    }
+    private IEnumerator IncreaseDecreaseBooster()
+    {
+        float addRemoveAmount = 0.01f;
+        //offset = 0.25f
+        float tempBoost = (boostAmount + 0.25f);
+        if(boostAmount < 1.0f && !isOnBoost)
         {
-            StopCoroutine(boostUICoroutine);
+            while (boostAmount < tempBoost)
+            {
+                boostAmount += addRemoveAmount;
+                yield return null;
+            }
+            if(tempBoost >= 1) boostAmount = 1;
         }
-
-        boostUICoroutine = StartCoroutine(RaceGameUIManager.Inst.BoostStart(RaceGameManager.inst.BoostTime));
-        isOnBoost = true;
-        currentVerticalSpeed = normalVerticalSpeed * verticalSpeedBoostMultiplier;
-        rb.velocity = new Vector2(rb.velocity.x, currentVerticalSpeed);
-        raceAnimationManager.Inst.PlayBoost();
-        Debug.Log("disable boost called");
-
-         if(DisableBoostCoroutine != null)
+        else
         {
-            StopCoroutine(DisableBoostCoroutine);
+            while (boostAmount > 0f)
+            {
+                boostAmount -= addRemoveAmount;
+                yield return null;
+            }
+            if (boostAmount <= 0) boostAmount = 0;
+            //once boostAmount finishes call disableBoost to remove animations..,..
+            DisableBoost();
         }
-
-        DisableBoostCoroutine = StartCoroutine(DisableBoost(RaceGameManager.inst.BoostTime));
     }
 
-    private IEnumerator DisableBoost(float duration)
+    public void Boost()
     {
-        Debug.Log("disable boost called");
-        yield return new WaitForSeconds(duration);
-        Debug.Log("slow Boost");
+        if (!isOnBoost && boostAmount >= 1.0f)
+        {
+            isOnBoost = true;
+            _rb.velocity = Vector2.zero;
+            _rb.velocity = new Vector2(0, verticalSpeedBoostMultiplier);
+            raceAnimationManager.Inst.PlayBoost();
+            StartCoroutine(IncreaseDecreaseBooster());
+        }   
+    }
+    private void DisableBoost()
+    {
         raceAnimationManager.Inst.StopBoost();
         raceAudioManager.Inst.StopBikeBoost();
-        currentVerticalSpeed = normalVerticalSpeed;
-        rb.velocity = new Vector2(rb.velocity.x, currentVerticalSpeed);
         isOnBoost = false;
-
-        // Stop the boost UI coroutine
-        if (boostUICoroutine != null)
-        {
-            RaceGameUIManager.Inst.boostStop();
-            StopCoroutine(boostUICoroutine);
-            boostUICoroutine = null;
-        }
     }
+    /// End of boost section
 
 }

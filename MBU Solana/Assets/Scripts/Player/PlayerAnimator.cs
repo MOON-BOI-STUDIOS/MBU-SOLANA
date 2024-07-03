@@ -32,6 +32,8 @@ public class PlayerAnimator : MonoBehaviour
     public GameObject enemies;
     private GameObject[] childenemies;
 
+    [SerializeField] PlayerTeleport playerTeleport;
+
     void Start()
     {
         curSceneName = SceneManager.GetActiveScene().name;
@@ -209,6 +211,24 @@ public class PlayerAnimator : MonoBehaviour
         Camera.main.transform.rotation = Quaternion.Euler(Camera.main.transform.rotation.x, 0, Camera.main.transform.rotation.z + shakeIntensity);      
         yield return new WaitForSeconds(.1f); 
         Camera.main.transform.rotation = Quaternion.Euler(Camera.main.transform.rotation.x, 0, Camera.main.transform.rotation.z - shakeIntensity);
+    }
+
+    //Player triggers Teleport animation
+    public void PlayTeleportAnimation()
+    {
+        _manager._controller.enabled = false;
+        _heroAnimator.SetTrigger("FadeOut");
+    }
+
+    public void InitializeTeleport()
+    {
+        playerTeleport.TeleportPlayer();
+        _heroAnimator.SetTrigger("FadeIn");
+    }
+
+    public void EndTeleport()
+    {
+        _manager._controller.enabled = true;
     }
 
 
