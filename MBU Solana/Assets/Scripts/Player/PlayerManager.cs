@@ -6,205 +6,155 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
+using Photon.Pun;
+using Photon.Pun.Demo.PunBasics;
+using static UnityEngine.Rendering.DebugUI;
 
-public class PlayerManager : MonoBehaviour, IAddToInventory
+public class PlayerManager : MonoBehaviour, IPunObservable //IAddToInventory
 {
-    // Start is called before the first frame update
+    #region Public Fields
     public PlayerController _controller;
     public PlayerAnimator _animator;
     public PlayerCombat _combat;
-    public float maxHealth = 500;
-    public float health = 500;
-    bool immunity = false;
-    
-    public TextMeshProUGUI coinsText;
-    public Transform healthIndicator;
-    public TextMeshProUGUI healthNumber;
-    bool isDead;
-    bool isDeadRevive;
+
+    public const float MAXHealth = 500.0f;
+    public float health;
 
     public GameObject fadeOut;
-    public AudioClip coinSound1, coinSound2;
-    public GameObject attackButton;
-    public GameObject enterButton, fishButton, ExitButton;
 
-    public Transform[] startLocation;
+    //Photon View Filed
+    public PhotonView photonView;
 
-    public bool isPoweredUp = false;
+    [Tooltip("The Player's UI GameObject Prefab")]
+    [SerializeField]
+    public GameObject PlayerUiPrefab;
 
-    string curSceneName;
-    public GameObject enemies;
-    private GameObject[] childenemies;
+    public enum OptionSelected
+    {
+        NoDamage,               //0
+        DecreaseDamage,         //1
+        Heal,                   //2
+        Damage,                 //3
+        Default                 //4
+    };
 
-    //Inventory Additions Array
-    private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
+    public static GameObject LocalPlayerInstance;
+    public static GameObject OtherPlayerInstance;
+    #endregion
+
+    #region Private Fields Region
+
+    private PlayerUIManager PlayerUI;
+
+    bool isDead;
+
+    //For Phase 1 options
+    private TurnOptions.Phase1Turns Phase1Turns = TurnOptions.Phase1Turns.None;
+
+    //For Phase2 options
+    private TurnOptions.PhaseAttackTurns Phase2Turns = TurnOptions.PhaseAttackTurns.None;
+    private int carddamage = 0;
+
+    //For Phase3 options
+    private SpecialCard specialcardData;
+    private TurnOptions.PhaseDefenceTurns Phase3Turns = TurnOptions.PhaseDefenceTurns.None;
+    private SpecialCardData _specialCardData;
+    private OptionSelected Option = OptionSelected.Default;
+    private int healtheffector = 0;
+    private int attackPower = 0;
+
+    Rigidbody2D rb;
+    #endregion
+
+    #region Delegates and Events
+    public delegate void HealthChangedDelegate(float newHealth, float MaxHealth);
+    public event HealthChangedDelegate OnHealthChanged;
+    #endregion
 
     private void Awake()
     {
-        curSceneName = SceneManager.GetActiveScene().name;
+        //curSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetInt("MaxHealth", 500);
+        photonView = GetComponent<PhotonView>();
+        rb = GetComponent<Rigidbody2D>();
+        PlayerUI = GetComponent<PlayerUIManager>();
+
+        if (photonView.IsMine)
+        {
+            LocalPlayerInstance = this.gameObject;
+        }
+        else
+        {
+            OtherPlayerInstance = this.gameObject;
+        }
+    }
+
+    private void Start()
+    {
+        health = MAXHealth;
+
+        // Health Prefab
+        if (PlayerUiPrefab != null)
+        {
+            GameObject _uiGo = Instantiate(PlayerUiPrefab);
+            _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+        }
+        else
+        {
+            Debug.LogWarning("PlayerUiPrefab reference on player Prefab.", this);
+        }
+        //End of Health Prefab
+
+        if (photonView.IsMine)
+        {
+            RegisterPlayer();
+        }
+        else
+        {
+            Destroy(rb);
+            PlayerUI.DestroyUICanvas();
+        }
+    }
+
+    public void RegisterPlayer()
+    {
+        int playerId = photonView.OwnerActorNr;
+        RoundManager.InstRoundManager.RegisterPlayerCanvas(playerId, PlayerUI, this);
+        if (!PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("NotifyMasterClientOfRegistration", RpcTarget.MasterClient, playerId);
+        }
+    }
+
+    [PunRPC]
+    void NotifyMasterClientOfRegistration(int playerId)
+    {
+        RoundManager.InstRoundManager.RegisterPlayerCanvas(photonView.OwnerActorNr, PlayerUI, this);
+    }
+
+    public bool IsLocalPlayer()
+    {
+        return photonView.IsMine;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        //max health taked from PlayerPrefs
-        maxHealth = PlayerPrefs.GetInt("MaxHealth");
-        
-        //regenerates health slowly
-        if (health <= maxHealth && !isDead)
-        {
-            health += 10 * Time.deltaTime;
-        }
+    }
 
+    void Die()
+    {
         //triggers death sequence, death animation
-        if(health <= 0 && !isDead)
+        if (health <= 0 && !isDead)
         {
             isDead = true;
             _animator._heroAnimator.SetLayerWeight(2, 1);
             _animator._heroAnimator.SetBool("isDead", true);
             StartCoroutine(deathSequence());
         }
-
-
-        if (curSceneName == "BonkArcade" || curSceneName == "FishingArea" || curSceneName == "ShopInterior")
-            return;
-
-            //updates the health bar according to current health
-            healthIndicator.localScale = new Vector3(health / maxHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
-            // displays current health in a numerical form
-            healthNumber.text = "Health: " + (int)health + " / " + maxHealth;
-
-            //displays number of coins the player has
-            if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
-            if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
-        
     }
 
-    public void SwitchImmunity()
-    {
-        immunity = !immunity;
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(!immunity && !isPoweredUp && !isDead)
-        {
-            //takes damage from the normal void 
-            if (other.tag == "enemyAttackZone")
-            {
-                StartCoroutine(_animator.CameraShake(0.3f));
-
-                health -= 20;
-            }
-
-            //takes damage from the green void projectile
-            if (other.tag == "greenVoidProjectile")
-            {
-                Destroy(other.transform.parent.gameObject);
-                StartCoroutine(_animator.CameraShake(0.3f));
-
-
-                health -= 40;
-                StartCoroutine(_animator.greenVoidDamage());
-            }
-
-            //takes damage from the red void projectile
-            if (other.tag == "redVoidProjectile")
-            {
-                Destroy(other.transform.parent.gameObject);
-                StartCoroutine(_animator.CameraShake(0.3f));
-                health -= 40;
-                StartCoroutine(_animator.redVoidDamage());
-            }
-        }
-        
-
-        //triggers the poweup through the animator
-        if(other.tag == "PowerUp" &&!isDead)
-        {
-            Destroy(other.gameObject);
-            StartCoroutine(_animator.PowerUp());
-        }
-
-        // collects coin. inccreases in playerprefs, plays a random coin pickup sound, destroys coin
-        if (other.tag == "salanaCoin" && !isDead)
-        {
-            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + 1);
-            
-            int randomCoinSound = Random.Range(1, 3);
-            if (randomCoinSound == 2)
-            {
-                GetComponent<AudioSource>().PlayOneShot(coinSound2);
-            }
-            else
-            {
-                GetComponent<AudioSource>().PlayOneShot(coinSound1);
-            }
-
-            Destroy(other.gameObject);
-        }
-        if(other.TryGetComponent(out ICollisiontype fishSceneCollider))
-        {
-            fishSceneCollider.callUIFunctions();
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        //enables fishing entrance and arena entrance buttons when not in the interaction area
-        if (collision.tag == "ArenaZone")
-        {
-            if(collision.name == "FishingAreaTrigger")
-            {
-                fishButton.SetActive(true);
-            }
-            if(collision.name == "ArenaEntranceTrigger")
-            {
-                enterButton.SetActive(true);
-            }
-            if (collision.name == "ShopEntrance")
-            {
-                fishButton.SetActive(true);
-            }
-            if (collision.name == "ShopExit")
-            {
-                fishButton.SetActive(true);
-            }
-            if (collision.name == "FishingExit")
-            {
-                ExitButton.SetActive(true);
-            }
-
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        //disables fishing entrance and arena entrance buttons when not in the interaction area
-        if (collision.name == "FishingAreaTrigger")
-        {
-            fishButton.SetActive(false);
-        }
-        if (collision.name == "ArenaEntranceTrigger")
-        {
-            enterButton.SetActive(false);
-        }
-        if (collision.name == "ShopEntrance")
-        {
-            fishButton.SetActive(false);
-        }
-        if (collision.name == "ShopExit")
-        {
-            fishButton.SetActive(false);
-        }
-        if (collision.name == "FishingExit")
-        {
-            ExitButton.SetActive(false);
-        }
-    }
-  
     //death sequence
     IEnumerator  deathSequence()
     {
@@ -218,27 +168,174 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         yield return new WaitForSeconds(1);
         //SceneManager.LoadScene(0);
     }
-    
-    // Adding to Inventory
-    public void AdditionToInventory(String invGameObject, int invItemNumber)
+
+    public float GetMaxHealth()
     {
-        // Adding to Inventory
-        if (inv.ContainsKey(invItemNumber))
+        return MAXHealth; 
+    }
+
+    public TurnOptions.Phase1Turns Phase1Options
+    {
+        get { return Phase1Turns; }
+        set
         {
-            Inventory inventoryItem = inv[invItemNumber];
-            Debug.Log("Amount: " + inventoryItem.GetAmount());
-            inventoryItem.IncreaseAmount(inventoryItem.GetAmount() + 1);
-            inv[invItemNumber] = inventoryItem;
-            inventoryItem.DisplayInventoryItem();
+            Phase1Turns = value;
+        }
+    }
+
+    public TurnOptions.PhaseAttackTurns Phase2Options
+    {
+        get { return Phase2Turns; }
+        set
+        {
+            Phase2Turns = value;
+        }
+    }
+
+    public int Phase2CardDamage
+    {
+        get { return carddamage; }
+        set
+        {
+            carddamage = value;
+        }
+    }
+
+    public TurnOptions.PhaseDefenceTurns Phase3Options
+    {
+        get { return Phase3Turns; }
+        set
+        {
+            Phase3Turns = value;
+        }
+    }
+
+    public OptionSelected GetOptionSelected()
+    {
+        return Option;
+    }
+
+    public void SetOptionSelected(int value)
+    {
+        Option = (OptionSelected)value;
+    }
+
+    public int Phase3OptionhealthEffector
+    {
+        get { return healtheffector; }
+        set
+        {
+            healtheffector = value;
+        }
+    }
+
+    public int Phase3OptionAttackPower
+    {
+        get { return attackPower; }
+        set
+        {
+            attackPower = value;
+        }
+    }
+
+    public void OnChangeHealth(int num = 0, int attack = 0)
+    {
+        //-----------Only for Phase 2----------------
+        if (attack == 1)
+        {
+            health -= num;
+            if (health <= 0.0f)
+            {
+                health = 0.0f;
+                Die();
+            }
+            return;
+        }
+        //----------------- For Phase 3 ------------
+        else if (Option == OptionSelected.NoDamage)
+        {
+            // Nothing will happen to the health
+            Debug.Log("Option selected is No Damage" + health);
+        }
+        else if (Option == OptionSelected.DecreaseDamage)
+        {
+            int damage = attack - (int)(attack * (float)healtheffector/100);
+            health -= damage;
+            Debug.Log("Inside OnChangeHealth with attack:" + attack);
+            Debug.Log("Option selected is Decrease Damage" + health);
+        }
+        else if (Option == OptionSelected.Heal)
+        {
+            health -= attack;
+            health += healtheffector;
+            Debug.Log("Inside OnChangeHealth with attack:" + attack);
+            Debug.Log("Option selected is Heal" + health);
+        }
+        else if (Option == OptionSelected.Damage)
+        {
+            health -= attack;
+            Debug.Log("Inside OnChangeHealth with attack:" + attack);
+            Debug.Log("Option selected is Damage:" + health);
+        }
+
+        //-----------------------------------//
+        // Clamp health between min and max limits
+        if (health > MAXHealth)
+        {
+            health = MAXHealth;
+        }
+        else if (health <= 0.0f)
+        {
+            health = 0.0f;
+            Die();
+        }
+
+        // Call the RPC to update health on all clients
+        //photonView.RPC("UpdateHealth", RpcTarget.All, health);
+    }
+
+
+    public SpecialCard SpecialCardData
+    {
+        get { return specialcardData; }
+        set
+        {
+            specialcardData = value;
+        }
+    }
+
+    public SpecialCardData CardData
+    {
+        get { return _specialCardData; }
+        set
+        {
+            _specialCardData = value;
+        }
+    }
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.SendNext((int)Phase1Turns);
+            stream.SendNext((int)Phase2Turns);
+            stream.SendNext((int)Phase3Turns);
+            stream.SendNext(health);
+            stream.SendNext(carddamage);
+            stream.SendNext(Option);
+            stream.SendNext(healtheffector);
+            stream.SendNext(attackPower);
         }
         else
         {
-            Debug.Log("Added");
-            Inventory newItem = new Inventory(invGameObject,invItemNumber);
-            inv.Add(invItemNumber,newItem);
-            inv[invItemNumber].DisplayInventoryItem();
+            Phase1Turns = (TurnOptions.Phase1Turns)stream.ReceiveNext();
+            Phase2Turns = (TurnOptions.PhaseAttackTurns)stream.ReceiveNext();
+            Phase3Turns = (TurnOptions.PhaseDefenceTurns)stream.ReceiveNext();
+            this.health = (float)stream.ReceiveNext();
+            this.carddamage = (int)stream.ReceiveNext();
+            this.Option = (OptionSelected)stream.ReceiveNext();
+            this.healtheffector = (int)stream.ReceiveNext();
+            this.attackPower = (int)stream.ReceiveNext();
         }
-        
     }
-
 }

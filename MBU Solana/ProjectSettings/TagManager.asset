@@ -18,6 +18,9 @@ TagManager:
   - FishermanSpot
   - InventoryObject
   - Wall
+  - Enemy
+  - Bullet
+  - Multiplayer_manager
   layers:
   - Default
   - TransparentFX

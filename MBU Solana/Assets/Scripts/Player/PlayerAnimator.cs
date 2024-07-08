@@ -32,8 +32,6 @@ public class PlayerAnimator : MonoBehaviour
     public GameObject enemies;
     private GameObject[] childenemies;
 
-    [SerializeField] PlayerTeleport playerTeleport;
-
     void Start()
     {
         curSceneName = SceneManager.GetActiveScene().name;
@@ -113,15 +111,9 @@ public class PlayerAnimator : MonoBehaviour
         
     }
 
-    public void MoveAttackArea()
-    {
-        _manager._combat.MoveAttackCollider();
-    }
-
     //north star starts
     public void specialStart()
     {
-        _manager.SwitchImmunity();
         audioSource.PlayOneShot(northStar);
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = false;
@@ -131,7 +123,6 @@ public class PlayerAnimator : MonoBehaviour
     //north start ends
     public void specialEnd()
     {
-        _manager.SwitchImmunity();
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
@@ -141,7 +132,6 @@ public class PlayerAnimator : MonoBehaviour
     //orion belt starts
     public void orionsBeltStart()
     {
-        _manager.SwitchImmunity();
         audioSource.PlayOneShot(orionsBelt);
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = false;
@@ -151,7 +141,6 @@ public class PlayerAnimator : MonoBehaviour
     //orion's belt ends
     public void orionsBeltEnd()
     {
-        _manager.SwitchImmunity();
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
@@ -176,24 +165,21 @@ public class PlayerAnimator : MonoBehaviour
     }
 
     //power up. plays music, makes player invincible, plays animation, all timed to music
-    public IEnumerator PowerUp()
+    public IEnumerator powerUp()
     {
         powerUpMuisc.enabled = true;
-        _manager.isPoweredUp = true;
+        //_manager.isPoweredUp = true;
         _manager._controller.enabled = false;
        _manager._combat.enabled = false;
         _heroAnimator.SetLayerWeight(4, 1);
         _heroAnimator.SetTrigger("Drink");
-        
         yield return new WaitForSeconds(3f);
         if(powerUpVolume != null)
             powerUpVolume.SetActive(true);
         _heroAnimator.SetLayerWeight(4, 0);
         mainMusic.volume = 0;
-        
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
-
         GetComponent<SpriteRenderer>().color = Color.yellow;
         yield return new WaitForSeconds(11f);
         if(powerUpVolume != null)
@@ -201,8 +187,8 @@ public class PlayerAnimator : MonoBehaviour
         powerUpMuisc.enabled = false;
         mainMusic.volume = 0.676f;
         GetComponent<SpriteRenderer>().color = initialColor;
-        _manager.isPoweredUp = false;
-        
+        //_manager.isPoweredUp = false;
+
     }
 
     //camera shake
@@ -211,24 +197,6 @@ public class PlayerAnimator : MonoBehaviour
         Camera.main.transform.rotation = Quaternion.Euler(Camera.main.transform.rotation.x, 0, Camera.main.transform.rotation.z + shakeIntensity);      
         yield return new WaitForSeconds(.1f); 
         Camera.main.transform.rotation = Quaternion.Euler(Camera.main.transform.rotation.x, 0, Camera.main.transform.rotation.z - shakeIntensity);
-    }
-
-    //Player triggers Teleport animation
-    public void PlayTeleportAnimation()
-    {
-        _manager._controller.enabled = false;
-        _heroAnimator.SetTrigger("FadeOut");
-    }
-
-    public void InitializeTeleport()
-    {
-        playerTeleport.TeleportPlayer();
-        _heroAnimator.SetTrigger("FadeIn");
-    }
-
-    public void EndTeleport()
-    {
-        _manager._controller.enabled = true;
     }
 
 

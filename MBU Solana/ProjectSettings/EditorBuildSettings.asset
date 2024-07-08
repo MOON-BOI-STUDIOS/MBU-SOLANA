@@ -6,28 +6,34 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Multiplayer/MultiplayerLobby.unity
+    guid: b82a0de2a01efba4eb5475468fc1787c
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer/PVP_BattleArena.unity
+    guid: d7b0c724006900346ba1c8e72646a8b3
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: f523fe4354c7f5541b672c3ecb9b7b85
-  - enabled: 1
-    path: Assets/Scenes/SampleScene_.unity
+  - enabled: 0
+    path: Assets/Scenes/SinglePlayer/SampleScene_.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/DreBattleArena.unity
+  - enabled: 0
+    path: Assets/Scenes/SinglePlayer/DreBattleArena.unity
     guid: 57e5e2c5766044188af2de088953bd98
-  - enabled: 1
-    path: Assets/Scenes/FishingArea.unity
+  - enabled: 0
+    path: Assets/Scenes/SinglePlayer/FishingArea.unity
     guid: 4a247c41596b2e845926a6f7c5a942bb
-  - enabled: 1
-    path: Assets/Scenes/BonkArcade.unity
+  - enabled: 0
+    path: Assets/Scenes/SinglePlayer/BonkArcade.unity
     guid: a0a27c7eae1e0bf479d2385dc8826025
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BikeRace.unity
     guid: 5c602770ef2ac1b4ea32f1b373715869
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BONKBattleArena.unity
     guid: cf41616cbec9d4472bf65bc991d63ac3
-  - enabled: 1
-    path: Assets/Scenes/ShopInterior.unity
+  - enabled: 0
+    path: Assets/Scenes/SinglePlayer/ShopInterior.unity
     guid: 59576e44ded70bc4eb34ebbb0a98fa36
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 4a4770776bdf7b14a84228a59cf77774, type: 2}
