@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 954746d370bc8934299c8c8267543f4f
+guid: 042559ec1818b7c4e98509f41687647c
 TrueTypeFontImporter:
-  serializedVersion: 2
+  externalObjects: {}
+  serializedVersion: 4
   fontSize: 16
-  fontColor: {r: 1, g: 1, b: 1, a: 1}
   forceTextureCase: -2
-  renderMode: 0
-  style: 0
+  characterSpacing: 0
+  characterPadding: 1
   includeFontData: 1
-  use2xBehaviour: 0
-  fontNames: []
+  fontNames:
+  - eurofurence light
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f2f6ccd472d17544ba2ff3d4507ce284, type: 3}
   customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

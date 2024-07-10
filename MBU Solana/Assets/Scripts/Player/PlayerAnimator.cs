@@ -80,6 +80,11 @@ public class PlayerAnimator : MonoBehaviour
         }
     }
 
+    public void MoveAttackArea()
+    {
+        _manager._combat.MoveAttackCollider();
+    }
+
     public void endofCollect()
     {
         chests.isPickingUP = false;
@@ -150,7 +155,7 @@ public class PlayerAnimator : MonoBehaviour
     //receiving damage from green void projectile. changes color to green for half a second
     public IEnumerator greenVoidDamage()
     {
-       
+        
         GetComponent<SpriteRenderer>().color = Color.green;
         yield return new WaitForSeconds(0.5f);
         GetComponent<SpriteRenderer>().color = initialColor;

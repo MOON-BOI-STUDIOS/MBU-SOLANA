@@ -27,9 +27,14 @@ public class PlayerController : MonoBehaviour
         inputHandler = GetComponent<IPlayerInput>();
 
         //Subscribe to the Move action events only for PC release and WebGl release
-        inputs.actions["Move"].performed += Move;
-        inputs.actions["Move"].canceled += Move;
+        // inputs.actions["Move"].performed += Move;
+        // inputs.actions["Move"].canceled += Move;
     }
+
+    // public void Move(InputAction.CallbackContext context)
+    // {
+    //     moveDirection = context.ReadValue<Vector2>();
+    // }
 
     void FixedUpdate()
     {
@@ -40,10 +45,6 @@ public class PlayerController : MonoBehaviour
     public void SwitchCanMove()
     {
         canMove = !canMove;
-    }
-    public void Move(InputAction.CallbackContext context)
-    {
-        moveDirection = context.ReadValue<Vector2>();
     }
 
     private void UpdateMoveDirection()
