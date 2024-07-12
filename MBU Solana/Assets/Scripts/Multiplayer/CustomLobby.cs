@@ -201,7 +201,13 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public void Disconnect()
     {
         PhotonNetwork.LeaveRoom();
-        Destroy(PhotonRoom.room.gameObject);
+        
+        // Check if the player is the last one in the room
+        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount <= 1)
+        {
+            // If this is the last player in the room, destroy the room object
+            Destroy(PhotonRoom.room.gameObject);
+        }
     }
 
     public override void OnLeftRoom()
@@ -209,6 +215,11 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         Debug.Log("Left room successfully");
 
         // Reload the lobby scene after leaving the room
+        SceneManager.LoadScene("MultiplayerLobby");
+    }
+
+    public void LoadMenuScene()
+    {
         SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
     }
 }

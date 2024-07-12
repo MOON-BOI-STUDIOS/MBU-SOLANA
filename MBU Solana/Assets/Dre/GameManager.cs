@@ -70,5 +70,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("LastLocation", number);
   }
 
+    public void LoadSceneByName(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
     
 }
