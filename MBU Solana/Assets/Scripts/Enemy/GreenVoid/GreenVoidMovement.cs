@@ -27,13 +27,11 @@ public class GreenVoidMovement : MonoBehaviour
         //if the player comes in the maxSearchDistance, starts moving towards them
         if (Vector3.Distance(transform.position, player.position) >= 1.5f  && Vector3.Distance(transform.position, player.position) <= maxSearchDistance)
         {
-            if(agent.isActiveAndEnabled)
             agent.destination = player.position;
         }
         else
         //stops moving
         {
-            if(agent.isActiveAndEnabled)
             agent.destination = transform.position;
         }
         

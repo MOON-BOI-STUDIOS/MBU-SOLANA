@@ -44,7 +44,7 @@ public class Beggar : MonoBehaviour
             }
             
         }
-        else if( (Vector2.Distance(player.position, transform.position) >= proximity))
+        else
         {
             InteractButton.SetActive(false);
             buyJokesButton.SetActive(false);
@@ -100,17 +100,5 @@ public class Beggar : MonoBehaviour
         }
         
         
-    }
-
-
-      public void OnCollisionExit2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
-        {
-            box.SetActive(false);
-               text.text = "";
-                endConversation = false;
-                started = false;
-        }
     }
 }

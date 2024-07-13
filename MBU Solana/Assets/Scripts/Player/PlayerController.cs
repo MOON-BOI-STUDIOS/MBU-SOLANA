@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private PlayerManager _manager;
     public bool TutorialMove;
 
-    bool canMove = true;
+ 
 
     void Start()
     {
@@ -36,11 +37,6 @@ public class PlayerController : MonoBehaviour
         UpdateMoveDirection();
         HandleMovement();
     }
-
-    public void SwitchCanMove()
-    {
-        canMove = !canMove;
-    }
     public void Move(InputAction.CallbackContext context)
     {
         moveDirection = context.ReadValue<Vector2>();
@@ -48,8 +44,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateMoveDirection()
     {
-#if !UNITY_STANDALONE && !UNITY_WEBGL
-    if(canMove)
+#if !UNITY_STANDALONE && !UNITY_WEBGL 
         moveDirection = inputHandler.GetInputDirection();
         
         //Debug.Log(moveDirection);//joystick.GetJoystickDirection();// //
@@ -104,7 +99,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody2D _rb;
+    public Rigidbody2D rb;
     public Vector2 moveDirection;
     public bool isMoving;
     public float moveSpeed;
@@ -118,7 +113,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _manager = GetComponent<PlayerManager>();
-        _rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -126,7 +121,7 @@ public class PlayerController : MonoBehaviour
         
     {
         //Gets current position and input from the RigidBody
-        Vector2 currentPosition = _rb.position;
+        Vector2 currentPosition = rb.position;
 
 
 
@@ -142,7 +137,7 @@ public class PlayerController : MonoBehaviour
         //Uses the direction with movement speed, to actually move the Character
         Vector2 movement = moveDirection * currentSpeed;
         Vector2 newPos = currentPosition + movement * Time.fixedDeltaTime;
-        _rb.MovePosition(newPos);
+        rb.MovePosition(newPos);
 
 
         //Checks if moving

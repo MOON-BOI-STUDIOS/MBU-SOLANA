@@ -20,7 +20,6 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     public Transform inventoryTransform;
     public bool IsSelling;
     private int points;
-    private int defaultInstanceNum = 0;
 
     #region Singleton
 
@@ -44,22 +43,17 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     private void Start()
     {
         canvas = GameObject.Find("UI").transform;
-        if (!PlayerPrefs.HasKey("InstanceNumber"))
-        { 
-            PlayerPrefs.SetInt("InstanceNumber", 0);
-        }
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))
         {
             Items newItem = itemList[Random.Range(0,itemList.Count)];
-            //ItemInventory.instance.AddItem(Instantiate(newItem));
-            AddToInventory(newItem);
+            ItemInventory.instance.AddItem(Instantiate(newItem));
         }
     }
 
-    public void AddToInventory(Items newItem, int defaultInstanceNum = 0)
+    public void AddToInventory(Items newItem)
     {
         if(newItem != null)
         {
@@ -73,9 +67,7 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
                 PlayerPrefs.SetInt("Points", currentPoint);
                 PlayerPrefs.Save();
             }
-            Debug.Log("In the Add to Inventory the value of defaultInstance " + defaultInstanceNum);
-            // This is a very essential step so that a unique value is present inside each item;
-            ItemInventory.instance.AddItem(Instantiate(newItem), defaultInstanceNum);
+            ItemInventory.instance.AddItem(Instantiate(newItem));
         }
         /*if(numberToAdd > 0 && numberToAdd < itemList.Count)
         {
@@ -152,16 +144,14 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
             if(itemList.Count > data.savedData[i].itemListIndex)
             {
                 Items item = itemList[data.savedData[i].itemListIndex];
-                //Set the Instance Number
-                Debug.Log("instance Number in data:" + data.savedData[i].instanceNum);
                 if(string.Equals(item.classOfItem.ToString(),"bait"))
                 {
                     BaitItemObjj queryitem = (BaitItemObjj)item;
                     queryitem.SetbaitValue(data.savedData[i].depletivebait);
-                    AddToInventory(queryitem, data.savedData[i].instanceNum);
+                    AddToInventory(queryitem);
                 }
                 else{
-                    AddToInventory(item, data.savedData[i].instanceNum);
+                    AddToInventory(item);
                 }
             }
         }
@@ -172,8 +162,4 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
 
     }
 
-    public void SaveData(ref List<ItemData> data)
-    {
-        
-    }
 }

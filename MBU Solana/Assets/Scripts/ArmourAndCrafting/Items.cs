@@ -19,8 +19,6 @@ public class Items : ScriptableObject
 
     public ItemClass classOfItem;
 
-    private int InstamceNumber = 0; // Intance Number is used so that each element in the game instance has a unique number;
-
     public virtual void Use()
     {
         Debug.Log("Using" + name);
@@ -35,12 +33,6 @@ public class Items : ScriptableObject
     public virtual int GetItemValue()
     {
         return ItemValue;
-    }
-
-    public int InstanceNum
-    {
-        get => InstamceNumber;
-        set => InstamceNumber = value;
     }
 
     public enum ItemClass

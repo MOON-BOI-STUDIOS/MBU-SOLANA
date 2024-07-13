@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AICarManager : MonoBehaviour
 {
-    /*public List<AICarController> aiCarControllers;
+    public List<AICarController> aiCarControllers;
     public List<AICarController> activeAICarControllers;
     public BikeController bikeController;
 
@@ -13,7 +13,7 @@ public class AICarManager : MonoBehaviour
     [SerializeField] float hardFrequency = 1f;
     [Space]
     public GameObject BlastPrefab;
-    /// ALL MOVED TO AICARCONTROLLER.C#
+
     public static AICarManager Inst;
     private void Awake()
     {
@@ -21,11 +21,11 @@ public class AICarManager : MonoBehaviour
     }
     private void Start()
     {
-        //StartCoroutine(PopulateCarsCoroutine());
-        //StartCoroutine(ChangePathCoroutine());
-    }*/
+        StartCoroutine(PopulateCarsCoroutine());
+        StartCoroutine(ChangePathCoroutine());
+    }
 
-    /*public void PopulatingCar()
+    public void PopulatingCar()
     {
         if (aiCarControllers.Count > 0)
         {
@@ -36,9 +36,9 @@ public class AICarManager : MonoBehaviour
             aiCarControllers[index].InitializeCar();
             aiCarControllers.RemoveAt(index);
         }
-    }*/
+    }
 
-    /*IEnumerator PopulateCarsCoroutine()
+    IEnumerator PopulateCarsCoroutine()
     {
         while (true)
         {
@@ -57,9 +57,9 @@ public class AICarManager : MonoBehaviour
                     break;
             }
         }
-    }*/
-       
-    /*IEnumerator ChangePathCoroutine()
+    }
+
+    IEnumerator ChangePathCoroutine()
     {
         while (true)
         {
@@ -84,14 +84,13 @@ public class AICarManager : MonoBehaviour
             }
             yield return null;
         }
-    }*/
+    }
 
    
-    /*public void CollisionWithCar(AICarController acc)
+    public void CollisionWithCar(AICarController acc)
     {
-        if(!acc.isDestroyed)
+        if(!acc.isDisdroyed)
         {
-            acc.isDestroyed = true;
             var blast = Instantiate(BlastPrefab, acc.gameObject.transform);
             blast.transform.localPosition = new Vector3(0, 0, 0);
             Destroy(blast, 0.5f);
@@ -100,10 +99,11 @@ public class AICarManager : MonoBehaviour
 
             // Start fading out
             StartCoroutine(acc.RotateCarRandomly(0.5f));
+            acc.isDisdroyed = true;
             acc.StopMovement();
             StartCoroutine(acc.RepairCar());
         }
-    }*/
+    }
 
 
 

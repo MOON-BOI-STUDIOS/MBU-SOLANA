@@ -125,7 +125,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if(other.tag == "PowerUp" &&!isDead)
         {
             Destroy(other.gameObject);
-            StartCoroutine(_animator.PowerUp());
+            StartCoroutine(_animator.powerUp());
         }
 
         // collects coin. inccreases in playerprefs, plays a random coin pickup sound, destroys coin

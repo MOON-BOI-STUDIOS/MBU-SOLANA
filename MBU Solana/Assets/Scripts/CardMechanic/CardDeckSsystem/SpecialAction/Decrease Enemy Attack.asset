@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf3d09cb3ab09b4e832d854c57cdc32, type: 3}
+  m_Name: Decrease Enemy Attack
+  m_EditorClassIdentifier: 
+  cardName: Decrease Enemy Attack
+  cardImage: {fileID: 0}
+  cost: 10
+  Attack: 0
+  decreaseDamagePercent: 10
+  increaseDamagePercent: 0
+  healingPower: 0
+  Block: 12
+  ID_SpecialAction: 203
+  cardType: 2

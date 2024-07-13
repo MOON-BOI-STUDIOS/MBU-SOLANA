@@ -11,7 +11,6 @@ using Solana.Unity.Rpc.Types;
 using Solana.Unity.Rpc.Models;
 using System;
 using Solana.Unity.Wallet;
-using System.Collections;
 
 // ReSharper disable once CheckNamespace
 
@@ -62,13 +61,9 @@ namespace Solana.Unity.SDK.Example
         private TokenAccount usdcTokenAccount;
         string BonkMintAddress = "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263";
         string USDCMintAddress = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
-        public Texture2D _texture;
+        private Texture2D _texture;
         //End of Region
 
-        //Successful Message region
-        public GameObject messagePopup;
-        public TMP_Text messageText;
-        //End Region
         public void Start()
         {
             refreshBtn.onClick.AddListener(RefreshWallet);
@@ -117,9 +112,6 @@ namespace Solana.Unity.SDK.Example
             _stopTask = new CancellationTokenSource();
             
             Web3.OnWalletChangeState += OnWalletChangeState;
-
-            //Make the message Popup false if specified otherwise
-            messagePopup.SetActive(false);
         }
 
         private void OnWalletChangeState()
@@ -134,7 +126,6 @@ namespace Solana.Unity.SDK.Example
 
         private void RefreshWallet()
         {
-            Debug.Log("Refresh Wallet");
             Web3.UpdateBalance().Forget();
             GetOwnedTokenAccounts().AsAsyncUnitUniTask().Forget();
         }
@@ -205,8 +196,6 @@ namespace Solana.Unity.SDK.Example
             //toPublicTxt.interactable = false;
             //PaymentInfo.requiredAmount = PaymentInfo.requiredAmount;
             //amountTxt.interactable = false;
-            Debug.Log("Inside Wallet transaction" + bonkTokenAccount.ToString());
-            PaymentInfo.account = bonkTokenAccount;
 
             manager.ShowScreen(this, "transfer_screen",Tuple.Create(bonkTokenAccount, BonkMintAddress, _texture));
         }
@@ -225,15 +214,12 @@ namespace Solana.Unity.SDK.Example
             //toPublicTxt.interactable = false;
             PaymentInfo.requiredAmount = PaymentInfo.requiredAmount * 0.000027;
             //amountTxt.interactable = false;
-            Debug.Log("Inside Wallet transaction" + bonkTokenAccount.ToString());
-            PaymentInfo.account = usdcTokenAccount;
 
             manager.ShowScreen(this, "transfer_screen", Tuple.Create(usdcTokenAccount, USDCMintAddress, _texture));
         }
 
         private async UniTask GetOwnedTokenAccounts()
         {
-            Debug.Log("Get Owned Token Accounts");
             if(_isLoadingTokens) return;
             _isLoadingTokens = true;
             var tokens = await Web3.Wallet.GetTokenAccounts(Commitment.Confirmed);
@@ -290,12 +276,10 @@ namespace Solana.Unity.SDK.Example
                     }
                     if (item.Account.Data.Parsed.Info.Mint == BonkMintAddress)
                     {
-                        Debug.Log("Get Owned token account if they have bonk");
                         bonkTokenAccount = item;
                     }
                     if (item.Account.Data.Parsed.Info.Mint == USDCMintAddress)
                     {
-                        Debug.Log("Get Owned token account if they have USDC");
                         usdcTokenAccount = item;
                     }
                 }
@@ -314,28 +298,9 @@ namespace Solana.Unity.SDK.Example
 
         public override void ShowScreen(object data = null)
         {
-            Debug.Log("Show Screen ");
             base.ShowScreen();
             gameObject.SetActive(true);
             GetOwnedTokenAccounts().Forget();
-            if (data != null && data.GetType() == typeof(Tuple<string ,string>))
-            {
-                var (message,resultString) = (Tuple<string,string>)data;
-                if (String.Equals(message, "Successful"))
-                {
-                    messagePopup.SetActive(true);
-                    messageText.text = "Successful " + resultString;
-                    //Start Coroutine for Automatic Handling of Message box
-                    StartCoroutine(DelayForSeconds());
-                }
-
-            }
-        }
-
-        IEnumerator DelayForSeconds()
-        {
-            yield return new WaitForSeconds(2.0f);
-            messagePopup.SetActive(false);
         }
 
         public override void HideScreen()

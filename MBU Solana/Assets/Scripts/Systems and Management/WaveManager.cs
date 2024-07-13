@@ -22,9 +22,6 @@ public class WaveManager : MonoBehaviour
     string curSceneName;
     private List<GameObject> childenemies;
     //private GameObject[] childenemies;
-
-
-    public static List<GameObject> coins = new List<GameObject>();
     private void Awake()
     {
         nextRound();
@@ -52,16 +49,6 @@ public class WaveManager : MonoBehaviour
     }
 
 
-    public static void AddCoin(GameObject coin)
-    {
-        coins.Add(coin);
-    }
-
-    public static void RemoveCoin(GameObject coin)
-    {
-        coins.Remove(coin);
-    }
-
     IEnumerator delayLittleCoroutine()
     {
         yield return new WaitForSeconds(2f);
@@ -75,13 +62,11 @@ public class WaveManager : MonoBehaviour
         if (delayLittle)
             return;
 
-        if (enemiesParent.childCount <= 0 && waveSwitch == false && coins.Count <= 0)
+        if (enemiesParent.childCount <= 0 && waveSwitch == false )
         {
            
-            PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1);
-
+            PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1); 
             endOfRoundScreen.SetActive(true);
-
             PaymentInfo.UIActive = true;
             //Time.timeScale = 0f;
             // Activating the Slots Assets

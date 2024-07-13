@@ -27,13 +27,11 @@ public class EnemyMovement : MonoBehaviour
         //}
         if(Vector3.Distance(transform.position, player.position) >= 1.5f  && Vector3.Distance(transform.position, player.position) <= maxSearchDistance)
         {
-            if(agent.isActiveAndEnabled)
             agent.destination = player.position;
         }
         else
         {
-            if(agent.isActiveAndEnabled)
-            agent.destination = player.position;
+            agent.destination = transform.position;
         }
         
         if(Vector3.Distance(transform.position, player.position) <= 2 && Vector3.Distance(transform.position, player.position) >= 1 )

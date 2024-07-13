@@ -149,6 +149,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         inDialogue = false;
+        controller.enabled = true;
         Interact = true;
        
     //AudioManager.instance.Stop(currentDialogue.audioClip);

@@ -1,37 +1,27 @@
-using Org.BouncyCastle.Utilities;
 using System.Collections;
 using UnityEngine;
 
-public class AICarController : RaceObjectBase
+public class AICarController : MonoBehaviour
 {
-    public float speed = -10f; // Speed for vertical movement
+    public float speed = 10f; // Speed for vertical movement
     public float horizontalSpeed = 5f; // Speed for left and right movement
     public float moveDistance = 2f;
 
-    private Rigidbody2D _rb;
+    public Rigidbody2D rb;
     public SpriteRenderer sr;
     private bool isMoving = false;
     private Vector3 targetPosition;
     public bool isColliding=false;
-    public bool isDestroyed=false;
-    [SerializeField]
-    //0 - straight, 1- left, 2- right
-    private Sprite[] _arrowsDirection = new Sprite[3];
-    public GameObject BlastPrefab;
-    private void Start()
+    public bool isDisdroyed=false;
+    void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();
-        RepairCar();
+        InitializeCar();
     }
 
     public enum Position { Left, Centre, Right } // Positions a car can be in
     public Position currentPosition; // Current position of the car
-    private Position _futurePosition; // Future position in which the car will move
 
-    /// <summary>
-    /// Spawn car on the left , center, or right. That is currently the doing of InteractableManager
-    /// </summary>
-    /*public void InitializeCar()
+    public void InitializeCar()
     {
         int rand = Random.Range(0, 3);
         currentPosition = (Position)rand;
@@ -48,71 +38,50 @@ public class AICarController : RaceObjectBase
                 transform.position = new Vector3(moveDistance, transform.position.y, transform.position.z);
                 break;
         }
-    }*/
-    
+    }
+
     void Update()
     {
         if (isColliding)
             return;
-    }
-    
-    public void FutureChangePath()
-    {
-        if (Random.value > 0.5)//50-50 chance of its moving
-        {
-            _bubbleSprite = _arrowsDirection[0];
-            //Default, should not move
-            _futurePosition = Position.Centre;
-            return;
-        }
 
-        switch (currentPosition)
-        {
-            case Position.Left:
-                _futurePosition = Position.Right;
-                currentPosition = Position.Centre;
-                _bubbleSprite = _arrowsDirection[2];
-                break;
-            case Position.Centre:
-                if (Random.value < 0.5f)
-                {
-                    _futurePosition = Position.Left;
-                    currentPosition = Position.Left;
-                    _bubbleSprite = _arrowsDirection[1];
-                }
-                else
-                {
-                    _futurePosition = Position.Right;
-                    currentPosition = Position.Right;
-                    _bubbleSprite = _arrowsDirection[2];
-                }
-                break;
-            case Position.Right:
-                _futurePosition = Position.Left;
-                currentPosition = Position.Centre;
-                _bubbleSprite = _arrowsDirection[1];
-                break;
-            default: break;
-        }
+        speed = RaceGameManager.currentSpeed - 3;
+        rb.velocity = new Vector2(0, speed);
     }
 
     public void ChangePath()
     {
-        //Gives a bit of randomness to the movement
-        moveDistance = Random.Range(1.5f, 2.5f);
-        switch (_futurePosition)
+        if (Random.value > 0.5)//50-50 chance of its moving
+            return;
+
+        if (!isMoving)
         {
-            case Position.Left:
-                StartCoroutine(MoveLeft());
-                break;
-            case Position.Right:
-                StartCoroutine(MoveRight());
-                break;
-            default: break;
+            switch (currentPosition)
+            {
+                case Position.Left:
+                    StartCoroutine(MoveRight());
+                    currentPosition = Position.Centre;
+                    break;
+                case Position.Centre:
+                    if (Random.value < 0.5f)
+                    {
+                        StartCoroutine(MoveLeft());
+                        currentPosition = Position.Left;
+                    }
+                    else
+                    {
+                        StartCoroutine(MoveRight());
+                        currentPosition = Position.Right;
+                    }
+                    break;
+                case Position.Right:
+                    StartCoroutine(MoveLeft());
+                    currentPosition = Position.Centre;
+                    break;
+            }
         }
-        
     }
-//Never touched a single line here or never will, it works and it is good work
+
     IEnumerator MoveLeft()
     {
         isMoving = true;
@@ -127,6 +96,7 @@ public class AICarController : RaceObjectBase
         }
 
         isMoving = false;
+        rb.velocity = new Vector2(0, speed); // Reset the Y-axis movement
     }
     IEnumerator MoveRight()
     {
@@ -142,6 +112,8 @@ public class AICarController : RaceObjectBase
         }
 
         isMoving = false;
+        Debug.Log("IsFalse");
+        rb.velocity = new Vector2(0, speed); // Reset the Y-axis movement
     }
 
     IEnumerator HandleRotationLeft(float movementTime)
@@ -201,12 +173,11 @@ public class AICarController : RaceObjectBase
             yield return null;
         }
     }
-//End of old times
 
     public IEnumerator RotateCarRandomly(float rotationDuration)
     {
-        // Choose a random angle between -180 and 180
-        float targetAngle = Random.Range(-180, 180);
+        // Choose a random angle between -360 and 360
+        float targetAngle = Random.Range(-360, 360);
         Quaternion initialRotation = transform.rotation;
         Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);
 
@@ -222,100 +193,24 @@ public class AICarController : RaceObjectBase
         // Ensure the rotation is set to the target rotation
         transform.rotation = targetRotation;
     }
-    public void CollisionWithCar()
-    {
-        if (!isDestroyed)
-        {
-            isDestroyed = true;
-            var blast = Instantiate(BlastPrefab, transform);
-            blast.transform.localPosition = new Vector3(0, 0, 0);
-            Destroy(blast, 0.5f);
-            // Add force in the opposite direction of the bike's movement
-            // Start fading out
-            StartCoroutine(RotateCarRandomly(0.5f));
-        }
-    }
-    /// Not necessary
-    /*
+
     public void StopMovement()
     {
         // Set speeds to 0
-        //speed = 0f;
-        //horizontalSpeed = 0f;
-        // Stop all coroutines
-        //StopAllCoroutines();
-    }
-    */
+        speed = 0f;
+        horizontalSpeed = 0f;
 
-    private void RepairCar()
+        // Stop all coroutines
+        StopAllCoroutines();
+    }
+
+    public IEnumerator RepairCar()
     {
-        transform.rotation = Quaternion.Euler(0,0,0);
-        isDestroyed = false;
+        yield return new WaitForSeconds(2f);
+        transform.rotation = Quaternion.identity;
+        horizontalSpeed = 8;//inspector value
+        isDisdroyed = false;
         isColliding = false;
     }
 
-    /*IEnumerator ChangePathCoroutine()
-    {
-        while (true)
-        {
-            
-            switch (RaceGameManager.inst.currentDifficulty)
-            {
-                case RaceGameManager.Difficulty.Easy:
-                    // No path change for "Easy" difficulty
-                    break;
-                case RaceGameManager.Difficulty.Medium:
-                    int indexMedium = Random.Range(0, activeAICarControllers.Count);
-                    activeAICarControllers[indexMedium].ChangePath();
-                    yield return new WaitForSeconds(mediumFrequency);
-                    break;
-                case RaceGameManager.Difficulty.Hard:
-                    int indexHard = Random.Range(0, activeAICarControllers.Count);
-                    activeAICarControllers[indexHard].ChangePath();
-                    yield return new WaitForSeconds(hardFrequency);
-                    break;
-                
-            }
-            yield return null;
-        }
-    }*/
-
-    public override void OnInteract(GameObject target)
-    {
-        //Interaction with player
-        //temporary getcomponnet 
-        BikeController temp = target.GetComponent<BikeController>();
-        //if is colliding ignores
-        if (/*temp == null || temp.isColliding ||*/ isDestroyed) return;
-        
-        temp.CallDisableInput(temp.timeBikeDisableInput);
-        RaceGameManager.inst.ResetDifficulty();
-        CollisionWithCar();
-
-        if (!temp.isOnBoost)
-        {
-            temp.lives--;
-            RaceGameUIManager.Inst.ReduceLife();
-        }
-        else
-        {
-            temp.isOnBoost = false;
-            temp.boostAmount = 0;
-        }
-    }
-
-    public override void OnDeInteract()
-    {
-        base.OnDeInteract();
-        RepairCar();
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        //Cars have a collider zone on top of the screen that calls for change path
-        if(collision.gameObject.layer.Equals(7))
-        {
-            ChangePath();
-        }
-    }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Checker : MonoBehaviour
 {
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 7)
         {
@@ -24,5 +24,5 @@ public class Checker : MonoBehaviour
                 AICarManager.Inst.activeAICarControllers.Remove(carController);
             //StartCoroutine(DelaysetActive(collision.gameObject));
         }
-    }*/
+    }
 }
