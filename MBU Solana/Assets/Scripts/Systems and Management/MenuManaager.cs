@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 
 public class MenuManaager : MonoBehaviour
@@ -15,19 +16,20 @@ public class MenuManaager : MonoBehaviour
     public AudioClip transitionOutSound;
     public AudioSource musicPlayer;
     bool isLevelLoading = false;
-    public GameObject videoOjbct;
     public GameObject WebGlVideo;
 
     public int number = 0;
 
-    public GameObject moonboiStudioLogo, moonboiUniverseLogo,rawImage,runGame;
+    public GameObject moonboiStudioLogo, moonboiUniverseLogo, rawImage, runGame;
 
     public int gameNum = 0;
 
     public Button LoadGamebtn;
     public Button newGamebtn;
 
-    public VidPlayer VidPlayer;
+    //VidPlayer Dre animation
+    public VideoPlayer VidPlayer;
+    [SerializeField] private VideoClip dreStartAnimation;
 
     public static MenuManaager instance;
 
@@ -40,7 +42,7 @@ public class MenuManaager : MonoBehaviour
         }
         number = PlayerPrefs.GetInt("num");
         gameNum = PlayerPrefs.GetInt("gameNum");
-       
+
 
         if (gameNum == 0)
         {
@@ -50,7 +52,7 @@ public class MenuManaager : MonoBehaviour
 
 
         }
-        else if( gameNum == 1)
+        else if (gameNum == 1)
         {
             LoadGamebtn.interactable = true;
             newGamebtn.interactable = true;
@@ -79,16 +81,15 @@ public class MenuManaager : MonoBehaviour
             runGame.SetActive(true);
             
 #endif
-            StartCoroutine(loadMenu());
+            //StartCoroutine(loadMenu());
 
 
         }
-       else if (number == 1)
-         {
-           
+        else if (number == 1)
+        {
+
             moonboiStudioLogo.SetActive(false);
             moonboiUniverseLogo.SetActive(false);
-            videoOjbct.gameObject.SetActive(false);
             Camera.main.transform.GetComponent<AudioSource>().enabled = true;
             startButton.SetActive(true);
 #if UNITY_STANDALONE || UNITY_WEBGL
@@ -97,18 +98,18 @@ public class MenuManaager : MonoBehaviour
 #endif
             Time.timeScale = 1;
 
-         }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isLevelLoading)
+        if (isLevelLoading)
         {
             musicPlayer.volume -= 1;
         }
-        
-        
+
+
     }
 
     //triggers powerup animation, disables start menu buttons, plays select sound as well as powrup sound
@@ -116,10 +117,7 @@ public class MenuManaager : MonoBehaviour
     {
         Destroy(startButton);
         startButton.SetActive(false);
-        DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
-        GetComponent<AudioSource>().PlayOneShot(powerUpSound);
-        GetComponent<AudioSource>().PlayOneShot(startButtonSound);
-        StopCoroutine(loadMenu());
+        startMenuAnimationSound();
     }
     public void NewstartGame()
     {
@@ -127,9 +125,7 @@ public class MenuManaager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetInt("LastLocation"));
         Destroy(startButton);
         startButton.SetActive(false);
-        DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
-        GetComponent<AudioSource>().PlayOneShot(powerUpSound);
-        GetComponent<AudioSource>().PlayOneShot(startButtonSound);
+        startMenuAnimationSound();
         // deletes any saved data
         //PlayerPrefs.DeleteAll();
         PlayerPrefs.DeleteKey("isTutorialOver");
@@ -160,10 +156,23 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.SetInt("firstLoad", 0);
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("MoneyAward", 0);
-        StopCoroutine(loadMenu());
 
+    }
 
+    void startMenuAnimationSound()
+    {
+        //DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
+        VidPlayer.clip = dreStartAnimation;
+        VidPlayer.loopPointReached += VidPlayer_loopPointReached;
+        VidPlayer.isLooping.Equals(false);
+        VidPlayer.Play();
+        GetComponent<AudioSource>().PlayOneShot(powerUpSound);
+        GetComponent<AudioSource>().PlayOneShot(startButtonSound);
+    }
 
+    private void VidPlayer_loopPointReached(VideoPlayer source)
+    {
+        loadLevel();
     }
 
     //loads scene 1. triggers transition animation, plays transitionOut audio
@@ -184,7 +193,7 @@ public class MenuManaager : MonoBehaviour
     }
 
     //start funtion. triggers the studio logo off, after it is played through. enables background music, turns on the start buttons
-    IEnumerator loadMenu()
+    /*IEnumerator loadMenu()
     {
 
 #if !UNITY_STANDALONE && !UNITY_WEBGL
@@ -204,12 +213,10 @@ public class MenuManaager : MonoBehaviour
         moonboiUniverseLogo.SetActive(false);
         yield return new WaitForSeconds(1.5f);
         startButton.SetActive(true);
+    }*/
+
+    private void OnDisable()
+    {
+        VidPlayer.loopPointReached -= VidPlayer_loopPointReached;
     }
 }
-
-
-
-
-
-    
-

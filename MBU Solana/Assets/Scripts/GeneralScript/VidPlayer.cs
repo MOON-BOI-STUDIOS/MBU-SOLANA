@@ -5,49 +5,40 @@ using UnityEngine.Video;
 
 public class VidPlayer : MonoBehaviour
 {
-    [SerializeField] string videoFileName;
-    [SerializeField] GameObject rawImageVideo;
+    //[SerializeField] string videoFileName;
     // Start is called before the first frame update
     private VideoPlayer videoPlayer;
+    [SerializeField]
+    VideoClip nextClip;
+    [SerializeField]
+    private GameObject StudiosLogo;
+    [SerializeField]
+    private GameObject UniverseLogo;
 
-    private void Awake()
+    private void Start()
     {
-#if UNITY_STANDALONE || UNITY_WEBGL
-        Time.timeScale = 0;
         videoPlayer = GetComponent<VideoPlayer>();
-#endif
-
+        videoPlayer.Play();
+        videoPlayer.loopPointReached += VideoPlayer_loopPointReached;
     }
 
-    public void pressed()
+    private void VideoPlayer_loopPointReached(VideoPlayer source)
     {
-        Time.timeScale = 1;
-        PlayVideo();
-    }
-
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-#if UNITY_STANDALONE || UNITY_WEBGL
-        videoPlayer.loopPointReached += EndVideo;
-#endif
-    }
-
-    public void PlayVideo()
-    {
-        if (videoPlayer)
+        if (source.clip == nextClip)
         {
-            string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, videoFileName);
-            Debug.Log(videoFileName); 
-            videoPlayer.url = videoPath;
-            videoPlayer.Play();
+            UniverseLogo.SetActive(false);
+        }
+        else
+        {
+            StudiosLogo.SetActive(false);
+            UniverseLogo.SetActive(true);
+            source.clip = nextClip;
+            videoPlayer.loopPointReached += VideoPlayer_loopPointReached;
         }
     }
 
-    public void EndVideo(VideoPlayer vp = null)
+    private void OnDisable()
     {
-        rawImageVideo.gameObject.SetActive(false);
+        videoPlayer.loopPointReached -= VideoPlayer_loopPointReached;
     }
 }
