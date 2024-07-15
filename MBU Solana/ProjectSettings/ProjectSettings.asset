@@ -137,10 +137,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 10.0.0
-  preloadedAssets:
-  - {fileID: 11400000, guid: fca83694f88847148953a9f656a33fb8, type: 2}
-  - {fileID: -3167580198829259446, guid: 4a4770776bdf7b14a84228a59cf77774, type: 2}
-  - {fileID: 11400000, guid: a6e9b68d07b5cd24982c6610bfdae1de, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -178,7 +175,7 @@ PlayerSettings:
   ForceInternetPermission: 0
   ForceSDCardPermission: 0
   CreateWallpaper: 0
-  APKExpansionFiles: 0
+  APKExpansionFiles: 1
   keepLoadedShadersAlive: 0
   StripUnusedMeshComponents: 0
   VertexChannelCompressionMask: 4054
@@ -255,8 +252,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{dedicated}: Downloads/MoonboiGame.keystore'
-  AndroidKeyaliasName: moonboistudios
+  AndroidKeystoreName: "C:/Users/art91/OneDrive/\xC1rea de Trabalho/Builds/MoonboiGame.keystore"
+  AndroidKeyaliasName: moonboitest
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
