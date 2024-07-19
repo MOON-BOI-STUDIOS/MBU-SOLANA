@@ -12,7 +12,6 @@ public class EnemyAnimator : MonoBehaviour
     public AudioClip attackSound;
     public GameObject solanaCoin;
     public GameObject powerUpCan;
-    private GameObject _waveManager;
 
     string curSceneName;
     // Start is called before the first frame update
@@ -59,7 +58,7 @@ public class EnemyAnimator : MonoBehaviour
     {
         //spawns coin upon death
         GameObject coin = Instantiate(solanaCoin, transform.parent.position, Quaternion.identity);
-
+        WaveManager.AddCoin(coin);
         /*
         //Spawns the power up can, on rounds 3 and above (one in 20 chance)
         int randomNumber = Random.Range(0, 120);

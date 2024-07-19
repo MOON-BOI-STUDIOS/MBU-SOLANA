@@ -67,13 +67,13 @@ public class PlayerAnimator : MonoBehaviour
                 _manager._combat.comboCounter = 0;
 
                 //there is a 50-50 chance of performing north star, or the orions belt. Sets layer weight to the respective layers
-                if(odds  <= 6f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
+                if(odds  < 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
                 {  
                     _heroAnimator.SetLayerWeight(1, 1);
                     _heroAnimator.SetTrigger("northStar");
                     
                 }
-                if (odds > 6f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
+                if (odds >= 5f && _heroAnimator.GetLayerWeight(3) == 0 && _heroAnimator.GetLayerWeight(1) == 0)
                 {
                     _heroAnimator.SetLayerWeight(3, 1);
                     _heroAnimator.SetTrigger("OrionsBelt");
@@ -215,6 +215,11 @@ public class PlayerAnimator : MonoBehaviour
     public void upRight() { lastDirection = new Vector2(1, 1); }
     public void downLeft() { lastDirection = new Vector2(-1, -1); }
     public void downRight() { lastDirection = new Vector2(1, -1); }
+
+    public void MoveAttackArea()
+    {
+        _manager._combat.MoveAttackCollider();
+    }
 
         //Player triggers Teleport animation
     public void PlayTeleportAnimation()

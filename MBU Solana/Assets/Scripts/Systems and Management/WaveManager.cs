@@ -22,6 +22,7 @@ public class WaveManager : MonoBehaviour
     string curSceneName;
     private List<GameObject> childenemies;
     //private GameObject[] childenemies;
+    public static List<GameObject> coins = new List<GameObject>();
     private void Awake()
     {
         nextRound();
@@ -48,6 +49,16 @@ public class WaveManager : MonoBehaviour
         curSceneName = SceneManager.GetActiveScene().name;
     }
 
+    public static void AddCoin(GameObject coin)
+    {
+        coins.Add(coin);
+    }
+
+    public static void RemoveCoin(GameObject coin)
+    {
+        coins.Remove(coin);
+    }
+
 
     IEnumerator delayLittleCoroutine()
     {
@@ -62,7 +73,7 @@ public class WaveManager : MonoBehaviour
         if (delayLittle)
             return;
 
-        if (enemiesParent.childCount <= 0 && waveSwitch == false )
+        if (enemiesParent.childCount <= 0 && waveSwitch == false && coins.Count <=0)
         {
            
             PlayerPrefs.SetInt("Round", PlayerPrefs.GetInt("Round") + 1); 
