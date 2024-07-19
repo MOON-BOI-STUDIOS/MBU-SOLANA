@@ -32,6 +32,8 @@ public class PlayerAnimator : MonoBehaviour
     public GameObject enemies;
     private GameObject[] childenemies;
 
+    [SerializeField] PlayerTeleport playerTeleport;
+
     void Start()
     {
         curSceneName = SceneManager.GetActiveScene().name;
@@ -209,5 +211,24 @@ public class PlayerAnimator : MonoBehaviour
     public void upRight() { lastDirection = new Vector2(1, 1); }
     public void downLeft() { lastDirection = new Vector2(-1, -1); }
     public void downRight() { lastDirection = new Vector2(1, -1); }
+
+        //Player triggers Teleport animation
+    public void PlayTeleportAnimation()
+    {
+        _manager._controller.enabled = false;
+        _heroAnimator.SetTrigger("FadeOut");
+    }
+
+    public void InitializeTeleport()
+    {
+        playerTeleport.TeleportPlayer();
+        _heroAnimator.SetTrigger("FadeIn");
+    }
+
+    public void EndTeleport()
+    {
+        _manager._controller.enabled = true;
+    }
+
 
 }

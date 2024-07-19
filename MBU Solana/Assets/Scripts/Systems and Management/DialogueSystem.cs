@@ -11,101 +11,75 @@ public class DialogueSystem : MonoBehaviour
     public GameObject interactButton;
     bool isClose;
     public Dialoguebase dialogue;
-
     public bool dialoguebegan;
 
-
-    
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-    
     }
 
     // Update is called once per frame
     void Update()
     {
-        //checks if the player is close to the NPC
-        if (Vector2.Distance(player.position, transform.position) <= proximity + 1f)
-        {
-            isClose = true;
-        }
-        else
-        {
-            isClose = false;
-            
-        }
+        CheckProximity();
+        UpdateInteractButton();
+    }
 
+    // Checks if the player is close to the NPC
+    void CheckProximity()
+    {
+        isClose = Vector2.Distance(player.position, transform.position) <= proximity + 1f;
+    }
+
+    // Updates the interact button based on proximity and dialogue state
+    void UpdateInteractButton()
+    {
         if (isClose)
         {
             if (Vector2.Distance(player.position, transform.position) <= proximity)
             {
-                interactButton.SetActive(true);
-
-                if(dialoguebegan == true)
+                if (dialoguebegan)
                 {
                     interactButton.SetActive(false);
                 }
-                else if(dialoguebegan == false)
+                else
                 {
                     interactButton.SetActive(true);
                 }
             }
             else
             {
-                
                 interactButton.SetActive(false);
                 dialoguebegan = false;
             }
         }
-
-
-
-
-        //    if (Vector2.Distance(player.position, transform.position) > proximity)
-        //{
-        //    currentDialogue = -1;
-        //}
+        else
+        {
+            interactButton.SetActive(false);
+        }
     }
 
-    public void endOndDialogue()
+    // Ends the dialogue
+    public void EndDialogue()
     {
         dialoguebegan = false;
     }
 
-        
-    //triggers the current dialogue, depending on the current dialogue integer, which increases with every button press
+    // Triggers the dialogue
     public void TriggerDialogue()
     {
         dialoguebegan = true;
         DialogueManager.instance.EnqueueDialogue(dialogue);
-        //if (Vector2.Distance(player.position, transform.position) <= proximity)
-        //{
-            
-        //    currentDialogue++;
-
-        //    if (currentDialogue> dialogues.Length - 1)
-        //    {
-        //        text.text = "";
-        //        dialogueBox.SetActive(false);
-        //    }
-        //    else
-        //    {
-        //        dialogueBox.SetActive(true);
-        //        triggeredDialogue = true;
-        //        text.text = dialogues[currentDialogue];
-                
-        //    }
-        //}
-        
     }
 
+    // Handles collision exit
     public void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             DialogueManager.instance.endOfDialogue();
+            EndDialogue(); // Ensure to reset dialogue state
         }
     }
 }
