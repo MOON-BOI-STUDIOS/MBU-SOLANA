@@ -968,15 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e483a0570ba4340a6ac894b3a064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3482781816479680324}
-  coins: {fileID: 248699828704088381}
-  swordLevel: {fileID: 248699829330386766}
-  specialLevel: {fileID: 248699829137014421}
-  maxHealth: {fileID: 248699829003283057}
-  fishesUI: {fileID: 248699829739849382}
-  roundIndicator: {fileID: 248699828748482887}
-  panel: {fileID: 0}
-  debugger: 0
+  StartGameButton: {fileID: 0}
 --- !u!1 &248699827886117721
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,7 +1554,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.1568272, y: 6.2145224, z: 0}
+  m_ChunkCullingBounds: {x: 3.1594305, y: 6.2100005, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 2
@@ -1784,9 +1776,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.14980544
+    y: 0.021276595
     width: 1
-    height: 0.7003891
+    height: 0.95744675
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2098,7 +2090,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 2.5422502, y: 5.8199997, z: 0}
+  m_ChunkCullingBounds: {x: 2.54, y: 5.826828, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
@@ -2151,17 +2143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &248699828704088381 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5098504905371865498, guid: 5963685b51636764990b7919155a6e03, type: 3}
-  m_PrefabInstance: {fileID: 5022085467934113959}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &248699828716167168
 Transform:
   m_ObjectHideFlags: 0
@@ -2251,17 +2232,6 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
---- !u!114 &248699828748482887 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5098504905461447136, guid: 5963685b51636764990b7919155a6e03, type: 3}
-  m_PrefabInstance: {fileID: 5022085467934113959}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &248699828764328210
 Transform:
   m_ObjectHideFlags: 0
@@ -2326,9 +2296,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.14980544
+    y: 0.021276595
     width: 1
-    height: 0.7003891
+    height: 0.95744675
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2626,7 +2596,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.1568272, y: 6.894981, z: 0}
+  m_ChunkCullingBounds: {x: 3.1594305, y: 6.8900003, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 2
@@ -2904,17 +2874,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5098504905097600670, guid: 5963685b51636764990b7919155a6e03, type: 3}
   m_PrefabInstance: {fileID: 5022085467934113959}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &248699829003283057 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5098504905076615894, guid: 5963685b51636764990b7919155a6e03, type: 3}
-  m_PrefabInstance: {fileID: 5022085467934113959}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &248699829024481300
 Transform:
   m_ObjectHideFlags: 0
@@ -3123,17 +3082,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &248699829137014421 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5098504904942829106, guid: 5963685b51636764990b7919155a6e03, type: 3}
-  m_PrefabInstance: {fileID: 5022085467934113959}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &248699829171997669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4001,17 +3949,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 248699828804016693}
---- !u!114 &248699829330386766 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5098504904883658729, guid: 5963685b51636764990b7919155a6e03, type: 3}
-  m_PrefabInstance: {fileID: 5022085467934113959}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &248699829371500588 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5098504904708601995, guid: 5963685b51636764990b7919155a6e03, type: 3}
@@ -4624,7 +4561,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.2250001, y: 6.4346704, z: 0}
+  m_ChunkCullingBounds: {x: 3.2295153, y: 6.4300003, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 1
@@ -5341,17 +5278,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5098504904471219590, guid: 5963685b51636764990b7919155a6e03, type: 3}
   m_PrefabInstance: {fileID: 5022085467934113959}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &248699829739849382 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5098504904469988865, guid: 5963685b51636764990b7919155a6e03, type: 3}
-  m_PrefabInstance: {fileID: 5022085467934113959}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &248699829764210123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7112,6 +7038,7 @@ MonoBehaviour:
   isNoCombatZone: 0
   chests: {fileID: 0}
   enemies: {fileID: 248699829596960753}
+  playerTeleport: {fileID: 0}
 --- !u!82 &3482781817784541075
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8324,7 +8251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5098504904775712768, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5098504904775712769, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -8396,7 +8323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5098504904973203105, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905017333129, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive

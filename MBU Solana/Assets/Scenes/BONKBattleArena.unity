@@ -3183,66 +3183,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4912000367396938246, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
   m_PrefabInstance: {fileID: 1797068018}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1797068020 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000368753845482, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1797068021 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000366844508483, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1797068022 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000368047298976, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1797068023 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000368204684607, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1797068024 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4912000367032442267, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1797068025 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4912000367396938247, guid: b04e7c098b26f493e92b6bb0ca569373, type: 3}
-  m_PrefabInstance: {fileID: 1797068018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1800889421
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,15 +4441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e483a0570ba4340a6ac894b3a064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3482781816479680324}
-  coins: {fileID: 248699828704088381}
-  swordLevel: {fileID: 248699829330386766}
-  specialLevel: {fileID: 248699829137014421}
-  maxHealth: {fileID: 248699829003283057}
-  fishesUI: {fileID: 248699829739849382}
-  roundIndicator: {fileID: 248699828748482887}
-  panel: {fileID: 0}
-  debugger: 0
+  StartGameButton: {fileID: 0}
 --- !u!1 &248699827886117721
 GameObject:
   m_ObjectHideFlags: 0
@@ -6661,7 +6593,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.1568272, y: 6.2145224, z: 0}
+  m_ChunkCullingBounds: {x: 3.1594305, y: 6.2100005, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 2
@@ -6883,9 +6815,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.14980544
-    width: 1
-    height: 0.7003891
+    y: 0.14184397
+    width: 1.31875
+    height: 0.31914893
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -7197,7 +7129,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 2.5422502, y: 5.8199997, z: 0}
+  m_ChunkCullingBounds: {x: 2.54, y: 5.826828, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
@@ -8079,15 +8011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e483a0570ba4340a6ac894b3a064a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3482781816479680324}
-  coins: {fileID: 1797068024}
-  swordLevel: {fileID: 1797068021}
-  specialLevel: {fileID: 1797068020}
-  maxHealth: {fileID: 1797068022}
-  fishesUI: {fileID: 1797068023}
-  roundIndicator: {fileID: 248699828748482887}
-  panel: {fileID: 1797068025}
-  debugger: 0
+  StartGameButton: {fileID: 0}
 --- !u!222 &248699828765284569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8251,9 +8175,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.14980544
-    width: 1
-    height: 0.7003891
+    y: 0.14184397
+    width: 1.31875
+    height: 0.31914893
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8551,7 +8475,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.1568272, y: 6.894981, z: 0}
+  m_ChunkCullingBounds: {x: 3.1594305, y: 6.8900003, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 2
@@ -9910,7 +9834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &248699829114859154
 Transform:
   m_ObjectHideFlags: 0
@@ -13664,7 +13588,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.2250001, y: 6.4346704, z: 0}
+  m_ChunkCullingBounds: {x: 3.2295153, y: 6.4300003, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 1
@@ -18022,6 +17946,7 @@ MonoBehaviour:
   isNoCombatZone: 0
   chests: {fileID: 0}
   enemies: {fileID: 0}
+  playerTeleport: {fileID: 0}
 --- !u!82 &3482781817784541075
 AudioSource:
   m_ObjectHideFlags: 0

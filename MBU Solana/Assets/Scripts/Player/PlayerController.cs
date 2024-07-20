@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
     }
     public void Move(InputAction.CallbackContext context)
     {
-#if UNITY_STANDALONE && UNITY_WEBGL
+#if UNITY_STANDALONE || UNITY_WEBGL
         moveDirection = context.ReadValue<Vector2>();
 #endif
     }
