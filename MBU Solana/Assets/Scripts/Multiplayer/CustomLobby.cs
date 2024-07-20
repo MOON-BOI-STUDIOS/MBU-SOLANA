@@ -17,7 +17,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
 
     public List<RoomInfo> roomListings;
     public TMP_Dropdown regionDropdown;
-    private string[] regions = { "us", "eu", "asia", "jp", "au", "sa", "in" };
+    private string[] regions = { "eu", "us", "asia", "jp", "au", "sa", "in" };
     public Button rlp;
 
     public string currentRegion;
@@ -199,16 +199,30 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     }
 
     public void Disconnect()
+{
+    // Leave the room
+    PhotonNetwork.LeaveRoom();
+    
+    // Check if the player is the last one in the room
+    if (PhotonNetwork.CurrentRoom.PlayerCount <= 1)
     {
-        PhotonNetwork.LeaveRoom();
+        // If this is the last player in the room, destroy the room object
         Destroy(PhotonRoom.room.gameObject);
     }
+}
 
     public override void OnLeftRoom()
     {
         Debug.Log("Left room successfully");
 
+        SceneManager.LoadScene("MultiplayerLobby");
+
         // Reload the lobby scene after leaving the room
-        SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
+        //SceneManager.LoadScene(MultiplayerSettings.multiplayerSettings.menuScene);
+    }
+
+    public void BackToArcade()
+    {
+        SceneManager.LoadScene("BonkArcade");
     }
 }

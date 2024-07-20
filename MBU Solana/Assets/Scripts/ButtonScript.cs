@@ -10,6 +10,11 @@ public class ButtonScript : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
         }
     }
     private GameObject UIParent;
@@ -18,11 +23,22 @@ public class ButtonScript : MonoBehaviour
     public void SwitchParent()
     {
         UIParent = GameObject.Find("InventoryButton");
-        if(UIParent != null)
+        if (UIParent != null)
         {
-            InventoryToggle.instance.InevtoryParent.SetActive(true);
-            InventoryToggle.instance.InevtoryParent.transform.parent = UIParent.transform;
-            
+            Debug.Log("InventoryButton found");
+            if (InventoryToggle.instance != null && InventoryToggle.instance.InevtoryParent != null)
+            {
+                InventoryToggle.instance.InevtoryParent.SetActive(true);
+                InventoryToggle.instance.InevtoryParent.transform.parent = UIParent.transform;
+            }
+            else
+            {
+                Debug.LogError("InventoryToggle.instance or InventoryToggle.instance.InevtoryParent is null");
+            }
+        }
+        else
+        {
+            Debug.LogError("InventoryButton not found");
         }
     }
     public void SetSellingItems(bool value)
