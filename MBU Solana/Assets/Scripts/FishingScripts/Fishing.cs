@@ -22,7 +22,7 @@ public class Fishing : MonoBehaviour
     public TextMeshProUGUI fishesText;
 
     private AudioSource audioS;
-    public AudioClip select, reject, fishCaughtAudio;
+    public AudioClip select, fishMissedAudio, fishCaughtAudio;
 
     public bool buttonPressed;
     public bool finished;
@@ -253,7 +253,7 @@ public class Fishing : MonoBehaviour
             }
             //make all the images of the fish to unfilled
             unfillFishUI();
-            audioS.PlayOneShot(reject);
+            audioS.PlayOneShot(fishMissedAudio);
             greenAreaScale.x = greenscale[0];
             fishMarkerCounter = -1;
             prevfishMarkerCounter = -1;

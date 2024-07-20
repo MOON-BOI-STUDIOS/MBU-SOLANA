@@ -13892,8 +13892,8 @@ MonoBehaviour:
   fishButton: {fileID: 1582099035}
   fishesText: {fileID: 550578020}
   select: {fileID: 8300000, guid: dd9b9fb4f14b1444daf182be9c72af99, type: 3}
-  reject: {fileID: 8300000, guid: 0983d01113ae213408052804ce26a40f, type: 3}
-  fishCaughtAudio: {fileID: 0}
+  fishMissedAudio: {fileID: 8300000, guid: 78207a9de5d7248429a0594736bfa1fc, type: 3}
+  fishCaughtAudio: {fileID: 8300000, guid: 46e61fdaffe681e46a214bade76a5965, type: 3}
   buttonPressed: 0
   finished: 0
   fishingDone: 0
