@@ -2834,7 +2834,7 @@ MonoBehaviour:
   LoadGamebtn: {fileID: 870493724}
   newGamebtn: {fileID: 1728244064}
   VidPlayer: {fileID: 697768433}
-  dreStartAnimationUrl: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Dre_Start_Animation.mp4
+  dreStartAnimationUrl: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/main/StreamingAssets/Dre_Start_Animation.mp4
 --- !u!82 &697768432
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2954,7 +2954,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Dre_Idle_Animation.mp4
+  m_Url: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/main/StreamingAssets/Dre_Idle_Animation.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -6814,7 +6814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1939965097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7749,7 +7749,7 @@ PrefabInstance:
       objectReference: {fileID: 1479888381}
     - target: {fileID: 6210402977276246405, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: nextClipUrl
-      value: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Moon_Boi_Intro.mp4
+      value: https://raw.githubusercontent.com/https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/main/StreamingAssets/Moon_Boi_Intro.mp4
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246405, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: UniverseLogo
@@ -7813,7 +7813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_Url
-      value: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Moon_Boi_Studio_Intro.mp4
+      value: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/main/StreamingAssets/Moon_Boi_Studio_Intro.mp4
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_Looping

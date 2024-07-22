@@ -13,7 +13,7 @@ public class VideoScript : MonoBehaviour
     public bool isFinished = false;
     public GameObject music;
 
-    [SerializeField] string videoFileName;
+    //[SerializeField] string videoFileName;
     [SerializeField] string videoFileUrl;
    
 
