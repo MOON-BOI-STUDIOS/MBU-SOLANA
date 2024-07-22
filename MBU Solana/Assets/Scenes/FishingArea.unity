@@ -3936,6 +3936,7 @@ MonoBehaviour:
   isFinished: 0
   music: {fileID: 1413088173}
   videoFileName: WhatsApp Video 2024-02-21 at 20.55.56_e687019a.mp4
+  videoFileUrl: 'https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Fishing_area_video.mp4 '
 --- !u!114 &642462191
 MonoBehaviour:
   m_ObjectHideFlags: 0

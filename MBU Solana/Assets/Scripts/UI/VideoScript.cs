@@ -14,6 +14,7 @@ public class VideoScript : MonoBehaviour
     public GameObject music;
 
     [SerializeField] string videoFileName;
+    [SerializeField] string videoFileUrl;
    
 
     public static VideoScript instance;
@@ -56,13 +57,23 @@ public class VideoScript : MonoBehaviour
 
     public void PlayVideo()
     {
+    // #if !UNITY_STANDALONE && !UNITY_WEBGL
+    //     if (myVideoPlayer)
+    //     {
+    //         string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, videoFileName);
+    //         Debug.Log(videoFileName);
+    //         myVideoPlayer.url = videoPath;
+    //         myVideoPlayer.Play();
+    //     }
+    // #endif
+
+    // #if UNITY_STANDALONE || UNITY_WEBGL
         if (myVideoPlayer)
         {
-            string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, videoFileName);
-            Debug.Log(videoFileName);
-            myVideoPlayer.url = videoPath;
+            myVideoPlayer.url = videoFileUrl;
             myVideoPlayer.Play();
         }
+    //#endif
     }
 
     public void videoFinished(VideoPlayer vp )

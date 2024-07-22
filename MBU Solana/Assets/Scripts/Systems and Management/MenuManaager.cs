@@ -29,7 +29,7 @@ public class MenuManaager : MonoBehaviour
 
     //VidPlayer Dre animation
     public VideoPlayer VidPlayer;
-    [SerializeField] private VideoClip dreStartAnimation;
+    [SerializeField] string dreStartAnimationUrl;
 
     public static MenuManaager instance;
 
@@ -78,7 +78,7 @@ public class MenuManaager : MonoBehaviour
         {
 #if UNITY_STANDALONE || UNITY_WEBGL
             rawImage.SetActive(true);
-            runGame.SetActive(true);
+            //runGame.SetActive(true);
             
 #endif
             //StartCoroutine(loadMenu());
@@ -94,7 +94,7 @@ public class MenuManaager : MonoBehaviour
             startButton.SetActive(true);
 #if UNITY_STANDALONE || UNITY_WEBGL
             rawImage.SetActive(false);
-            runGame.SetActive(false);
+            //runGame.SetActive(false);
 #endif
             Time.timeScale = 1;
 
@@ -162,7 +162,7 @@ public class MenuManaager : MonoBehaviour
     void startMenuAnimationSound()
     {
         //DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
-        VidPlayer.clip = dreStartAnimation;
+        VidPlayer.url = dreStartAnimationUrl;
         VidPlayer.loopPointReached += VidPlayer_loopPointReached;
         VidPlayer.isLooping.Equals(false);
         VidPlayer.Play();

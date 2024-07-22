@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &53877636
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2834,7 +2834,7 @@ MonoBehaviour:
   LoadGamebtn: {fileID: 870493724}
   newGamebtn: {fileID: 1728244064}
   VidPlayer: {fileID: 697768433}
-  dreStartAnimation: {fileID: 32900000, guid: c8b246af891f29e408c196cd334d94c7, type: 3}
+  dreStartAnimationUrl: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Dre_Start_Animation.mp4
 --- !u!82 &697768432
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2949,19 +2949,19 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 0
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: 
+  m_Url: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Dre_Idle_Animation.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
-  m_WaitForFirstFrame: 1
+  m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
 --- !u!1 &746704299
@@ -3366,7 +3366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 978.36, y: -450}
+  m_AnchoredPosition: {x: 978.36, y: -254}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &860049179
@@ -6814,7 +6814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1939965097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7736,6 +7736,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 32900000, guid: 1cf63f9f814a7d64fa8dc9a756540370, type: 3}
     - target: {fileID: 6210402977276246405, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
+      propertyPath: rawImage
+      value: 
+      objectReference: {fileID: 1939965096}
+    - target: {fileID: 6210402977276246405, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -7743,6 +7747,10 @@ PrefabInstance:
       propertyPath: StudiosLogo
       value: 
       objectReference: {fileID: 1479888381}
+    - target: {fileID: 6210402977276246405, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
+      propertyPath: nextClipUrl
+      value: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Moon_Boi_Intro.mp4
+      objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246405, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: UniverseLogo
       value: 
@@ -7804,6 +7812,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
+      propertyPath: m_Url
+      value: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/game-intro1/Moon_Boi_Studio_Intro.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_Looping
       value: 0
       objectReference: {fileID: 0}
@@ -7817,7 +7829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6210402977276246427, guid: 3a3b395af716bec4c8a0ebc355cf95e0, type: 3}
       propertyPath: m_TargetTexture
