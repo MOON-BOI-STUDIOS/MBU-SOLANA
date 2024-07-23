@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - myAvatar: {fileID: 9029094404681564984, guid: 9b36fcacc19ce4a39bed1fb01544d33c, type: 3}
+  - myAvatar: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
