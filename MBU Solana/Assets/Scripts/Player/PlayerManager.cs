@@ -122,7 +122,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         
 
         //triggers the poweup through the animator
-        if(other.tag == "PowerUp" &&!isDead)
+        if(other.tag == "PowerUp" && !isDead)
         {
             Destroy(other.gameObject);
             StartCoroutine(_animator.powerUp());
