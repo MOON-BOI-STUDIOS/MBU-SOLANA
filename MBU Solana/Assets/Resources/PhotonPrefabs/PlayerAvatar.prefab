@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f088a926728075c4cad9c470a3b97ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 9029094404681564992}
+  _manager: {fileID: 0}
   lastDirection: {x: 0, y: 0}
   _heroAnimator: {fileID: 9029094403243350933}
   EndUI: {fileID: 0}
@@ -1695,7 +1695,6 @@ GameObject:
   - component: {fileID: 9029094404681564996}
   - component: {fileID: 9029094404681564999}
   - component: {fileID: 9029094404681564998}
-  - component: {fileID: 9029094404681564992}
   - component: {fileID: -1226174660640025095}
   - component: {fileID: 9029094404681564995}
   - component: {fileID: 9029094404681564997}
@@ -1781,36 +1780,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9029094404681564992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9029094404681564984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc1fd860ed2a36d4f98c5e27d54c8e86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _controller: {fileID: 9029094404681564995}
-  _animator: {fileID: 9029094403243350930}
-  _combat: {fileID: 9029094404681564997}
-  maxHealth: 500
-  health: 500
-  coinsText: {fileID: 0}
-  healthIndicator: {fileID: 0}
-  healthNumber: {fileID: 0}
-  fadeOut: {fileID: 0}
-  coinSound1: {fileID: 0}
-  coinSound2: {fileID: 0}
-  attackButton: {fileID: 0}
-  enterButton: {fileID: 0}
-  fishButton: {fileID: 0}
-  ExitButton: {fileID: 0}
-  startLocation: []
-  isPoweredUp: 0
-  enemies: {fileID: 0}
 --- !u!114 &-1226174660640025095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,13 +1792,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f65363b2bc1e22243810cc798ee4d799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _controller: {fileID: 0}
-  _animator: {fileID: 0}
-  _combat: {fileID: 0}
-  health: 0
+  _controller: {fileID: 9029094404681564995}
+  _animator: {fileID: 9029094403243350930}
+  _combat: {fileID: 9029094404681564997}
+  health: 500
   fadeOut: {fileID: 0}
   photonView: {fileID: 0}
-  PlayerUiPrefab: {fileID: 0}
+  PlayerUiPrefab: {fileID: 148239963541485328, guid: 1c28d52610fee4c84948b246274e9b07, type: 3}
 --- !u!114 &9029094404681564995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,8 +2106,8 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 3823970729307691778}
   - {fileID: -1226174660640025095}
+  - {fileID: 3823970729307691778}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
