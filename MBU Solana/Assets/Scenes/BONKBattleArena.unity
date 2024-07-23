@@ -6815,9 +6815,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.13066202
+    y: 0.08752026
     width: 1.3108233
-    height: 0.31358886
+    height: 0.2917342
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8175,9 +8175,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.13066202
+    y: 0.08752026
     width: 1.3108233
-    height: 0.31358886
+    height: 0.2917342
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -9834,7 +9834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &248699829114859154
 Transform:
   m_ObjectHideFlags: 0
@@ -17527,7 +17527,6 @@ MonoBehaviour:
   fishButton: {fileID: 0}
   ExitButton: {fileID: 0}
   startLocation: []
-  isPoweredUp: 0
   enemies: {fileID: 0}
 --- !u!114 &3482781816479680323
 MonoBehaviour:
@@ -17915,7 +17914,12 @@ MonoBehaviour:
   _manager: {fileID: 3482781816479680320}
   lastDirection: {x: 0, y: 0}
   _heroAnimator: {fileID: 3482781817784541077}
+  dreSprite: {fileID: 0}
   EndUI: {fileID: 248699827893075081}
+  initialMaterial: {fileID: 0}
+  redMaterial: {fileID: 0}
+  yellowMaterial: {fileID: 0}
+  orangeMaterial: {fileID: 0}
   northStar: {fileID: 8300000, guid: 69c524f602ff34f429145fe023619e89, type: 3}
   orionsBelt: {fileID: 8300000, guid: c7da3ac79a24d9948a1f36cf67ad51b4, type: 3}
   deathSound: {fileID: 8300000, guid: 3851f2afed9fa87479b677ddba632ca0, type: 3}

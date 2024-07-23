@@ -12164,7 +12164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
@@ -15078,7 +15078,6 @@ MonoBehaviour:
   fishButton: {fileID: 0}
   ExitButton: {fileID: 0}
   startLocation: []
-  isPoweredUp: 0
   enemies: {fileID: 0}
 --- !u!114 &3685875997906252230
 MonoBehaviour:
@@ -15672,7 +15671,12 @@ MonoBehaviour:
   _manager: {fileID: 3685875997906252229}
   lastDirection: {x: 0, y: 0}
   _heroAnimator: {fileID: 3685875999345322256}
+  dreSprite: {fileID: 0}
   EndUI: {fileID: 0}
+  initialMaterial: {fileID: 0}
+  redMaterial: {fileID: 0}
+  yellowMaterial: {fileID: 0}
+  orangeMaterial: {fileID: 0}
   northStar: {fileID: 0}
   orionsBelt: {fileID: 0}
   deathSound: {fileID: 0}
