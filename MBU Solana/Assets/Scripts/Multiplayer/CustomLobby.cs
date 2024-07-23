@@ -24,7 +24,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     private float lastUpdateTime = 0f;
     public float updateInterval = 1f; // Time interval in seconds
     [SerializeField]
-    GameObject loadingPanel, backButton;
+    GameObject loadingPanel, backButton, reconnectButton, connectPanel;
 
     private Coroutine retryCoroutine;
 
@@ -44,7 +44,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         RemoveRoomListing();
         regiontxt.text = "Current Region is: " + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion;
 
-        ConnectToPhoton();
+        connectPanel.SetActive(true);
     }
 
     
