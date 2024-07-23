@@ -331,7 +331,7 @@ MonoBehaviour:
   delayStart: 0
   maxPlayers: 2
   menuScene: 0
-  mulitplayerScene: 1
+  mulitplayerScene: 9
 --- !u!4 &144036302
 Transform:
   m_ObjectHideFlags: 0
@@ -1777,7 +1777,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents: []
-  sceneViewId: 999
+  sceneViewId: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!1 &657477729
