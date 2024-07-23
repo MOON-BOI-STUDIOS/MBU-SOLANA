@@ -1784,9 +1784,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.10452962
-    width: 0.5920444
-    height: 0.6271777
+    y: 0.13066202
+    width: 1.3108233
+    height: 0.31358886
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2304,9 +2304,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.10452962
-    width: 0.5920444
-    height: 0.6271777
+    y: 0.13066202
+    width: 1.3108233
+    height: 0.31358886
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8060,7 +8060,7 @@ PrefabInstance:
     - target: {fileID: 5098504904383035027, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 248699827886117722}
     - target: {fileID: 5098504904383035027, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -8068,6 +8068,10 @@ PrefabInstance:
     - target: {fileID: 5098504904383035027, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098504904383035027, guid: 5963685b51636764990b7919155a6e03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: upgradeSword
       objectReference: {fileID: 0}
     - target: {fileID: 5098504904383035027, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -8564,7 +8568,7 @@ PrefabInstance:
     - target: {fileID: 5098504905756167377, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 248699827886117722}
     - target: {fileID: 5098504905756167377, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -8572,6 +8576,10 @@ PrefabInstance:
     - target: {fileID: 5098504905756167377, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098504905756167377, guid: 5963685b51636764990b7919155a6e03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: upgradeHealth
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905756167377, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -8600,7 +8608,7 @@ PrefabInstance:
     - target: {fileID: 5098504906267409619, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 248699827886117722}
     - target: {fileID: 5098504906267409619, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -8608,6 +8616,10 @@ PrefabInstance:
     - target: {fileID: 5098504906267409619, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098504906267409619, guid: 5963685b51636764990b7919155a6e03, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: upgradeSpecial
       objectReference: {fileID: 0}
     - target: {fileID: 5098504906267409619, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
