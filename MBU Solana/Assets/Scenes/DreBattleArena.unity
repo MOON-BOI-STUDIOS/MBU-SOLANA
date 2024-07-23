@@ -990,8 +990,8 @@ MonoBehaviour:
   swordLevel: {fileID: 5022085467934113962}
   specialLevel: {fileID: 5022085467934113961}
   maxHealth: {fileID: 5022085467934113960}
-  fishesUI: {fileID: 0}
-  roundIndicator: {fileID: 0}
+  fishesUI: {fileID: 5022085467934113965}
+  roundIndicator: {fileID: 5022085467934113964}
   panel: {fileID: 0}
   debugger: 0
 --- !u!1 &248699827893075081 stripped
@@ -1784,9 +1784,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.13066202
-    width: 1.3108233
-    height: 0.31358886
+    y: 0.10452962
+    width: 0.5920444
+    height: 0.6271777
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -2304,9 +2304,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.13066202
-    width: 1.3108233
-    height: 0.31358886
+    y: 0.10452962
+    width: 0.5920444
+    height: 0.6271777
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8047,7 +8047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5098504904252570597, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5098504904383035027, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -8339,7 +8339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905017333129, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905097600670, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
@@ -8347,7 +8347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905197117972, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5098504905197117974, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -8727,6 +8727,28 @@ MonoBehaviour:
 --- !u!114 &5022085467934113963 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5098504905371865498, guid: 5963685b51636764990b7919155a6e03, type: 3}
+  m_PrefabInstance: {fileID: 5022085467934113959}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5022085467934113964 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5098504905461447136, guid: 5963685b51636764990b7919155a6e03, type: 3}
+  m_PrefabInstance: {fileID: 5022085467934113959}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5022085467934113965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5098504904469988865, guid: 5963685b51636764990b7919155a6e03, type: 3}
   m_PrefabInstance: {fileID: 5022085467934113959}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
