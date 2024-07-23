@@ -20,9 +20,11 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public Button rlp;
     public string currentRegion;
     public GameObject lobbyGo, roomGo, startGame;
-    public TextMeshProUGUI regiontxt, regiontext1, textroom;
+    public TextMeshProUGUI regiontxt, textroom;
     private float lastUpdateTime = 0f;
     public float updateInterval = 1f; // Time interval in seconds
+    [SerializeField]
+    GameObject loadingPanel, backButton;
 
     private void Awake()
     {
@@ -37,17 +39,23 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.IsConnected)
         {
             PhotonNetwork.ConnectUsingSettings();
+            loadingPanel.SetActive(true);
         }
         roomListings = new List<RoomInfo>();
         regionDropdown.ClearOptions();
         regionDropdown.AddOptions(new List<string>(regions));
         RemoveRoomListing();
         regiontxt.text = "Current Region is: " + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion;
-        regiontext1.text = "Current Region is: " + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion;
+    }
+
+    public override void OnConnected()
+    {
+        Debug.Log("Attempting to connect to Photon Master Server");
     }
 
     public override void OnConnectedToMaster()
     {
+        loadingPanel.SetActive(false);
         Debug.Log("Player has connected to Photon Master Server");
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = "Player" + Random.Range(0, 1000);
@@ -63,7 +71,6 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion = selectedRegion;
     currentRegion = selectedRegion;
     regiontxt.text = "Current Region is: " + currentRegion;
-    regiontext1.text = "Current Region is: " + currentRegion;
 
     if (!PhotonNetwork.IsConnected)
         PhotonNetwork.ConnectUsingSettings();
@@ -160,6 +167,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
             MaxPlayers = (byte)MultiplayerSettings.multiplayerSettings.maxPlayers
         };
         PhotonNetwork.CreateRoom(roomName, roomOps);
+        backButton.SetActive(false);
     }
     else
     {
@@ -227,9 +235,15 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LeaveRoom();
     }
-    
-    SceneManager.LoadScene("BonkArcade");
 
+    // Destroy PhotonRoom instance before loading the new scene
+    if (PhotonRoom.room != null)
+    {
+        Destroy(PhotonRoom.room.gameObject);
+        PhotonRoom.room = null; // Clear the static reference
+    }
+
+    SceneManager.LoadScene("BonkArcade");
     PhotonNetwork.Disconnect();
 }
 }
