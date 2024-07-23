@@ -16,11 +16,10 @@ public class MenuManaager : MonoBehaviour
     public AudioClip transitionOutSound;
     public AudioSource musicPlayer;
     bool isLevelLoading = false;
-    public GameObject WebGlVideo;
 
     public int number = 0;
 
-    public GameObject moonboiStudioLogo, moonboiUniverseLogo, rawImage, runGame;
+    public GameObject rawImage;
 
     public int gameNum = 0;
 
@@ -77,7 +76,7 @@ public class MenuManaager : MonoBehaviour
         if (number == 0)
         {
 #if UNITY_STANDALONE || UNITY_WEBGL
-            rawImage.SetActive(true);
+            //rawImage.SetActive(true);
             //runGame.SetActive(true);
             
 #endif
@@ -88,12 +87,12 @@ public class MenuManaager : MonoBehaviour
         else if (number == 1)
         {
 
-            moonboiStudioLogo.SetActive(false);
-            moonboiUniverseLogo.SetActive(false);
+            //moonboiStudioLogo.SetActive(false);
+            //moonboiUniverseLogo.SetActive(false);
             Camera.main.transform.GetComponent<AudioSource>().enabled = true;
             startButton.SetActive(true);
 #if UNITY_STANDALONE || UNITY_WEBGL
-            rawImage.SetActive(false);
+            //rawImage.SetActive(false);
             //runGame.SetActive(false);
 #endif
             Time.timeScale = 1;
@@ -204,7 +203,7 @@ public class MenuManaager : MonoBehaviour
 
         yield return new WaitForSeconds(4f);
 
-        moonboiStudioLogo.SetActive(false);
+        //.SetActive(false);
         moonboiUniverseLogo.SetActive(true);
         moonboiStudioLogo.SetActive(false);
         yield return new WaitForSeconds(1.2f);

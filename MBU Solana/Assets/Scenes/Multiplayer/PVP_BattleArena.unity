@@ -1705,7 +1705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142, y: 20}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 689.327, y: 257.271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199089301
@@ -4371,11 +4371,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2701667282038435722, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1488.6
+      value: -1480
       objectReference: {fileID: 0}
     - target: {fileID: 2701667282038435722, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -141
+      value: -108.61
       objectReference: {fileID: 0}
     - target: {fileID: 2701667282038435722, guid: b7042534895e2704f9684a3087d84569, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9007,7 +9007,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.2250001, y: 6.034401, z: 0}
+  m_ChunkCullingBounds: {x: 3.2295153, y: 6.03, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 2
@@ -9283,7 +9283,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.2250001, y: 6.034401, z: 0}
+  m_ChunkCullingBounds: {x: 3.2295153, y: 6.03, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
@@ -10252,7 +10252,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 3.2018497, y: 5.56, z: 0}
+  m_ChunkCullingBounds: {x: 3.1999998, y: 5.5693583, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 2
@@ -14998,7 +14998,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.82500005, y: 4.21, z: 0}
+  m_ChunkCullingBounds: {x: 0.82500005, y: 4.214073, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 1

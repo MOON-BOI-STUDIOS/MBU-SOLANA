@@ -68,7 +68,7 @@ public class Pause : MonoBehaviour
     {
 
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         //Cursor.visible = false;
         //Cursor.lockState = CursorLockMode.None;
         GameIsPaused = false;
@@ -81,7 +81,7 @@ public class Pause : MonoBehaviour
     public void Pause_()
     {
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         //Cursor.visible = true;
         GameIsPaused = true;
         //Cursor.lockState = CursorLockMode.None;

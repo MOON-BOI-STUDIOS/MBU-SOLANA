@@ -58,9 +58,26 @@ public class GameSetUP : MonoBehaviour
     /// </summary>
     public void DisconnectPlayer()
     {
+        if (PhotonNetwork.InRoom)
+    {
         PhotonNetwork.LeaveRoom();
-         Destroy(PhotonRoom.room.gameObject);
-        pause.Resume();
+        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.PlayerCount <= 1)
+        {
+            // If this is the last player in the room, destroy the room object
+            if (PhotonRoom.room != null)
+            {
+                Destroy(PhotonRoom.room.gameObject);
+            }
+        }
+    }
+    if (PhotonNetwork.IsConnected)
+            PhotonNetwork.Disconnect();
+
+        SceneManager.LoadScene("MultiplayerLobby");
+
+        
+        if (!PhotonNetwork.IsConnected)
+            PhotonNetwork.ConnectUsingSettings();
     }
 
     /// <summary>

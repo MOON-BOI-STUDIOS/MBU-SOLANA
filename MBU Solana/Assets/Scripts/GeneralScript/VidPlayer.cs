@@ -10,10 +10,10 @@ public class VidPlayer : MonoBehaviour
     private VideoPlayer videoPlayer;
     //[SerializeField]
     //VideoClip nextClip;
-    [SerializeField]
-    private GameObject StudiosLogo;
-    [SerializeField]
-    private GameObject UniverseLogo;
+    // [SerializeField]
+    // private GameObject StudiosLogo;
+    // [SerializeField]
+    // private GameObject UniverseLogo;
     [SerializeField]
     GameObject rawImage;
 
@@ -22,6 +22,7 @@ public class VidPlayer : MonoBehaviour
 
     private void Start()
     {
+        rawImage.SetActive(true);
         videoPlayer = GetComponent<VideoPlayer>();
         videoPlayer.Play();
         videoPlayer.loopPointReached += VideoPlayer_loopPointReached;
@@ -52,12 +53,12 @@ public class VidPlayer : MonoBehaviour
         if (source.url == nextClipUrl)
         {
             rawImage.SetActive(false);
-            UniverseLogo.SetActive(false);
+            //UniverseLogo.SetActive(false);
         }
         else
         {
-            StudiosLogo.SetActive(false);
-            UniverseLogo.SetActive(true);
+            //StudiosLogo.SetActive(false);
+            //UniverseLogo.SetActive(true);
             source.url = nextClipUrl;
             videoPlayer.loopPointReached += VideoPlayer_loopPointReached;
         }

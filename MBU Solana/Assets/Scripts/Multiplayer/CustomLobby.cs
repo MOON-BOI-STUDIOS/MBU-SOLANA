@@ -26,6 +26,8 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     [SerializeField]
     GameObject loadingPanel, backButton;
 
+    private Coroutine retryCoroutine;
+
     private void Awake()
     {
         if (lobby == null)
@@ -36,16 +38,59 @@ public class CustomLobby : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        if (!PhotonNetwork.IsConnected)
-        {
-            PhotonNetwork.ConnectUsingSettings();
-            loadingPanel.SetActive(true);
-        }
         roomListings = new List<RoomInfo>();
         regionDropdown.ClearOptions();
         regionDropdown.AddOptions(new List<string>(regions));
         RemoveRoomListing();
         regiontxt.text = "Current Region is: " + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion;
+
+        ConnectToPhoton();
+    }
+
+    
+    public void RetryConnection()
+    {
+    // Stop the previous coroutine if it's running
+    if (retryCoroutine != null)
+    {
+        StopCoroutine(retryCoroutine);
+        retryCoroutine = null; // Clear the reference
+    }
+
+    // Start a new coroutine for reconnection
+    retryCoroutine = StartCoroutine(DisconnectAndReconnect());
+    }
+
+    private IEnumerator DisconnectAndReconnect()
+    {
+    // Disconnect if currently connected
+    if (PhotonNetwork.IsConnected)
+    {
+        PhotonNetwork.Disconnect();
+        // Wait until the client is completely disconnected
+        while (PhotonNetwork.IsConnected)
+        {
+            yield return null;
+        }
+    }
+
+    // Attempt to reconnect
+    PhotonNetwork.ConnectUsingSettings();
+
+    // Optionally, you could wait for a bit to give time for reconnection
+    // If needed, add a delay or check for connection status
+    yield return new WaitForSeconds(1f); // Adjust the delay as necessary
+
+    retryCoroutine = null; // Clear the reference after the coroutine finishes
+    }
+
+    public void ConnectToPhoton()
+    {
+        if (!PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.ConnectUsingSettings();
+            loadingPanel.SetActive(true);
+        }
     }
 
     public override void OnConnected()
