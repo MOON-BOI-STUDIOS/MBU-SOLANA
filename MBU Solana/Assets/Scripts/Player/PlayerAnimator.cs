@@ -9,10 +9,17 @@ public class PlayerAnimator : MonoBehaviour
     private PlayerController _controller;
     public Vector2 lastDirection;
     public Animator _heroAnimator;
+    [SerializeField] SpriteRenderer dreSprite;
 
     public GameObject EndUI;
     
     Color initialColor;
+
+    [Header("Materials")]
+    public Material initialMaterial;
+    public Material redMaterial;
+    public Material yellowMaterial;
+    public Material orangeMaterial;
 
     [Header("Sounds")]
     AudioSource audioSource;
@@ -174,27 +181,70 @@ public class PlayerAnimator : MonoBehaviour
     public IEnumerator powerUp()
     {
         powerUpMuisc.enabled = true;
+        _manager.SwitchImmunity();
         //_manager.isPoweredUp = true;
         _manager._controller.enabled = false;
-       _manager._combat.enabled = false;
+        _manager._combat.enabled = false;
         _heroAnimator.SetLayerWeight(4, 1);
         _heroAnimator.SetTrigger("Drink");
-        yield return new WaitForSeconds(3f);
-        if(powerUpVolume != null)
+
+        // Change material to power-up material
+        dreSprite.material = yellowMaterial;
+
+        yield return new WaitForSeconds(1.5f);
+        
+        dreSprite.material = orangeMaterial;
+
+        yield return new WaitForSeconds(1.5f);
+
+        dreSprite.material = redMaterial;
+
+        if (powerUpVolume != null)
             powerUpVolume.SetActive(true);
+
         _heroAnimator.SetLayerWeight(4, 0);
         mainMusic.volume = 0;
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
-        GetComponent<SpriteRenderer>().color = Color.yellow;
-        yield return new WaitForSeconds(11f);
-        if(powerUpVolume != null)
+
+        yield return new WaitForSeconds(8.5f);
+
+
+        dreSprite.material = orangeMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = yellowMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = redMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = yellowMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = orangeMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = yellowMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = redMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = yellowMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = orangeMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = yellowMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = redMaterial;
+        yield return new WaitForSeconds(0.25f);
+        dreSprite.material = yellowMaterial;
+        yield return new WaitForSeconds(0.25f);
+
+        if (powerUpVolume != null)
             powerUpVolume.SetActive(false);
+
         powerUpMuisc.enabled = false;
         mainMusic.volume = 0.676f;
-        GetComponent<SpriteRenderer>().color = initialColor;
-        //_manager.isPoweredUp = false;
 
+        // Reset to initial material
+        dreSprite.material = initialMaterial;
+        //_manager.isPoweredUp = false;
+        _manager.SwitchImmunity();
     }
 
     //camera shake

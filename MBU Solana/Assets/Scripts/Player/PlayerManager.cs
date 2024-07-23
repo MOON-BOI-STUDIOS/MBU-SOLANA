@@ -30,8 +30,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
     public Transform[] startLocation;
 
-    public bool isPoweredUp = false;
-
     string curSceneName;
     public GameObject enemies;
     private GameObject[] childenemies;
@@ -87,9 +85,11 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         immunity = !immunity;
     }
 
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(!immunity && !isPoweredUp && !isDead)
+        if(!immunity && !isDead)
         {
             //takes damage from the normal void 
             if (other.tag == "enemyAttackZone")
