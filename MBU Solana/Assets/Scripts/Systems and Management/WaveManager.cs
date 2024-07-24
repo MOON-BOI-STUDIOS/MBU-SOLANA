@@ -148,7 +148,16 @@ public class WaveManager : MonoBehaviour
 
     public void kill()
     {
-        PlayerPrefs.SetInt("Coins", 20);
+        int coinNumber = PlayerPrefs.GetInt("Coins") - 50;
+        if(coinNumber >= 0)
+        {
+            PlayerPrefs.SetInt("Coins", coinNumber);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Coins", 0);
+        }
+        
         PlayerPrefs.SetInt("MaxHealth", 500);
         PlayerPrefs.SetInt("SwordPower", 0);
         PlayerPrefs.SetInt("SpecialPower", 0);
