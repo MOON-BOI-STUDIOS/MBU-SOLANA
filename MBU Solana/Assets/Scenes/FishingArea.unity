@@ -402,7 +402,7 @@ AudioSource:
   m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b2c6e1d2032bdf04aa95115f6ec7afe4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2232e40473687094a9a96c36d937ffa4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
@@ -2791,7 +2791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edd91272e5409349ae4ebb67ebf5c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSound: {fileID: 8300000, guid: e46d28d35b608934ab03f02421664072, type: 3}
+  cursorSound: {fileID: 8300000, guid: a236f72630be86847a93a2c159d2e62c, type: 3}
   aSource: {fileID: 465295456}
 --- !u!82 &465295456
 AudioSource:
@@ -3839,7 +3839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionIn: {fileID: 1479366811}
   scene: 4
-  transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
+  transitionOutSound: {fileID: 8300000, guid: 60056950ec7abde4389bde3dcad2e9a3, type: 3}
   backgroundMusic: {fileID: 1413088174}
   enemies: {fileID: 0}
 --- !u!4 &642462186
@@ -4802,7 +4802,7 @@ AudioSource:
   m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 09d1a76414129094884b39016b087898, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5380458f2ddb46546bcca6fcc2d1b513, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
@@ -10349,7 +10349,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2208561613829017617, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 09d1a76414129094884b39016b087898, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5380458f2ddb46546bcca6fcc2d1b513, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
@@ -13891,9 +13891,9 @@ MonoBehaviour:
   joltButton: {fileID: 832930720}
   fishButton: {fileID: 1582099035}
   fishesText: {fileID: 550578020}
-  select: {fileID: 8300000, guid: dd9b9fb4f14b1444daf182be9c72af99, type: 3}
-  fishMissedAudio: {fileID: 8300000, guid: 78207a9de5d7248429a0594736bfa1fc, type: 3}
-  fishCaughtAudio: {fileID: 8300000, guid: 46e61fdaffe681e46a214bade76a5965, type: 3}
+  select: {fileID: 8300000, guid: 97f74abfd26c1dc47a3bcff217fab440, type: 3}
+  fishMissedAudio: {fileID: 8300000, guid: 2925c78fc6633634c8cefca040dbc8af, type: 3}
+  fishCaughtAudio: {fileID: 8300000, guid: 607038c21230d1d4f9f752a24c68b593, type: 3}
   buttonPressed: 0
   finished: 0
   fishingDone: 0
@@ -17412,7 +17412,7 @@ MonoBehaviour:
   button: {fileID: 1262444734}
   animation: Chest2Open
   asource: {fileID: 1629247296}
-  chestOpen: {fileID: 8300000, guid: d0e5931266e674149ab719601fb72cdb, type: 3}
+  chestOpen: {fileID: 8300000, guid: 05f874d6e324bd644b8755d7da056496, type: 3}
   chestOpened: 0
   Collider: {fileID: 1618470080}
   chesto: {fileID: 21300000, guid: 076c1c6f54111ea489ce292c0af8f537, type: 3}
@@ -17684,6 +17684,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3961368043086042377, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: northStar
+      value: 
+      objectReference: {fileID: 8300000, guid: 6c89eba7a48aab149bcec33433d2cb46, type: 3}
+    - target: {fileID: 3961368043086042377, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 58f8f40ab2510044aa9d91b058b5fcbf, type: 3}
+    - target: {fileID: 3961368043086042377, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: orionsBelt
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f1d5822a49df4d4f8b47932321a9ee5, type: 3}
     - target: {fileID: 3961368043105817317, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_Name
       value: Dre
@@ -17745,6 +17757,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1792840228}
     - target: {fileID: 3961368043105817330, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: coinSound1
+      value: 
+      objectReference: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
+    - target: {fileID: 3961368043105817330, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: coinSound2
+      value: 
+      objectReference: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
+    - target: {fileID: 3961368043105817330, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: fishButton
       value: 
       objectReference: {fileID: 1920172426}
@@ -17770,6 +17790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3961368043105817334, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+    - {fileID: 3961368043086042378, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
 --- !u!1001 &4237692437458002565
 PrefabInstance:

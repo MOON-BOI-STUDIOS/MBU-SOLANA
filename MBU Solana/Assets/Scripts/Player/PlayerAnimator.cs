@@ -123,7 +123,7 @@ public class PlayerAnimator : MonoBehaviour
     //north star starts
     public void specialStart()
     {
-        _manager.SwitchImmunity();
+        _manager.SetImmunityTrue();
         audioSource.PlayOneShot(northStar);
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = false;
@@ -133,7 +133,7 @@ public class PlayerAnimator : MonoBehaviour
     //north start ends
     public void specialEnd()
     {
-        _manager.SwitchImmunity();
+        _manager.SetImmunityFalse();
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
@@ -143,7 +143,7 @@ public class PlayerAnimator : MonoBehaviour
     //orion belt starts
     public void orionsBeltStart()
     {
-        _manager.SwitchImmunity();
+        _manager.SetImmunityTrue();
         audioSource.PlayOneShot(orionsBelt);
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = false;
@@ -153,7 +153,7 @@ public class PlayerAnimator : MonoBehaviour
     //orion's belt ends
     public void orionsBeltEnd()
     {
-        _manager.SwitchImmunity();
+        _manager.SetImmunityFalse();
         _manager._combat.comboCounter = 0;
         _manager._controller.enabled = true;
         _manager._combat.enabled = true;
@@ -181,7 +181,7 @@ public class PlayerAnimator : MonoBehaviour
     public IEnumerator powerUp()
     {
         powerUpMuisc.enabled = true;
-        _manager.SwitchImmunity();
+        _manager.SetImmunityTrue();
         //_manager.isPoweredUp = true;
         _manager._controller.enabled = false;
         _manager._combat.enabled = false;
@@ -244,7 +244,7 @@ public class PlayerAnimator : MonoBehaviour
         // Reset to initial material
         dreSprite.material = initialMaterial;
         //_manager.isPoweredUp = false;
-        _manager.SwitchImmunity();
+        _manager.SetImmunityFalse();
     }
 
     //camera shake

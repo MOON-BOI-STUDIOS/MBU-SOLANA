@@ -8516,33 +8516,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &248699828821385380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3482781817784541078}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 0
-  m_SelfShadows: 1
-  m_ApplyToSortingLayers: 00000000
-  m_ShapePath:
-  - {x: -0.19000006, y: 0, z: 0}
-  - {x: -0.19000006, y: 0.6399999, z: 0}
-  - {x: 0.19000006, y: 0.6399999, z: 0}
-  - {x: 0.19000006, y: 0, z: 0}
-  m_ShapePathHash: 0
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 71106
 --- !u!4 &248699828847976451
 Transform:
   m_ObjectHideFlags: 0
@@ -8910,7 +8883,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5318438589350286803, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 9ce1298252878d14fbdd97fd8a20295a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 152d5418396660044a6c5470b3ebf168, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -10781,108 +10754,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &248699829177208230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3482781816479680312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: a992da6f74b2b2c4db8c120cdc352076, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3482781816479680323}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: Move
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 9731a2be-c2e7-415e-9555-379b3c4dad8e
-    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 580fd275-2cd3-44a8-b03d-85f1135a8d03
-    m_ActionName: Player/Look[/Mouse/delta,/Pen/delta]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a417ed24-e851-4d26-83ba-836abab308d2
-    m_ActionName: Player/Fire[/Mouse/leftButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: bee040a4-b01f-4d07-b01b-334964f15041
-    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 471be433-7a3d-4826-aa3e-1e0eff4cd94b
-    m_ActionName: UI/Submit[/Keyboard/enter]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 26d8adbc-eef1-4de1-9aec-d63bf4bd361c
-    m_ActionName: UI/Cancel[/Keyboard/escape]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4bcf9034-2735-4b96-9e30-548912fb1677
-    m_ActionName: UI/Point[/Mouse/position,/Pen/position]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 828f6757-78b3-4f75-81a9-35d8623cfc54
-    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 427c57ce-30b6-49f8-a5f2-617cc1aa9644
-    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 16135d6d-3e1d-4ad7-9153-2b00f36d9b85
-    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4d7f106a-36f8-4710-86df-3f88194aacf5
-    m_ActionName: UI/RightClick[/Mouse/rightButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 351e6f7e-c76a-4278-b74d-502095460b96
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b89d47b1-28f9-4907-914a-16f3435ecf55
-    m_ActionName: UI/TrackedDeviceOrientation
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 335c1570-e704-4762-9c03-59f9584c9439
-    m_ActionName: Player/Run[/Keyboard/shift]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 837f2329-0978-47f0-9ccd-c528c6de2b5e
-    m_ActionName: Player/Interact[/Keyboard/e]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Touch
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 248699828558509091}
 --- !u!224 &248699829196707117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14052,7 +13923,7 @@ AudioSource:
   m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5318438589350286803, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 3c612f860e63b9c45b4c3a7fc846e14b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1705735ee34c4e840826b145fd913b08, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -14163,7 +14034,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2208561613829017617, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0a2802b9c881c8b4eb5211d3bd39bd8c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1d74a48f1e40be145814e6e605b26ca3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.676
   m_Pitch: 1
@@ -14281,7 +14152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edd91272e5409349ae4ebb67ebf5c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSound: {fileID: 8300000, guid: e46d28d35b608934ab03f02421664072, type: 3}
+  cursorSound: {fileID: 8300000, guid: a236f72630be86847a93a2c159d2e62c, type: 3}
   aSource: {fileID: 248699829641253689}
 --- !u!82 &248699829641253689
 AudioSource:
@@ -14825,7 +14696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionIn: {fileID: 248699828982292025}
   scene: 0
-  transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
+  transitionOutSound: {fileID: 8300000, guid: 60056950ec7abde4389bde3dcad2e9a3, type: 3}
   backgroundMusic: {fileID: 248699829641253686}
   enemies: {fileID: 0}
 --- !u!114 &248699829710051872
@@ -17490,7 +17361,6 @@ GameObject:
   - component: {fileID: 8649694182372630270}
   - component: {fileID: 6747773275470969537}
   - component: {fileID: 248699829284429079}
-  - component: {fileID: 248699829177208230}
   - component: {fileID: 8649694182372630271}
   m_Layer: 0
   m_Name: Dre
@@ -17520,8 +17390,8 @@ MonoBehaviour:
   healthIndicator: {fileID: 248699829738622241}
   healthNumber: {fileID: 248699828092729343}
   fadeOut: {fileID: 248699827893075081}
-  coinSound1: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
-  coinSound2: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
+  coinSound1: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
+  coinSound2: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
   attackButton: {fileID: 248699829438578855}
   enterButton: {fileID: 0}
   fishButton: {fileID: 0}
@@ -17547,7 +17417,7 @@ MonoBehaviour:
   moveSpeed: 4
   runSpeed: 5
   isRunning: 0
-  inputs: {fileID: 248699829177208230}
+  inputs: {fileID: 0}
   TutorialMove: 0
 --- !u!4 &3482781816479680324
 Transform:
@@ -17920,9 +17790,9 @@ MonoBehaviour:
   redMaterial: {fileID: 0}
   yellowMaterial: {fileID: 0}
   orangeMaterial: {fileID: 0}
-  northStar: {fileID: 8300000, guid: 69c524f602ff34f429145fe023619e89, type: 3}
-  orionsBelt: {fileID: 8300000, guid: c7da3ac79a24d9948a1f36cf67ad51b4, type: 3}
-  deathSound: {fileID: 8300000, guid: 3851f2afed9fa87479b677ddba632ca0, type: 3}
+  northStar: {fileID: 8300000, guid: 6c89eba7a48aab149bcec33433d2cb46, type: 3}
+  orionsBelt: {fileID: 8300000, guid: 4f1d5822a49df4d4f8b47932321a9ee5, type: 3}
+  deathSound: {fileID: 8300000, guid: 58f8f40ab2510044aa9d91b058b5fcbf, type: 3}
   whoosh:
   - {fileID: 8300000, guid: 042c7902ef470c84689021bb0b8c1ba9, type: 3}
   - {fileID: 8300000, guid: 5c79d4f8c0809dd42bc480b58ef88d87, type: 3}
@@ -18103,7 +17973,6 @@ GameObject:
   - component: {fileID: 3482781817784541074}
   - component: {fileID: 3482781817784541075}
   - component: {fileID: 248699829450606805}
-  - component: {fileID: 248699828821385380}
   m_Layer: 0
   m_Name: Hero_Sprite
   m_TagString: Untagged

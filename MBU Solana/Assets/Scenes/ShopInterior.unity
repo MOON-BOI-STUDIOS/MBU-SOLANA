@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionIn: {fileID: 1722100523}
   scene: 0
-  transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
+  transitionOutSound: {fileID: 8300000, guid: 60056950ec7abde4389bde3dcad2e9a3, type: 3}
   backgroundMusic: {fileID: 1371857951}
   enemies: {fileID: 0}
 --- !u!4 &345792503
@@ -2358,7 +2358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edd91272e5409349ae4ebb67ebf5c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSound: {fileID: 8300000, guid: e46d28d35b608934ab03f02421664072, type: 3}
+  cursorSound: {fileID: 8300000, guid: a236f72630be86847a93a2c159d2e62c, type: 3}
   aSource: {fileID: 427241827}
 --- !u!82 &427241827
 AudioSource:
@@ -3099,6 +3099,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2095142843231530874, guid: 20f329371254c6342a8a7725b5b68f16, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 152d5418396660044a6c5470b3ebf168, type: 3}
     - target: {fileID: 2095142843231530874, guid: 20f329371254c6342a8a7725b5b68f16, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
@@ -3859,7 +3863,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2208561613829017617, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 1569e5b726ca773459cbb551637ff902, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6d77fac0dd1dd5d4e9d6a838108dec0b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
@@ -6158,9 +6162,9 @@ MonoBehaviour:
   redMaterial: {fileID: 0}
   yellowMaterial: {fileID: 0}
   orangeMaterial: {fileID: 0}
-  northStar: {fileID: 8300000, guid: 69c524f602ff34f429145fe023619e89, type: 3}
-  orionsBelt: {fileID: 8300000, guid: c7da3ac79a24d9948a1f36cf67ad51b4, type: 3}
-  deathSound: {fileID: 8300000, guid: 3851f2afed9fa87479b677ddba632ca0, type: 3}
+  northStar: {fileID: 8300000, guid: 6c89eba7a48aab149bcec33433d2cb46, type: 3}
+  orionsBelt: {fileID: 8300000, guid: 4f1d5822a49df4d4f8b47932321a9ee5, type: 3}
+  deathSound: {fileID: 8300000, guid: 58f8f40ab2510044aa9d91b058b5fcbf, type: 3}
   whoosh:
   - {fileID: 8300000, guid: 042c7902ef470c84689021bb0b8c1ba9, type: 3}
   - {fileID: 8300000, guid: 5c79d4f8c0809dd42bc480b58ef88d87, type: 3}
@@ -6265,8 +6269,8 @@ MonoBehaviour:
   healthIndicator: {fileID: 0}
   healthNumber: {fileID: 0}
   fadeOut: {fileID: 0}
-  coinSound1: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
-  coinSound2: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
+  coinSound1: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
+  coinSound2: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
   attackButton: {fileID: 0}
   enterButton: {fileID: 1164685322}
   fishButton: {fileID: 1164685322}

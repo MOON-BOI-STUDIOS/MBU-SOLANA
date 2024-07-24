@@ -80,9 +80,14 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         
     }
 
-    public void SwitchImmunity()
+    public void SetImmunityTrue()
     {
-        immunity = !immunity;
+        immunity = true;
+    }
+
+    public void SetImmunityFalse()
+    {
+        immunity = false;
     }
 
 

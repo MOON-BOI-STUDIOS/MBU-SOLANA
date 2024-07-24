@@ -674,7 +674,7 @@ MonoBehaviour:
   _pigAnimator: {fileID: 7940079623658363878}
   leftAttackSourcePoint: {fileID: 5314380312250929240}
   rightAttackSourcePoint: {fileID: 5314380313195747958}
-  attackSound: {fileID: 8300000, guid: b1f19e31255a5534d9bef4b69216191b, type: 3}
+  attackSound: {fileID: 8300000, guid: f6e993eb613e2444a8219a09a91a3f80, type: 3}
   solanaCoin: {fileID: 4614449820940051731, guid: 804d24531515de1449a4c46d64170480, type: 3}
   powerUpCan: {fileID: 45863770550064870, guid: 47ffc9977b7b7bb498f6213dfa023960, type: 3}
   projectile: {fileID: 379016790107121867, guid: 0b9fa52d16a6d8f4696a07b9715d5cd9, type: 3}

@@ -1784,9 +1784,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.08752026
-    width: 1.3108233
-    height: 0.2917342
+    y: 0.06158833
+    width: 1
+    height: 0.8752026
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -4433,7 +4433,7 @@ AudioSource:
   m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5318438589350286803, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 3c612f860e63b9c45b4c3a7fc846e14b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1705735ee34c4e840826b145fd913b08, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4544,7 +4544,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2208561613829017617, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0a2802b9c881c8b4eb5211d3bd39bd8c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1d74a48f1e40be145814e6e605b26ca3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.676
   m_Pitch: 1
@@ -4758,7 +4758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edd91272e5409349ae4ebb67ebf5c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorSound: {fileID: 8300000, guid: e46d28d35b608934ab03f02421664072, type: 3}
+  cursorSound: {fileID: 8300000, guid: a236f72630be86847a93a2c159d2e62c, type: 3}
   aSource: {fileID: 248699829641253688}
 --- !u!4 &248699829699777984
 Transform:
@@ -4919,7 +4919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionIn: {fileID: 248699828982292025}
   scene: 0
-  transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
+  transitionOutSound: {fileID: 8300000, guid: 60056950ec7abde4389bde3dcad2e9a3, type: 3}
   backgroundMusic: {fileID: 248699829641253686}
   enemies: {fileID: 0}
 --- !u!114 &248699829710051872
@@ -6092,7 +6092,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a700e6a0d24a6a64197630bf58fff4b4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5758875cd0ba4b5458acdf8ef3799a34, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.385
   m_Pitch: 1
@@ -6289,8 +6289,8 @@ MonoBehaviour:
   healthIndicator: {fileID: 248699829738622241}
   healthNumber: {fileID: 248699828092729343}
   fadeOut: {fileID: 248699827893075081}
-  coinSound1: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
-  coinSound2: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
+  coinSound1: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
+  coinSound2: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
   attackButton: {fileID: 248699829438578855}
   enterButton: {fileID: 0}
   fishButton: {fileID: 0}
@@ -6639,21 +6639,17 @@ MonoBehaviour:
   redMaterial: {fileID: 2100000, guid: f15699745ee80dd4eb974b1295dba8f2, type: 2}
   yellowMaterial: {fileID: 2100000, guid: 7d0d09db17babb44b866d1870ff2c751, type: 2}
   orangeMaterial: {fileID: 2100000, guid: dbb100518dba0fa42a1da2d192438522, type: 2}
-  northStar: {fileID: 8300000, guid: 69c524f602ff34f429145fe023619e89, type: 3}
-  orionsBelt: {fileID: 8300000, guid: c7da3ac79a24d9948a1f36cf67ad51b4, type: 3}
-  deathSound: {fileID: 8300000, guid: 3851f2afed9fa87479b677ddba632ca0, type: 3}
+  northStar: {fileID: 8300000, guid: 6c89eba7a48aab149bcec33433d2cb46, type: 3}
+  orionsBelt: {fileID: 8300000, guid: 4f1d5822a49df4d4f8b47932321a9ee5, type: 3}
+  deathSound: {fileID: 8300000, guid: 58f8f40ab2510044aa9d91b058b5fcbf, type: 3}
   whoosh:
-  - {fileID: 8300000, guid: 042c7902ef470c84689021bb0b8c1ba9, type: 3}
-  - {fileID: 8300000, guid: 5c79d4f8c0809dd42bc480b58ef88d87, type: 3}
-  - {fileID: 8300000, guid: 3717205a07177a847a378d967dcc44a9, type: 3}
-  - {fileID: 8300000, guid: 3717205a07177a847a378d967dcc44a9, type: 3}
-  - {fileID: 8300000, guid: 3717205a07177a847a378d967dcc44a9, type: 3}
-  - {fileID: 8300000, guid: 378699614c7bf40498d8d15919a4a097, type: 3}
-  - {fileID: 8300000, guid: 378699614c7bf40498d8d15919a4a097, type: 3}
-  - {fileID: 8300000, guid: 378699614c7bf40498d8d15919a4a097, type: 3}
-  - {fileID: 8300000, guid: 042c7902ef470c84689021bb0b8c1ba9, type: 3}
-  - {fileID: 8300000, guid: 5c79d4f8c0809dd42bc480b58ef88d87, type: 3}
-  - {fileID: 8300000, guid: 27ea8540477a16045b85c4aa7acc666c, type: 3}
+  - {fileID: 8300000, guid: 257cfe65193fbfb47ab636af50b8d2c7, type: 3}
+  - {fileID: 8300000, guid: 7896b448ba213f4439e8965d10cf0610, type: 3}
+  - {fileID: 8300000, guid: 2f7bdff085f7fa8429b42251765c495a, type: 3}
+  - {fileID: 8300000, guid: 85bd3eb8ab8063a4b8244f334bbf2cfd, type: 3}
+  - {fileID: 8300000, guid: c5f9bc9eeb25a8348bab546f6f841e44, type: 3}
+  - {fileID: 8300000, guid: adc4d6c2415547c4d8f93c129107e306, type: 3}
+  - {fileID: 8300000, guid: f73a5d95195246b4fa4ff9250f9b573a, type: 3}
   dreDialogues:
   - {fileID: 8300000, guid: e709734ec66947b4789de539a8111edb, type: 3}
   - {fileID: 8300000, guid: 0cc19f3370d3605439b0eeda489ea909, type: 3}
@@ -7966,6 +7962,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5098504905097600657, guid: 5963685b51636764990b7919155a6e03, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 152d5418396660044a6c5470b3ebf168, type: 3}
     - target: {fileID: 5098504905097600670, guid: 5963685b51636764990b7919155a6e03, type: 3}
       propertyPath: m_IsActive
       value: 1

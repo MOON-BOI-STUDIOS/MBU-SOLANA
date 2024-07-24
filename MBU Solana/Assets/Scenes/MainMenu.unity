@@ -2571,9 +2571,9 @@ MonoBehaviour:
   DreAnimation: {fileID: 697768427}
   startButton: {fileID: 2056222764}
   transition: {fileID: 119721454}
-  powerUpSound: {fileID: 8300000, guid: b4858726a456fae4dbdc1fa10268b0f5, type: 3}
-  startButtonSound: {fileID: 8300000, guid: 7b0006d02bb5ad3429ba06320d67c550, type: 3}
-  transitionOutSound: {fileID: 8300000, guid: 7eb56e1590695ef48b57a623ee69d483, type: 3}
+  powerUpSound: {fileID: 8300000, guid: c0e773eeea40efc49842cf3b739ca65c, type: 3}
+  startButtonSound: {fileID: 8300000, guid: b8ea862b1a82184428a8f840a55baaae, type: 3}
+  transitionOutSound: {fileID: 8300000, guid: 60056950ec7abde4389bde3dcad2e9a3, type: 3}
   musicPlayer: {fileID: 1624734551}
   number: 0
   rawImage: {fileID: 1939965096}
@@ -4947,7 +4947,7 @@ AudioSource:
   m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2208561613829017617, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 9a6cc466d8a2e154bbd89124aa82ac0e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: feed5ef5e7dee514db4cbcb7fe2e4f61, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
