@@ -1128,7 +1128,12 @@ MonoBehaviour:
   _manager: {fileID: 0}
   lastDirection: {x: 0, y: 0}
   _heroAnimator: {fileID: 9029094403243350933}
+  dreSprite: {fileID: 0}
   EndUI: {fileID: 0}
+  initialMaterial: {fileID: 0}
+  redMaterial: {fileID: 0}
+  yellowMaterial: {fileID: 0}
+  orangeMaterial: {fileID: 0}
   northStar: {fileID: 8300000, guid: 69c524f602ff34f429145fe023619e89, type: 3}
   orionsBelt: {fileID: 8300000, guid: c7da3ac79a24d9948a1f36cf67ad51b4, type: 3}
   deathSound: {fileID: 8300000, guid: 3851f2afed9fa87479b677ddba632ca0, type: 3}

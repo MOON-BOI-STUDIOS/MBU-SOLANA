@@ -159,7 +159,7 @@ public class RoundManager : MonoBehaviourPunCallbacks
             photonView.RPC("OpenForPlayerChoice", RpcTarget.All);
         }
         PhaseStart = true;
-        gameDuration = 10f;
+        gameDuration = 20f;
         time.color = Color.green;
         isCoolDown = false;
 
@@ -263,12 +263,14 @@ public class RoundManager : MonoBehaviourPunCallbacks
     [PunRPC]
     void CloseForPlayerChoice()
     {
+        playerCanvases[PhotonNetwork.LocalPlayer.ActorNumber].DisableSkipButton();
+        
         // Disable UI input with Buttons
         PhaseStart = false;
-        gameDuration = 10f;
+        gameDuration = 5f;
         time.color = Color.red;
         isCoolDown = true;
-
+        
         // Start Time
         float masterStartTime = (float)PhotonNetwork.Time;
         StartGameTimer(masterStartTime);

@@ -180,6 +180,8 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         }
     }
 
+
+
     public void ListRoom(RoomInfo room)
     {
         if (room.IsOpen && room.IsVisible)
@@ -213,12 +215,19 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         };
         PhotonNetwork.CreateRoom(roomName, roomOps);
         backButton.SetActive(false);
+        reconnectButton.SetActive(false);
     }
     else
     {
         Debug.LogError("Client is not connected and ready to create a room.");
     }
 }
+
+    public override void OnJoinedRoom()
+    {
+        backButton.SetActive(false);
+        reconnectButton.SetActive(false);
+    }
 
 
     public override void OnCreateRoomFailed(short returnCode, string message)
