@@ -19,6 +19,6 @@ MonoBehaviour:
   decreaseDamagePercent: 0
   increaseDamagePercent: 0
   healingPower: 0
-  Block: 500
+  Block: 250
   ID_SpecialAction: 201
   cardType: 2

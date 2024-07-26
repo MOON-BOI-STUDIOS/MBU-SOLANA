@@ -1,10 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Video;
-
 
 public class MenuManaager : MonoBehaviour
 {
@@ -18,20 +16,15 @@ public class MenuManaager : MonoBehaviour
     bool isLevelLoading = false;
 
     public int number = 0;
-
-    public GameObject rawImage;
-
     public int gameNum = 0;
 
     public Button LoadGamebtn;
     public Button newGamebtn;
 
-    //VidPlayer Dre animation
     public VideoPlayer VidPlayer;
-    [SerializeField] string dreStartAnimationUrl;
+    [SerializeField] string dreStartAnimationUrl; // URL of the video to prepare
 
     public static MenuManaager instance;
-
 
     private void Awake()
     {
@@ -42,61 +35,25 @@ public class MenuManaager : MonoBehaviour
         number = PlayerPrefs.GetInt("num");
         gameNum = PlayerPrefs.GetInt("gameNum");
 
-
         if (gameNum == 0)
         {
             LoadGamebtn.interactable = false;
             newGamebtn.interactable = true;
-
-
-
         }
         else if (gameNum == 1)
         {
             LoadGamebtn.interactable = true;
             newGamebtn.interactable = true;
         }
-
-        //if(PlayerPrefs.GetInt("LastLocation") == 0)
-        //{
-        //    LoadGamebtn.interactable = false;
-        //    newGamebtn.interactable = true;
-        //}
-        //else
-        //{
-        //    LoadGamebtn.interactable = true;
-        //    newGamebtn.interactable = true;
-        //}
-
     }
+
     // Start is called before the first frame update
     void Start()
     {
-
-        if (number == 0)
+        if (number == 1)
         {
-#if UNITY_STANDALONE || UNITY_WEBGL
-            //rawImage.SetActive(true);
-            //runGame.SetActive(true);
-            
-#endif
-            //StartCoroutine(loadMenu());
-
-
-        }
-        else if (number == 1)
-        {
-
-            //moonboiStudioLogo.SetActive(false);
-            //moonboiUniverseLogo.SetActive(false);
-            Camera.main.transform.GetComponent<AudioSource>().enabled = true;
             startButton.SetActive(true);
-#if UNITY_STANDALONE || UNITY_WEBGL
-            //rawImage.SetActive(false);
-            //runGame.SetActive(false);
-#endif
             Time.timeScale = 1;
-
         }
     }
 
@@ -107,17 +64,16 @@ public class MenuManaager : MonoBehaviour
         {
             musicPlayer.volume -= 1;
         }
-
-
     }
 
-    //triggers powerup animation, disables start menu buttons, plays select sound as well as powrup sound
+    // Triggers powerup animation, disables start menu buttons, plays select sound as well as powerup sound
     public void startGame()
     {
         Destroy(startButton);
         startButton.SetActive(false);
         startMenuAnimationSound();
     }
+
     public void NewstartGame()
     {
         Debug.Log("Hello World");
@@ -125,8 +81,13 @@ public class MenuManaager : MonoBehaviour
         Destroy(startButton);
         startButton.SetActive(false);
         startMenuAnimationSound();
-        // deletes any saved data
-        //PlayerPrefs.DeleteAll();
+        // Deletes any saved data
+        ClearPlayerPrefs();
+    }
+
+    void ClearPlayerPrefs()
+    {
+        // Deletes all player preferences
         PlayerPrefs.DeleteKey("isTutorialOver");
         PlayerPrefs.DeleteKey("isQuestions");
         PlayerPrefs.DeleteKey("isShop");
@@ -146,7 +107,6 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.DeleteKey("p_y");
         PlayerPrefs.DeleteKey("p_z");
         PlayerPrefs.DeleteKey("Saved");
-        //PlayerPrefs.SetInt("MaxHealth", 500);
         PlayerPrefs.SetInt("SwordPower", 0);
         PlayerPrefs.SetInt("SpecialPower", 0);
         PlayerPrefs.SetInt("Fishes", 0);
@@ -155,33 +115,52 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.SetInt("firstLoad", 0);
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("MoneyAward", 0);
-
     }
 
     void startMenuAnimationSound()
     {
-        //DreAnimation.GetComponent<Animator>().SetTrigger("PowerUp");
-        VidPlayer.url = dreStartAnimationUrl;
-        VidPlayer.loopPointReached += VidPlayer_loopPointReached;
-        VidPlayer.isLooping.Equals(false);
-        VidPlayer.Play();
-        GetComponent<AudioSource>().PlayOneShot(powerUpSound);
-        GetComponent<AudioSource>().PlayOneShot(startButtonSound);
+        PrepareVideo(dreStartAnimationUrl);
     }
 
-    private void VidPlayer_loopPointReached(VideoPlayer source)
+    void PrepareVideo(string url)
     {
-        loadLevel();
+        VidPlayer.url = url;
+        VidPlayer.isLooping = false;
+        VidPlayer.prepareCompleted += OnPrepareCompleted;
+        VidPlayer.loopPointReached += OnLoopPointReached;
+        VidPlayer.Prepare();
     }
 
-    //loads scene 1. triggers transition animation, plays transitionOut audio
+    private void OnPrepareCompleted(VideoPlayer source)
+    {
+        source.prepareCompleted -= OnPrepareCompleted;
+
+        // Only play if it is the prepared video
+        if (source.url == dreStartAnimationUrl)
+        {
+            source.Play();
+            GetComponent<AudioSource>().PlayOneShot(powerUpSound);
+            GetComponent<AudioSource>().PlayOneShot(startButtonSound);
+        }
+    }
+
+    private void OnLoopPointReached(VideoPlayer source)
+    {
+        source.loopPointReached -= OnLoopPointReached;
+
+        if (source.url == dreStartAnimationUrl)
+        {
+            loadLevel();
+        }
+    }
+
+    // Loads scene 1, triggers transition animation, plays transitionOut audio
     public void loadLevel()
     {
         StartCoroutine(nextLevel());
         GetComponent<AudioSource>().PlayOneShot(transitionOutSound);
         isLevelLoading = true;
     }
-
 
     IEnumerator nextLevel()
     {
@@ -191,31 +170,9 @@ public class MenuManaager : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    //start funtion. triggers the studio logo off, after it is played through. enables background music, turns on the start buttons
-    /*IEnumerator loadMenu()
-    {
-
-#if !UNITY_STANDALONE && !UNITY_WEBGL
-      rawImage.SetActive(false);
-        runGame.SetActive(false);
-          VidPlayer.enabled = false;
-#endif
-
-        yield return new WaitForSeconds(4f);
-
-        //.SetActive(false);
-        moonboiUniverseLogo.SetActive(true);
-        moonboiStudioLogo.SetActive(false);
-        yield return new WaitForSeconds(1.2f);
-        Camera.main.transform.GetComponent<AudioSource>().enabled = true;
-        yield return new WaitForSeconds(3.5f);
-        moonboiUniverseLogo.SetActive(false);
-        yield return new WaitForSeconds(1.5f);
-        startButton.SetActive(true);
-    }*/
-
     private void OnDisable()
     {
-        VidPlayer.loopPointReached -= VidPlayer_loopPointReached;
+        VidPlayer.loopPointReached -= OnLoopPointReached;
+        VidPlayer.prepareCompleted -= OnPrepareCompleted;
     }
 }

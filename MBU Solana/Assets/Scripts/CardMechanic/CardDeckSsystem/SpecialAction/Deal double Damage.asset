@@ -15,9 +15,9 @@ MonoBehaviour:
   cardName: Deal Double Damage
   cardImage: {fileID: 0}
   cost: 10
-  Attack: 150
+  Attack: 0
   decreaseDamagePercent: 0
-  increaseDamagePercent: 0
+  increaseDamagePercent: 100
   healingPower: 0
   Block: 0
   ID_SpecialAction: 202

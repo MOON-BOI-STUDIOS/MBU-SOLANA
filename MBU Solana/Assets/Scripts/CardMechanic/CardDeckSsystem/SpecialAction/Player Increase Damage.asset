@@ -17,7 +17,7 @@ MonoBehaviour:
   cost: 10
   Attack: 100
   decreaseDamagePercent: 0
-  increaseDamagePercent: 15
+  increaseDamagePercent: 25
   healingPower: 0
   Block: 0
   ID_SpecialAction: 206

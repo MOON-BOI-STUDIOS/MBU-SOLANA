@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Enemy defence reduced next round
   m_EditorClassIdentifier: 
   cardName: 'Enemy defence reduced next round '
-  art: {fileID: 0}
-  description: 
+  cardImage: {fileID: 0}
   cost: 10
-  Rarity: 0
-  damage: 0
+  Attack: 0
   decreaseDamagePercent: 0
-  increaseDamagePercent: 0
+  increaseDamagePercent: 25
   healingPower: 0
+  Block: 0
   ID_SpecialAction: 204
   cardType: 2
