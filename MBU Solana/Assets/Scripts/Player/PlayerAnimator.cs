@@ -23,7 +23,7 @@ public class PlayerAnimator : MonoBehaviour
 
     [Header("Sounds")]
     AudioSource audioSource;
-    public AudioClip northStar, orionsBelt, deathSound;
+    public AudioClip northStar, orionsBelt, deathSound, teleportSound;
     public AudioClip[] whoosh;
     public AudioClip[] dreDialogues;
 
@@ -274,6 +274,7 @@ public class PlayerAnimator : MonoBehaviour
         //Player triggers Teleport animation
     public void PlayTeleportAnimation()
     {
+        powerUpMuisc.PlayOneShot(teleportSound);
         _manager._controller.enabled = false;
         _heroAnimator.SetTrigger("FadeOut");
     }

@@ -15,7 +15,7 @@ MonoBehaviour:
   cardName: Player Increase Damage
   cardImage: {fileID: 0}
   cost: 10
-  Attack: 100
+  Attack: 0
   decreaseDamagePercent: 0
   increaseDamagePercent: 25
   healingPower: 0

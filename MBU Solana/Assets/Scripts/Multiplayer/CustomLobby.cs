@@ -24,7 +24,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     private float lastUpdateTime = 0f;
     public float updateInterval = 1f; // Time interval in seconds
     [SerializeField]
-    GameObject loadingPanel, backButton, reconnectButton, connectPanel;
+    GameObject loadingPanel, backButton;
 
     private Coroutine retryCoroutine;
 
@@ -44,7 +44,7 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         RemoveRoomListing();
         regiontxt.text = "Current Region is: " + PhotonNetwork.PhotonServerSettings.AppSettings.FixedRegion;
 
-        connectPanel.SetActive(true);
+        ConnectToPhoton();
     }
 
     
@@ -104,6 +104,11 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         Debug.Log("Player has connected to Photon Master Server");
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.NickName = "Player" + Random.Range(0, 1000);
+    }
+
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+        ConnectToPhoton();
     }
 
     public void OnRegionSelected()
@@ -215,7 +220,6 @@ public class CustomLobby : MonoBehaviourPunCallbacks
         };
         PhotonNetwork.CreateRoom(roomName, roomOps);
         backButton.SetActive(false);
-        reconnectButton.SetActive(false);
     }
     else
     {
@@ -226,7 +230,6 @@ public class CustomLobby : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         backButton.SetActive(false);
-        reconnectButton.SetActive(false);
     }
 
 

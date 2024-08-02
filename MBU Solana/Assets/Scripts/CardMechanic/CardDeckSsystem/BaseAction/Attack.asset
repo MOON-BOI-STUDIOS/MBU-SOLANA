@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Attack
   art: {fileID: 0}
-  damage: 50
+  damage: 150
   ID_BasicAction: 101
   cardType: 1

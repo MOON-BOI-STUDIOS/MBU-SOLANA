@@ -16,9 +16,9 @@ MonoBehaviour:
   cardImage: {fileID: 0}
   cost: 10
   Attack: 0
-  decreaseDamagePercent: 25
+  decreaseDamagePercent: 50
   increaseDamagePercent: 0
   healingPower: 0
-  Block: 25
+  Block: 0
   ID_SpecialAction: 203
   cardType: 2

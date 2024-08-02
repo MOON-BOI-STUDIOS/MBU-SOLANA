@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Heavy Attack
   art: {fileID: 0}
-  damage: 75
+  damage: 250
   ID_BasicAction: 102
   cardType: 0

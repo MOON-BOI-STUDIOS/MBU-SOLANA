@@ -90,8 +90,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         immunity = false;
     }
 
-
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(!immunity && !isDead)
