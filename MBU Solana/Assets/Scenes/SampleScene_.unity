@@ -2682,9 +2682,9 @@ GameObject:
   m_Component:
   - component: {fileID: 308545118}
   - component: {fileID: 308545122}
-  - component: {fileID: 308545121}
   - component: {fileID: 308545120}
   - component: {fileID: 308545119}
+  - component: {fileID: 308545123}
   m_Layer: 0
   m_Name: NPC (20)
   m_TagString: Untagged
@@ -2823,32 +2823,6 @@ MonoBehaviour:
   interactButton: {fileID: 1183890874}
   dialogue: {fileID: 0}
   dialoguebegan: 0
---- !u!61 &308545121
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308545117}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.14, y: 0.35}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &308545122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2901,6 +2875,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &308545123
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308545117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &322788560
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,10 +3273,10 @@ GameObject:
   m_Component:
   - component: {fileID: 435753004}
   - component: {fileID: 435753009}
-  - component: {fileID: 435753008}
   - component: {fileID: 435753006}
   - component: {fileID: 435753005}
   - component: {fileID: 435753010}
+  - component: {fileID: 435753011}
   m_Layer: 0
   m_Name: NPC (16)
   m_TagString: Untagged
@@ -3302,7 +3292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435753003}
   m_LocalRotation: {x: -0, y: -0.2506444, z: -0, w: 0.9680792}
-  m_LocalPosition: {x: 2.2233, y: 0.994, z: 0.8374}
+  m_LocalPosition: {x: 0.879, y: 0.392, z: 0.103}
   m_LocalScale: {x: 0.7854536, y: 0.5629764, z: 1.1669799}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3427,32 +3417,6 @@ MonoBehaviour:
   interactButton: {fileID: 970776230}
   dialogue: {fileID: 11400000, guid: c194b384eccfa6f4fafefedf75bd9867, type: 2}
   dialoguebegan: 1
---- !u!61 &435753008
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 435753003}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.08798519, y: 0.32809693}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 1.71}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.33880365, y: 0.8891882}
-  m_EdgeRadius: 0
 --- !u!212 &435753009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3525,6 +3489,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &435753011
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435753003}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.109000064, y: 0.25557363}
+  m_Size: {x: 0.38200057, y: 1.219577}
+  m_Direction: 0
 --- !u!1 &437665277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1056176472209268450, guid: 5debb0d4ad12ec5479f80677ca53e467, type: 3}
@@ -3628,9 +3608,9 @@ GameObject:
   m_Component:
   - component: {fileID: 482923955}
   - component: {fileID: 482923959}
-  - component: {fileID: 482923958}
   - component: {fileID: 482923957}
   - component: {fileID: 482923956}
+  - component: {fileID: 482923960}
   m_Layer: 0
   m_Name: NPC (16)
   m_TagString: Untagged
@@ -3769,32 +3749,6 @@ MonoBehaviour:
   interactButton: {fileID: 1183890874}
   dialogue: {fileID: 0}
   dialoguebegan: 0
---- !u!61 &482923958
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482923954}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.24, y: 0.41}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &482923959
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3847,6 +3801,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &482923960
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482923954}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03444562, y: 0.089114696}
+  serializedVersion: 2
+  m_Radius: 0.06752713
 --- !u!1 &495422216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,9 +3965,9 @@ GameObject:
   m_Component:
   - component: {fileID: 507535285}
   - component: {fileID: 507535289}
-  - component: {fileID: 507535288}
   - component: {fileID: 507535287}
   - component: {fileID: 507535286}
+  - component: {fileID: 507535290}
   m_Layer: 0
   m_Name: NPC (8)
   m_TagString: Untagged
@@ -4139,32 +4109,6 @@ MonoBehaviour:
   interactButton: {fileID: 233260779}
   dialogue: {fileID: 11400000, guid: 1c6bd07cc40f12e4c957f08644bf863a, type: 2}
   dialoguebegan: 0
---- !u!61 &507535288
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507535284}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392896, y: 0.15549737}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.17, y: 0.37}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.25772643}
-  m_EdgeRadius: 0
 --- !u!212 &507535289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4217,6 +4161,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &507535290
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507535284}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &511074423
 GameObject:
   m_ObjectHideFlags: 0
@@ -5576,9 +5536,9 @@ GameObject:
   m_Component:
   - component: {fileID: 621192529}
   - component: {fileID: 621192533}
-  - component: {fileID: 621192532}
   - component: {fileID: 621192531}
   - component: {fileID: 621192530}
+  - component: {fileID: 621192534}
   m_Layer: 0
   m_Name: NPC (7)
   m_TagString: Untagged
@@ -5716,32 +5676,6 @@ MonoBehaviour:
   interactButton: {fileID: 899597176}
   dialogue: {fileID: 11400000, guid: ab66008969cefc4468c013d211c59d2f, type: 2}
   dialoguebegan: 0
---- !u!61 &621192532
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621192528}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392896, y: 0.15549737}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.15, y: 0.36}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.25772643}
-  m_EdgeRadius: 0
 --- !u!212 &621192533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5794,6 +5728,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &621192534
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621192528}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &625468401
 GameObject:
   m_ObjectHideFlags: 0
@@ -6904,9 +6854,9 @@ GameObject:
   m_Component:
   - component: {fileID: 757255055}
   - component: {fileID: 757255059}
-  - component: {fileID: 757255058}
   - component: {fileID: 757255057}
   - component: {fileID: 757255056}
+  - component: {fileID: 757255060}
   m_Layer: 0
   m_Name: NPC (9)
   m_TagString: Untagged
@@ -7044,32 +6994,6 @@ MonoBehaviour:
   interactButton: {fileID: 289329349}
   dialogue: {fileID: 11400000, guid: 003379f163c085441a451fd56bc395f9, type: 2}
   dialoguebegan: 0
---- !u!61 &757255058
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 757255054}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392896, y: 0.15549737}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.17, y: 0.37}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.25772643}
-  m_EdgeRadius: 0
 --- !u!212 &757255059
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7122,6 +7046,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &757255060
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757255054}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.024932904, y: 0.18491091}
+  m_Size: {x: 0.120134234, y: 0.35272527}
+  m_Direction: 0
 --- !u!1 &777232462
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,10 +7072,10 @@ GameObject:
   m_Component:
   - component: {fileID: 777232463}
   - component: {fileID: 777232467}
-  - component: {fileID: 777232466}
   - component: {fileID: 777232465}
   - component: {fileID: 777232464}
   - component: {fileID: 777232468}
+  - component: {fileID: 777232469}
   m_Layer: 0
   m_Name: NPC (12)
   m_TagString: Untagged
@@ -7273,32 +7213,6 @@ MonoBehaviour:
   interactButton: {fileID: 727478499}
   dialogue: {fileID: 11400000, guid: 5819bcbfc4067434a9c789ad5bf3c017, type: 2}
   dialoguebegan: 0
---- !u!61 &777232466
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777232462}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.07654956, y: -0.43253255}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 1.71}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.41815597, y: 0.82321453}
-  m_EdgeRadius: 0
 --- !u!212 &777232467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7371,6 +7285,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &777232469
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777232462}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.07468156, y: -0.5259884}
+  serializedVersion: 2
+  m_Radius: 0.23475446
 --- !u!1 &783055060
 GameObject:
   m_ObjectHideFlags: 0
@@ -7381,9 +7311,9 @@ GameObject:
   m_Component:
   - component: {fileID: 783055061}
   - component: {fileID: 783055065}
-  - component: {fileID: 783055064}
   - component: {fileID: 783055063}
   - component: {fileID: 783055062}
+  - component: {fileID: 783055066}
   m_Layer: 0
   m_Name: NPC (17)
   m_TagString: Untagged
@@ -7522,32 +7452,6 @@ MonoBehaviour:
   interactButton: {fileID: 1183890874}
   dialogue: {fileID: 0}
   dialoguebegan: 0
---- !u!61 &783055064
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783055060}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.2, y: 0.38}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &783055065
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7600,6 +7504,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &783055066
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783055060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &786498825
 GameObject:
   m_ObjectHideFlags: 0
@@ -7910,9 +7830,9 @@ GameObject:
   m_Component:
   - component: {fileID: 821274449}
   - component: {fileID: 821274448}
-  - component: {fileID: 821274447}
   - component: {fileID: 821274446}
   - component: {fileID: 821274450}
+  - component: {fileID: 821274451}
   m_Layer: 0
   m_Name: NPC (3)
   m_TagString: Untagged
@@ -7939,32 +7859,6 @@ MonoBehaviour:
   interactButton: {fileID: 437665277}
   dialogue: {fileID: 11400000, guid: 5b808a7ebb62e504f899d4282a4b1513, type: 2}
   dialoguebegan: 0
---- !u!61 &821274447
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821274445}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392933, y: 0.17670757}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.13, y: 0.35}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.21530604}
-  m_EdgeRadius: 0
 --- !u!212 &821274448
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8128,6 +8022,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &821274451
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821274445}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.067882955}
+  serializedVersion: 2
+  m_Radius: 0.052497204
 --- !u!1 &832442868
 GameObject:
   m_ObjectHideFlags: 0
@@ -9067,7 +8977,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8551306431402950718, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
   m_PrefabInstance: {fileID: 8551306432341785730}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 955876971}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85969668fe6092045be3fd9eea8f6723, type: 3}
@@ -9234,6 +9144,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &955876971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551306431402950713, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
+  m_PrefabInstance: {fileID: 8551306432341785730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &955876975
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955876971}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &958068907
 GameObject:
   m_ObjectHideFlags: 0
@@ -9804,9 +9735,9 @@ GameObject:
   - component: {fileID: 986488199}
   - component: {fileID: 986488201}
   - component: {fileID: 986488200}
-  - component: {fileID: 986488203}
   - component: {fileID: 986488202}
   - component: {fileID: 986488204}
+  - component: {fileID: 986488205}
   m_Layer: 0
   m_Name: BonkGirl
   m_TagString: Untagged
@@ -9928,32 +9859,6 @@ MonoBehaviour:
   interactButton: {fileID: 894548755}
   dialogue: {fileID: 11400000, guid: ee4cbfcc22eeebe4bb0e3cb0408901d5, type: 2}
   dialoguebegan: 0
---- !u!61 &986488203
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986488198}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392896, y: 0.15549737}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.78, y: 0.87}
-    newSize: {x: 0.78, y: 0.87}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.25772643}
-  m_EdgeRadius: 0
 --- !u!82 &986488204
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10050,6 +9955,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &986488205
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986488198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.009736782, y: 0.08812149}
+  m_Size: {x: 0.33948758, y: 0.40015408}
+  m_Direction: 0
 --- !u!1 &996138538
 GameObject:
   m_ObjectHideFlags: 0
@@ -10550,10 +10471,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1034940338}
   - component: {fileID: 1034940342}
-  - component: {fileID: 1034940341}
   - component: {fileID: 1034940340}
   - component: {fileID: 1034940339}
   - component: {fileID: 1034940343}
+  - component: {fileID: 1034940344}
   m_Layer: 0
   m_Name: NPC (10)
   m_TagString: Untagged
@@ -10692,32 +10613,6 @@ MonoBehaviour:
   interactButton: {fileID: 1098797221}
   dialogue: {fileID: 11400000, guid: b15438287dd99464eb1742975db4d479, type: 2}
   dialoguebegan: 0
---- !u!61 &1034940341
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034940337}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.018003762, y: -0.51395833}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.72, y: 1.83}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.70573306, y: 0.80413723}
-  m_EdgeRadius: 0
 --- !u!212 &1034940342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10790,6 +10685,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &1034940344
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034940337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267982, y: -0.51656544}
+  serializedVersion: 2
+  m_Radius: 0.31122774
 --- !u!1 &1036550916
 GameObject:
   m_ObjectHideFlags: 0
@@ -12002,9 +11913,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1163163016}
   - component: {fileID: 1163163020}
-  - component: {fileID: 1163163019}
   - component: {fileID: 1163163018}
   - component: {fileID: 1163163017}
+  - component: {fileID: 1163163021}
   m_Layer: 0
   m_Name: NPC (18)
   m_TagString: Untagged
@@ -12143,32 +12054,6 @@ MonoBehaviour:
   interactButton: {fileID: 1183890874}
   dialogue: {fileID: 0}
   dialoguebegan: 0
---- !u!61 &1163163019
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163163015}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.2, y: 0.41}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &1163163020
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12221,6 +12106,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1163163021
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163163015}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &1172124074
 GameObject:
   m_ObjectHideFlags: 0
@@ -12584,9 +12485,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1214541552}
   - component: {fileID: 1214541556}
-  - component: {fileID: 1214541555}
   - component: {fileID: 1214541554}
   - component: {fileID: 1214541553}
+  - component: {fileID: 1214541557}
   m_Layer: 0
   m_Name: NPC (21)
   m_TagString: Untagged
@@ -12725,32 +12626,6 @@ MonoBehaviour:
   interactButton: {fileID: 1183890874}
   dialogue: {fileID: 0}
   dialoguebegan: 0
---- !u!61 &1214541555
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214541551}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.15, y: 0.34}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &1214541556
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12803,6 +12678,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1214541557
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214541551}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &1228947892
 GameObject:
   m_ObjectHideFlags: 0
@@ -15094,7 +14985,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1427962557}
   - component: {fileID: 1427962556}
-  - component: {fileID: 1427962555}
   - component: {fileID: 1427962552}
   - component: {fileID: 1427962551}
   - component: {fileID: 1427962558}
@@ -15228,32 +15118,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!61 &1427962555
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427962550}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392896, y: 0.15549737}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.16, y: 0.36}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.25772643}
-  m_EdgeRadius: 0
 --- !u!212 &1427962556
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15321,8 +15185,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -175.849, z: 0}
---- !u!61 &1427962558
-BoxCollider2D:
+--- !u!70 &1427962558
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15334,19 +15198,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.004301399, y: 0.24}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.16, y: 0.36}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.10487907, y: 0.13563332}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.014523609, y: 0.1846561}
+  m_Size: {x: 0.13095272, y: 0.3506878}
+  m_Direction: 0
 --- !u!1 &1430383141
 GameObject:
   m_ObjectHideFlags: 0
@@ -15470,9 +15324,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1477309190}
   - component: {fileID: 1477309194}
-  - component: {fileID: 1477309193}
   - component: {fileID: 1477309192}
   - component: {fileID: 1477309191}
+  - component: {fileID: 1477309195}
   m_Layer: 0
   m_Name: NPC (22)
   m_TagString: Untagged
@@ -15611,32 +15465,6 @@ MonoBehaviour:
   interactButton: {fileID: 1183890874}
   dialogue: {fileID: 0}
   dialoguebegan: 0
---- !u!61 &1477309193
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477309189}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.15, y: 0.36}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &1477309194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15689,6 +15517,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1477309195
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477309189}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &1481813550
 GameObject:
   m_ObjectHideFlags: 0
@@ -16322,9 +16166,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1557384690}
   - component: {fileID: 1557384694}
-  - component: {fileID: 1557384693}
   - component: {fileID: 1557384692}
   - component: {fileID: 1557384691}
+  - component: {fileID: 1557384695}
   m_Layer: 0
   m_Name: NPC (5)
   m_TagString: Untagged
@@ -16463,32 +16307,6 @@ MonoBehaviour:
   interactButton: {fileID: 1334489341}
   dialogue: {fileID: 11400000, guid: e35ed59a8cc540743b935057b90a9ab0, type: 2}
   dialoguebegan: 0
---- !u!61 &1557384693
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557384689}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392896, y: 0.15549737}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.17, y: 0.35}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.25772643}
-  m_EdgeRadius: 0
 --- !u!212 &1557384694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16541,6 +16359,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1557384695
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557384689}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000009578278, y: 0.18462063}
+  m_Size: {x: 0.17, y: 0.33912453}
+  m_Direction: 0
 --- !u!1 &1566364728
 GameObject:
   m_ObjectHideFlags: 0
@@ -16551,10 +16385,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1566364729}
   - component: {fileID: 1566364733}
-  - component: {fileID: 1566364732}
   - component: {fileID: 1566364731}
   - component: {fileID: 1566364730}
   - component: {fileID: 1566364734}
+  - component: {fileID: 1566364735}
   m_Layer: 0
   m_Name: NPC (11)
   m_TagString: Untagged
@@ -16693,32 +16527,6 @@ MonoBehaviour:
   interactButton: {fileID: 1018392366}
   dialogue: {fileID: 11400000, guid: 5178821744a541f4f9ec786881a95759, type: 2}
   dialoguebegan: 0
---- !u!61 &1566364732
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566364728}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.013977729, y: -0.5401689}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 1.68}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.44094253, y: 0.6082027}
-  m_EdgeRadius: 0
 --- !u!212 &1566364733
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16791,6 +16599,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &1566364735
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566364728}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.023216954, y: -0.5539558}
+  serializedVersion: 2
+  m_Radius: 0.22889559
 --- !u!61 &1572695681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17033,9 +16857,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1599444258}
   - component: {fileID: 1599444262}
-  - component: {fileID: 1599444261}
   - component: {fileID: 1599444260}
   - component: {fileID: 1599444259}
+  - component: {fileID: 1599444263}
   m_Layer: 0
   m_Name: NPC (15)
   m_TagString: Untagged
@@ -17174,32 +16998,6 @@ MonoBehaviour:
   interactButton: {fileID: 1183890874}
   dialogue: {fileID: 0}
   dialoguebegan: 0
---- !u!61 &1599444261
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599444257}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.16, y: 0.35}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &1599444262
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17252,6 +17050,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1599444263
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599444257}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &1602220563
 GameObject:
   m_ObjectHideFlags: 0
@@ -18630,9 +18444,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1729500199}
   - component: {fileID: 1729500203}
-  - component: {fileID: 1729500202}
   - component: {fileID: 1729500201}
   - component: {fileID: 1729500200}
+  - component: {fileID: 1729500204}
   m_Layer: 0
   m_Name: NPC (6)
   m_TagString: Untagged
@@ -18772,32 +18586,6 @@ MonoBehaviour:
   interactButton: {fileID: 1755475193}
   dialogue: {fileID: 11400000, guid: 22d2d2fe9813e5d40a957bd2d8335c39, type: 2}
   dialoguebegan: 0
---- !u!61 &1729500202
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729500198}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392896, y: 0.15549737}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.15, y: 0.37}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.25772643}
-  m_EdgeRadius: 0
 --- !u!212 &1729500203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18850,6 +18638,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1729500204
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729500198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &1755475193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1056176471378022374, guid: 5debb0d4ad12ec5479f80677ca53e467, type: 3}
@@ -20593,9 +20397,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1928738056}
   - component: {fileID: 1928738060}
-  - component: {fileID: 1928738059}
   - component: {fileID: 1928738058}
   - component: {fileID: 1928738057}
+  - component: {fileID: 1928738061}
   m_Layer: 0
   m_Name: NPC (19)
   m_TagString: Untagged
@@ -20734,32 +20538,6 @@ MonoBehaviour:
   interactButton: {fileID: 1183890874}
   dialogue: {fileID: 0}
   dialoguebegan: 0
---- !u!61 &1928738059
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928738055}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.13, y: 0.35}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &1928738060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20812,6 +20590,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1928738061
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928738055}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &1929910803
 GameObject:
   m_ObjectHideFlags: 0
@@ -21175,9 +20969,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1952771180}
   - component: {fileID: 1952771179}
-  - component: {fileID: 1952771178}
   - component: {fileID: 1952771177}
   - component: {fileID: 1952771181}
+  - component: {fileID: 1952771182}
   m_Layer: 0
   m_Name: NPC (2)
   m_TagString: Untagged
@@ -21205,32 +20999,6 @@ MonoBehaviour:
   interactButton: {fileID: 533041696}
   dialogue: {fileID: 11400000, guid: 038a35e06fd462c469d1db9c27d5c3d0, type: 2}
   dialoguebegan: 0
---- !u!61 &1952771178
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952771176}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.004299164, y: 0.18683286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.17, y: 0.35}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.08767794, y: 0.19505545}
-  m_EdgeRadius: 0
 --- !u!212 &1952771179
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21394,6 +21162,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &1952771182
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952771176}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.08292211}
+  serializedVersion: 2
+  m_Radius: 0.0711996
 --- !u!1 &1960524146
 GameObject:
   m_ObjectHideFlags: 0
@@ -21738,9 +21522,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1961659941}
   - component: {fileID: 1961659945}
-  - component: {fileID: 1961659944}
   - component: {fileID: 1961659943}
   - component: {fileID: 1961659942}
+  - component: {fileID: 1961659946}
   m_Layer: 0
   m_Name: NPC (13)
   m_TagString: Untagged
@@ -21878,32 +21662,6 @@ MonoBehaviour:
   interactButton: {fileID: 471906645}
   dialogue: {fileID: 11400000, guid: eaf399ff078144c4c93a1175d2308c3d, type: 2}
   dialoguebegan: 0
---- !u!61 &1961659944
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961659940}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0017392896, y: 0.15549737}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.16, y: 0.35}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.15935478, y: 0.25772643}
-  m_EdgeRadius: 0
 --- !u!212 &1961659945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21956,6 +21714,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1961659946
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961659940}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267703, y: 0.0787509}
+  serializedVersion: 2
+  m_Radius: 0.07537085
 --- !u!1 &1968644366
 GameObject:
   m_ObjectHideFlags: 0
@@ -21966,10 +21740,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1968644367}
   - component: {fileID: 1968644370}
-  - component: {fileID: 1968644369}
   - component: {fileID: 1968644368}
   - component: {fileID: 1968644371}
   - component: {fileID: 1968644372}
+  - component: {fileID: 1968644373}
   m_Layer: 0
   m_Name: NPC (4)
   m_TagString: Untagged
@@ -22012,32 +21786,6 @@ MonoBehaviour:
   interactButton: {fileID: 749949172}
   dialogue: {fileID: 11400000, guid: 97c770574e3c7054a8fdeca61bfef514, type: 2}
   dialoguebegan: 0
---- !u!61 &1968644369
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968644366}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.043861642, y: -0.45885777}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.72, y: 1.83}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.46672043, y: 0.9280708}
-  m_EdgeRadius: 0
 --- !u!212 &1968644370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22206,6 +21954,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &1968644373
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968644366}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011267931, y: -0.49818614}
+  serializedVersion: 2
+  m_Radius: 0.35865653
 --- !u!1 &1978017461
 GameObject:
   m_ObjectHideFlags: 0
@@ -41086,19 +40850,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
       propertyPath: m_Size.x
-      value: 0.08767794
+      value: 0.13264425
       objectReference: {fileID: 0}
     - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
       propertyPath: m_Size.y
-      value: 0.19505545
+      value: 0.12383616
       objectReference: {fileID: 0}
     - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
       propertyPath: m_Offset.x
-      value: 0.004299164
+      value: -0.018183982
       objectReference: {fileID: 0}
     - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
       propertyPath: m_Offset.y
-      value: 0.18683286
+      value: 0.07983488
       objectReference: {fileID: 0}
     - target: {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
@@ -41176,7 +40940,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8551306431402950716, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 10959504bb8fcc248b26cebcb3ae714e, type: 3}
 --- !u!70 &8897542945147124969
 CapsuleCollider2D:
