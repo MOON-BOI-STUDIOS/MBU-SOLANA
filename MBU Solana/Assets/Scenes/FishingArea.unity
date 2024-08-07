@@ -17891,6 +17891,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3961368042182952375, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: buffer
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961368042182952375, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: maxDistance
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3961368043086042377, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: northStar
       value: 
@@ -17995,6 +18003,10 @@ PrefabInstance:
       propertyPath: m_NormalizedViewPortRect.height
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4001270424322672830, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ea1a393a7b0829d44943264c7cacd139, type: 3}
     m_RemovedComponents:
     - {fileID: 3961368043105817334, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
     - {fileID: 3961368043086042378, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
