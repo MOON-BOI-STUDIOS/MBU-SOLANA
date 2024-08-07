@@ -15708,6 +15708,7 @@ MonoBehaviour:
   northStar: {fileID: 0}
   orionsBelt: {fileID: 0}
   deathSound: {fileID: 0}
+  teleportSound: {fileID: 0}
   whoosh:
   - {fileID: 0}
   - {fileID: 0}

@@ -3460,6 +3460,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8234105076002553339}
     m_Modifications:
+    - target: {fileID: 4508592432656991753, guid: 3059a4c967a840547be49bee3178de95, type: 3}
+      propertyPath: buffer
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508592432656991753, guid: 3059a4c967a840547be49bee3178de95, type: 3}
+      propertyPath: maxDistance
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607034608698592000, guid: 3059a4c967a840547be49bee3178de95, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ea1a393a7b0829d44943264c7cacd139, type: 3}
     - target: {fileID: 4607034608698592001, guid: 3059a4c967a840547be49bee3178de95, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6347,6 +6359,7 @@ MonoBehaviour:
   northStar: {fileID: 8300000, guid: 6c89eba7a48aab149bcec33433d2cb46, type: 3}
   orionsBelt: {fileID: 8300000, guid: 4f1d5822a49df4d4f8b47932321a9ee5, type: 3}
   deathSound: {fileID: 8300000, guid: 58f8f40ab2510044aa9d91b058b5fcbf, type: 3}
+  teleportSound: {fileID: 0}
   whoosh:
   - {fileID: 8300000, guid: 042c7902ef470c84689021bb0b8c1ba9, type: 3}
   - {fileID: 8300000, guid: 5c79d4f8c0809dd42bc480b58ef88d87, type: 3}
