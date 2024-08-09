@@ -181,6 +181,7 @@ public class PlayerAnimator : MonoBehaviour
     public IEnumerator powerUp()
     {
         powerUpMuisc.enabled = true;
+        _manager.PlayDrePowerUpBust();
         _manager.SetImmunityTrue();
         //_manager.isPoweredUp = true;
         _manager._controller.enabled = false;
@@ -244,6 +245,7 @@ public class PlayerAnimator : MonoBehaviour
         // Reset to initial material
         dreSprite.material = initialMaterial;
         //_manager.isPoweredUp = false;
+        _manager.StopDrePowerUpBust();
         _manager.SetImmunityFalse();
     }
 

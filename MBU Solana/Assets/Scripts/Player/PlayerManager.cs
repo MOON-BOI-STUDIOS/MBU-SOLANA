@@ -6,6 +6,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
+using UnityEngine.Video;
 
 public class PlayerManager : MonoBehaviour, IAddToInventory
 {
@@ -26,7 +27,9 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public GameObject fadeOut;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
-    public GameObject enterButton, fishButton, ExitButton;
+    public GameObject enterButton, fishButton, ExitButton, drePowerUpBust, dreBust;
+
+    [SerializeField] VideoPlayer videoPlayer;
 
     public Transform[] startLocation;
 
@@ -88,6 +91,20 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public void SetImmunityFalse()
     {
         immunity = false;
+    }
+
+    public void PlayDrePowerUpBust()
+    {
+        drePowerUpBust.SetActive(true);
+        dreBust.SetActive(false);
+        videoPlayer.Play();
+    }
+
+    public void StopDrePowerUpBust()
+    {
+        dreBust.SetActive(true);
+        drePowerUpBust.SetActive(false);
+        videoPlayer.Stop();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
