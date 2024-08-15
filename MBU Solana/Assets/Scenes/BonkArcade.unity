@@ -12192,7 +12192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
@@ -15105,6 +15105,9 @@ MonoBehaviour:
   enterButton: {fileID: 0}
   fishButton: {fileID: 0}
   ExitButton: {fileID: 0}
+  drePowerUpBust: {fileID: 0}
+  dreBust: {fileID: 0}
+  videoPlayer: {fileID: 0}
   startLocation: []
   enemies: {fileID: 0}
 --- !u!114 &3685875997906252230

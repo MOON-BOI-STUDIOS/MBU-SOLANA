@@ -6815,9 +6815,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.14874552
-    width: 1.2823218
-    height: 0.32258064
+    y: 0.0018450185
+    width: 1.2640069
+    height: 0.6642066
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8175,9 +8175,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.14874552
-    width: 1.2823218
-    height: 0.32258064
+    y: 0.0018450185
+    width: 1.2640069
+    height: 0.6642066
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -9807,7 +9807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &248699829114859154
 Transform:
   m_ObjectHideFlags: 0
@@ -17396,6 +17396,9 @@ MonoBehaviour:
   enterButton: {fileID: 0}
   fishButton: {fileID: 0}
   ExitButton: {fileID: 0}
+  drePowerUpBust: {fileID: 0}
+  dreBust: {fileID: 0}
+  videoPlayer: {fileID: 0}
   startLocation: []
   enemies: {fileID: 0}
 --- !u!114 &3482781816479680323

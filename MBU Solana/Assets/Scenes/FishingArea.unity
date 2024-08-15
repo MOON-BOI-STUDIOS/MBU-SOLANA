@@ -3836,9 +3836,10 @@ MonoBehaviour:
   myVideoPlayer: {fileID: 6210402978520942207}
   videoObj: {fileID: 6210402978520942204}
   panel: {fileID: 1746310557}
+  skipButton: {fileID: 1031496764}
   isFinished: 0
   music: {fileID: 1413088173}
-  videoFileUrl: https://raw.githubuhttps://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/main/StreamingAssets/Fishing_Scene_Intro.mp4
+  videoFileUrl: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/main/StreamingAssets/Fishing_Scene_Intro.mp4
 --- !u!114 &642462191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7745,12 +7746,12 @@ GameObject:
   - component: {fileID: 1031496767}
   - component: {fileID: 1031496766}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SkipVideo Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1031496765
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7769,8 +7770,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -325, y: 282}
-  m_SizeDelta: {x: 306.81628, y: 275.3544}
+  m_AnchoredPosition: {x: -326.227, y: 267.01}
+  m_SizeDelta: {x: 350.263, y: 153.501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031496766
 MonoBehaviour:
@@ -7860,7 +7861,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7df8ade3d367b2247a2ea9c5f5a93ddf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d6d06e4846eca44c99fd63152100d0b, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10271,6 +10272,9 @@ MonoBehaviour:
   completedColor: {r: 0.03137255, g: 1, b: 0.14509805, a: 1}
   activeColor: {r: 0.99607843, g: 1, b: 0, a: 1}
   currentColor: {r: 0.15686275, g: 1, b: 0.9647059, a: 1}
+  currentSprite: {fileID: 0}
+  activeSprite: {fileID: 0}
+  completedSprite: {fileID: 0}
   arrow: {fileID: 2146670741}
   allQuests:
   - {fileID: 0}
@@ -14579,7 +14583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
@@ -15476,8 +15480,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279892223
-  m_fontColor: {r: 1, g: 0.972549, b: 0.09803922, a: 1}
+    rgba: 4281582021
+  m_fontColor: {r: 0.7735849, g: 0.75614905, b: 0.20069422, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -18204,6 +18208,18 @@ PrefabInstance:
       propertyPath: questItem
       value: 
       objectReference: {fileID: 884092021}
+    - target: {fileID: 4716890904652233701, guid: b6b0ad260ab02b14cac1adcc6f615281, type: 3}
+      propertyPath: activeSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 351f8bee4d319c441bcacb922fac821c, type: 3}
+    - target: {fileID: 4716890904652233701, guid: b6b0ad260ab02b14cac1adcc6f615281, type: 3}
+      propertyPath: currentSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dd5fb6c7eff5abe48823058ffb9e4eaf, type: 3}
+    - target: {fileID: 4716890904652233701, guid: b6b0ad260ab02b14cac1adcc6f615281, type: 3}
+      propertyPath: completedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bee22bd07187e3b45a4ad7c18f6dbf0f, type: 3}
     - target: {fileID: 4716890904652233701, guid: b6b0ad260ab02b14cac1adcc6f615281, type: 3}
       propertyPath: completedColor.a
       value: 1

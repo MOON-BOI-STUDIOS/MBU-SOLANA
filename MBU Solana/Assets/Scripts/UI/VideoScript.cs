@@ -10,92 +10,87 @@ public class VideoScript : MonoBehaviour
 
     public GameObject videoObj;
     public GameObject panel;
+    public GameObject skipButton;
     public bool isFinished = false;
     public GameObject music;
 
-    //[SerializeField] string videoFileName;
     [SerializeField] string videoFileUrl;
-   
 
     public static VideoScript instance;
+
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
+
         isFinished = (PlayerPrefs.GetInt("isFinished") != 0);
-    
-      
 
-        if (isFinished == true)
+        // If video has been finished, hide the panel and video objects
+        if (isFinished)
         {
-
             panel.SetActive(false);
             videoObj.SetActive(false);
             music.SetActive(true);
-            
+            skipButton.SetActive(false); // Skip button remains inactive since video won't play
         }
-
-#if UNITY_WEBGL || UNITY_STANDALONE
-        PlayVideo();
-#endif
+        else
+        {
+            // First time playing the video
+            panel.SetActive(true);
+            videoObj.SetActive(true);
+            music.SetActive(false);
+            skipButton.SetActive(false); // Disable skip button initially
+            PlayVideo(); // Start the video
+        }
     }
- 
+
     void Start()
     {
-#if UNITY_IOS || UNITY_ANDROID
+        // Attach event handlers based on platform
+        #if UNITY_IOS || UNITY_ANDROID
         myVideoPlayer.loopPointReached += videoFinished;
-#else
+        #else
         myVideoPlayer.loopPointReached += EndVideo;
-#endif
-
-
+        #endif
     }
-
- 
 
     public void PlayVideo()
     {
-    // #if !UNITY_STANDALONE && !UNITY_WEBGL
-    //     if (myVideoPlayer)
-    //     {
-    //         string videoPath = System.IO.Path.Combine(Application.streamingAssetsPath, videoFileName);
-    //         Debug.Log(videoFileName);
-    //         myVideoPlayer.url = videoPath;
-    //         myVideoPlayer.Play();
-    //     }
-    // #endif
-
-    // #if UNITY_STANDALONE || UNITY_WEBGL
         if (myVideoPlayer)
         {
             myVideoPlayer.url = videoFileUrl;
             myVideoPlayer.Play();
+            StartCoroutine(EnableSkipButtonAfterDelay(5f)); // Enable skip button after 5 seconds
         }
-    //#endif
     }
 
-    public void videoFinished(VideoPlayer vp )
-    {
+    private IEnumerator EnableSkipButtonAfterDelay(float delay)
+    {   
+        skipButton.SetActive(false);
+        yield return new WaitForSeconds(delay);
+        skipButton.SetActive(true); // Activate skip button after delay
+    }
 
+    public void videoFinished(VideoPlayer vp)
+    {
+        HandleVideoEnd();
+    }
+
+    public void EndVideo(VideoPlayer vp)
+    {
+        HandleVideoEnd();
+    }
+
+    private void HandleVideoEnd()
+    {
         isFinished = true;
         panel.SetActive(false);
         videoObj.SetActive(false);
         music.SetActive(true);
-        PlayerPrefs.SetInt("isFinished", (isFinished ? 1 : 0));
+
+        // Store that the video has been finished
+        PlayerPrefs.SetInt("isFinished", 1);
     }
-
-
-    public void EndVideo(VideoPlayer vp )
-    {
-      
-        isFinished = true;
-        panel.SetActive(false);
-        videoObj.SetActive(false);
-        music.SetActive(true);
-        PlayerPrefs.SetInt("isFinished", (isFinished ? 1 : 0));
-    }
-
-
 }

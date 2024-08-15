@@ -10,6 +10,7 @@ public class QuestManinScene : MonoBehaviour
     public Color completedColor;
     public Color activeColor;
     public Color currentColor;
+    public Sprite currentSprite, activeSprite, completedSprite;
 
     public QuestArrowMain arrow;
     public QuestManinScene[] allQuests;
@@ -28,14 +29,17 @@ public class QuestManinScene : MonoBehaviour
     private void Start()
     {
         allQuests = FindObjectsOfType<QuestManinScene>();
-        currentColor = questItem.color;
+        //currentColor = questItem.color;
+        currentSprite = questItem.sprite;
         QuestCompleted =  (PlayerPrefs.GetInt("Qbjective1main") != 0);
     }
     public void FinishQuest()
     {
         questItem.GetComponent<Button>().interactable = false;
-        currentColor = completedColor;
-        questItem.color = activeColor;
+        //currentColor = completedColor;
+        currentSprite = completedSprite;
+        //questItem.color = activeColor;
+        questItem.sprite = activeSprite;
         arrow.gameObject.SetActive(false);
         questCompletemain++;
         QuestCompleted = true;
@@ -74,9 +78,11 @@ public class QuestManinScene : MonoBehaviour
         arrow.target = this.transform;
         foreach(QuestManinScene quest in allQuests)
         {
-            quest.questItem.color = quest.currentColor;
+            //quest.questItem.color = quest.currentColor;
+            quest.questItem.sprite = quest.currentSprite;
         }
-        questItem.color = activeColor;
+        //questItem.color = activeColor;
+        questItem.sprite = activeSprite;
     }
 
     public void QuestComplete()
