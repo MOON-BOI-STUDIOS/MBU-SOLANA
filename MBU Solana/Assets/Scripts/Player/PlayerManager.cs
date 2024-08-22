@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public GameObject fadeOut;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
-    public GameObject enterButton, fishButton, ExitButton, drePowerUpBust, dreBust;
+    public GameObject enterButton, fishButton, ExitButton, drePowerUpBust, dreBust, desertButton;
 
     [SerializeField] VideoPlayer videoPlayer;
 
@@ -173,6 +173,8 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        //It was already like this when I got here :( 
+
         //enables fishing entrance and arena entrance buttons when not in the interaction area
         if (collision.tag == "ArenaZone")
         {
@@ -196,7 +198,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             {
                 ExitButton.SetActive(true);
             }
-
+            if (collision.name == "DesertTrigger")
+            {
+                desertButton.SetActive(true);
+            }
         }
     }
 
@@ -222,6 +227,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if (collision.name == "FishingExit")
         {
             ExitButton.SetActive(false);
+        }
+        if (collision.name == "DesertTrigger")
+        {
+            desertButton.SetActive(false);
         }
     }
   
