@@ -21,7 +21,8 @@ public class MenuManaager : MonoBehaviour
     public Button LoadGamebtn;
     public Button newGamebtn;
 
-    public VideoPlayer VidPlayer;
+    public VideoPlayer initialVidPlayer;  // First VideoPlayer for the initial video
+    public VideoPlayer preloadedVidPlayer; // Second VideoPlayer for the preloaded video
     [SerializeField] string dreStartAnimationUrl; // URL of the video to prepare
 
     public static MenuManaager instance;
@@ -55,6 +56,9 @@ public class MenuManaager : MonoBehaviour
             startButton.SetActive(true);
             Time.timeScale = 1;
         }
+
+        // Prepare the start animation video on the second VideoPlayer
+        PrepareVideo(dreStartAnimationUrl);
     }
 
     // Update is called once per frame
@@ -71,7 +75,7 @@ public class MenuManaager : MonoBehaviour
     {
         Destroy(startButton);
         startButton.SetActive(false);
-        startMenuAnimationSound();
+        StartPreparedVideo();
     }
 
     public void NewstartGame()
@@ -80,7 +84,7 @@ public class MenuManaager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetInt("LastLocation"));
         Destroy(startButton);
         startButton.SetActive(false);
-        startMenuAnimationSound();
+        StartPreparedVideo();
         // Deletes any saved data
         ClearPlayerPrefs();
     }
@@ -117,31 +121,30 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.SetInt("MoneyAward", 0);
     }
 
-    void startMenuAnimationSound()
-    {
-        PrepareVideo(dreStartAnimationUrl);
-    }
-
     void PrepareVideo(string url)
     {
-        VidPlayer.url = url;
-        VidPlayer.isLooping = false;
-        VidPlayer.prepareCompleted += OnPrepareCompleted;
-        VidPlayer.loopPointReached += OnLoopPointReached;
-        VidPlayer.Prepare();
+        preloadedVidPlayer.url = url;
+        preloadedVidPlayer.isLooping = false;
+        preloadedVidPlayer.prepareCompleted += OnPrepareCompleted;
+        preloadedVidPlayer.loopPointReached += OnLoopPointReached;
+        preloadedVidPlayer.Prepare();
+    }
+
+    void StartPreparedVideo()
+    {
+        if (preloadedVidPlayer.isPrepared && preloadedVidPlayer.url == dreStartAnimationUrl)
+        {
+            initialVidPlayer.Stop();  // Stop the initial video
+            preloadedVidPlayer.Play();
+            GetComponent<AudioSource>().PlayOneShot(powerUpSound);
+            GetComponent<AudioSource>().PlayOneShot(startButtonSound);
+        }
     }
 
     private void OnPrepareCompleted(VideoPlayer source)
     {
         source.prepareCompleted -= OnPrepareCompleted;
-
-        // Only play if it is the prepared video
-        if (source.url == dreStartAnimationUrl)
-        {
-            source.Play();
-            GetComponent<AudioSource>().PlayOneShot(powerUpSound);
-            GetComponent<AudioSource>().PlayOneShot(startButtonSound);
-        }
+        // The preloaded video is ready to play whenever you want.
     }
 
     private void OnLoopPointReached(VideoPlayer source)
@@ -172,7 +175,7 @@ public class MenuManaager : MonoBehaviour
 
     private void OnDisable()
     {
-        VidPlayer.loopPointReached -= OnLoopPointReached;
-        VidPlayer.prepareCompleted -= OnPrepareCompleted;
+        preloadedVidPlayer.loopPointReached -= OnLoopPointReached;
+        preloadedVidPlayer.prepareCompleted -= OnPrepareCompleted;
     }
 }

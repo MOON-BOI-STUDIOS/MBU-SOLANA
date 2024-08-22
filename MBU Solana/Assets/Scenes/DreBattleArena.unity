@@ -6274,9 +6274,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0018450185
+    y: 0.0018416207
     width: 1.2640069
-    height: 0.6642066
+    height: 0.6629834
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -9066,7 +9066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &248699829114859154
 Transform:
   m_ObjectHideFlags: 0
@@ -12092,7 +12092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &248699829450606805
 MonoBehaviour:
   m_ObjectHideFlags: 0

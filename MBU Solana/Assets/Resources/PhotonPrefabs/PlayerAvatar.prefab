@@ -1137,6 +1137,7 @@ MonoBehaviour:
   northStar: {fileID: 8300000, guid: 69c524f602ff34f429145fe023619e89, type: 3}
   orionsBelt: {fileID: 8300000, guid: c7da3ac79a24d9948a1f36cf67ad51b4, type: 3}
   deathSound: {fileID: 8300000, guid: 3851f2afed9fa87479b677ddba632ca0, type: 3}
+  teleportSound: {fileID: 0}
   whoosh:
   - {fileID: 8300000, guid: 042c7902ef470c84689021bb0b8c1ba9, type: 3}
   - {fileID: 8300000, guid: 5c79d4f8c0809dd42bc480b58ef88d87, type: 3}

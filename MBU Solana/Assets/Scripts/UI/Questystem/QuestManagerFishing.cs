@@ -51,7 +51,7 @@ public class QuestManagerFishing : MonoBehaviour
         fishQuests[1].collider2D.enabled = false;
         flashTxt.enabled = true;
         //questbtn.GetComponent<Image>().color = Color.green;
-        flashTxt.enabled = true;
+        //flashTxt.enabled = true;
 
         if (questObjective == 2)
         {
