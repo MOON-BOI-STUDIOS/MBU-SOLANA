@@ -14,7 +14,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        _manager = GetComponent<EnemyManager>();
+        _manager = GetComponentInChildren<EnemyManager>();
         agent = GetComponent<NavMeshAgent>();
 
         if (agent == null)

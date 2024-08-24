@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1052430007940095578}
   - component: {fileID: 1052430007940095579}
   - component: {fileID: 1052430007940095572}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 1052430007969968649}
   - component: {fileID: 1052430007969968650}
   - component: {fileID: 1052430007969968651}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackRangeRight
   m_TagString: enemyAttackZone
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 1052430008677395526}
   - component: {fileID: 1052430008677395527}
   - component: {fileID: 1052430008677395529}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 1052430008957843192}
   - component: {fileID: 1052430008957843199}
   - component: {fileID: 1052430008957843198}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PigSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 1052430008970865702}
   - component: {fileID: 1052430008970865700}
   - component: {fileID: 1052430008970865701}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052430009199446446}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HealthDad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 1052430009402016094}
   - component: {fileID: 1052430009402016095}
   - component: {fileID: 1052430009402016088}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackRangeLeft
   m_TagString: enemyAttackZone
   m_Icon: {fileID: 0}

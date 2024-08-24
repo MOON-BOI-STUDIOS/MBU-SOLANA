@@ -89,6 +89,8 @@ GameObject:
   - component: {fileID: 2877990263852934714}
   - component: {fileID: 2877990263852934717}
   - component: {fileID: 2877990263852934716}
+  - component: {fileID: 6440001360229958886}
+  - component: {fileID: 3642230550578496755}
   m_Layer: 0
   m_Name: PigSprite
   m_TagString: Untagged
@@ -196,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a25436ab12b9144a690473eec51a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _manager: {fileID: 2877990264645188741}
+  _manager: {fileID: 3642230550578496755}
   _pigAnimator: {fileID: 2877990263852934714}
   leftAttack: {fileID: 2877990264744108743}
   rightAttack: {fileID: 2877990263857762712}
@@ -299,6 +301,38 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &6440001360229958886
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2877990263852934713}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.013158288, y: 0.13036554}
+  serializedVersion: 2
+  m_Radius: 0.023824576
+--- !u!114 &3642230550578496755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2877990263852934713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8b3fbec22f9ad48901269c4cf6f0f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  _animator: {fileID: 2877990263852934717}
+  _movement: {fileID: 2877990264645188747}
+  healthIndicator: {fileID: 2877990264059943276}
 --- !u!1 &2877990263857762712
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,9 +492,7 @@ GameObject:
   - component: {fileID: 2877990264645188742}
   - component: {fileID: 2877990264645188743}
   - component: {fileID: 2877990264645188744}
-  - component: {fileID: 2877990264645188741}
   - component: {fileID: 2877990264645188747}
-  - component: {fileID: 2984293779559189176}
   m_Layer: 0
   m_Name: Void
   m_TagString: Untagged
@@ -559,22 +591,6 @@ NavMeshAgent:
   m_BaseOffset: 0.44
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &2877990264645188741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2877990264645188738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd8b3fbec22f9ad48901269c4cf6f0f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  _animator: {fileID: 2877990263852934717}
-  _movement: {fileID: 2877990264645188747}
-  healthIndicator: {fileID: 2877990264059943276}
 --- !u!114 &2877990264645188747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,32 +606,6 @@ MonoBehaviour:
   player: {fileID: 0}
   agent: {fileID: 2877990264645188744}
   maxSearchDistance: 10
---- !u!61 &2984293779559189176
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2877990264645188738}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.09888348, y: 1495.8231}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.80223376, y: 2566.1638}
-  m_EdgeRadius: 0
 --- !u!1 &2877990264744108743
 GameObject:
   m_ObjectHideFlags: 0

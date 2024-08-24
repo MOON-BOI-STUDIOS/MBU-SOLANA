@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 405036200}
   - component: {fileID: 405036202}
   - component: {fileID: 405036203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1721387170}
   - component: {fileID: 1721387171}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 3685875998006106709}
   - component: {fileID: 3685875998006106708}
   - component: {fileID: 1216375393}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackArea
   m_TagString: AttackZone
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 8897542944884611170}
   - component: {fileID: 6834044380431924317}
   - component: {fileID: 2072435595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hero
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -454,8 +454,11 @@ MonoBehaviour:
   enterButton: {fileID: 0}
   fishButton: {fileID: 0}
   ExitButton: {fileID: 0}
+  drePowerUpBust: {fileID: 0}
+  dreBust: {fileID: 0}
+  desertButton: {fileID: 0}
+  videoPlayer: {fileID: 0}
   startLocation: []
-  isPoweredUp: 0
   enemies: {fileID: 0}
 --- !u!114 &3685875998466900447
 MonoBehaviour:
@@ -745,7 +748,7 @@ GameObject:
   - component: {fileID: 3685875998609685714}
   - component: {fileID: 3685875998609685718}
   - component: {fileID: 1938921294}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -946,7 +949,7 @@ GameObject:
   - component: {fileID: 3685875998666932542}
   - component: {fileID: 3685875998666932537}
   - component: {fileID: 147424517}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpecialAttackZone
   m_TagString: specialAttackZone
   m_Icon: {fileID: 0}
@@ -1048,7 +1051,7 @@ GameObject:
   - component: {fileID: 3685875999838869774}
   - component: {fileID: 3685875999838869775}
   - component: {fileID: 1907265097}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hero_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1162,10 +1165,16 @@ MonoBehaviour:
   _manager: {fileID: 3685875998466900444}
   lastDirection: {x: 0, y: 0}
   _heroAnimator: {fileID: 3685875999838869769}
+  dreSprite: {fileID: 0}
   EndUI: {fileID: 0}
+  initialMaterial: {fileID: 0}
+  redMaterial: {fileID: 0}
+  yellowMaterial: {fileID: 0}
+  orangeMaterial: {fileID: 0}
   northStar: {fileID: 0}
   orionsBelt: {fileID: 0}
   deathSound: {fileID: 0}
+  teleportSound: {fileID: 0}
   whoosh:
   - {fileID: 0}
   - {fileID: 0}
@@ -1177,6 +1186,7 @@ MonoBehaviour:
   isNoCombatZone: 0
   chests: {fileID: 0}
   enemies: {fileID: 0}
+  playerTeleport: {fileID: 0}
 --- !u!82 &3685875999838869775
 AudioSource:
   m_ObjectHideFlags: 0

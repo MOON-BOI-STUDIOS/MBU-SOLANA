@@ -364,7 +364,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7940079622856671582}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f81fd06f235e5bd4a83b04421185ddce, type: 3}
   m_Name: 
@@ -395,13 +395,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7940079622856671582}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09888348, y: 1495.8231}
+  m_Offset: {x: -0.09888348, y: 1389.4525}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -412,7 +412,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.80223376, y: 2566.1638}
+  m_Size: {x: 0.80223376, y: 2778.905}
   m_EdgeRadius: 0
 --- !u!1 &7940079623446373553
 GameObject:
@@ -464,6 +464,8 @@ GameObject:
   - component: {fileID: 7940079623658363878}
   - component: {fileID: 7940079623658363872}
   - component: {fileID: 7940079623658363873}
+  - component: {fileID: 8414740631231106346}
+  - component: {fileID: 5915779776154424541}
   m_Layer: 0
   m_Name: VoidRedSprite
   m_TagString: Untagged
@@ -678,6 +680,38 @@ MonoBehaviour:
   solanaCoin: {fileID: 4614449820940051731, guid: 804d24531515de1449a4c46d64170480, type: 3}
   powerUpCan: {fileID: 45863770550064870, guid: 47ffc9977b7b7bb498f6213dfa023960, type: 3}
   projectile: {fileID: 379016790107121867, guid: 0b9fa52d16a6d8f4696a07b9715d5cd9, type: 3}
+--- !u!58 &8414740631231106346
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940079623658363877}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.013158288, y: 0.13036554}
+  serializedVersion: 2
+  m_Radius: 0.023824576
+--- !u!114 &5915779776154424541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940079623658363877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81fd06f235e5bd4a83b04421185ddce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  _animator: {fileID: 7940079623658363873}
+  _movement: {fileID: 6965432401854822246}
+  healthIndicator: {fileID: 7940079623446373552}
 --- !u!1 &7940079623670759737
 GameObject:
   m_ObjectHideFlags: 0
