@@ -20566,7 +20566,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1881866882544850502, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_text
-      value: Bonk Arcade
+      value: Bonk Barkade
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297904, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_Type
@@ -20742,7 +20742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297919, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_Name
-      value: BonkArcade Button
+      value: BonkBarkade Button
       objectReference: {fileID: 0}
     - target: {fileID: 1881866883869297919, guid: d087ea2dc4477194ab142593631ea4ff, type: 3}
       propertyPath: m_IsActive
