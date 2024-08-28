@@ -32,7 +32,7 @@ TagManager:
   - InventoryObject
   - Player
   - Interactable
-  - 
+  - XRay
   - 
   - 
   - 
