@@ -1176,7 +1176,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &363823939
 RectTransform:
@@ -4949,7 +4949,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -2208561613829017617, guid: dc790948a43d56244afc26a16f5a4505, type: 2}
   m_audioClip: {fileID: 8300000, guid: feed5ef5e7dee514db4cbcb7fe2e4f61, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6671,7 +6671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2108490476207254713, guid: 7bf4c8aee74489e409056fafcef04cdc, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2108490476207254713, guid: 7bf4c8aee74489e409056fafcef04cdc, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6829,6 +6829,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 29.859924
       objectReference: {fileID: 0}
+    - target: {fileID: 3954187414257862086, guid: 7bf4c8aee74489e409056fafcef04cdc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.380005
+      objectReference: {fileID: 0}
     - target: {fileID: 4129266563019972624, guid: 7bf4c8aee74489e409056fafcef04cdc, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -6892,6 +6896,10 @@ PrefabInstance:
     - target: {fileID: 4419838542093816879, guid: 7bf4c8aee74489e409056fafcef04cdc, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485658481040666275, guid: 7bf4c8aee74489e409056fafcef04cdc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10.380005
       objectReference: {fileID: 0}
     - target: {fileID: 5426600869314250054, guid: 7bf4c8aee74489e409056fafcef04cdc, type: 3}
       propertyPath: m_Value

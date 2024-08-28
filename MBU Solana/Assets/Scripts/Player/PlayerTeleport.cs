@@ -121,7 +121,20 @@ public class PlayerTeleport : MonoBehaviour
         }
         else
         {
-            teleportCostTexts[i].text =cost.ToString(); // Display the cost otherwise
+            teleportCostTexts[i].text = cost.ToString(); // Display the cost otherwise
+        }
+
+        // Get the Button component on the direct parent of the TextMeshProUGUI component
+        Transform parentTransform = teleportCostTexts[i].transform.parent; // Get the parent transform
+        if (parentTransform != null)
+        {
+            Button parentButton = parentTransform.GetComponent<Button>(); // Get the Button component on the direct parent
+
+            // Check if the Button component exists
+            if (parentButton != null)
+            {
+                parentButton.interactable = cost > 0; // Make button non-interactable if cost is 0, otherwise interactable
+            }
         }
     }
 }

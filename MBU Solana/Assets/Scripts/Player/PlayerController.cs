@@ -19,21 +19,18 @@ public class PlayerController : MonoBehaviour
     public bool TutorialMove;
 
     public static PlayerController Instance { get; private set; }
-    private SpriteRenderer spriteRenderer;
+    [SerializeField] SpriteRenderer spriteRenderer;
 
     private void Awake() {
         // Ensure there's only one instance of the player
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: Keep the player across scenes
         }
         else
         {
             Destroy(gameObject);
         }
-
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     public SpriteRenderer GetSpriteRenderer()
