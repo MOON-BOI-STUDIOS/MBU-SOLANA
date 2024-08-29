@@ -38,6 +38,11 @@ public class PlayerController : MonoBehaviour
         return spriteRenderer;
     }
 
+    public Vector2 GetMoveDirection()
+    {
+        return moveDirection;
+    }
+
     void Start()
     {
         _manager = GetComponent<PlayerManager>();

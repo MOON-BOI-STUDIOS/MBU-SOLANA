@@ -5,7 +5,7 @@ public class RealTimeCoverCheck2D : MonoBehaviour
     public Camera mainCamera;        // The camera you're using to view the scene
     public LayerMask layerMask;      // The layer mask to filter relevant objects
     public GameObject xRayObject;    // The object to show/hide based on raycast
-    public float checkInterval = 0.2f; // Time interval between checks
+    public float checkInterval; // Time interval between checks
 
     private bool isXRayObjectActive = false; // Cache the active state to prevent unnecessary toggles
 
