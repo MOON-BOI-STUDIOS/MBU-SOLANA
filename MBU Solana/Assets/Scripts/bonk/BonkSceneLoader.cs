@@ -12,6 +12,7 @@ public class BonkSceneLoader : MonoBehaviour
             if(!isCalled)
             {
                 GameManager.Inst.nextScene(4);
+                collision.gameObject.GetComponent<PlayerController>().enabled = false;
                 isCalled = true;
             }
 
