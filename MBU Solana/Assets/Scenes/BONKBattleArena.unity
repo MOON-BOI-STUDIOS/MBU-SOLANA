@@ -6815,9 +6815,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0018416207
-    width: 1.2640069
-    height: 0.6629834
+    y: 0.0952381
+    width: 1.2252932
+    height: 0.2955665
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8175,9 +8175,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.0018416207
-    width: 1.2640069
-    height: 0.6629834
+    y: 0.0952381
+    width: 1.2252932
+    height: 0.2955665
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -9807,7 +9807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &248699829114859154
 Transform:
   m_ObjectHideFlags: 0
@@ -17398,6 +17398,7 @@ MonoBehaviour:
   ExitButton: {fileID: 0}
   drePowerUpBust: {fileID: 0}
   dreBust: {fileID: 0}
+  desertButton: {fileID: 0}
   videoPlayer: {fileID: 0}
   startLocation: []
   enemies: {fileID: 0}
@@ -17422,6 +17423,7 @@ MonoBehaviour:
   isRunning: 0
   inputs: {fileID: 0}
   TutorialMove: 0
+  spriteRenderer: {fileID: 0}
 --- !u!4 &3482781816479680324
 Transform:
   m_ObjectHideFlags: 0

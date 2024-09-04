@@ -5280,7 +5280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8977963899517756181, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e237628738ac0b4cb376a7325d27564, type: 3}
@@ -6734,6 +6734,7 @@ MonoBehaviour:
   ExitButton: {fileID: 0}
   drePowerUpBust: {fileID: 0}
   dreBust: {fileID: 0}
+  desertButton: {fileID: 0}
   videoPlayer: {fileID: 0}
   startLocation: []
   enemies: {fileID: 0}
@@ -6840,6 +6841,7 @@ MonoBehaviour:
   isRunning: 0
   inputs: {fileID: 8234105076013939221}
   TutorialMove: 0
+  spriteRenderer: {fileID: 0}
 --- !u!114 &8234105076013939220
 MonoBehaviour:
   m_ObjectHideFlags: 0
