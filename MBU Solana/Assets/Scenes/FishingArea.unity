@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.21960784}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3649,7 +3649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.33333334}
+  m_Color: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3693,7 +3693,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.00012207031, y: 0}
-  m_SizeDelta: {x: 26.6568, y: 26.6568}
+  m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &622909220
 GameObject:
@@ -12763,6 +12763,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 863a7625f3f7946f08adf739cd6cf0e8, type: 3}
+--- !u!114 &1639444351 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2567680379047218726, guid: 863a7625f3f7946f08adf739cd6cf0e8, type: 3}
+  m_PrefabInstance: {fileID: 1639444350}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1acb7e4d6c74a5fba043e0f195dc53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1647502549
 GameObject:
   m_ObjectHideFlags: 0
@@ -18417,7 +18428,7 @@ PrefabInstance:
     - target: {fileID: 3961368043105817334, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: hotBarController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1639444351}
     - target: {fileID: 3961368044037009664, guid: 4b839cf51732b6d4c854cce8f47b79bc, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
       value: 0
