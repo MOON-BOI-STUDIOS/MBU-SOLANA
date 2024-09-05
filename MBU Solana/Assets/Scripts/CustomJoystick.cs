@@ -1,58 +1,79 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.UI;
 
 public class CustomJoystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] private RectTransform joystickTransform;
+    [SerializeField] private GameObject joystickParent; // Parent object to enable/disable
     [SerializeField] private float joystickRadius = 100f;
+    [SerializeField] private float sensitivity = 0.5f; // Adjust sensitivity (lower values = less sensitive)
 
-    private Vector2 startPosition;
+    private RectTransform joystickParentRectTransform;
     private Vector2 joystickDirection;
-    private Vector2 touchOffset;
     private bool isDragging = false;
 
     private void Awake()
     {
-        startPosition = joystickTransform.anchoredPosition;
+        joystickParentRectTransform = joystickParent.GetComponent<RectTransform>();
+        joystickParent.SetActive(false); // Ensure joystick is hidden at start
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector2 position = ClampPosition(eventData.position + touchOffset);
+        if (!isDragging)
+            return;
+
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(joystickParentRectTransform, eventData.position, eventData.pressEventCamera, out Vector2 localPosition);
+
+        // Apply sensitivity
+        Vector2 position = localPosition * sensitivity;
+
+        // Clamp position within joystick radius
+        position = ClampPosition(position);
+
+        // Update the joystick position relative to the parent (gamepad)
         joystickTransform.anchoredPosition = position;
+
         UpdateJoystickDirection();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         isDragging = true;
-        touchOffset = joystickTransform.anchoredPosition - eventData.position;
-        joystickTransform.anchoredPosition = eventData.position + touchOffset;
+        joystickParent.SetActive(true); // Show joystick
+
+        // Move the joystick parent (base) to the pointer's position relative to the transparent image
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(GetComponent<RectTransform>(), eventData.position, eventData.pressEventCamera, out Vector2 localPosition);
+
+        // Offset the joystickParent by half of its size to center it on the click/touch point
+        Vector2 offset = new Vector2(joystickParentRectTransform.rect.width / 2, joystickParentRectTransform.rect.height / 2);
+        joystickParentRectTransform.anchoredPosition = localPosition - offset;
+
+        // Set the joystick handle to the center of the base initially
+        joystickTransform.anchoredPosition = Vector2.zero;
+
         UpdateJoystickDirection();
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         isDragging = false;
-        joystickTransform.anchoredPosition = startPosition;
+        joystickTransform.anchoredPosition = Vector2.zero;
         joystickDirection = Vector2.zero;
+        joystickParent.SetActive(false); // Hide joystick
     }
 
     private void UpdateJoystickDirection()
     {
-        Vector2 delta = (joystickTransform.anchoredPosition - startPosition) / joystickRadius;
+        Vector2 delta = joystickTransform.anchoredPosition / joystickRadius;
         joystickDirection = delta.magnitude > 1f ? delta.normalized : delta;
     }
 
     private Vector2 ClampPosition(Vector2 position)
     {
-        Vector2 delta = position - startPosition;
-        if (delta.magnitude > joystickRadius)
+        if (position.magnitude > joystickRadius)
         {
-            delta = delta.normalized * joystickRadius;
-            position = startPosition + delta;
+            position = position.normalized * joystickRadius;
         }
         return position;
     }
@@ -60,18 +81,5 @@ public class CustomJoystick : MonoBehaviour, IDragHandler, IPointerDownHandler, 
     public Vector2 GetJoystickDirection()
     {
         return joystickDirection;
-    }
-
-    public void SnapToTouchPosition(Vector2 touchPosition)
-    {
-        Vector2 position = ClampPosition(touchPosition + touchOffset);
-        joystickTransform.anchoredPosition = position;
-        UpdateJoystickDirection();
-    }
-
-    public void SnapToInitialPosition()
-    {
-        joystickTransform.anchoredPosition = startPosition;
-        joystickDirection = Vector2.zero;
     }
 }
