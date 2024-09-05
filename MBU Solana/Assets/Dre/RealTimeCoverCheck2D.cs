@@ -7,6 +7,8 @@ public class RealTimeCoverCheck2D : MonoBehaviour
     public GameObject xRayObject;    // The object to show/hide based on raycast
     public float checkInterval; // Time interval between checks
 
+    public float rayOffsetY;
+
     private bool isXRayObjectActive = false; // Cache the active state to prevent unnecessary toggles
 
     void Start()
@@ -21,7 +23,7 @@ public class RealTimeCoverCheck2D : MonoBehaviour
     void CheckVisibility()
     {
         // Convert player's position to screen space
-        Vector3 playerScreenPos = mainCamera.WorldToScreenPoint(transform.position);
+        Vector3 playerScreenPos = mainCamera.WorldToScreenPoint(transform.position + new Vector3(0f, rayOffsetY, 0f));
 
         // Create a ray from the camera through the player's screen position
         Ray ray = mainCamera.ScreenPointToRay(playerScreenPos);
