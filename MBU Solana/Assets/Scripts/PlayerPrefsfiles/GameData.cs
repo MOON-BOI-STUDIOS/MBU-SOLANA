@@ -14,6 +14,7 @@ public class GameData
 
 }
 
+[System.Serializable]
 public struct ItemData
 {
     public int itemListIndex;

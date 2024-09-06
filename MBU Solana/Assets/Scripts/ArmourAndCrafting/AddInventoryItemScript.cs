@@ -46,11 +46,13 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     }
     private void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.X))
         {
             Items newItem = itemList[Random.Range(0,itemList.Count)];
             ItemInventory.instance.AddItem(Instantiate(newItem));
         }
+#endif
     }
 
     public void AddToInventory(Items newItem)

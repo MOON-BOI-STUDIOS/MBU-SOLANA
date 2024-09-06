@@ -62,7 +62,6 @@ public class GameManager : MonoBehaviour
         transitionIn.transform.GetComponent<Animator>().SetBool("isExiting", true);
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(sceneNumber);
-        
     }
 
   public void SetLastLocation(int number)

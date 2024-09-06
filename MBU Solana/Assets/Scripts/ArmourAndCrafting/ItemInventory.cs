@@ -69,6 +69,7 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
         AddItemToDict(items);
         //Call On item change to show on screen UI
         onItemChange.Invoke();
+        DataPersistanceManager.instance.SaveGame();
     }
 
     private void AddItemToDict(Items itemtoAdd)
@@ -99,6 +100,7 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
             hotbarItemList.Remove(_items);
         }
         onItemChange.Invoke();
+        DataPersistanceManager.instance.SaveGame();
     }
     public int NumberOfItems(Items _items) // Getting the number of items in the dictionary
     {
@@ -267,6 +269,8 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
                     BaitItemObjj queryItem = (BaitItemObjj)inventoryItemList[i];
                     baitValue = queryItem.GetbaitValue();
                 }
+                Debug.Log("IDX " + idx);
+                Debug.Log("BAIT VALUE " + baitValue);
                 data.savedData.Add(new ItemData(idx,baitValue));
             }
         }
