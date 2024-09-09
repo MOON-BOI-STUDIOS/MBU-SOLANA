@@ -51,6 +51,9 @@ public class ItemSlot: MonoBehaviour
     {
         if (_items != null)
         {
+            // Destroy item info if item is removed/sold
+            AddInventoryItemScript.instance.DestroyItemInfo();
+
             ItemInventory.instance.RemoveItem(_items);
         }
     }

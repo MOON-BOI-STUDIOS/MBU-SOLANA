@@ -16,6 +16,10 @@ public class CustomJoystick : MonoBehaviour, IDragHandler, IPointerDownHandler, 
     {
         joystickParentRectTransform = joystickParent.GetComponent<RectTransform>();
         joystickParent.SetActive(false); // Ensure joystick is hidden at start
+
+#if UNITY_WEBGL
+        gameObject.SetActive(false);
+#endif
     }
 
     public void OnDrag(PointerEventData eventData)

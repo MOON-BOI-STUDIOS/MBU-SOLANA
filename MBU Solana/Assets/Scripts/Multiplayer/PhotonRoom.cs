@@ -142,7 +142,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
 
         if (MultiplayerSettings.multiplayerSettings.delayStart)
         {
-            Debug.Log("Display players in room of max players possible(" + playersInRoom + ":" + MultiplayerSettings.multiplayerSettings.maxPlayers + "(");
+            Debug.Log("Display players in room of max players possible( " + playersInRoom + " : " + MultiplayerSettings.multiplayerSettings.maxPlayers + " (");
             if (playersInRoom > 1)
             {
                 readyToCount = true;
@@ -196,7 +196,7 @@ public class PhotonRoom : MonoBehaviourPunCallbacks,IInRoomCallbacks
         playersInRoom++;
         if (MultiplayerSettings.multiplayerSettings.delayStart)
         {
-            Debug.Log("displayer players in room outr of max players possible(" + playersInRoom + ":" + MultiplayerSettings.multiplayerSettings.maxPlayers + ")");
+            Debug.Log("Display players in room of max players possible( " + playersInRoom + " : " + MultiplayerSettings.multiplayerSettings.maxPlayers + " )");
             if (playersInRoom > 1)
             {
                 readyToCount = true;

@@ -37,6 +37,7 @@ public class WalkingandFishing : MonoBehaviour
     public GameObject txt;
 
     public Transform tutorialPos;
+    public WarningMessageText warningMessageText;
     void Start()
     {
         
@@ -109,6 +110,7 @@ public class WalkingandFishing : MonoBehaviour
         }
         else
         {
+            warningMessageText.ShowError("Please equip rod and bait");
             Debug.Log("Cannot fish as one of the equipped items is null");
         }
     }

@@ -18,6 +18,7 @@ public class AdjustSortingOrderRelativeToPlayer : MonoBehaviour
         {
             // Reference to the player's SpriteRenderer
             SpriteRenderer playerSpriteRenderer = PlayerController.Instance.GetSpriteRenderer();
+            Debug.Log("SPRITE RENDERER " + playerSpriteRenderer);
 
             if (playerSpriteRenderer != null)
             {
@@ -30,16 +31,13 @@ public class AdjustSortingOrderRelativeToPlayer : MonoBehaviour
                 {
                     // Enemy is above the player
                     spriteRenderer.sortingOrder = playerSpriteRenderer.sortingOrder - 1;
+                    Debug.Log("MERGE");
                 }
-                else if (yDifference < 0)
+                else if (yDifference <= 0)
                 {
                     // Enemy is below the player
                     spriteRenderer.sortingOrder = playerSpriteRenderer.sortingOrder + 1;
-                }
-                else
-                {
-                    // Enemy is at the same level as the player
-                    spriteRenderer.sortingOrder = playerSpriteRenderer.sortingOrder;
+                    Debug.Log("MERGE");
                 }
             }
         }

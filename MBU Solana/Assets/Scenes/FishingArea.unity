@@ -3859,6 +3859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 642462186}
   - component: {fileID: 642462185}
+  - component: {fileID: 642462193}
   - component: {fileID: 642462187}
   - component: {fileID: 642462189}
   - component: {fileID: 642462190}
@@ -3936,6 +3937,7 @@ MonoBehaviour:
   HUD1: {fileID: 1259572819}
   txt: {fileID: 550578019}
   tutorialPos: {fileID: 282280420}
+  warningMessageText: {fileID: 642462193}
 --- !u!114 &642462189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4010,6 +4012,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1157484487}
+--- !u!114 &642462193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642462184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9da66810c823854ba9b79541b38d9a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warningMessageText: {fileID: 1588988565}
+  displayDuration: 2
+  startColor: {r: 1, g: 0.42948896, b: 0, a: 1}
+  endColor: {r: 1, g: 0.7569055, b: 0.015686274, a: 1}
+  startScale: {x: 1, y: 1, z: 1}
+  endScale: {x: 0.8, y: 0.8, z: 0.8}
+  scaleSpeed: 4
+  colorSpeed: 3
 --- !u!1 &697635078
 GameObject:
   m_ObjectHideFlags: 0
@@ -11724,6 +11746,86 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7807258417314638771, guid: db60e903399ca2942a43dd9f38fa7491, type: 3}
   m_PrefabInstance: {fileID: 1259572817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1588988563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1588988564}
+  - component: {fileID: 1588988566}
+  - component: {fileID: 1588988565}
+  m_Layer: 5
+  m_Name: WarningMessage Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1588988564
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588988563}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1758799343}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -839.99963, y: -570.94476}
+  m_SizeDelta: {x: 1280, y: 118.109985}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1588988565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588988563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.34941274, b: 0.09803921, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 0cc59a4dffbfbb8469683ca2785d806e, type: 3}
+    m_FontSize: 72
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 104
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Please equip rod and bait
+--- !u!222 &1588988566
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588988563}
+  m_CullTransparentMesh: 1
 --- !u!1 &1596572712
 GameObject:
   m_ObjectHideFlags: 0
@@ -14034,6 +14136,7 @@ RectTransform:
   - {fileID: 41153482}
   - {fileID: 90556066}
   - {fileID: 1132535978}
+  - {fileID: 1588988564}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19069,7 +19172,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0.5
   m_Url: https://raw.githubusercontent.com/MOON-BOI-STUDIOS/mbubonkfish/main/StreamingAssets/Fishing_Scene_Intro.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
