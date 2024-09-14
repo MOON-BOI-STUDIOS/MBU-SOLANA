@@ -24,7 +24,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     bool isDead;
     bool isDeadRevive;
 
-    public GameObject fadeOut;
+    public GameObject afterDeathPanel;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
     public GameObject enterButton, fishButton, ExitButton, drePowerUpBust, dreBust, desertButton;
@@ -65,7 +65,11 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             isDead = true;
             _animator._heroAnimator.SetLayerWeight(2, 1);
             _animator._heroAnimator.SetBool("isDead", true);
-            StartCoroutine(deathSequence());
+
+            _controller.enabled = false;
+            _combat.enabled = false;
+
+            ShowAfterDeathPanel();
         }
 
 
@@ -233,19 +237,11 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             desertButton.SetActive(false);
         }
     }
-  
-    //death sequence
-    IEnumerator  deathSequence()
+
+    public void ShowAfterDeathPanel()
     {
-        _controller.enabled = false;
-        _combat.enabled = false;
-        if (fadeOut != null)
-        {
-            Time.timeScale = 0f;
-            fadeOut.SetActive(true);
-        }
-        yield return new WaitForSeconds(1);
-        //SceneManager.LoadScene(0);
+        Time.timeScale = 0f;
+        afterDeathPanel.SetActive(true);
     }
     
     // Adding to Inventory

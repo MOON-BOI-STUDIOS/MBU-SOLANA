@@ -89,6 +89,12 @@ public class PlayerAnimator : MonoBehaviour
         }
     }
 
+    public void StopMoving()
+    {
+        _heroAnimator.SetBool("isRunning", false);
+        _heroAnimator.SetBool("isMoving", false);
+    }
+
     public void endofCollect()
     {
         chests.isPickingUP = false;
@@ -292,5 +298,8 @@ public class PlayerAnimator : MonoBehaviour
         _manager._controller.enabled = true;
     }
 
-
+    public void EndDeath()
+    {
+        _manager.ShowAfterDeathPanel();
+    }
 }

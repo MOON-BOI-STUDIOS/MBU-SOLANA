@@ -6779,9 +6779,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.04027778
-    width: 0.590625
-    height: 0.125
+    y: 0.11647727
+    width: 1
+    height: 0.7670455
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8879,7 +8879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &248699829003283023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25953,7 +25953,7 @@ MonoBehaviour:
   coinsText: {fileID: 248699829856175439}
   healthIndicator: {fileID: 248699829738622241}
   healthNumber: {fileID: 248699828092729343}
-  fadeOut: {fileID: 248699827893075081}
+  afterDeathPanel: {fileID: 248699827893075081}
   coinSound1: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
   coinSound2: {fileID: 8300000, guid: 16ebdad47210be143bdb4cafe67a50ef, type: 3}
   attackButton: {fileID: 0}
@@ -26535,13 +26535,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1603116350, guid: 5e528003676bfee4384aa5b8f5a913f6, type: 3}
   m_Color: {r: 0.7783019, g: 0.81013185, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.38, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

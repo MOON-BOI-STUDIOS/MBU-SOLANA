@@ -18,6 +18,13 @@ public class AttackButtonHandler : MonoBehaviour, IPointerDownHandler, IPointerU
         attackButton.SetActive(false);
     }
 
+    private void Awake() 
+    {
+#if UNITY_WEBGL
+        gameObject.SetActive(false);
+#endif
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         isTouching = true;
