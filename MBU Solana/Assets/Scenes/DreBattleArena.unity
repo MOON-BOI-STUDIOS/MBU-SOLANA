@@ -6692,9 +6692,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.0678788}
   serializedVersion: 2
-  m_Radius: 0.50000006
+  m_Radius: 0.43212122
 --- !u!81 &248699828558509088
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6779,9 +6779,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.11647727
-    width: 1
-    height: 0.7670455
+    y: 0.09577922
+    width: 1.0017606
+    height: 0.8766234
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -8879,7 +8879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &248699829003283023
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12543,9 +12543,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.040301237}
   serializedVersion: 2
-  m_Radius: 1.14
+  m_Radius: 0.7342991
 --- !u!4 &248699829486983412
 Transform:
   m_ObjectHideFlags: 0
@@ -26018,7 +26018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comboTimer: 1
   comboCounter: 0
-  numberOfComboHits: 7
+  numberOfComboHits: 5
   comboIntervalMax: 1
   comboText: {fileID: 248699829371500588}
   comboIndicatorParent: {fileID: 248699828301776502}

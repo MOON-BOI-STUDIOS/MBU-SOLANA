@@ -234,11 +234,11 @@ public class ArcadeMacineManager : MonoBehaviour, ITransferInfo
             !button_fishing.gameObject.activeSelf &&
             !button_racing.gameObject.activeSelf)
         {
-            //button_donate.gameObject.SetActive(true);
+            button_donate.gameObject.SetActive(true);
         }
         else
         {
-            //button_donate.gameObject.SetActive(false);
+            button_donate.gameObject.SetActive(false);
         }
     }
 
