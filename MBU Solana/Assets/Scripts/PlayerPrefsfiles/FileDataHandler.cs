@@ -62,8 +62,6 @@ public class FileDataHandler
         Debug.Log("Saving the game to file data handler");
         //use Path.Combine to account for different OS's
         string fullPath = Path.Combine(dataDirPath,dataFileName);
-        Debug.Log("FULL PATH SAVE "+ fullPath);
-        Debug.Log("DATA SAVE COUNT " + data.savedData.Count);
 
         try{
             //Create a directory path just in case it doesn't exist in our computer
@@ -72,7 +70,6 @@ public class FileDataHandler
             //Serialise the C# game data object into Json
             string dataToStore = JsonUtility.ToJson(data, true);
             Debug.Log("SAVED DATA COUNT " + data.savedData.Count);
-            Debug.Log("DATA TO STORE " + dataToStore);
 
             //optionally encrypt the file
             if(useEncryption)

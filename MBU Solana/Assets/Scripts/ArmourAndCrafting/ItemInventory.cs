@@ -254,14 +254,14 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
 
     public void SaveData(ref GameData data)
     {
-        Debug.Log("Number of items in ythe inventoryItemList" + inventoryItemList.Count);
+        Debug.Log("Number of items in the inventoryItemList" + inventoryItemList.Count);
         //Check index from the item list in AddInventoryItemList and if it is a rod object then save its index and bait number as -1 
         // if it is a bait object save index and the bait number as well
         for(int i = 0;i < inventoryItemList.Count;i++)
         {
             int idx = inventoryItemList[i].itemNumber;
             int baitValue = -1;
-            Debug.Log("Index of the data being saved" + idx);
+            Debug.Log("Index of item: " + idx);
             if(idx >= 0)
             {
                 if(string.Equals(inventoryItemList[i].classOfItem.ToString(),"bait"))
@@ -269,8 +269,7 @@ public class ItemInventory: MonoBehaviour, IDataPersistanceScript
                     BaitItemObjj queryItem = (BaitItemObjj)inventoryItemList[i];
                     baitValue = queryItem.GetbaitValue();
                 }
-                Debug.Log("IDX " + idx);
-                Debug.Log("BAIT VALUE " + baitValue);
+
                 data.savedData.Add(new ItemData(idx,baitValue));
             }
         }

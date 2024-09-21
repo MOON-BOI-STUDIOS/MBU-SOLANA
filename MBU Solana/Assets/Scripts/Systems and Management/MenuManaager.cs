@@ -119,6 +119,10 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.SetInt("firstLoad", 0);
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("MoneyAward", 0);
+
+        PlayerPrefs.SetString("LastSceneName", "MeccaScene");
+        PlayerPrefs.DeleteKey("PlayerPosX");
+        PlayerPrefs.DeleteKey("PlayerPosY");
     }
 
     void PrepareVideo(string url)
@@ -170,7 +174,7 @@ public class MenuManaager : MonoBehaviour
         transition.gameObject.SetActive(true);
         transition.GetComponent<Animator>().SetBool("isExiting", true);
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(PlayerPrefs.GetString("LastSceneName"));
     }
 
     private void OnDisable()

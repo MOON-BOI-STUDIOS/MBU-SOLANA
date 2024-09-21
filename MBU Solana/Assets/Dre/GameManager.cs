@@ -69,6 +69,11 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("LastLocation", number);
   }
 
+  public void SetLastScene()
+  {
+      PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
+  }
+
   public void LoadMultiplayerScene()
   {
     SceneManager.LoadScene("MultiplayerLobby");
