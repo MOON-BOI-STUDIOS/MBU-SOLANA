@@ -174,7 +174,18 @@ public class MenuManaager : MonoBehaviour
         transition.gameObject.SetActive(true);
         transition.GetComponent<Animator>().SetBool("isExiting", true);
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(PlayerPrefs.GetString("LastSceneName"));
+
+        if(SceneManager.GetSceneByName(PlayerPrefs.GetString("LastSceneName")).buildIndex <= 4 || PlayerPrefs.GetString("LastSceneName") == "ShopInterior")
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetString("LastSceneName"));
+            PlayerController.Instance.SetPlayerPosition(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"));
+        }
+
+        else
+        {
+            SceneManager.LoadScene("MeccaScene");
+        }
+
     }
 
     private void OnDisable()

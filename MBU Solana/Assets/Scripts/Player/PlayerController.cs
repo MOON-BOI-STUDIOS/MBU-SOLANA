@@ -42,6 +42,11 @@ public class PlayerController : MonoBehaviour
         return moveDirection;
     }
 
+    public void SetPlayerPosition(float posX, float posY)
+    {
+        rb.position = new Vector2(posX, posY);
+    }
+
     void Start()
     {
         _manager = GetComponent<PlayerManager>();
@@ -50,9 +55,9 @@ public class PlayerController : MonoBehaviour
         currentSpeed = moveSpeed;
         inputHandler = GetComponent<IPlayerInput>();
 
-#if !UNITY_EDITOR
-        rb.position = new Vector2(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"));
-#endif
+
+        //rb.position = new Vector2(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"));
+
 
         //Subscribe to the Move action events only for PC release and WebGl release
         inputs.actions["Move"].performed += Move;
@@ -125,7 +130,6 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("OnApplicationQuit called");
         // Save the current scene index
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex;
         string sceneName = SceneManager.GetActiveScene().name;
         
         PlayerPrefs.SetString("LastSceneName", sceneName);
@@ -145,25 +149,16 @@ public class PlayerController : MonoBehaviour
     }
 
 #if UNITY_WEBGL
-    // // For WebGL and handling app pause (also works for Android backgrounding)
-    // private void OnApplicationPause(bool pauseStatus)
-    // {
-    //     if (pauseStatus) // If the app is being paused (i.e., going into the background or losing focus)
-    //     {
-    //         Debug.Log("OnApplicationPause called with pauseStatus: " + pauseStatus);
-    //         // Save the current scene index
-    //     int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-    //     PlayerPrefs.SetInt("SceneIndex", sceneIndex);
-
-    //     // Save player position
-    //     PlayerPrefs.SetFloat("PlayerPosX", rb.position.x);
-    //     PlayerPrefs.SetFloat("PlayerPosY", rb.position.y);
-
-    //     // Save the data
-    //     PlayerPrefs.Save();
-    //     Debug.Log("Game Saved: Scene " + sceneIndex + " at position " + rb.position);
-    //     }
-    // }
+    // For WebGL and handling app pause (also works for Android backgrounding)
+    private void OnApplicationPause(bool pauseStatus)
+    {
+        if (pauseStatus) // If the app is being paused (i.e., going into the background or losing focus)
+        {
+            Debug.Log("OnApplicationPause called with pauseStatus: " + pauseStatus);
+            // Save the current scene index
+            UpdateSceneAndPosition();
+        }
+    }
 
     // For WebGL (handle when the app loses focus in the browser)
     private void OnApplicationFocus(bool hasFocus)
