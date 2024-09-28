@@ -34,8 +34,6 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Coins", 250);
             PlayerPrefs.SetInt("MoneyAward", 1);
         }
-
-
     }
 
     // Update is called once per frame

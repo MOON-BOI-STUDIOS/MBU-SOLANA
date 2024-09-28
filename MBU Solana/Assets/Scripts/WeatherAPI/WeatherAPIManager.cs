@@ -10,6 +10,7 @@ public class WeatherAPIManager : MonoBehaviour
     // Reference to the RainScript2D component
     public DigitalRuby.RainMaker.RainScript2D rainScript;
     public Light2D light2dScript;
+    public Color whiteLight, sunLight;
 
     // Start is called before the first frame update
     void Start()
@@ -78,13 +79,15 @@ public class WeatherAPIManager : MonoBehaviour
             rainScript.RainIntensity = 0f;  // No rain
             rainScript.enabled = false;  // Disable rain effects
             light2dScript.intensity = 0.8f;
+            light2dScript.color = whiteLight;
             break;
 
         case "sunny":
             Debug.Log("It's sunny, turning off rain.");
             rainScript.RainIntensity = 0f;  // No rain
             rainScript.enabled = false;  // Disable rain effects
-            light2dScript.intensity = 1f;
+            light2dScript.intensity = 1.05f;
+            light2dScript.color = sunLight;
             break;
 
         case "light rain":
@@ -92,6 +95,7 @@ public class WeatherAPIManager : MonoBehaviour
             rainScript.RainIntensity = 0.1f;  // Moderate rain
             rainScript.enabled = true;  // Enable rain effects
             light2dScript.intensity = 0.8f;
+            light2dScript.color = whiteLight;
             break;
 
         case "heavy rain":
@@ -99,6 +103,7 @@ public class WeatherAPIManager : MonoBehaviour
             rainScript.RainIntensity = 0.5f;  // Full rain effect
             rainScript.enabled = true;  // Enable rain effects
             light2dScript.intensity = 0.8f;
+            light2dScript.color = whiteLight;
             break;
 
         default:
@@ -109,6 +114,7 @@ public class WeatherAPIManager : MonoBehaviour
                 rainScript.RainIntensity = 0.7f;  // Default rain intensity for general rain
                 rainScript.enabled = true;  // Enable rain effects
                 light2dScript.intensity = 0.8f;
+                light2dScript.color = whiteLight;
             }
             else if(condition.Contains("mist"))
             {
@@ -116,6 +122,7 @@ public class WeatherAPIManager : MonoBehaviour
                 rainScript.RainIntensity = 0.02f;  // Default rain intensity for general rain
                 rainScript.enabled = true;  // Enable rain effects
                 light2dScript.intensity = 0.8f;
+                light2dScript.color = whiteLight;
             }
             else if(condition.Contains("storm"))
             {
@@ -123,6 +130,7 @@ public class WeatherAPIManager : MonoBehaviour
                 rainScript.RainIntensity = 1f;  // Default rain intensity for general rain
                 rainScript.enabled = true;  // Enable rain effects
                 light2dScript.intensity = 0.77f;
+                light2dScript.color = whiteLight;
             }
             else
             {
@@ -130,6 +138,7 @@ public class WeatherAPIManager : MonoBehaviour
                 rainScript.RainIntensity = 0f;  // No rain
                 rainScript.enabled = false;  // Disable rain effects
                 light2dScript.intensity = 0.9f;
+                light2dScript.color = whiteLight;
             }
             break;
     }

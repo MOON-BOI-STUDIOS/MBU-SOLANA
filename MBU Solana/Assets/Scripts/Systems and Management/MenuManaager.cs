@@ -36,15 +36,13 @@ public class MenuManaager : MonoBehaviour
         number = PlayerPrefs.GetInt("num");
         gameNum = PlayerPrefs.GetInt("gameNum");
 
-        if (gameNum == 0)
+        if (!PlayerPrefs.HasKey("LastSceneName"))
         {
-            LoadGamebtn.interactable = false;
-            newGamebtn.interactable = true;
+            LoadGamebtn.gameObject.SetActive(false);
         }
-        else if (gameNum == 1)
+        else
         {
-            LoadGamebtn.interactable = true;
-            newGamebtn.interactable = true;
+            LoadGamebtn.gameObject.SetActive(true);
         }
     }
 
@@ -73,9 +71,12 @@ public class MenuManaager : MonoBehaviour
     // Triggers powerup animation, disables start menu buttons, plays select sound as well as powerup sound
     public void startGame()
     {
-        Destroy(startButton);
-        startButton.SetActive(false);
-        StartPreparedVideo();
+        if((PlayerPrefs.HasKey("LastSceneName")))
+        {
+            Destroy(startButton);
+            startButton.SetActive(false);
+            StartPreparedVideo();
+        }
     }
 
     public void NewstartGame()
@@ -120,30 +121,56 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("MoneyAward", 0);
 
-        PlayerPrefs.SetString("LastSceneName", "MeccaScene");
+        PlayerPrefs.DeleteKey("LastSceneName");
         PlayerPrefs.DeleteKey("PlayerPosX");
         PlayerPrefs.DeleteKey("PlayerPosY");
     }
 
     void PrepareVideo(string url)
-    {
-        preloadedVidPlayer.url = url;
-        preloadedVidPlayer.isLooping = false;
-        preloadedVidPlayer.prepareCompleted += OnPrepareCompleted;
-        preloadedVidPlayer.loopPointReached += OnLoopPointReached;
-        preloadedVidPlayer.Prepare();
-    }
+{
+    preloadedVidPlayer.url = url;
+    preloadedVidPlayer.isLooping = false;
+    preloadedVidPlayer.prepareCompleted += OnPrepareCompleted;
+    preloadedVidPlayer.loopPointReached += OnLoopPointReached;
+    
+    // Start preloading the video
+    preloadedVidPlayer.Prepare();
+}
 
-    void StartPreparedVideo()
+void StartPreparedVideo()
+{
+    if (preloadedVidPlayer.isPrepared && preloadedVidPlayer.url == dreStartAnimationUrl)
     {
-        if (preloadedVidPlayer.isPrepared && preloadedVidPlayer.url == dreStartAnimationUrl)
-        {
-            initialVidPlayer.Stop();  // Stop the initial video
-            preloadedVidPlayer.Play();
-            GetComponent<AudioSource>().PlayOneShot(powerUpSound);
-            GetComponent<AudioSource>().PlayOneShot(startButtonSound);
-        }
+        // Start the coroutine to fade between the two videos
+        StartCoroutine(FadeBetweenVideos());
+        
+        // Play audio cues if necessary
+        GetComponent<AudioSource>().PlayOneShot(powerUpSound);
+        GetComponent<AudioSource>().PlayOneShot(startButtonSound);
     }
+}
+
+
+IEnumerator FadeBetweenVideos()
+{
+    // Gradually fade out the first video
+    for (float t = 1f; t > 0f; t -= Time.deltaTime)
+    {
+        initialVidPlayer.targetCameraAlpha = t;  // Fade out
+        yield return null;
+    }
+    
+    // Ensure the first video is stopped after the fade-out
+    initialVidPlayer.Stop();
+    
+    // Gradually fade in the second video
+    preloadedVidPlayer.Play();
+    for (float t = 0f; t < 1f; t += Time.deltaTime)
+    {
+        preloadedVidPlayer.targetCameraAlpha = t;  // Fade in
+        yield return null;
+    }
+}
 
     private void OnPrepareCompleted(VideoPlayer source)
     {
@@ -175,10 +202,12 @@ public class MenuManaager : MonoBehaviour
         transition.GetComponent<Animator>().SetBool("isExiting", true);
         yield return new WaitForSeconds(3f);
 
-        if(SceneManager.GetSceneByName(PlayerPrefs.GetString("LastSceneName")).buildIndex <= 4 || PlayerPrefs.GetString("LastSceneName") == "ShopInterior")
+        if(PlayerPrefs.HasKey("LastSceneName"))
         {
-            SceneManager.LoadScene(PlayerPrefs.GetString("LastSceneName"));
-            PlayerController.Instance.SetPlayerPosition(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY"));
+            if(SceneManager.GetSceneByName(PlayerPrefs.GetString("LastSceneName")).buildIndex <= 4 || PlayerPrefs.GetString("LastSceneName") == "ShopInterior")
+            {
+                SceneManager.LoadScene(PlayerPrefs.GetString("LastSceneName"));
+            }
         }
 
         else
