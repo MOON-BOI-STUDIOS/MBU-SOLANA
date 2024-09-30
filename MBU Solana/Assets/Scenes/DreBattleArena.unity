@@ -7506,9 +7506,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.1508079
-    width: 1.2429577
-    height: 0.32315978
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
@@ -14888,6 +14888,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rainScript: {fileID: 1541042064}
   light2dScript: {fileID: 248699829699778015}
+  whiteLight: {r: 1, g: 1, b: 1, a: 0}
+  sunLight: {r: 1, g: 1, b: 0.9019608, a: 1}
 --- !u!222 &248699829729388422
 CanvasRenderer:
   m_ObjectHideFlags: 0
