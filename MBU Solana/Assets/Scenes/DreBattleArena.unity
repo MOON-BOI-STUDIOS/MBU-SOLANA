@@ -2337,7 +2337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -738.6896, y: 0.00012207031}
+  m_AnchoredPosition: {x: -738.68945, y: 0}
   m_SizeDelta: {x: -1477.4, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1380817073
@@ -2905,7 +2905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 741.3104, y: 0.00012207031}
+  m_AnchoredPosition: {x: 741.31055, y: 0}
   m_SizeDelta: {x: -1482.621, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1552262185
@@ -26658,6 +26658,7 @@ MonoBehaviour:
   videoPlayer: {fileID: 560866552}
   startLocation: []
   enemies: {fileID: 248699829596960753}
+  dreSpriteRenderer: {fileID: 3482781817784541079}
 --- !u!114 &3482781816479680323
 MonoBehaviour:
   m_ObjectHideFlags: 0

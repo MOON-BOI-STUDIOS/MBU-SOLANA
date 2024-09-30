@@ -127,50 +127,24 @@ public class MenuManaager : MonoBehaviour
     }
 
     void PrepareVideo(string url)
-{
-    preloadedVidPlayer.url = url;
-    preloadedVidPlayer.isLooping = false;
-    preloadedVidPlayer.prepareCompleted += OnPrepareCompleted;
-    preloadedVidPlayer.loopPointReached += OnLoopPointReached;
-    
-    // Start preloading the video
-    preloadedVidPlayer.Prepare();
-}
-
-void StartPreparedVideo()
-{
-    if (preloadedVidPlayer.isPrepared && preloadedVidPlayer.url == dreStartAnimationUrl)
     {
-        // Start the coroutine to fade between the two videos
-        StartCoroutine(FadeBetweenVideos());
-        
-        // Play audio cues if necessary
-        GetComponent<AudioSource>().PlayOneShot(powerUpSound);
-        GetComponent<AudioSource>().PlayOneShot(startButtonSound);
+        preloadedVidPlayer.url = url;
+        preloadedVidPlayer.isLooping = false;
+        preloadedVidPlayer.prepareCompleted += OnPrepareCompleted;
+        preloadedVidPlayer.loopPointReached += OnLoopPointReached;
+        preloadedVidPlayer.Prepare();
     }
-}
 
-
-IEnumerator FadeBetweenVideos()
-{
-    // Gradually fade out the first video
-    for (float t = 1f; t > 0f; t -= Time.deltaTime)
+    void StartPreparedVideo()
     {
-        initialVidPlayer.targetCameraAlpha = t;  // Fade out
-        yield return null;
+        if (preloadedVidPlayer.isPrepared && preloadedVidPlayer.url == dreStartAnimationUrl)
+        {
+            initialVidPlayer.Stop();  // Stop the initial video
+            preloadedVidPlayer.Play();
+            GetComponent<AudioSource>().PlayOneShot(powerUpSound);
+            GetComponent<AudioSource>().PlayOneShot(startButtonSound);
+        }
     }
-    
-    // Ensure the first video is stopped after the fade-out
-    initialVidPlayer.Stop();
-    
-    // Gradually fade in the second video
-    preloadedVidPlayer.Play();
-    for (float t = 0f; t < 1f; t += Time.deltaTime)
-    {
-        preloadedVidPlayer.targetCameraAlpha = t;  // Fade in
-        yield return null;
-    }
-}
 
     private void OnPrepareCompleted(VideoPlayer source)
     {

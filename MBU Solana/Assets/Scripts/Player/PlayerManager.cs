@@ -40,6 +40,9 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     //Inventory Additions Array
     private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
 
+    float lastHitDirectionX;
+    [SerializeField] SpriteRenderer dreSpriteRenderer;
+
     private void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
@@ -49,7 +52,6 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     // Update is called once per frame
     void Update()
     {
-
         //max health taked from PlayerPrefs
         maxHealth = PlayerPrefs.GetInt("MaxHealth");
         
@@ -63,6 +65,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if(health <= 0 && !isDead)
         {
             isDead = true;
+
+            dreSpriteRenderer.flipX = true;
+
+            //_animator._heroAnimator.SetBool("Mirror", lastHitDirectionX < 0);
             _animator._heroAnimator.SetLayerWeight(2, 1);
             _animator._heroAnimator.SetBool("isDead", true);
 
@@ -121,26 +127,36 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
                 StartCoroutine(_animator.CameraShake(0.3f));
 
                 health -= 20;
+                lastHitDirectionX = other.transform.parent.position.x - gameObject.transform.position.x;
+                Debug.Log("lastHitDirectionX: " + lastHitDirectionX);
             }
 
             //takes damage from the green void projectile
             if (other.tag == "greenVoidProjectile")
             {
-                Destroy(other.transform.parent.gameObject);
+                
                 StartCoroutine(_animator.CameraShake(0.3f));
 
 
                 health -= 40;
+                lastHitDirectionX = other.transform.parent.position.x - gameObject.transform.position.x;
+                Debug.Log("lastHitDirectionX: " + lastHitDirectionX);
                 StartCoroutine(_animator.greenVoidDamage());
+
+                Destroy(other.transform.parent.gameObject);
             }
 
             //takes damage from the red void projectile
             if (other.tag == "redVoidProjectile")
             {
-                Destroy(other.transform.parent.gameObject);
+                
                 StartCoroutine(_animator.CameraShake(0.3f));
                 health -= 40;
+                lastHitDirectionX = other.transform.parent.position.x - gameObject.transform.position.x;
+                Debug.Log("lastHitDirectionX: " + lastHitDirectionX);
                 StartCoroutine(_animator.redVoidDamage());
+
+                Destroy(other.transform.parent.gameObject);
             }
         }
         
