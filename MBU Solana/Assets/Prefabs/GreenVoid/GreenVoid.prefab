@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 3604213349878851139}
   - component: {fileID: 5092106272409595575}
   - component: {fileID: 8982673518624263524}
+  - component: {fileID: 8440925904181784593}
   m_Layer: 0
   m_Name: VoidGreenSprite
   m_TagString: Untagged
@@ -360,6 +361,18 @@ MonoBehaviour:
   _animator: {fileID: 3604213349878851139}
   _movement: {fileID: 4368007261227567812}
   healthIndicator: {fileID: 3604213349598894354}
+--- !u!114 &8440925904181784593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3604213349878851143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4655a6161f438b649aa65e1b4e59bf76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3604213349898796187
 GameObject:
   m_ObjectHideFlags: 0

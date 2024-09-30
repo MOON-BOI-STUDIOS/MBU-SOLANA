@@ -69,7 +69,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             _controller.enabled = false;
             _combat.enabled = false;
 
-            ShowAfterDeathPanel();
+            //ShowAfterDeathPanel();
         }
 
 

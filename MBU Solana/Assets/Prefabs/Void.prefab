@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 2877990263852934716}
   - component: {fileID: 6440001360229958886}
   - component: {fileID: 3642230550578496755}
+  - component: {fileID: 9123894530170909092}
   m_Layer: 0
   m_Name: PigSprite
   m_TagString: Untagged
@@ -333,6 +334,18 @@ MonoBehaviour:
   _animator: {fileID: 2877990263852934717}
   _movement: {fileID: 2877990264645188747}
   healthIndicator: {fileID: 2877990264059943276}
+--- !u!114 &9123894530170909092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2877990263852934713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4655a6161f438b649aa65e1b4e59bf76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2877990263857762712
 GameObject:
   m_ObjectHideFlags: 0
