@@ -19,6 +19,7 @@ TagManager:
   - InventoryObject
   - Wall
   - Multiplayer_manager
+  - Enemy
   layers:
   - Default
   - TransparentFX

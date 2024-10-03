@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class GreenVoidAnimator : MonoBehaviour
 {
@@ -89,6 +90,7 @@ public class GreenVoidAnimator : MonoBehaviour
     //triggered through an event in death animation
     public void Death()
     {
+        //if(SceneManager.GetActiveScene().name == "Desert_Scene") return;
        
         //destroys game object
         Destroy(transform.parent.gameObject);

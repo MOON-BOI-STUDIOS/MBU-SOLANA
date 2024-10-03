@@ -65,8 +65,9 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if(health <= 0 && !isDead)
         {
             isDead = true;
+            _controller.enabled = false;
 
-            dreSpriteRenderer.flipX = true;
+            //dreSpriteRenderer.flipX = true;
 
             //_animator._heroAnimator.SetBool("Mirror", lastHitDirectionX < 0);
             _animator._heroAnimator.SetLayerWeight(2, 1);

@@ -75,6 +75,9 @@ public class EnemyAnimator : MonoBehaviour
     public void Death()
     {
         //destroys game object
+
+        //if(SceneManager.GetActiveScene().name == "Desert_Scene") return;
+
         Destroy(transform.parent.gameObject);
     }
 }
