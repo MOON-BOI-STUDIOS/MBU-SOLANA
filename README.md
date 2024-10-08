@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# MOON BOI UNIVERSE - The open-world cyber-fantasy RPG
+# MOON BOI UNIVERSE: RADAR - The open-world cyber-fantasy RPG
 
 Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in an immersive arcade room experience battle relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Bonk tokens as well as adventure, fish and battle.
 
@@ -19,10 +19,9 @@ Welcome to a unique top-down isometric 2.5D RPG, where players can explore a cit
 
 ## Game Features
 
-### 1. **MoonBikeRunner**
-- Endless runner game where players travel on the y-axis, avoiding cars.
-- Players can take boosts to travel faster and gain invincibility.
-- Players can upgrade health, boost time, and bike look up to 5 levels with Bonk tokens.
+### 1. **Desert Wasteland**
+- Use your RADAR to navigate the desert, locate and detroy alien intruders!!
+- Players can use powerful combos by stacking successful hits
 
 ### 2. **Battle Arena**
 - Engage in sword battles with enemies.
@@ -31,6 +30,11 @@ Welcome to a unique top-down isometric 2.5D RPG, where players can explore a cit
 ### 3. **Fishing Game**
 - Enjoy a relaxing fishing experience with soothing music.
 - Experience the joy of catching fish in a serene environment.
+
+  ### 4. **MoonBikeRunner**
+- Endless runner game where players travel on the y-axis, avoiding cars.
+- Players can take boosts to travel faster and gain invincibility.
+- Players can upgrade health, boost time, and bike look up to 5 levels with Bonk tokens.
 
 ## Technology Stack
 
@@ -64,16 +68,16 @@ For more details, refer to the [architecture diagram](./docs/architecture.png).
    Follow the instructions in the game to log in using your Solana wallet.
 
 4. **Play & Enjoy**:
-   Explore the city and engage in the arcade room experience.
+   Explore the city and the desert lands!
 
 ## How to Play
 - **Download APK for Android mobile**: Link: 
 - **Log In**: Use your Solana wallet with a minimum of 0.5 SOL and 10 million Bonk tokens.
-- **Explore**: Walk around the city and enter the arcade room.
+- **Explore**: Walk around the city, play mini-games in the BONK Barkade, fish in Little China, explore the Desert lands
 - **Upgrade**: Stand in front of an arcade machine to upgrade using Bonk tokens.
 - **Enjoy**: Play the games and have fun!
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 =======
-# For BONKATHON submission please go to the single-player branch! :) 
+# For BONKATHON submission please go to the safe-mode branch! :) 
 >>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
