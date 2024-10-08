@@ -1,11 +1,11 @@
 <<<<<<< HEAD
-# MOON BOI UNIVERSE: RADAR - The open-world cyber-fantasy RPG
+# MOON BOI UNIVERSE:RADAR 
 
-Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in an immersive arcade room experience battle relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Solana, Bonk and USDC tokens as well as adventure, fish and battle!
+Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in a battle arena and take on relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Solana, Bonk and USDC tokens as well as adventure, fish, trade and battle!
 
 [[Demo Video]](https://youtu.be/NxKE79FKw-Y?si=jLfsfezCPfHcadJg)
 
-[[Download 'Moon Boi Universe' on the Solana dApp store or play in your browser https://moon-boi-studios.github.io/mbubonkfish/ ]]
+[play in your browser https://moon-boi-studios.github.io/mbubonkfish/ ]]
 
 ## Table of Contents
 
@@ -19,19 +19,24 @@ Welcome to a unique top-down isometric 2.5D RPG, where players can explore a cit
 
 ## Game Features
 
-### 1. **Desert Wasteland**
-- Use your RADAR to navigate the desert, locate and detroy alien intruders!!
-- Players can use powerful combos by stacking successful hits
+### 1. **RADAR**
+- Use RADAR to spot enemies in your surrounding area.Zoom in for close battles and zoom out to get the upper hand from afar!
 
-### 2. **Battle Arena**
+### 2. **Teleport**
+- Use teleport to quickly access key areas!
+
+### 3. **Battle Arena**
+- Use your RADAR to navigate,locate and detroy alien intruders!!
+- Players can use powerful combos by stacking successful consecutive hits
 - Engage in sword battles with enemies.
-- Upgrade swords and health to enhance combat abilities.
+- Use Credz to upgrade your sword power, special moves and health to enhance your chances of survival
 
-### 3. **Fishing Game**
+### 4. **Fishing Game**
 - Enjoy a relaxing fishing experience with soothing music.
 - Experience the joy of catching fish in a serene environment.
+- Sell your fish to the fisherman to get rewarded in Credz!
 
-  ### 4. **MoonBikeRunner**
+### 5. **MoonBikeRunner**
 - Endless runner game where players travel on the y-axis, avoiding cars.
 - Players can take boosts to travel faster and gain invincibility.
 - Players can upgrade health, boost time, and bike look up to 5 levels with Bonk tokens.
