@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # MOON BOI UNIVERSE: RADAR - The open-world cyber-fantasy RPG
 
-Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in an immersive arcade room experience battle relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Bonk tokens as well as adventure, fish and battle.
+Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in an immersive arcade room experience battle relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Solana, Bonk and USDC tokens as well as adventure, fish and battle!
 
 [[Demo Video]](https://youtu.be/NxKE79FKw-Y?si=jLfsfezCPfHcadJg)
 
