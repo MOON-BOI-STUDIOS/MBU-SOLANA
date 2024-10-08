@@ -1,8 +1,8 @@
 <<<<<<< HEAD
 # MOON BOI UNIVERSE:RADAR 
-# For RADAR submission please go to the safe-mode branch! :)
+# For RADAR submission please go to the Moonboi_Safe_Build branch! :)
 
-Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in a battle arena and take on relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Solana, Bonk and USDC tokens as well as adventure, fish, trade and battle!
+Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in a battle arena and take on relentless alien critters. This project stands out with it's integration of the Solana blockchain, enabling players to upgrade in-game items using Solana, Bonk and USDC tokens as well as adventure, fish, trade and battle!
 
 [[Demo Video]](https://youtu.be/NxKE79FKw-Y?si=jLfsfezCPfHcadJg)
 
