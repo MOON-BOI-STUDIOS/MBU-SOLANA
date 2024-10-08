@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 # MOON BOI UNIVERSE:RADAR 
+# For RADAR submission please go to the safe-mode branch! :)
 
 Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in a battle arena and take on relentless alien critters. This project stands out with its integration of the Solana blockchain, enabling players to upgrade in-game items using Solana, Bonk and USDC tokens as well as adventure, fish, trade and battle!
 
@@ -20,7 +21,7 @@ Welcome to a unique top-down isometric 2.5D RPG, where players can explore a cit
 ## Game Features
 
 ### 1. **RADAR**
-- Use RADAR to spot enemies in your surrounding area.Zoom in for close battles and zoom out to get the upper hand from afar!
+- Use RADAR to spot enemies in your surrounding area. Zoom in for close battles and zoom out to get the upper hand from afar!
 
 ### 2. **Teleport**
 - Use teleport to quickly access key areas!
@@ -72,17 +73,17 @@ For more details, refer to the [architecture diagram](./docs/architecture.png).
 3. **Configure Wallet**:
    Follow the instructions in the game to log in using your Solana wallet.
 
-4. **Play & Enjoy**:
-   Explore the city and the desert lands!
+4. **Play & Enjoy**:!
+   Explore Mecha Mecca and test your skill in the battle arena!
 
 ## How to Play
 - **Download APK for Android mobile**: Link: 
 - **Log In**: Use your Solana wallet with a minimum of 0.5 SOL and 10 million Bonk tokens.
-- **Explore**: Walk around the city, play mini-games in the BONK Barkade, fish in Little China, explore the Desert lands
+- **Explore**: Walk around the city, play mini-games in the BONK Barkade, fish in Little China, battle aliens in the arena!
 - **Upgrade**: Stand in front of an arcade machine to upgrade using Bonk tokens.
 - **Enjoy**: Play the games and have fun!
 
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 =======
-# For BONKATHON submission please go to the safe-mode branch! :) 
+# For RADAR submission please go to the safe-mode branch! :) 
 >>>>>>> b41254cc657fbc33667d7eaa1df6f550a784f68d
