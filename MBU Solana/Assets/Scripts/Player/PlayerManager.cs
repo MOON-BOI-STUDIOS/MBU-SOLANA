@@ -42,6 +42,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
     float lastHitDirectionX;
     [SerializeField] SpriteRenderer dreSpriteRenderer;
+    [SerializeField] GameObject radarObject;
 
     private void Awake()
     {
@@ -77,6 +78,18 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             _combat.enabled = false;
 
             //ShowAfterDeathPanel();
+        }
+
+        if(curSceneName == "DreBattleArena" && AddInventoryItemScript.instance.HasItemWithNumber(16))
+        {
+            if(radarObject != null)
+                radarObject.SetActive(true);
+
+        }
+        else
+        {
+            if(radarObject != null)
+                radarObject.SetActive(false);
         }
 
 

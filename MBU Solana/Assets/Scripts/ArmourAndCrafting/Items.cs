@@ -40,6 +40,7 @@ public class Items : ScriptableObject
         rod,
         bait,
         fish,
-        collectable
+        collectable,
+        nft
     }
 }

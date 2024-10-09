@@ -20,6 +20,9 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     public Transform inventoryTransform;
     public bool IsSelling;
     private int points;
+    [SerializeField] Animator fountainAnimator;
+    [SerializeField] AudioSource playerAs;
+    [SerializeField] AudioClip itemGiftSound;
 
     #region Singleton
 
@@ -46,14 +49,57 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     }
     private void Update()
     {
+
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.X))
         {
-            Items newItem = itemList[Random.Range(0,itemList.Count)];
+            Items newItem = itemList[Random.Range(0, 15)];
             ItemInventory.instance.AddItem(Instantiate(newItem));
         }
 #endif
     }
+
+    public void GiveFountainItem()
+    {
+        if(!HasItemWithNumber(16) && PlayerPrefs.GetInt("Coins") >= 50)
+        {
+            ItemInventory.instance.AddItem(Instantiate(itemList[16]));
+            PlayerPrefs.SetInt("HasRadar", 1);
+            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - 50);
+            PlayerPrefs.Save();
+            fountainAnimator.SetTrigger("Interact");
+            playerAs.PlayOneShot(itemGiftSound);
+        }
+
+        else if(HasItemWithNumber(16) && PlayerPrefs.GetInt("Coins") >= 50)
+        {
+            ItemInventory.instance.AddItem(Instantiate(itemList[Random.Range(0, 15)]));
+            PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - 50);
+            PlayerPrefs.Save();
+            fountainAnimator.SetTrigger("Interact");
+            playerAs.PlayOneShot(itemGiftSound);
+        }
+        else if(PlayerPrefs.GetInt("Coins") < 50)
+        {
+            Debug.Log("Not enough coins to make a wish");
+        }
+    }
+
+    public bool HasItemWithNumber(int itemNumber)
+{
+    // Iterate through the inventory to see if any item has the specified itemNumber.
+    foreach (Items item in ItemInventory.instance.inventoryItemList)
+    {
+        if (item != null && item.itemNumber == itemNumber)
+        {
+            Debug.LogWarning("ITEM FOUND");
+            return true; // Return true if an item with the given itemNumber is found.
+        }
+    }
+    Debug.LogWarning("ITEM NOT FOUND");
+    return false; // Return false if no such item is found.
+}
+
 
     public void AddToInventory(Items newItem)
     {

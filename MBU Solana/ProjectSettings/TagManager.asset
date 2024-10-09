@@ -20,6 +20,7 @@ TagManager:
   - Wall
   - Multiplayer_manager
   - Enemy
+  - MonkeDao
   layers:
   - Default
   - TransparentFX
