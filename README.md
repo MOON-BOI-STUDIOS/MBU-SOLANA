@@ -4,7 +4,7 @@
 
 Welcome to a unique top-down isometric 2.5D RPG, where players can explore a city map, engage in a battle arena and take on relentless alien critters. This project stands out with it's integration of the Solana blockchain, enabling players to upgrade in-game items using Solana, Bonk and USDC tokens as well as adventure, fish, trade and battle!
 
-[[Demo Video]](https://youtu.be/NxKE79FKw-Y?si=jLfsfezCPfHcadJg)
+[[Demo Video]](https://www.loom.com/share/9c85d956593846eb9e325015d2ec7b5d)
 
 [play in your browser https://moon-boi-studios.github.io/mbubonkfish/ ]]
 
