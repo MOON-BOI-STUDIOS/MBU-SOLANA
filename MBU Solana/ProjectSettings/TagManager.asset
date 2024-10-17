@@ -21,6 +21,7 @@ TagManager:
   - Multiplayer_manager
   - Enemy
   - MonkeDao
+  - MonkeGuideCollider
   layers:
   - Default
   - TransparentFX

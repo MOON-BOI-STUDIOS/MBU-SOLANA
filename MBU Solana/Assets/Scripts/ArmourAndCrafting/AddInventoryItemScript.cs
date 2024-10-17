@@ -23,6 +23,7 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
     [SerializeField] Animator fountainAnimator;
     [SerializeField] AudioSource playerAs;
     [SerializeField] AudioClip itemGiftSound;
+    [SerializeField] GameObject radarGuidePanel;
 
     #region Singleton
 
@@ -64,6 +65,7 @@ public class AddInventoryItemScript : MonoBehaviour, IDataPersistanceScript
         if(!HasItemWithNumber(16) && PlayerPrefs.GetInt("Coins") >= 50)
         {
             ItemInventory.instance.AddItem(Instantiate(itemList[16]));
+            radarGuidePanel.SetActive(true);
             PlayerPrefs.SetInt("HasRadar", 1);
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") - 50);
             PlayerPrefs.Save();

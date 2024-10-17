@@ -1,0 +1,1629 @@
+fileFormatVersion: 2
+guid: 07c05511c3f77e84d95c629f5b28bd1f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1815
+        width: 340
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -170, y: -166}
+        - {x: -170, y: 166}
+        - {x: -11, y: 166}
+        - {x: 170, y: 85}
+        - {x: 170, y: -166}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237437de1ecbd5646a38ccf6912de1ba
+      internalID: -11894484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 2122
+        width: 342
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 30, y: -151.5}
+        - {x: -171, y: -64.5}
+        - {x: -171, y: 151.5}
+        - {x: 171, y: 151.5}
+        - {x: 171, y: -151.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219080afaad5e2949a82c406eff1b2a1
+      internalID: -821894485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2146
+        width: 342
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: -152}
+        - {x: -171, y: -152}
+        - {x: -171, y: 152}
+        - {x: 171, y: 152}
+        - {x: 171, y: -61}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c621438c44621b4fb28db7b9f3a02b9
+      internalID: -789154773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1839
+        width: 340
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -170, y: -166.5}
+        - {x: -170, y: 85.5}
+        - {x: 22, y: 166.5}
+        - {x: 170, y: 166.5}
+        - {x: 170, y: -166.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c44591fd40d6c14bafc1d4195f4fd08
+      internalID: -864167719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1905
+        width: 341
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faee303a141e22c40a9c11ec6c92ea44
+      internalID: 1739406484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1937
+        width: 342
+        height: 419
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebcfa3a707f86441bca45ff66f7a774
+      internalID: 2112949713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 1917
+        width: 340
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0cd3eb0df1b114c81e80b665280a2f
+      internalID: -70372501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 1935
+        width: 342
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7108069d366f2479b0fb62299ec9af
+      internalID: 1584126980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 2089
+        width: 341
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: -152.5}
+        - {x: -170.5, y: -69.5}
+        - {x: -170.5, y: 152.5}
+        - {x: 170.5, y: 152.5}
+        - {x: 170.5, y: -152.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1eb98840fd07143b950d7396200790
+      internalID: 1308339062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3435
+        y: 2114
+        width: 346
+        height: 303
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: -151.5}
+        - {x: -173, y: -151.5}
+        - {x: -173, y: 151.5}
+        - {x: 173, y: 151.5}
+        - {x: 173, y: -59.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683eb1613a12f9a4f9c5fc1243764636
+      internalID: -383985750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1395
+        width: 345
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f59830ab6904447bcf34494625a5ea
+      internalID: 342347157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 1411
+        width: 342
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a8b9407b580a0488c449e01fa70ba8
+      internalID: 194699136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 1425
+        width: 383
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7213741704162fc4a9a4404fa0a3d693
+      internalID: -351628757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2964
+        y: 1789
+        width: 342
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -171, y: -163.5}
+        - {x: -171, y: 163.5}
+        - {x: -24, y: 163.5}
+        - {x: 171, y: 74.5}
+        - {x: 171, y: -163.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e8ffc6224cd7a4d94af7bfe9fee3ef
+      internalID: -425318091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3442
+        y: 1808
+        width: 340
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -170, y: -166}
+        - {x: -170, y: 80}
+        - {x: 22, y: 166}
+        - {x: 170, y: 166}
+        - {x: 170, y: -166}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b924bcb9f6846e46a1b72ff1468cebb
+      internalID: 540304210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1120
+        width: 339
+        height: 442
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446d273ff9483c94c986b67e67da6c7f
+      internalID: -1638606175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 1454
+        width: 187
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3432fa76b489a964da3c48ce0d23afb7
+      internalID: 1526602637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 1462
+        width: 185
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139303b7d5449b544a12fe5c1359d50b
+      internalID: 217067653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 1474
+        width: 185
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b921f507d94a12b4798cc5b349d61c80
+      internalID: 2147181821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 1183
+        width: 342
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012c6dcf0848a254cb526a0b215b2292
+      internalID: 628353198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 1226
+        width: 342
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32862893f14a9cd4d9fc1c5879d27786
+      internalID: -204924490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 1257
+        width: 341
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dd21a8dcf4cc24887568f5d55ab114
+      internalID: 91964815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1108
+        width: 207
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef605f49978cf6b428519e46de22ef4d
+      internalID: 1126802608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1104
+        width: 207
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b824826c6d5548d4e9cea9210673f4c9
+      internalID: 877563199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1085
+        width: 207
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409ebf98d59c13a4ca40eb419ddf7a4a
+      internalID: 2131549820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 1073
+        width: 259
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93260dca46d5e52408ca20c530b69c01
+      internalID: 1373353770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 1083
+        width: 236
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba616107e982df840afae870feb053b3
+      internalID: -1215167658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 1085
+        width: 242
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d19736f83852441abcb2d92f66eabd
+      internalID: 1305918547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 1079
+        width: 227
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ea3e133777b4a449d4a292044071b7
+      internalID: -1921589960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 708
+        width: 341
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f496c4be717b9c84399a6bf527bfde96
+      internalID: -405791527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 728
+        width: 342
+        height: 417
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: -208.5}
+        - {x: -171, y: -208.5}
+        - {x: -171, y: 208.5}
+        - {x: 171, y: 208.5}
+        - {x: 171, y: -156.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af916eadf250a4c4a9f83700ca152104
+      internalID: -119421269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 829
+        width: 27
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a5b4775e61aaa4f9326817bf4dc1d6
+      internalID: -1974283716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1913
+        y: 175
+        width: 807
+        height: 738
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -403.5, y: -369}
+        - {x: -403.5, y: 369}
+        - {x: 231.5, y: 369}
+        - {x: 235.5, y: 264}
+        - {x: 254.5, y: 161}
+        - {x: 403.5, y: 87}
+        - {x: 403.5, y: -369}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23798a9f0cd5edd47b3247526eba8e53
+      internalID: 476663447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2567
+        y: 685
+        width: 340
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5f2ed462b44374cbaa5899eaa2512f
+      internalID: 475582074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 522
+        width: 198
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e0a7adb3ab9694f8cc307cb9bd6293
+      internalID: 387377436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 470
+        width: 326
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c619ee443b7f8aa4aa57596c2f3dd286
+      internalID: -1974838041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_36
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 456
+        width: 326
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e32d1aea88457b4b886609a79287428
+      internalID: 1499526210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 507
+        width: 197
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f013e5a6b294f324d878327bc7886b34
+      internalID: -1753881859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 550
+        width: 117
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c740bfd8da0d543926827af7cf10eb
+      internalID: -631557538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 487
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818dbfff49e33534a87fbc21a0cb22fa
+      internalID: -1046315596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_40
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 423
+        width: 246
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665a76c91c903dd4e90d934562c9f848
+      internalID: -590159169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3286
+        y: 417
+        width: 221
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f30fdbe2d8c2a4086d2b52048e8111
+      internalID: -84737786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_42
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 397
+        width: 268
+        height: 381
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd3c936408c7824e9b9f6488e018dca
+      internalID: -1632955527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 362
+        width: 155
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c51614a26bd0224e861f9cdf1b7e62e
+      internalID: 1549158485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 485
+        width: 86
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc76cb52164784f498215f133e911619
+      internalID: -1277265010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_45
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 337
+        width: 197
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d8dc8feeb54f54dbf45ceea81e7a98
+      internalID: -2093614265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_46
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 284
+        width: 326
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -60, y: -87}
+        - {x: -163, y: -87}
+        - {x: -163, y: 87}
+        - {x: 163, y: 87}
+        - {x: 163, y: 9}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcd05a3abcaac34f8bf378a474f3335
+      internalID: -1308895221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_47
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 270
+        width: 326
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -125, y: -85}
+        - {x: -163, y: -57}
+        - {x: -163, y: 85}
+        - {x: 163, y: 85}
+        - {x: 163, y: -85}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7e4ef40ef250c47bb2d5c6e69bb04b
+      internalID: 1219445274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 321
+        width: 199
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fe9481bf04212488ffbe4a51e91c77
+      internalID: 1335566466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 390
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f245752b1f8979e45bb5c258a050e27b
+      internalID: 149750361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_50
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 212
+        width: 133
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b3ee130cda0944e9fd2392357861bc
+      internalID: -1587523723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_51
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 210
+        width: 133
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4e48ff01acdaf46906f1e5ca818cde
+      internalID: -1049963130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 159
+        width: 155
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8f2c488d712f04f97b1b7653e556b0
+      internalID: 712891566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 276
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f753f5419bf788e4391bc1a4f2344171
+      internalID: -833831502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 269
+        width: 50
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547732cde4fcdd341ac3f5b5bbf0cdfb
+      internalID: 1645556737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 104
+        width: 256
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e18b57dec343e4abcd88eced6882e7
+      internalID: -1564818714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_56
+      rect:
+        serializedVersion: 2
+        x: 3292
+        y: 118
+        width: 238
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb21f83d96889c04aa492cbb10b82d28
+      internalID: -1575714599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_57
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 28
+        width: 188
+        height: 342
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14c403c61297e144b0d478ed41a977e
+      internalID: -1990105284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_58
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 251
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d8ed34d747f5045b447613c9f7b2c1
+      internalID: -1446543183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_59
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 147
+        width: 133
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69dbf523ba0fe6d43bb23c8e53abb8a9
+      internalID: -1741084753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_60
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 114
+        width: 133
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849f84c95d8fe7f439dcbd54fbe742ad
+      internalID: 832298109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_61
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 132
+        width: 133
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fa284b18838f14eb245a3df2a9ea1d
+      internalID: 1668866489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 50
+        width: 49
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557fc07c308ab284eb6a665fe6d518c6
+      internalID: -2035782294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building 1 Bottom-sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 70
+        width: 135
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cdb5814f3672b478b139c50144f1d1
+      internalID: -2090228666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Building 1 Bottom-sheet_33: 475582074
+      Building 1 Bottom-sheet_53: -833831502
+      Building 1 Bottom-sheet_43: 1549158485
+      Building 1 Bottom-sheet_2: -789154773
+      Building 1 Bottom-sheet_48: 1335566466
+      Building 1 Bottom-sheet_32: 476663447
+      Building 1 Bottom-sheet_39: -1046315596
+      Building 1 Bottom-sheet_62: -2035782294
+      Building 1 Bottom-sheet_37: -1753881859
+      Building 1 Bottom-sheet_31: -1974283716
+      Building 1 Bottom-sheet_6: -70372501
+      Building 1 Bottom-sheet_52: 712891566
+      Building 1 Bottom-sheet_51: -1049963130
+      Building 1 Bottom-sheet_11: 194699136
+      Building 1 Bottom-sheet_28: -1921589960
+      Building 1 Bottom-sheet_54: 1645556737
+      Building 1 Bottom-sheet_1: -821894485
+      Building 1 Bottom-sheet_26: -1215167658
+      Building 1 Bottom-sheet_47: 1219445274
+      Building 1 Bottom-sheet_21: 91964815
+      Building 1 Bottom-sheet_41: -84737786
+      Building 1 Bottom-sheet_20: -204924490
+      Building 1 Bottom-sheet_56: -1575714599
+      Building 1 Bottom-sheet_3: -864167719
+      Building 1 Bottom-sheet_34: 387377436
+      Building 1 Bottom-sheet_63: -2090228666
+      Building 1 Bottom-sheet_14: 540304210
+      Building 1 Bottom-sheet_49: 149750361
+      Building 1 Bottom-sheet_8: 1308339062
+      Building 1 Bottom-sheet_7: 1584126980
+      Building 1 Bottom-sheet_18: 2147181821
+      Building 1 Bottom-sheet_61: 1668866489
+      Building 1 Bottom-sheet_9: -383985750
+      Building 1 Bottom-sheet_57: -1990105284
+      Building 1 Bottom-sheet_23: 877563199
+      Building 1 Bottom-sheet_13: -425318091
+      Building 1 Bottom-sheet_44: -1277265010
+      Building 1 Bottom-sheet_10: 342347157
+      Building 1 Bottom-sheet_58: -1446543183
+      Building 1 Bottom-sheet_4: 1739406484
+      Building 1 Bottom-sheet_22: 1126802608
+      Building 1 Bottom-sheet_0: -11894484
+      Building 1 Bottom-sheet_16: 1526602637
+      Building 1 Bottom-sheet_50: -1587523723
+      Building 1 Bottom-sheet_5: 2112949713
+      Building 1 Bottom-sheet_27: 1305918547
+      Building 1 Bottom-sheet_42: -1632955527
+      Building 1 Bottom-sheet_59: -1741084753
+      Building 1 Bottom-sheet_45: -2093614265
+      Building 1 Bottom-sheet_60: 832298109
+      Building 1 Bottom-sheet_46: -1308895221
+      Building 1 Bottom-sheet_17: 217067653
+      Building 1 Bottom-sheet_35: -1974838041
+      Building 1 Bottom-sheet_55: -1564818714
+      Building 1 Bottom-sheet_24: 2131549820
+      Building 1 Bottom-sheet_29: -405791527
+      Building 1 Bottom-sheet_40: -590159169
+      Building 1 Bottom-sheet_12: -351628757
+      Building 1 Bottom-sheet_30: -119421269
+      Building 1 Bottom-sheet_36: 1499526210
+      Building 1 Bottom-sheet_15: -1638606175
+      Building 1 Bottom-sheet_19: 628353198
+      Building 1 Bottom-sheet_25: 1373353770
+      Building 1 Bottom-sheet_38: -631557538
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

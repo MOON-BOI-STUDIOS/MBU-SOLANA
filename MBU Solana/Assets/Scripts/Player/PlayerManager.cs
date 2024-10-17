@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public GameObject afterDeathPanel;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
-    public GameObject enterButton, fishButton, ExitButton, drePowerUpBust, dreBust, desertButton;
+    public GameObject enterButton, fishButton, ExitButton, drePowerUpBust, dreBust, desertButton, monkeDaoEnterButton;
 
     [SerializeField] VideoPlayer videoPlayer;
 
@@ -43,6 +43,8 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     float lastHitDirectionX;
     [SerializeField] SpriteRenderer dreSpriteRenderer;
     [SerializeField] GameObject radarObject;
+    [SerializeField] Camera dreCamera;
+    [SerializeField] GameObject monkeDaoEntranceObject, monkeDaoGuidePanel;
 
     private void Awake()
     {
@@ -96,15 +98,25 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if (curSceneName == "BonkArcade" || curSceneName == "FishingArea" || curSceneName == "ShopInterior")
             return;
 
-            //updates the health bar according to current health
-            healthIndicator.localScale = new Vector3(health / maxHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
-            // displays current health in a numerical form
-            healthNumber.text = "Health: " + (int)health + " / " + maxHealth;
+        //updates the health bar according to current health
+        healthIndicator.localScale = new Vector3(health / maxHealth, healthIndicator.localScale.y, healthIndicator.localScale.z);
+        // displays current health in a numerical form
+        healthNumber.text = "Health: " + (int)health + " / " + maxHealth;
 
-            //displays number of coins the player has
-            if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
-            if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
-        
+        //displays number of coins the player has
+        if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
+        if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
+    }
+
+    public void SetMonkeTutorialDone()
+    {
+        PlayerPrefs.SetInt("MonkeTutorial", 1);
+        PlayerPrefs.Save();
+    }
+
+    public void EnableController()
+    {
+        _controller.enabled = true;
     }
 
     public void SetImmunityTrue()
@@ -133,6 +145,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
         if(!immunity && !isDead)
         {
             //takes damage from the normal void 
@@ -203,6 +216,18 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         {
             fishSceneCollider.callUIFunctions();
         }
+
+        if(other.tag == "MonkeGuideCollider")
+        {
+            if(SceneManager.GetActiveScene().buildIndex != 1)
+                return;
+        
+            if (PlayerPrefs.GetInt("MonkeTutorial") == 0)
+            {
+                monkeDaoGuidePanel.SetActive(true);
+                _controller.enabled = false;
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -236,6 +261,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             {
                 desertButton.SetActive(true);
             }
+            if (collision.name == "MonkeDaoEntrance")
+            {
+                monkeDaoEnterButton.SetActive(true);
+            }
         }
     }
 
@@ -265,6 +294,10 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         if (collision.name == "DesertTrigger")
         {
             desertButton.SetActive(false);
+        }
+        if (collision.name == "MonkeDaoEntrance")
+        {
+            monkeDaoEnterButton.SetActive(false);
         }
     }
 

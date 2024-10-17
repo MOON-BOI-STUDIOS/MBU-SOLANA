@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,7 +139,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 843
+        width: 255
+        height: 416
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19d53d97c1718445951f50d514da79a
+      internalID: -1498626424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 843
+        width: 255
+        height: 417
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1758d38bcd0cd34f81698fd1cd9d869
+      internalID: -1840075227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 843
+        width: 255
+        height: 418
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8475b0c2f875944a184fd68f4e1200
+      internalID: -1477654631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 422
+        width: 255
+        height: 419
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a01e509404293a4b84a849d8ba13a9f
+      internalID: -1500666645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 422
+        width: 255
+        height: 420
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edeb6c2408e592488fcb2de9a75b238
+      internalID: 642993035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 422
+        width: 255
+        height: 419
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a50873ef55c8c34e8a1a41daec423aa
+      internalID: -846163170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1
+        width: 255
+        height: 418
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d153db04b37dbf64d8b4004aeb50dd52
+      internalID: 1103438421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1
+        width: 255
+        height: 417
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f2830dd89e621468e887e1be3a68c8
+      internalID: 1654907854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monke Dao Building-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1
+        width: 255
+        height: 415
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909bd69b3fe47f24f894dba22b33b694
+      internalID: 744973567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -150,7 +339,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Monke Dao Building-Sheet_6: 1103438421
+      Monke Dao Building-Sheet_3: -1500666645
+      Monke Dao Building-Sheet_7: 1654907854
+      Monke Dao Building-Sheet_0: -1498626424
+      Monke Dao Building-Sheet_2: -1477654631
+      Monke Dao Building-Sheet_1: -1840075227
+      Monke Dao Building-Sheet_5: -846163170
+      Monke Dao Building-Sheet_8: 744973567
+      Monke Dao Building-Sheet_4: 642993035
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

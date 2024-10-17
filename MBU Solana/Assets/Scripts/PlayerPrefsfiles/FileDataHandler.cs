@@ -53,7 +53,11 @@ public class FileDataHandler
                 Debug.LogError("Error occured when trying to save data file" + fullPath + "\n" + e);
             }
         }
-        Debug.Log("DATA LOAD COUNT" + loadedData.savedData.Count);
+        if(loadedData != null)
+        {
+            Debug.Log("DATA LOAD COUNT" + loadedData.savedData.Count);
+        }
+        
         return loadedData;
     }
 

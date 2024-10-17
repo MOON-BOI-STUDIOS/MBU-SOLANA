@@ -1,0 +1,408 @@
+fileFormatVersion: 2
+guid: 732f09fb9e47675498533cf1927a0b08
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 173
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: -36}
+        - {x: -2, y: -36}
+        - {x: -64, y: -5}
+        - {x: -64, y: 5}
+        - {x: -2, y: 36}
+        - {x: 2, y: 36}
+        - {x: 64, y: 5}
+        - {x: 64, y: -5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845a4cbd57e11504c90bed3c18e0c5a1
+      internalID: -711717920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 137
+        width: 378
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -162, y: -110}
+        - {x: -189, y: -73}
+        - {x: -189, y: 140}
+        - {x: -87, y: 216}
+        - {x: -53, y: 216}
+        - {x: 134, y: 177}
+        - {x: 172, y: 92}
+        - {x: 187, y: 24}
+        - {x: 187, y: 12}
+        - {x: 189, y: -47}
+        - {x: 189, y: -56}
+        - {x: 168, y: -160}
+        - {x: 56, y: -216}
+        - {x: 53, y: -216}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da78e405b5de3874e8def4a05d78aad2
+      internalID: -1082372927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 176
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: -36}
+        - {x: -64, y: -5}
+        - {x: -64, y: 5}
+        - {x: -34, y: 20}
+        - {x: -2, y: 36}
+        - {x: 2, y: 36}
+        - {x: 64, y: 5}
+        - {x: 64, y: -5}
+        - {x: 2, y: -36}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76c03a3b69f08f458c20c69ea81fbfd
+      internalID: -216605843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 140
+        width: 378
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -159, y: -112}
+        - {x: -189, y: -99}
+        - {x: -189, y: 191}
+        - {x: -77, y: 216}
+        - {x: -64, y: 216}
+        - {x: 189, y: 216}
+        - {x: 189, y: -47}
+        - {x: 189, y: -56}
+        - {x: 168, y: -160}
+        - {x: 56, y: -216}
+        - {x: 53, y: -216}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57e6a5c33243c947a79e8b6e064f368
+      internalID: -1263127216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 41
+        width: 193
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccedc24b9e3b524d8fcd334ebcc4156
+      internalID: -1199727768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 51
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb06249d260e4c144b701bc584d2066a
+      internalID: 965329778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 44
+        width: 193
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b9c9be283fa4041b3b7a0fbd4b9a2f
+      internalID: -127735889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 46
+        width: 128
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: -7.5}
+        - {x: 2, y: -38.5}
+        - {x: -2, y: -38.5}
+        - {x: -64, y: -7.5}
+        - {x: -64, y: 7.5}
+        - {x: -2, y: 38.5}
+        - {x: 2, y: 38.5}
+        - {x: 57, y: 31.5}
+        - {x: 64, y: 7.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf12b498a7e710d4fa7b82fbad7d9850
+      internalID: 840788492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MarketIshenVersion2-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 100
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24451cd615be764ab26c84e8e050752
+      internalID: 843685181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MarketIshenVersion2-sheet_5: 965329778
+      MarketIshenVersion2-sheet_2: -216605843
+      MarketIshenVersion2-sheet_6: -127735889
+      MarketIshenVersion2-sheet_7: 840788492
+      MarketIshenVersion2-sheet_0: -711717920
+      MarketIshenVersion2-sheet_3: -1263127216
+      MarketIshenVersion2-sheet_4: -1199727768
+      MarketIshenVersion2-sheet_8: 843685181
+      MarketIshenVersion2-sheet_1: -1082372927
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

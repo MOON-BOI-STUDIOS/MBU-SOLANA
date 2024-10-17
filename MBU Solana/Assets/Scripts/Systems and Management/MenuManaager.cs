@@ -120,6 +120,7 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.SetInt("firstLoad", 0);
         PlayerPrefs.SetInt("Coins", 0);
         PlayerPrefs.SetInt("MoneyAward", 0);
+        PlayerPrefs.SetInt("MonkeTutorial", 0);
 
         PlayerPrefs.DeleteKey("LastSceneName");
         PlayerPrefs.DeleteKey("PlayerPosX");

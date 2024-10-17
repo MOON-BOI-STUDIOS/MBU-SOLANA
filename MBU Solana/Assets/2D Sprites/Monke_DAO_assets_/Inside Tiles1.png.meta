@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,7 +139,406 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Inside Tiles1_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 537
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f1f92c480944841843d63fc04c2603
+      internalID: 1899649308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 537
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22013d043b8b2524ca1a071fc6adf5a0
+      internalID: 1369421929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 537
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c50bba95bc912a4f96df687fd9b619c
+      internalID: 1674406220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 377
+        width: 78
+        height: 134
+      alignment: 9
+      pivot: {x: 0.21426181, y: 0.21271093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b3f3ce16711b445adb45af4fb3a42c
+      internalID: -1167876784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 378
+        width: 78
+        height: 134
+      alignment: 9
+      pivot: {x: 0.77275026, y: 0.19759038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8511da5a149f040825c20cd40442ff
+      internalID: -1618621020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_5
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 409
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca50a1b6eae98064d908bf1a0b59c9ae
+      internalID: 1973068091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_6
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 409
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056fa0febaf0c784882611efc17eec92
+      internalID: 596742039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 233
+        width: 78
+        height: 137
+      alignment: 9
+      pivot: {x: 0.2532261, y: 0.19681789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f75709ac75595546b64e3108bd43365
+      internalID: 651926151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 233
+        width: 78
+        height: 137
+      alignment: 9
+      pivot: {x: 0.7207976, y: 0.19681789}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ac7feec6bf9c14b8122489b05775d8
+      internalID: -10978454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_9
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 308
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f60d50dc40d3aa4d84a17d4e336c5ef
+      internalID: 1442192255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 308
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776b5977ce37954488cd8ea0a28c67d1
+      internalID: 830182205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 78
+        height: 205
+      alignment: 9
+      pivot: {x: 0.29219043, y: 0.20349096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270a1864b62e90e4e83a6dd4dcbecde5
+      internalID: 1910586762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 9
+        width: 78
+        height: 205
+      alignment: 9
+      pivot: {x: 0.66884536, y: 0.20349108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80eb529d74faf44fa8d3f794675e3fc
+      internalID: -830831477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_13
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 209
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148f050d1a15333409c09ae31c48a0f7
+      internalID: -659505859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_14
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 209
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1b94838df97b248843e46af89a3685
+      internalID: -281656944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_15
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 113
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cedb3a992090b843b6367e721715439
+      internalID: -2012702714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_16
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 113
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9777eac14a29c34491bf4bc9799046d
+      internalID: -1823157762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_17
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 18
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4e54b1c29fea64cbdd6f2fbd543df1
+      internalID: -2009853471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside Tiles1_18
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 18
+        width: 128
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e58d75bc3490c4ea2069bf84859f15
+      internalID: -1842085221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -150,7 +549,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Inside Tiles1_8: -10978454
+      Inside Tiles1_3: -1167876784
+      Inside Tiles1_6: 596742039
+      Inside Tiles1_1: 1369421929
+      Inside Tiles1_18: -1842085221
+      Inside Tiles1_12: -830831477
+      Inside Tiles1_2: 1674406220
+      Inside Tiles1_9: 1442192255
+      Inside Tiles1_4: -1618621020
+      Inside Tiles1_16: -1823157762
+      Inside Tiles1_7: 651926151
+      Inside Tiles1_14: -281656944
+      Inside Tiles1_15: -2012702714
+      Inside Tiles1_5: 1973068091
+      Inside Tiles1_13: -659505859
+      Inside Tiles1_17: -2009853471
+      Inside Tiles1_10: 830182205
+      Inside Tiles1_0: 1899649308
+      Inside Tiles1_11: 1910586762
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
