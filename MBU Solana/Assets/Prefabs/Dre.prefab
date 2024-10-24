@@ -211,10 +211,16 @@ MonoBehaviour:
   _manager: {fileID: 3961368043105817330}
   lastDirection: {x: 0, y: 0}
   _heroAnimator: {fileID: 3961368043086042382}
+  dreSprite: {fileID: 0}
   EndUI: {fileID: 0}
+  initialMaterial: {fileID: 0}
+  redMaterial: {fileID: 0}
+  yellowMaterial: {fileID: 0}
+  orangeMaterial: {fileID: 0}
   northStar: {fileID: 8300000, guid: 69c524f602ff34f429145fe023619e89, type: 3}
   orionsBelt: {fileID: 8300000, guid: c7da3ac79a24d9948a1f36cf67ad51b4, type: 3}
   deathSound: {fileID: 8300000, guid: 3851f2afed9fa87479b677ddba632ca0, type: 3}
+  teleportSound: {fileID: 0}
   whoosh:
   - {fileID: 8300000, guid: 042c7902ef470c84689021bb0b8c1ba9, type: 3}
   - {fileID: 8300000, guid: 5c79d4f8c0809dd42bc480b58ef88d87, type: 3}
@@ -240,6 +246,9 @@ MonoBehaviour:
   mainMusic: {fileID: 0}
   powerUpMuisc: {fileID: 0}
   isNoCombatZone: 1
+  chests: {fileID: 0}
+  enemies: {fileID: 0}
+  playerTeleport: {fileID: 0}
 --- !u!82 &3961368043086042376
 AudioSource:
   m_ObjectHideFlags: 0
@@ -501,15 +510,25 @@ MonoBehaviour:
   coinsText: {fileID: 0}
   healthIndicator: {fileID: 0}
   healthNumber: {fileID: 0}
-  fadeOut: {fileID: 0}
+  afterDeathPanel: {fileID: 0}
   coinSound1: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
   coinSound2: {fileID: 8300000, guid: 3b98e92ac13c5f64093a2eba54a9779a, type: 3}
   attackButton: {fileID: 0}
   enterButton: {fileID: 0}
   fishButton: {fileID: 0}
-  ExitButton: {fileID: 0}
+  backToMeccaButton: {fileID: 0}
+  drePowerUpBust: {fileID: 0}
+  dreBust: {fileID: 0}
+  desertButton: {fileID: 0}
+  monkeDaoEnterButton: {fileID: 0}
+  videoPlayer: {fileID: 0}
   startLocation: []
-  isPoweredUp: 0
+  enemies: {fileID: 0}
+  dreSpriteRenderer: {fileID: 0}
+  radarObject: {fileID: 0}
+  dreCamera: {fileID: 0}
+  monkeDaoEntranceObject: {fileID: 0}
+  monkeDaoGuidePanel: {fileID: 0}
 --- !u!114 &3961368043105817325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +550,7 @@ MonoBehaviour:
   isRunning: 0
   inputs: {fileID: 3961368043105817323}
   TutorialMove: 0
+  spriteRenderer: {fileID: 0}
 --- !u!70 &3961368043105817326
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -753,9 +773,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.035416666
-    width: 0.49594596
-    height: 0.125
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

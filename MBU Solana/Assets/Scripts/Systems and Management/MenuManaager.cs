@@ -111,7 +111,7 @@ public class MenuManaager : MonoBehaviour
         PlayerPrefs.DeleteKey("p_x");
         PlayerPrefs.DeleteKey("p_y");
         PlayerPrefs.DeleteKey("p_z");
-        PlayerPrefs.DeleteKey("Saved");
+        PlayerPrefs.DeleteKey("InFishingShop");
         PlayerPrefs.SetInt("SwordPower", 0);
         PlayerPrefs.SetInt("SpecialPower", 0);
         PlayerPrefs.SetInt("Fishes", 0);

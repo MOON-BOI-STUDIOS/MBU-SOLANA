@@ -22,6 +22,7 @@ TagManager:
   - Enemy
   - MonkeDao
   - MonkeGuideCollider
+  - NewMeccaTutorial
   layers:
   - Default
   - TransparentFX
@@ -61,4 +62,7 @@ TagManager:
     locked: 0
   - name: bikegame
     uniqueID: 2262320669
+    locked: 0
+  - name: NoLight
+    uniqueID: 1046922715
     locked: 0

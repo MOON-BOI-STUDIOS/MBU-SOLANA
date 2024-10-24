@@ -7,6 +7,7 @@ public class fishinjgscenespawn : MonoBehaviour
     public GameObject player;
 
     public static fishinjgscenespawn instance;
+    [SerializeField] Transform gateSpawnPoint;
 
     private void Awake()
     {
@@ -18,7 +19,7 @@ public class fishinjgscenespawn : MonoBehaviour
 
     public void Start()
     {
-        if (PlayerPrefs.GetInt("Saved") == 1)
+        if (PlayerPrefs.GetInt("InFishingShop") == 1)
         {
             float pX = player.transform.position.x;
             float pY = player.transform.position.y;
@@ -30,6 +31,11 @@ public class fishinjgscenespawn : MonoBehaviour
             player.transform.position = new Vector3(pX, pY, pZ);
            
         }
+
+        else
+        {
+            player.transform.position = gateSpawnPoint.position;
+        }
     }
 
     public void playerPosSave()
@@ -37,7 +43,7 @@ public class fishinjgscenespawn : MonoBehaviour
         PlayerPrefs.SetFloat("p_x", player.transform.position.x);
         PlayerPrefs.SetFloat("p_y", player.transform.position.y);
         PlayerPrefs.SetFloat("p_z", player.transform.position.z);
-        PlayerPrefs.SetInt("Saved", 1);
+        PlayerPrefs.SetInt("InFishingShop", 1);
         //playerPosSave();
     }
 
@@ -47,8 +53,7 @@ public class fishinjgscenespawn : MonoBehaviour
         PlayerPrefs.DeleteKey("p_x");
         PlayerPrefs.DeleteKey("p_y");
         PlayerPrefs.DeleteKey("p_z");
-        PlayerPrefs.DeleteKey("Saved");
+        PlayerPrefs.DeleteKey("InFishingShop");
 
     }
-
 }

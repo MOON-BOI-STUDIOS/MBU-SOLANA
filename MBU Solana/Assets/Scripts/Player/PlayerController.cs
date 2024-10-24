@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
         //Subscribe to the Move action events only for PC release and WebGl release
         inputs.actions["Move"].performed += Move;
         inputs.actions["Move"].canceled += Move;
+        UpdateSceneAndPosition();
     }
 
     void FixedUpdate()
@@ -128,7 +129,7 @@ public class PlayerController : MonoBehaviour
 
     public void UpdateSceneAndPosition()
     {
-        Debug.Log("OnApplicationQuit called");
+        Debug.Log("SAVE PLAYER LOCATION PREFS");
         // Save the current scene index
         string sceneName = SceneManager.GetActiveScene().name;
         
@@ -148,10 +149,11 @@ public class PlayerController : MonoBehaviour
         UpdateSceneAndPosition();
     }
 
-#if UNITY_WEBGL
+
     // For WebGL and handling app pause (also works for Android backgrounding)
     private void OnApplicationPause(bool pauseStatus)
     {
+        pauseStatus = Pause.instance.GameIsPaused;
         if (pauseStatus) // If the app is being paused (i.e., going into the background or losing focus)
         {
             Debug.Log("OnApplicationPause called with pauseStatus: " + pauseStatus);
@@ -159,7 +161,7 @@ public class PlayerController : MonoBehaviour
             UpdateSceneAndPosition();
         }
     }
-
+#if UNITY_WEBGL
     // For WebGL (handle when the app loses focus in the browser)
     private void OnApplicationFocus(bool hasFocus)
     {

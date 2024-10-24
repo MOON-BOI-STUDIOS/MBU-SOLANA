@@ -144,7 +144,7 @@ TextureImporter:
       name: Building 1 Bottom-sheet_0
       rect:
         serializedVersion: 2
-        x: 161
+        x: 164
         y: 1815
         width: 340
         height: 332
@@ -197,7 +197,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 630
-        y: 2146
+        y: 2150
         width: 342
         height: 304
       alignment: 0
@@ -447,7 +447,7 @@ TextureImporter:
       name: Building 1 Bottom-sheet_13
       rect:
         serializedVersion: 2
-        x: 2964
+        x: 2963
         y: 1789
         width: 342
         height: 327
@@ -473,7 +473,7 @@ TextureImporter:
       name: Building 1 Bottom-sheet_14
       rect:
         serializedVersion: 2
-        x: 3442
+        x: 3441
         y: 1808
         width: 340
         height: 332
@@ -583,7 +583,7 @@ TextureImporter:
       name: Building 1 Bottom-sheet_19
       rect:
         serializedVersion: 2
-        x: 2614
+        x: 2613
         y: 1183
         width: 342
         height: 420
@@ -818,8 +818,8 @@ TextureImporter:
         y: 728
         width: 342
         height: 417
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50645685, y: 0.18391283}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 96, y: -208.5}
@@ -889,12 +889,12 @@ TextureImporter:
       name: Building 1 Bottom-sheet_33
       rect:
         serializedVersion: 2
-        x: 2567
-        y: 685
+        x: 2569
+        y: 686
         width: 340
         height: 418
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50270134, y: 0.18069969}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1082,8 +1082,8 @@ TextureImporter:
         y: 397
         width: 268
         height: 381
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.50013393, y: 0.14343734}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1404,11 +1404,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3610
-        y: 28
+        y: 25
         width: 188
         height: 342
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4955821, y: 0.13454795}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -5,6 +5,7 @@ using UnityEngine;
 public class BonkDoor : MonoBehaviour
 {
     [SerializeField] Animator _animator;
+    [SerializeField] Collider2D bonkEntranceCollider;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,5 +22,15 @@ public class BonkDoor : MonoBehaviour
         {
             _animator.SetBool("openDoor", false); // Set "isOpen" to its opposite state
         }
+    }
+
+    public void EnableDoorCollider()
+    {
+        bonkEntranceCollider.enabled = true;
+    }
+
+    public void DisableDoorCollider()
+    {
+        bonkEntranceCollider.enabled = false;
     }
 }

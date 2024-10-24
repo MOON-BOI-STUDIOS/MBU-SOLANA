@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: BonkDoor
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -2007026148, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 625556630, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: -2130859758, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 1259217253, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 651260592, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: -1182996664, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: -1076208624, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: -1249933071, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 1906531902, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 642158347, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: -571283075, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: -1872034474, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 288901703, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 426351268, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 1961414783, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 1214502191, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 603455950, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 72028899, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 805860269, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 1920787372, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 787326665, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: -2101747042, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  - {fileID: 836126166, guid: 01f45e64d3f844443bf26bdb125df323, type: 3}
+  m_MinSpeed: 15
+  m_MaxSpeed: 15
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -27,7 +28,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     public GameObject afterDeathPanel;
     public AudioClip coinSound1, coinSound2;
     public GameObject attackButton;
-    public GameObject enterButton, fishButton, ExitButton, drePowerUpBust, dreBust, desertButton, monkeDaoEnterButton;
+    public GameObject arenaEnterButton, fishButton, backToMeccaButton, drePowerUpBust, dreBust, desertButton, monkeDaoEnterButton;
 
     [SerializeField] VideoPlayer videoPlayer;
 
@@ -35,18 +36,24 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
 
     string curSceneName;
     public GameObject enemies;
-    private GameObject[] childenemies;
+    GameObject[] childenemies;
 
     //Inventory Additions Array
-    private Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
+    Dictionary<int, Inventory> inv = new Dictionary<int, Inventory>();
 
     float lastHitDirectionX;
     [SerializeField] SpriteRenderer dreSpriteRenderer;
     [SerializeField] GameObject radarObject;
     [SerializeField] Camera dreCamera;
-    [SerializeField] GameObject monkeDaoEntranceObject, monkeDaoGuidePanel;
+    [SerializeField] GameObject monkeDaoGuidePanel;
 
-    private void Awake()
+    [SerializeField] Image bustImage;
+    [SerializeField] Sprite fullHealthSprite;
+    [SerializeField] Sprite mediumHealthSprite;
+    [SerializeField] Sprite lowHealthSprite;
+    [SerializeField] Sprite zeroHealthSprite;
+
+    void Awake()
     {
         curSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetInt("MaxHealth", 500);
@@ -55,6 +62,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     // Update is called once per frame
     void Update()
     {
+        
         //max health taked from PlayerPrefs
         maxHealth = PlayerPrefs.GetInt("MaxHealth");
         
@@ -106,6 +114,32 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         //displays number of coins the player has
         if (PlayerPrefs.GetInt("Coins") < 10) coinsText.text = "Coins: " + "0" + PlayerPrefs.GetInt("Coins").ToString();
         if (PlayerPrefs.GetInt("Coins") >= 10) coinsText.text = "Coins: " + PlayerPrefs.GetInt("Coins").ToString();
+        
+        UpdateHealthSprite();
+    }
+
+    public void UpdateHealthSprite()
+    {
+        int healthStatus = (int)(health / maxHealth * 100);
+
+        switch (healthStatus)
+        {
+            case int n when (n > 80):
+                bustImage.sprite = fullHealthSprite;
+                break;
+
+            case int n when (n > 40):
+                bustImage.sprite = mediumHealthSprite;
+                break;
+
+            case int n when (n > 0):
+                bustImage.sprite = lowHealthSprite;
+                break;
+
+            default:
+                bustImage.sprite = zeroHealthSprite;
+                break;
+        }
     }
 
     public void SetMonkeTutorialDone()
@@ -168,6 +202,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
                 health -= 40;
                 lastHitDirectionX = other.transform.parent.position.x - gameObject.transform.position.x;
                 Debug.Log("lastHitDirectionX: " + lastHitDirectionX);
+
                 StartCoroutine(_animator.greenVoidDamage());
 
                 Destroy(other.transform.parent.gameObject);
@@ -181,6 +216,7 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
                 health -= 40;
                 lastHitDirectionX = other.transform.parent.position.x - gameObject.transform.position.x;
                 Debug.Log("lastHitDirectionX: " + lastHitDirectionX);
+
                 StartCoroutine(_animator.redVoidDamage());
 
                 Destroy(other.transform.parent.gameObject);
@@ -234,16 +270,16 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     {
         //It was already like this when I got here :( 
 
-        //enables fishing entrance and arena entrance buttons when not in the interaction area
+        //enables fishing entrance and arena entrance buttons when in the interaction area
         if (collision.tag == "ArenaZone")
         {
-            if(collision.name == "FishingAreaTrigger")
+            if(collision.name == "FishingAreaEntrance Trigger")
             {
                 fishButton.SetActive(true);
             }
-            if(collision.name == "ArenaEntranceTrigger")
+            if(collision.name == "ArenaEntrance Trigger")
             {
-                enterButton.SetActive(true);
+                arenaEnterButton.SetActive(true);
             }
             if (collision.name == "ShopEntrance")
             {
@@ -253,15 +289,15 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
             {
                 fishButton.SetActive(true);
             }
-            if (collision.name == "FishingExit")
+            if (collision.name == "BackToMecca")
             {
-                ExitButton.SetActive(true);
+                backToMeccaButton.SetActive(true);
             }
             if (collision.name == "DesertTrigger")
             {
                 desertButton.SetActive(true);
             }
-            if (collision.name == "MonkeDaoEntrance")
+            if (collision.name == "MonkeDaoEntrance Trigger")
             {
                 monkeDaoEnterButton.SetActive(true);
             }
@@ -271,13 +307,13 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
     private void OnTriggerExit2D(Collider2D collision)
     {
         //disables fishing entrance and arena entrance buttons when not in the interaction area
-        if (collision.name == "FishingAreaTrigger")
+        if (collision.name == "FishingAreaEntrance Trigger")
         {
             fishButton.SetActive(false);
         }
-        if (collision.name == "ArenaEntranceTrigger")
+        if (collision.name == "ArenaEntrance Trigger")
         {
-            enterButton.SetActive(false);
+            arenaEnterButton.SetActive(false);
         }
         if (collision.name == "ShopEntrance")
         {
@@ -287,15 +323,15 @@ public class PlayerManager : MonoBehaviour, IAddToInventory
         {
             fishButton.SetActive(false);
         }
-        if (collision.name == "FishingExit")
+        if (collision.name == "BackToMecca")
         {
-            ExitButton.SetActive(false);
+            backToMeccaButton.SetActive(false);
         }
         if (collision.name == "DesertTrigger")
         {
             desertButton.SetActive(false);
         }
-        if (collision.name == "MonkeDaoEntrance")
+        if (collision.name == "MonkeDaoEntrance Trigger")
         {
             monkeDaoEnterButton.SetActive(false);
         }
